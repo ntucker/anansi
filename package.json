@@ -1,0 +1,21 @@
+{
+  "name": "anansi",
+  "version": "0.0.1",
+  "description": "One framework to rule them all",
+  "private": true,
+  "workspaces": [],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ntucker/anansi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntucker/anansi/issues"
+  },
+  "homepage": "https://github.com/ntucker/anansi#readme",
+  "keywords": [
+    "anansi",
+    "react"
+  ],
+  "author": "Nathaniel Tucker",
+  "license": "BSD"
+}
