@@ -1,11 +1,18 @@
 var env = process.env.BABEL_ENV || process.env.NODE_ENV
 
-// options: targets, developmentTargets, productionTargets, additionalProductionTargets, modules, runInNode, typing, minify
+/*
+options:
+  targets,
+  developmentTargets,
+  productionTargets,
+  additionalProductionTargets,
+  modules,
+  runInNode,
+  typing,
+  minify
+*/
 function buildPreset(context, options = {}) {
-  options = Object.assign(
-    { runInNode: false, minify: false, typing: false },
-    options,
-  )
+  options = { runInNode: false, minify: false, typing: false, ...options }
   const preset = {
     presets: [
       [
