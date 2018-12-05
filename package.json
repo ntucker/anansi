@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "One framework to rule them all",
   "private": true,
-  "workspaces": [],
+  "workspaces": ["packages/babel-preset-anansi"],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ntucker/anansi.git"
