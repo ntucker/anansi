@@ -6,7 +6,7 @@
   "workspaces": ["packages/*"],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ntucker/anansi.git"
+    "url": "git@github.com:ntucker/anansi.git"
   },
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"
