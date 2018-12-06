@@ -1,0 +1,18 @@
+{
+  "lerna": "0.0.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "changelog": {
+    "repo": "ntucker/anansi",
+    "labels": {
+      "tag: new feature": ":rocket: New Feature",
+      "tag: breaking": ":boom: Breaking Change",
+      "tag: fix": ":bug: Bug Fix",
+      "tag: enhancement": ":nail_care: Enhancement",
+      "tag: documentation": ":memo: Documentation",
+      "tag: internal": ":house: Internal"
+    },
+    "cacheDir": ".changelog"
+  }
+}

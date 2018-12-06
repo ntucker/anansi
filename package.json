@@ -1,21 +1,13 @@
 {
-  "name": "anansi",
-  "version": "0.0.1",
-  "description": "One framework to rule them all",
   "private": true,
-  "workspaces": ["packages/*"],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ntucker/anansi.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ntucker/anansi/issues"
-  },
-  "homepage": "https://github.com/ntucker/anansi#readme",
-  "keywords": [
-    "anansi",
-    "react"
+  "workspaces": [
+    "packages/*"
   ],
-  "author": "Nathaniel Tucker",
-  "license": "BSD"
+  "scripts": {
+    "changelog": "lerna-changelog"
+  },
+  "devDependencies": {
+    "lerna": "^3.5.1",
+    "lerna-changelog": "^0.8.2"
+  }
 }

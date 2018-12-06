@@ -1,5 +1,3 @@
-var env = process.env.BABEL_ENV || process.env.NODE_ENV
-
 /*
 options:
   targets,
@@ -11,7 +9,7 @@ options:
   typing,
   minify
 */
-function buildPreset(context, options = {}) {
+function buildPreset(context, options = {}, env) {
   options = { runInNode: false, minify: false, typing: false, ...options }
   const preset = {
     presets: [
