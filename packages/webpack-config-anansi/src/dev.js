@@ -55,6 +55,10 @@ export default function makeDevConfig(
   }
   config.devtool = '#cheap-module-source-map'
   config.output.publicPath = `http://localhost:3000/assets/${buildDir}`
+  if (!config.resolve.alias) {
+    config.resolve.alias = {}
+  }
+  config.resolve.alias['react-dom'] = '@hot-loader/react-dom'
 
   const styleRules = getStyleRules({
     basePath,
