@@ -35,6 +35,7 @@ function buildPreset(context, options = {}, env) {
       require('@babel/plugin-proposal-class-properties').default,
       //stage 3
       require('@babel/plugin-syntax-dynamic-import').default,
+      require('@babel/plugin-proposal-private-methods').default,
     ],
   }
   switch (options.typing) {

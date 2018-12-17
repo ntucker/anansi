@@ -118,6 +118,7 @@ are included:
 
 ### Stage 3
 * Dynamic import (`import()`)
+* [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
 
 ### Stage 2
 * [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)

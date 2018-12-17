@@ -31,6 +31,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-private-methods": "^7.2.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-function-bind": "^7.2.0",
     "@babel/plugin-transform-object-assign": "^7.2.0",
@@ -46,12 +47,12 @@
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-flow-react-proptypes": "^24.1.2",
     "babel-plugin-lodash": "^3.3.4",
-    "babel-plugin-ramda": "^1.6.3",
+    "babel-plugin-ramda": "^2.0.0",
     "babel-plugin-react-require": "^3.0.1",
     "babel-plugin-root-import": "^6.1.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.20",
-    "caniuse-lite": "^1.0.30000914",
-    "react-hot-loader": "^4.3.12",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
+    "caniuse-lite": "^1.0.30000921",
+    "react-hot-loader": "^4.6.0",
     "ric-shim": "^1.0.0",
     "stable": "^0.1.8"
   },
@@ -59,7 +60,7 @@
     "@babel/core": "^7.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "react": "^16.5.2"
+    "@babel/core": "^7.2.2",
+    "react": "^16.6.3"
   }
 }
