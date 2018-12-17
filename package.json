@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "changelog": "lerna-changelog",
-    "publish": "learna publish"
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^3.5.1",
