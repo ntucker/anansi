@@ -54,7 +54,7 @@ export function getStyleRules({
             ...loader,
             options: {
               ...loader.options,
-              modules: true,
+              modules: 'local',
               camelCase: true,
               ...cssLoaderOptions,
             },
