@@ -1,6 +1,7 @@
 /*
 options:
   targets,
+  nodeTarget,
   developmentTargets,
   productionTargets,
   additionalProductionTargets,
@@ -70,14 +71,11 @@ function buildPreset(context, options = {}, env) {
   }
 
   if (env === 'test' || options.runInNode) {
-    preset.plugins.push(
-      require('@babel/plugin-proposal-object-rest-spread').default,
-    )
     preset.presets.unshift([
       require('@babel/preset-env').default,
       {
         targets: {
-          node: 'current',
+          node: options.nodeTarget || 'current',
         },
       },
     ])

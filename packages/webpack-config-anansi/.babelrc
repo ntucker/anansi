@@ -4,7 +4,7 @@
       "@anansi/babel-preset",
       {
         "runInNode": true,
-        "targets": "maintained node versions"
+        "nodeTarget": "6.15"
       }
     ]
   ]
