@@ -1,17 +1,17 @@
-import autoprefixer from 'autoprefixer'
-import path from 'path'
-import { always } from 'ramda'
-import BundleTracker from 'webpack-bundle-tracker'
+import autoprefixer from 'autoprefixer';
+import path from 'path';
+import { always } from 'ramda';
+import BundleTracker from 'webpack-bundle-tracker';
 
 
-export const ROOT_PATH = path.resolve()
+export const ROOT_PATH = path.resolve();
 const LIBRARY_MODULES_PATH = path.join(
   'node_modules',
   ...path
     .join(__dirname, '../node_modules')
     .split(path.sep)
     .slice(-2),
-)
+);
 
 const getCSSLoaders = ({ basePath }) => [
   { loader: 'style-loader' },
@@ -32,7 +32,7 @@ const getCSSLoaders = ({ basePath }) => [
       resources: [`${path.join(ROOT_PATH, basePath)}/style/export.scss`],
     },
   },
-]
+];
 
 export function getStyleRules({
   basePath = 'src',
@@ -40,8 +40,8 @@ export function getStyleRules({
   libraryExclude = always(false),
   cssLoaderOptions = {},
 }) {
-  const absoluteBasePath = path.join(ROOT_PATH, basePath)
-  const cssLoaders = getCSSLoaders({ basePath })
+  const absoluteBasePath = path.join(ROOT_PATH, basePath);
+  const cssLoaders = getCSSLoaders({ basePath });
   return [
     // css modules (local styles)
     {
@@ -58,9 +58,9 @@ export function getStyleRules({
               camelCase: true,
               ...cssLoaderOptions,
             },
-          }
+          };
         }
-        return loader
+        return loader;
       }),
     },
     // global styles
@@ -75,7 +75,7 @@ export function getStyleRules({
       include: [/node_modules/],
       use: cssLoaders.slice(0, -2),
     },
-  ]
+  ];
 }
 
 export default function makeBaseConfig({
@@ -188,5 +188,5 @@ export default function makeBaseConfig({
       children: false,
       chunks: false,
     },
-  }
+  };
 }

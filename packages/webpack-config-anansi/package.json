@@ -8,7 +8,7 @@
     "build": "npm run build:lib",
     "clean": "rimraf lib",
     "prepare": "npm run clean && npm run build",
-    "lint": "eslint js"
+    "lint": "eslint src/*.js"
   },
   "files": [
     "lib",

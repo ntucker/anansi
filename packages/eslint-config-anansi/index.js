@@ -13,7 +13,6 @@ module.exports = {
     ecmaVersion: 2018,
     ecmaFeatures: {
       jsx: true,
-      legacyDecorators: true,
       experimentalObjectRestSpread: true,
     },
   },
