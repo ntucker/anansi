@@ -1,0 +1,20 @@
+{
+  "name": "@anansi/browserslist-config",
+  "version": "0.0.1",
+  "description": "Support modern browsers",
+  "main": "index.js",
+  "keywords": [
+    "browserslist",
+    "browserslist-config"
+  ],
+  "author": "Nathaniel Tucker",
+  "license": "BSD",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/browserslist-config-anansi",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ntucker/anansi.git"
+  },
+  "engines": {
+    "node": ">=6.15.1"
+  }
+}

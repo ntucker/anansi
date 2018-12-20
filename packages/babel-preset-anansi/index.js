@@ -3,15 +3,12 @@ options:
   targets,
   nodeTarget,
   developmentTargets,
-  productionTargets,
-  additionalProductionTargets,
   modules,
-  runInNode,
   typing,
   minify
 */
 function buildPreset(context, options = {}, env) {
-  options = { runInNode: false, minify: false, typing: false, ...options }
+  options = { minify: false, typing: false, ...options }
   const preset = {
     presets: [
       [
@@ -63,14 +60,14 @@ function buildPreset(context, options = {}, env) {
       break
   }
 
-  if (!options.runInNode && env === 'production') {
+  if (!options.nodeTarget && env === 'production') {
     preset.plugins.unshift(
       require('babel-plugin-ramda').default,
       require('babel-plugin-lodash').default,
     )
   }
 
-  if (env === 'test' || options.runInNode) {
+  if (env === 'test' || options.nodeTarget) {
     preset.presets.unshift([
       require('@babel/preset-env').default,
       {
@@ -86,20 +83,6 @@ function buildPreset(context, options = {}, env) {
       if (env === 'development') {
         targets = options.developmentTargets || {
           browsers: ['last 1 Chrome versions', 'last 1 Firefox versions'],
-        }
-      } else {
-        targets = options.productionTargets || {
-          browsers: [
-            'last 2 versions',
-            'not < 0.05%',
-            'not ie < 11',
-            'not op_mini all',
-          ].concat(
-            (options.additionalProductionTargets &&
-              options.additionalProductionTargets.browsers) ||
-              [],
-          ),
-          ...options.additionalProductionTargets,
         }
       }
     }

@@ -20,10 +20,7 @@ Or configure options
     [
       "@anansi/babel-preset",
       {
-        "targets": {
-          "node": "current"
-        },
-        "modules": "commonjs"
+        "nodeTarget": "10"
       }
     ]
   ]
@@ -36,9 +33,7 @@ Or configure options
     [
       "@anansi/babel-preset",
       {
-        "additionalProductionTargets": {
-          "explorer": "10"
-        }
+        "typing": "flow"
       }
     ]
   ]
@@ -71,28 +66,26 @@ to include the register at the entry point
 
 ## Options
 
-### runInNode : bool = false
+### typing: 'flow' | 'typescript' | false = false
 
-This is simple way to use the configuration for node scripts. Other options
-below will not work if this is set. Targets the current node version in
-babel-preset-env while disabling the extra imports.
+Adds support for these typecheckers. These remove the typings so the output runs in the target environment.
+If false, no static typechecker will be supported.
 
-### productionTargets : object = [`modern browsers`](http://browserl.ist/?q=last+2+versions%2C+not+%3C+0.05%25%2C+not+ie+%3C+11%2C+not+op_mini+all)
+### nodeTarget : ?string = undefined
 
-Can be used to override babel-preset-env targets for building production. See
-[babel-preset-env configuration options](https://github.com/babel/babel/tree/master/packages/babel-preset-env#options)
-
-### additionalProductionTargets: object = undefined
-
-Is merged with the default productionTargets. Use this to extend base production support.
+Will run to target node instead of browsers. Specify a [valid node string](https://babeljs.io/docs/en/babel-preset-env#targetsnode) like "current", or "6.15".
 
 ### developmentTargets : object = [`latest firefox & chrome`](http://browserl.ist/?q=last+1+Chrome+versions%2C+last+1+Firefox+versions)
 
-Can be used to override babel-preset-env targets for building development.
+Browserlist is overridden in development to target the latest browsers to ease debugging. Configuring
+this enables you to specify what browsers you use in development.
 
-### targets : object = undefined
+### targets : ?object = undefined
 
-Can be used to override babel-preset-env targets for non-testing environment.
+*NOT recommended.* Can be used to override babel-preset-env targets for non-testing environment.
+Use a [browserslist config](https://github.com/browserslist/browserslist#packagejson) instead.
+
+Feel free to use the [anansi browserlist config](/tree/master/packages/browserslist-config-anansi).
 
 ### modules: string|false = false
 
@@ -105,11 +98,6 @@ in webpack
 ### minify: bool = false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
-
-### typing: 'flow' | 'typescript' | false = false
-
-Adds support for these typecheckers. These remove the typings so the output runs in the target environment.
-If false, no static typechecker will be supported.
 
 ## Future language support
 
