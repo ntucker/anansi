@@ -6,4 +6,4 @@ const config = {
   development: ['last 1 Chrome versions', 'last 1 Firefox versions'],
 };
 
-module.export = config[env];
+module.exports = config[env];
