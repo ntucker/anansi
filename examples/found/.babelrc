@@ -1,3 +1,3 @@
 {
-  "presets": [["@anansi/babel-preset", { "runInNode": true }]]
+  "presets": [["@anansi/babel-preset", { "nodeTarget": "current" }]]
 }

@@ -27,8 +27,8 @@
     }
   },
   "devDependencies": {
-    "@anansi/babel-preset": "0.6.1",
-    "@anansi/browserslist-config": "^0.0.1",
+    "@anansi/babel-preset": "0.7.0",
+    "@anansi/browserslist-config": "^0.0.4",
     "@anansi/eslint-config": "^0.4.3",
     "@anansi/webpack-config": "0.2.2",
     "@babel/core": "^7.2.2",

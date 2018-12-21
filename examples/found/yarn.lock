@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@anansi/babel-preset@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.6.1.tgz#d97a500ecaecca58d32accce24f6ab7844098041"
-  integrity sha512-B+mEQC/Ji7P68PUlC1LQgMDaTPBo/byoXUm8tAUX8rprptfpxL1vXybI/BPldkE6fjxXN/ijPCtVHldvxa3DrQ==
+"@anansi/babel-preset@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.7.0.tgz#36162b8fab7103c5b9cab633d113a98ae18e3d44"
+  integrity sha512-omWu1iAMwHCNC6U3v4tmpnxei2apuHCUB03lqit4EY+y79RgHSv25Cvpdq0Wg70Z1I91bSfPltK1oIMqW5IzGw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.2.0"
     "@babel/plugin-proposal-decorators" "^7.2.0"
@@ -33,14 +33,14 @@
     babel-plugin-react-require "^3.0.1"
     babel-plugin-root-import "^6.1.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.21"
-    caniuse-lite "^1.0.30000921"
+    caniuse-lite "^1.0.30000923"
     ric-shim "^1.0.0"
     stable "^0.1.8"
 
-"@anansi/browserslist-config@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@anansi/browserslist-config/-/browserslist-config-0.0.1.tgz#a81417e1b58be0b5bdddf429193563b8a1fe2ab0"
-  integrity sha512-NMevw0kkNL9Wt7OMBDD4aRjh9QMbpQGgRgmrrjLoKKY3c+TrRTgr+uyRpgQnEEE+BEF80EzCuDtNRi1fJyWrjw==
+"@anansi/browserslist-config@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@anansi/browserslist-config/-/browserslist-config-0.0.4.tgz#92fc24590090d533d11fcfa0a46dc53c466a3bef"
+  integrity sha512-90q8lsy2gAWSyGXdU29875Sen9jowDNzu876xf4yGe7LYZfcAwZ9Af8VvRv2g1TiHhFvp1IZPQGE17bQlzw7Dw==
 
 "@anansi/eslint-config@^0.4.3":
   version "0.4.3"
@@ -2210,7 +2210,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000921:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000921, caniuse-lite@^1.0.30000923:
   version "1.0.30000923"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000923.tgz#148f9bda508024b5ce957b463ae2e8302b451bb2"
   integrity sha512-j5ur7eeluOFjjPUkydtXP4KFAsmH3XaQNch5tvWSO+dLHYt5PE+VgJZLWtbVOodfWij6m6zas28T4gB/cLYq1w==
