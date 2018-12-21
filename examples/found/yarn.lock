@@ -37,6 +37,11 @@
     ric-shim "^1.0.0"
     stable "^0.1.8"
 
+"@anansi/browserslist-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@anansi/browserslist-config/-/browserslist-config-0.0.1.tgz#a81417e1b58be0b5bdddf429193563b8a1fe2ab0"
+  integrity sha512-NMevw0kkNL9Wt7OMBDD4aRjh9QMbpQGgRgmrrjLoKKY3c+TrRTgr+uyRpgQnEEE+BEF80EzCuDtNRi1fJyWrjw==
+
 "@anansi/eslint-config@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@anansi/eslint-config/-/eslint-config-0.4.3.tgz#021c634037b5f7c993ca493720b6f8d55d6df3da"

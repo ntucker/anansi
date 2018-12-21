@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "0.6.1",
+    "@anansi/browserslist-config": "^0.0.1",
     "@anansi/eslint-config": "^0.4.3",
     "@anansi/webpack-config": "0.2.2",
     "@babel/core": "^7.2.2",
@@ -46,5 +47,8 @@
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0-alpha.2",
     "redbox-react": "^1.6.0"
-  }
+  },
+  "browserslist": [
+    "extends @anansi/browserslist-config"
+  ]
 }
