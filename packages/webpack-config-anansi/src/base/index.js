@@ -1,82 +1,12 @@
-import autoprefixer from 'autoprefixer';
 import path from 'path';
 import { always } from 'ramda';
 import BundleTracker from 'webpack-bundle-tracker';
 
+import { ROOT_PATH } from './constants';
 
-export const ROOT_PATH = path.resolve();
-const LIBRARY_MODULES_PATH = path.join(
-  'node_modules',
-  ...path
-    .join(__dirname, '../node_modules')
-    .split(path.sep)
-    .slice(-2),
-);
 
-const getCSSLoaders = ({ basePath }) => [
-  { loader: 'style-loader' },
-  {
-    loader: 'css-loader',
-    options: {},
-  },
-  {
-    loader: 'postcss-loader',
-    options: {
-      plugins: [autoprefixer({ browsers: ['last 2 versions'] })],
-    },
-  },
-  { loader: 'sass-loader', options: { outputStyle: 'expanded' } },
-  {
-    loader: 'sass-resources-loader',
-    options: {
-      resources: [`${path.join(ROOT_PATH, basePath)}/style/export.scss`],
-    },
-  },
-];
-
-export function getStyleRules({
-  basePath = 'src',
-  libraryInclude = always(false),
-  libraryExclude = always(false),
-  cssLoaderOptions = {},
-}) {
-  const absoluteBasePath = path.join(ROOT_PATH, basePath);
-  const cssLoaders = getCSSLoaders({ basePath });
-  return [
-    // css modules (local styles)
-    {
-      test: /\.scss$/,
-      include: [absoluteBasePath, libraryInclude],
-      exclude: [/style\//g, libraryExclude],
-      use: cssLoaders.map((loader) => {
-        if (loader.loader === 'css-loader') {
-          return {
-            ...loader,
-            options: {
-              ...loader.options,
-              modules: 'local',
-              camelCase: true,
-              ...cssLoaderOptions,
-            },
-          };
-        }
-        return loader;
-      }),
-    },
-    // global styles
-    {
-      test: /\.scss$/,
-      include: [absoluteBasePath],
-      exclude: /^((?!(style\/|node_modules\/)).)*$/,
-      use: cssLoaders,
-    },
-    {
-      test: /\.css$/,
-      include: [/node_modules/],
-      use: cssLoaders.slice(0, -2),
-    },
-  ];
-}
+export { default as getStyleRules } from './scss';
+export { ROOT_PATH };
 
 export default function makeBaseConfig({
   basePath = 'src',
@@ -100,9 +30,9 @@ export default function makeBaseConfig({
       splitChunks: {
         chunks: 'all',
         cacheGroups: {
-          vendor: {
+          react: {
             test: /[\\/]node_modules[\\/](react|react-dom|schedule|object-assign|loose-envify)[\\/]/,
-            name: 'vendor',
+            name: 'react',
             chunks: 'all',
           },
           styles: {
@@ -122,7 +52,7 @@ export default function makeBaseConfig({
           use: ['babel-loader', 'worker-loader'],
         },
         {
-          test: /\.jsx?$/,
+          test: /\.(t|j)sx?$/,
           use: 'babel-loader',
           include: [new RegExp(basePath), /.storybook/, libraryInclude],
           exclude: libraryExclude,
@@ -174,13 +104,13 @@ export default function makeBaseConfig({
         path.join(ROOT_PATH, basePath, 'style'),
         'node_modules',
       ],
-      extensions: ['.js', '.scss'],
+      extensions: ['.js', '.ts', '.scss'],
       symlinks: false,
     },
     // include the loaders installed by this library
     resolveLoader: {
       modules: ['node_modules', LIBRARY_MODULES_PATH],
-      extensions: ['.js', '.json'],
+      extensions: ['.js', '.ts', '.json'],
       mainFields: ['loader', 'main'],
     },
     devtool: '#source-map',
