@@ -75,11 +75,6 @@ If false, no static typechecker will be supported.
 
 Will run to target node instead of browsers. Specify a [valid node string](https://babeljs.io/docs/en/babel-preset-env#targetsnode) like "current", or "6.15".
 
-### developmentTargets : object = [`latest firefox & chrome`](http://browserl.ist/?q=last+1+Chrome+versions%2C+last+1+Firefox+versions)
-
-Browserlist is overridden in development to target the latest browsers to ease debugging. Configuring
-this enables you to specify what browsers you use in development.
-
 ### targets : ?object = undefined
 
 *NOT recommended.* Can be used to override babel-preset-env targets for non-testing environment.

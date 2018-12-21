@@ -2,7 +2,6 @@
 options:
   targets,
   nodeTarget,
-  developmentTargets,
   modules,
   typing,
   minify
@@ -78,18 +77,10 @@ function buildPreset(context, options = {}, env) {
     ])
     preset.plugins.unshift(require('babel-plugin-dynamic-import-node'))
   } else {
-    let targets = options.targets
-    if (!targets) {
-      if (env === 'development') {
-        targets = options.developmentTargets || {
-          browsers: ['last 1 Chrome versions', 'last 1 Firefox versions'],
-        }
-      }
-    }
     preset.presets.unshift([
       require('@babel/preset-env').default,
       {
-        targets,
+        targets: options.targets,
         useBuiltIns: 'entry',
         modules: options.modules || false,
       },
