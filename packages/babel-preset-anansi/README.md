@@ -80,7 +80,7 @@ Will run to target node instead of browsers. Specify a [valid node string](https
 *NOT recommended.* Can be used to override babel-preset-env targets for non-testing environment.
 Use a [browserslist config](https://github.com/browserslist/browserslist#packagejson) instead.
 
-Feel free to use the [anansi browserlist config](/tree/master/packages/browserslist-config-anansi).
+Feel free to use the [anansi browserlist config](/packages/browserslist-config-anansi).
 
 ### modules: string|false = false
 
