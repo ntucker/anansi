@@ -15,7 +15,7 @@
     "registerBabel.js"
   ],
   "author": "Nathaniel Tucker",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/babel-preset-anansi",
   "repository": {
     "type": "git",

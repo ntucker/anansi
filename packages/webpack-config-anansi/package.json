@@ -19,7 +19,7 @@
     "webpack"
   ],
   "author": "Nathaniel Tucker",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/webpack-config-anansi",
   "repository": {
     "type": "git",
