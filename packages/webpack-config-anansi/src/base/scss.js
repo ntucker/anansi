@@ -14,7 +14,7 @@ const getCSSLoaders = ({ basePath }) => [
   {
     loader: 'postcss-loader',
     options: {
-      plugins: [autoprefixer({ browsers: ['last 2 versions'] })],
+      plugins: [autoprefixer()],
     },
   },
   { loader: 'sass-loader', options: { outputStyle: 'expanded' } },
