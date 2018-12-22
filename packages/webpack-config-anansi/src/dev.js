@@ -23,6 +23,11 @@ export default function makeDevConfig(
   config.output.filename = '[name]-[hash].js';
   config.output.devtoolModuleFilenameTemplate = info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.watch = true;
+  config.optimization = {
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    splitChunks: false,
+  };
 
   config.plugins = [
     new CircularDependencyPlugin({

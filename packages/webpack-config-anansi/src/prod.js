@@ -36,6 +36,24 @@ export default function makeProdConfig(
       chunkFilename: '[name].[contenthash].css',
     }),
   );
+  config.optimization = {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        react: {
+          test: /[\\/]node_modules[\\/](react|react-dom|schedule|object-assign|loose-envify)[\\/]/,
+          name: 'react',
+          chunks: 'all',
+        },
+        styles: {
+          test: /style\/.*\.scss$/,
+          name: 'style',
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  };
   config.optimization.minimizer = [
     new UglifyJsPlugin({
       uglifyOptions: {
