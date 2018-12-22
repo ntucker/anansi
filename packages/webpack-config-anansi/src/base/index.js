@@ -2,7 +2,7 @@ import path from 'path';
 import { always } from 'ramda';
 import BundleTracker from 'webpack-bundle-tracker';
 
-import { ROOT_PATH } from './constants';
+import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 
 
 export { default as getStyleRules } from './scss';
