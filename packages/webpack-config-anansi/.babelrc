@@ -3,7 +3,6 @@
     [
       "@anansi/babel-preset",
       {
-        "runInNode": true,
         "nodeTarget": "6.15"
       }
     ]
