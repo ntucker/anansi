@@ -1,4 +1,6 @@
 {
+  "name": "anansi-example-found",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start:dev": "bnr -s start-dev",
@@ -36,16 +38,16 @@
     "eslint": "^5.10.0",
     "flow-bin": "^0.89.0",
     "react-hot-loader": "^4.6.3",
-    "webpack": "^4.28.0",
+    "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.12"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "found": "^0.3.14",
-    "react": "^16.7.0-alpha.2",
+    "react": "16.7.0-alpha.2",
     "react-cache": "^2.0.0-alpha.1",
-    "react-dom": "^16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
