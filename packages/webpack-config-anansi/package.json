@@ -16,7 +16,8 @@
   ],
   "keywords": [
     "anansi",
-    "webpack"
+    "webpack",
+    "react"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",

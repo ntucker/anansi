@@ -26,6 +26,12 @@ export default makeConfig(options)
 }
 ```
 
+## Env customization
+
+### WEBPACK_ANALYZE
+
+Set `WEBPACK_ANALYZE` to "true" to build a static [treemap visualization of your packages](https://www.npmjs.com/package/webpack-bundle-analyzer).
+
 
 ## Support
 
