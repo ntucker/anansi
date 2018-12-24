@@ -71,6 +71,7 @@
     "worker-loader": "^2.0.0"
   },
   "peerDependencies": {
+    "@hot-loader/react-dom": "^16.7.0",
     "react-hot-loader": "^4.6.1",
     "webpack": "^4.27.1",
     "webpack-dev-server": "^3.1.10"

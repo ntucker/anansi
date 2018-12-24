@@ -48,6 +48,7 @@
     "react": "16.7.0-alpha.2",
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "16.7.0-alpha.2",
+    "@hot-loader/react-dom": "16.7.0-alpha.2",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
