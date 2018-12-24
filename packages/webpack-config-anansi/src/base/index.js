@@ -30,8 +30,10 @@ export default function makeBaseConfig({
     module: {
       rules: [
         {
-          test: /\.worker\.js$/,
+          test: /\.worker\.(t|j)s$/,
           use: ['babel-loader', 'worker-loader'],
+          include: [new RegExp(basePath), /.storybook/, libraryInclude],
+          exclude: libraryExclude,
         },
         {
           test: /\.(t|j)sx?$/,
