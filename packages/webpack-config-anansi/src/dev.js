@@ -21,6 +21,7 @@ export default function makeDevConfig(
   config.mode = 'development';
   config.output.pathinfo = true;
   config.output.filename = '[name]-[hash].js';
+  config.output.chunkFilename = '[name]-[hash].chunk.js';
   config.output.devtoolModuleFilenameTemplate = info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.watch = true;
   config.optimization = {
