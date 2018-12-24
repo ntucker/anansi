@@ -86,13 +86,13 @@ export default function makeBaseConfig({
         path.join(ROOT_PATH, basePath, 'style'),
         'node_modules',
       ],
-      extensions: ['.js', '.ts', '.scss'],
+      extensions: ['.js', '.ts', '.tsx', '.scss'],
       symlinks: false,
     },
     // include the loaders installed by this library
     resolveLoader: {
       modules: ['node_modules', LIBRARY_MODULES_PATH],
-      extensions: ['.js', '.ts', '.json'],
+      extensions: ['.js', '.json'],
       mainFields: ['loader', 'main'],
     },
     devtool: '#source-map',
