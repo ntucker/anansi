@@ -50,17 +50,11 @@ export default function makeBaseConfig({
           use: 'raw-loader',
         },
         {
-          test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
-          use: [
-            { loader: 'url-loader', options: { limit: 1000, mimetype: 'application/font-woff' } },
-          ],
-        },
-        {
-          test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+          test: /\.(woff2|ttf)(\?v=\d+\.\d+\.\d+)?$/,
           use: [
             {
               loader: 'url-loader',
-              options: { limit: 1000, mimetype: 'application/octet-stream' },
+              options: { limit: 1000 },
             },
           ],
         },
@@ -74,7 +68,7 @@ export default function makeBaseConfig({
         },
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{ loader: 'url-loader', options: { limit: 1000, mimetype: 'image/svg+xml' } }],
+          use: [{ loader: 'url-loader', options: { limit: 1000 } }],
         },
         {
           test: /\.isvg(\?v=\d+\.\d+\.\d+)?$/,
