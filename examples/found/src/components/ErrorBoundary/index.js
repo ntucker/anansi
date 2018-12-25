@@ -39,7 +39,7 @@ export default class ErrorBoundary extends React.Component {
     if (process.env.NODE_ENV !== 'production') {
       return (
         <div className="center">
-          <h1>{this.state.error && this.state.error.toString()}</h1>
+          <h1>{this.state.error?.toString()}</h1>
           <RedBox error={this.state.error} />
         </div>
       )
