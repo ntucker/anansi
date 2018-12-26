@@ -3479,17 +3479,17 @@ css-declaration-sorter@^4.0.1:
     postcss "^7.0.1"
     timsort "^0.3.0"
 
-css-loader@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-2.0.1.tgz#2e51a15449ab3f7195b7e1bc00a407460016a3b3"
-  integrity sha512-XIVwoIOzSFRVsafOKa060GJ/A70c0IP/C1oVPHEX4eHIFF39z0Jl7j8Kua1SUTiqWDupUnbY3/yQx9r7EUB35w==
+css-loader@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-2.1.0.tgz#42952ac22bca5d076978638e9813abce49b8f0cc"
+  integrity sha512-MoOu+CStsGrSt5K2OeZ89q3Snf+IkxRfAIt9aAKg4piioTrhtP1iEFPu+OVn3Ohz24FO6L+rw9UJxBILiSBw5Q==
   dependencies:
     icss-utils "^4.0.0"
-    loader-utils "^1.0.2"
+    loader-utils "^1.2.1"
     lodash "^4.17.11"
     postcss "^7.0.6"
     postcss-modules-extract-imports "^2.0.0"
-    postcss-modules-local-by-default "^2.0.2"
+    postcss-modules-local-by-default "^2.0.3"
     postcss-modules-scope "^2.0.0"
     postcss-modules-values "^2.0.0"
     postcss-value-parser "^3.3.0"
@@ -4770,10 +4770,10 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
-file-loader@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-2.0.0.tgz#39749c82f020b9e85901dcff98e8004e6401cfde"
-  integrity sha512-YCsBfd1ZGCyonOKLxPiKPdu+8ld9HAaMEvJewzz+b2eTF7uL5Zm/HdBF6FjCrpCMRq25Mi0U1gl4pwn2TlH7hQ==
+file-loader@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-3.0.1.tgz#f8e0ba0b599918b51adfe45d66d1e771ad560faa"
+  integrity sha512-4sNIOXgtH/9WZq4NvlfU3Opn5ynUsqBwSLyM+I7UOwdGigTBYfVVQEwe/msZNX/j4pCJTIM14Fsw66Svo1oVrw==
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
@@ -6553,7 +6553,7 @@ loader-utils@^0.2.16, loader-utils@^0.2.6:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.3:
+loader-utils@^1.0.3, loader-utils@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.2.1.tgz#64bbbac69aa5840d03754ba676a963dec568e844"
   integrity sha512-3Zhx4qDqBQ9U8udWB3RMJ29nLu5a3ObNOSzk87woPvge01pi0wABowgv7F79Z4mL0DGtHRi/oOndT34EVhInoQ==
@@ -8170,10 +8170,10 @@ postcss-modules-extract-imports@^2.0.0:
   dependencies:
     postcss "^7.0.5"
 
-postcss-modules-local-by-default@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-2.0.2.tgz#edfd6a874d326b52daaa3014bfc11e9e4b0cfafc"
-  integrity sha512-qghHvHeydUBQ3EQic5NjYryZ5jzXzAYxHR7lZQlCNmjGpJtINRyX/ELnh/7fxBBmHNkEzNkq2l5cV6trfidYng==
+postcss-modules-local-by-default@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-2.0.3.tgz#6a199d596ec3ef57b8f5ced96d786b8cb16a7dec"
+  integrity sha512-jv4CQ8IQ0+TkaAIP7H4kgu/jQbrjte8xU61SYJAIOby+o3H0MGWX6eN1WXUKHccK6/EEjcAERjyIP8MXzAWAbQ==
   dependencies:
     css-selector-tokenizer "^0.7.0"
     postcss "^7.0.6"
