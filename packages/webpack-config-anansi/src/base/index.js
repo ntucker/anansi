@@ -42,7 +42,7 @@ export default function makeBaseConfig({
           exclude: libraryExclude,
         },
         {
-          test: /\.(png|jpg|gif|ico|pdf|webm|mp4|svg)$/,
+          test: /\.(png|jpg|gif|ico|pdf|webm|mp4)$/,
           use: 'file-loader',
         },
         {
@@ -54,8 +54,28 @@ export default function makeBaseConfig({
           use: 'file-loader',
         },
         {
-          test: /\.isvg$/,
-          use: 'svg-react-loader',
+          test: /\.svg$/,
+          use: [
+            { loader: 'file-loader' },
+            {
+              loader: 'svgo-loader',
+              options: {
+                plugins: [{ removeTitle: false }],
+              },
+            },
+          ],
+        },
+        {
+          test: /\.svg\?inline$/,
+          use: [
+            { loader: 'svg-react-loader' },
+            {
+              loader: 'svgo-loader',
+              options: {
+                plugins: [{ removeTitle: false }],
+              },
+            },
+          ],
         },
       ],
     },
