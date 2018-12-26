@@ -18,6 +18,7 @@ export default function makeProdConfig(
   const config = { ...baseConfig };
 
   config.mode = 'production';
+  config.bail = true; // this helps automatic build tools not waste time
   config.output.pathinfo = false;
   config.plugins.push(
     new DuplicatePackageCheckerPlugin(),
@@ -52,6 +53,10 @@ export default function makeProdConfig(
           enforce: true,
         },
       },
+    },
+    // https://webpack.js.org/configuration/optimization/#optimization-runtimechunk
+    runtimeChunk: {
+      name: 'runtime',
     },
   };
   config.optimization.minimizer = [
