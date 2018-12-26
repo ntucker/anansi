@@ -42,36 +42,19 @@ export default function makeBaseConfig({
           exclude: libraryExclude,
         },
         {
-          test: /\.(png|jpg|gif|ico)$/,
-          use: [{ loader: 'url-loader', options: { limit: 1000 } }],
+          test: /\.(png|jpg|gif|ico|pdf|webm|mp4|svg)$/,
+          use: 'file-loader',
         },
         {
           test: /\.(md|txt)$/,
           use: 'raw-loader',
         },
         {
-          test: /\.(woff2|ttf)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [
-            {
-              loader: 'url-loader',
-              options: { limit: 1000 },
-            },
-          ],
-        },
-        {
-          test: /\.(otf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+          test: /\.(otf|eot|woff2?|ttf)$/,
           use: 'file-loader',
         },
         {
-          test: /\.(pdf|webm|mp4)$/,
-          use: 'file-loader',
-        },
-        {
-          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{ loader: 'url-loader', options: { limit: 1000 } }],
-        },
-        {
-          test: /\.isvg(\?v=\d+\.\d+\.\d+)?$/,
+          test: /\.isvg$/,
           use: 'svg-react-loader',
         },
       ],
