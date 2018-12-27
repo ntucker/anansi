@@ -7,7 +7,12 @@ options:
   minify
 */
 function buildPreset(context, options = {}, env) {
-  options = { minify: false, typing: false, ...options }
+  options = {
+    minify: false,
+    typing: false,
+    legacyDecorators: false,
+    ...options,
+  };
   const preset = {
     presets: [
       [
@@ -21,7 +26,7 @@ function buildPreset(context, options = {}, env) {
       // stage 3, but must come before class-properties
       [
         require('@babel/plugin-proposal-decorators').default,
-        { decoratorsBeforeExport: true },
+        { decoratorsBeforeExport: true, legacy: options.legacyDecorators },
       ],
       //stage 1
       require('@babel/plugin-proposal-export-default-from').default,
@@ -29,22 +34,25 @@ function buildPreset(context, options = {}, env) {
       require('@babel/plugin-proposal-optional-chaining').default,
       require('@babel/plugin-proposal-nullish-coalescing-operator').default,
       //stage 2
-      require('@babel/plugin-proposal-class-properties').default,
+      [
+        require('@babel/plugin-proposal-class-properties').default,
+        { loose: options.legacyDecorators },
+      ],
       //stage 3
       require('@babel/plugin-syntax-dynamic-import').default,
       require('@babel/plugin-proposal-private-methods').default,
     ],
-  }
+  };
   switch (options.typing) {
     case 'flow':
-      preset.presets.push(require('@babel/preset-flow').default)
+      preset.presets.push(require('@babel/preset-flow').default);
       if (env === 'development') {
-        preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'))
+        preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
       }
-      break
+      break;
     case 'typescript':
-      preset.presets.push(require('@babel/preset-typescript').default)
-      break
+      preset.presets.push(require('@babel/preset-typescript').default);
+      break;
   }
   switch (env) {
     case 'production':
@@ -52,18 +60,18 @@ function buildPreset(context, options = {}, env) {
         require('@babel/plugin-transform-react-inline-elements').default,
         require('@babel/plugin-transform-react-constant-elements').default,
         require('babel-plugin-transform-react-remove-prop-types').default,
-      )
-      break
+      );
+      break;
     case 'development':
-      preset.plugins.unshift(require('react-hot-loader/babel'))
-      break
+      preset.plugins.unshift(require('react-hot-loader/babel'));
+      break;
   }
 
   if (!options.nodeTarget && env === 'production') {
     preset.plugins.unshift(
       require('babel-plugin-ramda').default,
       require('babel-plugin-lodash').default,
-    )
+    );
   }
 
   if (env === 'test' || options.nodeTarget) {
@@ -74,8 +82,8 @@ function buildPreset(context, options = {}, env) {
           node: options.nodeTarget || 'current',
         },
       },
-    ])
-    preset.plugins.unshift(require('babel-plugin-dynamic-import-node'))
+    ]);
+    preset.plugins.unshift(require('babel-plugin-dynamic-import-node'));
   } else {
     preset.presets.unshift([
       require('@babel/preset-env').default,
@@ -84,12 +92,12 @@ function buildPreset(context, options = {}, env) {
         useBuiltIns: 'entry',
         modules: options.modules || false,
       },
-    ])
+    ]);
   }
   if (options.minify && env === 'production') {
-    preset.presets.unshift(require('babel-minify'))
+    preset.presets.unshift(require('babel-minify'));
   }
-  return preset
+  return preset;
 }
 
-module.exports = buildPreset
+module.exports = buildPreset;
