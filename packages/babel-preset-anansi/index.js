@@ -4,7 +4,8 @@ options:
   nodeTarget,
   modules,
   typing,
-  minify
+  minify,
+  legacyDecorators
 */
 function buildPreset(context, options = {}, env) {
   options = {

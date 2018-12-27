@@ -94,6 +94,10 @@ in webpack
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
 
+### legacyDecorators: bool = false
+
+Support legacy decorators instead of the soon-to-be-standard syntax.
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features
