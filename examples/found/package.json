@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-found",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "scripts": {
     "start:dev": "bnr -s start-dev",
@@ -29,7 +29,7 @@
     }
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^0.7.4",
+    "@anansi/babel-preset": "^0.7.5",
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.4.4",
     "@anansi/webpack-config": "^0.2.9",

@@ -1,6 +1,6 @@
 {
   "name": "@anansi/babel-preset",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Provides good default babel config for React projects",
   "main": "index.js",
   "scripts": {
