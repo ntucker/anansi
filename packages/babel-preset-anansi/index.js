@@ -27,7 +27,7 @@ function buildPreset(context, options = {}, env) {
       [
         require('@babel/plugin-proposal-decorators').default,
         {
-          decoratorsBeforeExport: !options.legacyDecorators,
+          decoratorsBeforeExport: options.legacyDecorators ? undefined : true,
           legacy: options.legacyDecorators,
         },
       ],
