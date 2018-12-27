@@ -26,7 +26,10 @@ function buildPreset(context, options = {}, env) {
       // stage 3, but must come before class-properties
       [
         require('@babel/plugin-proposal-decorators').default,
-        { decoratorsBeforeExport: true, legacy: options.legacyDecorators },
+        {
+          decoratorsBeforeExport: !options.legacyDecorators,
+          legacy: options.legacyDecorators,
+        },
       ],
       //stage 1
       require('@babel/plugin-proposal-export-default-from').default,
