@@ -43,7 +43,10 @@ function buildPreset(context, options = {}, env) {
       ],
       //stage 3
       require('@babel/plugin-syntax-dynamic-import').default,
-      require('@babel/plugin-proposal-private-methods').default,
+      [
+        require('@babel/plugin-proposal-private-methods').default,
+        { loose: options.legacyDecorators },
+      ],
     ],
   };
   switch (options.typing) {
