@@ -3,30 +3,9 @@
   "version": "0.0.8",
   "private": true,
   "scripts": {
-    "start:dev": "bnr -s start-dev",
-    "build": "bnr -s run-build",
-    "analyze": "bnr -s run-analysis"
-  },
-  "betterScripts": {
-    "start-dev": {
-      "command": "webpack-dev-server --config=webpack.config.babel.js --mode=development",
-      "env": {
-        "NODE_PATH": "./src"
-      }
-    },
-    "run-build": {
-      "command": "webpack --config=webpack.config.babel.js --mode=production",
-      "env": {
-        "NODE_PATH": "./src"
-      }
-    },
-    "run-analysis": {
-      "command": "webpack --config=webpack.config.babel.js --mode=production",
-      "env": {
-        "NODE_PATH": "./src",
-        "WEBPACK_ANALYZE": "true"
-      }
-    }
+    "start": "webpack-dev-server --config=webpack.config.js --mode=development",
+    "build": "webpack --config=webpack.config.js --mode=production",
+    "analyze": "WEBPACK_ANALYZE=true webpack --config=webpack.config.js --mode=production"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.8.0",
@@ -34,8 +13,7 @@
     "@anansi/eslint-config": "^0.4.4",
     "@anansi/webpack-config": "^0.2.10",
     "@babel/core": "^7.2.2",
-    "better-npm-run": "^0.1.1",
-    "eslint": "^5.11.0",
+    "eslint": "^5.11.1",
     "flow-bin": "^0.89.0",
     "react-hot-loader": "^4.6.3",
     "webpack": "^4.28.2",

@@ -1,10 +1,11 @@
-import { makeConfig } from '@anansi/webpack-config'
+const { makeConfig } = require('@anansi/webpack-config');
 
-export const options = {
+
+const options = {
   libraryInclude: /node_modules\/(@anansi\/)/,
   libraryExclude: /node_modules(?!\/(@anansi\/))/,
   basePath: 'src',
   buildDir: 'generated_assets/',
-}
+};
 
-export default makeConfig(options)
+module.exports = makeConfig(options);
