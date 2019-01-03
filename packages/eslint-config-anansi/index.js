@@ -1,8 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb',
-    'plugin:flowtype/recommended',
-  ],
+  extends: ['airbnb', 'plugin:flowtype/recommended'],
   env: {
     browser: true,
   },
@@ -45,14 +42,17 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': 'off',
-    'react/react-in-jsx-scope': 'off',  // we implicitly add react import
+    'react/react-in-jsx-scope': 'off', // we implicitly add react import
     // babel support
     'no-unused-expressions': 'off',
-    'babel/no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false,
-      allowTaggedTemplates: false,
-    }],
+    'babel/no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+        allowTaggedTemplates: false,
+      },
+    ],
     'object-curly-spacing': 'off',
     'babel/object-curly-spacing': ['error', 'always'],
     // opinions
@@ -74,10 +74,6 @@ module.exports = {
   },
   plugins: ['flowtype', 'react', 'import', 'babel'],
   settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx'],
-      },
-    },
+    'import/resolver': 'webpack',
   },
-}
+};
