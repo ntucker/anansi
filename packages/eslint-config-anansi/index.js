@@ -45,6 +45,7 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': 'off',
+    'react/react-in-jsx-scope': 'off',  // we implicitly add react import
     // babel support
     'no-unused-expressions': 'off',
     'babel/no-unused-expressions': ['error', {
