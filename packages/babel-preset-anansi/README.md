@@ -98,6 +98,11 @@ Setting this to true will run the minifier [babel-minify](https://github.com/bab
 
 Support legacy decorators instead of the soon-to-be-standard syntax.
 
+### rootPathSuffix: string = './src'
+
+Enables importing from project root with `~/my/path` rather than using relative paths. Override
+this if your project root is in another directory.
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features

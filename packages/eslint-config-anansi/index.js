@@ -74,6 +74,9 @@ module.exports = {
   },
   plugins: ['flowtype', 'react', 'import', 'babel'],
   settings: {
-    'import/resolver': 'webpack',
+    'import/resolver': {
+      webpack: {},
+      'babel-plugin-root-import': { rootPathSuffix: './src' },
+    },
   },
 };

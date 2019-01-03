@@ -12,6 +12,7 @@ function buildPreset(context, options = {}, env) {
     minify: false,
     typing: false,
     legacyDecorators: false,
+    rootPathSuffix: './src',
     ...options,
   };
   const preset = {
@@ -23,7 +24,12 @@ function buildPreset(context, options = {}, env) {
     ],
     plugins: [
       require('babel-plugin-react-require').default,
-      require('babel-plugin-root-import').default,
+      [
+        require('babel-plugin-root-import').default,
+        {
+          rootPathSuffix: options.rootPathSuffix,
+        }
+      ],
       // stage 3, but must come before class-properties
       [
         require('@babel/plugin-proposal-decorators').default,
