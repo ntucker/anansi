@@ -11,7 +11,7 @@ export { ROOT_PATH };
 export default function makeBaseConfig({
   basePath = 'src',
   libraryInclude = always(false),
-  libraryExclude,
+  libraryExclude = /node_modules/,
   buildDir = 'generated_assets/',
 }) {
   return {
