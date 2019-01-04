@@ -103,6 +103,10 @@ Support legacy decorators instead of the soon-to-be-standard syntax.
 Enables importing from project root with `~/my/path` rather than using relative paths. Override
 this if your project root is in another directory.
 
+### reactRequire: bool = true
+
+Automatically add react import if JSX is used.
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features

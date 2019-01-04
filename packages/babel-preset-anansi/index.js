@@ -15,6 +15,7 @@ function buildPreset(context, options = {}) {
     typing: false,
     legacyDecorators: false,
     rootPathSuffix: './src',
+    reactRequire: true,
     ...options,
   };
   const preset = {
@@ -25,7 +26,6 @@ function buildPreset(context, options = {}) {
       ],
     ],
     plugins: [
-      require('babel-plugin-react-require').default,
       [
         require('babel-plugin-root-import').default,
         {
@@ -58,6 +58,9 @@ function buildPreset(context, options = {}) {
       ],
     ],
   };
+  if (options.reactRequire) {
+    preset.plugins.unshift(require('babel-plugin-react-require').default)
+  }
   switch (options.typing) {
     case 'flow':
       preset.presets.push(require('@babel/preset-flow').default);
