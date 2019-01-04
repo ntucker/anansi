@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-found",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
@@ -8,10 +8,10 @@
     "analyze": "WEBPACK_ANALYZE=true webpack --mode=production"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^0.10.0",
+    "@anansi/babel-preset": "^0.10.1",
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.5.0",
-    "@anansi/webpack-config": "^0.2.16-alpha.0",
+    "@anansi/webpack-config": "^0.2.16-alpha.1",
     "@babel/core": "^7.2.2",
     "eslint": "^5.11.1",
     "flow-bin": "^0.89.0",
