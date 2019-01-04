@@ -9,6 +9,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 
 import { getStyleRules, ROOT_PATH } from './base';
+import { setLoaderOptions } from './utils';
 
 
 export default function makeProdConfig(
@@ -20,6 +21,7 @@ export default function makeProdConfig(
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
   config.output.pathinfo = false;
+  setLoaderOptions(config, 'babel-loader', { envName: 'production' });
   config.plugins.push(
     new DuplicatePackageCheckerPlugin(),
     new webpack.IgnorePlugin(/DevTools/),
