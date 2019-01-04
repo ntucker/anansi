@@ -85,7 +85,7 @@ function buildPreset(context, options = {}) {
   if (!options.nodeTarget && env === 'production') {
     preset.plugins.unshift(
       require('babel-plugin-ramda').default,
-      require('babel-plugin-lodash').default,
+      require('babel-plugin-lodash'),
     );
   }
 
