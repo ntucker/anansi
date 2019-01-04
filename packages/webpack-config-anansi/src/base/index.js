@@ -1,5 +1,4 @@
 import path from 'path';
-import { always } from 'ramda';
 import BundleTracker from 'webpack-bundle-tracker';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
@@ -9,10 +8,7 @@ export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
 
 export default function makeBaseConfig({
-  basePath = 'src',
-  libraryInclude = always(false),
-  libraryExclude = /node_modules/,
-  buildDir = 'generated_assets/',
+  basePath, libraryInclude, libraryExclude, buildDir,
 }) {
   return {
     context: ROOT_PATH,

@@ -3,7 +3,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import WebpackStrip from 'webpack-strip';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
-import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
@@ -11,17 +10,13 @@ import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import { getStyleRules, ROOT_PATH } from './base';
 
 
-export default function makeProdConfig(
-  baseConfig,
-  { basePath = 'src', libraryExclude, buildDir = 'generated_assets/' },
-) {
+export default function makeProdConfig(baseConfig, { basePath, libraryExclude, buildDir }) {
   const config = { ...baseConfig };
 
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
   config.output.pathinfo = false;
   config.plugins.push(
-    new DuplicatePackageCheckerPlugin(),
     new webpack.IgnorePlugin(/DevTools/),
     new CleanWebpackPlugin([buildDir], {
       root: ROOT_PATH,

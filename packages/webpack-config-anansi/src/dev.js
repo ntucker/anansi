@@ -1,4 +1,3 @@
-import CircularDependencyPlugin from 'circular-dependency-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
 import webpack from 'webpack';
@@ -9,12 +8,7 @@ import { getStyleRules } from './base';
 
 export default function makeDevConfig(
   baseConfig,
-  {
-    basePath = 'src',
-    libraryExclude,
-    buildDir = 'generated_assets/',
-    htmlOptions = { title: 'Anansi app' },
-  },
+  { basePath, buildDir, htmlOptions = { title: 'Anansi app' } },
 ) {
   const config = { ...baseConfig };
 
@@ -31,12 +25,6 @@ export default function makeDevConfig(
   };
 
   config.plugins = [
-    new CircularDependencyPlugin({
-      // exclude detection of files based on a RegExp
-      exclude: libraryExclude,
-      // add errors to webpack instead of warnings
-      failOnError: false,
-    }),
     new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
