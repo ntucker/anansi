@@ -51,7 +51,7 @@
     "babel-plugin-react-require": "^3.0.1",
     "babel-plugin-root-import": "^6.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
-    "caniuse-lite": "^1.0.30000923",
+    "caniuse-lite": "^1.0.30000927",
     "ric-shim": "^1.0.0",
     "stable": "^0.1.8"
   },
