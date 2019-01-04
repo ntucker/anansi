@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-found",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
@@ -10,8 +10,8 @@
   "devDependencies": {
     "@anansi/babel-preset": "^0.10.1",
     "@anansi/browserslist-config": "^0.0.5",
-    "@anansi/eslint-config": "^0.5.0",
-    "@anansi/webpack-config": "^0.2.16-alpha.1",
+    "@anansi/eslint-config": "^0.5.1",
+    "@anansi/webpack-config": "^0.2.16-alpha.2",
     "@babel/core": "^7.2.2",
     "babel-plugin-root-import": "^6.1.0",
     "eslint": "^5.11.1",
