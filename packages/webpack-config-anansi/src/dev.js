@@ -5,7 +5,6 @@ import webpack from 'webpack';
 import path from 'path';
 
 import { getStyleRules } from './base';
-import { setLoaderOptions } from './utils';
 
 
 export default function makeDevConfig(
@@ -30,7 +29,6 @@ export default function makeDevConfig(
     removeEmptyChunks: false,
     splitChunks: false,
   };
-  setLoaderOptions(config, 'babel-loader', { envName: 'development' });
 
   config.plugins = [
     new CircularDependencyPlugin({

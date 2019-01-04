@@ -9,7 +9,10 @@ export makeStorybookConfigGenerator from './storybook';
 export function makeConfig(options) {
   const baseConfig = makeBaseConfig(options);
   return (env, argv) => {
-    switch (argv?.mode || env?.NODE_ENV) {
+    if (!process.env.NODE_ENV) {
+      process.env.NODE_ENV = argv?.mode;
+    }
+    switch (argv?.mode || process.env.NODE_ENV) {
       case 'development':
         return makeDevConfig(baseConfig, options);
       case 'production':
