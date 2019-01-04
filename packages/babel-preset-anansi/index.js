@@ -1,3 +1,4 @@
+
 /*
 options:
   targets,
@@ -7,7 +8,8 @@ options:
   minify,
   legacyDecorators
 */
-function buildPreset(context, options = {}, env) {
+function buildPreset(context, options = {}) {
+  const env = context.env()
   options = {
     minify: false,
     typing: false,
