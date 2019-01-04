@@ -76,7 +76,7 @@ function buildPreset(context, options = {}) {
     case 'production':
       preset.plugins.unshift(
         require('@babel/plugin-transform-react-inline-elements').default,
-        require('@babel/plugin-transform-react-constant-elements').default,
+        //require('@babel/plugin-transform-react-constant-elements').default, #disabling due to breakage https://github.com/babel/babel/issues/8310
         require('babel-plugin-transform-react-remove-prop-types').default,
       );
       break;
