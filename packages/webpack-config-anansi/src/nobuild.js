@@ -8,7 +8,7 @@ import { getStyleRules } from './base';
 export default function makeNobuildConfig(baseConfig, { basePath }) {
   const config = { ...baseConfig };
   config.output = {
-    path: path.join(ROOT_PATH, 'tmpbuild'),
+    path: '/tmp/anansi-build',
   };
   baseConfig.plugins = [];
   config.mode = 'development';

@@ -2,7 +2,7 @@ import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plu
 import CircularDependencyPlugin from 'circular-dependency-plugin';
 
 
-export default function makeCheckConfig(baseConfig, { libraryExclude }) {
+export default function makeCheckConfig(baseConfig, { libraryExclude }, checkArg) {
   const config = { ...baseConfig };
   // TODO: don't have it actually replace files
   baseConfig.plugins.unshift(
@@ -10,8 +10,7 @@ export default function makeCheckConfig(baseConfig, { libraryExclude }) {
     new CircularDependencyPlugin({
       // exclude detection of files based on a RegExp
       exclude: libraryExclude,
-      // add errors to webpack instead of warnings
-      failOnError: false,
+      failOnError: checkArg === 'nobuild',
     }),
   );
   return config;

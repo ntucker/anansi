@@ -4,7 +4,6 @@ import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import WebpackStrip from 'webpack-strip';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 
 import { getStyleRules, ROOT_PATH } from './base';
@@ -68,14 +67,6 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
     }),
     new OptimizeCSSAssetsPlugin({}),
   ];
-  if (process.env.WEBPACK_ANALYZE === 'true') {
-    config.plugins.push(
-      new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        generateStatsFile: false,
-      }),
-    );
-  }
   config.module.rules.push({
     test: /\.jsx?$/,
     use: WebpackStrip.loader('debug', 'logger', 'console.log', 'console.warn', 'console.error'),

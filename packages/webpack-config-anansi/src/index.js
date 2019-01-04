@@ -1,4 +1,5 @@
 import { always } from 'ramda';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import makeBaseConfig from './base';
 import makeDevConfig from './dev';
@@ -43,7 +44,15 @@ export function makeConfig(options) {
       }
     }
     if (argv?.check) {
-      config = makeCheckConfig(config, options);
+      config = makeCheckConfig(config, options, argv?.check);
+    }
+    if (argv?.analyze || process.env.WEBPACK_ANALYZE === 'true') {
+      config.plugins.push(
+        new BundleAnalyzerPlugin({
+          analyzerMode: 'static',
+          generateStatsFile: false,
+        }),
+      );
     }
     return config;
   };

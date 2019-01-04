@@ -1,4 +1,5 @@
 # @anansi/webpack-config
+
 A webpack configuration for fast development and production ready optimizations
 
 ## Usage
@@ -11,36 +12,36 @@ const { makeConfig } = require('@anansi/webpack-config');
 const options = {
   basePath: 'src',
   buildDir: 'generated_assets/',
-}
+};
 
-module.exports = makeConfig(options)
+module.exports = makeConfig(options);
 ```
 
 /package.json
+
 ```json
 {
   "scripts": {
     "start:dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
-    "analyze": "WEBPACK_ANALYZE=true webpack --mode=production"
+    "analyze": "webpack --mode=production --analyze",
+    "pkgcheck": "webpack --check=nobuild"
   }
 }
 ```
 
-## Env customization
+## CMD line arguments
 
-### WEBPACK_ANALYZE
+### analyze
 
-Set `WEBPACK_ANALYZE` to "true" to build a static [treemap visualization of your packages](https://www.npmjs.com/package/webpack-bundle-analyzer).
+If set, will build a static [treemap visualization of your packages](https://www.npmjs.com/package/webpack-bundle-analyzer). Highly recommended to run in production mode to get accurate results.
 
-/package.json
-```json
-{
-  "scripts": {
-    "analyze": "WEBPACK_ANALYZE=true webpack --mode=production"
-  }
-}
-```
+### check
+
+If set will run package checks to check for duplicates or ciruclar dependencies. Set equal to 'nobuild' for a standalone run where build output is not needed.
+
+Examples:
+`webpack --mode=production --check` or `webpack --check=nobuild`
 
 ## Options
 
@@ -57,6 +58,7 @@ libraryExclude defaults to `/node_modules/`, which will exclude libraries from e
 and potentially incorrect processing from babel loaders.
 
 To match all libraries in namespace `@myspacespace`:
+
 ```
 const myConfig = makeConfig({
   libraryInclude: /node_modules\/(@mynamespace\/)/,
@@ -70,6 +72,7 @@ Marks the base directory inside the package for javascript source files. This
 is used to make it easy to import from the root.
 
 Example:
+
 ```
 -package.json
 -/src
@@ -78,10 +81,13 @@ Example:
   -/utils
     -network.js
 ```
+
 Then you can do
+
 ```javascript
-import fetch from 'network'
+import fetch from 'network';
 ```
+
 from any file.
 
 ### buildDir = 'generated_assets/'
@@ -90,11 +96,11 @@ Output directory for production build files
 
 ## File Support
 
-* SCSS with CSS modules
-  * Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
-  * Put global styles within `${basePath}/style`
-  * Other styles will be treated as css modules
-* Web workers
-* All font formats
-* Any media files
-* And of course javascript
+- SCSS with CSS modules
+  - Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
+  - Put global styles within `${basePath}/style`
+  - Other styles will be treated as css modules
+- Web workers
+- All font formats
+- Any media files
+- And of course javascript
