@@ -3,26 +3,26 @@ A webpack configuration for fast development and production ready optimizations
 
 ## Usage
 
-/webpack.config.babel.js
+/webpack.config.js
 
 ```javascript
-import { makeConfig } from '@anansi/webpack-config'
+const { makeConfig } = require('@anansi/webpack-config');
 
-export const options = {
+const options = {
   basePath: 'src',
   buildDir: 'generated_assets/',
 }
 
-export default makeConfig(options)
+module.exports = makeConfig(options)
 ```
 
 /package.json
 ```json
 {
   "scripts": {
-    "start:dev": "webpack-dev-server --config=webpack.config.babel.js --mode=development",
-    "build": "webpack --config=webpack.config.babel.js --mode=production",
-    "analyze": "WEBPACK_ANALYZE=true webpack --config=webpack.config.babel.js --mode=production"
+    "start:dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production",
+    "analyze": "WEBPACK_ANALYZE=true webpack --mode=production"
   }
 }
 ```
@@ -37,7 +37,7 @@ Set `WEBPACK_ANALYZE` to "true" to build a static [treemap visualization of your
 ```json
 {
   "scripts": {
-    "analyze": "WEBPACK_ANALYZE=true webpack --config=webpack.config.babel.js --mode=production"
+    "analyze": "WEBPACK_ANALYZE=true webpack --mode=production"
   }
 }
 ```
@@ -52,6 +52,9 @@ Regex to match libraries to include in the normal build process. This is useful 
 locally developed modules or `yarn workspaces`. Not this should point to the installed
 location, rather than the actual target. Note you'll need both the positive and negative
 regexes.
+
+libraryExclude defaults to `/node_modules/`, which will exclude libraries from expensive
+and potentially incorrect processing from babel loaders.
 
 To match all libraries in namespace `@myspacespace`:
 ```
