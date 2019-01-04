@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
+    "babel-plugin-root-import": "^5.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "eslint-import-resolver-webpack": "^0.10.1",
@@ -36,6 +37,7 @@
     "webpack": "^4.27.1"
   },
   "peerDependencies": {
+    "babel-plugin-root-import": "^5.1.0 || ^6.1.0",
     "eslint": "^5.5.0"
   }
 }
