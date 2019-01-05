@@ -4,11 +4,10 @@ import CircularDependencyPlugin from 'circular-dependency-plugin';
 
 export default function makeCheckConfig(baseConfig, { libraryExclude }, checkArg) {
   const config = { ...baseConfig };
-  // TODO: don't have it actually replace files
   baseConfig.plugins.unshift(
     new DuplicatePackageCheckerPlugin(),
     new CircularDependencyPlugin({
-      // exclude detection of files based on a RegExp
+      // searching external libraries for circles is pointless
       exclude: libraryExclude,
       failOnError: checkArg === 'nobuild',
     }),
