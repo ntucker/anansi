@@ -92,7 +92,7 @@ function buildPreset(context, options = {}) {
     preset.presets.unshift(require('babel-minify'));
   }
 
-  /*  block is at the end so they are unshifted to the start  */
+  /*  block is at the end so they are unshifted to the start of plugins  */
   switch (options.typing) {
     case 'flow':
       // using the plugin so we can place after decorators and class properties
@@ -105,7 +105,6 @@ function buildPreset(context, options = {}) {
       preset.presets.unshift(require('@babel/preset-typescript').default);
       break;
   }
-  // must be at top. no more unshifts should exist below
   preset.plugins.unshift(
     // stage 3, but must come before class-properties
     [
