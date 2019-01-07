@@ -104,17 +104,20 @@ function buildPreset(context, options = {}) {
       }
       break;
     case 'typescript':
-      preset.presets.unshift(require('@babel/preset-typescript').default);
+      preset.presets.push(require('@babel/preset-typescript').default);
       break;
+  }
+  const decoratorsOptions = {
+    legacy: options.legacyDecorators,
+  };
+  if (!options.legacyDecorators) {
+    decoratorsOptions.decoratorsBeforeExport = true;
   }
   preset.plugins.unshift(
     // stage 3, but must come before class-properties
     [
       require('@babel/plugin-proposal-decorators').default,
-      {
-        decoratorsBeforeExport: options.legacyDecorators ? undefined : true,
-        legacy: options.legacyDecorators,
-      },
+      decoratorsOptions,
     ],
     // stage 2 but must come before flow
     [
