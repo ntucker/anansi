@@ -7,21 +7,18 @@ import makeProdConfig from './prod';
 import makeCheckConfig from './check';
 import makeNobuildConfig from './nobuild';
 
-
 export * from './base';
 export makeStorybookConfigGenerator from './storybook';
 
 export function makeConfig(options) {
   // eslint-disable-next-line no-param-reassign
-  options = Object.assign(
-    {
-      basePath: 'src',
-      libraryInclude: always(false),
-      libraryExclude: /node_modules/,
-      buildDir: 'generated_assets/',
-    },
-    options,
-  );
+  options = {
+    basePath: 'src',
+    libraryInclude: always(false),
+    libraryExclude: /node_modules/,
+    buildDir: 'generated_assets/',
+    ...options,
+  };
   const baseConfig = makeBaseConfig(options);
   return (env, argv) => {
     if (!process.env.NODE_ENV) {
