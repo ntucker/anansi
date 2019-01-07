@@ -21,7 +21,7 @@ function buildPreset(context, options = {}) {
     presets: [
       [
         require('@babel/preset-react').default,
-        { development: env !== 'production' },
+        { development: env !== 'production', useBuiltIns: true },
       ],
     ],
     plugins: [
@@ -96,9 +96,11 @@ function buildPreset(context, options = {}) {
   switch (options.typing) {
     case 'flow':
       // using the plugin so we can place after decorators and class properties
-      preset.plugins.unshift(require('@babel/plugin-transform-flow-strip-types').default)
+      preset.plugins.unshift(
+        require('@babel/plugin-transform-flow-strip-types').default,
+      );
       if (env === 'development') {
-        preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'))
+        preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
       }
       break;
     case 'typescript':
@@ -119,7 +121,7 @@ function buildPreset(context, options = {}) {
       require('@babel/plugin-proposal-class-properties').default,
       { loose: options.legacyDecorators },
     ],
-  )
+  );
   /*         end block        */
   return preset;
 }
