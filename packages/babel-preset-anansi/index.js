@@ -99,9 +99,6 @@ function buildPreset(context, options = {}) {
       preset.plugins.unshift(
         require('@babel/plugin-transform-flow-strip-types').default,
       );
-      if (env === 'development') {
-        preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
-      }
       break;
     case 'typescript':
       preset.presets.push(require('@babel/preset-typescript').default);
@@ -125,6 +122,10 @@ function buildPreset(context, options = {}) {
       { loose: options.legacyDecorators },
     ],
   );
+  // this must come before class properties the prop types are transformed
+  if (options.tpying === 'flow' && env === 'development') {
+    preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
+  }
   /*         end block        */
   return preset;
 }
