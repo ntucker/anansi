@@ -1,3 +1,3 @@
 # 🕷 Anansi
 
-A javascript framework for perfectionists with deadlines
+Production ready, developer friendly. Opinionated yet extensible.
