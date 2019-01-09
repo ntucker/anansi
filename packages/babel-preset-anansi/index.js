@@ -123,7 +123,7 @@ function buildPreset(context, options = {}) {
     ],
   );
   // this must come before class properties the prop types are transformed
-  if (options.tpying === 'flow' && env === 'development') {
+  if (options.typing === 'flow' && env === 'development') {
     preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
   }
   /*         end block        */
