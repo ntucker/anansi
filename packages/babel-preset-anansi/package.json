@@ -55,11 +55,16 @@
     "ric-shim": "^1.0.0",
     "stable": "^0.1.8"
   },
+  "devDependencies": {
+    "@babel/core": "^7.2.2"
+  },
   "peerDependencies": {
     "@babel/core": "^7.2.0",
     "react-hot-loader": "^4.6.1"
   },
-  "devDependencies": {
-    "@babel/core": "^7.2.2"
+  "peerDependenciesMeta": {
+    "react-hot-loader": {
+      "optional": true
+    }
   }
 }
