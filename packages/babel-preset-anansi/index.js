@@ -58,7 +58,7 @@ function buildPreset(context, options = {}) {
       break;
     case 'development':
       const hotLoaderPlugin = require('react-hot-loader/babel');
-      if (hotloaderPlugin) preset.plugins.push(hotLoaderPlugin);
+      if (hotLoaderPlugin) preset.plugins.push(hotLoaderPlugin);
       break;
   }
 
