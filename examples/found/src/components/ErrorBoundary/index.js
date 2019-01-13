@@ -11,7 +11,7 @@ function handleRefresh() {
   window.location.reload(true)
 }
 
-const RedBox = lazy(() => import('redbox-react'))
+const RedBox = lazy(() => import(/* webpackChunkName: 'redbox' */'redbox-react'))
 
 export default class ErrorBoundary extends React.Component {
   static contextType = ErrorLoggerContext
