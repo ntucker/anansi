@@ -34,14 +34,15 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
   config.optimization = {
     splitChunks: {
       chunks: 'all',
+      maxInitialRequests: 10,
       cacheGroups: {
         react: {
-          test: /[\\/]node_modules[\\/](react|react-dom|schedule|object-assign|loose-envify)[\\/]/,
+          test: /[\\/]node_modules[\\/](react|react-dom|scheduler|object-assign|loose-envify)[\\/]/,
           name: 'react',
           chunks: 'all',
         },
         polyfill: {
-          test: /[\\/]node_modules[\\/](core-js|regenerator-runtime|ric-shim)[\\/]/,
+          test: /[\\/]node_modules[\\/](core-js|regenerator-runtime|ric-shim|babel-runtime)[\\/].*/,
           name: 'polyfill',
           chunks: 'all',
         },
@@ -55,7 +56,7 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
     },
     // https://webpack.js.org/configuration/optimization/#optimization-runtimechunk
     runtimeChunk: {
-      name: 'runtime',
+      name: 'webpack-runtime',
     },
   };
   config.optimization.minimizer = [

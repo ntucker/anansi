@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (config.optimization) {
     config.optimization.splitChunks.cacheGroups.router = {
-      test: /[\\/]node_modules[\\/](found|react-redux|redux|farce)[\\/]/,
+      test: /[\\/]node_modules[\\/](found|react-redux|redux|farce|path-to-regexp|query-string|decode-uri-component)[\\/]/,
       name: 'router',
       chunks: 'all',
     };

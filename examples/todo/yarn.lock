@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@anansi/babel-preset@^0.10.7":
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.10.7.tgz#f38ba4e55dd5fd790822cdf114a33ceceb798211"
-  integrity sha512-pahd1foBU0zPiyFE4hWQ029GG93pz6cQaOwgD1HvNf6557iR4H4doVPmk2TX0t15VR1ZOl1hk8dLyrDyqF+lbQ==
+"@anansi/babel-preset@^0.10.8":
+  version "0.10.8"
+  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.10.8.tgz#ad4258d7c2d88d81b8f2a22a55a3a1b9be27856f"
+  integrity sha512-Ta1ct3L6j/A1Uv8vEAZqPP/NYQzKs0OiNGLx5T/BiFXH8MggXHInqgV9Q0N6KEQ5EBkIQ4ceFqxJ03SmU3fsEQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.2.0"
     "@babel/plugin-proposal-decorators" "^7.2.0"
@@ -58,10 +58,10 @@
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-react "^7.11.1"
 
-"@anansi/webpack-config@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@anansi/webpack-config/-/webpack-config-0.3.1.tgz#63fe810d7697586f1dc01e073e0435f4404e50ad"
-  integrity sha512-4vc9+qKKDex3a73UE9mw2/I90fVa2vKlwrgSgssJ4rLvXQESSE+5Hss0db7dh0A6g/NK1oX5+0ex6mfh98H3Ig==
+"@anansi/webpack-config@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@anansi/webpack-config/-/webpack-config-0.3.2.tgz#d48000dc2aed6d4f8221a8a7a856ad13fe4345d6"
+  integrity sha512-bA4qUr4t/fC/WuMLq2FmVzwUFMEWVeAQw5NJtTP1jbgtP0Oxm79gsZ/Jo/OS+WKIJPxFeTXQtX2UaaPuE/5koQ==
   dependencies:
     autoprefixer "^9.4.5"
     babel-loader "^8.0.5"
