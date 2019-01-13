@@ -1,0 +1,13 @@
+$gutter-width: 12px !default;
+
+.error-boundary {
+  text-align: center;
+
+  img {
+    margin-bottom: $gutter-width * 2;
+  }
+
+  header {
+    margin-bottom: $gutter-width * 4;
+  }
+}
