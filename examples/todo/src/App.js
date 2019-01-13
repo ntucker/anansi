@@ -1,10 +1,11 @@
-import React, { Suspense } from 'react'
-import { withRouter } from "react-router";
+import React, { Suspense } from 'react';
+import { withRouter } from 'react-router';
+import Nav from 'navigation/Nav';
+import ErrorBoundary from 'components/ErrorBoundary';
 
-import Nav from 'navigation/Nav'
-import ErrorBoundary from 'components/ErrorBoundary'
-import Routes from './routes'
+import Routes from './routes';
 import 'style/main.scss';
+
 
 const App = ({ location }) => (
   <div>
@@ -16,6 +17,6 @@ const App = ({ location }) => (
       </div>
     </ErrorBoundary>
   </div>
-)
+);
 
-export default withRouter(App)
+export default withRouter(App);
