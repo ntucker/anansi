@@ -84,7 +84,7 @@ function buildPreset(context, options = {}) {
       require('@babel/preset-env').default,
       {
         targets: options.targets,
-        useBuiltIns: 'entry',
+        useBuiltIns: 'usage',
         modules: options.modules || false,
       },
     ]);
