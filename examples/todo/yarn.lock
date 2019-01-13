@@ -58,10 +58,10 @@
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-react "^7.11.1"
 
-"@anansi/webpack-config@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@anansi/webpack-config/-/webpack-config-0.3.2.tgz#d48000dc2aed6d4f8221a8a7a856ad13fe4345d6"
-  integrity sha512-bA4qUr4t/fC/WuMLq2FmVzwUFMEWVeAQw5NJtTP1jbgtP0Oxm79gsZ/Jo/OS+WKIJPxFeTXQtX2UaaPuE/5koQ==
+"@anansi/webpack-config@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@anansi/webpack-config/-/webpack-config-0.3.3.tgz#ab857d2956c77038d72677cd275e1fbe964166bd"
+  integrity sha512-a1u9jeXBi3D9vIwLoX9dLp/Fu2uXI/2HEAZU1nG2cclqbei3OVBDnc6C0jEfNzFTFXmdWLt1k5AZzKEgMp/HjQ==
   dependencies:
     autoprefixer "^9.4.5"
     babel-loader "^8.0.5"
