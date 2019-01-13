@@ -67,6 +67,12 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
     }),
     new OptimizeCSSAssetsPlugin({}),
   ];
+  config.performance = {
+    maxEntrypointSize: 300000,
+    assetFilter(assetFilename) {
+      return !/\.(map|LICENSE)$/.test(assetFilename);
+    },
+  };
   config.module.rules.push({
     test: /\.jsx?$/,
     use: WebpackStrip.loader('debug', 'logger', 'console.log', 'console.warn', 'console.error'),
