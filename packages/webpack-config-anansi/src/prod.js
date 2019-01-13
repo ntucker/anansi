@@ -40,6 +40,11 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
           name: 'react',
           chunks: 'all',
         },
+        polyfill: {
+          test: /[\\/]node_modules[\\/](core-js|regenerator-runtime|ric-shim)[\\/]/,
+          name: 'polyfill',
+          chunks: 'all',
+        },
         styles: {
           test: /style\/.*\.scss$/,
           name: 'style',
