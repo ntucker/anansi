@@ -40,30 +40,6 @@ Or configure options
 }
 ```
 
-### Shims
-
-This preset comes with some polyfills (babel + requestIdleCallback) for full functionality. Be sure
-to include the register at the entry point
-
-#### webpack config entry
-
-```js
-{
-  entry: {
-    Vendor: [
-      '@anansi/babel-preset/polyfill',
-      // ...
-    ]
-  }
-}
-```
-
-#### mocha.opts
-
-```
---require @anansi/babel-preset/registerBabel
-```
-
 ## Options
 
 ### typing: 'flow' | 'typescript' | false = false

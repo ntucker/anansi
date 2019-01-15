@@ -12,7 +12,7 @@
   ],
   "files": [
     "index.js",
-    "registerBabel.js"
+    "loadPolyfills.js"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
@@ -52,8 +52,10 @@
     "babel-plugin-root-import": "^6.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
     "caniuse-lite": "^1.0.30000927",
+    "intl": "^1.2.5",
     "ric-shim": "^1.0.0",
-    "stable": "^0.1.8"
+    "stable": "^0.1.8",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2"
