@@ -1,0 +1,45 @@
+{
+  "name": "@anansi/polyfill",
+  "version": "0.1.0",
+  "description": "Feature detection triggered dynamic polyfills",
+  "sideEffects": false,
+  "keywords": [
+    "anansi",
+    "polyfill"
+  ],
+  "author": "Nathaniel Tucker",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/polyfill",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ntucker/anansi.git"
+  },
+  "main": "dist/polyfill.cjs.js",
+  "module": "dist/polyfill.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rimraf dist",
+    "prepare": "yarn run clean && yarn run build",
+    "lint": "eslint src/*.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "intl": "^1.2.5",
+    "ric-shim": "^1.0.0",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@anansi/babel-preset": "^0.10.8",
+    "@anansi/eslint-config": "^0.5.1",
+    "@babel/core": "^7.2.2",
+    "eslint": "^5.12.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^4.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ntucker/anansi/issues"
+  }
+}

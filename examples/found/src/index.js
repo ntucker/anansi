@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, makeRouteConfig, hotRouteConfig } from 'found';
-import loadPolyfills from '@anansi/babel-preset/loadPolyfills';
+import loadPolyfills from '@anansi/polyfill';
 
 import ErrorBoundary from 'components/ErrorBoundary';
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
