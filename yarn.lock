@@ -2,15 +2,6 @@
 # yarn lockfile v1
 
 
-"@anansi/polyfill@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@anansi/polyfill/-/polyfill-0.0.1.tgz#7a45be521836c3da13eb6e64c683978e6e6ca91e"
-  integrity sha512-cWDMe4eGnwOdegLVi2Bg8kEDABGQLaYzbhgGm+O7FMYbNMItcvMGu2R1hsl4sAHJuoZDUomf5COrzkEID27Dqw==
-  dependencies:
-    intl "^1.2.5"
-    ric-shim "^1.0.0"
-    whatwg-fetch "^3.0.0"
-
 "@babel/cli@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.2.0.tgz#505ed8d351daee6a88918da02c046c18c8c5a24f"
@@ -746,7 +737,7 @@
     "@babel/helper-regex" "^7.0.0"
     regexpu-core "^4.1.3"
 
-"@babel/polyfill@^7.2.5":
+"@babel/polyfill@^7.2.0":
   version "7.2.5"
   resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.2.5.tgz#6c54b964f71ad27edddc567d065e57e87ed7fa7d"
   integrity sha512-8Y/t3MWThtMLYr0YNC/Q76tqN1w30+b0uQMeFUYauG2UGTR19zyUtFrAzT23zNtBxPp+LbE5E/nwV/q/r3y6ug==

@@ -36,10 +36,28 @@ want to avoid loading it. Do this by passing an array of features you want to in
 loadPolyfills(['intl', 'ric']); // fetch won't be loaded
 ```
 
-### locale: string = 'en'
+## Supporting locales
 
-This loads the locale data needed. Choose the default locale for your site.
+To support locales other than english, you'll need to import them as well. They weren't included
+to help with build times for sites that don't need it.
+
+### Support spanish and german:
 
 ```javascript
-loadPolyfills('all', 'es'); // loads spanish locale
+for (const locale of ['es', 'de']) {
+  import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`);
+}
+```
+
+### Detect locale of browser:
+
+```javascript
+import localeFinder from 'browser-locale';
+
+async function init() {
+  await loadPolyfills();
+  const locale = localeFinder();
+  await import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`);
+  ReactDOM.createRoot(document.body).render(<MyApp />);
+}
 ```

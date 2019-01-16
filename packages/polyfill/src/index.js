@@ -1,4 +1,4 @@
-export default function loadPolyfills(include = 'all', locale = 'en') {
+export default function loadPolyfills(include = 'all') {
   const loaders = {
     intl: () => {
       if (
@@ -12,7 +12,7 @@ export default function loadPolyfills(include = 'all', locale = 'en') {
               return global.Intl;
             },
           ),
-          import(/* webpackChunkName: "locale-[request]" */ `intl/locale-data/jsonp/${locale}.js`),
+          import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en.js`),
         ]).then(args => args[0]);
       }
     },
