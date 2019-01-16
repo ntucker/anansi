@@ -2,8 +2,8 @@ module.exports = function loadPolyfills(include = 'all', locale = 'en') {
   const loaders = {
     intl: async () => {
       if (
-        !global.Intl ||
-        typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
+        !global.Intl
+        || typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
       ) {
         global.Intl = await import(/* webpackChunkName: "intl-polyfill" */ 'intl');
         await import(/* webpackChunkName: "locale-[request]" */ `intl/locale-data/jsonp/${locale}.js`);
@@ -13,14 +13,14 @@ module.exports = function loadPolyfills(include = 'all', locale = 'en') {
     ric: async () => {
       if (!global.requestIdleCallback) {
         global.requestIdleCallback = await import(/* webpackChunkName: "ric-polyfill" */ 'ric-shim');
-        global.cancelIdleCallback =
-          global.requestIdleCallback.cancelIdleCallback;
+        global.cancelIdleCallback = global.requestIdleCallback.cancelIdleCallback;
         return global.requestIdleCallback;
       }
     },
     fetch: async () => {
       if (window && !window.fetch) {
         await import(/* webpackChunkName: "fetch-polyfill" */ 'whatwg-fetch');
+        return window.fetch;
       }
     },
   };

@@ -35,6 +35,7 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
     splitChunks: {
       chunks: 'all',
       maxInitialRequests: 10,
+      maxAsyncRequests: 20,
       cacheGroups: {
         react: {
           test: /[\\/]node_modules[\\/](react|react-dom|scheduler|object-assign|loose-envify)[\\/]/,

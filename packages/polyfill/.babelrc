@@ -1,0 +1,4 @@
+{
+  "presets": ["@anansi/babel-preset"],
+  "plugins": ["dynamic-import-node"]
+}
