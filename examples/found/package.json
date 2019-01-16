@@ -23,7 +23,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "@anansi/polyfill": "^0.0.1",
+    "@anansi/polyfill": "^0.1.1",
     "@hot-loader/react-dom": "16.8.0-alpha.0",
     "classnames": "^2.2.6",
     "found": "^0.3.18",
