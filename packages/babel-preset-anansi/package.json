@@ -9,7 +9,8 @@
   "keywords": [
     "babel",
     "react",
-    "typescript"
+    "typescript",
+    "react-hot-loader"
   ],
   "files": [
     "index.js"
