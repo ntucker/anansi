@@ -8,11 +8,11 @@
   },
   "keywords": [
     "babel",
-    "react"
+    "react",
+    "typescript"
   ],
   "files": [
-    "index.js",
-    "loadPolyfills.js"
+    "index.js"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
@@ -38,11 +38,9 @@
     "@babel/plugin-transform-object-assign": "^7.2.0",
     "@babel/plugin-transform-react-constant-elements": "^7.2.0",
     "@babel/plugin-transform-react-inline-elements": "^7.2.0",
-    "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
-    "@babel/register": "^7.0.0",
     "babel-minify": "^0.5.0",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-flow-react-proptypes": "^24.1.2",
@@ -51,11 +49,8 @@
     "babel-plugin-react-require": "^3.0.1",
     "babel-plugin-root-import": "^6.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
-    "caniuse-lite": "^1.0.30000927",
-    "intl": "^1.2.5",
-    "ric-shim": "^1.0.0",
-    "stable": "^0.1.8",
-    "whatwg-fetch": "^3.0.0"
+    "caniuse-lite": "^1.0.30000929",
+    "stable": "^0.1.8"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2"
