@@ -104,3 +104,9 @@ are included:
 
 ### Other
 * [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
+
+### Polyfills
+
+Usage of features that require polyfills is automatically detected and included in many cases. However,
+some features (`Intl`, `requestIdleCallback` and `fetch`) are not. We recommend using
+[@anansi/polyfill](https://www.npmjs.com/package/@anansi/polyfill) to cover those cases.
