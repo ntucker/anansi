@@ -26,8 +26,7 @@
     "@hot-loader/react-dom": "16.8.0-alpha.0",
     "classnames": "^2.2.6",
     "found": "^0.3.18",
-    "react": "16.8.0-alpha.0",
-    "react-cache": "^2.0.0-alpha.1",
+    "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.0",
     "redbox-react": "^1.6.0"
   },
