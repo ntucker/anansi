@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "lerna": "^3.10.5",
-    "lerna-changelog": "^0.8.2"
+    "lerna-changelog": "^0.8.2",
+    "webpack-cli": "^3.2.1"
   }
 }
