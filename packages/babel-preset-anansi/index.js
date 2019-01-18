@@ -8,6 +8,7 @@ options:
   legacyDecorators
 */
 function buildPreset(context, options = {}) {
+  console.log('preset')
   const env = context.env();
   options = {
     minify: false,
@@ -17,6 +18,7 @@ function buildPreset(context, options = {}) {
     reactRequire: true,
     ...options,
   };
+  console.log('ty', options.typing)
   const preset = {
     presets: [
       [
@@ -57,8 +59,9 @@ function buildPreset(context, options = {}) {
       );
       break;
     case 'development':
-      const hotLoaderPlugin = require('react-hot-loader/babel');
-      if (hotLoaderPlugin) preset.plugins.push(hotLoaderPlugin);
+      try {
+        preset.plugins.push(require('react-hot-loader/babel'));
+      } catch(e) {}
       break;
   }
 
