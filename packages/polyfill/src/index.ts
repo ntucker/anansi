@@ -6,15 +6,14 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
         !global.Intl ||
         typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
       ) {
-      return Promise.all([
-        import(/* webpackChunkName: "intl-polyfill" */ 'intl').then(
+      return import(/* webpackChunkName: "intl-polyfill" */ 'intl').then(
           ({ default: Intl }) => {
             global.Intl = Intl;
             return global.Intl;
           },
-        ),
-        import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`),
-      ]).then(args => args[0]);
+        ).then(Intl => {
+          return import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`).then(() => Intl)
+        })
       }
     },
     ric: () => {
