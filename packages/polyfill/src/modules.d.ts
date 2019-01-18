@@ -15,10 +15,8 @@ interface RIC {
   cancelIdleCallback: CIC;
 }
 
-declare module 'intl/locale-data/jsonp/en' {
-}
-declare module 'whatwg-fetch' {
-}
+declare module 'intl/locale-data/jsonp/en' {}
+declare module 'whatwg-fetch' {}
 declare module 'ric-shim' {
   export function cancelIdleCallback(handle: RequestIdleCallbackHandle): void;
   function requestIdleCallback(
@@ -30,10 +28,9 @@ declare module 'ric-shim' {
   }
   export default requestIdleCallback;
 }
-declare module NodeJS  {
+declare module NodeJS {
   interface Global {
     requestIdleCallback: RIC;
     cancelIdleCallback: CIC;
   }
 }
-

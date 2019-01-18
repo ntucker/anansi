@@ -2,20 +2,22 @@ import ric from 'ric-shim';
 
 type LoaderKeys = 'intl' | 'ric' | 'fetch';
 export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
-  const loaders:{ [k in LoaderKeys]: () => Promise<unknown> | undefined} = {
+  const loaders: { [k in LoaderKeys]: () => Promise<unknown> | undefined } = {
     intl: () => {
       if (
         !global.Intl ||
         typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
       ) {
-      return import(/* webpackChunkName: "intl-polyfill" */ 'intl').then(
-          ({ default: Intl }) => {
+        return import(/* webpackChunkName: "intl-polyfill" */ 'intl')
+          .then(({ default: Intl }) => {
             global.Intl = Intl;
             return global.Intl;
-          },
-        ).then(Intl => {
-          return import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`).then(() => Intl)
-        })
+          })
+          .then(Intl => {
+            return import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`).then(
+              () => Intl,
+            );
+          });
       }
     },
     ric: () => {
