@@ -14,19 +14,25 @@
     "type": "git",
     "url": "git+ssh://git@github.com/ntucker/anansi.git"
   },
-  "main": "dist/polyfill.cjs.js",
-  "module": "dist/polyfill.esm.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build:js": "rollup -c",
     "dev": "rollup -c -w",
     "clean": "rimraf dist",
     "prepare": "yarn run clean && yarn run build",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "@types/intl": "^1.2.0",
     "intl": "^1.2.5",
     "ric-shim": "^1.0.0",
     "whatwg-fetch": "^3.0.0"
@@ -34,10 +40,13 @@
   "devDependencies": {
     "@anansi/babel-preset": "^0.11.1-alpha.0",
     "@anansi/eslint-config": "^0.5.1",
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "eslint": "^5.12.0",
-    "rollup": "^0.65.2",
-    "rollup-plugin-babel": "^4.3.0"
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "typescript": "^3.2.2"
   },
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"

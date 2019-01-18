@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import commonjs from 'rollup-plugin-commonjs';
 
 import pkg from './package.json';
 
@@ -13,16 +14,19 @@ export default [
   // builds from a single configuration where possible, using
   // the `targets` option which can specify `dest` and `format`)
   {
-    entry: 'src/index.js',
+    input: 'src/index.ts',
     external: dependencies,
-    targets: [
-      { dest: pkg.main, format: 'cjs' },
-      { dest: pkg.module, format: 'es' },
+    output: [
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
     ],
     plugins: [
       babel({
         exclude: ['node_modules/**'],
+        rootMode: "upward",
+        extensions: ['.js', '.ts']
       }),
+      commonjs({extensions: ['.js', '.ts']}),
     ],
   },
 ];
