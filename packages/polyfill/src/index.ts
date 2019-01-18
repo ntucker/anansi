@@ -1,3 +1,5 @@
+import ric from 'ric-shim';
+
 type LoaderKeys = 'intl' | 'ric' | 'fetch';
 export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
   const loaders:{ [k in LoaderKeys]: () => Promise<unknown> | undefined} = {
@@ -18,13 +20,9 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
     },
     ric: () => {
       if (!global.requestIdleCallback) {
-        return import(/* webpackChunkName: "ric-polyfill" */ 'ric-shim').then(
-          ({ default: ric }) => {
-            global.requestIdleCallback = ric;
-            global.cancelIdleCallback = ric.cancelIdleCallback;
-            return ric;
-          },
-        );
+        global.requestIdleCallback = ric;
+        global.cancelIdleCallback = ric.cancelIdleCallback;
+        return Promise.resolve(ric);
       }
     },
     fetch: () => {
