@@ -55,13 +55,12 @@ for (const locale of ['es', 'de']) {
 import localeFinder from 'browser-locale';
 
 async function init() {
-  const polyPromises = [loadPolyfills()];
+  await loadPolyfills();
   if (!global.Intl ||
     typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function') {
     const locale = localeFinder();
-    polyPromises.push(import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`));
+    await import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`);
   }
-  await polyPromises;
   ReactDOM.createRoot(document.body).render(<MyApp />);
 }
 ```
