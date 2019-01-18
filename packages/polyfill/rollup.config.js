@@ -5,6 +5,8 @@ import pkg from './package.json';
 
 const dependencies = Object.keys(require('./package.json').dependencies);
 
+const extensions = ['.js', '.ts', '.mjs'];
+
 process.env.NODE_ENV = 'production';
 
 export default [
@@ -18,15 +20,15 @@ export default [
     external: dependencies,
     output: [
       { file: pkg.main, format: 'cjs' },
-      { file: pkg.module, format: 'es' },
+      //{ file: pkg.module, format: 'es' },
     ],
     plugins: [
       babel({
         exclude: ['node_modules/**'],
-        rootMode: "upward",
-        extensions: ['.js', '.ts']
+        rootMode: 'upward',
+        extensions,
       }),
-      commonjs({extensions: ['.js', '.ts']}),
+      commonjs({ extensions }),
     ],
   },
 ];
