@@ -6,6 +6,7 @@
   "scripts": {
     "build:lib": "babel src --out-dir lib --source-maps inline",
     "build": "npm run build:lib",
+    "dev": "yarn run build:lib -w",
     "clean": "rimraf lib",
     "prepare": "npm run clean && npm run build",
     "lint": "eslint src/*.js"

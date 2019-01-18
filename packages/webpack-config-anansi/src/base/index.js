@@ -13,7 +13,7 @@ export default function makeBaseConfig({
   return {
     context: ROOT_PATH,
     entry: {
-      App: [`./${basePath}/index.js`],
+      App: [`./${basePath}`],
     },
     output: {
       path: path.join(ROOT_PATH, buildDir),
@@ -87,7 +87,7 @@ export default function makeBaseConfig({
     // include the loaders installed by this library
     resolveLoader: {
       modules: ['node_modules', LIBRARY_MODULES_PATH],
-      extensions: ['.js', '.json'],
+      extensions: ['.js', '.ts', '.tsx', '.json'],
       mainFields: ['loader', 'main'],
     },
     devtool: '#source-map',
