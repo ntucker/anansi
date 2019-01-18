@@ -8,7 +8,6 @@ options:
   legacyDecorators
 */
 function buildPreset(context, options = {}) {
-  console.log('preset')
   const env = context.env();
   options = {
     minify: false,
@@ -18,7 +17,6 @@ function buildPreset(context, options = {}) {
     reactRequire: true,
     ...options,
   };
-  console.log('ty', options.typing)
   const preset = {
     presets: [
       [
