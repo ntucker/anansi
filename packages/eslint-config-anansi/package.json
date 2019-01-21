@@ -1,6 +1,6 @@
 {
   "name": "@anansi/eslint-config",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Provides default eslint for anansi projects",
   "main": "index.js",
   "scripts": {
