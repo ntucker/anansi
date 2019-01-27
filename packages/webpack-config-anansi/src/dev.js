@@ -5,10 +5,15 @@ import path from 'path';
 
 import { getStyleRules } from './base';
 
-
 export default function makeDevConfig(
   baseConfig,
-  { basePath, buildDir, htmlOptions = { title: 'Anansi app' } },
+  {
+    basePath,
+    libraryInclude,
+    libraryExclude,
+    buildDir,
+    htmlOptions = { title: 'Anansi app' },
+  },
 ) {
   const config = { ...baseConfig };
 
@@ -16,7 +21,8 @@ export default function makeDevConfig(
   config.output.pathinfo = true;
   config.output.filename = '[name]-[hash].js';
   config.output.chunkFilename = '[name]-[hash].chunk.js';
-  config.output.devtoolModuleFilenameTemplate = info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
+  config.output.devtoolModuleFilenameTemplate = info =>
+    path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.watch = true;
   config.optimization = {
     removeAvailableModules: false,
@@ -29,6 +35,7 @@ export default function makeDevConfig(
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.WatchIgnorePlugin([/s?css\.d\.ts$/]),
     ...config.plugins,
   ];
   config.devServer = {
@@ -56,6 +63,8 @@ export default function makeDevConfig(
 
   const styleRules = getStyleRules({
     basePath,
+    libraryInclude,
+    libraryExclude,
     cssLoaderOptions: {
       localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
     },

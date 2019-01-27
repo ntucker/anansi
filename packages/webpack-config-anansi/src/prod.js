@@ -8,8 +8,10 @@ import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 
 import { getStyleRules, ROOT_PATH } from './base';
 
-
-export default function makeProdConfig(baseConfig, { basePath, libraryExclude, buildDir }) {
+export default function makeProdConfig(
+  baseConfig,
+  { basePath, libraryInclude, libraryExclude, buildDir },
+) {
   const config = { ...baseConfig };
 
   config.mode = 'production';
@@ -82,16 +84,28 @@ export default function makeProdConfig(baseConfig, { basePath, libraryExclude, b
   };
   config.module.rules.push({
     test: /\.jsx?$/,
-    use: WebpackStrip.loader('debug', 'logger', 'console.log', 'console.warn', 'console.error'),
+    use: WebpackStrip.loader(
+      'debug',
+      'logger',
+      'console.log',
+      'console.warn',
+      'console.error',
+    ),
     exclude: libraryExclude,
   });
 
   const styleRules = getStyleRules({
     basePath,
-  }).map(rule => ({
-    ...rule,
-    use: [MiniCssExtractPlugin.loader, ...rule.use.slice(1)],
-  }));
+    libraryInclude,
+    libraryExclude,
+  }).map(rule =>
+    rule.enforce === 'pre'
+      ? rule
+      : {
+          ...rule,
+          use: [MiniCssExtractPlugin.loader, ...rule.use.slice(1)],
+        },
+  );
   config.module.rules = [...config.module.rules, ...styleRules];
 
   return config;

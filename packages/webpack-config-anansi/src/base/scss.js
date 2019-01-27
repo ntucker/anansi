@@ -4,7 +4,6 @@ import { always } from 'ramda';
 
 import { ROOT_PATH } from './constants';
 
-
 const getCSSLoaders = ({ basePath }) => [
   { loader: 'style-loader' },
   {
@@ -37,10 +36,24 @@ export default function getStyleRules({
   return [
     // css modules (local styles)
     {
+      enforce: 'pre',
       test: /\.scss$/,
       include: [absoluteBasePath, libraryInclude],
       exclude: [/style\//g, libraryExclude],
-      use: cssLoaders.map((loader) => {
+      use: [
+        {
+          loader: 'typed-css-modules-loader',
+          options: {
+            noEmit: true,
+          },
+        },
+      ],
+    },
+    {
+      test: /\.scss$/,
+      include: [absoluteBasePath, libraryInclude],
+      exclude: [/style\//g, libraryExclude],
+      use: cssLoaders.map(loader => {
         if (loader.loader === 'css-loader') {
           return {
             ...loader,

@@ -67,6 +67,7 @@
     "svg-react-loader": "^0.4.6",
     "svgo": "^1.1.1",
     "svgo-loader": "^2.2.0",
+    "typed-css-modules-loader": "^0.0.17",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
     "webpack-bundle-analyzer": "^3.0.3",
