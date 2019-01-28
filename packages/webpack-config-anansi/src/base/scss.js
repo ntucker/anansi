@@ -36,20 +36,6 @@ export default function getStyleRules({
   return [
     // css modules (local styles)
     {
-      enforce: 'pre',
-      test: /\.scss$/,
-      include: [absoluteBasePath, libraryInclude],
-      exclude: [/style\//g, libraryExclude],
-      use: [
-        {
-          loader: 'typed-css-modules-loader',
-          options: {
-            noEmit: true,
-          },
-        },
-      ],
-    },
-    {
       test: /\.scss$/,
       include: [absoluteBasePath, libraryInclude],
       exclude: [/style\//g, libraryExclude],
