@@ -1,4 +1,5 @@
 import autoprefixer from 'autoprefixer';
+import cssPresetEnv from 'postcss-preset-env';
 import path from 'path';
 import { always } from 'ramda';
 
@@ -13,7 +14,7 @@ const getCSSLoaders = ({ basePath }) => [
   {
     loader: 'postcss-loader',
     options: {
-      plugins: [autoprefixer()],
+      plugins: [autoprefixer(), cssPresetEnv()],
     },
   },
   { loader: 'sass-loader', options: { outputStyle: 'expanded' } },
@@ -64,7 +65,20 @@ export default function getStyleRules({
     {
       test: /\.css$/,
       include: [/node_modules/],
-      use: cssLoaders.slice(0, -2),
+      use: cssLoaders.slice(0, -2).map(loader => {
+        if (loader.loader === 'css-loader') {
+          return {
+            ...loader,
+            options: {
+              ...loader.options,
+              modules: 'local',
+              camelCase: true,
+              ...cssLoaderOptions,
+            },
+          };
+        }
+        return loader;
+      }),
     },
   ];
 }

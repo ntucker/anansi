@@ -5,6 +5,7 @@ import WebpackStrip from 'webpack-strip';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
+import cssnano from 'cssnano';
 
 import { getStyleRules, ROOT_PATH } from './base';
 
@@ -103,7 +104,21 @@ export default function makeProdConfig(
       ? rule
       : {
           ...rule,
-          use: [MiniCssExtractPlugin.loader, ...rule.use.slice(1)],
+          use: [
+            MiniCssExtractPlugin.loader,
+            ...rule.use.slice(1).map(use =>
+              // this map just adds cssnano to postcss plugins
+              use.loader === 'postcss-loader'
+                ? {
+                    ...use,
+                    options: {
+                      ...use.options,
+                      plugins: [...use.options.plugins, cssnano()],
+                    },
+                  }
+                : use,
+            ),
+          ],
         },
   );
   config.module.rules = [...config.module.rules, ...styleRules];
