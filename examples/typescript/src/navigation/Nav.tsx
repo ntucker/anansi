@@ -7,7 +7,7 @@ export default () => (
   <AppBar position="static">
     <Tabs>
       <Tab label="Home" to="/" component={Link} />
-      <Tab label="People" to="/people" component={Link} />
+      <Tab label="Post" to="/post" component={Link} />
       <Tab label="Slow" to="/slow" component={Link} />
       <Tab label="Error" to="/error" component={Link} />
     </Tabs>

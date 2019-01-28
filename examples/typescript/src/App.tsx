@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { withRouter, RouteProps } from 'react-router';
 import Nav from 'navigation/Nav';
 import ErrorBoundary from 'components/ErrorBoundary';
+import Paper from '@material-ui/core/Paper';
 
 import Routes from './routes';
 import 'style/main.scss';
@@ -12,9 +13,9 @@ const App = ({ location }: RouteProps) => (
     <h1>My thing</h1>
     <Nav />
     <ErrorBoundary key={location && location.key}>
-      <div className="content">
+      <Paper elevation={1} className="content">
         <Routes />
-      </div>
+      </Paper>
     </ErrorBoundary>
   </div>
 );
