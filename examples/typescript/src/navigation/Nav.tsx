@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 export default () => (
-  <div>
-    <Link to="/">Home</Link>
-    <Link to="/people">People</Link>
-    <Link to="/error">Error</Link>
-  </div>
-)
+  <AppBar position="static">
+    <Tabs>
+      <Tab label="Home" to="/" component={Link} />
+      <Tab label="People" to="/people" component={Link} />
+      <Tab label="Slow" to="/slow" component={Link} />
+      <Tab label="Error" to="/error" component={Link} />
+    </Tabs>
+  </AppBar>
+);
