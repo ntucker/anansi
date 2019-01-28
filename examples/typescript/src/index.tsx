@@ -3,13 +3,14 @@ import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
 import loadPolyfills from '@anansi/polyfill';
+import { RouteChildrenProps } from 'react-router';
 
 import ErrorBoundary from 'components/ErrorBoundary';
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 
 import App from './App';
 
-function shouldUpdateScroll(prevRouterProps, { history: { action } }) {
+function shouldUpdateScroll(prevRouterProps: RouteChildrenProps, { history: { action } }: RouteChildrenProps) {
   return action !== 'REPLACE';
 }
 const history = createBrowserHistory();

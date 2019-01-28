@@ -1,4 +1,4 @@
-import { lazy } from 'react'
+import React, { lazy } from 'react'
 import classNames from 'classnames'
 import ErrorLoggerContext from 'lib/ErrorLoggerContext'
 
@@ -13,15 +13,23 @@ function handleRefresh() {
 
 const RedBox = lazy(() => import(/* webpackChunkName: 'redbox' */'redbox-react'))
 
-export default class ErrorBoundary extends React.Component {
+interface Props {
+  children: React.ReactChild
+}
+interface State {
+  error: Error | null,
+  errorInfo: object | null,
+}
+
+export default class ErrorBoundary extends React.Component<Props, State> {
   static contextType = ErrorLoggerContext
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: Error | null) {
     return { error }
   }
 
-  state = { error: null, errorInfo: null }
+  state: State = { error: null, errorInfo: null }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error | null, errorInfo: object) {
     this.setState({ errorInfo })
     this.context(
       error,
