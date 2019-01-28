@@ -17,7 +17,7 @@ export default function PostMaster({ match }: RouteChildrenProps<{ id: string }>
     selectors.Single,
     post && { id: post.userId },
   );
-  if (!post) return <div>loading</div>;
+  if (!post || !author) return <div>loading</div>;
   return (
     <>
       <Post post={post} author={author} />

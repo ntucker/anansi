@@ -16,6 +16,7 @@ export default () => (
     <Route exact path="/" component={lazyPage('Home')} />
     <Route exact path="/post" component={lazyPage('Post')} />
     <Route path="/post/:id" component={lazyPage('Post')} />
+    <Route path="/user/:id" component={lazyPage('User')} />
     <Route path="/slow" component={lazyPage('Slow')} />
     <Route path="/error" component={lazyPage('Error')} />
   </Suspense>
