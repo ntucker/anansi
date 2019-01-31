@@ -10581,6 +10581,11 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+reselect@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
+
 reserved-words@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/reserved-words/-/reserved-words-0.1.2.tgz#00a0940f98cd501aeaaac316411d9adc52b31ab1"
@@ -10633,10 +10638,10 @@ resolve@^1.1.6, resolve@^1.3.2, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, 
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.1.1.tgz#c1451a1b735ae48d979bbf0d77112ec85f404ae3"
-  integrity sha512-4UzkJy6/L6PkhWe5Y9gIHATtO+SOJpJO2Iplz7Wk9WkRL2CzuTCMPwySteTxxKfGXmQ2WeaztPniQzpvMPtzTw==
+rest-hooks@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.3.0.tgz#c28b1fe54c963a59d192022cbdb0ba6b5f3cd51e"
+  integrity sha512-e9gF10aaKUd59Iztf7jspIV9eSzygO+ilETC+kEVAtmYdULk+LDfDyp9CMFFOkho+zew2k34XWqZlCMJPnGCfg==
   dependencies:
     "@types/react" "^16.7.20"
     "@types/superagent" "^3.8.6"
@@ -10646,6 +10651,7 @@ rest-hooks@^0.1.1:
     normalizr "^3.3.0"
     qs "^6.6.0"
     regenerator-runtime "^0.13.1"
+    reselect "^4.0.0"
     superagent "^4.1.0"
 
 restore-cursor@^2.0.0:

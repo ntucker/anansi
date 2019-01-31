@@ -1,6 +1,6 @@
-import { ModelResource } from 'rest-hooks';
+import { Resource } from 'rest-hooks';
 
-export class PostResource extends ModelResource {
+export class PostResource extends Resource {
   readonly id: number | null = null;
   readonly userId: number | null = null;
   readonly title: string = '';
@@ -11,7 +11,7 @@ export class PostResource extends ModelResource {
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/posts/';
 }
-export class CommentResource extends ModelResource {
+export class CommentResource extends Resource {
   readonly postId: number = 0;
   readonly id: number | null = null;
   readonly name: string = '';
@@ -24,7 +24,7 @@ export class CommentResource extends ModelResource {
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
 
-interface Address {
+export interface Address {
   street: string;
   suite: string;
   city: string;
@@ -34,7 +34,7 @@ interface Address {
     lng: string;
   };
 }
-export class UserResource extends ModelResource {
+export class UserResource extends Resource {
   readonly id: number | null = null;
   readonly name: string = '';
   readonly username: string = '';

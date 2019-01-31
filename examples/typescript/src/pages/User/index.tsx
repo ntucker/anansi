@@ -1,5 +1,5 @@
-import { UserResource } from 'data/models';
-import { hooks, selectors } from 'rest-hooks';
+import { UserResource, Address } from 'data/models';
+import { hooks } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Typography from '@material-ui/core/Typography';
 import Table from '@material-ui/core/Table';
@@ -11,12 +11,30 @@ import Paper from '@material-ui/core/Paper';
 function capFirst(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
+function AddressTable({ address }: { address: Address }) {
+  return (
+    <Paper>
+      <Table>
+        <TableBody>
+          {Object.entries(address).map(([key, value]: [string, any]) => (
+            <TableRow key={key}>
+              <TableCell component="th" scope="row">
+                {capFirst(key)}
+              </TableCell>
+              <TableCell align="right">{value.toString()}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </Paper>
+  );
+}
 export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   let id = 1;
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = hooks.useResource(UserResource, selectors.Single, { id });
+  const author = hooks.useResource(UserResource.singleSelect(), { id });
   if (!author) return null;
   return (
     <>
@@ -30,22 +48,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
         <br />
         <a href={`https://${author.website}`}>{author.website}</a>
       </Typography>
-      <Paper>
-        <Table>
-          <TableBody>
-            {Object.entries(author.address).map(
-              ([key, value]: [string, any]) => (
-                <TableRow key={key}>
-                  <TableCell component="th" scope="row">
-                    {capFirst(key)}
-                  </TableCell>
-                  <TableCell align="right">{value.toString()}</TableCell>
-                </TableRow>
-              ),
-            )}
-          </TableBody>
-        </Table>
-      </Paper>
+      {author.address ? <AddressTable address={author.address} /> : null}
     </>
   );
 }

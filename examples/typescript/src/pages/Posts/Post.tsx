@@ -4,14 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import styles from './Post.scss';
+import { hooks } from 'rest-hooks';
 
-export default function Post({
-  post,
-  author,
-}: {
-  post: PostResource;
-  author: UserResource;
-}) {
+export default function Post({ post }: { post: PostResource }) {
+  const author = hooks.useResource(UserResource.singleSelect(), {
+    id: post.userId,
+  });
   return (
     <>
       <Grid

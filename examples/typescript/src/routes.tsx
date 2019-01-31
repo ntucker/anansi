@@ -14,7 +14,7 @@ export default () => (
     maxDuration={500}
   >
     <Route exact path="/" component={lazyPage('Home')} />
-    <Route exact path="/post" component={lazyPage('Post')} />
+    <Route exact path="/posts" component={lazyPage('Posts')} />
     <Route path="/post/:id" component={lazyPage('Post')} />
     <Route path="/user/:id" component={lazyPage('User')} />
     <Route path="/slow" component={lazyPage('Slow')} />
