@@ -10638,10 +10638,10 @@ resolve@^1.1.6, resolve@^1.3.2, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, 
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.3.0.tgz#c28b1fe54c963a59d192022cbdb0ba6b5f3cd51e"
-  integrity sha512-e9gF10aaKUd59Iztf7jspIV9eSzygO+ilETC+kEVAtmYdULk+LDfDyp9CMFFOkho+zew2k34XWqZlCMJPnGCfg==
+rest-hooks@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.3.1.tgz#c92ddb8562ed122ff8c3cfa4132da6d8644795ba"
+  integrity sha512-+N+I25HYaegem+AHbrwxX0ZFqODWjno2451NKoJKh2ivxKXUILQOThd6SyIBTXFs774j7DBvmWLFj5N7PIkfQg==
   dependencies:
     "@types/react" "^16.7.20"
     "@types/superagent" "^3.8.6"
