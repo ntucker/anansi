@@ -27,15 +27,15 @@ async function init() {
   await loadPolyfills();
   ReactDOM.createRoot(document.body).render(
     <ErrorLoggerContext.Provider value={() => console.error('what what')}>
-      <ErrorBoundary>
-        <RestProvider>
-          <Router history={history}>
-            <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
-              <App />
-            </ScrollContext>
-          </Router>
-        </RestProvider>
-      </ErrorBoundary>
+        <ErrorBoundary>
+          <RestProvider>
+            <Router history={history}>
+              <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
+                <App />
+              </ScrollContext>
+            </Router>
+          </RestProvider>
+        </ErrorBoundary>
     </ErrorLoggerContext.Provider>,
   );
 }
