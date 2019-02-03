@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
+import { map } from 'ramda';
 
 import { getStyleRules } from './base';
 
@@ -29,6 +30,9 @@ export default function makeDevConfig(
     removeEmptyChunks: false,
     splitChunks: false,
   };
+
+  // hot reloading sometimes messed up polyfills, so just place this at the start
+  config.entry = map(entry => ['@babel/polyfill'].concat(entry), config.entry);
 
   config.plugins = [
     new ErrorOverlayPlugin(),
