@@ -1698,6 +1698,14 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/react@^16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.1.tgz#b431b104ecc6febda170b718caa9f50be66a6750"
+  integrity sha512-tD1ETKJcuhANOejRc/p7OgQ16DKnbGi0M3LccelKlPnUCDp2a5koVxZFoRN9HN+A+m84HB5VGN7I+r3nNhS3PA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/superagent@^3.8.6":
   version "3.8.6"
   resolved "https://registry.yarnpkg.com/@types/superagent/-/superagent-3.8.6.tgz#3676d8920d8979ea4ca57513f27995064f92dc43"
@@ -9921,6 +9929,16 @@ react-dom@16.8.0-alpha.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.0-alpha.0"
+
+react-dom@16.8.0-alpha.1:
+  version "16.8.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.0-alpha.1.tgz#dab73b8354ba2e498e3127d18e29d4546cea889e"
+  integrity sha512-tZCUM8BpnwUHJmLnUWP9c3vVZxnCqYotj7s4tx7umojG6BKv745KIBtuPTzt0EI0q50GMLEpmT/CPQ8iA61TwQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.13.0-alpha.1"
 
 react-error-overlay@^5.1.2:
   version "5.1.2"

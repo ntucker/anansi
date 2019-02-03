@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import { hot } from 'react-hot-loader';
 import { Route } from 'react-router-dom';
 import lazyPage from 'components/lazyPage';
 import CircularProgress from '@material-ui/core/CircularProgress';
