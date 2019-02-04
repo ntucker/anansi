@@ -34,8 +34,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = hooks.useResource(UserResource.singleSelect(), { id });
-  if (!author) return null;
+  const author = hooks.useResource(UserResource.singleRequest(), { id });
   return (
     <>
       <Typography variant="h5" component="h3" style={{ flex: '1 1 50%' }}>

@@ -1,4 +1,4 @@
-import { PostResource, UserResource } from 'data/models';
+import { PostResource, UserResource, CommentResource } from 'data/models';
 import { hooks } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Post from './Post';
 
 export default function PostList() {
-  const posts = hooks.useResource(PostResource.listSelect(), {});
+  const [posts, comments] = hooks.useResource([PostResource.listRequest(), {}], [CommentResource.listRequest(), {}]);
   return (
     <>
     {

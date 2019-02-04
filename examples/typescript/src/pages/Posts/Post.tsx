@@ -7,7 +7,7 @@ import styles from './Post.scss';
 import { hooks } from 'rest-hooks';
 
 export default function Post({ post }: { post: PostResource }) {
-  const author = hooks.useResource(UserResource.singleSelect(), {
+  const author = hooks.useResource(UserResource.singleRequest(), {
     id: post.userId,
   });
   return (
