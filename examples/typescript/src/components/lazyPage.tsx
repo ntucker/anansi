@@ -1,5 +1,9 @@
-import React, { lazy } from 'react'
+import React, { lazy } from 'react';
+import { memoize } from 'lodash';
 
-export default function lazyPage(pageName: string) {
-  return lazy(() => import(/* webpackChunkName: '[request]' */ `pages/${pageName}`))
+function lazyPage(pageName: string) {
+  return lazy(() =>
+    import(/* webpackChunkName: '[request]' */ `pages/${pageName}`),
+  );
 }
+export default memoize(lazyPage);

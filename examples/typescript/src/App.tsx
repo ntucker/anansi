@@ -19,4 +19,4 @@ const App = ({ location }: RouteComponentProps) => (
   </div>
 );
 
-export default hot(withRouter(App));
+export default hot(withRouter(React.memo(App)));

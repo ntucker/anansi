@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import lazyPage from 'components/lazyPage';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-export default () => (
+export default React.memo(() => (
   <Suspense
     fallback={
       <div className="center">
@@ -23,4 +23,4 @@ export default () => (
       <Route path="/error" component={lazyPage('Error')} />
     </Switch>
   </Suspense>
-);
+));

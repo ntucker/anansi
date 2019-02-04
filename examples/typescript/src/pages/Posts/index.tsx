@@ -1,4 +1,5 @@
 import { PostResource, UserResource, CommentResource } from 'data/models';
+import React, { useEffect } from 'react';
 import { hooks } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
@@ -9,7 +10,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import styles from './index.scss';
 
-export default function PostList() {
+function PostList() {
   const [posts, comments] = hooks.useResource(
     [PostResource.listRequest(), {}],
     [CommentResource.listRequest(), {}],
@@ -28,3 +29,4 @@ export default function PostList() {
     </>
   );
 }
+export default React.memo(PostList)
