@@ -37,7 +37,7 @@
     "react-router-dom": "^4.4.0-beta.6",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "0.5.1"
+    "rest-hooks": "0.5.2"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"

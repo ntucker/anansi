@@ -2,6 +2,7 @@ import { PostResource } from 'data/models';
 import { hooks } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import PostForm from './PostForm';
+import Post from './Post';
 
 export default function PostEdit({
   match,
@@ -14,9 +15,13 @@ export default function PostEdit({
   const post = hooks.useResource(PostResource.singleRequest(), { id });
 
   return (
-    <PostForm
-      initialValues={post}
-      onSubmit={(data: object) => update(data, { id })}
-    />
+    <>
+      <PostForm
+        initialValues={post}
+        onSubmit={(data: object) => update(data, { id })}
+      />
+      <br />
+      <Post post={post} />
+    </>
   );
 }

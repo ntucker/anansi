@@ -10510,10 +10510,10 @@ resolve@^1.1.6, resolve@^1.3.2, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, 
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.5.1.tgz#b1e8d1d593dd72bbb8eb65525b435786af855dc7"
-  integrity sha512-pCMNx2RBMnkrOqqp88wqP6asGIaTG2F8PRgs8x9iWVG7gIgzDirfM49jt4sfNcJ3VRgG2axS+RqTPGFN/53Ngg==
+rest-hooks@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-0.5.2.tgz#ea7770e3c2e27cd16ccbc09620092598effaeeb1"
+  integrity sha512-GExKwR6mgcQVZxvoB3Qti3BNi/dkD161uP3PH+bhIgu7eguMFl9+VE1jdB8loQyvQ6CiFCFeZ7JgCWB8LYxh3g==
   dependencies:
     "@types/react" "^16.8.1"
     "@types/superagent" "^3.8.6"
