@@ -4,22 +4,23 @@ import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
-/*import Post from './Post';
+import Post from './Post';
 
-export default function PostMaster({ match }: RouteChildrenProps<{ id: string }>) {
+export default function PostMaster({
+  match,
+}: RouteChildrenProps<{ id: string }>) {
   let id = 1;
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const post = hooks.useResource(PostResource.singleSelect(), { id });
+  const post = hooks.useResource(PostResource.singleRequest(), { id });
   const author = hooks.useResource(
-    UserResource.singleSelect(),
+    UserResource.singleRequest(),
     post && { id: post.userId },
   );
-  if (!post || !author) return <div>loading</div>;
   return (
     <>
-      <Post post={post} author={author} />
+      <Post post={post} />
       <Grid container direction="row" justify="flex-end" alignItems="baseline">
         {id > 1 ? (
           <Button
@@ -43,4 +44,3 @@ export default function PostMaster({ match }: RouteChildrenProps<{ id: string }>
     </>
   );
 }
-*/

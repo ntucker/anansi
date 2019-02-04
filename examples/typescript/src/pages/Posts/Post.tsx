@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import styles from './Post.scss';
 import { hooks } from 'rest-hooks';
+import IconButton from '@material-ui/core/IconButton';
+import EditIcon from '@material-ui/icons/Edit';
 
 export default function Post({ post }: { post: PostResource }) {
   const author = hooks.useResource(UserResource.singleRequest(), {
@@ -23,7 +25,12 @@ export default function Post({ post }: { post: PostResource }) {
         </Link>
         <div className={styles.body}>
           <Typography variant="h5" component="h3">
-            {post.title}
+            <Link to={`/post/${post.id}`}>{post.title}</Link>
+            <Link to={`/post/${post.id}/edit`}>
+              <IconButton color="secondary" aria-label="Edit">
+                <EditIcon />
+              </IconButton>
+            </Link>
           </Typography>
           <Typography component="p">{post.body}</Typography>
         </div>
