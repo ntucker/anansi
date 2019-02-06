@@ -80,8 +80,12 @@
   },
   "peerDependencies": {
     "@hot-loader/react-dom": "^16.0.0",
-    "react-hot-loader": "^4.6.5",
     "webpack": "^4.27.1",
     "webpack-dev-server": "^3.1.10"
+  },
+  "peerDependenciesMeta": {
+    "@hot-loader/react-dom": {
+      "optional": true
+    }
   }
 }

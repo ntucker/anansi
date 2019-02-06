@@ -63,7 +63,11 @@ export default function makeDevConfig(
   if (!config.resolve.alias) {
     config.resolve.alias = {};
   }
-  config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
+  try {
+    require('@hot-loader/react-dom');
+    config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
+  } catch(e) {}
+
 
   const styleRules = getStyleRules({
     basePath,
