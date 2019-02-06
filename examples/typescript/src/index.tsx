@@ -25,7 +25,7 @@ const history = createBrowserHistory();
 
 async function init() {
   await loadPolyfills();
-  ReactDOM.createRoot(document.body).render(
+  ReactDOM.unstable_createRoot(document.body).render(
     <ErrorLoggerContext.Provider value={() => console.error('what what')}>
         <ErrorBoundary>
           <RestProvider>

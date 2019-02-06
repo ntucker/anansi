@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^0.3.4",
-    "@hot-loader/react-dom": "16.8.0",
     "@material-ui/core": "^3.9.1",
     "@material-ui/icons": "^3.0.2",
     "@types/lodash": "^4.14.120",
@@ -39,7 +38,7 @@
     "react-router-dom": "^4.4.0-beta.6",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "0.5.2"
+    "rest-hooks": "0.5.5"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
