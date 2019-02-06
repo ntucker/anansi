@@ -58,6 +58,7 @@ module.exports = {
     'babel/object-curly-spacing': ['error', 'always'],
     // opinions
     // additional rules
+    'react-hooks/rules-of-hooks': 'error',
     'import/order': [
       'warn',
       {
@@ -73,7 +74,7 @@ module.exports = {
     'import/named': 'error',
     'import/newline-after-import': ['error', { count: 2 }],
   },
-  plugins: ['flowtype', 'react', 'import', 'babel'],
+  plugins: ['flowtype', 'react', 'import', 'babel', 'react-hooks'],
   settings: {
     'import/resolver': {
       webpack: {},
