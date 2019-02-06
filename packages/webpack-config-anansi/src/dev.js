@@ -1,4 +1,5 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
 import { map } from 'ramda';
@@ -34,6 +35,7 @@ export default function makeDevConfig(
   config.entry = map(entry => ['@babel/polyfill'].concat(entry), config.entry);
 
   config.plugins = [
+    new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
