@@ -25,13 +25,13 @@ export class CommentResource extends Resource {
 }
 
 export interface Address {
-  street: string;
-  suite: string;
-  city: string;
-  zipcode: string;
-  geo: {
-    lat: string;
-    lng: string;
+  readonly street: string;
+  readonly suite: string;
+  readonly city: string;
+  readonly zipcode: string;
+  readonly geo: {
+    readonly lat: string;
+    readonly lng: string;
   };
 }
 export class UserResource extends Resource {
