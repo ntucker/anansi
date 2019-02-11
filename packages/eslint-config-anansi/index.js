@@ -33,7 +33,7 @@ module.exports = {
     'one-var': ['error', { initialized: 'never' }],
     'one-var-declaration-per-line': ['error', 'initializations'],
     'no-named-as-default': 'off', // doesn't handle relative imports properly
-    'lines-between-class-members': ['warning', 'always', { exceptAfterSingleLine: true }],
+    'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
     'react/jsx-no-bind': [
       'error',
       {
