@@ -28,18 +28,18 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^0.3.5",
-    "@hot-loader/react-dom": "16.8.1",
+    "@hot-loader/react-dom": "16.8.2",
     "@material-ui/core": "^3.9.1",
     "@material-ui/icons": "^3.0.2",
     "@types/lodash": "^4.14.120",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
-    "react": "16.8.1",
-    "react-dom": "16.8.1",
+    "react": "16.8.2",
+    "react-dom": "16.8.2",
     "react-router-dom": "^4.4.0-beta.6",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "0.6.3"
+    "rest-hooks": "ssh://git@github.com:coinbase/rest-hooks.git"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
