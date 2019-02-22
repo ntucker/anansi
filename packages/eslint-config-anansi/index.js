@@ -59,6 +59,7 @@ module.exports = {
     // opinions
     // additional rules
     'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warning',
     'import/order': [
       'warn',
       {
