@@ -25,18 +25,19 @@ const history = createBrowserHistory();
 const manager = new NetworkManager();
 async function init() {
   await loadPolyfills();
-  ReactDOM.unstable_createRoot(document.body).render(
+  ReactDOM.render(
     <ErrorLoggerContext.Provider value={() => console.error('what what')}>
-        <ErrorBoundary>
-          <RestProvider manager={manager}>
-            <Router history={history}>
-              <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
-                <App />
-              </ScrollContext>
-            </Router>
-          </RestProvider>
-        </ErrorBoundary>
+      <ErrorBoundary>
+        <RestProvider manager={manager}>
+          <Router history={history}>
+            <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
+              <App />
+            </ScrollContext>
+          </Router>
+        </RestProvider>
+      </ErrorBoundary>
     </ErrorLoggerContext.Provider>,
+    document.body,
   );
 }
 init();

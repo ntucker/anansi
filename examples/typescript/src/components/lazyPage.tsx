@@ -15,7 +15,6 @@ function lazyPage(pageName: string) {
           <CircularProgress />
         </div>
       }
-      maxDuration={500}
     >
       <ErrorBoundary key={props.location && props.location.key}>
         <Page {...props} />

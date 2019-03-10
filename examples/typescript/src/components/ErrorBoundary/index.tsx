@@ -3,7 +3,6 @@ import classNames from 'classnames';
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-//import { settings } from '../../settings'
 import styles from './index.scss';
 import BigAlertIcon from './big-alert.svg';
 
@@ -15,11 +14,15 @@ const RedBox = lazy(() =>
   import(/* webpackChunkName: 'redbox' */ 'redbox-react'),
 );
 
+interface NetworkError extends Error {
+  status: number;
+}
+
 interface Props {
   children: React.ReactChild;
 }
 interface State {
-  error: Error | null;
+  error: Error | NetworkError | null;
   errorInfo: object | null;
 }
 
@@ -39,25 +42,26 @@ export default class ErrorBoundary extends React.Component<Props, State> {
   }
 
   render() {
-    if (!this.state.error) {
+    const { error } = this.state;
+
+    if (!error) {
       return this.props.children;
     }
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production' && !('status' in error)) {
       return (
         <div className="center">
-          <Suspense
-            fallback={
-              <div className="center">
-                <CircularProgress />
-              </div>
-            }
-            maxDuration={200}
-          >
-            <h1>{this.state.error?.toString()}</h1>
-            <RedBox error={this.state.error} />
+          <Suspense fallback={<CircularProgress />}>
+            <h1>{error.toString()}</h1>
+            <RedBox error={error} />
           </Suspense>
         </div>
       );
+    }
+    let mainMessage: string;
+    if ('status' in error) {
+      mainMessage = `${error.status}`;
+    } else {
+      mainMessage = 'Uh oh. Something went wrong.';
     }
     return (
       <div className={classNames('center', 'up', styles.errorBoundary)}>
@@ -67,7 +71,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
           alt="alert"
         />
         <header>
-          <h1>Uh oh. Something went wrong.</h1>
+          <h1>{mainMessage}</h1>
           <h3>Please refresh the page.</h3>
         </header>
         <button className="btn btn-primary" onClick={handleRefresh}>
