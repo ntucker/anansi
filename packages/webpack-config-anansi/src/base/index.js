@@ -81,7 +81,7 @@ export default function makeBaseConfig({
         path.join(ROOT_PATH, basePath, 'style'),
         'node_modules',
       ],
-      extensions: ['.js', '.ts', '.tsx', '.scss'],
+      extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
       symlinks: false,
     },
     // include the loaders installed by this library

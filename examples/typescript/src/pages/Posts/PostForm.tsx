@@ -1,5 +1,5 @@
 import TextField from '@material-ui/core/TextField';
-import { PostResource } from 'data/models';
+import { PostResource } from 'data/resources';
 import Button from '@material-ui/core/Button';
 import useForm from './useForm';
 

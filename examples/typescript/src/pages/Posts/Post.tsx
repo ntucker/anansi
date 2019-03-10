@@ -1,15 +1,15 @@
-import { PostResource, UserResource } from 'data/models';
+import { PostResource, UserResource } from 'data/resources';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import styles from './Post.scss';
-import { hooks } from 'rest-hooks';
+import { useResource } from 'rest-hooks';
 import IconButton from '@material-ui/core/IconButton';
 import EditIcon from '@material-ui/icons/Edit';
 
 export default function Post({ post }: { post: PostResource }) {
-  const author = hooks.useResource(UserResource.singleRequest(), {
+  const author = useResource(UserResource.singleRequest(), {
     id: post.userId,
   });
   return (

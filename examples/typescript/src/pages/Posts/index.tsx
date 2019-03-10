@@ -1,6 +1,6 @@
-import { PostResource, UserResource, CommentResource } from 'data/models';
+import { PostResource, UserResource, CommentResource } from 'data/resources';
 import React, { useEffect } from 'react';
-import { hooks } from 'rest-hooks';
+import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -11,7 +11,7 @@ import AddIcon from '@material-ui/icons/Add';
 import styles from './index.scss';
 
 function PostList() {
-  const [posts, comments] = hooks.useResource(
+  const [posts, comments] = useResource(
     [PostResource.listRequest(), {}],
     [CommentResource.listRequest(), {}],
   );

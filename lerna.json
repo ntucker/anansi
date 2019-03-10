@@ -11,7 +11,8 @@
       "tag: fix": ":bug: Bug Fix",
       "tag: enhance": ":nail_care: Enhancement",
       "tag: docs": ":memo: Documentation",
-      "tag: internal": ":house: Internal"
+      "tag: internal": ":house: Internal",
+      "tag: pkg": ":package: Package"
     },
     "cacheDir": ".changelog"
   }

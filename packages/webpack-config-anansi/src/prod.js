@@ -1,13 +1,13 @@
 import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 import WebpackStrip from 'webpack-strip';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import cssnano from 'cssnano';
 
-import { getStyleRules, ROOT_PATH } from './base';
+import { getStyleRules } from './base';
 
 export default function makeProdConfig(
   baseConfig,
@@ -20,9 +20,7 @@ export default function makeProdConfig(
   config.output.pathinfo = false;
   config.plugins.push(
     new webpack.IgnorePlugin(/DevTools/),
-    new CleanWebpackPlugin([buildDir], {
-      root: ROOT_PATH,
-    }),
+    new CleanWebpackPlugin(),
     new webpack.HashedModuleIdsPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
@@ -64,16 +62,14 @@ export default function makeProdConfig(
     },
   };
   config.optimization.minimizer = [
-    new UglifyJsPlugin({
-      uglifyOptions: {
-        mangle: {
-          keep_fnames: true,
-        },
-        ie8: false,
+    new TerserPlugin({
+      terserOptions: {
+        keep_fnames: true,
       },
       sourceMap: true,
       extractComments: true,
       parallel: true,
+      cache: true,
     }),
     new OptimizeCSSAssetsPlugin({}),
   ];

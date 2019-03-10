@@ -1,5 +1,5 @@
-import { UserResource, Address } from 'data/models';
-import { hooks } from 'rest-hooks';
+import { UserResource, Address } from 'data/resources';
+import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Typography from '@material-ui/core/Typography';
 import Table from '@material-ui/core/Table';
@@ -34,7 +34,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = hooks.useResource(UserResource.singleRequest(), { id });
+  const author = useResource(UserResource.singleRequest(), { id });
   return (
     <>
       <Typography variant="h5" component="h3" style={{ flex: '1 1 50%' }}>

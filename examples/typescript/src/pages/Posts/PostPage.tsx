@@ -1,5 +1,5 @@
-import { PostResource, UserResource } from 'data/models';
-import { hooks } from 'rest-hooks';
+import { PostResource, UserResource } from 'data/resources';
+import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -13,8 +13,8 @@ export default function PostMaster({
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const post = hooks.useResource(PostResource.singleRequest(), { id });
-  const author = hooks.useResource(
+  const post = useResource(PostResource.singleRequest(), { id });
+  const author = useResource(
     UserResource.singleRequest(),
     post && { id: post.userId },
   );

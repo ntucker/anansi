@@ -5,7 +5,7 @@ import { Router } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
 import loadPolyfills from '@anansi/polyfill';
 import { RouteChildrenProps } from 'react-router';
-import { RestProvider, NetworkThrottler } from 'rest-hooks';
+import { RestProvider, NetworkManager } from 'rest-hooks';
 import 'style/main.scss';
 
 import ErrorBoundary from 'components/ErrorBoundary';
@@ -22,13 +22,13 @@ function shouldUpdateScroll(
   return action !== 'REPLACE';
 }
 const history = createBrowserHistory();
-const throttler = new NetworkThrottler();
+const manager = new NetworkManager();
 async function init() {
   await loadPolyfills();
   ReactDOM.unstable_createRoot(document.body).render(
     <ErrorLoggerContext.Provider value={() => console.error('what what')}>
         <ErrorBoundary>
-          <RestProvider throttler={throttler}>
+          <RestProvider manager={manager}>
             <Router history={history}>
               <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
                 <App />

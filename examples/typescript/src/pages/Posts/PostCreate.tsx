@@ -1,9 +1,9 @@
-import { PostResource, } from 'data/models';
-import { hooks } from 'rest-hooks';
+import { PostResource, } from 'data/resources';
+import { useFetcher } from 'rest-hooks';
 import PostForm from './PostForm';
 
 export default function PostCreate() {
-  const create = hooks.useDispatch(PostResource.createRequest());
+  const create = useFetcher(PostResource.createRequest());
 
   return (
     <PostForm
