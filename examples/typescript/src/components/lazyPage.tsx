@@ -1,9 +1,26 @@
-import React, { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import { memoize } from 'lodash';
+import { RouteChildrenProps } from 'react-router';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 function lazyPage(pageName: string) {
-  return lazy(() =>
+  const Page = lazy(() =>
     import(/* webpackChunkName: '[request]' */ `pages/${pageName}`),
+  );
+  return (props: RouteChildrenProps) => (
+    <Suspense
+      fallback={
+        <div className="center">
+          <CircularProgress />
+        </div>
+      }
+      maxDuration={500}
+    >
+      <ErrorBoundary key={props.location && props.location.key}>
+        <Page {...props} />
+      </ErrorBoundary>
+    </Suspense>
   );
 }
 export default memoize(lazyPage);

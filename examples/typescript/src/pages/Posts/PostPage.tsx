@@ -1,4 +1,4 @@
-import { PostResource, UserResource } from 'data/resources';
+import { PostResource } from 'data/resources';
 import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import Button from '@material-ui/core/Button';
@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 import Post from './Post';
 
-export default function PostMaster({
+export default function PostDetail({
   match,
 }: RouteChildrenProps<{ id: string }>) {
   let id = 1;
@@ -14,10 +14,6 @@ export default function PostMaster({
     id = Number.parseInt(match.params.id);
   }
   const post = useResource(PostResource.singleRequest(), { id });
-  const author = useResource(
-    UserResource.singleRequest(),
-    post && { id: post.userId },
-  );
   return (
     <>
       <Post post={post} />

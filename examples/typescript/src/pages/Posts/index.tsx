@@ -1,9 +1,6 @@
-import { PostResource, UserResource, CommentResource } from 'data/resources';
-import React, { useEffect } from 'react';
+import { PostResource } from 'data/resources';
+import React from 'react';
 import { useResource } from 'rest-hooks';
-import { RouteChildrenProps } from 'react-router';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 import Post from './Post';
 import Fab from '@material-ui/core/Fab';
@@ -11,10 +8,7 @@ import AddIcon from '@material-ui/icons/Add';
 import styles from './index.scss';
 
 function PostList() {
-  const [posts, comments] = useResource(
-    [PostResource.listRequest(), {}],
-    [CommentResource.listRequest(), {}],
-  );
+  const posts = useResource(PostResource.listRequest(), {});
   return (
     <>
       <Link to="/posts/new">
@@ -29,4 +23,4 @@ function PostList() {
     </>
   );
 }
-export default React.memo(PostList)
+export default React.memo(PostList);
