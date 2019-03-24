@@ -66,6 +66,10 @@ in case you want babel to transform imports.
 Warning: something other than 'false' will disable HMR and 'tree shaking'
 in webpack
 
+### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "usage"
+
+This option configures how @anansi/babel-preset handles polyfills.
+
 ### minify: bool = false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)

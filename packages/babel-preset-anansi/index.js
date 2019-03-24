@@ -4,17 +4,22 @@ options:
   nodeTarget,
   modules,
   typing,
+  useBuiltIns,
   minify,
   legacyDecorators
 */
-function buildPreset(context, options = {}) {
-  const env = context.env();
+function buildPreset(api, options = {}) {
+  const env = api.env();
+  // if undefined, we know nothing about their support
+  const definitelySupportsDynamicImport = api.caller(caller => !!caller.supportsDynamicImport);
+  const definitelySupportsModules = api.caller(caller => !!caller.supportsStaticESM);
   options = {
     minify: false,
     typing: false,
     legacyDecorators: false,
     rootPathSuffix: './src',
     reactRequire: true,
+    useBuiltIns: 'usage',
     ...options,
   };
   const preset = {
@@ -59,7 +64,7 @@ function buildPreset(context, options = {}) {
     case 'development':
       try {
         preset.plugins.push(require('react-hot-loader/babel'));
-      } catch(e) {}
+      } catch (e) {}
       break;
   }
 
@@ -77,17 +82,23 @@ function buildPreset(context, options = {}) {
         targets: {
           node: options.nodeTarget || 'current',
         },
+        modules: options.modules || definitelySupportsModules ? false : 'auto',
+        // maximum compatibility since we don't care about bundle size
+        useBuiltIns: false,
       },
     ]);
-    preset.plugins.push(require('babel-plugin-dynamic-import-node'));
+    // since this is a node-specific plugin we need to be sure we're running in node
+    if (!definitelySupportsDynamicImport) {
+      preset.plugins.push(require('babel-plugin-dynamic-import-node'));
+    }
   } else {
     preset.presets.unshift([
       require('@babel/preset-env').default,
       {
         targets: options.targets,
-        corejs: { version: 3, proposals: true },
-        useBuiltIns: 'usage',
         modules: options.modules || false,
+        useBuiltIns,
+        corejs: { version: 3, proposals: true },
       },
     ]);
   }
