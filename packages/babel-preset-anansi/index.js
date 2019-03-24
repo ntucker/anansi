@@ -97,7 +97,7 @@ function buildPreset(api, options = {}) {
       {
         targets: options.targets,
         modules: options.modules || false,
-        useBuiltIns,
+        useBuiltIns: options.useBuiltIns,
         corejs: { version: 3, proposals: true },
       },
     ]);
