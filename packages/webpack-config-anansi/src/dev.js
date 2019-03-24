@@ -31,9 +31,6 @@ export default function makeDevConfig(
     splitChunks: false,
   };
 
-  // hot reloading sometimes messed up polyfills, so just place this at the start
-  config.entry = map(entry => ['@babel/polyfill'].concat(entry), config.entry);
-
   config.plugins = [
     new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),

@@ -13,7 +13,7 @@ export default function makeBaseConfig({
   return {
     context: ROOT_PATH,
     entry: {
-      App: [`./${basePath}`],
+      App: ['regenerator-runtime/runtime', `./${basePath}`],
     },
     output: {
       path: path.join(ROOT_PATH, buildDir),

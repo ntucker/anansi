@@ -13,7 +13,7 @@
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.2",
     "@anansi/webpack-config": "^0.4.5",
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.4.0",
     "babel-plugin-root-import": "^6.1.0",
     "eslint": "^5.15.1",
     "flow-bin": "^0.92.1",
@@ -27,8 +27,8 @@
     "@hot-loader/react-dom": "16.8.4",
     "classnames": "^2.2.6",
     "found": "^0.3.18",
-    "react": "16.8.4",
-    "react-dom": "16.8.4",
+    "react": "16.8.5",
+    "react-dom": "16.8.5",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
