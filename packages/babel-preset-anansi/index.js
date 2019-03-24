@@ -11,8 +11,8 @@ options:
 function buildPreset(api, options = {}) {
   const env = api.env();
   // if undefined, we know nothing about their support
-  const definitelySupportsDynamicImport = api.caller(caller => !!caller.supportsDynamicImport);
-  const definitelySupportsModules = api.caller(caller => !!caller.supportsStaticESM);
+  const supportsDynamicImport = api.caller(caller => caller.supportsDynamicImport);
+  const supportsModules = api.caller(caller => caller.supportsStaticESM);
   options = {
     minify: false,
     typing: false,
@@ -82,13 +82,13 @@ function buildPreset(api, options = {}) {
         targets: {
           node: options.nodeTarget || 'current',
         },
-        modules: options.modules || definitelySupportsModules ? false : 'auto',
+        modules: options.modules || (supportsModules ? false : 'auto'),
         // maximum compatibility since we don't care about bundle size
         useBuiltIns: false,
       },
     ]);
     // since this is a node-specific plugin we need to be sure we're running in node
-    if (!definitelySupportsDynamicImport) {
+    if (supportsDynamicImport !== true) {
       preset.plugins.push(require('babel-plugin-dynamic-import-node'));
     }
   } else {
@@ -96,7 +96,8 @@ function buildPreset(api, options = {}) {
       require('@babel/preset-env').default,
       {
         targets: options.targets,
-        modules: options.modules || false,
+        // if supportsModules is undefined or true then assume it can handle es modules.
+        modules: options.modules || (supportsModules === false ? 'auto' : false),
         useBuiltIns: options.useBuiltIns,
         corejs: { version: 3, proposals: true },
       },
