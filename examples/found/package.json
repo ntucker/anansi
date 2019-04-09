@@ -13,22 +13,22 @@
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.2",
     "@anansi/webpack-config": "^0.5.3",
-    "@babel/core": "^7.4.0",
+    "@babel/core": "^7.4.3",
     "babel-plugin-root-import": "^6.1.0",
-    "eslint": "^5.15.1",
-    "flow-bin": "^0.92.1",
-    "react-hot-loader": "^4.8.0",
+    "eslint": "^5.16.0",
+    "flow-bin": "^0.96.0",
+    "react-hot-loader": "^4.8.2",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.0"
   },
   "dependencies": {
     "@anansi/polyfill": "^0.3.10",
-    "@hot-loader/react-dom": "16.8.4",
+    "@hot-loader/react-dom": "16.8.6",
     "classnames": "^2.2.6",
     "found": "^0.3.18",
-    "react": "16.8.5",
-    "react-dom": "16.8.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
