@@ -10,7 +10,7 @@ const Routes = ({ location }: RouteChildrenProps) => (
     <Route exact path="/posts" component={lazyPage('Posts')} />
     <Route exact path="/posts/new" component={lazyPage('Posts/PostCreate')} />
     <Route path="/post/:id/edit" component={lazyPage('Posts/PostEdit')} />
-    <Route path="/post/:id" component={lazyPage('Posts/PostPage')} />
+    <Route path="/post/:id" component={lazyPage('PostDetail')} />
     <Route path="/user/:id" component={lazyPage('User')} />
     <Route path="/slow" component={lazyPage('Slow')} />
     <Route path="/error" component={lazyPage('Error')} />

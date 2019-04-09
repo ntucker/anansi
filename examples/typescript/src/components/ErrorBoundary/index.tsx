@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import classNames from 'classnames';
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import { Spin } from 'antd';
 
 import styles from './index.scss';
 import BigAlertIcon from './big-alert.svg';
@@ -50,7 +50,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
     if (process.env.NODE_ENV !== 'production' && !('status' in error)) {
       return (
         <div className="center">
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<Spin size="large" />}>
             <h1>{error.toString()}</h1>
             <RedBox error={error} />
           </Suspense>

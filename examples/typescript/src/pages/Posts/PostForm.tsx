@@ -1,7 +1,17 @@
-import TextField from '@material-ui/core/TextField';
+import { Input, Button, Form } from 'antd';
 import { PostResource } from 'data/resources';
-import Button from '@material-ui/core/Button';
 import useForm from './useForm';
+
+const formItemLayout = {
+  labelCol: {
+    xs: { span: 24 },
+    sm: { span: 1 },
+  },
+  wrapperCol: {
+    xs: { span: 24 },
+    sm: { span: 16 },
+  },
+};
 
 type FormProps = {
   onSubmit: Function;
@@ -13,32 +23,25 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
     initialValues,
   );
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
-      <div>
-        <TextField
-          id="outlined-name"
-          label="Title"
-          value={values.title}
-          onChange={handleChange('title')}
-          margin="normal"
-          variant="outlined"
-        />
-      </div>
-      <div>
-        <TextField
-          id="outlined-name"
-          label="Body"
+    <Form
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      autoComplete="off"
+      {...formItemLayout}
+    >
+      <Form.Item label="Title">
+        <Input value={values.title} onChange={handleChange('title')} />
+      </Form.Item>
+      <Form.Item label="Body">
+        <Input.TextArea
           value={values.body}
           onChange={handleChange('body')}
-          margin="normal"
-          variant="outlined"
-          fullWidth
-          multiline
+          autosize={{ minRows: 4 }}
         />
-      </div>
-      <Button variant="contained" color="primary" type="submit">
+      </Form.Item>
+      <Button type="primary" htmlType="submit">
         Save
       </Button>
-    </form>
+    </Form>
   );
 }
