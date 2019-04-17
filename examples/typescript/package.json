@@ -5,6 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
+    "build:server": "webpack --mode=production --target=node",
     "analyze": "webpack --mode=production --analyze",
     "pkgcheck": "webpack --check=nobuild",
     "type-check": "tsc --noEmit"

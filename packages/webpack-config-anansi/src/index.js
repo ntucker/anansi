@@ -6,6 +6,7 @@ import makeDevConfig from './dev';
 import makeProdConfig from './prod';
 import makeCheckConfig from './check';
 import makeNobuildConfig from './nobuild';
+import makeNodeConfig from './node';
 
 export * from './base';
 export makeStorybookConfigGenerator from './storybook';
@@ -17,6 +18,7 @@ export function makeConfig(options) {
     libraryInclude: always(false),
     libraryExclude: /node_modules/,
     buildDir: 'generated_assets/',
+    serverDir: 'server_assets/',
     ...options,
   };
   const baseConfig = makeBaseConfig(options);
@@ -39,6 +41,9 @@ export function makeConfig(options) {
           config = baseConfig;
           break;
       }
+    }
+    if (argv?.target === 'node') {
+      config = makeNodeConfig(config, options);
     }
     if (argv?.check) {
       config = makeCheckConfig(config, options, argv?.check);
