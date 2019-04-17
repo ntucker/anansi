@@ -2646,15 +2646,6 @@ babel-plugin-dynamic-import-node@^2.2.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-flow-react-proptypes@^25.0.0:
-  version "25.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-25.0.0.tgz#88c922f5c109aa564f8ac52effc084ec21bf2dcc"
-  integrity sha512-3HLRFvd0+cbyeIkGMpzoTVQIpt4ZpVxWGWJ/iMR2+hkJ1Js6uS3fNiGncVsuFiNP+zu/CXEb4sLjnmB3oV38zA==
-  dependencies:
-    "@babel/template" "^7.2.2"
-    "@babel/traverse" "^7.0.0"
-    "@babel/types" "^7.3.0"
-
 babel-plugin-lodash@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-lodash/-/babel-plugin-lodash-3.3.4.tgz#4f6844358a1340baed182adbeffa8df9967bc196"

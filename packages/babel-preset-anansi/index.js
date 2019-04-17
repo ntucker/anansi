@@ -134,10 +134,6 @@ function buildPreset(api, options = {}) {
       { loose: options.legacyDecorators },
     ],
   );
-  // this must come before class properties the prop types are transformed
-  if (options.typing === 'flow' && env === 'development') {
-    preset.plugins.unshift(require('babel-plugin-flow-react-proptypes'));
-  }
   /*         end block        */
   return preset;
 }

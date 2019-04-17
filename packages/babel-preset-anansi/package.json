@@ -44,7 +44,6 @@
     "@babel/preset-typescript": "^7.3.3",
     "babel-minify": "^0.5.0",
     "babel-plugin-dynamic-import-node": "^2.2.0",
-    "babel-plugin-flow-react-proptypes": "^25.0.0",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-ramda": "^2.0.0",
     "babel-plugin-react-require": "^3.1.1",
