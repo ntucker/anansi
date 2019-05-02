@@ -5767,10 +5767,10 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
-flux-standard-action@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/flux-standard-action/-/flux-standard-action-2.0.4.tgz#258569a87f6412aa75222253ccb3da95542c62ff"
-  integrity sha512-K2z1GW9xMbv66k3G/wBndb5OD+eDpynHj4tXsPNtEbHxJFG4JXaam6STx212iGSsOcMuK5NnTEWHoHiD/Wi2oA==
+flux-standard-action@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/flux-standard-action/-/flux-standard-action-2.1.0.tgz#23713a545ee49d62bd067e77d63f8c691561c94c"
+  integrity sha512-9Gd5RIfxyvS33xfxRf/ePOBKcPe4BlMu6qg6aS+kieTcVLgn19O6t/n7TY2deT5L0uhUSFpJg2fq5BpUsShpfw==
   dependencies:
     lodash "^4.17.11"
 
@@ -11100,14 +11100,14 @@ resolve@^1.9.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-1.3.0.tgz#5df33a2d9622d611354a6ef70c10786e1e3008f6"
-  integrity sha512-GBZrKLNsRQuxzQlw6PCZWBXilIevRwl6m2hZL+n9mQ6+udpGzVeGHwB61HBmZQavBoCHtHy9LPb1c0tWrS4V8w==
+rest-hooks@1.5.0-beta.3:
+  version "1.5.0-beta.3"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-1.5.0-beta.3.tgz#a60523bace14fb9fd539b86d61d5702279af4c51"
+  integrity sha512-SPEXbNEMQCMsfn4Az+7eX9BiMVED8SmuuADqgQaZGSU/evAUdvLC73bYVBC7a5HsZAkStWq2CAfPPzIrbPaQ2Q==
   dependencies:
     "@types/superagent" "^4.1.1"
     core-js "^3.0.0"
-    flux-standard-action "^2.0.4"
+    flux-standard-action "^2.1.0"
     lodash "^4.17.11"
     normalizr "^3.3.0"
     regenerator-runtime "^0.13.2"
