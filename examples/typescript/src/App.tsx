@@ -1,5 +1,5 @@
 import React from 'react';
-import { hot } from 'react-hot-loader/root';
+import { hot } from 'react-hot-loader';
 import Nav from 'navigation/Nav';
 import Paper from '@material-ui/core/Paper';
 
@@ -15,4 +15,4 @@ const App = () => (
   </div>
 );
 
-export default hot(React.memo(App));
+export default hot(module)(React.memo(App));
