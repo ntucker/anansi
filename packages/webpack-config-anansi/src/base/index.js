@@ -62,7 +62,7 @@ export default function makeBaseConfig({
           ],
         },
         {
-          test: /\.svg\?inline$/,
+          test: /inline\.svg$/,
           use: [
             { loader: 'svg-react-loader' },
             {
