@@ -46,7 +46,7 @@ export default function makeBaseConfig({
           use: 'raw-loader',
         },
         {
-          test: /\.(otf|eot|woff2?|ttf)$/,
+          test: /\.(otf|eot|woff2|woff|ttf)$/,
           use: 'file-loader',
         },
         {

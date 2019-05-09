@@ -17,7 +17,7 @@
     "@anansi/webpack-config": "^0.5.3",
     "@babel/core": "^7.4.4",
     "@types/classnames": "^2.2.7",
-    "@types/react": "^16.8.16",
+    "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
     "babel-plugin-root-import": "^6.1.0",
