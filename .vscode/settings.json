@@ -1,3 +1,5 @@
+
 {
-  "eslint.nodePath": "node_modules"
+  "eslint.nodePath": "node_modules",
+  "typescript.validate.enable": true
 }
