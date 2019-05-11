@@ -11,8 +11,8 @@ options:
 function buildPreset(api, options = {}) {
   const env = api.env();
   // if undefined, we know nothing about their support
-  const supportsDynamicImport = api.caller(caller => caller.supportsDynamicImport);
-  const supportsModules = api.caller(caller => caller.supportsStaticESM);
+  const supportsDynamicImport = api.caller(caller => caller && caller.supportsDynamicImport);
+  const supportsModules = api.caller(caller => caller && caller.supportsStaticESM);
   options = {
     minify: false,
     typing: false,
