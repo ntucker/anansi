@@ -70,6 +70,10 @@ in webpack
 
 This option configures how @anansi/babel-preset handles polyfills.
 
+### [corejs](https://babeljs.io/docs/en/babel-preset-env#corejs): { version: 3, proposals: true }
+
+Which core-js version to use when useBuiltIns is not false
+
 ### minify: bool = false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
@@ -82,6 +86,21 @@ Support legacy decorators instead of the soon-to-be-standard syntax.
 
 Enables importing from project root with `~/my/path` rather than using relative paths. Override
 this if your project root is in another directory.
+
+This is the recommended way to manage imports in larger libraries.
+
+When using with typescript, be sure to add to tsconfig.json:
+
+```json
+{
+  "baseUrl": "./src",
+  "paths": {"~/*": ["*"]},
+}
+```
+
+### rootPathPrefix: string = '~/'
+
+Configures what prefix is used to trigger root imports.
 
 ### reactRequire: bool = true
 

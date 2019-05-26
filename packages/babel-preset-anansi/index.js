@@ -5,6 +5,7 @@ options:
   modules,
   typing,
   useBuiltIns,
+  corejs,
   minify,
   legacyDecorators
 */
@@ -18,8 +19,10 @@ function buildPreset(api, options = {}) {
     typing: false,
     legacyDecorators: false,
     rootPathSuffix: './src',
+    rootPathPrefix: '~/',
     reactRequire: true,
     useBuiltIns: 'usage',
+    corejs: { version: 3, proposals: true },
     ...options,
   };
   const preset = {
@@ -34,6 +37,7 @@ function buildPreset(api, options = {}) {
         require('babel-plugin-root-import').default,
         {
           rootPathSuffix: options.rootPathSuffix,
+          rootPathPrefix: options.rootPathPrefix,
         },
       ],
       //stage 1
@@ -99,7 +103,7 @@ function buildPreset(api, options = {}) {
         // if supportsModules is undefined or true then assume it can handle es modules.
         modules: options.modules || (supportsModules === false ? 'auto' : false),
         useBuiltIns: options.useBuiltIns,
-        corejs: { version: 3, proposals: true },
+        corejs: options.corejs,
       },
     ]);
   }
