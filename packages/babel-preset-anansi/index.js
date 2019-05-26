@@ -43,8 +43,8 @@ function buildPreset(api, options = {}) {
       //stage 1
       require('@babel/plugin-proposal-export-default-from').default,
       require('@babel/plugin-proposal-export-namespace-from').default,
-      require('@babel/plugin-proposal-optional-chaining').default,
-      require('@babel/plugin-proposal-nullish-coalescing-operator').default,
+      options.typing !== 'typescript' && require('@babel/plugin-proposal-optional-chaining').default,
+      options.typing !== 'typescript' && require('@babel/plugin-proposal-nullish-coalescing-operator').default,
       //stage 3
       require('@babel/plugin-syntax-dynamic-import').default,
       [
@@ -53,6 +53,7 @@ function buildPreset(api, options = {}) {
       ],
     ],
   };
+  preset.plugins = preset.plugins.filter(v => v);
   if (options.reactRequire) {
     preset.plugins.unshift(require('babel-plugin-react-require').default);
   }

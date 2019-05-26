@@ -17,7 +17,7 @@
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/babel-preset-anansi",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/babel-preset-anansi#readme",
   "repository": {
     "type": "git",
     "url": "git@github.com:ntucker/anansi.git"
