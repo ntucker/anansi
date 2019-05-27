@@ -1,3 +1,5 @@
+const path = require('path');
+
 /*
 options:
   targets,
@@ -25,6 +27,19 @@ function buildPreset(api, options = {}) {
     corejs: { version: 3, proposals: true },
     ...options,
   };
+  const useESModules = (env === 'test' || options.nodeTarget)
+    ? (options.modules || (supportsModules ? false : 'auto'))
+    // if supportsModules is undefined or true then assume it can handle es modules.
+    : (options.modules || (supportsModules === false ? 'auto' : false));
+
+  let absoluteRuntimePath = undefined;
+  try {
+    // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
+    absoluteRuntimePath = path.dirname(
+      require.resolve('@babel/runtime/package.json')
+    );
+  } catch (e) {}
+
   const preset = {
     presets: [
       [
@@ -38,6 +53,17 @@ function buildPreset(api, options = {}) {
         {
           rootPathSuffix: options.rootPathSuffix,
           rootPathPrefix: options.rootPathPrefix,
+        },
+      ],
+      absoluteRuntimePath && [
+        require('@babel/plugin-transform-runtime').default,
+        {
+          corejs: false,
+          helpers: true,
+          regenerator: true,
+          // We should turn this on once the lowest version of Node LTS
+          // supports ES Modules.
+          useESModules,
         },
       ],
       //stage 1
@@ -87,7 +113,7 @@ function buildPreset(api, options = {}) {
         targets: {
           node: options.nodeTarget || 'current',
         },
-        modules: options.modules || (supportsModules ? false : 'auto'),
+        modules: useESModules,
         // maximum compatibility since we don't care about bundle size
         useBuiltIns: false,
       },
@@ -101,8 +127,7 @@ function buildPreset(api, options = {}) {
       require('@babel/preset-env').default,
       {
         targets: options.targets,
-        // if supportsModules is undefined or true then assume it can handle es modules.
-        modules: options.modules || (supportsModules === false ? 'auto' : false),
+        modules: useESModules,
         useBuiltIns: options.useBuiltIns,
         corejs: options.corejs,
       },

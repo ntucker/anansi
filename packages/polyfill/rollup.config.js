@@ -27,6 +27,7 @@ export default [
         exclude: ['node_modules/**'],
         rootMode: 'upward',
         extensions,
+        runtimeHelpers: true,
       }),
       commonjs({ extensions }),
     ],

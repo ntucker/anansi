@@ -39,6 +39,7 @@
     "@babel/plugin-transform-object-assign": "^7.2.0",
     "@babel/plugin-transform-react-constant-elements": "^7.2.0",
     "@babel/plugin-transform-react-inline-elements": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
@@ -51,18 +52,23 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "caniuse-lite": "^1.0.30000971",
     "core-js-compat": "^3.0.0",
+    "path": "^0.12.7",
     "stable": "^0.1.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0"
+    "@babel/core": "^7.4.5"
   },
   "peerDependencies": {
-    "@babel/core": "^7.2.0",
+    "@babel/core": "^7.4.0",
+    "@babel/runtime": "^7.4.0",
     "core-js": "^3.0.0",
     "react-hot-loader": "^4.6.5",
     "regenerator-runtime": "^0.13.2"
   },
   "peerDependenciesMeta": {
+    "@babel/runtime": {
+      "optional": true
+    },
     "react-hot-loader": {
       "optional": true
     }
