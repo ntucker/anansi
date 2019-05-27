@@ -15,17 +15,16 @@
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.3",
     "@anansi/webpack-config": "^0.6.2-alpha.0",
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.4.5",
     "@types/classnames": "^2.2.7",
-    "@types/react": "^16.8.17",
+    "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
-    "babel-plugin-root-import": "^6.1.0",
     "eslint": "^5.16.0",
-    "react-hot-loader": "^4.8.4",
-    "webpack": "^4.30.0",
+    "react-hot-loader": "^4.8.8",
+    "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
     "@anansi/polyfill": "^0.3.13-alpha.0",
@@ -34,7 +33,7 @@
     "@material-ui/icons": "^3.0.2",
     "@types/lodash": "^4.14.123",
     "classnames": "^2.2.6",
-    "core-js": "^3.0.1",
+    "core-js": "^3.1.2",
     "lodash": "^4.17.11",
     "react": "16.8.6",
     "react-dom": "16.8.6",
@@ -42,7 +41,7 @@
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
     "regenerator-runtime": "^0.13.2",
-    "rest-hooks": "1.5.0"
+    "rest-hooks": "1.6.1"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
