@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Webpack config",
   "main": "lib/index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "node": ">=6.15.1"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^0.15.0",
+    "@anansi/babel-preset": "^0.16.0",
     "@anansi/eslint-config": "^0.6.4",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
