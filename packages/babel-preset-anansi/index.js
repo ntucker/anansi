@@ -23,7 +23,7 @@ function buildPreset(api, options = {}) {
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: true,
-    useBuiltIns: 'usage',
+    useBuiltIns: 'entry',
     corejs: { version: 3, proposals: true },
     ...options,
   };

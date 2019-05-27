@@ -66,7 +66,7 @@ in case you want babel to transform imports.
 Warning: something other than 'false' will disable HMR and 'tree shaking'
 in webpack
 
-### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "usage"
+### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
 
 This option configures how @anansi/babel-preset handles polyfills.
 
