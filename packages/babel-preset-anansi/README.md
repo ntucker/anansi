@@ -127,6 +127,7 @@ are included:
 
 ### Other
 * [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
+* [Macros](https://github.com/kentcdodds/babel-plugin-macros)
 
 ### Polyfills
 

@@ -138,6 +138,7 @@ function buildPreset(api, options = {}) {
   }
 
   /*  block is at the end so they are unshifted to the start of plugins  */
+  preset.plugins.unshift(require('babel-plugin-macros'));
   switch (options.typing) {
     case 'flow':
       // using the plugin so we can place after decorators and class properties
