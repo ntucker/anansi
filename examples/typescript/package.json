@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
@@ -11,10 +11,10 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^0.17.1",
+    "@anansi/babel-preset": "^0.17.2",
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.4",
-    "@anansi/webpack-config": "^0.7.2",
+    "@anansi/webpack-config": "^0.7.3",
     "@babel/core": "^7.4.5",
     "@types/classnames": "^2.2.7",
     "@types/react": "^16.8.18",
@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
-    "@anansi/polyfill": "^0.3.16",
+    "@anansi/polyfill": "^0.3.17",
     "@hot-loader/react-dom": "16.8.6",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
