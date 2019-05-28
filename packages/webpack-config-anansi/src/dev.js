@@ -1,5 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
 import { map } from 'ramda';
@@ -32,6 +33,7 @@ export default function makeDevConfig(
   };
 
   config.plugins = [
+    new HardSourceWebpackPlugin(),
     new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),

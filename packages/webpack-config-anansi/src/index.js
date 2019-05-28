@@ -12,25 +12,27 @@ export * from './base';
 export makeStorybookConfigGenerator from './storybook';
 
 export function makeConfig(options) {
-  // eslint-disable-next-line no-param-reassign
-  options = {
-    basePath: 'src',
-    libraryInclude: always(false),
-    libraryExclude: /node_modules/,
-    buildDir: 'generated_assets/',
-    serverDir: 'server_assets/',
-    ...options,
-  };
-  const baseConfig = makeBaseConfig(options);
   return (env, argv) => {
     if (!process.env.NODE_ENV) {
       process.env.NODE_ENV = argv?.mode;
     }
+    // eslint-disable-next-line no-param-reassign
+    options = {
+      basePath: 'src',
+      libraryInclude: always(false),
+      libraryExclude: /node_modules/,
+      buildDir: 'generated_assets/',
+      serverDir: 'server_assets/',
+      ...options,
+      mode: argv?.mode || process.env.NODE_ENV,
+    };
+    const baseConfig = makeBaseConfig(options);
+
     let config;
     if (argv?.check === 'nobuild') {
       config = makeNobuildConfig(baseConfig, options);
     } else {
-      switch (argv?.mode || process.env.NODE_ENV) {
+      switch (options.mode) {
         case 'development':
           config = makeDevConfig(baseConfig, options);
           break;

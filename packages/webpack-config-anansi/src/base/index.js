@@ -8,12 +8,20 @@ export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
 
 export default function makeBaseConfig({
-  basePath, libraryInclude, libraryExclude, buildDir,
+  basePath, libraryInclude, libraryExclude, buildDir, mode,
 }) {
+  const babelLoader = {
+    loader: 'babel-loader',
+    options: {
+      cacheDirectory: true,
+      cacheCompression: mode === 'production',
+      compact: mode === 'production',
+    }
+  };
   return {
     context: ROOT_PATH,
     entry: {
-      App: ['regenerator-runtime/runtime', `./${basePath}`],
+      App: [`./${basePath}`],
     },
     output: {
       path: path.join(ROOT_PATH, buildDir),
@@ -27,13 +35,13 @@ export default function makeBaseConfig({
       rules: [
         {
           test: /\.worker\.(t|j)s$/,
-          use: ['babel-loader', 'worker-loader'],
+          use: [babelLoader, 'worker-loader'],
           include: [new RegExp(basePath), /.storybook/, libraryInclude],
           exclude: libraryExclude,
         },
         {
           test: /\.(t|j)sx?$/,
-          use: 'babel-loader',
+          use: ['thread-loader', babelLoader],
           include: [new RegExp(basePath), /.storybook/, libraryInclude],
           exclude: libraryExclude,
         },

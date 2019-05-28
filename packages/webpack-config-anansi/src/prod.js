@@ -6,6 +6,7 @@ import CleanWebpackPlugin from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import cssnano from 'cssnano';
+import isWsl from 'is-wsl';
 
 import { getStyleRules } from './base';
 
@@ -64,11 +65,33 @@ export default function makeProdConfig(
   config.optimization.minimizer = [
     new TerserPlugin({
       terserOptions: {
-        keep_fnames: true,
+        parse: {
+          ecma: 8,
+        },
+        compress: {
+          ecma: 5,
+          warnings: false,
+          // Pending further investigation:
+          // https://github.com/mishoo/UglifyJS2/issues/2011
+          comparisons: false,
+          // Pending futher investigation:
+          // https://github.com/terser-js/terser/issues/120
+          inline: 2,
+        },
+        mangle: {
+          safari10: true,
+        },
+        output: {
+          ecma: 5,
+          comments: false,
+          ascii_only: true,
+        },
       },
       sourceMap: true,
       extractComments: true,
-      parallel: true,
+      // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
+      // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
+      parallel: !isWsl,
       cache: true,
     }),
     new OptimizeCSSAssetsPlugin({}),
