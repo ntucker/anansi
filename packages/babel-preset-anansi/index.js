@@ -32,7 +32,7 @@ function buildPreset(api, options = {}) {
     // if supportsModules is undefined or true then assume it can handle es modules.
     : (options.modules || (supportsModules === false ? 'auto' : false));
   // false won't transform so it's like saying use ES6
-  const useESModules = modules === false || modules || undefined;
+  const useESModules = modules === false || (modules === 'auto' ? 'auto' : undefined);
 
   let absoluteRuntimePath = undefined;
   try {
