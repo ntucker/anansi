@@ -39,8 +39,8 @@
     "eslint": "^5.16.0",
     "prettier-eslint-cli": "^4.7.1",
     "rimraf": "^2.6.3",
-    "webpack": "^4.30.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack": "^4.30.2",
+    "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
@@ -71,9 +71,9 @@
     "svgo-loader": "^2.2.0",
     "terser-webpack-plugin": "^1.2.3",
     "url-loader": "^1.1.2",
-    "webpack-bundle-analyzer": "^3.3.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-bundle-tracker": "^0.4.2-beta",
-    "webpack-fix-style-only-entries": "^0.2.0",
+    "webpack-fix-style-only-entries": "^0.2.2",
     "webpack-node-externals": "^1.7.2",
     "webpack-strip": "^0.1.0",
     "worker-loader": "^2.0.0"

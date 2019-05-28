@@ -20,8 +20,8 @@ export default function makeDevConfig(
 
   config.mode = 'development';
   config.output.pathinfo = true;
-  config.output.filename = '[name]-[hash].js';
-  config.output.chunkFilename = '[name]-[hash].chunk.js';
+  config.output.filename = '[name].js';
+  config.output.chunkFilename = '[name].chunk.js';
   config.output.devtoolModuleFilenameTemplate = info =>
     path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.watch = true;
@@ -45,6 +45,8 @@ export default function makeDevConfig(
     clientLogLevel: 'warning',
     headers: {
       'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers':
+        'Origin, X-Requested-With, Content-Type, Accept',
     },
     allowedHosts: ['localhost', '127.0.0.1'],
     stats: 'minimal',
@@ -63,8 +65,7 @@ export default function makeDevConfig(
   try {
     require('@hot-loader/react-dom');
     config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
-  } catch(e) {}
-
+  } catch (e) {}
 
   const styleRules = getStyleRules({
     basePath,

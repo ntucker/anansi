@@ -94,6 +94,7 @@ export default function makeBaseConfig({
     stats: {
       children: false,
       chunks: false,
+      excludeAssets: [ /\.map/ ],
     },
   };
 }
