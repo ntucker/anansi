@@ -27,10 +27,12 @@ function buildPreset(api, options = {}) {
     corejs: { version: 3, proposals: true },
     ...options,
   };
-  const useESModules = (env === 'test' || options.nodeTarget)
+  const modules = (env === 'test' || options.nodeTarget)
     ? (options.modules || (supportsModules ? false : 'auto'))
     // if supportsModules is undefined or true then assume it can handle es modules.
     : (options.modules || (supportsModules === false ? 'auto' : false));
+  // false won't transform so it's like saying use ES6
+  const useESModules = modules === false || modules || undefined;
 
   let absoluteRuntimePath = undefined;
   try {
@@ -113,7 +115,7 @@ function buildPreset(api, options = {}) {
         targets: {
           node: options.nodeTarget || 'current',
         },
-        modules: useESModules,
+        modules,
         // maximum compatibility since we don't care about bundle size
         useBuiltIns: false,
       },
@@ -127,7 +129,7 @@ function buildPreset(api, options = {}) {
       require('@babel/preset-env').default,
       {
         targets: options.targets,
-        modules: useESModules,
+        modules,
         useBuiltIns: options.useBuiltIns,
         corejs: options.corejs,
       },
