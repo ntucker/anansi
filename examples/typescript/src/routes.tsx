@@ -5,7 +5,7 @@ import { RouteChildrenProps } from 'react-router';
 import lazyPage from 'components/lazyPage';
 
 const Routes = ({ location }: RouteChildrenProps) => (
-  <Switch location={location}>
+  <Switch location={location} key={location.pathname}>
     <Route exact path="/" component={lazyPage('Home')} />
     <Route exact path="/posts" component={lazyPage('Posts')} />
     <Route exact path="/posts/new" component={lazyPage('Posts/PostCreate')} />
