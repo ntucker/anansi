@@ -4,6 +4,7 @@ import { ROOT_PATH } from './base/constants';
 
 export default function makeNodeConfig(baseConfig, { serverDir }) {
   const config = { ...baseConfig };
+  config.target = 'node';
   if (config.optimization) {
     config.optimization.minimize = false;
     config.optimization.splitChunks = {};
