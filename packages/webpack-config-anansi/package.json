@@ -77,7 +77,6 @@
     "webpack-bundle-tracker": "^0.4.2-beta",
     "webpack-fix-style-only-entries": "^0.2.2",
     "webpack-node-externals": "^1.7.2",
-    "webpack-strip": "^0.1.0",
     "worker-loader": "^2.0.0"
   },
   "peerDependencies": {

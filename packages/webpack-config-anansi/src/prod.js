@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
-import WebpackStrip from 'webpack-strip';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
@@ -102,17 +101,6 @@ export default function makeProdConfig(
       return !/\.(map|LICENSE)$/.test(assetFilename);
     },
   };
-  config.module.rules.push({
-    test: /\.jsx?$/,
-    use: WebpackStrip.loader(
-      'debug',
-      'logger',
-      'console.log',
-      'console.warn',
-      'console.error',
-    ),
-    exclude: libraryExclude,
-  });
 
   const styleRules = getStyleRules({
     basePath,
