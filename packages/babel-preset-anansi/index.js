@@ -5,6 +5,7 @@ options:
   targets,
   nodeTarget,
   modules,
+  useESModules,
   typing,
   useBuiltIns,
   corejs,
@@ -31,9 +32,12 @@ function buildPreset(api, options = {}) {
     ? (options.modules || (supportsModules ? false : 'auto'))
     // if supportsModules is undefined or true then assume it can handle es modules.
     : (options.modules || (supportsModules === false ? 'auto' : false));
-  // false won't transform so it's like saying use ES6
-  // anything targetting node < 12 will need to not use esmodules
-  const useESModules = !options.nodeTarget && (modules === false || (modules === 'auto' ? 'auto' : undefined));
+  // We should turn this on by default once the lowest version of Node LTS
+  // supports ES Modules.
+  const useESModules =
+    options.useESModules === undefined
+      ? !(env === 'test' || options.nodeTarget)
+      : options.useESModules;
 
   let absoluteRuntimePath = undefined;
   try {
@@ -64,14 +68,12 @@ function buildPreset(api, options = {}) {
           corejs: false,
           helpers: true,
           regenerator: true,
-          // We should turn this on once the lowest version of Node LTS
-          // supports ES Modules.
           useESModules,
         },
       ],
       //stage 1
-      require('@babel/plugin-proposal-export-default-from').default,
-      require('@babel/plugin-proposal-export-namespace-from').default,
+      options.typing !== 'typescript' && require('@babel/plugin-proposal-export-default-from').default,
+      options.typing !== 'typescript' && require('@babel/plugin-proposal-export-namespace-from').default,
       options.typing !== 'typescript' && require('@babel/plugin-proposal-optional-chaining').default,
       options.typing !== 'typescript' && require('@babel/plugin-proposal-nullish-coalescing-operator').default,
       //stage 3

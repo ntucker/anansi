@@ -66,6 +66,13 @@ in case you want babel to transform imports.
 Warning: something other than 'false' will disable HMR and 'tree shaking'
 in webpack
 
+### useESModules: boolean = !(env === 'test' || options.nodeTarget)
+
+This uses the es6 module version of [@babel/runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules).
+"This allows for smaller builds in module systems like webpack, since it doesn't need to preserve commonjs semantics."
+
+Set this to false for maximum compatibility.
+
 ### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
 
 This option configures how @anansi/babel-preset handles polyfills.
