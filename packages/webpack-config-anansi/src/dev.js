@@ -55,7 +55,7 @@ export default function makeDevConfig(
     overlay: true,
     open: true,
     historyApiFallback: {
-      rewrites: [{ from: /./, to: `/assets/${buildDir}index.html` }],
+      rewrites: [{ from: /^((?!\/assets).)*/, to: `/assets/${buildDir}index.html` }],
     },
     // TODO: add proxy options
   };

@@ -32,6 +32,18 @@ export default function makeProdConfig(
       chunkFilename: '[name].[contenthash].css',
     }),
   );
+  config.module.rules.push({
+    test: /\.svg$/,
+    enforce: 'pre',
+    use: [
+      {
+        loader: 'svgo-loader',
+        options: {
+          plugins: [{ removeTitle: false }],
+        },
+      },
+    ],
+  });
   config.optimization = {
     splitChunks: {
       chunks: 'all',

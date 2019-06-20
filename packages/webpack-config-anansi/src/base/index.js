@@ -3,12 +3,15 @@ import BundleTracker from 'webpack-bundle-tracker';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 
-
 export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
 
 export default function makeBaseConfig({
-  basePath, libraryInclude, libraryExclude, buildDir, mode,
+  basePath,
+  libraryInclude,
+  libraryExclude,
+  buildDir,
+  mode,
 }) {
   const babelLoader = {
     loader: 'babel-loader',
@@ -16,8 +19,9 @@ export default function makeBaseConfig({
       cacheDirectory: true,
       cacheCompression: mode === 'production',
       compact: mode === 'production',
-    }
+    },
   };
+
   return {
     context: ROOT_PATH,
     entry: {
@@ -46,40 +50,30 @@ export default function makeBaseConfig({
           exclude: libraryExclude,
         },
         {
-          test: /\.(png|jpg|gif|ico|pdf|webm|mp4)$/,
-          use: 'file-loader',
-        },
-        {
           test: /\.(md|txt)$/,
           use: 'raw-loader',
         },
         {
-          test: /\.(otf|eot|woff2|woff|ttf)$/,
-          use: 'file-loader',
+          test: /\.(png|jpg|gif|ico|pdf|webm|mp4|otf|eot|woff2|woff|ttf)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name:
+                  mode === 'production'
+                    ? '[name].[hash].[ext]'
+                    : '[path][name].[ext]',
+              },
+            },
+          ],
+        },
+        {
+          test: /file\.svg$/,
+          use: [{ loader: 'file-loader' }],
         },
         {
           test: /\.svg$/,
-          use: [
-            { loader: 'file-loader' },
-            {
-              loader: 'svgo-loader',
-              options: {
-                plugins: [{ removeTitle: false }],
-              },
-            },
-          ],
-        },
-        {
-          test: /inline\.svg$/,
-          use: [
-            { loader: 'svg-react-loader' },
-            {
-              loader: 'svgo-loader',
-              options: {
-                plugins: [{ removeTitle: false }],
-              },
-            },
-          ],
+          use: [{ loader: 'svg-react-loader' }],
         },
       ],
     },
@@ -102,7 +96,7 @@ export default function makeBaseConfig({
     stats: {
       children: false,
       chunks: false,
-      excludeAssets: [ /\.map/ ],
+      excludeAssets: [/\.map/],
     },
   };
 }
