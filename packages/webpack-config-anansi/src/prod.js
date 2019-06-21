@@ -47,8 +47,8 @@ export default function makeProdConfig(
   config.optimization = {
     splitChunks: {
       chunks: 'all',
-      maxInitialRequests: 10,
-      maxAsyncRequests: 20,
+      maxInitialRequests: 25,
+      maxAsyncRequests: 50,
       cacheGroups: {
         react: {
           test: /[\\/]node_modules[\\/](react|react-dom|scheduler|object-assign|loose-envify)[\\/]/,
