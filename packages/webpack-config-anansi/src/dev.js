@@ -74,7 +74,10 @@ export default function makeDevConfig(
     libraryInclude,
     libraryExclude,
     cssLoaderOptions: {
-      localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
+      modules: {
+        mode: 'local',
+        localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
+      },
     },
   });
   config.module.rules = [...config.module.rules, ...styleRules];

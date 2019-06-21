@@ -46,8 +46,10 @@ export default function getStyleRules({
             ...loader,
             options: {
               ...loader.options,
-              modules: 'local',
-              camelCase: true,
+              modules: {
+                mode: 'local',
+              },
+              localsConvention: 'camelCase',
               ...cssLoaderOptions,
             },
           };
@@ -71,8 +73,10 @@ export default function getStyleRules({
             ...loader,
             options: {
               ...loader.options,
-              modules: 'local',
-              camelCase: true,
+              modules: {
+                mode: 'local',
+              },
+              localsConvention: 'camelCase',
               ...cssLoaderOptions,
             },
           };
