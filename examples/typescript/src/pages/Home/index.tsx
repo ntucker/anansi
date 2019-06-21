@@ -2,7 +2,7 @@ import style from './index.scss';
 
 import Worker from './my.worker';
 import animated from './animated-overlay.gif';
-import angleDown from './angle-down-solid.svg';
+import AngleDown from './angle-down-solid.svg';
 
 const worker = new Worker();
 
@@ -11,7 +11,7 @@ export default () => {
   return (
     <div className={style.main}>
       <p>
-        Hello2 <img src={angleDown} style={{ width: '1em' }} />
+        Hello2 <AngleDown style={{ width: '1em' }} />
         World <a href="https://true.io">True IO</a>
       </p>
       <p>
