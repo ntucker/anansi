@@ -57,6 +57,7 @@ export function makeConfig(options) {
           generateStatsFile: false,
         }),
       );
+      delete config.output.globalObject;
     }
     return config;
   };

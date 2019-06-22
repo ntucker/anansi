@@ -10,6 +10,7 @@ const generateConfig = makeConfig(options);
 module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (
+    config.optimization &&
     config.optimization.splitChunks &&
     config.optimization.splitChunks.cacheGroups
   ) {

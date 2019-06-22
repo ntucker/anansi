@@ -75,7 +75,7 @@ export default function makeProdConfig(
         },
       },
     },
-    // https://webpack.js.org/configuration/optimization/#optimization-runtimechunk
+    // https://webpack.js.org/configuration/optimization/#optimizationruntimechunk
     runtimeChunk: {
       name: 'webpack-runtime',
     },
