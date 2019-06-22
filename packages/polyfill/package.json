@@ -1,6 +1,6 @@
 {
   "name": "@anansi/polyfill",
-  "version": "0.3.20",
+  "version": "0.3.21",
   "description": "Feature detection triggered dynamic polyfills",
   "sideEffects": false,
   "keywords": [
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.17.5",
-    "@anansi/eslint-config": "^0.6.4",
+    "@anansi/eslint-config": "^0.6.5",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "eslint": "^5.12.0",
