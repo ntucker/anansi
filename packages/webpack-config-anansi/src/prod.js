@@ -17,7 +17,6 @@ export default function makeProdConfig(
 
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
-  config.output.pathinfo = false;
   config.plugins.push(
     new webpack.IgnorePlugin(/DevTools/),
     new CleanWebpackPlugin(),

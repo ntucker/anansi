@@ -20,7 +20,6 @@ export default function makeDevConfig(
   const config = { ...baseConfig };
 
   config.mode = 'development';
-  config.output.pathinfo = true;
   config.output.filename = '[name].js';
   config.output.chunkFilename = '[name].chunk.js';
   config.output.devtoolModuleFilenameTemplate = info =>
