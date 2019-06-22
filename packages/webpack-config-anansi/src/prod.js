@@ -39,7 +39,15 @@ export default function makeProdConfig(
       {
         loader: 'svgo-loader',
         options: {
-          plugins: [{ removeTitle: false }],
+          plugins: [
+            { removeTitle: false },
+            { removeComments: true },
+            { removeDesc: true },
+            { removeUselessDefs: true },
+            { removeDoctype: true },
+            { removeMetadata: true },
+            { convertColors: true },
+          ],
         },
       },
     ],

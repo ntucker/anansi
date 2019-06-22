@@ -10,6 +10,11 @@
     "eslint",
     "react"
   ],
+  "files": [
+    "index.js",
+    "base.js",
+    "typescript.js"
+  ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/eslint-config-anansi",
@@ -21,21 +26,26 @@
     "node": ">=6.15.1"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "babel-eslint": "^10.0.1",
     "babel-plugin-root-import": "^6.2.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
-    "eslint-import-resolver-webpack": "^0.11.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-flowtype": "^3.9.1",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0"
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "typescript": "^3.5.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "webpack": "^4.32.2"
+    "webpack": "^4.33.0"
   },
   "peerDependencies": {
     "babel-plugin-root-import": "^5.1.0 || ^6.1.0",

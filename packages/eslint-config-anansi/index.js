@@ -33,7 +33,11 @@ module.exports = {
     'one-var': ['error', { initialized: 'never' }],
     'one-var-declaration-per-line': ['error', 'initializations'],
     'no-named-as-default': 'off', // doesn't handle relative imports properly
-    'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
+    'lines-between-class-members': [
+      'warn',
+      'always',
+      { exceptAfterSingleLine: true },
+    ],
     'react/jsx-no-bind': [
       'error',
       {
@@ -77,6 +81,9 @@ module.exports = {
   },
   plugins: ['flowtype', 'react', 'import', 'babel', 'react-hooks'],
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       webpack: {},
       'babel-plugin-root-import': { rootPathSuffix: './src' },
