@@ -51,7 +51,6 @@ export default function makeDevConfig(
   ];
   config.devServer = {
     hot: true,
-    port: 3000,
     clientLogLevel: 'warning',
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -70,7 +69,7 @@ export default function makeDevConfig(
     // TODO: add proxy options
   };
   config.devtool = '#cheap-module-source-map';
-  config.output.publicPath = `http://localhost:3000/assets/${buildDir}`;
+  config.output.publicPath = `/assets/${buildDir}`;
   if (!config.resolve.alias) {
     config.resolve.alias = {};
   }
