@@ -7,6 +7,7 @@ export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
 
 export default function makeBaseConfig({
+  rootPath,
   basePath,
   libraryInclude,
   libraryExclude,
@@ -23,12 +24,12 @@ export default function makeBaseConfig({
   };
 
   return {
-    context: ROOT_PATH,
+    context: rootPath,
     entry: {
       App: [`./${basePath}`],
     },
     output: {
-      path: path.join(ROOT_PATH, buildDir),
+      path: path.join(rootPath, buildDir),
       filename: '[name]-[contenthash].js',
       chunkFilename: '[name]-[contenthash].chunk.js',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
@@ -79,8 +80,8 @@ export default function makeBaseConfig({
     },
     resolve: {
       modules: [
-        path.join(ROOT_PATH, basePath),
-        path.join(ROOT_PATH, basePath, 'style'),
+        path.join(rootPath, basePath),
+        path.join(rootPath, basePath, 'style'),
         'node_modules',
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],

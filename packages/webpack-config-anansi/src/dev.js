@@ -10,6 +10,7 @@ import { getStyleRules } from './base';
 export default function makeDevConfig(
   baseConfig,
   {
+    rootPath,
     basePath,
     libraryInclude,
     libraryExclude,
@@ -69,6 +70,7 @@ export default function makeDevConfig(
   } catch (e) {}
 
   const styleRules = getStyleRules({
+    rootPath,
     basePath,
     libraryInclude,
     libraryExclude,

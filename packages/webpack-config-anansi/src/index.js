@@ -1,7 +1,7 @@
 import { always } from 'ramda';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-import makeBaseConfig from './base';
+import makeBaseConfig, { ROOT_PATH } from './base';
 import makeDevConfig from './dev';
 import makeProdConfig from './prod';
 import makeCheckConfig from './check';
@@ -18,6 +18,7 @@ export function makeConfig(options) {
     }
     // eslint-disable-next-line no-param-reassign
     options = {
+      rootPath: ROOT_PATH,
       basePath: 'src',
       libraryInclude: always(false),
       libraryExclude: /node_modules/,

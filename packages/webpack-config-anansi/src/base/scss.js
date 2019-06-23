@@ -3,9 +3,7 @@ import cssPresetEnv from 'postcss-preset-env';
 import path from 'path';
 import { always } from 'ramda';
 
-import { ROOT_PATH } from './constants';
-
-const getCSSLoaders = ({ basePath }) => [
+const getCSSLoaders = ({ absoluteBasePath }) => [
   { loader: 'style-loader' },
   {
     loader: 'css-loader',
@@ -21,19 +19,20 @@ const getCSSLoaders = ({ basePath }) => [
   {
     loader: 'sass-resources-loader',
     options: {
-      resources: [`${path.join(ROOT_PATH, basePath)}/style/export.scss`],
+      resources: [`${absoluteBasePath}/style/export.scss`],
     },
   },
 ];
 
 export default function getStyleRules({
+  rootPath,
   basePath = 'src',
   libraryInclude = always(false),
   libraryExclude = always(false),
   cssLoaderOptions = {},
 }) {
-  const absoluteBasePath = path.join(ROOT_PATH, basePath);
-  const cssLoaders = getCSSLoaders({ basePath });
+  const absoluteBasePath = path.join(rootPath, basePath);
+  const cssLoaders = getCSSLoaders({ absoluteBasePath });
   return [
     // css modules (local styles)
     {

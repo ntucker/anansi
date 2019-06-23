@@ -11,7 +11,7 @@ import { getStyleRules } from './base';
 
 export default function makeProdConfig(
   baseConfig,
-  { basePath, libraryInclude, libraryExclude, buildDir },
+  { rootPath, basePath, libraryInclude, libraryExclude, buildDir },
 ) {
   const config = { ...baseConfig };
 
@@ -122,6 +122,7 @@ export default function makeProdConfig(
   };
 
   const styleRules = getStyleRules({
+    rootPath,
     basePath,
     libraryInclude,
     libraryExclude,

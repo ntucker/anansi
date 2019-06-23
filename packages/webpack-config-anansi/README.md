@@ -90,6 +90,12 @@ import fetch from 'network';
 
 from any file.
 
+### rootPath = $CWD
+
+Root path should be the root path of your project. Usually where your package.json and webpack.config.js are.
+This defaults to the current working directory you are running commands from. However, if you need to run things
+from another directory, you can send __dirname into this option from your webpack.config.js.
+
 ### buildDir = 'generated_assets/'
 
 Output directory for production build files
