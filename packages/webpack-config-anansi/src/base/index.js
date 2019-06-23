@@ -1,5 +1,5 @@
 import path from 'path';
-import BundleTracker from 'webpack-bundle-tracker';
+import StatsPlugin from 'stats-webpack-plugin';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 
@@ -35,7 +35,15 @@ export default function makeBaseConfig({
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     target: 'web',
-    plugins: [new BundleTracker({ filename: 'webpack-stats.json' })],
+    plugins: [
+      new StatsPlugin('manifest.json', {
+        chunkModules: false,
+        source: false,
+        chunks: false,
+        modules: false,
+        assets: true,
+      }),
+    ],
     module: {
       rules: [
         {

@@ -66,6 +66,7 @@
     "raw-loader": "3.0.0",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.1",
+    "stats-webpack-plugin": "^0.7.0",
     "style-loader": "^0.23.1",
     "svg-react-loader": "^0.4.6",
     "svgo": "^1.2.2",
@@ -74,7 +75,6 @@
     "thread-loader": "^2.1.2",
     "url-loader": "^2.0.0",
     "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-bundle-tracker": "^0.4.2-beta",
     "webpack-fix-style-only-entries": "^0.3.0",
     "webpack-node-externals": "^1.7.2",
     "worker-loader": "^2.0.0"
