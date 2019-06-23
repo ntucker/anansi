@@ -55,6 +55,7 @@ export function makeConfig(options) {
         new BundleAnalyzerPlugin({
           analyzerMode: 'static',
           generateStatsFile: false,
+          ...options.bundleAnalyzerOptions,
         }),
       );
       delete config.output.globalObject;

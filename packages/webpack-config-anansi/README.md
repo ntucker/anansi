@@ -94,6 +94,18 @@ from any file.
 
 Output directory for production build files
 
+### serverDir: 'server_assets/'
+
+Output directory for production server builds. Used when using `--target=node` cli option.
+
+### mode: argv?.mode || process.env.NODE_ENV
+
+Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode&aqs=chrome..69i57j69i60l3j0l2.1349j0j7&sourceid=chrome&ie=UTF-8)
+
+### bundleAnalyzerOptions
+
+Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
+
 ## File Support
 
 - SCSS with CSS modules
