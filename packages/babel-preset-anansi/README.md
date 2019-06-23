@@ -121,9 +121,9 @@ are included:
 ### Stage 3
 * Dynamic import (`import()`)
 * [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
+* [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
 
 ### Stage 2
-* [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
 * [Decorators](https://github.com/tc39/proposal-decorators)
 
 ### Stage 1

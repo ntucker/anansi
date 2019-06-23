@@ -164,7 +164,7 @@ function buildPreset(api, options = {}) {
   preset.plugins.unshift(
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
-    // stage 2 but must come before flow
+    // stage 3 but must come before flow
     [
       require('@babel/plugin-proposal-class-properties').default,
       { loose: options.legacyDecorators },
