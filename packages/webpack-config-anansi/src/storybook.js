@@ -42,6 +42,17 @@ export default function makeStorybookConfigGenerator(options) {
       plugins: [...storybookPlugins, ...basePlugins],
       module: {
         ...envConfig.module,
+        rules: [
+          envConfig.module.rules[0],
+          {
+            ...envConfig.module.rules[1],
+            use: [
+              ...envConfig.module.rules[1].use,
+              'react-docgen-typescript-loader',
+            ],
+          },
+          ...envConfig.module.rules.slice(2),
+        ],
       },
     };
   };
