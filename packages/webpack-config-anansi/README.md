@@ -112,6 +112,19 @@ Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
 
+## Storybook
+
+Storybook is supported, just place this file in your `.storybook` directory:
+
+#### `.storybook/webpack.config.js`
+
+```js
+const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
+const { options } = require('../webpack.config');
+
+module.exports = makeStorybookConfigGenerator(options);
+```
+
 ## File Support
 
 - SCSS with CSS modules
@@ -121,4 +134,4 @@ Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-ana
 - Web workers
 - All font formats
 - Any media files
-- And of course javascript
+- Javascript & Typescript

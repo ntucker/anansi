@@ -7,6 +7,8 @@ const options = {
 
 const generateConfig = makeConfig(options);
 
+module.exports = { options };
+
 module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (

@@ -8,7 +8,9 @@
     "build:server": "webpack --mode=production --target=node",
     "analyze": "webpack --mode=production --analyze",
     "pkgcheck": "webpack --check=nobuild",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.17.6",
@@ -16,10 +18,15 @@
     "@anansi/eslint-config": "^0.6.5",
     "@anansi/webpack-config": "^0.10.1",
     "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "@types/classnames": "^2.2.8",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.4",
+    "babel-loader": "^8.0.6",
     "eslint": "^5.16.0",
     "react-hot-loader": "^4.11.1",
     "webpack": "^4.35.0",

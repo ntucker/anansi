@@ -1,24 +1,39 @@
+import { always } from 'ramda';
+
+import makeBaseConfig, { ROOT_PATH } from './base';
 import makeDevConfig from './dev';
 import makeProdConfig from './prod';
 
+export default function makeStorybookConfigGenerator(options) {
+  options = {
+    rootPath: ROOT_PATH,
+    basePath: 'src',
+    libraryInclude: always(false),
+    libraryExclude: /node_modules/,
+    buildDir: 'generated_assets/',
+    serverDir: 'server_assets/',
+    ...options,
+  };
+  return ({ config: storybookConfig, mode }) => {
+    options.mode = mode;
+    const baseConfig = makeBaseConfig(options);
 
-export default function makeStorybookConfigGenerator(baseConfig, { basePath }) {
-  return (storybookConfig, env) => {
     let envConfig;
-    switch (env) {
+    switch (mode) {
       case 'PRODUCTION':
-        envConfig = makeProdConfig(baseConfig, { basePath });
+        envConfig = makeProdConfig(baseConfig, options);
         break;
       default:
-        envConfig = makeDevConfig(baseConfig, { basePath });
+        envConfig = makeDevConfig(baseConfig, options);
     }
     // we need their HtmlWebpackPlugin only (https://github.com/storybooks/storybook/pull/1775/files)
-    const storybookPlugins = storybookConfig.plugins.filter(
-      plugin => plugin.constructor.name === 'HtmlWebpackPlugin',
+    const storybookPlugins = storybookConfig.plugins.filter(plugin =>
+      ['HtmlWebpackPlugin', 'DefinePlugin', 'ProgressPlugin'].includes(
+        plugin.constructor.name,
+      ),
     );
-    // don't check for circular dependencies
     const basePlugins = envConfig.plugins.filter(
-      plugin => plugin.constructor.name !== 'CircularDependencyPlugin',
+      plugin => plugin.constructor.name !== 'HtmlWebpackPlugin',
     );
     return {
       ...envConfig,
@@ -27,7 +42,10 @@ export default function makeStorybookConfigGenerator(baseConfig, { basePath }) {
       plugins: [...storybookPlugins, ...basePlugins],
       module: {
         ...envConfig.module,
-        rules: [...storybookConfig.module.rules.slice(0, 1), ...envConfig.module.rules],
+        rules: [
+          ...storybookConfig.module.rules.slice(0, 1),
+          ...envConfig.module.rules,
+        ],
       },
     };
   };
