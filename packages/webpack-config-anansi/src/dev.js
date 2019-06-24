@@ -1,6 +1,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
 import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
+import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import webpack from 'webpack';
 import path from 'path';
 import { map } from 'ramda';
@@ -45,6 +46,7 @@ export default function makeDevConfig(
     new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
+    new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.WatchIgnorePlugin([/s?css\.d\.ts$/]),
     ...config.plugins,

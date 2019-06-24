@@ -64,6 +64,7 @@
     "postcss-preset-env": "^6.6.0",
     "ramda": "^0.26.1",
     "raw-loader": "3.0.0",
+    "react-dev-utils": "^9.0.1",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.1",
     "stats-webpack-plugin": "^0.7.0",

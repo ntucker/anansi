@@ -63,7 +63,7 @@ export default function makeBaseConfig({
           use: 'raw-loader',
         },
         {
-          test: /\.(png|jpg|gif|ico|pdf|webm|mp4|otf|eot|woff2|woff|ttf)$/,
+          test: /\.(png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf)$/,
           use: [
             {
               loader: 'file-loader',
