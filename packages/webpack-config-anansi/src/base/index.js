@@ -49,13 +49,13 @@ export default function makeBaseConfig({
         {
           test: /\.worker\.(t|j)s$/,
           use: [babelLoader, 'worker-loader'],
-          include: [new RegExp(basePath), /.storybook/, libraryInclude],
+          include: [new RegExp(basePath), path.join(rootPath, 'stories'), /.storybook/, libraryInclude],
           exclude: libraryExclude,
         },
         {
           test: /\.(t|j)sx?$/,
           use: ['thread-loader', babelLoader],
-          include: [new RegExp(basePath), /.storybook/, libraryInclude],
+          include: [new RegExp(basePath), path.join(rootPath, 'stories'), /.storybook/, libraryInclude],
           exclude: libraryExclude,
         },
         {

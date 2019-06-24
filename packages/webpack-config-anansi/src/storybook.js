@@ -42,10 +42,6 @@ export default function makeStorybookConfigGenerator(options) {
       plugins: [...storybookPlugins, ...basePlugins],
       module: {
         ...envConfig.module,
-        rules: [
-          ...storybookConfig.module.rules.slice(0, 1),
-          ...envConfig.module.rules,
-        ],
       },
     };
   };
