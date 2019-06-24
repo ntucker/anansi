@@ -4,7 +4,7 @@ A webpack configuration for fast development and production ready optimizations
 
 ## Usage
 
-/webpack.config.js
+`/webpack.config.js`
 
 ```javascript
 const { makeConfig } = require('@anansi/webpack-config');
@@ -14,10 +14,12 @@ const options = {
   buildDir: 'generated_assets/',
 };
 
+module.exports = { options };
+
 module.exports = makeConfig(options);
 ```
 
-/package.json
+`/package.json`
 
 ```json
 {
@@ -28,6 +30,17 @@ module.exports = makeConfig(options);
     "pkgcheck": "webpack --check=nobuild"
   }
 }
+```
+
+### Storybook
+
+`/.storybook/webpack.config.js`
+
+```js
+const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
+const { options } = require('../webpack.config');
+
+module.exports = makeStorybookConfigGenerator(options);
 ```
 
 ## CMD line arguments
@@ -111,19 +124,6 @@ Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode
 ### bundleAnalyzerOptions
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
-
-## Storybook
-
-Storybook is supported, just place this file in your `.storybook` directory:
-
-#### `.storybook/webpack.config.js`
-
-```js
-const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
-const { options } = require('../webpack.config');
-
-module.exports = makeStorybookConfigGenerator(options);
-```
 
 ## File Support
 
