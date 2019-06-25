@@ -48,7 +48,7 @@ export default function makeBaseConfig({
       rules: [
         {
           test: /\.worker\.(t|j)s$/,
-          use: [babelLoader, 'worker-loader'],
+          use: [babelLoader, { loader: 'worker-loader', options: { inline: true } }],
           include: [new RegExp(basePath), path.join(rootPath, 'stories'), /.storybook/, libraryInclude],
           exclude: libraryExclude,
         },
