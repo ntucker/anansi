@@ -125,6 +125,12 @@ Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
 
+### hardCacheOptions = {}
+
+Customize how [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin) works. Set
+to `false` to disable plugin. This plugin often speeds up development, but can sometimes cause compatibility issues.
+Disable it if you experience such problems.
+
 ## File Support
 
 - SCSS with CSS modules

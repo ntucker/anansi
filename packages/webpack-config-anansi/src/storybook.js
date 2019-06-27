@@ -12,6 +12,7 @@ export default function makeStorybookConfigGenerator(options) {
     libraryExclude: /node_modules/,
     buildDir: 'generated_assets/',
     serverDir: 'server_assets/',
+    hardCacheOptions: {},
     ...options,
   };
   return ({ config: storybookConfig, mode }) => {

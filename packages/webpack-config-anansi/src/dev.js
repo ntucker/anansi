@@ -16,6 +16,7 @@ export default function makeDevConfig(
     libraryInclude,
     libraryExclude,
     buildDir,
+    hardCacheOptions,
     htmlOptions = { title: 'Anansi app' },
   },
 ) {
@@ -32,17 +33,6 @@ export default function makeDevConfig(
   };
 
   config.plugins = [
-    new HardSourceWebpackPlugin(),
-    new HardSourceWebpackPlugin.ExcludeModulePlugin([
-      {
-        // HardSource works with mini-css-extract-plugin but due to how
-        // mini-css emits assets, assets are not emitted on repeated builds with
-        // mini-css and hard-source together. Ignoring the mini-css loader
-        // modules, but not the other css loader modules, excludes the modules
-        // that mini-css needs rebuilt to output assets every time.
-        test: /mini-css-extract-plugin[\\/]dist[\\/]loader/,
-      },
-    ]),
     new ErrorOverlayPlugin(),
     new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
@@ -51,6 +41,21 @@ export default function makeDevConfig(
     new webpack.WatchIgnorePlugin([/s?css\.d\.ts$/]),
     ...config.plugins,
   ];
+  if (hardCacheOptions) {
+    config.plugins.unshift(
+      new HardSourceWebpackPlugin(hardCacheOptions),
+      new HardSourceWebpackPlugin.ExcludeModulePlugin([
+        {
+          // HardSource works with mini-css-extract-plugin but due to how
+          // mini-css emits assets, assets are not emitted on repeated builds with
+          // mini-css and hard-source together. Ignoring the mini-css loader
+          // modules, but not the other css loader modules, excludes the modules
+          // that mini-css needs rebuilt to output assets every time.
+          test: /mini-css-extract-plugin[\\/]dist[\\/]loader/,
+        },
+      ]),
+    );
+  }
   config.devServer = {
     hot: true,
     clientLogLevel: 'warning',
