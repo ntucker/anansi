@@ -27,6 +27,7 @@ export function makeConfig(options) {
       hardCacheOptions: {},
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
+      argv,
     };
     const baseConfig = makeBaseConfig(options);
 

@@ -18,6 +18,7 @@ export default function makeDevConfig(
     buildDir,
     hardCacheOptions,
     htmlOptions = { title: 'Anansi app' },
+    argv = {},
   },
 ) {
   const config = { ...baseConfig };
@@ -77,6 +78,10 @@ export default function makeDevConfig(
   };
   config.devtool = '#cheap-module-source-map';
   config.output.publicPath = `/assets/${buildDir}`;
+  // if we know the port, force it in case this is encapsulated in another host
+  if (argv.port) {
+    config.output.publicPath = `http://localhost:${argv.port}${config.output.publicPath}`;
+  }
   if (!config.resolve.alias) {
     config.resolve.alias = {};
   }
