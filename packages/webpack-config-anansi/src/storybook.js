@@ -1,32 +1,10 @@
-import { always } from 'ramda';
-
-import makeBaseConfig, { ROOT_PATH } from './base';
-import makeDevConfig from './dev';
-import makeProdConfig from './prod';
-
-export default function makeStorybookConfigGenerator(options) {
-  options = {
-    rootPath: ROOT_PATH,
-    basePath: 'src',
-    libraryInclude: always(false),
-    libraryExclude: /node_modules/,
-    buildDir: 'generated_assets/',
-    serverDir: 'server_assets/',
-    hardCacheOptions: {},
-    ...options,
-  };
+export default function makeStorybookConfigGenerator(baseConfig) {
   return ({ config: storybookConfig, mode }) => {
-    options.mode = mode;
-    const baseConfig = makeBaseConfig(options);
+    const env = mode.toLowerCase();
+    const argv = { mode: env };
+    const envConfig =
+      typeof baseConfig === 'function' ? baseConfig(env, argv) : baseConfig;
 
-    let envConfig;
-    switch (mode) {
-      case 'PRODUCTION':
-        envConfig = makeProdConfig(baseConfig, options);
-        break;
-      default:
-        envConfig = makeDevConfig(baseConfig, options);
-    }
     // we need their HtmlWebpackPlugin only (https://github.com/storybooks/storybook/pull/1775/files)
     const storybookPlugins = storybookConfig.plugins.filter(plugin =>
       ['HtmlWebpackPlugin', 'DefinePlugin', 'ProgressPlugin'].includes(
