@@ -46,6 +46,7 @@ export default function makeProdConfig(
             { removeDoctype: true },
             { removeMetadata: true },
             { convertColors: true },
+            { removeViewBox: false },
           ],
         },
       },
