@@ -5,7 +5,7 @@ import { Router } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
 import loadPolyfills from '@anansi/polyfill';
 import { RouteChildrenProps } from 'react-router';
-import { RestProvider } from 'rest-hooks';
+import { CacheProvider } from 'rest-hooks';
 import 'style/main.scss';
 
 import ErrorBoundary from 'components/ErrorBoundary';
@@ -28,13 +28,13 @@ async function init() {
   ReactDOM.render(
     <ErrorLoggerContext.Provider value={() => console.error('what what')}>
       <ErrorBoundary>
-        <RestProvider>
+        <CacheProvider>
           <Router history={history}>
             <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
               <App />
             </ScrollContext>
           </Router>
-        </RestProvider>
+        </CacheProvider>
       </ErrorBoundary>
     </ErrorLoggerContext.Provider>,
     document.body,

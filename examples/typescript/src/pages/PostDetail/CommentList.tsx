@@ -7,7 +7,7 @@ type Props = { postId: number };
 
 export default function CommentList({ postId }: Props) {
   const comments = useResource(
-    CommentResource.listRequest(), { postId }
+    CommentResource.listShape(), { postId }
   );
   return (
     <List

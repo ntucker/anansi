@@ -14,7 +14,7 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useResource(PostResource.listRequest(), {});
+  const posts = useResource(PostResource.listShape(), {});
   return (
     <PageHeader
       title="Post List"

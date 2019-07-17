@@ -5,7 +5,7 @@ import itemRender from 'navigation/breadcrumbItemRenderer';
 import PostForm from './PostForm';
 
 export default function PostCreate() {
-  const create = useFetcher(PostResource.createRequest());
+  const create = useFetcher(PostResource.createShape());
   const routes = [
     {
       path: '/posts',

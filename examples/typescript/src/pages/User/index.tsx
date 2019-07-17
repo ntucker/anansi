@@ -11,7 +11,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = useResource(UserResource.singleRequest(), { id });
+  const author = useResource(UserResource.detailShape(), { id });
   return (
     <>
       <Typography.Title level={2}>{author.name}</Typography.Title>

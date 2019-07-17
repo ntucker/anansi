@@ -15,9 +15,9 @@ export default function PostDetail({
     id = Number.parseInt(match.params.id);
   }
   const [post, author] = useResource(
-    [PostResource.singleRequest(), { id }],
+    [PostResource.detailShape(), { id }],
     [
-      UserResource.singleRequest(),
+      UserResource.detailShape(),
       {
         id,
       },
