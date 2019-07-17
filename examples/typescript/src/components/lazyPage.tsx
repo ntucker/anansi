@@ -1,7 +1,8 @@
 import React, { lazy, memo, Suspense } from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import { memoize } from 'lodash';
 import { RouteChildrenProps } from 'react-router';
+import { Spin } from 'antd';
+
 import ErrorBoundary from 'components/ErrorBoundary';
 
 function lazyPage(pageName: string) {
@@ -12,7 +13,7 @@ function lazyPage(pageName: string) {
     <Suspense
       fallback={
         <div className="center">
-          <CircularProgress />
+          <Spin size="large" />
         </div>
       }
     >

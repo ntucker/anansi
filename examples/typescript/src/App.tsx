@@ -1,18 +1,26 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import Nav from 'navigation/Nav';
-import Paper from '@material-ui/core/Paper';
+import { Layout } from 'antd';
 
 import Routes from './routes';
 
 const App = () => (
-  <div>
-    <h1>My thing</h1>
-    <Nav />
-    <Paper elevation={1} className="content">
+  <Layout>
+    <Layout.Header className="header">
+      <Nav />
+    </Layout.Header>
+    <Layout.Content
+      style={{
+        background: '#fff',
+        padding: 0,
+        margin: 0,
+        minHeight: 280,
+      }}
+    >
       <Routes />
-    </Paper>
-  </div>
+    </Layout.Content>
+  </Layout>
 );
 
 export default hot(module)(React.memo(App));

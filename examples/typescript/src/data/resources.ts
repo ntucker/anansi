@@ -13,12 +13,12 @@ export class PostResource extends Resource {
 }
 export class CommentResource extends Resource {
   readonly postId: number = 0;
-  readonly id: number | null = null;
+  readonly id: number | undefined = undefined;
   readonly name: string = '';
   readonly email: string = '';
   readonly body: string = '';
 
-  pk() {
+  pk(): number | undefined {
     return this.id;
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';

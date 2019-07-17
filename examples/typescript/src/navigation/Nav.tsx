@@ -1,15 +1,24 @@
 import { Link } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import { Menu } from 'antd';
 
 export default () => (
-  <AppBar position="static">
-    <Tabs>
-      <Tab label="Home" to="/" component={Link} />
-      <Tab label="Posts" to="/posts" component={Link} />
-      <Tab label="Slow" to="/slow" component={Link} />
-      <Tab label="Error" to="/error" component={Link} />
-    </Tabs>
-  </AppBar>
+  <Menu
+    theme="dark"
+    mode="horizontal"
+    defaultSelectedKeys={['1']}
+    style={{ lineHeight: '64px' }}
+  >
+    <Menu.Item key="1">
+      <Link to="/">Home</Link>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <Link to="/posts">Posts</Link>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <Link to="/slow">Slow</Link>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <Link to="/error">Error</Link>
+    </Menu.Item>
+  </Menu>
 );

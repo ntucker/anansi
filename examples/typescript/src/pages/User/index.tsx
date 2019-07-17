@@ -1,33 +1,10 @@
 import { UserResource, Address } from 'data/resources';
 import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
-import Typography from '@material-ui/core/Typography';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import { Typography } from 'antd';
 
 function capFirst(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
-function AddressTable({ address }: { address: Address }) {
-  return (
-    <Paper>
-      <Table>
-        <TableBody>
-          {Object.entries(address).map(([key, value]: [string, any]) => (
-            <TableRow key={key}>
-              <TableCell component="th" scope="row">
-                {capFirst(key)}
-              </TableCell>
-              <TableCell align="right">{value.toString()}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </Paper>
-  );
 }
 export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   let id = 1;
@@ -37,17 +14,17 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   const author = useResource(UserResource.singleRequest(), { id });
   return (
     <>
-      <Typography variant="h5" component="h3" style={{ flex: '1 1 50%' }}>
-        {author.name}
-      </Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography.Title level={2}>{author.name}</Typography.Title>
+      <Typography.Paragraph>
         {author.email}
         <br />
         {author.phone}
         <br />
         <a href={`https://${author.website}`}>{author.website}</a>
-      </Typography>
-      {author.address ? <AddressTable address={author.address} /> : null}
+      </Typography.Paragraph>
+      <Typography.Paragraph>
+        {author.address ? author.addressDisplay : null}
+      </Typography.Paragraph>
     </>
   );
 }

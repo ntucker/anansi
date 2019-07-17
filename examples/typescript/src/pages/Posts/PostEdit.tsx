@@ -1,8 +1,9 @@
+import { PageHeader } from 'antd';
 import { PostResource } from 'data/resources';
 import { useFetcher, useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
+import itemRender from 'navigation/breadcrumbItemRenderer';
 import PostForm from './PostForm';
-import Post from './Post';
 
 export default function PostEdit({
   match,
@@ -13,15 +14,30 @@ export default function PostEdit({
   }
   const update = useFetcher(PostResource.updateRequest());
   const post = useResource(PostResource.singleRequest(), { id });
+  const routes = [
+    {
+      path: '/posts',
+      breadcrumbName: 'Post List',
+    },
+    {
+      path: `/post/${id}`,
+      breadcrumbName: post.title,
+    },
+    {
+      path: `/post/${id}/edit`,
+      breadcrumbName: 'Edit',
+    },
+  ];
 
   return (
-    <>
+    <PageHeader
+    title={null}
+    breadcrumb={{ routes, itemRender }}
+  >
       <PostForm
         initialValues={post}
         onSubmit={(data: object) => update(data, { id })}
       />
-      <br />
-      <Post post={post} />
-    </>
+  </PageHeader>
   );
 }
