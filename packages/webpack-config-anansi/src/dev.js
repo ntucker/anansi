@@ -34,14 +34,19 @@ export default function makeDevConfig(
   };
 
   config.plugins = [
-    new ErrorOverlayPlugin(),
-    new HtmlWebpackPlugin(htmlOptions),
     new webpack.HotModuleReplacementPlugin(),
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.WatchIgnorePlugin([/s?css\.d\.ts$/]),
     ...config.plugins,
   ];
+  // not for server builds
+  if (argv?.target !== 'node') {
+    config.plugins.unshift(
+      new ErrorOverlayPlugin(),
+      new HtmlWebpackPlugin(htmlOptions),
+    );
+  }
   if (hardCacheOptions) {
     config.plugins.unshift(
       new HardSourceWebpackPlugin(hardCacheOptions),

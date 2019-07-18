@@ -13,6 +13,7 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   config.output.path = path.join(rootPath, serverDir);
   config.output.filename = '[name].js';
   config.output.chunkFilename = '[name].chunk.js';
+  delete config.output.globalObject;
   config.output.libraryTarget = 'commonjs2';
 
   return config;
