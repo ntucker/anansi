@@ -1,5 +1,6 @@
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
+import StatsPlugin from 'stats-webpack-plugin';
 
 export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   const config = { ...baseConfig };
@@ -15,6 +16,8 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   config.output.chunkFilename = '[name].chunk.js';
   delete config.output.globalObject;
   config.output.libraryTarget = 'commonjs2';
+  // don't output stats for server builds as they won't need to reference manifests
+  config.plugins = config.plugins.filter(plugin => !(plugin instanceof StatsPlugin));
 
   return config;
 }

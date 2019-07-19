@@ -11,26 +11,28 @@ import { getStyleRules } from './base';
 
 export default function makeProdConfig(
   baseConfig,
-  { rootPath, basePath, libraryInclude, libraryExclude, buildDir },
+  { rootPath, basePath, libraryInclude, libraryExclude, argv = {} },
 ) {
   const config = { ...baseConfig };
 
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
-  config.plugins.push(
-    new webpack.IgnorePlugin(/DevTools/),
-    new CleanWebpackPlugin(),
-    new webpack.HashedModuleIdsPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-    }),
-    new FixStyleOnlyEntriesPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[name].[contenthash].css',
-    }),
-  );
+  if (argv.target !== 'node') {
+    config.plugins.push(
+      new webpack.IgnorePlugin(/DevTools/),
+      new CleanWebpackPlugin(),
+      new webpack.HashedModuleIdsPlugin(),
+      new webpack.LoaderOptionsPlugin({
+        minimize: true,
+        debug: false,
+      }),
+      new FixStyleOnlyEntriesPlugin(),
+      new MiniCssExtractPlugin({
+        filename: '[name].[contenthash].css',
+        chunkFilename: '[name].[contenthash].css',
+      }),
+    );
+  }
   config.module.rules.push({
     test: /\.svg$/,
     enforce: 'pre',

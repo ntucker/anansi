@@ -131,6 +131,10 @@ Customize how [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-sou
 to `false` to disable plugin. This plugin often speeds up development, but can sometimes cause compatibility issues.
 Disable it if you experience such problems.
 
+### manifestFilename = 'manifest.json'
+
+Determines the filename for the stats file that includes mappings to all filenames.
+
 ## File Support
 
 - SCSS with CSS modules

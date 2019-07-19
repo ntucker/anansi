@@ -13,6 +13,7 @@ export default function makeBaseConfig({
   libraryExclude,
   buildDir,
   mode,
+  manifestFilename,
 }) {
   const babelLoader = {
     loader: 'babel-loader',
@@ -36,7 +37,7 @@ export default function makeBaseConfig({
     },
     target: 'web',
     plugins: [
-      new StatsPlugin('manifest.json', {
+      new StatsPlugin(manifestFilename, {
         chunkModules: false,
         source: false,
         chunks: false,

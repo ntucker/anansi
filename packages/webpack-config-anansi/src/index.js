@@ -25,6 +25,7 @@ export function makeConfig(options) {
       buildDir: 'generated_assets/',
       serverDir: 'server_assets/',
       hardCacheOptions: {},
+      manifestFilename: 'manifest.json',
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
       argv,
