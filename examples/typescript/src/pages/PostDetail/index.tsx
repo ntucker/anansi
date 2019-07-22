@@ -14,15 +14,8 @@ export default function PostDetail({
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const [post, author] = useResource(
-    [PostResource.detailShape(), { id }],
-    [
-      UserResource.detailShape(),
-      {
-        id,
-      },
-    ],
-  );
+  const post = useResource(PostResource.detailShape(), { id });
+  const author = useResource(UserResource.detailShape(), { id: post.userId });
   const routes = [
     {
       path: '/posts',
