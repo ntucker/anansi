@@ -10,6 +10,10 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
     config.optimization.splitChunks = {};
     config.optimization.runtimeChunk = false;
   }
+  config.node = {
+    __dirname: true,
+    __filename: true,
+  };
   config.externals = [nodeExternals()];
   config.output.path = path.join(rootPath, serverDir);
   config.output.filename = '[name].js';
@@ -17,7 +21,9 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   delete config.output.globalObject;
   config.output.libraryTarget = 'commonjs2';
   // don't output stats for server builds as they won't need to reference manifests
-  config.plugins = config.plugins.filter(plugin => !(plugin instanceof StatsPlugin));
+  config.plugins = config.plugins.filter(
+    plugin => !(plugin instanceof StatsPlugin),
+  );
 
   return config;
 }
