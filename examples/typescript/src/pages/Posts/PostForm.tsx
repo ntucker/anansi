@@ -14,7 +14,7 @@ const formItemLayout = {
 };
 
 type FormProps = {
-  onSubmit: Function;
+  onSubmit: (v: object) => any;
   initialValues: object;
 };
 export default function PostForm({ onSubmit, initialValues }: FormProps) {

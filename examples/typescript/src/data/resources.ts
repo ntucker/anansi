@@ -18,8 +18,8 @@ export class CommentResource extends Resource {
   readonly email: string = '';
   readonly body: string = '';
 
-  pk(): number | undefined {
-    return this.id;
+  pk(): number {
+    return this.id || 0;
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
