@@ -17,7 +17,7 @@
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.5",
     "@anansi/webpack-config": "^0.13.1",
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.0",
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-info": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^0.3.23",
+    "@babel/runtime": "^7.6.0",
     "@hot-loader/react-dom": "16.9.0",
     "antd": "^3.21.4",
     "classnames": "^2.2.6",

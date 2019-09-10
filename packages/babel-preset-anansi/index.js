@@ -15,8 +15,12 @@ options:
 function buildPreset(api, options = {}) {
   const env = api.env();
   // if undefined, we know nothing about their support
-  const supportsDynamicImport = api.caller(caller => caller && caller.supportsDynamicImport);
-  const supportsModules = api.caller(caller => caller && caller.supportsStaticESM);
+  const supportsDynamicImport = api.caller(
+    caller => caller && caller.supportsDynamicImport,
+  );
+  const supportsModules = api.caller(
+    caller => caller && caller.supportsStaticESM,
+  );
   options = {
     minify: false,
     typing: false,
@@ -28,10 +32,11 @@ function buildPreset(api, options = {}) {
     corejs: { version: 3, proposals: true },
     ...options,
   };
-  const modules = (env === 'test' || options.nodeTarget)
-    ? (options.modules || (supportsModules ? false : 'auto'))
-    // if supportsModules is undefined or true then assume it can handle es modules.
-    : (options.modules || (supportsModules === false ? 'auto' : false));
+  const modules =
+    env === 'test' || options.nodeTarget
+      ? options.modules || (supportsModules ? false : 'auto')
+      : // if supportsModules is undefined or true then assume it can handle es modules.
+        options.modules || (supportsModules === false ? 'auto' : false);
   // We should turn this on by default once the lowest version of Node LTS
   // supports ES Modules.
   const useESModules =
@@ -40,11 +45,13 @@ function buildPreset(api, options = {}) {
       : options.useESModules;
 
   let absoluteRuntimePath = undefined;
+  let runtimeVersion = undefined;
   try {
     // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
     absoluteRuntimePath = path.dirname(
-      require.resolve('@babel/runtime/package.json')
+      require.resolve('@babel/runtime/package.json'),
     );
+    runtimeVersion = require('@babel/runtime/package.json').version;
   } catch (e) {}
 
   const preset = {
@@ -62,21 +69,27 @@ function buildPreset(api, options = {}) {
           rootPathPrefix: options.rootPathPrefix,
         },
       ],
-      absoluteRuntimePath && [
-        require('@babel/plugin-transform-runtime').default,
-        {
-          corejs: false,
-          helpers: true,
-          regenerator: true,
-          useESModules,
-        },
-      ],
+      absoluteRuntimePath &&
+        runtimeVersion && [
+          require('@babel/plugin-transform-runtime').default,
+          {
+            corejs: false,
+            helpers: true,
+            regenerator: true,
+            useESModules,
+            version: '7.5.5',
+          },
+        ],
       //stage 1
-      options.typing !== 'typescript' && require('@babel/plugin-proposal-export-default-from').default,
-      options.typing !== 'typescript' && require('@babel/plugin-proposal-export-namespace-from').default,
-      options.typing !== 'typescript' && require('@babel/plugin-proposal-optional-chaining').default,
-      options.typing !== 'typescript' && require('@babel/plugin-proposal-nullish-coalescing-operator').default,
+      options.typing !== 'typescript' &&
+        require('@babel/plugin-proposal-export-default-from').default,
+      options.typing !== 'typescript' &&
+        require('@babel/plugin-proposal-export-namespace-from').default,
       //stage 3
+      options.typing !== 'typescript' &&
+        require('@babel/plugin-proposal-optional-chaining').default,
+      options.typing !== 'typescript' &&
+        require('@babel/plugin-proposal-nullish-coalescing-operator').default,
       require('@babel/plugin-syntax-dynamic-import').default,
       [
         require('@babel/plugin-proposal-private-methods').default,
@@ -94,8 +107,13 @@ function buildPreset(api, options = {}) {
       preset.plugins.unshift(
         require('@babel/plugin-transform-react-inline-elements').default,
         //require('@babel/plugin-transform-react-constant-elements').default, #disabling due to breakage https://github.com/babel/babel/issues/8310
-        require('babel-plugin-transform-react-remove-prop-types').default,
       );
+      // for compile performance, don't include this if they are using typing language instead of proptypes
+      if (!options.typing) {
+        preset.plugins.unshift(
+          require('babel-plugin-transform-react-remove-prop-types').default,
+        );
+      }
       break;
     case 'development':
       try {
