@@ -56,6 +56,9 @@ If set will run package checks to check for duplicates or ciruclar dependencies.
 Examples:
 `webpack --mode=production --check` or `webpack --check=nobuild`
 
+### profile
+If set, will enable [React DevTools Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This feature is only available in production mode since it is enabled in development by default.
+
 ## Options
 
 Pass these to makeConfig.

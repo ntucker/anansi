@@ -6,7 +6,8 @@
     "start": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --analyze",
-    "pkgcheck": "webpack --check=nobuild"
+    "pkgcheck": "webpack --check=nobuild",
+    "profile": "webpack --mode=production --profile"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.18.0",
