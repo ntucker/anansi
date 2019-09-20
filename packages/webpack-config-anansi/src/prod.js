@@ -87,10 +87,10 @@ export default function makeProdConfig(
     new TerserPlugin({
       terserOptions: {
         parse: {
-          ecma: 8,
+          ecma: 9,
         },
         compress: {
-          ecma: 5,
+          ecma: 6,
           warnings: false,
           // Pending further investigation:
           // https://github.com/mishoo/UglifyJS2/issues/2011
@@ -103,7 +103,7 @@ export default function makeProdConfig(
           safari10: true,
         },
         output: {
-          ecma: 5,
+          ecma: 6,
           comments: false,
           ascii_only: true,
         },
