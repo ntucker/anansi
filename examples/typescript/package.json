@@ -7,6 +7,7 @@
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
     "analyze": "webpack --mode=production --analyze",
+    "profile": "webpack --mode=production --profile",
     "pkgcheck": "webpack --check=nobuild",
     "type-check": "tsc --noEmit",
     "storybook": "start-storybook -p 6006",

@@ -107,6 +107,8 @@ export default function makeProdConfig(
           comments: false,
           ascii_only: true,
         },
+        keep_classnames: !!argv?.profile,
+        keep_fnames: !!argv?.profile,
       },
       sourceMap: true,
       extractComments: true,
@@ -153,5 +155,12 @@ export default function makeProdConfig(
   );
   config.module.rules = [...config.module.rules, ...styleRules];
 
+  if (argv?.profile) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'react-dom$': 'react-dom/profiling',
+      'scheduler/tracing': 'scheduler/tracing-profiling'
+    }
+  }
   return config;
 }
