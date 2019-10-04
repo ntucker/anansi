@@ -7,7 +7,6 @@ const options = {
 
 const generateConfig = makeConfig(options);
 
-module.exports = { options };
 
 module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
@@ -24,3 +23,5 @@ module.exports = (env, argv) => {
   }
   return config;
 };
+
+module.exports.options = options;
