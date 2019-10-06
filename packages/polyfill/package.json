@@ -49,9 +49,10 @@
     "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-commonjs": "^9.2.0",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.6.3"
   },
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"
-  }
+  },
+  "gitHead": "150aeb90c96b773030da997a5e9eb1cc83709aa6"
 }

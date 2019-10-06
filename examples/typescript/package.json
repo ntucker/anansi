@@ -46,7 +46,7 @@
     "lodash": "^4.17.15",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.1.2",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
     "rest-hooks": "2.1.5"
