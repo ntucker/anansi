@@ -1,5 +1,7 @@
 import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CrittersPlugin from 'critters-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
@@ -11,7 +13,14 @@ import { getStyleRules } from './base';
 
 export default function makeProdConfig(
   baseConfig,
-  { rootPath, basePath, libraryInclude, libraryExclude, argv = {} },
+  {
+    rootPath,
+    basePath,
+    libraryInclude,
+    libraryExclude,
+    argv = {},
+    htmlOptions = { title: 'Anansi app' },
+  },
 ) {
   const config = { ...baseConfig };
 
@@ -31,7 +40,11 @@ export default function makeProdConfig(
         filename: '[name].[contenthash].css',
         chunkFilename: '[name].[contenthash].css',
       }),
+      new CrittersPlugin({}),
     );
+    if (htmlOptions) {
+      config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
+    }
   }
   config.module.rules.push({
     test: /\.svg$/,
@@ -159,8 +172,8 @@ export default function makeProdConfig(
     config.resolve.alias = {
       ...config.resolve.alias,
       'react-dom$': 'react-dom/profiling',
-      'scheduler/tracing': 'scheduler/tracing-profiling'
-    }
+      'scheduler/tracing': 'scheduler/tracing-profiling',
+    };
   }
   return config;
 }
