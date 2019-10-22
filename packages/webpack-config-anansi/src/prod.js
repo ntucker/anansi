@@ -40,10 +40,12 @@ export default function makeProdConfig(
         filename: '[name].[contenthash].css',
         chunkFilename: '[name].[contenthash].css',
       }),
-      new CrittersPlugin({}),
     );
     if (htmlOptions) {
-      config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
+      config.plugins.unshift(
+        new HtmlWebpackPlugin(htmlOptions),
+        new CrittersPlugin({}),
+      );
     }
   }
   config.module.rules.push({

@@ -15,7 +15,10 @@ const getCSSLoaders = ({ absoluteBasePath }) => [
       plugins: [autoprefixer(), cssPresetEnv()],
     },
   },
-  { loader: 'sass-loader', options: { outputStyle: 'expanded' } },
+  {
+    loader: 'sass-loader',
+    options: { sassOptions: { outputStyle: 'expanded' } },
+  },
   {
     loader: 'sass-resources-loader',
     options: {
