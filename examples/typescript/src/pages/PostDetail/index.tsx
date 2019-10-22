@@ -1,4 +1,4 @@
-import { useResource } from 'rest-hooks';
+import { useResourceNew } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Typography, Button, PageHeader } from 'antd';
@@ -14,8 +14,8 @@ export default function PostDetail({
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const post = useResource(PostResource.detailShape(), { id });
-  const author = useResource(UserResource.detailShape(), { id: post.userId });
+  const post = useResourceNew(PostResource.detailShape(), { id });
+  const author = useResourceNew(UserResource.detailShape(), { id: post.userId });
   const routes = [
     {
       path: '/posts',

@@ -1,11 +1,11 @@
 import { PostResource, UserResource } from 'data/resources';
 import React from 'react';
-import { useResource } from 'rest-hooks';
+import { useResourceNew } from 'rest-hooks';
 import { List, Avatar, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
 export default function IssueListItem({ post }: { post: PostResource }) {
-  const author = useResource(UserResource.detailShape(), {
+  const author = useResourceNew(UserResource.detailShape(), {
     id: post.userId,
   });
   const actions = [];
