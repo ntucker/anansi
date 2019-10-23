@@ -1,4 +1,4 @@
-import { useResourceNew } from 'rest-hooks';
+import { useResource } from 'rest-hooks';
 import { List, Comment } from 'antd';
 
 import { CommentResource } from 'data/resources';
@@ -6,7 +6,7 @@ import { CommentResource } from 'data/resources';
 type Props = { postId: number };
 
 export default function CommentList({ postId }: Props) {
-  const comments = useResourceNew(
+  const comments = useResource(
     CommentResource.listShape(), { postId }
   );
   return (

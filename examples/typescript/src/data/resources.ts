@@ -1,7 +1,7 @@
 import { Resource } from 'rest-hooks';
 
 export class PostResource extends Resource {
-  readonly id: number | null = null;
+  readonly id: number | undefined = undefined;
   readonly userId: number | null = null;
   readonly title: string = '';
   readonly body: string = '';
@@ -18,8 +18,8 @@ export class CommentResource extends Resource {
   readonly email: string = '';
   readonly body: string = '';
 
-  pk(): number {
-    return this.id || 0;
+  pk() {
+    return this.id;
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
@@ -35,7 +35,7 @@ export interface Address {
   };
 }
 export class UserResource extends Resource {
-  readonly id: number | null = null;
+  readonly id: number | undefined = undefined;
   readonly name: string = '';
   readonly username: string = '';
   readonly email: string = '';

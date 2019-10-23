@@ -14502,10 +14502,10 @@ resolve@^1.11.0, resolve@^1.8.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-2.2.1.tgz#324030234c22eb394883625f84c2d24d9c5c5ace"
-  integrity sha512-zMADgYHRD3//rS9jGoOZhJ0ICeoUjtGK8sqGiOiV3IEJw5kc2WF+/ZypEfqlsCb9wqNgVqbqFr+mka4Wh1MjXA==
+rest-hooks@3.0.0-beta.3:
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-3.0.0-beta.3.tgz#2edb07f7092b88461b83a52e00dc501d4c6fcc16"
+  integrity sha512-myYeucXKCYd76coYkjyYXEjDQzonjT4mbooUIIOPXRZ3m3pM80Fzc1d8c4stPf1GwX6kXLehbXGQJgXwvR0zFg==
   dependencies:
     "@babel/runtime" "^7.6.0"
     "@rest-hooks/normalizr" "^4.0.0-beta.2"

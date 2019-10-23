@@ -1,5 +1,5 @@
 import React from 'react';
-import { useResourceNew } from 'rest-hooks';
+import { useResource } from 'rest-hooks';
 import { List, Button, PageHeader } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useResourceNew(PostResource.listShape(), {});
+  const posts = useResource(PostResource.listShape(), {});
   return (
     <PageHeader
       title="Post List"

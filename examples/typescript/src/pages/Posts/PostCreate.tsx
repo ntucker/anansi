@@ -24,7 +24,7 @@ export default function PostCreate() {
       <PostForm
         initialValues={{ userId: 1 }}
         onSubmit={async (data: object) => {
-          const res = await create(data, {});
+          const res = await create({}, data);
           window.location.href = `/post/${res.id}`;
         }}
       />

@@ -1,6 +1,6 @@
 import { PageHeader } from 'antd';
 import { PostResource } from 'data/resources';
-import { useFetcher, useResourceNew } from 'rest-hooks';
+import { useFetcher, useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import itemRender from 'navigation/breadcrumbItemRenderer';
 import PostForm from './PostForm';
@@ -13,7 +13,7 @@ export default function PostEdit({
     id = Number.parseInt(match.params.id);
   }
   const update = useFetcher(PostResource.updateShape());
-  const post = useResourceNew(PostResource.detailShape(), { id });
+  const post = useResource(PostResource.detailShape(), { id });
   const routes = [
     {
       path: '/posts',
@@ -36,7 +36,7 @@ export default function PostEdit({
   >
       <PostForm
         initialValues={post}
-        onSubmit={(data: object) => update(data, { id })}
+        onSubmit={(data: object) => update({ id }, data)}
       />
   </PageHeader>
   );

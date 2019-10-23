@@ -1,5 +1,5 @@
 import { UserResource, Address } from 'data/resources';
-import { useResourceNew } from 'rest-hooks';
+import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import { Typography } from 'antd';
 
@@ -11,7 +11,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = useResourceNew(UserResource.detailShape(), { id });
+  const author = useResource(UserResource.detailShape(), { id });
   return (
     <>
       <Typography.Title level={2}>{author.name}</Typography.Title>
