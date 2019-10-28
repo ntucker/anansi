@@ -64,6 +64,7 @@ module.exports = {
     // additional rules
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warning',
+    'react/prefer-stateless-function': 'error',
     'import/order': [
       'warn',
       {
