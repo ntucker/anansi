@@ -151,6 +151,7 @@ function buildPreset(api, options = {}) {
         modules,
         useBuiltIns: options.useBuiltIns,
         corejs: options.corejs,
+        loose: options.legacyDecorators,
       },
     ]);
   }
