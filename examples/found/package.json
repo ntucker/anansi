@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-found",
-  "version": "0.0.74",
+  "version": "0.0.75",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
@@ -10,10 +10,10 @@
     "profile": "webpack --mode=production --profile"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^0.18.2",
+    "@anansi/babel-preset": "^0.18.3",
     "@anansi/browserslist-config": "^0.0.5",
     "@anansi/eslint-config": "^0.6.6",
-    "@anansi/webpack-config": "^0.16.1",
+    "@anansi/webpack-config": "^0.16.2",
     "@babel/core": "^7.6.0",
     "babel-plugin-root-import": "^6.4.1",
     "eslint": "^5.16.0",
@@ -24,7 +24,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "@anansi/polyfill": "^0.3.27",
+    "@anansi/polyfill": "^0.3.28",
     "@hot-loader/react-dom": "16.9.0",
     "classnames": "^2.2.6",
     "found": "^0.3.18",
