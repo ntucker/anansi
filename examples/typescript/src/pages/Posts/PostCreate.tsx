@@ -1,4 +1,5 @@
 import { Typography, PageHeader } from 'antd';
+import { useHistory } from 'react-router-dom';
 import { PostResource } from 'data/resources';
 import { useFetcher } from 'rest-hooks';
 import itemRender from 'navigation/breadcrumbItemRenderer';
@@ -6,6 +7,7 @@ import PostForm from './PostForm';
 
 export default function PostCreate() {
   const create = useFetcher(PostResource.createShape());
+  const history = useHistory();
   const routes = [
     {
       path: '/posts',
@@ -24,8 +26,17 @@ export default function PostCreate() {
       <PostForm
         initialValues={{ userId: 1 }}
         onSubmit={async (data: object) => {
-          const res = await create({}, data);
-          window.location.href = `/post/${res.id}`;
+          const res = await create({}, data, [
+            [
+              PostResource.listShape(),
+              {},
+              (postID: string, postList: string[] | undefined) => [
+                postID,
+                ...postList || [],
+              ],
+            ],
+          ]);
+          history.push(`/post/${res.id}`);
         }}
       />
     </PageHeader>
