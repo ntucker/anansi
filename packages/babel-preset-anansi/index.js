@@ -58,7 +58,11 @@ function buildPreset(api, options = {}) {
     presets: [
       [
         require('@babel/preset-react').default,
-        { development: env !== 'production', useBuiltIns: true },
+        {
+          development: env !== 'production',
+          useBuiltIns: true,
+          useSpread: true,
+        },
       ],
     ],
     plugins: [
@@ -77,7 +81,7 @@ function buildPreset(api, options = {}) {
             helpers: true,
             regenerator: true,
             useESModules,
-            version: '7.5.5',
+            version: '7.7.1',
           },
         ],
       //stage 1
@@ -169,7 +173,12 @@ function buildPreset(api, options = {}) {
       );
       break;
     case 'typescript':
-      preset.presets.push(require('@babel/preset-typescript').default);
+      preset.presets.push([
+        require('@babel/preset-typescript').default,
+        {
+          allowDeclareFields: true,
+        },
+      ]);
       break;
   }
   const decoratorsOptions = {

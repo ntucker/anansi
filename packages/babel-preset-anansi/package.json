@@ -26,8 +26,8 @@
     "node": ">=6.15.1"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
@@ -40,9 +40,9 @@
     "@babel/plugin-transform-react-constant-elements": "^7.6.3",
     "@babel/plugin-transform-react-inline-elements": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@babel/preset-typescript": "^7.6.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-typescript": "^7.7.0",
     "babel-minify": "^0.5.1",
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "babel-plugin-lodash": "^3.3.4",
@@ -51,16 +51,16 @@
     "babel-plugin-react-require": "^3.1.1",
     "babel-plugin-root-import": "^6.4.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "core-js-compat": "^3.3.5",
+    "core-js-compat": "^3.3.6",
     "path": "^0.12.7",
     "stable": "^0.1.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0"
+    "@babel/core": "^7.7.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.5.0",
-    "@babel/runtime": "^7.5.0",
+    "@babel/core": "^7.7.0",
+    "@babel/runtime": "^7.7.0",
     "react-hot-loader": "^4.6.5"
   },
   "peerDependenciesMeta": {
