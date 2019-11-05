@@ -10,7 +10,7 @@ options:
   useBuiltIns,
   corejs,
   minify,
-  legacyDecorators
+  loose
 */
 function buildPreset(api, options = {}) {
   const env = api.env();
@@ -24,7 +24,7 @@ function buildPreset(api, options = {}) {
   options = {
     minify: false,
     typing: false,
-    legacyDecorators: false,
+    loose: false,
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: true,
@@ -95,7 +95,7 @@ function buildPreset(api, options = {}) {
       require('@babel/plugin-syntax-dynamic-import').default,
       [
         require('@babel/plugin-proposal-private-methods').default,
-        { loose: options.legacyDecorators },
+        { loose: options.loose },
       ],
     ],
   };
@@ -155,7 +155,7 @@ function buildPreset(api, options = {}) {
         modules,
         useBuiltIns: options.useBuiltIns,
         corejs: options.corejs,
-        loose: options.legacyDecorators,
+        loose: options.loose,
       },
     ]);
   }
@@ -182,9 +182,9 @@ function buildPreset(api, options = {}) {
       break;
   }
   const decoratorsOptions = {
-    legacy: options.legacyDecorators,
+    legacy: options.loose,
   };
-  if (!options.legacyDecorators) {
+  if (!options.loose) {
     decoratorsOptions.decoratorsBeforeExport = true;
   }
   preset.plugins.unshift(
@@ -193,7 +193,7 @@ function buildPreset(api, options = {}) {
     // stage 3 but must come before flow
     [
       require('@babel/plugin-proposal-class-properties').default,
-      { loose: options.legacyDecorators },
+      { loose: options.loose },
     ],
   );
   /*         end block        */

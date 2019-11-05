@@ -85,9 +85,14 @@ Which core-js version to use when useBuiltIns is not false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
 
-### legacyDecorators: bool = false
+### loose: bool = false
 
-Support legacy decorators instead of the soon-to-be-standard syntax.
+Loose:
+
+- class properties
+- private methods
+- all things in preset-env
+- legacy decorators
 
 ### rootPathSuffix: string = './src'
 
