@@ -32,6 +32,7 @@
     "babel-loader": "^8.0.6",
     "eslint": "^5.16.0",
     "react-hot-loader": "^4.12.14",
+    "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
@@ -49,7 +50,7 @@
     "react-router-dom": "^5.1.2",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "3.0.0-beta.5"
+    "rest-hooks": "3.0.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
