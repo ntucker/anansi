@@ -156,6 +156,8 @@ function buildPreset(api, options = {}) {
         useBuiltIns: options.useBuiltIns,
         corejs: options.corejs,
         loose: options.loose,
+        // Exclude transforms that make all code slower
+        exclude: ['transform-typeof-symbol'],
       },
     ]);
   }
