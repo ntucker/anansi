@@ -165,37 +165,53 @@ function buildPreset(api, options = {}) {
 
   /*  block is at the end so they are unshifted to the start of plugins  */
   preset.plugins.unshift(require('babel-plugin-macros'));
-  switch (options.typing) {
-    case 'flow':
-      // using the plugin so we can place after decorators and class properties
-      preset.plugins.unshift(
-        require('@babel/plugin-transform-flow-strip-types').default,
-      );
-      break;
-    case 'typescript':
-      preset.presets.push([
-        require('@babel/preset-typescript').default,
-        {
-          allowDeclareFields: true,
-        },
-      ]);
-      break;
-  }
   const decoratorsOptions = {
     legacy: options.loose,
   };
   if (!options.loose) {
     decoratorsOptions.decoratorsBeforeExport = true;
   }
-  preset.plugins.unshift(
+  const classPropertiesOptions = { loose: options.loose };
+  const classPlugins = [
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // stage 3 but must come before flow
     [
       require('@babel/plugin-proposal-class-properties').default,
-      { loose: options.loose },
+      classPropertiesOptions,
     ],
-  );
+  ];
+  if (options.typing === 'typescript') {
+    // using plugin so it can be placed before class transforms
+    const transformTypeScript = require('@babel/plugin-transform-typescript')
+      .default;
+    const pluginOptions = isTSX => ({
+      isTSX,
+      allowDeclareFields: true,
+    });
+    preset.overrides = [
+      {
+        test: /\.ts$/,
+        plugins: [[transformTypeScript, pluginOptions(false)], ...classPlugins],
+      },
+      {
+        test: /\.tsx$/,
+        plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
+      },
+      {
+        test: /\.(?!(tsx|ts))$/,
+        plugins: classPlugins,
+      },
+    ];
+  } else {
+    preset.plugins.unshift(...classPlugins);
+    if (options.typing === 'flow') {
+      // using the plugin so we can place after decorators and class properties
+      preset.plugins.unshift(
+        require('@babel/plugin-transform-flow-strip-types').default,
+      );
+    }
+  }
   /*         end block        */
   return preset;
 }
