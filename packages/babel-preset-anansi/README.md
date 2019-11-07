@@ -33,7 +33,7 @@ Or configure options
     [
       "@anansi/babel-preset",
       {
-        "typing": "flow"
+        "typing": "typescript"
       }
     ]
   ]
@@ -127,15 +127,14 @@ are included:
 * Dynamic import (`import()`)
 * [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
 * [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
-
-### Stage 2
 * [Decorators](https://github.com/tc39/proposal-decorators)
+* [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
+* [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
+* [Module level await](https://github.com/tc39/proposal-top-level-await)
 
 ### Stage 1
 * [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from)
 * [`export * as ns from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-namespace-from)
-* [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
-* [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
 
 ### Other
 * [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
