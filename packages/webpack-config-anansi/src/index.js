@@ -13,9 +13,7 @@ export makeStorybookConfigGenerator from './storybook';
 
 export function makeConfig(options) {
   return (env, argv) => {
-    if (!process.env.NODE_ENV) {
-      process.env.NODE_ENV = argv?.mode;
-    }
+    process.env.NODE_ENV = argv?.mode;
     // eslint-disable-next-line no-param-reassign
     options = {
       rootPath: ROOT_PATH,
