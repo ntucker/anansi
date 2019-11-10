@@ -3563,16 +3563,16 @@
     "@types/uglify-js" "*"
     source-map "^0.6.0"
 
-"@typescript-eslint/eslint-plugin@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.1.0.tgz#4bcd978d88419ea971613675f2620dde39920d69"
-  integrity sha512-3i/dLPwxaVfCsaLu3HkB8CAA1Uw3McAegrTs+VBJ0BrGRKW7nUwSqRfHfCS7sw7zSbf62q3v0v6pOS8MyaYItg==
+"@typescript-eslint/eslint-plugin@^2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.6.1.tgz#e34972a24f8aba0861f9ccf7130acd74fd11e079"
+  integrity sha512-Z0rddsGqioKbvqfohg7BwkFC3PuNLsB+GE9QkFza7tiDzuHoy0y823Y+oGNDzxNZrYyLjqkZtCTl4vCqOmEN4g==
   dependencies:
-    "@typescript-eslint/experimental-utils" "2.1.0"
-    eslint-utils "^1.4.0"
+    "@typescript-eslint/experimental-utils" "2.6.1"
+    eslint-utils "^1.4.2"
     functional-red-black-tree "^1.0.1"
     regexpp "^2.0.1"
-    tsutils "^3.14.0"
+    tsutils "^3.17.1"
 
 "@typescript-eslint/experimental-utils@1.10.2":
   version "1.10.2"
@@ -3582,14 +3582,14 @@
     "@typescript-eslint/typescript-estree" "1.10.2"
     eslint-scope "^4.0.0"
 
-"@typescript-eslint/experimental-utils@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.1.0.tgz#0837229f0e75a32db0db9bf662ad0eface914453"
-  integrity sha512-ZJGLYXa4nxjNzomaEk1qts38B/vludg2LOM7dRc7SppEKsMPTS1swaTKS/pom+x4d/luJGoG00BDIss7PR1NQA==
+"@typescript-eslint/experimental-utils@2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.6.1.tgz#eddaca17a399ebf93a8628923233b4f93793acfd"
+  integrity sha512-EVrrUhl5yBt7fC7c62lWmriq4MIc49zpN3JmrKqfiFXPXCM5ErfEcZYfKOhZXkW6MBjFcJ5kGZqu1b+lyyExUw==
   dependencies:
     "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.1.0"
-    eslint-scope "^4.0.0"
+    "@typescript-eslint/typescript-estree" "2.6.1"
+    eslint-scope "^5.0.0"
 
 "@typescript-eslint/parser@^1.10.2":
   version "1.10.2"
@@ -3601,15 +3601,15 @@
     "@typescript-eslint/typescript-estree" "1.10.2"
     eslint-visitor-keys "^1.0.0"
 
-"@typescript-eslint/parser@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.1.0.tgz#ca62b26fa6a5a34ecdec4a000f22baf103791830"
-  integrity sha512-0+hzirRJoqE1T4lSSvCfKD+kWjIpDWfbGBiisK5CENcr+22pPkHB2sfV1giON+UxHV4A08SSrQonZk7X2zIQdw==
+"@typescript-eslint/parser@^2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.6.1.tgz#3c00116baa0d696bc334ca18ac5286b34793993c"
+  integrity sha512-PDPkUkZ4c7yA+FWqigjwf3ngPUgoLaGjMlFh6TRtbjhqxFBnkElDfckSjm98q9cMr4xRzZ15VrS/xKm6QHYf0w==
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "2.1.0"
-    "@typescript-eslint/typescript-estree" "2.1.0"
-    eslint-visitor-keys "^1.0.0"
+    "@typescript-eslint/experimental-utils" "2.6.1"
+    "@typescript-eslint/typescript-estree" "2.6.1"
+    eslint-visitor-keys "^1.1.0"
 
 "@typescript-eslint/typescript-estree@1.10.2":
   version "1.10.2"
@@ -3619,15 +3619,17 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@typescript-eslint/typescript-estree@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.1.0.tgz#88e676cc9760516711f6fe43958adc31b93de8e5"
-  integrity sha512-482ErJJ7QYghBh+KA9G+Fwcuk/PLTy+9NBMz8S+6UFrUUnVvHRNAL7I70kdws2te0FBYEZW7pkDaXoT+y8UARw==
+"@typescript-eslint/typescript-estree@2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.6.1.tgz#fb363dd4ca23384745c5ea4b7f4c867432b00d31"
+  integrity sha512-+sTnssW6bcbDZKE8Ce7VV6LdzkQz2Bxk7jzk1J8H1rovoTxnm6iXvYIyncvNsaB/kBCOM63j/LNJfm27bNdUoA==
   dependencies:
+    debug "^4.1.1"
     glob "^7.1.4"
     is-glob "^4.0.1"
     lodash.unescape "4.0.1"
-    semver "^6.2.0"
+    semver "^6.3.0"
+    tsutils "^3.17.1"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -7625,17 +7627,37 @@ eslint-scope@^4.0.0, eslint-scope@^4.0.3:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^1.3.1, eslint-utils@^1.4.0:
+eslint-scope@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.0.0.tgz#e87c8887c73e8d1ec84f1ca591645c358bfc8fb9"
+  integrity sha512-oYrhJW7S0bxAFDvWqzvMPRm6pcgcnWc4QnofCAqRTRfQC0JcwenzGglTtsLyIuuWFfkqDG9vz67cnttSd53djw==
+  dependencies:
+    esrecurse "^4.1.0"
+    estraverse "^4.1.1"
+
+eslint-utils@^1.3.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
   integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
   dependencies:
     eslint-visitor-keys "^1.0.0"
 
+eslint-utils@^1.4.2:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.3.tgz#74fec7c54d0776b6f67e0251040b5806564e981f"
+  integrity sha512-fbBN5W2xdY45KulGXmLHZ3c3FHfVYmKg0IrAKGOkT/464PQsx2UeIzfz1RmEci+KLm1bBaAzZAh8+/E+XAeZ8Q==
+  dependencies:
+    eslint-visitor-keys "^1.1.0"
+
 eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
+
+eslint-visitor-keys@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
+  integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
 eslint@^5.0.0, eslint@^5.12.0, eslint@^5.16.0:
   version "5.16.0"
@@ -16682,7 +16704,7 @@ tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
 
-tsutils@^3.14.0:
+tsutils@^3.17.1:
   version "3.17.1"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.17.1.tgz#ed719917f11ca0dee586272b2ac49e015a2dd759"
   integrity sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
@@ -16745,11 +16767,6 @@ typescript@^3.2.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
   integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
-
-typescript@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.1.tgz#ba72a6a600b2158139c5dd8850f700e231464202"
-  integrity sha512-64HkdiRv1yYZsSe4xC1WVgamNigVYjlssIoaH2HcZF0+ijsk5YK2g0G34w9wJkze8+5ow4STd22AynfO6ZYYLw==
 
 typescript@^3.7.2:
   version "3.7.2"
