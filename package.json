@@ -9,8 +9,8 @@
     "publish": "lerna publish"
   },
   "devDependencies": {
-    "lerna": "^3.10.5",
+    "lerna": "^3.18.4",
     "lerna-changelog": "^0.8.2",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.3.10"
   }
 }
