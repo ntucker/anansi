@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "changelog": "lerna-changelog",
-    "publish": "lerna publish --conventional-commits --create-release"
+    "publish": "lerna publish --create-release github --changelog-preset conventionalcommits --message \"internal: publish\" --conventional-commits"
   },
   "husky": {
     "hooks": {
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "conventional-changelog-conventionalcommits": "^4.2.3",
     "husky": "^3.0.9",
     "lerna": "^3.18.4",
     "lerna-changelog": "^0.8.2",
