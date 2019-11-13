@@ -53,7 +53,12 @@ Will run to target node instead of browsers. Specify a [valid node string](https
 
 ### targets : ?object = undefined
 
-*NOT recommended.* Can be used to override babel-preset-env targets for non-testing environment.
+Set to `{ "esmodules": true }` to produce extra optimal bundles for modern browsers that support
+ES modules. This will make use of `@babel/preset-modules` instead of `@babel/preset-env`, whose transforms
+are more compact and efficient.
+
+*NOT recommended for non-`{ "esmodules": true }`.* Can be used to override `@babel/preset-env` targets
+for non-testing environment.
 Use a [browserslist config](https://github.com/browserslist/browserslist#packagejson) instead.
 
 Feel free to use the [anansi browserlist config](/packages/browserslist-config-anansi).

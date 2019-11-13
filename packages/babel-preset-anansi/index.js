@@ -148,18 +148,26 @@ function buildPreset(api, options = {}) {
       preset.plugins.push(require('babel-plugin-dynamic-import-node'));
     }
   } else {
-    preset.presets.unshift([
-      require('@babel/preset-env').default,
-      {
-        targets: options.targets,
-        modules,
-        useBuiltIns: options.useBuiltIns,
-        corejs: options.corejs,
-        loose: options.loose,
-        // Exclude transforms that make all code slower
-        exclude: ['transform-typeof-symbol'],
-      },
-    ]);
+    // TODO: enable this in more cases based on browserslist
+    if (options.targets && options.targets.esmodules === true) {
+      preset.presets.unshift([
+        require('@babel/preset-modules'),
+        { loose: true },
+      ]);
+    } else {
+      preset.presets.unshift([
+        require('@babel/preset-env').default,
+        {
+          targets: options.targets,
+          modules,
+          useBuiltIns: options.useBuiltIns,
+          corejs: options.corejs,
+          loose: options.loose,
+          // Exclude transforms that make all code slower
+          exclude: ['transform-typeof-symbol'],
+        },
+      ]);
+    }
   }
   if (options.minify && env === 'production') {
     preset.presets.unshift(require('babel-minify'));
