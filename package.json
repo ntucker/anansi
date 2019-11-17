@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "changelog": "lerna-changelog",
-    "publish": "lerna publish --create-release github --changelog-preset conventionalcommits --message \"internal: publish\" --conventional-commits"
+    "publish": "lerna publish"
   },
   "husky": {
     "hooks": {

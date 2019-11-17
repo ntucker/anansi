@@ -3,6 +3,22 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "changelogPreset": "conventionalcommits",
+      "createRelease": "github",
+      "message": "internal: publish",
+      "types": [
+        { "type": "feat", "section": "🚀 Features" },
+        { "type": "enhance", "section": "💅 Enhancement" },
+        { "type": "fix", "section": "🐛 Bug Fix" },
+        { "type": "pkg", "section": "📦 Package" },
+        { "type": "internal", "section": "🏠 Internal" },
+        { "type": "docs", "section": "📝 Documentation" }
+      ]
+    }
+  },
   "changelog": {
     "repo": "ntucker/anansi",
     "labels": {
