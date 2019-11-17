@@ -2,6 +2,41 @@
 # yarn lockfile v1
 
 
+"@anansi/babel-preset@^0.19.3":
+  version "0.19.3"
+  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.19.3.tgz#66a80623170a8a03a30cb2086de63fdfd766eb33"
+  integrity sha512-8qwz78nyMgCEe8P05K6XVNizLI1PKWR+NvT5jUoZd2paHqWtPwn4WvG0K9ejxWlzqi72q0Mzq6bP0lRVkp0sug==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.7.0"
+    "@babel/plugin-proposal-decorators" "^7.7.0"
+    "@babel/plugin-proposal-export-default-from" "^7.5.2"
+    "@babel/plugin-proposal-export-namespace-from" "^7.5.2"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.4.4"
+    "@babel/plugin-proposal-optional-chaining" "^7.6.0"
+    "@babel/plugin-proposal-private-methods" "^7.6.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@babel/plugin-syntax-function-bind" "^7.2.0"
+    "@babel/plugin-syntax-top-level-await" "^7.7.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.6.3"
+    "@babel/plugin-transform-object-assign" "^7.2.0"
+    "@babel/plugin-transform-react-constant-elements" "^7.6.3"
+    "@babel/plugin-transform-react-inline-elements" "^7.2.0"
+    "@babel/plugin-transform-runtime" "^7.6.2"
+    "@babel/plugin-transform-typescript" "^7.7.2"
+    "@babel/preset-env" "^7.7.1"
+    "@babel/preset-react" "^7.7.0"
+    babel-minify "^0.5.1"
+    babel-plugin-dynamic-import-node "^2.3.0"
+    babel-plugin-lodash "^3.3.4"
+    babel-plugin-macros "^2.6.1"
+    babel-plugin-ramda "^2.0.0"
+    babel-plugin-react-require "^3.1.1"
+    babel-plugin-root-import "^6.4.1"
+    babel-plugin-transform-react-remove-prop-types "^0.4.24"
+    core-js-compat "^3.4.0"
+    path "^0.12.7"
+    stable "^0.1.8"
+
 "@ant-design/colors@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-3.1.0.tgz#b7e2cc61a4e86d3d109494034acfb1222dacaa3c"
@@ -9110,9 +9145,9 @@ handle-thing@^2.0.0:
   integrity sha512-d4sze1JNC454Wdo2fkuyzCr6aHcbL6PGGuFAz0Li/NcOm1tCHGnWDRmJP85dh9IhQErTc2svWFEX5xHIOo//kQ==
 
 handlebars@^4.1.0:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.1.tgz#8a01c382c180272260d07f2d1aa3ae745715c7ba"
-  integrity sha512-C29UoFzHe9yM61lOsIlCE5/mQVGrnIOrOq7maQl76L7tYPCgC1og0Ajt6uWnX4ZTxBPnjw+CUvawphwCfJgUnA==
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.2.tgz#5a4eb92ab5962ca3415ac188c86dc7f784f76a0f"
+  integrity sha512-29Zxv/cynYB7mkT1rVWQnV7mGX6v7H/miQ6dbEpYTKq5eJBN7PsRB+ViYJlcT6JINTSu4dVB9kOqEun78h6Exg==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
