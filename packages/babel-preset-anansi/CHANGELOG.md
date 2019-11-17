@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.22.1 (2019-11-17)</small>
+
+* docs: Add purpose to babel readme ([aa5e30d](https://github.com/ntucker/anansi/commit/aa5e30d))
+
+
+
+
+
 ## 0.22.0 (2019-11-13)
 
 * internal: Configure changelog tags ([6d752d0](https://github.com/ntucker/anansi/commit/6d752d0))
