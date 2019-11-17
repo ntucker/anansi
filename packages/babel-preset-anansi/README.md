@@ -2,6 +2,13 @@
 
 Configurable production-ready babel preset for React projects.
 
+### Why
+
+* Up to date best practices
+* Tight multi-plugin configuration
+  * Plugins made to interop correctly together
+  * Centralized configuration both simplifies and ensures correctness
+
 ## Usage
 
 Just include in .babelrc
@@ -91,8 +98,6 @@ Which core-js version to use when useBuiltIns is not false
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
 
 ### loose: bool = false
-
-Loose:
 
 - class properties
 - private methods
