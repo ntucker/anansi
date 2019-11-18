@@ -59,6 +59,22 @@ Examples:
 ### profile
 If set, will enable [React DevTools Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This feature is only available in production mode since it is enabled in development by default.
 
+## ENV customization
+
+### WEBPACK_PUBLIC_HOST = ''
+
+Sets domain of served files. This is useful to distinguish between different build environments that
+will serve assets from different locations like a CDN.
+
+Serves as first half of [publicPath](https://webpack.js.org/guides/public-path/)
+
+Note: dev mode sets its own path based assets serving is completely controlled by webpack-dev-server.
+
+### WEBPACK_PUBLIC_PATH = '/'
+
+Forms the second half of the [publicPath](https://webpack.js.org/guides/public-path/). Can be useful when assets are served in subdirectories as
+opposed to custom domains like in the case of CDNs.
+
 ## Options
 
 Pass these to makeConfig.

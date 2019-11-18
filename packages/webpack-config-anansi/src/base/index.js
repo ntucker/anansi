@@ -6,6 +6,9 @@ import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
 
+const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
+const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
+
 export default function makeBaseConfig({
   rootPath,
   basePath,
@@ -31,6 +34,7 @@ export default function makeBaseConfig({
     },
     output: {
       path: path.join(rootPath, buildDir),
+      publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
       filename: '[name]-[contenthash].js',
       chunkFilename: '[name]-[contenthash].chunk.js',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
