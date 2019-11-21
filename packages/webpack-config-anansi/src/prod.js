@@ -19,7 +19,7 @@ export default function makeProdConfig(
     libraryInclude,
     libraryExclude,
     argv = {},
-    htmlOptions = { title: 'Anansi app' },
+    htmlOptions = { title: '' },
   },
 ) {
   const config = { ...baseConfig };
