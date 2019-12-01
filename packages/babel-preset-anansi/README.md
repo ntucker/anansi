@@ -124,6 +124,14 @@ When using with typescript, be sure to add to tsconfig.json:
 
 Configures what prefix is used to trigger root imports.
 
+### rootPathRoot: undefined
+
+[Controls the root.](https://www.npmjs.com/package/babel-plugin-root-import#custom-root)
+No value (undefined) means use current working directory.
+
+Sending `__dirname` from a `.babelrc.js` can be useful to ensure consistency no matter
+where babel starts running from.
+
 ### reactRequire: bool = true
 
 Automatically add react import if JSX is used.
