@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.17.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.17.5...@anansi/webpack-config@0.17.6) (2019-12-01)
+
+
+### 💅 Enhancement
+
+* Change default production htmlOptions to have empty title ([#11](https://github.com/ntucker/anansi/issues/11)) ([36ac2e6](https://github.com/ntucker/anansi/commit/36ac2e6a14e9ed49f43d43e8242817245d435fe9))
+
+
+
 ### [0.17.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.17.4...@anansi/webpack-config@0.17.5) (2019-11-19)
 
 
