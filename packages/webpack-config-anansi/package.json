@@ -18,7 +18,8 @@
   "keywords": [
     "anansi",
     "webpack",
-    "react"
+    "react",
+    "fast-refresh"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
@@ -38,11 +39,13 @@
     "debug": "^4.1.1",
     "eslint": "^5.16.0",
     "prettier-eslint-cli": "^5.0.0",
+    "react-refresh": "^0.7.0",
     "rimraf": "^2.6.3",
     "webpack": "^4.41.2",
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.1.0",
     "autoprefixer": "^9.7.0",
     "babel-loader": "^8.0.6",
     "circular-dependency-plugin": "^5.2.0",
@@ -83,12 +86,12 @@
     "worker-loader": "^2.0.0"
   },
   "peerDependencies": {
-    "@hot-loader/react-dom": "^16.0.0",
+    "react-refresh": "^0.7.0",
     "webpack": "^4.36.0",
     "webpack-dev-server": "^3.4.0"
   },
   "peerDependenciesMeta": {
-    "@hot-loader/react-dom": {
+    "react-refresh": {
       "optional": true
     }
   }

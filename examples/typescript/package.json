@@ -32,7 +32,7 @@
     "@types/storybook__react": "^4.0.2",
     "babel-loader": "^8.0.6",
     "eslint": "^5.16.0",
-    "react-hot-loader": "^4.12.14",
+    "react-refresh": "^0.7.0",
     "serve": "^11.2.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
@@ -42,7 +42,6 @@
   "dependencies": {
     "@anansi/polyfill": "^0.3.37",
     "@babel/runtime": "^7.6.0",
-    "@hot-loader/react-dom": "16.11.0",
     "antd": "^3.23.5",
     "classnames": "^2.2.6",
     "core-js": "^3.2.1",

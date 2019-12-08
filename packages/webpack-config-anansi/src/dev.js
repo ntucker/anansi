@@ -4,7 +4,6 @@ import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import webpack from 'webpack';
 import path from 'path';
-import { map } from 'ramda';
 
 import { getStyleRules } from './base';
 
@@ -91,8 +90,11 @@ export default function makeDevConfig(
     config.resolve.alias = {};
   }
   try {
-    require('@hot-loader/react-dom');
-    config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
+    require('react-refresh/babel');
+    const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+    config.plugins.push(new ReactRefreshWebpackPlugin({ disableRefreshCheck: true }));
+    config.devServer.hotOnly = true;
+    console.log("Fast refresh detected and enabled");
   } catch (e) {}
 
   const styleRules = getStyleRules({

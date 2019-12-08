@@ -11,7 +11,7 @@ export default () => {
   return (
     <div className={style.main}>
       <p>
-        Hello2 <AngleDown style={{ width: '1em' }} />
+        Hello <AngleDown style={{ width: '1em' }} />
         World <a href="https://true.io">True IO</a>
       </p>
       <p>
