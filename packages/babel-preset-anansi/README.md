@@ -4,10 +4,10 @@ Configurable production-ready babel preset for React projects.
 
 ### Why
 
-* Up to date best practices
-* Tight multi-plugin configuration
-  * Plugins made to interop correctly together
-  * Centralized configuration both simplifies and ensures correctness
+- Up to date best practices
+- Tight multi-plugin configuration
+  - Plugins made to interop correctly together
+  - Centralized configuration both simplifies and ensures correctness
 
 ## Usage
 
@@ -47,6 +47,10 @@ Or configure options
 }
 ```
 
+## React refresh
+
+In dev mode, if `react-refresh` is installed it will be enabled.
+
 ## Options
 
 ### typing: 'flow' | 'typescript' | false = false
@@ -64,7 +68,7 @@ Set to `{ "esmodules": true }` to produce extra optimal bundles for modern brows
 ES modules. This will make use of `@babel/preset-modules` instead of `@babel/preset-env`, whose transforms
 are more compact and efficient.
 
-*NOT recommended for non-`{ "esmodules": true }`.* Can be used to override `@babel/preset-env` targets
+_NOT recommended for non-`{ "esmodules": true }`._ Can be used to override `@babel/preset-env` targets
 for non-testing environment.
 Use a [browserslist config](https://github.com/browserslist/browserslist#packagejson) instead.
 
@@ -116,7 +120,7 @@ When using with typescript, be sure to add to tsconfig.json:
 ```json
 {
   "baseUrl": "./src",
-  "paths": {"~/*": ["*"]},
+  "paths": { "~/*": ["*"] }
 }
 ```
 
@@ -142,21 +146,24 @@ In addition to providing good production/development/testing transformations; so
 are included:
 
 ### Stage 3
-* Dynamic import (`import()`)
-* [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
-* [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
-* [Decorators](https://github.com/tc39/proposal-decorators)
-* [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
-* [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
-* [Module level await](https://github.com/tc39/proposal-top-level-await)
+
+- Dynamic import (`import()`)
+- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
+- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
+- [Decorators](https://github.com/tc39/proposal-decorators)
+- [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
+- [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
+- [Module level await](https://github.com/tc39/proposal-top-level-await)
 
 ### Stage 1
-* [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from)
-* [`export * as ns from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-namespace-from)
+
+- [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from)
+- [`export * as ns from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-namespace-from)
 
 ### Other
-* [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
-* [Macros](https://github.com/kentcdodds/babel-plugin-macros)
+
+- [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
+- [Macros](https://github.com/kentcdodds/babel-plugin-macros)
 
 ### Polyfills
 

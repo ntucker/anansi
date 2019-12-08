@@ -7,11 +7,11 @@ A webpack configuration for fast development and production ready optimizations
 `/webpack.config.js`
 
 ```javascript
-const { makeConfig } = require('@anansi/webpack-config');
+const { makeConfig } = require("@anansi/webpack-config");
 
 const options = {
-  basePath: 'src',
-  buildDir: 'generated_assets/',
+  basePath: "src",
+  buildDir: "generated_assets/"
 };
 
 module.exports = { options };
@@ -37,10 +37,20 @@ module.exports = makeConfig(options);
 `/.storybook/webpack.config.js`
 
 ```js
-const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
-const { options } = require('../webpack.config');
+const { makeStorybookConfigGenerator } = require("@anansi/webpack-config");
+const { options } = require("../webpack.config");
 
 module.exports = makeStorybookConfigGenerator(options);
+```
+
+## Enabling react-refresh
+
+Install react-refresh as a dev-dependency in your project and it will automatically
+be detected and enabled. Be sure to use the anansi babel or include `react-refresh/babel` in
+your own babel configuration.
+
+```bash
+yarn add --dev react-refresh
 ```
 
 ## CMD line arguments
@@ -57,6 +67,7 @@ Examples:
 `webpack --mode=production --check` or `webpack --check=nobuild`
 
 ### profile
+
 If set, will enable [React DevTools Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This feature is only available in production mode since it is enabled in development by default.
 
 ## ENV customization
@@ -91,7 +102,7 @@ and potentially incorrect processing from babel loaders.
 
 To match all libraries in namespace `@myspacespace`:
 
-```
+```js
 const myConfig = makeConfig({
   libraryInclude: /node_modules\/(@mynamespace\/)/,
   libraryExclude: /node_modules(?!\/(@mynamespace\/))/,
@@ -105,7 +116,7 @@ is used to make it easy to import from the root.
 
 Example:
 
-```
+```bash
 -package.json
 -/src
   -/components
@@ -117,16 +128,16 @@ Example:
 Then you can do
 
 ```javascript
-import fetch from 'network';
+import fetch from "network";
 ```
 
 from any file.
 
-### rootPath = $CWD
+### rootPath = \$CWD
 
 Root path should be the root path of your project. Usually where your package.json and webpack.config.js are.
 This defaults to the current working directory you are running commands from. However, if you need to run things
-from another directory, you can send __dirname into this option from your webpack.config.js.
+from another directory, you can send \_\_dirname into this option from your webpack.config.js.
 
 ### buildDir = 'generated_assets/'
 
