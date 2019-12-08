@@ -120,7 +120,7 @@ function buildPreset(api, options = {}) {
       break;
     case 'development':
       try {
-        preset.plugins.push(require('react-hot-loader/babel'));
+        preset.plugins.push(require('react-refresh/babel'));
       } catch (e) {}
       break;
   }

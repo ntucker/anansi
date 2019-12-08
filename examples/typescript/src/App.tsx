@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 import Nav from 'navigation/Nav';
 import { Layout } from 'antd';
 
@@ -23,4 +22,4 @@ const App = () => (
   </Layout>
 );
 
-export default hot(module)(React.memo(App));
+export default React.memo(App);
