@@ -33,11 +33,11 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.19.3",
-    "@anansi/eslint-config": "^0.6.7",
+    "@anansi/eslint-plugin": "^0.7.0-beta.2",
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
     "debug": "^4.1.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.7.2",
     "prettier-eslint-cli": "^5.0.0",
     "react-refresh": "^0.7.0",
     "rimraf": "^2.6.3",

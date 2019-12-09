@@ -1,26 +1,23 @@
 module.exports = {
+  // TODO: instead of including TS stuff, just have the base, but then programatically order things
+  // properly in the extends
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier',
-    'prettier/react',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
   ],
   env: {
     jest: true,
     browser: true,
   },
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module',
-    allowImportExportEverywhere: true,
-    ecmaVersion: 2019,
-    ecmaFeatures: {
-      jsx: true,
-      experimentalObjectRestSpread: true,
-    },
-  },
-  plugins: ['react-hooks', 'import'],
+  plugins: ['prettier', 'react-hooks', 'import'],
   rules: {
+    'prettier/prettier': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prefer-stateless-function': 'error',
@@ -34,10 +31,7 @@ module.exports = {
         ],
         'newlines-between': 'always',
       },
-    ],
-    'import/no-unresolved': 'error',
-    'import/named': 'error',
-    'import/newline-after-import': ['error', { count: 2 }],
+    ]
   },
   settings: {
     react: {

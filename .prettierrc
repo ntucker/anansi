@@ -1,0 +1,4 @@
+singleQuote: True
+trailingComma: all
+printWidth: 80
+semi: True

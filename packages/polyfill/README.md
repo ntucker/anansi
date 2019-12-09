@@ -45,7 +45,9 @@ to help with build times for sites that don't need it.
 
 ```javascript
 for (const locale of ['es', 'de']) {
-  import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`);
+  import(
+    /* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`
+  );
 }
 ```
 
@@ -56,10 +58,14 @@ import localeFinder from 'browser-locale';
 
 async function init() {
   await loadPolyfills();
-  if (!global.Intl ||
-    typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function') {
+  if (
+    !global.Intl ||
+    typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
+  ) {
     const locale = localeFinder();
-    await import(/* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`);
+    await import(
+      /* webpackChunkName: "locale-request" */ `intl/locale-data/jsonp/${locale}.js`
+    );
   }
   ReactDOM.createRoot(document.body).render(<MyApp />);
 }
