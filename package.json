@@ -13,10 +13,12 @@
     }
   },
   "devDependencies": {
+    "@anansi/eslint-plugin": "^0.7.0-beta.2",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "conventional-changelog-anansi": "^0.1.1",
     "conventional-changelog-conventionalcommits": "^4.2.3",
+    "eslint": "^6.7.2",
     "husky": "^3.0.9",
     "lerna": "^3.18.4",
     "webpack-cli": "^3.3.10"

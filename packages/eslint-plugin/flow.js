@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     allowImportExportEverywhere: true,
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     ecmaFeatures: {
       jsx: true,
       experimentalObjectRestSpread: true,
@@ -64,6 +64,7 @@ module.exports = {
     // additional rules
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warning',
+    'react/prefer-stateless-function': 'error',
     'import/order': [
       'warn',
       {

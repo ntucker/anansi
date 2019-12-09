@@ -42,10 +42,10 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^0.19.3",
-    "@anansi/eslint-config": "^0.6.7",
+    "@anansi/eslint-plugin": "^0.7.0-beta.2",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "eslint": "^5.12.0",
+    "eslint": "^6.7.2",
     "rollup": "^1.27.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
