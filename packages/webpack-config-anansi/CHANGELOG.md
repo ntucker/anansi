@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.17.6...@anansi/webpack-config@0.18.0) (2019-12-09)
+
+
+### 🚀 Features
+
+* Eslint TypeScript support ([#14](https://github.com/ntucker/anansi/issues/14)) ([2679e26](https://github.com/ntucker/anansi/commit/2679e2683759b3200bb2985b947cf07208e49005))
+* Use react fast-refresh instead of hot-reloader ([#13](https://github.com/ntucker/anansi/issues/13)) ([1ca29a4](https://github.com/ntucker/anansi/commit/1ca29a4d19746e5238771782192e24289abb59b8))
+
+
+
 ### [0.17.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.17.5...@anansi/webpack-config@0.17.6) (2019-12-01)
 
 

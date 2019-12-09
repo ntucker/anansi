@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.3.37...@anansi/polyfill@0.4.0) (2019-12-09)
+
+
+### 🚀 Features
+
+* Eslint TypeScript support ([#14](https://github.com/ntucker/anansi/issues/14)) ([2679e26](https://github.com/ntucker/anansi/commit/2679e2683759b3200bb2985b947cf07208e49005))
+
+
+
 ### [0.3.37](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.3.36...@anansi/polyfill@0.3.37) (2019-11-19)
 
 

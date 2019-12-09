@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.23.0...@anansi/babel-preset@0.24.0) (2019-12-09)
+
+
+### 🚀 Features
+
+* Use react fast-refresh instead of hot-reloader ([#13](https://github.com/ntucker/anansi/issues/13)) ([1ca29a4](https://github.com/ntucker/anansi/commit/1ca29a4d19746e5238771782192e24289abb59b8))
+
+
+
 ## [0.23.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.22.1...@anansi/babel-preset@0.23.0) (2019-12-01)
 
 
