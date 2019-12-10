@@ -9,10 +9,11 @@
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/polyfill",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/polyfill#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ntucker/anansi.git"
+    "url": "git+ssh://git@github.com/ntucker/anansi.git",
+    "directory": "packages/polyfill"
   },
   "main": "dist/index.js",
   "module": "lib/index.js",

@@ -18,10 +18,11 @@
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/eslint-config-anansi",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/eslint-plugin#README",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ntucker/anansi.git"
+    "url": "git+ssh://git@github.com:ntucker/anansi.git",
+    "directory": "packages/eslint-plugin"
   },
   "engines": {
     "node": ">=6.15.1"
