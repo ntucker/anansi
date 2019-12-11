@@ -12,7 +12,9 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       ),
     );
     const basePlugins = envConfig.plugins.filter(
-      plugin => plugin.constructor.name !== 'HtmlWebpackPlugin',
+      plugin => ['HtmlWebpackPlugin', 'ReactRefreshWebpackPlugin'].includes(
+        plugin.constructor.name,
+      ),
     );
     return {
       ...envConfig,
