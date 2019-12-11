@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.18.0...@anansi/webpack-config@0.18.1) (2019-12-11)
+
+
+### 🐛 Bug Fix
+
+* Disable react-refresh in storybook context ([63b299e](https://github.com/ntucker/anansi/commit/63b299eb8c49173db08b3ef46fe34199888d647a))
+
+
+### 📝 Documentation
+
+* Link to monorepo directories in npm repo listing ([b7dc1d5](https://github.com/ntucker/anansi/commit/b7dc1d5b1a6f3b163c9d155e3847c8d079f6b4cf))
+
+
+
 ## [0.18.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.17.6...@anansi/webpack-config@0.18.0) (2019-12-09)
 
 

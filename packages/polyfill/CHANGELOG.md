@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.1](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.0...@anansi/polyfill@0.4.1) (2019-12-11)
+
+
+### 📝 Documentation
+
+* Link to monorepo directories in npm repo listing ([b7dc1d5](https://github.com/ntucker/anansi/commit/b7dc1d5b1a6f3b163c9d155e3847c8d079f6b4cf))
+
+
+
 ## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.3.37...@anansi/polyfill@0.4.0) (2019-12-09)
 
 
