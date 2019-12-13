@@ -7,11 +7,11 @@ A webpack configuration for fast development and production ready optimizations
 `/webpack.config.js`
 
 ```javascript
-const { makeConfig } = require("@anansi/webpack-config");
+const { makeConfig } = require('@anansi/webpack-config');
 
 const options = {
-  basePath: "src",
-  buildDir: "generated_assets/"
+  basePath: 'src',
+  buildDir: 'generated_assets/',
 };
 
 module.exports = { options };
@@ -37,8 +37,8 @@ module.exports = makeConfig(options);
 `/.storybook/webpack.config.js`
 
 ```js
-const { makeStorybookConfigGenerator } = require("@anansi/webpack-config");
-const { options } = require("../webpack.config");
+const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
+const { options } = require('../webpack.config');
 
 module.exports = makeStorybookConfigGenerator(options);
 ```
@@ -106,7 +106,7 @@ To match all libraries in namespace `@myspacespace`:
 const myConfig = makeConfig({
   libraryInclude: /node_modules\/(@mynamespace\/)/,
   libraryExclude: /node_modules(?!\/(@mynamespace\/))/,
-})
+});
 ```
 
 ### basePath = 'src'
@@ -128,10 +128,14 @@ Example:
 Then you can do
 
 ```javascript
-import fetch from "network";
+import fetch from 'network';
 ```
 
 from any file.
+
+## babelRoot = \$CWD
+
+`babelRoot` should be where the root babel configuration file is in your repo. Usually this is CWD, but while setting up a monorepo with multiple babel configurations, you may need to change this value.
 
 ### rootPath = \$CWD
 
