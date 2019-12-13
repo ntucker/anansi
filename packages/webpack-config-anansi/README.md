@@ -135,7 +135,7 @@ from any file.
 
 ## babelRoot = \$CWD
 
-babelRoot should be where the root babel configuration file is in your repo. Usually this is CWD, but while setting up a monorepo with multiple babel configurations, you may need to change this value.
+`babelRoot` should be where the root babel configuration file is in your repo. Usually this is CWD, but while setting up a monorepo with multiple babel configurations, you may need to change this value.
 
 ### rootPath = \$CWD
 
