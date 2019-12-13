@@ -14,6 +14,7 @@ export default function makeBaseConfig({
   basePath,
   libraryInclude,
   libraryExclude,
+  babelRoot,
   buildDir,
   mode,
   manifestFilename,
@@ -21,6 +22,7 @@ export default function makeBaseConfig({
   const babelLoader = {
     loader: 'babel-loader',
     options: {
+      cwd: path.resolve(process.cwd(), babelRoot),
       cacheDirectory: true,
       cacheCompression: mode === 'production',
       compact: mode === 'production',
