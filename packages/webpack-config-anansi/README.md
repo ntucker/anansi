@@ -169,6 +169,10 @@ Disable it if you experience such problems.
 
 Determines the filename for the stats file that includes mappings to all filenames.
 
+### babelLoader
+
+Override any babel loader specific options
+
 ## File Support
 
 - SCSS with CSS modules
