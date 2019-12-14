@@ -18,6 +18,7 @@ export default function makeBaseConfig({
   buildDir,
   mode,
   manifestFilename,
+  babelLoader: babelLoaderOptions,
 }) {
   const babelLoader = {
     loader: 'babel-loader',
@@ -26,6 +27,7 @@ export default function makeBaseConfig({
       cacheDirectory: true,
       cacheCompression: mode === 'production',
       compact: mode === 'production',
+      ...babelLoaderOptions,
     },
   };
 
