@@ -215,13 +215,13 @@ function buildPreset(api, options = {}) {
       },
     ];
   } else {
-    preset.plugins.unshift(...classPlugins);
     if (options.typing === 'flow') {
       // using the plugin so we can place after decorators and class properties
       preset.plugins.unshift(
         require('@babel/plugin-transform-flow-strip-types').default,
       );
     }
+    preset.plugins.unshift(...classPlugins);
   }
   /*         end block        */
   return preset;
