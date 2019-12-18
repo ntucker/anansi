@@ -95,10 +95,6 @@ function buildPreset(api, options = {}) {
       require('@babel/plugin-proposal-optional-chaining').default,
       require('@babel/plugin-proposal-nullish-coalescing-operator').default,
       require('@babel/plugin-syntax-dynamic-import').default,
-      [
-        require('@babel/plugin-proposal-private-methods').default,
-        { loose: options.loose },
-      ],
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
@@ -189,6 +185,11 @@ function buildPreset(api, options = {}) {
   }
   const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
+    // stage 3, but must come after typescript
+    [
+      require('@babel/plugin-proposal-private-methods').default,
+      { loose: options.loose },
+    ],
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // stage 3 but must come before flow
