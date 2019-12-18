@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.24.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.2...@anansi/babel-preset@0.24.3) (2019-12-18)
+
+
+### 📦 Package
+
+* core-js-compat, macros, and preset-env ([754d64d](https://github.com/ntucker/anansi/commit/754d64d0d204249b1a7140c39b34702a086dae1e))
+
+
+
 ### [0.24.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.1...@anansi/babel-preset@0.24.2) (2019-12-18)
 
 
