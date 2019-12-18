@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.24.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.1...@anansi/babel-preset@0.24.2) (2019-12-18)
+
+
+### 🐛 Bug Fix
+
+* Fix order of class transforms and flow ([#18](https://github.com/ntucker/anansi/issues/18)) ([688d7de](https://github.com/ntucker/anansi/commit/688d7de7cdf38ec1b82c271cda03b3454b6b1fbb))
+* Storybook with webpack - don't use react-refresh with it ([#17](https://github.com/ntucker/anansi/issues/17)) ([70a4b1f](https://github.com/ntucker/anansi/commit/70a4b1f7180e1a22fa323338504ae5a7cdab338d))
+
+
+
 ### [0.24.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.0...@anansi/babel-preset@0.24.1) (2019-12-11)
 
 

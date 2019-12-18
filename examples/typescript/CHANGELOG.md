@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.1...anansi-example-typescript@0.1.2) (2019-12-18)
+
+
+### 🐛 Bug Fix
+
+* Storybook with webpack - don't use react-refresh with it ([#17](https://github.com/ntucker/anansi/issues/17)) ([70a4b1f](https://github.com/ntucker/anansi/commit/70a4b1f7180e1a22fa323338504ae5a7cdab338d))
+
+
+
 ### [0.1.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.0...anansi-example-typescript@0.1.1) (2019-12-11)
 
 **Note:** Version bump only for package anansi-example-typescript

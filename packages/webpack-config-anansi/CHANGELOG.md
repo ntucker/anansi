@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.18.1...@anansi/webpack-config@0.19.0) (2019-12-18)
+
+
+### 🚀 Features
+
+* Add babelLoader to customize babel loader options ([#16](https://github.com/ntucker/anansi/issues/16)) ([38667a4](https://github.com/ntucker/anansi/commit/38667a4d14638f8b8928863191c198c9516c8845))
+* Add babelRoot to webpack config generator ([#15](https://github.com/ntucker/anansi/issues/15)) ([f5d95d6](https://github.com/ntucker/anansi/commit/f5d95d6fb6d0be2d29e1249f804e8158a0b8d5d3))
+
+
+### 🐛 Bug Fix
+
+* Fix webpack's babel loader ([854c4be](https://github.com/ntucker/anansi/commit/854c4befc5146d44e95dc57d305a38910b2fb8e0))
+* Storybook with webpack - don't use react-refresh with it ([#17](https://github.com/ntucker/anansi/issues/17)) ([70a4b1f](https://github.com/ntucker/anansi/commit/70a4b1f7180e1a22fa323338504ae5a7cdab338d))
+
+
+
 ### [0.18.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.18.0...@anansi/webpack-config@0.18.1) (2019-12-11)
 
 

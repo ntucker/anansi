@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.7.1...@anansi/eslint-plugin@0.8.0) (2019-12-18)
+
+
+### 🚀 Features
+
+* Add lines-between-class-members ([444118f](https://github.com/ntucker/anansi/commit/444118fcb16f03f35b919383ec2fa0a80783d288))
+
+
+### 📦 Package
+
+* Upgrade typescript-eslint and eslint-prettier ([bf2bb1a](https://github.com/ntucker/anansi/commit/bf2bb1ac5939978873ead6eb6d29b1dab675f477))
+
+
+
 ### [0.7.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.7.0...@anansi/eslint-plugin@0.7.1) (2019-12-11)
 
 
