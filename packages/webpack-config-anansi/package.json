@@ -87,12 +87,16 @@
     "worker-loader": "^2.0.0"
   },
   "peerDependencies": {
+    "@hot-loader/react-dom": "^16.0.0",
     "react-refresh": "^0.7.0",
     "webpack": "^4.36.0",
     "webpack-dev-server": "^3.4.0"
   },
   "peerDependenciesMeta": {
     "react-refresh": {
+      "optional": true
+    },
+    "@hot-loader/react-dom": {
       "optional": true
     }
   }

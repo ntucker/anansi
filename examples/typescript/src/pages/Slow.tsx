@@ -16,7 +16,7 @@ function createPromise() {
 }
 
 export default function Slow() {
-  let promise = createPromise();
+  const promise = createPromise();
 
   if (typeof promise !== 'boolean') {
     throw promise;

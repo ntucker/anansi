@@ -140,6 +140,10 @@ where babel starts running from.
 
 Automatically add react import if JSX is used.
 
+### hotReloader: boolean = false
+
+Using react-hot-reloader instead of react-refresh
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features

@@ -1,5 +1,4 @@
 import style from './index.scss';
-
 import Worker from './my.worker';
 import animated from './animated-overlay.gif';
 import AngleDown from './angle-down-solid.svg';

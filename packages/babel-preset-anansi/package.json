@@ -63,9 +63,13 @@
   "peerDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/runtime": "^7.7.2",
+    "react-hot-loader": "^4.6.5",
     "react-refresh": "^0.7.0"
   },
   "peerDependenciesMeta": {
+    "react-hot-loader": {
+      "optional": true
+    },
     "react-refresh": {
       "optional": true
     },
