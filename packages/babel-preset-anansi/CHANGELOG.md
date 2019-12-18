@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.24.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.3...@anansi/babel-preset@0.24.4) (2019-12-18)
+
+
+### 🐛 Bug Fix
+
+* Do private methods transform after typescript ([b4a85c9](https://github.com/ntucker/anansi/commit/b4a85c9b9d8ba3a5fed33c3d586b85c5936d5133))
+
+
+
 ### [0.24.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.2...@anansi/babel-preset@0.24.3) (2019-12-18)
 
 
