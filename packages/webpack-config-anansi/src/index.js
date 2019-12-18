@@ -18,6 +18,7 @@ export function makeConfig(options) {
     options = {
       rootPath: ROOT_PATH,
       basePath: 'src',
+      babelRoot: '',
       libraryInclude: always(false),
       libraryExclude: /node_modules/,
       buildDir: 'generated_assets/',
