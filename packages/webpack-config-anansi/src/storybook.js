@@ -12,10 +12,18 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       ),
     );
     const basePlugins = envConfig.plugins.filter(
-      plugin => ['HtmlWebpackPlugin', 'ReactRefreshWebpackPlugin'].includes(
+      plugin => !['HtmlWebpackPlugin', 'ReactRefreshPlugin'].includes(
         plugin.constructor.name,
       ),
     );
+    if (env === 'dev') {
+      try {
+        require('@hot-loader/react-dom');
+        config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
+        config.devServer.hotOnly = false;
+      } catch (e) {}
+    }
+
     return {
       ...envConfig,
       entry: storybookConfig.entry,

@@ -30,6 +30,7 @@ function buildPreset(api, options = {}) {
     reactRequire: true,
     useBuiltIns: 'entry',
     corejs: { version: 3, proposals: true },
+    hotReloader: false,
     ...options,
   };
   const modules =
@@ -120,7 +121,11 @@ function buildPreset(api, options = {}) {
       break;
     case 'development':
       try {
-        preset.plugins.push(require('react-refresh/babel'));
+        if (hotReloader) {
+          preset.plugins.push(require('react-hot-loader/babel'));
+        } else {
+          preset.plugins.push(require('react-refresh/babel'));
+        }
       } catch (e) {}
       break;
   }
