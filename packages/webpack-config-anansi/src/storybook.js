@@ -36,18 +36,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
           {
             ...envConfig.module.rules[1],
             use: [
-              ...envConfig.module.rules[1].use/*.map(rule => {
-                if (rule.loader === 'babel-loader') {
-                  return {
-                    ...rule,
-                    options: {
-                      ...rule.options,
-                      hotReloader: true
-                    }
-                  }
-                }
-                return rule;
-              })*/,
+              ...envConfig.module.rules[1].use,
               'react-docgen-typescript-loader',
             ],
           },
