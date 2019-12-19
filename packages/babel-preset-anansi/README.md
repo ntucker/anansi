@@ -144,6 +144,11 @@ Automatically add react import if JSX is used.
 
 Using react-hot-reloader instead of react-refresh
 
+### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
+
+Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).
+Setting to false disables this optimization altogether. Note: this is only ever used in production mode
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features

@@ -31,6 +31,7 @@ function buildPreset(api, options = {}) {
     useBuiltIns: 'entry',
     corejs: { version: 3, proposals: true },
     hotReloader: false,
+    reactConstantElementsOptions: {},
     ...options,
   };
   const modules =
@@ -106,8 +107,12 @@ function buildPreset(api, options = {}) {
     case 'production':
       preset.plugins.unshift(
         require('@babel/plugin-transform-react-inline-elements').default,
-        require('@babel/plugin-transform-react-constant-elements').default,
       );
+      if (typeof reactConstantElementsOptions === 'object') {
+        preset.plugins.unshift(
+          [require('@babel/plugin-transform-react-constant-elements').default, reactConstantElementsOptions],
+        );
+      }
       // for compile performance, don't include this if they are using typing language instead of proptypes
       if (!options.typing) {
         preset.plugins.unshift(
