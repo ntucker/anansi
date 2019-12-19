@@ -190,17 +190,17 @@ function buildPreset(api, options = {}) {
   }
   const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
-    // stage 3, but must come after typescript
-    [
-      require('@babel/plugin-proposal-private-methods').default,
-      { loose: options.loose },
-    ],
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // stage 3 but must come before flow
     [
       require('@babel/plugin-proposal-class-properties').default,
       classPropertiesOptions,
+    ],
+    // stage 3, but must come after typescript, and after other class transforms
+    [
+      require('@babel/plugin-proposal-private-methods').default,
+      { loose: options.loose },
     ],
   ];
   if (options.typing === 'typescript') {
