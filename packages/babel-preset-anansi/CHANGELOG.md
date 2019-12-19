@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.4...@anansi/babel-preset@0.25.0) (2019-12-19)
+
+
+### 🚀 Features
+
+* Add reactConstantElementsOptions to configure the optimization ([#19](https://github.com/ntucker/anansi/issues/19)) ([5fb14ba](https://github.com/ntucker/anansi/commit/5fb14badc555228cf228670afc599b4dd1ee24f9))
+
+
+
 ### [0.24.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.24.3...@anansi/babel-preset@0.24.4) (2019-12-18)
 
 
