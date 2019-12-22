@@ -5,7 +5,7 @@
     "examples/*"
   ],
   "scripts": {
-    "publish": "lerna publish"
+    "release": "lerna publish"
   },
   "husky": {
     "hooks": {
