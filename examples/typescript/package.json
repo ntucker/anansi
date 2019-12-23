@@ -33,13 +33,13 @@
     "@types/react-router-dom": "^5.1.2",
     "@types/storybook__react": "^4.0.2",
     "babel-loader": "^8.0.6",
-    "eslint": "^6.7.2",
-    "react-refresh": "^0.7.0",
+    "eslint": "^6.8.0",
+    "react-refresh": "^0.7.1",
     "serve": "^11.2.0",
     "typescript": "^3.7.2",
-    "webpack": "^4.41.2",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
     "@anansi/polyfill": "^0.4.2",
@@ -48,12 +48,12 @@
     "classnames": "^2.2.6",
     "core-js": "^3.2.1",
     "lodash": "^4.17.15",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "react-router-dom": "^5.1.2",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "3.0.0"
+    "rest-hooks": "4.0.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"

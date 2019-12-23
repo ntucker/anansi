@@ -2,7 +2,7 @@ import { Resource } from 'rest-hooks';
 
 export class PostResource extends Resource {
   readonly id: number | undefined = undefined;
-  readonly userId: number | null = null;
+  readonly userId: number | undefined = undefined;
   readonly title: string = '';
   readonly body: string = '';
 

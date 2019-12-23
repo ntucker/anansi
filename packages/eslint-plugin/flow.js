@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:flowtype/recommended'],
+  extends: ['plugin:flowtype/recommended'],
   env: {
     browser: true,
   },
