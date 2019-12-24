@@ -2,7 +2,7 @@ const { makeConfig } = require('@anansi/webpack-config');
 
 const options = {
   basePath: 'src',
-  buildDir: 'generated_assets/',
+  buildDir: 'dist/',
 };
 
 const generateConfig = makeConfig(options);
