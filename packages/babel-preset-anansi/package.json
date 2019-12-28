@@ -43,7 +43,6 @@
     "@babel/preset-modules": "^0.1.2",
     "@babel/preset-react": "^7.8.0",
     "babel-minify": "^0.5.1",
-    "babel-plugin-dynamic-import-node": "^2.3.0",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-macros": "^2.8.0",
     "babel-plugin-ramda": "^2.0.0",

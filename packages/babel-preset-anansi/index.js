@@ -14,10 +14,6 @@ options:
 */
 function buildPreset(api, options = {}) {
   const env = api.env();
-  // if undefined, we know nothing about their support
-  const supportsDynamicImport = api.caller(
-    caller => caller && caller.supportsDynamicImport,
-  );
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
@@ -147,10 +143,6 @@ function buildPreset(api, options = {}) {
         useBuiltIns: false,
       },
     ]);
-    // since this is a node-specific plugin we need to be sure we're running in node
-    if (supportsDynamicImport !== true) {
-      preset.plugins.push(require('babel-plugin-dynamic-import-node'));
-    }
   } else {
     // TODO: enable this in more cases based on browserslist
     if (options.targets && options.targets.esmodules === true) {
