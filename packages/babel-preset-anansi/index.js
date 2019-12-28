@@ -210,6 +210,7 @@ function buildPreset(api, options = {}) {
     const pluginOptions = isTSX => ({
       isTSX,
       allowDeclareFields: true,
+      allowNamespaces: true,
     });
     preset.overrides = [
       {
