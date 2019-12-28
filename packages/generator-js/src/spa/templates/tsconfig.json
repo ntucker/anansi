@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+<% if (reactMode !== 'legacy') { %>
+  "types": ["react-dom/experimental", "react/experimental"],
+<% } %>
+    "noEmit": true
+  }
+}

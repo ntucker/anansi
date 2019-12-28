@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@anansi/babel-preset",
+      {
+        "nodeTarget": "8",
+        "typing": "typescript"
+      }
+    ]
+  ]
+}
