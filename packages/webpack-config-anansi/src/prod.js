@@ -6,6 +6,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
+import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
 import cssnano from 'cssnano';
 import isWsl from 'is-wsl';
 
@@ -45,6 +46,7 @@ export default function makeProdConfig(
       config.plugins.unshift(
         new HtmlWebpackPlugin(htmlOptions),
         new CrittersPlugin({}),
+        new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
       );
     }
   }
