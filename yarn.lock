@@ -3758,10 +3758,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/normalizr@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-4.0.0.tgz#5707d1291546c17db39ab94639b2dcc6a859d4d4"
-  integrity sha512-0nvJjk7ff21tctjJ44WTOZn1jTHCEz8EjssD5WNaKL61rgnIoV65mJxDBGB5K2sOyOjYXgs8sntbuoqK8XrC7A==
+"@rest-hooks/normalizr@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-4.1.1.tgz#10b83e4a4e0c1b51afc61532fcdb8633915458de"
+  integrity sha512-/5SkNUQZXnXguvZyE1lSYGsTtZlspbb61HydaWITmgModVfQXjATneyWyMeBoyUOA1BAh3+u3XnO5tkwy2O8GQ==
   dependencies:
     "@babel/runtime" "^7.7.0"
 
@@ -16173,13 +16173,13 @@ resolve@^1.12.0, resolve@^1.13.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-4.0.0.tgz#1fa47f6483b21ee682c1917b2f0315aa783ac84a"
-  integrity sha512-yRnPV1pWM4DeI/nm+RmZ94t6DM8TVFRFdz1PaodciAkUkM6RiclfiKQi6RJHQwm0anqC5506ay3Ec6mqBqK08g==
+rest-hooks@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-4.0.4.tgz#ec7c1edf812e7f839c6761e84ac96e55aa87a873"
+  integrity sha512-uG0Z/sMXC7zWJGIxEwRnRN7+mqr5u5wyt/r2nheB/IQo/1o+b7eK6AcZvHpZX0JJ6N2P7jCqY2KDcWs2wUkD+A==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^4.0.0"
+    "@rest-hooks/normalizr" "^4.1.1"
     "@types/lodash" "^4.14.149"
     flux-standard-action "^2.1.1"
     lodash "^4.17.15"
