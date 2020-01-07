@@ -1,0 +1,106 @@
+# Javascript Node CircleCI 2.1 configuration file
+#
+# Check https://circleci.com/docs/2.1/language-javascript/ for more details
+#
+version: 2.1
+jobs:
+  setup:
+    docker: &docker
+      # specify the version you desire here
+      - image: <%= nodeImage %>
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run:
+          name: yarn install
+          command: |
+            yarn config set cache-folder ~/.cache/yarn
+            yarn install --prefer-offline --frozen-lockfile
+      - save_cache:
+          paths:
+            - node_modules
+            #- packages/*/node_modules
+            - ~/.cache/yarn
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  type-check:
+    parallelism: <%= circleParallelism %>
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: /root
+      - run:
+          command: |
+            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            yarn type-check $FILES
+
+  lint:
+    parallelism: <%= circleParallelism %>
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          #- run: yarn run lint packages/*/src
+          command: |
+            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            yarn lint $FILES
+
+<% if (testing) { %>
+  unit_tests:
+    parallelism: <%= circleParallelism * 2 %>
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          command: |
+            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            yarn test:ci -- -- --maxWorkers=2 $FILES
+
+  test_coverage:
+    parallelism: <%= circleParallelism * 2 %>
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          command: |
+            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --maxWorkers=2 --coverageReporters=text-lcov $FILES | yarn run coveralls; fi
+<% } %>
+  salus:
+    machine: true
+    steps:
+      - checkout
+      - run: docker run -t -v $(pwd):/home/repo coinbase/salus
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - setup
+      <% if (testing) { %>
+      - unit_tests:
+          requires:
+            - setup
+      - test_coverage:
+          requires:
+            - setup
+      <% } %>
+      - type-check:
+          requires:
+            - setup
+      - lint:
+          requires:
+            - setup
+      - salus

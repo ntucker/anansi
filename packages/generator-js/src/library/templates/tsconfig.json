@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "plugins": [{ "transform": "@zerollup/ts-transform-paths" }],
+    "emitDeclarationOnly": true,
+    "declarationMap": true
+  }
+}
