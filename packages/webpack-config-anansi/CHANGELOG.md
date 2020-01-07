@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.0...@anansi/webpack-config@0.19.1) (2020-01-07)
+
+
+### 📦 Package
+
+* lerna, eslint ([ce1eaa3](https://github.com/ntucker/anansi/commit/ce1eaa37a02914ddb6ca83a28dfef1f0ec9e5a38))
+
+
+
 ## [0.19.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.18.1...@anansi/webpack-config@0.19.0) (2019-12-18)
 
 

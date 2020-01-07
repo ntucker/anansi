@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.3](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.2...anansi-example-typescript@0.1.3) (2020-01-07)
+
+
+### 📦 Package
+
+* Bump rest-hooks ([c239210](https://github.com/ntucker/anansi/commit/c239210d4b7625953fa4d0b69fc630a7ad589679))
+* lerna, eslint ([ce1eaa3](https://github.com/ntucker/anansi/commit/ce1eaa37a02914ddb6ca83a28dfef1f0ec9e5a38))
+* Upgrade build stuff in example ([d4412b2](https://github.com/ntucker/anansi/commit/d4412b240d5e905154ec46cf3fda29fd828e583e))
+
+
+
 ### [0.1.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.1...anansi-example-typescript@0.1.2) (2019-12-18)
 
 

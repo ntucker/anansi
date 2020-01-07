@@ -1,6 +1,6 @@
 {
   "name": "@anansi/generator-js",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator#readme",
   "repository": {
@@ -38,7 +38,7 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "@anansi/eslint-plugin": "^0.8.0",
+    "@anansi/eslint-plugin": "^0.8.1",
     "@types/ejs": "^3.0.0",
     "@types/node": "^12.12.16",
     "@types/yeoman-generator": "^3.1.4",
@@ -58,7 +58,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "@anansi/webpack-config": "^0.19.0",
+    "@anansi/webpack-config": "^0.19.1",
     "@babel/core": "^7.7.7",
     "@types/mem-fs-editor": "^5.1.1",
     "chalk": "^3.0.0",

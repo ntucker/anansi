@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.25.1...@anansi/babel-preset@0.26.0) (2020-01-07)
+
+
+### 🚀 Features
+
+* Allow namespaces in TypeScript ([915fd49](https://github.com/ntucker/anansi/commit/915fd4991aecbfe1aecd1dcad4cfc62684b7c8df))
+
+
+
 ### [0.25.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.25.0...@anansi/babel-preset@0.25.1) (2019-12-19)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.3](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.2...@anansi/polyfill@0.4.3) (2020-01-07)
+
+
+### 📦 Package
+
+* lerna, eslint ([ce1eaa3](https://github.com/ntucker/anansi/commit/ce1eaa37a02914ddb6ca83a28dfef1f0ec9e5a38))
+
+
+
 ### [0.4.2](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.1...@anansi/polyfill@0.4.2) (2019-12-18)
 
 **Note:** Version bump only for package @anansi/polyfill

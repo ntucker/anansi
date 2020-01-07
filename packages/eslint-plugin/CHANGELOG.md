@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.0...@anansi/eslint-plugin@0.8.1) (2020-01-07)
+
+
+### 📦 Package
+
+* lerna, eslint ([ce1eaa3](https://github.com/ntucker/anansi/commit/ce1eaa37a02914ddb6ca83a28dfef1f0ec9e5a38))
+
+
+
 ## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.7.1...@anansi/eslint-plugin@0.8.0) (2019-12-18)
 
 
