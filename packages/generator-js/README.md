@@ -2,7 +2,7 @@
 
 > Fast React Web Apps
 
-Created by @melissazhang and @nathanieltucker. Feedback and contributions welcome!
+Created by [@melissafzhang](https://github.com/melissafzhang) and [@ntucker](https://github.com/ntucker). Feedback and contributions welcome!
 
 [Anansi](https://en.wikipedia.org/wiki/Anansi) (/əˈnɑːnsi/ ə-NAHN-see) is an Akan folktale character. He often takes the shape of a spider and is considered to be the god of all knowledge of stories. Anansi uses his knowledge to help JavaScript developers spin new web projects.
 
@@ -80,11 +80,11 @@ yo @anansi/js:testing
 - [x] PR checks (salus, test, typecheck, linting)
 - [x] Build & deploy
 - [ ] metrics
-- [ ] monitoring (bugsnag)
+- [ ] monitoring (sentry)
 
 ## License
 
-Apache-2.0 © Nathaniel Tucker
+Apache-2.0 © Nathaniel Tucker, Melissa Zhang
 
 [npm-image]: https://badge.fury.io/js/%40anansi%2Fgenerator-js.svg
 [npm-url]: https://npmjs.com/package/@anansi/generator-js
