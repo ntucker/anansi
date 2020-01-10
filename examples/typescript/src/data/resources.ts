@@ -7,7 +7,7 @@ export class PostResource extends Resource {
   readonly body: string = '';
 
   pk() {
-    return this.id;
+    return this.id?.toString();
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/posts/';
 }
@@ -19,7 +19,7 @@ export class CommentResource extends Resource {
   readonly body: string = '';
 
   pk() {
-    return this.id;
+    return this.id?.toString();
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
@@ -44,7 +44,7 @@ export class UserResource extends Resource {
   readonly address: Address | null = null;
 
   pk() {
-    return this.id;
+    return this.id?.toString();
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/users/';
 }

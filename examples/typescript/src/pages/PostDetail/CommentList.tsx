@@ -15,7 +15,7 @@ export default function CommentList({ postId }: Props) {
       header={`${comments.length} replies`}
       itemLayout="horizontal"
       dataSource={comments}
-      renderItem={(comment: CommentResource) => (
+      renderItem={(comment) => (
         <li key={comment.pk()}>
           <Comment author={comment.email} content={comment.body} />
         </li>
