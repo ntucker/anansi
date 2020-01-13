@@ -78,7 +78,7 @@ export default class extends ConfigureGenerator {
     );
     // set .gitignore to proper location
     this.fs.move(
-      this.destinationPath('.npmignore'),
+      this.destinationPath('.gitignore.tpl'),
       this.destinationPath('.gitignore'),
     );
   }

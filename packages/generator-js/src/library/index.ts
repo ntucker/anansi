@@ -46,7 +46,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
     (this.fs as any).append(
       this.destinationPath('.gitignore'),
-      this.fs.read(this.templatePath('.npmignore')),
+      this.fs.read(this.templatePath('.gitignore.tpl')),
     );
   }
 
