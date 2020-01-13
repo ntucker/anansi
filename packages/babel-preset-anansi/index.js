@@ -93,9 +93,6 @@ function buildPreset(api, options = {}) {
         require('@babel/plugin-proposal-export-namespace-from').default,
       //stage 3
       require('@babel/plugin-syntax-top-level-await').default,
-      require('@babel/plugin-proposal-optional-chaining').default,
-      require('@babel/plugin-proposal-nullish-coalescing-operator').default,
-      require('@babel/plugin-syntax-dynamic-import').default,
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
