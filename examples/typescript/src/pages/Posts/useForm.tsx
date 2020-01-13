@@ -5,7 +5,7 @@ export default function useForm<T extends typeof Resource>(
   R: T,
   initialValues: Partial<AbstractInstanceType<T>>,
 ): [
-  AbstractInstanceType<T>,
+  Readonly<AbstractInstanceType<T>>,
   (name: string) => (event: SyntheticEvent<Element, Event>) => void,
   (
     onSubmit: (v: Partial<AbstractInstanceType<T>>) => any,
@@ -16,8 +16,7 @@ export default function useForm<T extends typeof Resource>(
   const handleChange = (name: string) => (event: SyntheticEvent) => {
     setValues(R.fromJS({ ...values, [name]: event.target.value }));
   };
-  const handleSubmit = (onSubmit: (v: object) => any) => (
-    e: SyntheticEvent,
+  const handleSubmit = (onSubmit: (v: object) => any) => (e: React.SyntheticEvent
   ) => {
     e.preventDefault();
     onSubmit(values);

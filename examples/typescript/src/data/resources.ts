@@ -47,4 +47,8 @@ export class UserResource extends Resource {
     return this.id?.toString();
   }
   static urlRoot = 'https://jsonplaceholder.typicode.com/users/';
+
+  get addressDisplay() {
+    return `${this.address?.street} ${this.address?.city}`;
+  }
 }

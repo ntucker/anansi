@@ -65,8 +65,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
     }
     return (
       <div className={classNames('center', 'up', styles.errorBoundary)}>
-        <img
-          src={BigAlertIcon}
+        <BigAlertIcon
           style={{ width: '96px', height: '96px' }}
           alt="alert"
         />
