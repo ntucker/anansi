@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.3...anansi-example-typescript@0.1.4) (2020-01-13)
+
+
+### 📦 Package
+
+* Upgrade rest-hooks to 4.1.1 ([699abf7](https://github.com/ntucker/anansi/commit/699abf7b53fcaf961ab8ef97aa86446c59485f02))
+* Upgrade to babel 7.8 ([2b743a6](https://github.com/ntucker/anansi/commit/2b743a67712ce0f4aeac9728175fe37c12ca9b63))
+
+
+
 ### [0.1.3](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.2...anansi-example-typescript@0.1.3) (2020-01-07)
 
 

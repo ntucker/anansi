@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.1...@anansi/webpack-config@0.19.2) (2020-01-13)
+
+
+### 💅 Enhancement
+
+* Inline webpack runtime chunk in prod ([#22](https://github.com/ntucker/anansi/issues/22)) ([075eed0](https://github.com/ntucker/anansi/commit/075eed00ff65f75701120fb5ca80fddfd13b3602))
+
+
+
 ### [0.19.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.0...@anansi/webpack-config@0.19.1) (2020-01-07)
 
 

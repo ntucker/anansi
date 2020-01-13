@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.26.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.0...@anansi/babel-preset@0.26.1) (2020-01-13)
+
+
+### 💅 Enhancement
+
+* Let preset-env handle dynamic imports ([#20](https://github.com/ntucker/anansi/issues/20)) ([2e15629](https://github.com/ntucker/anansi/commit/2e1562964c6dbff382206949a0858aeba3421831))
+
+
+### 📦 Package
+
+* Upgrade to babel 7.8 ([2b743a6](https://github.com/ntucker/anansi/commit/2b743a67712ce0f4aeac9728175fe37c12ca9b63))
+
+
+
 ## [0.26.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.25.1...@anansi/babel-preset@0.26.0) (2020-01-07)
 
 

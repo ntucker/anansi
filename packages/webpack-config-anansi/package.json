@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "0.19.1",
+  "version": "0.19.2",
   "description": "Webpack config",
   "main": "lib/index.js",
   "scripts": {
