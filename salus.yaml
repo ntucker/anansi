@@ -1,3 +1,11 @@
+scanner_configs:
+  YarnAudit:
+    exclude_groups:
+    - devDependencies
+    exceptions:
+      - advisory_id: 961
+        changed_by: ntucker
+        notes: Currently no patch exists and determined that this vulnerability is not exploitable.
 active_scanners:
   - RepoNotEmpty
   - Brakeman
