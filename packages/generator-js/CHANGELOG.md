@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.2...@anansi/generator-js@0.1.3) (2020-01-14)
+
+
+### 🐛 Bug Fix
+
+* Generate applications without any features won't crash ([3b2ed86](https://github.com/ntucker/anansi/commit/3b2ed86343f255fc025b7df7a9199b1d05466dc5))
+
+
+
 ### [0.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.1...@anansi/generator-js@0.1.2) (2020-01-13)
 
 

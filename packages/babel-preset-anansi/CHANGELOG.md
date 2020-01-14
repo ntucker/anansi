@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.26.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.1...@anansi/babel-preset@0.26.2) (2020-01-14)
+
+
+### 📦 Package
+
+* Bump babel plugins ([989eb90](https://github.com/ntucker/anansi/commit/989eb90c177ae8d2d829c5af9411fd873aecd596))
+
+
+
 ### [0.26.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.0...@anansi/babel-preset@0.26.1) (2020-01-13)
 
 

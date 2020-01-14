@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.4...anansi-example-typescript@0.1.5) (2020-01-14)
+
+
+### 📦 Package
+
+* Bump babel plugins ([989eb90](https://github.com/ntucker/anansi/commit/989eb90c177ae8d2d829c5af9411fd873aecd596))
+
+
+
 ### [0.1.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.3...anansi-example-typescript@0.1.4) (2020-01-13)
 
 
