@@ -5,6 +5,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   constructor(args: string | string[], options: {}) {
     super(args, options);
+    this.config.set('badges', '');
   }
 
   async prompting() {
