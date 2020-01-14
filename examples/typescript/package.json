@@ -21,7 +21,7 @@
     "@anansi/browserslist-config": "^0.0.6",
     "@anansi/eslint-plugin": "^0.8.1",
     "@anansi/webpack-config": "^0.19.2",
-    "@babel/core": "^7.8.0",
+    "@babel/core": "^7.8.3",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-info": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^0.4.3",
-    "@babel/runtime": "^7.8.0",
+    "@babel/runtime": "^7.8.3",
     "antd": "^3.23.5",
     "classnames": "^2.2.6",
     "core-js": "^3.6.0",
