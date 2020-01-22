@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.3...@anansi/generator-js@0.1.4) (2020-01-22)
+
+
+### 🐛 Bug Fix
+
+* Build .gitignore for library generator as template ([bf4fb69](https://github.com/ntucker/anansi/commit/bf4fb697457409d3944d9651d3612248d73476b8))
+
+
+
 ### [0.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.2...@anansi/generator-js@0.1.3) (2020-01-14)
 
 
