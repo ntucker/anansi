@@ -44,9 +44,10 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       this.templatePath('tsconfig.json'),
       this.destinationPath('tsconfig.json'),
     );
-    (this.fs as any).append(
+    this.fs.appendTpl(
+      this.templatePath('.gitignore.tpl'),
       this.destinationPath('.gitignore'),
-      this.fs.read(this.templatePath('.gitignore.tpl')),
+      this.config.getAll(),
     );
   }
 
