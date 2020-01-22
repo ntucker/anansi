@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.4...@anansi/generator-js@0.1.5) (2020-01-22)
+
+
+### 🐛 Bug Fix
+
+* Include all library generator templates ([d35d54e](https://github.com/ntucker/anansi/commit/d35d54e7cd73bbe27768606c940168c3bcca6c22))
+
+
+
 ### [0.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.3...@anansi/generator-js@0.1.4) (2020-01-22)
 
 
