@@ -1,8 +1,9 @@
 import Generator from 'yeoman-generator';
 
+import { InstallPeersMixin } from '../utils';
 import { ConfigureGenerator } from '../app';
 
-export default class extends ConfigureGenerator {
+export default class extends InstallPeersMixin(ConfigureGenerator) {
   initializing() {
     super.initializing();
     // default until testing is set
@@ -90,6 +91,7 @@ export default class extends ConfigureGenerator {
 
   installEslintPlugin() {
     this.yarnInstall(['eslint', '@anansi/eslint-plugin'], { dev: true });
+    this.installPeers('@anansi/eslint-plugin', undefined, { dev: true });
   }
 
   installTypeScript() {
