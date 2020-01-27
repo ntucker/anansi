@@ -34,7 +34,6 @@ module.exports = {
     },
     'import/resolver': {
       webpack: {},
-      'babel-plugin-root-import': { rootPathSuffix: './src' },
     },
   },
   overrides: [
@@ -74,3 +73,8 @@ module.exports = {
     }
   ]
 };
+try {
+  require('babel-plugin-root-import');
+  module.exports.settings['import/resolver']['babel-plugin-root-import'] = { rootPathSuffix: './src' };
+} catch(e) {}
+
