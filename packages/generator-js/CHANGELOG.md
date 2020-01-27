@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.5...@anansi/generator-js@0.1.6) (2020-01-27)
+
+
+### 🐛 Bug Fix
+
+* Install peerdeps for lint plugin ([1e4157c](https://github.com/ntucker/anansi/commit/1e4157cbda7e1309c1c7f8e50b1c2101404667ec))
+
+
+
 ### [0.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.4...@anansi/generator-js@0.1.5) (2020-01-22)
 
 

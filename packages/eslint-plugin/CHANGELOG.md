@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.1...@anansi/eslint-plugin@0.8.2) (2020-01-27)
+
+
+### 💅 Enhancement
+
+* Make babel-plugin-root-import support optional ([7ec8cad](https://github.com/ntucker/anansi/commit/7ec8cada3c91635ec66f0b29c6f79d152be81b1f))
+* Use overrides to keep both js and ts linters ([47fc02b](https://github.com/ntucker/anansi/commit/47fc02bd92677325cb1c247e6bd1fdc7d8eac108))
+
+
+### 📦 Package
+
+* Upgrade plugins ([eb0115c](https://github.com/ntucker/anansi/commit/eb0115cf4ed9ee7940940dbe15e1607184f3ca2d))
+
+
+
 ### [0.8.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.0...@anansi/eslint-plugin@0.8.1) (2020-01-07)
 
 
