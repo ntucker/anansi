@@ -1,21 +1,11 @@
 module.exports = {
   // TODO: instead of including TS stuff, just have the base, but then programatically order things
   // properly in the extends
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:react/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react"
-  ],
   env: {
     jest: true,
     browser: true,
   },
-  plugins: ['prettier', 'react-hooks', 'import'],
+  plugins: ['prettier', 'react-hooks', 'import', 'react'],
   rules: {
     'prettier/prettier': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -47,4 +37,40 @@ module.exports = {
       'babel-plugin-root-import': { rootPathSuffix: './src' },
     },
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/@typescript-eslint",
+        "prettier/react"
+      ],
+    },
+    {
+      files: ['*.js', '*.jsx'],
+      extends: [
+        "eslint:recommended",
+        "plugin:flowtype/recommended",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react"
+      ],
+      parser: 'babel-eslint',
+      parserOptions: {
+        sourceType: 'module',
+        allowImportExportEverywhere: true,
+        ecmaVersion: 2020,
+        ecmaFeatures: {
+          jsx: true,
+          experimentalObjectRestSpread: true,
+        },
+      },
+      plugins: ['flowtype', 'babel'],
+    }
+  ]
 };
