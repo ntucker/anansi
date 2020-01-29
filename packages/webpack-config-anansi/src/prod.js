@@ -46,7 +46,8 @@ export default function makeProdConfig(
       config.plugins.unshift(
         new HtmlWebpackPlugin(htmlOptions),
         new CrittersPlugin({}),
-        new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
+        // InlineChunkHtmlPlugin requires HtmlWebpackPlugin v4, but critters isn't compatbile
+        //new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
       );
     }
   }
