@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.1.8](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.7...anansi-example-typescript@0.1.8) (2020-01-29)
+
+
+### 🐛 Bug Fix
+
+* Remove inline chunks until htmlwebpackplugin is v4 ([cbf55c9](https://github.com/ntucker/anansi/commit/cbf55c97a47ca357969a25d34b2b3dc786a12329))
+
+
+
 ### [0.1.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.6...anansi-example-typescript@0.1.7) (2020-01-27)
 
 **Note:** Version bump only for package anansi-example-typescript

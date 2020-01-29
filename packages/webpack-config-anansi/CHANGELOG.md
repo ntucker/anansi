@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.3...@anansi/webpack-config@0.19.4) (2020-01-29)
+
+
+### 🐛 Bug Fix
+
+* Remove inline chunks until htmlwebpackplugin is v4 ([cbf55c9](https://github.com/ntucker/anansi/commit/cbf55c97a47ca357969a25d34b2b3dc786a12329))
+
+
+### 📦 Package
+
+* react-refresh, terser-plugin ([e25caad](https://github.com/ntucker/anansi/commit/e25caadc73847006e62497b05cbcaf7df5347b47))
+
+
+
 ### [0.19.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.2...@anansi/webpack-config@0.19.3) (2020-01-27)
 
 **Note:** Version bump only for package @anansi/webpack-config
