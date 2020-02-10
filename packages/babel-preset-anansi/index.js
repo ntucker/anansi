@@ -85,8 +85,7 @@ function buildPreset(api, options = {}) {
       //stage 1
       options.typing !== 'typescript' &&
         require('@babel/plugin-proposal-export-default-from').default,
-      options.typing !== 'typescript' &&
-        require('@babel/plugin-proposal-export-namespace-from').default,
+      require('@babel/plugin-proposal-export-namespace-from').default,
       //stage 3
       require('@babel/plugin-syntax-top-level-await').default,
     ],
