@@ -38,12 +38,11 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['**/*.ts?(x)'],
       extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/recommended",
         "prettier",
         "prettier/@typescript-eslint",
@@ -51,10 +50,9 @@ module.exports = {
       ],
     },
     {
-      files: ['*.js', '*.jsx'],
+      files: ['**/*.js?(x)'],
       extends: [
         "eslint:recommended",
-        "plugin:flowtype/recommended",
         "plugin:react/recommended",
         "prettier",
         "prettier/react"
@@ -69,7 +67,7 @@ module.exports = {
           experimentalObjectRestSpread: true,
         },
       },
-      plugins: ['flowtype', 'babel'],
+      plugins: ['babel'],
     }
   ]
 };
