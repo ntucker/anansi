@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.2...@anansi/babel-preset@1.0.0) (2020-02-16)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires TypeScript 3.8
+
+### 🚀 Features
+
+* Support 'export * as' with TypeScript ([f3d40c8](https://github.com/ntucker/anansi/commit/f3d40c8675162497f048c6e3d60e6023703e6fbc))
+
+
+### 💅 Enhancement
+
+* Auto detect babel runtime version ([986d32b](https://github.com/ntucker/anansi/commit/986d32bfc0e5b18b688df6446a547c09ddd390bd))
+
+
+
 ### [0.26.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.1...@anansi/babel-preset@0.26.2) (2020-01-14)
 
 

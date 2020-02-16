@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.3...@anansi/eslint-plugin@0.8.4) (2020-02-16)
+
+
+### 💅 Enhancement
+
+* Drop type-aware rules for performance reasons ([#24](https://github.com/ntucker/anansi/issues/24)) ([db1ed8d](https://github.com/ntucker/anansi/commit/db1ed8dd09d399846a2b2a29bc17f4967f768887))
+* Remove rule overrides that were in type-aware preset ([4f99e5a](https://github.com/ntucker/anansi/commit/4f99e5a116c17a704d2ce2fbc6f5fbeb9f3d4ad1))
+
+
+### 📦 Package
+
+* Bump lint plugins ([37e8953](https://github.com/ntucker/anansi/commit/37e8953dc17abbf64716da9972891240c21b96d4))
+
+
+
 ### [0.8.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.2...@anansi/eslint-plugin@0.8.3) (2020-01-29)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.5...@anansi/polyfill@1.0.0) (2020-02-16)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires TypeScript 3.8
+
+### 🚀 Features
+
+* Support 'export * as' with TypeScript ([f3d40c8](https://github.com/ntucker/anansi/commit/f3d40c8675162497f048c6e3d60e6023703e6fbc))
+
+
+
 ### [0.4.5](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.4...@anansi/polyfill@0.4.5) (2020-01-29)
 
 **Note:** Version bump only for package @anansi/polyfill

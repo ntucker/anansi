@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.7...@anansi/generator-js@1.0.0) (2020-02-16)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires TypeScript 3.8
+
+### 🚀 Features
+
+* Support 'export * as' with TypeScript ([f3d40c8](https://github.com/ntucker/anansi/commit/f3d40c8675162497f048c6e3d60e6023703e6fbc))
+
+
+### 💅 Enhancement
+
+* Remove type-aware config for eslint ([ff4a375](https://github.com/ntucker/anansi/commit/ff4a37519320e27cf16e81f85369a1f1ae36384d))
+
+
+### 🐛 Bug Fix
+
+* Include needed peerdeps from eslint-plugin ([#26](https://github.com/ntucker/anansi/issues/26)) ([ef1ef77](https://github.com/ntucker/anansi/commit/ef1ef779fd1c12939bf5b381e6835a9fbc46790e))
+
+
+
 ### [0.1.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.6...@anansi/generator-js@0.1.7) (2020-01-29)
 
 **Note:** Version bump only for package @anansi/generator-js
