@@ -79,7 +79,7 @@ function buildPreset(api, options = {}) {
             helpers: true,
             regenerator: true,
             useESModules,
-            version: '7.7.1',
+            version: require('@babel/runtime/package.json').version,
           },
         ],
       //stage 1
