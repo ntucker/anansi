@@ -1,21 +1,23 @@
-declare module "*.gif" {
+import { ComponentType } from 'react';
+
+declare module '*.gif' {
   let img: string;
   export default img;
 }
-declare module "*.svg" {
-  let content: typeof React.ComponentType<any>;
+declare module '*.svg' {
+  let content: ComponentType<any>;
   export default content;
 }
-declare module "*.jpg" {
+declare module '*.jpg' {
   let img: string;
   export default img;
 }
-declare module "*file\.svg" {
+declare module '*file\.svg' {
   let img: string;
   export default img;
 }
-declare module "*.scss" {
-  type CSSMODULE = { [k:string]: string }
+declare module '*.scss' {
+  type CSSMODULE = { [k: string]: string };
   let modules: CSSMODULE;
   export default modules;
 }

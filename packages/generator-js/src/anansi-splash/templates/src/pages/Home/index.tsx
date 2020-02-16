@@ -16,9 +16,7 @@ export default function Home() {
         textAlign: 'center',
       }}
     >
-      <nav style={{ position: 'fixed', top: '18px' }}>
-        Anansi
-      </nav>
+      <nav style={{ position: 'fixed', top: '18px' }}>Anansi</nav>
       <main>
         <p style={{ fontSize: '30px' }}>
           Congrats! You&apos;ve created <%= appName %>!
