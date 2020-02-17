@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.0...@anansi/generator-js@1.0.1) (2020-02-17)
+
+
+### 💅 Enhancement
+
+* More comprehensive vscode settings ([01ef7d7](https://github.com/ntucker/anansi/commit/01ef7d7964f68cf6f0bd3cde3c2524a9b1463d00))
+* Prettier template files on write ([#27](https://github.com/ntucker/anansi/issues/27)) ([74c7e4e](https://github.com/ntucker/anansi/commit/74c7e4ea4678abf55dc187133bd94e21f05c5d92))
+
+
+### 🐛 Bug Fix
+
+* Format src templates correctly ([99fb7ae](https://github.com/ntucker/anansi/commit/99fb7ae47846d0888634c8806b9d9c8ff196cd87))
+
+
+### 🏠 Internal
+
+* Update linting configs ([df4447e](https://github.com/ntucker/anansi/commit/df4447eed9401b7d01361c80bcd13cc4fc49f7a1))
+
+
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@0.1.7...@anansi/generator-js@1.0.0) (2020-02-16)
 
 

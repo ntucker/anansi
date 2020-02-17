@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.0...anansi-example-typescript@1.0.1) (2020-02-17)
+
+
+### 🏠 Internal
+
+* Update linting configs ([df4447e](https://github.com/ntucker/anansi/commit/df4447eed9401b7d01361c80bcd13cc4fc49f7a1))
+
+
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@0.1.8...anansi-example-typescript@1.0.0) (2020-02-16)
 
 

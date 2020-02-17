@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.5...@anansi/webpack-config@0.19.6) (2020-02-17)
+
+
+### 🏠 Internal
+
+* Update linting configs ([df4447e](https://github.com/ntucker/anansi/commit/df4447eed9401b7d01361c80bcd13cc4fc49f7a1))
+
+
+
 ### [0.19.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.4...@anansi/webpack-config@0.19.5) (2020-02-16)
 
 **Note:** Version bump only for package @anansi/webpack-config

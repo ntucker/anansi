@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.0.0...@anansi/babel-preset@1.0.1) (2020-02-17)
+
+
+### 📝 Documentation
+
+* Update 'future language support' notes ([22b2c20](https://github.com/ntucker/anansi/commit/22b2c2087b3e463a3edd4b8f39a6b65ed57e0b46))
+
+
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@0.26.2...@anansi/babel-preset@1.0.0) (2020-02-16)
 
 
