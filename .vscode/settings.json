@@ -2,7 +2,7 @@
 {
   "eslint.nodePath": "node_modules",
   "typescript.validate.enable": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
@@ -14,7 +14,9 @@
   },
   "eslint.validate": [
     "javascript",
-    "javascriptreact"
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true

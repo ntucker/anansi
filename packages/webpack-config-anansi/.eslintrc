@@ -1,3 +1,3 @@
 {
-  "extends": "plugin:@anansi/flow"
+  "extends": "plugin:@anansi/typescript"
 }
