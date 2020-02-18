@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.0.1...@anansi/babel-preset@1.1.0) (2020-02-18)
+
+
+### 🚀 Features
+
+* Allow ENV setting for import rewrites ([2563837](https://github.com/ntucker/anansi/commit/256383760709949cb9580407c0f79861ed60baf5))
+
+
+### 📝 Documentation
+
+* Graduate stage 4 item in readme ([d3f1ac6](https://github.com/ntucker/anansi/commit/d3f1ac6a7690a97aa241ea47ba1c5407e91ece8c))
+
+
+
 ### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.0.0...@anansi/babel-preset@1.0.1) (2020-02-17)
 
 
