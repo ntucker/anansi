@@ -67,8 +67,8 @@ function buildPreset(api, options = {}) {
         require('babel-plugin-root-import').default,
         {
           root: options.rootPathRoot,
-          rootPathSuffix: options.rootPathSuffix,
-          rootPathPrefix: options.rootPathPrefix,
+          rootPathSuffix: process.env.ROOT_PATH_SUFFIX || options.rootPathSuffix,
+          rootPathPrefix: process.env.ROOT_PATH_PREFIX || options.rootPathPrefix,
         },
       ],
       absoluteRuntimePath &&
