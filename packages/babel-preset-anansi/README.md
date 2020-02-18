@@ -166,7 +166,6 @@ are included:
 ### Stage 1
 
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
-- [`export * as ns from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-namespace-from)
 
 ### Other
 
