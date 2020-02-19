@@ -9,7 +9,7 @@ class TestingGenerator extends BetterGenerator {
   configuring() {
     // extending files
     this.fs.extendJSONTpl(
-      this.templatePath('package.json'),
+      this.templatePath('package.json.tpl'),
       this.destinationPath('package.json'),
     );
     this.fs.extendJSONTpl(
