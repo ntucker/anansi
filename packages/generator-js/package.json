@@ -2,7 +2,7 @@
   "name": "@anansi/generator-js",
   "version": "1.0.3",
   "description": "Fast React Web Apps",
-  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator#readme",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator-js#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:ntucker/anansi.git",
@@ -35,7 +35,12 @@
     "framework",
     "spa",
     "fast-refresh",
-    "yeoman-generator"
+    "yeoman-generator",
+    "yeoman",
+    "typescript",
+    "rest-hooks",
+    "webpack",
+    "sdk"
   ],
   "devDependencies": {
     "@types/ejs": "^3.0.0",

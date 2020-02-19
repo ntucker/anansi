@@ -66,7 +66,7 @@ yo @anansi/js:testing
 
 ### React SPA:
 
-- [ ] Experimental React concurrent mode
+- [x] Experimental React concurrent mode
 - [ ] routing
 - [x] rest-hooks
 
