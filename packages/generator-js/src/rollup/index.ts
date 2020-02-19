@@ -3,7 +3,7 @@ import { BetterGenerator, InstallPeersMixin } from '../utils';
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   configuring() {
     this.fs.extendJSONTpl(
-      this.templatePath('package.json'),
+      this.templatePath('package.json.tpl'),
       this.destinationPath('package.json'),
     );
     this.fs.copyTpl(

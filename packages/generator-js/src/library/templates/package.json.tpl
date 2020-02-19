@@ -4,13 +4,6 @@
   "module": "<%= libPath %>/index.js",
   "unpkg": "<%= assetPath %>/index.umd.min.js",
   "types": "<%= libPath %>/index.d.ts",
-  "files": [
-    "<%= rootPath %>",
-    "<%= assetPath %>",
-    "<%= libPath %>",
-    "LICENSE",
-    "README.md"
-  ],
   "scripts": {
     "build:lib": "cross-env NODE_ENV=production babel <%= rootPath %> --out-dir <%= libPath %> --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
     "build:types": "ttsc --build",

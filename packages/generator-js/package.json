@@ -23,9 +23,6 @@
   ],
   "files": [
     "generators",
-    "generators/library/templates/.gitignore.tpl",
-    "generators/library/templates/tsconfig.json",
-    "generators/library/templates/src/index.ts",
     "run.js"
   ],
   "bin": {
