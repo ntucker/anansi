@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.5...@anansi/generator-js@1.0.6) (2020-02-19)
+
+
+### 🐛 Bug Fix
+
+* Use same prettier config for format stream as written to disk ([c37795b](https://github.com/ntucker/anansi/commit/c37795b8ee0cbc549aea2bdf709f02b5655e7b01))
+
+
+
 ### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.4...@anansi/generator-js@1.0.5) (2020-02-19)
 
 
