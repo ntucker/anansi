@@ -22,7 +22,16 @@ export default class extends ConfigureGenerator {
       ],
       { restore: true },
     );
-    this.registerTransformStream([jsFilter, prettier(), jsFilter.restore]);
+    this.registerTransformStream([
+      jsFilter,
+      prettier({
+        printWidth: 80,
+        semi: true,
+        singleQuote: true,
+        trailingComma: 'all',
+      }),
+      jsFilter.restore,
+    ]);
   }
 
   async prompting() {
