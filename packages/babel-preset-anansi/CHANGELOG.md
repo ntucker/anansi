@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.0...@anansi/babel-preset@1.1.1) (2020-02-19)
+
+
+### 🐛 Bug Fix
+
+* Also include ROOT_PATH_ROOT ([871643f](https://github.com/ntucker/anansi/commit/871643feb36681c46e52fc4fb623f1f230c99168))
+
+
+
 ## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.0.1...@anansi/babel-preset@1.1.0) (2020-02-18)
 
 
