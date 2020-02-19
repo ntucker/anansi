@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.4...@anansi/generator-js@1.0.5) (2020-02-19)
+
+
+### 🐛 Bug Fix
+
+* Don't build stories types ([47c9202](https://github.com/ntucker/anansi/commit/47c9202950bdef5b20f3ad3a0d5730d2b5f2bd80))
+
+
+
 ### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.3...@anansi/generator-js@1.0.4) (2020-02-19)
 
 
