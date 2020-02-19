@@ -1,4 +1,8 @@
 # Anansi's React Babel Preset
+[![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
+[![npm downloads](https://img.shields.io/npm/dm/@anansi/babel-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/babel-preset)
+[![npm version](https://img.shields.io/npm/v/@anansi/babel-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/babel-preset)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Configurable production-ready babel preset for React projects.
 
