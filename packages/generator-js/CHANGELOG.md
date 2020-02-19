@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.2...@anansi/generator-js@1.0.3) (2020-02-19)
+
+
+### 🐛 Bug Fix
+
+* Add back files list in library package.json template ([a401d10](https://github.com/ntucker/anansi/commit/a401d10704fb791939f9bd9e60b168d61f149c65))
+
+
+
 ### [1.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.1...@anansi/generator-js@1.0.2) (2020-02-19)
 
 
