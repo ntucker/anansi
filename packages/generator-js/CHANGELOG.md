@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.3...@anansi/generator-js@1.0.4) (2020-02-19)
+
+
+### 📝 Documentation
+
+* Fix generator-js homepage link ([0aa7686](https://github.com/ntucker/anansi/commit/0aa76860c0dc8b4d88d78817cd5dd8ab9db8f1e1))
+
+
+
 ### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.2...@anansi/generator-js@1.0.3) (2020-02-19)
 
 

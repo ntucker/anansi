@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.1...@anansi/babel-preset@1.1.2) (2020-02-19)
+
+
+### 📝 Documentation
+
+* Add badges to readme ([40b161f](https://github.com/ntucker/anansi/commit/40b161f620e6a7db5d09f9f8f344cb86eeee3761))
+
+
+
 ### [1.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.0...@anansi/babel-preset@1.1.1) (2020-02-19)
 
 
