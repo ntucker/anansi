@@ -30,17 +30,21 @@
   },
   "main": "generators/index.js",
   "keywords": [
-    "anansi",
+    "cli",
     "react",
     "framework",
     "spa",
     "fast-refresh",
+    "react-refresh",
     "yeoman-generator",
     "yeoman",
     "typescript",
     "rest-hooks",
     "webpack",
-    "sdk"
+    "sdk",
+    "scss",
+    "css modules",
+    "storybook"
   ],
   "devDependencies": {
     "@types/ejs": "^3.0.0",
@@ -59,7 +63,7 @@
     "yeoman-test": "^1.7.0"
   },
   "engines": {
-    "node": ">= 8.0.0",
+    "node": ">= 8.9.0",
     "npm": ">= 4.0.0"
   },
   "dependencies": {

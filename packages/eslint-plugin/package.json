@@ -8,7 +8,10 @@
   },
   "keywords": [
     "eslint",
-    "react"
+    "react",
+    "typescript",
+    "prettier",
+    "hooks"
   ],
   "files": [
     "index.js",

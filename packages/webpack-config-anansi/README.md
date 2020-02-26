@@ -182,4 +182,4 @@ Override any babel loader specific options
 - Web workers
 - All font formats
 - Any media files
-- Javascript & Typescript
+- Javascript & TypeScript

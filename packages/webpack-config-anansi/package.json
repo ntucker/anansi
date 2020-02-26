@@ -18,8 +18,14 @@
   "keywords": [
     "anansi",
     "webpack",
+    "webpack-config",
     "react",
-    "fast-refresh"
+    "fast-refresh",
+    "react-refresh",
+    "typescript",
+    "scss",
+    "css modules",
+    "storybook"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
