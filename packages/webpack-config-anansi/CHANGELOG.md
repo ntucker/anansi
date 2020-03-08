@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.6...@anansi/webpack-config@0.19.7) (2020-03-08)
+
+
+### 📦 Package
+
+* Babel typescript, preset-env ([ec8adcf](https://github.com/ntucker/anansi/commit/ec8adcf96a5001ea734e906d42eb47c6369caaac))
+
+
+### 📝 Documentation
+
+* Add more keywords ([2a080e5](https://github.com/ntucker/anansi/commit/2a080e5ff3b2498297afd2603a51a8700a2e8100))
+
+
+
 ### [0.19.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.5...@anansi/webpack-config@0.19.6) (2020-02-17)
 
 

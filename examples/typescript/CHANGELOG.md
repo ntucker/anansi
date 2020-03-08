@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.4...anansi-example-typescript@1.0.5) (2020-03-08)
+
+
+### 📦 Package
+
+* Babel typescript, preset-env ([ec8adcf](https://github.com/ntucker/anansi/commit/ec8adcf96a5001ea734e906d42eb47c6369caaac))
+* Bump example pkgs ([c63cebb](https://github.com/ntucker/anansi/commit/c63cebb8c7e508c96bb68e2644d24af03ded0918))
+* Upgrade to antd 4 ([#30](https://github.com/ntucker/anansi/issues/30)) ([8f78ad1](https://github.com/ntucker/anansi/commit/8f78ad117fb9bf6d76b1915aa702c539caae420c))
+
+
+
 ### [1.0.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.3...anansi-example-typescript@1.0.4) (2020-02-19)
 
 **Note:** Version bump only for package anansi-example-typescript

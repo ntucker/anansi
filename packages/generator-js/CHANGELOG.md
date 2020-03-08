@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.6...@anansi/generator-js@1.0.7) (2020-03-08)
+
+
+### 📦 Package
+
+* Babel typescript, preset-env ([ec8adcf](https://github.com/ntucker/anansi/commit/ec8adcf96a5001ea734e906d42eb47c6369caaac))
+* Upgrade to antd 4 ([#30](https://github.com/ntucker/anansi/issues/30)) ([8f78ad1](https://github.com/ntucker/anansi/commit/8f78ad117fb9bf6d76b1915aa702c539caae420c))
+
+
+### 📝 Documentation
+
+* Add more keywords ([2a080e5](https://github.com/ntucker/anansi/commit/2a080e5ff3b2498297afd2603a51a8700a2e8100))
+
+
+
 ### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.5...@anansi/generator-js@1.0.6) (2020-02-19)
 
 

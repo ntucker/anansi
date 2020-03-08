@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.0...@anansi/polyfill@1.0.1) (2020-03-08)
+
+
+### 📦 Package
+
+* Babel typescript, preset-env ([ec8adcf](https://github.com/ntucker/anansi/commit/ec8adcf96a5001ea734e906d42eb47c6369caaac))
+
+
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/polyfill@0.4.5...@anansi/polyfill@1.0.0) (2020-02-16)
 
 

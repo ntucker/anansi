@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.2...@anansi/babel-preset@1.1.3) (2020-03-08)
+
+
+### 📦 Package
+
+* Babel typescript, preset-env ([ec8adcf](https://github.com/ntucker/anansi/commit/ec8adcf96a5001ea734e906d42eb47c6369caaac))
+* Bump babel preset env ([d6ee866](https://github.com/ntucker/anansi/commit/d6ee8665cd2f2a7cf864c4d35a30a2b23fe9058d))
+
+
+### 📝 Documentation
+
+* Add more keywords ([2a080e5](https://github.com/ntucker/anansi/commit/2a080e5ff3b2498297afd2603a51a8700a2e8100))
+
+
+
 ### [1.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.1...@anansi/babel-preset@1.1.2) (2020-02-19)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.4...@anansi/eslint-plugin@0.8.5) (2020-03-08)
+
+
+### 📝 Documentation
+
+* Add more keywords ([2a080e5](https://github.com/ntucker/anansi/commit/2a080e5ff3b2498297afd2603a51a8700a2e8100))
+
+
+
 ### [0.8.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.3...@anansi/eslint-plugin@0.8.4) (2020-02-16)
 
 
