@@ -24,7 +24,7 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
   );
   return (
     <Form
-      onSubmit={handleSubmit(onSubmit)}
+      onFinish={onSubmit}
       noValidate
       autoComplete="off"
       {...formItemLayout}
@@ -36,7 +36,7 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
         <Input.TextArea
           value={values.body}
           onChange={handleChange('body')}
-          autosize={{ minRows: 4 }}
+          autoSize={{ minRows: 4 }}
         />
       </Form.Item>
       <Button type="primary" htmlType="submit">

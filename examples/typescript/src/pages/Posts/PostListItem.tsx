@@ -1,7 +1,8 @@
 import { PostResource, UserResource } from 'data/resources';
 import React from 'react';
 import { useResource } from 'rest-hooks';
-import { List, Avatar, Icon } from 'antd';
+import { EditOutlined } from '@ant-design/icons';
+import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
 export default function IssueListItem({ post }: { post: PostResource }) {
@@ -11,7 +12,7 @@ export default function IssueListItem({ post }: { post: PostResource }) {
   const actions = [];
   actions.push(
     <Link to={`/post/${post.id}/edit`}>
-      <Icon type="edit" />
+      <EditOutlined />
     </Link>,
   );
   return (

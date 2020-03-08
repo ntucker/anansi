@@ -25,6 +25,7 @@
     "webpack-cli": "^3.3.10"
   },
   "resolutions": {
-    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git"
+    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
+    "acorn": "7.1.1"
   }
 }

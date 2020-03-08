@@ -1,6 +1,7 @@
 import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import { Link } from 'react-router-dom';
+import { EditOutlined } from '@ant-design/icons';
 import { Typography, Button, PageHeader } from 'antd';
 
 import itemRender from 'navigation/breadcrumbItemRenderer';
@@ -33,7 +34,7 @@ export default function PostDetail({
       breadcrumb={{ routes, itemRender }}
       extra={[
         <Link to={`/post/${post.id}/edit`} key="edit">
-          <Button type="secondary" shape="circle" icon="edit" size="large" />
+          <Button shape="circle" icon={<EditOutlined />} size="large" />
         </Link>,
       ]}
     >

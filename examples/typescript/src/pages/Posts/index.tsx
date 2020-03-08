@@ -1,5 +1,6 @@
 import React from 'react';
 import { useResource } from 'rest-hooks';
+import { PlusOutlined } from '@ant-design/icons';
 import { List, Button, PageHeader } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ function PostList() {
       breadcrumb={{ routes }}
       extra={[
         <Link to="/posts/new" key={1}>
-          <Button type="primary" shape="circle" icon="plus" size="large" />
+          <Button type="primary" shape="circle" icon={<PlusOutlined />} size="large" />
         </Link>,
       ]}
     >
