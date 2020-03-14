@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.5...@anansi/eslint-plugin@0.8.6) (2020-03-14)
+
+
+### 📦 Package
+
+* react, typescript linters. Includes type exports support ([b85f9e3](https://github.com/ntucker/anansi/commit/b85f9e357aeccfd4b26abed5919d50b608affa9a))
+
+
+
 ### [0.8.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.4...@anansi/eslint-plugin@0.8.5) (2020-03-08)
 
 

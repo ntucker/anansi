@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.5...anansi-example-typescript@1.0.6) (2020-03-14)
+
+
+### 📦 Package
+
+* react, typescript linters. Includes type exports support ([b85f9e3](https://github.com/ntucker/anansi/commit/b85f9e357aeccfd4b26abed5919d50b608affa9a))
+
+
+
 ### [1.0.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.4...anansi-example-typescript@1.0.5) (2020-03-08)
 
 
