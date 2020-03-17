@@ -26,6 +26,7 @@
   },
   "resolutions": {
     "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
-    "acorn": "7.1.1"
+    "acorn": "7.1.1",
+    "minimist": "1.2.2"
   }
 }
