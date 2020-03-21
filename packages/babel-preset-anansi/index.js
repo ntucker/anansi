@@ -137,32 +137,26 @@ function buildPreset(api, options = {}) {
         targets: {
           node: options.nodeTarget || 'current',
         },
+        bugfixes: true,
         modules,
         // maximum compatibility since we don't care about bundle size
         useBuiltIns: false,
       },
     ]);
   } else {
-    // TODO: enable this in more cases based on browserslist
-    if (options.targets && options.targets.esmodules === true) {
-      preset.presets.unshift([
-        require('@babel/preset-modules'),
-        { loose: true },
-      ]);
-    } else {
-      preset.presets.unshift([
-        require('@babel/preset-env').default,
-        {
-          targets: options.targets,
-          modules,
-          useBuiltIns: options.useBuiltIns,
-          corejs: options.corejs,
-          loose: options.loose,
-          // Exclude transforms that make all code slower
-          exclude: ['transform-typeof-symbol'],
-        },
-      ]);
-    }
+    preset.presets.unshift([
+      require('@babel/preset-env').default,
+      {
+        targets: options.targets,
+        bugfixes: true,
+        modules,
+        useBuiltIns: options.useBuiltIns,
+        corejs: options.corejs,
+        loose: options.loose,
+        // Exclude transforms that make all code slower
+        exclude: ['transform-typeof-symbol'],
+      },
+    ]);
   }
   if (options.minify && env === 'production') {
     preset.presets.unshift(require('babel-minify'));
