@@ -17,6 +17,9 @@ function buildPreset(api, options = {}) {
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
+  const nodeTarget = api.caller(
+    caller => caller && caller.target === 'node'
+  ) ? 'current' : undefined;
   options = {
     minify: false,
     typing: false,
@@ -28,6 +31,7 @@ function buildPreset(api, options = {}) {
     corejs: { version: 3, proposals: true },
     hotReloader: false,
     reactConstantElementsOptions: {},
+    nodeTarget,
     ...options,
   };
   const modules =
