@@ -3,9 +3,9 @@ scanner_configs:
     exclude_groups:
     - devDependencies
     exceptions:
-      - advisory_id: 961
+      - advisory_id: 1179
         changed_by: ntucker
-        notes: Currently no patch exists and determined that this vulnerability is not exploitable.
+        notes: Only used in handlebars which is used for local dev.
 active_scanners:
   - RepoNotEmpty
   - Brakeman

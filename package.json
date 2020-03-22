@@ -14,19 +14,17 @@
   },
   "devDependencies": {
     "@anansi/eslint-plugin": "^0.8.0",
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "babel-plugin-root-import": "^6.4.1",
     "conventional-changelog-anansi": "^0.1.1",
     "conventional-changelog-conventionalcommits": "^4.2.3",
     "eslint": "^6.8.0",
     "husky": "^3.0.9",
-    "lerna": "^3.19.0",
+    "lerna": "^3.20.2",
     "webpack-cli": "^3.3.10"
   },
   "resolutions": {
-    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
-    "acorn": "7.1.1",
-    "minimist": "1.2.2"
+    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git"
   }
 }
