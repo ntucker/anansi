@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.6...@anansi/eslint-plugin@0.9.0) (2020-03-22)
+
+
+### 🚀 Features
+
+* Support 'export * as ns'; prettier 2 with other ts3.8 ([0e10e29](https://github.com/ntucker/anansi/commit/0e10e297d19b9546b4ebfff28b7c2a4eceed6d2c))
+
+
+
 ### [0.8.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.5...@anansi/eslint-plugin@0.8.6) (2020-03-14)
 
 
