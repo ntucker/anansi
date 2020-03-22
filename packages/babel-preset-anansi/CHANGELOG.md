@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.3...@anansi/babel-preset@1.2.0) (2020-03-22)
+
+
+### 🚀 Features
+
+* Automatically detect webpack target in babel ([#32](https://github.com/ntucker/anansi/issues/32)) ([257b64e](https://github.com/ntucker/anansi/commit/257b64e539c662693d31e1335eade9ad25d5a633))
+* Support new babel 7.9 features ([#31](https://github.com/ntucker/anansi/issues/31)) ([99cf988](https://github.com/ntucker/anansi/commit/99cf9885bc4b33eb0b6efcb8598b942ea97cdeb9))
+
+
+
 ### [1.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.2...@anansi/babel-preset@1.1.3) (2020-03-08)
 
 

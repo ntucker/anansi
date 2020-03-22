@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.6...anansi-example-typescript@1.1.0) (2020-03-22)
+
+
+### 🚀 Features
+
+* Support new babel 7.9 features ([#31](https://github.com/ntucker/anansi/issues/31)) ([99cf988](https://github.com/ntucker/anansi/commit/99cf9885bc4b33eb0b6efcb8598b942ea97cdeb9))
+
+
+### 💅 Enhancement
+
+* Preload redbox ([3e21c34](https://github.com/ntucker/anansi/commit/3e21c34b7c60d4ed28f6408678898113b2dc1faf))
+
+
+
 ### [1.0.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.0.5...anansi-example-typescript@1.0.6) (2020-03-14)
 
 

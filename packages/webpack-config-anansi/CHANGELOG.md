@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.8...@anansi/webpack-config@0.20.0) (2020-03-22)
+
+
+### 🚀 Features
+
+* Automatically detect webpack target in babel ([#32](https://github.com/ntucker/anansi/issues/32)) ([257b64e](https://github.com/ntucker/anansi/commit/257b64e539c662693d31e1335eade9ad25d5a633))
+
+
+
 ### [0.19.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.19.7...@anansi/webpack-config@0.19.8) (2020-03-14)
 
 **Note:** Version bump only for package @anansi/webpack-config
