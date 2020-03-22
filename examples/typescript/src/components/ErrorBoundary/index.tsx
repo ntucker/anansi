@@ -11,7 +11,7 @@ function handleRefresh() {
 }
 
 const RedBox = lazy(() =>
-  import(/* webpackChunkName: 'redbox' */ 'redbox-react'),
+  import(/* webpackChunkName: 'redbox' *//* webpackPreload: true */ 'redbox-react'),
 );
 
 interface NetworkError extends Error {
