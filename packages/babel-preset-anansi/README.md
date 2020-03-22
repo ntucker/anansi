@@ -66,6 +66,8 @@ If false, no static typechecker will be supported.
 
 Will run to target node instead of browsers. Specify a [valid node string](https://babeljs.io/docs/en/babel-preset-env#targetsnode) like "current", or "6.15".
 
+If unset, will automatically target current node version when webpack is targetting node.
+
 ### targets : ?object = undefined
 
 Set to `{ "esmodules": true }` to produce extra optimal bundles for modern browsers that support
