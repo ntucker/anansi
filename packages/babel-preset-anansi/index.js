@@ -208,7 +208,7 @@ function buildPreset(api, options = {}) {
         plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
       },
       {
-        test: /\.(?!(tsx|ts))$/,
+        test: /\.(js|jsx)$/,
         plugins: classPlugins,
       },
     ];
