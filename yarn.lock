@@ -4,7 +4,7 @@
 
 "@anansi/babel-preset@^0.19.3":
   version "0.19.3"
-  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.19.3.tgz#66a80623170a8a03a30cb2086de63fdfd766eb33"
+  resolved "https://registry-npm.cbhq.net/@anansi%2fbabel-preset/-/babel-preset-0.19.3.tgz#66a80623170a8a03a30cb2086de63fdfd766eb33"
   integrity sha512-8qwz78nyMgCEe8P05K6XVNizLI1PKWR+NvT5jUoZd2paHqWtPwn4WvG0K9ejxWlzqi72q0Mzq6bP0lRVkp0sug==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.0"
@@ -2301,10 +2301,10 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
 
-"@babel/plugin-transform-react-jsx@^7.9.0":
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.9.0.tgz#d9f0e10a0a154f86fb2f3b04ef856d709284cb25"
-  integrity sha512-eOjxtrHDt0R3WRTyya6yxV7LkC+wRgTkiT8UGHUh7TPYVqIltDmY2djm60283OzD1R0YJB8tJij3tLNlKFgnYQ==
+"@babel/plugin-transform-react-jsx@^7.9.4":
+  version "7.9.4"
+  resolved "https://registry-npm.cbhq.net/@babel%2fplugin-transform-react-jsx/-/plugin-transform-react-jsx-7.9.4.tgz#86f576c8540bd06d0e95e0b61ea76d55f6cbd03f"
+  integrity sha512-Mjqf3pZBNLt854CK0C/kRuXAnE6H/bo7xYojP+WGtX8glDGSibcwnsWwhwoSuRg0+EBnxPC1ouVnuetUIlPSAw==
   dependencies:
     "@babel/helper-builder-react-jsx" "^7.9.0"
     "@babel/helper-builder-react-jsx-experimental" "^7.9.0"
@@ -2481,10 +2481,10 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-typescript" "^7.2.0"
 
-"@babel/plugin-transform-typescript@^7.9.0":
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.9.0.tgz#8b52649c81cb7dee117f760952ab46675a258836"
-  integrity sha512-GRffJyCu16H3tEhbt9Q4buVFFBqrgS8FzTuhqSxlXNgmqD8aw2xmwtRwrvWXXlw7gHs664uqacsJymHJ9SUE/Q==
+"@babel/plugin-transform-typescript@^7.9.4":
+  version "7.9.4"
+  resolved "https://registry-npm.cbhq.net/@babel%2fplugin-transform-typescript/-/plugin-transform-typescript-7.9.4.tgz#4bb4dde4f10bbf2d787fce9707fb09b483e33359"
+  integrity sha512-yeWeUkKx2auDbSxRe8MusAG+n4m9BFY/v+lPjmQDgOFX5qnySkUY5oXzkp6FwPdsYqnKay6lorXYdC0n3bZO7w==
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
@@ -2850,14 +2850,14 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/preset-react@^7.9.0":
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.9.0.tgz#cdc5b6dd35ff8248047a070ec15d136c88193c9d"
-  integrity sha512-56vOLSR9yTi+5WwPoTfi4L2C2wN76RcVhFZ6DPeJT9lrlaA/wqTNUP1XCehnBxOMhTk5yWLQT7MwxyhejJVnJA==
+"@babel/preset-react@^7.9.4":
+  version "7.9.4"
+  resolved "https://registry-npm.cbhq.net/@babel%2fpreset-react/-/preset-react-7.9.4.tgz#c6c97693ac65b6b9c0b4f25b948a8f665463014d"
+  integrity sha512-AxylVB3FXeOTQXNXyiuAQJSvss62FEotbX2Pzx3K/7c+MKJMdSg6Ose6QYllkdCFA8EInCJVw7M/o5QbLuA4ZQ==
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-transform-react-display-name" "^7.8.3"
-    "@babel/plugin-transform-react-jsx" "^7.9.0"
+    "@babel/plugin-transform-react-jsx" "^7.9.4"
     "@babel/plugin-transform-react-jsx-development" "^7.9.0"
     "@babel/plugin-transform-react-jsx-self" "^7.9.0"
     "@babel/plugin-transform-react-jsx-source" "^7.9.0"
@@ -21518,15 +21518,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.2.1, typescript@^3.7.5:
+typescript@^3.2.1:
   version "3.7.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
   integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
-
-typescript@^3.8.1-rc:
-  version "3.8.1-rc"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.1-rc.tgz#f94333c14da70927ccd887be2e91be652a9a09f6"
-  integrity sha512-aOIe066DyZn2uYIiND6fXMUUJ70nxwu/lKhA92QuQzXyC86fr0ywo1qvO8l2m0EnDcfjprYPuFRgNgDj7U2GlQ==
 
 typescript@^3.8.3:
   version "3.8.3"
