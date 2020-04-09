@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.0...@anansi/babel-preset@1.2.1) (2020-04-09)
+
+
+### 🐛 Bug Fix
+
+* Process classes in plain JS files when typescript is enabled ([908023f](https://github.com/ntucker/anansi/commit/908023fe88e03feaefade981b42d46ddcb69fb57))
+
+
+### 📦 Package
+
+* Bump plugin-transform-typescript, preset-react ([6ae906c](https://github.com/ntucker/anansi/commit/6ae906c747e0f011ea776f1699e61c4c6e907c44))
+
+
+
 ## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.1.3...@anansi/babel-preset@1.2.0) (2020-03-22)
 
 

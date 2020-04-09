@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.0...@anansi/eslint-plugin@0.9.1) (2020-04-09)
+
+
+### 📦 Package
+
+* Bump plugin-transform-typescript, preset-react ([6ae906c](https://github.com/ntucker/anansi/commit/6ae906c747e0f011ea776f1699e61c4c6e907c44))
+
+
+
 ## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.8.6...@anansi/eslint-plugin@0.9.0) (2020-03-22)
 
 

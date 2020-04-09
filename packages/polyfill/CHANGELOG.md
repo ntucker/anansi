@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.3...@anansi/polyfill@1.0.4) (2020-04-09)
+
+
+### 📦 Package
+
+* Bump plugin-transform-typescript, preset-react ([6ae906c](https://github.com/ntucker/anansi/commit/6ae906c747e0f011ea776f1699e61c4c6e907c44))
+
+
+
 ### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.2...@anansi/polyfill@1.0.3) (2020-03-22)
 
 **Note:** Version bump only for package @anansi/polyfill
