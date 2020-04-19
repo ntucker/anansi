@@ -48,8 +48,8 @@
     "prettier-eslint-cli": "^5.0.0",
     "react-refresh": "^0.8.1",
     "rimraf": "^2.6.3",
-    "webpack": "^4.41.2",
-    "webpack-dev-server": "^3.9.0"
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.2.0",
