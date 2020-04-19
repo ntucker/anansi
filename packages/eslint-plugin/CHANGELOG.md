@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.1...@anansi/eslint-plugin@0.9.2) (2020-04-19)
+
+
+### 📦 Package
+
+* Bump a bunch of lint pieces ([11fa76f](https://github.com/ntucker/anansi/commit/11fa76f4f2bf74758128925efab106d1575cfae6))
+
+
+
 ### [0.9.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.0...@anansi/eslint-plugin@0.9.1) (2020-04-09)
 
 

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.1.2...anansi-example-typescript@2.0.0) (2020-04-19)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Required node 10
+
+### 🐛 Bug Fix
+
+* Fix example running in dev mode ([2277be1](https://github.com/ntucker/anansi/commit/2277be15f08b0d9aaf9b0d3e1189961472b8b5ff))
+
+
+### 📦 Package
+
+* Bump a few webpack plugins ([#34](https://github.com/ntucker/anansi/issues/34)) ([7b29fb1](https://github.com/ntucker/anansi/commit/7b29fb1811f66f19dd44d26e7b2bf5f1177dc919))
+
+
+
 ### [1.1.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.1.1...anansi-example-typescript@1.1.2) (2020-04-09)
 
 **Note:** Version bump only for package anansi-example-typescript

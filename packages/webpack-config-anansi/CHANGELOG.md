@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.20.2...@anansi/webpack-config@1.0.0) (2020-04-19)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Use of html plugin has changed. See:
+https://dev.to/jantimon/html-webpack-plugin-4-has-been-released-125d
+* Required node 10
+
+### 📦 Package
+
+* Bump a few webpack plugins ([#34](https://github.com/ntucker/anansi/issues/34)) ([7b29fb1](https://github.com/ntucker/anansi/commit/7b29fb1811f66f19dd44d26e7b2bf5f1177dc919))
+* Upgrade html-webpack-plugin to 4 series ([044f9ef](https://github.com/ntucker/anansi/commit/044f9ef89bebdfee96e63e7d5b99d3b06a0b56e1))
+
+
+### 🏠 Internal
+
+* Bump dev webpack for plugin ([f696d31](https://github.com/ntucker/anansi/commit/f696d31d456f855b71cc64a4e0aa55788311be98))
+
+
+
 ### [0.20.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.20.1...@anansi/webpack-config@0.20.2) (2020-04-09)
 
 **Note:** Version bump only for package @anansi/webpack-config
