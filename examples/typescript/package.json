@@ -37,13 +37,13 @@
     "react-refresh": "0.8.1",
     "serve": "^11.3.0",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.0",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.4",
-    "@babel/runtime": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
     "antd": "^4.0.2",
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",
