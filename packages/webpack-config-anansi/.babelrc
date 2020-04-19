@@ -3,7 +3,7 @@
     [
       "@anansi/babel-preset",
       {
-        "nodeTarget": "6.15"
+        "nodeTarget": "10.13.0"
       }
     ]
   ]
