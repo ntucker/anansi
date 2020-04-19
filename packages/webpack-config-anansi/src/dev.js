@@ -16,7 +16,7 @@ export default function makeDevConfig(
     libraryExclude,
     buildDir,
     hardCacheOptions,
-    htmlOptions = { title: 'Anansi app' },
+    htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
   },
 ) {

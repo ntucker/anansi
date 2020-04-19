@@ -20,7 +20,7 @@ export default function makeProdConfig(
     libraryInclude,
     libraryExclude,
     argv = {},
-    htmlOptions = { title: '' },
+    htmlOptions = { title: '', scriptLoading: 'defer' },
   },
 ) {
   const config = { ...baseConfig };
@@ -45,9 +45,9 @@ export default function makeProdConfig(
     if (htmlOptions) {
       config.plugins.unshift(
         new HtmlWebpackPlugin(htmlOptions),
-        new CrittersPlugin({}),
-        // InlineChunkHtmlPlugin requires HtmlWebpackPlugin v4, but critters isn't compatbile
-        //new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
+        // TODO: doesn't work with latest htmlplugin https://github.com/GoogleChromeLabs/critters/issues/52
+        //new CrittersPlugin({}),
+        new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
       );
     }
   }
