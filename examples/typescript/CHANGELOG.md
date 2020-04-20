@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.0...anansi-example-typescript@2.0.1) (2020-04-20)
+
+
+### 🐛 Bug Fix
+
+* Serve production properly ([1796aae](https://github.com/ntucker/anansi/commit/1796aaee9f50cbcd0b59a1dd0230133e6a476563))
+
+
+
 ## [2.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@1.1.2...anansi-example-typescript@2.0.0) (2020-04-19)
 
 
