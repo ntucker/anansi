@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@0.0.6...@anansi/browserslist-config@1.0.0) (2020-04-21)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires browserslist >4.12 and node>8
+
+### 🚀 Features
+
+* Browserslist environments ([315d206](https://github.com/ntucker/anansi/commit/315d206ace5ae316129d687a4868c096fa41be0f))
+
+
+### 📝 Documentation
+
+* Add environment information to readme ([9b1653b](https://github.com/ntucker/anansi/commit/9b1653b03e10b12b4c87475d341a60b86ae1a9a4))
+
+
+
 ### [0.0.6](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@0.0.5...@anansi/browserslist-config@0.0.6) (2019-12-11)
 
 
