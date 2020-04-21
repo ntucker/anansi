@@ -16,6 +16,6 @@
     "directory": "packages/browserslist-config-anansi"
   },
   "engines": {
-    "node": ">=6.15.1"
+    "node": ">=8.9.0"
   }
 }
