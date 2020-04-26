@@ -2708,17 +2708,17 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/normalizr@^5.0.6":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-5.0.6.tgz#492b8934ee86291b664e927ba3e727db75090f51"
-  integrity sha512-eHKpzNPh6bTiyAshmnpXTUg0qMXDGthG61DpiPfRHpq5vl7mtX+t+EVQKi2VXnRZH+SefJF3q8KuAp1O6UcbMA==
+"@rest-hooks/normalizr@^6.0.0-beta.0":
+  version "6.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.0.tgz#5b19545dd473c77dccaf70d849596a895aa10573"
+  integrity sha512-jZYt+8cyRDckYkxSsEni806/78jj2R5Ejo4OJuX3QXPkINV+TblAUduXoeKE8eAoJsG6QIrYQ9pRXzk/nldb3Q==
   dependencies:
     "@babel/runtime" "^7.7.0"
 
-"@rest-hooks/use-enhanced-reducer@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.2.tgz#3a739cb1ac63d9971e3610492cab2dbe728785ca"
-  integrity sha512-3hgRHN3MCVxN1XZYa/VxOKsC5y2DwcUGWa6WV/htnn0+zfSJPqxoEHQFVPoukkJ1Yf9sPRVde4nwpS1XioonwA==
+"@rest-hooks/use-enhanced-reducer@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.3.tgz#4a6d6dd706db7b6425c7c90eccb72fb624acfa3b"
+  integrity sha512-XZwhfnkTsGffa/hCoUA01N2fVQGO3mZ4nrBY1rvwLbkHtJy69gUM/ruclTpGtNLdZyTnzqy3Nc3b5Yw6SBbEqQ==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -17748,14 +17748,14 @@ resolve@^1.15.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@4.5.8:
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-4.5.8.tgz#cd5463ee618939230654dfdff5c9fc5379dcb279"
-  integrity sha512-pCsJN5EMyWF29VJ41dwds+fOJeyU0Nbelhq3BFNfADo9k1KNPY5PvCnVMbD4MitiaI/H8yLEz70CL4r5Rlv6VQ==
+rest-hooks@5.0.0-beta.0:
+  version "5.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.0.tgz#4250f7bf6f07ff0345f3a8e32930584284fc3b6c"
+  integrity sha512-+lU9oXufDlK6kM6/oU8YiRhcOURkInXY44/um8uUMRvxzz+KwJJ61QB3XQ5Lb9ymz9Vwx/vYyMl9OV7PXajshg==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^5.0.6"
-    "@rest-hooks/use-enhanced-reducer" "^1.0.2"
+    "@rest-hooks/normalizr" "^6.0.0-beta.0"
+    "@rest-hooks/use-enhanced-reducer" "^1.0.3"
     flux-standard-action "^2.1.1"
 
 restore-cursor@^2.0.0:
