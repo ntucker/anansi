@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.0...@anansi/webpack-config@1.0.1) (2020-05-02)
+
+
+### 📦 Package
+
+* url-loader (major) ([8a1de61](https://github.com/ntucker/anansi/commit/8a1de61b0cea1af0df3de2bad35996adf04f76a8))
+
+
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@0.20.2...@anansi/webpack-config@1.0.0) (2020-04-19)
 
 

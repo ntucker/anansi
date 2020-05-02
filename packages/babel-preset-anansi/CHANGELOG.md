@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.1...@anansi/babel-preset@1.2.2) (2020-05-02)
+
+
+### 💅 Enhancement
+
+* Make babel-minify an optional peerdep to not polute standard case ([0701f6e](https://github.com/ntucker/anansi/commit/0701f6ed8ae066483e9b5b054e8ceb6b238d2eb9))
+
+
+### 📦 Package
+
+* Patch bump of runtime, typescript, env ([a84b3af](https://github.com/ntucker/anansi/commit/a84b3afc18d3fac38440a0cfef055e8ce09c1450))
+
+
+
 ### [1.2.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.0...@anansi/babel-preset@1.2.1) (2020-04-09)
 
 
