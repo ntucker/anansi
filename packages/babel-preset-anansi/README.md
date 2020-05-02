@@ -107,6 +107,8 @@ Which core-js version to use when useBuiltIns is not false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
 
+Be sure to install babel-minify as it is listed as an optional peerdependency here.
+
 ### loose: bool = false
 
 - class properties

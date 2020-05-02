@@ -163,7 +163,11 @@ function buildPreset(api, options = {}) {
     ]);
   }
   if (options.minify && env === 'production') {
-    preset.presets.unshift(require('babel-minify'));
+    try {
+      preset.presets.unshift(require('babel-minify'));
+    } catch(e) {
+      console.log("Minify enabled, but babel-minify not installed.")
+    }
   }
 
   /*  block is at the end so they are unshifted to the start of plugins  */
