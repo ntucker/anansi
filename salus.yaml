@@ -2,10 +2,14 @@ scanner_configs:
   YarnAudit:
     exclude_groups:
     - devDependencies
+    - peerDependencies
     exceptions:
       - advisory_id: 1179
         changed_by: ntucker
         notes: Only used in handlebars which is used for local dev.
+      - advisory_id: 1500
+        changed_by: ntucker
+        notes: Webpack dev server which isn't really part of package
 active_scanners:
   - RepoNotEmpty
   - Brakeman

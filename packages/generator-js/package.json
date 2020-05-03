@@ -76,9 +76,9 @@
     "gulp-filter": "^6.0.0",
     "gulp-prettier": "^2.3.0",
     "shelobsay": "^1.0.1",
-    "webpack": "^4.42.0",
+    "webpack": "^4.43.0",
     "webpack-dev-server": "^3.10.3",
-    "yeoman-generator": "^4.4.0"
+    "yeoman-generator": "^4.9.0"
   },
   "jest": {
     "testEnvironment": "node"
