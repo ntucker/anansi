@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.1...@anansi/webpack-config@1.0.2) (2020-05-11)
+
+
+### 🐛 Bug Fix
+
+* Security vuln package updates ([#35](https://github.com/ntucker/anansi/issues/35)) ([ce15d09](https://github.com/ntucker/anansi/commit/ce15d09f7c16ce06c0e9d84cd9a8311e55ccdc81))
+
+
+### 📦 Package
+
+* Upgrade react-refresh webpack plugin to 0.3.1 ([7a47c7e](https://github.com/ntucker/anansi/commit/7a47c7e5b91c7293f2421a1ace7f3104d4178b17))
+
+
+
 ### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.0...@anansi/webpack-config@1.0.1) (2020-05-02)
 
 

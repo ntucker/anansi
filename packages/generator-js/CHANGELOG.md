@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.14...@anansi/generator-js@1.0.15) (2020-05-11)
+
+
+### 🐛 Bug Fix
+
+* Security vuln package updates ([#35](https://github.com/ntucker/anansi/issues/35)) ([ce15d09](https://github.com/ntucker/anansi/commit/ce15d09f7c16ce06c0e9d84cd9a8311e55ccdc81))
+
+
+
 ### [1.0.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.13...@anansi/generator-js@1.0.14) (2020-05-02)
 
 **Note:** Version bump only for package @anansi/generator-js
