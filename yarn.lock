@@ -2913,10 +2913,20 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/normalizr@^6.0.0-beta.0":
-  version "6.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.0.tgz#5b19545dd473c77dccaf70d849596a895aa10573"
-  integrity sha512-jZYt+8cyRDckYkxSsEni806/78jj2R5Ejo4OJuX3QXPkINV+TblAUduXoeKE8eAoJsG6QIrYQ9pRXzk/nldb3Q==
+"@rest-hooks/core@^1.0.0-beta.2":
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-beta.2.tgz#943ad3692e41c35fdb941b2d79fd6aeb9a5df44a"
+  integrity sha512-bfAigLQwebGjOS+w0IziTy24J1PipfMCtwpMji5UQSl0M9oqWEnSQ2NVdi6HMreZ3lmCPHVKPQaOpgVFH7ArsA==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+    "@rest-hooks/normalizr" "^6.0.0-beta.4"
+    "@rest-hooks/use-enhanced-reducer" "^1.0.3"
+    flux-standard-action "^2.1.1"
+
+"@rest-hooks/normalizr@^6.0.0-beta.4":
+  version "6.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.4.tgz#835a5ae8feefdcc68cbbd17c79b5cd4c450c4985"
+  integrity sha512-un8/KehlUyWtODHGR9F2g4bL7bm29Katk73p/gZcsYXtxLK0aU6YUPMVPpUWMa+VBUXqzYrqjH0X+IfxsPLVKg==
   dependencies:
     "@babel/runtime" "^7.7.0"
 
@@ -17942,15 +17952,13 @@ resolve@^1.15.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-beta.0:
-  version "5.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.0.tgz#4250f7bf6f07ff0345f3a8e32930584284fc3b6c"
-  integrity sha512-+lU9oXufDlK6kM6/oU8YiRhcOURkInXY44/um8uUMRvxzz+KwJJ61QB3XQ5Lb9ymz9Vwx/vYyMl9OV7PXajshg==
+rest-hooks@5.0.0-beta.8:
+  version "5.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.8.tgz#00ba5db01d317945d7e1e1fed5158574b0a4f8b3"
+  integrity sha512-Ah6c3v/1dwSkn2sFUJdfgaDFImiPMV1opzoMQ96mOFC5/tD5/1UpI5ATyLxH/aX9B4pBoWH91kRJtX96QAh1tA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.0-beta.0"
-    "@rest-hooks/use-enhanced-reducer" "^1.0.3"
-    flux-standard-action "^2.1.1"
+    "@rest-hooks/core" "^1.0.0-beta.2"
 
 restore-cursor@^2.0.0:
   version "2.0.0"

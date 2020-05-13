@@ -15,7 +15,7 @@ declare module "*file\.svg" {
   export default img;
 }
 declare module "*.scss" {
-  type CSSMODULE = { [k:string]: string }
+  type CSSMODULE = { [k:string]: string };
   let modules: CSSMODULE;
   export default modules;
 }
