@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.2...@anansi/eslint-plugin@0.9.3) (2020-05-13)
+
+
+### 📦 Package
+
+* Major bump of react-hooks lint ([2152e9e](https://github.com/ntucker/anansi/commit/2152e9ef2c0f8d788859dc70af0710330e26d903))
+* Upgrade typescript plugins ([a801627](https://github.com/ntucker/anansi/commit/a8016273eb40402c450516b3d292408b932f94ed))
+
+
+
 ### [0.9.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.1...@anansi/eslint-plugin@0.9.2) (2020-04-19)
 
 
