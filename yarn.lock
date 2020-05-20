@@ -2913,20 +2913,20 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-beta.5":
-  version "1.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-beta.5.tgz#819b276dda1df8c50a792f5ba4bf83b627cfc82c"
-  integrity sha512-KIKkZEEPwhtpOqHnyOrlMPWg/968rh5WqYXTsE8I7wvSrNtZuDhMUFhUfFs9RfIIlf6spO+7FYVO0m5CLpgDcQ==
+"@rest-hooks/core@^1.0.0-beta.11":
+  version "1.0.0-beta.11"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-beta.11.tgz#1bfc783fc76ae01ee802863bc4dfe1cc83755cb7"
+  integrity sha512-jZDHAjcpJOkH7NpbTMqTNkuezuy1rNyGWjfspSITyJ4SyWV2rGBiqsvAqCnCZ1qWmltGgqvYoV/B4+qdV9PmaQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.0-beta.6"
+    "@rest-hooks/normalizr" "^6.0.0-beta.10"
     "@rest-hooks/use-enhanced-reducer" "^1.0.3"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/normalizr@^6.0.0-beta.6":
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.6.tgz#7c5bfc3d885d46525b9c904ff48e02659a2ff675"
-  integrity sha512-VJTEzfDJ2OvleyUenSRcxMrT3720pwPh/guTJn1DgFtielLzN54wkWYVz3MJ6cgSYbsLbjEgEv963V6EaQYq9g==
+"@rest-hooks/normalizr@^6.0.0-beta.10":
+  version "6.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.10.tgz#bda19312912bd49ca10a8c1eb1c5a14c8c38c383"
+  integrity sha512-bX0qz+TFEWA6ztAuW67YK345MFARItwEvE1ELgzz/Nj9w+Y6zYCGiLUPkZS0paPAHZRkBqeVf63IWtF2h3ptOQ==
   dependencies:
     "@babel/runtime" "^7.7.0"
 
@@ -17947,13 +17947,13 @@ resolve@^1.15.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-beta.12:
-  version "5.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.12.tgz#ebee29bb48148e4a96856af8381ce3ed2d7e7c7c"
-  integrity sha512-TytIXPmmFXldAs8g9jKyAiQFCgow8smGOOouWBEnZhgaZ/JThsiJNP2Jr5CADKcsGV/ZPf602urKQfBrMt7kKw==
+rest-hooks@5.0.0-beta.18:
+  version "5.0.0-beta.18"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.18.tgz#77bd20ef6d2f2ee72a388781f49e7e0da379739e"
+  integrity sha512-BCtXb30pSMU6UkJGkHyAPaVxkBvrP1QUyX2rIq1z+2bAPsW7wzZ5H0Kyp4faYzH2E2y91EbLPGoiEom56ad5lA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-beta.5"
+    "@rest-hooks/core" "^1.0.0-beta.11"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
