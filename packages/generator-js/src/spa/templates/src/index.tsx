@@ -12,7 +12,7 @@ const content = (
 <% if (reactMode === 'legacy') { %>
 ReactDOM.render(<StrictMode>{content}</StrictMode>, document.body);
 <% } else if (reactMode === 'concurrent') { %>
-ReactDOM.createRoot(document.body).render(content);
+ReactDOM.unstable_createRoot(document.body).render(content);
 <% } else { %>
-ReactDOM.createBlockingRoot(document.body).render(content);
+ReactDOM.unstable_createBlockingRoot(document.body).render(content);
 <% } %>
