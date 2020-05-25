@@ -34,7 +34,7 @@
     "@types/storybook__react": "^5.2.1",
     "babel-loader": "8.0.6",
     "eslint": "^7.1.0",
-    "react-refresh": "0.8.2",
+    "react-refresh": "0.8.3",
     "serve": "^11.3.0",
     "typescript": "^3.9.3",
     "webpack": "^4.43.0",

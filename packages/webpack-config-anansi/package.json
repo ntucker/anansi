@@ -44,13 +44,12 @@
     "@babel/core": "^7.9.0",
     "debug": "^4.1.1",
     "prettier-eslint-cli": "^5.0.0",
-    "react-refresh": "^0.8.2",
     "rimraf": "^2.6.3",
     "webpack": "^4.43.0",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.3.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.3.2",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "circular-dependency-plugin": "^5.2.0",
