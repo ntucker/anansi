@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.4...@anansi/eslint-plugin@0.9.5) (2020-05-25)
+
+
+### 💅 Enhancement
+
+* Allow ts-expect-error and object ([3dce23c](https://github.com/ntucker/anansi/commit/3dce23ced8a1fe613f3cb2e384eeb470d694aa81))
+
+
+
 ### [0.9.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.3...@anansi/eslint-plugin@0.9.4) (2020-05-25)
 
 
