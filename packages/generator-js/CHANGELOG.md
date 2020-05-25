@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.17](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.16...@anansi/generator-js@1.0.17) (2020-05-25)
+
+
+### 🐛 Bug Fix
+
+* Update React APIs for latest experimental release ([bcbf8ee](https://github.com/ntucker/anansi/commit/bcbf8ee8a43bad9e6016a6a80eeb1a3d6acc0d0d))
+
+
+
 ### [1.0.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.15...@anansi/generator-js@1.0.16) (2020-05-13)
 
 **Note:** Version bump only for package @anansi/generator-js

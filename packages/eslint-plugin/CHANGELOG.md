@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.3...@anansi/eslint-plugin@0.9.4) (2020-05-25)
+
+
+### 💅 Enhancement
+
+* Make TypeScript an optional peerDependency ([a52b8d1](https://github.com/ntucker/anansi/commit/a52b8d11d9b1e9d337db5de7087641d3ece6f156))
+
+
+### 📦 Package
+
+* react minor, react-hooks patch, prettier patch, typescript major ([9aa0459](https://github.com/ntucker/anansi/commit/9aa04594d5538af9ead551105aab32cd9124c992))
+
+
+
 ### [0.9.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.2...@anansi/eslint-plugin@0.9.3) (2020-05-13)
 
 

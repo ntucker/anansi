@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.5...anansi-example-typescript@2.0.6) (2020-05-25)
+
+
+### 💅 Enhancement
+
+* Make TypeScript an optional peerDependency ([a52b8d1](https://github.com/ntucker/anansi/commit/a52b8d11d9b1e9d337db5de7087641d3ece6f156))
+
+
+### 📦 Package
+
+* react-refresh patch ([84a4a0a](https://github.com/ntucker/anansi/commit/84a4a0a31c99f4320b0a16774a114cda1c4b4030))
+* Upgrade rest-hooks ([fd37d1a](https://github.com/ntucker/anansi/commit/fd37d1af54aad68d404704784942b8927551b69f))
+* Upgrade rest-hooks ([5d82c10](https://github.com/ntucker/anansi/commit/5d82c1005e52b2726fdf5cdb5912578a8796f381))
+
+
+
 ### [2.0.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.4...anansi-example-typescript@2.0.5) (2020-05-13)
 
 
