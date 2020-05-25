@@ -50,7 +50,7 @@ module.exports = {
                   'It also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.',
                   'If you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
                 ].join('\n'),
-                fixWith: '(...args: any) => any',
+                fixWith: '((...args: any) => any)',
               },
 
               // object typing
