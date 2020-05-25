@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.5...@anansi/eslint-plugin@0.9.6) (2020-05-25)
+
+
+### 🐛 Bug Fix
+
+* Make Function replacement a statement ([01576c5](https://github.com/ntucker/anansi/commit/01576c53589485bd6a06916306bea329bb4efc35))
+
+
+
 ### [0.9.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.4...@anansi/eslint-plugin@0.9.5) (2020-05-25)
 
 
