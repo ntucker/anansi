@@ -1,8 +1,10 @@
 
 {
   "eslint.nodePath": "node_modules",
+  "typescript.format.enable": true,
   "typescript.validate.enable": true,
   "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
