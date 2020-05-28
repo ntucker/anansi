@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.4...@anansi/webpack-config@1.0.5) (2020-05-28)
+
+
+### 📦 Package
+
+* Upgrade to babel 7.10 ([b97dca4](https://github.com/ntucker/anansi/commit/b97dca4dcd2eb02bd65a8377b1fea94b466c97ec))
+
+
+
 ### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.3...@anansi/webpack-config@1.0.4) (2020-05-25)
 
 

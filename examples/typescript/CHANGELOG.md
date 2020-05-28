@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.8...anansi-example-typescript@2.0.9) (2020-05-28)
+
+
+### 📦 Package
+
+* Upgrade to babel 7.10 ([b97dca4](https://github.com/ntucker/anansi/commit/b97dca4dcd2eb02bd65a8377b1fea94b466c97ec))
+
+
+
 ### [2.0.8](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.7...anansi-example-typescript@2.0.8) (2020-05-25)
 
 **Note:** Version bump only for package anansi-example-typescript
