@@ -52,7 +52,7 @@ export default function makeProdConfig(
     }
   }
   config.module.rules.push({
-    test: /\.svg$/,
+    test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
     enforce: 'pre',
     use: [
       {
