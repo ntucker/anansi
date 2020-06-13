@@ -1,4 +1,4 @@
-import { Resource } from 'rest-hooks';
+import { Resource, SimpleRecord } from 'rest-hooks';
 
 export class PostResource extends Resource {
   readonly id: number | undefined = undefined;
@@ -9,6 +9,7 @@ export class PostResource extends Resource {
   pk() {
     return this.id?.toString();
   }
+
   static urlRoot = 'https://jsonplaceholder.typicode.com/posts/';
 }
 export class CommentResource extends Resource {
@@ -21,21 +22,22 @@ export class CommentResource extends Resource {
   pk() {
     return this.id?.toString();
   }
+
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
 
-export interface Address {
-  readonly street: string;
-  readonly suite: string;
-  readonly city: string;
-  readonly zipcode: string;
+export class Address extends SimpleRecord {
+  readonly street: string = '';
+  readonly suite: string = '';
+  readonly city: string = '';
+  readonly zipcode: string = '';
   readonly geo: {
     readonly lat: string;
     readonly lng: string;
-  };
+  } | null = null;
 }
 export class UserResource extends Resource {
-  readonly id: number | undefined = undefined;
+  readonly id: number = 0;
   readonly name: string = '';
   readonly username: string = '';
   readonly email: string = '';
@@ -43,9 +45,14 @@ export class UserResource extends Resource {
   readonly website: string = '';
   readonly address: Address | null = null;
 
+  static schema = {
+    address: Address,
+  };
+
   pk() {
-    return this.id?.toString();
+    return this.id.toString();
   }
+
   static urlRoot = 'https://jsonplaceholder.typicode.com/users/';
 
   get addressDisplay() {

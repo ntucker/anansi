@@ -3613,27 +3613,27 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-beta.11":
-  version "1.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-beta.11.tgz#1bfc783fc76ae01ee802863bc4dfe1cc83755cb7"
-  integrity sha512-jZDHAjcpJOkH7NpbTMqTNkuezuy1rNyGWjfspSITyJ4SyWV2rGBiqsvAqCnCZ1qWmltGgqvYoV/B4+qdV9PmaQ==
+"@rest-hooks/core@^1.0.0-beta.15":
+  version "1.0.0-beta.15"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-beta.15.tgz#25f5c383b59d8d1f77961b8844f0ef35e3a99198"
+  integrity sha512-rD/Ic0/h0y2wDVtruu8thCMrjmeC+jSPDzETrCMkam69K4MP16v8W5zPtY0zdJM7ZoNDmoWt3ssO3FfPaJBhBQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.0-beta.10"
-    "@rest-hooks/use-enhanced-reducer" "^1.0.3"
+    "@rest-hooks/normalizr" "^6.0.0-beta.12"
+    "@rest-hooks/use-enhanced-reducer" "^1.0.4"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/normalizr@^6.0.0-beta.10":
-  version "6.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.10.tgz#bda19312912bd49ca10a8c1eb1c5a14c8c38c383"
-  integrity sha512-bX0qz+TFEWA6ztAuW67YK345MFARItwEvE1ELgzz/Nj9w+Y6zYCGiLUPkZS0paPAHZRkBqeVf63IWtF2h3ptOQ==
+"@rest-hooks/normalizr@^6.0.0-beta.12":
+  version "6.0.0-beta.111"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-beta.111.tgz#ee228fb56b2c97025e59a6d42073b16229177ecf"
+  integrity sha512-PnLNJVtFx+BMfImDWqknEQKbuccte+7f6MGrUEfvhZSg76WghwkQ0yGJYu/3f639uV74WyxxeiaEfhYXfBlK5A==
   dependencies:
     "@babel/runtime" "^7.7.0"
 
-"@rest-hooks/use-enhanced-reducer@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.3.tgz#4a6d6dd706db7b6425c7c90eccb72fb624acfa3b"
-  integrity sha512-XZwhfnkTsGffa/hCoUA01N2fVQGO3mZ4nrBY1rvwLbkHtJy69gUM/ruclTpGtNLdZyTnzqy3Nc3b5Yw6SBbEqQ==
+"@rest-hooks/use-enhanced-reducer@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.4.tgz#4b5ab8a6249f9fc32509dbd612142eb14327167e"
+  integrity sha512-w/YSMKvOUyjX55mOw82TkHcv/nKx7fNB0yuvfRDyTWrFopitIKpkPHx2v4GDqINgBfQtqF1ShUjVX06hhk5J5A==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -18707,13 +18707,13 @@ resolve@^1.15.1:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-beta.18:
-  version "5.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.18.tgz#77bd20ef6d2f2ee72a388781f49e7e0da379739e"
-  integrity sha512-BCtXb30pSMU6UkJGkHyAPaVxkBvrP1QUyX2rIq1z+2bAPsW7wzZ5H0Kyp4faYzH2E2y91EbLPGoiEom56ad5lA==
+rest-hooks@5.0.0-beta.22:
+  version "5.0.0-beta.22"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-beta.22.tgz#13ed2efdda82eb21349b732a88feefee51bee0fa"
+  integrity sha512-H78MtsDWTfpjVvrHA6bqFXB0h9+0SvQsxDgMIYYUMN3GOKPpa5h4hYAJotX2XivfbXqhAyMokq6Z/LXbdhg5KA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-beta.11"
+    "@rest-hooks/core" "^1.0.0-beta.15"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
