@@ -4,7 +4,7 @@
 
 "@anansi/babel-preset@^0.19.3":
   version "0.19.3"
-  resolved "https://registry-npm.cbhq.net/@anansi%2fbabel-preset/-/babel-preset-0.19.3.tgz#66a80623170a8a03a30cb2086de63fdfd766eb33"
+  resolved "https://registry.yarnpkg.com/@anansi/babel-preset/-/babel-preset-0.19.3.tgz#66a80623170a8a03a30cb2086de63fdfd766eb33"
   integrity sha512-8qwz78nyMgCEe8P05K6XVNizLI1PKWR+NvT5jUoZd2paHqWtPwn4WvG0K9ejxWlzqi72q0Mzq6bP0lRVkp0sug==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.0"
