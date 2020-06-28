@@ -48,7 +48,6 @@
     "prettier": "^2.0.5"
   },
   "devDependencies": {
-    "typescript": "^3.9.3",
     "webpack": "^4.41.5"
   },
   "peerDependencies": {
