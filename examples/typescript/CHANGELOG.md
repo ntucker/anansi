@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.9...anansi-example-typescript@2.1.0) (2020-06-28)
+
+
+### 🚀 Features
+
+* Add readme to get started with example ([c024ebf](https://github.com/ntucker/anansi/commit/c024ebf80f401c17c4a06c7e59dfa5baed0fcd6e))
+
+
+### 📦 Package
+
+* Minor html-webpack-plugin, patch react-refresh-webpack-plugin ([466462d](https://github.com/ntucker/anansi/commit/466462dc3c5561d61a3504094b575fe245e81838))
+* Update rest-hooks, typescript, webpack ([d904e81](https://github.com/ntucker/anansi/commit/d904e8164ec64c3d169846cf2cc1c54657adf6fa))
+
+
+### 🏠 Internal
+
+* Upgrade rest hooks to beta.22 ([2e64c43](https://github.com/ntucker/anansi/commit/2e64c431857e750cdd628ea0df8e8d3782201bd6))
+
+
+
 ### [2.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.0.8...anansi-example-typescript@2.0.9) (2020-05-28)
 
 

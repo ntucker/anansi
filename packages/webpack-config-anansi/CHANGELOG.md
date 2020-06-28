@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.5...@anansi/webpack-config@1.0.6) (2020-06-28)
+
+
+### 📦 Package
+
+* Minor html-webpack-plugin, patch react-refresh-webpack-plugin ([466462d](https://github.com/ntucker/anansi/commit/466462dc3c5561d61a3504094b575fe245e81838))
+
+
+
 ### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.4...@anansi/webpack-config@1.0.5) (2020-05-28)
 
 
