@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.4...@anansi/babel-preset@1.2.5) (2020-07-01)
+
+
+### 🐛 Bug Fix
+
+* Optional chaining 'Module parse failed' when targetting newer browsers ([55d7c1e](https://github.com/ntucker/anansi/commit/55d7c1e5ba3ab9d8e22567790173ca868b9536ef))
+
+
+### 📦 Package
+
+* Patch bump on babel plugins ([cc26a5c](https://github.com/ntucker/anansi/commit/cc26a5c4fc1bbb02fc0637875b1cb89389cdf1b7))
+
+
+
 ### [1.2.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.3...@anansi/babel-preset@1.2.4) (2020-06-28)
 
 

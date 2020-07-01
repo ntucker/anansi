@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.8](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.7...@anansi/polyfill@1.0.8) (2020-07-01)
+
+
+### 🐛 Bug Fix
+
+* Optional chaining 'Module parse failed' when targetting newer browsers ([55d7c1e](https://github.com/ntucker/anansi/commit/55d7c1e5ba3ab9d8e22567790173ca868b9536ef))
+
+
+
 ### [1.0.7](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.6...@anansi/polyfill@1.0.7) (2020-05-25)
 
 **Note:** Version bump only for package @anansi/polyfill

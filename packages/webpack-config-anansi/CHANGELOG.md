@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.6...@anansi/webpack-config@2.0.0) (2020-07-01)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* export.scss is no longer automatically included.
+* To import SVG as Component, use { ReactComponent }
+
+### 🚀 Features
+
+* Add sassResources option. Without it export.scss is not provided ([34901d2](https://github.com/ntucker/anansi/commit/34901d24cdd6ce48da47fbc584439f0abbcbfc6f))
+* SVG as component or url string based on import ([#36](https://github.com/ntucker/anansi/issues/36)) ([1497183](https://github.com/ntucker/anansi/commit/14971839054e8dbc352a8ba8267a28f915541369))
+
+
+### 🐛 Bug Fix
+
+* Optional chaining 'Module parse failed' when targetting newer browsers ([55d7c1e](https://github.com/ntucker/anansi/commit/55d7c1e5ba3ab9d8e22567790173ca868b9536ef))
+
+
+
 ### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.5...@anansi/webpack-config@1.0.6) (2020-06-28)
 
 
