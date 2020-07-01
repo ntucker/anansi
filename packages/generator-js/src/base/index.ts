@@ -23,6 +23,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     ];
 
     const props = await this.prompt(prompts);
+    this.config.set('features', props.features);
 
     if (props.features.includes('CI')) {
       this.composeWith(require.resolve('../circle'), this.options);

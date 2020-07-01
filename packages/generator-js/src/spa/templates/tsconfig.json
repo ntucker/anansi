@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
 <% if (reactMode !== 'legacy') { %>
-  "types": ["react-dom/experimental", "react/experimental"],
+  "types": ["react-dom/experimental", "react/experimental"<% if (features.includes('testing')) {%>, "jest"<% } %>],
 <% } %>
     "noEmit": true
   }

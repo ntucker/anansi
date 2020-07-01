@@ -3,7 +3,7 @@ import { BetterGenerator, InstallPeersMixin } from '../utils';
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
     this.config.set('badges', '');
   }
@@ -53,6 +53,10 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     this.fs.extendJSONTpl(
       this.templatePath('tsconfig.json'),
       this.destinationPath('tsconfig.json'),
+    );
+    this.fs.extendJSONTpl(
+      this.templatePath('src/.eslintrc'),
+      this.destinationPath('src/.eslintrc'),
     );
   }
 
