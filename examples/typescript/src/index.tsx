@@ -22,7 +22,6 @@ const history = createBrowserHistory();
 
 async function init() {
   await loadPolyfills();
-
 }
 init();
 ReactDOM.render(

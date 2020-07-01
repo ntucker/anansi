@@ -9,14 +9,15 @@ export default function useForm<T extends typeof Resource>(
   (name: string) => (event: SyntheticEvent<Element, Event>) => void,
   (
     onSubmit: (v: Partial<AbstractInstanceType<T>>) => any,
-  ) => (e: SyntheticEvent<Element, Event>) => void
+  ) => (e: SyntheticEvent<Element, Event>) => void,
 ] {
   const [values, setValues] = useState(() => R.fromJS(initialValues));
 
   const handleChange = (name: string) => (event: SyntheticEvent) => {
     setValues(R.fromJS({ ...values, [name]: event.target.value }));
   };
-  const handleSubmit = (onSubmit: (v: object) => any) => (e: React.SyntheticEvent
+  const handleSubmit = (onSubmit: (v: object) => any) => (
+    e: React.SyntheticEvent,
   ) => {
     e.preventDefault();
     onSubmit(values);

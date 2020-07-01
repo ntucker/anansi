@@ -1,5 +1,6 @@
 import { Input, Button, Form } from 'antd';
 import { PostResource } from 'data/resources';
+
 import useForm from './useForm';
 
 const formItemLayout = {
@@ -23,12 +24,7 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
     initialValues,
   );
   return (
-    <Form
-      onFinish={onSubmit}
-      noValidate
-      autoComplete="off"
-      {...formItemLayout}
-    >
+    <Form onFinish={onSubmit} noValidate autoComplete="off" {...formItemLayout}>
       <Form.Item label="Title">
         <Input value={values.title} onChange={handleChange('title')} />
       </Form.Item>

@@ -3,6 +3,7 @@ import { PostResource } from 'data/resources';
 import { useFetcher, useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import itemRender from 'navigation/breadcrumbItemRenderer';
+
 import PostForm from './PostForm';
 
 export default function PostEdit({
@@ -30,14 +31,11 @@ export default function PostEdit({
   ];
 
   return (
-    <PageHeader
-    title={null}
-    breadcrumb={{ routes, itemRender }}
-  >
+    <PageHeader title={null} breadcrumb={{ routes, itemRender }}>
       <PostForm
         initialValues={post}
         onSubmit={(data: object) => update({ id }, data)}
       />
-  </PageHeader>
+    </PageHeader>
   );
 }

@@ -8,7 +8,7 @@ import restHooks from './rest_hooks_logo_and_text.svg';
 
 const worker = new Worker();
 
-export default () => {
+export default function Home() {
   worker.postMessage({ message: 'rendered' });
   return (
     <div className={style.main}>
@@ -25,4 +25,4 @@ export default () => {
       </p>
     </div>
   );
-};
+}

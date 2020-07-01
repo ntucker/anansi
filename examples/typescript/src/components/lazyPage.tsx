@@ -2,7 +2,6 @@ import React, { lazy, memo, Suspense } from 'react';
 import { memoize } from 'lodash';
 import { RouteChildrenProps } from 'react-router';
 import { Spin } from 'antd';
-
 import ErrorBoundary from 'components/ErrorBoundary';
 
 function lazyPage(pageName: string) {

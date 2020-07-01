@@ -4,4 +4,6 @@ const obj = { foo: 'foo' };
 (self as DedicatedWorkerGlobalScope).postMessage({ foo: 'foo' });
 
 // Respond to message from parent thread
-self.addEventListener('message', (event: MessageEventInit) => event.data.message.toUpperCase());
+self.addEventListener('message', (event: MessageEventInit) =>
+  event.data.message.toUpperCase(),
+);

@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { PostResource } from 'data/resources';
 import { useFetcher } from 'rest-hooks';
 import itemRender from 'navigation/breadcrumbItemRenderer';
+
 import PostForm from './PostForm';
 
 export default function PostCreate() {
@@ -32,7 +33,7 @@ export default function PostCreate() {
               {},
               (postID: string, postList: string[] | undefined) => [
                 postID,
-                ...postList || [],
+                ...(postList || []),
               ],
             ],
           ]);

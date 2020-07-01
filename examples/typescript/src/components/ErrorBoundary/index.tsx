@@ -11,7 +11,9 @@ function handleRefresh() {
 }
 
 const RedBox = lazy(() =>
-  import(/* webpackChunkName: 'redbox' *//* webpackPreload: true */ 'redbox-react'),
+  import(
+    /* webpackChunkName: 'redbox' */ /* webpackPreload: true */ 'redbox-react'
+  ),
 );
 
 interface NetworkError extends Error {
@@ -65,10 +67,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
     }
     return (
       <div className={classNames('center', 'up', styles.errorBoundary)}>
-        <BigAlertIcon
-          style={{ width: '96px', height: '96px' }}
-          alt="alert"
-        />
+        <BigAlertIcon style={{ width: '96px', height: '96px' }} alt="alert" />
         <header>
           <h1>{mainMessage}</h1>
           <h3>Please refresh the page.</h3>
