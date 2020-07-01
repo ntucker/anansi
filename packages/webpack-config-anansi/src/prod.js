@@ -151,13 +151,18 @@ export default function makeProdConfig(
     libraryInclude,
     libraryExclude,
     sassResources,
-  }).map(rule =>
-    rule.enforce === 'pre'
+  }).map((rule, i) =>
+    rule.enforce === 'pre' || i !== 0
       ? rule
       : {
           ...rule,
           use: [
-            MiniCssExtractPlugin.loader,
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                esModule: true,
+              },
+            },
             ...rule.use.slice(1).map(use =>
               // this map just adds cssnano to postcss plugins
               use.loader === 'postcss-loader'

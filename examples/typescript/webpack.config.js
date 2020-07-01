@@ -1,5 +1,5 @@
 const { makeConfig } = require('@anansi/webpack-config');
-console.log('dir', __dirname);
+
 const options = {
   basePath: 'src',
   buildDir: 'dist/',

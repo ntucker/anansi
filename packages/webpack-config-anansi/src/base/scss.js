@@ -21,7 +21,6 @@ const getCSSLoaders = ({ sassResources }) => {
       options: { sassOptions: { outputStyle: 'expanded' } },
     },
   ];
-  console.log('resource', sassResources);
   if (sassResources) {
     loaders.push({
       loader: 'sass-resources-loader',
