@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.0...anansi-example-typescript@3.0.1) (2020-07-01)
+
+
+### 💅 Enhancement
+
+* Don't extract global css into js ([82abbdb](https://github.com/ntucker/anansi/commit/82abbdbc31e767a5ef57faf46347b79ba152ffd4))
+
+
+
 ## [3.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@2.1.0...anansi-example-typescript@3.0.0) (2020-07-01)
 
 

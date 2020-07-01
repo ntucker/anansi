@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.0...@anansi/webpack-config@2.0.1) (2020-07-01)
+
+
+### 💅 Enhancement
+
+* Bump style plugins/loaders ([2e25bd3](https://github.com/ntucker/anansi/commit/2e25bd33da6d1aa5230a989388b15fdacab8457c))
+* Don't extract global css into js ([82abbdb](https://github.com/ntucker/anansi/commit/82abbdbc31e767a5ef57faf46347b79ba152ffd4))
+
+
+
 ## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@1.0.6...@anansi/webpack-config@2.0.0) (2020-07-01)
 
 
