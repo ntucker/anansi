@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    './base.js',
-  ],
+  extends: ['./base.js'],
   overrides: [
     {
       files: ['**/*.ts?(x)'],
@@ -11,8 +9,9 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/explicit-member-accessibility': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
-        '@typescript-eslint/ban-ts-comment':  [
+        '@typescript-eslint/ban-ts-comment': [
           'error',
           {
             'ts-expect-error': false,
@@ -70,10 +69,10 @@ module.exports = {
                 ].join('\n'),
                 fixWith: 'Record<string, unknown>',
               },
-            }
+            },
           },
-        ]
+        ],
       },
     },
-  ]
+  ],
 };
