@@ -10,6 +10,9 @@ scanner_configs:
       - advisory_id: 1500
         changed_by: ntucker
         notes: Webpack dev server which isn't really part of package
+      - advisory_id: 1523
+        changed_by: ntucker
+        notes: Only zipObjectDeep affected, which is not used in production code
 active_scanners:
   - RepoNotEmpty
   - Brakeman
