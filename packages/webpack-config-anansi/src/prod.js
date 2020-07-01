@@ -21,6 +21,7 @@ export default function makeProdConfig(
     libraryExclude,
     argv = {},
     htmlOptions = { title: '', scriptLoading: 'defer' },
+    sassResources,
   },
 ) {
   const config = { ...baseConfig };
@@ -149,6 +150,7 @@ export default function makeProdConfig(
     basePath,
     libraryInclude,
     libraryExclude,
+    sassResources,
   }).map(rule =>
     rule.enforce === 'pre'
       ? rule

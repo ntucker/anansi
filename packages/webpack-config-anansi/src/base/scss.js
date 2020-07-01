@@ -3,29 +3,35 @@ import cssPresetEnv from 'postcss-preset-env';
 import path from 'path';
 import { always } from 'ramda';
 
-const getCSSLoaders = ({ absoluteBasePath }) => [
-  { loader: 'style-loader' },
-  {
-    loader: 'css-loader',
-    options: {},
-  },
-  {
-    loader: 'postcss-loader',
-    options: {
-      plugins: [autoprefixer(), cssPresetEnv()],
+const getCSSLoaders = ({ sassResources }) => {
+  const loaders = [
+    { loader: 'style-loader' },
+    {
+      loader: 'css-loader',
+      options: {},
     },
-  },
-  {
-    loader: 'sass-loader',
-    options: { sassOptions: { outputStyle: 'expanded' } },
-  },
-  {
-    loader: 'sass-resources-loader',
-    options: {
-      resources: [`${absoluteBasePath}/style/export.scss`],
+    {
+      loader: 'postcss-loader',
+      options: {
+        plugins: [autoprefixer(), cssPresetEnv()],
+      },
     },
-  },
-];
+    {
+      loader: 'sass-loader',
+      options: { sassOptions: { outputStyle: 'expanded' } },
+    },
+  ];
+  console.log('resource', sassResources);
+  if (sassResources) {
+    loaders.push({
+      loader: 'sass-resources-loader',
+      options: {
+        resources: sassResources,
+      },
+    });
+  }
+  return loaders;
+};
 
 export default function getStyleRules({
   rootPath,
@@ -33,9 +39,10 @@ export default function getStyleRules({
   libraryInclude = always(false),
   libraryExclude = always(false),
   cssLoaderOptions = {},
+  sassResources,
 }) {
   const absoluteBasePath = path.join(rootPath, basePath);
-  const cssLoaders = getCSSLoaders({ absoluteBasePath });
+  const cssLoaders = getCSSLoaders({ sassResources });
   return [
     // css modules (local styles)
     {

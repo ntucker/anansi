@@ -12,6 +12,7 @@ export * from './base';
 export makeStorybookConfigGenerator from './storybook';
 
 export function makeConfig(options) {
+  console.log('options', options);
   return (env, argv) => {
     process.env.NODE_ENV = argv?.mode;
     // eslint-disable-next-line no-param-reassign

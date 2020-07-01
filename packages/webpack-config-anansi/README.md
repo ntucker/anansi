@@ -173,6 +173,12 @@ Determines the filename for the stats file that includes mappings to all filenam
 
 Override any babel loader specific options
 
+### sassResources
+
+`resources` option from https://github.com/shakacode/sass-resources-loader#readme
+
+This is useful to specify global variables and mixins to be included in every sass file.
+
 ## File Support
 
 - SCSS with CSS modules
@@ -187,7 +193,7 @@ Override any babel loader specific options
 
 ```jsx
 import starUrl, { ReactComponent as Star } from './star.svg'
- 
+
 const App = () => (
   <div>
     <img src={starUrl} alt="star" />
