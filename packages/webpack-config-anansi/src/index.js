@@ -31,7 +31,9 @@ export function makeConfig(options) {
     };
     // option validation done here
     if ('htmlOptions' in options && options.htmlOptions === undefined) {
-      throw new Error('Undefined is not a valid option for htmlOptions. To disable use `false`');
+      throw new Error(
+        'Undefined is not a valid option for htmlOptions. To disable use `false`',
+      );
     }
     const baseConfig = makeBaseConfig(options);
 

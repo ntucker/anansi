@@ -17,9 +17,9 @@ function buildPreset(api, options = {}) {
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
-  const nodeTarget = api.caller(
-    caller => caller && caller.target === 'node'
-  ) ? 'current' : undefined;
+  const nodeTarget = api.caller(caller => caller && caller.target === 'node')
+    ? 'current'
+    : undefined;
   options = {
     minify: false,
     typing: false,
@@ -71,8 +71,10 @@ function buildPreset(api, options = {}) {
         require('babel-plugin-root-import').default,
         {
           root: process.env.ROOT_PATH_ROOT || options.rootPathRoot,
-          rootPathSuffix: process.env.ROOT_PATH_SUFFIX || options.rootPathSuffix,
-          rootPathPrefix: process.env.ROOT_PATH_PREFIX || options.rootPathPrefix,
+          rootPathSuffix:
+            process.env.ROOT_PATH_SUFFIX || options.rootPathSuffix,
+          rootPathPrefix:
+            process.env.ROOT_PATH_PREFIX || options.rootPathPrefix,
         },
       ],
       absoluteRuntimePath &&
@@ -92,6 +94,8 @@ function buildPreset(api, options = {}) {
       require('@babel/plugin-proposal-export-namespace-from').default,
       //stage 3
       require('@babel/plugin-syntax-top-level-await').default,
+      // Get "Module parse failed: Unexpected token" when targetting newer browsers without this
+      require('@babel/plugin-proposal-optional-chaining').default,
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
@@ -105,9 +109,10 @@ function buildPreset(api, options = {}) {
         require('@babel/plugin-transform-react-inline-elements').default,
       );
       if (typeof reactConstantElementsOptions === 'object') {
-        preset.plugins.unshift(
-          [require('@babel/plugin-transform-react-constant-elements').default, reactConstantElementsOptions],
-        );
+        preset.plugins.unshift([
+          require('@babel/plugin-transform-react-constant-elements').default,
+          reactConstantElementsOptions,
+        ]);
       }
       // for compile performance, don't include this if they are using typing language instead of proptypes
       if (!options.typing) {
@@ -165,8 +170,8 @@ function buildPreset(api, options = {}) {
   if (options.minify && env === 'production') {
     try {
       preset.presets.unshift(require('babel-minify'));
-    } catch(e) {
-      console.log("Minify enabled, but babel-minify not installed.")
+    } catch (e) {
+      console.log('Minify enabled, but babel-minify not installed.');
     }
   }
 

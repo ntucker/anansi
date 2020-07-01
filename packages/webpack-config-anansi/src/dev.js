@@ -92,9 +92,9 @@ export default function makeDevConfig(
   try {
     require('react-refresh/babel');
     const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-    config.plugins.push(new ReactRefreshWebpackPlugin({ }));
+    config.plugins.push(new ReactRefreshWebpackPlugin({}));
     config.devServer.hotOnly = true;
-    console.log("Fast refresh detected and enabled");
+    console.log('Fast refresh detected and enabled');
   } catch (e) {}
 
   const styleRules = getStyleRules({
