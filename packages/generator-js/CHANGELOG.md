@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.25](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.24...@anansi/generator-js@1.0.25) (2020-07-03)
+
+
+### 💅 Enhancement
+
+* Improve eslint config env ([9bd9bbe](https://github.com/ntucker/anansi/commit/9bd9bbef848e14b0d1f46c3dfe8d78bc86224292))
+
+
+### 📦 Package
+
+* Upgrade yeoman, gulp-prettier, ejs, @babel/core ([c96ce9f](https://github.com/ntucker/anansi/commit/c96ce9fbed181ef8e7fbc7d76ea2842a393547ce))
+
+
+
 ### [1.0.24](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.23...@anansi/generator-js@1.0.24) (2020-07-01)
 
 

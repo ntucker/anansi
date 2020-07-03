@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.8](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.7...@anansi/eslint-plugin@0.9.8) (2020-07-03)
+
+
+### 💅 Enhancement
+
+* Disable explicit-module-boundary-types ([edce446](https://github.com/ntucker/anansi/commit/edce44662ca99953286b78b15730af7a72c94647))
+
+
+
 ### [0.9.7](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.6...@anansi/eslint-plugin@0.9.7) (2020-06-28)
 
 
