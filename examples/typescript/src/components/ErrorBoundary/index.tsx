@@ -4,7 +4,7 @@ import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { Spin } from 'antd';
 
 import styles from './index.scss';
-import BigAlertIcon from './big-alert.svg';
+import { ReactComponent as BigAlertIcon } from './big-alert.svg';
 
 function handleRefresh() {
   window.location.reload(true);

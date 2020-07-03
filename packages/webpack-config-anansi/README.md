@@ -182,4 +182,29 @@ Override any babel loader specific options
 - Web workers
 - All font formats
 - Any media files
+  - svg|png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf as file urls anywhere
+  - svgs imported in javascript/typescript can be used as either components or file urls
+
+```jsx
+import starUrl, { ReactComponent as Star } from './star.svg'
+ 
+const App = () => (
+  <div>
+    <img src={starUrl} alt="star" />
+    <Star />
+  </div>
+)
+```
+
 - Javascript & TypeScript
+
+
+### Working with TypeScript
+
+Add `media.d.ts` file somewhere in your normal path, and place inside:
+
+```typescript
+import '@anansi/webpack-config/media';
+```
+
+This makes all imports of supported formats typed correctly.

@@ -85,7 +85,41 @@ export default function makeBaseConfig({
           use: 'raw-loader',
         },
         {
-          test: /\.(png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf)$/,
+          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+          issuer: {
+            test: /\.(j|t)sx?$/,
+          },
+          use: [
+            {
+              loader: '@svgr/webpack',
+              options: {
+                svgoConfig: {
+                  plugins: [
+                    {
+                      /* Required for SVG dimensions */
+                      removeViewBox: false,
+                    },
+                  ],
+                },
+              },
+            },
+            {
+              loader: 'file-loader',
+              options: {
+                name:
+                  mode === 'production'
+                    ? '[name].[hash].[ext]'
+                    : '[path][name].[ext]',
+              },
+            },
+          ],
+        },
+        // for non-js files always use file-loader
+        {
+          test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
+          issuer: {
+            exclude: /\.(j|t)sx?$/,
+          },
           use: [
             {
               loader: 'file-loader',
@@ -99,12 +133,18 @@ export default function makeBaseConfig({
           ],
         },
         {
-          test: /file\.svg$/,
-          use: [{ loader: 'file-loader' }],
-        },
-        {
-          test: /\.svg$/,
-          use: [{ loader: 'svg-react-loader' }],
+          test: /\.(png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name:
+                  mode === 'production'
+                    ? '[name].[hash].[ext]'
+                    : '[path][name].[ext]',
+              },
+            },
+          ],
         },
       ],
     },
