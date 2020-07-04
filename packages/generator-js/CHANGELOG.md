@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.26](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.25...@anansi/generator-js@1.0.26) (2020-07-04)
+
+
+### 🏠 Internal
+
+* Don't commit package-lock.json ([35ac23f](https://github.com/ntucker/anansi/commit/35ac23f9d09ff49e583f6a88ce372ee0e1b02adf))
+
+
+
 ### [1.0.25](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.24...@anansi/generator-js@1.0.25) (2020-07-03)
 
 
