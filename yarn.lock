@@ -3488,7 +3488,7 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-gamma.0":
+"@rest-hooks/core@^1.0.0-delta.0":
   version "1.0.0-gamma.0"
   resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-gamma.0.tgz#3ea61c1620e5b8049b257bf0207aa7da3df5bca0"
   integrity sha512-iQj+iq7NSjYNwK4N353Qdo//nS071mwgRF9X3WABT9p6OjRW7S2JMFQjZV2oO0SUTnIWa19r0SphyA83mK+h1w==
@@ -18599,13 +18599,13 @@ resolve@^1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-gamma.0:
-  version "5.0.0-gamma.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-gamma.0.tgz#6ba3ce80c1742d461e36d5a7d19e094aa1fb5e61"
-  integrity sha512-aQ6g+t1UdadfAiHYM2GUNPN3RwEFHK4z5QV3iU16mSpJ5t0D2jA2/lygkKInX5Zz1gE5CcOA9Zpxt40+DKiLdg==
+rest-hooks@5.0.0-delta.0:
+  version "5.0.0-delta.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-delta.0.tgz#ebcb411daff1519100c96e34d6348792eed4091f"
+  integrity sha512-F0UaeVzZduKPrkqg8s3Q1Ay38D10dHSqc/n5IwD3VaZYBAMr4HamuR85yUi/3REvUn7wbNQ8YWDNZ3FVbfMpNw==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-gamma.0"
+    "@rest-hooks/core" "^1.0.0-delta.0"
 
 restore-cursor@^2.0.0:
   version "2.0.0"

@@ -54,7 +54,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "5.0.0-gamma.0"
+    "rest-hooks": "5.0.0-delta.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
