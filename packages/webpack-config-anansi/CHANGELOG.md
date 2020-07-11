@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.1...@anansi/webpack-config@2.0.2) (2020-07-11)
+
+
+### 📦 Package
+
+* react-dev-utils, react-docgen-typescript-loader, sass-loader ([3d7cbc5](https://github.com/ntucker/anansi/commit/3d7cbc59473a9472bb7da940de22df95994ddb43))
+* webpack-bundle-analyzer, webpack-fix-style-only-entries ([3f5b85f](https://github.com/ntucker/anansi/commit/3f5b85fd010a7c9a0d7b4b14a4804c8d9233a61d))
+
+
+
 ### [2.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.0...@anansi/webpack-config@2.0.1) (2020-07-01)
 
 
