@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.2...@anansi/webpack-config@2.0.3) (2020-07-11)
+
+
+### 📦 Package
+
+* raw-loader, terser-webpack-plugin major ([5d2e5b0](https://github.com/ntucker/anansi/commit/5d2e5b026439c4845f190b767270e44112e1e0af))
+
+
+
 ### [2.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.1...@anansi/webpack-config@2.0.2) (2020-07-11)
 
 

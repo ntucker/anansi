@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.4...anansi-example-typescript@3.0.5) (2020-07-11)
+
+
+### 📦 Package
+
+* antd, eslint, typescript ([5975ac5](https://github.com/ntucker/anansi/commit/5975ac56db4b8ed770f9b3ba2a0975116b1fbfa8))
+
+
+
 ### [3.0.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.3...anansi-example-typescript@3.0.4) (2020-07-11)
 
 
