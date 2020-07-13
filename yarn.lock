@@ -2057,13 +2057,6 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.7.0":
-  version "7.7.7"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
-  integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
 "@babel/standalone@^7.4.5":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.10.4.tgz#63b9e211bee42e8ba8dfc1c0b68a856150e37bf2"
@@ -3502,22 +3495,22 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-delta.0":
-  version "1.0.0-gamma.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-gamma.0.tgz#3ea61c1620e5b8049b257bf0207aa7da3df5bca0"
-  integrity sha512-iQj+iq7NSjYNwK4N353Qdo//nS071mwgRF9X3WABT9p6OjRW7S2JMFQjZV2oO0SUTnIWa19r0SphyA83mK+h1w==
+"@rest-hooks/core@^1.0.0-h.0":
+  version "1.0.0-h.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-h.0.tgz#8c7628ca215c9bdf6a405e0aa02a5f0c0e54e6d0"
+  integrity sha512-bgSaHovWnQ4M0kPFg9g8uxyLA3V6a4Uxo4s8mm6e1YHzDkHkJ4pDhbcWj4D2GpiznTb6hLtxtL/hztIAc+k/Ag==
   dependencies:
-    "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.0-gamma.2"
+    "@babel/runtime" "^7.10.4"
+    "@rest-hooks/normalizr" "^6.0.0-h.0"
     "@rest-hooks/use-enhanced-reducer" "^1.0.4"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/normalizr@^6.0.0-gamma.2":
-  version "6.0.0-gamma.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-gamma.2.tgz#0050b22083317adc297f73b34d2ce74bbf8c438a"
-  integrity sha512-xHDnFb9moObGep6WT4sXEawu/AwIKBJuM7C7ZtC5B0ZuFU7VtrRU9/+y88A8pGEe052IyfhcNtmZgDR7OTSeaw==
+"@rest-hooks/normalizr@^6.0.0-h.0":
+  version "6.0.0-h.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-h.0.tgz#6bc1fcc4274a4da6330871f14fe36a0267f06fba"
+  integrity sha512-WFJhduvFObM3zp1VUIRS7qj11H/t/6uu5y+jHzJZDNssIbneSSM4EBMeu0XqzThTitRKLDBaj1itgHu1p8TIbw==
   dependencies:
-    "@babel/runtime" "^7.7.0"
+    "@babel/runtime" "^7.10.4"
 
 "@rest-hooks/use-enhanced-reducer@^1.0.4":
   version "1.0.4"
@@ -9857,10 +9850,10 @@ eslint@^5.0.0:
     table "^5.2.3"
     text-table "^0.2.0"
 
-eslint@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.1.0.tgz#d9a1df25e5b7859b0a3d86bb05f0940ab676a851"
-  integrity sha512-DfS3b8iHMK5z/YLSme8K5cge168I8j8o1uiVmFCgnnjxZQbCGyraF8bMl7Ju4yfBmCuxD7shOF7eqGkcuIHfsA==
+eslint@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
+  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -9868,10 +9861,11 @@ eslint@^7.1.0:
     cross-spawn "^7.0.2"
     debug "^4.0.1"
     doctrine "^3.0.0"
-    eslint-scope "^5.0.0"
+    enquirer "^2.3.5"
+    eslint-scope "^5.1.0"
     eslint-utils "^2.0.0"
-    eslint-visitor-keys "^1.1.0"
-    espree "^7.0.0"
+    eslint-visitor-keys "^1.2.0"
+    espree "^7.1.0"
     esquery "^1.2.0"
     esutils "^2.0.2"
     file-entry-cache "^5.0.1"
@@ -9881,7 +9875,6 @@ eslint@^7.1.0:
     ignore "^4.0.6"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
-    inquirer "^7.0.0"
     is-glob "^4.0.0"
     js-yaml "^3.13.1"
     json-stable-stringify-without-jsonify "^1.0.1"
@@ -9899,10 +9892,10 @@ eslint@^7.1.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
-  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
+eslint@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.4.0.tgz#4e35a2697e6c1972f9d6ef2b690ad319f80f206f"
+  integrity sha512-gU+lxhlPHu45H3JkEGgYhWhkR9wLHHEXC9FbWFnTlEkbKyZKWgWRLgf61E8zWmBuI6g5xKBph9ltg3NtZMVF8g==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -9957,15 +9950,6 @@ espree@^5.0.1:
     acorn "^6.0.7"
     acorn-jsx "^5.0.0"
     eslint-visitor-keys "^1.0.0"
-
-espree@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-7.0.0.tgz#8a7a60f218e69f120a842dc24c5a88aa7748a74e"
-  integrity sha512-/r2XEx5Mw4pgKdyb7GNLQNsu++asx/dltf/CI8RFi9oGHxmQFgvLbc5Op4U6i8Oaj+kdslhJtVlEZeAqH5qOTw==
-  dependencies:
-    acorn "^7.1.1"
-    acorn-jsx "^5.2.0"
-    eslint-visitor-keys "^1.1.0"
 
 espree@^7.1.0:
   version "7.1.0"
@@ -18817,13 +18801,13 @@ resolve@^1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-delta.0:
-  version "5.0.0-delta.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-delta.0.tgz#ebcb411daff1519100c96e34d6348792eed4091f"
-  integrity sha512-F0UaeVzZduKPrkqg8s3Q1Ay38D10dHSqc/n5IwD3VaZYBAMr4HamuR85yUi/3REvUn7wbNQ8YWDNZ3FVbfMpNw==
+rest-hooks@5.0.0-h.0:
+  version "5.0.0-h.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-h.0.tgz#83d14389c5b78e12e24571695297c44d2f66d092"
+  integrity sha512-i+tGkpLdeO8VLKY73bwEwdbYA4Jm5ANP9NFaLErpTlSkHRDK6+8vkoH+AEqhb+ZlTJoVBwcp93lbgpspm3BDNw==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-delta.0"
+    "@rest-hooks/core" "^1.0.0-h.0"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
