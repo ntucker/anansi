@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.29](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.28...@anansi/generator-js@1.0.29) (2020-07-14)
+
+
+### 💅 Enhancement
+
+* Update rest-hooks integration to splash ([3e7bec8](https://github.com/ntucker/anansi/commit/3e7bec8b59483e91f6907d5ca2b83cbcab72eb65))
+
+
+
 ### [1.0.28](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.27...@anansi/generator-js@1.0.28) (2020-07-11)
 
 **Note:** Version bump only for package @anansi/generator-js
