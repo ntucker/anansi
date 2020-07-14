@@ -18,7 +18,7 @@ export default class ExchangeRatesResource extends Resource {
   static listShape<T extends typeof SimpleResource>(this: T) {
     return {
       ...super.listShape(),
-      schema: { data: this.getEntitySchema() },
+      schema: { data: this },
     };
   }
 }
