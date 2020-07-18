@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.6...anansi-example-typescript@3.0.7) (2020-07-18)
+
+
+### 🐛 Bug Fix
+
+* Handle conditions where there is no author for a post ([ff11552](https://github.com/ntucker/anansi/commit/ff11552eab622e9b6e3fe9770c3d14f78b2bfe1b))
+
+
+### 📦 Package
+
+* Bump rest hooks ([c35cae6](https://github.com/ntucker/anansi/commit/c35cae638413400781df17dcb9aa6a7f7113e8b0))
+* terser-webpack-plugin, autoprefixer ([94a7f99](https://github.com/ntucker/anansi/commit/94a7f99bb0a8ce15db88439b32afa8d99556165c))
+
+
+
 ### [3.0.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.5...anansi-example-typescript@3.0.6) (2020-07-14)
 
 

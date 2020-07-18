@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.3...@anansi/webpack-config@2.0.4) (2020-07-18)
+
+
+### 📦 Package
+
+* terser-webpack-plugin, autoprefixer ([94a7f99](https://github.com/ntucker/anansi/commit/94a7f99bb0a8ce15db88439b32afa8d99556165c))
+
+
+
 ### [2.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.2...@anansi/webpack-config@2.0.3) (2020-07-11)
 
 

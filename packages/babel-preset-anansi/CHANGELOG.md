@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.5...@anansi/babel-preset@1.2.6) (2020-07-18)
+
+
+### 📦 Package
+
+* Bump decorators, runtime, typescript ([324d2f9](https://github.com/ntucker/anansi/commit/324d2f9b0b5a68e5f050de6771af31a3c97a5ee0))
+
+
+
 ### [1.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.4...@anansi/babel-preset@1.2.5) (2020-07-01)
 
 
