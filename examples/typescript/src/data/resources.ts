@@ -50,7 +50,7 @@ export class UserResource extends Resource {
   };
 
   pk() {
-    return this.id.toString();
+    return this.id?.toString();
   }
 
   static urlRoot = 'https://jsonplaceholder.typicode.com/users/';

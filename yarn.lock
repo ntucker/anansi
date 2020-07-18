@@ -3594,15 +3594,23 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-h.0":
-  version "1.0.0-h.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-h.0.tgz#8c7628ca215c9bdf6a405e0aa02a5f0c0e54e6d0"
-  integrity sha512-bgSaHovWnQ4M0kPFg9g8uxyLA3V6a4Uxo4s8mm6e1YHzDkHkJ4pDhbcWj4D2GpiznTb6hLtxtL/hztIAc+k/Ag==
+"@rest-hooks/core@^1.0.0-i.0":
+  version "1.0.0-i.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-i.1.tgz#d7919408d94acc96341123ecd1ff11e6e24bbbd4"
+  integrity sha512-IL4VkGJiV2UQftmCPQoOHP2234O92y1P/1R9dHHtw2OpIMHDC/IqVL59Kxoiex+ycz5jh+vyYraiJszuVCAnTw==
   dependencies:
     "@babel/runtime" "^7.10.4"
     "@rest-hooks/normalizr" "^6.0.0-h.0"
     "@rest-hooks/use-enhanced-reducer" "^1.0.4"
     flux-standard-action "^2.1.1"
+
+"@rest-hooks/endpoint@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-0.4.0.tgz#adfef12df747cad96d6bba99f62a2ab71c3c94ac"
+  integrity sha512-iS4v9axBu9Di9UlxCsnL79eOj8+q30FKrFsQydl6P45ZPeec8L2ZAeSFsX74IA6W9fVrLDzmI8Bd/YDzRC2zPA==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+    "@rest-hooks/normalizr" "^6.0.0-h.0"
 
 "@rest-hooks/normalizr@^6.0.0-h.0":
   version "6.0.0-h.0"
@@ -18901,13 +18909,14 @@ resolve@^1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-h.0:
-  version "5.0.0-h.0"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-h.0.tgz#83d14389c5b78e12e24571695297c44d2f66d092"
-  integrity sha512-i+tGkpLdeO8VLKY73bwEwdbYA4Jm5ANP9NFaLErpTlSkHRDK6+8vkoH+AEqhb+ZlTJoVBwcp93lbgpspm3BDNw==
+rest-hooks@5.0.0-i.0:
+  version "5.0.0-i.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-i.0.tgz#85ce479243a8ff92c2e7883af64f86dcba88a2ad"
+  integrity sha512-FYwZHJHMQ8vGmpuZhfClob3mIdunkZTxw+a9Yog8/QeMjKoPl3nLdk3Nni7DmNb88QkcvlYkp7ZAT55mH0UXqw==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-h.0"
+    "@rest-hooks/core" "^1.0.0-i.0"
+    "@rest-hooks/endpoint" "^0.4.0"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
