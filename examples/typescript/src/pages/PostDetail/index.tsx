@@ -16,7 +16,10 @@ export default function PostDetail({
     id = Number.parseInt(match.params.id);
   }
   const post = useResource(PostResource.detailShape(), { id });
-  const author = useResource(UserResource.detailShape(), { id: post.userId });
+  const author = useResource(
+    UserResource.detailShape(),
+    post.userId ? { id: post.userId } : null,
+  );
   const routes = [
     {
       path: '/posts',
@@ -30,7 +33,7 @@ export default function PostDetail({
   return (
     <PageHeader
       title={<Typography.Title level={2}>{post.title}</Typography.Title>}
-      subTitle={`by ${author.name}`}
+      subTitle={author ? `by ${author.name}` : ''}
       breadcrumb={{ routes, itemRender }}
       extra={[
         <Link to={`/post/${post.id}/edit`} key="edit">

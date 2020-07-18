@@ -25,7 +25,7 @@ async function init() {
 }
 init();
 ReactDOM.render(
-  <ErrorLoggerContext.Provider value={() => console.error('what what')}>
+  <ErrorLoggerContext.Provider value={e => console.error('error logged', e)}>
     <ErrorBoundary>
       <CacheProvider>
         <Router history={history}>
