@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.0.1",
     "@anansi/eslint-plugin": "^0.9.9",
     "@anansi/webpack-config": "^2.0.4",
-    "@babel/core": "7.10.5",
+    "@babel/core": "7.11.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-info": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.9",
-    "@babel/runtime": "^7.10.5",
+    "@babel/runtime": "^7.11.0",
     "antd": "^4.4.2",
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",
@@ -54,7 +54,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "5.0.0-i.3"
+    "rest-hooks": "5.0.0-j.4"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
