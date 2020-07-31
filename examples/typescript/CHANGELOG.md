@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.8...anansi-example-typescript@3.0.9) (2020-07-31)
+
+
+### 🏠 Internal
+
+* Bump internal packages ([f87eb44](https://github.com/ntucker/anansi/commit/f87eb44e59e1481ab8dd16c84d501b922071a919))
+
+
+
 ### [3.0.8](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.7...anansi-example-typescript@3.0.8) (2020-07-31)
 
 

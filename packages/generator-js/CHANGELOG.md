@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.32](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.31...@anansi/generator-js@1.0.32) (2020-07-31)
+
+
+### 🐛 Bug Fix
+
+* Fix circleci config ([d94a557](https://github.com/ntucker/anansi/commit/d94a5571b827b12f5483e07db160e33f6f35d7a7))
+
+
+### 🏠 Internal
+
+* Bump internal packages ([f87eb44](https://github.com/ntucker/anansi/commit/f87eb44e59e1481ab8dd16c84d501b922071a919))
+
+
+
 ### [1.0.31](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.30...@anansi/generator-js@1.0.31) (2020-07-31)
 
 

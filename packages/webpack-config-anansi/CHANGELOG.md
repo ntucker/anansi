@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.1.0...@anansi/webpack-config@2.1.1) (2020-07-31)
+
+
+### 🏠 Internal
+
+* Bump internal packages ([f87eb44](https://github.com/ntucker/anansi/commit/f87eb44e59e1481ab8dd16c84d501b922071a919))
+
+
+
 ## [2.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.4...@anansi/webpack-config@2.1.0) (2020-07-31)
 
 
