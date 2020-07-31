@@ -70,6 +70,12 @@ Examples:
 
 If set, will enable [React DevTools Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This feature is only available in production mode since it is enabled in development by default.
 
+### readable
+
+Skips minification. This is useful when trying to debug production code.
+
+`webpack --mode=production --readable`
+
 ## ENV customization
 
 ### WEBPACK_PUBLIC_HOST = ''

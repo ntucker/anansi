@@ -102,42 +102,46 @@ export default function makeProdConfig(
       name: 'webpack-runtime',
     },
   };
-  config.optimization.minimizer = [
-    new TerserPlugin({
-      terserOptions: {
-        parse: {
-          ecma: 9,
+  if (!argv.readable) {
+    config.optimization.minimizer = [
+      new TerserPlugin({
+        terserOptions: {
+          parse: {
+            ecma: 9,
+          },
+          compress: {
+            ecma: 6,
+            warnings: false,
+            // Pending further investigation:
+            // https://github.com/mishoo/UglifyJS2/issues/2011
+            comparisons: false,
+            // Pending futher investigation:
+            // https://github.com/terser-js/terser/issues/120
+            inline: 2,
+          },
+          mangle: {
+            safari10: true,
+          },
+          output: {
+            ecma: 6,
+            comments: false,
+            ascii_only: true,
+          },
+          keep_classnames: !!argv?.profile,
+          keep_fnames: !!argv?.profile,
         },
-        compress: {
-          ecma: 6,
-          warnings: false,
-          // Pending further investigation:
-          // https://github.com/mishoo/UglifyJS2/issues/2011
-          comparisons: false,
-          // Pending futher investigation:
-          // https://github.com/terser-js/terser/issues/120
-          inline: 2,
-        },
-        mangle: {
-          safari10: true,
-        },
-        output: {
-          ecma: 6,
-          comments: false,
-          ascii_only: true,
-        },
-        keep_classnames: !!argv?.profile,
-        keep_fnames: !!argv?.profile,
-      },
-      sourceMap: true,
-      extractComments: true,
-      // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
-      // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
-      parallel: !isWsl,
-      cache: true,
-    }),
-    new OptimizeCSSAssetsPlugin({}),
-  ];
+        sourceMap: true,
+        extractComments: true,
+        // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
+        // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
+        parallel: !isWsl,
+        cache: true,
+      }),
+      new OptimizeCSSAssetsPlugin({}),
+    ];
+  } else {
+    config.optimization.minimize = false;
+  }
   config.performance = {
     maxEntrypointSize: 300000,
     assetFilter(assetFilename) {
