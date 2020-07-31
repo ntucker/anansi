@@ -32,16 +32,12 @@ jobs:
           paths:
             - project
 
-  type-check:
-    parallelism: <%= circleParallelism %>
+  build:
     docker: *docker
     steps:
       - attach_workspace:
-          at: /root
-      - run:
-          command: |
-            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
-            yarn type-check $FILES
+          at: ~/
+      - run: yarn run build
 
   lint:
     parallelism: <%= circleParallelism %>
@@ -52,7 +48,7 @@ jobs:
       - run:
           #- run: yarn run lint packages/*/src
           command: |
-            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            FILES=$(circleci tests glob "<%= rootPath %>/**/*.[jt]{s,}" | circleci tests split --split-by=timings)
             yarn lint $FILES
 
 <% if (testing) { %>
@@ -64,8 +60,8 @@ jobs:
           at: ~/
       - run:
           command: |
-            FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
-            yarn test:ci -- -- --maxWorkers=2 $FILES
+            FILES=$(circleci tests glob "<%= rootPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
+            yarn test:ci -- -- --maxWorkers=4 $FILES
 
   test_coverage:
     parallelism: <%= circleParallelism * 2 %>
@@ -76,7 +72,7 @@ jobs:
       - run:
           command: |
             FILES=$(circleci tests glob "<%= assetPath %>/**/*.test.[jt]{s,}" | circleci tests split --split-by=timings)
-            if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --maxWorkers=2 --coverageReporters=text-lcov $FILES | yarn run coveralls; fi
+            if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --maxWorkers=4 --coverageReporters=text-lcov $FILES | yarn run coveralls; fi
 <% } %>
   salus:
     machine: true
@@ -97,10 +93,10 @@ workflows:
           requires:
             - setup
       <% } %>
-      - type-check:
+      - lint:
           requires:
             - setup
-      - lint:
+      - build:
           requires:
             - setup
       - salus
