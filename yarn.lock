@@ -18931,10 +18931,10 @@ resolve@^1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-j.4:
-  version "5.0.0-j.4"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-j.4.tgz#5e3bf033a5749598f2cf9f1d578d86d75b061468"
-  integrity sha512-YwWKPOL606bGS6H7qCRCep9xHEzIULG5UvCfKKzLvSNH1p46P7hzLzvB6zUQhOJExDxO282qf34X/6StiI2HGA==
+rest-hooks@5.0.0-j.5:
+  version "5.0.0-j.5"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-j.5.tgz#fa3c1555e4c5df9e2e1a3c22b22f740270e32caf"
+  integrity sha512-fBIZJjEAIpzSWy7bkW/mdJ2oDzr2/KpL0+OnFO5Kb1KWVfI83FtyjnRPFMt3bPeEk5hMMYfAT59pCH8jBe8SiQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/core" "^1.0.0-j.2"
