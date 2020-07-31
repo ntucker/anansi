@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.4...@anansi/webpack-config@2.1.0) (2020-07-31)
+
+
+### 🚀 Features
+
+* New CLI option --readable ([00beef8](https://github.com/ntucker/anansi/commit/00beef88419175f080d20efebbebb7e26b5c05d0))
+
+
+### 📦 Package
+
+* Upgrade babel to 7.11 ([9d8cd12](https://github.com/ntucker/anansi/commit/9d8cd124b7cd5d2f31bfda57dccae32bef46af1c))
+
+
+
 ### [2.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.0.3...@anansi/webpack-config@2.0.4) (2020-07-18)
 
 

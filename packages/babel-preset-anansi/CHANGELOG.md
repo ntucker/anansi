@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.6...@anansi/babel-preset@1.2.7) (2020-07-31)
+
+
+### 📦 Package
+
+* Upgrade babel to 7.11 ([9d8cd12](https://github.com/ntucker/anansi/commit/9d8cd124b7cd5d2f31bfda57dccae32bef46af1c))
+
+
+
 ### [1.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.5...@anansi/babel-preset@1.2.6) (2020-07-18)
 
 

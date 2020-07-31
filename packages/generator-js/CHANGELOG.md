@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.31](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.30...@anansi/generator-js@1.0.31) (2020-07-31)
+
+
+### 📦 Package
+
+* Upgrade babel to 7.11 ([9d8cd12](https://github.com/ntucker/anansi/commit/9d8cd124b7cd5d2f31bfda57dccae32bef46af1c))
+
+
+
 ### [1.0.30](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.29...@anansi/generator-js@1.0.30) (2020-07-18)
 
 **Note:** Version bump only for package @anansi/generator-js
