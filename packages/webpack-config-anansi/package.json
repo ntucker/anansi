@@ -87,8 +87,8 @@
     "url-loader": "^4.1.0",
     "webpack-bundle-analyzer": "^3.8.0",
     "webpack-fix-style-only-entries": "^0.5.1",
-    "webpack-node-externals": "^1.7.2",
-    "worker-loader": "^2.0.0"
+    "webpack-node-externals": "^2.5.1",
+    "worker-loader": "^3.0.1"
   },
   "peerDependencies": {
     "@hot-loader/react-dom": "^16.0.0",
