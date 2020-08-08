@@ -1,4 +1,4 @@
-import { Resource, SimpleRecord } from 'rest-hooks';
+import { Resource, SimpleRecord } from '@rest-hooks/rest';
 
 export class PostResource extends Resource {
   readonly id: number | undefined = undefined;
