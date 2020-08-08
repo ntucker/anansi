@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.10](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.9...anansi-example-typescript@3.0.10) (2020-08-08)
+
+
+### 📦 Package
+
+* Upgrade rest-hooks ([e89433c](https://github.com/ntucker/anansi/commit/e89433c590c18ab1b107f2126f305aa32134b8b9))
+
+
+
 ### [3.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.8...anansi-example-typescript@3.0.9) (2020-07-31)
 
 

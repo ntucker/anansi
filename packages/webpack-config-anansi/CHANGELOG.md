@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.1.1...@anansi/webpack-config@3.0.0) (2020-08-08)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Set hardCacheOptions={} to re-enable plugin
+* Webpack min version 4.43
+
+### 💅 Enhancement
+
+* Disable hard-cache-plugin by default ([d0facde](https://github.com/ntucker/anansi/commit/d0facde55f94ebeb55fbb483a0f9e269ac60e72c))
+
+
+### 🐛 Bug Fix
+
+* worker-loader integration ([31ca6ac](https://github.com/ntucker/anansi/commit/31ca6ac07ede4d3f6ec2f36a3de8e52e5fe46fa1))
+
+
+### 📦 Package
+
+* major worker-loader, webpack-node-externals (not affecting our config) ([ef7f8fd](https://github.com/ntucker/anansi/commit/ef7f8fdf59c722f01726dae02d38e0eb7905f5a2))
+* react-refresh-webpack-plugin v4 ([9e3e64d](https://github.com/ntucker/anansi/commit/9e3e64d7cc7ef83d2760c399b6cf62488ef49a78))
+* Terser major upgrade ([e860b73](https://github.com/ntucker/anansi/commit/e860b73372b229fc3a2f091aab1b4a663dbfa726))
+
+
+
 ### [2.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.1.0...@anansi/webpack-config@2.1.1) (2020-07-31)
 
 

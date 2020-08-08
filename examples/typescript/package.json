@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
@@ -21,7 +21,7 @@
     "@anansi/babel-preset": "^1.2.7",
     "@anansi/browserslist-config": "^1.0.1",
     "@anansi/eslint-plugin": "^0.9.10",
-    "@anansi/webpack-config": "^2.1.1",
+    "@anansi/webpack-config": "^3.0.0",
     "@babel/core": "7.11.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-info": "^5.3.19",
