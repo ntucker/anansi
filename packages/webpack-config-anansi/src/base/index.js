@@ -59,7 +59,7 @@ export default function makeBaseConfig({
           test: /\.worker\.(t|j)s$/,
           use: [
             babelLoader,
-            { loader: 'worker-loader', options: { inline: true } },
+            { loader: 'worker-loader', options: { inline: 'fallback' } },
           ],
           include: [
             new RegExp(basePath),
