@@ -5,11 +5,11 @@ import ExchangeRatesResource from 'resources/ExchangeRatesResource';
 
 export default function BTCPrice() {
   // Learn more about Rest Hooks: https://resthooks.io/docs/getting-started/usage
-  const { data: price } = useResource(ExchangeRatesResource.listShape(), {
+  const { data: price } = useResource(ExchangeRatesResource.list(), {
     currency: 'USD',
   });
   // https://resthooks.io/docs/api/useSubscription
-  useSubscription(ExchangeRatesResource.listShape(), {
+  useSubscription(ExchangeRatesResource.list(), {
     currency: 'USD',
   });
   const displayPrice = new Intl.NumberFormat('en-US', {

@@ -3,8 +3,8 @@ import { useResource } from 'rest-hooks';
 import { PlusOutlined } from '@ant-design/icons';
 import { List, Button, PageHeader } from 'antd';
 import { Link } from 'react-router-dom';
-
 import { PostResource } from 'data/resources';
+
 import PostListItem from './PostListItem';
 
 const routes = [
@@ -15,14 +15,19 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useResource(PostResource.listShape(), {});
+  const posts = useResource(PostResource.list(), {});
   return (
     <PageHeader
       title="Post List"
       breadcrumb={{ routes }}
       extra={[
         <Link to="/posts/new" key={1}>
-          <Button type="primary" shape="circle" icon={<PlusOutlined />} size="large" />
+          <Button
+            type="primary"
+            shape="circle"
+            icon={<PlusOutlined />}
+            size="large"
+          />
         </Link>,
       ]}
     >

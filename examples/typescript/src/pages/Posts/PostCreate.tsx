@@ -7,7 +7,7 @@ import itemRender from 'navigation/breadcrumbItemRenderer';
 import PostForm from './PostForm';
 
 export default function PostCreate() {
-  const create = useFetcher(PostResource.createShape());
+  const create = useFetcher(PostResource.create());
   const history = useHistory();
   const routes = [
     {
@@ -29,7 +29,7 @@ export default function PostCreate() {
         onSubmit={async (data: object) => {
           const res = await create({}, data, [
             [
-              PostResource.listShape(),
+              PostResource.list(),
               {},
               (postID: string, postList: string[] | undefined) => [
                 postID,

@@ -6,7 +6,7 @@ import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
 export default function IssueListItem({ post }: { post: PostResource }) {
-  const author = useResource(UserResource.detailShape(), {
+  const author = useResource(UserResource.detail(), {
     id: post.userId,
   });
   const actions = [];

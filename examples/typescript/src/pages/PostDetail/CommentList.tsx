@@ -5,7 +5,7 @@ import { CommentResource } from 'data/resources';
 type Props = { postId: number };
 
 export default function CommentList({ postId }: Props) {
-  const comments = useResource(CommentResource.listShape(), { postId });
+  const comments = useResource(CommentResource.list(), { postId });
   return (
     <List
       className="comment-list"

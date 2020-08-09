@@ -15,9 +15,9 @@ export default class ExchangeRatesResource extends Resource {
     return { pollFrequency: 15000 };
   }
 
-  static listShape<T extends typeof SimpleResource>(this: T) {
+  static list<T extends typeof SimpleResource>(this: T) {
     return {
-      ...super.listShape(),
+      ...super.list(),
       schema: { data: this },
     };
   }

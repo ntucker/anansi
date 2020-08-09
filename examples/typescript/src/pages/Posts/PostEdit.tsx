@@ -13,8 +13,8 @@ export default function PostEdit({
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const update = useFetcher(PostResource.updateShape());
-  const post = useResource(PostResource.detailShape(), { id });
+  const update = useFetcher(PostResource.update());
+  const post = useResource(PostResource.detail(), { id });
   const routes = [
     {
       path: '/posts',
