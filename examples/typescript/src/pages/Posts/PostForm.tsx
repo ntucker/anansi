@@ -1,5 +1,6 @@
 import { Input, Button, Form } from 'antd';
 import { PostResource } from 'data/resources';
+import { useCallback } from 'react';
 
 import useForm from './useForm';
 
@@ -23,8 +24,14 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
     PostResource,
     initialValues,
   );
+
+  const onFinish = useCallback(handleSubmit(onSubmit), [
+    handleSubmit,
+    onSubmit,
+  ]);
+
   return (
-    <Form onFinish={onSubmit} noValidate autoComplete="off" {...formItemLayout}>
+    <Form onFinish={onFinish} noValidate autoComplete="off" {...formItemLayout}>
       <Form.Item label="Title">
         <Input value={values.title} onChange={handleChange('title')} />
       </Form.Item>

@@ -3617,10 +3617,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rest-hooks/core@^1.0.0-j.7":
-  version "1.0.0-j.7"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-j.7.tgz#54b80c9c9f6046650760588055bcc26193018901"
-  integrity sha512-hDF+lEQKfRi4bXG99rYTLKhPnV9nLdGlzg5Lv6kKhp8nG1BY9zVgOomOdErDs8li5ir0USirsrVsJVIQebg7xQ==
+"@rest-hooks/core@^1.0.0-k.0":
+  version "1.0.0-k.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-k.0.tgz#7e38170cb43af29d60711e847cae181ed08c6bda"
+  integrity sha512-SdtmRw7HGuI0cPROIQKZ2oU2KDJvzhIj8t46rd6Rea5nsYSGEmbaXpXvB/RFGE9kl1aXQRy7y2BYfWiVBZgRiQ==
   dependencies:
     "@babel/runtime" "^7.10.4"
     "@rest-hooks/endpoint" "^0.6.1"
@@ -3643,10 +3643,10 @@
   dependencies:
     "@babel/runtime" "^7.10.4"
 
-"@rest-hooks/rest@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-0.3.1.tgz#412affbe928064bb6c68447a8acc33cd6f7bf0d2"
-  integrity sha512-wlVT1wUeGlka9gGA7C6sNNxmJsKavq0LmlZqIm63jlDoWUG2rtJ3f2Q/0r6TJSYgu7BJu+qcRYg8urowGIHb2A==
+"@rest-hooks/rest@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-0.4.0.tgz#491ccf5b21cad0191ac0e3c8232bf72889ab0094"
+  integrity sha512-CswK3mj4DERiwmJhUKgTEr/hhJoDXnif+ar+sxWybe5a6cPxu1/g/0smTyXl0GcH9o8A2K+JN+t3DoKFiN9A9A==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -18955,13 +18955,13 @@ resolve@^1.17.0:
   dependencies:
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-j.10:
-  version "5.0.0-j.10"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-j.10.tgz#bf95df5fc4c95cb66b0b5c15f9c505df9e16a268"
-  integrity sha512-FR+VczBsNMM7SLdiEzo2JlNHMpGsCKsUU+85+8cihczM/DxYCePKgsxLxokuDC97FQ684BigXkd7EaEUJInxJQ==
+rest-hooks@5.0.0-k.0:
+  version "5.0.0-k.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-k.0.tgz#4a5b9750dd143556c201637b2b368f42d26ea89c"
+  integrity sha512-2TlxvMukDAc6NTq821oY/2zQ6o+WPSJJjuqhiqcCSIzhd2ZQgpgh6zehahBZPIFIu8UKPEoIbHlSXya26uBfMA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.0-j.7"
+    "@rest-hooks/core" "^1.0.0-k.0"
     "@rest-hooks/endpoint" "^0.6.1"
 
 restore-cursor@^2.0.0:

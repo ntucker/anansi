@@ -1,25 +1,30 @@
 import { useState, SyntheticEvent } from 'react';
-import { Resource, AbstractInstanceType } from 'rest-hooks';
+import { AbstractInstanceType } from 'rest-hooks';
+import { Resource } from '@rest-hooks/rest';
 
 export default function useForm<T extends typeof Resource>(
   R: T,
   initialValues: Partial<AbstractInstanceType<T>>,
 ): [
   Readonly<AbstractInstanceType<T>>,
-  (name: string) => (event: SyntheticEvent<Element, Event>) => void,
+  (name: string) => (event: React.ChangeEvent<HTMLInputElement>) => void,
   (
     onSubmit: (v: Partial<AbstractInstanceType<T>>) => any,
-  ) => (e: SyntheticEvent<Element, Event>) => void,
+  ) => (e?: React.SyntheticEvent | object) => void,
 ] {
   const [values, setValues] = useState(() => R.fromJS(initialValues));
 
-  const handleChange = (name: string) => (event: SyntheticEvent) => {
-    setValues(R.fromJS({ ...values, [name]: event.target.value }));
+  const handleChange = (name: string) => (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setValues({ ...values, [name]: event.target.value });
   };
   const handleSubmit = (onSubmit: (v: object) => any) => (
-    e: React.SyntheticEvent,
+    e?: React.SyntheticEvent | object,
   ) => {
-    e.preventDefault();
+    if (e && 'preventDefault' in e) {
+      e.preventDefault();
+    }
     onSubmit(values);
   };
   return [values, handleChange, handleSubmit];
