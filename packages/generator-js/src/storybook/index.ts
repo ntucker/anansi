@@ -1,7 +1,7 @@
 import { BetterGenerator, InstallPeersMixin } from '../utils';
 
 class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
     this.config.set('storybook', true);
   }
@@ -43,8 +43,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     this.yarnInstall(
       [
         '@storybook/addon-actions',
-        '@storybook/addon-info',
         '@storybook/addon-links',
+        '@storybook/addon-docs',
         '@storybook/addons',
         '@storybook/react',
       ],
