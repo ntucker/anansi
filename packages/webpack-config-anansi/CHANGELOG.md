@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>3.0.1 (2020-08-14)</small>
+
+* enhance: Upgrade to storybook 6 (major) ([da30bf7](https://github.com/ntucker/anansi/commit/da30bf7))
+* pkg: Antd, terser ([ec300c1](https://github.com/ntucker/anansi/commit/ec300c1))
+
+
+
+
+
 ## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@2.1.1...@anansi/webpack-config@3.0.0) (2020-08-08)
 
 

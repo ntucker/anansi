@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>3.0.11 (2020-08-14)</small>
+
+* enhance: Upgrade to storybook 6 (major) ([da30bf7](https://github.com/ntucker/anansi/commit/da30bf7))
+* pkg: Antd, terser ([ec300c1](https://github.com/ntucker/anansi/commit/ec300c1))
+* pkg: Upgrade to latest rest-hooks 5 ([3906d30](https://github.com/ntucker/anansi/commit/3906d30))
+* fix: Upgrade rest hooks and fix form ([5a38091](https://github.com/ntucker/anansi/commit/5a38091))
+
+
+
+
+
 ### [3.0.10](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.9...anansi-example-typescript@3.0.10) (2020-08-08)
 
 

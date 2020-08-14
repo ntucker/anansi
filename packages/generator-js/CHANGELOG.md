@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.0.34 (2020-08-14)</small>
+
+* enhance: Upgrade to storybook 6 (major) ([da30bf7](https://github.com/ntucker/anansi/commit/da30bf7))
+* pkg: Upgrade to latest rest-hooks 5 ([3906d30](https://github.com/ntucker/anansi/commit/3906d30))
+
+
+
+
+
 ### [1.0.33](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.32...@anansi/generator-js@1.0.33) (2020-08-08)
 
 **Note:** Version bump only for package @anansi/generator-js
