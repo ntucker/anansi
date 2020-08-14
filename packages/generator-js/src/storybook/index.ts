@@ -16,8 +16,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.destinationPath('tsconfig.json'),
     );
     this.fs.copyTpl(
-      this.templatePath('.storybook/config.js'),
-      this.destinationPath('.storybook/config.js'),
+      this.templatePath('.storybook/main.js'),
+      this.destinationPath('.storybook/main.js'),
       this.config.getAll(),
     );
     if (this.config.get('webpack')) {
