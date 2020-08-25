@@ -162,7 +162,6 @@ export default function makeBaseConfig({
         'node_modules',
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
-      symlinks: false,
     },
     // include the loaders installed by this library
     resolveLoader: {
