@@ -1,0 +1,59 @@
+{
+  "name": "anansi-example-linaria",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode=development",
+    "prod": "serve ./dist",
+    "build": "webpack --mode=production",
+    "build:server": "webpack --mode=production --target=node",
+    "build:clean": "rm -rf dist",
+    "analyze": "webpack --mode=production --analyze",
+    "profile": "webpack --mode=production --profile",
+    "pkgcheck": "webpack --check=nobuild",
+    "type-check": "tsc --noEmit",
+    "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@anansi/babel-preset": "^1.2.7",
+    "@anansi/browserslist-config": "^1.0.1",
+    "@anansi/eslint-plugin": "^0.9.10",
+    "@anansi/webpack-config": "^3.0.1",
+    "@babel/core": "7.11.0",
+    "@storybook/addon-actions": "^6.0.5",
+    "@storybook/addon-docs": "^6.0.5",
+    "@storybook/addon-links": "^6.0.5",
+    "@storybook/addons": "^6.0.5",
+    "@storybook/react": "^6.0.5",
+    "@types/classnames": "^2.2.9",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.3",
+    "babel-loader": "8.1.0",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.4.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "react-refresh": "0.8.3",
+    "serve": "^11.3.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@anansi/polyfill": "^1.0.10",
+    "@babel/runtime": "^7.11.0",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.4",
+    "linaria": "^2.0.0-rc.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "redbox-react": "^1.6.0"
+  },
+  "browserslist": [
+    "extends @anansi/browserslist-config"
+  ]
+}

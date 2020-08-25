@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CrittersPlugin from 'critters-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
@@ -38,10 +37,6 @@ export default function makeProdConfig(
         debug: false,
       }),
       new FixStyleOnlyEntriesPlugin(),
-      new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
-        chunkFilename: '[name].[contenthash].css',
-      }),
     );
     if (htmlOptions) {
       config.plugins.unshift(
@@ -160,26 +155,18 @@ export default function makeProdConfig(
       ? rule
       : {
           ...rule,
-          use: [
-            {
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                esModule: true,
-              },
-            },
-            ...rule.use.slice(1).map(use =>
-              // this map just adds cssnano to postcss plugins
-              use.loader === 'postcss-loader'
-                ? {
-                    ...use,
-                    options: {
-                      ...use.options,
-                      plugins: [...use.options.plugins, cssnano()],
-                    },
-                  }
-                : use,
-            ),
-          ],
+          use: rule.use.map(use =>
+            // this map just adds cssnano to postcss plugins
+            use.loader === 'postcss-loader'
+              ? {
+                  ...use,
+                  options: {
+                    ...use.options,
+                    plugins: [...use.options.plugins, cssnano()],
+                  },
+                }
+              : use,
+          ),
         },
   );
   config.module.rules = [...config.module.rules, ...styleRules];
