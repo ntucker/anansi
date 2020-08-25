@@ -62,6 +62,8 @@ In dev mode, if `react-refresh` is installed it will be enabled.
 Adds support for these typecheckers. These remove the typings so the output runs in the target environment.
 If false, no static typechecker will be supported.
 
+Supports TypeScript 4.0
+
 ### nodeTarget : ?string = undefined
 
 Will run to target node instead of browsers. Specify a [valid node string](https://babeljs.io/docs/en/babel-preset-env#targetsnode) like "current", or "6.15".
@@ -174,6 +176,7 @@ are included:
 ### Stage 1
 
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
+- [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
 
 ### Other
 
