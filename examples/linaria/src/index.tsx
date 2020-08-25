@@ -7,8 +7,4 @@ async function init() {
   await loadPolyfills();
 }
 init();
-ReactDOM.render(
-
-            <App />,
-  document.body,
-);
+ReactDOM.render(<App />, document.body);

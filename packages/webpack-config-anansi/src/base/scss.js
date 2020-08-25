@@ -4,13 +4,13 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
 import { always } from 'ramda';
 
-const getCSSLoaders = ({ sassResources }) => {
+const getCSSLoaders = ({ sassResources, mode }) => {
   const loaders = [
     {
       loader: MiniCssExtractPlugin.loader,
       options: {
-        //esModule: true,
-        hmr: process.env.NODE_ENV !== 'production',
+        esModule: true,
+        hmr: mode !== 'production',
       },
     },
     {
@@ -46,13 +46,14 @@ export default function getStyleRules({
   libraryExclude = always(false),
   cssLoaderOptions = {},
   sassResources,
+  mode,
 }) {
   const absoluteBasePath = path.join(rootPath, basePath);
-  const cssLoaders = getCSSLoaders({ sassResources });
+  const cssLoaders = getCSSLoaders({ sassResources, mode });
   return [
     // css modules (local styles)
     {
-      test: /\.scss$/,
+      test: /\.s?css$/,
       include: [absoluteBasePath, libraryInclude],
       exclude: [/style\//g, libraryExclude],
       use: cssLoaders.map(loader => {
@@ -63,8 +64,8 @@ export default function getStyleRules({
               ...loader.options,
               modules: {
                 mode: 'local',
+                exportLocalsConvention: 'camelCase',
               },
-              localsConvention: 'camelCase',
               ...cssLoaderOptions,
             },
           };
@@ -74,11 +75,19 @@ export default function getStyleRules({
     },
     // global styles
     {
-      test: /\.scss$/,
+      test: /\.s?css$/,
       include: [absoluteBasePath],
       exclude: /^((?!(style\/|node_modules\/)).)*$/,
       use: cssLoaders,
     },
+    // css-in-js like linaria
+    {
+      test: /\.css$/,
+      include: [rootPath],
+      exclude: [/node_modules/],
+      use: cssLoaders.slice(0, -1),
+    },
+    // package css
     {
       test: /\.css$/,
       include: [/node_modules/],
@@ -90,8 +99,8 @@ export default function getStyleRules({
               ...loader.options,
               modules: {
                 mode: 'local',
+                exportLocalsConvention: 'camelCase',
               },
-              localsConvention: 'camelCase',
               ...cssLoaderOptions,
             },
           };

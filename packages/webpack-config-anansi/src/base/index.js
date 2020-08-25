@@ -1,5 +1,6 @@
 import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 
@@ -51,6 +52,12 @@ export default function makeBaseConfig({
         chunks: false,
         modules: false,
         assets: true,
+      }),
+      new MiniCssExtractPlugin({
+        filename:
+          mode !== 'production' ? '[name].css' : '[name].[contenthash].css',
+        chunkFilename:
+          mode !== 'production' ? '[name].css' : '[name].[contenthash].css',
       }),
     ],
     module: {

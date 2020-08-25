@@ -3,9 +3,6 @@ const { makeConfig } = require('@anansi/webpack-config');
 const options = {
   basePath: 'src',
   buildDir: 'dist/',
-  cssLoaderOptions: {
-    modules: true,
-  }
 };
 
 const generateConfig = makeConfig(options);
@@ -23,6 +20,12 @@ module.exports = (env, argv) => {
       chunks: 'all',
     };
   }
+  config.module.rules[1].use.push({
+    loader: 'linaria/loader',
+    options: {
+      sourceMap: argv?.mode !== 'production',
+    },
+  });
   return config;
 };
 
