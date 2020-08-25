@@ -139,7 +139,7 @@ import fetch from 'network';
 
 from any file.
 
-## babelRoot = \$CWD
+### babelRoot = \$CWD
 
 `babelRoot` should be where the root babel configuration file is in your repo. Usually this is CWD, but while setting up a monorepo with multiple babel configurations, you may need to change this value.
 
@@ -177,7 +177,7 @@ Determines the filename for the stats file that includes mappings to all filenam
 
 ### babelLoader
 
-Override any babel loader specific options.
+Override any babel loader specific [options](https://github.com/babel/babel-loader#options).
 
 ### extraJsLoaders = []
 
@@ -185,9 +185,7 @@ Any extra loaders to use on JavaScript/TypeScript files.
 
 ### cssModuleOptions
 
-Customize how cssmodules work.
-
-See https://github.com/webpack-contrib/css-loader#object for list of options
+Customize css module [options](https://github.com/webpack-contrib/css-loader#object).
 
 ### sassResources
 
