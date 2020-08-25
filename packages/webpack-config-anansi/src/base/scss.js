@@ -1,11 +1,18 @@
 import autoprefixer from 'autoprefixer';
 import cssPresetEnv from 'postcss-preset-env';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
 import { always } from 'ramda';
 
 const getCSSLoaders = ({ sassResources }) => {
   const loaders = [
-    { loader: 'style-loader' },
+    {
+      loader: MiniCssExtractPlugin.loader,
+      options: {
+        //esModule: true,
+        hmr: process.env.NODE_ENV !== 'production',
+      },
+    },
     {
       loader: 'css-loader',
       options: {},

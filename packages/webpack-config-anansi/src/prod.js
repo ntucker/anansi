@@ -37,7 +37,7 @@ export default function makeProdConfig(
         minimize: true,
         debug: false,
       }),
-      new FixStyleOnlyEntriesPlugin(),
+      //new FixStyleOnlyEntriesPlugin(),
       new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
         chunkFilename: '[name].[contenthash].css',
@@ -161,13 +161,13 @@ export default function makeProdConfig(
       : {
           ...rule,
           use: [
-            {
+            /*{
               loader: MiniCssExtractPlugin.loader,
               options: {
                 esModule: true,
               },
-            },
-            ...rule.use.slice(1).map(use =>
+            },*/
+            ...rule.use.map(use =>
               // this map just adds cssnano to postcss plugins
               use.loader === 'postcss-loader'
                 ? {
