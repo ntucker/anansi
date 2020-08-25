@@ -3025,12 +3025,11 @@
     is-ci "^2.0.0"
     npmlog "^4.1.2"
 
-"@lerna/conventional-commits@3.22.0":
-  version "3.22.0"
-  resolved "https://registry.yarnpkg.com/@lerna/conventional-commits/-/conventional-commits-3.22.0.tgz#2798f4881ee2ef457bdae027ab7d0bf0af6f1e09"
-  integrity sha512-z4ZZk1e8Mhz7+IS8NxHr64wyklHctCJyWpJKEZZPJiLFJ8yKto/x38O80R10pIzC0rr8Sy/OsjSH4bl0TbbgqA==
+"@lerna/conventional-commits@3.22.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
+  version "3.16.4"
+  resolved "https://github.com/ntucker/lerna-conventional-commits.git#5e53b22b3b2cd63aca41958a9724464782949e4e"
   dependencies:
-    "@lerna/validation-error" "3.13.0"
+    "@lerna/validation-error" "^3.13"
     conventional-changelog-angular "^5.0.3"
     conventional-changelog-core "^3.1.6"
     conventional-recommended-bump "^5.0.0"
@@ -3529,7 +3528,7 @@
   resolved "https://registry.yarnpkg.com/@lerna/timer/-/timer-3.13.0.tgz#bcd0904551db16e08364d6c18e5e2160fc870781"
   integrity sha512-RHWrDl8U4XNPqY5MQHkToWS9jHPnkLZEt5VD+uunCKTfzlxGnRCr3/zVr8VGy/uENMYpVP3wJa4RKGY6M0vkRw==
 
-"@lerna/validation-error@3.13.0":
+"@lerna/validation-error@3.13.0", "@lerna/validation-error@^3.13":
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/@lerna/validation-error/-/validation-error-3.13.0.tgz#c86b8f07c5ab9539f775bd8a54976e926f3759c3"
   integrity sha512-SiJP75nwB8GhgwLKQfdkSnDufAaCbkZWJqEDlKOUPUvVOplRGnfL+BPQZH5nvq2BYSRXsksXWZ4UHVnQZI/HYA==
