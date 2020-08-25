@@ -8,54 +8,33 @@ type Params = {
   important?: boolean;
 };
 
-// // Apply !important to all styles
-// const importantCss = (...args: any) => {
-//   // @ts-ignore
-//   return css(...args).map(style =>
-//     typeof style === 'string' ? style.replace(/;/g, ' !important;') : style,
-//   );
-// };
+// Linaria seems very particular about what exactly you can interpolate
+const media = {
+  phone: '560px',
+  tablet: '768px',
+  desktop: '769px',
+  giant: '1170px',
+}
 
-// // const createMedia = ({ width, type, important }: Params) => {
-// //   return (...args: any) => css`
-// //     @media (${type}: ${width}px) {
-// //       ${important 
-// //         ? importantCss(...args)
-// //         // @ts-ignore
-// //         : css(...args)};
-// //     }
-// //   `;
-// // };
-
-// const media = {
-//   phone: createMedia({
-//     type: 'max-width',
-//     width: 560,
-//     important: true /* We should drop this hack one day */,
-//   }),
-//   tablet: createMedia({ type: 'max-width', width: 768 }),
-//   desktop: createMedia({
-//     type: 'min-width',
-//     width: 769,
-//   }),
-//   giant: createMedia({
-//     type: 'min-width',
-//     width: 1170,
-//   }),
-// };
+const neato = css`
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+`;
 
 const Container = styled.div`
   border-radius: 4px;
   border: thin #eee solid;
   background-color: crimson;
   padding: 16px;
+  ${neato}
+  @media (max-width ${media.tablet}) {
+    background-color: blueviolet;
+  }
 `
 
 const Text = styled.p`
   font-size: 16px;
   color: white;
   font-weight: bold;
-  
 `
 
 const header = css`
