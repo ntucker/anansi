@@ -103,11 +103,8 @@ export default function makeDevConfig(
     basePath,
     libraryInclude,
     libraryExclude,
-    cssLoaderOptions: {
-      modules: {
-        mode: 'local',
-        localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
-      },
+    cssModulesOptions: {
+      localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
     },
     sassResources,
   });

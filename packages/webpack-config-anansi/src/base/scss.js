@@ -44,7 +44,7 @@ export default function getStyleRules({
   basePath = 'src',
   libraryInclude = always(false),
   libraryExclude = always(false),
-  cssLoaderOptions = {},
+  cssModulesOptions = {},
   sassResources,
   mode,
 }) {
@@ -65,8 +65,8 @@ export default function getStyleRules({
               modules: {
                 mode: 'local',
                 exportLocalsConvention: 'camelCase',
+                ...cssModulesOptions,
               },
-              ...cssLoaderOptions,
             },
           };
         }
@@ -101,8 +101,8 @@ export default function getStyleRules({
                 auto: true,
                 mode: 'local',
                 exportLocalsConvention: 'camelCase',
+                ...cssModulesOptions,
               },
-              ...cssLoaderOptions,
             },
           };
         }
