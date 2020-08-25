@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.36](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.35...@anansi/generator-js@1.0.36) (2020-08-25)
+
+**Note:** Version bump only for package @anansi/generator-js
+
+
+
+
+
 ## <small>1.0.35 (2020-08-14)</small>
 
 * fix: Copy new storybook config file location ([934224f](https://github.com/ntucker/anansi/commit/934224f))

@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@3.0.1...@anansi/webpack-config@4.0.0) (2020-08-25)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Path resolution will now resolve to symlink location,
+see https://webpack.js.org/configuration/resolve/#resolvesymlinks
+* cssLoaderOptions have changed, see https://github.com/webpack-contrib/css-loader/releases/tag/v4.0.0
+
+node_modules only use cssmodules if .module extension is used
+
+### 🚀 Features
+
+* Add cssModuleOptions to customize how css modules work ([46eaf53](https://github.com/ntucker/anansi/commit/46eaf536a24d837e2134b86e60b2078034548e3e))
+* Add extraJsLoaders option ([04e252c](https://github.com/ntucker/anansi/commit/04e252c5f33d78a8f2ce4d7436bce647bb7d5966))
+* Support linaria and other css flexibility ([#41](https://github.com/ntucker/anansi/issues/41)) ([00cd6fd](https://github.com/ntucker/anansi/commit/00cd6fd4fe1a973fef4915613bdac372f1f91151))
+
+
+### 💅 Enhancement
+
+* Remove resolve.symlinks = false ([c89f3e6](https://github.com/ntucker/anansi/commit/c89f3e62d887cc8938e46b58e7e2405bfa06d81c))
+
+
+### 🐛 Bug Fix
+
+* Consistent css module options when in dev mode ([7a27d96](https://github.com/ntucker/anansi/commit/7a27d96726275a4a165aa96d392f721828af38c5))
+
+
+### 📦 Package
+
+* Upgrade css-loader to v4 (major) ([32d57d2](https://github.com/ntucker/anansi/commit/32d57d2e885fd2fb129bad732cbbdcbaa513b584))
+
+
+
 ## <small>3.0.1 (2020-08-14)</small>
 
 * enhance: Upgrade to storybook 6 (major) ([da30bf7](https://github.com/ntucker/anansi/commit/da30bf7))

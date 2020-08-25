@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@3.0.11...anansi-example-typescript@4.0.0) (2020-08-25)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* cssLoaderOptions have changed, see https://github.com/webpack-contrib/css-loader/releases/tag/v4.0.0
+
+node_modules only use cssmodules if .module extension is used
+
+### 📦 Package
+
+* Upgrade css-loader to v4 (major) ([32d57d2](https://github.com/ntucker/anansi/commit/32d57d2e885fd2fb129bad732cbbdcbaa513b584))
+
+
+
 ## <small>3.0.11 (2020-08-14)</small>
 
 * enhance: Upgrade to storybook 6 (major) ([da30bf7](https://github.com/ntucker/anansi/commit/da30bf7))
