@@ -20,6 +20,7 @@ export default function makeBaseConfig({
   mode,
   manifestFilename,
   babelLoader: babelLoaderOptions,
+  extraJsLoaders,
 }) {
   const babelLoader = {
     loader: 'babel-loader',
@@ -78,7 +79,7 @@ export default function makeBaseConfig({
         },
         {
           test: /\.(t|j)sx?$/,
-          use: ['thread-loader', babelLoader],
+          use: ['thread-loader', babelLoader, ...extraJsLoaders],
           include: [
             new RegExp(basePath),
             path.join(rootPath, 'stories'),

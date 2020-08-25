@@ -26,7 +26,11 @@
     "typescript",
     "scss",
     "css modules",
-    "storybook"
+    "sass",
+    "linaria",
+    "svg",
+    "storybook",
+    "web-workers"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",

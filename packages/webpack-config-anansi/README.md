@@ -179,6 +179,10 @@ Determines the filename for the stats file that includes mappings to all filenam
 
 Override any babel loader specific options.
 
+### extraJsLoaders = []
+
+Any extra loaders to use on JavaScript/TypeScript files.
+
 ### cssModuleOptions
 
 Customize how cssmodules work.
@@ -202,6 +206,7 @@ This is useful to specify global variables and mixins to be included in every sa
 - Any media files
   - svg|png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf as file urls anywhere
   - svgs imported in javascript/typescript can be used as either components or file urls
+- Raw string data: (md|txt) as a string (using `raw-loader`)
 
 ```jsx
 import starUrl, { ReactComponent as Star } from './star.svg'
@@ -226,3 +231,20 @@ import '@anansi/webpack-config/media';
 ```
 
 This makes all imports of supported formats typed correctly.
+
+### Working with Linaria
+
+1. Install linaria: `yarn add --dev linaria`
+2. Use `extraJsLoaders` option, to add the loader.
+```js
+const myConfig = makeConfig({
+  extraJsLoaders: [
+    {
+      loader: 'linaria/loader',
+      options: {
+        sourceMap: argv?.mode !== 'production',
+      },
+    }
+  ]
+});
+```

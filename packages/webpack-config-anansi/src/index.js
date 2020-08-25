@@ -25,6 +25,7 @@ export function makeConfig(options) {
       serverDir: 'server_assets/',
       hardCacheOptions: false,
       manifestFilename: 'manifest.json',
+      extraJsLoaders: [],
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
       argv,
