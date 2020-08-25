@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.0.0...@anansi/webpack-config@4.0.1) (2020-08-25)
+
+
+### 📝 Documentation
+
+* Add linaria instructions step about including preset ([6f9bb5d](https://github.com/ntucker/anansi/commit/6f9bb5df2675da8e4bf4fbf5956cee1c8d7de1fe))
+* Fix heading level in readme ([fe1ebd1](https://github.com/ntucker/anansi/commit/fe1ebd104a1205bc463a784bc906103993372f5f))
+
+
+
 ## [4.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@3.0.1...@anansi/webpack-config@4.0.0) (2020-08-25)
 
 

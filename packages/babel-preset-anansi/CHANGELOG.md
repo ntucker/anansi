@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.7...@anansi/babel-preset@1.2.8) (2020-08-25)
+
+
+### 📝 Documentation
+
+* Add reference to Decimal parsing ([9a0df4b](https://github.com/ntucker/anansi/commit/9a0df4b57701fd42570fc8fdad7b31ddf07a5d84))
+
+
+
 ### [1.2.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.6...@anansi/babel-preset@1.2.7) (2020-07-31)
 
 
