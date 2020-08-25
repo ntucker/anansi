@@ -98,6 +98,7 @@ export default function getStyleRules({
             options: {
               ...loader.options,
               modules: {
+                auto: true,
                 mode: 'local',
                 exportLocalsConvention: 'camelCase',
               },
