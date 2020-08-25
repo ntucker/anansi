@@ -246,3 +246,12 @@ const myConfig = makeConfig({
   ]
 });
 ```
+3. Add `linaria/babel` to babel presets.
+```js
+module.exports = {
+  presets: [
+    ['@anansi/babel-preset', { typing: 'typescript' }],
+    'linaria/babel',
+  ],
+};
+```
