@@ -1,7 +1,9 @@
 import { getStyleRules } from './base';
 
-
-export default function makeNobuildConfig(baseConfig, { rootPath, basePath }) {
+export default function makeNobuildConfig(
+  baseConfig,
+  { rootPath, basePath, cssModulesOptions },
+) {
   const config = { ...baseConfig };
   config.output = {
     path: '/tmp/anansi-build',
@@ -18,6 +20,7 @@ export default function makeNobuildConfig(baseConfig, { rootPath, basePath }) {
   const styleRules = getStyleRules({
     rootPath,
     basePath,
+    cssModulesOptions,
   });
   config.module.rules = [...config.module.rules, ...styleRules];
   return config;

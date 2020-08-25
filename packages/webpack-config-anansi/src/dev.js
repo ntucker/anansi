@@ -19,6 +19,7 @@ export default function makeDevConfig(
     htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
     sassResources,
+    cssModulesOptions,
   },
 ) {
   const config = { ...baseConfig };
@@ -105,6 +106,7 @@ export default function makeDevConfig(
     libraryExclude,
     cssModulesOptions: {
       localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
+      ...cssModulesOptions,
     },
     sassResources,
   });

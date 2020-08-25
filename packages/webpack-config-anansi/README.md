@@ -177,7 +177,13 @@ Determines the filename for the stats file that includes mappings to all filenam
 
 ### babelLoader
 
-Override any babel loader specific options
+Override any babel loader specific options.
+
+### cssModuleOptions
+
+Customize how cssmodules work.
+
+See https://github.com/webpack-contrib/css-loader#object for list of options
 
 ### sassResources
 
