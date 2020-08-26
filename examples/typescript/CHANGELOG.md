@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.0.1...anansi-example-typescript@4.1.0) (2020-08-26)
+
+
+### 🚀 Features
+
+* Support more video formats ([ffc03a0](https://github.com/ntucker/anansi/commit/ffc03a0f35fa702bb07625b85bfcf3cc134fd0eb))
+
+
+### 🐛 Bug Fix
+
+* Don't apply sass to .css files ([c1cf8ca](https://github.com/ntucker/anansi/commit/c1cf8ca33829023c195b878137681a93ccfa6f80))
+* Error page ([63ae789](https://github.com/ntucker/anansi/commit/63ae789927005e9b1aea9ef67e1c93e2f37fd468))
+* Symlink no longer set in storybook ([e660d90](https://github.com/ntucker/anansi/commit/e660d90384eab97dfd3fb4a6fcec043699d5b257))
+
+
+### 📦 Package
+
+* Upgrade rest-hooks: ([379938a](https://github.com/ntucker/anansi/commit/379938ae3836dee2fb621ffd61b869434f9c54b9))
+
+
+
 ### [4.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.0.0...anansi-example-typescript@4.0.1) (2020-08-25)
 
 **Note:** Version bump only for package anansi-example-typescript
