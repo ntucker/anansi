@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.39](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.38...@anansi/generator-js@1.0.39) (2020-08-26)
+
+
+### 💅 Enhancement
+
+* Use latest rest-hooks ([963184f](https://github.com/ntucker/anansi/commit/963184f4170aaf3487049e73d090770f6b13c486))
+* Use provided type defs for media files ([61fdf61](https://github.com/ntucker/anansi/commit/61fdf61be8e5f817affa62c721b1c6ec297a01d1))
+
+
+
 ### [1.0.38](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.37...@anansi/generator-js@1.0.38) (2020-08-26)
 
 **Note:** Version bump only for package @anansi/generator-js
