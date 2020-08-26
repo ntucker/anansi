@@ -1,4 +1,4 @@
-import { Resource, SimpleResource } from 'rest-hooks';
+import { Resource, SimpleResource } from '@rest-hooks/rest';
 
 // Visit https://resthooks.io/docs/guides/resource-types to read more about these definitions
 export default class ExchangeRatesResource extends Resource {
@@ -11,14 +11,13 @@ export default class ExchangeRatesResource extends Resource {
 
   static urlRoot = 'https://www.coinbase.com/api/v2/exchange-rates';
 
-  static getFetchOptions() {
+  static getEndpointExtra() {
     return { pollFrequency: 15000 };
   }
 
   static list<T extends typeof SimpleResource>(this: T) {
-    return {
-      ...super.list(),
+    return super.list().extend({
       schema: { data: this },
-    };
+    });
   }
 }
