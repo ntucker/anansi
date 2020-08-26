@@ -1,4 +1,9 @@
-# Anansi CLI [![NPM version][npm-image]][npm-url] [![Build Status][circle-image]][circle-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# Anansi CLI
+[![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
+[![npm downloads](https://img.shields.io/npm/dm/@anansi/generator-js.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/generator-js)
+[![npm version](https://img.shields.io/npm/v/@anansi/generator-js.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/generator-js)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 
 > Fast React Web Apps
 

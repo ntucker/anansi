@@ -1,4 +1,8 @@
-# @anansi/webpack-config
+# Anansi's Webpack Config
+[![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
+[![npm downloads](https://img.shields.io/npm/dm/@anansi/webpack-config.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/webpack-config)
+[![npm version](https://img.shields.io/npm/v/@anansi/webpack-config.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/webpack-config)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A webpack configuration for fast development and production ready optimizations
 
