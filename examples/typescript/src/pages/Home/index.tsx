@@ -1,6 +1,6 @@
 import style from './index.scss';
 import plain from './plain.css';
-import Worker from './my.worker';
+import Worker from './my.worker.ts';
 import animated from './animated-overlay.gif';
 import AngleDownUrl, {
   ReactComponent as AngleDown,

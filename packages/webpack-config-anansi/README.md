@@ -226,13 +226,38 @@ const App = () => (
 
 ### Working with TypeScript
 
-Add `media.d.ts` file somewhere in your normal path, and place inside:
+Add `@anansi/webpack-config/types` to the types in `tsconfig.json`
 
-```typescript
-import '@anansi/webpack-config/media';
+```json
+{
+  "compilerOptions": {
+    "types": ["@anansi/webpack-config/types"],
+  }
+}
 ```
 
-This makes all imports of supported formats typed correctly.
+This makes all imports of supported formats typed correctly, including svgs, media files and workers.
+
+e.g.,
+
+```tsx
+import plain from './plain.css';
+import Worker from './my.worker.ts';
+import angleDownUrl, {
+  ReactComponent as AngleDown,
+} from './angle-down-solid.svg';
+
+worker.postMessage({ message: 'rendered' });
+
+export default function MyComponent() {
+  return (
+    <>
+      <AngleDown className={plain.svg} />
+      <img src={angleDownUrl} />
+    </>
+  );
+}
+```
 
 ### Working with Linaria
 

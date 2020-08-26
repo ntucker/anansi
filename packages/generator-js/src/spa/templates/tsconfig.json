@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-<% if (reactMode !== 'legacy') { %>
-  "types": ["react-dom/experimental", "react/experimental"<% if (features.includes('testing')) {%>, "jest"<% } %>],
-<% } %>
+    "types": ["@anansi/webpack-config/types"<% if (reactMode !== 'legacy') { %>, "react-dom/experimental", "react/experimental"<% } %><% if (features.includes('testing')) {%>, "jest"<% } %>],
     "noEmit": true
   }
 }
