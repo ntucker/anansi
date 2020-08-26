@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.12](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.11...@anansi/eslint-plugin@0.9.12) (2020-08-26)
+
+
+### 📝 Documentation
+
+* Add badges to readmes ([e377889](https://github.com/ntucker/anansi/commit/e3778896d0e3f24a7ba4f35592b1de2e51273c85))
+
+
+
 ### [0.9.11](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.10...@anansi/eslint-plugin@0.9.11) (2020-08-25)
 
 

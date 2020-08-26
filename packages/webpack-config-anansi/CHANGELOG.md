@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.1.0...@anansi/webpack-config@4.1.1) (2020-08-26)
+
+
+### 💅 Enhancement
+
+* Streamline TypeScript webpack integration ([5ecb8c4](https://github.com/ntucker/anansi/commit/5ecb8c43c6a5b598f5e07bafb1b1c2f6f272d0bf))
+
+
+### 📝 Documentation
+
+* Add badges to readmes ([e377889](https://github.com/ntucker/anansi/commit/e3778896d0e3f24a7ba4f35592b1de2e51273c85))
+
+
+
 ## [4.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.0.1...@anansi/webpack-config@4.1.0) (2020-08-26)
 
 

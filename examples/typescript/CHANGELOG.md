@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.0...anansi-example-typescript@4.1.1) (2020-08-26)
+
+
+### 💅 Enhancement
+
+* Streamline TypeScript webpack integration ([5ecb8c4](https://github.com/ntucker/anansi/commit/5ecb8c43c6a5b598f5e07bafb1b1c2f6f272d0bf))
+
+
+
 ## [4.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.0.1...anansi-example-typescript@4.1.0) (2020-08-26)
 
 
