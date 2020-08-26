@@ -180,7 +180,7 @@ export default function makeBaseConfig({
     },
     // include the loaders installed by this library
     resolveLoader: {
-      modules: ['node_modules', LIBRARY_MODULES_PATH],
+      modules: [LIBRARY_MODULES_PATH, 'node_modules'],
       extensions: ['.js', '.ts', '.tsx', '.json'],
       mainFields: ['loader', 'main'],
     },
