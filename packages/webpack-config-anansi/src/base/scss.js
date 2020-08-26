@@ -4,7 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
 import { always } from 'ramda';
 
-const getCSSLoaders = ({ sassResources, mode }) => {
+const getCSSLoaders = ({ mode }) => {
   const loaders = [
     {
       loader: MiniCssExtractPlugin.loader,
@@ -23,6 +23,12 @@ const getCSSLoaders = ({ sassResources, mode }) => {
         plugins: [autoprefixer(), cssPresetEnv()],
       },
     },
+  ];
+  return loaders;
+};
+
+const getSASSLoaders = ({ sassResources }) => {
+  const loaders = [
     {
       loader: 'sass-loader',
       options: { sassOptions: { outputStyle: 'expanded' } },
@@ -49,58 +55,66 @@ export default function getStyleRules({
   mode,
 }) {
   const absoluteBasePath = path.join(rootPath, basePath);
-  const cssLoaders = getCSSLoaders({ sassResources, mode });
+  const cssLoaders = getCSSLoaders({ mode });
+  const cssModuleLoaders = cssLoaders.map(loader => {
+    if (loader.loader === 'css-loader') {
+      return {
+        ...loader,
+        options: {
+          ...loader.options,
+          modules: {
+            mode: 'local',
+            exportLocalsConvention: 'camelCase',
+            ...cssModulesOptions,
+          },
+        },
+      };
+    }
+    return loader;
+  });
+  const sassLoaders = getSASSLoaders({ sassResources });
   return [
     // css modules (local styles)
     {
-      test: /\.s?css$/,
+      test: /\.scss$/i,
       include: [absoluteBasePath, libraryInclude],
       exclude: [/style\//g, libraryExclude],
-      use: cssLoaders.map(loader => {
-        if (loader.loader === 'css-loader') {
-          return {
-            ...loader,
-            options: {
-              ...loader.options,
-              modules: {
-                mode: 'local',
-                exportLocalsConvention: 'camelCase',
-                ...cssModulesOptions,
-              },
-            },
-          };
-        }
-        return loader;
-      }),
+      use: [...cssModuleLoaders, ...sassLoaders],
+    },
+    // plain css as css-modules
+    {
+      test: /\.css$/i,
+      include: [absoluteBasePath, libraryInclude],
+      exclude: [/style\//g, libraryExclude],
+      use: cssModuleLoaders,
     },
     // global styles
     {
-      test: /\.s?css$/,
+      test: /\.scss$/i,
       include: [absoluteBasePath],
       exclude: /^((?!(style\/|node_modules\/)).)*$/,
-      use: cssLoaders,
+      use: [...cssLoaders, ...sassLoaders],
     },
-    // css-in-js like linaria
+    // css-in-js like linaria do not use css-modules
     {
-      test: /\.css$/,
+      test: /\.css$/i,
       include: [rootPath],
-      exclude: [/node_modules/],
-      use: cssLoaders.slice(0, -1),
+      exclude: [/node_modules/, absoluteBasePath, libraryInclude],
+      use: cssLoaders,
     },
     // package css
     {
-      test: /\.css$/,
+      test: /\.css$/i,
       include: [/node_modules/],
-      use: cssLoaders.slice(0, -2).map(loader => {
+      use: cssModuleLoaders.slice(0, -1).map(loader => {
         if (loader.loader === 'css-loader') {
           return {
             ...loader,
             options: {
               ...loader.options,
               modules: {
+                ...loader.options.modules,
                 auto: true,
-                mode: 'local',
-                exportLocalsConvention: 'camelCase',
                 ...cssModulesOptions,
               },
             },

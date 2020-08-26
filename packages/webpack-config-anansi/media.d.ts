@@ -9,6 +9,11 @@ declare module '*.scss' {
   let modules: CSSMODULE;
   export = modules;
 }
+declare module '*.css' {
+  type CSSMODULE = { [k: string]: string };
+  let modules: CSSMODULE;
+  export = modules;
+}
 
 declare module '*.png' {
   let url: string;

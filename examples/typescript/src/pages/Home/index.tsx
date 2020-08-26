@@ -1,4 +1,5 @@
 import style from './index.scss';
+import plain from './plain.css';
 import Worker from './my.worker';
 import animated from './animated-overlay.gif';
 import AngleDownUrl, {
@@ -17,7 +18,7 @@ export default function Home() {
         <AngleDown style={{ width: '1em' }} />
         World <a href="https://true.io">True IO</a>
       </p>
-      <p>
+      <p className={plain.mountainTop}>
         Ok again <img src={animated} />
       </p>
       <p>
