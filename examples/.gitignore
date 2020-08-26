@@ -2,3 +2,4 @@ webpack-stats.json
 generated_assets
 server_assets
 dist
+storybook-static

@@ -202,7 +202,7 @@ This is useful to specify global variables and mixins to be included in every sa
 - Web workers
 - All font formats
 - Any media files
-  - svg|png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf as file urls anywhere
+  - svg|png|jpg|gif|ico|webp|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
   - svgs imported in javascript/typescript can be used as either components or file urls
 - Raw string data: (md|txt) as a string (using `raw-loader`)
 

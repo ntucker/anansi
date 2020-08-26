@@ -141,10 +141,24 @@ export default function makeBaseConfig({
           ],
         },
         {
-          test: /\.(png|jpg|gif|ico|pdf|webm|webp|mp4|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+          test: /\.(png|jpg|gif|ico|webp|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
           use: [
             {
               loader: 'file-loader',
+              options: {
+                name:
+                  mode === 'production'
+                    ? '[name].[hash].[ext]'
+                    : '[path][name].[ext]',
+              },
+            },
+          ],
+        },
+        {
+          test: /\.(pdf|mp4|webm|wav|mp3|m4a|aac|oga)(\?v=\d+\.\d+\.\d+)?$/,
+          use: [
+            {
+              loader: 'url-loader',
               options: {
                 name:
                   mode === 'production'

@@ -1,1 +1,1 @@
-import '@anansi/webpack-config/media'
+import '@anansi/webpack-config/media';

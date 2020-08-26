@@ -75,3 +75,23 @@ declare module '*.txt' {
   let content: string;
   export default content;
 }
+declare module '*.wav' {
+  let url: string;
+  export default url;
+}
+declare module '*.mp3' {
+  let url: string;
+  export default url;
+}
+declare module '*.m4a' {
+  let url: string;
+  export default url;
+}
+declare module '*.aac' {
+  let url: string;
+  export default url;
+}
+declare module '*.oga' {
+  let url: string;
+  export default url;
+}
