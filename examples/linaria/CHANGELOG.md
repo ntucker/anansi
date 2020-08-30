@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.5](https://github.com/ntucker/anansi/compare/anansi-example-linaria@1.0.4...anansi-example-linaria@1.0.5) (2020-08-30)
+
+
+### 💅 Enhancement
+
+* Increase compatability with webpack 5 ([644a5d2](https://github.com/ntucker/anansi/commit/644a5d2f27eae9947507daffcaacbc7ed7fd771d))
+
+
+
 ### [1.0.4](https://github.com/ntucker/anansi/compare/anansi-example-linaria@1.0.3...anansi-example-linaria@1.0.4) (2020-08-26)
 
 **Note:** Version bump only for package anansi-example-linaria

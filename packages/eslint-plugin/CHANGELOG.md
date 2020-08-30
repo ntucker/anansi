@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.13](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.12...@anansi/eslint-plugin@0.9.13) (2020-08-30)
+
+
+### 💅 Enhancement
+
+* Increase compatability with webpack 5 ([644a5d2](https://github.com/ntucker/anansi/commit/644a5d2f27eae9947507daffcaacbc7ed7fd771d))
+
+
+
 ### [0.9.12](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.11...@anansi/eslint-plugin@0.9.12) (2020-08-26)
 
 

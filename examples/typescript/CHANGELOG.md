@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.1...anansi-example-typescript@4.1.2) (2020-08-30)
+
+
+### 💅 Enhancement
+
+* Increase compatability with webpack 5 ([644a5d2](https://github.com/ntucker/anansi/commit/644a5d2f27eae9947507daffcaacbc7ed7fd771d))
+
+
+### 🐛 Bug Fix
+
+* Storybook 6 compatibility ([f236cf6](https://github.com/ntucker/anansi/commit/f236cf62cba030abf26fb267cc44f5587b5edd85))
+
+
+
 ### [4.1.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.0...anansi-example-typescript@4.1.1) (2020-08-26)
 
 

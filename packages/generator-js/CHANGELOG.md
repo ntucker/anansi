@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.41](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.40...@anansi/generator-js@1.0.41) (2020-08-30)
+
+
+### 🐛 Bug Fix
+
+* Storybook 6 compatibility ([f236cf6](https://github.com/ntucker/anansi/commit/f236cf62cba030abf26fb267cc44f5587b5edd85))
+
+
+
 ### [1.0.40](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.39...@anansi/generator-js@1.0.40) (2020-08-26)
 
 
