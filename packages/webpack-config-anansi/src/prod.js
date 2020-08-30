@@ -30,7 +30,7 @@ export default function makeProdConfig(
   config.bail = true; // this helps automatic build tools not waste time
   if (argv.target !== 'node') {
     config.plugins.push(
-      new webpack.IgnorePlugin(/DevTools/),
+      new webpack.IgnorePlugin({ resourceRegExp: /DevTools/ }),
       new CleanWebpackPlugin(),
       new webpack.HashedModuleIdsPlugin(),
       new webpack.LoaderOptionsPlugin({
@@ -72,8 +72,8 @@ export default function makeProdConfig(
   config.optimization = {
     splitChunks: {
       chunks: 'all',
-      maxInitialRequests: 25,
-      maxAsyncRequests: 50,
+      maxInitialRequests: 30,
+      maxAsyncRequests: 30,
       cacheGroups: {
         react: {
           test: /[\\/]node_modules[\\/](react|react-dom|scheduler|object-assign|loose-envify)[\\/]/,

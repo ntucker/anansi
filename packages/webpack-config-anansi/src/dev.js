@@ -48,7 +48,7 @@ export default function makeDevConfig(
       new HtmlWebpackPlugin(htmlOptions),
     );
   }
-  if (hardCacheOptions) {
+  if (webpack.version.startsWith('4') && hardCacheOptions) {
     config.plugins.unshift(
       new HardSourceWebpackPlugin(hardCacheOptions),
       new HardSourceWebpackPlugin.ExcludeModulePlugin([

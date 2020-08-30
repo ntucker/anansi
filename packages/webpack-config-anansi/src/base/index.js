@@ -46,6 +46,12 @@ export default function makeBaseConfig({
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     target: 'web',
+    cache: {
+      type: 'filesystem',
+      buildDependencies: {
+        config: [__filename], // you may omit this when your CLI automatically adds it
+      },
+    },
     plugins: [
       new StatsPlugin(manifestFilename, {
         chunkModules: false,

@@ -36,10 +36,7 @@
     "eslint": "^7.4.0",
     "react-refresh": "0.8.3",
     "serve": "^11.3.2",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.11",

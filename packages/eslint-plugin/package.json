@@ -47,9 +47,6 @@
     "eslint-plugin-react-hooks": "^4.1.0",
     "prettier": "^2.1.0"
   },
-  "devDependencies": {
-    "webpack": "^4.44.1"
-  },
   "peerDependencies": {
     "babel-plugin-root-import": "^5.1.0 || ^6.1.0",
     "eslint": "^7.0.0",
