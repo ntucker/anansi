@@ -30,6 +30,9 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       } catch (e) {}
     }
 
+    // this transforms storybook node_modules files...not sure why this isn't done at publish time
+    const libraryRule = storybookConfig.module.rules[1];
+
     return {
       ...envConfig,
       resolveLoader: {
@@ -59,6 +62,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
               l => l !== 'thread-loader',
             ),
           },
+          libraryRule,
           ...storybookConfig.module.rules.slice(2, 7),
           ...envConfig.module.rules.slice(2),
         ],
