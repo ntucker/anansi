@@ -32,7 +32,6 @@ export default function makeProdConfig(
     config.plugins.push(
       new webpack.IgnorePlugin({ resourceRegExp: /DevTools/ }),
       new CleanWebpackPlugin(),
-      new webpack.HashedModuleIdsPlugin(),
       new webpack.LoaderOptionsPlugin({
         minimize: true,
         debug: false,
@@ -70,6 +69,7 @@ export default function makeProdConfig(
     ],
   });
   config.optimization = {
+    moduleIds: webpack.version.startsWith('4') ? 'hashed' : 'deterministic',
     splitChunks: {
       chunks: 'all',
       maxInitialRequests: 30,

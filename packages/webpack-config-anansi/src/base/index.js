@@ -101,7 +101,7 @@ export default function makeBaseConfig({
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
           issuer: {
-            test: /\.(j|t)sx?$/,
+            and: [/\.(j|t)sx?$/],
           },
           use: [
             {
@@ -132,7 +132,7 @@ export default function makeBaseConfig({
         {
           test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
           issuer: {
-            exclude: /\.(j|t)sx?$/,
+            not: [/\.(j|t)sx?$/],
           },
           use: [
             {
@@ -190,7 +190,7 @@ export default function makeBaseConfig({
       extensions: ['.js', '.ts', '.tsx', '.json'],
       mainFields: ['loader', 'main'],
     },
-    devtool: '#source-map',
+    devtool: 'source-map',
     stats: {
       children: false,
       chunks: false,

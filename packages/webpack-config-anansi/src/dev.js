@@ -34,19 +34,25 @@ export default function makeDevConfig(
     splitChunks: false,
   };
 
+  const watchIgnorePaths = [/s?css\.d\.ts$/];
   config.plugins = [
     new webpack.HotModuleReplacementPlugin(),
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.WatchIgnorePlugin([/s?css\.d\.ts$/]),
+    new webpack.WatchIgnorePlugin(
+      webpack.version.startsWith('4')
+        ? watchIgnorePaths
+        : { paths: watchIgnorePaths },
+    ),
     ...config.plugins,
   ];
   // not for server builds
   if (argv?.target !== 'node') {
-    config.plugins.unshift(
-      new ErrorOverlayPlugin(),
-      new HtmlWebpackPlugin(htmlOptions),
-    );
+    // error overlay is broken in webpack 5
+    if (webpack.version.startsWith('4')) {
+      config.plugins.unshift(new ErrorOverlayPlugin());
+    }
+    config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
   if (webpack.version.startsWith('4') && hardCacheOptions) {
     config.plugins.unshift(
@@ -82,7 +88,7 @@ export default function makeDevConfig(
     },
     // TODO: add proxy options
   };
-  config.devtool = '#cheap-module-source-map';
+  config.devtool = 'cheap-module-source-map';
   config.output.publicPath = `/assets/${buildDir}`;
   // if we know the port, force it in case this is encapsulated in another host
   if (argv.port) {
