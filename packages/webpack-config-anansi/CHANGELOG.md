@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.1.2...@anansi/webpack-config@4.2.0) (2020-08-31)
+
+
+### 🚀 Features
+
+* Fully support webpack 5 ([a095546](https://github.com/ntucker/anansi/commit/a0955460f27182e68cb3150abce2531cd649ea65))
+
+
+
 ### [4.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.1.1...@anansi/webpack-config@4.1.2) (2020-08-30)
 
 
