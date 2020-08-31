@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.0...@anansi/webpack-config@4.2.1) (2020-08-31)
+
+
+### 💅 Enhancement
+
+* Warn about using unsupported storybook version ([7382a32](https://github.com/ntucker/anansi/commit/7382a32866cb1329d37740cff305efa2fe2209f5))
+
+
+### 📦 Package
+
+* file-loader, html-webpack-plugin minor ([a7d4aed](https://github.com/ntucker/anansi/commit/a7d4aed2a415df1dbbe40e72dfcee036a0495c1c))
+
+
+### 📝 Documentation
+
+* Notice about versions supported ([e270145](https://github.com/ntucker/anansi/commit/e270145d1eb4340c7c68ea3478c596ebfa7d15fa))
+
+
+
 ## [4.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.1.2...@anansi/webpack-config@4.2.0) (2020-08-31)
 
 
