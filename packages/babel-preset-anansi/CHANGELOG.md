@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.8...@anansi/babel-preset@1.2.9) (2020-09-01)
+
+
+### 📦 Package
+
+* transform-runtime, preset-env patch ([16f7eb5](https://github.com/ntucker/anansi/commit/16f7eb5b564f5950e9ab7713feabaa0e59ed91e1))
+
+
+
 ### [1.2.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.7...@anansi/babel-preset@1.2.8) (2020-08-25)
 
 

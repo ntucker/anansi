@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.44](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.43...@anansi/generator-js@1.0.44) (2020-09-01)
+
+
+### 🐛 Bug Fix
+
+* Copy babelrc for storybook ([7cddf02](https://github.com/ntucker/anansi/commit/7cddf02d234825ffef8172002717e3c1f5fdbb8a))
+
+
+
 ### [1.0.43](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.42...@anansi/generator-js@1.0.43) (2020-08-31)
 
 **Note:** Version bump only for package @anansi/generator-js
