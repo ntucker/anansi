@@ -1,9 +1,30 @@
 import React from 'react';
+<% if (style === 'linaria') { %>
+import { css } from 'linaria';
+<% } %>
 
 import BTCPrice from './BtcPrice';
 
+<% if (style === 'linaria') { %>
+const margin = '8px';
+
+const home = css`
+  min-height: 100vh;
+  margin: -${margin};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+`;
+<% } %>
+
 export default function Home() {
   return (
+    <% if (style === 'linaria') { %>
+    <div className={home}>
+    <% } else { %>
     <div
       style={{
         minHeight: '100vh',
@@ -16,6 +37,7 @@ export default function Home() {
         textAlign: 'center',
       }}
     >
+    <% } %>
       <nav style={{ position: 'fixed', top: '18px' }}>Anansi</nav>
       <main>
         <p style={{ fontSize: '30px' }}>
