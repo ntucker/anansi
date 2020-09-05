@@ -35,7 +35,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     ];
 
     this.props = await this.prompt(prompts);
-    this.config.set('reactMode', this.props.reactMode);
+    this.config.set('reactMode', this?.props?.reactMode);
   }
 
   initializing() {

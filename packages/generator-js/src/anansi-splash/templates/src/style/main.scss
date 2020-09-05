@@ -9,6 +9,6 @@
 body {
   font-family: 'Graphik', 'Avenir Next', 'Helvetica Nueue', Helvetica,
     sans-serif;
-  background-color: $bg-color;
+  background-color: <% if (style === 'sass') { %>$bg-color<% } else { %>#4516f0<% } %>;
   color: white;
 }

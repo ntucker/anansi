@@ -4,7 +4,18 @@ const options = {
   basePath: '<%= rootPath %>',
   buildDir: '<%= assetPath %>/',
   htmlOptions: { title: '<%= appName %>' },
+  <% if (style === 'sass') { %>
   sassResources: [`${__dirname}/src/style/export.scss`],
+  <% } else if (style === 'linaria') { %>
+  extraJsLoaders: [
+    {
+      loader: 'linaria/loader',
+      options: {
+        sourceMap: true,
+      },
+    }
+  ]
+  <% } %>
 };
 
 const generateConfig = makeConfig(options);
