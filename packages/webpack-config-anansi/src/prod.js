@@ -6,7 +6,6 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
-import cssnano from 'cssnano';
 import isWsl from 'is-wsl';
 
 import { getStyleRules } from './base';
@@ -133,6 +132,7 @@ export default function makeProdConfig(
         parallel: !isWsl,
         cache: true,
       }),
+      // cssnano on node_modules as well as our loaders
       new OptimizeCSSAssetsPlugin({}),
     ];
   } else {
@@ -152,25 +152,7 @@ export default function makeProdConfig(
     libraryExclude,
     sassResources,
     cssModulesOptions,
-  }).map((rule, i) =>
-    rule.enforce === 'pre' || i !== 0
-      ? rule
-      : {
-          ...rule,
-          use: rule.use.map(use =>
-            // this map just adds cssnano to postcss plugins
-            use.loader === 'postcss-loader'
-              ? {
-                  ...use,
-                  options: {
-                    ...use.options,
-                    plugins: [...use.options.plugins, cssnano()],
-                  },
-                }
-              : use,
-          ),
-        },
-  );
+  });
   config.module.rules = [...config.module.rules, ...styleRules];
 
   if (argv?.profile) {
