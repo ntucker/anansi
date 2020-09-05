@@ -1,7 +1,7 @@
 import { BetterGenerator } from '../utils';
 
 class TestingGenerator extends BetterGenerator {
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
     this.config.set('testing', true);
   }
@@ -55,6 +55,11 @@ class TestingGenerator extends BetterGenerator {
       ['jest', '@types/jest', 'babel-jest', 'ts-jest', 'core-js', 'cross-env'],
       { dev: true },
     );
+    if (this.config.get('reactMode') === 'legacy') {
+      this.yarnInstall(['react-test-renderer'], { dev: true });
+    } else {
+      this.yarnInstall(['react-test-renderer@experimental'], { dev: true });
+    }
   }
 }
 export = TestingGenerator;

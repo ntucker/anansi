@@ -1,7 +1,7 @@
 module.exports = {
   stories: ['../<%= rootPath %>/**/*.stories.@(tsx)'],
   addons: [
-    '@storybook/addon-docs'
+    '@storybook/addon-essentials'
   ],
   typescript: {
     reactDocgen: 'react-docgen-typescript',

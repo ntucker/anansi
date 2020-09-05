@@ -47,9 +47,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   installConfig() {
     this.yarnInstall(
       [
-        '@storybook/addon-actions',
+        '@storybook/addon-essentials',
         '@storybook/addon-links',
-        '@storybook/addon-docs',
         '@storybook/addons',
         '@storybook/react',
       ],

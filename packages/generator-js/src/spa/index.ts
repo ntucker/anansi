@@ -90,5 +90,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   installRestHooks() {
     this.yarnInstall(['rest-hooks@beta', '@rest-hooks/rest']);
+    this.yarnInstall(['@rest-hooks/test@beta', 'redux'], { dev: true });
   }
 };
