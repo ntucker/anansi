@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.1.0...@anansi/generator-js@1.1.1) (2020-09-05)
+
+
+### 💅 Enhancement
+
+* Add rest-hook backed story ([ae72f5a](https://github.com/ntucker/anansi/commit/ae72f5acc819db75e32deca5f82a8f1ef8a8b4e4))
+* Use linaria in Home if option is chosen ([02100a0](https://github.com/ntucker/anansi/commit/02100a0a7fe539e3a2491526e4bc528f984569f0))
+
+
+
 ## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.44...@anansi/generator-js@1.1.0) (2020-09-05)
 
 

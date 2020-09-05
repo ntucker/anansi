@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.3...@anansi/webpack-config@4.2.4) (2020-09-05)
+
+
+### 🐛 Bug Fix
+
+* Storybook webpack reoslution ([4b00ff1](https://github.com/ntucker/anansi/commit/4b00ff107266472fa95db63d99950fba7608fd18))
+
+
+
 ### [4.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.2...@anansi/webpack-config@4.2.3) (2020-09-05)
 
 
