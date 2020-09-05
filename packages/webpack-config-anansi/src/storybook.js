@@ -23,6 +23,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         ].includes(plugin.constructor.name),
     );
     if (env === 'dev') {
+      // storybook only works with old hot reloader currently
       try {
         require('@hot-loader/react-dom');
         envConfig.resolve.alias['react-dom'] = '@hot-loader/react-dom';
@@ -44,9 +45,9 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       },
       resolve: {
         ...storybookConfig.resolve,
-        modules: envConfig.modules,
-        extensions: envConfig.extensions,
-        alias: { ...envConfig.alias, ...storybookConfig.alias },
+        modules: envConfig.resolve.modules,
+        extensions: envConfig.resolve.extensions,
+        alias: { ...envConfig.resolve.alias, ...storybookConfig.resolve.alias },
       },
       entry: storybookConfig.entry,
       output: storybookConfig.output,
