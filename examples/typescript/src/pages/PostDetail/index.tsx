@@ -8,9 +8,9 @@ import { PostResource, UserResource } from 'data/resources';
 
 import CommentList from './CommentList';
 
-export default function PostDetail({
-  match,
-}: RouteChildrenProps<{ id: string }>) {
+export type Props = Pick<RouteChildrenProps<{ id: string }>, 'match'>;
+
+export default function PostDetail({ match }: Props) {
   let id = 1;
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
