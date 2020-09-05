@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.2...@anansi/webpack-config@4.2.3) (2020-09-05)
+
+
+### 💅 Enhancement
+
+* Remove redundant postcss optimize, since we're using OptimizeCSSAssetsPlugin ([54e8540](https://github.com/ntucker/anansi/commit/54e85403b252ede003b08c33ef39e2a8744b9444))
+
+
+### 📦 Package
+
+* react-refresh, optimize-css, autoprefixer patch ([c993d67](https://github.com/ntucker/anansi/commit/c993d6715f02d74e6acd77cebb5fcfa6520160c4))
+
+
+
 ### [4.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.1...@anansi/webpack-config@4.2.2) (2020-09-01)
 
 **Note:** Version bump only for package @anansi/webpack-config

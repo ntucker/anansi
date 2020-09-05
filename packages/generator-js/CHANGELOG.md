@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.44...@anansi/generator-js@1.1.0) (2020-09-05)
+
+
+### 🚀 Features
+
+* Add choice between scss and linaria ([c49077d](https://github.com/ntucker/anansi/commit/c49077d9ba083b024f1baa1ef94fcfb4708da27d))
+
+
+
 ### [1.0.44](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.0.43...@anansi/generator-js@1.0.44) (2020-09-01)
 
 
