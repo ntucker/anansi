@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.7...anansi-example-typescript@4.2.0) (2020-09-06)
+
+
+### 🚀 Features
+
+* Add Post page story ([ce1c4f1](https://github.com/ntucker/anansi/commit/ce1c4f11a243afec6213fe2301839ad55e906ef1))
+
+
+
 ### [4.1.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.6...anansi-example-typescript@4.1.7) (2020-09-05)
 
 **Note:** Version bump only for package anansi-example-typescript

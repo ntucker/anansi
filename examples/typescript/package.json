@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "4.1.7",
+  "version": "4.2.0",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=development",
