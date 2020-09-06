@@ -3,7 +3,7 @@ import React from 'react';
 import { css } from 'linaria';
 <% } %>
 
-import BTCPrice from './BtcPrice';
+import AssetPrice from './AssetPrice';
 
 <% if (style === 'linaria') { %>
 const margin = '8px';
@@ -48,7 +48,7 @@ export default function Home() {
           library
         </p>
         <p style={{ marginTop: '20px', fontSize: '24px' }}>
-          <BTCPrice />
+          <AssetPrice symbol="BTC" />
         </p>
       </main>
     </div>

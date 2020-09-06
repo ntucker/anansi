@@ -67,6 +67,11 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
         this.templatePath('.babelrc.js'),
         this.destinationPath('.babelrc.js'),
       );
+      this.fs.appendTpl(
+        this.templatePath('.gitignore.tpl'),
+        this.destinationPath('.gitignore'),
+        this.config.getAll(),
+      );
     }
   }
 

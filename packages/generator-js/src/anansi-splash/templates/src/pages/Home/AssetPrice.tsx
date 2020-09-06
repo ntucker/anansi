@@ -1,9 +1,12 @@
 import React from 'react';
 import { useResource, useSubscription } from 'rest-hooks';
-
 import ExchangeRatesResource from 'resources/ExchangeRatesResource';
 
-export default function BTCPrice() {
+export interface Props {
+  symbol: string;
+}
+
+export default function AssetPrice({ symbol }: Props) {
   // Learn more about Rest Hooks: https://resthooks.io/docs/getting-started/usage
   const { data: price } = useResource(ExchangeRatesResource.list(), {
     currency: 'USD',
@@ -15,6 +18,10 @@ export default function BTCPrice() {
   const displayPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
-  }).format(1 / Number.parseFloat(price.rates.BTC));
-  return <div>BTC {displayPrice}</div>;
+  }).format(1 / Number.parseFloat(price.rates[symbol]));
+  return (
+    <div>
+      {symbol} {displayPrice}
+    </div>
+  );
 }
