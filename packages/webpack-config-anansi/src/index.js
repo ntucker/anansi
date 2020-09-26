@@ -65,6 +65,7 @@ export function makeConfig(options) {
         new BundleAnalyzerPlugin({
           analyzerMode: 'static',
           generateStatsFile: false,
+          defaultSizes: 'gzip',
           ...options.bundleAnalyzerOptions,
         }),
       );
