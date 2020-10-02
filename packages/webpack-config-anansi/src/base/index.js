@@ -147,7 +147,7 @@ export default function makeBaseConfig({
           ],
         },
         {
-          test: /\.(png|jpg|gif|ico|webp|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+          test: /\.(png|jpg|gif|ico|webp|avif|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
           use: [
             {
               loader: 'file-loader',
