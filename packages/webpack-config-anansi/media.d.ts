@@ -23,6 +23,10 @@ declare module '*.jpg' {
   let url: string;
   export default url;
 }
+declare module '*.avif' {
+  let url: string;
+  export default url;
+}
 declare module '*.gif' {
   let url: string;
   export default url;
