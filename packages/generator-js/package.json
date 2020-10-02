@@ -75,7 +75,6 @@
     "gulp-prettier": "^3.0.0",
     "shelobsay": "^1.0.1",
     "webpack": "^4.44.1",
-    "webpack-dev-server": "^3.11.0",
     "yeoman-generator": "^4.11.0"
   },
   "jest": {
