@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.4...@anansi/webpack-config@4.2.5) (2020-10-02)
+
+
+### 💅 Enhancement
+
+* Default to gzip when analyzing ([28bfe20](https://github.com/ntucker/anansi/commit/28bfe206f3af9e165d60932c6e1a858023febfa4))
+* webpack-dev-server no longer peerDep ([16f8ea0](https://github.com/ntucker/anansi/commit/16f8ea06b1b2372db733602f223a3fc22b11eaff))
+
+
+### 📦 Package
+
+* minor: css-loader, html-webpack-plugin, thread-loader; patch: mini-css-extract-plugin, worker-loader ([d95c0c9](https://github.com/ntucker/anansi/commit/d95c0c9fa78e4a179b1e5b6d34b5d9c5a8b0c469))
+
+
+
 ### [4.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.3...@anansi/webpack-config@4.2.4) (2020-09-05)
 
 

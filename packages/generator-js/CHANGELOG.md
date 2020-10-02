@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.1.2...@anansi/generator-js@1.1.3) (2020-10-02)
+
+
+### 💅 Enhancement
+
+* webpack-dev-server no longer peerDep ([16f8ea0](https://github.com/ntucker/anansi/commit/16f8ea06b1b2372db733602f223a3fc22b11eaff))
+
+
+
 ### [1.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.1.1...@anansi/generator-js@1.1.2) (2020-09-06)
 
 

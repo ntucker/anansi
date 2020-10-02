@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.2.0...anansi-example-typescript@4.2.1) (2020-10-02)
+
+
+### 📦 Package
+
+* minor: css-loader, html-webpack-plugin, thread-loader; patch: mini-css-extract-plugin, worker-loader ([d95c0c9](https://github.com/ntucker/anansi/commit/d95c0c9fa78e4a179b1e5b6d34b5d9c5a8b0c469))
+
+
+
 ## [4.2.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.1.7...anansi-example-typescript@4.2.0) (2020-09-06)
 
 
