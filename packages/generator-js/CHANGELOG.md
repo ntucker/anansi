@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.1.3...@anansi/generator-js@1.1.4) (2020-10-07)
+
+
+### 🐛 Bug Fix
+
+* Install webpack-dev-server ([45bbe76](https://github.com/ntucker/anansi/commit/45bbe76c28375eb03dedf1d1326c3a95e1b64eeb))
+
+
+
 ### [1.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@1.1.2...@anansi/generator-js@1.1.3) (2020-10-02)
 
 
