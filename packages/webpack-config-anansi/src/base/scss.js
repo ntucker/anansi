@@ -20,7 +20,9 @@ const getCSSLoaders = ({ mode }) => {
     {
       loader: 'postcss-loader',
       options: {
-        plugins: [autoprefixer(), cssPresetEnv()],
+        postcssOptions: {
+          plugins: [autoprefixer(), cssPresetEnv()],
+        },
       },
     },
   ];
