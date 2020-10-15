@@ -177,6 +177,7 @@ are included:
 
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
 - [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
+- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
 
 ### Other
 

@@ -185,6 +185,8 @@ function buildPreset(api, options = {}) {
   }
   const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
+    // must come before all other class plugins
+    require('@babel/plugin-proposal-class-static-block').default,
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // stage 3 but must come before flow
