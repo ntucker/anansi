@@ -30,7 +30,7 @@ module.exports = makeConfig(options);
 ```json
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development",
+    "start:dev": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
     "analyze": "webpack --mode=production --env analyze",

@@ -1,3 +1,5 @@
+import path from 'path';
+
 import style from './index.scss';
 import plain from './plain.css';
 import Worker from './my.worker.ts';
@@ -19,7 +21,7 @@ export default function Home() {
         World <a href="https://true.io">True IO</a>
       </p>
       <p className={plain.mountainTop}>
-        Ok again <img src={animated} />
+        Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}
       </p>
       <p>
         <img src={restHooks} />
