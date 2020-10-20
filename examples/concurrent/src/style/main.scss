@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+@import '~fonts.scss';
+@import '~type.scss';
+@import '~nav.scss';
+@import '~layout.scss';
+
+body {
+  background: $body-color;
+  color: $text-color;
+}
