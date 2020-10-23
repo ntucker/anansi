@@ -18,6 +18,7 @@ export default function makeDevConfig(
     hardCacheOptions,
     htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
+    env = {},
     sassResources,
     cssModulesOptions,
   },

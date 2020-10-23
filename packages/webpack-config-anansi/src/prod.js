@@ -18,6 +18,7 @@ export default function makeProdConfig(
     libraryInclude,
     libraryExclude,
     argv = {},
+    env = {},
     htmlOptions = { title: '', scriptLoading: 'defer' },
     sassResources,
     cssModulesOptions,
@@ -97,7 +98,7 @@ export default function makeProdConfig(
       name: 'webpack-runtime',
     },
   };
-  if (!argv.readable) {
+  if (!env.readable) {
     config.optimization.minimizer = [
       new TerserPlugin({
         terserOptions: {
@@ -122,8 +123,8 @@ export default function makeProdConfig(
             comments: false,
             ascii_only: true,
           },
-          keep_classnames: !!argv?.profile,
-          keep_fnames: !!argv?.profile,
+          keep_classnames: !!env?.profile,
+          keep_fnames: !!env?.profile,
         },
         sourceMap: true,
         extractComments: true,
@@ -155,7 +156,7 @@ export default function makeProdConfig(
   });
   config.module.rules = [...config.module.rules, ...styleRules];
 
-  if (argv?.profile) {
+  if (env?.profile) {
     config.resolve.alias = {
       ...config.resolve.alias,
       'react-dom$': 'react-dom/profiling',
