@@ -30,10 +30,12 @@ module.exports = makeConfig(options);
 ```json
 {
   "scripts": {
-    "start:dev": "webpack-dev-server --mode=development",
+    "start": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
-    "analyze": "webpack --mode=production --analyze",
-    "pkgcheck": "webpack --check=nobuild"
+    "build:server": "webpack --mode=production --target=node",
+    "analyze": "webpack --mode=production --env.analyze",
+    "profile": "webpack --mode=production --env.profile",
+    "pkgcheck": "webpack --env.check=nobuild",
   }
 }
 ```
@@ -65,22 +67,33 @@ yarn add --dev react-refresh
 
 If set, will build a static [treemap visualization of your packages](https://www.npmjs.com/package/webpack-bundle-analyzer). Highly recommended to run in production mode to get accurate results.
 
+`webpack --mode=production --env.analyze`
+
 ### check
 
 If set will run package checks to check for duplicates or ciruclar dependencies. Set equal to 'nobuild' for a standalone run where build output is not needed.
 
 Examples:
-`webpack --mode=production --check` or `webpack --check=nobuild`
+`webpack --mode=production --env.check` or `webpack --env.check=nobuild`
 
 ### profile
 
 If set, will enable [React DevTools Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This feature is only available in production mode since it is enabled in development by default.
 
+`webpack --mode=production --env.profile`
+
 ### readable
 
 Skips minification. This is useful when trying to debug production code.
 
-`webpack --mode=production --readable`
+`webpack --mode=production --env.readable`
+
+### target
+
+To target node instead of default of web. This is useful when building a node
+server for SSR alongside the client bundle.
+
+`webpack --mode=production --target=node`
 
 ## ENV customization
 

@@ -13,7 +13,7 @@ export makeStorybookConfigGenerator from './storybook';
 
 export function makeConfig(options) {
   return (env, argv) => {
-    process.env.NODE_ENV = argv?.mode;
+    if (argv?.mode) process.env.NODE_ENV = argv?.mode;
     // eslint-disable-next-line no-param-reassign
     options = {
       rootPath: ROOT_PATH,
@@ -29,6 +29,7 @@ export function makeConfig(options) {
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
       argv,
+      env,
     };
     // option validation done here
     if ('htmlOptions' in options && options.htmlOptions === undefined) {
@@ -39,7 +40,7 @@ export function makeConfig(options) {
     const baseConfig = makeBaseConfig(options);
 
     let config;
-    if (argv?.check === 'nobuild') {
+    if (env?.check === 'nobuild') {
       config = makeNobuildConfig(baseConfig, options);
     } else {
       switch (options.mode) {
@@ -57,10 +58,10 @@ export function makeConfig(options) {
     if (argv?.target === 'node') {
       config = makeNodeConfig(config, options);
     }
-    if (argv?.check) {
-      config = makeCheckConfig(config, options, argv?.check);
+    if (env?.check) {
+      config = makeCheckConfig(config, options, env?.check);
     }
-    if (argv?.analyze || process.env.WEBPACK_ANALYZE === 'true') {
+    if (env?.analyze || process.env.WEBPACK_ANALYZE === 'true') {
       config.plugins.push(
         new BundleAnalyzerPlugin({
           analyzerMode: 'static',

@@ -79,8 +79,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     this.installPeers('@anansi/webpack-config', [], { dev: true });
     const devDeps = [
       '@anansi/webpack-config',
-      'webpack-cli',
-      'webpack-dev-server',
+      'webpack-cli@3',
+      'webpack-dev-server@3',
     ];
     if (this?.props?.style === 'linaria') {
       devDeps.push('linaria');

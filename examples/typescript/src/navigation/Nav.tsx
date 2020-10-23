@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
+import { memo } from 'react';
 
-export default function Nav() {
+function Nav() {
   return (
     <Menu
       theme="dark"
@@ -24,3 +25,4 @@ export default function Nav() {
     </Menu>
   );
 }
+export default memo(Nav);
