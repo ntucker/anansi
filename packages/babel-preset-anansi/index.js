@@ -20,13 +20,18 @@ function buildPreset(api, options = {}) {
   const nodeTarget = api.caller(caller => caller && caller.target === 'node')
     ? 'current'
     : undefined;
+  const hasJsxRuntime = Boolean(
+    api.caller(
+      caller => (!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime,
+    ),
+  );
   options = {
     minify: false,
     typing: false,
     loose: false,
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
-    reactRequire: true,
+    reactRequire: !hasJsxRuntime,
     useBuiltIns: 'entry',
     corejs: { version: 3, proposals: true },
     hotReloader: false,
@@ -62,7 +67,9 @@ function buildPreset(api, options = {}) {
         require('@babel/preset-react').default,
         {
           development: env !== 'production',
-          useSpread: true,
+          ...(hasJsxRuntime
+            ? { runtime: 'automatic' }
+            : { runtime: 'classic', useSpread: true, pragma: '__jsx' }),
         },
       ],
     ],
@@ -99,19 +106,22 @@ function buildPreset(api, options = {}) {
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
-  if (options.reactRequire) {
+  if (options.reactRequire && !hasJsxRuntime) {
     preset.plugins.unshift(require('babel-plugin-react-require').default);
   }
 
   switch (env) {
     case 'production':
-      preset.plugins.unshift(
-        require('@babel/plugin-transform-react-inline-elements').default,
-      );
-      if (typeof reactConstantElementsOptions === 'object') {
+      if (!hasJsxRuntime) {
+        // new jsx runtime obsoletes this optimization
+        preset.plugins.unshift(
+          require('@babel/plugin-transform-react-inline-elements').default,
+        );
+      }
+      if (typeof options.reactConstantElementsOptions === 'object') {
         preset.plugins.unshift([
           require('@babel/plugin-transform-react-constant-elements').default,
-          reactConstantElementsOptions,
+          options.reactConstantElementsOptions,
         ]);
       }
       // for compile performance, don't include this if they are using typing language instead of proptypes
@@ -123,7 +133,7 @@ function buildPreset(api, options = {}) {
       break;
     case 'development':
       try {
-        if (hotReloader) {
+        if (options.hotReloader) {
           preset.plugins.push(require('react-hot-loader/babel'));
         } else {
           preset.plugins.push(require('react-refresh/babel'));

@@ -93,6 +93,7 @@
     "react-docgen-typescript-loader": "^3.7.2",
     "sass-loader": "^10.0.4",
     "sass-resources-loader": "^2.1.1",
+    "semver": "^7.3.2",
     "stats-webpack-plugin": "^0.7.0",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.1.1",
