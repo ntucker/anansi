@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.5...@anansi/webpack-config@5.0.0) (2020-10-24)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* args from period to space
+(e.g., --env readable)
+
+Also requires webpack-cli v4
+* --analyze, --profile, --check, --readable
+now use --env. prefix: e.g., --env.analyze
+* module resolution now looks in package's node_modules
+before hoisted
+* Potential change to css output based on major postcss upgrade.
+
+### 🚀 Features
+
+* Support class static initialization blocks ([#47](https://github.com/ntucker/anansi/issues/47)) ([8625b5b](https://github.com/ntucker/anansi/commit/8625b5bd5b5745aaecfec09e9b09f723b23739a6))
+
+
+### 💅 Enhancement
+
+* Switch webpack args to use --env. prefix. ([#50](https://github.com/ntucker/anansi/issues/50)) ([11933ef](https://github.com/ntucker/anansi/commit/11933ef4db7322303943c5cf152dff329cfdd935))
+
+
+### 🐛 Bug Fix
+
+* Improve monorepo package resolution ([#49](https://github.com/ntucker/anansi/issues/49)) ([703af34](https://github.com/ntucker/anansi/commit/703af344c9ca33ce5442b4f86335479314b63f75))
+
+
+### 📦 Package
+
+* Major: autoprefixer, postcss-loader ([#45](https://github.com/ntucker/anansi/issues/45)) ([1b3ec85](https://github.com/ntucker/anansi/commit/1b3ec851afadd5822bbd5b1ec62c4ceec33c7038))
+* Major: markdown-loader, mini-css-extract-plugin ([#44](https://github.com/ntucker/anansi/issues/44)) ([963441d](https://github.com/ntucker/anansi/commit/963441d02ecc7c61e0133eb8006af52f0d4a7f05))
+* Require webpack-cli v4 ([#51](https://github.com/ntucker/anansi/issues/51)) ([4cc699f](https://github.com/ntucker/anansi/commit/4cc699ff60e943c69933d5f88368bd2b763a585c))
+* Use webpack 5 by default ([#48](https://github.com/ntucker/anansi/issues/48)) ([f1e6631](https://github.com/ntucker/anansi/commit/f1e6631c47cf14360a224cdd8fbd9825179ff47a))
+
+
+
 ### [4.2.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.4...@anansi/webpack-config@4.2.5) (2020-10-02)
 
 

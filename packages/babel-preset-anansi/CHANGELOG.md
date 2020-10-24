@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.9...@anansi/babel-preset@2.0.0) (2020-10-24)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires @babel/core and @babel/runtime of at least
+7.12
+
+### 🚀 Features
+
+* Support class static initialization blocks ([#47](https://github.com/ntucker/anansi/issues/47)) ([8625b5b](https://github.com/ntucker/anansi/commit/8625b5bd5b5745aaecfec09e9b09f723b23739a6))
+
+
+### 📦 Package
+
+* babel to 7.12 ([#46](https://github.com/ntucker/anansi/issues/46)) ([b4154f8](https://github.com/ntucker/anansi/commit/b4154f8f867c1ed245b5f34bb7c3ff28ae20dbc8))
+
+
+
 ### [1.2.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@1.2.8...@anansi/babel-preset@1.2.9) (2020-09-01)
 
 

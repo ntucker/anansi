@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.2.1...anansi-example-typescript@5.0.0) (2020-10-24)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* args from period to space
+(e.g., --env readable)
+
+Also requires webpack-cli v4
+* --analyze, --profile, --check, --readable
+now use --env. prefix: e.g., --env.analyze
+* Requires @babel/core and @babel/runtime of at least
+7.12
+
+### 💅 Enhancement
+
+* Switch webpack args to use --env. prefix. ([#50](https://github.com/ntucker/anansi/issues/50)) ([11933ef](https://github.com/ntucker/anansi/commit/11933ef4db7322303943c5cf152dff329cfdd935))
+
+
+### 📦 Package
+
+* babel to 7.12 ([#46](https://github.com/ntucker/anansi/issues/46)) ([b4154f8](https://github.com/ntucker/anansi/commit/b4154f8f867c1ed245b5f34bb7c3ff28ae20dbc8))
+* Require webpack-cli v4 ([#51](https://github.com/ntucker/anansi/issues/51)) ([4cc699f](https://github.com/ntucker/anansi/commit/4cc699ff60e943c69933d5f88368bd2b763a585c))
+* Use webpack 5 by default ([#48](https://github.com/ntucker/anansi/issues/48)) ([f1e6631](https://github.com/ntucker/anansi/commit/f1e6631c47cf14360a224cdd8fbd9825179ff47a))
+
+
+### 🏠 Internal
+
+* Tsconfig target same as build ([1908e03](https://github.com/ntucker/anansi/commit/1908e032675cb0347d5f953626e7ab3dcee0aff3))
+
+
+
 ### [4.2.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.2.0...anansi-example-typescript@4.2.1) (2020-10-02)
 
 
