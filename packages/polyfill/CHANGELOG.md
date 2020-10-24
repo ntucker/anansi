@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.14](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.13...@anansi/polyfill@1.0.14) (2020-10-24)
+
+
+### 📦 Package
+
+* Babel patch to 7.12.1 ([14db1ab](https://github.com/ntucker/anansi/commit/14db1abf4f2853c30c8baf9a6aec100780d8d578))
+
+
+
 ### [1.0.13](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.12...@anansi/polyfill@1.0.13) (2020-10-24)
 
 **Note:** Version bump only for package @anansi/polyfill

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.15](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.14...@anansi/eslint-plugin@0.9.15) (2020-10-24)
+
+
+### 💅 Enhancement
+
+* Do not require importing React - use >16.14 ([3d457bf](https://github.com/ntucker/anansi/commit/3d457bfabfd7d67e6b3da36bbd0649997ae4bc06))
+
+
+
 ### [0.9.14](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.13...@anansi/eslint-plugin@0.9.14) (2020-09-01)
 
 

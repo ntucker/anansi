@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.0.0...@anansi/webpack-config@5.1.0) (2020-10-24)
+
+
+### 🚀 Features
+
+* Support new jsx transform for react 17 ([#53](https://github.com/ntucker/anansi/issues/53)) ([44c4a6a](https://github.com/ntucker/anansi/commit/44c4a6a7a60aa58d28ffd889b09841da9adfdb7a))
+
+
+### 📦 Package
+
+* Babel patch to 7.12.1 ([14db1ab](https://github.com/ntucker/anansi/commit/14db1abf4f2853c30c8baf9a6aec100780d8d578))
+
+
+
 ## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.5...@anansi/webpack-config@5.0.0) (2020-10-24)
 
 

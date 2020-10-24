@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.0...anansi-example-typescript@5.0.1) (2020-10-24)
+
+
+### 💅 Enhancement
+
+* Do not require importing React - use >16.14 ([3d457bf](https://github.com/ntucker/anansi/commit/3d457bfabfd7d67e6b3da36bbd0649997ae4bc06))
+
+
+### 📦 Package
+
+* Babel patch to 7.12.1 ([14db1ab](https://github.com/ntucker/anansi/commit/14db1abf4f2853c30c8baf9a6aec100780d8d578))
+
+
+
 ## [5.0.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@4.2.1...anansi-example-typescript@5.0.0) (2020-10-24)
 
 
