@@ -112,9 +112,12 @@ function buildPreset(api, options = {}) {
 
   switch (env) {
     case 'production':
-      preset.plugins.unshift(
-        require('@babel/plugin-transform-react-inline-elements').default,
-      );
+      if (!hasJsxRuntime) {
+        // new jsx runtime obsoletes this optimization
+        preset.plugins.unshift(
+          require('@babel/plugin-transform-react-inline-elements').default,
+        );
+      }
       if (typeof options.reactConstantElementsOptions === 'object') {
         preset.plugins.unshift([
           require('@babel/plugin-transform-react-constant-elements').default,
