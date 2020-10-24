@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.1...@anansi/generator-js@2.0.2) (2020-10-24)
+
+
+### 💅 Enhancement
+
+* Use TypeScript 4.1 jsx transform support ([#54](https://github.com/ntucker/anansi/issues/54)) ([c43744d](https://github.com/ntucker/anansi/commit/c43744d1a256932050eb4910492acf72c12bfdf0))
+
+
+
 ### [2.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.0...@anansi/generator-js@2.0.1) (2020-10-24)
 
 

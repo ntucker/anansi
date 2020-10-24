@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.1...anansi-example-typescript@5.0.2) (2020-10-24)
+
+
+### 📦 Package
+
+* Typescript 4.1-beta, react 17 ([12ff605](https://github.com/ntucker/anansi/commit/12ff6056f5a4203241f4c46e439db809cdadaef8))
+
+
+
 ### [5.0.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.0...anansi-example-typescript@5.0.1) (2020-10-24)
 
 
