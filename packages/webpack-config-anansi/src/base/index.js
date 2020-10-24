@@ -2,6 +2,7 @@ import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
+import semver from 'semver';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
@@ -24,6 +25,9 @@ export default function makeBaseConfig({
   babelLoader: babelLoaderOptions,
   extraJsLoaders,
 }) {
+  const react = require(require.resolve('react', {
+    paths: [rootPath],
+  }));
   const babelLoader = {
     loader: 'babel-loader',
     options: {
@@ -32,6 +36,10 @@ export default function makeBaseConfig({
       cacheCompression: mode === 'production',
       compact: mode === 'production',
       ...babelLoaderOptions,
+      caller: {
+        hasJsxRuntime: semver.gte(react.version, '16.14.0'),
+        ...babelLoaderOptions?.caller,
+      },
     },
   };
 

@@ -159,6 +159,18 @@ Using react-hot-reloader instead of react-refresh
 Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).
 Setting to false disables this optimization altogether. Note: this is only ever used in production mode
 
+### hasJsxRuntime
+
+Use [new jsx transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
+Available in React >16.14.
+
+- With the new transform, you can use JSX without importing React.
+- Depending on your setup, its compiled output may slightly improve the bundle size.
+- It will enable future improvements that reduce the number of concepts you need to learn React.
+
+> Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
+
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features
