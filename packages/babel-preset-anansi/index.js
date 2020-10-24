@@ -68,7 +68,7 @@ function buildPreset(api, options = {}) {
         {
           development: env !== 'production',
           ...(hasJsxRuntime
-            ? { runetime: 'automatic' }
+            ? { runtime: 'automatic' }
             : { runtime: 'classic', useSpread: true, pragma: '__jsx' }),
         },
       ],
