@@ -1,8 +1,10 @@
 import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import webpack from 'webpack';
 
 import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
+import { NODE_ALIAS } from './node-polyfill';
 
 export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
@@ -184,6 +186,7 @@ export default function makeBaseConfig({
         'node_modules',
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
+      alias: webpack.version.startsWith('4') ? {} : NODE_ALIAS,
     },
     // include the loaders installed by this library
     resolveLoader: {

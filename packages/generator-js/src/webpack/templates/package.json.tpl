@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development",
+    "start": "webpack serve --mode=development",
     "prod": "serve <%= assetPath %>",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
