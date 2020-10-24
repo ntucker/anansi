@@ -14,9 +14,9 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
             return global.Intl;
           })
           .then(Intl => {
-            return import(/* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`).then(
-              () => Intl,
-            );
+            return import(
+              /* webpackChunkName: "locale-en" */ `intl/locale-data/jsonp/en`
+            ).then(() => Intl);
           });
       }
     },
@@ -29,11 +29,11 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
     },
     fetch: () => {
       if (window && !window.fetch) {
-        return import(/* webpackChunkName: "fetch-polyfill" */ 'whatwg-fetch').then(
-          () => {
-            return window.fetch;
-          },
-        );
+        return import(
+          /* webpackChunkName: "fetch-polyfill" */ 'whatwg-fetch'
+        ).then(() => {
+          return window.fetch;
+        });
       }
     },
   };

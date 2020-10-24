@@ -43,8 +43,8 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.0.0",
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.7",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
     "rollup": "^1.27.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -53,5 +53,5 @@
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"
   },
-  "gitHead": "150aeb90c96b773030da997a5e9eb1cc83709aa6"
+  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
 }

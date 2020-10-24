@@ -30,22 +30,22 @@
     "node": ">=10.13.0"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-proposal-class-static-block": "^7.12.0",
-    "@babel/plugin-proposal-decorators": "^7.10.5",
-    "@babel/plugin-proposal-export-default-from": "^7.10.4",
-    "@babel/plugin-proposal-export-namespace-from": "^7.12.0",
-    "@babel/plugin-proposal-private-methods": "^7.10.4",
-    "@babel/plugin-syntax-function-bind": "^7.10.4",
-    "@babel/plugin-syntax-top-level-await": "^7.10.4",
-    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
-    "@babel/plugin-transform-object-assign": "^7.10.4",
-    "@babel/plugin-transform-react-constant-elements": "^7.10.4",
-    "@babel/plugin-transform-react-inline-elements": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.12.0",
-    "@babel/plugin-transform-typescript": "^7.12.0",
-    "@babel/preset-env": "^7.12.0",
-    "@babel/preset-react": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-class-static-block": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/plugin-syntax-function-bind": "^7.12.1",
+    "@babel/plugin-syntax-top-level-await": "^7.12.1",
+    "@babel/plugin-transform-flow-strip-types": "^7.12.1",
+    "@babel/plugin-transform-object-assign": "^7.12.1",
+    "@babel/plugin-transform-react-constant-elements": "^7.12.1",
+    "@babel/plugin-transform-react-inline-elements": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-macros": "^2.8.0",
     "babel-plugin-ramda": "^2.0.0",
@@ -57,7 +57,7 @@
     "stable": "^0.1.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.0"
+    "@babel/core": "^7.12.3"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.0",
@@ -79,5 +79,6 @@
     "@babel/runtime": {
       "optional": true
     }
-  }
+  },
+  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
 }

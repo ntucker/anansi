@@ -45,8 +45,8 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.0.0",
-    "@babel/cli": "^7.12.0",
-    "@babel/core": "^7.12.0",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
     "debug": "^4.1.1",
     "prettier-eslint-cli": "^5.0.0",
     "rimraf": "^2.6.3"
@@ -132,5 +132,6 @@
     "webpack-cli": {
       "optional": true
     }
-  }
+  },
+  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
 }
