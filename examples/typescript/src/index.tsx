@@ -2,7 +2,9 @@ import ReactDOM from 'react-dom';
 import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
+
 import loadPolyfills from '@anansi/polyfill';
+
 import { RouteChildrenProps } from 'react-router';
 import { CacheProvider } from 'rest-hooks';
 import 'style/main.scss';
