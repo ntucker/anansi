@@ -1,4 +1,4 @@
-import React<% if (reactMode === 'legacy') { %>, { StrictMode }<% } %> from 'react';
+<% if (reactMode === 'legacy') { %>import { StrictMode } from 'react';<% } %>
 import ReactDOM from 'react-dom';
 
 import RootProvider from './RootProvider';

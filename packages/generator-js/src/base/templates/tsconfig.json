@@ -5,7 +5,7 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["dom", "esnext"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "declaration": true,
     "strict": true,
     "moduleResolution": "node",

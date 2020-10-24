@@ -96,7 +96,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   installTypeScript() {
-    this.yarnInstall(['typescript', '@anansi/eslint-plugin'], {
+    this.yarnInstall(['typescript@beta', '@anansi/eslint-plugin'], {
       dev: true,
     });
   }
