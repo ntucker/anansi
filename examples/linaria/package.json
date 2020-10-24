@@ -39,8 +39,8 @@
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",
     "linaria": "^2.0.0-rc.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [

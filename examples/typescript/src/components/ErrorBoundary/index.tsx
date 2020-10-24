@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense, Component } from 'react';
+import type { ReactChild } from 'react';
 import classNames from 'classnames';
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { Spin } from 'antd';
@@ -10,10 +11,11 @@ function handleRefresh() {
   window.location.reload(true);
 }
 
-const RedBox = lazy(() =>
-  import(
-    /* webpackChunkName: 'redbox' */ /* webpackPreload: true */ 'redbox-react'
-  ),
+const RedBox = lazy(
+  () =>
+    import(
+      /* webpackChunkName: 'redbox' */ /* webpackPreload: true */ 'redbox-react'
+    ),
 );
 
 interface NetworkError extends Error {
@@ -21,14 +23,14 @@ interface NetworkError extends Error {
 }
 
 interface Props {
-  children: React.ReactChild;
+  children: ReactChild;
 }
 interface State {
   error: Error | NetworkError | null;
   errorInfo: object | null;
 }
 
-export default class ErrorBoundary extends React.Component<Props, State> {
+export default class ErrorBoundary extends Component<Props, State> {
   static contextType = ErrorLoggerContext;
   static getDerivedStateFromError(error: Error | null) {
     return { error };

@@ -6,6 +6,8 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       rules: {
         'react/prop-types': 'off',
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/explicit-member-accessibility': 'off',

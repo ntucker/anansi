@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import Nav from 'navigation/Nav';
 import { Layout } from 'antd';
 
@@ -22,4 +22,4 @@ const App = () => (
   </Layout>
 );
 
-export default React.memo(App);
+export default memo(App);

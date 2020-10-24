@@ -1,4 +1,3 @@
-import React from 'react';
 import { useResource, useSubscription } from 'rest-hooks';
 import ExchangeRatesResource from 'resources/ExchangeRatesResource';
 

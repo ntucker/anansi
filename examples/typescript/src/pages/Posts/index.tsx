@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import { useResource } from 'rest-hooks';
 import { PlusOutlined } from '@ant-design/icons';
 import { List, Button, PageHeader } from 'antd';
@@ -41,4 +41,4 @@ function PostList() {
     </PageHeader>
   );
 }
-export default React.memo(PostList);
+export default memo(PostList);

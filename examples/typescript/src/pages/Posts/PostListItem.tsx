@@ -1,5 +1,5 @@
 import { PostResource, UserResource } from 'data/resources';
-import React from 'react';
+import { Fragment } from 'react';
 import { useResource } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
@@ -20,7 +20,7 @@ export default function IssueListItem({ post }: { post: PostResource }) {
       <List.Item.Meta
         avatar={<Avatar>{author && author.name.substr(0, 1)}</Avatar>}
         title={<Link to={`/post/${post.pk()}`}>{post.title}</Link>}
-        description={<React.Fragment>{post.body}</React.Fragment>}
+        description={<Fragment>{post.body}</Fragment>}
       />
     </List.Item>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import { css } from 'linaria';
 import { styled } from 'linaria/react';
 
@@ -50,4 +50,4 @@ const App = () => (
   </>
 );
 
-export default React.memo(App);
+export default memo(App);

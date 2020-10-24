@@ -1,4 +1,3 @@
-import React from 'react';
 <% if (style === 'linaria') { %>
 import { css } from 'linaria';
 <% } %>

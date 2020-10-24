@@ -1,12 +1,14 @@
 declare module 'react-router-scroll-4' {
+  import type { ReactChild } from 'react';
+  import { Component } from 'react';
   import { RouteChildrenProps } from 'react-router';
   interface Props {
-    scrollBehavior?: Function;
+    scrollBehavior?: (...args: any) => any;
     shouldUpdateScroll: (
       prevRouterProps: RouteChildrenProps,
       routerProps: RouteChildrenProps,
     ) => boolean | [number, number];
-    children: React.ReactChild;
+    children: ReactChild;
   }
-  export class ScrollContext extends React.Component<Props> {}
+  export class ScrollContext extends Component<Props> {}
 }

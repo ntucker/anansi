@@ -1,4 +1,4 @@
-import React from 'react';
+import type { ComponentType } from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import { MockProvider } from '@rest-hooks/test';
 
@@ -9,7 +9,7 @@ export default {
   title: 'Pages/PostDetail',
   component: PostDetail,
   decorators: [
-    (Story: React.ComponentType) => (
+    (Story: ComponentType) => (
       <MockProvider results={postFixtures}>
         <Story />
       </MockProvider>

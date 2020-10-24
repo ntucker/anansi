@@ -1,4 +1,3 @@
-import React from 'react';
 import { MemoryRouter } from 'react-router';
 import { CacheProvider } from 'rest-hooks';
 import 'style/main.scss';
