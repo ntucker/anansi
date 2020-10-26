@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0-beta.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.1...@anansi/webpack-config@6.0.0-beta.0) (2020-10-26)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* drop support for webpack 4
+
+### 📦 Package
+
+* css-loader, html-webpack-plugin, terser-webpack-plugin major ([e57ee08](https://github.com/ntucker/anansi/commit/e57ee08078430ab766d32c0b0707aacb84c15544))
+
+
+
 ### [5.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.0...@anansi/webpack-config@5.1.1) (2020-10-26)
 
 **Note:** Version bump only for package @anansi/webpack-config
