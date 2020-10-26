@@ -4,7 +4,7 @@ import CrittersPlugin from 'critters-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
-import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
+import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
@@ -40,7 +40,7 @@ export default function makeProdConfig(
         minimize: true,
         debug: false,
       }),
-      new FixStyleOnlyEntriesPlugin(),
+      new RemoveEmptyScriptsPlugin(),
     );
     if (htmlOptions) {
       config.plugins.unshift(
@@ -147,12 +147,10 @@ export default function makeProdConfig(
           keep_classnames: !!env?.profile,
           keep_fnames: !!env?.profile,
         },
-        sourceMap: true,
         extractComments: true,
         // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
         // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
         parallel: !isWsl,
-        cache: true,
       }),
       // cssnano on node_modules as well as our loaders
       new OptimizeCSSAssetsPlugin({}),

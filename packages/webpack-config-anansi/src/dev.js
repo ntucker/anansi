@@ -30,7 +30,6 @@ export default function makeDevConfig(
   config.output.chunkFilename = '[name].chunk.js';
   config.output.devtoolModuleFilenameTemplate = info =>
     path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
-  config.watch = true;
   config.optimization = {
     splitChunks: false,
     noEmitOnErrors: true,
