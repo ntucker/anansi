@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.0...@anansi/babel-preset@2.1.1) (2020-10-26)
+
+
+### 📦 Package
+
+* babel-plugin-root-import - support template imports ([2393014](https://github.com/ntucker/anansi/commit/23930149dedd2fba56e417c2643301888e4d6b41))
+
+
+
 ## [2.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.0.0...@anansi/babel-preset@2.1.0) (2020-10-24)
 
 

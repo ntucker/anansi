@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.3](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.2...anansi-example-linaria@2.0.3) (2020-10-26)
+
+
+### 📦 Package
+
+* react-refresh ([c9d4618](https://github.com/ntucker/anansi/commit/c9d461810b75a0027d3b9f96e8dffb63a0d98997))
+
+
+
 ### [2.0.2](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.1...anansi-example-linaria@2.0.2) (2020-10-24)
 
 
