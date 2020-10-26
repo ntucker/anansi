@@ -126,12 +126,10 @@ export default function makeProdConfig(
           keep_classnames: !!env?.profile,
           keep_fnames: !!env?.profile,
         },
-        sourceMap: true,
         extractComments: true,
         // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
         // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
         parallel: !isWsl,
-        cache: true,
       }),
       // cssnano on node_modules as well as our loaders
       new OptimizeCSSAssetsPlugin({}),
