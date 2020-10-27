@@ -69,7 +69,7 @@ function buildPreset(api, options = {}) {
           development: env !== 'production',
           ...(hasJsxRuntime
             ? { runtime: 'automatic' }
-            : { runtime: 'classic', useSpread: true, pragma: '__jsx' }),
+            : { runtime: 'classic', useSpread: true }),
         },
       ],
     ],
