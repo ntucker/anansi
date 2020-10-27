@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.1...@anansi/babel-preset@2.1.2) (2020-10-27)
+
+
+### 🐛 Bug Fix
+
+* No pragma for react ([6f59cb1](https://github.com/ntucker/anansi/commit/6f59cb18130f1af83087548df101f06bd57a0018))
+
+
+
 ### [2.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.0...@anansi/babel-preset@2.1.1) (2020-10-26)
 
 
