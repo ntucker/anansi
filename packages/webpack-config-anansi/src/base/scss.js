@@ -8,10 +8,7 @@ const getCSSLoaders = ({ mode }) => {
   const loaders = [
     {
       loader: MiniCssExtractPlugin.loader,
-      options: {
-        esModule: true,
-        hmr: mode !== 'production',
-      },
+      options: {},
     },
     {
       loader: 'css-loader',
