@@ -6,7 +6,9 @@
       "examples/*"
     ],
     "nohoist": [
-      "**/@storybook/**"
+      "**/@storybook/**",
+      "react",
+      "react-dom"
     ]
   },
   "scripts": {

@@ -190,7 +190,6 @@ export default function makeBaseConfig({
       modules: [
         path.join(rootPath, basePath),
         path.join(rootPath, basePath, 'style'),
-        path.join(rootPath, 'node_modules'),
         'node_modules',
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
