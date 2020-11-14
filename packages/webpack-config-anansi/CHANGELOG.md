@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.2...@anansi/webpack-config@5.1.3) (2020-11-14)
+
+
+### 🐛 Bug Fix
+
+* Use normal node resolution ([#55](https://github.com/ntucker/anansi/issues/55)) ([96a90b7](https://github.com/ntucker/anansi/commit/96a90b7a1a18c9d5173cb27cf56ba8f530da2c1b))
+
+
+### 📦 Package
+
+* @pmmmwh/react-refresh-webpack-plugin patch ([a00ee91](https://github.com/ntucker/anansi/commit/a00ee91dbd444bef936b1a869eb4e2d1d904e3cd))
+* babel-loader minor, mini-css-extract-plugin patch ([4cb8e71](https://github.com/ntucker/anansi/commit/4cb8e71e805584b30c7f2ed5af0c68b5b2bb4d91))
+* mini-css-extract-plugin minor ([47de30e](https://github.com/ntucker/anansi/commit/47de30ebfc9c6b498e11f8c67ce9ff4d5a3e59be))
+
+
+
 ### [5.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.1...@anansi/webpack-config@5.1.2) (2020-10-27)
 
 **Note:** Version bump only for package @anansi/webpack-config

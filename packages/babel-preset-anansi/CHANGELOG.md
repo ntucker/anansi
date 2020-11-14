@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.2...@anansi/babel-preset@2.1.3) (2020-11-14)
+
+
+### 📦 Package
+
+* babel/preset-react patch ([80b874b](https://github.com/ntucker/anansi/commit/80b874be24a01058d0c80ddeab089654f89ef6cd))
+
+
+
 ### [2.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.1...@anansi/babel-preset@2.1.2) (2020-10-27)
 
 
