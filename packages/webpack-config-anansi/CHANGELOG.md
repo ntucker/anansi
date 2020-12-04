@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.3...@anansi/webpack-config@5.1.4) (2020-12-04)
+
+
+### 📦 Package
+
+* many patch updates, node-sass major ([7747784](https://github.com/ntucker/anansi/commit/774778458a1a7261902fc2afc14793a7dfb8c9fc))
+
+
+
 ### [5.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.2...@anansi/webpack-config@5.1.3) (2020-11-14)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.3...@anansi/babel-preset@2.1.4) (2020-12-04)
+
+
+### 📦 Package
+
+* preset-env, preset-react, plugin-macros ([8cbfc93](https://github.com/ntucker/anansi/commit/8cbfc93ab60c9820a3e81d62ce39b9a8a0904225))
+
+
+
 ### [2.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.2...@anansi/babel-preset@2.1.3) (2020-11-14)
 
 
