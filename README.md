@@ -4,6 +4,17 @@
 
 [Anansi](https://en.wikipedia.org/wiki/Anansi) (/əˈnɑːnsi/ ə-NAHN-see) is an Akan folktale character. He often takes the shape of a spider and is considered to be the god of all knowledge of stories. Anansi uses his knowledge to help JavaScript developers spin new web projects.
 
+## Motivation
+
+- Modular
+- Upgradable
+- Best Practices
+  - Get started fast
+  - Quick development iteration
+  - Optimized production deploys
+- Batteries included - support the best of the ecosystem out of the box
+
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io), [yarn](https://yarnpkg.com) and @anansi/generator-js using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
