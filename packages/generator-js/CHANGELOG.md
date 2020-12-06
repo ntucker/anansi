@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0-beta.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.6...@anansi/generator-js@3.0.0-beta.1) (2020-12-06)
+
+
+### 🏠 Internal
+
+* publish ([2d56c6f](https://github.com/ntucker/anansi/commit/2d56c6fe9aba85ffdc2f93ca7dbc5f66a9f30278))
+
+
+
 ### [2.0.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.5...@anansi/generator-js@2.0.6) (2020-12-04)
 
 **Note:** Version bump only for package @anansi/generator-js
