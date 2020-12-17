@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.4...@anansi/babel-preset@2.1.5) (2020-12-17)
+
+
+### 📦 Package
+
+* Patch bump for transform-runtime, transform-typescript, preset-env, preset-react ([68e5110](https://github.com/ntucker/anansi/commit/68e511056e1dfb87b93fc4a5a64c903a5ad3cb56))
+
+
+
 ### [2.1.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.3...@anansi/babel-preset@2.1.4) (2020-12-04)
 
 

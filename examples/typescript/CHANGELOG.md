@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.6...anansi-example-typescript@5.0.7) (2020-12-17)
+
+
+### 📦 Package
+
+* rest-hooks ([204b30d](https://github.com/ntucker/anansi/commit/204b30d9cffe9f7baaf9e332c44220f53424dc2e))
+
+
+
 ### [5.0.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.5...anansi-example-typescript@5.0.6) (2020-12-04)
 
 **Note:** Version bump only for package anansi-example-typescript
