@@ -34,12 +34,12 @@ export default function makeStorybookConfigGenerator(baseConfig) {
           return !rule.loader.includes('@storybook/react');
         }
         if (rule.use) {
-          return !rule.use.filter(
+          return !rule.use.find(
             loadConfig => {
               const loader = typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
               return loader.includes('@storybook/react');
             }
-          ).length
+          )
         }
       }
     )
