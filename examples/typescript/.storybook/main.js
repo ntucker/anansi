@@ -6,4 +6,7 @@ module.exports = {
   typescript: {
     reactDocgen: 'react-docgen-typescript',
   },
+  reactOptions: {
+    fastRefresh: true,
+  },
 };

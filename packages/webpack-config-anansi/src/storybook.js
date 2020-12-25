@@ -8,31 +8,49 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     // we need some of their plugins (https://github.com/storybooks/storybook/pull/1775/files)
     const storybookPlugins = storybookConfig.plugins.filter(
       plugin =>
+        // exclude ones we configure
         ![
           'DefinePlugin',
+          'ReactRefreshPlugin',
           'HotModuleReplacementPlugin',
           'CaseSensitivePathsPlugin',
         ].includes(plugin.constructor.name),
     );
     const basePlugins = envConfig.plugins.filter(
       plugin =>
+        // defer to storybook's version in this case
         ![
           'HtmlWebpackPlugin',
-          'ReactRefreshPlugin',
           'ErrorOverlayPlugin',
+          'StatsPlugin',
         ].includes(plugin.constructor.name),
     );
-    if (env === 'dev') {
-      // storybook only works with old hot reloader currently
-      try {
-        require('@hot-loader/react-dom');
-        envConfig.resolve.alias['react-dom'] = '@hot-loader/react-dom';
-        envConfig.devServer.hotOnly = false;
-      } catch (e) {}
-    }
+
+    // ignore all their 'react' rules, as we already provide react handling
+    // other addons might add rules, so be sure to include those here
+    const storybookRules = storybookConfig.module.rules.filter(
+      rule => {
+        if (rule.loader) {
+          return !rule.loader.includes('@storybook/react');
+        }
+        if (rule.use) {
+          return !rule.use.filter(
+            loadConfig => {
+              const loader = typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
+              return loader.includes('@storybook/react');
+            }
+          ).length
+        }
+      }
+    )
 
     // this transforms storybook node_modules files...not sure why this isn't done at publish time
     const libraryRule = storybookConfig.module.rules[1];
+    // don't run this on our project source
+    libraryRule.exclude = [envConfig?.resolve?.modules?.[0]];
+
+    // storybook doesn't like us setting this very much.
+    delete envConfig.devServer;
 
     return {
       ...envConfig,
@@ -55,7 +73,9 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       module: {
         ...envConfig.module,
         rules: [
+          //web workers
           envConfig.module.rules[0],
+          //normal js/ts
           {
             // don't use thread-loader
             ...envConfig.module.rules[1],
@@ -63,9 +83,12 @@ export default function makeStorybookConfigGenerator(baseConfig) {
               l => l !== 'thread-loader',
             ),
           },
+          // storybook node_module compiles
           libraryRule,
-          ...storybookConfig.module.rules.slice(2, 7),
+          // the rest of our rules
           ...envConfig.module.rules.slice(2),
+          // typically these are various plugins
+          ...storybookRules,
         ],
       },
     };
