@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.5...@anansi/webpack-config@5.1.6) (2020-12-29)
+
+
+### 💅 Enhancement
+
+* Improve storybook support ([#58](https://github.com/ntucker/anansi/issues/58)) ([8d1d572](https://github.com/ntucker/anansi/commit/8d1d572a1574be83fc02e923378d81f5e3972c1c))
+
+
+
 ### [5.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.4...@anansi/webpack-config@5.1.5) (2020-12-17)
 
 **Note:** Version bump only for package @anansi/webpack-config

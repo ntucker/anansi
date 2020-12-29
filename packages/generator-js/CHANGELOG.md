@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.7...@anansi/generator-js@2.0.8) (2020-12-29)
+
+
+### 🐛 Bug Fix
+
+* Use webpack 4 if storybook is used ([#59](https://github.com/ntucker/anansi/issues/59)) ([de613de](https://github.com/ntucker/anansi/commit/de613de5478e94f7e27b5935f5299122d05a6ddf))
+
+
+
 ### [2.0.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.6...@anansi/generator-js@2.0.7) (2020-12-17)
 
 **Note:** Version bump only for package @anansi/generator-js

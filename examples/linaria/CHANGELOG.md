@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.8](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.7...anansi-example-linaria@2.0.8) (2020-12-29)
+
+
+### 💅 Enhancement
+
+* Improve storybook support ([#58](https://github.com/ntucker/anansi/issues/58)) ([8d1d572](https://github.com/ntucker/anansi/commit/8d1d572a1574be83fc02e923378d81f5e3972c1c))
+
+
+
 ### [2.0.7](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.6...anansi-example-linaria@2.0.7) (2020-12-17)
 
 **Note:** Version bump only for package anansi-example-linaria
