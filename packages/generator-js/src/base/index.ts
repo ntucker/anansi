@@ -37,6 +37,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       this.composeWith(require.resolve('../library'), this.options);
     }
     if (props.features.includes('storybook')) {
+      this.config.set('webpack-version', '4');
       this.composeWith(require.resolve('../storybook'), this.options);
     }
     return props;
@@ -96,7 +97,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   installTypeScript() {
-    this.yarnInstall(['typescript@beta', '@anansi/eslint-plugin'], {
+    this.yarnInstall(['typescript', '@anansi/eslint-plugin'], {
       dev: true,
     });
   }
