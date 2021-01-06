@@ -1,40 +1,48 @@
-import type { ComponentType } from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { MockProvider } from '@rest-hooks/test';
+
+import { MockResolver } from '@rest-hooks/test';
 
 import postFixtures from './post.fixture';
 import PostDetail, { Props } from './index';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 export default {
   title: 'Pages/PostDetail',
   component: PostDetail,
-  decorators: [
-    (Story: ComponentType) => (
-      <MockProvider results={postFixtures}>
-        <Story />
-      </MockProvider>
-    ),
-  ],
+  parameters: {
+    docs: {
+      source: {
+        type: 'code'
+      }
+    }
+  },
   argTypes: {
     id: {
       description: 'Post ID',
-      defaultValue: {
-        summary: '1',
-      },
+      defaultValue: '1',
       control: {
         type: 'select',
-        options: ['1'],
+        options: ['1', '2'],
+      },
+    },
+    state: {
+      description: 'Network State',
+      defaultValue: 'full',
+      control: {
+        type: 'select',
+        options: Object.keys(postFixtures),
       },
     },
   },
 };
 
-const Template: Story<{ id: string }> = ({ id }) => (
-  <PostDetail match={{ params: { id } } as any} />
+const Template: Story<{ id: string, state: keyof typeof postFixtures }> = ({ id, state }) => (
+  <MockResolver fixtures={postFixtures[state]}><PostDetail match={{ params: { id } } as any} /></MockResolver>
 );
 
 export const FirstPost = Template.bind({});
 
 FirstPost.args = {
   id: '1',
+  state: 'full',
 };

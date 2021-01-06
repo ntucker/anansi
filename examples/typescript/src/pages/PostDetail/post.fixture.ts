@@ -75,20 +75,30 @@ const post = {
     'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
 };
 
-export default [
-  {
-    request: PostResource.detail(),
-    params: { id: 1 },
-    result: post,
-  },
-  {
-    request: CommentResource.list(),
-    params: { postId: 1 },
-    result: comments,
-  },
-  {
-    request: UserResource.detail(),
-    params: { id: 1 },
-    result: user,
-  },
-];
+export default {
+  full: [
+    {
+      request: PostResource.detail(),
+      params: { id: 1 },
+      result: post,
+    },
+    {
+      request: CommentResource.list(),
+      params: { postId: 1 },
+      result: comments,
+    },
+    {
+      request: UserResource.detail(),
+      params: { id: 1 },
+      result: user,
+    },
+  ],
+  error: [
+    {
+      request: PostResource.detail(),
+      params: {id: 1},
+      result: { message: 'Bad request', status: 400, name: 'Not Found' },
+      error: true,
+    }
+  ],
+}

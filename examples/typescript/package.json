@@ -23,7 +23,7 @@
     "@anansi/eslint-plugin": "^0.9.15",
     "@anansi/webpack-config": "^5.1.6",
     "@babel/core": "7.12.10",
-    "@rest-hooks/test": "^2.0.0-k.1",
+    "@rest-hooks/test": "^2.0.0-k.2",
     "@types/classnames": "^2.2.9",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
@@ -47,7 +47,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "5.0.0-k.4"
+    "rest-hooks": "5.0.0-k.5"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
