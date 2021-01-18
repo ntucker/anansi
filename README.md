@@ -26,6 +26,7 @@ npm install -g yo @anansi/generator-js
 
 Then generate your new project:
 
+
 ```bash
 hatch-anansi my-app-name
 ```
