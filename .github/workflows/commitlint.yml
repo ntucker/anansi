@@ -1,8 +1,10 @@
 name: Lint Commit Messages
+
 on:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [closed]
+
+if: github.event.pull_request.merged == true
 
 jobs:
   commitlint:
