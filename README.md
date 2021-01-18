@@ -14,7 +14,6 @@
   - Optimized production deploys
 - Batteries included - support the best of the ecosystem out of the box
 
-
 ## Installation
 
 First, install [Yeoman](http://yeoman.io), [yarn](https://yarnpkg.com) and @anansi/generator-js using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
