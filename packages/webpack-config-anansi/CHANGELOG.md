@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.6...@anansi/webpack-config@5.1.7) (2021-01-18)
+
+
+### 📦 Package
+
+* minor post-css ([2b7d3a1](https://github.com/ntucker/anansi/commit/2b7d3a1f9f512cc2d4f0fa5bcfdaf83c8366f5a4))
+* Require 5.12 webpack for html-plugin compat ([52d628c](https://github.com/ntucker/anansi/commit/52d628cb5afcbb7a94087085b433bd58c8dabadc))
+
+
+
 ### [5.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.5...@anansi/webpack-config@5.1.6) (2020-12-29)
 
 

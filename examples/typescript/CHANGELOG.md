@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.8...anansi-example-typescript@5.0.9) (2021-01-18)
+
+
+### 💅 Enhancement
+
+* Use MockResolver for storybook ([16c56c2](https://github.com/ntucker/anansi/commit/16c56c223cdce1c20bc7b536368dc97a10ffedb0))
+
+
+### 📦 Package
+
+* ant, core-js, @rest-hooks/rest ([28698f5](https://github.com/ntucker/anansi/commit/28698f5d9b422ee21f176ad7c06338831a863358))
+* rest-hooks 5rc.0 ([b1639f3](https://github.com/ntucker/anansi/commit/b1639f3dd46fa58b261eb815ddbf0cb754301495))
+
+
+
 ### [5.0.8](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.7...anansi-example-typescript@5.0.8) (2020-12-29)
 
 
