@@ -15,11 +15,6 @@
     "release": "lerna publish",
     "build": "lerna run build --stream"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
     "@anansi/eslint-plugin": "^0.9.15",
     "@commitlint/cli": "^11.0.0",
