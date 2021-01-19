@@ -17,9 +17,12 @@ function Nav() {
         <Link to="/posts">Posts</Link>
       </Menu.Item>
       <Menu.Item key="3">
-        <Link to="/slow">Slow</Link>
+        <Link to="/posts">Issues</Link>
       </Menu.Item>
       <Menu.Item key="4">
+        <Link to="/slow">Slow</Link>
+      </Menu.Item>
+      <Menu.Item key="5">
         <Link to="/error">Error</Link>
       </Menu.Item>
     </Menu>
