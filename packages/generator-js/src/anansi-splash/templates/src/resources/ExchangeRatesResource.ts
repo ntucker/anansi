@@ -1,4 +1,4 @@
-import { Resource, SimpleResource } from '@rest-hooks/rest';
+import { Resource, SimpleResource, RestEndpoint, RestFetch } from '@rest-hooks/rest';
 
 // Visit https://resthooks.io/docs/guides/resource-types to read more about these definitions
 export default class ExchangeRatesResource extends Resource {
@@ -15,7 +15,8 @@ export default class ExchangeRatesResource extends Resource {
     return { pollFrequency: 15000 };
   }
 
-  static list<T extends typeof SimpleResource>(this: T) {
+  static list<T extends typeof SimpleResource>(this: T):
+    RestEndpoint<RestFetch<{ currency: string }>, { data: T }, undefined> {
     return super.list().extend({
       schema: { data: this },
     });

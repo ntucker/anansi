@@ -2622,36 +2622,36 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.0.0-rc.1":
-  version "1.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0-rc.1.tgz#f113b718b66c165703ed2d4f20bf24707d8c7002"
-  integrity sha512-WUovBuyXFqlFjN+GZhF5KAFt1bnAf5oZr5xKHjX8Eq4ziHltHdqtTk1jrR3SwQD6BwWzPHdrc9t8Kb77PmP/ew==
+"@rest-hooks/core@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.0.tgz#d4c8c7da5ff8e3263cc0c4a4c5aa7fd6d111ddee"
+  integrity sha512-MKoXjzRmmqdsihgTe9a+WtOBjg6E7daGoc5T4c3gxvFr7LjFf+HPlk3yAwv3neQTImeb3udF9YOptLdk68PhAw==
   dependencies:
     "@babel/runtime" "^7.12.0"
-    "@rest-hooks/endpoint" "^0.8.0"
-    "@rest-hooks/normalizr" "^6.0.0-rc.0"
+    "@rest-hooks/endpoint" "^1.0.0"
+    "@rest-hooks/normalizr" "^6.0.0"
     "@rest-hooks/use-enhanced-reducer" "^1.0.5"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/endpoint@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-0.8.0.tgz#67c2511e2923dcac3d73afe0fff3750d9f0edc90"
-  integrity sha512-JrjNJtudW6w4ZzlN3IhrU3Z5jelf/ROIu+tDmcoS76zo/FvmlkAtOTZ90uPZHOJMsn+MyCemavLkVyb7q3R2Nw==
+"@rest-hooks/endpoint@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.0.0.tgz#2fb6b5a68ad3163e310b5d5065d3b7f350a155b1"
+  integrity sha512-qO3FtAo/1EZnPe28GjTWMWn/l4p+jfdIxINEPB3AKOj2hy5MsNZqIAsk3xiedTt5XtlQMwaEO9o5gL0/cLyM0A==
   dependencies:
     "@babel/runtime" "^7.12.0"
-    "@rest-hooks/normalizr" "^6.0.0-rc.0"
+    "@rest-hooks/normalizr" "^6.0.0"
 
-"@rest-hooks/normalizr@^6.0.0-rc.0":
-  version "6.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0-rc.0.tgz#46ae155ed921ab8590d4ceb9001917452225388a"
-  integrity sha512-L/IVeWEeBB0VMUPfK4ZauPA0Nb0VqF3fKRwDcPsHBm43VLyp+WLJJPEfjosbTcq3CbI9X4oEboq0ayEOGeRnBQ==
+"@rest-hooks/normalizr@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.0.tgz#e82c253fc25772a4670ba662290e242ad185ffe6"
+  integrity sha512-Iqyc/zKnF32+4zYmyDMrFWkrJoRrFwnhdvnFkEWo3Ng83wDOqVTsE0YOslD7vPX380EnmMqO7qYMqO2mN19J1Q==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
-"@rest-hooks/rest@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-0.6.1.tgz#d8886894400109c70a89676e19937b2c1daa46b4"
-  integrity sha512-wMmcw9I2tOzDwBH5lqzxajQ3zP6/xuEpb1+H+LMz1Q3IWn4ZqXwaFsGVR9JixPADykPKScsZP2Z3ei1efDy7dQ==
+"@rest-hooks/rest@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.0.tgz#15874ac905defadccf4080b0f8614a0bee5c6078"
+  integrity sha512-2rNDm4OkhAEh2KWTq8P/87uBwsFCLCPw8/EhUmlJdbehVCzjcPP132uByyZE7+nSaGlWc/Lo9HF0rlK9aKg81Q==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
@@ -8718,10 +8718,10 @@ eslint-plugin-jsx-a11y@^6.3.1:
     jsx-ast-utils "^2.4.1"
     language-tags "^1.0.5"
 
-eslint-plugin-prettier@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
-  integrity sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==
+eslint-plugin-prettier@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.3.1.tgz#7079cfa2497078905011e6f82e8dd8453d1371b7"
+  integrity sha512-Rq3jkcFY8RYeQLgk2cCwuc0P7SEFwDravPhsJZOQ5N4YI4DSg50NyqJ/9gdZHzQlHf8MvafSesbNJCcP/FF6pQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -16120,15 +16120,10 @@ prettier@^1.7.0:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
-prettier@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.0.tgz#5a9789f767a243118c60f3e56d95cb6544914fbb"
-  integrity sha512-lz28cCbA1cDFHVuY8vvj6QuqOwIpyIfPUYkSl8AZ/vxH8qBXMMjE2knfLHCrZCmUsK/H1bg1P0tOo0dJkTJHvw==
-
-prettier@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.1.tgz#d9485dd5e499daa6cb547023b87a6cf51bee37d6"
-  integrity sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
+prettier@^2.0.0, prettier@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
+  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
 prettier@~2.0.5:
   version "2.0.5"
@@ -18033,14 +18028,14 @@ resolve@^1.9.0:
     is-core-module "^2.0.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.0-rc.1:
-  version "5.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0-rc.1.tgz#8c192f274dd2979a0fd6f8950fcf4e6123c11466"
-  integrity sha512-jPGw6iYvcFs3v12f4nZLX4hOCeuO7Q2qdNeMxI9PlPDn8AT5xNGl0NPq9+1E0ClEDmgUL7Ki4pXOfCHQQBD7mQ==
+rest-hooks@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.0.tgz#e807a6b2d1e1e47fe79aebefde1102952a4c3579"
+  integrity sha512-vQMwzLEd9tcsiwlf230ZB03ongaUMaZuElvO77a9gZfnmgjEVMw6lmXEh1HaJxqYAJjiJe4TxF8VsmQOwhL1kQ==
   dependencies:
     "@babel/runtime" "^7.12.0"
-    "@rest-hooks/core" "^1.0.0-rc.1"
-    "@rest-hooks/endpoint" "^0.8.0"
+    "@rest-hooks/core" "^1.0.0"
+    "@rest-hooks/endpoint" "^1.0.0"
 
 restore-cursor@^2.0.0:
   version "2.0.0"

@@ -19,10 +19,10 @@ type Props = Pick<IssueResource, 'repositoryUrl'> &
 export default function IssueList(props: Props) {
   const params = {
     'repositoryUrl':'https://api.github.com/repos/coinbase/rest-hooks',
-    state: 'open'
+    state: 'open' as const
   };
   const { results: issues, link } = useResource(IssueResource.list(), params);
-  useSubscription(IssueResource.list(), params);
+  //useSubscription(IssueResource.list(), params);
 
   return (
     <>

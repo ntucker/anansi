@@ -1,4 +1,4 @@
-import { AbstractInstanceType, EndpointExtraOptions, Resource, RestEndpoint, RestFetch, SimpleResource } from '@rest-hooks/rest';
+import { EndpointExtraOptions, Resource, RestEndpoint, RestFetch, SimpleResource } from '@rest-hooks/rest';
 import BaseResource from './BaseResource';
 import UserResource from './UserResource';
 
@@ -67,7 +67,11 @@ export default class IssueResource extends BaseResource {
   }
 
   static list<T extends typeof Resource>(this: T):
-    RestEndpoint<RestFetch, { results: T[], link: string }, undefined>
+    RestEndpoint<
+      RestFetch<Pick<IssueResource, 'repositoryUrl' | 'state'>>,
+      { results: T[], link: string },
+      undefined
+    >
   {
     return super.list() as any;
   }
