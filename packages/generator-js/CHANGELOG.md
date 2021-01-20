@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.9...@anansi/generator-js@2.0.10) (2021-01-20)
+
+
+### 💅 Enhancement
+
+* Update codgen with latest Rest Hooks 5 practices ([#64](https://github.com/ntucker/anansi/issues/64)) ([5fc840f](https://github.com/ntucker/anansi/commit/5fc840f471479176d4b24a56ec09be9e32506fed))
+
+
+
 ### [2.0.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.8...@anansi/generator-js@2.0.9) (2021-01-18)
 
 **Note:** Version bump only for package @anansi/generator-js

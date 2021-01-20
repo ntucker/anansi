@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.9...anansi-example-typescript@5.1.0) (2021-01-20)
+
+
+### 🚀 Features
+
+* Add github issues ([fa2a150](https://github.com/ntucker/anansi/commit/fa2a1503b6d3cbdeedb98fd314a9b07a541bb68c))
+
+
+### 💅 Enhancement
+
+* Update codgen with latest Rest Hooks 5 practices ([#64](https://github.com/ntucker/anansi/issues/64)) ([5fc840f](https://github.com/ntucker/anansi/commit/5fc840f471479176d4b24a56ec09be9e32506fed))
+
+
+
 ### [5.0.9](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.8...anansi-example-typescript@5.0.9) (2021-01-18)
 
 

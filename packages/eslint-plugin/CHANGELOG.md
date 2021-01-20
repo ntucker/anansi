@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.16](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.15...@anansi/eslint-plugin@0.9.16) (2021-01-20)
+
+
+### 💅 Enhancement
+
+* Update codgen with latest Rest Hooks 5 practices ([#64](https://github.com/ntucker/anansi/issues/64)) ([5fc840f](https://github.com/ntucker/anansi/commit/5fc840f471479176d4b24a56ec09be9e32506fed))
+
+
+
 ### [0.9.15](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.14...@anansi/eslint-plugin@0.9.15) (2020-10-24)
 
 
