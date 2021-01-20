@@ -1,9 +1,15 @@
 import { camelCase, snakeCase } from 'lodash';
-import { Resource, AbstractInstanceType, SimpleRecord, RestEndpoint, RestFetch } from '@rest-hooks/rest';
+import {
+  Resource,
+  AbstractInstanceType,
+  SimpleRecord,
+  RestEndpoint,
+  RestFetch,
+} from '@rest-hooks/rest';
 
 function deeplyApplyKeyTransform(obj: any, transform: (key: string) => string) {
   const ret: any = Array.isArray(obj) ? [] : {};
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).forEach(key => {
     if (obj[key] != null && typeof obj[key] === 'object') {
       ret[transform(key)] = deeplyApplyKeyTransform(obj[key], transform);
     } else {
@@ -37,17 +43,13 @@ export default abstract class BaseResource extends Resource {
   }
 
   /** Shape to get a list of entities */
-  static list<T extends typeof Resource>(this: T): RestEndpoint<
-    RestFetch,
-    { results: T[], link: string},
-    undefined
-  > {
+  static list<T extends typeof Resource>(
+    this: T,
+  ): RestEndpoint<RestFetch, { results: T[]; link: string }, undefined> {
     const instanceFetchResponse = this.fetchResponse.bind(this);
 
     return super.list().extend({
-      fetch: async function (
-        params: Readonly<object>,
-      ) {
+      fetch: async function (params: Readonly<object>) {
         const response = await instanceFetchResponse(
           this.url(params),
           this.getFetchInit(),
@@ -66,5 +68,4 @@ export default abstract class BaseResource extends Resource {
       schema: { results: [this], link: '' },
     });
   }
-
 }

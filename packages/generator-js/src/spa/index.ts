@@ -83,13 +83,17 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     if (this.config.get('reactMode') === 'legacy') {
       this.yarnInstall(['react', 'react-dom', 'react-test-renderer']);
     } else {
-      this.yarnInstall(['react@experimental', 'react-dom@experimental', 'react-test-renderer@experimental']);
+      this.yarnInstall([
+        'react@experimental',
+        'react-dom@experimental',
+        'react-test-renderer@experimental',
+      ]);
     }
     this.yarnInstall(['@types/react', '@types/react-dom'], { dev: true });
   }
 
   installRestHooks() {
-    this.yarnInstall(['rest-hooks@beta', '@rest-hooks/rest']);
-    this.yarnInstall(['@rest-hooks/test@beta', 'redux'], { dev: true });
+    this.yarnInstall(['rest-hooks', '@rest-hooks/rest']);
+    this.yarnInstall(['@rest-hooks/test', 'redux'], { dev: true });
   }
 };

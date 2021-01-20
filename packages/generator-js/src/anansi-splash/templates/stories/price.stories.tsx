@@ -1,5 +1,5 @@
 import { Story } from '@storybook/react/types-6-0';
-import { MockProvider } from '@rest-hooks/test';
+import { MockResolver } from '@rest-hooks/test';
 
 import priceFixture from './price.fixture';
 import Price from './AssetPrice';
@@ -7,18 +7,11 @@ import Price from './AssetPrice';
 export default {
   title: 'atoms/Price',
   component: Price,
-  decorators: [
-    Story => (
-      <MockProvider results={priceFixture}>
-        <Story />
-      </MockProvider>
-    ),
-  ],
   argTypes: {
     symbol: {
       description: 'Asset Symbol',
       defaultValue: {
-        summary: 'BTC',
+        symbol: 'BTC',
       },
       control: {
         type: 'select',
@@ -28,7 +21,11 @@ export default {
   },
 };
 
-const Template: Story<{ symbol: string }> = args => <Price {...args} />;
+const Template: Story<{ symbol: string }> = args => (
+  <MockResolver fixtures={priceFixture}>
+    <Price {...args} />
+  </MockResolver>
+);
 
 export const BTCPrice = Template.bind({});
 
