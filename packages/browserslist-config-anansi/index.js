@@ -14,6 +14,13 @@ module.exports = {
     'not safari<12.1',
     'not OperaMini all',
   ],
+  modern: [
+    'last 2 Firefox versions',
+    'Firefox ESR',
+    'last 2 Chrome versions',
+    'last 1 Safari versions',
+    'last 1 Edge versions',
+  ],
   development: ['last 1 Chrome versions', 'last 1 Firefox versions'],
   test: ['current node'],
 };
