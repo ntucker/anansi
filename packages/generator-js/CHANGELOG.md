@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.10...@anansi/generator-js@2.0.11) (2021-01-23)
+
+
+### 📦 Package
+
+* patch ejs, babel/core ([400dbfd](https://github.com/ntucker/anansi/commit/400dbfd8233933601fdb09d78069e6616d7e88d6))
+
+
+
 ### [2.0.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.9...@anansi/generator-js@2.0.10) (2021-01-20)
 
 

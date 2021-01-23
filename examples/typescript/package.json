@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -19,9 +19,9 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.1.5",
-    "@anansi/browserslist-config": "^1.0.1",
-    "@anansi/eslint-plugin": "^0.9.16",
-    "@anansi/webpack-config": "^5.1.7",
+    "@anansi/browserslist-config": "^1.1.0",
+    "@anansi/eslint-plugin": "^0.9.17",
+    "@anansi/webpack-config": "^5.1.8",
     "@babel/core": "7.12.10",
     "@rest-hooks/test": "^2.0.0-k.2",
     "@types/classnames": "^2.2.9",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.17](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.16...@anansi/eslint-plugin@0.9.17) (2021-01-23)
+
+
+### 📦 Package
+
+* eslint- typescript, react, react-hooks, resolver, root-import ([e613365](https://github.com/ntucker/anansi/commit/e6133656c911515e6397122b912e0561665aa7a5))
+
+
+
 ### [0.9.16](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.15...@anansi/eslint-plugin@0.9.16) (2021-01-20)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.7...@anansi/webpack-config@5.1.8) (2021-01-23)
+
+
+### 📦 Package
+
+* autoprefixer, html-webpack-plugin, mini-css-extract-plugin, worker-loader ([8dd7bd0](https://github.com/ntucker/anansi/commit/8dd7bd07f3929c1ea0a832cfe682b2700065ef05))
+
+
+
 ### [5.1.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.6...@anansi/webpack-config@5.1.7) (2021-01-18)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.1.0...anansi-example-typescript@5.1.1) (2021-01-23)
+
+
+### 📦 Package
+
+* eslint- typescript, react, react-hooks, resolver, root-import ([e613365](https://github.com/ntucker/anansi/commit/e6133656c911515e6397122b912e0561665aa7a5))
+
+
+
 ## [5.1.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.0.9...anansi-example-typescript@5.1.0) (2021-01-20)
 
 
