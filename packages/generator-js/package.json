@@ -67,10 +67,10 @@
   "dependencies": {
     "@anansi/eslint-plugin": "^0.9.16",
     "@anansi/webpack-config": "^5.1.7",
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.12.10",
     "@types/mem-fs-editor": "^5.1.1",
     "chalk": "^3.0.0",
-    "ejs": "^3.1.3",
+    "ejs": "^3.1.5",
     "gulp-filter": "^6.0.0",
     "gulp-prettier": "^3.0.0",
     "shelobsay": "^1.0.1",
@@ -98,6 +98,5 @@
     "build:clean": "rimraf generators",
     "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/**/.**/.*\" generators",
     "prepare": "yarn build:clean && yarn build"
-  },
-  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
+  }
 }
