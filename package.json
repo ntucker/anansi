@@ -26,7 +26,7 @@
     "babel-plugin-root-import": "^6.5.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.4.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.18.0",
     "husky": "^3.0.9",
     "lerna": "^3.22.1",
     "typescript": "^4.1.3",

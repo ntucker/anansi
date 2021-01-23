@@ -18,8 +18,8 @@ type Props = Pick<IssueResource, 'repositoryUrl'> &
 
 export default function IssueList(props: Props) {
   const params = {
-    'repositoryUrl':'https://api.github.com/repos/coinbase/rest-hooks',
-    state: 'open' as const
+    repositoryUrl: 'https://api.github.com/repos/coinbase/rest-hooks',
+    state: 'open' as const,
   };
   const { results: issues, link } = useResource(IssueResource.list(), params);
   //useSubscription(IssueResource.list(), params);
@@ -29,7 +29,7 @@ export default function IssueList(props: Props) {
       <List
         itemLayout="horizontal"
         dataSource={issues}
-        renderItem={(issue) => <IssueListItem key={issue.pk()} issue={issue} />}
+        renderItem={issue => <IssueListItem key={issue.pk()} issue={issue} />}
       />
       <div className="center">
         <LinkPagination link={link} />
@@ -65,7 +65,11 @@ function IssueListItem({ issue }: { issue: IssueResource }) {
               #{issue.number}
             </a>{' '}
             opened {moment(issue.createdAt).fromNow()} by{' '}
-            <a href={issue.user.htmlUrl} target="_blank" rel="noreferrer noopener">
+            <a
+              href={issue.user.htmlUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               {issue.user.login}
             </a>
           </>

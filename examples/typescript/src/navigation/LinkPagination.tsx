@@ -1,12 +1,12 @@
-import React from "react";
-import parseLink from "parse-link-header";
-import { Pagination } from "antd";
-import { withRouter, RouteComponentProps } from "react-router-dom";
-import { History } from "history";
+import React from 'react';
+import parseLink from 'parse-link-header';
+import { Pagination } from 'antd';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
+import { History } from 'history';
 
 const handleChange = (history: History<any>) => (
   page: number,
-  pageSize?: number
+  pageSize?: number,
 ) => {
   history.push(history.location.pathname + `?page=${page}`);
 };

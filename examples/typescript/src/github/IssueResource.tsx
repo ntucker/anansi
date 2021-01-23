@@ -1,9 +1,13 @@
-import { EndpointExtraOptions, Resource, RestEndpoint, RestFetch, SimpleResource } from '@rest-hooks/rest';
-import BaseResource from './BaseResource';
-import UserResource from './UserResource';
-
+import {
+  EndpointExtraOptions,
+  Resource,
+  RestEndpoint,
+  RestFetch,
+} from '@rest-hooks/rest';
 import { InfoCircleOutlined, IssuesCloseOutlined } from '@ant-design/icons';
 
+import BaseResource from './BaseResource';
+import UserResource from './UserResource';
 
 const stateToIcon: Record<string, React.ReactNode> = {
   closed: <IssuesCloseOutlined />,
@@ -39,6 +43,7 @@ export default class IssueResource extends BaseResource {
   pk() {
     return [this.repositoryUrl, this.number].join(',');
   }
+
   static urlRoot = 'https://api.github.com/repos/issues';
 
   static getEndpointExtra(): EndpointExtraOptions {
@@ -66,13 +71,13 @@ export default class IssueResource extends BaseResource {
     return `${searchParams.repositoryUrl}/issues?${params.toString()}`;
   }
 
-  static list<T extends typeof Resource>(this: T):
-    RestEndpoint<
-      RestFetch<Pick<IssueResource, 'repositoryUrl' | 'state'>>,
-      { results: T[], link: string },
-      undefined
-    >
-  {
+  static list<T extends typeof Resource>(
+    this: T,
+  ): RestEndpoint<
+    RestFetch<Pick<IssueResource, 'repositoryUrl' | 'state'>>,
+    { results: T[]; link: string },
+    undefined
+  > {
     return super.list() as any;
   }
 }

@@ -1,4 +1,5 @@
 import { Resource, Endpoint } from '@rest-hooks/rest';
+
 import BaseResource from './BaseResource';
 
 export default class UserResource extends BaseResource {
@@ -46,6 +47,7 @@ export default class UserResource extends BaseResource {
   pk() {
     return this.login;
   }
+
   static urlRoot = 'https://api.github.com/users/';
 
   /** Retrieves current logged in user */
