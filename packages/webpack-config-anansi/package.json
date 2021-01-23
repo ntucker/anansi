@@ -55,7 +55,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@svgr/webpack": "^5.5.0",
     "assert": "^2.0.0",
-    "autoprefixer": "^10.0.4",
+    "autoprefixer": "^10.2.3",
     "babel-loader": "^8.2.2",
     "browserify-zlib": "^0.2.0",
     "circular-dependency-plugin": "^5.2.2",
@@ -71,11 +71,11 @@
     "events": "^3.2.0",
     "file-loader": "^6.2.0",
     "hard-source-webpack-plugin": "^0.13.1",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^4.5.1",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
     "markdown-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^1.3.2",
+    "mini-css-extract-plugin": "^1.3.4",
     "node-sass": "^5.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "os-browserify": "^0.3.0",
@@ -111,12 +111,12 @@
     "webpack-bundle-analyzer": "^3.9.0",
     "webpack-fix-style-only-entries": "^0.6.0",
     "webpack-node-externals": "^2.5.2",
-    "worker-loader": "^3.0.6"
+    "worker-loader": "^3.0.7"
   },
   "peerDependencies": {
     "@hot-loader/react-dom": "^16.0.0",
     "@storybook/react": "^6.0.0",
-    "react-refresh": "^0.8.0",
+    "react-refresh": "^0.8.0 || ^0.9.0",
     "webpack": "^4.43.0 || ^5.12.0",
     "webpack-cli": "^4.1.0"
   },
@@ -133,6 +133,5 @@
     "webpack-cli": {
       "optional": true
     }
-  },
-  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
+  }
 }
