@@ -30,17 +30,17 @@
     "@types/react-router-dom": "^5.1.3",
     "babel-loader": "8.2.2",
     "react-refresh": "0.9.0",
-    "react-test-renderer": "^16.13.1",
+    "react-test-renderer": "^17.0.1",
     "redux": "^4.0.5",
     "serve": "^11.3.2"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.19",
-    "@babel/runtime": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
     "@rest-hooks/rest": "^1.0.0",
     "antd": "^4.10.0",
     "classnames": "^2.2.6",
-    "core-js": "^3.8.2",
+    "core-js": "^3.8.3",
     "lodash": "^4.17.15",
     "parse-link-header": "^1.0.1",
     "react": "^17.0.1",
@@ -48,7 +48,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "5.0.0"
+    "rest-hooks": "5.0.1"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
