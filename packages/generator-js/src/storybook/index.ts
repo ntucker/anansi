@@ -26,8 +26,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.config.getAll(),
     );
     this.fs.copyTpl(
-      this.templatePath('.storybook/preview.jsx'),
-      this.destinationPath('.storybook/preview.jsx'),
+      this.templatePath('.storybook/preview.tsx'),
+      this.destinationPath('.storybook/preview.tsx'),
       this.config.getAll(),
     );
     if (this.config.get('webpack')) {
