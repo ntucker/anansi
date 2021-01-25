@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.11...@anansi/generator-js@2.0.12) (2021-01-25)
+
+
+### 🐛 Bug Fix
+
+* Copy correct file for storybook gen ([434b79a](https://github.com/ntucker/anansi/commit/434b79a9d2c774c5665acd3d4feeb3b14ea487c8))
+
+
+
 ### [2.0.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.10...@anansi/generator-js@2.0.11) (2021-01-23)
 
 
