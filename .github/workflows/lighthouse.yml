@@ -1,0 +1,25 @@
+name: Lighthouse Check
+on: [pull_request]
+
+jobs:
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: mkdir /tmp/artifacts
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: install and build
+        run: |
+          yarn
+          yarn build
+      - name: run Lighthouse CI
+        working-directory: ./examples/typescript
+        run: |
+          npm install -g @lhci/cli@0.6.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_TOKEN: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}

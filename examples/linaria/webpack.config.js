@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
   config.module.rules[1].use.push({
     loader: 'linaria/loader',
     options: {
-      sourceMap: argv?.mode !== 'production',
+      sourceMap: argv && argv.mode !== 'production',
     },
   });
   return config;
