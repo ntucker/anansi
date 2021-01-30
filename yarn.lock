@@ -2650,9 +2650,9 @@
     "@babel/runtime" "^7.12.0"
 
 "@rest-hooks/rest@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.0.tgz#15874ac905defadccf4080b0f8614a0bee5c6078"
-  integrity sha512-2rNDm4OkhAEh2KWTq8P/87uBwsFCLCPw8/EhUmlJdbehVCzjcPP132uByyZE7+nSaGlWc/Lo9HF0rlK9aKg81Q==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.1.tgz#f79bfb9903965fd6d41184004fcfdacf9a64fc37"
+  integrity sha512-5nR996iMhKf/NyFPEgRsD9LUzZkp5UdX87ee9d+8XarnjzrkK0aaj7VShkCPXLUxcK5oqAeGXhv3xIJQpoJaXg==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
