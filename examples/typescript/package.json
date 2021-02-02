@@ -23,7 +23,7 @@
     "@anansi/eslint-plugin": "^0.9.17",
     "@anansi/webpack-config": "^5.1.8",
     "@babel/core": "7.12.10",
-    "@rest-hooks/test": "^2.0.0-k.2",
+    "@rest-hooks/test": "^3.0.0",
     "@types/classnames": "^2.2.9",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
