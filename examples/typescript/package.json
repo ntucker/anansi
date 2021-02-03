@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.1.0",
     "@anansi/eslint-plugin": "^0.9.17",
     "@anansi/webpack-config": "^5.1.8",
-    "@babel/core": "7.12.10",
+    "@babel/core": "7.12.13",
     "@rest-hooks/test": "^3.0.0",
     "@types/classnames": "^2.2.9",
     "@types/react": "^17.0.0",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.19",
-    "@babel/runtime": "^7.12.5",
+    "@babel/runtime": "^7.12.13",
     "@rest-hooks/rest": "^1.0.0",
     "antd": "^4.10.0",
     "classnames": "^2.2.6",
