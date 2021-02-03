@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.5...@anansi/babel-preset@2.1.6) (2021-02-03)
+
+
+### 📦 Package
+
+* bump @babel/preset-env from 7.12.11 to 7.12.13 ([#74](https://github.com/ntucker/anansi/issues/74)) ([8b1225d](https://github.com/ntucker/anansi/commit/8b1225d1f9e42f1b113bef9e2eabfa353ae7f93a))
+
+
+
 ### [2.1.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.4...@anansi/babel-preset@2.1.5) (2020-12-17)
 
 

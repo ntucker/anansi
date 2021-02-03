@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.12...anansi-example-linaria@2.1.0) (2021-02-03)
+
+
+### 🚀 Features
+
+* Add lighthouse checks ([#65](https://github.com/ntucker/anansi/issues/65)) ([5f512dd](https://github.com/ntucker/anansi/commit/5f512ddd9cd8166229908c95e4bc16840cab4471))
+
+
+### 📦 Package
+
+* bump @babel/preset-env from 7.12.11 to 7.12.13 ([#74](https://github.com/ntucker/anansi/issues/74)) ([8b1225d](https://github.com/ntucker/anansi/commit/8b1225d1f9e42f1b113bef9e2eabfa353ae7f93a))
+
+
+
 ### [2.0.12](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.0.11...anansi-example-linaria@2.0.12) (2021-01-25)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.13...@anansi/generator-js@2.0.14) (2021-02-03)
+
+
+### 📦 Package
+
+* bump @babel/preset-env from 7.12.11 to 7.12.13 ([#74](https://github.com/ntucker/anansi/issues/74)) ([8b1225d](https://github.com/ntucker/anansi/commit/8b1225d1f9e42f1b113bef9e2eabfa353ae7f93a))
+* Upgrade webpack to latest 4 ([ff80e1c](https://github.com/ntucker/anansi/commit/ff80e1cce395bbdd1e674b57ceaec697b94e154d))
+
+
+
 ### [2.0.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.12...@anansi/generator-js@2.0.13) (2021-01-25)
 
 
