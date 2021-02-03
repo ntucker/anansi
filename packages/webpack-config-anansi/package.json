@@ -109,7 +109,7 @@
     "util": "^0.12.3",
     "vm-browserify": "^1.1.2",
     "webpack-bundle-analyzer": "^3.9.0",
-    "webpack-fix-style-only-entries": "^0.6.0",
+    "webpack-fix-style-only-entries": "^0.6.1",
     "webpack-node-externals": "^2.5.2",
     "worker-loader": "^3.0.7"
   },
