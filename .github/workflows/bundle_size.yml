@@ -1,0 +1,21 @@
+name: Compressed Size
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2-beta
+      with:
+        fetch-depth: 1
+    - name: compressed-size-action
+      uses: preactjs/compressed-size-action@v2
+      continue-on-error: true
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        build-script: "lerna run --ignore anansi-example-linaria --ignore @anansi/generator-js build"
+        pattern: "examples/typescript/dist/**/*.{js,css,html,json}"
+        exclude: "{examples/typescript/dist/manifest.json,**/*.map,**/node_modules/**}"
