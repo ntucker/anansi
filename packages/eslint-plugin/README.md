@@ -4,6 +4,12 @@
 [![npm version](https://img.shields.io/npm/v/@anansi/eslint-plugin.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/eslint-plugin)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+## Installation
+
+[Eslint has decided it is necessary for users to install all plugins manually](https://github.com/eslint/rfcs/pull/5)
+
+`yarn add --dev @anansi/eslint-plugin eslint-plugin-prettier eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks`
+
 ## Usage
 
 ### TypeScript
