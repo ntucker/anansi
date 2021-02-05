@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.9...@anansi/webpack-config@5.1.10) (2021-02-05)
+
+
+### 📦 Package
+
+* bump ramda from 0.26.1 to 0.27.1 ([#78](https://github.com/ntucker/anansi/issues/78)) ([498e327](https://github.com/ntucker/anansi/commit/498e32768f195c8cc3b0e7aa37f24c63739467e4))
+* webpack-fix-style-only-entries patch ([4881852](https://github.com/ntucker/anansi/commit/4881852c2e73bd3c12d2c2eacc3ea05c38d20a1b))
+
+
+
 ### [5.1.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.8...@anansi/webpack-config@5.1.9) (2021-02-03)
 
 **Note:** Version bump only for package @anansi/webpack-config

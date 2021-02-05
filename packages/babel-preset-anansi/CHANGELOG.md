@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.6...@anansi/babel-preset@2.1.7) (2021-02-05)
+
+
+### 📦 Package
+
+* Relax @babel/runtime requirements to 7.7 ([48eba52](https://github.com/ntucker/anansi/commit/48eba52398c1bf9a01c5cd658b0de03ba0349d09))
+
+
+
 ### [2.1.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.5...@anansi/babel-preset@2.1.6) (2021-02-03)
 
 

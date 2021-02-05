@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.18](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.17...@anansi/eslint-plugin@0.9.18) (2021-02-05)
+
+
+### 🐛 Bug Fix
+
+* Eslint plugins must be peerDeps ([fecfe93](https://github.com/ntucker/anansi/commit/fecfe9333bc34d8f37136ea9bf9857bcb2246696))
+
+
+
 ### [0.9.17](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.16...@anansi/eslint-plugin@0.9.17) (2021-01-23)
 
 

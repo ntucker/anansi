@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.14...@anansi/generator-js@2.0.15) (2021-02-05)
+
+
+### 💅 Enhancement
+
+* Choose webpack installs explicitly ([31016b8](https://github.com/ntucker/anansi/commit/31016b8a86aa69022ce314b8cc390afb0dc30faa))
+
+
+
 ### [2.0.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.13...@anansi/generator-js@2.0.14) (2021-02-03)
 
 
