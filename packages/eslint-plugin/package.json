@@ -31,11 +31,11 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "babel-eslint": "^10.1.0",
     "babel-plugin-root-import": "^6.6.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-babel": "^5.3.1",
