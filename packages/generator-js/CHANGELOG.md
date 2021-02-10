@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.15...@anansi/generator-js@2.0.16) (2021-02-10)
+
+
+### 📦 Package
+
+* bump @types/mem-fs-editor from 5.1.1 to 7.0.0 ([#84](https://github.com/ntucker/anansi/issues/84)) ([587afc3](https://github.com/ntucker/anansi/commit/587afc33fedf1e00bc12bebd33146ab95cdf6b3a))
+* bump chalk from 3.0.0 to 4.1.0 ([#82](https://github.com/ntucker/anansi/issues/82)) ([202cf56](https://github.com/ntucker/anansi/commit/202cf56946f90246dfdc19a567fc69d99e963e31))
+* bump yeoman-test from 1.9.1 to 4.0.0 ([#85](https://github.com/ntucker/anansi/issues/85)) ([0f25f24](https://github.com/ntucker/anansi/commit/0f25f2451d22b4aef19ce790424df561cc662046))
+
+
+
 ### [2.0.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.14...@anansi/generator-js@2.0.15) (2021-02-05)
 
 

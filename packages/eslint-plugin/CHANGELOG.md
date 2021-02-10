@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.19](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.18...@anansi/eslint-plugin@0.9.19) (2021-02-10)
+
+
+### 📦 Package
+
+* eslint-config-prettier major, typescript-eslint patch ([b7965b9](https://github.com/ntucker/anansi/commit/b7965b9291dbee617a1ce5e6dc18a5b617d0ee04))
+* Prettier is peerDep now ([44fda8c](https://github.com/ntucker/anansi/commit/44fda8c3b922375f0b55cc1f0889287de9c26f2d))
+
+
+
 ### [0.9.18](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.17...@anansi/eslint-plugin@0.9.18) (2021-02-05)
 
 
