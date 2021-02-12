@@ -111,7 +111,7 @@
     "webpack-bundle-analyzer": "^3.9.0",
     "webpack-fix-style-only-entries": "^0.6.1",
     "webpack-node-externals": "^2.5.2",
-    "worker-loader": "^3.0.7"
+    "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
     "@hot-loader/react-dom": "^16.0.0",
