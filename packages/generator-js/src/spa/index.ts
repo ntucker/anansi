@@ -94,6 +94,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   installRestHooks() {
     this.yarnInstall(['rest-hooks', '@rest-hooks/rest']);
-    this.yarnInstall(['@rest-hooks/test', 'redux'], { dev: true });
+    this.yarnInstall(['@rest-hooks/test'], { dev: true });
   }
 };

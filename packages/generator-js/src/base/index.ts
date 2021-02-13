@@ -92,12 +92,16 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   installEslintPlugin() {
-    this.yarnInstall(['eslint', '@anansi/eslint-plugin'], { dev: true });
-    this.installPeers('@anansi/eslint-plugin', undefined, { dev: true });
+    this.installPeers(
+      '@anansi/eslint-plugin',
+      ['typescript', 'babel-plugin-root-import'],
+      { dev: true },
+    );
+    this.yarnInstall(['@anansi/eslint-plugin'], { dev: true });
   }
 
   installTypeScript() {
-    this.yarnInstall(['typescript', '@anansi/eslint-plugin'], {
+    this.yarnInstall(['typescript'], {
       dev: true,
     });
   }
