@@ -10,7 +10,7 @@ Currently supports webpack 4 and 5.
 
 ## Usage
 
-`/webpack.config.js`
+<details open><summary><b>/webpack.config.js</b></summary>
 
 ```javascript
 const { makeConfig } = require('@anansi/webpack-config');
@@ -24,8 +24,9 @@ module.exports = { options };
 
 module.exports = makeConfig(options);
 ```
+</details>
 
-`/package.json`
+<details open><summary><b>/package.json</b></summary>
 
 ```json
 {
@@ -39,10 +40,11 @@ module.exports = makeConfig(options);
   }
 }
 ```
+</details>
 
 ### Storybook 6
 
-`/.storybook/webpack.config.js`
+<details open><summary><b>/.storybook/webpack.config.js</b></summary>
 
 ```js
 const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
@@ -50,6 +52,7 @@ const { options } = require('../webpack.config');
 
 module.exports = makeStorybookConfigGenerator(options);
 ```
+</details>
 
 ## Enabling react-refresh
 
@@ -96,6 +99,9 @@ server for SSR alongside the client bundle.
 `webpack --mode=production --target=node`
 
 ## ENV customization
+
+Environmental variable control is sometimes useful in CI pipelines
+to distinguish between various deploy targets.
 
 ### WEBPACK_PUBLIC_HOST = ''
 
