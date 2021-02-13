@@ -1,8 +1,11 @@
 import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plugin';
 import CircularDependencyPlugin from 'circular-dependency-plugin';
 
-
-export default function makeCheckConfig(baseConfig, { libraryExclude }, checkArg) {
+export default function makeCheckConfig(
+  baseConfig,
+  { libraryExclude },
+  checkArg,
+) {
   const config = { ...baseConfig };
   baseConfig.plugins.unshift(
     new DuplicatePackageCheckerPlugin(),

@@ -1,5 +1,5 @@
 function setLoaderOptions(config, loaderName, options) {
-  const transform = (loader) => {
+  const transform = loader => {
     if (loader === loaderName) {
       return {
         loader,
@@ -8,7 +8,7 @@ function setLoaderOptions(config, loaderName, options) {
     }
     return loader;
   };
-  config.module.rules.forEach((rule) => {
+  config.module.rules.forEach(rule => {
     if (!rule.use) return;
     if (Array.isArray(rule.use)) {
       rule.use = rule.use.map(transform);

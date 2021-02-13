@@ -19,30 +19,25 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     const basePlugins = envConfig.plugins.filter(
       plugin =>
         // defer to storybook's version in this case
-        ![
-          'HtmlWebpackPlugin',
-          'ErrorOverlayPlugin',
-          'StatsPlugin',
-        ].includes(plugin.constructor.name),
+        !['HtmlWebpackPlugin', 'ErrorOverlayPlugin', 'StatsPlugin'].includes(
+          plugin.constructor.name,
+        ),
     );
 
     // ignore all their 'react' rules, as we already provide react handling
     // other addons might add rules, so be sure to include those here
-    const storybookRules = storybookConfig.module.rules.filter(
-      rule => {
-        if (rule.loader) {
-          return !rule.loader.includes('@storybook/react');
-        }
-        if (rule.use) {
-          return !rule.use.find(
-            loadConfig => {
-              const loader = typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
-              return loader.includes('@storybook/react');
-            }
-          )
-        }
+    const storybookRules = storybookConfig.module.rules.filter(rule => {
+      if (rule.loader) {
+        return !rule.loader.includes('@storybook/react');
       }
-    )
+      if (rule.use) {
+        return !rule.use.find(loadConfig => {
+          const loader =
+            typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
+          return loader.includes('@storybook/react');
+        });
+      }
+    });
 
     // this transforms storybook node_modules files...not sure why this isn't done at publish time
     const libraryRule = storybookConfig.module.rules[1];

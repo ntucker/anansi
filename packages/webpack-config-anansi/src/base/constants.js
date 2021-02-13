@@ -1,6 +1,6 @@
 import path from 'path';
-import pkg from '../../package.json';
 
+import pkg from '../../package.json';
 
 export const ROOT_PATH = path.resolve();
 export const LIBRARY_MODULES_PATH = path.join(
