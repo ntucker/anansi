@@ -22,7 +22,7 @@ interface FsEditor extends Generator.MemFsEditor {
 export class BetterGenerator extends Generator {
   fs!: FsEditor;
 
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
 
     this.fs.extendJSONTpl = (
@@ -66,7 +66,7 @@ export function InstallPeersMixin<
       exclude: string[] = [],
       installOptions: Record<string, any> = {},
     ) {
-      let pkgDir = path.join(path.dirname(require.resolve(pkgName)), '..');
+      let pkgDir = path.join(path.dirname(require.resolve(pkgName)));
       let pkgJSON: PKG | null = null;
       for (let i = 0; i < 10 && !pkgJSON; i++) {
         pkgJSON = this.fs.readJSON(path.join(pkgDir, 'package.json'));
