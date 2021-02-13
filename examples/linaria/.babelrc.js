@@ -1,6 +1,6 @@
 module.exports = {
   presets: [
-    ['@anansi/babel-preset', { typing: 'typescript' }],
+    ['@anansi', { typing: 'typescript' }],
     'linaria/babel',
   ],
 };

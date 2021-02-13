@@ -19,7 +19,7 @@ Just include in .babelrc
 
 ```json
 {
-  "presets": ["@anansi/babel-preset"]
+  "presets": ["@anansi"]
 }
 ```
 
@@ -29,7 +29,7 @@ Or configure options
 {
   "presets": [
     [
-      "@anansi/babel-preset",
+      "@anansi",
       {
         "nodeTarget": "10"
       }
@@ -42,7 +42,7 @@ Or configure options
 {
   "presets": [
     [
-      "@anansi/babel-preset",
+      "@anansi",
       {
         "typing": "typescript"
       }
