@@ -36,8 +36,8 @@
   "dependencies": {
     "@anansi/polyfill": "^1.0.23",
     "@babel/runtime": "^7.12.13",
-    "@rest-hooks/rest": "^1.0.0",
-    "antd": "^4.10.0",
+    "@rest-hooks/rest": "^1.0.2",
+    "antd": "^4.12.3",
     "classnames": "^2.2.6",
     "core-js": "^3.8.3",
     "lodash": "^4.17.15",
@@ -47,7 +47,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "5.0.1"
+    "rest-hooks": "5.0.3"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
