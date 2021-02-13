@@ -9,7 +9,7 @@ const options = {
   <% } else if (style === 'linaria') { %>
   extraJsLoaders: [
     {
-      loader: 'linaria/loader',
+      loader: '@linaria/webpack-loader',
       options: {
         sourceMap: true,
       },

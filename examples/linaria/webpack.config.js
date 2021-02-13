@@ -21,7 +21,7 @@ module.exports = (env, argv) => {
     };
   }
   config.module.rules[1].use.push({
-    loader: 'linaria/loader',
+    loader: '@linaria/webpack-loader',
     options: {
       sourceMap: argv && argv.mode !== 'production',
     },

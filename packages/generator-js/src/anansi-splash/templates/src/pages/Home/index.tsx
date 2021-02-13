@@ -1,5 +1,5 @@
 <% if (style === 'linaria') { %>
-import { css } from 'linaria';
+import { css } from '@linaria/core';
 <% } %>
 
 import AssetPrice from './AssetPrice';

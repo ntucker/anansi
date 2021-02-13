@@ -98,7 +98,13 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       'react-refresh',
     ];
     if (this?.props?.style === 'linaria') {
-      devDeps.push('linaria');
+      devDeps.push(
+        '@linaria/core',
+        '@linaria/react',
+        '@linaria/babel-preset',
+        '@linaria/shaker',
+        '@linaria/webpack-loader',
+      );
     }
     this.yarnInstall(devDeps, {
       dev: true,
