@@ -276,13 +276,13 @@ export default function MyComponent() {
 
 ### Working with Linaria
 
-1. Install linaria: `yarn add --dev linaria`
+1. Install linaria: `yarn add --dev @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker @linaria/webpack-loader`
 2. Use `extraJsLoaders` option, to add the loader.
 ```js
 const myConfig = makeConfig({
   extraJsLoaders: [
     {
-      loader: 'linaria/loader',
+      loader: '@linaria/webpack-loader',
       options: {
         sourceMap: argv?.mode !== 'production',
       },
@@ -290,12 +290,12 @@ const myConfig = makeConfig({
   ]
 });
 ```
-3. Add `linaria/babel` to babel presets.
+3. Add `@linaria` to babel presets.
 ```js
 module.exports = {
   presets: [
-    ['@anansi/babel-preset', { typing: 'typescript' }],
-    'linaria/babel',
+    ['@anansi', { typing: 'typescript' }],
+    '@linaria',
   ],
 };
 ```
