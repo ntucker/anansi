@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.10...@anansi/webpack-config@5.1.11) (2021-02-13)
+
+
+### 📦 Package
+
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+* bump worker-loader from 3.0.7 to 3.0.8 ([#91](https://github.com/ntucker/anansi/issues/91)) ([c260de8](https://github.com/ntucker/anansi/commit/c260de83a85e7085f7e8afe980533428dbbcb152))
+
+
+
 ### [5.1.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.9...@anansi/webpack-config@5.1.10) (2021-02-05)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.7...@anansi/babel-preset@2.1.8) (2021-02-13)
+
+
+### 📦 Package
+
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+
+
+
 ### [2.1.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.6...@anansi/babel-preset@2.1.7) (2021-02-05)
 
 

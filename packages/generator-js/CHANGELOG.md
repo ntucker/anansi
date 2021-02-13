@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.17](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.16...@anansi/generator-js@2.0.17) (2021-02-13)
+
+
+### 📦 Package
+
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+* yeoman-generator ([72164cc](https://github.com/ntucker/anansi/commit/72164cce4e0123b74167cc5aa8637adeabb15050))
+
+
+
 ### [2.0.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.15...@anansi/generator-js@2.0.16) (2021-02-10)
 
 

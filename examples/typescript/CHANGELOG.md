@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.3](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.2.2...anansi-example-typescript@5.2.3) (2021-02-13)
+
+
+### 📦 Package
+
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+
+
+
 ### [5.2.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.2.1...anansi-example-typescript@5.2.2) (2021-02-10)
 
 **Note:** Version bump only for package anansi-example-typescript

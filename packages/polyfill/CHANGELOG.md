@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.22](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.21...@anansi/polyfill@1.0.22) (2021-02-13)
+
+
+### 📦 Package
+
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+
+
+
 ### [1.0.21](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.20...@anansi/polyfill@1.0.21) (2021-02-05)
 
 **Note:** Version bump only for package @anansi/polyfill
