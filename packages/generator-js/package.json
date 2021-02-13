@@ -56,7 +56,6 @@
     "jest": "^26.1.0",
     "lint-staged": "^9.5.0",
     "rimraf": "^3.0.0",
-    "typescript": "^3.9.5",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^4.0.0"
   },
@@ -93,7 +92,7 @@
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
     "test": "jest",
-    "build": "tsc && yarn run copyfiles",
+    "build": "yarn run tsc && yarn run copyfiles",
     "build:clean": "rimraf generators",
     "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/**/.**/.*\" generators",
     "prepare": "yarn build:clean && yarn build"

@@ -21,13 +21,13 @@
   "scripts": {
     "build:commonjs": "rollup -c",
     "build:lib": "NODE_ENV=production babel src --out-dir lib --source-maps inline --extensions '.ts'",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build:types": "yarn run tsc --emitDeclarationOnly",
     "build": "npm run build:types && npm run build:lib && npm run build:commonjs",
     "dev": "yarn build:lib -w",
     "clean": "rimraf dist lib",
     "prepare": "yarn run clean && yarn run build",
     "lint": "eslint src/*.js",
-    "type-check": "tsc --noEmit",
+    "type-check": "yarn run tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
   "files": [
@@ -45,11 +45,9 @@
     "@anansi/babel-preset": "^2.1.9",
     "rollup": "^1.27.0",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "typescript": "^3.9.5"
+    "rollup-plugin-commonjs": "^10.1.0"
   },
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"
-  },
-  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
+  }
 }
