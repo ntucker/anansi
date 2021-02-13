@@ -54,8 +54,8 @@ module.exports = makeStorybookConfigGenerator(options);
 ## Enabling react-refresh
 
 Install react-refresh as a dev-dependency in your project and it will automatically
-be detected and enabled. Be sure to use the anansi babel or include `react-refresh/babel` in
-your own babel configuration.
+be detected and enabled. Be sure to use the [anansi babel](https://www.npmjs.com/package/@anansi/babel-preset)
+or include `react-refresh/babel` in your own babel configuration.
 
 ```bash
 yarn add --dev react-refresh

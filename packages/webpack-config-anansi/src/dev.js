@@ -33,13 +33,13 @@ export default function makeDevConfig(
   config.watch = true;
   config.optimization = {
     splitChunks: false,
+    noEmitOnErrors: true,
   };
 
   const watchIgnorePaths = [/s?css\.d\.ts$/];
   config.plugins = [
     new webpack.HotModuleReplacementPlugin(),
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
-    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.WatchIgnorePlugin(
       webpack.version.startsWith('4')
         ? watchIgnorePaths
