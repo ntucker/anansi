@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.23](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.22...@anansi/generator-js@2.0.23) (2021-02-13)
+
+
+### 📝 Documentation
+
+* **fix:** Fix anansi link ([b7500ea](https://github.com/ntucker/anansi/commit/b7500ea031476a5ff1efbace8811a83197077ac5))
+
+
+
 ### [2.0.22](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.21...@anansi/generator-js@2.0.22) (2021-02-13)
 
 **Note:** Version bump only for package @anansi/generator-js

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.1.6...anansi-example-linaria@2.2.0) (2021-02-13)
+
+
+### 🚀 Features
+
+* Option to preload fonts ([#92](https://github.com/ntucker/anansi/issues/92)) ([8976436](https://github.com/ntucker/anansi/commit/8976436466b9627ef2ac370acc7ab105466f9f17))
+
+
+
 ### [2.1.6](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.1.5...anansi-example-linaria@2.1.6) (2021-02-13)
 
 **Note:** Version bump only for package anansi-example-linaria

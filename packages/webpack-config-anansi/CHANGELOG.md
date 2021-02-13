@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.14...@anansi/webpack-config@5.2.0) (2021-02-13)
+
+
+### 🚀 Features
+
+* Option to preload fonts ([#92](https://github.com/ntucker/anansi/issues/92)) ([8976436](https://github.com/ntucker/anansi/commit/8976436466b9627ef2ac370acc7ab105466f9f17))
+
+
+### 📝 Documentation
+
+* Add htmlOptions to readme ([3231fbd](https://github.com/ntucker/anansi/commit/3231fbde6ea7f793b1bce7be88b12a90180cc111))
+* Formatting improvements ([245e59b](https://github.com/ntucker/anansi/commit/245e59b07ee551ba3c80207c176151c13078ee01))
+
+
+
 ### [5.1.14](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.13...@anansi/webpack-config@5.1.14) (2021-02-13)
 
 
