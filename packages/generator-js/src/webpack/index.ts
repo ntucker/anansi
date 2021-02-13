@@ -76,11 +76,7 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   }
 
   installConfig() {
-    const devDeps = [
-      'webpack-cli@^4',
-      'webpack-dev-server@^3',
-      'react-refresh',
-    ];
+    const devDeps = ['webpack-cli@^4', 'webpack-dev-server@^3'];
     if (this?.props?.style === 'linaria') {
       devDeps.push(
         '@linaria/core',
