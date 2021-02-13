@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.18](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.17...@anansi/generator-js@2.0.18) (2021-02-13)
+
+
+### 🐛 Bug Fix
+
+* Webpack still installs without storybook ([3380267](https://github.com/ntucker/anansi/commit/3380267ae6165a54b144f2eb2f57832b0f38a71d))
+
+
+
 ### [2.0.17](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.16...@anansi/generator-js@2.0.17) (2021-02-13)
 
 
