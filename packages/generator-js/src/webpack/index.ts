@@ -76,23 +76,7 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   }
 
   installConfig() {
-    if (this.config.get('webpack-version')) {
-      this.yarnInstall(
-        [
-          `webpack@^${this.config.get('webpack-version')}`,
-          '@anansi/webpack-config@^5',
-        ],
-        {
-          dev: true,
-        },
-      );
-    } else {
-      this.yarnInstall(['webpack', '@anansi/webpack-config@^6.0.0-beta.2'], {
-        dev: true,
-      });
-    }
     const devDeps = [
-      '@anansi/webpack-config',
       'webpack-cli@^4',
       'webpack-dev-server@^3',
       'react-refresh',
@@ -109,6 +93,21 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     this.yarnInstall(devDeps, {
       dev: true,
     });
+    if (this.config.get('webpack-version')) {
+      this.yarnInstall(
+        [
+          `webpack@^${this.config.get('webpack-version')}`,
+          '@anansi/webpack-config@^5',
+        ],
+        {
+          dev: true,
+        },
+      );
+    } else {
+      this.yarnInstall(['webpack', '@anansi/webpack-config@^6.0.0-beta.2'], {
+        dev: true,
+      });
+    }
   }
 }
 export = WebpackGenerator;
