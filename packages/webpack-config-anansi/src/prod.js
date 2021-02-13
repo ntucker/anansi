@@ -6,6 +6,7 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
+import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
 
 import { getStyleRules } from './base';
@@ -22,6 +23,7 @@ export default function makeProdConfig(
     htmlOptions = { title: '', scriptLoading: 'defer' },
     sassResources,
     cssModulesOptions,
+    fontPreload,
   },
 ) {
   const config = { ...baseConfig };
@@ -45,6 +47,20 @@ export default function makeProdConfig(
         //new CrittersPlugin({}),
         new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
       );
+      if (fontPreload) {
+        if (!['preload', 'prefetch'].includes(fontPreload))
+          throw new Error(
+            `fontPreload: '${fontPreload}' is not valid.\nUse 'preload' or 'prefetch'`,
+          );
+        config.plugins.unshift(
+          new PreloadWebpackPlugin({
+            rel: fontPreload,
+            include: 'allAssets',
+            fileWhitelist: [/\.(otf|woff)/],
+            as,
+          }),
+        );
+      }
     }
   }
   config.module.rules.push({
@@ -164,4 +180,11 @@ export default function makeProdConfig(
     };
   }
   return config;
+}
+
+function as(entry) {
+  if (/\.css$/.test(entry)) return 'style';
+  if (/\.(otf|eot|woff2|woff|ttf)$/.test(entry)) return 'font';
+  if (/\.(svg|png|jpg|gif|ico|webp|avif)$/.test(entry)) return 'image';
+  return 'script';
 }

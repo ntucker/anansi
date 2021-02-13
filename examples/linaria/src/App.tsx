@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { css } from '@linaria/core';
+import { css, cx } from '@linaria/core';
 import { styled } from '@linaria/react';
 
 type Params = {
@@ -20,6 +20,35 @@ const neato = css`
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 
+export const font = css`
+  :global() {
+    @font-face {
+      font-family: 'FaricyNew';
+      src: url('./faricy/FaricyNew-Rg.woff') format('woff'),
+        url('./faricy/FaricyNew-Rg.otf') format('opentype');
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: 'FaricyNew';
+      src: url('./faricy/FaricyNew-Lt.woff') format('woff'),
+        url('./faricy/FaricyNew-Lt.otf') format('opentype');
+      font-weight: 300;
+    }
+    @font-face {
+      font-family: 'FaricyNew';
+      src: url('./faricy/FaricyNew-Md.woff') format('woff'),
+        url('./faricy/FaricyNew-Md.otf') format('opentype');
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'FaricyNew';
+      src: url('./faricy/FaricyNew-Bd.woff') format('woff'),
+        url('./faricy/FaricyNew-Bd.otf') format('opentype');
+      font-weight: 800;
+    }
+  }
+`;
+
 const Container = styled.div`
   border-radius: 4px;
   border: thin #eee solid;
@@ -32,6 +61,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
+  font-family: FaricyNew, arial;
   font-size: 16px;
   color: white;
   font-weight: bold;
