@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.19](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.18...@anansi/generator-js@2.0.19) (2021-02-13)
+
+
+### 💅 Enhancement
+
+* Use beta webpack-config for webpack@5 ([dc7d6ce](https://github.com/ntucker/anansi/commit/dc7d6cefe6262576ab446d1c7492d499619601c0))
+
+
+### 🐛 Bug Fix
+
+* Correct dependencies for eslint ([1236d7d](https://github.com/ntucker/anansi/commit/1236d7dcd4a6c647ccc097f906e9041030b847ca))
+
+
+
 ### [2.0.18](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.17...@anansi/generator-js@2.0.18) (2021-02-13)
 
 

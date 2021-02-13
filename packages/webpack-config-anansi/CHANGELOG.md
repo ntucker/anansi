@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.11...@anansi/webpack-config@5.1.12) (2021-02-13)
+
+
+### 🐛 Bug Fix
+
+* Include webpack config types ([6d2f0e2](https://github.com/ntucker/anansi/commit/6d2f0e2d3bbeb99ee5fc756c8023e29bd1efc05f))
+
+
+
 ### [5.1.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.10...@anansi/webpack-config@5.1.11) (2021-02-13)
 
 
