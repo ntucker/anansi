@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.14](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.13...@anansi/webpack-config@5.1.14) (2021-02-13)
+
+
+### 💅 Enhancement
+
+* Move NoEmitOnErrorsPlugin to non-deprecated method ([b25bdfb](https://github.com/ntucker/anansi/commit/b25bdfb12b56474a8051467ab57cd201d5c25bb5))
+
+
+### 📦 Package
+
+* error-overlay-webpack-plugin, mini-css-extract-plugin patch ([89af772](https://github.com/ntucker/anansi/commit/89af772810d2d664ca63f5d24d724b89e3245854))
+
+
+### 📝 Documentation
+
+* Update linaria instructions ([b0092b8](https://github.com/ntucker/anansi/commit/b0092b8bb0fe9424860387bacdfa5eb02c98458a))
+
+
+
 ### [5.1.13](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.12...@anansi/webpack-config@5.1.13) (2021-02-13)
 
 **Note:** Version bump only for package @anansi/webpack-config

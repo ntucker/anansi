@@ -1,6 +1,6 @@
 {
   "name": "@anansi/polyfill",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Feature detection triggered dynamic polyfills",
   "sideEffects": false,
   "keywords": [
