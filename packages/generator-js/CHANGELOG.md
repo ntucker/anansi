@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.21](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.20...@anansi/generator-js@2.0.21) (2021-02-13)
+
+
+### 🐛 Bug Fix
+
+* Keep react-refresh version in sync with react ([81a1598](https://github.com/ntucker/anansi/commit/81a1598d511d06e9640ecbc7fe63d600f17f34dd))
+
+
+
 ### [2.0.20](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.19...@anansi/generator-js@2.0.20) (2021-02-13)
 
 
