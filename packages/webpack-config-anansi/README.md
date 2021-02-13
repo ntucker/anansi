@@ -180,6 +180,14 @@ Output directory for production server builds. Used when using `--target=node` c
 
 Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode&aqs=chrome..69i57j69i60l3j0l2.1349j0j7&sourceid=chrome&ie=UTF-8)
 
+### htmlOptions
+
+If specified, uses [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to
+build a static html file including all assets. Using this makes development easy, and allows
+for cheap static deploys to CDNs like S3+cloudfront.
+
+[Configuration options](https://github.com/jantimon/html-webpack-plugin#options)
+
 ### bundleAnalyzerOptions
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
