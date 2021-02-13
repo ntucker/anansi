@@ -15,11 +15,11 @@ export default function Home() {
   worker.postMessage({ message: 'rendered' });
   return (
     <div className={style.main}>
-      <p>
+      <h3>
         Hello <img src={AngleDownUrl} style={{ width: '1em' }} />{' '}
         <AngleDown style={{ width: '1em' }} />
         World <a href="https://true.io">True IO</a>
-      </p>
+      </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}
       </p>

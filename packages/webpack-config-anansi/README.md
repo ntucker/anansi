@@ -194,6 +194,14 @@ for cheap static deploys to CDNs like S3+cloudfront.
 
 [Configuration options](https://github.com/jantimon/html-webpack-plugin#options)
 
+### fontPreload = 'preload' | 'prefetch'
+
+If specified, will [preload web fonts](https://web.dev/codelab-preload-web-fonts/). Choice
+determines the `rel` attribute of the `link` tag.
+
+This usually provides benefits when serving assets over HTTP/2. If using HTTP1.1 this is
+typically detrimental.
+
 ### bundleAnalyzerOptions
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles

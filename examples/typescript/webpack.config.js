@@ -4,6 +4,7 @@ const options = {
   basePath: 'src',
   buildDir: 'dist/',
   sassResources: [`${__dirname}/src/style/export.scss`],
+  fontPreload: 'prefetch',
 };
 
 const generateConfig = makeConfig(options);
