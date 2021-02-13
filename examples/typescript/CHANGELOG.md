@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.2.4...anansi-example-typescript@5.2.5) (2021-02-13)
+
+
+### 📝 Documentation
+
+* Use simpler package name for namespaced babel-preset ([0da22ad](https://github.com/ntucker/anansi/commit/0da22ad71f5b600ec67c1ce103c680b52b1f358b))
+
+
+
 ### [5.2.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.2.3...anansi-example-typescript@5.2.4) (2021-02-13)
 
 **Note:** Version bump only for package anansi-example-typescript

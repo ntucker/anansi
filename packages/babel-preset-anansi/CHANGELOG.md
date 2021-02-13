@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.8...@anansi/babel-preset@2.1.9) (2021-02-13)
+
+
+### 📝 Documentation
+
+* Use simpler package name for namespaced babel-preset ([0da22ad](https://github.com/ntucker/anansi/commit/0da22ad71f5b600ec67c1ce103c680b52b1f358b))
+
+
+
 ### [2.1.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.7...@anansi/babel-preset@2.1.8) (2021-02-13)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.5](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.1.4...anansi-example-linaria@2.1.5) (2021-02-13)
+
+
+### 💅 Enhancement
+
+* Use namedspaced linaria packages ([11c2cf6](https://github.com/ntucker/anansi/commit/11c2cf6bb42988802d7bbcbb763989b1c18aa750))
+
+
+### 📝 Documentation
+
+* Use simpler package name for namespaced babel-preset ([0da22ad](https://github.com/ntucker/anansi/commit/0da22ad71f5b600ec67c1ce103c680b52b1f358b))
+
+
+
 ### [2.1.4](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.1.3...anansi-example-linaria@2.1.4) (2021-02-13)
 
 **Note:** Version bump only for package anansi-example-linaria

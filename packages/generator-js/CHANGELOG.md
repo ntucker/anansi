@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.20](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.19...@anansi/generator-js@2.0.20) (2021-02-13)
+
+
+### 💅 Enhancement
+
+* Use namedspaced linaria packages ([11c2cf6](https://github.com/ntucker/anansi/commit/11c2cf6bb42988802d7bbcbb763989b1c18aa750))
+
+
+### 🐛 Bug Fix
+
+* Correctly install beta webpack-config ([54e6320](https://github.com/ntucker/anansi/commit/54e63201450567b804574a1d0162bec3ce5164e4))
+* Correctly resolve peerDeps ([c580309](https://github.com/ntucker/anansi/commit/c580309f1a7937c04e03caa29734d5fabb6d47af))
+
+
+
 ### [2.0.19](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.18...@anansi/generator-js@2.0.19) (2021-02-13)
 
 
