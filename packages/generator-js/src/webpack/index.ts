@@ -80,6 +80,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.yarnInstall(`webpack@^${this.config.get('webpack-version')}`, {
         dev: true,
       });
+    } else {
+      this.yarnInstall('webpack', { dev: true });
     }
     const devDeps = [
       '@anansi/webpack-config',
