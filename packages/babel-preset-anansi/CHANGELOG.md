@@ -110,6 +110,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * Support class static initialization blocks ([#47](https://github.com/ntucker/anansi/issues/47)) ([8625b5b](https://github.com/ntucker/anansi/commit/8625b5bd5b5745aaecfec09e9b09f723b23739a6))
 
+### ⏫ Upgrade Guide
+
+1) Upgrade @babel/core to >7.12: `yarn upgrade @babel/core`
+2) Test
+3) Upgrade @anansi/babel-preset: `yarn upgrade @anansi/babel-preset`
+4) Test
 
 ### 📦 Package
 

@@ -211,6 +211,29 @@ before hoisted
 * Use webpack 5 by default ([#48](https://github.com/ntucker/anansi/issues/48)) ([f1e6631](https://github.com/ntucker/anansi/commit/f1e6631c47cf14360a224cdd8fbd9825179ff47a))
 
 
+### ⏫ Upgrade Guide
+
+1) Upgrade webpack-cli to v4 `yarn add --dev webpack-cli@4`
+
+2) Update launch scripts to use `--env`
+
+    <details open><summary><b>/package.json</b></summary>
+
+    ```json
+    {
+      "scripts": {
+        "start:dev": "webpack serve --mode=development",
+        "build": "webpack --mode=production",
+        "build:server": "webpack --mode=production --target=node",
+        "analyze": "webpack --mode=production --env analyze",
+        "profile": "webpack --mode=production --env profile",
+        "pkgcheck": "webpack --env check=nobuild",
+      }
+    }
+    ```
+    </details>
+
+
 
 ### [4.2.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@4.2.4...@anansi/webpack-config@4.2.5) (2020-10-02)
 
