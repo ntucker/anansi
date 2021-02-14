@@ -55,7 +55,7 @@
     "@svgr/webpack": "^5.5.0",
     "@vue/preload-webpack-plugin": "^2.0.0",
     "assert": "^2.0.0",
-    "autoprefixer": "^10.2.3",
+    "autoprefixer": "^10.2.4",
     "babel-loader": "^8.2.2",
     "browserify-zlib": "^0.2.0",
     "circular-dependency-plugin": "^5.2.2",
