@@ -26,7 +26,7 @@ module.exports = {
         ],
         'newlines-between': 'always',
       },
-    ]
+    ],
   },
   settings: {
     react: {
@@ -40,21 +40,21 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "prettier",
-        "prettier/@typescript-eslint",
-        "prettier/react"
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
+        'prettier',
+        'prettier/@typescript-eslint',
+        'prettier/react',
       ],
     },
     {
       files: ['**/*.js?(x)'],
       extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "prettier",
-        "prettier/react"
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'prettier',
+        'prettier/react',
       ],
       parser: 'babel-eslint',
       parserOptions: {
@@ -67,11 +67,12 @@ module.exports = {
         },
       },
       plugins: ['babel'],
-    }
-  ]
+    },
+  ],
 };
 try {
   require('babel-plugin-root-import');
-  module.exports.settings['import/resolver']['babel-plugin-root-import'] = { rootPathSuffix: './src' };
-} catch(e) {}
-
+  module.exports.settings['import/resolver']['babel-plugin-root-import'] = {
+    rootPathSuffix: './src',
+  };
+} catch (e) {}
