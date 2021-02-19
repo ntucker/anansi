@@ -11,6 +11,17 @@
       "react-dom"
     ]
   },
+  "lint-staged": {
+    "*.ts*": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "release": "lerna publish",
     "build": "lerna run build --stream"

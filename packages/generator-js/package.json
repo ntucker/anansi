@@ -78,17 +78,6 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "lint-staged": {
-    "*.ts*": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
     "test": "jest",
