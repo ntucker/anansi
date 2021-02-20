@@ -54,7 +54,6 @@
     "copyfiles": "^2.1.1",
     "husky": "^5.0.9",
     "jest": "^26.1.0",
-    "lint-staged": "^9.5.0",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^4.0.0"
