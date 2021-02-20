@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.24](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.23...@anansi/generator-js@2.0.24) (2021-02-20)
+
+
+### 📦 Package
+
+* bump husky from 3.0.9 to 5.0.9 ([#103](https://github.com/ntucker/anansi/issues/103)) ([a2f296e](https://github.com/ntucker/anansi/commit/a2f296e3b6ff8b8d7bfad05c40a1a4144feadb95))
+
+
+
 ### [2.0.23](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.22...@anansi/generator-js@2.0.23) (2021-02-13)
 
 

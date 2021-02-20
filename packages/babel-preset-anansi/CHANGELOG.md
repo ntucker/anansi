@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.9...@anansi/babel-preset@2.1.10) (2021-02-20)
+
+
+### 📦 Package
+
+* Babel plugin patch - 7.12.17 ([8a70653](https://github.com/ntucker/anansi/commit/8a70653162d049bafd0309689ced724ac8c6b640))
+
+
+### 📝 Documentation
+
+* Add upgrade guide to changelog ([63128c0](https://github.com/ntucker/anansi/commit/63128c03fc5c71b056c9e7673ecabea6aae7e1e6))
+
+
+
 ### [2.1.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.8...@anansi/babel-preset@2.1.9) (2021-02-13)
 
 

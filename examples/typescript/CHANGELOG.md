@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.3.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.3.0...anansi-example-typescript@5.3.1) (2021-02-20)
+
+**Note:** Version bump only for package anansi-example-typescript
+
+
+
+
+
 ## [5.3.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.2.6...anansi-example-typescript@5.3.0) (2021-02-13)
 
 

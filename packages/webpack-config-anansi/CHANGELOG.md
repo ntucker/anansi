@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.0...@anansi/webpack-config@5.2.1) (2021-02-20)
+
+
+### 📦 Package
+
+* bump autoprefixer from 10.2.3 to 10.2.4 ([#97](https://github.com/ntucker/anansi/issues/97)) ([123dd86](https://github.com/ntucker/anansi/commit/123dd86167b297fbfcdc7d775aa6cd5bd594cd34))
+* bump postcss from 8.2.3 to 8.2.6 ([#93](https://github.com/ntucker/anansi/issues/93)) ([4190b40](https://github.com/ntucker/anansi/commit/4190b405c7bf2f83604dc93b639f4601d638b538))
+* bump react-dev-utils from 10.2.1 to 11.0.2 ([#94](https://github.com/ntucker/anansi/issues/94)) ([a38c7c4](https://github.com/ntucker/anansi/commit/a38c7c4aad67fc455d5a52eff0fbb153270422a2))
+* bump rimraf from 3.0.0 to 3.0.2 ([#96](https://github.com/ntucker/anansi/issues/96)) ([d3a9f95](https://github.com/ntucker/anansi/commit/d3a9f95c401c72941b0fc2e4dd76a95c4039ab08))
+
+
+### 📝 Documentation
+
+* Add upgrade guide to changelog ([63128c0](https://github.com/ntucker/anansi/commit/63128c03fc5c71b056c9e7673ecabea6aae7e1e6))
+
+
+
 ## [5.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.1.14...@anansi/webpack-config@5.2.0) (2021-02-13)
 
 
