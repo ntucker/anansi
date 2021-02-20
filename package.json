@@ -53,6 +53,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "resolutions": {
-    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git"
+    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
+    "immer": "^8.0.1"
   }
 }
