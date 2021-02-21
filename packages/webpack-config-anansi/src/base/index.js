@@ -29,7 +29,7 @@ export default function makeBaseConfig({
     paths: [rootPath],
   }));
   const babelLoader = {
-    loader: 'babel-loader',
+    loader: require.resolve('babel-loader'),
     options: {
       cwd: path.resolve(process.cwd(), babelRoot),
       cacheDirectory: true,
@@ -83,7 +83,10 @@ export default function makeBaseConfig({
           test: /\.worker\.(t|j)s$/,
           use: [
             babelLoader,
-            { loader: 'worker-loader', options: { inline: 'fallback' } },
+            {
+              loader: require.resolve('worker-loader'),
+              options: { inline: 'fallback' },
+            },
           ],
           include: [
             new RegExp(basePath),
@@ -95,7 +98,11 @@ export default function makeBaseConfig({
         },
         {
           test: /\.(t|j)sx?$/,
-          use: ['thread-loader', babelLoader, ...extraJsLoaders],
+          use: [
+            require.resolve('thread-loader'),
+            babelLoader,
+            ...extraJsLoaders,
+          ],
           include: [
             new RegExp(basePath),
             path.join(rootPath, 'stories'),
@@ -106,7 +113,7 @@ export default function makeBaseConfig({
         },
         {
           test: /\.(md|txt)$/,
-          use: 'raw-loader',
+          use: require.resolve('raw-loader'),
         },
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -115,7 +122,7 @@ export default function makeBaseConfig({
           },
           use: [
             {
-              loader: '@svgr/webpack',
+              loader: require.resolve('@svgr/webpack'),
               options: {
                 svgoConfig: {
                   plugins: [
@@ -128,7 +135,7 @@ export default function makeBaseConfig({
               },
             },
             {
-              loader: 'file-loader',
+              loader: require.resolve('file-loader'),
               options: {
                 name:
                   mode === 'production'
@@ -146,7 +153,7 @@ export default function makeBaseConfig({
           },
           use: [
             {
-              loader: 'file-loader',
+              loader: require.resolve('file-loader'),
               options: {
                 name:
                   mode === 'production'
@@ -160,7 +167,7 @@ export default function makeBaseConfig({
           test: /\.(png|jpg|gif|ico|webp|avif|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
           use: [
             {
-              loader: 'file-loader',
+              loader: require.resolve('file-loader'),
               options: {
                 name:
                   mode === 'production'
@@ -174,7 +181,7 @@ export default function makeBaseConfig({
           test: /\.(pdf|mp4|webm|wav|mp3|m4a|aac|oga)(\?v=\d+\.\d+\.\d+)?$/,
           use: [
             {
-              loader: 'url-loader',
+              loader: require.resolve('url-loader'),
               options: {
                 name:
                   mode === 'production'
@@ -197,7 +204,7 @@ export default function makeBaseConfig({
     },
     // include the loaders installed by this library
     resolveLoader: {
-      modules: [LIBRARY_MODULES_PATH, 'node_modules'],
+      modules: ['node_modules'],
       extensions: ['.js', '.ts', '.tsx', '.json'],
       mainFields: ['loader', 'main'],
     },

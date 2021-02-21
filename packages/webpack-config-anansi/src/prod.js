@@ -68,7 +68,7 @@ export default function makeProdConfig(
     enforce: 'pre',
     use: [
       {
-        loader: 'svgo-loader',
+        loader: require.resolve('svgo-loader'),
         options: {
           plugins: [
             { removeTitle: false },

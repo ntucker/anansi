@@ -11,11 +11,11 @@ const getCSSLoaders = ({ mode }) => {
       options: {},
     },
     {
-      loader: 'css-loader',
+      loader: require.resolve('css-loader'),
       options: {},
     },
     {
-      loader: 'postcss-loader',
+      loader: require.resolve('postcss-loader'),
       options: {
         postcssOptions: {
           plugins: [autoprefixer(), cssPresetEnv()],
@@ -29,13 +29,13 @@ const getCSSLoaders = ({ mode }) => {
 const getSASSLoaders = ({ sassResources }) => {
   const loaders = [
     {
-      loader: 'sass-loader',
+      loader: require.resolve('sass-loader'),
       options: { sassOptions: { outputStyle: 'expanded' } },
     },
   ];
   if (sassResources) {
     loaders.push({
-      loader: 'sass-resources-loader',
+      loader: require.resolve('sass-resources-loader'),
       options: {
         resources: sassResources,
       },
@@ -56,7 +56,7 @@ export default function getStyleRules({
   const absoluteBasePath = path.join(rootPath, basePath);
   const cssLoaders = getCSSLoaders({ mode });
   const cssModuleLoaders = cssLoaders.map(loader => {
-    if (loader.loader === 'css-loader') {
+    if (/($|\/)css-loader/.test(loader.loader)) {
       return {
         ...loader,
         options: {
@@ -106,7 +106,7 @@ export default function getStyleRules({
       test: /\.css$/i,
       include: [/node_modules/],
       use: cssModuleLoaders.slice(0, -1).map(loader => {
-        if (loader.loader === 'css-loader') {
+        if (/($|\/)css-loader/.test(loader.loader)) {
           return {
             ...loader,
             options: {

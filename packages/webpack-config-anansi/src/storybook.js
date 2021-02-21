@@ -75,7 +75,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
             // don't use thread-loader
             ...envConfig.module.rules[1],
             use: envConfig.module.rules[1].use.filter(
-              l => l !== 'thread-loader',
+              l => !RegExp(`($|/)${'thread-loader'}`, 'g').test(l),
             ),
           },
           // storybook node_module compiles
