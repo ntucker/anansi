@@ -1,6 +1,5 @@
 import { Story } from '@storybook/react/types-6-0';
 import { MockResolver } from '@rest-hooks/test';
-import ErrorBoundary from 'components/ErrorBoundary';
 
 import postFixtures from './post.fixture';
 import PostDetail, { Props } from './index';

@@ -52,7 +52,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       resolveLoader: {
         ...envConfig.resolveLoader,
         plugins: [
-          ...(envConfig.resolveLoader.plugins || []),
+          ...(envConfig.resolveLoader?.plugins ?? []),
           ...storybookConfig.resolveLoader.plugins,
         ],
       },
