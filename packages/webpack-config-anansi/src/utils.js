@@ -1,6 +1,6 @@
 function setLoaderOptions(config, loaderName, options) {
   const transform = loader => {
-    if (loader === loaderName) {
+    if (RegExp(`($|/)${loaderName}`, 'g').test(loader)) {
       return {
         loader,
         options,
