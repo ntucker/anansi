@@ -4,7 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 import semver from 'semver';
 
-import { ROOT_PATH, LIBRARY_MODULES_PATH } from './constants';
+import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
 
 export { default as getStyleRules } from './scss';
@@ -201,12 +201,6 @@ export default function makeBaseConfig({
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
       alias: webpack.version.startsWith('4') ? {} : NODE_ALIAS,
-    },
-    // include the loaders installed by this library
-    resolveLoader: {
-      modules: ['node_modules'],
-      extensions: ['.js', '.ts', '.tsx', '.json'],
-      mainFields: ['loader', 'main'],
     },
     devtool: 'source-map',
     stats: {
