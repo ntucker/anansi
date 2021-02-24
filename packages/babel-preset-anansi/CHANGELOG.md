@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.11](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.10...@anansi/babel-preset@2.1.11) (2021-02-24)
+
+
+### 📦 Package
+
+* Babel plugins minor - 7.13 ([6380669](https://github.com/ntucker/anansi/commit/6380669b3f7050f34188c4b35fb1070587b552fb))
+
+
+### 📝 Documentation
+
+* Note deprecation of 'targets' option ([20e7d82](https://github.com/ntucker/anansi/commit/20e7d824b3ed7b028961e49c964add383327e9cc))
+
+
+
 ### [2.1.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.9...@anansi/babel-preset@2.1.10) (2021-02-20)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.2.2](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.2.1...anansi-example-linaria@2.2.2) (2021-02-24)
+
+
+### 📦 Package
+
+* typescript-eslint patch ([a72455e](https://github.com/ntucker/anansi/commit/a72455e7b95bdfbce7e4ce452417ca70827409d4))
+
+
+
 ### [2.2.1](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.2.0...anansi-example-linaria@2.2.1) (2021-02-20)
 
 **Note:** Version bump only for package anansi-example-linaria

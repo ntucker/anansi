@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.3.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.3.1...anansi-example-typescript@5.3.2) (2021-02-24)
+
+
+### 🐛 Bug Fix
+
+* Storybook ([9f6d526](https://github.com/ntucker/anansi/commit/9f6d52636e13e224aac024fcddfde00a970e2a71))
+
+
+### 📦 Package
+
+* typescript-eslint patch ([a72455e](https://github.com/ntucker/anansi/commit/a72455e7b95bdfbce7e4ce452417ca70827409d4))
+* Upgrade typescript and rest-hooks ([76094d4](https://github.com/ntucker/anansi/commit/76094d4081512be31fe95aa9ecead2d96adf728b))
+
+
+
 ### [5.3.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.3.0...anansi-example-typescript@5.3.1) (2021-02-20)
 
 **Note:** Version bump only for package anansi-example-typescript
