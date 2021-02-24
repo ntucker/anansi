@@ -2543,7 +2543,6 @@
 
 "@lerna/conventional-commits@3.22.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
-  uid "7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   dependencies:
     "@lerna/validation-error" "^3.13"
@@ -3374,10 +3373,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.3.tgz#29dc908048cef8a0eb0d96e9c714b676ab41129d"
-  integrity sha512-xQx1Q04JYAup+yCJYg1wtVyiGAuzYeIofW6ku28m3rwbe+rvbgJo0PCQYfab0asEYvFT+mmkrRudaHR+BrPbOw==
+"@rest-hooks/core@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.4.tgz#a1b9ec2973d3d3a4624ef8d03ecde43cea5d5494"
+  integrity sha512-SRboHvdE6xr2HMGJ2cKj3YZQa7bqFLODRhQgryNIw77Vw9nezkjciY/nusXH7NXoEbQG0Bj8XvBR+8bQMelSGA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/endpoint" "^1.0.3"
@@ -3400,10 +3399,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.3.tgz#5ac236ece6c7470bf53e2d47eb3fd6d767f54f65"
-  integrity sha512-Um123XjQAGer6M1JkhfC6zCXgyRhy1MGl561q6CEndho+tnKtHF0jOlkYaHkg1P6J/1Xk3Jb1maTkT8MUwNi7Q==
+"@rest-hooks/rest@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.4.tgz#0989d337a4ea162f91a0d1857a132aa3e3e7f528"
+  integrity sha512-Fo9B0uMkBSSrVrEeFms1+co/YhRFXfFG+WPXc0U32iSWVJnrc0ErCzVte/kUSox3PfDvl81WTwIHckmva+z2Ww==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -18217,13 +18216,13 @@ resolve@^1.9.0:
     is-core-module "^2.0.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.5.tgz#43452fa013db04a45efdced3e66ac3418f2dd208"
-  integrity sha512-OJ7ODv2bSzBmZQ0Ng46ihVULsKTX1gplR/h/+a13Wy/Ivv2V2z58KjRF6a36auAjGZHvsXdjfk08rno4UbCFXw==
+rest-hooks@5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.6.tgz#38c16ea975636d89dc211e480e88f5bf85c43e90"
+  integrity sha512-IB1qSg7g5BEswB3nhHcZoq8FyQEAHRqsRuyfKQnlEncXbBpVV+/YOhNR2vvC6s5Zra2UbRMgKGFDG+yHzgtmAQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.3"
+    "@rest-hooks/core" "^1.0.4"
     "@rest-hooks/endpoint" "^1.0.3"
 
 restore-cursor@^2.0.0:
