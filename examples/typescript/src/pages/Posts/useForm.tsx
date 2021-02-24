@@ -7,7 +7,11 @@ export default function useForm<T extends typeof Resource>(
   initialValues: Partial<AbstractInstanceType<T>>,
 ): [
   Readonly<AbstractInstanceType<T>>,
-  (name: string) => (event: React.ChangeEvent<HTMLInputElement>) => void,
+  (
+    name: string,
+  ) => (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => void,
   (
     onSubmit: (v: Partial<AbstractInstanceType<T>>) => any,
   ) => (e?: React.SyntheticEvent | object) => void,

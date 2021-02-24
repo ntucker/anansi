@@ -69,7 +69,9 @@ export default class ErrorBoundary extends Component<Props, State> {
     }
     return (
       <div className={classNames('center', 'up', styles.errorBoundary)}>
-        <BigAlertIcon style={{ width: '96px', height: '96px' }} alt="alert" />
+        <BigAlertIcon style={{ width: '96px', height: '96px' }}>
+          <title>alert</title>
+        </BigAlertIcon>
         <header>
           <h1>{mainMessage}</h1>
           <h3>Please refresh the page.</h3>
