@@ -1,7 +1,8 @@
 import { Typography, PageHeader } from 'antd';
 import { useHistory } from 'react-router-dom';
-import { PostResource } from 'data/resources';
 import { useFetcher } from 'rest-hooks';
+
+import { PostResource } from 'data/resources';
 import itemRender from 'navigation/breadcrumbItemRenderer';
 
 import PostForm from './PostForm';

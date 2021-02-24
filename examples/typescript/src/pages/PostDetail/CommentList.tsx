@@ -1,5 +1,6 @@
 import { useResource } from 'rest-hooks';
 import { List, Comment } from 'antd';
+
 import { CommentResource } from 'data/resources';
 
 type Props = { postId: number };

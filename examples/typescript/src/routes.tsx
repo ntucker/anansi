@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { RouteChildrenProps } from 'react-router';
+
 import lazyPage from 'components/lazyPage';
 
 const Routes = ({ location }: RouteChildrenProps) => (

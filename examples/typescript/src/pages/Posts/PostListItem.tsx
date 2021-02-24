@@ -1,9 +1,10 @@
-import { PostResource, UserResource } from 'data/resources';
 import { Fragment } from 'react';
 import { useResource } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
+
+import { PostResource, UserResource } from 'data/resources';
 
 export default function IssueListItem({ post }: { post: PostResource }) {
   const author = useResource(UserResource.detail(), {

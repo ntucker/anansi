@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+
 import loadPolyfills from '@anansi/polyfill';
 
 import App from './App';

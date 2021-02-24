@@ -96,9 +96,9 @@ export default {
   error: [
     {
       request: PostResource.detail(),
-      params: {id: 1},
+      params: { id: 1 },
       result: { message: 'Bad request', status: 400, name: 'Not Found' },
       error: true,
-    }
+    },
   ],
-}
+};

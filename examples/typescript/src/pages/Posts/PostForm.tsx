@@ -1,6 +1,7 @@
 import { Input, Button, Form } from 'antd';
-import { PostResource } from 'data/resources';
 import { useMemo } from 'react';
+
+import { PostResource } from 'data/resources';
 
 import useForm from './useForm';
 

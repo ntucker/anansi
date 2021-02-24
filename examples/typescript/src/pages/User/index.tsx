@@ -1,7 +1,8 @@
-import { UserResource, Address } from 'data/resources';
 import { useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 import { Typography } from 'antd';
+
+import { UserResource, Address } from 'data/resources';
 
 function capFirst(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

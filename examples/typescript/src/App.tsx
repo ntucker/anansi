@@ -1,6 +1,7 @@
 import { memo } from 'react';
-import Nav from 'navigation/Nav';
 import { Layout } from 'antd';
+
+import Nav from 'navigation/Nav';
 
 import Routes from './routes';
 

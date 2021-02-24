@@ -1,8 +1,9 @@
 import { lazy, Suspense, Component } from 'react';
 import type { ReactChild } from 'react';
 import classNames from 'classnames';
-import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { Spin } from 'antd';
+
+import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 
 import styles from './index.scss';
 import { ReactComponent as BigAlertIcon } from './big-alert.svg';
