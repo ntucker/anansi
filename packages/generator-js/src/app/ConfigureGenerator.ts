@@ -2,8 +2,8 @@ import Generator from 'yeoman-generator';
 
 import { DEFAULT_ASSET_PATH, DEFAULT_ROOT_PATH } from '../defaults';
 
-export default class extends Generator {
-  constructor(args: string | string[], options: {}) {
+export default class ConfigureGenerator extends Generator {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
 
     this.argument('appName', { type: String, required: true });

@@ -50,17 +50,17 @@
     "@types/ejs": "^3.0.0",
     "@types/gulp-filter": "^3.0.33",
     "@types/node": "^12.12.16",
-    "@types/yeoman-generator": "^3.1.4",
+    "@types/yeoman-generator": "^4.11.3",
     "copyfiles": "^2.1.1",
     "husky": "^5.0.9",
     "jest": "^26.1.0",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^4.0.0"
+    "yeoman-test": "^5.0.1"
   },
   "engines": {
-    "node": ">= 10.3.0",
-    "npm": ">= 4.0.0"
+    "node": ">= 12.0.0",
+    "npm": ">= 5.0.0"
   },
   "dependencies": {
     "@anansi/eslint-plugin": "^0.9.22",
@@ -72,7 +72,7 @@
     "gulp-prettier": "^3.0.0",
     "shelobsay": "^1.0.1",
     "webpack": "^4.46.0",
-    "yeoman-generator": "^4.13.0"
+    "yeoman-generator": "^5.0.1"
   },
   "jest": {
     "testEnvironment": "node"
