@@ -72,6 +72,8 @@ If unset, will automatically target current node version when webpack is targett
 
 ### targets : ?object = undefined
 
+> Deprecated: Prefer using [top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` instead
+
 Set to `{ "esmodules": true }` to produce extra optimal bundles for modern browsers that support
 ES modules. This will make use of `@babel/preset-modules` instead of `@babel/preset-env`, whose transforms
 are more compact and efficient.
