@@ -71,7 +71,7 @@
     "events": "^3.2.0",
     "file-loader": "^6.2.0",
     "hard-source-webpack-plugin": "^0.13.1",
-    "html-webpack-plugin": "^4.5.1",
+    "html-webpack-plugin": "^5.2.0",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
     "markdown-loader": "^6.0.0",
