@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.22](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.21...@anansi/eslint-plugin@0.9.22) (2021-02-24)
+
+
+### 📦 Package
+
+* prettier-config major ([ad925bd](https://github.com/ntucker/anansi/commit/ad925bd6b7af776a7037455f051071297199a72f))
+* typescript-eslint patch ([a72455e](https://github.com/ntucker/anansi/commit/a72455e7b95bdfbce7e4ce452417ca70827409d4))
+
+
+
 ### [0.9.21](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.20...@anansi/eslint-plugin@0.9.21) (2021-02-20)
 
 **Note:** Version bump only for package @anansi/eslint-plugin

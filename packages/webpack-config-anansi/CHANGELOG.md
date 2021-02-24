@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.1...@anansi/webpack-config@5.2.2) (2021-02-24)
+
+
+### 💅 Enhancement
+
+* Remove need for fancy loader resolution ([#110](https://github.com/ntucker/anansi/issues/110)) ([85d7a1c](https://github.com/ntucker/anansi/commit/85d7a1cf12037a919a1738285201e22535a2f28c))
+
+
+### 🐛 Bug Fix
+
+* Storybook ([9f6d526](https://github.com/ntucker/anansi/commit/9f6d52636e13e224aac024fcddfde00a970e2a71))
+
+
+### 📦 Package
+
+* mini-css-extract-plugin, react-dev-utils patch ([1959f32](https://github.com/ntucker/anansi/commit/1959f3260c7e7db322c131fead460fd1c6a51ea2))
+
+
+
 ### [5.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.0...@anansi/webpack-config@5.2.1) (2021-02-20)
 
 
