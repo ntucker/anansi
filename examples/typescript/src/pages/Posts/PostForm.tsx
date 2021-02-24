@@ -1,6 +1,6 @@
 import { Input, Button, Form } from 'antd';
 import { PostResource } from 'data/resources';
-import { useCallback } from 'react';
+import { useMemo } from 'react';
 
 import useForm from './useForm';
 
@@ -25,7 +25,7 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
     initialValues,
   );
 
-  const onFinish = useCallback(handleSubmit(onSubmit), [
+  const onFinish = useMemo(() => handleSubmit(onSubmit), [
     handleSubmit,
     onSubmit,
   ]);

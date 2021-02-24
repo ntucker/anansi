@@ -2279,12 +2279,13 @@
     is-ci "^2.0.0"
     npmlog "^4.1.2"
 
-"@lerna/conventional-commits@3.22.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
-  version "3.16.4"
-  resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
+"@lerna/conventional-commits@3.22.0":
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/@lerna/conventional-commits/-/conventional-commits-3.22.0.tgz#2798f4881ee2ef457bdae027ab7d0bf0af6f1e09"
+  integrity sha512-z4ZZk1e8Mhz7+IS8NxHr64wyklHctCJyWpJKEZZPJiLFJ8yKto/x38O80R10pIzC0rr8Sy/OsjSH4bl0TbbgqA==
   dependencies:
-    "@lerna/validation-error" "^3.13"
-    conventional-changelog-angular "^5.0.12"
+    "@lerna/validation-error" "3.13.0"
+    conventional-changelog-angular "^5.0.3"
     conventional-changelog-core "^3.1.6"
     conventional-recommended-bump "^5.0.0"
     fs-extra "^8.1.0"
@@ -2782,7 +2783,7 @@
   resolved "https://registry.yarnpkg.com/@lerna/timer/-/timer-3.13.0.tgz#bcd0904551db16e08364d6c18e5e2160fc870781"
   integrity sha512-RHWrDl8U4XNPqY5MQHkToWS9jHPnkLZEt5VD+uunCKTfzlxGnRCr3/zVr8VGy/uENMYpVP3wJa4RKGY6M0vkRw==
 
-"@lerna/validation-error@3.13.0", "@lerna/validation-error@^3.13":
+"@lerna/validation-error@3.13.0":
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/@lerna/validation-error/-/validation-error-3.13.0.tgz#c86b8f07c5ab9539f775bd8a54976e926f3759c3"
   integrity sha512-SiJP75nwB8GhgwLKQfdkSnDufAaCbkZWJqEDlKOUPUvVOplRGnfL+BPQZH5nvq2BYSRXsksXWZ4UHVnQZI/HYA==
@@ -3137,17 +3138,17 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.2.tgz#698064c42c1b8c76a469bb1751af5d011ea016be"
-  integrity sha512-HIJ4NAW4ql0VmoH+gtBdfgk82727r3DdOrRQtoykZxO3MxVSY0LPhC1wtz4eRH5KwKexHi7nSy3Htv7ZvNFrwA==
+"@rest-hooks/rest@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.3.tgz#5ac236ece6c7470bf53e2d47eb3fd6d767f54f65"
+  integrity sha512-Um123XjQAGer6M1JkhfC6zCXgyRhy1MGl561q6CEndho+tnKtHF0jOlkYaHkg1P6J/1Xk3Jb1maTkT8MUwNi7Q==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-3.0.0.tgz#1178592b0cee182dcee7f07d3c6ee941cf0562eb"
-  integrity sha512-GnRA6RYprRL89owVU9aQUa0pwt+kjVFqw9mYBX57sGUXmNWwsudGmayc6qQlHzSnGF51QGeXRoSY9wMfCzIk6Q==
+"@rest-hooks/test@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-3.0.1.tgz#a6c43797e4cd6971829d51b2f5350cee30c1b8f7"
+  integrity sha512-g4IQLLi1PRx1jrBPxmNcJlaYM8BOvt+JBFiR+tMhkv6m5TskSeho8sjgjQnnJzTxWT3zGdGMcIRk55Xn4XSmHA==
   dependencies:
     "@testing-library/react-hooks" "~5.0.3"
 
@@ -4126,6 +4127,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash@^4.14.168":
+  version "4.14.168"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
+  integrity sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
+
 "@types/markdown-to-jsx@^6.11.0":
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/@types/markdown-to-jsx/-/markdown-to-jsx-6.11.2.tgz#05d1aaffbf15be7be12c70535fa4fed65cc7c64f"
@@ -4209,6 +4215,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/parse-link-header@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/parse-link-header/-/parse-link-header-1.0.0.tgz#69f059e40a0fa93dc2e095d4142395ae6adc5d7a"
+  integrity sha512-fCA3btjE7QFeRLfcD0Sjg+6/CnmC66HpMBoRfRzd2raTaWMJV21CCZ0LO8MOqf8onl5n0EPfjq4zDhbyX8SVwA==
 
 "@types/parse5@^5.0.0":
   version "5.0.3"
@@ -7261,7 +7272,7 @@ conventional-changelog-angular@^5.0.0:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-angular@^5.0.12:
+conventional-changelog-angular@^5.0.3:
   version "5.0.12"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-5.0.12.tgz#c979b8b921cbfe26402eb3da5bbfda02d865a2b9"
   integrity sha512-5GLsbnkR/7A89RyHLvvoExbiGbd9xKdKqDTrArnPbOqBqG/2wIosu0fHwpeIRI8Tl94MhVNBXcLJZl92ZQ5USw==
@@ -11282,10 +11293,15 @@ ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-immer@1.10.0, immer@7.0.9, immer@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
-  integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==
+immer@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
+  integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
+
+immer@7.0.9:
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.9.tgz#28e7552c21d39dd76feccd2b800b7bc86ee4a62e"
+  integrity sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A==
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -17889,10 +17905,10 @@ resolve@^1.9.0:
     is-core-module "^2.0.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.4.tgz#d759dad43d4276d7e14c6e7772dc365bbe3820bf"
-  integrity sha512-T8l38jtLhFd6gf4Wdz3rntTPhCs62SRmjlNVTVx4NMx7DkskoXQsulSJl/a/LzOnOTzL3Zza4LP7fGFCEMjTjg==
+rest-hooks@5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.5.tgz#43452fa013db04a45efdced3e66ac3418f2dd208"
+  integrity sha512-OJ7ODv2bSzBmZQ0Ng46ihVULsKTX1gplR/h/+a13Wy/Ivv2V2z58KjRF6a36auAjGZHvsXdjfk08rno4UbCFXw==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/core" "^1.0.3"
@@ -20043,10 +20059,10 @@ typescript@^3.2.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
 
-typescript@^4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.5.tgz#123a3b214aaff3be32926f0d8f1f6e704eb89a72"
-  integrity sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
+typescript@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
+  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
 
 uglify-js@^3.1.4:
   version "3.5.11"
