@@ -44,18 +44,11 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'prettier',
-        'prettier/@typescript-eslint',
-        'prettier/react',
       ],
     },
     {
       files: ['**/*.js?(x)'],
-      extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'prettier',
-        'prettier/react',
-      ],
+      extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
       parser: 'babel-eslint',
       parserOptions: {
         sourceType: 'module',
