@@ -10,13 +10,16 @@ yarn
 
 #### 2) Build packages
 
-From anansi root
+From anansi root (`../..` from here)
 
 ```bash
-cd packages/webpack-config
 yarn build
-cd ../polyfill
-yarn build
+```
+
+#### 3) Move back to this directory
+
+```bash
+cd examples/linaria
 ```
 
 ### Dev mode
