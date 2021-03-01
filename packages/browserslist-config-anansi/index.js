@@ -23,4 +23,8 @@ module.exports = {
   ],
   development: ['last 1 Chrome versions', 'last 1 Firefox versions'],
   test: ['current node'],
+  server: ['current node'],
+  node10: ['node 10'],
+  node12: ['node 12'],
+  node14: ['node 14'],
 };

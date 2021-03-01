@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.1.0...@anansi/browserslist-config@1.2.0) (2021-03-01)
+
+
+### 🚀 Features
+
+* Add node specific versions for targetted output ([22134ce](https://github.com/ntucker/anansi/commit/22134ce38c80fcbb6b4009fe0dff0b0e90ecc275))
+
+
+
 ## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.0.1...@anansi/browserslist-config@1.1.0) (2021-01-23)
 
 
