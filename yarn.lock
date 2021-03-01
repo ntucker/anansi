@@ -2324,7 +2324,6 @@
 
 "@lerna/conventional-commits@3.22.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
-  uid "7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   dependencies:
     "@lerna/validation-error" "^3.13"
@@ -3189,29 +3188,29 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.4.tgz#a1b9ec2973d3d3a4624ef8d03ecde43cea5d5494"
-  integrity sha512-SRboHvdE6xr2HMGJ2cKj3YZQa7bqFLODRhQgryNIw77Vw9nezkjciY/nusXH7NXoEbQG0Bj8XvBR+8bQMelSGA==
+"@rest-hooks/core@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.6.tgz#992075aa6ccccbc61434841f069c7f5045efa4f4"
+  integrity sha512-fDzZ8EFafteooPHClCWWeX4vdoSNsPjGznuqPGpGeDiaNkrVjaTYGM8JzHLHohonIZcLxb8Sk4/vlqCM3xRXMQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/endpoint" "^1.0.3"
-    "@rest-hooks/normalizr" "^6.0.2"
+    "@rest-hooks/endpoint" "^1.0.4"
+    "@rest-hooks/normalizr" "^6.0.3"
     "@rest-hooks/use-enhanced-reducer" "^1.0.5"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/endpoint@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.0.3.tgz#10ad9e18404c31da71794188957bd4c98911ce8d"
-  integrity sha512-Sv+1mqk591Zd51tj7zGg10hIgrPdALtwPtQjLpXfu7DfwO4yq+4+eMQEz3FOo5NuoQS+Rpav1ZAbwqukazWE3Q==
+"@rest-hooks/endpoint@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.0.4.tgz#1b0f6e1a4117c5e5bea91112581a6f32d56393e7"
+  integrity sha512-do77u3dobFEKjcibvaretzQhORo8RrY6Y0GZJjvSv37gE0L4CF0BmlIW8qiF0VPAMtr/kjhaOLmPyuMDr1to3g==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.2"
+    "@rest-hooks/normalizr" "^6.0.3"
 
-"@rest-hooks/normalizr@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.2.tgz#ee00fa8adaad84f4ec18fc74650a28344005fc12"
-  integrity sha512-mvN5/RCdjEBy3U5cLTYSj1Vdksv3M0LEsydkFew05PsELGa57uRB/8inELMolYmeZ5uUlGaTzOtOGTzKdXdxzg==
+"@rest-hooks/normalizr@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.3.tgz#afe4278dfc89133823a8493eda5bb89788c2591e"
+  integrity sha512-6hEmcu9pS63cwYzZgv7A4OX3+kvT1cQmNANIZ8/i0q+Y8CXSZ7z9X40VEFUSiBRteAwn8XSaYA3Qks2bmMhScw==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -3222,10 +3221,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-3.0.1.tgz#a6c43797e4cd6971829d51b2f5350cee30c1b8f7"
-  integrity sha512-g4IQLLi1PRx1jrBPxmNcJlaYM8BOvt+JBFiR+tMhkv6m5TskSeho8sjgjQnnJzTxWT3zGdGMcIRk55Xn4XSmHA==
+"@rest-hooks/test@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-4.0.0.tgz#06faeeff7a2f40070638237032e1f3242f92cdf2"
+  integrity sha512-dT8etFT71HmH25m/RAmOUhUlBCwGj8qWmzLH80vHr/+wLMlaymXpmXQr/fx7qCiu5BNVD1jt25YmhnOhTTjuKQ==
   dependencies:
     "@testing-library/react-hooks" "~5.0.3"
 
@@ -17862,14 +17861,14 @@ resolve@^1.1.6, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.6.tgz#38c16ea975636d89dc211e480e88f5bf85c43e90"
-  integrity sha512-IB1qSg7g5BEswB3nhHcZoq8FyQEAHRqsRuyfKQnlEncXbBpVV+/YOhNR2vvC6s5Zra2UbRMgKGFDG+yHzgtmAQ==
+rest-hooks@5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.8.tgz#3a6694ca509f2bcf69e426b80efe6890a663407b"
+  integrity sha512-d/up45GBVRvNPj6OAkLGH35nolazNkSzTndMaeC7YQcNRB93/a6LPbxvp33Yo0g5SZFpeNQpaKLgtXwVyN4MPQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.4"
-    "@rest-hooks/endpoint" "^1.0.3"
+    "@rest-hooks/core" "^1.0.6"
+    "@rest-hooks/endpoint" "^1.0.4"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
