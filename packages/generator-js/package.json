@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@anansi/eslint-plugin": "^0.9.22",
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.13.8",
     "@types/mem-fs-editor": "^7.0.0",
     "chalk": "^4.1.0",
     "ejs": "^3.1.5",
