@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.26](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.25...@anansi/generator-js@2.0.26) (2021-03-04)
+
+
+### 📦 Package
+
+* Babel things - patch ([a229c54](https://github.com/ntucker/anansi/commit/a229c546331017745b4cc6f14b1d72b4da96312e))
+* bump @types/node from 12.12.22 to 14.14.31 ([#121](https://github.com/ntucker/anansi/issues/121)) ([3cf5788](https://github.com/ntucker/anansi/commit/3cf5788dc8f5f0c112414f6e8a2730cff2c91632))
+
+
+
 ### [2.0.25](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.24...@anansi/generator-js@2.0.25) (2021-02-24)
 
 **Note:** Version bump only for package @anansi/generator-js

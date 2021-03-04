@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-linaria",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -18,10 +18,10 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.1.11",
+    "@anansi/babel-preset": "^2.1.12",
     "@anansi/browserslist-config": "^1.2.0",
-    "@anansi/eslint-plugin": "^0.9.22",
-    "@anansi/webpack-config": "^5.2.2",
+    "@anansi/eslint-plugin": "^0.9.23",
+    "@anansi/webpack-config": "^5.2.3",
     "@linaria/babel-preset": "^3.0.0-beta.1",
     "@linaria/core": "^3.0.0-beta.1",
     "@linaria/react": "^3.0.0-beta.1",
@@ -34,7 +34,7 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.26",
+    "@anansi/polyfill": "^1.0.27",
     "@babel/runtime": "^7.12.13",
     "classnames": "^2.2.6",
     "core-js": "^3.8.3",

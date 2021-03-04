@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "5.2.2",
+  "version": "5.2.3",
   "description": "Webpack config",
   "main": "lib/index.js",
   "scripts": {
@@ -45,7 +45,7 @@
     "node": ">=10.13.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.1.11",
+    "@anansi/babel-preset": "^2.1.12",
     "debug": "^4.1.1",
     "prettier-eslint-cli": "^5.0.0",
     "rimraf": "^3.0.2"

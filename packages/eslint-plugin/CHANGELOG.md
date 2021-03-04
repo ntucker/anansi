@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.23](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.22...@anansi/eslint-plugin@0.9.23) (2021-03-04)
+
+
+### 📦 Package
+
+* typescript-eslint, config-prettier jsx-a11y minor ([bc32a33](https://github.com/ntucker/anansi/commit/bc32a33b68a56503ed786ec38befcec46ecbfa4b))
+
+
+
 ### [0.9.22](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.21...@anansi/eslint-plugin@0.9.22) (2021-02-24)
 
 
