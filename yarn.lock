@@ -21521,7 +21521,7 @@ yeoman-assert@^3.1.1:
   resolved "https://registry.yarnpkg.com/yeoman-assert/-/yeoman-assert-3.1.1.tgz#9f6fa0ecba7dd007c40f579668cb5dda18c79343"
   integrity sha512-bCuLb/j/WzpvrJZCTdJJLFzm7KK8IYQJ3+dF9dYtNs2CUYyezFJDuULiZ2neM4eqjf45GN1KH/MzCTT3i90wUQ==
 
-yeoman-environment@^2.10.3, yeoman-environment@^2.9.5:
+yeoman-environment@^2.9.5:
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/yeoman-environment/-/yeoman-environment-2.10.3.tgz#9d8f42b77317414434cc0e51fb006a4bdd54688e"
   integrity sha512-pLIhhU9z/G+kjOXmJ2bPFm3nejfbH+f1fjYRSOteEXDBrv1EoJE/e+kuHixSXfCYfTkxjYsvRaDX+1QykLCnpQ==
@@ -21546,7 +21546,7 @@ yeoman-environment@^2.10.3, yeoman-environment@^2.9.5:
     untildify "^3.0.3"
     yeoman-generator "^4.8.2"
 
-yeoman-generator@^4.12.0, yeoman-generator@^4.13.0, yeoman-generator@^4.8.2:
+yeoman-generator@^4.13.0, yeoman-generator@^4.8.2:
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-4.13.0.tgz#a6caeed8491fceea1f84f53e31795f25888b4672"
   integrity sha512-f2/5N5IR3M2Ozm+QocvZQudlQITv2DwI6Mcxfy7R7gTTzaKgvUpgo/pQMJ+WQKm0KN0YMWCFOZpj0xFGxevc1w==
@@ -21580,16 +21580,14 @@ yeoman-generator@^4.12.0, yeoman-generator@^4.13.0, yeoman-generator@^4.8.2:
     grouped-queue "^1.1.0"
     yeoman-environment "^2.9.5"
 
-yeoman-test@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/yeoman-test/-/yeoman-test-4.0.0.tgz#2b1702141f2c080909ca6535f425102be5b3e43a"
-  integrity sha512-7ouJndm+jB5azZ95QiOg1zkdj+O6ZDvDcAr/nI3t8jHZosIudnFl6FOXbpK4ssFqpjr0uPv0lBlqJBz8iPov/A==
+yeoman-test@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/yeoman-test/-/yeoman-test-5.0.1.tgz#d3f91238839e79b3c6ca987b3c31e52b19a6652e"
+  integrity sha512-2qY5Uac00N6BsDodQwx062zu7bnPtA0FXgWblRvK0+RrfcYr8ofuXNX8P9uqrW3sAqju896QpN6aGeRQpI0IDg==
   dependencies:
     inquirer "^7.3.3"
     lodash "^4.17.19"
     sinon "^9.0.2"
-    yeoman-environment "^2.10.3"
-    yeoman-generator "^4.12.0"
 
 zwitch@^1.0.0:
   version "1.0.5"
