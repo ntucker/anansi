@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.3...@anansi/webpack-config@5.2.4) (2021-03-06)
+
+
+### 📦 Package
+
+* SVGO and loader major ([dd7c594](https://github.com/ntucker/anansi/commit/dd7c594f50d25a7e59287d291f4ac23b0bf98972))
+
+
+
 ### [5.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.2...@anansi/webpack-config@5.2.3) (2021-03-04)
 
 **Note:** Version bump only for package @anansi/webpack-config
