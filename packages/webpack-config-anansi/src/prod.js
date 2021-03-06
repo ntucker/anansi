@@ -8,6 +8,7 @@ import FixStyleOnlyEntriesPlugin from 'webpack-fix-style-only-entries';
 import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
+import { extendDefaultPlugins } from 'svgo';
 
 import { getStyleRules } from './base';
 
@@ -70,16 +71,16 @@ export default function makeProdConfig(
       {
         loader: require.resolve('svgo-loader'),
         options: {
-          plugins: [
-            { removeTitle: false },
-            { removeComments: true },
-            { removeDesc: true },
-            { removeUselessDefs: true },
-            { removeDoctype: true },
-            { removeMetadata: true },
-            { convertColors: true },
-            { removeViewBox: false },
-          ],
+          plugins: extendDefaultPlugins([
+            { name: 'removeTitle', active: false },
+            { name: 'removeComments', active: true },
+            { name: 'removeDesc', active: true },
+            { name: 'removeUselessDefs', active: true },
+            { name: 'removeDoctype', active: true },
+            { name: 'removeMetadata', active: true },
+            { name: 'convertColors', active: true },
+            { name: 'removeViewBox', active: false },
+          ]),
         },
       },
     ],

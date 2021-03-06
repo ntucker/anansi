@@ -124,14 +124,8 @@ export default function makeBaseConfig({
             {
               loader: require.resolve('@svgr/webpack'),
               options: {
-                svgoConfig: {
-                  plugins: [
-                    {
-                      /* Required for SVG dimensions */
-                      removeViewBox: false,
-                    },
-                  ],
-                },
+                // this is handled by svgo-loader
+                svgo: false,
               },
             },
             {
