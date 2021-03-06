@@ -37,6 +37,11 @@ export function makeConfig(options) {
         'Undefined is not a valid option for htmlOptions. To disable use `false`',
       );
     }
+    if ('svgoOptions' in options && options.svgoOptions === undefined) {
+      throw new Error(
+        'Undefined is not a valid option for svgoOptions. To disable use `false`',
+      );
+    }
     const baseConfig = makeBaseConfig(options);
 
     let config;

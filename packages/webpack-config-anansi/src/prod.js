@@ -25,6 +25,7 @@ export default function makeProdConfig(
     sassResources,
     cssModulesOptions,
     fontPreload,
+    svgoOptions,
   },
 ) {
   const config = { ...baseConfig };
@@ -64,27 +65,30 @@ export default function makeProdConfig(
       }
     }
   }
-  config.module.rules.push({
-    test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-    enforce: 'pre',
-    use: [
-      {
-        loader: require.resolve('svgo-loader'),
-        options: {
-          plugins: extendDefaultPlugins([
-            { name: 'removeTitle', active: false },
-            { name: 'removeComments', active: true },
-            { name: 'removeDesc', active: true },
-            { name: 'removeUselessDefs', active: true },
-            { name: 'removeDoctype', active: true },
-            { name: 'removeMetadata', active: true },
-            { name: 'convertColors', active: true },
-            { name: 'removeViewBox', active: false },
-          ]),
+  if (svgoOptions !== false) {
+    config.module.rules.push({
+      test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+      enforce: 'pre',
+      use: [
+        {
+          loader: require.resolve('svgo-loader'),
+          options: {
+            plugins: extendDefaultPlugins([
+              { name: 'removeTitle', active: false },
+              { name: 'removeComments', active: true },
+              { name: 'removeDesc', active: true },
+              { name: 'removeUselessDefs', active: true },
+              { name: 'removeDoctype', active: true },
+              { name: 'removeMetadata', active: true },
+              { name: 'convertColors', active: true },
+              { name: 'removeViewBox', active: false },
+            ]),
+            ...svgoOptions,
+          },
         },
-      },
-    ],
-  });
+      ],
+    });
+  }
   config.optimization = {
     moduleIds: webpack.version.startsWith('4') ? 'hashed' : 'deterministic',
     splitChunks: {
