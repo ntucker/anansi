@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'plugin:@anansi/typescript'
-}
+  extends: 'plugin:@anansi/typescript',
+};
