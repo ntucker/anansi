@@ -1,4 +1,5 @@
 # Anansi's React Babel Preset
+
 [![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
 [![npm downloads](https://img.shields.io/npm/dm/@anansi/babel-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/babel-preset)
 [![npm version](https://img.shields.io/npm/v/@anansi/babel-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/babel-preset)
@@ -120,6 +121,74 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 - all things in preset-env
 - legacy decorators
 
+### reactRequire: bool = true
+
+Automatically add react import if JSX is used.
+
+### hotReloader: boolean = false
+
+Using react-hot-reloader instead of react-refresh
+
+### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
+
+Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).
+Setting to false disables this optimization altogether. Note: this is only ever used in production mode
+
+### hasJsxRuntime
+
+Use [new jsx transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
+Available in React >16.14.
+
+- With the new transform, you can use JSX without importing React.
+- Depending on your setup, its compiled output may slightly improve the bundle size.
+- It will enable future improvements that reduce the number of concepts you need to learn React.
+
+> Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
+
+## module-resolver options
+
+### resolverRoot
+
+Sets the root [root](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md#root).
+
+```js
+root = ['./src'];
+```
+
+#### RESOLVER_ROOT
+
+Overrides `resolverRoot`.
+
+```bash
+export RESOLVER_ROOT = './src'
+```
+
+### resolverAlias
+
+JSON representation of the [alias](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md#alias) object option.
+
+```js
+{
+  "underscore": "lodash",
+  "^@namespace/foo-(.+)": "packages/\\1"
+}
+```
+
+#### RESOLVER_ALIAS
+
+If `RESOLVER_ALIAS` env is set, it will override this setting. Be sure to JSON encode.
+
+```bash
+export RESOLVER_ALIAS = '{"underscore":"lodash","^@namespace/foo-(.+)":"packages/\\\\1"}'
+```
+
+### resolver
+
+Full control of [module-resolver options](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md).
+Sets as default, so `resolverRoot` and `resolverAlias` will override `root` and `alias` respectively.
+
+## root-import options
+
 ### rootPathSuffix: string = './src'
 
 Enables importing from project root with `~/my/path` rather than using relative paths. Override
@@ -147,31 +216,6 @@ No value (undefined) means use current working directory.
 
 Sending `__dirname` from a `.babelrc.js` can be useful to ensure consistency no matter
 where babel starts running from.
-
-### reactRequire: bool = true
-
-Automatically add react import if JSX is used.
-
-### hotReloader: boolean = false
-
-Using react-hot-reloader instead of react-refresh
-
-### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
-
-Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).
-Setting to false disables this optimization altogether. Note: this is only ever used in production mode
-
-### hasJsxRuntime
-
-Use [new jsx transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
-Available in React >16.14.
-
-- With the new transform, you can use JSX without importing React.
-- Depending on your setup, its compiled output may slightly improve the bundle size.
-- It will enable future improvements that reduce the number of concepts you need to learn React.
-
-> Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
-
 
 ## Future language support
 
