@@ -75,6 +75,19 @@ function buildPreset(api, options = {}) {
     ],
     plugins: [
       [
+        require('babel-plugin-module-resolver').default,
+        {
+          ...options.resolver,
+          root: process.env.RESOLVER_ROOT
+            ? [process.env.RESOLVER_ROOT]
+            : options.resolverRoot,
+          alias:
+            (process.env.RESOLVER_ALIAS &&
+              JSON.parse(process.env.RESOLVER_ALIAS)) ||
+            options.resolverAlias,
+        },
+      ],
+      [
         require('babel-plugin-root-import').default,
         {
           root: process.env.ROOT_PATH_ROOT || options.rootPathRoot,
