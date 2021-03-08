@@ -1,6 +1,6 @@
 {
   "name": "@anansi/eslint-plugin",
-  "version": "0.9.23",
+  "version": "0.9.24",
   "description": "Provides default eslint for anansi projects",
   "main": "index.js",
   "scripts": {

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.12...@anansi/babel-preset@2.2.0) (2021-03-08)
+
+
+### 🚀 Features
+
+* Add import aliasing options ([#146](https://github.com/ntucker/anansi/issues/146)) ([cb20c69](https://github.com/ntucker/anansi/commit/cb20c69c830f01596b673ff3859d3e1cbb6cb8c9))
+
+
+
 ### [2.1.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.1.11...@anansi/babel-preset@2.1.12) (2021-03-04)
 
 

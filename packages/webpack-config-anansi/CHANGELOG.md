@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.4...@anansi/webpack-config@5.3.0) (2021-03-08)
+
+
+### 🚀 Features
+
+* Add svgoOptions to override SVGO optimization ([021d427](https://github.com/ntucker/anansi/commit/021d42700f1efebd1adf6086aff8fec6bec2d730))
+
+
+
 ### [5.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.3...@anansi/webpack-config@5.2.4) (2021-03-06)
 
 
