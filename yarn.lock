@@ -2410,7 +2410,6 @@
 
 "@lerna/conventional-commits@3.22.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
-  uid "7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   dependencies:
     "@lerna/validation-error" "^3.13"
@@ -3275,43 +3274,43 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.7.tgz#87b1da9ff6568d2ffeae5b02547307d3e5c683d4"
-  integrity sha512-1PzFhFcbUk2UIP+HHA95UWn6vLDzsgeLD0QfliuxM70KUqFFhoayMRklMoCb6GU5mEijRAEVKCMnw4tOuXKm9A==
+"@rest-hooks/core@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.8.tgz#2c9c5201ee8956c896c36feb42106b9d612901bc"
+  integrity sha512-0ZFlgRzknnQXmBl8j04xvNAeD5Y6qwwxW1GLAL44UPqhZfJmVEqe+GGlgIwFFWzj38IHHCE2n9ErEgopChUNpA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/endpoint" "^1.0.5"
-    "@rest-hooks/normalizr" "^6.0.4"
+    "@rest-hooks/endpoint" "^1.0.6"
+    "@rest-hooks/normalizr" "^6.0.5"
     "@rest-hooks/use-enhanced-reducer" "^1.0.5"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/endpoint@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.0.5.tgz#5be01554761f69d5580ecc59c3cdc7192b129a14"
-  integrity sha512-BJA84PrAbq0mO9m/onw2qX8VitpWz9a59hpbFgZV6PVIlHlKJksiVRRaquo39bhIILzIt5hnQ29nUzJeeB80DA==
+"@rest-hooks/endpoint@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.0.6.tgz#52ed53b30065663f823982a970b8b30be64b94bf"
+  integrity sha512-ic60H4Ch6kUl+9Qpy0Qcw0oCV7z6Ogw+8DGKfrY+ZA7FaBPUkafOgzb3TLfUsUFwuGJwhHfHhcwfd0gBFzhVWQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^6.0.4"
+    "@rest-hooks/normalizr" "^6.0.5"
 
-"@rest-hooks/normalizr@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.4.tgz#d285ff8305521a8a510d8c41cb8b78a9c6283860"
-  integrity sha512-eFE2TH9oN1MtABUANWmLp+pRIefp9RRfHPa18DRgUU1uuimAZIXlWse5YYepofYWaQS47LpP4u2pOb/8ot09Gw==
-  dependencies:
-    "@babel/runtime" "^7.7.2"
-
-"@rest-hooks/rest@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-1.0.4.tgz#0989d337a4ea162f91a0d1857a132aa3e3e7f528"
-  integrity sha512-Fo9B0uMkBSSrVrEeFms1+co/YhRFXfFG+WPXc0U32iSWVJnrc0ErCzVte/kUSox3PfDvl81WTwIHckmva+z2Ww==
+"@rest-hooks/normalizr@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-6.0.5.tgz#728a47c5ad4d414cb9b44d89ff96502265e84707"
+  integrity sha512-dhe8gZhMErgDvf/SX33ZtlCvFXRq2MpLUtTAP447hDOF4vGvodan6aidOTlTs8nIGPfyWdajttK+Uhd4HoV/ig==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-4.0.0.tgz#06faeeff7a2f40070638237032e1f3242f92cdf2"
-  integrity sha512-dT8etFT71HmH25m/RAmOUhUlBCwGj8qWmzLH80vHr/+wLMlaymXpmXQr/fx7qCiu5BNVD1jt25YmhnOhTTjuKQ==
+"@rest-hooks/rest@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.0.0.tgz#8f96644c8d7196f2d80c28a1344734cf36b9cef8"
+  integrity sha512-etTU1w2vXXfTy8ztCxlvTpI2glmiHsCyUz+pPYFhmDNhO+BIjMu4oUbZCPRrQBKPh1EOvrU4VlXAFUSabwBdjw==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+
+"@rest-hooks/test@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-4.0.1.tgz#58e41694e7441727900b9dfe254078ca19060cb1"
+  integrity sha512-G/OIo6I3lQZh/ibbOoICVJ5VWGSE3LDW8TihCbQWQVOKsyy2PHreVJrmD+dhI6cUpxrzFc8zugcEZBnG7+xIuQ==
   dependencies:
     "@testing-library/react-hooks" "~5.0.3"
 
@@ -18220,14 +18219,14 @@ resolve@^1.1.6, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.9:
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.9.tgz#9ede667dc5b2ecd91646a2f5831fc60681c7e90e"
-  integrity sha512-W279dwydzXsrSNV4o7WD9Iy+FOI8thcrSFVKNq7Bo5w1kcvvZeCUgaMf51g4E9PXFsUP/lRDgUL7tuzurW+TxA==
+rest-hooks@5.0.10:
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.10.tgz#38b51ffe79e5a3f0fcaa451764612302f8627311"
+  integrity sha512-sxnAqzmtwZb6IGQ9nJQ3m8SzhomvbSEn9fXHhZXqs7Xsx0E0oOvwMTs607+eooPztHcnfSETJ1k7Ob9AQQINIw==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.7"
-    "@rest-hooks/endpoint" "^1.0.5"
+    "@rest-hooks/core" "^1.0.8"
+    "@rest-hooks/endpoint" "^1.0.6"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
