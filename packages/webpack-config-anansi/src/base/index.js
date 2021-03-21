@@ -76,6 +76,10 @@ export default function makeBaseConfig({
         chunkFilename:
           mode !== 'production' ? '[name].css' : '[name].[contenthash].css',
       }),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        'process.env.NODE_DEBUG': JSON.stringify(process.env.NODE_DEBUG),
+      }),
     ],
     module: {
       rules: [
