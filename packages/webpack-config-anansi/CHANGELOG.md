@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.0.0...@anansi/webpack-config@6.1.0) (2021-03-21)
+
+
+### 🚀 Features
+
+* Enable linaria out of the box ([#157](https://github.com/ntucker/anansi/issues/157)) ([473ca19](https://github.com/ntucker/anansi/commit/473ca193753a3f0bf26f18717666f2913931ce8a))
+
+
+### 💅 Enhancement
+
+* Detect apng, cur, ani for PreloadWebpackPlugin ([8c86483](https://github.com/ntucker/anansi/commit/8c8648339014e5dbba1a174e53feabe51f542e2d))
+* Handle case where react cannot be imported ([afb0d5a](https://github.com/ntucker/anansi/commit/afb0d5ac55ea98344612dacc3a97473b60867fb0))
+* Make process.env more robust ([8b87227](https://github.com/ntucker/anansi/commit/8b8722783a29aad3d1c69b1b88a09ce59c9ee8f2))
+* Only predefine process for non-node ([40084ee](https://github.com/ntucker/anansi/commit/40084ee67e99b4148c28611ef888a351a4129e85))
+* Use webpack 5 asset modules ([#158](https://github.com/ntucker/anansi/issues/158)) ([06baa85](https://github.com/ntucker/anansi/commit/06baa856a77d7b28737df9a5359b46b5b6bf4f5f))
+* Use webpack5 recommendations ([cff4dc7](https://github.com/ntucker/anansi/commit/cff4dc7dd81ed4d5623b9fbe5895038bff7437f9))
+
+
+
 ## [6.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.0.0-rc.0...@anansi/webpack-config@6.0.0) (2021-03-21)
 
 

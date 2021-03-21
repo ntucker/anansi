@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.0.0...@anansi/generator-js@3.1.0) (2021-03-21)
+
+
+### 🚀 Features
+
+* Enable linaria out of the box ([#157](https://github.com/ntucker/anansi/issues/157)) ([473ca19](https://github.com/ntucker/anansi/commit/473ca193753a3f0bf26f18717666f2913931ce8a))
+
+
+### 📦 Package
+
+* webpack ([13bd8f3](https://github.com/ntucker/anansi/commit/13bd8f3c7997fbac71cd955c532b5a30f9f078a0))
+
+
+
 ## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.0.0-rc.0...@anansi/generator-js@3.0.0) (2021-03-21)
 
 

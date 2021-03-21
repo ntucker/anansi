@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -21,7 +21,7 @@
     "@anansi/babel-preset": "^2.2.1",
     "@anansi/browserslist-config": "^1.2.0",
     "@anansi/eslint-plugin": "^0.9.24",
-    "@anansi/webpack-config": "^6.0.0",
+    "@anansi/webpack-config": "^6.1.0",
     "@rest-hooks/test": "^4.1.1",
     "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.168",
