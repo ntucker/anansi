@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.4.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.4.0...@anansi/webpack-config@5.4.1) (2021-03-21)
+
+
+### 🐛 Bug Fix
+
+* No more infinite loop in 6.2 storybook ([19c26db](https://github.com/ntucker/anansi/commit/19c26dbd7512abad5ddb55dd997cb89d132ce997))
+* process ENV needed to use node polyfills ([de53ee7](https://github.com/ntucker/anansi/commit/de53ee727d0431b7a8b1f2d99f0997cc1b824be8))
+
+
+
 ## [5.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.3.0...@anansi/webpack-config@5.4.0) (2021-03-21)
 
 
