@@ -52,10 +52,11 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   installConfig() {
     this.yarnInstall(
       [
-        '@storybook/addon-essentials',
-        '@storybook/addon-links',
-        '@storybook/addons',
-        '@storybook/react',
+        '@storybook/addon-essentials@6.2.0-rc.6',
+        '@storybook/addon-links@6.2.0-rc.6',
+        '@storybook/addons@6.2.0-rc.6',
+        '@storybook/react@6.2.0-rc.6',
+        '@storybook/builder-webpack@6.2.0-rc.6',
       ],
       {
         dev: true,

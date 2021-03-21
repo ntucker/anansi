@@ -37,7 +37,6 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       this.composeWith(require.resolve('../library'), this.options);
     }
     if (props.features.includes('storybook')) {
-      this.config.set('webpack-version', '4');
       this.composeWith(require.resolve('../storybook'), this.options);
     }
     return props;
