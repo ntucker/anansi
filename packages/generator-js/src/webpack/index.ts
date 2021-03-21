@@ -83,7 +83,6 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
         '@linaria/react',
         '@linaria/babel-preset',
         '@linaria/shaker',
-        '@linaria/webpack-loader',
       );
     }
     this.yarnInstall(devDeps, {
