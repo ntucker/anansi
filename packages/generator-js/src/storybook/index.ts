@@ -56,7 +56,7 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
         '@storybook/addon-links@6.2.0-rc.6',
         '@storybook/addons@6.2.0-rc.6',
         '@storybook/react@6.2.0-rc.6',
-        '@storybook/builder-webpack@6.2.0-rc.6',
+        '@storybook/builder-webpack5@6.2.0-rc.6',
       ],
       {
         dev: true,
