@@ -188,6 +188,7 @@ export default function makeProdConfig(
 function as(entry) {
   if (/\.css$/.test(entry)) return 'style';
   if (/\.(otf|eot|woff2|woff|ttf)$/.test(entry)) return 'font';
-  if (/\.(svg|png|jpg|gif|ico|webp|avif)$/.test(entry)) return 'image';
+  if (/\.(svg|apng|png|jpg|gif|ico|webp|avif|cur|ani)$/.test(entry))
+    return 'image';
   return 'script';
 }
