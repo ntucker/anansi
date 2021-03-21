@@ -1,7 +1,6 @@
 import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import webpack from 'webpack';
 import semver from 'semver';
 
 import { ROOT_PATH } from './constants';
@@ -77,10 +76,6 @@ export default function makeBaseConfig({
           mode !== 'production' ? '[name].css' : '[name].[contenthash].css',
         chunkFilename:
           mode !== 'production' ? '[name].css' : '[name].[contenthash].css',
-      }),
-      new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-        'process.env.NODE_DEBUG': JSON.stringify(process.env.NODE_DEBUG),
       }),
     ],
     module: {

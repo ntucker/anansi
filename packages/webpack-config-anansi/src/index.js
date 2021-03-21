@@ -1,5 +1,6 @@
 import { always } from 'ramda';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import webpack from 'webpack';
 
 import makeBaseConfig, { ROOT_PATH } from './base';
 import makeDevConfig from './dev';
@@ -61,6 +62,13 @@ export function makeConfig(options) {
     }
     if (argv?.target === 'node') {
       config = makeNodeConfig(config, options);
+    } else {
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+          'process.env.NODE_DEBUG': JSON.stringify(process.env.NODE_DEBUG),
+        }),
+      );
     }
     if (env?.check) {
       config = makeCheckConfig(config, options, env?.check);
