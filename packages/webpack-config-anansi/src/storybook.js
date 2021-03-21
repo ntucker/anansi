@@ -48,6 +48,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     delete envConfig.devServer;
 
     return {
+      watchOptions: storybookConfig.watchOptions,
       ...envConfig,
       resolveLoader: {
         ...envConfig.resolveLoader,
