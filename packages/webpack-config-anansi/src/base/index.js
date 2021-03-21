@@ -36,12 +36,14 @@ export default function makeBaseConfig({
       cacheCompression: mode === 'production',
       compact: mode === 'production',
       ...babelLoaderOptions,
-      caller: {
-        hasJsxRuntime: semver.gte(react.version, '16.14.0'),
-        ...babelLoaderOptions?.caller,
-      },
     },
   };
+  if (react) {
+    babelLoader.options.caller = {
+      hasJsxRuntime: semver.gte(react.version, '16.14.0'),
+      ...babelLoader.options.caller,
+    };
+  }
 
   return {
     context: rootPath,
