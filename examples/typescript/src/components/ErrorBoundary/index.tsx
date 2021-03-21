@@ -54,7 +54,7 @@ export default class ErrorBoundary extends Component<Props, State> {
 
   componentDidMount() {
     this.cb = history.listen(() => {
-      this.setState({ error: null, errorInfo: null });
+      if (this.state.error) this.setState({ error: null, errorInfo: null });
     });
   }
 
