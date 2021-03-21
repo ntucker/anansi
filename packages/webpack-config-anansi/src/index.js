@@ -65,8 +65,10 @@ export function makeConfig(options) {
     } else {
       config.plugins.push(
         new webpack.DefinePlugin({
-          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-          'process.env.NODE_DEBUG': JSON.stringify(process.env.NODE_DEBUG),
+          'process.env': {
+            NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+            NODE_DEBUG: JSON.stringify(process.env.NODE_DEBUG),
+          },
         }),
       );
     }
