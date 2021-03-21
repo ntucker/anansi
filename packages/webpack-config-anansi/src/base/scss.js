@@ -12,7 +12,7 @@ const getCSSLoaders = ({ mode }) => {
     },
     {
       loader: require.resolve('css-loader'),
-      options: {},
+      options: mode === 'development' ? { sourceMap: true } : {},
     },
     {
       loader: require.resolve('postcss-loader'),
