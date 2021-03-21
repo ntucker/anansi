@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.0.0-rc.0...@anansi/generator-js@3.0.0) (2021-03-21)
+
+
+### 🐛 Bug Fix
+
+* @storybook/builder-webpack5 package name ([abca24e](https://github.com/ntucker/anansi/commit/abca24e9b28be9c715d8e3bd97bf26226fcd1100))
+
+
+
 ## [3.0.0-rc.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.27...@anansi/generator-js@3.0.0-rc.0) (2021-03-21)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.0.0-rc.0...@anansi/webpack-config@6.0.0) (2021-03-21)
+
+
+### 💅 Enhancement
+
+* Remove webpack 4 conditionals ([#156](https://github.com/ntucker/anansi/issues/156)) ([cc0e28b](https://github.com/ntucker/anansi/commit/cc0e28b04bc18ad52ee61a95e9965c97cc41e314))
+
+
+
 ## [6.0.0-rc.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.4.1...@anansi/webpack-config@6.0.0-rc.0) (2021-03-21)
 
 
