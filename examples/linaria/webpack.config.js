@@ -20,12 +20,6 @@ module.exports = (env, argv) => {
       chunks: 'all',
     };
   }
-  config.module.rules[1].use.push({
-    loader: '@linaria/webpack-loader',
-    options: {
-      sourceMap: argv && argv.mode !== 'production',
-    },
-  });
   return config;
 };
 

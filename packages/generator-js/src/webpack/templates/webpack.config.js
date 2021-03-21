@@ -6,15 +6,6 @@ const options = {
   htmlOptions: { title: '<%= appName %>' },
   <% if (style === 'sass') { %>
   sassResources: [`${__dirname}/src/style/export.scss`],
-  <% } else if (style === 'linaria') { %>
-  extraJsLoaders: [
-    {
-      loader: '@linaria/webpack-loader',
-      options: {
-        sourceMap: true,
-      },
-    }
-  ]
   <% } %>
 };
 

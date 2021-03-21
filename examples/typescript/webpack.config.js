@@ -5,6 +5,7 @@ const options = {
   buildDir: 'dist/',
   sassResources: [`${__dirname}/src/style/export.scss`],
   fontPreload: 'prefetch',
+  linariaOptions: false,
 };
 
 const generateConfig = makeConfig(options);

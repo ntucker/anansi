@@ -23,6 +23,7 @@ export default function makeBaseConfig({
   manifestFilename,
   babelLoader: babelLoaderOptions,
   extraJsLoaders,
+  linariaOptions,
 }) {
   const react = require(require.resolve('react', {
     paths: [rootPath],
@@ -42,6 +43,21 @@ export default function makeBaseConfig({
       hasJsxRuntime: semver.gte(react.version, '16.14.0'),
       ...babelLoader.options.caller,
     };
+  }
+
+  if (linariaOptions !== false) {
+    if (linariaOptions === undefined) {
+      linariaOptions = {
+        sourceMap: mode !== 'production',
+      };
+    }
+    extraJsLoaders = [
+      {
+        loader: require.resolve('@linaria/webpack-loader'),
+        options: linariaOptions,
+      },
+      ...extraJsLoaders,
+    ];
   }
 
   return {

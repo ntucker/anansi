@@ -202,6 +202,13 @@ set to false to disable SVGO altogether. (Note: SVGO will never run in dev mode)
 
 [Configuration options](https://github.com/svg/svgo#configuration)
 
+### linariaOptions
+
+Can configure how [linaria](https://github.com/callstack/linaria) operates. Set to `false` to disable linaria altogether. Note that
+linaria has its own config files it can use, and it is recommended to use those instead.
+
+[Configuring Linaria](https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#options)
+
 ### fontPreload = 'preload' | 'prefetch'
 
 If specified, will [preload web fonts](https://web.dev/codelab-preload-web-fonts/). Choice
@@ -242,10 +249,11 @@ This is useful to specify global variables and mixins to be included in every sa
   - Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
   - Put global styles within `${basePath}/style`
   - Other styles will be treated as css modules
+- CSS in JS via [Linaria](https://github.com/callstack/linaria)
 - Web workers
 - All font formats
 - Any media files
-  - svg|png|jpg|avif|gif|ico|webp|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
+  - svg|png|apng|jpg|avif|gif|ico|webp|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
   - svgs imported in javascript/typescript can be used as either components or file urls
 - Raw string data: (md|txt) as a string (using `raw-loader`)
 
@@ -300,20 +308,9 @@ export default function MyComponent() {
 
 ### Working with Linaria
 
-1. Install linaria: `yarn add --dev @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker @linaria/webpack-loader`
-2. Use `extraJsLoaders` option, to add the loader.
-```js
-const myConfig = makeConfig({
-  extraJsLoaders: [
-    {
-      loader: '@linaria/webpack-loader',
-      options: {
-        sourceMap: argv?.mode !== 'production',
-      },
-    }
-  ]
-});
-```
+When testing modules that use Linaria, it's important to add the linaria babel preset to the babel config.
+
+1. Install linaria: `yarn add --dev @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker`
 3. Add `@linaria` to babel presets.
 ```js
 module.exports = {
