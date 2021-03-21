@@ -196,7 +196,7 @@ export default function makeBaseConfig({
         'node_modules',
       ],
       extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
-      alias: webpack.version.startsWith('4') ? {} : NODE_ALIAS,
+      alias: NODE_ALIAS,
     },
     devtool: 'source-map',
     stats: {

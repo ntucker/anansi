@@ -1,6 +1,5 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
-import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import webpack from 'webpack';
 import path from 'path';
@@ -15,7 +14,6 @@ export default function makeDevConfig(
     libraryInclude,
     libraryExclude,
     buildDir,
-    hardCacheOptions,
     htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
     env = {},
@@ -39,11 +37,7 @@ export default function makeDevConfig(
   config.plugins = [
     new webpack.HotModuleReplacementPlugin(),
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
-    new webpack.WatchIgnorePlugin(
-      webpack.version.startsWith('4')
-        ? watchIgnorePaths
-        : { paths: watchIgnorePaths },
-    ),
+    new webpack.WatchIgnorePlugin({ paths: watchIgnorePaths }),
     ...config.plugins,
   ];
   // not for server builds
@@ -53,21 +47,6 @@ export default function makeDevConfig(
       config.plugins.unshift(new ErrorOverlayPlugin());
     }
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
-  }
-  if (webpack.version.startsWith('4') && hardCacheOptions) {
-    config.plugins.unshift(
-      new HardSourceWebpackPlugin(hardCacheOptions),
-      new HardSourceWebpackPlugin.ExcludeModulePlugin([
-        {
-          // HardSource works with mini-css-extract-plugin but due to how
-          // mini-css emits assets, assets are not emitted on repeated builds with
-          // mini-css and hard-source together. Ignoring the mini-css loader
-          // modules, but not the other css loader modules, excludes the modules
-          // that mini-css needs rebuilt to output assets every time.
-          test: /mini-css-extract-plugin[\\/]dist[\\/]loader/,
-        },
-      ]),
-    );
   }
   config.devServer = {
     hot: true,
