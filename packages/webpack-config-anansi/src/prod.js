@@ -90,7 +90,7 @@ export default function makeProdConfig(
     });
   }
   config.optimization = {
-    moduleIds: webpack.version.startsWith('4') ? 'hashed' : 'deterministic',
+    moduleIds: 'deterministic',
     splitChunks: {
       chunks: 'all',
       maxInitialRequests: 30,

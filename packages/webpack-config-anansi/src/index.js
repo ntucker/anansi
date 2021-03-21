@@ -23,7 +23,6 @@ export function makeConfig(options) {
       libraryExclude: /node_modules/,
       buildDir: 'generated_assets/',
       serverDir: 'server_assets/',
-      hardCacheOptions: false,
       manifestFilename: 'manifest.json',
       extraJsLoaders: [],
       ...options,

@@ -214,12 +214,6 @@ typically detrimental.
 
 Customize how to [analyze](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin) your bundles
 
-### hardCacheOptions = false
-
-Customize how [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin) works. Set
-to `{}` or other options to enable plugin. This plugin often speeds up development, but can sometimes cause compatibility issues.
-Because of this, it is disabled by default.
-
 ### manifestFilename = 'manifest.json'
 
 Determines the filename for the stats file that includes mappings to all filenames.
