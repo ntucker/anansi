@@ -148,8 +148,8 @@ export default function makeBaseConfig({
               options: {
                 name:
                   mode === 'production'
-                    ? '[name].[hash].[ext]'
-                    : '[path][name].[ext]',
+                    ? '[name].[contenthash].[ext]'
+                    : '[path][contenthash].[ext]',
               },
             },
           ],
@@ -166,8 +166,8 @@ export default function makeBaseConfig({
               options: {
                 name:
                   mode === 'production'
-                    ? '[name].[hash].[ext]'
-                    : '[path][name].[ext]',
+                    ? '[name].[contenthash].[ext]'
+                    : '[path][contenthash].[ext]',
               },
             },
           ],
@@ -180,8 +180,8 @@ export default function makeBaseConfig({
               options: {
                 name:
                   mode === 'production'
-                    ? '[name].[hash].[ext]'
-                    : '[path][name].[ext]',
+                    ? '[name].[contenthash].[ext]'
+                    : '[path][contenthash].[ext]',
               },
             },
           ],
@@ -194,8 +194,8 @@ export default function makeBaseConfig({
               options: {
                 name:
                   mode === 'production'
-                    ? '[name].[hash].[ext]'
-                    : '[path][name].[ext]',
+                    ? '[name].[contenthash].[ext]'
+                    : '[path][contenthash].[ext]',
               },
             },
           ],

@@ -90,7 +90,6 @@ export default function makeProdConfig(
     });
   }
   config.optimization = {
-    moduleIds: 'deterministic',
     splitChunks: {
       chunks: 'all',
       maxInitialRequests: 30,
