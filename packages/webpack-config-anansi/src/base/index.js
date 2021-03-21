@@ -130,7 +130,7 @@ export default function makeBaseConfig({
         },
         {
           test: /\.(md|txt)$/,
-          use: require.resolve('raw-loader'),
+          type: 'asset/source',
         },
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -153,6 +153,7 @@ export default function makeBaseConfig({
               },
             },
           ],
+          type: 'javascript/auto',
         },
         // for non-js files always use file-loader
         {
@@ -160,45 +161,15 @@ export default function makeBaseConfig({
           issuer: {
             not: [/\.(j|t)sx?$/],
           },
-          use: [
-            {
-              loader: require.resolve('file-loader'),
-              options: {
-                name:
-                  mode === 'production'
-                    ? '[name].[contenthash].[ext]'
-                    : '[path][contenthash].[ext]',
-              },
-            },
-          ],
+          type: 'asset',
         },
         {
           test: /\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [
-            {
-              loader: require.resolve('file-loader'),
-              options: {
-                name:
-                  mode === 'production'
-                    ? '[name].[contenthash].[ext]'
-                    : '[path][contenthash].[ext]',
-              },
-            },
-          ],
+          type: 'asset',
         },
         {
           test: /\.(pdf|mp4|webm|wav|mp3|m4a|aac|oga)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [
-            {
-              loader: require.resolve('url-loader'),
-              options: {
-                name:
-                  mode === 'production'
-                    ? '[name].[contenthash].[ext]'
-                    : '[path][contenthash].[ext]',
-              },
-            },
-          ],
+          type: 'asset/resource',
         },
       ],
     },
