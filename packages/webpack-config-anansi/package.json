@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "5.4.1",
+  "version": "6.0.0-rc.0",
   "description": "Webpack config",
   "main": "lib/index.js",
   "scripts": {
@@ -109,8 +109,8 @@
     "util": "^0.12.3",
     "vm-browserify": "^1.1.2",
     "webpack-bundle-analyzer": "^4.4.0",
-    "webpack-remove-empty-scripts": "^0.7.1",
     "webpack-node-externals": "^2.5.2",
+    "webpack-remove-empty-scripts": "^0.7.1",
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {

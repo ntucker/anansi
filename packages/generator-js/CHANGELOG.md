@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0-rc.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.27...@anansi/generator-js@3.0.0-rc.0) (2021-03-21)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* - drop support for webpack 4
+- remove ~ prefix in sass imports (should still work without it)
+
+### 📦 Package
+
+* Major webpack plugin upgrades for v5 support ([#75](https://github.com/ntucker/anansi/issues/75)) ([ff04988](https://github.com/ntucker/anansi/commit/ff049881d4a5894af4ceecc88de97c32fd7c5115))
+
+
+
 ### [2.0.27](https://github.com/ntucker/anansi/compare/@anansi/generator-js@2.0.26...@anansi/generator-js@2.0.27) (2021-03-08)
 
 **Note:** Version bump only for package @anansi/generator-js
