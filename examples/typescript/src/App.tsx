@@ -1,7 +1,7 @@
-import { memo } from 'react';
-import { Layout } from 'antd';
-
+import React, { memo, Suspense } from 'react';
+import { Layout, Spin } from 'antd';
 import Nav from 'navigation/Nav';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 import Routes from './routes';
 
@@ -18,7 +18,17 @@ const App = () => (
         minHeight: 280,
       }}
     >
-      <Routes />
+      <Suspense
+        fallback={
+          <div className="center">
+            <Spin size="large" />
+          </div>
+        }
+      >
+        <ErrorBoundary>
+          <Routes />
+        </ErrorBoundary>
+      </Suspense>
     </Layout.Content>
   </Layout>
 );

@@ -2,8 +2,8 @@ import { lazy, Suspense, Component } from 'react';
 import type { ReactChild } from 'react';
 import classNames from 'classnames';
 import { Spin } from 'antd';
-
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
+import { history } from 'navigation';
 
 import styles from './index.scss';
 import { ReactComponent as BigAlertIcon } from './big-alert.svg';
@@ -32,6 +32,8 @@ interface State {
 }
 
 export default class ErrorBoundary extends Component<Props, State> {
+  private cb?: ReturnType<typeof history.listen>;
+
   static contextType = ErrorLoggerContext;
   static getDerivedStateFromError(error: Error | null) {
     return { error };
@@ -46,6 +48,20 @@ export default class ErrorBoundary extends Component<Props, State> {
     });
   }
 
+  handleReset = () => {
+    this.setState({ error: null, errorInfo: null });
+  };
+
+  componentDidMount() {
+    this.cb = history.listen(() => {
+      this.setState({ error: null, errorInfo: null });
+    });
+  }
+
+  componentWillUnmount() {
+    this.cb?.();
+  }
+
   render() {
     const { error } = this.state;
 
@@ -57,7 +73,8 @@ export default class ErrorBoundary extends Component<Props, State> {
         <div className="center">
           <Suspense fallback={<Spin size="large" />}>
             <h1>{error.toString()}</h1>
-            <RedBox error={error} />
+            {/*<RedBox error={error} />*/}
+            <button onClick={this.handleReset}>Dismiss</button>
           </Suspense>
         </div>
       );

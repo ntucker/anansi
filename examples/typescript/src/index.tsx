@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
-import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
 import { RouteChildrenProps } from 'react-router';
 import { CacheProvider } from 'rest-hooks';
+import { history } from 'navigation';
 
 import loadPolyfills from '@anansi/polyfill';
 import 'style/main.scss';
@@ -19,7 +19,6 @@ function shouldUpdateScroll(
 ) {
   return action !== 'REPLACE';
 }
-const history = createBrowserHistory();
 
 async function init() {
   await loadPolyfills();
