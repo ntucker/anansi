@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.3.0...@anansi/webpack-config@5.4.0) (2021-03-21)
+
+
+### 🚀 Features
+
+* Support apng, cur, ani files ([48e4087](https://github.com/ntucker/anansi/commit/48e4087270225518450e0ee4533c86e940b11e11))
+
+
+### 💅 Enhancement
+
+* Simplify issuer regex ([5ebd06f](https://github.com/ntucker/anansi/commit/5ebd06f7c336f6dea0fe6036b9e01d63845e2701))
+
+
+### 🐛 Bug Fix
+
+* Global css might have side effects ([8d53c9e](https://github.com/ntucker/anansi/commit/8d53c9ed330d9f3217e7b81f320f0cc7ee8aca82))
+
+
+### 📦 Package
+
+* mini-css-extract-plugin, postcss, svgo patch ([b01a7b8](https://github.com/ntucker/anansi/commit/b01a7b88c1128d55c7e5be3365830973c9082a6a))
+
+
+
 ## [5.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@5.2.4...@anansi/webpack-config@5.3.0) (2021-03-08)
 
 

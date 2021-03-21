@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.3.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.3.6...anansi-example-typescript@5.3.7) (2021-03-21)
+
+
+### 💅 Enhancement
+
+* Minor ErrorBoundary optimization ([92aa84d](https://github.com/ntucker/anansi/commit/92aa84d0e2b8ccbfa50079d6176256f30b920e28))
+* Refine route abstractions ([ef3c815](https://github.com/ntucker/anansi/commit/ef3c815cfefbd5b6a855acfe66c4715aacaa075c))
+
+
+### 📦 Package
+
+* rest hooks ([81f24d1](https://github.com/ntucker/anansi/commit/81f24d199ce1fd8b8e2593d7d63e84c79bc80eb7))
+* rest-hooks ([7fce5e4](https://github.com/ntucker/anansi/commit/7fce5e427813978b0d3f26f4bbf10f8fe190eee3))
+
+
+
 ### [5.3.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@5.3.5...anansi-example-typescript@5.3.6) (2021-03-08)
 
 **Note:** Version bump only for package anansi-example-typescript
