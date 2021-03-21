@@ -117,9 +117,7 @@ export default function makeBaseConfig({
         },
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-          issuer: {
-            and: [/\.(j|t)sx?$/],
-          },
+          issuer: /\.(j|t)sx?$/,
           use: [
             {
               loader: require.resolve('@svgr/webpack'),
