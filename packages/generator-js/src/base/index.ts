@@ -85,23 +85,25 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     );
   }
 
-  installBabelPreset() {
-    this.yarnInstall(['@babel/core', '@anansi/babel-preset'], { dev: true });
-    this.yarnInstall(['@babel/runtime']);
-  }
+  writingPkg() {
+    const pkgJson = {
+      devDependencies: {
+        '@babel/core': 'latest',
+        '@anansi/babel-preset': 'latest',
+        '@anansi/eslint-plugin': 'latest',
+        typescript: 'latest',
+      },
+      dependencies: {
+        '@babel/runtime': 'latest',
+      },
+    };
 
-  installEslintPlugin() {
-    this.installPeers(
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+
+    this.addPeers(
       '@anansi/eslint-plugin',
       ['typescript', 'babel-plugin-root-import'],
-      { dev: true },
+      'devDependencies' as const,
     );
-    this.yarnInstall(['@anansi/eslint-plugin'], { dev: true });
-  }
-
-  installTypeScript() {
-    this.yarnInstall(['typescript'], {
-      dev: true,
-    });
   }
 }

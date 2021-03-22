@@ -103,9 +103,5 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     }
     this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
-
-  install() {
-    this.yarnInstall();
-  }
 }
 export = WebpackGenerator;

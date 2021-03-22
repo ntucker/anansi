@@ -5,7 +5,7 @@ const DEFAULT_LIB_PATH = 'lib';
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
 
     this.option('lib-path', {
@@ -66,16 +66,16 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  installDev() {
-    this.yarnInstall(
-      [
-        '@babel/cli',
-        '@zerollup/ts-transform-paths',
-        'ttypescript',
-        'cross-env',
-        'rimraf',
-      ],
-      { dev: true },
-    );
+  writingPkg() {
+    const pkgJson = {
+      devDependencies: {
+        '@babel/cli': 'latest',
+        '@zerollup/ts-transform-paths': 'latest',
+        ttypescript: 'latest',
+        'cross-env': 'latest',
+        rimraf: 'latest',
+      },
+    };
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
 };

@@ -75,31 +75,27 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  installServe() {
-    this.yarnInstall(['serve'], { dev: true });
-  }
+  writingPkg() {
+    const reactVersion =
+      this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
+    const pkgJson = {
+      devDependencies: {
+        serve: 'latest',
+        react: reactVersion,
+        'react-dom': reactVersion,
+        'react-test-renderer': reactVersion,
+        'react-refresh': reactVersion,
+        '@types/react': 'latest',
+        '@types/react-dom': 'latest',
+        '@rest-hooks/test': 'latest',
+      },
+      dependencies: {
+        '@babel/runtime': 'latest',
+        'rest-hooks': 'latest',
+        '@rest-hooks/rest': 'latest',
+      },
+    };
 
-  installReact() {
-    if (this.config.get('reactMode') === 'legacy') {
-      this.yarnInstall([
-        'react',
-        'react-dom',
-        'react-test-renderer',
-        'react-refresh',
-      ]);
-    } else {
-      this.yarnInstall([
-        'react@experimental',
-        'react-dom@experimental',
-        'react-test-renderer@experimental',
-        'react-refresh@experimental',
-      ]);
-    }
-    this.yarnInstall(['@types/react', '@types/react-dom'], { dev: true });
-  }
-
-  installRestHooks() {
-    this.yarnInstall(['rest-hooks', '@rest-hooks/rest']);
-    this.yarnInstall(['@rest-hooks/test'], { dev: true });
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
 };

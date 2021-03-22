@@ -61,10 +61,13 @@ export function InstallPeersMixin<
   Class extends new (...args: any[]) => Generator
 >(Cls: Class) {
   return class extends Cls {
-    installPeers(
+    addPeers(
       pkgName: string,
       exclude: string[] = [],
-      installOptions: Record<string, any> = {},
+      deptype:
+        | 'dependencies'
+        | 'devDependencies'
+        | 'peerDependencies' = 'dependencies',
     ) {
       let pkgDir = path.join(path.dirname(require.resolve(pkgName)));
       let pkgJSON: PKG | null = null;
@@ -72,10 +75,15 @@ export function InstallPeersMixin<
         pkgJSON = this.fs.readJSON(path.join(pkgDir, 'package.json'));
         pkgDir = path.join(pkgDir, '..');
       }
-      const peers = Object.entries(pkgJSON?.peerDependencies ?? {})
-        .filter(([pkg, version]) => !exclude.includes(pkg))
-        .map(entry => entry.join('@'));
-      this.yarnInstall(peers, Object.assign({ exact: true }, installOptions));
+      const peers = Object.fromEntries(
+        Object.entries(pkgJSON?.peerDependencies ?? {}).filter(
+          ([pkg, version]) => !exclude.includes(pkg),
+        ),
+      );
+
+      this.fs.extendJSON(this.destinationPath('package.json'), {
+        [deptype]: peers,
+      });
     }
   };
 }

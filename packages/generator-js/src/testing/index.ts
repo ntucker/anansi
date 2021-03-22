@@ -50,16 +50,27 @@ class TestingGenerator extends BetterGenerator {
     );
   }
 
-  installTestUtils() {
-    this.yarnInstall(
-      ['jest', '@types/jest', 'babel-jest', 'ts-jest', 'core-js', 'cross-env'],
-      { dev: true },
-    );
-    if (this.config.get('reactMode') === 'legacy') {
-      this.yarnInstall(['react-test-renderer'], { dev: true });
-    } else {
-      this.yarnInstall(['react-test-renderer@experimental'], { dev: true });
-    }
+  writingPkg() {
+    const reactVersion =
+      this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
+    const pkgJson = {
+      devDependencies: {
+        jest: 'latest',
+        '@types/jest': 'latest',
+        'babel-jest': 'latest',
+        'ts-jest': 'latest',
+        'core-js': 'latest',
+        'cross-env': 'latest',
+        'react-test-renderer': reactVersion,
+      },
+      dependencies: {
+        '@babel/runtime': 'latest',
+        'rest-hooks': 'latest',
+        '@rest-hooks/rest': 'latest',
+      },
+    };
+
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
 }
 export = TestingGenerator;
