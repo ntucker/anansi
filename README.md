@@ -17,10 +17,9 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io), [yarn](https://yarnpkg.com) and @anansi/generator-js using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and @anansi/generator-js using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/); if not [nvm](https://github.com/nvm-sh/nvm) is a great way to do so).
 
 ```bash
-brew install yarn
 npm install -g yo @anansi/generator-js
 ```
 
