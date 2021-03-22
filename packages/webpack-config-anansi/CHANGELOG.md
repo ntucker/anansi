@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.0...@anansi/webpack-config@6.1.1) (2021-03-22)
+
+
+### 💅 Enhancement
+
+* Use default webpack targets (browserslist if found, then web) ([f28d1ed](https://github.com/ntucker/anansi/commit/f28d1edfa646aeebbb0b25270682ae7bcc0e2581))
+
+
+
 ## [6.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.0.0...@anansi/webpack-config@6.1.0) (2021-03-21)
 
 
