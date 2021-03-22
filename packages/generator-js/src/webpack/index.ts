@@ -75,34 +75,37 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     }
   }
 
-  installConfig() {
-    const devDeps = ['webpack-cli@^4', 'webpack-dev-server@^3'];
+  writingPkg() {
+    const pkgJson = {
+      devDependencies: {
+        'webpack-cli': 'latest',
+        'webpack-dev-server': 'latest',
+      },
+    };
     if (this?.props?.style === 'linaria') {
-      devDeps.push(
-        '@linaria/core',
-        '@linaria/react',
-        '@linaria/babel-preset',
-        '@linaria/shaker',
-      );
-    }
-    this.yarnInstall(devDeps, {
-      dev: true,
-    });
-    if (this.config.get('webpack-version')) {
-      this.yarnInstall(
-        [
-          `webpack@^${this.config.get('webpack-version')}`,
-          '@anansi/webpack-config@^5',
-        ],
-        {
-          dev: true,
-        },
-      );
-    } else {
-      this.yarnInstall(['webpack', '@anansi/webpack-config@^6.0.0-beta.2'], {
-        dev: true,
+      Object.assign(pkgJson.devDependencies, {
+        '@linaria/core': '^3.0.0-beta.1',
+        '@linaria/react': '^3.0.0-beta.1',
+        '@linaria/babel-preset': '^3.0.0-beta.1',
+        '@linaria/shaker': '^3.0.0-beta.1',
       });
     }
+    if (this.config.get('webpack-version')) {
+      Object.assign(pkgJson.devDependencies, {
+        webpack: this.config.get('webpack-version'),
+        '@anansi/webpack-config': '^5',
+      });
+    } else {
+      Object.assign(pkgJson.devDependencies, {
+        webpack: 'latest',
+        '@anansi/webpack-config': 'latest',
+      });
+    }
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+  }
+
+  install() {
+    this.yarnInstall();
   }
 }
 export = WebpackGenerator;

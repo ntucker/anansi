@@ -49,19 +49,21 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  installConfig() {
-    this.yarnInstall(
-      [
-        '@storybook/addon-essentials@6.2.0-rc.6',
-        '@storybook/addon-links@6.2.0-rc.6',
-        '@storybook/addons@6.2.0-rc.6',
-        '@storybook/react@6.2.0-rc.6',
-        '@storybook/builder-webpack5@6.2.0-rc.6',
-      ],
-      {
-        dev: true,
+  writingPkg() {
+    const pkgJson = {
+      devDependencies: {
+        '@storybook/addon-essentials': '^6.2.0-rc.6',
+        '@storybook/addon-links': '^6.2.0-rc.6',
+        '@storybook/addons': '^6.2.0-rc.6',
+        '@storybook/react': '^6.2.0-rc.6',
+        '@storybook/builder-webpack5': '^6.2.0-rc.6',
       },
-    );
+    };
+    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+  }
+
+  install() {
+    this.yarnInstall();
   }
 }
 export = WebpackGenerator;
