@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.2...@anansi/generator-js@3.1.3) (2021-03-22)
+
+
+### 💅 Enhancement
+
+* Remove yarn references in everything but CI ([dd6f3c0](https://github.com/ntucker/anansi/commit/dd6f3c093f7935d0c608558d93929c4d98edd8e6))
+
+
+
 ### [3.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.1...@anansi/generator-js@3.1.2) (2021-03-22)
 
 
