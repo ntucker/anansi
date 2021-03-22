@@ -72,7 +72,6 @@ export default function makeBaseConfig({
       chunkFilename: '[name]-[contenthash].chunk.js',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
-    target: 'web',
     cache: {
       type: 'filesystem',
       buildDependencies: {
