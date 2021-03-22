@@ -55,7 +55,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       description: `${this.config.get('appName')} - An Anansi project`,
       scripts: {
         lint: `eslint ${this.config.get('rootPath')} --ext .ts,.tsx`,
-        format: 'yarn run lint --fix',
+        format: 'npm run lint --fix',
         'type-check': 'tsc',
       },
       repository: {

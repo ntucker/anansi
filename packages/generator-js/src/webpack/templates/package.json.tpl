@@ -1,10 +1,10 @@
 {
   "scripts": {
     "start": "webpack serve --mode=development",
-    "prod": "serve <%= assetPath %>",
+    "start:prod": "serve <%= assetPath %>",
     "build": "webpack --mode=production",
-    "analyze": "webpack --mode=production --env analyze",
-    "profile": "webpack --mode=production --env profile",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild"
   }
 }

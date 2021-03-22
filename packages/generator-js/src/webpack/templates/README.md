@@ -4,35 +4,35 @@
 Run dev:
 
 ```bash
-yarn start
+npm start
 ```
 
 Build prod:
 
 ```bash
-yarn build
+npm build
 ```
 
 Run prod: (after build)
 
 ```bash
-yarn prod
+npm start:prod
 ```
 
 Analyze production bundle sizes:
 
 ```bash
-yarn analyze
+npm build:analyze
 ```
 
 Run with [React Profiler](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html):
 
 ```bash
-yarn profile
+npm build:profile
 ```
 
 Check Packages for duplicates or circular dependencies:
 
 ```bash
-yarn pkgcheck
+npm run pkgcheck
 ```
