@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.3...@anansi/generator-js@3.1.4) (2021-03-25)
+
+
+### 🐛 Bug Fix
+
+* **docs:** npm build command in README ([ac800c6](https://github.com/ntucker/anansi/commit/ac800c6caa124ab2d9848cba2bdc459944e77ba0))
+
+
+
 ### [3.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.2...@anansi/generator-js@3.1.3) (2021-03-22)
 
 
