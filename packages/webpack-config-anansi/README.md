@@ -4,9 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@anansi/webpack-config.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/webpack-config)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-A webpack configuration for fast development and production ready optimizations.
-
-Currently supports webpack 4 and 5.
+A webpack 5 configuration for fast development and production ready optimizations.
 
 ## Usage
 
