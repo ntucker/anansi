@@ -21,7 +21,9 @@ export default function makeDevConfig(
     cssModulesOptions,
   },
 ) {
-  const config = { ...baseConfig };
+  // Need explicit target to make hotreloading work until https://github.com/webpack/webpack-dev-server/issues/2758
+  // is released in webpack-dev-server v4
+  const config = { target: 'web', ...baseConfig };
 
   config.mode = 'development';
   config.output.filename = '[name].js';
