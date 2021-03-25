@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.2...@anansi/webpack-config@6.1.3) (2021-03-25)
+
+
+### 🐛 Bug Fix
+
+* Latest storybook config with hoisted node_modules ([77cc13f](https://github.com/ntucker/anansi/commit/77cc13f92d002fd6f6f2798c13768239e39a6f61))
+
+
+### 📝 Documentation
+
+* Webpack supports only 5 now ([86eca63](https://github.com/ntucker/anansi/commit/86eca6308ab8d9cb11140f337d4d8d0dae43d2a1))
+
+
+
 ### [6.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.1...@anansi/webpack-config@6.1.2) (2021-03-25)
 
 
