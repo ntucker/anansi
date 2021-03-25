@@ -31,11 +31,15 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         return !rule.loader.includes('@storybook/react');
       }
       if (rule.use) {
-        return !rule.use.find(loadConfig => {
-          const loader =
-            typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
-          return loader.includes('@storybook/react');
-        });
+        return (
+          // ignore all rules that apply to typescript files as anansi controls those
+          !rule.test?.test?.('test.ts') &&
+          !rule.use.find(loadConfig => {
+            const loader =
+              typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
+            return loader.includes('@storybook/react');
+          })
+        );
       }
     });
 
