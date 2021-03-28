@@ -1,7 +1,3 @@
-import path from 'path';
-
-import { ROOT_PATH } from './base/constants';
-
 export default function makeStorybookConfigGenerator(baseConfig) {
   return ({ config: storybookConfig, mode }) => {
     const env = mode.toLowerCase();
