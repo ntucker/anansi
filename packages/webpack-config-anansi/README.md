@@ -31,12 +31,12 @@ module.exports = makeConfig(options);
 ```json
 {
   "scripts": {
-    "start:dev": "webpack serve --mode=development",
+    "start": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
-    "analyze": "webpack --mode=production --env analyze",
-    "profile": "webpack --mode=production --env profile",
-    "pkgcheck": "webpack --env check=nobuild",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
+    "pkgcheck": "webpack --env check=nobuild"
   }
 }
 ```
