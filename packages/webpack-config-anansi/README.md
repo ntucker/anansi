@@ -44,7 +44,20 @@ module.exports = makeConfig(options);
 (`--env` requires webpack-cli >= v4)
 </details>
 
-### Storybook 6
+### TypeScript (optional)
+
+<details open><summary><b>/tsconfig.js</b></summary>
+
+```json
+{
+  "compilerOptions": {
+    "types": ["@anansi/webpack-config/types"],
+  }
+}
+```
+</details>
+
+### Storybook 6 (optional)
 
 <details open><summary><b>/.storybook/webpack.config.js</b></summary>
 
@@ -53,6 +66,21 @@ const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
 const { options } = require('../webpack.config');
 
 module.exports = makeStorybookConfigGenerator(options);
+```
+</details>
+
+<details open><summary><b>/.storybook/main.js</b></summary>
+
+```js
+module.exports = {
+  core: {
+    builder: "webpack5",
+  },
+  reactOptions: {
+    fastRefresh: true,
+  },
+};
+
 ```
 </details>
 
@@ -65,6 +93,46 @@ or include `react-refresh/babel` in your own babel configuration.
 ```bash
 yarn add --dev react-refresh
 ```
+
+## File Support
+
+> Production builds optimize all files for size, delivery and runtime performance
+>
+> Development optimized for quick iteration and debuggability
+
+- JavaScript
+  - [JSX](https://reactjs.org/docs/introducing-jsx.html)
+  - [TypeScript](https://www.typescriptlang.org/)
+  - [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+  - [Web Assembly (WASM)](https://developer.mozilla.org/en-US/docs/WebAssembly)
+- Styling (CSS)
+  - [SCSS](https://sass-lang.com/) with [CSS modules](https://css-tricks.com/css-modules-part-1-need/)
+    - Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
+      - Customize path via [sassResource](#sassresources)
+    - Put global styles within `${basePath}/style`
+    - Other styles will be treated as css modules
+  - CSS in JS via [Linaria](https://github.com/callstack/linaria)
+- Media
+  - All font formats
+  - Any media files
+    - svg|png|apng|jpg|avif|gif|ico|webp|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
+    - <details><summary>SVG as file urls or components</summary>
+
+      ```jsx
+      import starUrl, { ReactComponent as Star } from './star.svg'
+
+      const App = () => (
+        <div>
+          <img src={starUrl} alt="star" />
+          <Star />
+        </div>
+      )
+      ```
+    </details>
+- Raw string data
+  - .md, .txt
+- JSON as [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_objects)
+- HTML via [html-loader](https://www.npmjs.com/package/html-loader)
 
 ## CMD line arguments
 
@@ -244,35 +312,6 @@ Customize css module [options](https://github.com/webpack-contrib/css-loader#obj
 `resources` option from https://github.com/shakacode/sass-resources-loader#readme
 
 This is useful to specify global variables and mixins to be included in every sass file.
-
-## File Support
-
-- SCSS with CSS modules
-  - Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
-  - Put global styles within `${basePath}/style`
-  - Other styles will be treated as css modules
-- CSS in JS via [Linaria](https://github.com/callstack/linaria)
-- Web workers
-- All font formats
-- Any media files
-  - svg|png|apng|jpg|avif|gif|ico|webp|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
-  - svgs imported in javascript/typescript can be used as either components or file urls
-- Raw string data: (md|txt) as a string (using `raw-loader`)
-- HTML via [html-loader](https://www.npmjs.com/package/html-loader)
-
-```jsx
-import starUrl, { ReactComponent as Star } from './star.svg'
-
-const App = () => (
-  <div>
-    <img src={starUrl} alt="star" />
-    <Star />
-  </div>
-)
-```
-
-- Javascript & TypeScript
-
 
 ### Working with TypeScript
 
