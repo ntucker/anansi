@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.3...@anansi/webpack-config@6.1.4) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Improve storybook rules detection to ignore ([96e7028](https://github.com/ntucker/anansi/commit/96e7028f5fcf75bb65182dc94cea20faff800570))
+
+
+
 ### [6.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.2...@anansi/webpack-config@6.1.3) (2021-03-25)
 
 
