@@ -15,7 +15,7 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
         type: 'list',
         name: 'style',
         message: 'How would you like to define your styles?',
-        default: 'sass',
+        default: 'linaria',
         choices: [
           {
             name: 'SASS/CSS',
