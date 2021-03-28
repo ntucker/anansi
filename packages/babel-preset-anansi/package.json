@@ -1,7 +1,7 @@
 {
   "name": "@anansi/babel-preset",
   "version": "2.2.2",
-  "description": "Provides good default babel config for React projects",
+  "description": "Production ready babel (with TypeScript!)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,4 @@
-# Eslint plugin and rules
+# Sane community baseline for React and TypeScript
 [![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
 [![npm downloads](https://img.shields.io/npm/dm/@anansi/eslint-plugin.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/eslint-plugin)
 [![npm version](https://img.shields.io/npm/v/@anansi/eslint-plugin.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/eslint-plugin)
