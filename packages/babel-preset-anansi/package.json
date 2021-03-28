@@ -13,7 +13,9 @@
     "react-refresh",
     "typescript",
     "macros",
-    "esnext"
+    "esnext",
+    "class initialization",
+    "jsx transform"
   ],
   "files": [
     "index.js"
