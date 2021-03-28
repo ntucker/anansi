@@ -1,10 +1,10 @@
 import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import semver from 'semver';
 
 import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
+import { generateBabelLoader } from './generateBabelLoader';
 
 export { default as getStyleRules } from './scss';
 export { ROOT_PATH };
@@ -26,25 +26,13 @@ export default function makeBaseConfig({
   linariaOptions,
   argv,
 }) {
-  const react = require(require.resolve('react', {
-    paths: [rootPath],
-  }));
-  const babelLoader = {
-    loader: require.resolve('babel-loader'),
-    options: {
-      cwd: path.resolve(process.cwd(), babelRoot),
-      cacheDirectory: true,
-      cacheCompression: mode === 'production',
-      compact: mode === 'production',
-      ...babelLoaderOptions,
-    },
-  };
-  if (react) {
-    babelLoader.options.caller = {
-      hasJsxRuntime: semver.gte(react.version, '16.14.0'),
-      ...babelLoader.options.caller,
-    };
-  }
+  const babelLoader = generateBabelLoader({
+    rootPath,
+    babelRoot,
+    target: argv?.target,
+    mode,
+    babelLoaderOptions,
+  });
 
   if (linariaOptions !== false) {
     if (linariaOptions === undefined) {
