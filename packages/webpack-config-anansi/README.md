@@ -6,6 +6,8 @@
 
 A webpack 5 configuration for fast development and production ready optimizations.
 
+(For webpack 4 compatible config, use [@anansi/webpack-config@5.4.1](https://www.npmjs.com/package/@anansi/webpack-config/v/5.4.1))
+
 ## Usage
 
 <details open><summary><b>/webpack.config.js</b></summary>
