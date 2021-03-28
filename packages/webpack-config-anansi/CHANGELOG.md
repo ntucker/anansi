@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.3...@anansi/webpack-config@6.2.4) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Use css-minimizer-webpack-plugin ([3ebe0a3](https://github.com/ntucker/anansi/commit/3ebe0a33553b64eda5e843b853c04ee94210c8fd))
+
+
+
 ### [6.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.2...@anansi/webpack-config@6.2.3) (2021-03-28)
 
 
