@@ -8,6 +8,7 @@ import AngleDownUrl, {
   ReactComponent as AngleDown,
 } from './angle-down-solid.svg';
 import restHooks from './rest_hooks_logo_and_text.svg';
+import myHtml from './test.html';
 
 const worker = new Worker();
 
@@ -26,6 +27,7 @@ export default function Home() {
       <p>
         <img src={restHooks} />
       </p>
+      <code>{myHtml}</code>
     </div>
   );
 }
