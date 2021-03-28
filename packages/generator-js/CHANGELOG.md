@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.4...@anansi/generator-js@3.1.5) (2021-03-28)
+
+
+### 📦 Package
+
+* plugin-transform-react-constant-elements, preset-env, preset-react patch ([c81ee25](https://github.com/ntucker/anansi/commit/c81ee257b503bffcc5eebad7ec30b0ab86750718))
+
+
+
 ### [3.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.3...@anansi/generator-js@3.1.4) (2021-03-25)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.5...anansi-example-typescript@6.1.6) (2021-03-28)
+
+
+### 🐛 Bug Fix
+
+* Node builds ([670c297](https://github.com/ntucker/anansi/commit/670c297f5dfddd699863ea5d9a357d500bf9efdf))
+
+
+
 ### [6.1.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.4...anansi-example-typescript@6.1.5) (2021-03-28)
 
 **Note:** Version bump only for package anansi-example-typescript

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.2.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.1...@anansi/babel-preset@2.2.2) (2021-03-28)
+
+
+### 📦 Package
+
+* plugin-transform-react-constant-elements, preset-env, preset-react patch ([c81ee25](https://github.com/ntucker/anansi/commit/c81ee257b503bffcc5eebad7ec30b0ab86750718))
+
+
+
 ### [2.2.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.0...@anansi/babel-preset@2.2.1) (2021-03-21)
 
 
