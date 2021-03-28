@@ -63,9 +63,3 @@ module.exports = {
     },
   ],
 };
-try {
-  require('babel-plugin-root-import');
-  module.exports.settings['import/resolver']['babel-plugin-root-import'] = {
-    rootPathSuffix: './src',
-  };
-} catch (e) {}

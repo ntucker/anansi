@@ -34,16 +34,13 @@
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-root-import": "^6.6.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1"
   },
   "peerDependencies": {
-    "babel-plugin-root-import": "^5.1.0 || ^6.1.0",
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -53,9 +50,6 @@
     "typescript": "^3.7.3 || ^4.0.0"
   },
   "peerDependenciesMeta": {
-    "babel-plugin-root-import": {
-      "optional": true
-    },
     "typescript": {
       "optional": true
     }
