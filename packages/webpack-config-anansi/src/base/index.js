@@ -1,6 +1,7 @@
 import path from 'path';
 import StatsPlugin from 'stats-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
 import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
@@ -24,6 +25,7 @@ export default function makeBaseConfig({
   babelLoader: babelLoaderOptions,
   extraJsLoaders,
   linariaOptions,
+  tsconfigPathsOptions,
   argv,
 }) {
   const babelLoader = generateBabelLoader({
@@ -182,6 +184,10 @@ export default function makeBaseConfig({
       ],
       extensions: ['.wasm', '.mjs', '.js', '.ts', '.tsx', '.scss', '.json'],
       alias: NODE_ALIAS,
+      plugins:
+        tsconfigPathsOptions !== false
+          ? [new TsconfigPathsPlugin(tsconfigPathsOptions)]
+          : [],
     },
     devtool: 'source-map',
     stats: {

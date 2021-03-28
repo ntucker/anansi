@@ -47,6 +47,14 @@ export function makeConfig(options) {
         'Undefined is not a valid option for linariaOptions. To disable use `false`',
       );
     }
+    if (
+      'tsconfigPathsOptions' in options &&
+      options.tsconfigPathsOptions === undefined
+    ) {
+      throw new Error(
+        'Undefined is not a valid option for linariaOptions. To disable use `false`',
+      );
+    }
     const baseConfig = makeBaseConfig(options);
 
     let config;
