@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.4...@anansi/webpack-config@6.1.5) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Explicit types inclusion for storybook loaders ([e6077c9](https://github.com/ntucker/anansi/commit/e6077c9e88c3139aaec5c490c03db219617e073a))
+
+
+### 📦 Package
+
+* readable-stream explicit dep ([17e6635](https://github.com/ntucker/anansi/commit/17e6635864f8606e7b54893114402f2b446af88a))
+
+
+### 📝 Documentation
+
+* Explain how to work with webpack 4 ([fee5e87](https://github.com/ntucker/anansi/commit/fee5e87337a2289bd6dbc3aeead9785af69669cd))
+
+
+
 ### [6.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.3...@anansi/webpack-config@6.1.4) (2021-03-28)
 
 
