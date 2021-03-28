@@ -26,28 +26,29 @@ export function generateBabelLoader({
   const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
   const filename = path.join(cwd, 'noop.js');
+  const cacheIdentifier =
+    JSON.stringify({
+      version,
+      target,
+      mode,
+      hasReactRefresh,
+      hasJsxRuntime,
+      babelCoreVersion,
+      babelLoaderVersion,
+    }) +
+    JSON.stringify(
+      babel.loadPartialConfig({
+        filename,
+        cwd,
+        sourceFileName: filename,
+      }).options,
+    );
   const babelLoader = {
     loader: require.resolve('babel-loader'),
     options: {
       cwd,
       cacheDirectory: true,
-      cacheIdentifier:
-        JSON.stringify({
-          version,
-          target,
-          mode,
-          hasReactRefresh,
-          hasJsxRuntime,
-          babelCoreVersion,
-          babelLoaderVersion,
-        }) +
-        JSON.stringify(
-          babel.loadPartialConfig({
-            filename,
-            cwd,
-            sourceFileName: filename,
-          }).options,
-        ),
+      cacheIdentifier,
       cacheCompression: mode === 'production',
       compact: mode === 'production',
       ...babelLoaderOptions,
