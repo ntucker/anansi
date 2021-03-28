@@ -32,7 +32,7 @@ export default function makeProdConfig(
 
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
-  if (argv.target !== 'node') {
+  if (!argv?.target?.includes?.('node')) {
     config.plugins.push(
       new webpack.IgnorePlugin({ resourceRegExp: /DevTools/ }),
       new CleanWebpackPlugin(),
@@ -171,6 +171,7 @@ export default function makeProdConfig(
     libraryExclude,
     sassResources,
     cssModulesOptions,
+    target: argv?.target,
   });
   config.module.rules = [...config.module.rules, ...styleRules];
 

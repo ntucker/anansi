@@ -43,7 +43,7 @@ export default function makeDevConfig(
     ...config.plugins,
   ];
   // not for server builds
-  if (argv?.target !== 'node') {
+  if (!argv?.target?.includes?.('node')) {
     // error overlay is broken in webpack 5
     if (webpack.version.startsWith('4')) {
       config.plugins.unshift(new ErrorOverlayPlugin());
@@ -100,6 +100,7 @@ export default function makeDevConfig(
       ...cssModulesOptions,
     },
     sassResources,
+    target: argv?.target,
   });
   config.module.rules = [...config.module.rules, ...styleRules];
   return config;

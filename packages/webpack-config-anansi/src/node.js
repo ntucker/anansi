@@ -27,9 +27,11 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
     plugin => !(plugin instanceof StatsPlugin),
   );
   // remove node polyfills as we will execute this in node
-  config.path.alias = { ...config.path.alias };
-  for (const alias in NODE_ALIAS) {
-    delete config.path.alias[alias];
+  if (config?.resolve?.alias) {
+    config.resolve.alias = { ...config.resolve.alias };
+    for (const alias in NODE_ALIAS) {
+      delete config.resolve.alias[alias];
+    }
   }
 
   return config;

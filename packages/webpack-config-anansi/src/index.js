@@ -65,7 +65,7 @@ export function makeConfig(options) {
           break;
       }
     }
-    if (argv?.target === 'node') {
+    if (argv?.target?.includes?.('node')) {
       config = makeNodeConfig(config, options);
     } else {
       config.plugins.push(

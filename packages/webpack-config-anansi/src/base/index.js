@@ -24,6 +24,7 @@ export default function makeBaseConfig({
   babelLoader: babelLoaderOptions,
   extraJsLoaders,
   linariaOptions,
+  argv,
 }) {
   const react = require(require.resolve('react', {
     paths: [rootPath],
@@ -161,14 +162,23 @@ export default function makeBaseConfig({
             not: [/\.(j|t)sx?$/],
           },
           type: 'asset',
+          generator: {
+            emit: !argv?.target?.includes?.('node'),
+          },
         },
         {
           test: /\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,
           type: 'asset',
+          generator: {
+            emit: !argv?.target?.includes?.('node'),
+          },
         },
         {
           test: /\.(pdf|mp4|webm|wav|mp3|m4a|aac|oga)(\?v=\d+\.\d+\.\d+)?$/,
           type: 'asset/resource',
+          generator: {
+            emit: !argv?.target?.includes?.('node'),
+          },
         },
       ],
     },

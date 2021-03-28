@@ -4,11 +4,11 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
 import { always } from 'ramda';
 
-const getCSSLoaders = ({ mode }) => {
+const getCSSLoaders = ({ mode, target }) => {
   const loaders = [
     {
       loader: MiniCssExtractPlugin.loader,
-      options: {},
+      options: { emit: !target?.includes?.('node') },
     },
     {
       loader: require.resolve('css-loader'),
@@ -52,9 +52,10 @@ export default function getStyleRules({
   cssModulesOptions = {},
   sassResources,
   mode,
+  target,
 }) {
   const absoluteBasePath = path.join(rootPath, basePath);
-  const cssLoaders = getCSSLoaders({ mode });
+  const cssLoaders = getCSSLoaders({ mode, target });
   const cssModuleLoaders = cssLoaders.map(loader => {
     if (/($|\/)css-loader/.test(loader.loader)) {
       return {
