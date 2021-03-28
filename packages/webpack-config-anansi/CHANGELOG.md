@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.2...@anansi/webpack-config@6.2.3) (2021-03-28)
+
+
+### 🐛 Bug Fix
+
+* readable-stream mapping for current (3.6) version ([77b3c0b](https://github.com/ntucker/anansi/commit/77b3c0badb93c9600aafaad300bc6d7f5e7b7976))
+* Storybook resolve.plugins building ([9b8adb6](https://github.com/ntucker/anansi/commit/9b8adb6081800472decad74cdc883805273a25b1))
+
+
+### 📝 Documentation
+
+* Update project titles ([9e248a4](https://github.com/ntucker/anansi/commit/9e248a4c697f567cd1a92688878c0965f9c95f7c))
+
+
+
 ### [6.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.1...@anansi/webpack-config@6.2.2) (2021-03-28)
 
 
