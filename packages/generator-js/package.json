@@ -64,14 +64,14 @@
   },
   "dependencies": {
     "@anansi/eslint-plugin": "^0.9.25",
-    "@babel/core": "^7.13.10",
+    "@babel/core": "^7.13.13",
     "@types/mem-fs-editor": "^7.0.0",
     "chalk": "^4.1.0",
     "ejs": "^3.1.5",
     "gulp-filter": "^6.0.0",
     "gulp-prettier": "^3.0.0",
     "shelobsay": "^1.0.1",
-    "webpack": "^5.27.1",
+    "webpack": "^5.28.0",
     "yeoman-generator": "^4.13.0"
   },
   "jest": {
