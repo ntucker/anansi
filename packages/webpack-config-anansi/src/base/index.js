@@ -176,7 +176,7 @@ export default function makeBaseConfig({
         path.join(rootPath, basePath, 'style'),
         'node_modules',
       ],
-      extensions: ['.js', '.ts', '.tsx', '.scss', '.json'],
+      extensions: ['.wasm', '.mjs', '.js', '.ts', '.tsx', '.scss', '.json'],
       alias: NODE_ALIAS,
     },
     devtool: 'source-map',
