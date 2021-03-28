@@ -75,7 +75,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         alias: { ...envConfig.resolve.alias, ...storybookConfig.resolve.alias },
         plugins: [
           ...envConfig.resolve?.plugins,
-          ...storybookConfig.resolve.plugins,
+          ...storybookConfig.resolve?.plugins,
         ],
       },
       entry: storybookConfig.entry,

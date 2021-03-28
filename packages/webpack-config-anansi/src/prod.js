@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CrittersPlugin from 'critters-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
@@ -152,7 +152,7 @@ export default function makeProdConfig(
         parallel: !isWsl,
       }),
       // cssnano on node_modules as well as our loaders
-      new OptimizeCSSAssetsPlugin({}),
+      new CssMinimizerPlugin(),
     ];
   } else {
     config.optimization.minimize = false;
