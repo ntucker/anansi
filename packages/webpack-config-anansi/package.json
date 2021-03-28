@@ -18,7 +18,6 @@
     "package.json"
   ],
   "keywords": [
-    "anansi",
     "webpack",
     "webpack-config",
     "react",
@@ -31,7 +30,13 @@
     "linaria",
     "svg",
     "storybook",
-    "web-workers"
+    "web-workers",
+    "wasm",
+    "css in js",
+    "tree shaking",
+    "babel",
+    "jsx",
+    "ssr"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
