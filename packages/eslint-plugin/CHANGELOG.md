@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.25...@anansi/eslint-plugin@0.10.0) (2021-03-28)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* No longer supporting babel-plugin-root-import for
+eslint import rules
+
+### 💅 Enhancement
+
+* Drop usage of babel-plugin-root-import ([4b036c5](https://github.com/ntucker/anansi/commit/4b036c5d051cfe4b6da5b3a9b01c6014e945b582))
+
+
+
 ### [0.9.25](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.9.24...@anansi/eslint-plugin@0.9.25) (2021-03-25)
 
 

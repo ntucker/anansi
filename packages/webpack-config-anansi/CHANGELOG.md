@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.0...@anansi/webpack-config@6.2.1) (2021-03-28)
+
+
+### 📝 Documentation
+
+* Note about webpack-cli compatibility ([7f2532f](https://github.com/ntucker/anansi/commit/7f2532fd23e503c5cf01eca13556caf7bc5dc646))
+* Update scripts example ([474d26e](https://github.com/ntucker/anansi/commit/474d26ef2119c339c95dc2d7584662519d5f5b83))
+* Update tags ([2df65e3](https://github.com/ntucker/anansi/commit/2df65e318ea6e422021188780fb1777a59b37520))
+
+
+
 ## [6.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.6...@anansi/webpack-config@6.2.0) (2021-03-28)
 
 
