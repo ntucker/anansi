@@ -117,6 +117,10 @@ export default function makeBaseConfig({
           exclude: libraryExclude,
         },
         {
+          test: /\.html$/,
+          use: [{ loader: require.resolve('html-loader') }],
+        },
+        {
           test: /\.(md|txt)$/,
           type: 'asset/source',
         },

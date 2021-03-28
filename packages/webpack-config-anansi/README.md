@@ -256,6 +256,7 @@ This is useful to specify global variables and mixins to be included in every sa
   - svg|png|apng|jpg|avif|gif|ico|webp|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga as file urls anywhere
   - svgs imported in javascript/typescript can be used as either components or file urls
 - Raw string data: (md|txt) as a string (using `raw-loader`)
+- HTML via [html-loader](https://www.npmjs.com/package/html-loader)
 
 ```jsx
 import starUrl, { ReactComponent as Star } from './star.svg'

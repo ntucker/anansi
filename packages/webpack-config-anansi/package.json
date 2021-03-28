@@ -71,6 +71,7 @@
     "error-overlay-webpack-plugin": "^0.4.2",
     "events": "^3.2.0",
     "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
