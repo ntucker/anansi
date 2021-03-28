@@ -56,7 +56,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       scripts: {
         lint: `eslint ${this.config.get('rootPath')} --ext .ts,.tsx`,
         format: 'npm run lint --fix',
-        'type-check': 'tsc',
+        'test:type': 'tsc',
       },
       repository: {
         type: 'git',

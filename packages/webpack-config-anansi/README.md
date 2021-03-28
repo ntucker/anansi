@@ -36,7 +36,7 @@ module.exports = makeConfig(options);
     "build:server": "webpack --mode=production --target=node",
     "build:analyze": "webpack --mode=production --env analyze",
     "build:profile": "webpack --mode=production --env profile",
-    "pkgcheck": "webpack --env check=nobuild"
+    "test:pkg": "webpack --env check=nobuild"
   }
 }
 ```
