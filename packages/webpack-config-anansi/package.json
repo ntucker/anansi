@@ -96,7 +96,6 @@
     "ramda": "^0.27.1",
     "raw-loader": "4.0.2",
     "react-dev-utils": "^11.0.3",
-    "react-docgen-typescript-loader": "^3.7.2",
     "readable-stream": "^3.6.0",
     "sass-loader": "^11.0.1",
     "sass-resources-loader": "^2.1.1",
