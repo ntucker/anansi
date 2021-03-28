@@ -1,3 +1,7 @@
+import path from 'path';
+
+import { ROOT_PATH } from './base/constants';
+
 export default function makeStorybookConfigGenerator(baseConfig) {
   return ({ config: storybookConfig, mode }) => {
     const env = mode.toLowerCase();
@@ -19,6 +23,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     const basePlugins = envConfig.plugins.filter(
       plugin =>
         // defer to storybook's version in this case
+        // TODO: try to simply copy configuration and reuse our HtmlWebpackPlugin
         !['HtmlWebpackPlugin', 'ErrorOverlayPlugin', 'StatsPlugin'].includes(
           plugin.constructor.name,
         ),
@@ -27,20 +32,37 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     // ignore all their 'react' rules, as we already provide react handling
     // other addons might add rules, so be sure to include those here
     const storybookRules = storybookConfig.module.rules.filter(rule => {
+      let fromReact = false;
       if (rule.loader) {
-        return !rule.loader.includes('@storybook/react');
+        fromReact = rule.loader.includes('@storybook/react');
+      } else {
+        fromReact = rule.use.find(loadConfig => {
+          const loader =
+            typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
+          return loader.includes('@storybook/react');
+        });
       }
-      if (rule.use) {
-        return (
-          // ignore all rules that apply to typescript files as anansi controls those
-          !rule.test?.test?.('test.ts') &&
-          !rule.use.find(loadConfig => {
-            const loader =
-              typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
-            return loader.includes('@storybook/react');
-          })
-        );
-      }
+      const appliesToProject =
+        !rule.include ||
+        (typeof rule.include === 'function' && rule.include(ROOT_PATH)) ||
+        (Array.isArray(rule.include) &&
+          rule.include.every(include =>
+            typeof include === 'string'
+              ? !path.resolve(include).startsWith(ROOT_PATH)
+              : true,
+          ));
+
+      return (
+        !fromReact &&
+        // ignore all rules that apply to typescript files as anansi controls those
+        (!appliesToProject ||
+          (!rule.test?.test?.('test.ts') &&
+            !rule.test?.test?.('test.js') &&
+            !rule.test?.test?.('test.md') &&
+            !rule.test?.test?.('test.css') &&
+            !rule.test?.test?.('test.jpg') &&
+            !rule.test?.test?.('test.mp4')))
+      );
     });
 
     // this transforms storybook node_modules files...not sure why this isn't done at publish time
