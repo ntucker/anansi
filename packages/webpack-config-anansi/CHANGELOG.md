@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.1...@anansi/webpack-config@6.2.2) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Make scripts use more consistent naming ([67d8130](https://github.com/ntucker/anansi/commit/67d8130ca0b135288c1e094728ad50cac8a0903f))
+
+
+### 🐛 Bug Fix
+
+* Correct peerDep version for storybook ([0e1696d](https://github.com/ntucker/anansi/commit/0e1696d52cd8832869fc1796bae0db1819662502))
+
+
+
 ### [6.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.0...@anansi/webpack-config@6.2.1) (2021-03-28)
 
 

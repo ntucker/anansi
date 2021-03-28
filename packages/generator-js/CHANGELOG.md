@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.6...@anansi/generator-js@3.1.7) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Make scripts use more consistent naming ([67d8130](https://github.com/ntucker/anansi/commit/67d8130ca0b135288c1e094728ad50cac8a0903f))
+
+
+
 ### [3.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.5...@anansi/generator-js@3.1.6) (2021-03-28)
 
 **Note:** Version bump only for package @anansi/generator-js
