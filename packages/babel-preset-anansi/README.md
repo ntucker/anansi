@@ -56,6 +56,33 @@ Or configure options
 
 In dev mode, if `react-refresh` is installed it will be enabled.
 
+## Future language support
+
+In addition to providing good production/development/testing transformations; some additional non-standard features
+are included:
+
+### Stage 3
+
+- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
+- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
+- [Decorators](https://github.com/tc39/proposal-decorators)
+- [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
+- [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
+- [Module level await](https://github.com/tc39/proposal-top-level-await)
+
+### Stage 1
+
+- [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
+- [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
+- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
+
+### Other
+
+- [Babel Macros](https://github.com/kentcdodds/babel-plugin-macros)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Module resolver](https://github.com/tleunen/babel-plugin-module-resolver)
+- [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
+
 ## Options
 
 ### typing: 'flow' | 'typescript' | false = false
@@ -216,31 +243,6 @@ No value (undefined) means use current working directory.
 
 Sending `__dirname` from a `.babelrc.js` can be useful to ensure consistency no matter
 where babel starts running from.
-
-## Future language support
-
-In addition to providing good production/development/testing transformations; some additional non-standard features
-are included:
-
-### Stage 3
-
-- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
-- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
-- [Decorators](https://github.com/tc39/proposal-decorators)
-- [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
-- [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
-- [Module level await](https://github.com/tc39/proposal-top-level-await)
-
-### Stage 1
-
-- [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
-- [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
-- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
-
-### Other
-
-- [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
-- [Macros](https://github.com/kentcdodds/babel-plugin-macros)
 
 ### Polyfills
 
