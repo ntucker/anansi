@@ -40,6 +40,8 @@ module.exports = makeConfig(options);
   }
 }
 ```
+
+(`--env` requires webpack-cli >= v4)
 </details>
 
 ### Storybook 6
