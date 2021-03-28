@@ -4,18 +4,18 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
-    "prod": "serve ./dist",
+    "start:prod": "serve ./dist",
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
     "build:clean": "rm -rf dist && rm -rf server_assets",
-    "analyze": "webpack --mode=production --env analyze",
-    "profile": "webpack --mode=production --env profile",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
-    "type-check": "tsc --noEmit",
+    "test:type": "tsc --noEmit",
     "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start:storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.2.3",
