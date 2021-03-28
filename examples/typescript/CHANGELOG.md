@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.6...anansi-example-typescript@6.1.7) (2021-03-28)
+
+
+### 💅 Enhancement
+
+* Validate tsconfig paths and .html import ([a1b4272](https://github.com/ntucker/anansi/commit/a1b427230292ac8a758d9592500f424ed5c50b11))
+
+
+
 ### [6.1.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.5...anansi-example-typescript@6.1.6) (2021-03-28)
 
 

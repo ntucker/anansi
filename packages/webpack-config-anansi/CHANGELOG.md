@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.6...@anansi/webpack-config@6.2.0) (2021-03-28)
+
+
+### 🚀 Features
+
+* .html typings ([c038b95](https://github.com/ntucker/anansi/commit/c038b95d55114200d833e090507fd364a3c1d83d))
+* Automatic module resolution based on tsconfig ([61bc307](https://github.com/ntucker/anansi/commit/61bc307d0e0fcd8281c54e4913df0a31777636c5))
+* Resolve wasm files ([607530b](https://github.com/ntucker/anansi/commit/607530b1043e87038f51f61f77d229cf1774a49f))
+* Support .html files ([3591086](https://github.com/ntucker/anansi/commit/35910863e1844da0fed68e9ad56fd3e5286375bb))
+
+
+### 💅 Enhancement
+
+* More chances to bust babel cache ([44d0bca](https://github.com/ntucker/anansi/commit/44d0bca5e151e75ef5bf36a108b89f4c2678153c))
+
+
+
 ### [6.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.1.5...@anansi/webpack-config@6.1.6) (2021-03-28)
 
 
