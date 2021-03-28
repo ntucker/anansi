@@ -6,7 +6,7 @@ import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
 import { generateBabelLoader } from './generateBabelLoader';
 
-export { default as getStyleRules } from './scss';
+export { default as getStyleRules } from './css';
 export { ROOT_PATH };
 
 const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
