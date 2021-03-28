@@ -29,40 +29,29 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         ),
     );
 
-    // ignore all their 'react' rules, as we already provide react handling
-    // other addons might add rules, so be sure to include those here
+    // included rules:
+    // - .mdx
+    // - acorn-jsx node_modules rule
+    // - any storybook specific loaders
+    const isStorybookSpecific = loader =>
+      /@storybook\/[^/-]+-loader\//.test(loader);
     const storybookRules = storybookConfig.module.rules.filter(rule => {
-      let fromReact = false;
+      if (rule.test?.test?.('test.mdx') || rule.test?.test?.('test.story.mdx'))
+        return true;
+      if (
+        rule.include instanceof RegExp &&
+        rule.include.test('node_modules/acorn-jsx/')
+      )
+        return true;
       if (rule.loader) {
-        fromReact = rule.loader.includes('@storybook/react');
+        return isStorybookSpecific(rule.loader);
       } else {
-        fromReact = rule.use.find(loadConfig => {
+        return rule.use.find(loadConfig => {
           const loader =
             typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
-          return loader.includes('@storybook/react');
+          return isStorybookSpecific(loader);
         });
       }
-      const appliesToProject =
-        !rule.include ||
-        (typeof rule.include === 'function' && rule.include(ROOT_PATH)) ||
-        (Array.isArray(rule.include) &&
-          rule.include.every(include =>
-            typeof include === 'string'
-              ? !path.resolve(include).startsWith(ROOT_PATH)
-              : true,
-          ));
-
-      return (
-        !fromReact &&
-        // ignore all rules that apply to typescript files as anansi controls those
-        (!appliesToProject ||
-          (!rule.test?.test?.('test.ts') &&
-            !rule.test?.test?.('test.js') &&
-            !rule.test?.test?.('test.md') &&
-            !rule.test?.test?.('test.css') &&
-            !rule.test?.test?.('test.jpg') &&
-            !rule.test?.test?.('test.mp4')))
-      );
     });
 
     // this transforms storybook node_modules files...not sure why this isn't done at publish time
