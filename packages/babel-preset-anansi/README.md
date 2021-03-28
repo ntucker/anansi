@@ -69,12 +69,12 @@ are included:
 - [`a.?b.?()`](http://babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining)
 - [`var foo = object.foo ?? "default"`](http://babeljs.io/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator)
 - [Module level await](https://github.com/tc39/proposal-top-level-await)
+- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
 
 ### Stage 1
 
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
 - [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
-- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
 
 ### Other
 
