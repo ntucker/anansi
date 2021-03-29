@@ -3629,9 +3629,9 @@
     "@babel/runtime" "^7.7.2"
 
 "@rest-hooks/rest@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.0.2.tgz#f0c6a3ae89d96c9dbf5a77706edef8ad02d230a2"
-  integrity sha512-26W4/kaVs7NF6AzfpApdrBrWu7hCfq1I1JaH6EiWltVKkj9UN/gBa+qzVmoWUXUbiZ1XuD+gwoVyKKeM4uCRhw==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.0.3.tgz#ea80874a47d528321bf154f7b924e589dddcebe8"
+  integrity sha512-VfQlpxlo0MqKtlD0vwpkzLL6SuwKJXTVws+5MeD0UzELCd1QVwAICdMbOJDvWCFcQbLaqDHOpwrAECOk+RMQWw==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
