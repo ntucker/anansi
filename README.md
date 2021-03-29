@@ -6,14 +6,17 @@
 
 ## Motivation
 
-- Modular
-- Upgradable
-- Best Practices
-  - Get started fast
-  - Quick development iteration
-  - Optimized production deploys
-- Batteries included - support the best of the ecosystem out of the box
+Starting a new React project can be a lot of work. There are many tools that need to work together. The best tools available keep a tight technical focus with high levels of configurability. In practice this means it's a lot of work to get started and even more work to maintain, while keeping the tools cleanly working together.
 
+Like Ubuntu did for Linux; Anansi focuses on bringing together many powerful tools in unison to build high performance web applications, quickly - while not losing the power and flexibility each individual tool provides.
+
+- Start a project in a minute
+- Modular and Incremental
+- Modern
+  - Stay up with the latest best in class tooling by a simple package upgrade
+- Batteries included
+- DRY configurations
+- Battle-tested
 
 ## Installation
 
