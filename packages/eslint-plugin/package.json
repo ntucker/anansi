@@ -1,6 +1,6 @@
 {
   "name": "@anansi/eslint-plugin",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Sane community baseline for React and TypeScript",
   "main": "index.js",
   "scripts": {
@@ -31,9 +31,9 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.13.10",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
-    "@babel/eslint-parser": "^7.13.10",
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-babel": "^5.3.1",

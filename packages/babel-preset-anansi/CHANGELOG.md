@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.2.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.3...@anansi/babel-preset@2.2.4) (2021-03-29)
+
+
+### 📝 Documentation
+
+* Add tags ([89a62cf](https://github.com/ntucker/anansi/commit/89a62cfe61f9dbc25a3a9fdecefc2bd507898924))
+* class initializer moved to stage 3 ([0f4a8a0](https://github.com/ntucker/anansi/commit/0f4a8a0c0366c3822e5b00757dcb75cba3008561))
+* Rearrange ([23426c1](https://github.com/ntucker/anansi/commit/23426c1e0ecd717224896556a923068b6f35fec7))
+
+
+
 ### [2.2.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.2...@anansi/babel-preset@2.2.3) (2021-03-28)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.8...@anansi/generator-js@3.1.9) (2021-03-29)
+
+
+### 💅 Enhancement
+
+* Default to linaria for styles ([231e7cd](https://github.com/ntucker/anansi/commit/231e7cdbfc5e7fc12aa40b198f8485bcc3a7ca4a))
+
+
+
 ### [3.1.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.7...@anansi/generator-js@3.1.8) (2021-03-28)
 
 **Note:** Version bump only for package @anansi/generator-js

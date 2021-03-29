@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.4...@anansi/webpack-config@6.2.5) (2021-03-29)
+
+
+### 💅 Enhancement
+
+* Invalidate webpack cache based on config version ([80d73ee](https://github.com/ntucker/anansi/commit/80d73ee9b7427af953f78a2859dc3de1d2c4a024))
+* Remove extraneous dep ([771a3da](https://github.com/ntucker/anansi/commit/771a3daf211c0eaafcdd851567d8b06c5e3b53c9))
+* Webpack 5 recommended config ([037d36f](https://github.com/ntucker/anansi/commit/037d36f6f8dff75fa2a848e32b3925fb7bbb8842))
+
+
+### 📝 Documentation
+
+* Reorder and make more clear ([c7823e2](https://github.com/ntucker/anansi/commit/c7823e2bbc7b527091ee2649ada08611ee685e27))
+
+
+
 ### [6.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.3...@anansi/webpack-config@6.2.4) (2021-03-28)
 
 
