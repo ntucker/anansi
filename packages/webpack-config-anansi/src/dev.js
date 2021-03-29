@@ -32,7 +32,7 @@ export default function makeDevConfig(
     path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.optimization = {
     splitChunks: false,
-    noEmitOnErrors: true,
+    emitOnErrors: false,
   };
 
   const watchIgnorePaths = [/s?css\.d\.ts$/];
