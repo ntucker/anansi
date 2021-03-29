@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.2...@anansi/eslint-plugin@0.10.3) (2021-03-29)
+
+
+### 🐛 Bug Fix
+
+* Refer to correct parser ([9096515](https://github.com/ntucker/anansi/commit/9096515b7c008e7c03be7fddc7c69460eabb4eb4))
+
+
+
 ### [0.10.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.1...@anansi/eslint-plugin@0.10.2) (2021-03-29)
 
 
