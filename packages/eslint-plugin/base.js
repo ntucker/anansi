@@ -49,7 +49,7 @@ module.exports = {
     {
       files: ['**/*.js?(x)'],
       extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
-      parser: 'babel-eslint',
+      parser: '@babel/eslint-parser',
       parserOptions: {
         sourceType: 'module',
         allowImportExportEverywhere: true,
