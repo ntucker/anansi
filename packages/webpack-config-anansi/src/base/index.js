@@ -6,7 +6,7 @@ import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
 import { generateBabelLoader } from './generateBabelLoader';
-
+import { version } from '../../package.json';
 export { default as getStyleRules } from './css';
 export { ROOT_PATH };
 
@@ -68,6 +68,7 @@ export default function makeBaseConfig({
       buildDependencies: {
         config: [__filename], // you may omit this when your CLI automatically adds it
       },
+      version,
     },
     plugins: [
       new StatsPlugin(manifestFilename, {
