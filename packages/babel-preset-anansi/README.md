@@ -24,7 +24,9 @@ Just include in .babelrc
 }
 ```
 
-Or configure options
+Or configure [options](#options)
+
+<details><summary><b>Target node 10</b></summary>
 
 ```json
 {
@@ -38,6 +40,9 @@ Or configure options
   ]
 }
 ```
+</details>
+
+<details><summary><b>Use TypeScript</b></summary>
 
 ```json
 {
@@ -51,6 +56,7 @@ Or configure options
   ]
 }
 ```
+</details>
 
 ## React refresh
 
