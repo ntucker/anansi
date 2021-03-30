@@ -82,8 +82,9 @@ are included:
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
 - [`Decimal` parsing](https://github.com/tc39/proposal-decimal)
 
-### Other
+## Features
 
+- [Speed up reconciliation and reduce garbage collection in production](https://github.com/facebook/react/issues/3226)
 - [Babel Macros](https://github.com/kentcdodds/babel-plugin-macros)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Module resolver](https://github.com/tleunen/babel-plugin-module-resolver)
