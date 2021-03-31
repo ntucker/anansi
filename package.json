@@ -19,7 +19,7 @@
   "devDependencies": {
     "@anansi/eslint-plugin": "^0.9.15",
     "@babel/cli": "7.13.14",
-    "@babel/core": "7.13.13",
+    "@babel/core": "7.13.14",
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.1",
     "@storybook/addon-essentials": "^6.2.0",
