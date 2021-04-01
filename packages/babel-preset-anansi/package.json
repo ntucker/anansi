@@ -38,6 +38,7 @@
     "@babel/plugin-proposal-export-default-from": "^7.12.13",
     "@babel/plugin-proposal-export-namespace-from": "^7.12.13",
     "@babel/plugin-proposal-private-methods": "^7.13.0",
+    "@babel/plugin-proposal-record-and-tuple": "^7.13.0",
     "@babel/plugin-syntax-function-bind": "^7.12.13",
     "@babel/plugin-syntax-top-level-await": "^7.12.13",
     "@babel/plugin-transform-flow-strip-types": "^7.13.0",

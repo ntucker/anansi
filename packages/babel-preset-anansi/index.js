@@ -124,6 +124,11 @@ function buildPreset(api, options = {}) {
       options.typing !== 'typescript' &&
         require('@babel/plugin-proposal-export-default-from').default,
       require('@babel/plugin-proposal-export-namespace-from').default,
+      // stage 2
+      [require('@babel/plugin-proposal-record-and-tuple').default, {
+        "importPolyfill": true,
+        "syntaxType": "hash"
+      }],
       //stage 3
       require('@babel/plugin-syntax-top-level-await').default,
       // Get "Module parse failed: Unexpected token" when targetting newer browsers without this

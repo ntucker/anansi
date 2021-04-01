@@ -75,6 +75,12 @@ are included:
 - [Module level await](https://github.com/tc39/proposal-top-level-await)
 - [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
 
+### Stage 2
+
+- [Records and Tuples](https://github.com/tc39/proposal-record-tuple)
+  - Be sure to add [@bloomberg/record-tuple-polyfill](https://www.npmjs.com/package/@bloomberg/record-tuple-polyfill)
+  - Warning: this doesn't work with TypeScript
+
 ### Stage 1
 
 - [`export v from 'mod';`](http://babeljs.io/docs/en/next/babel-plugin-proposal-export-default-from) (Disabled when using TypeScript)
