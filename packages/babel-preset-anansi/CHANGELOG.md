@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.6...@anansi/babel-preset@2.3.0) (2021-04-01)
+
+
+### 🚀 Features
+
+* Records and Tuples ([369ed74](https://github.com/ntucker/anansi/commit/369ed74846b63a4529b4d4b362c05457fac7f02e))
+
+
+### 💅 Enhancement
+
+* Improve ESM detection for node ([0feedbf](https://github.com/ntucker/anansi/commit/0feedbf7b2876783c446339441daec3e5cf2ef1e))
+
+
+
 ### [2.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.5...@anansi/babel-preset@2.2.6) (2021-04-01)
 
 
