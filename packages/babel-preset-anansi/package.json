@@ -57,6 +57,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js-compat": "^3.10.0",
     "path": "^0.12.7",
+    "semver": "^7.3.5",
     "stable": "^0.1.8"
   },
   "peerDependencies": {

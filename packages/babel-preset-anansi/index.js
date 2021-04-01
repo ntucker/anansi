@@ -1,4 +1,5 @@
 const path = require('path');
+const semver = require('semver');
 
 /*
 options:
@@ -47,11 +48,19 @@ function buildPreset(api, options = {}) {
       ? options.modules || (supportsModules ? false : 'auto')
       : // if supportsModules is undefined or true then assume it can handle es modules.
         options.modules || (supportsModules === false ? 'auto' : false);
-  // We should turn this on by default once the lowest version of Node LTS
-  // supports ES Modules.
+
+  const nodeSupportsModules = semver.gte(
+    options.nodeTarget === 'current' || !options.nodeTarget
+      ? process.version
+      : semver.valid(semver.coerce(options.nodeTarget)),
+    '14.0.0',
+  );
+
   const useESModules =
     options.useESModules === undefined
-      ? !(env === 'test' || options.nodeTarget)
+      ? options.nodeTarget || babelNode
+        ? nodeSupportsModules
+        : true
       : options.useESModules;
 
   let absoluteRuntimePath = undefined;
