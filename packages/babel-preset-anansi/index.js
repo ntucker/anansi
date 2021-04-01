@@ -17,6 +17,9 @@ function buildPreset(api, options = {}) {
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
+  const babelNode = api.caller(
+    caller => caller && caller.name === '@babel/node',
+  );
   const nodeTarget = api.caller(caller => caller && caller.target === 'node')
     ? 'current'
     : undefined;
@@ -40,7 +43,7 @@ function buildPreset(api, options = {}) {
     ...options,
   };
   const modules =
-    env === 'test' || options.nodeTarget
+    env === 'test' || options.nodeTarget || babelNode
       ? options.modules || (supportsModules ? false : 'auto')
       : // if supportsModules is undefined or true then assume it can handle es modules.
         options.modules || (supportsModules === false ? 'auto' : false);
@@ -162,7 +165,7 @@ function buildPreset(api, options = {}) {
     );
   }
 
-  if (env === 'test' || options.nodeTarget) {
+  if (babelNode || env === 'test' || options.nodeTarget) {
     preset.presets.unshift([
       require('@babel/preset-env').default,
       {
