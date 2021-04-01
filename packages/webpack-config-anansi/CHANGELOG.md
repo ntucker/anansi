@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.6...@anansi/webpack-config@6.2.7) (2021-04-01)
+
+
+### 📦 Package
+
+* core-js minor ([b1cb302](https://github.com/ntucker/anansi/commit/b1cb3028b3dc5e87f0643b53e1028eb8baff87c6))
+
+
+
 ### [6.2.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.5...@anansi/webpack-config@6.2.6) (2021-03-29)
 
 **Note:** Version bump only for package @anansi/webpack-config

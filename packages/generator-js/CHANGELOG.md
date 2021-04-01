@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.11...@anansi/generator-js@3.1.12) (2021-04-01)
+
+
+### 📦 Package
+
+* Storybook 6.2 final ([c526a57](https://github.com/ntucker/anansi/commit/c526a576abc3ba1cc3f47cd490954077cd2e5161))
+
+
+
 ### [3.1.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.10...@anansi/generator-js@3.1.11) (2021-03-30)
 
 **Note:** Version bump only for package @anansi/generator-js

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.5...@anansi/babel-preset@2.2.6) (2021-04-01)
+
+
+### 💅 Enhancement
+
+* Use modules: 'auto' with babel node ([ed705aa](https://github.com/ntucker/anansi/commit/ed705aaf228383ba1edb1f43c12011767d7eb171))
+
+
+### 📦 Package
+
+* core-js minor ([b1cb302](https://github.com/ntucker/anansi/commit/b1cb3028b3dc5e87f0643b53e1028eb8baff87c6))
+
+
+### 📝 Documentation
+
+* ? moved to stage 4 ([fe4ab78](https://github.com/ntucker/anansi/commit/fe4ab785e7e013bb77f6c35c0ebe24ae2c5441da))
+* Add note about performance optimization ([10c697d](https://github.com/ntucker/anansi/commit/10c697d430b3f3275f5043cd0ed0d713bdc723d3))
+
+
+
 ### [2.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.2.4...@anansi/babel-preset@2.2.5) (2021-03-29)
 
 

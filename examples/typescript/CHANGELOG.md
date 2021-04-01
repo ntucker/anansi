@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.15](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.14...anansi-example-typescript@6.1.15) (2021-04-01)
+
+
+### 📦 Package
+
+* antd, eslint minor ([03b86e6](https://github.com/ntucker/anansi/commit/03b86e6e7f5adf4bbc10584fcb2ba866150c60b0))
+* Bump react-refresh, storybook ([38a50e5](https://github.com/ntucker/anansi/commit/38a50e5a29ec2c536c7517758007169d490e3e31))
+* core-js minor ([b1cb302](https://github.com/ntucker/anansi/commit/b1cb3028b3dc5e87f0643b53e1028eb8baff87c6))
+
+
+
 ### [6.1.14](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.1.13...anansi-example-typescript@6.1.14) (2021-03-30)
 
 **Note:** Version bump only for package anansi-example-typescript
