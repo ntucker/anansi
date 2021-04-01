@@ -35,7 +35,7 @@
     "@anansi/polyfill": "^1.0.33",
     "@babel/runtime": "^7.13.10",
     "classnames": "^2.2.6",
-    "core-js": "^3.8.3",
+    "core-js": "^3.10.0",
     "linaria": "^3.0.0-beta.1",
     "redbox-react": "^1.6.0"
   },
