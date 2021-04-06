@@ -91,6 +91,7 @@ are included:
 - [Speed up reconciliation and reduce garbage collection in production](https://github.com/facebook/react/issues/3226)
 - [Babel Macros](https://github.com/kentcdodds/babel-plugin-macros)
 - [TypeScript](https://www.typescriptlang.org/)
+  - [TypeScript tsconfig paths support](#tsconfigpath)
 - [Module resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 - [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
 
@@ -182,6 +183,22 @@ Available in React >16.14.
 - It will enable future improvements that reduce the number of concepts you need to learn React.
 
 > Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
+
+### tsConfigPath
+
+Specifies the tsconfig.json file location to automatically apply [tsconfig path mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping).
+
+<details><summary><b>.babelrc.js</b></summary>
+
+```js
+module.exports = {
+  presets: [['@anansi', { typing: 'typescript', tsConfigPath: '.' }]],
+};
+```
+
+</details>
+
+Merges with [module resolver](#module-resolver-options) options
 
 ## module-resolver options
 

@@ -1,5 +1,6 @@
 const path = require('path');
 const semver = require('semver');
+const { readTsConfig } = require('@anansi/ts-utils');
 
 /*
 options:
@@ -11,7 +12,8 @@ options:
   useBuiltIns,
   corejs,
   minify,
-  loose
+  loose,
+  tsConfigPath
 */
 function buildPreset(api, options = {}) {
   const env = api.env();
@@ -41,6 +43,7 @@ function buildPreset(api, options = {}) {
     hotReloader: false,
     reactConstantElementsOptions: {},
     nodeTarget,
+    resolver: {root: [], alias: {}},
     ...options,
   };
   const modules =
@@ -73,6 +76,34 @@ function buildPreset(api, options = {}) {
     runtimeVersion = require('@babel/runtime/package.json').version;
   } catch (e) {}
 
+  if (options.tsConfigPath) {
+    const { dir, base } = path.parse(options.tsConfigPath)
+    const tsconfig = base !== '.' && base !== '..' ? readTsConfig(dir, base) : readTsConfig(dir)
+    if (options.resolver.basePath) {
+      throw new Error('cannot use resolver.basePath and tsConfigPath options together')
+    }
+    options.resolver.alias = {
+      ...tsconfig.options.paths,
+      ...options.resolver.alias,
+    };
+    options.resolver.root = [
+      ...(tsconfig.options.baseUrl ? ['./' + tsconfig.options.baseUrl] : []),
+      ...(tsconfig.options.rootDir ? [tsconfig.options.rootDir] : tsconfig.options.rootDirs || []),
+      ...options.resolver.root,
+    ]
+  }
+  options.resolver.alias = {
+    ...options.resolver.alias,
+    ...((process.env.RESOLVER_ALIAS &&
+    JSON.parse(process.env.RESOLVER_ALIAS)) || options.resolverAlias)
+  };
+  options.resolver.root = [
+    ...options.resolver.root,
+    ...(process.env.RESOLVER_ROOT
+            ? [process.env.RESOLVER_ROOT]
+            : options.resolverRoot || [])
+  ]
+
   const preset = {
     presets: [
       [
@@ -86,18 +117,9 @@ function buildPreset(api, options = {}) {
       ],
     ],
     plugins: [
-      [
+      (Object.keys(options.resolver.alias).length || Object.keys(options.resolver.root).length) && [
         require('babel-plugin-module-resolver').default,
-        {
-          ...options.resolver,
-          root: process.env.RESOLVER_ROOT
-            ? [process.env.RESOLVER_ROOT]
-            : options.resolverRoot,
-          alias:
-            (process.env.RESOLVER_ALIAS &&
-              JSON.parse(process.env.RESOLVER_ALIAS)) ||
-            options.resolverAlias,
-        },
+        options.resolver,
       ],
       [
         require('babel-plugin-root-import').default,

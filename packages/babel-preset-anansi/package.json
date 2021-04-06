@@ -32,6 +32,7 @@
     "node": ">=10.13.0"
   },
   "dependencies": {
+    "@anansi/ts-utils": "^0.1.0",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-class-static-block": "^7.13.11",
     "@babel/plugin-proposal-decorators": "^7.13.5",
@@ -81,6 +82,5 @@
     "@babel/runtime": {
       "optional": true
     }
-  },
-  "gitHead": "b7c05acae6195be886008b7a76b0feff80342334"
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "presets": [
+    [
+      "@anansi/babel-preset",
+      {
+        "nodeTarget": "10.13.0"
+      }
+    ]
+  ]
+}
