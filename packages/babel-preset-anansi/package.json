@@ -58,6 +58,7 @@
     "babel-plugin-root-import": "^6.6.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js-compat": "^3.10.0",
+    "glob-to-regexp": "^0.4.1",
     "path": "^0.12.7",
     "semver": "^7.3.5",
     "stable": "^0.1.8"

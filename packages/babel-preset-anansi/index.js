@@ -1,6 +1,7 @@
 const path = require('path');
 const semver = require('semver');
 const { readTsConfig } = require('@anansi/ts-utils');
+var globToRegExp = require('glob-to-regexp');
 
 /*
 options:
@@ -79,19 +80,21 @@ function buildPreset(api, options = {}) {
   if (options.tsConfigPath) {
     const { dir, base } = path.parse(options.tsConfigPath)
     const tsconfig = base !== '.' && base !== '..' ? readTsConfig(dir, base) : readTsConfig(dir)
-    if (options.resolver.basePath) {
-      throw new Error('cannot use resolver.basePath and tsConfigPath options together')
+    if (tsconfig.options.paths) {
+      for (const k in tsconfig.options.paths) {
+        console.log(tsconfig.options.paths[k])
+        const key = globToRegExp(k).toString().replace('.*', '(.*)')
+        options.resolver.alias[key.substr(1, key.length - 2)] = './' +tsconfig.options.paths[k][0].replace('*', '\\1')
+      }
+      options.resolver.root = [path.resolve(tsconfig.options.baseUrl)]
+      options.resolver.root = [
+        ...(tsconfig.options.baseUrl ? [tsconfig.options.baseUrl] : []),
+        ...(tsconfig.options.rootDir ? [tsconfig.options.rootDir] : tsconfig.options.rootDirs || []),
+        ...options.resolver.root,
+      ]
     }
-    options.resolver.alias = {
-      ...tsconfig.options.paths,
-      ...options.resolver.alias,
-    };
-    options.resolver.root = [
-      ...(tsconfig.options.baseUrl ? ['./' + tsconfig.options.baseUrl] : []),
-      ...(tsconfig.options.rootDir ? [tsconfig.options.rootDir] : tsconfig.options.rootDirs || []),
-      ...options.resolver.root,
-    ]
   }
+  options.resolver.extensions= ['.ts.', '.tsx', ".js", ".jsx", ".es", ".es6", ".mjs"]
   options.resolver.alias = {
     ...options.resolver.alias,
     ...((process.env.RESOLVER_ALIAS &&
