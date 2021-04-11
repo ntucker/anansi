@@ -84,10 +84,10 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     };
     if (this?.props?.style === 'linaria') {
       Object.assign(pkgJson.devDependencies, {
-        '@linaria/core': '^3.0.0-beta.1',
-        '@linaria/react': '^3.0.0-beta.1',
-        '@linaria/babel-preset': '^3.0.0-beta.1',
-        '@linaria/shaker': '^3.0.0-beta.1',
+        '@linaria/core': '^3.0.0-beta.2',
+        '@linaria/react': '^3.0.0-beta.2',
+        '@linaria/babel-preset': '^3.0.0-beta.2',
+        '@linaria/shaker': '^3.0.0-beta.2',
       });
     }
     if (this.config.get('webpack-version')) {
