@@ -1,6 +1,6 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CrittersPlugin from 'critters-webpack-plugin';
+//import CrittersPlugin from 'critters-webpack-plugin'; TODO - add once this supports htmlplugin, and non-vulnerable deps
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
