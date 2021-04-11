@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.4.0...@anansi/babel-preset@2.5.0) (2021-04-11)
+
+
+### 🚀 Features
+
+* Add TS_CONFIG_PATH ([7295a09](https://github.com/ntucker/anansi/commit/7295a090fff3a0485dd3f83eb6a6b65d0f39b8b5))
+
+
+### 🐛 Bug Fix
+
+* Add plugin-proposal-optional-chaining to deps since we use explicitly ([07abf72](https://github.com/ntucker/anansi/commit/07abf7257bd59efabaadfaecce2009374a47ecc4))
+* resolver uses regex, not wildcard ([7c030db](https://github.com/ntucker/anansi/commit/7c030db9b6176586e8c93bd31c7c62457623a817))
+
+
+### 📦 Package
+
+* Upgrade babel - patch ([9c2a713](https://github.com/ntucker/anansi/commit/9c2a71314bbaf96edc080b397d194632234467ea))
+
+
+
 ## [2.4.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.3.0...@anansi/babel-preset@2.4.0) (2021-04-06)
 
 
