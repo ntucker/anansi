@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn run build:lib && yarn run build:types ",
+    "build": "yarn run build:lib && yarn run build:types",
     "build:lib": "babel index.ts --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js'",
     "build:types": "tsc --build"
   },
