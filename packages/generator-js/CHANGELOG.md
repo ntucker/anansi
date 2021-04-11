@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.2.1...@anansi/generator-js@3.3.0) (2021-04-11)
+
+
+### 🚀 Features
+
+* Support storybook usage in libraries ([4ebb19c](https://github.com/ntucker/anansi/commit/4ebb19c8b9cfbbd1502f799cd94edd9775c8b601))
+
+
+### 📦 Package
+
+* webpack ([fda1f64](https://github.com/ntucker/anansi/commit/fda1f64e09f711b74597f9f9b7b5bc7b95528ea7))
+
+
+
 ### [3.2.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.2.0...@anansi/generator-js@3.2.1) (2021-04-11)
 
 
