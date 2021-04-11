@@ -81,8 +81,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     const pkgJson = {
       devDependencies: {
         serve: 'latest',
-        react: reactVersion,
-        'react-dom': reactVersion,
         'react-test-renderer': reactVersion,
         'react-refresh': reactVersion,
         '@types/react': 'latest',
@@ -91,6 +89,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       },
       dependencies: {
         '@babel/runtime': 'latest',
+        react: reactVersion,
+        'react-dom': reactVersion,
         'rest-hooks': 'latest',
         '@rest-hooks/rest': 'latest',
       },

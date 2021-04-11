@@ -6,6 +6,10 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     this.config.set('storybook', true);
   }
 
+  initializing() {
+    this.composeWith(require.resolve('../webpack'), {});
+  }
+
   configuring() {
     this.fs.extendJSONTpl(
       this.templatePath('package.json.tpl'),
@@ -25,11 +29,14 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.destinationPath('.storybook/main.js'),
       this.config.getAll(),
     );
-    this.fs.copyTpl(
-      this.templatePath('.storybook/preview.tsx'),
-      this.destinationPath('.storybook/preview.tsx'),
-      this.config.getAll(),
-    );
+    // only use rest hooks by default for applications
+    if (this.options.projectType === 'SPA') {
+      this.fs.copyTpl(
+        this.templatePath('.storybook/preview.tsx'),
+        this.destinationPath('.storybook/preview.tsx'),
+        this.config.getAll(),
+      );
+    }
     if (this.config.get('webpack')) {
       this.fs.copyTpl(
         this.templatePath('.storybook/webpack.config.js'),

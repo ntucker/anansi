@@ -67,7 +67,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   writingPkg() {
-    const pkgJson = {
+    const pkgJson: Record<string, any> = {
       devDependencies: {
         '@babel/cli': 'latest',
         '@zerollup/ts-transform-paths': 'latest',
@@ -76,6 +76,26 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         rimraf: 'latest',
       },
     };
+    if (this.config.get('features').includes('storybook')) {
+      const reactVersion =
+        this.config.get('reactMode') === 'legacy' ||
+        !this.config.get('reactMode')
+          ? 'latest'
+          : 'experimental';
+      pkgJson.devDependencies = {
+        ...pkgJson.devDependencies,
+        '@types/react': 'latest',
+        '@types/react-dom': 'latest',
+        react: reactVersion,
+        'react-dom': reactVersion,
+      };
+      const reactPeerV =
+        reactVersion === 'experimental' ? 'experimental | ^18.0.0' : '^17.0.0';
+      pkgJson.peerDependencies = {
+        react: reactPeerV,
+        'react-dom': reactPeerV,
+      };
+    }
     this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
 };
