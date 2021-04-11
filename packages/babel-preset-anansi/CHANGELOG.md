@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.0...@anansi/babel-preset@2.5.1) (2021-04-11)
+
+
+### 💅 Enhancement
+
+* Remove extraneous console ([2e7eaed](https://github.com/ntucker/anansi/commit/2e7eaedd684ef2f376bd61179895bc9c54beab56))
+
+
+
 ## [2.5.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.4.0...@anansi/babel-preset@2.5.0) (2021-04-11)
 
 

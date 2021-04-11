@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.10...@anansi/webpack-config@6.2.11) (2021-04-11)
+
+
+### 📦 Package
+
+* Bump linaria to 3-beta.2 ([273b04b](https://github.com/ntucker/anansi/commit/273b04bc49ea2554e0b2b87221edc89aaca2d6e4))
+* css-loader, css-minimizer (major), postcss ([be9d829](https://github.com/ntucker/anansi/commit/be9d82952a72e2f7a6a8a7768313b272fa8a2657))
+
+
+
 ### [6.2.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.9...@anansi/webpack-config@6.2.10) (2021-04-11)
 
 **Note:** Version bump only for package @anansi/webpack-config

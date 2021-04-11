@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.4...@anansi/eslint-plugin@0.10.5) (2021-04-11)
+
+
+### 📦 Package
+
+* typescript-eslint, eslint-plugin-flowtype ([94bb3d0](https://github.com/ntucker/anansi/commit/94bb3d0c001c91303fd1ced38b015376f717d485))
+
+
+
 ### [0.10.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.3...@anansi/eslint-plugin@0.10.4) (2021-03-30)
 
 

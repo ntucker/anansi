@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.2.0...@anansi/generator-js@3.2.1) (2021-04-11)
+
+
+### 📦 Package
+
+* Bump linaria to 3-beta.2 ([273b04b](https://github.com/ntucker/anansi/commit/273b04bc49ea2554e0b2b87221edc89aaca2d6e4))
+
+
+
 ## [3.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.1.12...@anansi/generator-js@3.2.0) (2021-04-06)
 
 
