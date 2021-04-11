@@ -85,7 +85,6 @@ function buildPreset(api, options = {}) {
     const tsconfig = base !== '.' && base !== '..' ? readTsConfig(dir, base) : readTsConfig(dir)
     if (tsconfig.options.paths) {
       for (const k in tsconfig.options.paths) {
-        console.log(tsconfig.options.paths[k])
         const key = globToRegExp(k).toString().replace('.*', '(.*)')
         options.resolver.alias[key.substr(1, key.length - 2)] = './' +tsconfig.options.paths[k][0].replace('*', '\\1')
       }
