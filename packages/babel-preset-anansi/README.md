@@ -200,6 +200,14 @@ module.exports = {
 
 Merges with [module resolver](#module-resolver-options) options
 
+#### TS_CONFIG_PATH
+
+Overrides `tsConfigPath`.
+
+```bash
+export TS_CONFIG_PATH = './tsconfig.json'
+```
+
 ## module-resolver options
 
 ### resolverRoot

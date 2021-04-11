@@ -77,6 +77,9 @@ function buildPreset(api, options = {}) {
     runtimeVersion = require('@babel/runtime/package.json').version;
   } catch (e) {}
 
+  if (process.env.TS_CONFIG_PATH) {
+    options.tsConfigPath = process.env.TS_CONFIG_PATH;
+  }
   if (options.tsConfigPath) {
     const { dir, base } = path.parse(options.tsConfigPath)
     const tsconfig = base !== '.' && base !== '..' ? readTsConfig(dir, base) : readTsConfig(dir)
