@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.5...@anansi/eslint-plugin@0.10.6) (2021-04-12)
+
+
+### 💅 Enhancement
+
+* Use typescript import resolver for typescript ([de0d627](https://github.com/ntucker/anansi/commit/de0d62765ee31a959bed6c88a717c39b31124487))
+
+
+
 ### [0.10.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.4...@anansi/eslint-plugin@0.10.5) (2021-04-11)
 
 
