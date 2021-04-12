@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   // TODO: instead of including TS stuff, just have the base, but then programatically order things
   // properly in the extends
   env: {
@@ -32,9 +32,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/resolver': {
-      webpack: {},
-    },
   },
   overrides: [
     {
@@ -63,3 +60,11 @@ module.exports = {
     },
   ],
 };
+try {
+  require('webpack');
+  config.settings['import/resolver'] = {
+    webpack: {},
+  };
+  // eslint-disable-next-line no-empty
+} catch (e) {}
+module.exports = config;

@@ -4,6 +4,11 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
+      settings: {
+        'import/resolver': {
+          typescript: {},
+        }
+      },
       rules: {
         'react/prop-types': 'off',
         'react/jsx-uses-react': 'off',
