@@ -5,9 +5,9 @@
 version: 2
 jobs:
   build:
-    docker:
+    docker: &docker
       # specify the version you desire here
-      - image: circleci/node:11.10
+      - image: circleci/node:14
 
     steps:
       - checkout
@@ -27,22 +27,57 @@ jobs:
           key: v2-dependencies-{{ checksum "yarn.lock" }}
 
       # run tests!
-      - run: yarn run lint src
-      - run: yarn run test:ci
       - run: yarn run build
 
-      # only run coverage if repo token is available (so third parties don't fail the build)
-      - run:
-          name: coverage
-          command: 'if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --coverageReporters=text-lcov | yarn run coveralls; fi'
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
   salus:
     machine: true
     steps:
       - checkout
       - run: docker run -t -v $(pwd):/home/repo coinbase/salus
 
+  test:
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn lerna run test:ci
+      # only run coverage if repo token is available (so third parties don't fail the build)
+      - run:
+          name: coverage
+          command: 'if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --coverageReporters=text-lcov | yarn run coveralls; fi'
+
+  lint:
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn lerna run lint
+
+  build_storybook:
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn lerna run build:storybook
+
+
 workflows:
   version: 2
   build:
     jobs:
+      - build
       - salus
+      - lint:
+          requires:
+            - build
+      - test:
+          requires:
+            - build
+      - build_storybook:
+          requires:
+            - build

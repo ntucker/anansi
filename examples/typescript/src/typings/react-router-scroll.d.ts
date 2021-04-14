@@ -10,5 +10,6 @@ declare module 'react-router-scroll-4' {
     ) => boolean | [number, number];
     children: ReactChild;
   }
+  // eslint-disable-next-line react/prefer-stateless-function
   export class ScrollContext extends Component<Props> {}
 }

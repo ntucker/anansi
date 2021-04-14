@@ -16,6 +16,7 @@ export default function makeDevConfig(
     buildDir,
     htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
+    // eslint-disable-next-line no-unused-vars
     env = {},
     sassResources,
     cssModulesOptions,
@@ -88,6 +89,7 @@ export default function makeDevConfig(
     config.plugins.push(new ReactRefreshWebpackPlugin({}));
     config.devServer.hotOnly = true;
     console.log('Fast refresh detected and enabled');
+    // eslint-disable-next-line no-empty
   } catch (e) {}
 
   const styleRules = getStyleRules({

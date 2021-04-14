@@ -1,12 +1,6 @@
 import { memo } from 'react';
-import { css, cx } from '@linaria/core';
+import { css } from '@linaria/core';
 import { styled } from '@linaria/react';
-
-type Params = {
-  type: 'min-width' | 'max-width';
-  width: number;
-  important?: boolean;
-};
 
 // Linaria seems very particular about what exactly you can interpolate
 const media = {
