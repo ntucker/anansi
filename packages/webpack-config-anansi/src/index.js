@@ -28,6 +28,8 @@ export function makeConfig(options) {
       extraJsLoaders: [],
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
+      nohash:
+        env?.nohash ?? env?.analyze ?? process.env.WEBPACK_ANALYZE === 'true',
       argv,
       env,
     };

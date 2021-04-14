@@ -26,7 +26,7 @@ export default function makeBaseConfig({
   extraJsLoaders,
   linariaOptions,
   tsconfigPathsOptions,
-  env,
+  nohash,
   argv,
 }) {
   const babelLoader = generateBabelLoader({
@@ -60,8 +60,8 @@ export default function makeBaseConfig({
     output: {
       path: path.join(rootPath, buildDir),
       publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
-      filename: env?.nohash ? '[name].js' : '[name]-[contenthash].js',
-      chunkFilename: env?.nohash ? '[name].chunk.js' : '[name]-[contenthash].chunk.js',
+      filename: nohash ? '[name].js' : '[name]-[contenthash].js',
+      chunkFilename: nohash ? '[name].chunk.js' : '[name]-[contenthash].chunk.js',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     cache: {
@@ -81,9 +81,9 @@ export default function makeBaseConfig({
       }),
       new MiniCssExtractPlugin({
         filename:
-          mode !== 'production' | env?.nohash ? '[name].css' : '[name].[contenthash].css',
+          mode !== 'production' | nohash ? '[name].css' : '[name].[contenthash].css',
         chunkFilename:
-          mode !== 'production' | env?.nohash ? '[name].css' : '[name].[contenthash].css',
+          mode !== 'production' | nohash ? '[name].css' : '[name].[contenthash].css',
       }),
     ],
     module: {
@@ -142,7 +142,7 @@ export default function makeBaseConfig({
             {
               loader: require.resolve('file-loader'),
               options: {
-                name: env?.nohash
+                name: nohash
                   ? '[name].[ext]'
                   : mode === 'production'
                       ? '[name].[contenthash].[ext]'

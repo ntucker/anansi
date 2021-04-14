@@ -26,6 +26,7 @@ export default function makeProdConfig(
     cssModulesOptions,
     fontPreload,
     svgoOptions,
+    nohash,
   },
 ) {
   const config = { ...baseConfig };
@@ -118,6 +119,9 @@ export default function makeProdConfig(
       name: 'webpack-runtime',
     },
   };
+  if (nohash) {
+    config.optimization.chunkIds = 'named';
+  }
   if (!env.readable) {
     config.optimization.minimizer = [
       new TerserPlugin({
