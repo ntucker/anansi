@@ -2779,10 +2779,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.0.14":
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.14.tgz#8d3a1b46bdf2b07f7841c415c2187a2031b76d9b"
-  integrity sha512-K9YGFhBv09e1DbcwEQwSqnqNGi1rdV7aiU/XJQIOX5je6TGWwmc30Ca2JeWk3dLUMftjjpCTvFvsQDE93032+Q==
+"@rest-hooks/core@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.0.16.tgz#33b3eae61564d2cf6730ed5e96ee0d7d51283ab2"
+  integrity sha512-9Owt4hACJL6uwarEfQGn05/+hTa/GIFiSsQA1+ZGd5aIOX3LDC5gEXbk1AI4mScDmHrorWAVAy2YsLg6oHWoVA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/endpoint" "^1.0.12"
@@ -2805,10 +2805,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.0.5.tgz#692d0137819a7369a661dbe798df77db62d764a4"
-  integrity sha512-FL8ptKHAmpEDH17l/1VnWdI2Vk7wz+aCIhmMGv5zfm6m/SXPYvFzm4ubOmOm0Xuf0TAAtij7L7FRGwDRMqu7mw==
+"@rest-hooks/rest@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.0.6.tgz#594fde8725ebfcc30a6e489941b248eab6fd99cf"
+  integrity sha512-G1/dY8zcirtkIpvYhpM2kATEBStssIM5DUr0XAK6rxe1FVvg3JUcFtuK5W/R1t37opjVHCMUJ5qA2GHZbXMp6A==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -4781,10 +4781,10 @@ ansi-wrap@^0.1.0:
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
-antd@^4.15.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-4.15.0.tgz#4bfcd7eba7ae7812d95bcd391bf113a32e5a2143"
-  integrity sha512-24HMixmQAhCyqb0ND5wX5DYRTbPactCT36mfVKowqgr77eT7XQ59Uu6aS513mbeiVhXcHrNlrlCKNZBSeEDgPg==
+antd@^4.15.1:
+  version "4.15.1"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-4.15.1.tgz#1ba1e0108866e1be03d3e8fb351582ade17d88db"
+  integrity sha512-zTZz8GY9yERNjSnH6xWU3Rw5sC3RtHEs/LOTKcSMTtU3Q5jHXIbAHKd1C6bYLQT6Ru75p+/UyKvJoNip/ax/WQ==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons" "^4.6.2"
@@ -4793,7 +4793,7 @@ antd@^4.15.0:
     array-tree-filter "^2.1.0"
     classnames "^2.2.6"
     copy-to-clipboard "^3.2.0"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     moment "^2.25.3"
     rc-cascader "~1.4.0"
     rc-checkbox "~2.3.0"
@@ -16560,13 +16560,13 @@ resolve@^2.0.0-next.3:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
-rest-hooks@5.0.18:
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.18.tgz#05585392510ad1df5f0118d212ceefa0ec6706cd"
-  integrity sha512-Y4/Euw6dwi9pMlrw8wMOWSwjcGVt0YGfRBngliovRlsPQn12viLMTOd6Am6RB58obwd0gSt99P3yo7xJs4i4dA==
+rest-hooks@5.0.20:
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.0.20.tgz#f3cdc9785fb9182c50e284cd75e80b4b53d1865d"
+  integrity sha512-FXgN8I1Jd/zv/HIJ/7tpZjkl6bH2mtNh6wmSJYL3KypDSyysq5SFS8khXN8eoo6CzGDSYYWqmpHi6XN37cflwQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.0.14"
+    "@rest-hooks/core" "^1.0.16"
     "@rest-hooks/endpoint" "^1.0.12"
 
 restore-cursor@^2.0.0:
