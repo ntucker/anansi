@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.3.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.1...@anansi/generator-js@3.3.2) (2021-04-14)
+
+
+### 💅 Enhancement
+
+* Simplify resource typedef ([6fe0552](https://github.com/ntucker/anansi/commit/6fe05524a54573c822a0c44281ab43de19bd93e1))
+
+
+
 ### [3.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.0...@anansi/generator-js@3.3.1) (2021-04-12)
 
 **Note:** Version bump only for package @anansi/generator-js

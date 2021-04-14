@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.12...@anansi/webpack-config@6.3.0) (2021-04-14)
+
+
+### 🚀 Features
+
+* Add --env nohash option ([#232](https://github.com/ntucker/anansi/issues/232)) ([71f912c](https://github.com/ntucker/anansi/commit/71f912ca9989d7f823bb7ba7bd6b72d8a4a8a029))
+
+
+### 📦 Package
+
+* thread-loader, webpack-bundle-analyzer ([bb994f2](https://github.com/ntucker/anansi/commit/bb994f24301c2da5f647e703d0832ded5f4ced1a))
+
+
+
 ### [6.2.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.11...@anansi/webpack-config@6.2.12) (2021-04-12)
 
 

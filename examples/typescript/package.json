@@ -1,6 +1,6 @@
 {
   "name": "anansi-example-typescript",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -18,10 +18,10 @@
     "build:storybook": "build-storybook"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.5.1",
+    "@anansi/babel-preset": "^2.5.2",
     "@anansi/browserslist-config": "^1.2.0",
-    "@anansi/eslint-plugin": "^0.10.6",
-    "@anansi/webpack-config": "^6.2.12",
+    "@anansi/eslint-plugin": "^0.10.7",
+    "@anansi/webpack-config": "^6.3.0",
     "@rest-hooks/test": "^4.1.1",
     "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.168",
@@ -33,7 +33,7 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.38",
+    "@anansi/polyfill": "^1.0.39",
     "@babel/runtime": "^7.13.10",
     "@rest-hooks/rest": "^2.0.6",
     "antd": "^4.15.1",

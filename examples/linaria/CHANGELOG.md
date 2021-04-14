@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.21](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.20...anansi-example-linaria@2.3.21) (2021-04-14)
+
+
+### 🐛 Bug Fix
+
+* hack to resolve dep in linaria project ([53f6b9b](https://github.com/ntucker/anansi/commit/53f6b9b02132baff3ff20327a6d57464ea5c024d))
+
+
+
 ### [2.3.20](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.19...anansi-example-linaria@2.3.20) (2021-04-12)
 
 **Note:** Version bump only for package anansi-example-linaria
