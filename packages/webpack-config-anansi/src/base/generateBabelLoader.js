@@ -35,6 +35,7 @@ export function generateBabelLoader({
       hasJsxRuntime,
       babelCoreVersion,
       babelLoaderVersion,
+      env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
     }) +
     JSON.stringify(
       babel.loadPartialConfig({

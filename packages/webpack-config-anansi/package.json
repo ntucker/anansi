@@ -9,7 +9,7 @@
     "dev": "yarn run build:lib -w",
     "clean": "rimraf lib",
     "prepare": "yarn run clean && yarn run build",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src"
   },
   "files": [
     "lib",

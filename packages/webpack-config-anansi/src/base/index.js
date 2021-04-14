@@ -61,7 +61,9 @@ export default function makeBaseConfig({
       path: path.join(rootPath, buildDir),
       publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
       filename: nohash ? '[name].js' : '[name]-[contenthash].js',
-      chunkFilename: nohash ? '[name].chunk.js' : '[name]-[contenthash].chunk.js',
+      chunkFilename: nohash
+        ? '[name].chunk.js'
+        : '[name]-[contenthash].chunk.js',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     cache: {
@@ -69,7 +71,10 @@ export default function makeBaseConfig({
       buildDependencies: {
         config: [__filename], // you may omit this when your CLI automatically adds it
       },
-      version,
+      version: JSON.stringify({
+        version,
+        env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
+      }),
     },
     plugins: [
       new StatsPlugin(manifestFilename, {
@@ -81,9 +86,13 @@ export default function makeBaseConfig({
       }),
       new MiniCssExtractPlugin({
         filename:
-          mode !== 'production' | nohash ? '[name].css' : '[name].[contenthash].css',
+          (mode !== 'production') | nohash
+            ? '[name].css'
+            : '[name].[contenthash].css',
         chunkFilename:
-          mode !== 'production' | nohash ? '[name].css' : '[name].[contenthash].css',
+          (mode !== 'production') | nohash
+            ? '[name].css'
+            : '[name].[contenthash].css',
       }),
     ],
     module: {
@@ -145,8 +154,8 @@ export default function makeBaseConfig({
                 name: nohash
                   ? '[name].[ext]'
                   : mode === 'production'
-                      ? '[name].[contenthash].[ext]'
-                      : '[path][contenthash].[ext]',
+                  ? '[name].[contenthash].[ext]'
+                  : '[path][contenthash].[ext]',
               },
             },
           ],
