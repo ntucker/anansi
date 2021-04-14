@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
     - uses: actions/checkout@v2-beta
       with:
         fetch-depth: 1
@@ -16,6 +19,6 @@ jobs:
       continue-on-error: true
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        build-script: "lerna run --ignore anansi-example-linaria --ignore @anansi/generator-js build"
+        build-script: "build:sizecompare"
         pattern: "examples/typescript/dist/**/*.{js,css,html,json}"
         exclude: "{examples/typescript/dist/manifest.json,**/*.map,**/node_modules/**}"

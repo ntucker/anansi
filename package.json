@@ -14,7 +14,8 @@
   "scripts": {
     "release": "lerna publish",
     "build": "lerna run build --stream",
-    "prepare": "husky install"
+    "build:sizecompare": "yarn workspace anansi-example-typescript build --env nohash",
+    "prepare": "husky install && yarn lerna run build --ignore anansi-example-linaria --ignore anansi-example-typescript"
   },
   "devDependencies": {
     "@anansi/eslint-plugin": "^0.10.6",

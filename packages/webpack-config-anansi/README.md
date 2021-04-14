@@ -168,6 +168,16 @@ server for SSR alongside the client bundle.
 
 `webpack --mode=production --target=node`
 
+### nohash
+
+This is useful for diffing bundle filesizes as it removes cache busting filenames - keeping the name
+the same as their contents change.
+
+For example [compressed-size-action](https://github.com/preactjs/compressed-size-action) can track bundle size
+changes.
+
+`webpack --mode=production --nohash`
+
 ## ENV customization
 
 Environmental variable control is sometimes useful in CI pipelines
