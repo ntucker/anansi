@@ -13,9 +13,7 @@
     "pkgcheck": "webpack --env check=nobuild",
     "test:type": "tsc --noEmit",
     "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
-    "start:storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\""
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.5.1",
