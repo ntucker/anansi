@@ -25,7 +25,7 @@
     "build": "npm run build:types && npm run build:lib && npm run build:commonjs",
     "dev": "yarn build:lib -w",
     "build:clean": "rimraf dist lib",
-    "prepare": "yarn run clean && yarn run build",
+    "prepare": "yarn run build:clean && yarn run build",
     "lint": "eslint src/*.ts",
     "type-check": "yarn run tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"

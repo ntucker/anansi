@@ -8,7 +8,7 @@
     "build": "yarn run build:lib",
     "dev": "yarn run build:lib -w",
     "build:clean": "rimraf lib",
-    "prepare": "yarn run clean && yarn run build",
+    "prepare": "yarn run build:clean && yarn run build",
     "lint": "eslint src"
   },
   "files": [
