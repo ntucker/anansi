@@ -55,6 +55,7 @@ const config = {
           jsx: true,
           experimentalObjectRestSpread: true,
         },
+        requireConfigFile: false,
       },
       plugins: ['babel'],
     },
