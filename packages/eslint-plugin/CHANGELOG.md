@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.7...@anansi/eslint-plugin@0.11.0) (2021-04-15)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* plugin:@anansi/flow -> plugin:@anansi/javascript
+
+### 💅 Enhancement
+
+* Don't require babel config resolution for linting ([952faf9](https://github.com/ntucker/anansi/commit/952faf9433268f8cbf8f467d3391867e019694c6))
+* Remove flowtype support ([a91a4d2](https://github.com/ntucker/anansi/commit/a91a4d24de8eb6955fe5d5e8a0fb00c0dce1226e))
+
+
+
 ### [0.10.7](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.10.6...@anansi/eslint-plugin@0.10.7) (2021-04-14)
 
 

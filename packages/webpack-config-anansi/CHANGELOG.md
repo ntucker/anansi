@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.0...@anansi/webpack-config@6.3.1) (2021-04-15)
+
+
+### 💅 Enhancement
+
+* Improve chunk naming during analyze and nohash ([df234a7](https://github.com/ntucker/anansi/commit/df234a7788b1ba59b87ba307c0539ea92a9fb2e0))
+* Vary webpack cache on browserslist ([9912e5e](https://github.com/ntucker/anansi/commit/9912e5e244d7b6cf5ea8e78c2d33a038912e20ad))
+
+
+### 📦 Package
+
+* sass-resources-loader ([e79fe8b](https://github.com/ntucker/anansi/commit/e79fe8ba5723472c6e6a950c02b003fa2f93b6c9))
+
+
+### 📝 Documentation
+
+* Typos in readme ([7e0b4ca](https://github.com/ntucker/anansi/commit/7e0b4ca6ef2a3284a07fe7621175bc0d22660dee))
+
+
+
 ## [6.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.2.12...@anansi/webpack-config@6.3.0) (2021-04-14)
 
 
