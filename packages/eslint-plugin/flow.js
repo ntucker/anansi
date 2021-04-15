@@ -12,6 +12,7 @@ module.exports = {
       jsx: true,
       experimentalObjectRestSpread: true,
     },
+    requireConfigFile: false,
   },
   rules: {
     // changing airbnb defaults

@@ -18,6 +18,7 @@
     "prepare": "husky install && yarn lerna run build --ignore anansi-example-linaria --ignore anansi-example-typescript"
   },
   "devDependencies": {
+    "@anansi/babel-preset": "^2.5.2",
     "@anansi/eslint-plugin": "^0.10.6",
     "@babel/cli": "7.13.14",
     "@babel/core": "7.13.15",

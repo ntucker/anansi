@@ -4,7 +4,7 @@
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "scripts": {
-    "build:lib": "babel src --out-dir lib --source-maps inline",
+    "build:lib": "babel --root-mode upward src --out-dir lib --source-maps inline",
     "build": "yarn run build:lib",
     "dev": "yarn run build:lib -w",
     "clean": "rimraf lib",
@@ -50,7 +50,6 @@
     "node": ">=10.13.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.5.2",
     "debug": "^4.1.1",
     "prettier-eslint-cli": "^5.0.0",
     "rimraf": "^3.0.2"

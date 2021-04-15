@@ -59,7 +59,7 @@
     "yeoman-test": "^4.0.0"
   },
   "engines": {
-    "node": ">= 10.3.0",
+    "node": ">= 10.13.0",
     "npm": ">= 4.0.0"
   },
   "dependencies": {

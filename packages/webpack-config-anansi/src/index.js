@@ -10,7 +10,7 @@ import makeNobuildConfig from './nobuild';
 import makeNodeConfig from './node';
 
 export * from './base';
-export makeStorybookConfigGenerator from './storybook';
+export { default as makeStorybookConfigGenerator } from './storybook';
 
 export function makeConfig(options) {
   return (env, argv) => {

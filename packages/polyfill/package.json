@@ -20,7 +20,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build:commonjs": "rollup -c",
-    "build:lib": "NODE_ENV=production babel src --out-dir lib --source-maps inline --extensions '.ts'",
+    "build:lib": "NODE_ENV=production babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts'",
     "build:types": "yarn run tsc --emitDeclarationOnly",
     "build": "npm run build:types && npm run build:lib && npm run build:commonjs",
     "dev": "yarn build:lib -w",
@@ -42,7 +42,6 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.5.2",
     "rollup": "^2.39.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0"
