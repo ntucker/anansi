@@ -176,7 +176,7 @@ the same as their contents change.
 For example [compressed-size-action](https://github.com/preactjs/compressed-size-action) can track bundle size
 changes.
 
-`webpack --mode=production --nohash`
+`webpack --mode=production --env nohash`
 
 ## ENV customization
 
@@ -275,7 +275,7 @@ for cheap static deploys to CDNs like S3+cloudfront.
 [Configuration options](https://github.com/jantimon/html-webpack-plugin#options)
 
 
-### svogOptions
+### svgoOptions
 
 SVG files are optimized automatically in production builds to minimize size. [SVGO](https://github.com/svg/svgo) is used for this. Set this to specify specific options. Alternatively
 set to false to disable SVGO altogether. (Note: SVGO will never run in dev mode)
