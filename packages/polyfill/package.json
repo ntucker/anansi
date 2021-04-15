@@ -24,7 +24,7 @@
     "build:types": "yarn run tsc --emitDeclarationOnly",
     "build": "npm run build:types && npm run build:lib && npm run build:commonjs",
     "dev": "yarn build:lib -w",
-    "clean": "rimraf dist lib",
+    "build:clean": "rimraf dist lib",
     "prepare": "yarn run clean && yarn run build",
     "lint": "eslint src/*.ts",
     "type-check": "yarn run tsc --noEmit",
@@ -42,6 +42,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@anansi/babel-preset": "^2.5.2",
     "rollup": "^2.39.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0"
