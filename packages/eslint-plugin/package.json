@@ -16,8 +16,7 @@
   "files": [
     "index.js",
     "base.js",
-    "typescript.js",
-    "flow.js"
+    "typescript.js"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",
@@ -38,7 +37,6 @@
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-flowtype": "^5.7.0",
     "eslint-plugin-jsx-a11y": "^6.4.1"
   },
   "peerDependencies": {

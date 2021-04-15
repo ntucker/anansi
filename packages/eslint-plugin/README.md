@@ -12,7 +12,7 @@
 
 ## Usage
 
-### TypeScript
+### TypeScript + Javascript
 
 Be sure to configure the project option properly - especially if you have a monorepo.
 
@@ -42,13 +42,13 @@ module.exports = {
 }
 ```
 
-### Flow
+### Just JavaScript
 
 **`.eslintrc.js`**
 
 ```js
 {
-  extends: 'plugin:@anansi/flow'
+  extends: 'plugin:@anansi/javascript'
 }
 ```
 
