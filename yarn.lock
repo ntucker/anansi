@@ -4783,9 +4783,9 @@ ansi-wrap@^0.1.0:
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
 antd@^4.15.1:
-  version "4.15.1"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-4.15.1.tgz#1ba1e0108866e1be03d3e8fb351582ade17d88db"
-  integrity sha512-zTZz8GY9yERNjSnH6xWU3Rw5sC3RtHEs/LOTKcSMTtU3Q5jHXIbAHKd1C6bYLQT6Ru75p+/UyKvJoNip/ax/WQ==
+  version "4.15.2"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-4.15.2.tgz#f955bcbdd1f577c7ac93a00ad17d1719d1b90818"
+  integrity sha512-9IwlR022xSQrG+iJG8d7adSo9gy4n7AuS5x0/OxDi/V3CYSTTfaE24jp1wnmgmXOVAT/77Llg9OEbKcSyFim2g==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons" "^4.6.2"
@@ -6978,22 +6978,21 @@ css-has-pseudo@^0.10.0:
     postcss-selector-parser "^5.0.0-rc.4"
 
 css-loader@^3.6.0, css-loader@^5.0.0, css-loader@^5.0.1, css-loader@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.1.tgz#15fbd5b6ac4c1b170a098f804c5abd0722f2aa73"
-  integrity sha512-YCyRzlt/jgG1xanXZDG/DHqAueOtXFHeusP9TS478oP1J++JSKOyEgGW1GHVoCj/rkS+GWOlBwqQJBr9yajQ9w==
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.2.tgz#65f2c1482255f15847ecad6cbc515cae8a5b234e"
+  integrity sha512-IS722y7Lh2Yq+acMR74tdf3faMOLRP2RfLwS0VzSS7T98IHtacMWJLku3A0OBTFHB07zAa4nWBhA8gfxwQVWGQ==
   dependencies:
     camelcase "^6.2.0"
-    cssesc "^3.0.0"
     icss-utils "^5.1.0"
     loader-utils "^2.0.0"
-    postcss "^8.2.8"
+    postcss "^8.2.10"
     postcss-modules-extract-imports "^3.0.0"
     postcss-modules-local-by-default "^4.0.0"
     postcss-modules-scope "^3.0.0"
     postcss-modules-values "^4.0.0"
     postcss-value-parser "^4.1.0"
     schema-utils "^3.0.0"
-    semver "^7.3.4"
+    semver "^7.3.5"
 
 css-minimizer-webpack-plugin@^2.0.0:
   version "2.0.0"
@@ -12948,11 +12947,6 @@ nan@^2.13.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
-nanoid@^3.1.20:
-  version "3.1.20"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
-  integrity sha512-a1cQNyczgKbLX9jwbS/+d7W8fX/RfgYR7lVWwWOGIPNgK2m0MWvrGF6/m4kk6U3QcFMnZf3RIhL0v2Jgh/0Uxw==
-
 nanoid@^3.1.22:
   version "3.1.22"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
@@ -14871,15 +14865,6 @@ postcss@^8.2.10:
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.22"
-    source-map "^0.6.1"
-
-postcss@^8.2.8:
-  version "8.2.8"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.8.tgz#0b90f9382efda424c4f0f69a2ead6f6830d08ece"
-  integrity sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
-  dependencies:
-    colorette "^1.2.2"
-    nanoid "^3.1.20"
     source-map "^0.6.1"
 
 postcss@^8.2.9:
