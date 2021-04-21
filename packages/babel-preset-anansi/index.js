@@ -1,6 +1,5 @@
 const path = require('path');
 const semver = require('semver');
-const { readTsConfig } = require('@anansi/ts-utils');
 var globToRegExp = require('glob-to-regexp');
 
 /*
@@ -44,7 +43,7 @@ function buildPreset(api, options = {}) {
     hotReloader: false,
     reactConstantElementsOptions: {},
     nodeTarget,
-    resolver: {root: [], alias: {}},
+    resolver: { root: [], alias: {} },
     ...options,
   };
   const modules =
@@ -81,33 +80,54 @@ function buildPreset(api, options = {}) {
     options.tsConfigPath = process.env.TS_CONFIG_PATH;
   }
   if (options.tsConfigPath) {
-    const { dir, base } = path.parse(options.tsConfigPath)
-    const tsconfig = base !== '.' && base !== '..' ? readTsConfig(dir, base) : readTsConfig(dir)
+    let readTsConfig;
+    try {
+      readTsConfig = require('@anansi/ts-utils').readTsConfig;
+    } catch (e) {
+      throw new Error('tsConfigPath set, but typescript module not found');
+    }
+    const { dir, base } = path.parse(options.tsConfigPath);
+    const tsconfig =
+      base !== '.' && base !== '..'
+        ? readTsConfig(dir, base)
+        : readTsConfig(dir);
     if (tsconfig.options.paths) {
       for (const k in tsconfig.options.paths) {
-        const key = globToRegExp(k).toString().replace('.*', '(.*)')
-        options.resolver.alias[key.substr(1, key.length - 2)] = './' +tsconfig.options.paths[k][0].replace('*', '\\1')
+        const key = globToRegExp(k).toString().replace('.*', '(.*)');
+        options.resolver.alias[key.substr(1, key.length - 2)] =
+          './' + tsconfig.options.paths[k][0].replace('*', '\\1');
       }
-      options.resolver.root = [path.resolve(tsconfig.options.baseUrl)]
+      options.resolver.root = [path.resolve(tsconfig.options.baseUrl)];
       options.resolver.root = [
         ...(tsconfig.options.baseUrl ? [tsconfig.options.baseUrl] : []),
-        ...(tsconfig.options.rootDir ? [tsconfig.options.rootDir] : tsconfig.options.rootDirs || []),
+        ...(tsconfig.options.rootDir
+          ? [tsconfig.options.rootDir]
+          : tsconfig.options.rootDirs || []),
         ...options.resolver.root,
-      ]
+      ];
     }
   }
-  options.resolver.extensions= ['.ts.', '.tsx', ".js", ".jsx", ".es", ".es6", ".mjs"]
+  options.resolver.extensions = [
+    '.ts.',
+    '.tsx',
+    '.js',
+    '.jsx',
+    '.es',
+    '.es6',
+    '.mjs',
+  ];
   options.resolver.alias = {
     ...options.resolver.alias,
     ...((process.env.RESOLVER_ALIAS &&
-    JSON.parse(process.env.RESOLVER_ALIAS)) || options.resolverAlias)
+      JSON.parse(process.env.RESOLVER_ALIAS)) ||
+      options.resolverAlias),
   };
   options.resolver.root = [
     ...options.resolver.root,
     ...(process.env.RESOLVER_ROOT
-            ? [process.env.RESOLVER_ROOT]
-            : options.resolverRoot || [])
-  ]
+      ? [process.env.RESOLVER_ROOT]
+      : options.resolverRoot || []),
+  ];
 
   const preset = {
     presets: [
@@ -122,7 +142,8 @@ function buildPreset(api, options = {}) {
       ],
     ],
     plugins: [
-      (Object.keys(options.resolver.alias).length || Object.keys(options.resolver.root).length) && [
+      (Object.keys(options.resolver.alias).length ||
+        Object.keys(options.resolver.root).length) && [
         require('babel-plugin-module-resolver').default,
         options.resolver,
       ],
@@ -152,10 +173,13 @@ function buildPreset(api, options = {}) {
         require('@babel/plugin-proposal-export-default-from').default,
       require('@babel/plugin-proposal-export-namespace-from').default,
       // stage 2
-      [require('@babel/plugin-proposal-record-and-tuple').default, {
-        "importPolyfill": true,
-        "syntaxType": "hash"
-      }],
+      [
+        require('@babel/plugin-proposal-record-and-tuple').default,
+        {
+          importPolyfill: true,
+          syntaxType: 'hash',
+        },
+      ],
       //stage 3
       require('@babel/plugin-syntax-top-level-await').default,
       // Get "Module parse failed: Unexpected token" when targetting newer browsers without this
