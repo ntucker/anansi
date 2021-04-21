@@ -1,0 +1,21 @@
+$margin: 8px;
+
+.home {
+  min-height: 100vh;
+  margin: -$margin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+
+  > nav {
+    position: fixed;
+    top: 18px;
+  }
+
+  p:not(:first-child) {
+    margin-top: 20px;
+  }
+}

@@ -16,37 +16,34 @@ const home = css`
   position: relative;
   flex-direction: column;
   text-align: center;
+
+  > nav {
+    position: fixed;
+    top: 18px;
+  }
+
+  p:not(:first-child) {
+    margin-top: 20px;
+  }
 `;
+<% } else { %>
+import styles from './index.scss';
+const home = styles.home
 <% } %>
 
 export default function Home() {
   return (
-    <% if (style === 'linaria') { %>
     <div className={home}>
-    <% } else { %>
-    <div
-      style={{
-        minHeight: '100vh',
-        margin: '-8px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        flexDirection: 'column',
-        textAlign: 'center',
-      }}
-    >
-    <% } %>
-      <nav style={{ position: 'fixed', top: '18px' }}>Anansi</nav>
+      <nav>Anansi</nav>
       <main>
         <p style={{ fontSize: '30px' }}>
           Congrats! You&apos;ve created <%= appName %>!
         </p>
-        <p style={{ marginTop: '20px', fontSize: '15px' }}>
+        <p style={{ fontSize: '15px' }}>
           Check out the generated ReadMe for instructions on how to use this
           library
         </p>
-        <p style={{ marginTop: '20px', fontSize: '24px' }}>
+        <p style={{ fontSize: '24px' }}>
           <AssetPrice symbol="BTC" />
         </p>
       </main>

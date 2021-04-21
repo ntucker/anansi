@@ -3,7 +3,14 @@ import { BetterGenerator } from '../utils';
 module.exports = class extends BetterGenerator {
   writing() {
     this.fs.copyTpl(
-      this.templatePath('src/**'),
+      this.templatePath('src/**/*.ts*'),
+      this.destinationPath(this.config.get('rootPath')),
+      this.config.getAll(),
+      {},
+      { globOptions: { dot: true } },
+    );
+    this.fs.copyTpl(
+      this.templatePath('src/**/*.woff'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
       {},
@@ -16,6 +23,22 @@ module.exports = class extends BetterGenerator {
         this.config.getAll(),
         {},
         { globOptions: { dot: true } },
+      );
+    }
+    if (this.config.get('style') === 'sass') {
+      this.fs.copyTpl(
+        this.templatePath('src/**/*.scss'),
+        this.destinationPath(this.config.get('rootPath')),
+        this.config.getAll(),
+        {},
+        { globOptions: { dot: true } },
+      );
+    } else {
+      this.fs.copyTpl(
+        this.templatePath('src/style/main.scss'),
+        this.destinationPath(this.config.get('rootPath'), 'style'),
+        this.config.getAll(),
+        {},
       );
     }
   }
