@@ -1899,6 +1899,7 @@
 
 "@lerna/conventional-commits@4.0.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
+  uid "7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   dependencies:
     "@lerna/validation-error" "^3.13"
@@ -2456,10 +2457,10 @@
     source-map "^0.6.1"
     stylis "^3.5.4"
 
-"@linaria/core@^3.0.0-beta.2":
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@linaria/core/-/core-3.0.0-beta.2.tgz#534fca27977e2cdc3ee74a936b8d3f2dd82f560a"
-  integrity sha512-LgtkokboTgRZQX5eTuso9sdShxjc9jdRxwTqD+qxaneq+XqalSQXSjDrEoJWhw2zkFqICcDHcoQg6JmVFLK0iQ==
+"@linaria/core@^3.0.0-beta.2", "@linaria/core@^3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@linaria/core/-/core-3.0.0-beta.3.tgz#2754688742bf5eeac7ad68ccf78b67046f556ae3"
+  integrity sha512-jsfe6wUrU4SvARX1RyWJAaeMUKC78GaJNuHfFJL8I4mLO4KFaY/39WlI3GCBQGpNCZBD1gjglUv/YCMAZPHcCg==
 
 "@linaria/extractor@^3.0.0-beta.2":
   version "3.0.0-beta.2"
@@ -2487,12 +2488,12 @@
     "@linaria/babel-preset" "^3.0.0-beta.2"
 
 "@linaria/react@^3.0.0-beta.2":
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@linaria/react/-/react-3.0.0-beta.2.tgz#cec12eb54e41c06873c106318ff90f792b1a6c61"
-  integrity sha512-ILggHxI19Jgsa5VGijowtizBzFEAtv3Uf2om8j1kEMLe/U0ACaIKXMrLZ8ogwuaUM8kKtSC2iJfahkjwIGi2pA==
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@linaria/react/-/react-3.0.0-beta.3.tgz#59af663fd95566a93170f949ac0c24ae5c12fa45"
+  integrity sha512-KfO/T0R4hzsInlphQUf38RFl//AM7LdOSIccd3n64zSYjuxKUwgxUNhIdJnsMohakX34vIazVkkmJg0SQ+k8tg==
   dependencies:
     "@emotion/is-prop-valid" "^0.8.8"
-    "@linaria/core" "^3.0.0-beta.2"
+    "@linaria/core" "^3.0.0-beta.3"
 
 "@linaria/rollup@^3.0.0-beta.2":
   version "3.0.0-beta.2"
