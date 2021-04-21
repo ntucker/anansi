@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.7](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.6...anansi-example-typescript@6.2.7) (2021-04-21)
+
+
+### 📦 Package
+
+* babel/core ([cec3a77](https://github.com/ntucker/anansi/commit/cec3a77a67f7c0e181e8080eae3637598507aacc))
+
+
+
 ### [6.2.6](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.5...anansi-example-typescript@6.2.6) (2021-04-15)
 
 **Note:** Version bump only for package anansi-example-typescript

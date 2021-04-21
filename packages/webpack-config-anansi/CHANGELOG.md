@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.2...@anansi/webpack-config@6.3.3) (2021-04-21)
+
+
+### 📦 Package
+
+* css-loader, mini-css-extract-plugin ([f5058e2](https://github.com/ntucker/anansi/commit/f5058e27f5bea2668b9447fa0a2e3cb5858a19e5))
+* webpack-node-externals major ([c072aba](https://github.com/ntucker/anansi/commit/c072aba9a60e2b52ec659281dfeb699b732f4f7b))
+
+
+
 ### [6.3.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.1...@anansi/webpack-config@6.3.2) (2021-04-15)
 
 **Note:** Version bump only for package @anansi/webpack-config

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.3...@anansi/babel-preset@2.5.4) (2021-04-21)
+
+
+### 🐛 Bug Fix
+
+* Resolve TypeScript when tsConfigPath option is set ([9381313](https://github.com/ntucker/anansi/commit/9381313468024203de7bd19199041ca52519869d))
+
+
+
 ### [2.5.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.2...@anansi/babel-preset@2.5.3) (2021-04-15)
 
 **Note:** Version bump only for package @anansi/babel-preset

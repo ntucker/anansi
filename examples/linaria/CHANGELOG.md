@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.24](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.23...anansi-example-linaria@2.3.24) (2021-04-21)
+
+
+### 📦 Package
+
+* babel/core ([cec3a77](https://github.com/ntucker/anansi/commit/cec3a77a67f7c0e181e8080eae3637598507aacc))
+
+
+
 ### [2.3.23](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.22...anansi-example-linaria@2.3.23) (2021-04-15)
 
 **Note:** Version bump only for package anansi-example-linaria

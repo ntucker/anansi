@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.3.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.4...@anansi/generator-js@3.3.5) (2021-04-21)
+
+
+### 💅 Enhancement
+
+* Improve provided css ([d4c05d5](https://github.com/ntucker/anansi/commit/d4c05d5f3e650155458f79e5ecc368ea6095f54d))
+
+
+### 📦 Package
+
+* babel/core ([cec3a77](https://github.com/ntucker/anansi/commit/cec3a77a67f7c0e181e8080eae3637598507aacc))
+
+
+
 ### [3.3.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.3...@anansi/generator-js@3.3.4) (2021-04-15)
 
 **Note:** Version bump only for package @anansi/generator-js
