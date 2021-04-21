@@ -22,4 +22,4 @@ jobs:
         build-script: "build:sizecompare"
         pattern: "examples/typescript/dist/**/*.{js,css,html,json}"
         exclude: "{examples/typescript/dist/manifest.json,**/*.map,**/node_modules/**}"
-        minimum-change-threshold: 5
+        minimum-change-threshold: 8
