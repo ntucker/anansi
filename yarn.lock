@@ -5747,16 +5747,16 @@ browserslist@4.14.2:
     escalade "^3.0.2"
     node-releases "^1.1.61"
 
-browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.3, browserslist@^4.6.4:
-  version "4.16.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.3.tgz#340aa46940d7db878748567c5dea24a48ddf3717"
-  integrity sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==
+browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.3, browserslist@^4.16.4, browserslist@^4.6.4:
+  version "4.16.4"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.4.tgz#7ebf913487f40caf4637b892b268069951c35d58"
+  integrity sha512-d7rCxYV8I9kj41RH8UKYnvDYCRENUlHRgyXy/Rhr/1BaeLGfiCptEdFE8MIrvGfWbBFNjVYx76SQWvNX1j+/cQ==
   dependencies:
-    caniuse-lite "^1.0.30001181"
-    colorette "^1.2.1"
-    electron-to-chromium "^1.3.649"
+    caniuse-lite "^1.0.30001208"
+    colorette "^1.2.2"
+    electron-to-chromium "^1.3.712"
     escalade "^3.1.1"
-    node-releases "^1.1.70"
+    node-releases "^1.1.71"
 
 bser@2.1.1:
   version "2.1.1"
@@ -5968,7 +5968,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001181, caniuse-lite@^1.0.30001196:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001196, caniuse-lite@^1.0.30001208:
   version "1.0.30001214"
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001214.tgz"
   integrity sha512-O2/SCpuaU3eASWVaesQirZv1MSjUNOvmugaD8zNSJqw6Vv5SGwoOpA9LJs3pNPfM745nxqPvfZY3MQKY4AKHYg==
@@ -6792,20 +6792,12 @@ copyfiles@^2.1.1:
     untildify "^4.0.0"
     yargs "^16.1.0"
 
-core-js-compat@^3.10.1, core-js-compat@^3.9.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.10.1.tgz#62183a3a77ceeffcc420d907a3e6fc67d9b27f1c"
-  integrity sha512-ZHQTdTPkqvw2CeHiZC970NNJcnwzT6YIueDMASKt+p3WbZsLXOcoD392SkcWhkC0wBBHhlfhqGKKsNCQUozYtg==
+core-js-compat@^3.10.1, core-js-compat@^3.8.1, core-js-compat@^3.9.0, core-js-compat@^3.9.1:
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.10.2.tgz#0a675b4e1cde599616322a72c8886bcf696f3ec3"
+  integrity sha512-IGHnpuaM1N++gLSPI1F1wu3WXICPxSyj/Q++clcwsIOnUVp5uKUIPl/+6h0TQ112KU3fMiSxqJuM+OrCyKj5+A==
   dependencies:
-    browserslist "^4.16.3"
-    semver "7.0.0"
-
-core-js-compat@^3.8.1, core-js-compat@^3.9.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.10.0.tgz#3600dc72869673c110215ee7a005a8609dea0fe1"
-  integrity sha512-9yVewub2MXNYyGvuLnMHcN1k9RkvB7/ofktpeKTIaASyB88YYqGzUnu0ywMMhJrDHOMiTjSHWGzR+i7Wb9Z1kQ==
-  dependencies:
-    browserslist "^4.16.3"
+    browserslist "^4.16.4"
     semver "7.0.0"
 
 core-js-pure@^3.0.0, core-js-pure@^3.8.2:
@@ -7844,10 +7836,10 @@ electron-to-chromium@^1.3.564:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.664.tgz#8fb039e2fa8ef3ab2568308464a28425d4f6e2a3"
   integrity sha512-yb8LrTQXQnh9yhnaIHLk6CYugF/An50T20+X0h++hjjhVfgSp1DGoMSYycF8/aD5eiqS4QwaNhiduFvK8rifRg==
 
-electron-to-chromium@^1.3.649:
-  version "1.3.671"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.671.tgz#8feaed6eae42d279fa4611f58c42a5a1eb81b2a0"
-  integrity sha512-RTD97QkdrJKaKwRv9h/wGAaoR2lGxNXEcBXS31vjitgTPwTWAbLdS7cEsBK68eEQy7p6YyT8D5BxBEYHu2SuwQ==
+electron-to-chromium@^1.3.712:
+  version "1.3.719"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.719.tgz#87166fee347a46a2557f19aadb40a1d68241e61c"
+  integrity sha512-heM78GKSqrIzO9Oz0/y22nTBN7bqSP1Pla2SyU9DiSnQD+Ea9SyyN5RWWlgqsqeBLNDkSlE9J9EHFmdMPzxB/g==
 
 element-resize-detector@^1.2.2:
   version "1.2.2"
@@ -13199,10 +13191,10 @@ node-releases@^1.1.61:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
   integrity sha512-DD5vebQLg8jLCOzwupn954fbIiZht05DAZs0k2u8NStSe6h9XdsuIQL8hSRKYiU8WUQRznmSDrKGbv3ObOmC7g==
 
-node-releases@^1.1.70:
-  version "1.1.70"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.70.tgz#66e0ed0273aa65666d7fe78febe7634875426a08"
-  integrity sha512-Slf2s69+2/uAD79pVVQo8uSiC34+g8GWY8UH2Qtqv34ZfhYrxpYpfzs9Js9d6O0mbDmALuxaTlplnBTnSELcrw==
+node-releases@^1.1.71:
+  version "1.1.71"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
+  integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
 
 node-sass@^5.0.0:
   version "5.0.0"
