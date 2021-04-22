@@ -1,7 +1,7 @@
 import { BetterGenerator, InstallPeersMixin } from '../utils';
 
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
 
     this.option('circle-parallelism', {
@@ -24,7 +24,7 @@ ${badges}`,
       this.templatePath('**'),
       this.destinationRoot(),
       {
-        nodeImage: this.options.nodeImage ?? 'circleci/node:12.14',
+        nodeImage: this.options.nodeImage ?? 'circleci/node:14',
         circleParallelism: this.options['circle-parallelism'],
         ...this.config.getAll(),
       },

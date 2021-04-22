@@ -83,7 +83,7 @@
     "test": "jest",
     "build": "yarn run tsc && yarn run copyfiles",
     "build:clean": "rimraf generators",
-    "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/**/.**/.*\" generators",
+    "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" generators",
     "prepare": "yarn build:clean && yarn build"
   }
 }

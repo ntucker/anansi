@@ -27,6 +27,9 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
 
     if (props.features.includes('CI')) {
       this.composeWith(require.resolve('../circle'), this.options);
+      if (this.options.projectType === 'SPA') {
+        this.composeWith(require.resolve('../github-actions'), this.options);
+      }
     }
     if (props.features.includes('testing')) {
       this.composeWith(require.resolve('../testing'), this.options);
