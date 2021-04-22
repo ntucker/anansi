@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.5...@anansi/generator-js@3.4.0) (2021-04-22)
+
+
+### 🚀 Features
+
+* Add github-actions generator ([59c26ea](https://github.com/ntucker/anansi/commit/59c26eacbbb26a5e48c6f7ff4d8e1e553ca72408))
+
+
+
 ### [3.3.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.3.4...@anansi/generator-js@3.3.5) (2021-04-21)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.3...@anansi/webpack-config@6.3.4) (2021-04-22)
+
+
+### 📦 Package
+
+* linaria to beta 3 ([948e9ab](https://github.com/ntucker/anansi/commit/948e9ab20cc741f4526f9235e523ac506509486d))
+
+
+
 ### [6.3.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.2...@anansi/webpack-config@6.3.3) (2021-04-21)
 
 

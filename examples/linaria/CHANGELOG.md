@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.25](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.24...anansi-example-linaria@2.3.25) (2021-04-22)
+
+
+### 📦 Package
+
+* linaria to beta 3 ([948e9ab](https://github.com/ntucker/anansi/commit/948e9ab20cc741f4526f9235e523ac506509486d))
+
+
+
 ### [2.3.24](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.23...anansi-example-linaria@2.3.24) (2021-04-21)
 
 
