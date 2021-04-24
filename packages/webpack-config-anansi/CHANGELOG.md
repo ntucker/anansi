@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.4...@anansi/webpack-config@6.3.5) (2021-04-24)
+
+
+### 📦 Package
+
+* bump postcss from 8.2.10 to 8.2.12 ([#255](https://github.com/ntucker/anansi/issues/255)) ([9913554](https://github.com/ntucker/anansi/commit/9913554da7aa3f9e2f8c51cc2e955bcb0a008f0e))
+
+
+
 ### [6.3.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.3...@anansi/webpack-config@6.3.4) (2021-04-22)
 
 

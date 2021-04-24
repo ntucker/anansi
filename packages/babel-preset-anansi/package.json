@@ -1,6 +1,6 @@
 {
   "name": "@anansi/babel-preset",
-  "version": "2.5.4",
+  "version": "2.5.5",
   "description": "Production ready babel (with TypeScript!)",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "node": ">=10.13.0"
   },
   "dependencies": {
-    "@anansi/ts-utils": "^0.2.3",
+    "@anansi/ts-utils": "^0.2.4",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-class-static-block": "^7.13.11",
     "@babel/plugin-proposal-decorators": "^7.13.15",

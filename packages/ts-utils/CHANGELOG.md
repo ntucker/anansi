@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.4](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.3...@anansi/ts-utils@0.2.4) (2021-04-24)
+
+
+### 🐛 Bug Fix
+
+* Peer dependency syntax ([6f094d8](https://github.com/ntucker/anansi/commit/6f094d82efaf3391b1f04b193ecfb16490752376))
+
+
+
 ### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.2...@anansi/ts-utils@0.2.3) (2021-04-15)
 
 **Note:** Version bump only for package @anansi/ts-utils
