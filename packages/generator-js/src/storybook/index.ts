@@ -65,6 +65,18 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
         '@storybook/react': '^6.2.0',
         '@storybook/builder-webpack5': '^6.2.0',
       },
+      // storybook with webpack 5 is a bit tricky
+      resolutions: {
+        '@types/webpack': '^5.0.0',
+        immer: '^8.0.1',
+        webpack: '^5.35.0',
+        'css-loader': '^5.2.4',
+        'dotenv-webpack': '^6.0.0',
+        'html-webpack-plugin': '^5.0.0',
+        'style-loader': '^2.0.0',
+        'terser-webpack-plugin': '^5.0.0',
+        'webpack-virtual-modules': '^0.4.2',
+      },
     };
     this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
