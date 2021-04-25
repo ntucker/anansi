@@ -5,8 +5,12 @@ const DEFAULT_LIB_PATH = 'lib';
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    super(args, options, features);
 
     this.option('lib-path', {
       alias: 'l',
@@ -36,9 +40,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   configuring() {
-    this.fs.extendJSONTpl(
-      this.templatePath('package.json.tpl'),
-      this.destinationPath('package.json'),
+    this.packageJson.merge(
+      this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
     this.fs.extendJSONTpl(
       this.templatePath('tsconfig.json'),
@@ -66,36 +69,33 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writingPkg() {
-    const pkgJson: Record<string, any> = {
-      devDependencies: {
-        '@babel/cli': 'latest',
-        '@zerollup/ts-transform-paths': 'latest',
-        ttypescript: 'latest',
-        'cross-env': 'latest',
-        rimraf: 'latest',
-      },
-    };
+  writingDependencies() {
+    this.addDevDependencies([
+      '@babel/cli',
+      '@zerollup/ts-transform-paths',
+      'ttypescript',
+      'cross-env',
+      'rimraf',
+    ]);
     if (this.config.get('features').includes('storybook')) {
       const reactVersion =
         this.config.get('reactMode') === 'legacy' ||
         !this.config.get('reactMode')
           ? 'latest'
           : 'experimental';
-      pkgJson.devDependencies = {
-        ...pkgJson.devDependencies,
-        '@types/react': 'latest',
-        '@types/react-dom': 'latest',
+      this.addDevDependencies(['@types/react', '@types/react-dom']);
+      this.addDevDependencies({
         react: reactVersion,
         'react-dom': reactVersion,
-      };
+      });
       const reactPeerV =
         reactVersion === 'experimental' ? 'experimental | ^18.0.0' : '^17.0.0';
-      pkgJson.peerDependencies = {
-        react: reactPeerV,
-        'react-dom': reactPeerV,
-      };
+      this.packageJson.merge({
+        peerDependencies: {
+          react: reactPeerV,
+          'react-dom': reactPeerV,
+        },
+      });
     }
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
 };

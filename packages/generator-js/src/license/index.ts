@@ -127,7 +127,7 @@ module.exports = class GeneratorLicense extends Generator {
     });
   }
 
-  writing() {
+  configuring() {
     // License file
     const filename = this.props.license + '.txt';
     let author = this.props.name.trim();
@@ -165,7 +165,7 @@ module.exports = class GeneratorLicense extends Generator {
       pkg.private = true;
     }
 
-    this.fs.writeJSON(this.destinationPath('package.json'), pkg);
+    this.packageJson.merge(pkg);
   }
 };
 

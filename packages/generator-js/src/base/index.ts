@@ -74,7 +74,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       keywords: ['anansi'],
       author: this.config.get('author'),
     };
-    this.fs.writeJSON(this.destinationPath('package.json'), packageSettings);
+    this.packageJson.merge(packageSettings);
 
     this.fs.copyTpl(
       this.templatePath('**'),
@@ -90,34 +90,19 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     );
   }
 
-  writingPkg() {
-    const pkgJson = {
-      devDependencies: {
-        '@babel/core': 'latest',
-        '@anansi/babel-preset': 'latest',
-        '@anansi/eslint-plugin': 'latest',
-        '@anansi/browserslist-config': 'latest',
-        typescript: 'latest',
-      },
-      dependencies: {
-        '@babel/runtime': 'latest',
-      },
-    };
-
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
-
+  writingDependencies() {
+    this.addDevDependencies([
+      '@babel/core',
+      '@anansi/babel-preset',
+      '@anansi/eslint-plugin',
+      '@anansi/browserslist-config',
+      'typescript',
+    ]);
+    this.addDependencies(['@babel/runtime']);
     this.addPeers(
       '@anansi/eslint-plugin',
       ['typescript', 'babel-plugin-root-import'],
       'devDependencies' as const,
     );
-  }
-
-  installing() {
-    this.installDependencies({
-      yarn: true,
-      npm: false,
-      bower: false,
-    });
   }
 }

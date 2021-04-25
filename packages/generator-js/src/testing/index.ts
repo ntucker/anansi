@@ -1,16 +1,19 @@
 import { BetterGenerator } from '../utils';
 
-class TestingGenerator extends BetterGenerator {
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+module.exports = class TestingGenerator extends BetterGenerator {
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    super(args, options, features);
     this.config.set('testing', true);
   }
 
   configuring() {
     // extending files
-    this.fs.extendJSONTpl(
-      this.templatePath('package.json.tpl'),
-      this.destinationPath('package.json'),
+    this.packageJson.merge(
+      this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
     this.fs.extendJSONTpl(
       this.templatePath('tsconfig.json'),
@@ -43,20 +46,18 @@ class TestingGenerator extends BetterGenerator {
     );
   }
 
-  writingPkg() {
+  writingDependencies() {
     const reactVersion =
       this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
-    const pkgJson = {
-      devDependencies: {
-        '@anansi/jest-preset': 'latest',
-        jest: 'latest',
-        '@types/jest': 'latest',
-        'cross-env': 'latest',
-        'react-test-renderer': reactVersion,
-      },
-    };
-
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+    this.addDevDependencies([
+      '@anansi/jest-preset',
+      'jest',
+      '@types/jest',
+      'cross-env',
+      'react-test-renderer',
+    ]);
+    this.addDevDependencies({
+      'react-test-renderer': reactVersion,
+    });
   }
-}
-export = TestingGenerator;
+};

@@ -8,8 +8,15 @@ import ConfigureGenerator from './ConfigureGenerator';
 export { ConfigureGenerator };
 
 export default class extends ConfigureGenerator {
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    // this is actually improperly typed
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    super(args, options, features);
     const jsFilter = filter(
       [
         '**/*.js',
@@ -22,7 +29,11 @@ export default class extends ConfigureGenerator {
       ],
       { restore: true },
     );
-    this.registerTransformStream([
+
+    // this is actually improperly typed
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    this.queueTransformStream([
       jsFilter,
       prettier({
         printWidth: 80,

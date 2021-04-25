@@ -2,9 +2,8 @@ import { BetterGenerator, InstallPeersMixin } from '../utils';
 
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   configuring() {
-    this.fs.extendJSONTpl(
-      this.templatePath('package.json.tpl'),
-      this.destinationPath('package.json'),
+    this.packageJson.merge(
+      this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
     this.fs.copyTpl(
       this.templatePath('rollup.config.js'),
@@ -13,19 +12,16 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writingPkg() {
-    const pkgJson = {
-      devDependencies: {
-        rollup: 'latest',
-        'rollup-plugin-babel': 'latest',
-        'rollup-plugin-commonjs': 'latest',
-        'rollup-plugin-filesize': 'latest',
-        'rollup-plugin-json': 'latest',
-        'rollup-plugin-node-resolve': 'latest',
-        'rollup-plugin-replace': 'latest',
-        'rollup-plugin-terser': 'latest',
-      },
-    };
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+  writingDependencies() {
+    this.addDevDependencies([
+      'rollup',
+      'rollup-plugin-babel',
+      'rollup-plugin-commonjs',
+      'rollup-plugin-filesize',
+      'rollup-plugin-json',
+      'rollup-plugin-node-resolve',
+      'rollup-plugin-replace',
+      'rollup-plugin-terser',
+    ]);
   }
 };
