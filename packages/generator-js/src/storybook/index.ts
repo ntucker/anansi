@@ -7,7 +7,10 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   }
 
   initializing() {
-    this.composeWith(require.resolve('../webpack'), {});
+    // SPA will already have webpack
+    if (this.options.projectType !== 'SPA') {
+      this.composeWith(require.resolve('../webpack'), {});
+    }
   }
 
   configuring() {
