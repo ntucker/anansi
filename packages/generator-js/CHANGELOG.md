@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.1...@anansi/generator-js@3.4.2) (2021-04-25)
+
+
+### 🐛 Bug Fix
+
+* Resolutions hack to make storybook work ([5cecc89](https://github.com/ntucker/anansi/commit/5cecc89e82cac6e13e358f884372882521605b07))
+* scss path ([6ceac4a](https://github.com/ntucker/anansi/commit/6ceac4a854410e850fbbbe2ae829bf2cd2396f96))
+
+
+
 ### [3.4.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.0...@anansi/generator-js@3.4.1) (2021-04-24)
 
 **Note:** Version bump only for package @anansi/generator-js
