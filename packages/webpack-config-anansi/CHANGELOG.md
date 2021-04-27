@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.4.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.4.0...@anansi/webpack-config@6.4.1) (2021-04-27)
+
+
+### 🐛 Bug Fix
+
+* Include buffer pkg ([eafce6d](https://github.com/ntucker/anansi/commit/eafce6d902e1050572c55c84de32bd6e42c05c9e))
+
+
+
 ## [6.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.5...@anansi/webpack-config@6.4.0) (2021-04-27)
 
 
