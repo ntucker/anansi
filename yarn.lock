@@ -2881,10 +2881,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.1.0.tgz#e59bd908fea6b2aea76f0ae8f2248b3622aee34a"
-  integrity sha512-SMTi792gB+ndY9xspAwws6EXeGLLQooi7YHpPgAxaRqWidETvSHOKH2NkqjIjGstOcVanmkCMDy0JgMbRfz3fg==
+"@rest-hooks/rest@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.1.1.tgz#fe2040f7e6d70ae1d962db7aa236ca95bdf76a31"
+  integrity sha512-TAGa+VxT09fjBA7nm5kR2P+PzUk4vXvqrW23IAuUnBqlxrp0sgiTI7A6EdqECBX9SVkPH6MErM1LRI+hYb3o4w==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
