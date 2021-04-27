@@ -296,6 +296,14 @@ linaria has its own config files it can use, and it is recommended to use those 
 
 [Configuring Linaria](https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#options)
 
+### tsconfigPathOptions
+
+Enabled by default. Uses any module resolution specifications like aliases in `tsconfig`.
+
+Set to `false` to disable; or set to object to configure the options.
+
+[Configuring tsconfig path options](https://github.com/dividab/tsconfig-paths-webpack-plugin#options)
+
 ### fontPreload = 'preload' | 'prefetch'
 
 If specified, will [preload web fonts](https://web.dev/codelab-preload-web-fonts/). Choice
