@@ -26,6 +26,7 @@ export default function makeBaseConfig({
   extraJsLoaders,
   linariaOptions,
   tsconfigPathsOptions,
+  svgrOptions,
   nohash,
   argv,
 }) {
@@ -144,6 +145,7 @@ export default function makeBaseConfig({
             {
               loader: require.resolve('@svgr/webpack'),
               options: {
+                ...svgrOptions,
                 // this is handled by svgo-loader
                 svgo: false,
               },

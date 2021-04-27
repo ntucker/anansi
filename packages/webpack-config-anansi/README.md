@@ -282,6 +282,13 @@ set to false to disable SVGO altogether. (Note: SVGO will never run in dev mode)
 
 [Configuration options](https://github.com/svg/svgo#configuration)
 
+
+### svgrOptions
+
+SVGR enables importing SVG as a file or a component. This option allows further customizing how that is achieved.
+
+[Configuration options](https://react-svgr.com/docs/options/)
+
 ### linariaOptions
 
 Can configure how [linaria](https://github.com/callstack/linaria) operates. Set to `false` to disable linaria altogether. Note that
