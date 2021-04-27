@@ -44,6 +44,11 @@ export function makeConfig(options) {
         'Undefined is not a valid option for svgoOptions. To disable use `false`',
       );
     }
+    if ('svgrOptions' in options && options.svgrOptions === undefined) {
+      throw new Error(
+        'Undefined is not a valid option for svgrOptions. To disable use `false`',
+      );
+    }
     if ('linariaOptions' in options && options.linariaOptions === undefined) {
       throw new Error(
         'Undefined is not a valid option for linariaOptions. To disable use `false`',
@@ -54,7 +59,7 @@ export function makeConfig(options) {
       options.tsconfigPathsOptions === undefined
     ) {
       throw new Error(
-        'Undefined is not a valid option for linariaOptions. To disable use `false`',
+        'Undefined is not a valid option for tsconfigPathsOptions. To disable use `false`',
       );
     }
     const baseConfig = makeBaseConfig(options);
