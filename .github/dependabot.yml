@@ -16,3 +16,4 @@ updates:
       - dependency-name: "whatwg-fetch"
     commit-message:
       prefix: "pkg: "
+    versioning-strategy: "increase"
