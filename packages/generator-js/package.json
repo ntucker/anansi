@@ -1,6 +1,6 @@
 {
   "name": "@anansi/generator-js",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator-js#readme",
   "repository": {
@@ -64,7 +64,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "@anansi/eslint-plugin": "^0.11.0",
+    "@anansi/eslint-plugin": "^0.11.1",
     "@babel/core": "^7.13.16",
     "@types/mem-fs-editor": "^7.0.0",
     "chalk": "^4.1.0",

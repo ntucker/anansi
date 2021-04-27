@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.3...@anansi/generator-js@3.4.4) (2021-04-27)
+
+
+### 📦 Package
+
+* bump @types/node from 14.14.41 to 15.0.0 ([#268](https://github.com/ntucker/anansi/issues/268)) ([d1242cb](https://github.com/ntucker/anansi/commit/d1242cb8a57c5761cfc020b00cff8b2f081cc35a))
+* bump gulp-filter from 6.0.0 to 7.0.0 ([#258](https://github.com/ntucker/anansi/issues/258)) ([1713a59](https://github.com/ntucker/anansi/commit/1713a5967210d9195cfe6a1f16ef9c8179ab1138))
+
+
+
 ### [3.4.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.2...@anansi/generator-js@3.4.3) (2021-04-25)
 
 

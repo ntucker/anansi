@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.5...@anansi/webpack-config@6.4.0) (2021-04-27)
+
+
+### 🚀 Features
+
+* Add svgrOptions to configure svgr ([d4a6564](https://github.com/ntucker/anansi/commit/d4a6564e0e44fb4ca55f11703ad51898a06c74e8))
+
+
+### 💅 Enhancement
+
+* Use postcss on [@import](https://github.com/import) from css ([ae40f98](https://github.com/ntucker/anansi/commit/ae40f989930cc5f2cee39b92a0a0231f58966266))
+
+
+### 📦 Package
+
+* bump postcss from 8.2.12 to 8.2.13 ([#262](https://github.com/ntucker/anansi/issues/262)) ([ae1e860](https://github.com/ntucker/anansi/commit/ae1e86005dda1c8061dd7e9494a92c3fe31ac7a1))
+
+
+
 ### [6.3.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.3.4...@anansi/webpack-config@6.3.5) (2021-04-24)
 
 
