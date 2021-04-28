@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.4.1...@anansi/webpack-config@6.5.0) (2021-04-28)
+
+
+### 🚀 Features
+
+* Add globalStyleDir option ([#272](https://github.com/ntucker/anansi/issues/272)) ([5803312](https://github.com/ntucker/anansi/commit/5803312198bee6fa3e0a75c04dd01bec902dc430))
+
+
+### 🐛 Bug Fix
+
+* Typo in error message ([0042040](https://github.com/ntucker/anansi/commit/0042040f878491ce69138f56894860503e0ecf74))
+
+
+### 📝 Documentation
+
+* Document tsconfigPathOptions ([3ba837b](https://github.com/ntucker/anansi/commit/3ba837becaa28d47c30b69f1f8696ebce8f0597f))
+
+
+
 ### [6.4.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.4.0...@anansi/webpack-config@6.4.1) (2021-04-27)
 
 
