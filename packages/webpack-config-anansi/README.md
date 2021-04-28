@@ -332,6 +332,12 @@ Any extra loaders to use on JavaScript/TypeScript files.
 
 Customize css module [options](https://github.com/webpack-contrib/css-loader#object).
 
+### globalStyleDir = 'style'
+
+Directory where only global styles are defined (no css modules)
+
+Set to `false` to disable
+
 ### sassResources
 
 `resources` option from https://github.com/shakacode/sass-resources-loader#readme

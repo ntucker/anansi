@@ -20,6 +20,7 @@ export function makeConfig(options) {
       rootPath: ROOT_PATH,
       basePath: 'src',
       babelRoot: '',
+      globalStyleDir: 'style',
       libraryInclude: always(false),
       libraryExclude: /node_modules/,
       buildDir: 'generated_assets/',
@@ -62,6 +63,12 @@ export function makeConfig(options) {
         'Undefined is not a valid option for tsconfigPathsOptions. To disable use `false`',
       );
     }
+    if ('globalStyleDir' in options && options.globalStyleDir === undefined) {
+      throw new Error(
+        'Undefined is not a valid option for globalStyleDir. To disable use `false`',
+      );
+    }
+
     const baseConfig = makeBaseConfig(options);
 
     let config;
