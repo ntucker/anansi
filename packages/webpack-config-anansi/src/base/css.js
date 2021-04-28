@@ -54,6 +54,7 @@ export default function getStyleRules({
   libraryExclude = always(false),
   cssModulesOptions = {},
   sassResources,
+  globalStyleDir,
   mode,
   target,
 }) {
@@ -66,9 +67,22 @@ export default function getStyleRules({
         options: {
           ...loader.options,
           modules: {
-            mode: 'local',
             exportLocalsConvention: 'camelCase',
             ...cssModulesOptions,
+          },
+        },
+      };
+    } else if (loader.loader === MiniCssExtractPlugin.loader) {
+      return {
+        ...loader,
+        options: {
+          ...loader.options,
+          modules: {
+            ...Object.fromEntries(
+              Object.entries(cssModulesOptions).filter(([k]) =>
+                ['namedExport'].includes(k),
+              ),
+            ),
           },
         },
       };
@@ -76,26 +90,33 @@ export default function getStyleRules({
     return loader;
   });
   const sassLoaders = getSASSLoaders({ sassResources });
+  const excludeCSSProcess = [libraryExclude];
+
+  // global styles
+  if (globalStyleDir !== false) {
+    const globalStyleRegex = new RegExp(`${globalStyleDir}/`);
+    excludeCSSProcess.unshift(globalStyleRegex);
+  }
   return [
     // css modules (local styles)
     {
       test: /\.scss$/i,
       include: [absoluteBasePath, libraryInclude],
-      exclude: [/style\//g, libraryExclude],
+      exclude: excludeCSSProcess,
       use: [...cssModuleLoaders, ...sassLoaders],
     },
     // plain css as css-modules
     {
       test: /\.css$/i,
       include: [absoluteBasePath, libraryInclude],
-      exclude: [/style\//g, libraryExclude],
+      exclude: excludeCSSProcess,
       use: cssModuleLoaders,
     },
     // global styles
-    {
+    globalStyleDir !== false && {
       test: /\.scss$/i,
       include: [absoluteBasePath],
-      exclude: /^((?!(style\/|node_modules\/)).)*$/,
+      exclude: new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
       use: [...cssLoaders, ...sassLoaders],
       // Don't consider CSS imports dead code even if the
       // containing package claims to have no side effects.
@@ -136,5 +157,5 @@ export default function getStyleRules({
       // See https://github.com/webpack/webpack/issues/6571
       sideEffects: true,
     },
-  ];
+  ].filter(rule => rule);
 }

@@ -20,6 +20,7 @@ export default function makeDevConfig(
     env = {},
     sassResources,
     cssModulesOptions,
+    globalStyleDir,
   },
 ) {
   // Need explicit target to make hotreloading work until https://github.com/webpack/webpack-dev-server/issues/2758
@@ -102,6 +103,7 @@ export default function makeDevConfig(
       ...cssModulesOptions,
     },
     sassResources,
+    globalStyleDir,
     target: argv?.target,
   });
   config.module.rules = [...config.module.rules, ...styleRules];

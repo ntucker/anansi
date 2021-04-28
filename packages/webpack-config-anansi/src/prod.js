@@ -24,6 +24,7 @@ export default function makeProdConfig(
     htmlOptions = { title: '', scriptLoading: 'defer' },
     sassResources,
     cssModulesOptions,
+    globalStyleDir,
     fontPreload,
     svgoOptions,
     nohash,
@@ -107,7 +108,7 @@ export default function makeProdConfig(
           chunks: 'all',
         },
         styles: {
-          test: /style\/.*\.scss$/,
+          test: new RegExp(`${globalStyleDir}/.*\\.scss$`),
           name: 'style',
           chunks: 'all',
           enforce: true,
@@ -175,6 +176,7 @@ export default function makeProdConfig(
     libraryExclude,
     sassResources,
     cssModulesOptions,
+    globalStyleDir,
     target: argv?.target,
   });
   config.module.rules = [...config.module.rules, ...styleRules];
