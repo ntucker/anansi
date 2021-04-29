@@ -13,7 +13,6 @@ export default function makeDevConfig(
     basePath,
     libraryInclude,
     libraryExclude,
-    buildDir,
     htmlOptions = { title: 'Anansi app', scriptLoading: 'defer' },
     argv = {},
     // eslint-disable-next-line no-unused-vars
