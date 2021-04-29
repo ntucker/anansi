@@ -54,6 +54,11 @@ export default function makeBaseConfig({
     ];
   }
 
+  const modules = [path.join(rootPath, basePath), 'node_modules'];
+  if (globalStyleDir) {
+    modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
+  }
+
   return {
     context: rootPath,
     entry: {
@@ -193,11 +198,7 @@ export default function makeBaseConfig({
       ],
     },
     resolve: {
-      modules: [
-        path.join(rootPath, basePath),
-        path.join(rootPath, basePath, globalStyleDir),
-        'node_modules',
-      ],
+      modules,
       extensions: ['.wasm', '.mjs', '.js', '.ts', '.tsx', '.scss', '.json'],
       alias: NODE_ALIAS,
       plugins:
