@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.0...@anansi/webpack-config@6.5.1) (2021-04-29)
+
+
+### 💅 Enhancement
+
+* Don't do special publicPath for devmode ([f2c67b7](https://github.com/ntucker/anansi/commit/f2c67b714e855077bd5ed7e3e051164ee2398cca))
+
+
+### 🐛 Bug Fix
+
+* Avoid recursive watching by moving cache dir out of node_modules ([3e27040](https://github.com/ntucker/anansi/commit/3e270409082b75a622146babf263c96425ed06d8))
+* Resolve globalStyleDir ([75e7e9c](https://github.com/ntucker/anansi/commit/75e7e9cd7973b3f081407d919021a400e5bbe863))
+
+
+### 📦 Package
+
+* bump mini-css-extract-plugin from 1.5.0 to 1.5.1 ([#276](https://github.com/ntucker/anansi/issues/276)) ([70401cb](https://github.com/ntucker/anansi/commit/70401cbf658954460c7c462188e72c98092bd102))
+
+
+
 ## [6.5.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.4.1...@anansi/webpack-config@6.5.0) (2021-04-28)
 
 

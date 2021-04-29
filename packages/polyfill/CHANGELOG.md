@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.44](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.43...@anansi/polyfill@1.0.44) (2021-04-29)
+
+
+### 📦 Package
+
+* bump core-js from 3.11.0 to 3.11.1 ([#275](https://github.com/ntucker/anansi/issues/275)) ([fdafc49](https://github.com/ntucker/anansi/commit/fdafc495ca00429a2f7c4d19e3aced228a9c082d))
+
+
+
 ### [1.0.43](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.42...@anansi/polyfill@1.0.43) (2021-04-24)
 
 **Note:** Version bump only for package @anansi/polyfill

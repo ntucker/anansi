@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.4...@anansi/generator-js@3.4.5) (2021-04-29)
+
+
+### 🐛 Bug Fix
+
+* Avoid recursive watching by moving cache dir out of node_modules ([3e27040](https://github.com/ntucker/anansi/commit/3e270409082b75a622146babf263c96425ed06d8))
+
+
+### 📦 Package
+
+* bump @types/node from 15.0.0 to 15.0.1 ([#270](https://github.com/ntucker/anansi/issues/270)) ([f080d87](https://github.com/ntucker/anansi/commit/f080d8704e8777aa5db21a8391911e5200430439))
+* bump webpack from 5.35.1 to 5.36.1 ([#273](https://github.com/ntucker/anansi/issues/273)) ([bdd2876](https://github.com/ntucker/anansi/commit/bdd2876bf5f7866d143e9468e939b68347eb24b0))
+
+
+
 ### [3.4.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.3...@anansi/generator-js@3.4.4) (2021-04-27)
 
 
