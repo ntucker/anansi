@@ -27,6 +27,7 @@ export default function makeBaseConfig({
   linariaOptions,
   tsconfigPathsOptions,
   svgrOptions,
+  globalStyleDir,
   nohash,
   argv,
 }) {
@@ -194,7 +195,7 @@ export default function makeBaseConfig({
     resolve: {
       modules: [
         path.join(rootPath, basePath),
-        path.join(rootPath, basePath, 'style'),
+        path.join(rootPath, basePath, globalStyleDir),
         'node_modules',
       ],
       extensions: ['.wasm', '.mjs', '.js', '.ts', '.tsx', '.scss', '.json'],
