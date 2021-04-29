@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.2...@anansi/webpack-config@6.5.3) (2021-04-29)
+
+
+### 💅 Enhancement
+
+* Support icss in global style dir ([37b747f](https://github.com/ntucker/anansi/commit/37b747ffbf841f2cdf7a95a0ed859551df38f200))
+* Treat .module.scss found in global style folder as css modules ([9db8a7a](https://github.com/ntucker/anansi/commit/9db8a7a86728c639077e96e79746170f5d2a973d))
+
+
+
 ### [6.5.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.1...@anansi/webpack-config@6.5.2) (2021-04-29)
 
 
