@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.1...@anansi/webpack-config@6.5.2) (2021-04-29)
+
+
+### 🐛 Bug Fix
+
+* Only add module resolve for globalStyleDir if it is defined ([c3ef706](https://github.com/ntucker/anansi/commit/c3ef70656f02522cce9335a73c7621572e202ba0))
+
+
+
 ### [6.5.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.0...@anansi/webpack-config@6.5.1) (2021-04-29)
 
 
