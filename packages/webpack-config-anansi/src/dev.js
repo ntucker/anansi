@@ -1,9 +1,9 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
-import WatchMissingNodeModulesPlugin from 'react-dev-utils/WatchMissingNodeModulesPlugin';
 import webpack from 'webpack';
 import path from 'path';
 
+import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlugin';
 import { getStyleRules } from './base';
 
 export default function makeDevConfig(

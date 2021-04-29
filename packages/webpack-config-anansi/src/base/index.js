@@ -76,6 +76,7 @@ export default function makeBaseConfig({
         version,
         env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
       }),
+      cacheDirectory: path.resolve(rootPath, '.cache/webpack'),
     },
     plugins: [
       new StatsPlugin(manifestFilename, {

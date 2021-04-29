@@ -7,3 +7,4 @@ yarn-debug.log*
 npm-debug.log*
 learna-debug.log
 dist
+.cache
