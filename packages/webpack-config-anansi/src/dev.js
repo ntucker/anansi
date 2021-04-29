@@ -54,7 +54,7 @@ export default function makeDevConfig(
   }
   config.devServer = {
     hot: true,
-    publicPath: `/${buildDir}`,
+    publicPath: config.output.publicPath,
     clientLogLevel: 'warning',
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -65,18 +65,10 @@ export default function makeDevConfig(
     stats: 'minimal',
     overlay: true,
     open: true,
-    historyApiFallback: {
-      rewrites: [
-        {
-          from: new RegExp(`^((?!\\/${buildDir}).)*`, 'g'),
-          to: `/${buildDir}index.html`,
-        },
-      ],
-    },
+    historyApiFallback: true,
     // TODO: add proxy options
   };
   config.devtool = 'cheap-module-source-map';
-  config.output.publicPath = `/${buildDir}`;
   // if we know the port, force it in case this is encapsulated in another host
   if (argv.port) {
     config.output.publicPath = `http://localhost:${argv.port}${config.output.publicPath}`;
