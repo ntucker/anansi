@@ -2,6 +2,8 @@ import path from 'path';
 import variables from 'variables.scss';
 
 import 'code.scss';
+import sillyStyle from 'silly.module.scss';
+
 import style from './index.scss';
 import plain from './plain.css';
 import Worker from './my.worker.ts';
@@ -26,7 +28,7 @@ export default function Home() {
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
       </p>
-      <p>$text-color: {variables.textColor}</p>
+      <p className={sillyStyle.silly}>$text-color: {variables.textColor}</p>
       <p>
         <img src={restHooks} />
       </p>

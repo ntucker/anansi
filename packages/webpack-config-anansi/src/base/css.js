@@ -127,13 +127,22 @@ export default function getStyleRules({
     globalStyleDir !== false && {
       test: /\.scss$/i,
       include: [absoluteBasePath],
-      exclude: new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
+      exclude: [
+        /\.module\.scss$/,
+        new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
+      ],
       use: [...cssLoaders, ...sassLoaders],
       // Don't consider CSS imports dead code even if the
       // containing package claims to have no side effects.
       // Remove this when webpack adds a warning or an error for this.
       // See https://github.com/webpack/webpack/issues/6571
       sideEffects: true,
+    },
+    globalStyleDir !== false && {
+      test: /\.module\.scss$/i,
+      include: [absoluteBasePath],
+      exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
+      use: [...cssModuleLoaders, ...sassLoaders],
     },
     // css-in-js like linaria do not use css-modules
     {
