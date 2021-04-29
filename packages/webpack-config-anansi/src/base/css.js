@@ -14,8 +14,19 @@ const getCSSLoaders = ({ mode, target }) => {
       loader: require.resolve('css-loader'),
       options:
         mode === 'development'
-          ? { sourceMap: true, importLoaders: 1 }
-          : { importLoaders: 1 },
+          ? {
+              sourceMap: true,
+              importLoaders: 1,
+              modules: {
+                compileType: 'icss',
+              },
+            }
+          : {
+              importLoaders: 1,
+              modules: {
+                compileType: 'icss',
+              },
+            },
     },
     {
       loader: require.resolve('postcss-loader'),
