@@ -82,7 +82,7 @@
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
     "markdown-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^1.5.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^5.0.0",
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
