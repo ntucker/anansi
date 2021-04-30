@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.4...@anansi/webpack-config@6.5.5) (2021-04-30)
+
+
+### 🐛 Bug Fix
+
+* Remove unused error overlay plugin as it is incompatible with webpack5 ([a3b6780](https://github.com/ntucker/anansi/commit/a3b67809baccd8f29863b51c53c9a308922d3003))
+
+
+
 ### [6.5.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.3...@anansi/webpack-config@6.5.4) (2021-04-30)
 
 
