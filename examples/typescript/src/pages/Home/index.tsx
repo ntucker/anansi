@@ -3,6 +3,7 @@ import variables from 'variables.scss';
 
 import 'code.scss';
 import sillyStyle from 'silly.module.scss';
+import StaticBlock from 'github/StaticBlock';
 
 import style from './index.scss';
 import plain from './plain.css';
@@ -27,6 +28,7 @@ export default function Home() {
       </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
+        {StaticBlock.a}
       </p>
       <p className={sillyStyle.silly}>$text-color: {variables.textColor}</p>
       <p>
