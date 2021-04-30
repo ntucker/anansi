@@ -137,6 +137,56 @@ export default function makeBaseConfig({
           ],
           exclude: libraryExclude,
         },
+        // transpile JS outside the app to support standard ES features
+        {
+          test: /\.m?js$/,
+          include: /node_modules/,
+          exclude: [
+            // \\ for Windows, / for Mac OS and Linux
+            /node_modules[\\/](core-js)/,
+            /node_modules[\\/]webpack[\\/]buildin/,
+            /@babel(?:\/|\\{1,2})runtime/,
+          ],
+          use: {
+            loader: require.resolve('babel-loader'),
+            options: {
+              babelrc: false,
+              configFile: false,
+              compact: false,
+              cacheDirectory: true,
+              // See https://github.com/facebook/create-react-app/issues/6846 for context
+              cacheCompression: false,
+              // Babel assumes ES Modules, which isn't safe until CommonJS
+              // dies. This changes the behavior to assume CommonJS unless
+              // an `import` or `export` is present in the file.
+              // https://github.com/webpack/webpack/issues/4039#issuecomment-419284940
+              sourceType: 'unambiguous',
+              presets: [
+                [
+                  '@babel/preset-env',
+                  {
+                    bugfixes: true,
+                    useBuiltIns: 'entry',
+                    corejs: 3,
+                    exclude: ['transform-typeof-symbol'],
+                  },
+                ],
+              ],
+              plugins: [
+                [
+                  '@babel/plugin-transform-runtime',
+                  {
+                    corejs: false,
+                    helpers: true,
+                    regenerator: true,
+                    useESModules: true,
+                    version: require('@babel/runtime/package.json').version,
+                  },
+                ],
+              ],
+            },
+          },
+        },
         {
           test: /\.html$/,
           use: [{ loader: require.resolve('html-loader') }],
