@@ -5,7 +5,6 @@ import { RouteChildrenProps } from 'react-router';
 import { CacheProvider } from 'rest-hooks';
 import { history } from 'navigation';
 
-import loadPolyfills from '@anansi/polyfill';
 import 'style/main.scss';
 
 import ErrorBoundary from 'components/ErrorBoundary';
@@ -20,10 +19,6 @@ function shouldUpdateScroll(
   return action !== 'REPLACE';
 }
 
-async function init() {
-  await loadPolyfills();
-}
-init();
 ReactDOM.render(
   <ErrorLoggerContext.Provider value={e => console.error('error logged', e)}>
     <ErrorBoundary>
