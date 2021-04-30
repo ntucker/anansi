@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.5...@anansi/generator-js@3.4.6) (2021-04-30)
+
+
+### 📦 Package
+
+* bump @babel/core from 7.13.16 to 7.14.0 ([#278](https://github.com/ntucker/anansi/issues/278)) ([0968a78](https://github.com/ntucker/anansi/commit/0968a780e69859101f058bd95a657fb23766cacf))
+
+
+
 ### [3.4.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.4...@anansi/generator-js@3.4.5) (2021-04-29)
 
 

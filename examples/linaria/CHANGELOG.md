@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.33](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.32...anansi-example-linaria@2.3.33) (2021-04-30)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.13.17 to 7.14.0 ([#280](https://github.com/ntucker/anansi/issues/280)) ([c4c6857](https://github.com/ntucker/anansi/commit/c4c6857ec96aa6e953d919f036f47cd1a69174e0))
+
+
+
 ### [2.3.32](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.31...anansi-example-linaria@2.3.32) (2021-04-29)
 
 **Note:** Version bump only for package anansi-example-linaria

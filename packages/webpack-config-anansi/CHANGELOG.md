@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.3...@anansi/webpack-config@6.5.4) (2021-04-30)
+
+
+### 📦 Package
+
+* bump mini-css-extract-plugin from 1.5.1 to 1.6.0 ([#283](https://github.com/ntucker/anansi/issues/283)) ([c1ac1d1](https://github.com/ntucker/anansi/commit/c1ac1d178306600a33824907fbffef4b66a0a460))
+
+
+
 ### [6.5.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.2...@anansi/webpack-config@6.5.3) (2021-04-29)
 
 

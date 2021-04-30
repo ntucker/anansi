@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.16](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.15...anansi-example-typescript@6.2.16) (2021-04-30)
+
+
+### 💅 Enhancement
+
+* Remove polyfill from example ([4217f06](https://github.com/ntucker/anansi/commit/4217f069b9c3a0a354002455fc16a6e9009f4c8b))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.13.17 to 7.14.0 ([#280](https://github.com/ntucker/anansi/issues/280)) ([c4c6857](https://github.com/ntucker/anansi/commit/c4c6857ec96aa6e953d919f036f47cd1a69174e0))
+
+
+
 ### [6.2.15](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.14...anansi-example-typescript@6.2.15) (2021-04-29)
 
 
