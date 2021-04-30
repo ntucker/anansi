@@ -8,13 +8,26 @@ A webpack 5 configuration for fast development and production ready optimization
 
 (For webpack 4 compatible config, use [@anansi/webpack-config@5.4.1](https://www.npmjs.com/package/@anansi/webpack-config/v/5.4.1))
 
-## Usage
+## Installation
+
+```bash
+yarn add --dev webpack webpack-cli webpack-dev-server react-refresh @anansi/webpack-config
+```
+
+or
+
+```bash
+npm install --save-dev webpack webpack-cli webpack-dev-server react-refresh @anansi/webpack-config
+```
+
+## Configuration
 
 <details open><summary><b>/webpack.config.js</b></summary>
 
 ```javascript
 const { makeConfig } = require('@anansi/webpack-config');
 
+// See #options below
 const options = {
   basePath: 'src',
   buildDir: 'generated_assets/',
@@ -24,6 +37,9 @@ module.exports = { options };
 
 module.exports = makeConfig(options);
 ```
+
+[See Options](#options) on how to configure
+
 </details>
 
 <details open><summary><b>/package.json</b></summary>
@@ -42,6 +58,11 @@ module.exports = makeConfig(options);
 ```
 
 (`--env` requires webpack-cli >= v4)
+
+[See cmd-line-arguments](#cmd-line-arguments) for more detail.
+
+[See ENV](#env-customization) to use [environmental variables](https://www.networkworld.com/article/3215965/all-you-need-to-know-about-unix-environment-variables.html) to customize builds
+
 </details>
 
 ### TypeScript (optional)
@@ -417,3 +438,35 @@ module.exports = {
   ],
 };
 ```
+
+### Advanced configuration
+
+<details open><summary><b>/webpack.config.js</b></summary>
+
+```javascript
+const { makeConfig } = require('@anansi/webpack-config');
+
+// See #options below
+const options = {
+  basePath: 'src',
+  buildDir: 'generated_assets/',
+};
+
+module.exports = { options };
+
+const baseConfig = makeConfig(options);
+
+module.exports = (env, argv) => {
+  const config = baseConfig(env, argv);
+
+  // Config is fully available for modification
+  // Adding any custom plugins is simple
+  config.plugins.push(
+    new CspHtmlWebpackPlugin()
+  );
+
+  return config;
+}
+```
+
+</details>
