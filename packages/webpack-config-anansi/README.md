@@ -152,10 +152,71 @@ yarn add --dev react-refresh
   - [Web Assembly (WASM)](https://developer.mozilla.org/en-US/docs/WebAssembly)
 - Styling (CSS)
   - [SCSS](https://sass-lang.com/) with [CSS modules](https://css-tricks.com/css-modules-part-1-need/)
-    - Use `${basePath}/style/export.scss` to add variables or mixins avaiable in all scss files
-      - Customize path via [sassResource](#sassresources)
-    - Put global styles within `${basePath}/style`
-    - Other styles will be treated as css modules
+    - <details><summary>By default both .css and .scss files work as <a href="https://css-tricks.com/css-modules-part-1-need/">CSS Modules</a></summary>
+
+      ```scss
+      .button {
+        border-radius: 6px;
+        color: black;
+        background: gray;
+      }
+      ```
+
+      ```js
+      import styles from './myfile.scss';
+
+      export default function MyComponent() {
+        return <div className={styles.button}>Hello world</div>;
+      }
+      ```
+
+      </details>
+    - <details><summary>Export SCSS variables into javascript via <a href="https://github.com/css-modules/icss">icss</a></summary>
+
+      ```scss
+      :export {
+        bodyColor: $body-color;
+        backgroundColor: $background-color;
+      }
+      ```
+
+      </details>
+    - <details><summary>Provide variables/mixins to every sass file by adding <a href="#sassresources">sassResource</a></summary>
+
+      ```js
+      const { makeConfig } = require('@anansi/webpack-config');
+
+      const options = {
+        basePath: 'src',
+        buildDir: 'dist/',
+        sassResources: [`${__dirname}/src/style/export.scss`],
+      };
+
+      module.exports = makeConfig(options);
+
+      module.exports.options = options;
+
+      ```
+
+      </details>
+    - <details><summary>Apply global styles to every file in <a href="##globalstyledir--style">globalStyleDir</a></summary>
+
+      ```js
+      const { makeConfig } = require('@anansi/webpack-config');
+
+      const options = {
+        basePath: 'src',
+        buildDir: 'dist/',
+        globalStyleDir: 'style',
+      };
+
+      module.exports = makeConfig(options);
+
+      module.exports.options = options;
+
+      ```
+
+      </details>
   - CSS in JS via [Linaria](https://github.com/callstack/linaria)
 - Media
   - All font formats
