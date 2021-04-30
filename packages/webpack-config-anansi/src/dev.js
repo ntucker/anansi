@@ -1,5 +1,4 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import ErrorOverlayPlugin from 'error-overlay-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
 
@@ -45,10 +44,8 @@ export default function makeDevConfig(
   ];
   // not for server builds
   if (!argv?.target?.includes?.('node')) {
-    // error overlay is broken in webpack 5
-    if (webpack.version.startsWith('4')) {
-      config.plugins.unshift(new ErrorOverlayPlugin());
-    }
+    // error overlay is broken in webpack 5; TODO add back when it works again
+    // config.plugins.unshift(new ErrorOverlayPlugin());
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
   config.devServer = {
