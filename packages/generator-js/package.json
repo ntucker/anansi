@@ -72,7 +72,7 @@
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^3.0.0",
     "shelobsay": "^1.0.1",
-    "webpack": "^5.36.1",
+    "webpack": "^5.36.2",
     "yeoman-generator": "^4.13.0"
   },
   "jest": {
