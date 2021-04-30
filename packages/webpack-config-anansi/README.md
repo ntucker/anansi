@@ -84,6 +84,30 @@ module.exports = {
 ```
 </details>
 
+#### Working with webpack 5 and storybook
+
+Storybook currently has [some issues](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) due to being a hybrid of webpack 4 and 5. This is solved by adding some 'resolutions' to your `package.json`. This will
+only work with npm v7 and above, or yarn.
+
+<details open><summary><b>package.json</b></summary>
+
+```json
+{
+  "resolutions": {
+    "webpack": "^5.0.0",
+    "css-loader": "^5.0.0",
+    "dotenv-webpack": "^6.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.0",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-virtual-modules": "^0.4.2"
+  }
+}
+```
+
+</details>
+
 ## Enabling react-refresh
 
 Install react-refresh as a dev-dependency in your project and it will automatically
