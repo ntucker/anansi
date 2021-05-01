@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.18](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.17...anansi-example-typescript@6.2.18) (2021-05-01)
+
+
+### 🐛 Bug Fix
+
+* dev-middleware must be v3 for now ([55e030d](https://github.com/ntucker/anansi/commit/55e030dd54622ee0ef17ee16c62c6facea7a5f4e))
+
+
+
 ### [6.2.17](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.16...anansi-example-typescript@6.2.17) (2021-04-30)
 
 **Note:** Version bump only for package anansi-example-typescript

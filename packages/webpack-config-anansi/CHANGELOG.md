@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.5.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.5...@anansi/webpack-config@6.5.6) (2021-05-01)
+
+
+### 🐛 Bug Fix
+
+* dev-middleware must be v3 for now ([55e030d](https://github.com/ntucker/anansi/commit/55e030dd54622ee0ef17ee16c62c6facea7a5f4e))
+
+
+### 📝 Documentation
+
+* Add package resolutions to storybook directions ([47bede5](https://github.com/ntucker/anansi/commit/47bede581e36f91d5433a4809aff94cbc86e360e))
+* Improve wording ([a28f16e](https://github.com/ntucker/anansi/commit/a28f16edd40c4b95021ae01b637fcb7f9e413bd4))
+* More webpack explanations ([abd4336](https://github.com/ntucker/anansi/commit/abd4336a105a10d707b0b21154871ee96724c52f))
+* Update style instructions ([168207b](https://github.com/ntucker/anansi/commit/168207bf16b94d3b4a94cadec73ab10dfe5dcb26))
+
+
+
 ### [6.5.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.4...@anansi/webpack-config@6.5.5) (2021-04-30)
 
 
