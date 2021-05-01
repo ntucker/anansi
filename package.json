@@ -30,6 +30,7 @@
     "@storybook/addons": "^6.2.9",
     "@storybook/builder-webpack5": "^6.2.9",
     "@storybook/react": "^6.2.9",
+    "babel-loader": "8.2.2",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.6.0",
@@ -57,6 +58,7 @@
     "html-webpack-plugin": "^5.0.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.0.0",
+    "webpack-dev-middleware": "^3.1.0",
     "webpack-virtual-modules": "^0.4.2"
   },
   "dependencies": {

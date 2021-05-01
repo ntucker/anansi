@@ -121,7 +121,7 @@ only work with npm v7 and above, or yarn.
     "html-webpack-plugin": "^5.0.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.0.0",
-    "webpack-dev-middleware": "^4.1.0",
+    "webpack-dev-middleware": "^3.1.0",
     "webpack-virtual-modules": "^0.4.2"
   }
 }
