@@ -14,7 +14,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       {
         type: 'list',
         name: 'style',
-        message: 'How would you like to define your styles?',
+        message:
+          'SCSS with CSS modules and Linaria can both be used for styling.\nWhich would you like in the generated example?',
         default: 'linaria',
         choices: [
           {
