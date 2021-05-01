@@ -38,7 +38,7 @@ module.exports = { options };
 module.exports = makeConfig(options);
 ```
 
-[See Options](#options) on how to configure
+[See Options](#options) for more options to configure
 
 </details>
 
