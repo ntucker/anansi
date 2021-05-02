@@ -112,6 +112,10 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   installing() {
-    this.installDependencies({ yarn: { force: true }, npm: false });
+    this.installDependencies({
+      yarn: true,
+      npm: false,
+      bower: false,
+    });
   }
 }
