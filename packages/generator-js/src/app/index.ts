@@ -8,7 +8,7 @@ import ConfigureGenerator from './ConfigureGenerator';
 export { ConfigureGenerator };
 
 export default class extends ConfigureGenerator {
-  constructor(args: string | string[], options: {}) {
+  constructor(args: string | string[], options: Record<string, unknown>) {
     super(args, options);
     const jsFilter = filter(
       [
@@ -35,11 +35,7 @@ export default class extends ConfigureGenerator {
   }
 
   async prompting() {
-    this.log(
-      shelobsay(
-        `Welcome to the panultimate ${chalk.red('anansi-js')} generator!`,
-      ),
-    );
+    this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
     const props = await super.prompting();
     this.composeWith(require.resolve('../base'), {
       ...this.options,
