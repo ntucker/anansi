@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.5.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.5.0...@anansi/generator-js@3.5.1) (2021-05-02)
+
+
+### 💅 Enhancement
+
+* Change console intro ([5c719d5](https://github.com/ntucker/anansi/commit/5c719d50ef711d063e184d7d5bce99544f5079ae))
+* Install with yarn after ([04e98b6](https://github.com/ntucker/anansi/commit/04e98b636d0d4e10d6a5afdb0414a1d777960f1e))
+
+
+
 ## [3.5.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.8...@anansi/generator-js@3.5.0) (2021-05-02)
 
 
