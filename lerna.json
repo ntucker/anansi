@@ -8,7 +8,8 @@
       "conventionalCommits": true,
       "changelogPreset": "anansi",
       "createRelease": "github",
-      "message": "internal: publish"
+      "message": "internal: publish",
+      "noPrivate": true
     }
   }
 }
