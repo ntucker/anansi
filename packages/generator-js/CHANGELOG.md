@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.7...@anansi/generator-js@3.4.8) (2021-05-02)
+
+
+### 💅 Enhancement
+
+* Change command from hatch-anansi to 'anansi hatch' ([0135519](https://github.com/ntucker/anansi/commit/01355199aecba72fac79a25241b4dc5c706aa4a8))
+* Use browserslist config from package ([fc325ca](https://github.com/ntucker/anansi/commit/fc325cab5dfad0b080bf7056c7741f57aa2a8869))
+
+
+
 ### [3.4.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.4.6...@anansi/generator-js@3.4.7) (2021-05-01)
 
 
