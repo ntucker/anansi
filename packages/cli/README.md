@@ -2,6 +2,11 @@
 
 > Production ready, developer friendly. Opinionated yet extensible.
 
+[![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
+[![npm downloads](https://img.shields.io/npm/dm/@anansi/cli.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/cli)
+[![npm version](https://img.shields.io/npm/v/@anansi/cli.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/cli)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 [Anansi](https://en.wikipedia.org/wiki/Anansi) (/əˈnɑːnsi/ ə-NAHN-see) is an Akan folktale character. He often takes the shape of a spider and is considered to be the god of all knowledge of stories. Anansi uses his knowledge to help JavaScript developers spin new web projects.
 
 ## Motivation

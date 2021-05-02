@@ -1,0 +1,62 @@
+{
+  "name": "@anansi/cli",
+  "version": "0.1.0",
+  "description": "Fast React Web Apps",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ntucker/anansi.git",
+    "directory": "packages/cli"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Nathaniel Tucker",
+    "email": "me@ntucker.me",
+    "url": "https://ntucker.true.io"
+  },
+  "contributors": [
+    {
+      "name": "Melissa Zhang",
+      "email": "melissa.zhang@coinbase.com",
+      "url": "https://twitter.com/melissazhang13"
+    }
+  ],
+  "files": [
+    "run.js"
+  ],
+  "bin": {
+    "anansi": "./run.js"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "framework",
+    "spa",
+    "fast-refresh",
+    "react-refresh",
+    "yeoman-generator",
+    "yeoman",
+    "typescript",
+    "rest-hooks",
+    "webpack",
+    "sdk",
+    "scss",
+    "css modules",
+    "storybook"
+  ],
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "@anansi/generator-js": "^3.5.0",
+    "execa": "^5.0.0",
+    "yo": "^4.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "pretest": "eslint --ext .js,.ts,.tsx ."
+  }
+}
