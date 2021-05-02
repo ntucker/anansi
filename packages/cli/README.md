@@ -25,13 +25,14 @@ Like Ubuntu did for Linux; Anansi focuses on bringing together many powerful too
 
 ## Installation
 
-[node.js](https://nodejs.org/) >10 and [npm](https://www.npmjs.com/) >6 are required.
+<details><summary><b><a href="https://nodejs.org/">node.js</a> >10 and <a href="https://www.npmjs.com/">npm</a> >6 are required.</b></summary>
 
 Use [nvm](https://github.com/nvm-sh/nvm) to install these if you don't already.
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
+</details>
 
 Next install Anansi's CLI
 
