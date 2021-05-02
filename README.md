@@ -29,7 +29,7 @@ npm install -g yo @anansi/generator-js
 Then generate your new project:
 
 ```bash
-hatch-anansi my-app-name
+anansi hatch my-app-name
 ```
 
 This creates a `my-app-name` directory in your current directory and sets up the project there.
