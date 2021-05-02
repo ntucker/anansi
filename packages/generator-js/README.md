@@ -35,7 +35,7 @@ Features can be incrementally adopted by running sub-generators from an existing
 
 ```shell
 cd MyProject
-yo @anansi/js:testing
+anansi add testing
 ```
 
 ## Sub-Generators
