@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const execa = require('execa');
+const path = require('path');
 const { Command } = require('commander');
 
 const program = new Command();
@@ -21,13 +22,18 @@ program
       }
     }
     try {
+      const cwd = options.dir || `./${projectName}`;
       await execa('npx yo', ['@anansi/js', projectName], {
         stdio: 'inherit',
         shell: true,
-        cwd: options.dir || `./${projectName}`,
+        cwd,
         env: {
           PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
         },
+      });
+      console.log('\nProject setup complete! Opening editor now...');
+      await execa('"${VISUAL:-code}"', [cwd, path.join(cwd, 'README.md')], {
+        shell: true,
       });
     } catch (error) {
       console.error(error.message);
