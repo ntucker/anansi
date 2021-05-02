@@ -110,4 +110,8 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       'devDependencies' as const,
     );
   }
+
+  installing() {
+    this.installDependencies({ yarn: { force: true }, npm: false });
+  }
 }
