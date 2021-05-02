@@ -4,6 +4,7 @@ const options = {
   basePath: '<%= rootPath %>',
   buildDir: '<%= assetPath %>/',
   htmlOptions: { title: '<%= appName %>' },
+  globalStyleDir: 'style',
   <% if (style === 'sass') { %>
   sassResources: [`${__dirname}/src/style/export.scss`],
   <% } %>
