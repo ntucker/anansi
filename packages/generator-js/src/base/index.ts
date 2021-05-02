@@ -94,6 +94,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
         '@babel/core': 'latest',
         '@anansi/babel-preset': 'latest',
         '@anansi/eslint-plugin': 'latest',
+        '@anansi/browserslist-config': 'latest',
         typescript: 'latest',
       },
       dependencies: {
