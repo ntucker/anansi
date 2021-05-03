@@ -62,6 +62,10 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.destinationPath('README.md'),
       this.config.getAll(),
     );
+    this.fs.copy(
+      this.templatePath('index.ejs'),
+      this.destinationPath('index.ejs'),
+    );
 
     if (this?.props?.style === 'linaria') {
       this.fs.copy(

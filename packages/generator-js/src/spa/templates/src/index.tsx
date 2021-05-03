@@ -10,9 +10,9 @@ const content = (
   </RootProvider>
 );
 <% if (reactMode === 'legacy') { %>
-ReactDOM.render(<StrictMode>{content}</StrictMode>, document.body);
+ReactDOM.render(<StrictMode>{content}</StrictMode>, document.getElementById('react'));
 <% } else if (reactMode === 'concurrent') { %>
-ReactDOM.unstable_createRoot(document.body).render(content);
+ReactDOM.unstable_createRoot(document.getElementById('react')).render(content);
 <% } else { %>
-ReactDOM.unstable_createBlockingRoot(document.body).render(content);
+ReactDOM.unstable_createBlockingRoot(document.getElementById('react')).render(content);
 <% } %>
