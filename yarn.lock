@@ -4261,6 +4261,15 @@
     "@types/expect" "^1.20.4"
     "@types/node" "*"
 
+"@types/webpack-bundle-analyzer@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@types/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.4.0.tgz#cd7cc5c24e17044023bc6d26dd060287fcf370f4"
+  integrity sha512-8evCbPtT2jOUhVGgVDSzk3Y2g4oaxIkakqTj66vRrYjbOoIGmKJSnS4COObwffByiOEYxW7U8ymq9ae9qlH62Q==
+  dependencies:
+    "@types/node" "*"
+    tapable "^2.2.0"
+    webpack "^5"
+
 "@types/webpack-env@^1.16.0":
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.16.0.tgz#8c0a9435dfa7b3b1be76562f3070efb3f92637b4"
