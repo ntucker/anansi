@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.6.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.0...@anansi/generator-js@3.6.1) (2021-05-03)
+
+
+### 🐛 Bug Fix
+
+* Don't fail on reading JSON ([b165072](https://github.com/ntucker/anansi/commit/b165072541ba084e187f31575d7e5e3029c81410))
+
+
+
 ## [3.6.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.5.1...@anansi/generator-js@3.6.0) (2021-05-03)
 
 
