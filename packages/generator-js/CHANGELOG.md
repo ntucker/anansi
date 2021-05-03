@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.6.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.3...@anansi/generator-js@3.6.4) (2021-05-03)
+
+
+### 🐛 Bug Fix
+
+* Install webpack ([e7420d6](https://github.com/ntucker/anansi/commit/e7420d64cba4787c03c4ee449196ce50d148d748))
+
+
+
 ### [3.6.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.2...@anansi/generator-js@3.6.3) (2021-05-03)
 
 

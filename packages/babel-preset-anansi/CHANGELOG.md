@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.7...@anansi/babel-preset@2.5.8) (2021-05-03)
+
+
+### 🐛 Bug Fix
+
+* Include polyfills for node targets ([44390f3](https://github.com/ntucker/anansi/commit/44390f347f7605a425be4e2e2e26b1be73eb305c))
+
+
+
 ### [2.5.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.6...@anansi/babel-preset@2.5.7) (2021-04-30)
 
 
