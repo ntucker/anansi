@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.6.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.1...@anansi/generator-js@3.6.2) (2021-05-03)
+
+
+### 💅 Enhancement
+
+* Better readme top ([b149ad6](https://github.com/ntucker/anansi/commit/b149ad6082e7645d7ce869ef3ddf0a399de8b0a9))
+* Explain non-legacy react mode is 'experimental' ([92044ef](https://github.com/ntucker/anansi/commit/92044ef0744c46a3c0db87523f8d1d5404fc4e23))
+* Include html template by default ([410ef2d](https://github.com/ntucker/anansi/commit/410ef2dfa94a38bc3fd06669778f00ad0cbec39d))
+
+
+### 🐛 Bug Fix
+
+* div cannot be descendant of p ([44b8f2f](https://github.com/ntucker/anansi/commit/44b8f2f685d1612a439f343e6c329e58add21aea))
+
+
+
 ### [3.6.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.0...@anansi/generator-js@3.6.1) (2021-05-03)
 
 
