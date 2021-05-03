@@ -83,6 +83,7 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   writingPkg() {
     const pkgJson = {
       devDependencies: {
+        webpack: 'latest',
         'webpack-cli': 'latest',
         'webpack-dev-server': 'latest',
       },
