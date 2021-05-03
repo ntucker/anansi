@@ -58,6 +58,14 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       this.templatePath('src/.eslintrc'),
       this.destinationPath('src/.eslintrc'),
     );
+    this.fs.extendJSONTpl(
+      this.templatePath('.vscode/launch.json'),
+      this.destinationPath('.vscode/launch.json'),
+    );
+    this.fs.extendJSONTpl(
+      this.templatePath('.vscode/tasks.json'),
+      this.destinationPath('.vscode/tasks.json'),
+    );
   }
 
   writing() {
