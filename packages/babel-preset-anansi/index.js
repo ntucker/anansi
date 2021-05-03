@@ -240,7 +240,8 @@ function buildPreset(api, options = {}) {
         bugfixes: true,
         modules,
         // maximum compatibility since we don't care about bundle size
-        useBuiltIns: false,
+        useBuiltIns: 'usage',
+        corejs: options.corejs,
       },
     ]);
   } else {
