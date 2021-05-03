@@ -60,7 +60,6 @@ export default function makeDevConfig(
     allowedHosts: ['localhost', '127.0.0.1'],
     stats: 'minimal',
     overlay: true,
-    open: true,
     historyApiFallback: true,
     // TODO: add proxy options
   };
