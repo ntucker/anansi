@@ -19,8 +19,8 @@ export default function AssetPrice({ symbol }: Props) {
     currency: 'USD',
   }).format(1 / Number.parseFloat(price.rates[symbol]));
   return (
-    <div>
+    <span>
       {symbol} {displayPrice}
-    </div>
+    </span>
   );
 }
