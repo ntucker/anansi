@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.5.1...@anansi/generator-js@3.6.0) (2021-05-03)
+
+
+### 🚀 Features
+
+* Add vscode launch & tasks ([1956208](https://github.com/ntucker/anansi/commit/1956208f401a451de7ef2b029057ab00a654589c))
+
+
+### 💅 Enhancement
+
+* Docs recommend yarn now ([c57e431](https://github.com/ntucker/anansi/commit/c57e4313e205449453174a218d22ab5a3b1bbdb8))
+* Improve devserver ([daebae9](https://github.com/ntucker/anansi/commit/daebae9d92e8addc52f9135d6f1e54db042c3fc4))
+* Use globalStyleDir in template ([237efbc](https://github.com/ntucker/anansi/commit/237efbc112900552ad918a7ab323383039f8a3c5))
+
+
+### 🐛 Bug Fix
+
+* Don't try to use bower ([54ff93d](https://github.com/ntucker/anansi/commit/54ff93d3ff4140665031c8e5df16ceb4e431a05c))
+
+
+
 ### [3.5.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.5.0...@anansi/generator-js@3.5.1) (2021-05-02)
 
 

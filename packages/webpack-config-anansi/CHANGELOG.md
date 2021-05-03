@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.6...@anansi/webpack-config@6.6.0) (2021-05-03)
+
+
+### 🚀 Features
+
+* Add types ([b7968c4](https://github.com/ntucker/anansi/commit/b7968c4e54099dc3c7510a6930b7ab0536bc8130))
+
+
+### 💅 Enhancement
+
+* peerDep to full release ([6353809](https://github.com/ntucker/anansi/commit/6353809110ecb8f7f2d2413d533289fc7ed51cec))
+
+
+
 ### [6.5.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.5...@anansi/webpack-config@6.5.6) (2021-05-01)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.0...@anansi/cli@0.2.1) (2021-05-03)
+
+
+### 💅 Enhancement
+
+* Open default visual editor upon completion ([7173962](https://github.com/ntucker/anansi/commit/71739626a6bb791092875317d364ea22e771414c))
+
+
+
 ## 0.2.0 (2021-05-02)
 
 
