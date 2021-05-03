@@ -5,17 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "yarn start",
-      "name": "Run yarn start",
+      "type": "pwa-chrome",
       "request": "launch",
-      "type": "node-terminal"
-    },
-    {
-      "type": "pwa-msedge",
-      "request": "launch",
-      "name": "Launch Chrome against localhost",
+      "name": "Launch Chrome",
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask":"npm: start",
+      "sourceMaps": true
     }
   ]
 }
