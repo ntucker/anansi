@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.6.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.2...@anansi/generator-js@3.6.3) (2021-05-03)
+
+
+### 💅 Enhancement
+
+* Ignore cache dirs in VSCode ([bc4526b](https://github.com/ntucker/anansi/commit/bc4526b19c75bdf327fba592dd12e2f7b8b890f5))
+
+
+
 ### [3.6.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.1...@anansi/generator-js@3.6.2) (2021-05-03)
 
 

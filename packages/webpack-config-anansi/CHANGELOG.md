@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.6.0...@anansi/webpack-config@6.7.0) (2021-05-03)
+
+
+### 🚀 Features
+
+* Leaving opening browser up to context of user ([3acbef3](https://github.com/ntucker/anansi/commit/3acbef36776091695d1a483e0bb270d2a10d02ab))
+
+
+
 ## [6.6.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.5.6...@anansi/webpack-config@6.6.0) (2021-05-03)
 
 
