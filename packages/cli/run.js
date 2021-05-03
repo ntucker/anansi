@@ -31,8 +31,14 @@ program
           PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
         },
       });
+      const readme = path.join(cwd, 'README.md');
+      // if user exits early this is still exit code 0, so we need to validate
+      // whether the setup completed before going on to the next step
+      if (!fs.existsSync(readme)) {
+        process.exit(2);
+      }
       console.log('\nProject setup complete! Opening editor now...');
-      await execa('"${VISUAL:-code}"', [cwd, path.join(cwd, 'README.md')], {
+      await execa('"${VISUAL:-code}"', [cwd, readme], {
         shell: true,
       });
     } catch (error) {
