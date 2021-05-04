@@ -37,7 +37,7 @@
     "@rest-hooks/rest": "^2.1.1",
     "antd": "^4.15.4",
     "classnames": "^2.2.6",
-    "core-js": "^3.11.1",
+    "core-js": "^3.11.2",
     "lodash": "^4.17.15",
     "parse-link-header": "^1.0.1",
     "react-router-dom": "^5.2.0",
