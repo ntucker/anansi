@@ -14,7 +14,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       {
         type: 'list',
         name: 'reactMode',
-        message: 'What mode would you like to run React?',
+        message:
+          'What mode would you like to run React?\nMore info: https://reactjs.org/docs/concurrent-mode-adoption.html#feature-comparison',
         default: 'legacy',
         choices: [
           {
