@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.6.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.4...@anansi/generator-js@3.6.5) (2021-05-05)
+
+
+### 💅 Enhancement
+
+* Provide link to learn more about react modes ([7996229](https://github.com/ntucker/anansi/commit/799622934c0c0076e1ba21fbe68abe73d3b1f24c))
+
+
+### 🐛 Bug Fix
+
+* mem-fs, mem-fs-editor needed for 'yo' package ([19a56cb](https://github.com/ntucker/anansi/commit/19a56cbb3d25dddb2519e61cd5d2bbf698dbd636))
+
+
+### 📦 Package
+
+* bump @types/node from 15.0.1 to 15.0.2 ([#293](https://github.com/ntucker/anansi/issues/293)) ([96abfdb](https://github.com/ntucker/anansi/commit/96abfdb870f59c441b25e26be3b2e20f4cae8bfc))
+
+
+
 ### [3.6.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.3...@anansi/generator-js@3.6.4) (2021-05-03)
 
 

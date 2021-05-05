@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.7](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.6...@anansi/cli@0.2.7) (2021-05-05)
+
+
+### 💅 Enhancement
+
+* Gracefully handle no IDE ([#301](https://github.com/ntucker/anansi/issues/301)) ([743d675](https://github.com/ntucker/anansi/commit/743d6759399a4c8a2622a3d3c3fecf3ce1aa2815))
+
+
+### 🐛 Bug Fix
+
+* mem-fs, mem-fs-editor needed for 'yo' package ([19a56cb](https://github.com/ntucker/anansi/commit/19a56cbb3d25dddb2519e61cd5d2bbf698dbd636))
+
+
+### 📝 Documentation
+
+* Add yarn install for now until npx can be used for fallback ([6696e16](https://github.com/ntucker/anansi/commit/6696e16385ab7709dbdbc943feb8fa1c9502c8f1))
+
+
+
 ### [0.2.6](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.5...@anansi/cli@0.2.6) (2021-05-03)
 
 
