@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.9...@anansi/babel-preset@2.5.10) (2021-05-05)
+
+
+### 🐛 Bug Fix
+
+* peerDeps ([da1a5a5](https://github.com/ntucker/anansi/commit/da1a5a50c8fbc0f578c3d01b36d89f79cebee3c3))
+
+
+
 ### [2.5.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.8...@anansi/babel-preset@2.5.9) (2021-05-05)
 
 
