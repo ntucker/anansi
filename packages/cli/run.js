@@ -37,10 +37,21 @@ program
       if (!fs.existsSync(readme)) {
         process.exit(2);
       }
-      console.log('\nProject setup complete! Opening editor now...');
-      await execa('"${VISUAL:-code}"', [cwd, readme], {
-        shell: true,
-      });
+      let editor = true;
+      try {
+        await execa('which', ['"${VISUAL:-code}"'], { shell: true });
+      } catch (e) {
+        console.error(
+          'No visual editor found...skipping editor launch.\n(Set $VISUAL env variable to automatically launch editor upon new project setup)',
+        );
+        editor = false;
+      }
+      if (editor) {
+        console.log('\nProject setup complete! Opening editor now...');
+        await execa('"${VISUAL:-code}"', [cwd, readme], {
+          shell: true,
+        });
+      }
     } catch (error) {
       console.error(error.message);
       process.exit(2);
