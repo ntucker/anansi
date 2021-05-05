@@ -51,6 +51,8 @@
   "dependencies": {
     "@anansi/generator-js": "^3.6.4",
     "execa": "^5.0.0",
+    "mem-fs": "^2.1.0",
+    "mem-fs-editor": "^9.0.0",
     "yo": "^4.1.0"
   },
   "jest": {
