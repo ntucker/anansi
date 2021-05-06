@@ -1853,6 +1853,7 @@
 
 "@lerna/conventional-commits@4.0.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
+  uid "7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#7ecf8c762aa9cfd2aeb504683ace8b12d5b3717f"
   dependencies:
     "@lerna/validation-error" "^3.13"
@@ -6987,10 +6988,10 @@ core-js-pure@^3.0.0, core-js-pure@^3.8.2:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.10.0.tgz#dab9d6b141779b622b40567e7a536d2276646c15"
   integrity sha512-CC582enhrFZStO4F8lGI7QL3SYx7/AIRc+IdSi3btrQGrVsTawo5K/crmKbRrQ+MOMhNX4v+PATn0k2NN6wI7A==
 
-core-js@^3.0.4, core-js@^3.1.4, core-js@^3.11.2, core-js@^3.6.5, core-js@^3.8.2:
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.11.2.tgz#af087a43373fc6e72942917c4a4c3de43ed574d6"
-  integrity sha512-3tfrrO1JpJSYGKnd9LKTBPqgUES/UYiCzMKeqwR1+jF16q4kD1BY2NvqkfuzXwQ6+CIWm55V9cjD7PQd+hijdw==
+core-js@^3.0.4, core-js@^3.1.4, core-js@^3.11.3, core-js@^3.6.5, core-js@^3.8.2:
+  version "3.11.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.11.3.tgz#2835b1f4d10f6d0400bf820cfe6fe64ad067dd3f"
+  integrity sha512-DFEW9BllWw781Op5KdYGtXfj3s9Cmykzt16bY6elaVuqXHCUwF/5pv0H3IJ7/I3BGjK7OeU+GrjD1ChCkBJPuA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
