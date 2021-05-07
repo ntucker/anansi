@@ -50,6 +50,9 @@
   },
   "resolutions": {
     "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
+    "normalize-package-data": "3.0.2",
+    "read-package-json": "3.0.1",
+    "get-pkg-repo": "4.1.2",
     "@types/webpack": "^5.0.0",
     "immer": "^8.0.1",
     "webpack": "^5.35.0",
