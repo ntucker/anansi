@@ -46,6 +46,8 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   configuring() {
+    this.composeWith(require.resolve('../license'), { defaultLicense: 'BSD' });
+
     const repository = `${this.config.get('githubDomain')}/${this.config.get(
       'githubOrg',
     )}/${this.config.get('appName')}`;
