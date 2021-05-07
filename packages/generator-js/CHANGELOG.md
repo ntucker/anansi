@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.0...@anansi/generator-js@4.0.1) (2021-05-07)
+
+
+### 💅 Enhancement
+
+* Defaults for name and email ([4247518](https://github.com/ntucker/anansi/commit/4247518347cd154bad0bccb18d99bb7a6125cd73))
+
+
+
 ## [4.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.6...@anansi/generator-js@4.0.0) (2021-05-07)
 
 
