@@ -30,9 +30,9 @@
     "@anansi/polyfill": "^1.0.48",
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@babel/runtime": "^7.14.0",
-    "@linaria/core": "^3.0.0-beta.3",
-    "@linaria/react": "^3.0.0-beta.3",
-    "@linaria/shaker": "^3.0.0-beta.3",
+    "@linaria/core": "^3.0.0-beta.4",
+    "@linaria/react": "^3.0.0-beta.4",
+    "@linaria/shaker": "^3.0.0-beta.4",
     "classnames": "^2.2.6",
     "core-js": "^3.12.0",
     "redbox-react": "^1.6.0"
