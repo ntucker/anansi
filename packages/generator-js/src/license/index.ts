@@ -117,8 +117,8 @@ module.exports = class GeneratorLicense extends Generator {
     return this.prompt(prompts).then(props => {
       this.props = Object.assign(
         {
-          name: this.options.name,
-          email: this.options.email,
+          name: this.options.name || this.gitc.user.name,
+          email: this.options.email || this.gitc.user.email,
           website: this.options.website,
           license: this.options.license,
         },
