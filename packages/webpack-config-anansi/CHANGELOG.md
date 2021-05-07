@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.7.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.4...@anansi/webpack-config@6.7.5) (2021-05-07)
+
+
+### 🐛 Bug Fix
+
+* Need polyfills that are included by babel ([471d4ad](https://github.com/ntucker/anansi/commit/471d4ada97f652df5ce5f7886dafd8fedb4b901a))
+
+
+
 ### [6.7.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.3...@anansi/webpack-config@6.7.4) (2021-05-07)
 
 
