@@ -84,7 +84,7 @@ module.exports = class GeneratorLicense extends Generator {
 
   prompting() {
     const prompts = [
-      {
+      /*{
         name: 'name',
         message: "What's your name:",
         default: this.options.name || this.gitc.user.name,
@@ -101,7 +101,7 @@ module.exports = class GeneratorLicense extends Generator {
         message: 'Your website (optional):',
         default: this.options.website,
         when: this.options.website === undefined,
-      },
+      },*/
       {
         type: 'list',
         name: 'license',
