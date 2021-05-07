@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.7.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.3...@anansi/webpack-config@6.7.4) (2021-05-07)
+
+
+### 📦 Package
+
+* Bump linaria ([e94a42f](https://github.com/ntucker/anansi/commit/e94a42f981db01ea7a1c06399b3d38d22371707b))
+* bump postcss from 8.2.13 to 8.2.14 ([#305](https://github.com/ntucker/anansi/issues/305)) ([bdbd239](https://github.com/ntucker/anansi/commit/bdbd239b897a2a36b01d2c97b09e7150f2150e19))
+
+
+
 ### [6.7.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.2...@anansi/webpack-config@6.7.3) (2021-05-05)
 
 

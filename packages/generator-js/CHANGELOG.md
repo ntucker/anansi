@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.6...@anansi/generator-js@4.0.0) (2021-05-07)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Install @anansi/cli to get 'anansi' command back
+
+### 🚀 Features
+
+* Add license to generator ([#309](https://github.com/ntucker/anansi/issues/309)) ([868ef4f](https://github.com/ntucker/anansi/commit/868ef4f3896ddbbc87f263f27f16dc4749f9b6b3))
+
+
+### 💅 Enhancement
+
+* Only prompt for license ([5423f4c](https://github.com/ntucker/anansi/commit/5423f4c7cf29d0d738183d800ec8b5a5c2c4c372))
+* Remove CLI from generator package ([16c5757](https://github.com/ntucker/anansi/commit/16c5757d645d5516604e9ce981f84ce017364208))
+
+
+
 ### [3.6.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@3.6.5...@anansi/generator-js@3.6.6) (2021-05-05)
 
 **Note:** Version bump only for package @anansi/generator-js

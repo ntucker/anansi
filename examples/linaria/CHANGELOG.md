@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.41](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.40...anansi-example-linaria@2.3.41) (2021-05-07)
+
+
+### 📦 Package
+
+* bump core-js from 3.11.2 to 3.12.0 ([#306](https://github.com/ntucker/anansi/issues/306)) ([b43e91a](https://github.com/ntucker/anansi/commit/b43e91a32bf6a6fdac3a43d489892c18e641f890))
+* Bump linaria ([e94a42f](https://github.com/ntucker/anansi/commit/e94a42f981db01ea7a1c06399b3d38d22371707b))
+
+
+
 ### [2.3.40](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.39...anansi-example-linaria@2.3.40) (2021-05-05)
 
 **Note:** Version bump only for package anansi-example-linaria

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.24](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.23...anansi-example-typescript@6.2.24) (2021-05-07)
+
+
+### 📦 Package
+
+* bump core-js from 3.11.2 to 3.12.0 ([#306](https://github.com/ntucker/anansi/issues/306)) ([b43e91a](https://github.com/ntucker/anansi/commit/b43e91a32bf6a6fdac3a43d489892c18e641f890))
+
+
+
 ### [6.2.23](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.22...anansi-example-typescript@6.2.23) (2021-05-05)
 
 **Note:** Version bump only for package anansi-example-typescript
