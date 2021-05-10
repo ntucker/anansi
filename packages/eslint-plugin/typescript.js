@@ -7,7 +7,7 @@ module.exports = {
       settings: {
         'import/resolver': {
           typescript: {},
-        }
+        },
       },
       rules: {
         'react/prop-types': 'off',

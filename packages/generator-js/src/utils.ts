@@ -58,7 +58,7 @@ interface PKG {
 }
 
 export function InstallPeersMixin<
-  Class extends new (...args: any[]) => Generator
+  Class extends new (...args: any[]) => Generator,
 >(Cls: Class) {
   return class extends Cls {
     addPeers(

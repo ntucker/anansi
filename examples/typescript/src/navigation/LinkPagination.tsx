@@ -4,12 +4,10 @@ import { Pagination } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { History } from 'history';
 
-const handleChange = (history: History<any>) => (
-  page: number,
-  pageSize?: number,
-) => {
-  history.push(history.location.pathname + `?page=${page}`);
-};
+const handleChange =
+  (history: History<any>) => (page: number, pageSize?: number) => {
+    history.push(history.location.pathname + `?page=${page}`);
+  };
 
 interface PageProps extends RouteComponentProps {
   link: string;

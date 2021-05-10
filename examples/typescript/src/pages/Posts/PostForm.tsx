@@ -1,6 +1,5 @@
 import { Input, Button, Form } from 'antd';
 import { useMemo } from 'react';
-
 import { PostResource } from 'data/resources';
 
 import useForm from './useForm';
@@ -26,10 +25,10 @@ export default function PostForm({ onSubmit, initialValues }: FormProps) {
     initialValues,
   );
 
-  const onFinish = useMemo(() => handleSubmit(onSubmit), [
-    handleSubmit,
-    onSubmit,
-  ]);
+  const onFinish = useMemo(
+    () => handleSubmit(onSubmit),
+    [handleSubmit, onSubmit],
+  );
 
   return (
     <Form onFinish={onFinish} noValidate autoComplete="off" {...formItemLayout}>
