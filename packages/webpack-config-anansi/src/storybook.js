@@ -20,9 +20,13 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       plugin =>
         // defer to storybook's version in this case
         // TODO: try to simply copy configuration and reuse our HtmlWebpackPlugin
-        !['HtmlWebpackPlugin', 'ErrorOverlayPlugin', 'StatsPlugin'].includes(
-          plugin.constructor.name,
-        ),
+        ![
+          'HtmlWebpackPlugin',
+          'ErrorOverlayPlugin',
+          'StatsPlugin',
+          // storybook puts .cache in node_modules so this prevents infinite loop
+          'WatchMissingNodeModulesPlugin',
+        ].includes(plugin.constructor.name),
     );
 
     // included rules:
