@@ -13,10 +13,10 @@ Created by [@melissafzhang](https://github.com/melissafzhang) and [@ntucker](htt
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and @anansi/generator-js using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/); if not [nvm](https://github.com/nvm-sh/nvm) is a great way to do so).
+It's recommended to use [@anansi/cli](https://www.npmjs.com/package/@anansi/cli) to use this generator.
 
 ```bash
-npm install -g yo @anansi/generator-js
+npm install -g @anansi/cli yarn
 ```
 
 Then generate your new project:
