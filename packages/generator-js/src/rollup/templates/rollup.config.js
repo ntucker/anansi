@@ -8,8 +8,9 @@ import replace from 'rollup-plugin-replace';
 
 import pkg from './package.json';
 
-const dependencies = Object.keys(pkg.dependencies)
-  .concat(Object.keys(pkg.peerDependencies || {}))
+const dependencies = Object.keys(pkg.dependencies).concat(
+  Object.keys(pkg.peerDependencies || {}),
+);
 
 const extensions = ['.js', '.ts', '.tsx', '.mjs', '.json', '.node'];
 process.env.NODE_ENV = 'production';

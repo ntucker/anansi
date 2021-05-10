@@ -42,9 +42,7 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest',
   },
   testRegex: '((\\.|/)(test|spec))\\.tsx?$',
-  coveragePathIgnorePatterns: [
-    'node_modules',
-  ],
+  coveragePathIgnorePatterns: ['node_modules'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   moduleNameMapper: {
     ...pathsToModuleNameMapper(options.paths || [], {

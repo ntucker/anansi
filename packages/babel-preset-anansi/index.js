@@ -294,8 +294,8 @@ function buildPreset(api, options = {}) {
   ];
   if (options.typing === 'typescript') {
     // using plugin so it can be placed before class transforms
-    const transformTypeScript = require('@babel/plugin-transform-typescript')
-      .default;
+    const transformTypeScript =
+      require('@babel/plugin-transform-typescript').default;
     const pluginOptions = isTSX => ({
       isTSX,
       allowDeclareFields: true,
