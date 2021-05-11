@@ -35,7 +35,7 @@
     "@anansi/polyfill": "^1.0.50",
     "@babel/runtime": "^7.14.0",
     "@rest-hooks/rest": "^2.1.1",
-    "antd": "^4.15.4",
+    "antd": "^4.15.5",
     "classnames": "^2.2.6",
     "core-js": "^3.12.1",
     "lodash": "^4.17.15",
