@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.2...@anansi/eslint-plugin@0.11.3) (2021-05-11)
+
+
+### 📦 Package
+
+* bump prettier from 2.2.1 to 2.3.0 ([#314](https://github.com/ntucker/anansi/issues/314)) ([431d113](https://github.com/ntucker/anansi/commit/431d113fca3318b21970447819ccb0bb1cc61121))
+
+
+
 ### [0.11.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.1...@anansi/eslint-plugin@0.11.2) (2021-05-05)
 
 

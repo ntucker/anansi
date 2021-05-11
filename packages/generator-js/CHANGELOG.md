@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.1...@anansi/generator-js@4.0.2) (2021-05-11)
+
+
+### 📦 Package
+
+* bump prettier from 2.2.1 to 2.3.0 ([#314](https://github.com/ntucker/anansi/issues/314)) ([431d113](https://github.com/ntucker/anansi/commit/431d113fca3318b21970447819ccb0bb1cc61121))
+
+
+### 📝 Documentation
+
+* Reference @anansi/cli for usage ([0c54f1a](https://github.com/ntucker/anansi/commit/0c54f1a7e1780c159c7dc2000ba6b35668c445ce))
+
+
+
 ### [4.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.0...@anansi/generator-js@4.0.1) (2021-05-07)
 
 

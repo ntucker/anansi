@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.7.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.5...@anansi/webpack-config@6.7.6) (2021-05-11)
+
+
+### 💅 Enhancement
+
+* Watch ignore map files ([1e0346a](https://github.com/ntucker/anansi/commit/1e0346ad97b9d2c7ada3c2659418c3641ebc562a))
+
+
+### 🐛 Bug Fix
+
+* Infinite loop storybook devmode ([50dc295](https://github.com/ntucker/anansi/commit/50dc295f2c350f90b7ce4ba9eb7481b6d5ec7cf7))
+* Storybook build infinite loop ([16d3cf5](https://github.com/ntucker/anansi/commit/16d3cf506641d8a5b65215a0c1c834111ee5a177))
+
+
+### 📦 Package
+
+* bump core-js from 3.12.0 to 3.12.1 ([#312](https://github.com/ntucker/anansi/issues/312)) ([e8172f2](https://github.com/ntucker/anansi/commit/e8172f2e092dd8b2be1d816461b89b7b3b3c099a))
+* bump node-sass from 5.0.0 to 6.0.0 ([#316](https://github.com/ntucker/anansi/issues/316)) ([5f18626](https://github.com/ntucker/anansi/commit/5f186261b81b0a117d2436e3b40d5a4876e3531a))
+* bump prettier from 2.2.1 to 2.3.0 ([#314](https://github.com/ntucker/anansi/issues/314)) ([431d113](https://github.com/ntucker/anansi/commit/431d113fca3318b21970447819ccb0bb1cc61121))
+* postcss, thread-loader ([463cac6](https://github.com/ntucker/anansi/commit/463cac61da7173739136f35dd99699aaf6e93eb8))
+* sass-loader 11.1 ([f299276](https://github.com/ntucker/anansi/commit/f29927653c5db371069fe04c615a1751ac5d61d7))
+
+
+
 ### [6.7.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.4...@anansi/webpack-config@6.7.5) (2021-05-07)
 
 
