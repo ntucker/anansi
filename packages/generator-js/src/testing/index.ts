@@ -31,13 +31,6 @@ class TestingGenerator extends BetterGenerator {
       this.destinationPath('jest.config.js'),
       this.config.getAll(),
     );
-    this.fs.copyTpl(
-      this.templatePath('scripts/**'),
-      this.destinationRoot() + '/scripts',
-      this.config.getAll(),
-      {},
-      { globOptions: { dot: true } },
-    );
   }
 
   writing() {
@@ -55,18 +48,11 @@ class TestingGenerator extends BetterGenerator {
       this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
     const pkgJson = {
       devDependencies: {
+        '@anansi/jest-preset': 'latest',
         jest: 'latest',
         '@types/jest': 'latest',
-        'babel-jest': 'latest',
-        'ts-jest': 'latest',
-        'core-js': 'latest',
         'cross-env': 'latest',
         'react-test-renderer': reactVersion,
-      },
-      dependencies: {
-        '@babel/runtime': 'latest',
-        'rest-hooks': 'latest',
-        '@rest-hooks/rest': 'latest',
       },
     };
 

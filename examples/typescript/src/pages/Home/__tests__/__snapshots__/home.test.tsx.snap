@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="main"
+>
+  <h3>
+    Hello 
+    <img
+      src="SvgrURL"
+      style={
+        Object {
+          "width": "1em",
+        }
+      }
+    />
+     
+    <div
+      style={
+        Object {
+          "width": "1em",
+        }
+      }
+    >
+      [Mocked SVG]
+    </div>
+    World 
+    <a
+      href="https://true.io"
+    >
+      True IO
+    </a>
+  </h3>
+  <p
+    className="mountainTop"
+  >
+    Ok again 
+    <img
+      src="FileURL"
+    />
+     
+    /hi/bob/test.txt
+     
+    https://api.github.com/repos/issues
+     
+  </p>
+  <p
+    className="silly"
+  >
+    $text-color: 
+    textColor
+  </p>
+  <p>
+    <img
+      src="SvgrURL"
+    />
+  </p>
+  <code>
+    &lt;html&gt;
+  &lt;body&gt;&lt;h1&gt;My HTML Works&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+  </code>
+</div>
+`;
