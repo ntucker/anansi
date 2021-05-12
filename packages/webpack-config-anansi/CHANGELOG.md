@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.7.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.6...@anansi/webpack-config@6.7.7) (2021-05-12)
+
+**Note:** Version bump only for package @anansi/webpack-config
+
+
+
+
+
 ### [6.7.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.5...@anansi/webpack-config@6.7.6) (2021-05-11)
 
 

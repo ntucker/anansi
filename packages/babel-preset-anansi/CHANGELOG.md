@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.13](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.12...@anansi/babel-preset@2.5.13) (2021-05-12)
+
+
+### 🐛 Bug Fix
+
+* Don't use hot reloading in node ([c92ed53](https://github.com/ntucker/anansi/commit/c92ed530fb46532b06751ae4dd257080d05f75b9))
+
+
+
 ### [2.5.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.11...@anansi/babel-preset@2.5.12) (2021-05-11)
 
 
