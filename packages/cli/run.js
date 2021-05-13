@@ -8,6 +8,7 @@ const program = new Command();
 
 program
   .command('hatch <projectName>')
+  .alias('init')
   .description('creates a new anansi project', {
     projectName: 'Package name for the project',
   })
