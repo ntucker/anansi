@@ -11,6 +11,9 @@
       "eslint --fix"
     ]
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "release": "lerna publish",
     "build": "lerna run build --stream",
