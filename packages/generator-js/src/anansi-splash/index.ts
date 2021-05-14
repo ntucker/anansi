@@ -16,6 +16,9 @@ module.exports = class extends BetterGenerator {
       {},
       { globOptions: { dot: true } },
     );
+    if (!this.config.get('testing')) {
+      this.fs.delete('src/__tests__');
+    }
     if (this.config.get('storybook')) {
       this.fs.copyTpl(
         this.templatePath('stories/**'),
