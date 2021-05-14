@@ -42,7 +42,8 @@
     "sdk",
     "scss",
     "css modules",
-    "storybook"
+    "storybook",
+    "jest"
   ],
   "engines": {
     "node": ">= 10.13.0",
