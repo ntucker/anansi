@@ -9,21 +9,9 @@ import 'style/main.scss';
 
 export const decorators = [
   (Story) => (
-<% if (spa) { %>
-  <RootProvider>
-<% } else { %>
-  <CacheProvider>
-    <Suspense fallback={'loading'}>
-      <NetworkErrorBoundary>
-<% } %>
+<% if (spa) { %><RootProvider><% } else { %><CacheProvider><Suspense fallback={'loading'}><NetworkErrorBoundary><% } %>
         <Story/>
-<% if (spa) { %>
-  </RootProvider>
-<% } else { %>
-      </NetworkErrorBoundary>
-    </Suspense>
-  </CacheProvider>
-<% } %>
+<% if (spa) { %></RootProvider><% } else { %></NetworkErrorBoundary></Suspense></CacheProvider><% } %>
   )
 ];
 
