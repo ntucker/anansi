@@ -18,10 +18,6 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
       this.templatePath('package.json.tpl'),
       this.destinationPath('package.json'),
     );
-    this.fs.extendJSONTpl(
-      this.templatePath('tsconfig.json'),
-      this.destinationPath('tsconfig.json'),
-    );
     this.fs.copyTpl(
       this.templatePath('.storybook/.babelrc.js'),
       this.destinationPath('.storybook/.babelrc.js'),
