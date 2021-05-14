@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
+    "outDir": "./<%= libPath %>",
     "baseUrl": "./<%= rootPath %>",
     "target": "esnext",
     "module": "esnext",
@@ -15,5 +15,5 @@
     "emitDecoratorMetadata": true
   },
   "include": ["<%= rootPath %>"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "<%= libPath %>", "<%= assetPath %>"]
 }
