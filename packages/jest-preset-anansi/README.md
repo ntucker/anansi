@@ -1,7 +1,7 @@
 # 🕷 Anansi Jest Preset
 [![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
-[![npm downloads](https://img.shields.io/npm/dm/@anansi/jest-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/webpack-config)
-[![npm version](https://img.shields.io/npm/v/@anansi/jest-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/webpack-config)
+[![npm downloads](https://img.shields.io/npm/dm/@anansi/jest-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/jest-preset)
+[![npm version](https://img.shields.io/npm/v/@anansi/jest-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/jest-preset)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 > Testing should just work
