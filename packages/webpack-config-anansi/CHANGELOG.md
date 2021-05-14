@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.7...@anansi/webpack-config@6.8.0) (2021-05-14)
+
+
+### 🚀 Features
+
+* Add @anansi/jest-preset ([#337](https://github.com/ntucker/anansi/issues/337)) ([a836ec5](https://github.com/ntucker/anansi/commit/a836ec583b61d0afe764a35de88994517d9ff444))
+
+
+### 📦 Package
+
+* bump css-minimizer-webpack-plugin from 2.0.0 to 3.0.0 ([#326](https://github.com/ntucker/anansi/issues/326)) ([1c787eb](https://github.com/ntucker/anansi/commit/1c787eb0c578572de25130166710d96cee395a37))
+* bump sass-loader from 11.1.0 to 11.1.1 ([#335](https://github.com/ntucker/anansi/issues/335)) ([0412c71](https://github.com/ntucker/anansi/commit/0412c7117fe4dc3b7d8e4aedaa568b4ebb9d275d))
+
+
+
 ### [6.7.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.6...@anansi/webpack-config@6.7.7) (2021-05-12)
 
 **Note:** Version bump only for package @anansi/webpack-config

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.27...anansi-example-typescript@6.3.0) (2021-05-14)
+
+
+### 🚀 Features
+
+* Add @anansi/jest-preset ([#337](https://github.com/ntucker/anansi/issues/337)) ([a836ec5](https://github.com/ntucker/anansi/commit/a836ec583b61d0afe764a35de88994517d9ff444))
+
+
+### 📦 Package
+
+* bump @types/lodash from 4.14.168 to 4.14.169 ([#329](https://github.com/ntucker/anansi/issues/329)) ([592bc83](https://github.com/ntucker/anansi/commit/592bc83c273339749d537e11f79c4f4d6a497206))
+
+
+
 ### [6.2.27](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.2.26...anansi-example-typescript@6.2.27) (2021-05-12)
 
 

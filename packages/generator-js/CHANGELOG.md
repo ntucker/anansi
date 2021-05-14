@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.3...@anansi/generator-js@4.1.0) (2021-05-14)
+
+
+### 🚀 Features
+
+* Add @anansi/jest-preset ([#337](https://github.com/ntucker/anansi/issues/337)) ([a836ec5](https://github.com/ntucker/anansi/commit/a836ec583b61d0afe764a35de88994517d9ff444))
+
+
+### 💅 Enhancement
+
+* Exclude build output directories from tsconfig ([75fff6f](https://github.com/ntucker/anansi/commit/75fff6f7ffbe88f21d40779d056de86b03ca5a49))
+
+
+### 🐛 Bug Fix
+
+* Don't include splash test if testing isn't enabled ([fceda40](https://github.com/ntucker/anansi/commit/fceda40ea2a62a59d99dffd0482f84757d70704b))
+* Path based on lib or app ([09fbee9](https://github.com/ntucker/anansi/commit/09fbee9f37597ef002d69ea3bfcfbad1232cc7f2))
+
+
+### 📦 Package
+
+* bump @babel/core from 7.14.0 to 7.14.2 ([#323](https://github.com/ntucker/anansi/issues/323)) ([12417b6](https://github.com/ntucker/anansi/commit/12417b6c765acfc2b1fc1c3202deaeaf72a429d8))
+* bump @types/node from 15.0.2 to 15.0.3 ([#324](https://github.com/ntucker/anansi/issues/324)) ([3900c26](https://github.com/ntucker/anansi/commit/3900c267a381044fc916155bd14f44dec2624011))
+
+
+
 ### [4.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.2...@anansi/generator-js@4.0.3) (2021-05-12)
 
 **Note:** Version bump only for package @anansi/generator-js

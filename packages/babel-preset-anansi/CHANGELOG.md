@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.14](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.13...@anansi/babel-preset@2.5.14) (2021-05-14)
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-decorators from 7.13.15 to 7.14.2 ([#333](https://github.com/ntucker/anansi/issues/333)) ([2eda5ba](https://github.com/ntucker/anansi/commit/2eda5ba577e58f9c60e63791f21acc805551e6b9))
+* bump @babel/plugin-proposal-export-namespace-from ([#328](https://github.com/ntucker/anansi/issues/328)) ([38fb342](https://github.com/ntucker/anansi/commit/38fb3423b54628fdd3f92882401772a1a8b99529))
+* bump @babel/plugin-transform-runtime from 7.13.15 to 7.14.2 ([#325](https://github.com/ntucker/anansi/issues/325)) ([e09f87b](https://github.com/ntucker/anansi/commit/e09f87ba1eed8cdcc33bbae5c01ab83512adaceb))
+* bump @babel/preset-env from 7.14.1 to 7.14.2 ([#327](https://github.com/ntucker/anansi/issues/327)) ([10a9aca](https://github.com/ntucker/anansi/commit/10a9aca90f3a0e80f38a29b93419e803e8a8eea0))
+
+
+
 ### [2.5.13](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.12...@anansi/babel-preset@2.5.13) (2021-05-12)
 
 
