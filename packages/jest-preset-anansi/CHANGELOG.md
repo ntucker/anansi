@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.0...@anansi/jest-preset@0.2.1) (2021-05-14)
+
+
+### 📝 Documentation
+
+* Fix badge links ([05987d7](https://github.com/ntucker/anansi/commit/05987d76b981095ac632a991711fc569f2689fa5))
+
+
+
 ## 0.2.0 (2021-05-14)
 
 

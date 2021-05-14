@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.0...@anansi/generator-js@4.1.1) (2021-05-14)
+
+
+### 💅 Enhancement
+
+* Minimal story setup ([c33a741](https://github.com/ntucker/anansi/commit/c33a74118b6431a2a691199cfec044fd49b87824))
+
+
+
 ## [4.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.0.3...@anansi/generator-js@4.1.0) (2021-05-14)
 
 

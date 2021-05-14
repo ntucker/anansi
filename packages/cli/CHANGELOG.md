@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.14](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.13...@anansi/cli@0.2.14) (2021-05-14)
+
+
+### 📝 Documentation
+
+* Add jest keyword ([abf7e0c](https://github.com/ntucker/anansi/commit/abf7e0c3f1d2eab499cabaa912c433b2e1aed850))
+
+
+
 ### [0.2.13](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.12...@anansi/cli@0.2.13) (2021-05-14)
 
 
