@@ -1855,7 +1855,6 @@
 
 "@lerna/conventional-commits@4.0.0", "@lerna/conventional-commits@https://github.com/ntucker/lerna-conventional-commits.git":
   version "3.16.4"
-  uid "4389120475a4f80ac8e4fbe766fa4c9644c6b1c7"
   resolved "https://github.com/ntucker/lerna-conventional-commits.git#4389120475a4f80ac8e4fbe766fa4c9644c6b1c7"
   dependencies:
     "@lerna/validation-error" "^4.0"
@@ -19579,10 +19578,10 @@ typescript@^3.2.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
 
-typescript@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript@^4.3.1-rc:
+  version "4.3.1-rc"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.1-rc.tgz#925149c8d8514e20a6bd8d4bd7f42adac67ab59c"
+  integrity sha512-L3uJ0gcntaRaKni9aV2amYB+pCDVodKe/B5+IREyvtKGsDOF7cYjchHb/B894skqkgD52ykRuWatIZMqEsHIqA==
 
 uglify-js@^3.1.4:
   version "3.13.5"
