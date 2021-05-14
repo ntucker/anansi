@@ -27,7 +27,10 @@
     "typescript",
     "css modules",
     "scss",
-    "sass"
+    "sass",
+    "svg",
+    "web-workers",
+    "babel"
   ],
   "devDependencies": {
     "@anansi/babel-preset": "^2.5.12"
