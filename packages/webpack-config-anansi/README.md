@@ -105,6 +105,23 @@ module.exports = {
 ```
 </details>
 
+### Jest (optional)
+
+```bash
+yarn add --dev jest @anansi/jest-preset
+```
+
+<details open><summary><b>/jest.config.js</b></summary>
+
+```js
+module.exports = {
+  preset: "@anansi/jest-preset"
+}
+```
+
+</details>
+
+
 #### Working with webpack 5 and storybook
 
 Storybook currently has [some issues](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) due to being a hybrid of webpack 4 and 5. This is solved by adding some 'resolutions' to your `package.json`. This will

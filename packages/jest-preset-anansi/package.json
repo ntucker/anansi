@@ -1,0 +1,59 @@
+{
+  "name": "@anansi/jest-preset",
+  "version": "0.1.0",
+  "description": "Jest Preset for Anansi",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/jest-preset-anansi#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ntucker/anansi.git",
+    "directory": "packages/jest-preset-anansi"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Nathaniel Tucker",
+    "email": "me@ntucker.me",
+    "url": "https://ntucker.true.io"
+  },
+  "files": [
+    "jest-preset.js",
+    "lib"
+  ],
+  "main": "jest-preset.js",
+  "keywords": [
+    "jest",
+    "webpack",
+    "anansi",
+    "svg",
+    "typescript",
+    "css modules",
+    "scss",
+    "sass"
+  ],
+  "devDependencies": {
+    "@anansi/babel-preset": "^2.5.12"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 4.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "pretest": "eslint --ext .ts,.tsx ./src",
+    "build:lib": "babel --root-mode upward ./src --out-dir ./lib --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/templates/**' --ignore '**/lib/**' --ignore '**/__tests__/**'",
+    "copyfiles": "copyfiles -u 1 \"src/**/lib/**/*\" \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" lib",
+    "build": "yarn run build:lib && yarn run copyfiles",
+    "build:clean": "rimraf lib",
+    "dev": "yarn run build:lib -w",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "@anansi/ts-utils": "^0.2.4",
+    "core-js": "^3.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "mitt": "^2.1.0",
+    "ts-jest": "^26.5.6",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
