@@ -1,3 +1,3 @@
 module.exports = {
-  presets: [['@anansi', { typing: 'typescript', tsConfigPath: '.' }]],
+  presets: [['@anansi', { typing: 'typescript' }]],
 };
