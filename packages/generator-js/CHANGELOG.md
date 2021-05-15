@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.1...@anansi/generator-js@4.1.2) (2021-05-15)
+
+
+### 💅 Enhancement
+
+* Formatting ([c2e07b3](https://github.com/ntucker/anansi/commit/c2e07b3332a9e8330fb14ed14c58a392eeb154ca))
+* More descriptive react mode ([84c8fee](https://github.com/ntucker/anansi/commit/84c8feebcd290aeaa59076c54703a18dc764db19))
+
+
+### 🐛 Bug Fix
+
+* React concurrent mode apis are no longer 'unstable' ([67eccce](https://github.com/ntucker/anansi/commit/67eccced3c326721661fc64ff9bf935033e39639))
+
+
+### 📦 Package
+
+* bump @types/node from 15.0.3 to 15.3.0 ([#341](https://github.com/ntucker/anansi/issues/341)) ([f1e5f5d](https://github.com/ntucker/anansi/commit/f1e5f5d8f21483a386c80b000726e538294fa920))
+
+
+
 ### [4.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.0...@anansi/generator-js@4.1.1) (2021-05-14)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.5...@anansi/eslint-plugin@0.11.6) (2021-05-15)
+
+
+### 📦 Package
+
+* bump eslint-import-resolver-webpack from 0.13.0 to 0.13.1 ([#338](https://github.com/ntucker/anansi/issues/338)) ([18dce8d](https://github.com/ntucker/anansi/commit/18dce8d77874376c33f64df4ccbd2925b822ec59))
+
+
+
 ### [0.11.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.4...@anansi/eslint-plugin@0.11.5) (2021-05-14)
 
 

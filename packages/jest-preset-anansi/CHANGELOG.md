@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.2](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.1...@anansi/jest-preset@0.2.2) (2021-05-15)
+
+
+### 📝 Documentation
+
+* Document license for worker loader ([70b0cb6](https://github.com/ntucker/anansi/commit/70b0cb646f1836a545ec911a09a8d968de54bad1))
+
+
+
 ### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.0...@anansi/jest-preset@0.2.1) (2021-05-14)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.8.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.0...@anansi/webpack-config@6.8.1) (2021-05-15)
+
+
+### 📦 Package
+
+* bump postcss-loader from 5.2.0 to 5.3.0 ([#339](https://github.com/ntucker/anansi/issues/339)) ([208d322](https://github.com/ntucker/anansi/commit/208d322e64576e2fde4f4d9873a1fbaa20cf94c7))
+
+
+### 📝 Documentation
+
+* Fix ordering of storybook instructions ([25809ca](https://github.com/ntucker/anansi/commit/25809ca78dd50074ea79dbfa3227584d367631c3))
+
+
+
 ## [6.8.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.7.7...@anansi/webpack-config@6.8.0) (2021-05-14)
 
 
