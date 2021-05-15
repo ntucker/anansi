@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.16](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.15...@anansi/cli@0.2.16) (2021-05-15)
+
+
+### 📦 Package
+
+* Explicit commander dep ([cee57bb](https://github.com/ntucker/anansi/commit/cee57bb67dc6ad4686a2b7eacccfea4b4ffa237e))
+
+
+
 ### [0.2.15](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.14...@anansi/cli@0.2.15) (2021-05-15)
 
 **Note:** Version bump only for package @anansi/cli

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.2...@anansi/generator-js@4.1.3) (2021-05-15)
+
+
+### 💅 Enhancement
+
+* Rename react option 'legacy' to 'syncrhonous' ([7791745](https://github.com/ntucker/anansi/commit/77917450981496592df3fae6089c91b862f23744))
+
+
+
 ### [4.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.1...@anansi/generator-js@4.1.2) (2021-05-15)
 
 
