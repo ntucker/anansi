@@ -24,10 +24,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
             value: 'legacy',
           },
           {
-            name: 'Blocking (experimental)',
-            value: 'blocking',
-          },
-          {
             name: 'Concurrent (experimental)',
             value: 'concurrent',
           },

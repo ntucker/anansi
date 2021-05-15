@@ -11,8 +11,6 @@ const content = (
 );
 <% if (reactMode === 'legacy') { %>
 ReactDOM.render(<StrictMode>{content}</StrictMode>, document.getElementById('react'));
-<% } else if (reactMode === 'concurrent') { %>
-ReactDOM.unstable_createRoot(document.getElementById('react')).render(content);
 <% } else { %>
-ReactDOM.unstable_createBlockingRoot(document.getElementById('react')).render(content);
+ReactDOM.createRoot(document.getElementById('react')).render(content);
 <% } %>
