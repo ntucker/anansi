@@ -20,7 +20,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         default: 'legacy',
         choices: [
           {
-            name: 'Legacy',
+            name: 'Legacy (v17.0)',
             value: 'legacy',
           },
           {
