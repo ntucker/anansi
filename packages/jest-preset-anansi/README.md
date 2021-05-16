@@ -28,7 +28,22 @@ Using this preset enables all those module types to be handled in exactly as you
 ## ENV customization
 
 Jest doesn't give much flexibility with regard to presets, so we provide some environmental variables
-to do customizations that impact multiple aspects of the configuration.
+to do customizations that impact multiple aspects of the configuration. However, this can also be done in a javascript
+jest config like so:
+
+<details><summary><b>/jest.config.js</b></summary>
+
+```js
+process.env.ANANSI_JEST_BABELCONFIG = 'babel.config.js';
+process.env.ANANSI_JEST_TSCONFIG = 'tsconfig.test.json';
+
+module.exports = {
+  preset: '@anansi/jest-preset',
+};
+```
+
+</details>
+
 
 ### ANANSI_JEST_TSCONFIG = 'tsconfig.json'
 
