@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.8.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.1...@anansi/webpack-config@6.8.2) (2021-05-18)
+
+
+### 📦 Package
+
+* bump webpack-bundle-analyzer from 4.4.1 to 4.4.2 ([#346](https://github.com/ntucker/anansi/issues/346)) ([b3270c5](https://github.com/ntucker/anansi/commit/b3270c55f53f72388cd03c6937b36c3868ff4cc0))
+
+
+
 ### [6.8.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.0...@anansi/webpack-config@6.8.1) (2021-05-15)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.2...@anansi/jest-preset@0.2.3) (2021-05-18)
+
+
+### 📝 Documentation
+
+* Add usage for env setting inside config file ([6aa0878](https://github.com/ntucker/anansi/commit/6aa08784df4f57116d61e5ffea2856c40fd342ce))
+
+
+
 ### [0.2.2](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.1...@anansi/jest-preset@0.2.2) (2021-05-15)
 
 

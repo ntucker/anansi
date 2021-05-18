@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.3...@anansi/generator-js@5.0.0) (2021-05-18)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires yo 4
+
+### 💅 Enhancement
+
+* Improve fixture pattern ([a8c3b24](https://github.com/ntucker/anansi/commit/a8c3b2463fd76191cc6428db5707fcc4eaff2cc9))
+
+
+### 📦 Package
+
+* bump @babel/core from 7.14.2 to 7.14.3 ([#347](https://github.com/ntucker/anansi/issues/347)) ([3c9de10](https://github.com/ntucker/anansi/commit/3c9de108931a61691214caad7f0d2c3f8a78c581))
+* Upgrade yeoman-generator to 5 ([#288](https://github.com/ntucker/anansi/issues/288)) ([b0f9a4f](https://github.com/ntucker/anansi/commit/b0f9a4fb96d2523e06a567c102854cb9d088deb4))
+
+
+
 ### [4.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.2...@anansi/generator-js@4.1.3) (2021-05-15)
 
 

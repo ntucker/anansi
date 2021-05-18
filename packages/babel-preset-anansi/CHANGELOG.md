@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.5.15](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.14...@anansi/babel-preset@2.5.15) (2021-05-18)
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-class-static-block ([#350](https://github.com/ntucker/anansi/issues/350)) ([a5dfe95](https://github.com/ntucker/anansi/commit/a5dfe95478faa3b77cc3dfbfd065b770a62375f9))
+* bump @babel/plugin-transform-runtime from 7.14.2 to 7.14.3 ([#351](https://github.com/ntucker/anansi/issues/351)) ([f27d8b3](https://github.com/ntucker/anansi/commit/f27d8b3f04adb648e3ab9892ac821bf0a4d39639))
+* bump @babel/plugin-transform-typescript from 7.13.0 to 7.14.3 ([#343](https://github.com/ntucker/anansi/issues/343)) ([bb37e14](https://github.com/ntucker/anansi/commit/bb37e146bce620d04642036ca093dc3240eeb4aa))
+
+
+
 ### [2.5.14](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.13...@anansi/babel-preset@2.5.14) (2021-05-14)
 
 
