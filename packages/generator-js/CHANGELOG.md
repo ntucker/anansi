@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.0...@anansi/generator-js@5.0.1) (2021-05-18)
+
+
+### 🐛 Bug Fix
+
+* Need polyfills that are included by babel ([92ec6f8](https://github.com/ntucker/anansi/commit/92ec6f8fb49d17329ee10a36b2cb70ad5d6dd615))
+
+
+
 ## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@4.1.3...@anansi/generator-js@5.0.0) (2021-05-18)
 
 
