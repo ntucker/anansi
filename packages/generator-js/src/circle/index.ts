@@ -1,8 +1,12 @@
 import { BetterGenerator, InstallPeersMixin } from '../utils';
 
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    super(args, options, features);
 
     this.option('circle-parallelism', {
       alias: 'p',

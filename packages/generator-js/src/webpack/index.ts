@@ -1,10 +1,16 @@
 import { BetterGenerator, InstallPeersMixin } from '../utils';
 
-class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
+module.exports = class WebpackGenerator extends (
+  InstallPeersMixin(BetterGenerator)
+) {
   props?: Record<string, any>;
 
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    super(args, options, features);
     this.config.set('webpack', true);
   }
 
@@ -36,9 +42,8 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
   }
 
   configuring() {
-    this.fs.extendJSONTpl(
-      this.templatePath('package.json.tpl'),
-      this.destinationPath('package.json'),
+    this.packageJson.merge(
+      this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
   }
 
@@ -80,34 +85,23 @@ class WebpackGenerator extends InstallPeersMixin(BetterGenerator) {
     }
   }
 
-  writingPkg() {
-    const pkgJson = {
-      devDependencies: {
-        webpack: 'latest',
-        'webpack-cli': 'latest',
-        'webpack-dev-server': 'latest',
-      },
-    };
+  writingDependencies() {
+    this.addDevDependencies(['webpack', 'webpack-cli', 'webpack-dev-server']);
     if (this?.props?.style === 'linaria') {
-      Object.assign(pkgJson.devDependencies, {
-        '@linaria/core': '^3.0.0-beta.2',
-        '@linaria/react': '^3.0.0-beta.2',
-        '@linaria/babel-preset': '^3.0.0-beta.2',
-        '@linaria/shaker': '^3.0.0-beta.2',
-      });
+      this.addDevDependencies([
+        '@linaria/core',
+        '@linaria/react',
+        '@linaria/babel-preset',
+        '@linaria/shaker',
+      ]);
     }
     if (this.config.get('webpack-version')) {
-      Object.assign(pkgJson.devDependencies, {
+      this.addDevDependencies({
         webpack: this.config.get('webpack-version'),
         '@anansi/webpack-config': '^5',
       });
     } else {
-      Object.assign(pkgJson.devDependencies, {
-        webpack: 'latest',
-        '@anansi/webpack-config': 'latest',
-      });
+      this.addDevDependencies(['webpack', '@anansi/webpack-config']);
     }
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
   }
-}
-export = WebpackGenerator;
+};

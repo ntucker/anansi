@@ -3,8 +3,12 @@ import { BetterGenerator, InstallPeersMixin } from '../utils';
 module.exports = class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    super(args, options, features);
     this.config.set('badges', '');
     this.config.set('spa', true);
   }
@@ -44,9 +48,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   configuring() {
-    this.fs.extendJSONTpl(
-      this.templatePath('package.json.tpl'),
-      this.destinationPath('package.json'),
+    this.packageJson.merge(
+      this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
     this.fs.extendJSONTpl(
       this.templatePath('tsconfig.json'),
@@ -81,27 +84,21 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writingPkg() {
+  writingDependencies() {
     const reactVersion =
       this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
-    const pkgJson = {
-      devDependencies: {
-        serve: 'latest',
-        'react-test-renderer': reactVersion,
-        'react-refresh': reactVersion,
-        '@types/react': 'latest',
-        '@types/react-dom': 'latest',
-        '@rest-hooks/test': 'latest',
-      },
-      dependencies: {
-        '@babel/runtime': 'latest',
-        react: reactVersion,
-        'react-dom': reactVersion,
-        'rest-hooks': 'latest',
-        '@rest-hooks/rest': 'latest',
-      },
-    };
 
-    this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
+    this.addDevDependencies([
+      'serve',
+      '@types/react',
+      '@types/react-dom',
+      '@rest-hooks/test',
+    ]);
+    this.addDevDependencies({
+      'react-test-renderer': reactVersion,
+      'react-refresh': reactVersion,
+    });
+    this.addDependencies(['@babel/runtime', 'rest-hooks', '@rest-hooks/rest']);
+    this.addDependencies({ react: reactVersion, 'react-dom': reactVersion });
   }
 };

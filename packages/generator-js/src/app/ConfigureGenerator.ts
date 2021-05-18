@@ -1,10 +1,17 @@
-import Generator from 'yeoman-generator';
-
+import { BetterGenerator } from '../utils';
 import { DEFAULT_ASSET_PATH, DEFAULT_ROOT_PATH } from '../defaults';
 
-export default class extends Generator {
-  constructor(args: string | string[], options: {}) {
-    super(args, options);
+interface Options {
+  appName: string;
+  githubDomain: string;
+  'root-path': string;
+  'build-path': string;
+  'npm-namespace': string;
+}
+
+export default class extends BetterGenerator<Options> {
+  constructor(args: string | string[], options: Options, features: Options) {
+    super(args, options, features);
 
     this.argument('appName', { type: String, required: true });
     this.option('root-path', {
@@ -43,7 +50,7 @@ export default class extends Generator {
   }
 
   async prompting() {
-    const prompts: Array<Generator.Question> = [
+    const prompts = [
       {
         type: 'list',
         name: 'projectType',
@@ -69,7 +76,7 @@ export default class extends Generator {
         default: this.config.get('githubOrg'),
         store: true,
       },
-    ];
+    ] as const;
 
     const props = await this.prompt(prompts);
 
