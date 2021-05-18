@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react/types-6-0';
 import { MockResolver } from '@rest-hooks/test';
-import { listMock } from 'resources/ExchangeRatesResource';
+import ExchangeRatesResource from 'resources/ExchangeRatesResource';
 
 import Price from './AssetPrice';
 
@@ -15,14 +15,16 @@ export default {
       },
       control: {
         type: 'select',
-        options: Object.keys(listMock[0].result.data.rates),
+        options: Object.keys(
+          ExchangeRatesResource.fixtures.list.result.data.rates,
+        ),
       },
     },
   },
 };
 
 const Template: Story<{ symbol: string }> = args => (
-  <MockResolver fixtures={listMock}>
+  <MockResolver fixtures={[ExchangeRatesResource.fixtures.list]}>
     <Price {...args} />
   </MockResolver>
 );
