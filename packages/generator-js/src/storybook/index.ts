@@ -83,5 +83,10 @@ module.exports = class WebpackGenerator extends (
       {},
       { globOptions: { dot: true } },
     );
+    this.fs.appendTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      this.config.getAll(),
+    );
   }
 };
