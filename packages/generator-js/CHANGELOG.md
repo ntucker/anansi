@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.1...@anansi/generator-js@5.0.2) (2021-05-22)
+
+
+### 🐛 Bug Fix
+
+* Queue package installs correctly ([3e6db44](https://github.com/ntucker/anansi/commit/3e6db44ea2f62f8e71f115035ed380d39d5424a6))
+
+
+### 📦 Package
+
+* bump @types/node from 15.3.0 to 15.3.1 ([#357](https://github.com/ntucker/anansi/issues/357)) ([e6284e3](https://github.com/ntucker/anansi/commit/e6284e30830397da9c1366c07222e66019ebc920))
+* bump yeoman-test from 6.0.0 to 6.1.0 ([#356](https://github.com/ntucker/anansi/issues/356)) ([de3e280](https://github.com/ntucker/anansi/commit/de3e280fd95bc6466c1465309290cb8820e21155))
+
+
+
 ### [5.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.0...@anansi/generator-js@5.0.1) (2021-05-18)
 
 

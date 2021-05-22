@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.19](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.18...@anansi/cli@0.2.19) (2021-05-22)
+
+
+### 📦 Package
+
+* bump yo from 4.1.0 to 4.2.0 ([#359](https://github.com/ntucker/anansi/issues/359)) ([0d4f779](https://github.com/ntucker/anansi/commit/0d4f77904f25ef826d6c320be20c850137bf87b2))
+
+
+
 ### [0.2.18](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.17...@anansi/cli@0.2.18) (2021-05-18)
 
 **Note:** Version bump only for package @anansi/cli

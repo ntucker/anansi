@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.8.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.2...@anansi/webpack-config@6.8.3) (2021-05-22)
+
+
+### 📦 Package
+
+* bump css-loader from 5.2.4 to 5.2.5 ([#361](https://github.com/ntucker/anansi/issues/361)) ([b395ec9](https://github.com/ntucker/anansi/commit/b395ec9334f6364876a5340163b3cafbeee330c7))
+
+
+
 ### [6.8.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.1...@anansi/webpack-config@6.8.2) (2021-05-18)
 
 
