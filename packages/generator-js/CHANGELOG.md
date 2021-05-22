@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.0...@anansi/generator-js@6.0.1) (2021-05-22)
+
+
+### 🐛 Bug Fix
+
+* Don't break with storybook not selected ([097c890](https://github.com/ntucker/anansi/commit/097c89058f3bba7e18ea2ec033eedd16426388bc))
+
+
+
 ## [6.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.4...@anansi/generator-js@6.0.0) (2021-05-22)
 
 
