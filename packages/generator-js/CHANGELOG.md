@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.4...@anansi/generator-js@6.0.0) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* More optimal vscode settings ([db29703](https://github.com/ntucker/anansi/commit/db29703b259cfa6408e4fca9174c76fdc352af9c))
+
+
+
 ### [5.0.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.3...@anansi/generator-js@5.0.4) (2021-05-22)
 
 

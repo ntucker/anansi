@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.21...@anansi/cli@1.0.0) (2021-05-22)
+
+
+### 🚀 Features
+
+* Check cli version when running command ([#367](https://github.com/ntucker/anansi/issues/367)) ([ce0193c](https://github.com/ntucker/anansi/commit/ce0193c0d5eeeb083dc228c036fb0a005fa43813))
+
+
+
 ### [0.2.21](https://github.com/ntucker/anansi/compare/@anansi/cli@0.2.20...@anansi/cli@0.2.21) (2021-05-22)
 
 **Note:** Version bump only for package @anansi/cli
