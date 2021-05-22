@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.8](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.7...@anansi/eslint-plugin@0.11.8) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Promise is defined ([0a3eb54](https://github.com/ntucker/anansi/commit/0a3eb54f9cfdebed71863f8d30e4bb44b2991e45))
+
+
+
 ### [0.11.7](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.6...@anansi/eslint-plugin@0.11.7) (2021-05-18)
 
 

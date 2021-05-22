@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.1...@anansi/generator-js@6.0.2) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Resolve react version ([06d94f7](https://github.com/ntucker/anansi/commit/06d94f75723d7880994649f4d31976d2c9968a28))
+
+
+
 ### [6.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.0...@anansi/generator-js@6.0.1) (2021-05-22)
 
 

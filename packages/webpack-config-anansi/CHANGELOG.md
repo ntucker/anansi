@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.4...@anansi/webpack-config@7.0.0) (2021-05-22)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Min node version 12
+
+### 💅 Enhancement
+
+* Enforce node version used in updated packages ([315c93d](https://github.com/ntucker/anansi/commit/315c93de95a6cf1969ac4486f16acd52b41756b6))
+
+
+### 📦 Package
+
+* clean-webpack-plugin - webpack5 compat ([1ee36e5](https://github.com/ntucker/anansi/commit/1ee36e5d4308f99f9af5c7c516a1f222c2b8d9db))
+
+
+### 📝 Documentation
+
+* Reorder advanced config ([355cefa](https://github.com/ntucker/anansi/commit/355cefa6f5f50021e2ab67cc1439fe9b1947f561))
+
+
+
 ### [6.8.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.3...@anansi/webpack-config@6.8.4) (2021-05-22)
 
 

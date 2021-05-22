@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.2](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.1...@anansi/cli@1.0.2) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Better upgrade command instructions ([b51a5a2](https://github.com/ntucker/anansi/commit/b51a5a2c850990f424deadcddf0cfdb6b80305a2))
+* Promise is defined ([0a3eb54](https://github.com/ntucker/anansi/commit/0a3eb54f9cfdebed71863f8d30e4bb44b2991e45))
+
+
+
 ### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.0...@anansi/cli@1.0.1) (2021-05-22)
 
 **Note:** Version bump only for package @anansi/cli
