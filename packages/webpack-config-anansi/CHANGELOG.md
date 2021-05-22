@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.8.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.3...@anansi/webpack-config@6.8.4) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Get rid of webpack 5 deprecation problem ([2f84d7b](https://github.com/ntucker/anansi/commit/2f84d7b87ecc1cdd75aefb5530fdb30fcfbcad33))
+
+
+### 📦 Package
+
+* bump postcss from 8.2.15 to 8.3.0 ([#362](https://github.com/ntucker/anansi/issues/362)) ([6f6667f](https://github.com/ntucker/anansi/commit/6f6667ff1e76fe450671a92b8ab5cd430113875a))
+
+
+
 ### [6.8.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.2...@anansi/webpack-config@6.8.3) (2021-05-22)
 
 

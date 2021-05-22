@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.2...@anansi/generator-js@5.0.3) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Add storybook instructions to readme ([32b5b69](https://github.com/ntucker/anansi/commit/32b5b69051be6147573f4101d87bcdcf2fe45def))
+* Resolve package peerDeps without local install ([e1c4e9c](https://github.com/ntucker/anansi/commit/e1c4e9cb9bbba8bbda1d12c36c13264f83036e16))
+* start:storybook -> storybook ([18a6259](https://github.com/ntucker/anansi/commit/18a625976abb0a8ffb1fafac794d883a9bb9d213))
+
+
+### 🐛 Bug Fix
+
+* Await addDependencies to avoid race conditions ([85da44c](https://github.com/ntucker/anansi/commit/85da44cc0d68205998436b9855ddda1105999a33))
+* Passthrough generator options ([37b08a5](https://github.com/ntucker/anansi/commit/37b08a5aa5f5134c8148e2258325cf05363177da))
+* Peerdep syntax ([9b57a0b](https://github.com/ntucker/anansi/commit/9b57a0bd60f9fa2f8fbe04da92bc6b4a0b85ba2b))
+
+
+### 📦 Package
+
+* bump @types/node from 15.3.1 to 15.6.0 ([#363](https://github.com/ntucker/anansi/issues/363)) ([fb33220](https://github.com/ntucker/anansi/commit/fb33220aa44193034b7349b4e940357ea6400d29))
+
+
+
 ### [5.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.1...@anansi/generator-js@5.0.2) (2021-05-22)
 
 

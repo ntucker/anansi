@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.5](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.4...anansi-example-typescript@6.3.5) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* start:storybook -> storybook ([18a6259](https://github.com/ntucker/anansi/commit/18a625976abb0a8ffb1fafac794d883a9bb9d213))
+
+
+### 📦 Package
+
+* bump @types/lodash from 4.14.169 to 4.14.170 ([#364](https://github.com/ntucker/anansi/issues/364)) ([3b9b441](https://github.com/ntucker/anansi/commit/3b9b4411952d6cf37b91adbbb552675da0654962))
+
+
+
 ### [6.3.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.3...anansi-example-typescript@6.3.4) (2021-05-22)
 
 **Note:** Version bump only for package anansi-example-typescript
