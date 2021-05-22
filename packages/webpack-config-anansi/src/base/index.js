@@ -1,5 +1,5 @@
 import path from 'path';
-import StatsPlugin from 'stats-webpack-plugin';
+import { StatsWriterPlugin } from 'webpack-stats-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
@@ -85,12 +85,15 @@ export default function makeBaseConfig({
       cacheDirectory: path.resolve(rootPath, '.cache/webpack'),
     },
     plugins: [
-      new StatsPlugin(manifestFilename, {
-        chunkModules: false,
-        source: false,
-        chunks: false,
-        modules: false,
-        assets: true,
+      new StatsWriterPlugin({
+        filename: manifestFilename,
+        stats: {
+          chunkModules: false,
+          source: false,
+          chunks: false,
+          modules: false,
+          assets: true,
+        },
       }),
       new MiniCssExtractPlugin({
         filename:
