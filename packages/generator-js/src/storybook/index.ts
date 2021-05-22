@@ -65,8 +65,8 @@ module.exports = class WebpackGenerator extends (
     }
   }
 
-  writingDependencies() {
-    this.addDevDependencies([
+  async writingDependencies() {
+    await this.addDevDependencies([
       '@storybook/addon-essentials',
       '@storybook/addon-links',
       '@storybook/addons',

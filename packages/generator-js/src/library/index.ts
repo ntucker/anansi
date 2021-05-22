@@ -54,8 +54,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writingDependencies() {
-    this.addDevDependencies([
+  async writingDependencies() {
+    await this.addDevDependencies([
       '@babel/cli',
       '@zerollup/ts-transform-paths',
       'ttypescript',
@@ -68,8 +68,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         !this.config.get('reactMode')
           ? 'latest'
           : 'experimental';
-      this.addDevDependencies(['@types/react', '@types/react-dom']);
-      this.addDevDependencies({
+      await this.addDevDependencies(['@types/react', '@types/react-dom']);
+      await this.addDevDependencies({
         react: reactVersion,
         'react-dom': reactVersion,
       });

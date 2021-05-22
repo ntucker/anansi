@@ -94,13 +94,13 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   async configuringLinterPackages() {
-    this.addPeers(
+    await this.addPeers(
       '@anansi/eslint-plugin',
       ['typescript', 'babel-plugin-root-import', 'webpack'],
       'devDependencies' as const,
     );
 
-    this.addDevDependencies([
+    await this.addDevDependencies([
       '@babel/core',
       '@anansi/babel-preset',
       '@anansi/eslint-plugin',

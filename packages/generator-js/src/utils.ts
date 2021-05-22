@@ -109,7 +109,7 @@ export function InstallPeersMixin<
   Class extends new (...args: any[]) => Generator,
 >(Cls: Class) {
   return class extends Cls {
-    addPeers(
+    async addPeers(
       pkgName: string,
       exclude: string[] = [],
       deptype: 'dependencies' | 'devDependencies' = 'dependencies',
@@ -126,7 +126,7 @@ export function InstallPeersMixin<
         ),
       );
       const funcKey = `add${capitalize(deptype)}` as const;
-      this[funcKey](peers);
+      await this[funcKey](peers);
     }
   };
 }

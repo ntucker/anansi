@@ -12,8 +12,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writingDependencies() {
-    this.addDevDependencies([
+  async writingDependencies() {
+    await this.addDevDependencies([
       'rollup',
       'rollup-plugin-babel',
       'rollup-plugin-commonjs',
