@@ -54,21 +54,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writing() {
-    this.fs.copyTpl(
-      this.templatePath('src/**'),
-      this.destinationPath(this.config.get('rootPath')),
-      this.config.getAll(),
-      {},
-      { globOptions: { dot: true } },
-    );
-    this.fs.copyTpl(
-      this.templatePath('README.md'),
-      this.destinationPath('README.md'),
-      this.config.getAll(),
-    );
-  }
-
   writingDependencies() {
     this.addDevDependencies([
       '@babel/cli',
@@ -97,5 +82,20 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         },
       });
     }
+  }
+
+  writing() {
+    this.fs.copyTpl(
+      this.templatePath('src/**'),
+      this.destinationPath(this.config.get('rootPath')),
+      this.config.getAll(),
+      {},
+      { globOptions: { dot: true } },
+    );
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      this.config.getAll(),
+    );
   }
 };

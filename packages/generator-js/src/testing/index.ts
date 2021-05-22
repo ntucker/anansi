@@ -36,16 +36,6 @@ module.exports = class TestingGenerator extends BetterGenerator {
     );
   }
 
-  writing() {
-    this.fs.copyTpl(
-      this.templatePath('src/**'),
-      this.destinationPath(this.config.get('rootPath')),
-      this.config.getAll(),
-      {},
-      { globOptions: { dot: true } },
-    );
-  }
-
   writingDependencies() {
     const reactVersion =
       this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
@@ -54,10 +44,19 @@ module.exports = class TestingGenerator extends BetterGenerator {
       'jest',
       '@types/jest',
       'cross-env',
-      'react-test-renderer',
     ]);
     this.addDevDependencies({
       'react-test-renderer': reactVersion,
     });
+  }
+
+  writing() {
+    this.fs.copyTpl(
+      this.templatePath('src/**'),
+      this.destinationPath(this.config.get('rootPath')),
+      this.config.getAll(),
+      {},
+      { globOptions: { dot: true } },
+    );
   }
 };

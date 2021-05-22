@@ -47,6 +47,26 @@ module.exports = class WebpackGenerator extends (
     );
   }
 
+  writingDependencies() {
+    this.addDevDependencies(['webpack-cli', 'webpack-dev-server']);
+    if (this?.props?.style === 'linaria') {
+      this.addDevDependencies([
+        '@linaria/core',
+        '@linaria/react',
+        '@linaria/babel-preset',
+        '@linaria/shaker',
+      ]);
+    }
+    if (this.config.get('webpack-version')) {
+      this.addDevDependencies({
+        webpack: this.config.get('webpack-version'),
+        '@anansi/webpack-config': '^5',
+      });
+    } else {
+      this.addDevDependencies(['webpack', '@anansi/webpack-config']);
+    }
+  }
+
   writing() {
     if (this?.props?.style === 'sass') {
       this.fs.copyTpl(
@@ -82,26 +102,6 @@ module.exports = class WebpackGenerator extends (
         this.destinationPath('.gitignore'),
         this.config.getAll(),
       );
-    }
-  }
-
-  writingDependencies() {
-    this.addDevDependencies(['webpack', 'webpack-cli', 'webpack-dev-server']);
-    if (this?.props?.style === 'linaria') {
-      this.addDevDependencies([
-        '@linaria/core',
-        '@linaria/react',
-        '@linaria/babel-preset',
-        '@linaria/shaker',
-      ]);
-    }
-    if (this.config.get('webpack-version')) {
-      this.addDevDependencies({
-        webpack: this.config.get('webpack-version'),
-        '@anansi/webpack-config': '^5',
-      });
-    } else {
-      this.addDevDependencies(['webpack', '@anansi/webpack-config']);
     }
   }
 };

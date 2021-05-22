@@ -69,21 +69,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  writing() {
-    this.fs.copyTpl(
-      this.templatePath('src/**'),
-      this.destinationPath(this.config.get('rootPath')),
-      this.config.getAll(),
-      {},
-      { globOptions: { dot: true } },
-    );
-    this.fs.copyTpl(
-      this.templatePath('README.md'),
-      this.destinationPath('README.md'),
-      this.config.getAll(),
-    );
-  }
-
   writingDependencies() {
     const reactVersion =
       this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
@@ -98,7 +83,22 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       'react-test-renderer': reactVersion,
       'react-refresh': reactVersion,
     });
-    this.addDependencies(['@babel/runtime', 'rest-hooks', '@rest-hooks/rest']);
+    this.addDependencies(['rest-hooks', '@rest-hooks/rest']);
     this.addDependencies({ react: reactVersion, 'react-dom': reactVersion });
+  }
+
+  writing() {
+    this.fs.copyTpl(
+      this.templatePath('src/**'),
+      this.destinationPath(this.config.get('rootPath')),
+      this.config.getAll(),
+      {},
+      { globOptions: { dot: true } },
+    );
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      this.config.getAll(),
+    );
   }
 };

@@ -90,7 +90,13 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     );
   }
 
-  writingDependencies() {
+  async configuringLinterPackages() {
+    this.addPeers(
+      '@anansi/eslint-plugin',
+      ['typescript', 'babel-plugin-root-import', 'webpack'],
+      'devDependencies' as const,
+    );
+
     this.addDevDependencies([
       '@babel/core',
       '@anansi/babel-preset',
@@ -98,11 +104,5 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       '@anansi/browserslist-config',
       'typescript',
     ]);
-    this.addDependencies(['@babel/runtime']);
-    this.addPeers(
-      '@anansi/eslint-plugin',
-      ['typescript', 'babel-plugin-root-import'],
-      'devDependencies' as const,
-    );
   }
 }
