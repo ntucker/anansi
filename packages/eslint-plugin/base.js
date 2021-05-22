@@ -4,6 +4,7 @@ const config = {
   env: {
     jest: true,
     browser: true,
+    es6: true,
   },
   plugins: ['prettier', 'react-hooks', 'import', 'react'],
   rules: {

@@ -29,7 +29,6 @@ program
     }
     try {
       const cwd = options.dir || `./${projectName}`;
-      // eslint-disable-next-line no-undef
       await Promise.all([
         verifyAndPrompt(),
         execa('npx yo', ['@anansi/js', projectName], {
