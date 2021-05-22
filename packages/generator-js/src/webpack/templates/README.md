@@ -40,7 +40,7 @@ yarn build:profile
 ```bash
 yarn pkgcheck
 ```
-<% if (storybook) { %>
+<% if (typeof storybook !== 'undefined') { %>
 
 #### Run with [Storybook](https://storybook.js.org/):
 
