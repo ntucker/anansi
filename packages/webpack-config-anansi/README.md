@@ -38,6 +38,37 @@ module.exports = { options };
 module.exports = makeConfig(options);
 ```
 
+<details><summary><b>Advanced configuration /webpack.config.js</b></summary>
+
+```javascript
+const { makeConfig } = require('@anansi/webpack-config');
+
+// See #options below
+const options = {
+  basePath: 'src',
+  buildDir: 'generated_assets/',
+};
+
+module.exports = { options };
+
+const baseConfig = makeConfig(options);
+
+module.exports = (env, argv) => {
+  const config = baseConfig(env, argv);
+
+  // Config is fully available for modification
+  // Adding any custom plugins is simple
+  config.plugins.push(
+    new CspHtmlWebpackPlugin()
+  );
+
+  return config;
+}
+```
+
+</details>
+
+
 [See Options](#options) for more options to configure
 
 </details>
@@ -514,35 +545,3 @@ module.exports = {
   ],
 };
 ```
-
-### Advanced configuration
-
-<details open><summary><b>/webpack.config.js</b></summary>
-
-```javascript
-const { makeConfig } = require('@anansi/webpack-config');
-
-// See #options below
-const options = {
-  basePath: 'src',
-  buildDir: 'generated_assets/',
-};
-
-module.exports = { options };
-
-const baseConfig = makeConfig(options);
-
-module.exports = (env, argv) => {
-  const config = baseConfig(env, argv);
-
-  // Config is fully available for modification
-  // Adding any custom plugins is simple
-  config.plugins.push(
-    new CspHtmlWebpackPlugin()
-  );
-
-  return config;
-}
-```
-
-</details>
