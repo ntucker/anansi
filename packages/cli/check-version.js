@@ -14,7 +14,7 @@ exports.verify = async () => {
   } catch (error) {
     if (error.name === 'InvalidBinaryVersion') {
       return `${chalk.red(`Warning: ${name} is outdated.`)}\n${chalk.cyan(
-        "Run 'npm install -g @anansi/cli' to update",
+        "Run 'npm update -g @anansi/cli' to update",
       )}`;
     }
 
