@@ -40,3 +40,11 @@ yarn build:profile
 ```bash
 yarn pkgcheck
 ```
+<% if (storybook) { %>
+
+#### Run with [Storybook](https://storybook.js.org/):
+
+```bash
+yarn storybook
+```
+<% } %>
