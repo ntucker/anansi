@@ -52,7 +52,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "resolutions": {
-    "@lerna/conventional-commits": "https://github.com/ntucker/lerna-conventional-commits.git",
     "normalize-package-data": "3.0.2",
     "read-package-json": "3.0.1",
     "get-pkg-repo": "4.1.2",
