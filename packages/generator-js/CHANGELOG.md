@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.3...@anansi/generator-js@5.0.4) (2021-05-22)
+
+
+### 💅 Enhancement
+
+* Place storybook instructions after other webpack instructions ([1bcc57a](https://github.com/ntucker/anansi/commit/1bcc57ab388a08c53ffc66f08fb39551fedf51c5))
+
+
+### 🐛 Bug Fix
+
+* Remove extraneous console.log ([684ba24](https://github.com/ntucker/anansi/commit/684ba24931233aff1ef7e292317a653cbcce7fca))
+
+
+
 ### [5.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@5.0.2...@anansi/generator-js@5.0.3) (2021-05-22)
 
 
