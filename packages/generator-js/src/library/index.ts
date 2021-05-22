@@ -36,7 +36,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     } else if (!this.config.get('libPath')) {
       this.config.set('libPath', DEFAULT_LIB_PATH);
     }
-    this.composeWith(require.resolve('../rollup'), {});
+    this.composeWith(require.resolve('../rollup'), this.options);
   }
 
   configuring() {

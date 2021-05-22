@@ -19,8 +19,16 @@ module.exports = class GeneratorLicense extends Generator {
   private declare gitc: Record<string, any>;
   private declare props: Record<string, any>;
 
-  constructor(args: string | string[], options: Record<string, unknown>) {
-    super(args, options);
+  constructor(
+    args: string | string[],
+    options: Record<string, unknown>,
+    features: Record<string, unknown>,
+  ) {
+    // this is actually improperly typed
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    super(args, options, features);
+    this.fs = (this.env as any).fs;
 
     this.option('name', {
       type: String,

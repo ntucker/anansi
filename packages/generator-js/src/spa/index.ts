@@ -41,9 +41,9 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   initializing() {
-    this.composeWith(require.resolve('../webpack'), {});
+    this.composeWith(require.resolve('../webpack'), this.options);
     if (this.options.branded) {
-      this.composeWith(require.resolve('../anansi-splash'), {});
+      this.composeWith(require.resolve('../anansi-splash'), this.options);
     }
   }
 
@@ -84,7 +84,11 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       'react-refresh': reactVersion,
     });
     this.addDependencies(['rest-hooks', '@rest-hooks/rest']);
-    this.addDependencies({ react: reactVersion, 'react-dom': reactVersion });
+    if (reactVersion === 'latest') {
+      this.addDependencies(['react', 'react-dom']);
+    } else {
+      this.addDependencies({ react: reactVersion, 'react-dom': reactVersion });
+    }
   }
 
   writing() {

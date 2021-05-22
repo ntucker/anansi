@@ -15,7 +15,7 @@ module.exports = class WebpackGenerator extends (
   initializing() {
     // SPA will already have webpack
     if (this.options.projectType !== 'SPA') {
-      this.composeWith(require.resolve('../webpack'), {});
+      this.composeWith(require.resolve('../webpack'), this.options);
     }
   }
 
