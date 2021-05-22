@@ -38,7 +38,7 @@ module.exports = class TestingGenerator extends BetterGenerator {
 
   async writingDependencies() {
     const reactVersion =
-      this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
+      this.config.get('reactMode') === 'legacy' ? '' : 'experimental';
     await this.addDevDependencies([
       '@anansi/jest-preset',
       'jest',

@@ -66,10 +66,11 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       const reactVersion =
         this.config.get('reactMode') === 'legacy' ||
         !this.config.get('reactMode')
-          ? 'latest'
+          ? ''
           : 'experimental';
-      await this.addDevDependencies(['@types/react', '@types/react-dom']);
       await this.addDevDependencies({
+        '@types/react': '',
+        '@types/react-dom': '',
         react: reactVersion,
         'react-dom': reactVersion,
       });

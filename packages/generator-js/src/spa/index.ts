@@ -71,27 +71,27 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   async writingDependencies() {
     const reactVersion =
-      this.config.get('reactMode') === 'legacy' ? 'latest' : 'experimental';
+      // falsy is same as 'resolve latest'
+      this.config.get('reactMode') === 'legacy' ? '' : 'experimental';
 
-    await this.addDevDependencies([
-      'serve',
-      '@types/react',
-      '@types/react-dom',
-      '@rest-hooks/test',
-    ]);
-    await this.addDevDependencies({
-      'react-test-renderer': reactVersion,
-      'react-refresh': reactVersion,
-    });
-    await this.addDependencies(['rest-hooks', '@rest-hooks/rest']);
-    if (reactVersion === 'latest') {
-      await this.addDependencies(['react', 'react-dom']);
-    } else {
+    await Promise.all([
+      this.addDevDependencies([
+        'serve',
+        '@types/react',
+        '@types/react-dom',
+        '@rest-hooks/test',
+      ]),
+      await this.addDevDependencies({
+        'react-test-renderer': reactVersion,
+        'react-refresh': reactVersion,
+      }),
       await this.addDependencies({
+        'rest-hooks': '',
+        '@rest-hooks/rest': '',
         react: reactVersion,
         'react-dom': reactVersion,
-      });
-    }
+      }),
+    ]);
   }
 
   writing() {
