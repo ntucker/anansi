@@ -1,8 +1,7 @@
-import path from 'path';
 import Generator from 'yeoman-generator';
 import ejs from 'ejs';
 import execa from 'execa';
-
+import pacote from 'pacote';
 import type { Editor } from 'mem-fs-editor';
 
 interface FsEditor extends Editor {
@@ -114,14 +113,13 @@ export function InstallPeersMixin<
       exclude: string[] = [],
       deptype: 'dependencies' | 'devDependencies' = 'dependencies',
     ) {
-      let pkgDir = path.join(path.dirname(require.resolve(pkgName)));
-      let pkgJSON: PKG | null = null;
-      for (let i = 0; i < 10 && !pkgJSON; i++) {
-        pkgJSON = this.fs.readJSON(path.join(pkgDir, 'package.json')) as any;
-        pkgDir = path.join(pkgDir, '..');
+      const manifest = await pacote.manifest(pkgName);
+      if (!manifest) {
+        return undefined;
       }
+      console.log(manifest);
       const peers = Object.fromEntries(
-        Object.entries(pkgJSON?.peerDependencies ?? {}).filter(
+        Object.entries(manifest?.peerDependencies ?? {}).filter(
           ([pkg, version]) => !exclude.includes(pkg),
         ),
       );
