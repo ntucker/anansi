@@ -4,7 +4,12 @@ const execa = require('execa');
 const path = require('path');
 const { Command } = require('commander');
 
+const { verifyAndPrompt } = require('./check-version');
+const { version } = require('./package.json');
+
 const program = new Command();
+
+program.version(version);
 
 program
   .command('hatch <projectName>')
@@ -24,14 +29,18 @@ program
     }
     try {
       const cwd = options.dir || `./${projectName}`;
-      await execa('npx yo', ['@anansi/js', projectName], {
-        stdio: 'inherit',
-        shell: true,
-        cwd,
-        env: {
-          PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
-        },
-      });
+      // eslint-disable-next-line no-undef
+      await Promise.all([
+        verifyAndPrompt(),
+        execa('npx yo', ['@anansi/js', projectName], {
+          stdio: 'inherit',
+          shell: true,
+          cwd,
+          env: {
+            PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
+          },
+        }),
+      ]);
       const readme = path.join(cwd, 'README.md');
       // if user exits early this is still exit code 0, so we need to validate
       // whether the setup completed before going on to the next step
@@ -65,6 +74,8 @@ program
     features: 'one of `testing` | `storybook` | `circle` | `github-actions`',
   })
   .action(async features => {
+    await verifyAndPrompt();
+
     for (const feature of features) {
       try {
         await execa('npx yo', [`@anansi/js:${feature}`], {
