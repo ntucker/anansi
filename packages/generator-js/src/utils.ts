@@ -98,12 +98,6 @@ export class BetterGenerator<
   }
 }
 
-interface PKG {
-  peerDependencies?: Record<string, string>;
-  dependencies?: Record<string, string>;
-  devDependencies?: Record<string, string>;
-}
-
 export function InstallPeersMixin<
   Class extends new (...args: any[]) => Generator,
 >(Cls: Class) {
@@ -117,7 +111,6 @@ export function InstallPeersMixin<
       if (!manifest) {
         return undefined;
       }
-      console.log(manifest);
       const peers = Object.fromEntries(
         Object.entries(manifest?.peerDependencies ?? {}).filter(
           ([pkg, version]) => !exclude.includes(pkg),
