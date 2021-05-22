@@ -22,7 +22,8 @@
     }
   ],
   "files": [
-    "run.js"
+    "run.js",
+    "check-version.js"
   ],
   "bin": {
     "anansi": "./run.js"
@@ -51,8 +52,10 @@
   },
   "dependencies": {
     "@anansi/generator-js": "^5.0.4",
+    "bin-version-check": "^4.0.0",
     "commander": "^7.2.0",
     "execa": "^5.0.0",
+    "latest-version": "^5.1.0",
     "mem-fs": "^2.1.0",
     "mem-fs-editor": "^9.0.0",
     "yo": "^4.2.0"
