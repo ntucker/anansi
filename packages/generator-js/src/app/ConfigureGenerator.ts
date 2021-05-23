@@ -58,11 +58,11 @@ export default class extends BetterGenerator<Options> {
         default: 'SPA',
         choices: [
           {
-            name: 'Application',
+            name: 'Website',
             value: 'SPA',
           },
           {
-            name: 'Library',
+            name: 'NPM package',
             value: 'library',
           },
         ],
