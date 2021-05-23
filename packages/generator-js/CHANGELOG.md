@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.2...@anansi/generator-js@6.0.3) (2021-05-23)
+
+
+### 💅 Enhancement
+
+* More precise project type names ([ffc6209](https://github.com/ntucker/anansi/commit/ffc6209f4ddce7989cacb1da234355f3f1fe8e28))
+* Parallelize dep resolution ([96f1aaf](https://github.com/ntucker/anansi/commit/96f1aaf23174f97b925d96de46931547c5b14560))
+
+
+
 ### [6.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.1...@anansi/generator-js@6.0.2) (2021-05-22)
 
 
