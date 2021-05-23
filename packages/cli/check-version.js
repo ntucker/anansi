@@ -7,15 +7,15 @@ const { name } = require('./package.json');
 exports.description = 'version';
 
 exports.verify = async () => {
+  const version = await latestVersion(name);
   try {
-    const version = await latestVersion(name);
     const result = await binVersionCheck('anansi', `>=${version}`);
     return result;
   } catch (error) {
     if (error.name === 'InvalidBinaryVersion') {
-      return `${chalk.red(`Warning: ${name} is outdated.`)}\n${chalk.cyan(
-        "Run 'npm update -g @anansi/cli' to update",
-      )}`;
+      return `${chalk.red(
+        `Warning: ${name} is outdated. ${version} now available.`,
+      )}\n${chalk.cyan("Run 'npm update -g @anansi/cli' to update")}`;
     }
 
     console.log(error);
