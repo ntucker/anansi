@@ -2909,10 +2909,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.1.1.tgz#fe2040f7e6d70ae1d962db7aa236ca95bdf76a31"
-  integrity sha512-TAGa+VxT09fjBA7nm5kR2P+PzUk4vXvqrW23IAuUnBqlxrp0sgiTI7A6EdqECBX9SVkPH6MErM1LRI+hYb3o4w==
+"@rest-hooks/rest@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-2.1.2.tgz#9d851b23978942217d51b7db87767d3e71d39040"
+  integrity sha512-Pbm/JxkIh8AGeZp8jqn2Rni1QCILeEuelfrJg06KBeASFbcVSrqJpbK6W9ZV08kVR3/uU9xUufubzkyoxOp4qw==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
