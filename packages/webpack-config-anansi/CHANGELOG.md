@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.0...@anansi/webpack-config@7.0.1) (2021-05-25)
+
+
+### 📦 Package
+
+* Remove react-dev-utils ([#373](https://github.com/ntucker/anansi/issues/373)) ([5ad50d0](https://github.com/ntucker/anansi/commit/5ad50d0ad25ffa8446c6692b3772e4c7bdd823e9))
+
+
+
 ## [7.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@6.8.4...@anansi/webpack-config@7.0.0) (2021-05-22)
 
 

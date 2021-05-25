@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.9](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.8...@anansi/eslint-plugin@0.11.9) (2021-05-25)
+
+
+### 📦 Package
+
+* @typescript-eslint/eslint-plugin ([634c5d4](https://github.com/ntucker/anansi/commit/634c5d4427635bf0adc2c2d84a30dccc3fedda06))
+* bump @typescript-eslint/parser from 4.24.0 to 4.25.0 ([#374](https://github.com/ntucker/anansi/issues/374)) ([1ab16c9](https://github.com/ntucker/anansi/commit/1ab16c9574fa50f723169cbe4aced075dbaf9eb7))
+
+
+
 ### [0.11.8](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.7...@anansi/eslint-plugin@0.11.8) (2021-05-22)
 
 

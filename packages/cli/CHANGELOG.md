@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.3...@anansi/cli@1.0.4) (2021-05-25)
+
+
+### 💅 Enhancement
+
+* Display the latest version available ([96f7307](https://github.com/ntucker/anansi/commit/96f730733d33c8a6d13fc752a07f0c3a0d36a3be))
+
+
+### 🐛 Bug Fix
+
+* Correct node engine req ([7e46e1a](https://github.com/ntucker/anansi/commit/7e46e1aac004ae84182917041e3b81f764e550a0))
+
+
+
 ### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.2...@anansi/cli@1.0.3) (2021-05-23)
 
 **Note:** Version bump only for package @anansi/cli
