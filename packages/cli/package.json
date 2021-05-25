@@ -47,7 +47,7 @@
     "jest"
   ],
   "engines": {
-    "node": ">= 10.13.0",
+    "node": ">= 12.10.0",
     "npm": ">= 6.0.0"
   },
   "dependencies": {
