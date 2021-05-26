@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.3...@anansi/jest-preset@0.3.0) (2021-05-26)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires Jest 27
+
+### 📦 Package
+
+* bump core-js from 3.12.1 to 3.13.0 ([#376](https://github.com/ntucker/anansi/issues/376)) ([c6da6f5](https://github.com/ntucker/anansi/commit/c6da6f50f03ccb4f71cf4d67501f09bc6a541512))
+* bump ts-jest from 26.5.6 to 27.0.0 ([#380](https://github.com/ntucker/anansi/issues/380)) ([0dee1a9](https://github.com/ntucker/anansi/commit/0dee1a96d461092c3bcd99c611cb53318fb30f71))
+* Jest 27; use provided jest transforms ([da56bf0](https://github.com/ntucker/anansi/commit/da56bf09dc4448c575ffe09ae6fbc48d028bc1ff))
+
+
+
 ### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.2...@anansi/jest-preset@0.2.3) (2021-05-18)
 
 

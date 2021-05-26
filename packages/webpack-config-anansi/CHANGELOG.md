@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.1...@anansi/webpack-config@7.0.2) (2021-05-26)
+
+
+### 📦 Package
+
+* bump core-js from 3.12.1 to 3.13.0 ([#376](https://github.com/ntucker/anansi/issues/376)) ([c6da6f5](https://github.com/ntucker/anansi/commit/c6da6f50f03ccb4f71cf4d67501f09bc6a541512))
+
+
+
 ### [7.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.0...@anansi/webpack-config@7.0.1) (2021-05-25)
 
 
