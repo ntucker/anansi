@@ -32,9 +32,6 @@
     "web-workers",
     "babel"
   ],
-  "devDependencies": {
-    "@anansi/babel-preset": "^2.5.15"
-  },
   "engines": {
     "node": ">= 10.13.0",
     "npm": ">= 4.0.0"
@@ -51,12 +48,19 @@
     "dev": "yarn run build:lib -w",
     "prepare": "yarn build"
   },
+  "devDependencies": {
+    "@anansi/babel-preset": "^2.5.15"
+  },
   "dependencies": {
     "@anansi/ts-utils": "^0.2.4",
+    "babel-jest": "^27.0.1",
     "core-js": "^3.13.0",
     "identity-obj-proxy": "^3.0.0",
     "mitt": "^2.1.0",
     "ts-jest": "^27.0.0",
     "whatwg-fetch": "^3.0.0"
+  },
+  "peerDependencies": {
+    "jest": "^27.0.0"
   }
 }

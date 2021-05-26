@@ -24,9 +24,9 @@ module.exports = {
   },
   transform: {
     '^.+\\.worker.[t|j]s$': require.resolve('./transformers/worker-loader'),
-    '^.+\\.(tsx?|html)$': 'ts-jest',
+    '^.+\\.(tsx?|html)$': require.resolve('ts-jest'),
     '^.+\\.jsx?$': [
-      'babel-jest',
+      require.resolve('babel-jest'),
       BABELCONFIG === 'babel.config.js' ? { rootMode: 'upward' } : {},
     ],
   },
