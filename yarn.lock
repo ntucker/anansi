@@ -12994,10 +12994,10 @@ media-typer@0.3.0:
     normalize-path "^3.0.0"
     textextensions "^5.12.0"
 
-"mem-fs@^1.2.0 || ^2.0.0", mem-fs@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-2.1.0.tgz#d911391204898b4cb029521641782587e6f01909"
-  integrity sha512-55vFOT4rfJx/9uoWntNrfzEj9209rd26spsSvKsCVBfOPH001YS5IakfElhcyagieC4uL++Ry/XDcwvgxF4/zQ==
+"mem-fs@^1.2.0 || ^2.0.0", mem-fs@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-2.2.0.tgz#c46948d1026b83047b13d6c59441c0af0e5e913b"
+  integrity sha512-++YfPTeWZfC6CmPqKIRU7w9D8XccvPy2eoxHGrFJClQ+bE7EiZfRNtFS6Zi9Xq0rsVwETpRK2Ee0c0CnLchtyQ==
   dependencies:
     vinyl "^2.0.1"
     vinyl-file "^3.0.0"
