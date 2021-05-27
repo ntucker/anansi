@@ -4373,7 +4373,7 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@types/vinyl@*":
+"@types/vinyl@*", "@types/vinyl@^2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@types/vinyl/-/vinyl-2.0.4.tgz#9a7a8071c8d14d3a95d41ebe7135babe4ad5995a"
   integrity sha512-2o6a2ixaVI2EbwBPg1QYLGQoHK56p/8X/sGfKbFC8N6sY9lfjsMf/GprtkQkSya0D4uRiutRZ2BWj7k3JvLsAQ==
@@ -13156,11 +13156,13 @@ media-typer@0.3.0:
     normalize-path "^3.0.0"
     textextensions "^5.12.0"
 
-"mem-fs@^1.2.0 || ^2.0.0", mem-fs@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-2.2.0.tgz#c46948d1026b83047b13d6c59441c0af0e5e913b"
-  integrity sha512-++YfPTeWZfC6CmPqKIRU7w9D8XccvPy2eoxHGrFJClQ+bE7EiZfRNtFS6Zi9Xq0rsVwETpRK2Ee0c0CnLchtyQ==
+"mem-fs@^1.2.0 || ^2.0.0", mem-fs@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-2.2.1.tgz#c87bc8a53fb17971b129d4bcd59a9149fb78c5b1"
+  integrity sha512-yiAivd4xFOH/WXlUi6v/nKopBh1QLzwjFi36NK88cGt/PRXI8WeBASqY+YSjIVWvQTx3hR8zHKDBMV6hWmglNA==
   dependencies:
+    "@types/node" "^15.6.1"
+    "@types/vinyl" "^2.0.4"
     vinyl "^2.0.1"
     vinyl-file "^3.0.0"
 
