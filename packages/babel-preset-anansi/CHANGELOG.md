@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.16...@anansi/babel-preset@2.6.0) (2021-05-28)
+
+
+### 🚀 Features
+
+* NO_HOT_RELOAD to disable hotreloading ([ca8488d](https://github.com/ntucker/anansi/commit/ca8488dbec8be99b141128dd34b7796e188d72d6))
+
+
+
 ### [2.5.16](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.15...@anansi/babel-preset@2.5.16) (2021-05-26)
 
 

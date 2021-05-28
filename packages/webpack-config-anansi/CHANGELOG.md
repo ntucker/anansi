@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.4...@anansi/webpack-config@7.0.5) (2021-05-28)
+
+
+### 🐛 Bug Fix
+
+* Don't override mode behavior with NODE_ENV ([25f0429](https://github.com/ntucker/anansi/commit/25f0429d91fe7d27bb3cea7a504a4290313e8a74))
+* Only disable svgr's svgo in prod when we use our own svgo ([3fc3403](https://github.com/ntucker/anansi/commit/3fc3403a7eb8f38cc68a9cf5579b04c8616f2663))
+
+
+### 📦 Package
+
+* util patch ([9b9972d](https://github.com/ntucker/anansi/commit/9b9972d26367c6e1e5c9fcbbca33690a1eb49f04))
+
+
+
 ### [7.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.3...@anansi/webpack-config@7.0.4) (2021-05-28)
 
 
