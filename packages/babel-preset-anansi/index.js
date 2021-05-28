@@ -214,7 +214,12 @@ function buildPreset(api, options = {}) {
       break;
     case 'development':
       // hot reloading doesn't make sense when targetting node
-      if (babelNode || options.nodeTarget) break;
+      if (
+        babelNode ||
+        options.nodeTarget ||
+        process.env.NO_HOT_RELOAD === 'true'
+      )
+        break;
       try {
         if (options.hotReloader) {
           preset.plugins.push(require('react-hot-loader/babel'));
