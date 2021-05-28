@@ -71,14 +71,16 @@ export default function makeDevConfig(
   if (!config.resolve.alias) {
     config.resolve.alias = {};
   }
-  try {
-    require('react-refresh/babel');
-    const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-    config.plugins.push(new ReactRefreshWebpackPlugin({}));
-    config.devServer.hotOnly = true;
-    console.log('Fast refresh detected and enabled');
-    // eslint-disable-next-line no-empty
-  } catch (e) {}
+  if (process.env.NO_HOT_RELOAD !== 'true') {
+    try {
+      require('react-refresh/babel');
+      const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+      config.plugins.push(new ReactRefreshWebpackPlugin({}));
+      config.devServer.hotOnly = true;
+      console.log('Fast refresh detected and enabled');
+      // eslint-disable-next-line no-empty
+    } catch (e) {}
+  }
 
   const styleRules = getStyleRules({
     rootPath,
