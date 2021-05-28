@@ -115,7 +115,7 @@
     "tty-browserify": "^0.0.1",
     "url": "^0.11.0",
     "url-loader": "^4.1.1",
-    "util": "^0.12.3",
+    "util": "^0.12.4",
     "vm-browserify": "^1.1.2",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-node-externals": "^3.0.0",
