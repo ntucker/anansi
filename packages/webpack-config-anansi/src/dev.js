@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
 
+import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
 import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlugin';
 import { getStyleRules } from './base';
 
@@ -44,8 +45,6 @@ export default function makeDevConfig(
   ];
   // not for server builds
   if (!argv?.target?.includes?.('node')) {
-    // error overlay is broken in webpack 5; TODO add back when it works again
-    // config.plugins.unshift(new ErrorOverlayPlugin());
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
   config.devServer = {
@@ -75,7 +74,24 @@ export default function makeDevConfig(
     try {
       require('react-refresh/babel');
       const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-      config.plugins.push(new ReactRefreshWebpackPlugin({}));
+      config.plugins.push(
+        // these are needed by the react-dev-utils overlay
+        new webpack.EnvironmentPlugin({
+          WDS_SOCKET_HOST: '',
+          WDS_SOCKET_PATH: '',
+          WDS_SOCKET_PORT: '',
+          FAST_REFRESH: true,
+        }),
+        new ReactRefreshWebpackPlugin({
+          overlay: {
+            entry: require.resolve('react-dev-utils/webpackHotDevClient'),
+            // The expected exports are slightly different from what the overlay exports,
+            // so an interop is included here to enable feedback on module-level errors.
+            module: require.resolve('./plugins/refreshOverlayModule'),
+          },
+        }),
+        new ErrorOverlayPlugin(),
+      );
       config.devServer.hotOnly = true;
       console.log('Fast refresh detected and enabled');
       // eslint-disable-next-line no-empty
