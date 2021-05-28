@@ -32,14 +32,6 @@ export default function makeBaseConfig({
   nohash,
   argv,
 }) {
-  const babelLoader = generateBabelLoader({
-    rootPath,
-    babelRoot,
-    target: argv?.target,
-    mode,
-    babelLoaderOptions,
-  });
-
   if (linariaOptions !== false) {
     if (linariaOptions === undefined) {
       linariaOptions = {
@@ -112,7 +104,14 @@ export default function makeBaseConfig({
         {
           test: /\.worker\.(t|j)s$/,
           use: [
-            babelLoader,
+            generateBabelLoader({
+              rootPath,
+              babelRoot,
+              target: argv?.target,
+              mode,
+              babelLoaderOptions,
+              noHotReload: true,
+            }),
             {
               loader: require.resolve('worker-loader'),
               options: { inline: 'fallback' },
@@ -130,7 +129,13 @@ export default function makeBaseConfig({
           test: /\.(t|j)sx?$/,
           use: [
             require.resolve('thread-loader'),
-            babelLoader,
+            generateBabelLoader({
+              rootPath,
+              babelRoot,
+              target: argv?.target,
+              mode,
+              babelLoaderOptions,
+            }),
             ...extraJsLoaders,
           ],
           include: [

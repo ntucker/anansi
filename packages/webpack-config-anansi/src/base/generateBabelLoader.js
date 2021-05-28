@@ -12,6 +12,7 @@ export function generateBabelLoader({
   target,
   mode,
   babelLoaderOptions,
+  noHotReload,
 }) {
   const react = require(require.resolve('react', {
     paths: [rootPath],
@@ -60,6 +61,9 @@ export function generateBabelLoader({
       hasJsxRuntime,
       ...babelLoader.options.caller,
     };
+    if (noHotReload) {
+      babelLoader.options.caller.noHotReload = true;
+    }
   }
   return babelLoader;
 }
