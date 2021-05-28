@@ -91,11 +91,10 @@ export function makeConfig(options) {
       config = makeNodeConfig(config, options);
     } else {
       config.plugins.push(
-        new webpack.DefinePlugin({
-          'process.env': {
-            NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-            NODE_DEBUG: JSON.stringify(process.env.NODE_DEBUG),
-          },
+        new webpack.EnvironmentPlugin({
+          NODE_ENV: 'development',
+          NODE_DEBUG: false,
+          DEBUG: false,
         }),
       );
     }

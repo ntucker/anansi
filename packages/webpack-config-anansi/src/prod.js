@@ -7,7 +7,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
-import { extendDefaultPlugins, PrefixIdsPlugin } from 'svgo';
+import { extendDefaultPlugins } from 'svgo';
 
 import InlineChunkHtmlPlugin from './plugins/InlineChunkHtmlPlugin';
 import { getStyleRules } from './base';

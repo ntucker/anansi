@@ -11,6 +11,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         // exclude ones we configure
         ![
           'DefinePlugin',
+          'EnvironmentPlugin',
           'ReactRefreshPlugin',
           'HotModuleReplacementPlugin',
           'CaseSensitivePathsPlugin',
