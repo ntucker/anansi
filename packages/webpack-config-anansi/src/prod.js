@@ -7,7 +7,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
-import { extendDefaultPlugins } from 'svgo';
+import { extendDefaultPlugins, PrefixIdsPlugin } from 'svgo';
 
 import InlineChunkHtmlPlugin from './plugins/InlineChunkHtmlPlugin';
 import { getStyleRules } from './base';
@@ -84,6 +84,7 @@ export default function makeProdConfig(
               { name: 'removeMetadata', active: true },
               { name: 'convertColors', active: true },
               { name: 'removeViewBox', active: false },
+              { name: 'prefixIds', active: true },
             ]),
             ...svgoOptions,
           },
