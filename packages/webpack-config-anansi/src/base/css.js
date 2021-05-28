@@ -79,6 +79,9 @@ export default function getStyleRules({
           ...loader.options,
           modules: {
             exportLocalsConvention: 'camelCase',
+            ...(process.env.NODE_ENV === 'testing'
+              ? { localIdentName: '[name]__[local]' }
+              : {}),
             ...cssModulesOptions,
           },
         },
