@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.3...@anansi/webpack-config@7.0.4) (2021-05-28)
+
+
+### 💅 Enhancement
+
+* Add prefixIds svgo plugin ([9887237](https://github.com/ntucker/anansi/commit/988723779c5cf5d45a2a3b0230c5a708806080af))
+* Only override NODE_ENV if not already set ([8dafb0b](https://github.com/ntucker/anansi/commit/8dafb0b1388405f02ab45ced605c8c0cc9017e70))
+* Use EnvironmentPlugin instead of DefinePlugin ([c24b48a](https://github.com/ntucker/anansi/commit/c24b48afaea83129e5aba6aabb6b6b4e79f0b44a))
+
+
+
 ### [7.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.2...@anansi/webpack-config@7.0.3) (2021-05-28)
 
 
