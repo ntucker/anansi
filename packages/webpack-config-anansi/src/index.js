@@ -92,7 +92,6 @@ export function makeConfig(options) {
     } else {
       config.plugins.push(
         new webpack.EnvironmentPlugin({
-          NODE_ENV: 'development',
           NODE_DEBUG: false,
           DEBUG: false,
         }),
