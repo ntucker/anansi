@@ -52,6 +52,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "resolutions": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-0",
     "normalize-package-data": "3.0.2",
     "read-package-json": "3.0.1",
     "get-pkg-repo": "4.1.2",
