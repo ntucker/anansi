@@ -30,7 +30,6 @@ module.exports = {
       BABELCONFIG === 'babel.config.js' ? { rootMode: 'upward' } : {},
     ],
   },
-  testEnvironment: 'jsdom',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
   coveragePathIgnorePatterns: ['node_modules'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
