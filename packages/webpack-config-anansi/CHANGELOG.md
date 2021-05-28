@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.2...@anansi/webpack-config@7.0.3) (2021-05-28)
+
+
+### 💅 Enhancement
+
+* css classes don't have hash when testing ([e4b2eec](https://github.com/ntucker/anansi/commit/e4b2eeca7933db659a05cfd426334abdd4c981c9))
+* Run svgo in testing to add ids ([2437df7](https://github.com/ntucker/anansi/commit/2437df72ab592600befa04521b5dbb22e0e965ec))
+
+
+### 📦 Package
+
+* bump autoprefixer from 10.2.5 to 10.2.6 ([#386](https://github.com/ntucker/anansi/issues/386)) ([c315dbb](https://github.com/ntucker/anansi/commit/c315dbbceaf4e6ba45d8da4c8b6c4f030c276ac8))
+
+
+
 ### [7.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.1...@anansi/webpack-config@7.0.2) (2021-05-26)
 
 

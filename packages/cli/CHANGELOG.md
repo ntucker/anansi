@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.7](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.6...@anansi/cli@1.0.7) (2021-05-28)
+
+
+### 📦 Package
+
+* bump mem-fs from 2.2.0 to 2.2.1 ([#387](https://github.com/ntucker/anansi/issues/387)) ([457fab1](https://github.com/ntucker/anansi/commit/457fab175de76877f5f02908fb44083986acbf5e))
+
+
+
 ### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.5...@anansi/cli@1.0.6) (2021-05-26)
 
 **Note:** Version bump only for package @anansi/cli

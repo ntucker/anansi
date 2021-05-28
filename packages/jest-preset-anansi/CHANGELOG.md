@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.3.0...@anansi/jest-preset@0.4.0) (2021-05-28)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* users should set testEnvironment themselves
+
+### 💅 Enhancement
+
+* No testEnvironment ([df0ccea](https://github.com/ntucker/anansi/commit/df0ccea5c349c9c31ef410a9954e3dd3ccabb652))
+
+
+### 📦 Package
+
+* bump ts-jest from 27.0.0 to 27.0.1 ([#388](https://github.com/ntucker/anansi/issues/388)) ([5bacff8](https://github.com/ntucker/anansi/commit/5bacff83317d927d2720c917b50c6c28ee0cbcac))
+
+
+
 ## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.2.3...@anansi/jest-preset@0.3.0) (2021-05-26)
 
 

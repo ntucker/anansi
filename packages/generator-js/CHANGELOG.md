@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.1.0...@anansi/generator-js@6.1.1) (2021-05-28)
+
+
+### 💅 Enhancement
+
+* Work with latest jest preset ([a92adff](https://github.com/ntucker/anansi/commit/a92adfff602ab599e85874920c62eaccaf46c385))
+
+
+
 ## [6.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.0.5...@anansi/generator-js@6.1.0) (2021-05-26)
 
 
