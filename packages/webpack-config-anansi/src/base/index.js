@@ -157,11 +157,11 @@ export default function makeBaseConfig({
               loader: require.resolve('@svgr/webpack'),
               options: {
                 ...svgrOptions,
-                // this is handled by svgo-loader
-                // for testing let's include it as it adds ids
-                ...(svgoOptions !== false && process.env.NODE_ENV === 'testing'
-                  ? {}
-                  : { svgo: false }),
+                // for production we use svgo-loader separately
+                ...(svgoOptions === false ||
+                process.env.NODE_ENV === 'production'
+                  ? { svgo: false }
+                  : {}),
               },
             },
             {
