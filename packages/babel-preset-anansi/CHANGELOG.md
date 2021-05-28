@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.6.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.0...@anansi/babel-preset@2.6.1) (2021-05-28)
+
+
+### 💅 Enhancement
+
+* Don't hotreload workers ([50f0966](https://github.com/ntucker/anansi/commit/50f0966e13e1b4af6dec958ce53ec9798001835b))
+
+
+
 ## [2.6.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.5.16...@anansi/babel-preset@2.6.0) (2021-05-28)
 
 

@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.5...@anansi/webpack-config@7.1.0) (2021-05-28)
+
+
+### 🚀 Features
+
+* Add better error overlay ([#392](https://github.com/ntucker/anansi/issues/392)) ([b1a383c](https://github.com/ntucker/anansi/commit/b1a383c1bdac657721470db4742a3db9ce89cfb6))
+* NO_HOT_RELOAD to disable hotreloading ([7285017](https://github.com/ntucker/anansi/commit/728501730928918ab3783fd90d66b0774933cc86))
+
+
+### 💅 Enhancement
+
+* Don't hotreload workers ([50f0966](https://github.com/ntucker/anansi/commit/50f0966e13e1b4af6dec958ce53ec9798001835b))
+
+
+
 ### [7.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.4...@anansi/webpack-config@7.0.5) (2021-05-28)
 
 
