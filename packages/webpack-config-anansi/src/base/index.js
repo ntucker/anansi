@@ -26,6 +26,7 @@ export default function makeBaseConfig({
   extraJsLoaders,
   linariaOptions,
   tsconfigPathsOptions,
+  svgoOptions,
   svgrOptions,
   globalStyleDir,
   nohash,
@@ -157,7 +158,10 @@ export default function makeBaseConfig({
               options: {
                 ...svgrOptions,
                 // this is handled by svgo-loader
-                svgo: false,
+                // for testing let's include it as it adds ids
+                ...(svgoOptions !== false && process.env.NODE_ENV === 'testing'
+                  ? {}
+                  : { svgo: false }),
               },
             },
             {
