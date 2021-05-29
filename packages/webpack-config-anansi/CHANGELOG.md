@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.0...@anansi/webpack-config@7.1.1) (2021-05-29)
+
+
+### 💅 Enhancement
+
+* Disable InlineChunks until nonce is added ([1014c91](https://github.com/ntucker/anansi/commit/1014c910bbf719d414daa9d0f52ffc061fe27726))
+
+
+### 📦 Package
+
+* @pmmmwh/react-refresh-webpack-plugin 0.5 ([6d38090](https://github.com/ntucker/anansi/commit/6d38090a3b7b47ebf20261e7a05685d08739fee0))
+
+
+
 ## [7.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.0.5...@anansi/webpack-config@7.1.0) (2021-05-28)
 
 
