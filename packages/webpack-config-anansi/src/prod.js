@@ -9,7 +9,6 @@ import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
 import { extendDefaultPlugins } from 'svgo';
 
-import InlineChunkHtmlPlugin from './plugins/InlineChunkHtmlPlugin';
 import { getStyleRules } from './base';
 
 export default function makeProdConfig(
