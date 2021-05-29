@@ -49,7 +49,7 @@ export default function makeProdConfig(
         new HtmlWebpackPlugin(htmlOptions),
         // TODO: doesn't work with latest htmlplugin https://github.com/GoogleChromeLabs/critters/issues/52
         //new CrittersPlugin({}),
-        new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
+        //new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]), this is a bad idea until CSP nonce can be added
       );
       if (fontPreload) {
         if (!['preload', 'prefetch'].includes(fontPreload))
