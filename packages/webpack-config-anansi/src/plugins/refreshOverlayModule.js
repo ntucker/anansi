@@ -8,6 +8,6 @@ const {
 module.exports = {
   clearRuntimeErrors: dismissRuntimeErrors,
   handleRuntimeError: reportRuntimeError,
-  showCompilerError: reportBuildError,
-  clearCompileErrors: dismissBuildError,
+  showCompileError: reportBuildError,
+  clearCompileError: dismissBuildError,
 };

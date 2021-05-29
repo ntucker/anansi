@@ -58,7 +58,7 @@ export default function makeDevConfig(
     },
     allowedHosts: ['localhost', '127.0.0.1'],
     stats: 'minimal',
-    overlay: true,
+    overlay: false, // we have our own overlay, so ignore this
     historyApiFallback: true,
     // TODO: add proxy options
   };
@@ -84,9 +84,9 @@ export default function makeDevConfig(
         }),
         new ReactRefreshWebpackPlugin({
           overlay: {
-            entry: require.resolve('react-dev-utils/webpackHotDevClient'),
-            // The expected exports are slightly different from what the overlay exports,
-            // so an interop is included here to enable feedback on module-level errors.
+            // provides editor opening when combined with ErrorOverlayPlugin
+            entry: require.resolve('./plugins/ErrorOverlayEntry'),
+            // registers error handlers
             module: require.resolve('./plugins/refreshOverlayModule'),
           },
         }),
