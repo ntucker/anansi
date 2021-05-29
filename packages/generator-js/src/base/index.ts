@@ -16,7 +16,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
         type: 'checkbox',
         name: 'features',
         message: 'What features would you like to include?',
-        choices: ['storybook', 'testing', 'CI'],
+        choices: ['storybook', 'testing (Jest)', 'Continuous Integration'],
         default: ['testing', 'CI'],
         store: true,
       },

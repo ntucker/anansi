@@ -25,11 +25,11 @@ module.exports = class WebpackGenerator extends (
         default: 'linaria',
         choices: [
           {
-            name: 'SASS/CSS',
+            name: 'SASS/CSS modules',
             value: 'sass',
           },
           {
-            name: 'Linaria',
+            name: 'Linaria (CSS-in-JS)',
             value: 'linaria',
           },
         ],
