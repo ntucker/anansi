@@ -4,7 +4,7 @@ import variables from 'variables.scss';
 import 'code.scss';
 import sillyStyle from 'silly.module.scss';
 
-//import StaticBlock from '@standard-endpoint/github/StaticBlock';
+import StaticBlock from 'github/StaticBlock';
 import IssueResource from '@standard-endpoint/github/IssueResource';
 
 import style from './index.scss';
@@ -30,7 +30,7 @@ export default function Home() {
       </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
-        {null ?? IssueResource.urlRoot} {/*StaticBlock.a*/}
+        {null ?? IssueResource.urlRoot} {StaticBlock.a}
       </p>
       <p className={sillyStyle.silly}>$text-color: {variables.textColor}</p>
       <p>

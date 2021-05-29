@@ -45,7 +45,6 @@ function buildPreset(api, options = {}) {
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
     useBuiltIns: 'entry',
-    corejs: { version: 3, proposals: true },
     hotReloader: false,
     reactConstantElementsOptions: {},
     nodeTarget,
@@ -81,6 +80,17 @@ function buildPreset(api, options = {}) {
     );
     runtimeVersion = require('@babel/runtime/package.json').version;
   } catch (e) {}
+
+  if (!options.corejs) {
+    try {
+      const corejsVersion = require('core-js/package.json').version;
+      if (corejsVersion) {
+        options.corejs = { version: corejsVersion, proposals: true };
+      }
+    } catch (e) {
+      options.corejs = { version: 3, proposals: true };
+    }
+  }
 
   if (process.env.TS_CONFIG_PATH) {
     options.tsConfigPath = process.env.TS_CONFIG_PATH;
@@ -259,6 +269,7 @@ function buildPreset(api, options = {}) {
         bugfixes: true,
         modules,
         useBuiltIns: options.useBuiltIns,
+        shippedProposals: true,
         corejs: options.corejs,
         loose: options.loose,
         // Exclude transforms that make all code slower
@@ -284,8 +295,6 @@ function buildPreset(api, options = {}) {
   }
   const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
-    // must come before all other class plugins
-    require('@babel/plugin-proposal-class-static-block').default,
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // stage 3 but must come before flow

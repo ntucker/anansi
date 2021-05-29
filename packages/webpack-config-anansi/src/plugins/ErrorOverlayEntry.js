@@ -1,4 +1,4 @@
-/* global __react_refresh_error_overlay__, __react_refresh_socket__, __resourceQuery */
+/* global __react_refresh_socket__, __resourceQuery */
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
  *
