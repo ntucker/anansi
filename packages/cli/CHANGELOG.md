@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.12](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.11...@anansi/cli@1.0.12) (2021-05-29)
+
+
+### 💅 Enhancement
+
+* Try  first when spawning editor ([74a627e](https://github.com/ntucker/anansi/commit/74a627e107b5f14771dee3b8e9d96d1570629aed))
+
+
+
 ### [1.0.11](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.10...@anansi/cli@1.0.11) (2021-05-29)
 
 **Note:** Version bump only for package @anansi/cli

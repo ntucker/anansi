@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.3...@anansi/webpack-config@7.1.4) (2021-05-29)
+
+
+### 💅 Enhancement
+
+* Detect core-js version to support max proposals ([bf1341b](https://github.com/ntucker/anansi/commit/bf1341b748a6d75680da50a24cee1ed1981a7059))
+
+
+
 ### [7.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.2...@anansi/webpack-config@7.1.3) (2021-05-29)
 
 

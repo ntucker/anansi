@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.6.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.2...@anansi/babel-preset@2.6.3) (2021-05-29)
+
+
+### 💅 Enhancement
+
+* class-static is now included in preset-env via core-js ([595e2c2](https://github.com/ntucker/anansi/commit/595e2c276ac1451d0366094ea75804f2260e2a46))
+* Detect core-js version to support max proposals ([bf1341b](https://github.com/ntucker/anansi/commit/bf1341b748a6d75680da50a24cee1ed1981a7059))
+
+
+
 ### [2.6.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.1...@anansi/babel-preset@2.6.2) (2021-05-29)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.16](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.15...anansi-example-typescript@6.3.16) (2021-05-29)
+
+
+### 💅 Enhancement
+
+* Detect core-js version to support max proposals ([bf1341b](https://github.com/ntucker/anansi/commit/bf1341b748a6d75680da50a24cee1ed1981a7059))
+
+
+
 ### [6.3.15](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.14...anansi-example-typescript@6.3.15) (2021-05-29)
 
 **Note:** Version bump only for package anansi-example-typescript
