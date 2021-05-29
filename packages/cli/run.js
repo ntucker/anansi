@@ -46,9 +46,11 @@ program
       if (!fs.existsSync(readme)) {
         process.exit(2);
       }
-      let editor = true;
+      let editor = process.env.REACT_EDITOR || process.env.VISUAL || 'code';
       try {
-        await execa('which', ['"${VISUAL:-code}"'], { shell: true });
+        await execa('which', [`"${editor}"`], {
+          shell: true,
+        });
       } catch (e) {
         console.error(
           'No visual editor found...skipping editor launch.\n(Set $VISUAL env variable to automatically launch editor upon new project setup)',
@@ -57,8 +59,9 @@ program
       }
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
-        await execa('"${VISUAL:-code}"', [cwd, readme], {
+        await execa(`"${editor}"`, [cwd, readme], {
           shell: true,
+          stdio: 'inherit',
         });
       }
     } catch (error) {
