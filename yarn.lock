@@ -2948,12 +2948,12 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^4.1.4":
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-4.1.4.tgz#9b39471e1704cd73700fc68571cab0ed3f840bb6"
-  integrity sha512-ICiXiEnwF/P1TFoI/19sUzcYpn/NqKz+SF4qnOU6Y5cQkHC4NTQ7lNfHuM54Glca2c0sQDkm8XReRuhWqD6TYg==
+"@rest-hooks/test@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-5.0.0.tgz#9316f0e9759a748025efeb8a0330d6f665f56b5f"
+  integrity sha512-NNlCbIy+ir21TM0syMv4BXA1uHRT3+7vlUm+8WhysXmUx3A+2YGiaGNjJYXkbo4WcpUQSVfTcpRieA/mfOaMFA==
   dependencies:
-    "@testing-library/react-hooks" "~5.0.3"
+    "@testing-library/react-hooks" "~7.0.0"
 
 "@rest-hooks/use-enhanced-reducer@^1.0.7":
   version "1.0.7"
@@ -3853,16 +3853,15 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@testing-library/react-hooks@~5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-5.0.3.tgz#dd0d2048817b013b266d35ca45e3ea48a19fd87e"
-  integrity sha512-UrnnRc5II7LMH14xsYNm/WRch/67cBafmrSQcyFh0v+UUmSf1uzfB7zn5jQXSettGwOSxJwdQUN7PgkT0w22Lg==
+"@testing-library/react-hooks@~7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-7.0.0.tgz#dd6d37a7e018f147a3b9153137f10e013be8472b"
+  integrity sha512-WFBGH8DWdIGGBHt6PBtQPe2v4Kbj9vQ1sQ9qLBTmwn1PNggngint4MTE/IiWCYhPbyTW3oc/7X62DObMn/AjQQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@types/react" ">=16.9.0"
     "@types/react-dom" ">=16.9.0"
     "@types/react-test-renderer" ">=16.9.0"
-    filter-console "^0.1.1"
     react-error-boundary "^3.1.0"
 
 "@tootallnate/once@1":
@@ -9215,11 +9214,6 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
-
-filter-console@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/filter-console/-/filter-console-0.1.1.tgz#6242be28982bba7415bcc6db74a79f4a294fa67c"
-  integrity sha512-zrXoV1Uaz52DqPs+qEwNJWJFAWZpYJ47UNmpN9q4j+/EYsz85uV0DC9k8tRND5kYmoVzL0W+Y75q4Rg8sRJCdg==
 
 filter-obj@^2.0.0:
   version "2.0.2"
