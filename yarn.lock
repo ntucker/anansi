@@ -2915,29 +2915,29 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.2.1.tgz#569fe396597f4c359ee22fe48dfb08d7f88077fa"
-  integrity sha512-6SqTdp0MEumYB5qdI/+uLypzbyEAS83uUp9wlas3M0ebmbA5MhZrKWHLeEg4j31x8B5LG//bSe22kJY8nWt45w==
+"@rest-hooks/core@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.3.0.tgz#0b89fbf7472c4575c1190bbf71de7ac8cb12ef67"
+  integrity sha512-6B0mMijMjDmiUGmnGgYLh/d/etD2s+bYMxp/z/Ihn800NaIDS7INvGV4vl5iWQi48mVWhDgmKMOXFzfGdlS0RA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/endpoint" "^1.1.3"
-    "@rest-hooks/normalizr" "^7.0.1"
+    "@rest-hooks/endpoint" "^1.1.4"
+    "@rest-hooks/normalizr" "^7.0.2"
     "@rest-hooks/use-enhanced-reducer" "^1.0.7"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/endpoint@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.1.3.tgz#dc02533fd01e77dc28bac08e6d4edfd551903c2c"
-  integrity sha512-5ciXzAosoYZIyZx2u/eVnktn3O2AlP46ei70zs1FxeW1Bp2KGgoRjhwGKpRo9oG9ktBM7jjw1NUb5L98k9Q96A==
+"@rest-hooks/endpoint@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.1.4.tgz#47a3e61858791e16edc435b856c89a74cd0e4da7"
+  integrity sha512-VRbBE4i2/bH9Oh9rnCe/mN+9bnfGUuLpqFI1X8MCXGy5jJ88hwf7Cj3C4lixszI8b0MMh8Sx7r7eS/IgWUh2+g==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^7.0.1"
+    "@rest-hooks/normalizr" "^7.0.2"
 
-"@rest-hooks/normalizr@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-7.0.1.tgz#09e46a47cf270035ff2e3fa67c8b2e047e825323"
-  integrity sha512-SKh3WRrmrn7ZJemaxdNdb0gW63WozsH1PFiQLioBFW65OcDsO7U50atLyFkCJP4bwFwZORgJmjF+HIEfN8k2Hg==
+"@rest-hooks/normalizr@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-7.0.2.tgz#da42cb1abea713462b35e6a9b1e1ff4bf97f6647"
+  integrity sha512-uW1/efytncdZYzDyDTQqEiavLBVCoiraS4T2qwTks99+C9E39or1hA1PcZisjGG0Xska7ObP9IaqdevUPqvHbQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -17246,14 +17246,14 @@ responselike@1.0.2, responselike@^1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-rest-hooks@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.1.1.tgz#e8e738a7ebda580813f062770831a67b92883df3"
-  integrity sha512-PrDTUl8F9ejziO6wDBSTMsm/uWd27uIpNFY63POhbDBLTX7yYUUhBHAC1+LlLsj2yxUkutOn2XyLz9nkF/t2YQ==
+rest-hooks@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.1.2.tgz#ea46990cccc07c63a06bd1765fc261c6a172bf8e"
+  integrity sha512-TmEdyUyD2vqGp7XRzbkytLCLtYclDezzrbCo8e3SciAsYlGbVMyg4Qq2a6OrlFEX+eonaD1UhU9Fc77kqGIJvg==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.2.1"
-    "@rest-hooks/endpoint" "^1.1.3"
+    "@rest-hooks/core" "^1.3.0"
+    "@rest-hooks/endpoint" "^1.1.4"
 
 restore-cursor@^1.0.1:
   version "1.0.1"
