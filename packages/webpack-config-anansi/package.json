@@ -76,7 +76,7 @@
     "core-js": "^3.13.0",
     "crypto-browserify": "^3.12.0",
     "css-loader": "^5.2.5",
-    "css-minimizer-webpack-plugin": "^3.0.0",
+    "css-minimizer-webpack-plugin": "^3.0.1",
     "domain-browser": "^4.19.0",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "events": "^3.2.0",
