@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.4...@anansi/webpack-config@7.1.5) (2021-06-02)
+
+
+### 💅 Enhancement
+
+* Improve compatibility with node packages ([57d457a](https://github.com/ntucker/anansi/commit/57d457a4fdd4dfef9c5410a45bde9c7ac26dd43c))
+
+
+### 📦 Package
+
+* bump @pmmmwh/react-refresh-webpack-plugin ([#412](https://github.com/ntucker/anansi/issues/412)) ([1ac8350](https://github.com/ntucker/anansi/commit/1ac8350b9487a9b4828790857f9389e24b500add))
+* bump css-minimizer-webpack-plugin from 3.0.0 to 3.0.1 ([#402](https://github.com/ntucker/anansi/issues/402)) ([2d9acd3](https://github.com/ntucker/anansi/commit/2d9acd3e02b493e32b2a64ff06308bb734bc8c74))
+* bump terser-webpack-plugin from 5.1.2 to 5.1.3 ([#401](https://github.com/ntucker/anansi/issues/401)) ([c1af1ca](https://github.com/ntucker/anansi/commit/c1af1caa55712a58cbd2aedbbf78cd233a8e81b7))
+
+
+
 ### [7.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.3...@anansi/webpack-config@7.1.4) (2021-05-29)
 
 
