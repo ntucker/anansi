@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.5...@anansi/webpack-config@7.1.6) (2021-06-02)
+
+
+### 📦 Package
+
+* bump sass-loader from 11.1.1 to 12.0.0 ([#415](https://github.com/ntucker/anansi/issues/415)) ([5942114](https://github.com/ntucker/anansi/commit/59421147b92e95a17f7258cd4fc9cc220ae2c061))
+
+
+
 ### [7.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.4...@anansi/webpack-config@7.1.5) (2021-06-02)
 
 
