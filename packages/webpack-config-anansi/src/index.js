@@ -95,6 +95,10 @@ export function makeConfig(options) {
           NODE_DEBUG: false,
           DEBUG: false,
         }),
+        new webpack.ProvidePlugin({
+          Buffer: require.resolve('buffer'),
+          process: require.resolve('process/browser.js'),
+        }),
       );
     }
     if (env?.check) {
