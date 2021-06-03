@@ -39,7 +39,7 @@
   "dependencies": {
     "@anansi/polyfill": "^1.0.61",
     "@babel/runtime": "^7.14.0",
-    "@rest-hooks/rest": "^2.1.2",
+    "@rest-hooks/rest": "^2.1.3",
     "antd": "^4.16.1",
     "classnames": "^2.2.6",
     "core-js": "^3.13.0",
