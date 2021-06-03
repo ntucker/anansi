@@ -2947,10 +2947,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-5.0.0.tgz#9316f0e9759a748025efeb8a0330d6f665f56b5f"
-  integrity sha512-NNlCbIy+ir21TM0syMv4BXA1uHRT3+7vlUm+8WhysXmUx3A+2YGiaGNjJYXkbo4WcpUQSVfTcpRieA/mfOaMFA==
+"@rest-hooks/test@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-6.0.0.tgz#de41bd99081288baeacb4216600243b88991674b"
+  integrity sha512-hx0s+JC5rGKk4k3w2Pr7inAyOrqokUscj7Ys0Mqsj3x/iypsW3DUXwyq/Umpnu2DmOy6XGaBi/EUp/GnoTcgBw==
   dependencies:
     "@testing-library/react-hooks" "~7.0.0"
 
