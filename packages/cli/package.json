@@ -54,7 +54,7 @@
     "@anansi/generator-js": "^6.1.7",
     "bin-version-check": "^4.0.0",
     "commander": "^7.2.0",
-    "execa": "^5.0.1",
+    "execa": "^5.1.0",
     "latest-version": "^5.1.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.0.0",
