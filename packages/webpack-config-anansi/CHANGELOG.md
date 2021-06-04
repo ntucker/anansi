@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.6...@anansi/webpack-config@7.1.7) (2021-06-04)
+
+
+### 🐛 Bug Fix
+
+* SVGR triggers svgo for more context ([#423](https://github.com/ntucker/anansi/issues/423)) ([f18daa3](https://github.com/ntucker/anansi/commit/f18daa38e2e53bd34b7a050772bfd8e6425797e7))
+
+
+
 ### [7.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.5...@anansi/webpack-config@7.1.6) (2021-06-02)
 
 

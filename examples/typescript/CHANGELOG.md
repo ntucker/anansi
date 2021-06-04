@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.19](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.18...anansi-example-typescript@6.3.19) (2021-06-04)
+
+
+### 🐛 Bug Fix
+
+* SVGR triggers svgo for more context ([#423](https://github.com/ntucker/anansi/issues/423)) ([f18daa3](https://github.com/ntucker/anansi/commit/f18daa38e2e53bd34b7a050772bfd8e6425797e7))
+
+
+### 📦 Package
+
+* bump @rest-hooks/rest from 2.1.2 to 2.1.3 ([#421](https://github.com/ntucker/anansi/issues/421)) ([fcb897a](https://github.com/ntucker/anansi/commit/fcb897a319ab4ecb4bb9215ee4828eba7006ab59))
+* bump @rest-hooks/test from 5.0.0 to 6.0.0 ([#422](https://github.com/ntucker/anansi/issues/422)) ([4d1743d](https://github.com/ntucker/anansi/commit/4d1743d9e451cfb8d6c2c520f92b8f9a029ffba3))
+* bump rest-hooks from 5.1.2 to 5.1.3 ([#419](https://github.com/ntucker/anansi/issues/419)) ([2e778e2](https://github.com/ntucker/anansi/commit/2e778e2e7369847a5256aec380ce55b36bf8b50a))
+
+
+
 ### [6.3.18](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.17...anansi-example-typescript@6.3.18) (2021-06-02)
 
 **Note:** Version bump only for package anansi-example-typescript
