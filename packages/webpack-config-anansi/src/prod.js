@@ -7,7 +7,6 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import isWsl from 'is-wsl';
-import { extendDefaultPlugins } from 'svgo';
 
 import { getStyleRules } from './base';
 
@@ -69,24 +68,14 @@ export default function makeProdConfig(
   if (svgoOptions !== false) {
     config.module.rules.push({
       test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+      issuer: {
+        not: [/\.(j|t)sx?$/],
+      },
       enforce: 'pre',
       use: [
         {
           loader: require.resolve('svgo-loader'),
-          options: {
-            plugins: extendDefaultPlugins([
-              { name: 'removeTitle', active: false },
-              { name: 'removeComments', active: true },
-              { name: 'removeDesc', active: true },
-              { name: 'removeUselessDefs', active: true },
-              { name: 'removeDoctype', active: true },
-              { name: 'removeMetadata', active: true },
-              { name: 'convertColors', active: true },
-              { name: 'removeViewBox', active: false },
-              { name: 'prefixIds', active: true },
-            ]),
-            ...svgoOptions,
-          },
+          options: svgoOptions,
         },
       ],
     });

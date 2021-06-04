@@ -6,6 +6,9 @@ const options = {
   sassResources: [`${__dirname}/src/style/export.scss`],
   fontPreload: 'prefetch',
   linariaOptions: false,
+  svgrOptions: {
+    replaceAttrValues: { '#f00': 'currentColor', red: 'currentColor' },
+  },
 };
 
 const generateConfig = makeConfig(options);
