@@ -161,12 +161,8 @@ export default function makeBaseConfig({
             {
               loader: require.resolve('@svgr/webpack'),
               options: {
+                svgo: svgoOptions,
                 ...svgrOptions,
-                // for production we use svgo-loader separately
-                ...(svgoOptions === false ||
-                process.env.NODE_ENV === 'production'
-                  ? { svgo: false }
-                  : {}),
               },
             },
             {
