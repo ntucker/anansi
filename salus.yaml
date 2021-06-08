@@ -10,6 +10,12 @@ scanner_configs:
       - advisory_id: 1693
         changed_by: ntucker
         notes: blocked on:https://github.com/csstools/postcss-preset-env/issues/191
+      - advisory_id: 1753
+        changed_by: ntucker
+        notes: yo needs to upgrade meow https://github.com/yeoman/yo/issues/672
+      - advisory_id: 1754
+        changed_by: ntucker
+        notes: svgo updates
 active_scanners:
   - RepoNotEmpty
   - Brakeman
