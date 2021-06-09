@@ -161,7 +161,19 @@ export default function makeBaseConfig({
             {
               loader: require.resolve('@svgr/webpack'),
               options: {
-                svgo: svgoOptions,
+                svgoConfig: {
+                  plugins: [
+                    { removeTitle: false },
+                    { removeComments: true },
+                    { removeDesc: true },
+                    { removeUselessDefs: true },
+                    { removeDoctype: true },
+                    { removeMetadata: true },
+                    { convertColors: true },
+                    { removeViewBox: false },
+                    { convertShapeToPath: false },
+                  ],
+                },
                 ...svgrOptions,
               },
             },

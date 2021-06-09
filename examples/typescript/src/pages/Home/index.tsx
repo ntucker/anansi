@@ -7,6 +7,7 @@ import sillyStyle from 'silly.module.scss';
 import StaticBlock from 'github/StaticBlock';
 import IssueResource from '@standard-endpoint/github/IssueResource';
 
+import { ReactComponent as Copy } from './Copy.svg';
 import style from './index.scss';
 import plain from './plain.css';
 import Worker from './my.worker.ts';
@@ -27,6 +28,11 @@ export default function Home() {
         Hello <img src={AngleDownUrl} style={{ width: '1em' }} />{' '}
         <AngleDown style={{ width: '1em' }} />
         World <a href="https://true.io">True IO</a>
+        <span
+          style={{ width: '10px', height: '10px', display: 'inline-block' }}
+        >
+          <Copy />
+        </span>
       </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
