@@ -12,5 +12,5 @@ const content = (
 <% if (reactMode === 'legacy') { %>
 ReactDOM.render(<StrictMode>{content}</StrictMode>, document.getElementById('react'));
 <% } else { %>
-ReactDOM.createRoot(document.getElementById('react')).render(content);
+ReactDOM.createRoot(document.getElementById('react') || document.body).render(content);
 <% } %>

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["@anansi/webpack-config/types"<% if (reactMode !== 'legacy') { %>, "react-dom/experimental", "react/experimental"<% } %><% if (features.includes('testing')) {%>, "jest"<% } %>],
+    "types": ["@anansi/webpack-config/types"<% if (reactMode !== 'legacy') { %>, "react-dom/next", "react/next"<% } %><% if (features.includes('testing')) {%>, "jest"<% } %>],
     "paths": {
       "resources/*": ["resources/*"]
     },

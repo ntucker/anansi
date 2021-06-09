@@ -20,7 +20,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         type: 'list',
         name: 'reactMode',
         message:
-          'What mode would you like to run React?\nMore info: https://reactjs.org/docs/concurrent-mode-adoption.html#feature-comparison',
+          'What version of React?\nMore info: https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html',
         default: 'legacy',
         choices: [
           {
@@ -28,7 +28,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
             value: 'legacy',
           },
           {
-            name: 'Concurrent (experimental)',
+            name: 'Concurrent (v18.0 - beta)',
             value: 'concurrent',
           },
         ],
@@ -72,7 +72,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   async writingDependencies() {
     const reactVersion =
       // falsy is same as 'resolve latest'
-      this.config.get('reactMode') === 'legacy' ? '' : 'experimental';
+      this.config.get('reactMode') === 'legacy' ? '' : '^18.0.0-0';
 
     await Promise.all([
       this.addDevDependencies([
@@ -83,7 +83,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       ]),
       await this.addDevDependencies({
         'react-test-renderer': reactVersion,
-        'react-refresh': reactVersion,
+        'react-refresh':
+          this.config.get('reactMode') === 'legacy' ? '' : '^0.11.0-0',
       }),
       await this.addDependencies({
         'rest-hooks': '',
