@@ -54,6 +54,8 @@
   "resolutions": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-0",
     "normalize-package-data": "3.0.2",
+    "package-json": "^6.5.0",
+    "normalize-url": "^4",
     "read-package-json": "3.0.1",
     "get-pkg-repo": "4.1.2",
     "@types/webpack": "^5.0.0",
