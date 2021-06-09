@@ -22,9 +22,13 @@ module.exports = {
     'last 1 Edge versions',
   ],
   development: ['last 1 Chrome versions', 'last 1 Firefox versions'],
+  2018: ['since 2018'],
+  2019: ['since 2019'],
+  2020: ['since 2020'],
   test: ['current node'],
   server: ['current node'],
   node10: ['node 10'],
   node12: ['node 12'],
   node14: ['node 14'],
+  node16: ['node 16'],
 };
