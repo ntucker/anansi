@@ -26,7 +26,6 @@ export default function makeBaseConfig({
   extraJsLoaders,
   linariaOptions,
   tsconfigPathsOptions,
-  svgoOptions,
   svgrOptions,
   globalStyleDir,
   nohash,
