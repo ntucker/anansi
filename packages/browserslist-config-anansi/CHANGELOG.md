@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.2.0...@anansi/browserslist-config@1.3.0) (2021-06-09)
+
+
+### 🚀 Features
+
+* Add year-based envs ([9468a7a](https://github.com/ntucker/anansi/commit/9468a7a9ab93e47794c8abdf14c42bdde9cf8d78))
+
+
+
 ## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.1.0...@anansi/browserslist-config@1.2.0) (2021-03-01)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.15](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.14...@anansi/cli@1.0.15) (2021-06-09)
+
+
+### 📦 Package
+
+* bump execa from 5.1.0 to 5.1.1 ([#430](https://github.com/ntucker/anansi/issues/430)) ([8da9ad8](https://github.com/ntucker/anansi/commit/8da9ad88d68da4ce82c2dad5230f8f342ad6ec5d))
+
+
+
 ### [1.0.14](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.13...@anansi/cli@1.0.14) (2021-06-04)
 
 

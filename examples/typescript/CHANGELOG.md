@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.3.20](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.19...anansi-example-typescript@6.3.20) (2021-06-09)
+
+
+### 🐛 Bug Fix
+
+* Proper defaults for svgr's svgo integration ([4e3e9eb](https://github.com/ntucker/anansi/commit/4e3e9ebd8a0564c6e902ce1c9dca413e6314e3a8))
+
+
+### 📦 Package
+
+* bump antd from 4.16.1 to 4.16.2 ([#439](https://github.com/ntucker/anansi/issues/439)) ([9c4722a](https://github.com/ntucker/anansi/commit/9c4722aae647f00b329de607ea259cf7582b1770))
+* bump core-js from 3.13.1 to 3.14.0 ([#435](https://github.com/ntucker/anansi/issues/435)) ([88358a3](https://github.com/ntucker/anansi/commit/88358a3dc9208ae93842def510e9a6b8effe921d))
+* bump jest from 27.0.3 to 27.0.4 ([#425](https://github.com/ntucker/anansi/issues/425)) ([365aea2](https://github.com/ntucker/anansi/commit/365aea2188ce57295362a43438d540e7e1d35ae6))
+* bump serve from 11.3.2 to 12.0.0 ([#442](https://github.com/ntucker/anansi/issues/442)) ([fd9c4e0](https://github.com/ntucker/anansi/commit/fd9c4e03629e1f945938851ed45258d395e842c4))
+
+
+
 ### [6.3.19](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.18...anansi-example-typescript@6.3.19) (2021-06-04)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.1.8...@anansi/generator-js@6.1.9) (2021-06-09)
+
+
+### 📦 Package
+
+* bump @types/node from 15.12.0 to 15.12.1 ([#427](https://github.com/ntucker/anansi/issues/427)) ([47efd3e](https://github.com/ntucker/anansi/commit/47efd3e53b8de2d25dad6b98f5c3afb8c9095abf))
+* bump @types/node from 15.12.1 to 15.12.2 ([#445](https://github.com/ntucker/anansi/issues/445)) ([09c1b4c](https://github.com/ntucker/anansi/commit/09c1b4cb290a21f78f4bc5c192fc2526c40164fe))
+* bump @types/node from 15.9.0 to 15.12.0 ([#424](https://github.com/ntucker/anansi/issues/424)) ([55b1c4d](https://github.com/ntucker/anansi/commit/55b1c4db03fdd3a9198fd4d90aa110bf1b9dc056))
+* bump core-js from 3.13.1 to 3.14.0 ([#435](https://github.com/ntucker/anansi/issues/435)) ([88358a3](https://github.com/ntucker/anansi/commit/88358a3dc9208ae93842def510e9a6b8effe921d))
+* bump jest from 27.0.3 to 27.0.4 ([#425](https://github.com/ntucker/anansi/issues/425)) ([365aea2](https://github.com/ntucker/anansi/commit/365aea2188ce57295362a43438d540e7e1d35ae6))
+
+
+
 ### [6.1.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.1.7...@anansi/generator-js@6.1.8) (2021-06-04)
 
 

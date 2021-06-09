@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.7...@anansi/webpack-config@7.1.8) (2021-06-09)
+
+
+### 🐛 Bug Fix
+
+* Proper defaults for svgr's svgo integration ([4e3e9eb](https://github.com/ntucker/anansi/commit/4e3e9ebd8a0564c6e902ce1c9dca413e6314e3a8))
+
+
+### 📦 Package
+
+* bump @linaria/webpack-loader from 3.0.0-beta.4 to 3.0.0-beta.6 ([#441](https://github.com/ntucker/anansi/issues/441)) ([f7b7fb0](https://github.com/ntucker/anansi/commit/f7b7fb0eb4595411709743d5a8f531248a934d0b))
+* bump @pmmmwh/react-refresh-webpack-plugin ([#429](https://github.com/ntucker/anansi/issues/429)) ([8022b8e](https://github.com/ntucker/anansi/commit/8022b8e1fc920e8ec7b08eb5a10ad78bbf7311b3))
+* bump core-js from 3.13.1 to 3.14.0 ([#435](https://github.com/ntucker/anansi/issues/435)) ([88358a3](https://github.com/ntucker/anansi/commit/88358a3dc9208ae93842def510e9a6b8effe921d))
+
+
+
 ### [7.1.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.6...@anansi/webpack-config@7.1.7) (2021-06-04)
 
 
