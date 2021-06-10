@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.4...@anansi/babel-preset@2.7.0) (2021-06-10)
+
+
+### 🚀 Features
+
+* Support react 18 ([#449](https://github.com/ntucker/anansi/issues/449)) ([14ec576](https://github.com/ntucker/anansi/commit/14ec57633b76b5c5ed45dff0a716e83fe0fe49dc))
+
+
+
 ### [2.6.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.3...@anansi/babel-preset@2.6.4) (2021-06-09)
 
 

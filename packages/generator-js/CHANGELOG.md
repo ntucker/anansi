@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.1.9...@anansi/generator-js@6.2.0) (2021-06-10)
+
+
+### 🚀 Features
+
+* Support react 18 ([#449](https://github.com/ntucker/anansi/issues/449)) ([14ec576](https://github.com/ntucker/anansi/commit/14ec57633b76b5c5ed45dff0a716e83fe0fe49dc))
+
+
+
 ### [6.1.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.1.8...@anansi/generator-js@6.1.9) (2021-06-09)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.15...@anansi/cli@1.1.0) (2021-06-10)
+
+
+### 🚀 Features
+
+* Support react 18 ([#449](https://github.com/ntucker/anansi/issues/449)) ([14ec576](https://github.com/ntucker/anansi/commit/14ec57633b76b5c5ed45dff0a716e83fe0fe49dc))
+
+
+
 ### [1.0.15](https://github.com/ntucker/anansi/compare/@anansi/cli@1.0.14...@anansi/cli@1.0.15) (2021-06-09)
 
 
