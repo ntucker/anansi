@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.4.1](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.4.0...anansi-example-typescript@6.4.1) (2021-06-11)
+
+
+### 💅 Enhancement
+
+* Run example in concurrent mode ([eb6b4d9](https://github.com/ntucker/anansi/commit/eb6b4d95cc9e44063f87ab78978b9e47578d631b))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.0 to 7.14.5 ([#459](https://github.com/ntucker/anansi/issues/459)) ([7b2d6c5](https://github.com/ntucker/anansi/commit/7b2d6c5c7a60ea8349540f0f92f467b190576672))
+* bump @rest-hooks/rest from 2.1.3 to 2.1.4 ([#466](https://github.com/ntucker/anansi/issues/466)) ([c65dd86](https://github.com/ntucker/anansi/commit/c65dd860e24e500a1acfd43d872b5838c59184f0))
+* bump react-refresh ([#456](https://github.com/ntucker/anansi/issues/456)) ([0fdfea6](https://github.com/ntucker/anansi/commit/0fdfea6efd7274de6ead5b8defefa91b4f071962))
+* bump react-test-renderer ([#467](https://github.com/ntucker/anansi/issues/467)) ([1a3fe25](https://github.com/ntucker/anansi/commit/1a3fe25e28a4adfcc4a5c81e7518ba4ae50acec4))
+* bump rest-hooks from 5.1.3 to 5.1.4 ([#462](https://github.com/ntucker/anansi/issues/462)) ([cc5d259](https://github.com/ntucker/anansi/commit/cc5d259ebd9935e746e633b42ce93e3e25082c46))
+* postcss, postcss-loader, @babel/eslint-parser ([925bff7](https://github.com/ntucker/anansi/commit/925bff78022744a0d9e01bff6dbafc286d8afb2a))
+
+
+
 ## [6.4.0](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.3.20...anansi-example-typescript@6.4.0) (2021-06-10)
 
 

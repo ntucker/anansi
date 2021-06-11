@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.13](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.12...@anansi/eslint-plugin@0.11.13) (2021-06-11)
+
+
+### 📦 Package
+
+* postcss, postcss-loader, @babel/eslint-parser ([925bff7](https://github.com/ntucker/anansi/commit/925bff78022744a0d9e01bff6dbafc286d8afb2a))
+
+
+
 ### [0.11.12](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.11...@anansi/eslint-plugin@0.11.12) (2021-06-09)
 
 

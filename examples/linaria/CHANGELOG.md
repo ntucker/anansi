@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.4.1](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.4.0...anansi-example-linaria@2.4.1) (2021-06-11)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.0 to 7.14.5 ([#459](https://github.com/ntucker/anansi/issues/459)) ([7b2d6c5](https://github.com/ntucker/anansi/commit/7b2d6c5c7a60ea8349540f0f92f467b190576672))
+* bump react-refresh ([#456](https://github.com/ntucker/anansi/issues/456)) ([0fdfea6](https://github.com/ntucker/anansi/commit/0fdfea6efd7274de6ead5b8defefa91b4f071962))
+* postcss, postcss-loader, @babel/eslint-parser ([925bff7](https://github.com/ntucker/anansi/commit/925bff78022744a0d9e01bff6dbafc286d8afb2a))
+
+
+
 ## [2.4.0](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.3.64...anansi-example-linaria@2.4.0) (2021-06-10)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.0...@anansi/babel-preset@2.7.1) (2021-06-11)
+
+
+### 📦 Package
+
+* babel plugins ([07c5e98](https://github.com/ntucker/anansi/commit/07c5e98fad1b55e3684b44803af82e2f03bc366f))
+* bump @babel/plugin-proposal-decorators from 7.14.2 to 7.14.5 ([#464](https://github.com/ntucker/anansi/issues/464)) ([e9c5dcc](https://github.com/ntucker/anansi/commit/e9c5dcc8ee4dfbdcde2229b7955c608dc190a6f8))
+* bump @babel/plugin-proposal-record-and-tuple from 7.13.0 to 7.14.5 ([#460](https://github.com/ntucker/anansi/issues/460)) ([daa0620](https://github.com/ntucker/anansi/commit/daa0620285df68eb844001702fb023fb5af5d79f))
+* bump @babel/plugin-syntax-function-bind from 7.12.13 to 7.14.5 ([#452](https://github.com/ntucker/anansi/issues/452)) ([4aec31a](https://github.com/ntucker/anansi/commit/4aec31a475cbd9a01c97fea5609a44e3b2a3839e))
+* bump @babel/plugin-transform-flow-strip-types from 7.13.0 to 7.14.5 ([#457](https://github.com/ntucker/anansi/issues/457)) ([410b0dc](https://github.com/ntucker/anansi/commit/410b0dc66dcd14ea1cbd282e8ce2fde35a2aaf81))
+* bump @babel/plugin-transform-object-assign from 7.12.13 to 7.14.5 ([#455](https://github.com/ntucker/anansi/issues/455)) ([1b42324](https://github.com/ntucker/anansi/commit/1b42324b1131f5f8135e989b014863fb62623482))
+* bump @babel/plugin-transform-react-constant-elements ([#461](https://github.com/ntucker/anansi/issues/461)) ([2341583](https://github.com/ntucker/anansi/commit/2341583864733d281dedbb6151bf34df4eea6f5b))
+* bump @babel/plugin-transform-runtime from 7.14.3 to 7.14.5 ([#454](https://github.com/ntucker/anansi/issues/454)) ([66765b8](https://github.com/ntucker/anansi/commit/66765b8a94dde8ef605967736311aac4906a6449))
+* bump @babel/preset-env from 7.14.4 to 7.14.5 ([#451](https://github.com/ntucker/anansi/issues/451)) ([cb3fe71](https://github.com/ntucker/anansi/commit/cb3fe716f93befff76c5ed2c8c23670f18105da4))
+
+
+
 ## [2.7.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.6.4...@anansi/babel-preset@2.7.0) (2021-06-10)
 
 

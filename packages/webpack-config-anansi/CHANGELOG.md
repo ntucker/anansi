@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.0...@anansi/webpack-config@7.2.1) (2021-06-11)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.0 to 7.14.5 ([#459](https://github.com/ntucker/anansi/issues/459)) ([7b2d6c5](https://github.com/ntucker/anansi/commit/7b2d6c5c7a60ea8349540f0f92f467b190576672))
+* bump sass-loader from 12.0.0 to 12.1.0 ([#463](https://github.com/ntucker/anansi/issues/463)) ([562b15c](https://github.com/ntucker/anansi/commit/562b15c3bc42918f6cd4852bb04864964ea6cf29))
+* postcss, postcss-loader, @babel/eslint-parser ([925bff7](https://github.com/ntucker/anansi/commit/925bff78022744a0d9e01bff6dbafc286d8afb2a))
+
+
+
 ## [7.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.1.8...@anansi/webpack-config@7.2.0) (2021-06-10)
 
 
