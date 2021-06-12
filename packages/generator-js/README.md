@@ -1,4 +1,4 @@
-# Anansi CLI
+# Yeoman Generator powering Anansi CLI
 [![CircleCI](https://circleci.com/gh/ntucker/anansi.svg?style=shield)](https://circleci.com/gh/ntucker/anansi)
 [![npm downloads](https://img.shields.io/npm/dm/@anansi/generator-js.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/generator-js)
 [![npm version](https://img.shields.io/npm/v/@anansi/generator-js.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/generator-js)
