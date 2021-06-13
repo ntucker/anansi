@@ -2994,29 +2994,29 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.4.1.tgz#0dc890337c3ea95f98444801fe32675c49cfc888"
-  integrity sha512-DwERkv9FAJnB/GwNsruTIQvlMaWBYbCHokkXLtikodWLcMoxV7WDsNSlSXzCCqECWyPkoIaAPXfxO2lF2lV9PQ==
+"@rest-hooks/core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-1.5.0.tgz#84659467f0985812699e27cee2dd8dac7167b4d4"
+  integrity sha512-J8acdwblsPXxzwokjNo0wbGVHBBLSm+lnz4Sr8MDXwP1XY6uLUgCxIDldA5Uzven31OX0KIR1ozWiNK48HlMFA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/endpoint" "^1.1.6"
-    "@rest-hooks/normalizr" "^7.1.0"
-    "@rest-hooks/use-enhanced-reducer" "^1.0.9"
+    "@rest-hooks/endpoint" "^1.2.0"
+    "@rest-hooks/normalizr" "^7.2.0"
+    "@rest-hooks/use-enhanced-reducer" "^1.1.0"
     flux-standard-action "^2.1.1"
 
-"@rest-hooks/endpoint@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.1.6.tgz#e5d0b7fabae037470024b5c3db6db69edd076340"
-  integrity sha512-p6Gd1S8RwpkDVEX6HeLo0Zg8eeDLnvy1x3B3HO4nSLthujLiy4GOf9UnnO7UKdyVX3j83QwqpJNFshVENunnrw==
+"@rest-hooks/endpoint@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/endpoint/-/endpoint-1.2.0.tgz#5f782171956b62ad2a7336da077db7daa0147a0b"
+  integrity sha512-zphx85HFOwRShHmkNDbOEdbWuKrhwH5PWM9VMXu3IMTBkQ1/zJ5liGHBEmjzuHlOFUrZguOnBre9qgYo3rCjpQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/normalizr" "^7.1.0"
+    "@rest-hooks/normalizr" "^7.2.0"
 
-"@rest-hooks/normalizr@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-7.1.0.tgz#4b8c9ef5025c38b62af4452e1eb60135d18cd498"
-  integrity sha512-4rx9SSkpV0htF6cYiRuO0iNaUJsSBH0E49APRYqVE4EJmiFoogNiD7lNe/li/jA6HGSyTj/YP00flmdUmx9Gow==
+"@rest-hooks/normalizr@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/normalizr/-/normalizr-7.2.0.tgz#b6da3b2883894451610ba0d18adc0db8776d6639"
+  integrity sha512-bv7EEgEzrsI4HGzPETsezLCPz3H+TDqVu9o903HLjFMfntYKPjEYcN3/76IwuwIW4xuvxDCZ+u+IxfHeZAAjcA==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -3027,17 +3027,17 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-6.0.1.tgz#21e543cdb6739db520029d56e41c45d4e5da571a"
-  integrity sha512-wNFsbgvAQTTNvNqtWJUaHD4rtRwG/A5V54f1RKVxIKz+Yvckkoqe5KPzfn2ES95x4gSSaxQ//76TQ+nlXrz+pA==
+"@rest-hooks/test@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-6.1.0.tgz#33ab47288ea9bd0e4f556fe50d20c7fcba97c436"
+  integrity sha512-a2UinWFw9u5rlMseJf5kG849FBaTHf6p2MqqJVcFKLBPpDSoCvS3xvafmC7oA26ZrGYjQD3x8WMY/I6GdJjL4g==
   dependencies:
     "@testing-library/react-hooks" "~7.0.0"
 
-"@rest-hooks/use-enhanced-reducer@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.9.tgz#116864da5de1d72f9613727ec9b8e02a14546c09"
-  integrity sha512-xtP2izRYKf/xhNoOwsSUbHNOukDzDDJ9zoUUFHdnWqJoqCpYo83iO9xcVWbV7FdeEMoe+VPpzvxF6EioSa5A8w==
+"@rest-hooks/use-enhanced-reducer@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.1.0.tgz#48cffa4292e77bd49ccc83a20845f31caa46b9a5"
+  integrity sha512-FVljBFotejEzLKWolLvgT3hkfLiBAuN/cZmzRQXEqK9eVowLvWyU4eSVTrXPae6Jla7ddomEx547i/D1f8HMog==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -16442,14 +16442,14 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-dom@^18.0.0-0:
-  version "18.0.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-e6be2d531.tgz#89b1aef488a56ceac7cc0169ae02d7fbb58cbbb6"
-  integrity sha512-mMGiX/kyhxaUTRDt+Q5oIbpU6cPvO8Sp/kHz3cdNFviwVTHHF2YrnnD70BD2F1R0b7wAdfVVit9EfE+Rqt0sJA==
+react-dom@^18.0.0-alpha-01be61c12:
+  version "18.0.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-01be61c12.tgz#5ead262ba9d31c6694723d775c65c4f8173110eb"
+  integrity sha512-eu1wulGX/SBhQeA2BRGO7B2Gdprqr5CzrDGn/fEqzv4nJxIjSLMb2aSocsSVfxCt7EEH2Km3x6dezSu2phd7Dw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-alpha-e6be2d531"
+    scheduler "0.21.0-alpha-01be61c12"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -16504,10 +16504,10 @@ react-inspector@^5.1.0:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-is@18.0.0-alpha-e6be2d531:
-  version "18.0.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-e6be2d531.tgz#6ca7d440809ac4c18cac47ccd33be406681ed48d"
-  integrity sha512-HFlWb54JmpTUttOVpR3TM9sMNcphY3mVfiItlD9b1Hae16Z8d26DgRe1e0GRA+wc9Tipstk5wv/5pAck6owPdQ==
+react-is@18.0.0-alpha-01be61c12:
+  version "18.0.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-01be61c12.tgz#9abb7cac73f4c13f7c7974e68c278260f366c920"
+  integrity sha512-zqOhK0oq7jG39rkqV1R/DdWWc1jBEUoXVFr9pEJWkcc1IcJepJW5jRtO9zYx7AJwZyZt0hIUQtyasHJl0vDPZw==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -16541,10 +16541,10 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.11.0-0:
-  version "0.11.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-e6be2d531.tgz#470e56e20f9308d1e06d2c16e655d8af3e052c16"
-  integrity sha512-lVCo8AJ4j9pcNiL0GMBB53/JjhQw48ZKVaX6yAlmc6HETGProrD6B/Nfof5jtHRy6CkSnbSlVUoDs6Q4WqOebw==
+react-refresh@^0.11.0-alpha-01be61c12:
+  version "0.11.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-01be61c12.tgz#84a3625bd6e7a6fe6bb5bee13afdd374d034e21e"
+  integrity sha512-69O8SFnjIlolgMWBCXCwU7B9T7Yil2klW56M5PN1UIwYsZfe2q+GQEvdnj0V11uovETrMl7upoDgSB384CK4TQ==
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -16617,15 +16617,15 @@ react-syntax-highlighter@^13.5.3:
     prismjs "^1.21.0"
     refractor "^3.1.0"
 
-react-test-renderer@^18.0.0-0:
-  version "18.0.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-e6be2d531.tgz#0fced9e39a535dc7c649ef4298a9bcc14da4bd4f"
-  integrity sha512-4yF8sRGMMhCFZBBVC0SZ6fbEVFXleFLPmmqKvlNcjoOdcF8UqaOGa+IXS4PQ9HNU5mGCa8HDbjWAqdWdbzHsqQ==
+react-test-renderer@^18.0.0-alpha-01be61c12:
+  version "18.0.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-01be61c12.tgz#5a677585d8dfaf994a939ea3eabb6695f1773281"
+  integrity sha512-s7b5h7ufmd6cISWDKRw1nzoxKkiltYSFD5OC8PdIEBRInSjaYTU8CigPVnPaTmFpw/nSN9TWCwJpSvAha/SpAg==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-alpha-e6be2d531"
+    react-is "18.0.0-alpha-01be61c12"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-alpha-e6be2d531"
+    scheduler "0.21.0-alpha-01be61c12"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -16636,10 +16636,10 @@ react-textarea-autosize@^8.3.0:
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
 
-react@^18.0.0-0:
-  version "18.0.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-e6be2d531.tgz#c5cf6d5706f7b6411d36848b483a7937c94fc5c9"
-  integrity sha512-roZmm4MYfuGN65PiagPvhumBb3Da1FAgyj6Ti2sHwQDIxhi40PMq5V90gBSKXl7qXbaXHrtpuAtG5R+XkqpDYA==
+react@^18.0.0-alpha-01be61c12:
+  version "18.0.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-01be61c12.tgz#c543bf7d89f8f7f4e3822ee96b2266dd8331938d"
+  integrity sha512-pXuZmtfbBQ5GvKKND3pnU/a9egeeHNCA6xnB3itvoYOx3ryNe4NAsL2X9CwLNPoIKnVrgjmE6NYij0GsnLtKLA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -17218,14 +17218,14 @@ responselike@1.0.2, responselike@^1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-rest-hooks@5.1.4:
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.1.4.tgz#c3a3e82a5cbe13fe2c4b3d9582dbcd05780f7d6c"
-  integrity sha512-ghQwKkf7xqKdJoEWLJ7rdP++04gzI8VqZG4mIdmtK+ITgHN/S29A2e+GTwRimfAMt7PNiBKI/2Wxe4nL9UwNaQ==
+rest-hooks@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-5.2.0.tgz#33e9edf5b18486b1676fab8e2c22126ae896139d"
+  integrity sha512-j53zopmGiG+I8DVNkzv5EuuiCVD22Dfhr0Dt1VRDkKUT75TeItSAq4d4DBKFut0pyNUgQUTkGz8mB0kEZYezUA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^1.4.1"
-    "@rest-hooks/endpoint" "^1.1.6"
+    "@rest-hooks/core" "^1.5.0"
+    "@rest-hooks/endpoint" "^1.2.0"
 
 restore-cursor@^1.0.1:
   version "1.0.1"
@@ -17479,10 +17479,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@0.21.0-alpha-e6be2d531:
-  version "0.21.0-alpha-e6be2d531"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-e6be2d531.tgz#fd895f7426e15166f1b16ed1d54de48243c78002"
-  integrity sha512-1GSnBp3em+oMz93ncjqR/7qeGArhgKaOWluZUrQW2JgHEGYISXAhGTVQhUYAiKc3F9jiq94CE1WrO0vaVzgReQ==
+scheduler@0.21.0-alpha-01be61c12:
+  version "0.21.0-alpha-01be61c12"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-01be61c12.tgz#8f59578d1143a0b8943c6b003ab5919f9d5a012c"
+  integrity sha512-nGGdHmm47W+2iwTmtgSCWjt2EUBM0ysBSKjQofXBqpYFq7w6Jkg7XbfxYVY+u9iUKKSg/gSbNYbcphv2N2WI0A==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
