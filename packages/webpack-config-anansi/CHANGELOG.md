@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.1...@anansi/webpack-config@7.2.2) (2021-06-13)
+
+
+### 🐛 Bug Fix
+
+* svog added as dependency to ensure correct version imported ([4ff633e](https://github.com/ntucker/anansi/commit/4ff633ef78f2d7e81065b0bdcb4005c6203dce6a))
+
+
+
 ### [7.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.0...@anansi/webpack-config@7.2.1) (2021-06-11)
 
 

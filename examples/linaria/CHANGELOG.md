@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.4.2](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.4.1...anansi-example-linaria@2.4.2) (2021-06-13)
+
+
+### 📦 Package
+
+* Update react and rest-hooks ([9ba4796](https://github.com/ntucker/anansi/commit/9ba4796be28461a2b154f0130329b07bb7157255))
+
+
+
 ### [2.4.1](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.4.0...anansi-example-linaria@2.4.1) (2021-06-11)
 
 
