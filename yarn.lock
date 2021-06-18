@@ -16422,14 +16422,14 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-dom@^18.0.0-alpha-01be61c12:
-  version "18.0.0-alpha-01be61c12"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-01be61c12.tgz#5ead262ba9d31c6694723d775c65c4f8173110eb"
-  integrity sha512-eu1wulGX/SBhQeA2BRGO7B2Gdprqr5CzrDGn/fEqzv4nJxIjSLMb2aSocsSVfxCt7EEH2Km3x6dezSu2phd7Dw==
+react-dom@^18.0.0-alpha-9212d994b:
+  version "18.0.0-alpha-9212d994b"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-9212d994b.tgz#f7d6dc55ee8aa2729b4ee65a402d609db483a3cb"
+  integrity sha512-hyfAc+IX6EATnhe3jY5BVZN7qLu1TSH9OKp7W9chlwQTtQMRML52y99qKw62JG/rNEZ3sKybwQJhfJhKoQz9ow==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-alpha-01be61c12"
+    scheduler "0.21.0-alpha-9212d994b"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -16616,10 +16616,10 @@ react-textarea-autosize@^8.3.0:
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
 
-react@^18.0.0-alpha-01be61c12:
-  version "18.0.0-alpha-01be61c12"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-01be61c12.tgz#c543bf7d89f8f7f4e3822ee96b2266dd8331938d"
-  integrity sha512-pXuZmtfbBQ5GvKKND3pnU/a9egeeHNCA6xnB3itvoYOx3ryNe4NAsL2X9CwLNPoIKnVrgjmE6NYij0GsnLtKLA==
+react@^18.0.0-alpha-9212d994b:
+  version "18.0.0-alpha-9212d994b"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-9212d994b.tgz#17ad945f2b211d0c57b1ec616df5e904b893ca41"
+  integrity sha512-kH+RmijvPK0EqyS+j9heroNSTXt7fxz5QBZZKZAtt4ySGKI6bUzHGNCBRRQO6PLodKh8l87T1qR0+g5RgXE/zA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -17464,6 +17464,14 @@ scheduler@0.21.0-alpha-01be61c12:
   version "0.21.0-alpha-01be61c12"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-01be61c12.tgz#8f59578d1143a0b8943c6b003ab5919f9d5a012c"
   integrity sha512-nGGdHmm47W+2iwTmtgSCWjt2EUBM0ysBSKjQofXBqpYFq7w6Jkg7XbfxYVY+u9iUKKSg/gSbNYbcphv2N2WI0A==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@0.21.0-alpha-9212d994b:
+  version "0.21.0-alpha-9212d994b"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-9212d994b.tgz#c42002ed5e9077b86a4f73087220c11b9444ae95"
+  integrity sha512-iP4sJ/Wmt5aNIjlkU/oKv1XwZ8Ej+dR+xerSnCHkCBeNqGLY68PMcSQ86N7j8wgydOZSICLR2Im9MZUQVvnO9w==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
