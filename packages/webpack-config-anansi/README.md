@@ -490,6 +490,10 @@ Directory where only global styles are defined (no css modules)
 
 Set to `false` to disable
 
+### terserOptions
+
+Used to customize [terser](https://github.com/webpack-contrib/terser-webpack-plugin#options) in prod builds.
+
 ### sassResources
 
 `resources` option from https://github.com/shakacode/sass-resources-loader#readme
