@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.2...@anansi/webpack-config@7.3.0) (2021-06-19)
+
+
+### 🚀 Features
+
+* Add terserOptions ([4feea82](https://github.com/ntucker/anansi/commit/4feea8263314e8a4fde6e9aeb0970b68a7f20c07))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.5 to 7.14.6 ([#474](https://github.com/ntucker/anansi/issues/474)) ([52c95e0](https://github.com/ntucker/anansi/commit/52c95e0f00e3f252087f6d0a0684adfba556a38e))
+* bump postcss from 8.3.2 to 8.3.4 ([#476](https://github.com/ntucker/anansi/issues/476)) ([31109ed](https://github.com/ntucker/anansi/commit/31109edc8115384ab0cda677b1c008e9c7fc072f))
+* bump postcss from 8.3.4 to 8.3.5 ([#491](https://github.com/ntucker/anansi/issues/491)) ([67a6cc0](https://github.com/ntucker/anansi/commit/67a6cc0277052a35e74a971fcd799661bee91c2c))
+* bump sass-resources-loader from 2.2.1 to 2.2.2 ([#489](https://github.com/ntucker/anansi/issues/489)) ([3ad3b4c](https://github.com/ntucker/anansi/commit/3ad3b4cc3ad6300db2ea3dee448d26cdf42f4892))
+
+
+
 ### [7.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.1...@anansi/webpack-config@7.2.2) (2021-06-13)
 
 

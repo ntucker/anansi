@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.2...@anansi/generator-js@6.2.3) (2021-06-19)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.5 to 7.14.6 ([#474](https://github.com/ntucker/anansi/issues/474)) ([52c95e0](https://github.com/ntucker/anansi/commit/52c95e0f00e3f252087f6d0a0684adfba556a38e))
+* bump @types/node from 15.12.2 to 15.12.4 ([#494](https://github.com/ntucker/anansi/issues/494)) ([e58b570](https://github.com/ntucker/anansi/commit/e58b5706f79dd9c4ceccdb446abdb512549d889f))
+
+
+
 ### [6.2.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.1...@anansi/generator-js@6.2.2) (2021-06-13)
 
 

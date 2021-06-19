@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.4.3](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.4.2...anansi-example-typescript@6.4.3) (2021-06-19)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.5 to 7.14.6 ([#474](https://github.com/ntucker/anansi/issues/474)) ([52c95e0](https://github.com/ntucker/anansi/commit/52c95e0f00e3f252087f6d0a0684adfba556a38e))
+* bump antd from 4.16.2 to 4.16.3 ([#478](https://github.com/ntucker/anansi/issues/478)) ([be87228](https://github.com/ntucker/anansi/commit/be872283dd1f852913eb9d104f22351086ab784e))
+* bump rest-hooks from 5.2.0 to 5.3.0 ([#484](https://github.com/ntucker/anansi/issues/484)) ([3ec30d7](https://github.com/ntucker/anansi/commit/3ec30d78ccd1dfebf5bba4c97ddc8dc180c26f8c))
+
+
+
 ### [6.4.2](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.4.1...anansi-example-typescript@6.4.2) (2021-06-13)
 
 
