@@ -54,7 +54,7 @@
   "dependencies": {
     "@anansi/ts-utils": "^0.2.4",
     "babel-jest": "^27.0.2",
-    "core-js": "^3.14.0",
+    "core-js": "^3.15.0",
     "identity-obj-proxy": "^3.0.0",
     "mitt": "^2.1.0",
     "ts-jest": "^27.0.3",
