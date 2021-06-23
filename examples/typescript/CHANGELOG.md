@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.4.4](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.4.3...anansi-example-typescript@6.4.4) (2021-06-23)
+
+
+### 📦 Package
+
+* bump core-js from 3.14.0 to 3.15.0 ([#500](https://github.com/ntucker/anansi/issues/500)) ([d64f458](https://github.com/ntucker/anansi/commit/d64f458c446f4334a8c00e68c7eab3ac051e907c))
+* bump core-js from 3.15.0 to 3.15.1 ([#508](https://github.com/ntucker/anansi/issues/508)) ([cd22706](https://github.com/ntucker/anansi/commit/cd227065ca4f9b0b5228e575b5fea97a6971a28a))
+* bump jest from 27.0.4 to 27.0.5 ([#504](https://github.com/ntucker/anansi/issues/504)) ([e25a855](https://github.com/ntucker/anansi/commit/e25a855e1c124e51b90b0cf7a90af3dc8cb1ab87))
+* bump rest-hooks from 5.3.0 to 5.3.1 ([#499](https://github.com/ntucker/anansi/issues/499)) ([120bc4e](https://github.com/ntucker/anansi/commit/120bc4e95a6310252b1b5c14425f5f06ef2aa943))
+
+
+
 ### [6.4.3](https://github.com/ntucker/anansi/compare/anansi-example-typescript@6.4.2...anansi-example-typescript@6.4.3) (2021-06-19)
 
 

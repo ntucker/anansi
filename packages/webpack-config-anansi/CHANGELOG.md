@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.3.0...@anansi/webpack-config@7.4.0) (2021-06-23)
+
+
+### 🚀 Features
+
+* Users can choose svgo and node-sass version by installing it themselves ([63344a1](https://github.com/ntucker/anansi/commit/63344a195eefbf472827dd661768f7cb5ede9b55))
+
+
+### 📦 Package
+
+* bump core-js from 3.14.0 to 3.15.0 ([#500](https://github.com/ntucker/anansi/issues/500)) ([d64f458](https://github.com/ntucker/anansi/commit/d64f458c446f4334a8c00e68c7eab3ac051e907c))
+* bump core-js from 3.15.0 to 3.15.1 ([#508](https://github.com/ntucker/anansi/issues/508)) ([cd22706](https://github.com/ntucker/anansi/commit/cd227065ca4f9b0b5228e575b5fea97a6971a28a))
+* bump html-webpack-plugin from 5.3.1 to 5.3.2 ([#503](https://github.com/ntucker/anansi/issues/503)) ([1e53f55](https://github.com/ntucker/anansi/commit/1e53f55da95c6e203732d4235803edf1a06d0604))
+* bump sass-resources-loader from 2.2.2 to 2.2.3 ([#506](https://github.com/ntucker/anansi/issues/506)) ([f0b772a](https://github.com/ntucker/anansi/commit/f0b772a62d2fecb824092413df0a7d62a90ed3d8))
+
+
+
 ## [7.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.2.2...@anansi/webpack-config@7.3.0) (2021-06-19)
 
 
