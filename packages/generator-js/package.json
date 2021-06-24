@@ -50,7 +50,7 @@
     "@types/mem-fs-editor": "^7.0.0",
     "@types/node": "^15.12.4",
     "@types/pacote": "^11.1.0",
-    "@types/yeoman-generator": "^5.0.0",
+    "@types/yeoman-generator": "^5.2.0",
     "copyfiles": "^2.1.1",
     "husky": "^5.0.9",
     "jest": "^27.0.5",
