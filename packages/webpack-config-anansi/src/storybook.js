@@ -46,12 +46,14 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         return true;
       if (rule.loader) {
         return isStorybookSpecific(rule.loader);
-      } else {
+      } else if (rule.use) {
         return rule.use.find(loadConfig => {
           const loader =
             typeof loadConfig === 'string' ? loadConfig : loadConfig.loader;
           return isStorybookSpecific(loader);
         });
+      } else {
+        return false;
       }
     });
 
@@ -70,7 +72,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         ...envConfig.resolveLoader,
         plugins: [
           ...(envConfig.resolveLoader?.plugins ?? []),
-          ...storybookConfig.resolveLoader.plugins,
+          ...(storybookConfig.resolveLoader?.plugins ?? []),
         ],
       },
       resolve: {
@@ -79,8 +81,8 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         extensions: envConfig.resolve.extensions,
         alias: { ...envConfig.resolve.alias, ...storybookConfig.resolve.alias },
         plugins: [
-          ...envConfig.resolve?.plugins,
-          ...storybookConfig.resolve?.plugins,
+          ...(envConfig.resolve?.plugins ?? []),
+          ...(storybookConfig.resolve?.plugins ?? []),
         ],
       },
       entry: storybookConfig.entry,

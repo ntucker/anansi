@@ -72,6 +72,7 @@ module.exports = class WebpackGenerator extends (
       '@storybook/addons',
       '@storybook/react',
       '@storybook/builder-webpack5',
+      '@storybook/manager-webpack5',
     ]);
   }
 
