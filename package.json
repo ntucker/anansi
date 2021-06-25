@@ -18,8 +18,8 @@
     "release": "lerna publish",
     "build": "lerna run build --stream",
     "build:clean": "lerna run build:clean --stream",
-    "build:sizecompare": "yarn workspace anansi-example-typescript build:clean && yarn workspace anansi-example-typescript build --env nohash",
-    "prepare": "husky install && yarn lerna run build --ignore anansi-example-linaria --ignore anansi-example-typescript"
+    "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
+    "prepare": "husky install && yarn lerna run build --ignore 'example-*'"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.5.2",

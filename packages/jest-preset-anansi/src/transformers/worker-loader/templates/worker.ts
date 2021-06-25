@@ -11,6 +11,6 @@ export default class WebWorker extends BaseWorker {
     terminate: any,
   ) {
     /* {% WORKER_CODE %} */
-    return onmessage || self.onmessage;
+    return typeof onmessage !== 'undefined' ? onmessage : self.onmessage;
   }
 }

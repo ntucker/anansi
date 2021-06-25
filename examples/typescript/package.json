@@ -1,5 +1,5 @@
 {
-  "name": "anansi-example-typescript",
+  "name": "example-typescript",
   "version": "6.4.4",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
     "test": "cross-env NODE_ENV=test jest",
+    "test:ci": "yarn test -- --ci --no-cache",
     "test:type": "tsc --noEmit",
     "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\"",

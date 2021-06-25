@@ -8,7 +8,7 @@ module.exports = {
     let transformer;
     if (/^.+\.[t]sx?$/.test(filename)) {
       lang = 'ts';
-      transformer = require('ts-jest').createTransformer();
+      transformer = require('ts-jest').default.createTransformer();
     } else {
       lang = 'js';
       transformer = require('babel-jest');
