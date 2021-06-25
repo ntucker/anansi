@@ -20,7 +20,7 @@ const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
 const babelConfig: _babel.TransformOptions = {
   caller: { hasJsxRuntime, noHotReload: true, target: 'node' } as any,
 };
-if (typeof BABELCONFIG === 'string' && BABELCONFIG !== 'babel.config.js') {
+if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
   babelConfig.rootMode = 'upward';
 } else {
   babelConfig.configFile = BABELCONFIG;
