@@ -14,9 +14,8 @@ program.version(version);
 program
   .command('hatch <projectName>')
   .alias('init')
-  .description('creates a new anansi project', {
-    projectName: 'Package name for the project',
-  })
+  .description('creates a new anansi project')
+  .argument('projectName', 'Package name for the project')
   .option(
     '-d, --dir <directory>',
     'What directory to add to. (Creates new directory by default)',
@@ -72,9 +71,11 @@ program
 
 program
   .command('add <features...>')
-  .description('adds features to existing project', {
-    features: 'one of `testing` | `storybook` | `circle` | `github-actions`',
-  })
+  .description('adds features to existing project')
+  .argument(
+    'features',
+    'one of `testing` | `storybook` | `circle` | `github-actions`',
+  )
   .action(async features => {
     await verifyAndPrompt();
 
