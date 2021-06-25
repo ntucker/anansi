@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.12](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.11...@anansi/jest-preset@0.4.12) (2021-06-25)
+
+
+### 🐛 Bug Fix
+
+* Correctly handle base babel configs ([ca32392](https://github.com/ntucker/anansi/commit/ca3239203f05a362e6bd964eca8e5b5f849e4787))
+
+
+
 ### [0.4.11](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.10...@anansi/jest-preset@0.4.11) (2021-06-25)
 
 

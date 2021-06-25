@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.7](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.6...@anansi/cli@1.1.7) (2021-06-25)
+
+**Note:** Version bump only for package @anansi/cli
+
+
+
+
+
 ### [1.1.6](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.5...@anansi/cli@1.1.6) (2021-06-25)
 
 

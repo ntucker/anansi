@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.5...@anansi/generator-js@6.2.6) (2021-06-25)
+
+
+### 🐛 Bug Fix
+
+* Feature detection ([16813da](https://github.com/ntucker/anansi/commit/16813da714bc970cb864567061339b61d3c015d9))
+
+
+
 ### [6.2.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.4...@anansi/generator-js@6.2.5) (2021-06-25)
 
 
