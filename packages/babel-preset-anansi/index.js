@@ -35,7 +35,7 @@ function buildPreset(api, options = {}) {
     !babelNode &&
     !options.nodeTarget &&
     process.env.NO_HOT_RELOAD !== 'true' &&
-    api.caller(caller => !caller || caller.noHotReload);
+    api.caller(caller => !caller || !caller.noHotReload);
 
   options = {
     minify: false,
@@ -61,7 +61,7 @@ function buildPreset(api, options = {}) {
     options.nodeTarget === 'current' || !options.nodeTarget
       ? process.version
       : semver.valid(semver.coerce(options.nodeTarget)),
-    '14.0.0',
+    '16.0.0',
   );
 
   const useESModules =
@@ -247,36 +247,34 @@ function buildPreset(api, options = {}) {
     );
   }
 
+  let envOptions = {};
   if (babelNode || env === 'test' || options.nodeTarget) {
-    preset.presets.unshift([
-      require('@babel/preset-env').default,
-      {
-        targets: {
-          node: options.nodeTarget || 'current',
-        },
-        bugfixes: true,
-        modules,
-        // maximum compatibility since we don't care about bundle size
-        useBuiltIns: 'usage',
-        corejs: options.corejs,
+    envOptions = {
+      targets: {
+        node: options.nodeTarget || 'current',
       },
-    ]);
+      // maximum compatibility since we don't care about bundle size
+      useBuiltIns: 'usage',
+    };
   } else {
-    preset.presets.unshift([
-      require('@babel/preset-env').default,
-      {
-        targets: options.targets,
-        bugfixes: true,
-        modules,
-        useBuiltIns: options.useBuiltIns,
-        shippedProposals: true,
-        corejs: options.corejs,
-        loose: options.loose,
-        // Exclude transforms that make all code slower
-        exclude: ['transform-typeof-symbol'],
-      },
-    ]);
+    envOptions = {
+      targets: options.targets,
+      useBuiltIns: options.useBuiltIns,
+    };
   }
+  preset.presets.unshift([
+    require('@babel/preset-env').default,
+    {
+      bugfixes: true,
+      modules,
+      shippedProposals: true,
+      corejs: options.corejs,
+      loose: options.loose,
+      // Exclude transforms that make all code slower
+      exclude: ['transform-typeof-symbol'],
+      ...envOptions,
+    },
+  ]);
   if (options.minify && env === 'production') {
     try {
       preset.presets.unshift(require('babel-minify'));
