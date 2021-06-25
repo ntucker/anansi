@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.4.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.0...@anansi/webpack-config@7.4.1) (2021-06-25)
+
+
+### 💅 Enhancement
+
+* Improve babel detection ([#521](https://github.com/ntucker/anansi/issues/521)) ([eb59b70](https://github.com/ntucker/anansi/commit/eb59b700e5649f26da4c9bbd2672046f79d0f8a5))
+
+
+### 📦 Package
+
+* bump node-sass from 6.0.0 to 6.0.1 ([#519](https://github.com/ntucker/anansi/issues/519)) ([1c8b8ee](https://github.com/ntucker/anansi/commit/1c8b8eee6b889e9ec46e194a890711dabdbf4d96))
+* Linaria ([1503c77](https://github.com/ntucker/anansi/commit/1503c7785b2752fe443463b666789a368df5d219))
+* Storybook 6.3 ([#516](https://github.com/ntucker/anansi/issues/516)) ([162cefa](https://github.com/ntucker/anansi/commit/162cefa4b098784a1f68709576efa3f34a056d1b))
+
+
+
 ## [7.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.3.0...@anansi/webpack-config@7.4.0) (2021-06-23)
 
 

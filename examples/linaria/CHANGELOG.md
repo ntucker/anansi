@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0 (2021-06-25)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* args from period to space
+(e.g., --env readable)
+
+Also requires webpack-cli v4
+* --analyze, --profile, --check, --readable
+now use --env. prefix: e.g., --env.analyze
+* Requires @babel/core and @babel/runtime of at least
+7.12
+* cssLoaderOptions have changed, see https://github.com/webpack-contrib/css-loader/releases/tag/v4.0.0
+
+node_modules only use cssmodules if .module extension is used
+
+### 🚀 Features
+
+* Add lighthouse checks ([#65](https://github.com/ntucker/anansi/issues/65)) ([5f512dd](https://github.com/ntucker/anansi/commit/5f512ddd9cd8166229908c95e4bc16840cab4471))
+* Enable linaria out of the box ([#157](https://github.com/ntucker/anansi/issues/157)) ([473ca19](https://github.com/ntucker/anansi/commit/473ca193753a3f0bf26f18717666f2913931ce8a))
+* Option to preload fonts ([#92](https://github.com/ntucker/anansi/issues/92)) ([8976436](https://github.com/ntucker/anansi/commit/8976436466b9627ef2ac370acc7ab105466f9f17))
+* Support linaria and other css flexibility ([#41](https://github.com/ntucker/anansi/issues/41)) ([00cd6fd](https://github.com/ntucker/anansi/commit/00cd6fd4fe1a973fef4915613bdac372f1f91151))
+* Support react 18 ([#449](https://github.com/ntucker/anansi/issues/449)) ([14ec576](https://github.com/ntucker/anansi/commit/14ec57633b76b5c5ed45dff0a716e83fe0fe49dc))
+
+
+### 💅 Enhancement
+
+* Do not require importing React - use >16.14 ([3d457bf](https://github.com/ntucker/anansi/commit/3d457bfabfd7d67e6b3da36bbd0649997ae4bc06))
+* Improve babel detection ([#521](https://github.com/ntucker/anansi/issues/521)) ([eb59b70](https://github.com/ntucker/anansi/commit/eb59b700e5649f26da4c9bbd2672046f79d0f8a5))
+* Improve storybook support ([#58](https://github.com/ntucker/anansi/issues/58)) ([8d1d572](https://github.com/ntucker/anansi/commit/8d1d572a1574be83fc02e923378d81f5e3972c1c))
+* Increase compatability with webpack 5 ([644a5d2](https://github.com/ntucker/anansi/commit/644a5d2f27eae9947507daffcaacbc7ed7fd771d))
+* Switch webpack args to use --env. prefix. ([#50](https://github.com/ntucker/anansi/issues/50)) ([11933ef](https://github.com/ntucker/anansi/commit/11933ef4db7322303943c5cf152dff329cfdd935))
+* Update script names ([f588e5f](https://github.com/ntucker/anansi/commit/f588e5f11b03848036cbcf4b2865ea6ad7f46d97))
+* Use namedspaced linaria packages ([11c2cf6](https://github.com/ntucker/anansi/commit/11c2cf6bb42988802d7bbcbb763989b1c18aa750))
+* We aren't using storybook in linaria example ([e5343c0](https://github.com/ntucker/anansi/commit/e5343c09b5707a9bfa3905488b719fe1274942b5))
+
+
+### 🐛 Bug Fix
+
+* Consistent css module options when in dev mode ([7a27d96](https://github.com/ntucker/anansi/commit/7a27d96726275a4a165aa96d392f721828af38c5))
+* hack to resolve dep in linaria project ([53f6b9b](https://github.com/ntucker/anansi/commit/53f6b9b02132baff3ff20327a6d57464ea5c024d))
+
+
+### 📦 Package
+
+* Babel patch to 7.12.1 ([14db1ab](https://github.com/ntucker/anansi/commit/14db1abf4f2853c30c8baf9a6aec100780d8d578))
+* babel to 7.12 ([#46](https://github.com/ntucker/anansi/issues/46)) ([b4154f8](https://github.com/ntucker/anansi/commit/b4154f8f867c1ed245b5f34bb7c3ff28ae20dbc8))
+* babel/core ([cec3a77](https://github.com/ntucker/anansi/commit/cec3a77a67f7c0e181e8080eae3637598507aacc))
+* bump @babel/preset-env from 7.12.11 to 7.12.13 ([#74](https://github.com/ntucker/anansi/issues/74)) ([8b1225d](https://github.com/ntucker/anansi/commit/8b1225d1f9e42f1b113bef9e2eabfa353ae7f93a))
+* bump @babel/runtime from 7.13.17 to 7.14.0 ([#280](https://github.com/ntucker/anansi/issues/280)) ([c4c6857](https://github.com/ntucker/anansi/commit/c4c6857ec96aa6e953d919f036f47cd1a69174e0))
+* bump @babel/runtime from 7.14.0 to 7.14.5 ([#459](https://github.com/ntucker/anansi/issues/459)) ([7b2d6c5](https://github.com/ntucker/anansi/commit/7b2d6c5c7a60ea8349540f0f92f467b190576672))
+* bump @babel/runtime from 7.14.5 to 7.14.6 ([#474](https://github.com/ntucker/anansi/issues/474)) ([52c95e0](https://github.com/ntucker/anansi/commit/52c95e0f00e3f252087f6d0a0684adfba556a38e))
+* bump @linaria/shaker from 3.0.0-beta.4 to 3.0.0-beta.5 ([#437](https://github.com/ntucker/anansi/issues/437)) ([8d69300](https://github.com/ntucker/anansi/commit/8d69300410b07fb11dbd9b4b2588f8382d0d4562))
+* Bump babel (patch) ([22152c5](https://github.com/ntucker/anansi/commit/22152c51fce5534890a8737fc285a35228ee90ba))
+* bump core-js from 3.11.0 to 3.11.1 ([#275](https://github.com/ntucker/anansi/issues/275)) ([fdafc49](https://github.com/ntucker/anansi/commit/fdafc495ca00429a2f7c4d19e3aced228a9c082d))
+* bump core-js from 3.11.1 to 3.11.2 ([#289](https://github.com/ntucker/anansi/issues/289)) ([226ec2e](https://github.com/ntucker/anansi/commit/226ec2e9945de239715fedd83655901b7a729c5d))
+* bump core-js from 3.11.2 to 3.12.0 ([#306](https://github.com/ntucker/anansi/issues/306)) ([b43e91a](https://github.com/ntucker/anansi/commit/b43e91a32bf6a6fdac3a43d489892c18e641f890))
+* bump core-js from 3.12.0 to 3.12.1 ([#312](https://github.com/ntucker/anansi/issues/312)) ([e8172f2](https://github.com/ntucker/anansi/commit/e8172f2e092dd8b2be1d816461b89b7b3b3c099a))
+* bump core-js from 3.12.1 to 3.13.0 ([#376](https://github.com/ntucker/anansi/issues/376)) ([c6da6f5](https://github.com/ntucker/anansi/commit/c6da6f50f03ccb4f71cf4d67501f09bc6a541512))
+* bump core-js from 3.13.1 to 3.14.0 ([#435](https://github.com/ntucker/anansi/issues/435)) ([88358a3](https://github.com/ntucker/anansi/commit/88358a3dc9208ae93842def510e9a6b8effe921d))
+* bump core-js from 3.14.0 to 3.15.0 ([#500](https://github.com/ntucker/anansi/issues/500)) ([d64f458](https://github.com/ntucker/anansi/commit/d64f458c446f4334a8c00e68c7eab3ac051e907c))
+* bump core-js from 3.15.0 to 3.15.1 ([#508](https://github.com/ntucker/anansi/issues/508)) ([cd22706](https://github.com/ntucker/anansi/commit/cd227065ca4f9b0b5228e575b5fea97a6971a28a))
+* Bump linaria ([e94a42f](https://github.com/ntucker/anansi/commit/e94a42f981db01ea7a1c06399b3d38d22371707b))
+* bump linaria from 2.0.0-rc.1 to 3.0.0-beta.1 ([#122](https://github.com/ntucker/anansi/issues/122)) ([2526951](https://github.com/ntucker/anansi/commit/2526951186035a75ad00ab971d64ade32e4991dd))
+* Bump linaria to 3-beta.2 ([273b04b](https://github.com/ntucker/anansi/commit/273b04bc49ea2554e0b2b87221edc89aaca2d6e4))
+* bump react-refresh ([#456](https://github.com/ntucker/anansi/issues/456)) ([0fdfea6](https://github.com/ntucker/anansi/commit/0fdfea6efd7274de6ead5b8defefa91b4f071962))
+* Bump react-refresh, storybook ([38a50e5](https://github.com/ntucker/anansi/commit/38a50e5a29ec2c536c7517758007169d490e3e31))
+* bump serve from 11.3.2 to 12.0.0 ([#442](https://github.com/ntucker/anansi/issues/442)) ([fd9c4e0](https://github.com/ntucker/anansi/commit/fd9c4e03629e1f945938851ed45258d395e842c4))
+* core-js minor ([b1cb302](https://github.com/ntucker/anansi/commit/b1cb3028b3dc5e87f0643b53e1028eb8baff87c6))
+* Linaria ([1503c77](https://github.com/ntucker/anansi/commit/1503c7785b2752fe443463b666789a368df5d219))
+* linaria to beta 3 ([948e9ab](https://github.com/ntucker/anansi/commit/948e9ab20cc741f4526f9235e523ac506509486d))
+* Only use [@linaria](https://github.com/linaria) namedspaced packages ([89b96f0](https://github.com/ntucker/anansi/commit/89b96f0c44759bcdfcf2e917903651da340669ea))
+* postcss, postcss-loader, @babel/eslint-parser ([925bff7](https://github.com/ntucker/anansi/commit/925bff78022744a0d9e01bff6dbafc286d8afb2a))
+* react-refresh ([c9d4618](https://github.com/ntucker/anansi/commit/c9d461810b75a0027d3b9f96e8dffb63a0d98997))
+* Require webpack-cli v4 ([#51](https://github.com/ntucker/anansi/issues/51)) ([4cc699f](https://github.com/ntucker/anansi/commit/4cc699ff60e943c69933d5f88368bd2b763a585c))
+* rest-hooks patch ([891231c](https://github.com/ntucker/anansi/commit/891231c3de18a9ec54ce5a05e947d5d01124ba66))
+* Typescript 4.1-beta, react 17 ([12ff605](https://github.com/ntucker/anansi/commit/12ff6056f5a4203241f4c46e439db809cdadaef8))
+* typescript-eslint patch ([a72455e](https://github.com/ntucker/anansi/commit/a72455e7b95bdfbce7e4ce452417ca70827409d4))
+* Update react and rest-hooks ([9ba4796](https://github.com/ntucker/anansi/commit/9ba4796be28461a2b154f0130329b07bb7157255))
+* Upgrade css-loader to v4 (major) ([32d57d2](https://github.com/ntucker/anansi/commit/32d57d2e885fd2fb129bad732cbbdcbaa513b584))
+* Use webpack 5 by default ([#48](https://github.com/ntucker/anansi/issues/48)) ([f1e6631](https://github.com/ntucker/anansi/commit/f1e6631c47cf14360a224cdd8fbd9825179ff47a))
+
+
+### 📝 Documentation
+
+* Update docs to be more clear ([c259bc5](https://github.com/ntucker/anansi/commit/c259bc58933e517d8baa463eda7129141e42875d))
+* Use simpler package name for namespaced babel-preset ([0da22ad](https://github.com/ntucker/anansi/commit/0da22ad71f5b600ec67c1ce103c680b52b1f358b))
+
+
+
 ### [2.4.4](https://github.com/ntucker/anansi/compare/anansi-example-linaria@2.4.3...anansi-example-linaria@2.4.4) (2021-06-23)
 
 

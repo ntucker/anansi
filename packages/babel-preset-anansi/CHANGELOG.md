@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.3...@anansi/babel-preset@2.7.4) (2021-06-25)
+
+
+### 🐛 Bug Fix
+
+* Better detection for node module handling ([166d879](https://github.com/ntucker/anansi/commit/166d8792fc309f532742b008184efcba9a5efb0e))
+
+
+
 ### [2.7.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.2...@anansi/babel-preset@2.7.3) (2021-06-23)
 
 

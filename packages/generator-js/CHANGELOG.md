@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.4...@anansi/generator-js@6.2.5) (2021-06-25)
+
+
+### 📦 Package
+
+* bump @types/yeoman-generator from 5.0.0 to 5.2.0 ([#510](https://github.com/ntucker/anansi/issues/510)) ([299c268](https://github.com/ntucker/anansi/commit/299c26897c9d735422288fb3044bab81d44121b5))
+* Storybook 6.3 ([#516](https://github.com/ntucker/anansi/issues/516)) ([162cefa](https://github.com/ntucker/anansi/commit/162cefa4b098784a1f68709576efa3f34a056d1b))
+
+
+
 ### [6.2.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.3...@anansi/generator-js@6.2.4) (2021-06-23)
 
 

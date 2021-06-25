@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.11](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.10...@anansi/jest-preset@0.4.11) (2021-06-25)
+
+
+### 💅 Enhancement
+
+* Improve babel detection ([#521](https://github.com/ntucker/anansi/issues/521)) ([eb59b70](https://github.com/ntucker/anansi/commit/eb59b700e5649f26da4c9bbd2672046f79d0f8a5))
+
+
+### 📦 Package
+
+* bump mitt from 2.1.0 to 3.0.0 ([#514](https://github.com/ntucker/anansi/issues/514)) ([be20e4f](https://github.com/ntucker/anansi/commit/be20e4f59f74ceadf34077108788cfbe64abe131))
+
+
+
 ### [0.4.10](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.9...@anansi/jest-preset@0.4.10) (2021-06-23)
 
 
