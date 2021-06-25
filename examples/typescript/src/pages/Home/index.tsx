@@ -1,11 +1,10 @@
 import path from 'path';
 import variables from 'variables.scss';
-
 import 'code.scss';
 import sillyStyle from 'silly.module.scss';
 
-import StaticBlock from 'github/StaticBlock';
 import IssueResource from '@standard-endpoint/github/IssueResource';
+import StaticBlock from '@standard-endpoint/github/StaticBlock.js';
 
 import { ReactComponent as Copy } from './Copy.svg';
 import style from './index.scss';

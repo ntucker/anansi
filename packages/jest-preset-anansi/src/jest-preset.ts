@@ -1,14 +1,30 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+import type * as _babel from 'babel__core';
+
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
 const { readTsConfig } = require('@anansi/ts-utils');
+const semver = require('semver');
 
 const TSCONFIG = process.env.ANANSI_JEST_TSCONFIG ?? 'tsconfig.json';
-let BABELCONFIG = process.env.ANANSI_JEST_BABELCONFIG ?? true;
-if (typeof BABELCONFIG === 'string' && BABELCONFIG !== 'babel.config.js') {
-  BABELCONFIG = require(BABELCONFIG);
-}
+const BABELCONFIG = process.env.ANANSI_JEST_BABELCONFIG ?? true;
 
 const { options } = readTsConfig('./', TSCONFIG);
+
+let react;
+try {
+  react = require(require.resolve('react'));
+  // eslint-disable-next-line no-empty
+} catch (e) {}
+const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
+
+const babelConfig: _babel.TransformOptions = {
+  caller: { hasJsxRuntime, noHotReload: true, target: 'node' } as any,
+};
+if (typeof BABELCONFIG === 'string' && BABELCONFIG !== 'babel.config.js') {
+  babelConfig.rootMode = 'upward';
+} else {
+  babelConfig.configFile = BABELCONFIG;
+}
 
 module.exports = {
   /**
@@ -17,7 +33,7 @@ module.exports = {
    */
   globals: {
     'ts-jest': {
-      babelConfig: BABELCONFIG,
+      babelConfig: babelConfig,
       tsconfig: `<rootDir>/${TSCONFIG}`,
       stringifyContentPathRegex: '\\.html$',
     },
@@ -25,10 +41,7 @@ module.exports = {
   transform: {
     '^.+\\.worker.[t|j]s$': require.resolve('./transformers/worker-loader'),
     '^.+\\.(tsx?|html)$': require.resolve('ts-jest'),
-    '^.+\\.jsx?$': [
-      require.resolve('babel-jest'),
-      BABELCONFIG === 'babel.config.js' ? { rootMode: 'upward' } : {},
-    ],
+    '^.+\\.jsx?$': [require.resolve('babel-jest'), babelConfig],
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
   coveragePathIgnorePatterns: ['node_modules'],

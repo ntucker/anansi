@@ -57,6 +57,7 @@
     "core-js": "^3.15.1",
     "identity-obj-proxy": "^3.0.0",
     "mitt": "^3.0.0",
+    "semver": "^7.3.5",
     "ts-jest": "^27.0.3",
     "whatwg-fetch": "^3.0.0"
   },
