@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.0...@anansi/browserslist-config@1.3.1) (2021-06-29)
+
+
+### 💅 Enhancement
+
+* Date targets are only for es6-module support ([62d3858](https://github.com/ntucker/anansi/commit/62d385857c513b82d4024de7518a322c1ec95ddd))
+
+
+
 ## [1.3.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.2.0...@anansi/browserslist-config@1.3.0) (2021-06-09)
 
 
