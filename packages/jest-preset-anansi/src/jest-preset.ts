@@ -26,6 +26,8 @@ if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
   babelConfig.configFile = BABELCONFIG;
 }
 
+module.exports.babelConfig = babelConfig;
+
 module.exports = {
   /**
    *  If you comment this out, you will get error unexpected token with optional chaining because you are using babel in your project
@@ -45,7 +47,7 @@ module.exports = {
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
   coveragePathIgnorePatterns: ['node_modules'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'mjs', 'json'],
   moduleNameMapper: {
     '\\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga)$':
       require.resolve('./mocks/fileMock.js'),
