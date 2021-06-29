@@ -17,8 +17,10 @@ module.exports = {
   modern: [
     'last 2 Firefox versions',
     'Firefox ESR',
-    'last 2 Chrome versions',
+    'last 3 Chrome versions',
+    'last 3 and_chr versions',
     'last 1 Safari versions',
+    'last 2 iOS versions',
     'last 1 Edge versions',
   ],
   development: ['last 1 Chrome versions', 'last 1 Firefox versions'],
