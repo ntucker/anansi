@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.4.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.1...@anansi/webpack-config@7.4.2) (2021-06-29)
+
+
+### 📦 Package
+
+* bump css-minimizer-webpack-plugin from 3.0.1 to 3.0.2 ([#524](https://github.com/ntucker/anansi/issues/524)) ([328f991](https://github.com/ntucker/anansi/commit/328f991d9e2c3fb03507a9a87a43d2c147d946f2))
+* bump mini-css-extract-plugin from 1.6.0 to 1.6.2 ([#527](https://github.com/ntucker/anansi/issues/527)) ([ce71426](https://github.com/ntucker/anansi/commit/ce714263e967f4b1b7f7769161de9f26cb558d4d))
+* bump svgo from 2.3.0 to 2.3.1 ([#532](https://github.com/ntucker/anansi/issues/532)) ([669471f](https://github.com/ntucker/anansi/commit/669471f9a196232e8bebf4320efd108b793cdeaa))
+* bump terser-webpack-plugin from 5.1.3 to 5.1.4 ([#522](https://github.com/ntucker/anansi/issues/522)) ([961005a](https://github.com/ntucker/anansi/commit/961005a2f58756c2e20b7e1777b23f39cd748234))
+
+
+
 ### [7.4.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.0...@anansi/webpack-config@7.4.1) (2021-06-25)
 
 

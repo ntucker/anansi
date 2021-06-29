@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.12...@anansi/jest-preset@0.5.0) (2021-06-29)
+
+
+### 🚀 Features
+
+* Export babelConfig ([dbb5fe2](https://github.com/ntucker/anansi/commit/dbb5fe20f6fc397c819746b5ddc458dccd618b17))
+
+
+### 💅 Enhancement
+
+* import/require pulls from lib file ([9fea5db](https://github.com/ntucker/anansi/commit/9fea5db928ca537a8ca60c31c677388217fae6f4))
+* Improved exports ([468f476](https://github.com/ntucker/anansi/commit/468f476ecf9e81cbf919a104572480e53a50bd4e))
+
+
+
 ### [0.4.12](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.4.11...@anansi/jest-preset@0.4.12) (2021-06-25)
 
 
