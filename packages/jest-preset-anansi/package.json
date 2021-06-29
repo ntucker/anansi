@@ -18,7 +18,7 @@
     "jest-preset.js",
     "lib"
   ],
-  "main": "jest-preset.js",
+  "main": "lib/jest-preset.js",
   "keywords": [
     "jest",
     "webpack",
