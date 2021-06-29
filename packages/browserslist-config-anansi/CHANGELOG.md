@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.2](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.1...@anansi/browserslist-config@1.3.2) (2021-06-29)
+
+
+### 🐛 Bug Fix
+
+* test env ([968414e](https://github.com/ntucker/anansi/commit/968414e907b01af13437196de60388b94ba373a6))
+
+
+
 ### [1.3.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.0...@anansi/browserslist-config@1.3.1) (2021-06-29)
 
 
