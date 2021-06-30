@@ -73,7 +73,7 @@
   "dependencies": {
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "react": "^18.0.0-alpha-01be61c12",
-    "react-dom": "^18.0.0-alpha-01be61c12"
+    "react": "next",
+    "react-dom": "next"
   }
 }
