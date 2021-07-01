@@ -86,20 +86,6 @@ export default function getStyleRules({
           },
         },
       };
-    } else if (loader.loader === MiniCssExtractPlugin.loader) {
-      return {
-        ...loader,
-        options: {
-          ...loader.options,
-          modules: {
-            ...Object.fromEntries(
-              Object.entries(cssModulesOptions).filter(([k]) =>
-                ['namedExport'].includes(k),
-              ),
-            ),
-          },
-        },
-      };
     }
     return loader;
   });
