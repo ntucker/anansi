@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.5](https://github.com/ntucker/anansi/compare/example-typescript@7.0.4...example-typescript@7.0.5) (2021-07-01)
+
+
+### 📦 Package
+
+* bump antd from 4.16.5 to 4.16.6 ([#535](https://github.com/ntucker/anansi/issues/535)) ([07ed2c6](https://github.com/ntucker/anansi/commit/07ed2c67ef6e3337ce17c34136bf43899db4d8a2))
+* bump core-js from 3.15.1 to 3.15.2 ([#533](https://github.com/ntucker/anansi/issues/533)) ([4a6b4c8](https://github.com/ntucker/anansi/commit/4a6b4c8d9f69e05f10a2fc8f3433290a20b56b82))
+* bump jest from 27.0.5 to 27.0.6 ([#537](https://github.com/ntucker/anansi/issues/537)) ([8570bff](https://github.com/ntucker/anansi/commit/8570bff67e521d243b169e94858dfed559e0825f))
+* Rest hooks on 6 beta ([#540](https://github.com/ntucker/anansi/issues/540)) ([2e70a5b](https://github.com/ntucker/anansi/commit/2e70a5b710a9e9c2ebec6811bb983a386d7bd3a3))
+
+
+
 ### [7.0.4](https://github.com/ntucker/anansi/compare/example-typescript@7.0.3...example-typescript@7.0.4) (2021-06-29)
 
 **Note:** Version bump only for package example-typescript

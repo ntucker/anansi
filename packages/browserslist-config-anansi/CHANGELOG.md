@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.3](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.2...@anansi/browserslist-config@1.3.3) (2021-07-01)
+
+
+### 💅 Enhancement
+
+* Add more mobile browsers to 'modern' ([996ee18](https://github.com/ntucker/anansi/commit/996ee1827405779cc7a58b7cd99da621731fe589))
+
+
+
 ### [1.3.2](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.1...@anansi/browserslist-config@1.3.2) (2021-06-29)
 
 

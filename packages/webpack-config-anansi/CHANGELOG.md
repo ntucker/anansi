@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.4.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.2...@anansi/webpack-config@7.4.3) (2021-07-01)
+
+
+### 📦 Package
+
+* bump core-js from 3.15.1 to 3.15.2 ([#533](https://github.com/ntucker/anansi/issues/533)) ([4a6b4c8](https://github.com/ntucker/anansi/commit/4a6b4c8d9f69e05f10a2fc8f3433290a20b56b82))
+* bump mini-css-extract-plugin from 1.6.2 to 2.0.0 ([#547](https://github.com/ntucker/anansi/issues/547)) ([c0125dd](https://github.com/ntucker/anansi/commit/c0125dddaaf67a19f3b97e23043f92cd4f7534da))
+
+
+
 ### [7.4.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.1...@anansi/webpack-config@7.4.2) (2021-06-29)
 
 

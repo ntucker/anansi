@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.4...@anansi/babel-preset@2.7.5) (2021-07-01)
+
+
+### 📦 Package
+
+* bump core-js-compat from 3.15.1 to 3.15.2 ([#536](https://github.com/ntucker/anansi/issues/536)) ([8897f21](https://github.com/ntucker/anansi/commit/8897f21eaf0af85002db693c81e82801247fe805))
+
+
+
 ### [2.7.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.3...@anansi/babel-preset@2.7.4) (2021-06-25)
 
 
