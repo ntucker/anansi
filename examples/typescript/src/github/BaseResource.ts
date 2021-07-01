@@ -1,11 +1,5 @@
 import { camelCase, snakeCase } from 'lodash';
-import {
-  Resource,
-  AbstractInstanceType,
-  SimpleRecord,
-  RestEndpoint,
-  RestFetch,
-} from '@rest-hooks/rest';
+import { Resource, RestEndpoint, RestFetch } from '@rest-hooks/rest';
 
 function deeplyApplyKeyTransform(obj: any, transform: (key: string) => string) {
   const ret: any = Array.isArray(obj) ? [] : {};
@@ -21,14 +15,10 @@ function deeplyApplyKeyTransform(obj: any, transform: (key: string) => string) {
 
 /** Impelements the common functionality for all Resources we'll make */
 export default abstract class BaseResource extends Resource {
-  static fromJS<T extends typeof SimpleRecord>(
-    this: T,
-    props: Partial<AbstractInstanceType<T>>,
-    parent?: any,
-    key?: any,
-  ): AbstractInstanceType<T> {
-    delete (props as any).url;
-    return super.fromJS(props) as any;
+  static process(input: any) {
+    const copy = { ...input };
+    delete copy.url;
+    return copy;
   }
 
   static async fetch(input: RequestInfo, init: RequestInit) {

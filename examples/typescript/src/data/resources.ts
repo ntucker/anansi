@@ -1,4 +1,4 @@
-import { Resource, SimpleRecord } from '@rest-hooks/rest';
+import { Resource } from '@rest-hooks/rest';
 
 export class PostResource extends Resource {
   readonly id: number | undefined = undefined;
@@ -26,16 +26,17 @@ export class CommentResource extends Resource {
   static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
 }
 
-export class Address extends SimpleRecord {
-  readonly street: string = '';
-  readonly suite: string = '';
-  readonly city: string = '';
-  readonly zipcode: string = '';
-  readonly geo: {
+const Address = {
+  street: '',
+  suite: '',
+  city: '',
+  zipcode: '',
+  geo: null as {
     readonly lat: string;
     readonly lng: string;
-  } | null = null;
-}
+  } | null,
+};
+
 export class UserResource extends Resource {
   readonly id: number = 0;
   readonly name: string = '';
@@ -43,7 +44,7 @@ export class UserResource extends Resource {
   readonly email: string = '';
   readonly phone: string = '';
   readonly website: string = '';
-  readonly address: Address | null = null;
+  readonly address: typeof Address | null = null;
 
   static schema = {
     address: Address,
