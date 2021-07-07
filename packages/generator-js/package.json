@@ -45,7 +45,7 @@
   ],
   "devDependencies": {
     "@anansi/babel-preset": "^2.7.5",
-    "@types/ejs": "^3.0.0",
+    "@types/ejs": "^3.0.7",
     "@types/gulp-filter": "^3.0.33",
     "@types/mem-fs-editor": "^7.0.0",
     "@types/node": "^15.14.0",
