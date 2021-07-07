@@ -52,7 +52,7 @@
     "@types/pacote": "^11.1.0",
     "@types/yeoman-generator": "^5.2.1",
     "copyfiles": "^2.1.1",
-    "husky": "^7.0.0",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
