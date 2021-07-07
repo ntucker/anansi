@@ -48,7 +48,7 @@
     "@types/ejs": "^3.0.7",
     "@types/gulp-filter": "^3.0.33",
     "@types/mem-fs-editor": "^7.0.0",
-    "@types/node": "^15.14.0",
+    "@types/node": "^16.0.0",
     "@types/pacote": "^11.1.0",
     "@types/yeoman-generator": "^5.2.1",
     "copyfiles": "^2.1.1",
