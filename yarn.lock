@@ -4366,10 +4366,10 @@
   resolved "https://registry.yarnpkg.com/@types/overlayscrollbars/-/overlayscrollbars-1.12.0.tgz#98456caceca8ad73bd5bb572632a585074e70764"
   integrity sha512-h/pScHNKi4mb+TrJGDon8Yb06ujFG0mSg12wIO0sWMUF3dQIe2ExRRdNRviaNt9IjxIiOfnRr7FsQAdHwK4sMg==
 
-"@types/pacote@^11.1.0":
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/@types/pacote/-/pacote-11.1.0.tgz#5324b9d36ecb31ad45bc09c9c29c996b7c0fc27d"
-  integrity sha512-ULeeKzbZ3e5GRlqbVDUDgi0L0RYg4OJXLSrtOoyTmGJTAN7JdR0IyZ0kXCCjGzkZwh4ABM7TKISwyDkJqnbAgw==
+"@types/pacote@^11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@types/pacote/-/pacote-11.1.1.tgz#74b902bdf99a2e0763a84774f7cb00b8dc8443bd"
+  integrity sha512-ycBhPpDuNb5hwvWQJFaLyGspdWXkpqBOcGyWclC+hQfMvZt/13aXIt5vx5b+wx4lJd8n0ROZEPMCt6C9uGP0ag==
   dependencies:
     "@types/node" "*"
     "@types/npm-registry-fetch" "*"
