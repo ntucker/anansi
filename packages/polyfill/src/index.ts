@@ -5,13 +5,14 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
   const loaders: { [k in LoaderKeys]: () => Promise<unknown> | undefined } = {
     intl: () => {
       if (
-        !global.Intl ||
-        typeof global.Intl.DateTimeFormat.prototype.formatToParts !== 'function'
+        !globalThis.Intl ||
+        typeof globalThis.Intl.DateTimeFormat.prototype.formatToParts !==
+          'function'
       ) {
         return import(/* webpackChunkName: "intl-polyfill" */ 'intl')
           .then(({ default: Intl }) => {
-            global.Intl = Intl;
-            return global.Intl;
+            globalThis.Intl = Intl;
+            return globalThis.Intl;
           })
           .then(Intl => {
             return import(
@@ -21,9 +22,9 @@ export default function loadPolyfills(include: 'all' | LoaderKeys[] = 'all') {
       }
     },
     ric: () => {
-      if (!global.requestIdleCallback) {
-        global.requestIdleCallback = ric;
-        global.cancelIdleCallback = ric.cancelIdleCallback;
+      if (!globalThis.requestIdleCallback) {
+        globalThis.requestIdleCallback = ric;
+        globalThis.cancelIdleCallback = ric.cancelIdleCallback;
         return Promise.resolve(ric);
       }
     },
