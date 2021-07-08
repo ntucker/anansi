@@ -21,7 +21,7 @@
     "@anansi/eslint-plugin": "^0.11.16",
     "@anansi/webpack-config": "^7.4.3",
     "@types/classnames": "^2.2.9",
-    "@types/react-router-dom": "^5.1.3",
+    "@types/react-router-dom": "^5.1.8",
     "babel-loader": "8.2.2",
     "react-refresh": "^0.11.0-alpha-01be61c12",
     "serve": "^12.0.0"
