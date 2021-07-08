@@ -28,6 +28,10 @@ declare module 'ric-shim' {
   }
   export default requestIdleCallback;
 }
+// eslint-disable-next-line no-var
+declare var requestIdleCallback: RIC;
+// eslint-disable-next-line no-var
+declare var cancelIdleCallback: CIC;
 declare namespace NodeJS {
   interface Global {
     requestIdleCallback: RIC;
