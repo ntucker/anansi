@@ -4410,7 +4410,7 @@
     "@types/estree" "*"
     "@types/json-schema" "*"
 
-"@types/estree@*", "@types/estree@^0.0.49":
+"@types/estree@*":
   version "0.0.49"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.49.tgz#3facb98ebcd4114a4ecef74e0de2175b56fd4464"
   integrity sha512-K1AFuMe8a+pXmfHTtnwBvqoEylNKVeaiKYkjmcEAdytMQVJ/i9Fu7sc13GxgXdO49gkE7Hy8SyJonUZUn+eVaw==
@@ -16833,10 +16833,10 @@ react-inspector@^5.1.0:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-is@18.0.0-alpha-3e8c86c1c-20210630:
-  version "18.0.0-alpha-3e8c86c1c-20210630"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-3e8c86c1c-20210630.tgz#54d4fa9b49958e48db8c000fec7db987f830a375"
-  integrity sha512-dRZu1eYkMDTxD4PyH7aG/iabKpqNB4YZkBlUS8gW852BJsmmeoqNIZdf60p98wMjUHQqDIBSU2YX3k4vfa1lOA==
+react-is@18.0.0-alpha-241485a2c-20210708:
+  version "18.0.0-alpha-241485a2c-20210708"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-241485a2c-20210708.tgz#a3e9ec987dcdd5eae14075b87d95347f732021d7"
+  integrity sha512-p286N/B5sQjIaeRU+HVnOolTBY+ctd/jHNw+37UilVIrW/s5hbwXsyQfn2uDxf7u8r4CiQ/0f7GYswsWtUhvbw==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -16947,14 +16947,14 @@ react-syntax-highlighter@^13.5.3:
     refractor "^3.1.0"
 
 react-test-renderer@next:
-  version "18.0.0-alpha-3e8c86c1c-20210630"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-3e8c86c1c-20210630.tgz#5d120a93c1fa3bd49f49d0838163f3545b1f8504"
-  integrity sha512-1kyYspPzbyeegOhUbyCvRu5vnQ/L1X3mOANVwUeO4flaUE0srHt7+HpmIvkfmTOPf4szveKaFxsuHnFX0XORBw==
+  version "18.0.0-alpha-241485a2c-20210708"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-241485a2c-20210708.tgz#6eea54551762c890688eeb7f4ab512d922a09d03"
+  integrity sha512-zeR8jPk/52lfNanmzTPq/oPEm3fvaA/sT5mr3x3Cz37fIXegHSLLpHz6eIfX+0nV826rMrcAi27Ezkj25NxhZQ==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-alpha-3e8c86c1c-20210630"
+    react-is "18.0.0-alpha-241485a2c-20210708"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-alpha-3e8c86c1c-20210630"
+    scheduler "0.21.0-alpha-241485a2c-20210708"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -17800,6 +17800,14 @@ saxes@^5.0.1:
   integrity sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
   dependencies:
     xmlchars "^2.2.0"
+
+scheduler@0.21.0-alpha-241485a2c-20210708:
+  version "0.21.0-alpha-241485a2c-20210708"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-241485a2c-20210708.tgz#fe124de66bddba0acb4b8662d4c8a7e3c3454b39"
+  integrity sha512-0k/azQjCok+Xtk1pSyHGPN4WIexbZZKwgqpbQUdFndsMCxibOz3pM0EdHcbtavpOwK2GRbSAtXXVE1THKzX73Q==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@0.21.0-alpha-3e8c86c1c-20210630:
   version "0.21.0-alpha-3e8c86c1c-20210630"
