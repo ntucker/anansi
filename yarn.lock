@@ -3262,7 +3262,7 @@
     global "^4.4.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/api@6.3.3", "@storybook/api@^6.3.0":
+"@storybook/api@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.3.3.tgz#094b57959dc4c81f69a53d6f16373b69faeda3d8"
   integrity sha512-Q8LxULCZF/ZUalamvNXLbT7x3bmH2She5TZFTyEINJF7W1UX5wluWnJ6RonAFxAK7GvLTf0wSHS7wzritJGMjg==
@@ -3288,7 +3288,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@6.3.4":
+"@storybook/api@6.3.4", "@storybook/api@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.3.4.tgz#25b8b842104693000b018b3f64986e95fa032b45"
   integrity sha512-12q6dvSR4AtyuZbKAy3Xt+ZHzZ4ePPRV1q20xtgYBoiFEgB9vbh4XKEeeZD0yIeTamQ2x1Hn87R79Rs1GIdKRQ==
@@ -3466,10 +3466,10 @@
     webpack-hot-middleware "^2.25.0"
     webpack-virtual-modules "^0.2.2"
 
-"@storybook/builder-webpack5@^6.3.3":
-  version "6.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-6.3.3.tgz#1499331ca9018a11f3cd8935c933f5b50730eadd"
-  integrity sha512-nvldWlB25Knw/asqPbV4mOBKX3Ug2YCF+vfbcFPExCPCxWuAqkEdimSgf6i4NURKysOcDXj6OTo48ljnSVspUw==
+"@storybook/builder-webpack5@^6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-6.3.4.tgz#13621c812c88abea5327f2f380180ffce9d34c53"
+  integrity sha512-vLuP9T5PJZel5bysQEp60IdwS1WvbItJXWDAsyvR6TdoU8vl5e/M+cGiKkGijov2bm7q2J7x6CzkaVGqT7D2rQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -3491,19 +3491,19 @@
     "@babel/preset-env" "^7.12.11"
     "@babel/preset-react" "^7.12.10"
     "@babel/preset-typescript" "^7.12.7"
-    "@storybook/addons" "6.3.3"
-    "@storybook/api" "6.3.3"
-    "@storybook/channel-postmessage" "6.3.3"
-    "@storybook/channels" "6.3.3"
-    "@storybook/client-api" "6.3.3"
-    "@storybook/client-logger" "6.3.3"
-    "@storybook/components" "6.3.3"
-    "@storybook/core-common" "6.3.3"
-    "@storybook/core-events" "6.3.3"
-    "@storybook/node-logger" "6.3.3"
-    "@storybook/router" "6.3.3"
+    "@storybook/addons" "6.3.4"
+    "@storybook/api" "6.3.4"
+    "@storybook/channel-postmessage" "6.3.4"
+    "@storybook/channels" "6.3.4"
+    "@storybook/client-api" "6.3.4"
+    "@storybook/client-logger" "6.3.4"
+    "@storybook/components" "6.3.4"
+    "@storybook/core-common" "6.3.4"
+    "@storybook/core-events" "6.3.4"
+    "@storybook/node-logger" "6.3.4"
+    "@storybook/router" "6.3.4"
     "@storybook/semver" "^7.3.2"
-    "@storybook/theming" "6.3.3"
+    "@storybook/theming" "6.3.4"
     "@types/node" "^14.0.10"
     babel-loader "^8.2.2"
     babel-plugin-macros "^3.0.1"
@@ -3636,7 +3636,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/components@6.3.3", "@storybook/components@^6.3.0":
+"@storybook/components@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.3.tgz#eba4fabf76e84fb70e00a82ebf4ba16c4b2ff984"
   integrity sha512-45XDLRTXdG2bfEILwMkENdknkyVLQrqchcVh7qm+wtZEXhbtIGoTxlXYPUST+xB6MF5AXZ0c8UTm2YMgV3v3FQ==
@@ -3666,7 +3666,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/components@6.3.4":
+"@storybook/components@6.3.4", "@storybook/components@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.3.4.tgz#c872ec267edf315eaada505be8595c70eb6db09b"
   integrity sha512-0hBKTkkQbW+daaA6nRedkviPr2bEzy1kwq0H5eaLKI1zYeXN3U5Z8fVhO137PPqH5LmLietrmTPkqiljUBk9ug==
@@ -3850,14 +3850,14 @@
     util-deprecate "^1.0.2"
     webpack "4"
 
-"@storybook/core-events@6.3.3", "@storybook/core-events@^6.3.0":
+"@storybook/core-events@6.3.3":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.3.tgz#4d073a601f10f928fa27207cc9e7eb313a74fc77"
   integrity sha512-Ym/Xna7GrCF0CbTkbejzuAw7LunZ158AT2AvGYMZujGBzunYG7MlfXVoS6YjUUt8vEmGHi8g6PdD6uij4IBY8A==
   dependencies:
     core-js "^3.8.2"
 
-"@storybook/core-events@6.3.4":
+"@storybook/core-events@6.3.4", "@storybook/core-events@^6.3.0":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.3.4.tgz#f841b8659a8729d334acd9a6dcfc470c88a2be8f"
   integrity sha512-6qI5bU5VcAoRfxkvpdRqO16eYrX5M0P2E3TakqUUDcgDo5Rfcwd1wTTcwiXslMIh7oiVGiisA+msKTlfzyKf9Q==
