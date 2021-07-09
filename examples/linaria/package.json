@@ -23,7 +23,7 @@
     "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^5.1.8",
     "babel-loader": "8.2.2",
-    "react-refresh": "^0.11.0-alpha-01be61c12",
+    "react-refresh": "^0.11.0-alpha-241485a2c-20210708",
     "serve": "^12.0.0"
   },
   "dependencies": {
