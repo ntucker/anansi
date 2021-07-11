@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.8...@anansi/generator-js@6.2.9) (2021-07-11)
+
+
+### 📦 Package
+
+* bump @types/ejs from 3.0.6 to 3.0.7 ([#574](https://github.com/ntucker/anansi/issues/574)) ([1c0287a](https://github.com/ntucker/anansi/commit/1c0287a14b7777881674f7dc80c9d920d851e3b8))
+* bump @types/gulp-filter from 3.0.33 to 3.0.34 ([#592](https://github.com/ntucker/anansi/issues/592)) ([c3e453d](https://github.com/ntucker/anansi/commit/c3e453d754c68bea99fb14a7f52780643b6bf857))
+* bump @types/mem-fs-editor from 7.0.0 to 7.0.1 ([#595](https://github.com/ntucker/anansi/issues/595)) ([7a3a82a](https://github.com/ntucker/anansi/commit/7a3a82aa81c62e0aef14a05083c4e511a4790a2f))
+* bump @types/node from 15.12.5 to 15.14.0 ([#557](https://github.com/ntucker/anansi/issues/557)) ([57a603b](https://github.com/ntucker/anansi/commit/57a603bef3445d108453cd63a5b6bd7b960d6ee5))
+* bump @types/node from 15.14.0 to 16.0.1 ([#581](https://github.com/ntucker/anansi/issues/581)) ([b0ab2a8](https://github.com/ntucker/anansi/commit/b0ab2a8853f51f5fee9a8b80e94b82f77fa1b71e))
+* bump @types/node from 16.0.1 to 16.3.0 ([#597](https://github.com/ntucker/anansi/issues/597)) ([d69a2e4](https://github.com/ntucker/anansi/commit/d69a2e4b5272036dffb98e4537fd486864cb0b35))
+* bump @types/node from 16.3.0 to 16.3.1 ([#602](https://github.com/ntucker/anansi/issues/602)) ([8c20810](https://github.com/ntucker/anansi/commit/8c208101994491c731634d4a24e02db75dea3c5c))
+* bump @types/pacote from 11.1.0 to 11.1.1 ([#578](https://github.com/ntucker/anansi/issues/578)) ([5c16748](https://github.com/ntucker/anansi/commit/5c167487b5572cf7e2d5b97c52bbe0d0fc634bb0))
+* bump @types/yeoman-generator from 5.2.0 to 5.2.1 ([#564](https://github.com/ntucker/anansi/issues/564)) ([29657a9](https://github.com/ntucker/anansi/commit/29657a9f4f7ebf13eb6d8e15ba03f945922d79dc))
+* bump husky from 6.0.0 to 7.0.0 ([#558](https://github.com/ntucker/anansi/issues/558)) ([f7a1056](https://github.com/ntucker/anansi/commit/f7a10566aa759145099f9c098fb88464d1dc7711))
+* bump husky from 7.0.0 to 7.0.1 ([#575](https://github.com/ntucker/anansi/issues/575)) ([90b05d0](https://github.com/ntucker/anansi/commit/90b05d0c5c64d32c5d6b8e4b88672c68fc78c9b5))
+* bump pacote from 11.3.4 to 11.3.5 ([#561](https://github.com/ntucker/anansi/issues/561)) ([c8ab368](https://github.com/ntucker/anansi/commit/c8ab368b11b1a908f41d8b798f0874084ba9b1f3))
+* bump yeoman-generator from 5.3.0 to 5.4.0 ([#568](https://github.com/ntucker/anansi/issues/568)) ([e886df3](https://github.com/ntucker/anansi/commit/e886df3384c21bc09e8b4029993dbf515c74b251))
+
+
+
 ### [6.2.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.7...@anansi/generator-js@6.2.8) (2021-07-01)
 
 

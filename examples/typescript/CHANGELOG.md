@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.6](https://github.com/ntucker/anansi/compare/example-typescript@7.0.5...example-typescript@7.0.6) (2021-07-11)
+
+
+### 📦 Package
+
+* bump @types/jest from 26.0.23 to 26.0.24 ([#573](https://github.com/ntucker/anansi/issues/573)) ([0770761](https://github.com/ntucker/anansi/commit/0770761b6d92ac8bb62d5135660c871c2956053c))
+* bump @types/lodash from 4.14.170 to 4.14.171 ([#576](https://github.com/ntucker/anansi/issues/576)) ([6b21ab0](https://github.com/ntucker/anansi/commit/6b21ab07bcec8fbe4647fc18da161ac1b99c90a2))
+* bump @types/node from 15.12.5 to 15.14.0 ([#557](https://github.com/ntucker/anansi/issues/557)) ([57a603b](https://github.com/ntucker/anansi/commit/57a603bef3445d108453cd63a5b6bd7b960d6ee5))
+* bump @types/node from 15.14.0 to 16.0.1 ([#581](https://github.com/ntucker/anansi/issues/581)) ([b0ab2a8](https://github.com/ntucker/anansi/commit/b0ab2a8853f51f5fee9a8b80e94b82f77fa1b71e))
+* bump @types/node from 16.0.1 to 16.3.0 ([#597](https://github.com/ntucker/anansi/issues/597)) ([d69a2e4](https://github.com/ntucker/anansi/commit/d69a2e4b5272036dffb98e4537fd486864cb0b35))
+* bump @types/node from 16.3.0 to 16.3.1 ([#602](https://github.com/ntucker/anansi/issues/602)) ([8c20810](https://github.com/ntucker/anansi/commit/8c208101994491c731634d4a24e02db75dea3c5c))
+* bump @types/react-router-dom from 5.1.7 to 5.1.8 ([#580](https://github.com/ntucker/anansi/issues/580)) ([f266756](https://github.com/ntucker/anansi/commit/f2667566013524f559c5ccc70dcae2febde3d88c))
+
+
+
 ### [7.0.5](https://github.com/ntucker/anansi/compare/example-typescript@7.0.4...example-typescript@7.0.5) (2021-07-01)
 
 

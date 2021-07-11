@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.5](https://github.com/ntucker/anansi/compare/example-linaria@3.0.4...example-linaria@3.0.5) (2021-07-11)
+
+
+### 📦 Package
+
+* bump @types/react-router-dom from 5.1.7 to 5.1.8 ([#580](https://github.com/ntucker/anansi/issues/580)) ([f266756](https://github.com/ntucker/anansi/commit/f2667566013524f559c5ccc70dcae2febde3d88c))
+
+
+
 ### [3.0.4](https://github.com/ntucker/anansi/compare/example-linaria@3.0.3...example-linaria@3.0.4) (2021-07-01)
 
 

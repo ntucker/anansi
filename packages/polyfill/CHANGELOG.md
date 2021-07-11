@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.71](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.70...@anansi/polyfill@1.0.71) (2021-07-11)
+
+
+### 📦 Package
+
+* bump @types/node from 15.14.0 to 16.0.1 ([#581](https://github.com/ntucker/anansi/issues/581)) ([b0ab2a8](https://github.com/ntucker/anansi/commit/b0ab2a8853f51f5fee9a8b80e94b82f77fa1b71e))
+* bump rollup from 2.52.4 to 2.52.6 ([#551](https://github.com/ntucker/anansi/issues/551)) ([e3f0e31](https://github.com/ntucker/anansi/commit/e3f0e3193a1b65b0623186240c5fa05f642682ec))
+* bump rollup from 2.52.6 to 2.52.7 ([#559](https://github.com/ntucker/anansi/issues/559)) ([e911b8f](https://github.com/ntucker/anansi/commit/e911b8f808bb52f1bdb59e54c2eccf09efa12ff5))
+* bump rollup from 2.52.7 to 2.52.8 ([#588](https://github.com/ntucker/anansi/issues/588)) ([2a64712](https://github.com/ntucker/anansi/commit/2a64712574676d75f3e1061fc4cd6f3ff85948fa))
+* bump rollup from 2.52.8 to 2.53.0 ([#601](https://github.com/ntucker/anansi/issues/601)) ([79530d3](https://github.com/ntucker/anansi/commit/79530d3776302288aa38383faf5f70864ce6bbde))
+
+
+
 ### [1.0.70](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.69...@anansi/polyfill@1.0.70) (2021-07-01)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.4.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.3...@anansi/webpack-config@7.4.4) (2021-07-11)
+
+
+### 📦 Package
+
+* autoprefixer, react-refresh-webpack-plugin minor ([e97aa97](https://github.com/ntucker/anansi/commit/e97aa97ea93a60c8923dc7d1fa95185a2f75b0b4))
+* bump @types/webpack-bundle-analyzer from 4.4.0 to 4.4.1 ([#560](https://github.com/ntucker/anansi/issues/560)) ([3cdfc18](https://github.com/ntucker/anansi/commit/3cdfc1843f413cb70d8b03c1e74ce9fbe02a4a78))
+* bump debug from 4.3.1 to 4.3.2 ([#569](https://github.com/ntucker/anansi/issues/569)) ([43edfb0](https://github.com/ntucker/anansi/commit/43edfb0221026b6deac0a3cb5ce68b2df3f5d9eb))
+* bump mini-css-extract-plugin from 2.0.0 to 2.1.0 ([#567](https://github.com/ntucker/anansi/issues/567)) ([41de28e](https://github.com/ntucker/anansi/commit/41de28e5567dbd9057e0f42057e89c8f8601d678))
+* bump postcss-loader from 6.1.0 to 6.1.1 ([#550](https://github.com/ntucker/anansi/issues/550)) ([c3b89a1](https://github.com/ntucker/anansi/commit/c3b89a1ff1bbd79ac221505bd64c7e77f98a83c5))
+
+
+
 ### [7.4.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.2...@anansi/webpack-config@7.4.3) (2021-07-01)
 
 
