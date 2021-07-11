@@ -70,7 +70,10 @@ export default function makeDevConfig(
   if (!config.resolve.alias) {
     config.resolve.alias = {};
   }
-  if (process.env.NO_HOT_RELOAD !== 'true') {
+  if (
+    process.env.NO_HOT_RELOAD !== 'true' &&
+    process.env.NO_HOT_RELOAD !== true
+  ) {
     try {
       require('react-refresh/babel');
       const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');

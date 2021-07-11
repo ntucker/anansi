@@ -31,7 +31,10 @@ export function makeConfig(options) {
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
       nohash:
-        env?.nohash ?? env?.analyze ?? process.env.WEBPACK_ANALYZE === 'true',
+        env?.nohash ??
+        env?.analyze ??
+        (process.env.WEBPACK_ANALYZE === 'true' ||
+          process.env.WEBPACK_ANALYZE === true),
       argv,
       env,
     };
@@ -120,7 +123,11 @@ export function makeConfig(options) {
     if (env?.check) {
       config = makeCheckConfig(config, options, env?.check);
     }
-    if (env?.analyze || process.env.WEBPACK_ANALYZE === 'true') {
+    if (
+      env?.analyze ||
+      process.env.WEBPACK_ANALYZE === 'true' ||
+      process.env.WEBPACK_ANALYZE === true
+    ) {
       config.plugins.push(
         new BundleAnalyzerPlugin({
           analyzerMode: 'static',

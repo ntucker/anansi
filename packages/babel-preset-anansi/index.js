@@ -35,6 +35,7 @@ function buildPreset(api, options = {}) {
     !babelNode &&
     !options.nodeTarget &&
     process.env.NO_HOT_RELOAD !== 'true' &&
+    process.env.NO_HOT_RELOAD !== true &&
     api.caller(caller => !caller || !caller.noHotReload);
 
   options = {
