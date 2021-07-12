@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.4.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.4...@anansi/webpack-config@7.4.5) (2021-07-12)
+
+
+### 💅 Enhancement
+
+* Env options accept true or  (string or bool) ([8aaabb8](https://github.com/ntucker/anansi/commit/8aaabb800ff00cfedde3b46a0ffe8cd32ee190e9))
+
+
+
 ### [7.4.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.3...@anansi/webpack-config@7.4.4) (2021-07-11)
 
 

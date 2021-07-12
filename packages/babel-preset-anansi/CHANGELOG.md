@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.5...@anansi/babel-preset@2.7.6) (2021-07-12)
+
+
+### 💅 Enhancement
+
+* Env options accept true or  (string or bool) ([8aaabb8](https://github.com/ntucker/anansi/commit/8aaabb800ff00cfedde3b46a0ffe8cd32ee190e9))
+
+
+
 ### [2.7.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.4...@anansi/babel-preset@2.7.5) (2021-07-01)
 
 
