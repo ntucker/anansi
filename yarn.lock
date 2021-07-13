@@ -2990,10 +2990,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^7.0.0-beta.0":
-  version "7.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-7.0.0-beta.0.tgz#4400f77ab05111ab5c1d985afa47b6167e8cae76"
-  integrity sha512-XGR/drwlSPvYgZ0CyUwJSEsBrMJ+4kN7l8u1+yxr6MRUK35c/e4vx4LFPwuXBMCY636nvaYgYR7N2gkm2Gr77w==
+"@rest-hooks/test@^7.0.0-beta.1":
+  version "7.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-7.0.0-beta.1.tgz#5b9c22c32403991226d1a29bfafd131b31cdc579"
+  integrity sha512-PJTPDB7nkygoHSwJBfQ7yqRNRHEFbNgmM5BjN2UtgoOLcW2hpw5iikD7UgdudfNMS0VHbwzIJ3zi6UpKgxK+Eg==
   dependencies:
     "@testing-library/react-hooks" "~7.0.0"
 
