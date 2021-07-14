@@ -4347,10 +4347,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^16.3.1":
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.1.tgz#24691fa2b0c3ec8c0d34bfcfd495edac5593ebb4"
-  integrity sha512-N87VuQi7HEeRJkhzovao/JviiqKjDKMVKxKMfUvSKw+MbkbW8R0nA3fi/MQhhlxV2fQ+2ReM+/Nt4efdrJx3zA==
+"@types/node@*", "@types/node@^16.3.2":
+  version "16.3.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
+  integrity sha512-jJs9ErFLP403I+hMLGnqDRWT0RYKSvArxuBVh2veudHV7ifEC1WAmjJADacZ7mRbA2nWgHtn8xyECMAot0SkAw==
 
 "@types/node@^14.0.10":
   version "14.14.41"
@@ -7456,10 +7456,10 @@ css-has-pseudo@^0.10.0:
     postcss "^7.0.6"
     postcss-selector-parser "^5.0.0-rc.4"
 
-css-loader@^3.6.0, css-loader@^5.0.1, css-loader@^5.2.4, css-loader@^5.2.5:
-  version "5.2.6"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.6.tgz#c3c82ab77fea1f360e587d871a6811f4450cc8d1"
-  integrity sha512-0wyN5vXMQZu6BvjbrPdUJvkCzGEO24HC7IS7nW4llc6BBFC+zwR9CKtYGv63Puzsg10L/o12inMY5/2ByzfD6w==
+css-loader@^3.6.0, css-loader@^5.0.1, css-loader@^5.2.4, css-loader@^5.2.7:
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.7.tgz#9b9f111edf6fb2be5dc62525644cbc9c232064ae"
+  integrity sha512-Q7mOvpBNBG7YrVGMxRxcBJZFL75o+cH2abNASdibkj/fffYD8qWbInZrD0S9ccI6vZclF3DsHE7njGlLtaHbhg==
   dependencies:
     icss-utils "^5.1.0"
     loader-utils "^2.0.0"
@@ -16635,20 +16635,15 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.11.0-alpha-01be61c12:
-  version "0.11.0-alpha-ed6c091fe-20210701"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-ed6c091fe-20210701.tgz#6ed027963bf56e76db20340b7ad875c82555f846"
-  integrity sha512-9aJaXRGm0qJbgSuJ3xRJAEV/c7dDJldsNiSPNgythncfrWu86uNYKTXghtv6GSIRd2WoXMgRIi7TRPjSvNxLbw==
+react-refresh@^0.11.0-alpha-464f27572-20210713, react-refresh@next:
+  version "0.11.0-alpha-464f27572-20210713"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-464f27572-20210713.tgz#46eeea07336b8cfc4b49cc1fa00f9721af45d893"
+  integrity sha512-BbtL7s39IH+MwnxrMVwPUXVsZYfUyxB4c8lLAMdbPBLzgQP111qGImsC45VOrEuxi+e0+FjJ8RWsepULJ0GYsQ==
 
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
-
-react-refresh@next:
-  version "0.11.0-alpha-cb8afda18-20210708"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-cb8afda18-20210708.tgz#0faa89c6d1b422d87047b7d2bd5f669447af8166"
-  integrity sha512-gGk2wt5HmZiVn50PwQvmnjER3w6bJCIl/PhQcqg+p+rTrUPoLJjOsIkhs9CNn8snmdjXn1T4uS0YrF/XQKhgYg==
 
 react-router-dom@^5.2.0:
   version "5.2.0"
