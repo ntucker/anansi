@@ -16736,9 +16736,9 @@ react-textarea-autosize@^8.3.0:
     use-latest "^1.0.0"
 
 react@next:
-  version "18.0.0-alpha-cb8afda18-20210708"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-cb8afda18-20210708.tgz#9001938e66618e3e0f8a457b37c6abdab3f9536b"
-  integrity sha512-RG2EmvK5BvMbX/IDh0ubDJW0gxVQVmXpk2hry5W/Sx6DNtkUg3QJ3zySeLzoATAmvahDa/Qq7cxat3rVpSQEEQ==
+  version "18.0.0-alpha-464f27572-20210713"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-464f27572-20210713.tgz#797c40df5a9be2c5fb85136e607f7d35b7d659c6"
+  integrity sha512-r/EYCq7Do02NKPHtJReS5C1ueeaSe7GvnEbodW0DHqamtHRadLMIr+DgBbgZzv46O7V3nqfwHMmmMUP3Y7FBjQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
