@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.7](https://github.com/ntucker/anansi/compare/example-linaria@3.0.6...example-linaria@3.0.7) (2021-07-14)
+
+
+### 📦 Package
+
+* react, lint-staged ([#618](https://github.com/ntucker/anansi/issues/618)) ([b8d45a3](https://github.com/ntucker/anansi/commit/b8d45a3f1be2beadf1b76383f1eb81648dfaa817))
+
+
+
 ### [3.0.6](https://github.com/ntucker/anansi/compare/example-linaria@3.0.5...example-linaria@3.0.6) (2021-07-12)
 
 **Note:** Version bump only for package example-linaria

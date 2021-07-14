@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.8](https://github.com/ntucker/anansi/compare/example-typescript@7.0.7...example-typescript@7.0.8) (2021-07-14)
+
+
+### 📦 Package
+
+* bump @rest-hooks/test from 7.0.0-beta.0 to 7.0.0-beta.1 ([#605](https://github.com/ntucker/anansi/issues/605)) ([d23c632](https://github.com/ntucker/anansi/commit/d23c632ae888500cce27052d564b55dfaaadf2b4))
+* bump @types/node from 16.3.1 to 16.3.2 ([#611](https://github.com/ntucker/anansi/issues/611)) ([729ff46](https://github.com/ntucker/anansi/commit/729ff4642cacdb26e6f8162a5a70207ab5a5a00d))
+* bump antd from 4.16.6 to 4.16.7 ([#604](https://github.com/ntucker/anansi/issues/604)) ([e5d27c1](https://github.com/ntucker/anansi/commit/e5d27c17c11e94f921480dce20d546d4d1535f4a))
+* bump rest-hooks from 6.0.0-beta.1 to 6.0.0-beta.2 ([#606](https://github.com/ntucker/anansi/issues/606)) ([9b81d72](https://github.com/ntucker/anansi/commit/9b81d72fb50dfddb533dc202593285efe90f0884))
+
+
+
 ### [7.0.7](https://github.com/ntucker/anansi/compare/example-typescript@7.0.6...example-typescript@7.0.7) (2021-07-12)
 
 **Note:** Version bump only for package example-typescript
