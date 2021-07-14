@@ -218,7 +218,16 @@ export default function makeBaseConfig({
     },
     resolve: {
       modules,
-      extensions: ['.wasm', '.mjs', '.js', '.ts', '.tsx', '.scss', '.json'],
+      extensions: [
+        '.wasm',
+        '.mjs',
+        '.js',
+        '.ts',
+        '.tsx',
+        '.cjs',
+        '.scss',
+        '.json',
+      ],
       alias: NODE_ALIAS,
       plugins:
         tsconfigPathsOptions !== false

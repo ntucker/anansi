@@ -11,8 +11,7 @@
 var stripAnsi = require('strip-ansi');
 var launchEditorEndpoint = require('react-dev-utils/launchEditorEndpoint');
 var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
-var runWithPatchedUrl =
-  require('@pmmmwh/react-refresh-webpack-plugin/client/utils/patchUrl').default;
+var runWithPatchedUrl = require('@pmmmwh/react-refresh-webpack-plugin/client/utils/patchUrl');
 var ErrorOverlay = require('react-error-overlay');
 
 ErrorOverlay.setEditorHandler(function editorHandler(errorLocation) {
