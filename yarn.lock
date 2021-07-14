@@ -17586,14 +17586,6 @@ scheduler@0.21.0-alpha-464f27572-20210713:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-scheduler@0.21.0-alpha-cb8afda18-20210708:
-  version "0.21.0-alpha-cb8afda18-20210708"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-cb8afda18-20210708.tgz#0d0188d66bcca1fd946c7f32eaa732c43e1aa922"
-  integrity sha512-+3Z8HqJkwZxXkTOM2VQH1pM2GaOhQnODpMAJUXV20SC5uoW2dZm+mr/ym9INe3zI9cpo6/Hx4fg+qiifo1FGfQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-
 schema-utils@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.7.0.tgz#17151f76d8eae67fbbf77960c33c676ad9f4efc7"
