@@ -18,13 +18,13 @@ const getCSSLoaders = ({ mode, target }) => {
               sourceMap: true,
               importLoaders: 1,
               modules: {
-                compileType: 'icss',
+                mode: 'icss',
               },
             }
           : {
               importLoaders: 1,
               modules: {
-                compileType: 'icss',
+                mode: 'icss',
               },
             },
     },
