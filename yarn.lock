@@ -7456,7 +7456,7 @@ css-has-pseudo@^0.10.0:
     postcss "^7.0.6"
     postcss-selector-parser "^5.0.0-rc.4"
 
-css-loader@^3.6.0, css-loader@^5.0.1, css-loader@^5.2.4, css-loader@^5.2.7:
+css-loader@^3.6.0, css-loader@^5.0.1, css-loader@^5.2.4, css-loader@^6.0.0:
   version "5.2.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.2.7.tgz#9b9f111edf6fb2be5dc62525644cbc9c232064ae"
   integrity sha512-Q7mOvpBNBG7YrVGMxRxcBJZFL75o+cH2abNASdibkj/fffYD8qWbInZrD0S9ccI6vZclF3DsHE7njGlLtaHbhg==
@@ -17577,14 +17577,6 @@ saxes@^5.0.1:
   integrity sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
   dependencies:
     xmlchars "^2.2.0"
-
-scheduler@0.21.0-alpha-464f27572-20210713:
-  version "0.21.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-464f27572-20210713.tgz#90f45514128d96e9b7e2a14730d1e056c9dee872"
-  integrity sha512-r0f7cVnPerUj5VQvRU/7kcVcHEBG2Z1I6kSt1qE0OzIHmfB2OrwoFazYhWkNpDhDkOwczOSFC+6FRyWTr1E6Dg==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 scheduler@0.21.0-alpha-81346764b-20210714:
   version "0.21.0-alpha-81346764b-20210714"
