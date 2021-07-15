@@ -349,6 +349,10 @@ Note: dev mode sets its own path based assets serving is completely controlled b
 Forms the second half of the [publicPath](https://webpack.js.org/guides/public-path/). Can be useful when assets are served in subdirectories as
 opposed to custom domains like in the case of CDNs.
 
+### NO_HOT_RELOAD
+
+Setting to 'true' will disable all hot reloading functionality (only enabled by default in dev mode).
+
 ## Options
 
 Pass these to makeConfig.
