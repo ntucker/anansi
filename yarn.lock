@@ -16537,13 +16537,13 @@ react-docgen@^5.0.0:
     strip-indent "^3.0.0"
 
 react-dom@next:
-  version "18.0.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-464f27572-20210713.tgz#78c3bf80efbcdaf8509764b4a2f5ec30a229d996"
-  integrity sha512-QA14X9XvnIK//d9lPq97lc6byygQTib/PC30rjmiwtFPLTLC3Phk+F1NAVWByR15NyXC/el5vjeesZVpbI+0LA==
+  version "18.0.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-81346764b-20210714.tgz#b8755c63f438da4c6c1ee9bc20b3b33bcd86fcd4"
+  integrity sha512-gN8bMWEtdKyQXh1eXINA3mYuPkRlTeDJIhQvTrbDOYNHe0GzMne793xGtETlLPDnpv928fEwK6dz/prUsDPjzA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-alpha-464f27572-20210713"
+    scheduler "0.21.0-alpha-81346764b-20210714"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -16598,10 +16598,10 @@ react-inspector@^5.1.0:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-is@18.0.0-alpha-464f27572-20210713:
-  version "18.0.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-464f27572-20210713.tgz#4fc6193b1693a05bbda362e87f52c75e5e6b925b"
-  integrity sha512-LTuDzGB12K4hd3oUvoSbKXoayWWN7z2g5/p3bLTLBlRsSdclQlFy6qOOQB0gCYNiszk4eLWFmJ6Z8wZAAmdgJA==
+react-is@18.0.0-alpha-81346764b-20210714:
+  version "18.0.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-81346764b-20210714.tgz#5529a73bd6c3c93e47e552d15b8edf3b6a05571d"
+  integrity sha512-nSrdOayfupi24ffr7TWFnhDMriSIX3/E7xMU/jZu9ZSuY6QuxTwCwjG/nNiGN8VF6zRhHNRqaQHJO9THXCgbMg==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -16635,10 +16635,10 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.11.0-alpha-464f27572-20210713, react-refresh@next:
-  version "0.11.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-464f27572-20210713.tgz#46eeea07336b8cfc4b49cc1fa00f9721af45d893"
-  integrity sha512-BbtL7s39IH+MwnxrMVwPUXVsZYfUyxB4c8lLAMdbPBLzgQP111qGImsC45VOrEuxi+e0+FjJ8RWsepULJ0GYsQ==
+react-refresh@^0.11.0-alpha-81346764b-20210714, react-refresh@next:
+  version "0.11.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-81346764b-20210714.tgz#d52325caa264a1f69bf05547784891537b9de950"
+  integrity sha512-uFRxOi2rjMFQmHBuoVf96xTNuvkFeBvBjATxknes4XoM5FkdXysaoJRaek3sH+btYH0VoJAVpa5UXWVRhR5h/w==
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -16712,14 +16712,14 @@ react-syntax-highlighter@^13.5.3:
     refractor "^3.1.0"
 
 react-test-renderer@next:
-  version "18.0.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-464f27572-20210713.tgz#90f7418c9f67b3e7cf22e205ec72cdf0a0ad103a"
-  integrity sha512-wx2EsJDragkj0QHAT0geEfgu9GsmqQO9pi4OGxC61KZDy67hrn4ZY4att5qmOkLbIm6ubNvppW7E5q+XUBD7CA==
+  version "18.0.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-81346764b-20210714.tgz#b9139650c04d0c2b19a61ebcf64410b50d63dbac"
+  integrity sha512-RpkejqKyJlyILeJm2zQBwaW5chpk/qLlvy9K7oOoQ1e5BChKBJsEbBgSqZy5CpHuSsGuUK4BMJU6eOb6qCqtvA==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-alpha-464f27572-20210713"
+    react-is "18.0.0-alpha-81346764b-20210714"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-alpha-464f27572-20210713"
+    scheduler "0.21.0-alpha-81346764b-20210714"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -16731,9 +16731,9 @@ react-textarea-autosize@^8.3.0:
     use-latest "^1.0.0"
 
 react@next:
-  version "18.0.0-alpha-464f27572-20210713"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-464f27572-20210713.tgz#797c40df5a9be2c5fb85136e607f7d35b7d659c6"
-  integrity sha512-r/EYCq7Do02NKPHtJReS5C1ueeaSe7GvnEbodW0DHqamtHRadLMIr+DgBbgZzv46O7V3nqfwHMmmMUP3Y7FBjQ==
+  version "18.0.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-81346764b-20210714.tgz#f3b8f051283875ec07c5e94c2e7a86e1246e68cb"
+  integrity sha512-PSAHq+djJ8TV5CNtIRon5QIMnHyXlENmdYd4fGzRQtqplzaUNZFkJzyEPfaWz1X7IAvguynJaFn0SCmdfLG+eA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -17582,6 +17582,14 @@ scheduler@0.21.0-alpha-464f27572-20210713:
   version "0.21.0-alpha-464f27572-20210713"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-464f27572-20210713.tgz#90f45514128d96e9b7e2a14730d1e056c9dee872"
   integrity sha512-r0f7cVnPerUj5VQvRU/7kcVcHEBG2Z1I6kSt1qE0OzIHmfB2OrwoFazYhWkNpDhDkOwczOSFC+6FRyWTr1E6Dg==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@0.21.0-alpha-81346764b-20210714:
+  version "0.21.0-alpha-81346764b-20210714"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-81346764b-20210714.tgz#6fe30e0444ee3b59baa3de0aeca0685dfb7d0c53"
+  integrity sha512-mDRAm1qH6zPlqgJRWuHjcn5igkPVnTSu3tuFcn576pvdQBuI8V9qBNn8aCci9xG2LH0lCrlJ2r+EvACqS9Sq2w==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
