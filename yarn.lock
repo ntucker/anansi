@@ -16628,10 +16628,10 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.11.0-alpha-81346764b-20210714, react-refresh@next:
-  version "0.11.0-alpha-81346764b-20210714"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-81346764b-20210714.tgz#d52325caa264a1f69bf05547784891537b9de950"
-  integrity sha512-uFRxOi2rjMFQmHBuoVf96xTNuvkFeBvBjATxknes4XoM5FkdXysaoJRaek3sH+btYH0VoJAVpa5UXWVRhR5h/w==
+react-refresh@^0.11.0-alpha-310187264-20210716, react-refresh@next:
+  version "0.11.0-alpha-310187264-20210716"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-310187264-20210716.tgz#8cac66f0f1184936ae765fb0826f552bdfa6bb31"
+  integrity sha512-A8EoA04Gvyt1xLLIG/KsWPO50eMb83nahHvqbxQf7crYjHreYiNS6JpZq69n3QToFNnBFQVooT4xNSg1DHp+/A==
 
 react-refresh@^0.8.3:
   version "0.8.3"
