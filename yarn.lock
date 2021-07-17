@@ -16591,10 +16591,10 @@ react-inspector@^5.1.0:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-is@18.0.0-alpha-81346764b-20210714:
-  version "18.0.0-alpha-81346764b-20210714"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-81346764b-20210714.tgz#5529a73bd6c3c93e47e552d15b8edf3b6a05571d"
-  integrity sha512-nSrdOayfupi24ffr7TWFnhDMriSIX3/E7xMU/jZu9ZSuY6QuxTwCwjG/nNiGN8VF6zRhHNRqaQHJO9THXCgbMg==
+react-is@18.0.0-alpha-310187264-20210716:
+  version "18.0.0-alpha-310187264-20210716"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-310187264-20210716.tgz#1c853132d44927a4ef5fe7cef3cf0bfd7af9f631"
+  integrity sha512-AvHINOW3n0qiDV7h1PYgemnuJ3fD2PnueNJGE9s/1r+AN20aPaYWhKAbaqR2R2zChyi3EiTVgnLDGd5MOo6jdw==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -16705,14 +16705,14 @@ react-syntax-highlighter@^13.5.3:
     refractor "^3.1.0"
 
 react-test-renderer@next:
-  version "18.0.0-alpha-81346764b-20210714"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-81346764b-20210714.tgz#b9139650c04d0c2b19a61ebcf64410b50d63dbac"
-  integrity sha512-RpkejqKyJlyILeJm2zQBwaW5chpk/qLlvy9K7oOoQ1e5BChKBJsEbBgSqZy5CpHuSsGuUK4BMJU6eOb6qCqtvA==
+  version "18.0.0-alpha-310187264-20210716"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-310187264-20210716.tgz#a3a69b704f2e00fd338dd32cb23b0473477bd9d5"
+  integrity sha512-lbXkN81Lw+3cruOPUcmULZQgMnuYx71TLdAXZ1Vt0zN41FgJhaAil/f8Np1+who78fvoAToOUeaZHl6YYNMoUA==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-alpha-81346764b-20210714"
+    react-is "18.0.0-alpha-310187264-20210716"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-alpha-81346764b-20210714"
+    scheduler "0.21.0-alpha-310187264-20210716"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -17570,6 +17570,14 @@ saxes@^5.0.1:
   integrity sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
   dependencies:
     xmlchars "^2.2.0"
+
+scheduler@0.21.0-alpha-310187264-20210716:
+  version "0.21.0-alpha-310187264-20210716"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-310187264-20210716.tgz#508eb0420880e5f0d557fbe9da3da41034abc912"
+  integrity sha512-kv+0pijLW9W+0fmlPG8tijCyjBOkvBxUwHNP/b/XwtTSaxNWzH8fZQLNjFBscPbxCkRvnlnMuKFSricZTv8PIw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@0.21.0-alpha-81346764b-20210714:
   version "0.21.0-alpha-81346764b-20210714"
