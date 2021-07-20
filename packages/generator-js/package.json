@@ -63,7 +63,7 @@
     "npm": ">= 5.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.6",
+    "@babel/runtime": "^7.14.8",
     "chalk": "^4.1.0",
     "core-js": "^3.15.2",
     "ejs": "^3.1.5",
