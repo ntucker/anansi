@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.6...@anansi/webpack-config@8.0.0) (2021-07-20)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* cssModuleOptions should conform to https://github.com/webpack-contrib/css-loader/releases/tag/v6.0.0
+
+Bumps [css-loader](https://github.com/webpack-contrib/css-loader) from 5.2.7 to 6.0.0.
+- [Release notes](https://github.com/webpack-contrib/css-loader/releases)
+- [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/webpack-contrib/css-loader/compare/v5.2.7...v6.0.0)
+
+### 📦 Package
+
+* babel patch upgrades ([#637](https://github.com/ntucker/anansi/issues/637)) ([49a9c1a](https://github.com/ntucker/anansi/commit/49a9c1abf724c3d0733f15f15d39fbad8d97be0a))
+* bump css-loader from 5.2.7 to 6.0.0 ([#620](https://github.com/ntucker/anansi/issues/620)) ([72b3057](https://github.com/ntucker/anansi/commit/72b305767e8b978c2a69869821c6dec95dc10e59))
+* bump css-loader from 6.0.0 to 6.2.0 ([#636](https://github.com/ntucker/anansi/issues/636)) ([c6dd9ee](https://github.com/ntucker/anansi/commit/c6dd9ee32dde8386c6773de72705144a8b261250))
+
+
+### 📝 Documentation
+
+* Add NO_HOT_RELOAD ([f74b897](https://github.com/ntucker/anansi/commit/f74b897de313573b37eb88ba002e0248217d13b1))
+
+
+
 ### [7.4.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.5...@anansi/webpack-config@7.4.6) (2021-07-14)
 
 

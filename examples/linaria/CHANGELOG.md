@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.8](https://github.com/ntucker/anansi/compare/example-linaria@3.0.7...example-linaria@3.0.8) (2021-07-20)
+
+
+### 📦 Package
+
+* babel patch upgrades ([#637](https://github.com/ntucker/anansi/issues/637)) ([49a9c1a](https://github.com/ntucker/anansi/commit/49a9c1abf724c3d0733f15f15d39fbad8d97be0a))
+* react to 18.0.0-alpha-81346764b-20210714 ([#624](https://github.com/ntucker/anansi/issues/624)) ([2f5fb4c](https://github.com/ntucker/anansi/commit/2f5fb4cffda7776ee2673ebd25788c8fc145f4d6))
+
+
+
 ### [3.0.7](https://github.com/ntucker/anansi/compare/example-linaria@3.0.6...example-linaria@3.0.7) (2021-07-14)
 
 

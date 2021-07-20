@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.9](https://github.com/ntucker/anansi/compare/example-typescript@7.0.8...example-typescript@7.0.9) (2021-07-20)
+
+
+### 📦 Package
+
+* babel patch upgrades ([#637](https://github.com/ntucker/anansi/issues/637)) ([49a9c1a](https://github.com/ntucker/anansi/commit/49a9c1abf724c3d0733f15f15d39fbad8d97be0a))
+* bump @types/node from 16.3.2 to 16.3.3 ([#629](https://github.com/ntucker/anansi/issues/629)) ([e097172](https://github.com/ntucker/anansi/commit/e097172ebaabe39476cbea85ed0705f4d985ed3d))
+* bump antd from 4.16.7 to 4.16.8 ([#632](https://github.com/ntucker/anansi/issues/632)) ([1f166f0](https://github.com/ntucker/anansi/commit/1f166f0a3f7ff3682e2d0d1307bca749932e0a0d))
+
+
+
 ### [7.0.8](https://github.com/ntucker/anansi/compare/example-typescript@7.0.7...example-typescript@7.0.8) (2021-07-14)
 
 
