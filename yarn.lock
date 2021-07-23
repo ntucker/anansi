@@ -12569,12 +12569,12 @@ latest-version@^3.0.0, latest-version@^3.1.0:
   dependencies:
     package-json "^4.0.0"
 
-latest-version@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-5.1.0.tgz#119dfe908fe38d15dfa43ecd13fa12ec8832face"
-  integrity sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA==
+latest-version@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-6.0.0.tgz#469fb95f1d588b38436c1ec8fec947b99ed268c7"
+  integrity sha512-zfTuGx4PwpoSJ1mABs58AkM6qMzu49LZ7LT5JHprKvpGpQ+cYtfSibi3tLLrH4z7UylYU42rfBdwN8YgqbTljA==
   dependencies:
-    package-json "^6.3.0"
+    package-json "^7.0.0"
 
 lazy-universal-dotenv@^3.0.1:
   version "3.0.1"
@@ -14610,7 +14610,7 @@ p-waterfall@^2.1.1:
   dependencies:
     p-reduce "^2.0.0"
 
-package-json@^4.0.0, package-json@^5.0.0, package-json@^6.3.0, package-json@^7.0.0:
+package-json@^4.0.0, package-json@^5.0.0, package-json@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/package-json/-/package-json-7.0.0.tgz#1355416e50a5c1b8f1a6f471197a3650d21186bf"
   integrity sha512-CHJqc94AA8YfSLHGQT3DbvSIuE12NLFekpM4n7LRrAd3dOJtA911+4xe9q6nC3/jcKraq7nNS9VxgtT0KC+diA==
