@@ -27,7 +27,7 @@
     "@babel/cli": "7.14.8",
     "@babel/core": "7.14.8",
     "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/config-conventional": "^13.1.0",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/addons": "^6.3.1",
