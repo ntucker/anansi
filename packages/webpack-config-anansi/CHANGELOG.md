@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.1...@anansi/webpack-config@8.0.2) (2021-07-28)
+
+
+### 🐛 Bug Fix
+
+* Don't crash if terserOptions is not specified ([d86d2a6](https://github.com/ntucker/anansi/commit/d86d2a6bc0967fc98b138e353f80c31c8633aa16))
+
+
+
 ### [8.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.0...@anansi/webpack-config@8.0.1) (2021-07-28)
 
 
