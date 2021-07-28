@@ -139,8 +139,8 @@ export default function makeProdConfig(
             ascii_only: true,
           },
           ...terserOptions,
-          keep_classnames: !!env?.profile || terserOptions.keep_classnames,
-          keep_fnames: !!env?.profile || terserOptions.keep_fnames,
+          keep_classnames: !!env?.profile || terserOptions?.keep_classnames,
+          keep_fnames: !!env?.profile || terserOptions?.keep_fnames,
         },
         extractComments: true,
         // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
