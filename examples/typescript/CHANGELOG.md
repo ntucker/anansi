@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.10](https://github.com/ntucker/anansi/compare/example-typescript@7.0.9...example-typescript@7.0.10) (2021-07-28)
+
+
+### 📦 Package
+
+* @types/node, domain-browser, mem-fs-editor ([#672](https://github.com/ntucker/anansi/issues/672)) ([fcf453a](https://github.com/ntucker/anansi/commit/fcf453af038180e5f899dda9f79a0ce217b1823a))
+* bump @types/node from 16.3.3 to 16.4.0 ([#638](https://github.com/ntucker/anansi/issues/638)) ([2ba7f9e](https://github.com/ntucker/anansi/commit/2ba7f9e337835831b06031ed43181bea2574024a))
+* bump @types/node from 16.4.0 to 16.4.1 ([#648](https://github.com/ntucker/anansi/issues/648)) ([7a6e44a](https://github.com/ntucker/anansi/commit/7a6e44afed763570de380aaa8284e92571fd6b76))
+* bump @types/node from 16.4.1 to 16.4.3 ([#663](https://github.com/ntucker/anansi/issues/663)) ([ee861ec](https://github.com/ntucker/anansi/commit/ee861ec34d5d88fb56c3b2df07eb3d4961302634))
+* bump antd from 4.16.8 to 4.16.9 ([#671](https://github.com/ntucker/anansi/issues/671)) ([9d76913](https://github.com/ntucker/anansi/commit/9d769130427a3ddb1a5db22a1a40062ffcd03ca5))
+
+
+
 ### [7.0.9](https://github.com/ntucker/anansi/compare/example-typescript@7.0.8...example-typescript@7.0.9) (2021-07-20)
 
 

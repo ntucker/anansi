@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.14](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.13...@anansi/cli@1.1.14) (2021-07-28)
+
+
+### 📦 Package
+
+* @types/node, domain-browser, mem-fs-editor ([#672](https://github.com/ntucker/anansi/issues/672)) ([fcf453a](https://github.com/ntucker/anansi/commit/fcf453af038180e5f899dda9f79a0ce217b1823a))
+* bump commander from 8.0.0 to 8.1.0 ([#661](https://github.com/ntucker/anansi/issues/661)) ([0d7be1e](https://github.com/ntucker/anansi/commit/0d7be1eec7111c188d561b044be02a458911a688))
+
+
+
 ### [1.1.13](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.12...@anansi/cli@1.1.13) (2021-07-20)
 
 **Note:** Version bump only for package @anansi/cli

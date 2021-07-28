@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.4](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.3...@anansi/jest-preset@0.5.4) (2021-07-28)
+
+
+### 📦 Package
+
+* rollup, postcss, ts-jest ([#642](https://github.com/ntucker/anansi/issues/642)) ([35937e1](https://github.com/ntucker/anansi/commit/35937e127ebbe8c40a18e4391deb2d147157a67c))
+
+
+
 ### [0.5.3](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.2...@anansi/jest-preset@0.5.3) (2021-07-20)
 
 **Note:** Version bump only for package @anansi/jest-preset

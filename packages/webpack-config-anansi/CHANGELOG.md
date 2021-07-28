@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.0...@anansi/webpack-config@8.0.1) (2021-07-28)
+
+
+### 🐛 Bug Fix
+
+* Allow keep_classnames, keep_fnames overrides ([9ff303f](https://github.com/ntucker/anansi/commit/9ff303f259c0f5560cd7cb6753719042fb154427))
+
+
+### 📦 Package
+
+* @types/node, domain-browser, mem-fs-editor ([#672](https://github.com/ntucker/anansi/issues/672)) ([fcf453a](https://github.com/ntucker/anansi/commit/fcf453af038180e5f899dda9f79a0ce217b1823a))
+* rollup, postcss, ts-jest ([#642](https://github.com/ntucker/anansi/issues/642)) ([35937e1](https://github.com/ntucker/anansi/commit/35937e127ebbe8c40a18e4391deb2d147157a67c))
+
+
+
 ## [8.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@7.4.6...@anansi/webpack-config@8.0.0) (2021-07-20)
 
 
