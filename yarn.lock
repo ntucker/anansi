@@ -4323,10 +4323,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^16.4.7":
-  version "16.4.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.7.tgz#f7afa78769d4b477f5092d7c3468e2e8653d779c"
-  integrity sha512-aDDY54sst8sx47CWT6QQqIZp45yURq4dic0+HCYfYNcY5Ejlb/CLmFnRLfy3wQuYafOeh3lB/DAKaqRKBtcZmA==
+"@types/node@*", "@types/node@^16.4.8":
+  version "16.4.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.8.tgz#ef4974f47524448428542365db2fe7b638f928e5"
+  integrity sha512-VL7RZyCpfYEmbyd3/Eq5RNYhZt7yoL1JThZQ3KzimzhLya2Qa86U1ZZmioNWAAjiz99z1ED1xF9NUV2srvfVrA==
 
 "@types/node@^14.0.10":
   version "14.14.41"
@@ -4577,10 +4577,10 @@
     chalk "^4.1.0"
     rxjs "^6.4.0"
 
-"@types/yeoman-generator@*", "@types/yeoman-generator@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@types/yeoman-generator/-/yeoman-generator-5.2.1.tgz#da0a88d36ad20f05afa59aa330f10d4936c2ed7c"
-  integrity sha512-3l6Jlc8oMRetDqkm1mFOx0KPKVlstWbeGqzETYABFORsJ+p9p2A+YVigUfYKSiptRM/iF/5TzAFvSNDwfwOVTQ==
+"@types/yeoman-generator@*", "@types/yeoman-generator@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@types/yeoman-generator/-/yeoman-generator-5.2.2.tgz#970fba066e358f1d3eda2fa404dbd30a5cca23c2"
+  integrity sha512-tdX63hwkSEGPizBJRwFxfxcQO5uOBTxJFZVVxGIXUY9HzRsb+45cLIBKK3nKH6bNSvcXDVjDSoqD+6/79OHKFw==
   dependencies:
     "@types/debug" "*"
     "@types/ejs" "*"
@@ -6407,10 +6407,10 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
-  integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -7215,10 +7215,10 @@ copyfiles@^2.1.1:
     untildify "^4.0.0"
     yargs "^16.1.0"
 
-core-js-compat@^3.15.0, core-js-compat@^3.15.2, core-js-compat@^3.8.1, core-js-compat@^3.9.1:
-  version "3.15.2"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.15.2.tgz#47272fbb479880de14b4e6081f71f3492f5bd3cb"
-  integrity sha512-Wp+BJVvwopjI+A1EFqm2dwUmWYXrvucmtIB2LgXn/Rb+gWPKYxtmb4GKHGKG/KGF1eK9jfjzT38DITbTOCX/SQ==
+core-js-compat@^3.15.0, core-js-compat@^3.16.0, core-js-compat@^3.8.1, core-js-compat@^3.9.1:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.16.0.tgz#fced4a0a534e7e02f7e084bff66c701f8281805f"
+  integrity sha512-5D9sPHCdewoUK7pSUPfTF7ZhLh8k9/CoJXWUEo+F1dZT5Z1DVgcuRqUKhjeKW+YLb8f21rTFgWwQJiNw1hoZ5Q==
   dependencies:
     browserslist "^4.16.6"
     semver "7.0.0"
