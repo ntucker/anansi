@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.8",
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.2",
     "core-js": "^3.16.0",
     "ejs": "^3.1.5",
     "gulp-filter": "^7.0.0",
