@@ -13214,10 +13214,10 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-"mem-fs-editor@^8.1.2 || ^9.0.0", mem-fs-editor@^9.0.0, mem-fs-editor@^9.0.1, mem-fs-editor@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-9.0.2.tgz#0bf4ea74571e9fa98c94ced28d5213d11c4d270d"
-  integrity sha512-0ebt+XneyzOzYs6HqW5OEJaA997trrETuyy/7Vu92CIO7A5yfqHY0M4MVXAjqBCdX1GzjCe396ljAbm3O087Fw==
+"mem-fs-editor@^8.1.2 || ^9.0.0", mem-fs-editor@^9.0.0, mem-fs-editor@^9.0.1, mem-fs-editor@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-9.1.0.tgz#090868eeaeac60826632a592b4a85a20dda23f77"
+  integrity sha512-BrfhBTJ2oEmE9HRCbv70e7gnpflIDnV7OvDrCt5bcgoORTyleyXz7WberDt5+S/gqMpGfXpwkoXcsGoSMfb2xg==
   dependencies:
     binaryextensions "^4.15.0"
     commondir "^1.0.1"
