@@ -10165,14 +10165,14 @@ gulp-filter@^7.0.0:
     streamfilter "^3.0.0"
     to-absolute-glob "^2.0.2"
 
-gulp-prettier@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-prettier/-/gulp-prettier-3.0.0.tgz#21c7de272fc7528168af6086e8edae6a645168a8"
-  integrity sha512-vZFyC1F+7EjuI2WDUOcbPt9o3ZjdqjFMjr8a9Yk2K8EmNhP1w6X01QAkv5Ym3dsHCBsBA4AEFcYds2vOTSgx0A==
+gulp-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-prettier/-/gulp-prettier-4.0.0.tgz#95e783084d1efbdd588625b2a8214e11d43f2557"
+  integrity sha512-REx99tBRRKJD7qLPaKpplReM9cq2vFvqhMbcUZtJEVjxGjb5Ji+gN9vi8bsM8UhnDV+l0Zrf5x6L4uZiDmvGFQ==
   dependencies:
     plugin-error "^1.0.1"
     prettier "^2.0.0"
-    through2 "^3.0.0"
+    through2 "^4.0.2"
 
 gzip-size@5.1.1:
   version "5.1.1"
@@ -18953,7 +18953,7 @@ through2@^3.0.0:
   dependencies:
     readable-stream "2 || 3"
 
-through2@^4.0.0:
+through2@^4.0.0, through2@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/through2/-/through2-4.0.2.tgz#a7ce3ac2a7a8b0b966c80e7c49f0484c3b239764"
   integrity sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==
