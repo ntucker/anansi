@@ -68,7 +68,7 @@
     "core-js": "^3.16.0",
     "ejs": "^3.1.5",
     "gulp-filter": "^7.0.0",
-    "gulp-prettier": "^3.0.0",
+    "gulp-prettier": "^4.0.0",
     "pacote": "^11.3.5",
     "shelobsay": "^1.0.1",
     "yeoman-generator": "^5.4.0"
