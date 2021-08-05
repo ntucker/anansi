@@ -1,6 +1,6 @@
 {
   "name": "@anansi/jest-preset",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Jest Preset for Anansi",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/jest-preset-anansi#readme",
   "repository": {
@@ -49,7 +49,7 @@
     "prepare": "yarn build"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.7.7"
+    "@anansi/babel-preset": "^2.7.8"
   },
   "dependencies": {
     "@anansi/ts-utils": "^0.2.4",

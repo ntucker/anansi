@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.13...@anansi/generator-js@6.2.14) (2021-08-05)
+
+
+### 📦 Package
+
+* bump @types/node from 16.4.10 to 16.4.12 ([#708](https://github.com/ntucker/anansi/issues/708)) ([7f35771](https://github.com/ntucker/anansi/commit/7f357714f8539fdc24b3578028eabb3e92e0cc66))
+* bump @types/node from 16.4.6 to 16.4.7 ([#679](https://github.com/ntucker/anansi/issues/679)) ([c38d917](https://github.com/ntucker/anansi/commit/c38d917bfa9c2f482541d64a9e9660e5e343d128))
+* bump @types/node from 16.4.8 to 16.4.10 ([#692](https://github.com/ntucker/anansi/issues/692)) ([2aea49d](https://github.com/ntucker/anansi/commit/2aea49d7f2a2884e46f31600ab83a0fa8f150369))
+* bump core-js from 3.15.2 to 3.16.0 ([#683](https://github.com/ntucker/anansi/issues/683)) ([974f93f](https://github.com/ntucker/anansi/commit/974f93f0169ad194d244da3b0e34fb510d676595))
+* bump gulp-prettier from 3.0.0 to 4.0.0 ([#695](https://github.com/ntucker/anansi/issues/695)) ([7f23668](https://github.com/ntucker/anansi/commit/7f23668d505112e9bbe2c251e7e220756dd1e830))
+* core-js-compat, @types/yeoman-generator, chalk, @types/node ([#688](https://github.com/ntucker/anansi/issues/688)) ([271210d](https://github.com/ntucker/anansi/commit/271210d228755bb312ff630b83dbe183b6596c65))
+* rollup, @types/node, domain-browser ([#676](https://github.com/ntucker/anansi/issues/676)) ([46325f2](https://github.com/ntucker/anansi/commit/46325f2b91405378da0b2f259456b37e80b51436))
+
+
+
 ### [6.2.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.12...@anansi/generator-js@6.2.13) (2021-07-28)
 
 

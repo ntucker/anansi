@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.2...@anansi/webpack-config@8.0.3) (2021-08-05)
+
+
+### 📦 Package
+
+* bump core-js from 3.15.2 to 3.16.0 ([#683](https://github.com/ntucker/anansi/issues/683)) ([974f93f](https://github.com/ntucker/anansi/commit/974f93f0169ad194d244da3b0e34fb510d676595))
+* bump domain-browser from 4.21.0 to 4.22.0 ([#680](https://github.com/ntucker/anansi/issues/680)) ([4b7c05b](https://github.com/ntucker/anansi/commit/4b7c05bd697ee34f1fe05a9873ede3fe3c7a4f18))
+* bump mini-css-extract-plugin from 2.1.0 to 2.2.0 ([#705](https://github.com/ntucker/anansi/issues/705)) ([a71b201](https://github.com/ntucker/anansi/commit/a71b201226f4e164ff535d32aca4b7c2b960cf66))
+* rollup, @types/node, domain-browser ([#676](https://github.com/ntucker/anansi/issues/676)) ([46325f2](https://github.com/ntucker/anansi/commit/46325f2b91405378da0b2f259456b37e80b51436))
+* sass-resources-loader ([ee5fb74](https://github.com/ntucker/anansi/commit/ee5fb74ede993ac7bec3217797aedddcb810980b))
+
+
+
 ### [8.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.1...@anansi/webpack-config@8.0.2) (2021-07-28)
 
 

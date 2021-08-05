@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.7...@anansi/babel-preset@2.7.8) (2021-08-05)
+
+
+### 📦 Package
+
+* babel-plugins: class-properties, export-namespace-from, optional-chaining, private-methods, top-level-await ([9131b55](https://github.com/ntucker/anansi/commit/9131b55ca175155621aecf77b1bec35144424a1e))
+* bump @babel/plugin-transform-runtime from 7.14.5 to 7.15.0 ([#701](https://github.com/ntucker/anansi/issues/701)) ([58ab7da](https://github.com/ntucker/anansi/commit/58ab7da6ec5bccdbc180d60c98811a01392e39a5))
+* bump @babel/plugin-transform-typescript from 7.14.6 to 7.15.0 ([#703](https://github.com/ntucker/anansi/issues/703)) ([3ead68a](https://github.com/ntucker/anansi/commit/3ead68a97abd96b72a41df9810a482125118d788))
+* bump @babel/preset-env from 7.14.8 to 7.14.9 ([#696](https://github.com/ntucker/anansi/issues/696)) ([e5d8334](https://github.com/ntucker/anansi/commit/e5d8334630ec75a6f5fc10963f15d9acb0ec8b9d))
+* bump @babel/preset-env from 7.14.9 to 7.15.0 ([#702](https://github.com/ntucker/anansi/issues/702)) ([57d72f1](https://github.com/ntucker/anansi/commit/57d72f1df5f121e7c4fb63b6ae981f29e961fa65))
+* core-js-compat, @types/yeoman-generator, chalk, @types/node ([#688](https://github.com/ntucker/anansi/issues/688)) ([271210d](https://github.com/ntucker/anansi/commit/271210d228755bb312ff630b83dbe183b6596c65))
+
+
+
 ### [2.7.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.6...@anansi/babel-preset@2.7.7) (2021-07-20)
 
 

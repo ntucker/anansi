@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.12](https://github.com/ntucker/anansi/compare/example-typescript@7.0.11...example-typescript@7.0.12) (2021-08-05)
+
+
+### 📦 Package
+
+* bump @types/lodash from 4.14.171 to 4.14.172 ([#700](https://github.com/ntucker/anansi/issues/700)) ([d6171f2](https://github.com/ntucker/anansi/commit/d6171f2e5bde143f244acaf49f901ae4f764e347))
+* bump @types/node from 16.4.10 to 16.4.12 ([#708](https://github.com/ntucker/anansi/issues/708)) ([7f35771](https://github.com/ntucker/anansi/commit/7f357714f8539fdc24b3578028eabb3e92e0cc66))
+* bump @types/node from 16.4.6 to 16.4.7 ([#679](https://github.com/ntucker/anansi/issues/679)) ([c38d917](https://github.com/ntucker/anansi/commit/c38d917bfa9c2f482541d64a9e9660e5e343d128))
+* bump @types/node from 16.4.8 to 16.4.10 ([#692](https://github.com/ntucker/anansi/issues/692)) ([2aea49d](https://github.com/ntucker/anansi/commit/2aea49d7f2a2884e46f31600ab83a0fa8f150369))
+* bump antd from 4.16.9 to 4.16.10 ([#698](https://github.com/ntucker/anansi/issues/698)) ([5fd68de](https://github.com/ntucker/anansi/commit/5fd68dec895ab0f5e6124808211ab075c8daac36))
+* bump core-js from 3.15.2 to 3.16.0 ([#683](https://github.com/ntucker/anansi/issues/683)) ([974f93f](https://github.com/ntucker/anansi/commit/974f93f0169ad194d244da3b0e34fb510d676595))
+* core-js-compat, @types/yeoman-generator, chalk, @types/node ([#688](https://github.com/ntucker/anansi/issues/688)) ([271210d](https://github.com/ntucker/anansi/commit/271210d228755bb312ff630b83dbe183b6596c65))
+* rollup, @types/node, domain-browser ([#676](https://github.com/ntucker/anansi/issues/676)) ([46325f2](https://github.com/ntucker/anansi/commit/46325f2b91405378da0b2f259456b37e80b51436))
+
+
+
 ### [7.0.11](https://github.com/ntucker/anansi/compare/example-typescript@7.0.10...example-typescript@7.0.11) (2021-07-28)
 
 **Note:** Version bump only for package example-typescript
