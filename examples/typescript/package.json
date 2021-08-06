@@ -41,7 +41,7 @@
     "@anansi/polyfill": "^1.0.76",
     "@babel/runtime": "^7.14.8",
     "@rest-hooks/rest": "^3.0.0-beta.0",
-    "@types/node": "^16.4.12",
+    "@types/node": "^16.4.13",
     "antd": "^4.16.10",
     "classnames": "^2.2.6",
     "core-js": "^3.16.0",
