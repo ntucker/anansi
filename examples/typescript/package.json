@@ -44,7 +44,7 @@
     "@types/node": "^16.4.13",
     "antd": "^4.16.11",
     "classnames": "^2.2.6",
-    "core-js": "^3.16.0",
+    "core-js": "^3.16.1",
     "lodash": "^4.17.15",
     "parse-link-header": "^1.0.1",
     "react-router-dom": "^5.2.0",
