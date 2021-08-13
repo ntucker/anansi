@@ -16454,13 +16454,13 @@ react-docgen@^5.0.0:
     strip-indent "^3.0.0"
 
 react-dom@next:
-  version "18.0.0-alpha-81346764b-20210714"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-81346764b-20210714.tgz#b8755c63f438da4c6c1ee9bc20b3b33bcd86fcd4"
-  integrity sha512-gN8bMWEtdKyQXh1eXINA3mYuPkRlTeDJIhQvTrbDOYNHe0GzMne793xGtETlLPDnpv928fEwK6dz/prUsDPjzA==
+  version "18.0.0-alpha-82583617b-20210812"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-82583617b-20210812.tgz#cf6b8ee096ec37fc7a9b7768563df64f03b655ff"
+  integrity sha512-+DQy8QjUl9vlIEJwF2dnI+B7N7GAnawhtz8ehIt1DVHJ7mmbh2yeEk1iVJMR6/50LFmR7fAhwgg0aL16ywMAUg==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-alpha-81346764b-20210714"
+    scheduler "0.21.0-alpha-82583617b-20210812"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -17499,6 +17499,14 @@ scheduler@0.21.0-alpha-81346764b-20210714:
   version "0.21.0-alpha-81346764b-20210714"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-81346764b-20210714.tgz#6fe30e0444ee3b59baa3de0aeca0685dfb7d0c53"
   integrity sha512-mDRAm1qH6zPlqgJRWuHjcn5igkPVnTSu3tuFcn576pvdQBuI8V9qBNn8aCci9xG2LH0lCrlJ2r+EvACqS9Sq2w==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@0.21.0-alpha-82583617b-20210812:
+  version "0.21.0-alpha-82583617b-20210812"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-82583617b-20210812.tgz#0b1c412b86a05b1989c2970d81a9fb27f175710d"
+  integrity sha512-1Z+rLYejjcpnzRUiBuOjbi6Sz+TRbHIN4Glfr+iKodaExwvjnMMn2JRyEkUrwg6lH4+Jf7jz18MRV9IMxr3onQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
