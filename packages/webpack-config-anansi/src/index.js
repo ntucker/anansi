@@ -1,7 +1,6 @@
 import { always } from 'ramda';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import webpack from 'webpack';
-import { extendDefaultPlugins } from 'svgo';
 
 import makeBaseConfig, { ROOT_PATH } from './base';
 import makeDevConfig from './dev';
@@ -74,17 +73,24 @@ export function makeConfig(options) {
     }
     // defaults
     options.svgoOptions = {
-      plugins: extendDefaultPlugins([
-        { name: 'removeTitle', active: false },
-        { name: 'removeComments', active: true },
-        { name: 'removeDesc', active: true },
-        { name: 'removeUselessDefs', active: true },
-        { name: 'removeDoctype', active: true },
-        { name: 'removeMetadata', active: true },
-        { name: 'convertColors', active: true },
-        { name: 'removeViewBox', active: false },
-        { name: 'prefixIds', active: true },
-      ]),
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeTitle: true,
+              removeComments: false,
+              removeDesc: true,
+              removeUselessDefs: true,
+              removeDoctype: true,
+              removeMetadata: true,
+              convertColors: true,
+              removeViewBox: false,
+              prefixIds: true,
+            },
+          },
+        },
+      ],
       ...options.svgoOptions,
     };
 
