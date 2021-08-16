@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.13](https://github.com/ntucker/anansi/compare/example-typescript@7.0.12...example-typescript@7.0.13) (2021-08-16)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.8 to 7.15.3 ([#729](https://github.com/ntucker/anansi/issues/729)) ([2ef12ee](https://github.com/ntucker/anansi/commit/2ef12eeef998bf4ff68b07f9c25035c26ac9acf7))
+* bump @types/jest from 26.0.24 to 27.0.0 ([#734](https://github.com/ntucker/anansi/issues/734)) ([7a49902](https://github.com/ntucker/anansi/commit/7a499022f8298bd5650560cb5de15665e42d0a24))
+* bump @types/jest from 27.0.0 to 27.0.1 ([#740](https://github.com/ntucker/anansi/issues/740)) ([bf9fb4f](https://github.com/ntucker/anansi/commit/bf9fb4f89e0de677da1a084e55ce222353f3b722))
+* bump @types/node from 16.4.12 to 16.4.13 ([#710](https://github.com/ntucker/anansi/issues/710)) ([9b90d0a](https://github.com/ntucker/anansi/commit/9b90d0af2b541944dd2ae06702ac24ca9bab79b7))
+* bump @types/node from 16.4.13 to 16.6.0 ([#739](https://github.com/ntucker/anansi/issues/739)) ([9fd0bf8](https://github.com/ntucker/anansi/commit/9fd0bf88a9d4d35ab27e4495b1d1aedf4d6836b5))
+* bump @types/node from 16.6.0 to 16.6.1 ([#741](https://github.com/ntucker/anansi/issues/741)) ([9c13fcc](https://github.com/ntucker/anansi/commit/9c13fccf68a56bd03dcf4b17eb0a4d8a9c5c3175))
+* bump antd from 4.16.10 to 4.16.11 ([#718](https://github.com/ntucker/anansi/issues/718)) ([fdf2c84](https://github.com/ntucker/anansi/commit/fdf2c8488d09f6cbae1fc4fb794b0c9a189435ec))
+* bump core-js from 3.16.0 to 3.16.1 ([#714](https://github.com/ntucker/anansi/issues/714)) ([74b5df0](https://github.com/ntucker/anansi/commit/74b5df0947ba4756972c62db86d6b2ce2dbaf8ec))
+
+
+
 ### [7.0.12](https://github.com/ntucker/anansi/compare/example-typescript@7.0.11...example-typescript@7.0.12) (2021-08-05)
 
 

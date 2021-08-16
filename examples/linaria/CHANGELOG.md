@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.12](https://github.com/ntucker/anansi/compare/example-linaria@3.0.11...example-linaria@3.0.12) (2021-08-16)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.8 to 7.15.3 ([#729](https://github.com/ntucker/anansi/issues/729)) ([2ef12ee](https://github.com/ntucker/anansi/commit/2ef12eeef998bf4ff68b07f9c25035c26ac9acf7))
+* bump core-js from 3.16.0 to 3.16.1 ([#714](https://github.com/ntucker/anansi/issues/714)) ([74b5df0](https://github.com/ntucker/anansi/commit/74b5df0947ba4756972c62db86d6b2ce2dbaf8ec))
+* bump react-refresh ([#735](https://github.com/ntucker/anansi/issues/735)) ([22f5db2](https://github.com/ntucker/anansi/commit/22f5db2342983564d5bbde151d01bc4c063ce120))
+
+
+
 ### [3.0.11](https://github.com/ntucker/anansi/compare/example-linaria@3.0.10...example-linaria@3.0.11) (2021-08-05)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.3...@anansi/webpack-config@8.0.4) (2021-08-16)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.8 to 7.15.3 ([#729](https://github.com/ntucker/anansi/issues/729)) ([2ef12ee](https://github.com/ntucker/anansi/commit/2ef12eeef998bf4ff68b07f9c25035c26ac9acf7))
+* bump @pmmmwh/react-refresh-webpack-plugin ([#731](https://github.com/ntucker/anansi/issues/731)) ([804e7b9](https://github.com/ntucker/anansi/commit/804e7b9c77491f0ed08c3c35b7679009b7787802))
+* bump core-js from 3.16.0 to 3.16.1 ([#714](https://github.com/ntucker/anansi/issues/714)) ([74b5df0](https://github.com/ntucker/anansi/commit/74b5df0947ba4756972c62db86d6b2ce2dbaf8ec))
+* bump svgo from 2.3.1 to 2.4.0 ([#742](https://github.com/ntucker/anansi/issues/742)) ([e7176f8](https://github.com/ntucker/anansi/commit/e7176f884c37aeb406438a63c8b0f7aad6e7617a))
+
+
+
 ### [8.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.2...@anansi/webpack-config@8.0.3) (2021-08-05)
 
 

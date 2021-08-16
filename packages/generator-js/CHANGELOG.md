@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.14...@anansi/generator-js@6.2.15) (2021-08-16)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.14.8 to 7.15.3 ([#729](https://github.com/ntucker/anansi/issues/729)) ([2ef12ee](https://github.com/ntucker/anansi/commit/2ef12eeef998bf4ff68b07f9c25035c26ac9acf7))
+* bump @types/node from 16.4.12 to 16.4.13 ([#710](https://github.com/ntucker/anansi/issues/710)) ([9b90d0a](https://github.com/ntucker/anansi/commit/9b90d0af2b541944dd2ae06702ac24ca9bab79b7))
+* bump @types/node from 16.4.13 to 16.6.0 ([#739](https://github.com/ntucker/anansi/issues/739)) ([9fd0bf8](https://github.com/ntucker/anansi/commit/9fd0bf88a9d4d35ab27e4495b1d1aedf4d6836b5))
+* bump @types/node from 16.6.0 to 16.6.1 ([#741](https://github.com/ntucker/anansi/issues/741)) ([9c13fcc](https://github.com/ntucker/anansi/commit/9c13fccf68a56bd03dcf4b17eb0a4d8a9c5c3175))
+* bump core-js from 3.16.0 to 3.16.1 ([#714](https://github.com/ntucker/anansi/issues/714)) ([74b5df0](https://github.com/ntucker/anansi/commit/74b5df0947ba4756972c62db86d6b2ce2dbaf8ec))
+* bump yeoman-generator from 5.4.0 to 5.4.1 ([#732](https://github.com/ntucker/anansi/issues/732)) ([978a6ee](https://github.com/ntucker/anansi/commit/978a6ee74789c4519805642dc715d42141ead87a))
+
+
+
 ### [6.2.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.13...@anansi/generator-js@6.2.14) (2021-08-05)
 
 
