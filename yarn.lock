@@ -2927,10 +2927,10 @@
   dependencies:
     "@octokit/openapi-types" "^6.1.1"
 
-"@pmmmwh/react-refresh-webpack-plugin@^0.4.3", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-0", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-rc.3":
-  version "0.5.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.0-rc.3.tgz#eb8b733fc2ab5099564f6735d3334487fa04e5e8"
-  integrity sha512-ORUoyHX15P3VNjVp3Y27wnxRCBAZdTwLlg4gn8Igq3jvyXnUAAR4PQxIq4vHo0h7eTLvgOGEKCedRMIwlzYC5g==
+"@pmmmwh/react-refresh-webpack-plugin@^0.4.3", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-0", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-rc.4":
+  version "0.5.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.0-rc.4.tgz#323617bf52bb7029f76095ea594b20b11b0df396"
+  integrity sha512-GL9L//0yMxX+yXwZ8E6ab8tWT2YPmD/f+LHuOAquGq7qhB0zseywo8c0ksRvlVzNBV7OpaHsclfbBPhVyxFb3Q==
   dependencies:
     ansi-html "^0.0.7"
     core-js-pure "^3.8.1"
