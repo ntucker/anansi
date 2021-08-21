@@ -22,9 +22,7 @@ export default function makeDevConfig(
     globalStyleDir,
   },
 ) {
-  // Need explicit target to make hotreloading work until https://github.com/webpack/webpack-dev-server/issues/2758
-  // is released in webpack-dev-server v4
-  const config = { target: 'web', ...baseConfig };
+  const config = { ...baseConfig };
 
   config.mode = 'development';
   config.output.filename = '[name].js';
@@ -49,16 +47,25 @@ export default function makeDevConfig(
   }
   config.devServer = {
     hot: true,
-    publicPath: config.output.publicPath,
-    clientLogLevel: 'warning',
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers':
         'Origin, X-Requested-With, Content-Type, Accept',
     },
     allowedHosts: ['localhost', '127.0.0.1'],
-    stats: 'minimal',
-    overlay: false, // we have our own overlay, so ignore this
+    devMiddleware: {
+      publicPath: config.output.publicPath,
+      stats: 'minimal',
+    },
+    client: {
+      logging: 'warn',
+      overlay: false, // we have our own overlay, so ignore this
+      webSocketURL: {
+        hostname: 'localhost',
+        pathname: '/ws',
+        port: argv.port,
+      },
+    },
     historyApiFallback: true,
     // TODO: add proxy options
   };
@@ -91,11 +98,14 @@ export default function makeDevConfig(
             entry: require.resolve('./plugins/ErrorOverlayEntry'),
             // registers error handlers
             module: require.resolve('./plugins/refreshOverlayModule'),
+            sockHost: config.devServer.client.webSocketURL.hostname,
+            sockPath: config.devServer.client.webSocketURL.pathname,
+            sockPort: config.devServer.client.webSocketURL.port,
           },
         }),
         new ErrorOverlayPlugin(),
       );
-      config.devServer.hotOnly = true;
+      config.devServer.hot = 'only';
       console.log('Fast refresh detected and enabled');
       // eslint-disable-next-line no-empty
     } catch (e) {}
