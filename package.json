@@ -61,7 +61,7 @@
     "get-pkg-repo": "4.1.2",
     "@types/webpack": "^5.0.0",
     "immer": "^8.0.1",
-    "webpack": "^5.41.0",
+    "webpack": "^5.51.1",
     "css-loader": "^6.0.0",
     "dotenv-webpack": "^6.0.0",
     "html-webpack-plugin": "^5.0.0",

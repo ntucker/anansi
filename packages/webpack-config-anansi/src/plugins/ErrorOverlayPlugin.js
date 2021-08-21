@@ -9,19 +9,22 @@ export default class ErrorOverlayPlugin {
     const devServerEnabled = !!compiler.options.devServer;
     const sockOptions = {};
     if (devServerEnabled) {
-      sockOptions.sockHost = compiler.options.devServer.sockHost;
-      sockOptions.sockPath = compiler.options.devServer.sockPath;
-      sockOptions.sockPort = compiler.options.devServer.sockPort;
+      sockOptions.sockHost =
+        compiler.options.devServer?.client?.webSocketURL?.hostname;
+      sockOptions.sockPath =
+        compiler.options.devServer?.client?.webSocketURL?.pathname;
+      sockOptions.sockPort =
+        compiler.options.devServer?.client?.webSocketURL?.port;
     }
 
     compiler.hooks.afterResolvers.tap(className, ({ options }) => {
       if (devServerEnabled) {
-        const originalBefore = options.devServer.before;
-        options.devServer.before = (app, server) => {
+        const originalBefore = options.devServer.onBeforeSetupMiddleware;
+        options.devServer.onBeforeSetupMiddleware = devServer => {
           if (originalBefore) {
-            originalBefore(app, server, compiler);
+            originalBefore(devServer);
           }
-          app.use(errorOverlayMiddleware());
+          devServer.app.use(errorOverlayMiddleware());
         };
       }
     });
