@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.14](https://github.com/ntucker/anansi/compare/example-typescript@7.0.13...example-typescript@7.0.14) (2021-08-21)
+
+
+### 📦 Package
+
+* bump @types/node from 16.6.1 to 16.6.2 ([#752](https://github.com/ntucker/anansi/issues/752)) ([e4b8af1](https://github.com/ntucker/anansi/commit/e4b8af1b2439bc71172d461db61de2877c28fb3c))
+* bump @types/node from 16.6.2 to 16.7.1 ([#758](https://github.com/ntucker/anansi/issues/758)) ([e866592](https://github.com/ntucker/anansi/commit/e8665929f852435996aeaffe05dc338da2611dca))
+* bump antd from 4.16.11 to 4.16.12 ([#744](https://github.com/ntucker/anansi/issues/744)) ([a0bd943](https://github.com/ntucker/anansi/commit/a0bd943650ca4f8d1948ac2ef0b607a4b30c1b52))
+* bump core-js from 3.16.1 to 3.16.2 ([#749](https://github.com/ntucker/anansi/issues/749)) ([572e776](https://github.com/ntucker/anansi/commit/572e77642408f2aaf761f89117dc4a162360c5ae))
+
+
+
 ### [7.0.13](https://github.com/ntucker/anansi/compare/example-typescript@7.0.12...example-typescript@7.0.13) (2021-08-16)
 
 

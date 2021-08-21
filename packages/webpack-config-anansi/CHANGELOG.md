@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.4...@anansi/webpack-config@9.0.0) (2021-08-21)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires webpack-dev-server >=4
+
+Bumps [webpack-dev-server](https://github.com/webpack/webpack-dev-server) from 3.11.2 to 4.0.0.
+- [Release notes](https://github.com/webpack/webpack-dev-server/releases)
+- [Changelog](https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/webpack/webpack-dev-server/compare/v3.11.2...v4.0.0)
+
+### 📦 Package
+
+* bump @pmmmwh/react-refresh-webpack-plugin ([#753](https://github.com/ntucker/anansi/issues/753)) ([2a73cb5](https://github.com/ntucker/anansi/commit/2a73cb5b954add6160dbada05fcd056fe64bf06c))
+* bump core-js from 3.16.1 to 3.16.2 ([#749](https://github.com/ntucker/anansi/issues/749)) ([572e776](https://github.com/ntucker/anansi/commit/572e77642408f2aaf761f89117dc4a162360c5ae))
+* bump webpack-dev-server from 3.11.2 to 4.0.0 ([#754](https://github.com/ntucker/anansi/issues/754)) ([7f68b5d](https://github.com/ntucker/anansi/commit/7f68b5dc8466b04c5c3f13a1f32dd2660e09546c))
+
+
+
 ### [8.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.3...@anansi/webpack-config@8.0.4) (2021-08-16)
 
 

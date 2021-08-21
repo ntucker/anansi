@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.15...@anansi/generator-js@7.0.0) (2021-08-21)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires webpack-dev-server >=4
+
+Bumps [webpack-dev-server](https://github.com/webpack/webpack-dev-server) from 3.11.2 to 4.0.0.
+- [Release notes](https://github.com/webpack/webpack-dev-server/releases)
+- [Changelog](https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/webpack/webpack-dev-server/compare/v3.11.2...v4.0.0)
+
+### 📦 Package
+
+* bump @types/ejs from 3.0.7 to 3.1.0 ([#748](https://github.com/ntucker/anansi/issues/748)) ([abe366b](https://github.com/ntucker/anansi/commit/abe366b955aec20d318891ee4654a86da9473b7a))
+* bump @types/node from 16.6.1 to 16.6.2 ([#752](https://github.com/ntucker/anansi/issues/752)) ([e4b8af1](https://github.com/ntucker/anansi/commit/e4b8af1b2439bc71172d461db61de2877c28fb3c))
+* bump @types/node from 16.6.2 to 16.7.1 ([#758](https://github.com/ntucker/anansi/issues/758)) ([e866592](https://github.com/ntucker/anansi/commit/e8665929f852435996aeaffe05dc338da2611dca))
+* bump core-js from 3.16.1 to 3.16.2 ([#749](https://github.com/ntucker/anansi/issues/749)) ([572e776](https://github.com/ntucker/anansi/commit/572e77642408f2aaf761f89117dc4a162360c5ae))
+* bump webpack-dev-server from 3.11.2 to 4.0.0 ([#754](https://github.com/ntucker/anansi/issues/754)) ([7f68b5d](https://github.com/ntucker/anansi/commit/7f68b5dc8466b04c5c3f13a1f32dd2660e09546c))
+
+
+
 ### [6.2.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.14...@anansi/generator-js@6.2.15) (2021-08-16)
 
 

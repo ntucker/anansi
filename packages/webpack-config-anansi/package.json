@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "8.0.4",
+  "version": "9.0.0",
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "types": "./index.d.ts",
@@ -52,7 +52,7 @@
     "node": ">=12.13.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.7.9",
+    "@anansi/babel-preset": "^2.7.10",
     "debug": "^4.3.2",
     "prettier-eslint-cli": "^5.0.0",
     "rimraf": "^3.0.2"
@@ -133,8 +133,8 @@
     "react-refresh": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0",
     "svgo": "^2.4.0",
     "webpack": "^5.12.0",
-    "webpack-dev-server": "^4.0.0",
-    "webpack-cli": "^4.1.0"
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^4.0.0"
   },
   "peerDependenciesMeta": {
     "@babel/core": {
