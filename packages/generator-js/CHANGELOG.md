@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.0...@anansi/generator-js@7.0.1) (2021-08-21)
+
+
+### 🐛 Bug Fix
+
+* css-loader to right resolution for current webpack config ([8b1acd1](https://github.com/ntucker/anansi/commit/8b1acd1424dadcdb4569b0d7e1aa364d708ac16f))
+* Updated vscode task for webpack-dev-server@4 ([f150270](https://github.com/ntucker/anansi/commit/f1502701ef05189477eab3d76e65fb28db8541f1))
+
+
+
 ## [7.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@6.2.15...@anansi/generator-js@7.0.0) (2021-08-21)
 
 
