@@ -22,6 +22,9 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         // defer to storybook's version in this case
         // TODO: try to simply copy configuration and reuse our HtmlWebpackPlugin
         ![
+          // storybook runs this build after building the storybook chrome ui, so we don't want to clear that out
+          // they also clean the directory in that stage anyway
+          'CleanWebpackPlugin',
           'HtmlWebpackPlugin',
           'ErrorOverlayPlugin',
           'StatsPlugin',
