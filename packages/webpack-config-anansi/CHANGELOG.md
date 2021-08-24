@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.0...@anansi/webpack-config@9.0.1) (2021-08-24)
+
+
+### 🐛 Bug Fix
+
+* build-storybook no longer deletes storybook manager ui ([c8b633c](https://github.com/ntucker/anansi/commit/c8b633c0d9cecade53e2f4ea34dddea2a8a7c493))
+
+
+### 📦 Package
+
+* bump @pmmmwh/react-refresh-webpack-plugin ([#763](https://github.com/ntucker/anansi/issues/763)) ([e12b751](https://github.com/ntucker/anansi/commit/e12b7511b24442c2371c794a9b58247978dfcae6))
+* bump autoprefixer from 10.3.1 to 10.3.2 ([#764](https://github.com/ntucker/anansi/issues/764)) ([258705e](https://github.com/ntucker/anansi/commit/258705edee3c15d82d5ce38f2eb8ba24d4601ead))
+
+
+
 ## [9.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@8.0.4...@anansi/webpack-config@9.0.0) (2021-08-21)
 
 

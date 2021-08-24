@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.15](https://github.com/ntucker/anansi/compare/example-typescript@7.0.14...example-typescript@7.0.15) (2021-08-24)
+
+
+### 📦 Package
+
+* bump antd from 4.16.12 to 4.16.13 ([#761](https://github.com/ntucker/anansi/issues/761)) ([6d30d45](https://github.com/ntucker/anansi/commit/6d30d45b31d49b25d2c530e58be899633406620e))
+* Update rest-hooks ([a1ffdab](https://github.com/ntucker/anansi/commit/a1ffdab8e43231c6826f63e1c8ac25ddaa5fc53c))
+
+
+
 ### [7.0.14](https://github.com/ntucker/anansi/compare/example-typescript@7.0.13...example-typescript@7.0.14) (2021-08-21)
 
 
