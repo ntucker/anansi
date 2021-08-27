@@ -4,7 +4,7 @@ import 'code.scss';
 import sillyStyle from 'silly.module.scss';
 
 import IssueResource from '@standard-endpoint/github/IssueResource';
-import StaticBlock from '@standard-endpoint/github/StaticBlock.js';
+import StaticBlock from '@standard-endpoint/github/StaticBlock';
 
 import { ReactComponent as Copy } from './Copy.svg';
 import style from './index.scss';
