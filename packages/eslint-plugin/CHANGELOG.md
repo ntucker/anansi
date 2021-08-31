@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.25](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.24...@anansi/eslint-plugin@0.11.25) (2021-08-31)
+
+
+### 📦 Package
+
+* [@typescript-eslint](https://github.com/typescript-eslint) - support class static blocks ([d410902](https://github.com/ntucker/anansi/commit/d410902dae10943180a08a4115e32dc6ee8768d0))
+* eslint-plugin-prettier, eslint-plugin-react ([04d073a](https://github.com/ntucker/anansi/commit/04d073a07a169c31f06176e88ba0ff24b33d336f))
+
+
+
 ### [0.11.24](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.23...@anansi/eslint-plugin@0.11.24) (2021-08-24)
 
 

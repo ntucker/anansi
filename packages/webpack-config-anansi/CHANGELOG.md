@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.1...@anansi/webpack-config@9.0.2) (2021-08-31)
+
+
+### 📦 Package
+
+* @pmmmwh/react-refresh-webpack-plugin ([2fb8ac1](https://github.com/ntucker/anansi/commit/2fb8ac1e0ef7b62ba31acc222fe7b9d485fb46ae))
+* bump autoprefixer from 10.3.2 to 10.3.3 ([#784](https://github.com/ntucker/anansi/issues/784)) ([b2f5a57](https://github.com/ntucker/anansi/commit/b2f5a57130e0966b2096c20916de422b111cb73a))
+* bump core-js from 3.16.2 to 3.16.3 ([#776](https://github.com/ntucker/anansi/issues/776)) ([0acf43a](https://github.com/ntucker/anansi/commit/0acf43a582fafd22024b04687433c257729101f5))
+
+
+
 ### [9.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.0...@anansi/webpack-config@9.0.1) (2021-08-24)
 
 

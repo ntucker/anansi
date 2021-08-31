@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.16](https://github.com/ntucker/anansi/compare/example-typescript@7.0.15...example-typescript@7.0.16) (2021-08-31)
+
+
+### 💅 Enhancement
+
+* Merge StaticBlock into one .ts file ([ba90523](https://github.com/ntucker/anansi/commit/ba905232f1d7a28f0c23ea0870c4b6fe204c9ad6))
+
+
+### 📦 Package
+
+* bump @types/node from 16.7.1 to 16.7.2 ([#778](https://github.com/ntucker/anansi/issues/778)) ([b12f652](https://github.com/ntucker/anansi/commit/b12f652023f0d019fa6a2dd1f9a774dcc8c4faa3))
+* bump core-js from 3.16.2 to 3.16.3 ([#776](https://github.com/ntucker/anansi/issues/776)) ([0acf43a](https://github.com/ntucker/anansi/commit/0acf43a582fafd22024b04687433c257729101f5))
+* bump jest from 27.0.6 to 27.1.0 ([#792](https://github.com/ntucker/anansi/issues/792)) ([7c92bb3](https://github.com/ntucker/anansi/commit/7c92bb3249a8d7f8e6e60f6257ba28a1f0e07f89))
+* bump react-router-dom from 5.2.0 to 5.2.1 ([#794](https://github.com/ntucker/anansi/issues/794)) ([5516818](https://github.com/ntucker/anansi/commit/5516818274f27ae28134b6185a39da7680af1f29))
+* bump rest-hooks from 6.0.0-beta.4 to 6.0.0-beta.5 ([#782](https://github.com/ntucker/anansi/issues/782)) ([5800adf](https://github.com/ntucker/anansi/commit/5800adf02a268e8c17afda5fca7d8a515ec163a5))
+
+
+
 ### [7.0.15](https://github.com/ntucker/anansi/compare/example-typescript@7.0.14...example-typescript@7.0.15) (2021-08-24)
 
 
