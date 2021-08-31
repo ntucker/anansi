@@ -2927,7 +2927,7 @@
   dependencies:
     "@octokit/openapi-types" "^6.1.1"
 
-"@pmmmwh/react-refresh-webpack-plugin@^0.4.3", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-0", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-rc.5":
+"@pmmmwh/react-refresh-webpack-plugin@^0.4.3", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-0", "@pmmmwh/react-refresh-webpack-plugin@^0.5.0-rc.6":
   version "0.5.0-rc.5"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.0-rc.5.tgz#4e46d22889eaa670f23db4f69dd7694c52b58004"
   integrity sha512-u9W23sWcG9xUklyI4x+hhrR9YtfSdPTLWx6tVSJV8RjOxpzs73+s38e/aI94ywRAZwRLbLJ8mx6X98xGxRHaZw==
