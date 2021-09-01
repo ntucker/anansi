@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.9](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.8...@anansi/jest-preset@0.5.9) (2021-09-01)
+
+
+### 📦 Package
+
+* bump core-js from 3.16.3 to 3.16.4 ([#797](https://github.com/ntucker/anansi/issues/797)) ([7b93bfb](https://github.com/ntucker/anansi/commit/7b93bfb1eb589116f1733189023adf396f1dd433))
+
+
+
 ### [0.5.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.7...@anansi/jest-preset@0.5.8) (2021-08-31)
 
 

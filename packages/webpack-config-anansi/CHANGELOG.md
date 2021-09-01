@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.2...@anansi/webpack-config@9.0.3) (2021-09-01)
+
+
+### 📦 Package
+
+* bump @linaria/webpack-loader from 3.0.0-beta.7 to 3.0.0-beta.12 ([#804](https://github.com/ntucker/anansi/issues/804)) ([fd05cc8](https://github.com/ntucker/anansi/commit/fd05cc8e9104a1d9efad22e3cb505c31343c933b))
+* bump core-js from 3.16.3 to 3.16.4 ([#797](https://github.com/ntucker/anansi/issues/797)) ([7b93bfb](https://github.com/ntucker/anansi/commit/7b93bfb1eb589116f1733189023adf396f1dd433))
+* bump mini-css-extract-plugin from 2.2.0 to 2.2.1 ([#802](https://github.com/ntucker/anansi/issues/802)) ([d4b79b2](https://github.com/ntucker/anansi/commit/d4b79b20300e4f51eec6bafc06e08f4ad59832ad))
+* bump svgo from 2.4.0 to 2.5.0 ([#795](https://github.com/ntucker/anansi/issues/795)) ([adbb8a4](https://github.com/ntucker/anansi/commit/adbb8a4f41da95d6653ee23c0ce19d7f650ecb76))
+
+
+
 ### [9.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.1...@anansi/webpack-config@9.0.2) (2021-08-31)
 
 

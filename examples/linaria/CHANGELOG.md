@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.16](https://github.com/ntucker/anansi/compare/example-linaria@3.0.15...example-linaria@3.0.16) (2021-09-01)
+
+
+### 📦 Package
+
+* bump @linaria/shaker from 3.0.0-beta.7 to 3.0.0-beta.12 ([#803](https://github.com/ntucker/anansi/issues/803)) ([ddd81d9](https://github.com/ntucker/anansi/commit/ddd81d992c7bffe7611840ac53e5149825453f5b))
+* bump core-js from 3.16.3 to 3.16.4 ([#797](https://github.com/ntucker/anansi/issues/797)) ([7b93bfb](https://github.com/ntucker/anansi/commit/7b93bfb1eb589116f1733189023adf396f1dd433))
+
+
+
 ### [3.0.15](https://github.com/ntucker/anansi/compare/example-linaria@3.0.14...example-linaria@3.0.15) (2021-08-31)
 
 
