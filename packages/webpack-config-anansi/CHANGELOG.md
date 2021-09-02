@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.3...@anansi/webpack-config@9.0.4) (2021-09-02)
+
+
+### 💅 Enhancement
+
+* Adding webpack HMR is redundant with current cli ([41b858d](https://github.com/ntucker/anansi/commit/41b858d0058ba940a727382087058765c5624930))
+
+
+### 📦 Package
+
+* bump clean-webpack-plugin from 4.0.0-alpha.0 to 4.0.0 ([#807](https://github.com/ntucker/anansi/issues/807)) ([2e8cfbd](https://github.com/ntucker/anansi/commit/2e8cfbd61f9b8278d4c9f58347a8d7f6ff077b6a))
+* bump core-js from 3.16.4 to 3.17.1 ([#808](https://github.com/ntucker/anansi/issues/808)) ([bad6b91](https://github.com/ntucker/anansi/commit/bad6b9105f043d30b93e25526613a471a981d70e))
+* bump mini-css-extract-plugin from 2.2.1 to 2.2.2 ([#806](https://github.com/ntucker/anansi/issues/806)) ([ae60a57](https://github.com/ntucker/anansi/commit/ae60a57e8c76b695f0777585aae4899e873ff581))
+* terser-webpack, webpack patch ([6d2f900](https://github.com/ntucker/anansi/commit/6d2f900a8a58dec17f2fc1b8552fb1cc1882559f))
+
+
+
 ### [9.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.2...@anansi/webpack-config@9.0.3) (2021-09-01)
 
 
