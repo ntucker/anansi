@@ -70,7 +70,7 @@
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "circular-dependency-plugin": "^5.2.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "clean-webpack-plugin": "^4.0.0",
     "console-browserify": "^1.2.0",
     "constants-browserify": "^1.0.0",
     "core-js": "^3.16.4",
