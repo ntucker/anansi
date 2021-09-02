@@ -36,7 +36,6 @@ export default function makeDevConfig(
 
   const watchIgnorePaths = [/(hot-update\.[^.]|\.map|s?css\.d\.ts)$/];
   config.plugins = [
-    new webpack.HotModuleReplacementPlugin(),
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.WatchIgnorePlugin({ paths: watchIgnorePaths }),
     ...config.plugins,
