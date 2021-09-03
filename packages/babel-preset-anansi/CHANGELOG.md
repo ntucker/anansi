@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.14](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.13...@anansi/babel-preset@2.7.14) (2021-09-03)
+
+
+### 📦 Package
+
+* bump @babel/plugin-transform-typescript from 7.15.0 to 7.15.4 ([#812](https://github.com/ntucker/anansi/issues/812)) ([4c55d50](https://github.com/ntucker/anansi/commit/4c55d500b70b37cd0b7a526da64beeae918e01f6))
+* bump @babel/preset-env from 7.15.0 to 7.15.4 ([#810](https://github.com/ntucker/anansi/issues/810)) ([2ddf331](https://github.com/ntucker/anansi/commit/2ddf3319c5cda5608c1dd832134303ed21b714f1))
+* bump core-js-compat from 3.17.1 to 3.17.2 ([#816](https://github.com/ntucker/anansi/issues/816)) ([366e5f4](https://github.com/ntucker/anansi/commit/366e5f4c04ff13c652bd2e973da7999967a87154))
+
+
+
 ### [2.7.13](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.12...@anansi/babel-preset@2.7.13) (2021-09-02)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.4...@anansi/webpack-config@9.0.5) (2021-09-03)
+
+
+### 📦 Package
+
+* bump core-js from 3.17.1 to 3.17.2 ([#815](https://github.com/ntucker/anansi/issues/815)) ([3d2caa4](https://github.com/ntucker/anansi/commit/3d2caa407bdd707ff932f02312cf858ca623a78d))
+* bump terser-webpack-plugin from 5.2.1 to 5.2.2 ([#811](https://github.com/ntucker/anansi/issues/811)) ([582bf01](https://github.com/ntucker/anansi/commit/582bf01d1c378a22564116edfe3abbdb03cfe6b4))
+
+
+
 ### [9.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.3...@anansi/webpack-config@9.0.4) (2021-09-02)
 
 
