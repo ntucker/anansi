@@ -8,6 +8,7 @@ const Routes = ({ location }: RouteChildrenProps) => (
   <Switch location={location} key={location.pathname}>
     <Route exact path="/" component={lazyPage('Home')} />
     <Route exact path="/issues" component={lazyPage('Issues')} />
+    <Route exact path="/graphql" component={lazyPage('GQL')} />
     <Route exact path="/posts" component={lazyPage('Posts')} />
     <Route exact path="/posts/new" component={lazyPage('Posts/PostCreate')} />
     <Route path="/post/:id/edit" component={lazyPage('Posts/PostEdit')} />

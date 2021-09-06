@@ -25,7 +25,7 @@
     "@anansi/eslint-plugin": "^0.11.25",
     "@anansi/jest-preset": "^0.5.11",
     "@anansi/webpack-config": "^9.0.5",
-    "@rest-hooks/test": "^7.0.0-beta.2",
+    "@rest-hooks/test": "^7.0.0-beta.3",
     "@types/classnames": "^2.2.9",
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.172",
@@ -40,7 +40,8 @@
   "dependencies": {
     "@anansi/polyfill": "^1.0.83",
     "@babel/runtime": "^7.15.4",
-    "@rest-hooks/rest": "^3.0.0-beta.1",
+    "@rest-hooks/graphql": "^0.1.0",
+    "@rest-hooks/rest": "^3.0.0-beta.2",
     "@types/node": "^16.7.10",
     "antd": "^4.16.13",
     "classnames": "^2.2.6",
@@ -50,7 +51,7 @@
     "react-router-dom": "^5.3.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "^6.0.0-beta.5"
+    "rest-hooks": "^6.0.0-beta.6"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
