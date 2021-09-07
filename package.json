@@ -71,7 +71,7 @@
     "browserslist": "^4.16.6"
   },
   "dependencies": {
-    "@types/react": "^17.0.19",
+    "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "react": "next",
     "react-dom": "next"
