@@ -3075,10 +3075,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/rest@^3.0.0-beta.2":
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-3.0.0-beta.2.tgz#e1a1c88431575a2bd3196b41dcf91498661a6859"
-  integrity sha512-I/xDcQNOfoR8CwBdooVt8N0F7f6lNk2WOtU2gQL5yFoyidqS+z24usGbb5faPFF25rKt6tBcTe7BJvRRumNIXA==
+"@rest-hooks/rest@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/rest/-/rest-3.0.0.tgz#51009fc016d8df42f694636750972d3be1293d63"
+  integrity sha512-JKUa19b/YKnbPj4fHfL1acRXenVdjTkI+lfSXKnr1+55mxTyb9rthQYWVGySTi/T6yqudTZF/tRGRaLezHltCA==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
