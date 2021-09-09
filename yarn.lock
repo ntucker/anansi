@@ -3061,10 +3061,10 @@
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/normalizr" "^8.0.0"
 
-"@rest-hooks/graphql@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/graphql/-/graphql-0.1.0.tgz#c0932944817913b4d42857e47d62a64b3e0c9471"
-  integrity sha512-1mJeAEzZhHMGvFu96nQtTrd7wlewQ19kN5HLcWo4qzRosMPruyeB2yS03jf5BJstig+jzWDe8m+GZ9hCmJJzRA==
+"@rest-hooks/graphql@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/graphql/-/graphql-0.1.1.tgz#2f25b854cf6b1a5a144aee333035aea8d1c0b29d"
+  integrity sha512-J5vu9mQSlNc+TFu9xx40SmDGPrEV4S6X4sWGjPHvww4pRknDOojcHuc7rmEglXkyWw7FtcU7rTKzs4pj3bQ0nw==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
