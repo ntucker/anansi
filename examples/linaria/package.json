@@ -24,7 +24,7 @@
     "@types/react-router-dom": "^5.1.8",
     "babel-loader": "8.2.2",
     "react-refresh": "^0.11.0-alpha-82583617b-20210812",
-    "serve": "^12.0.0"
+    "serve": "^12.0.1"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.83",
