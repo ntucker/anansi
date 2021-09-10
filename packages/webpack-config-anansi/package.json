@@ -73,7 +73,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "console-browserify": "^1.2.0",
     "constants-browserify": "^1.0.0",
-    "core-js": "^3.17.2",
+    "core-js": "^3.17.3",
     "crypto-browserify": "^3.12.0",
     "css-loader": "^6.2.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
