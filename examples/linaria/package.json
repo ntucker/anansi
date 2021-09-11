@@ -1,6 +1,6 @@
 {
   "name": "example-linaria",
-  "version": "3.0.18",
+  "version": "3.0.19",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -16,10 +16,10 @@
     "lint": "eslint \"src/**/*.{js,ts,tsx}\""
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.7.14",
+    "@anansi/babel-preset": "^2.7.15",
     "@anansi/browserslist-config": "^1.3.3",
-    "@anansi/eslint-plugin": "^0.11.25",
-    "@anansi/webpack-config": "^9.0.5",
+    "@anansi/eslint-plugin": "^0.11.26",
+    "@anansi/webpack-config": "^9.0.6",
     "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^5.1.8",
     "babel-loader": "8.2.2",
@@ -27,7 +27,7 @@
     "serve": "^12.0.1"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.83",
+    "@anansi/polyfill": "^1.0.84",
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@babel/runtime": "^7.15.4",
     "@linaria/core": "^3.0.0-beta.4",

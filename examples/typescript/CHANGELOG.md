@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.0](https://github.com/ntucker/anansi/compare/example-typescript@7.0.19...example-typescript@7.1.0) (2021-09-11)
+
+
+### 🚀 Features
+
+* Add GraphQL page ([9aedc6f](https://github.com/ntucker/anansi/commit/9aedc6f71eacb53c571685d9ca03bd3b695baee5))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.15.3 to 7.15.4 ([#827](https://github.com/ntucker/anansi/issues/827)) ([2ab26b4](https://github.com/ntucker/anansi/commit/2ab26b40eef66b8c9a0c673ff4c0f9703a96a793))
+* bump @rest-hooks/graphql from 0.1.0 to 0.1.1 ([#844](https://github.com/ntucker/anansi/issues/844)) ([b7f6241](https://github.com/ntucker/anansi/commit/b7f6241322fb843d83e96930c033e621cc8e36b3))
+* bump @rest-hooks/rest from 3.0.0-beta.2 to 3.0.0 ([#841](https://github.com/ntucker/anansi/issues/841)) ([ba044c7](https://github.com/ntucker/anansi/commit/ba044c74c0dbf91bb6000e62c5b8680d36718898))
+* bump @rest-hooks/test from 7.0.0-beta.3 to 7.0.0 ([#840](https://github.com/ntucker/anansi/issues/840)) ([b69a0ca](https://github.com/ntucker/anansi/commit/b69a0ca449be974f8384dddbc91b2e4e11aed741))
+* bump @types/node from 16.7.10 to 16.7.13 ([#837](https://github.com/ntucker/anansi/issues/837)) ([7f004a9](https://github.com/ntucker/anansi/commit/7f004a92db9ff2c0c65252812c33fb1f4df6d51e))
+* bump @types/node from 16.7.13 to 16.9.0 ([#843](https://github.com/ntucker/anansi/issues/843)) ([c63ab82](https://github.com/ntucker/anansi/commit/c63ab82c850ce4e56e6d0d1f55882241b534bb19))
+* bump @types/node from 16.9.0 to 16.9.1 ([#848](https://github.com/ntucker/anansi/issues/848)) ([52dbe51](https://github.com/ntucker/anansi/commit/52dbe51989f3792ef2e963c1a39066f370522cee))
+* bump core-js from 3.17.2 to 3.17.3 ([#850](https://github.com/ntucker/anansi/issues/850)) ([e629c60](https://github.com/ntucker/anansi/commit/e629c6065600283574f16eb26bcdb25aea140dff))
+* bump jest from 27.1.0 to 27.1.1 ([#852](https://github.com/ntucker/anansi/issues/852)) ([79d0957](https://github.com/ntucker/anansi/commit/79d0957cd884556392936d5de532473425cc790a))
+* bump react-router-dom from 5.2.1 to 5.3.0 ([#825](https://github.com/ntucker/anansi/issues/825)) ([5cc99ef](https://github.com/ntucker/anansi/commit/5cc99efe7f92b15fb1c687f5e516c7cc76f3a1c4))
+* bump rest-hooks from 6.0.0-beta.6 to 6.0.0 ([#842](https://github.com/ntucker/anansi/issues/842)) ([4b1cc7a](https://github.com/ntucker/anansi/commit/4b1cc7a39449d3f64433bc025c8c2f098bbb351a))
+* bump serve from 12.0.0 to 12.0.1 ([#846](https://github.com/ntucker/anansi/issues/846)) ([3026378](https://github.com/ntucker/anansi/commit/3026378513143f6bb9fff46f86d8b6d39e2dae94))
+
+
+
 ### [7.0.19](https://github.com/ntucker/anansi/compare/example-typescript@7.0.18...example-typescript@7.0.19) (2021-09-03)
 
 

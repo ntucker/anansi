@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.5...@anansi/webpack-config@9.0.6) (2021-09-11)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.15.3 to 7.15.4 ([#827](https://github.com/ntucker/anansi/issues/827)) ([2ab26b4](https://github.com/ntucker/anansi/commit/2ab26b40eef66b8c9a0c673ff4c0f9703a96a793))
+* bump autoprefixer from 10.3.3 to 10.3.4 ([#828](https://github.com/ntucker/anansi/issues/828)) ([c5e4fb4](https://github.com/ntucker/anansi/commit/c5e4fb4eff299c64d9bcebfbf642eee5c16a8f1a))
+* bump core-js from 3.17.2 to 3.17.3 ([#850](https://github.com/ntucker/anansi/issues/850)) ([e629c60](https://github.com/ntucker/anansi/commit/e629c6065600283574f16eb26bcdb25aea140dff))
+* mini-css-extract-plugin 2.3 ([9cb2808](https://github.com/ntucker/anansi/commit/9cb28088c4392f546b0a2a70aded3a5c4c74417e))
+
+
+
 ### [9.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.4...@anansi/webpack-config@9.0.5) (2021-09-03)
 
 

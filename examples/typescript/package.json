@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "7.0.19",
+  "version": "7.1.0",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -20,11 +20,11 @@
     "build:storybook": "build-storybook"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.7.14",
+    "@anansi/babel-preset": "^2.7.15",
     "@anansi/browserslist-config": "^1.3.3",
-    "@anansi/eslint-plugin": "^0.11.25",
-    "@anansi/jest-preset": "^0.5.11",
-    "@anansi/webpack-config": "^9.0.5",
+    "@anansi/eslint-plugin": "^0.11.26",
+    "@anansi/jest-preset": "^0.5.12",
+    "@anansi/webpack-config": "^9.0.6",
     "@rest-hooks/test": "^7.0.0",
     "@types/classnames": "^2.2.9",
     "@types/jest": "^27.0.1",
@@ -38,7 +38,7 @@
     "serve": "^12.0.1"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.83",
+    "@anansi/polyfill": "^1.0.84",
     "@babel/runtime": "^7.15.4",
     "@rest-hooks/graphql": "^0.1.1",
     "@rest-hooks/rest": "^3.0.0",

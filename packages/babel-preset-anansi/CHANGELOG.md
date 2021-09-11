@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.15](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.14...@anansi/babel-preset@2.7.15) (2021-09-11)
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-decorators from 7.14.5 to 7.15.4 ([#822](https://github.com/ntucker/anansi/issues/822)) ([376a84f](https://github.com/ntucker/anansi/commit/376a84f5f9dedbf01ff16536e9fa83f8ef6b047a))
+* bump @babel/preset-env from 7.15.4 to 7.15.6 ([#845](https://github.com/ntucker/anansi/issues/845)) ([4a9c4a1](https://github.com/ntucker/anansi/commit/4a9c4a11d9f42c14863950a8427753eb74f85a3d))
+* bump core-js-compat from 3.17.2 to 3.17.3 ([#849](https://github.com/ntucker/anansi/issues/849)) ([9f67698](https://github.com/ntucker/anansi/commit/9f67698ed04ceda0c287db1c18971a10b46d66b4))
+
+
+
 ### [2.7.14](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.13...@anansi/babel-preset@2.7.14) (2021-09-03)
 
 
