@@ -1,5 +1,6 @@
 import React, { memo, Suspense } from 'react';
 import { Layout, Spin } from 'antd';
+
 import Nav from 'navigation/Nav';
 import ErrorBoundary from 'components/ErrorBoundary';
 
