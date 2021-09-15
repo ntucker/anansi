@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.1](https://github.com/ntucker/anansi/compare/example-typescript@7.1.0...example-typescript@7.1.1) (2021-09-15)
+
+
+### 📦 Package
+
+* bump @types/react-router-dom from 5.1.8 to 5.1.9 ([#865](https://github.com/ntucker/anansi/issues/865)) ([e3ce6c6](https://github.com/ntucker/anansi/commit/e3ce6c638722c6b922be56f26926ea5045362da1))
+* bump jest from 27.1.1 to 27.2.0 ([#860](https://github.com/ntucker/anansi/issues/860)) ([abba8b2](https://github.com/ntucker/anansi/commit/abba8b2437f8124e0e96adf049599bb1ece2e99b))
+* bump rest-hooks from 6.0.0 to 6.0.1 ([#871](https://github.com/ntucker/anansi/issues/871)) ([f64b9ad](https://github.com/ntucker/anansi/commit/f64b9adda24c4389dc121458b8415b720c71e3c5))
+
+
+
 ## [7.1.0](https://github.com/ntucker/anansi/compare/example-typescript@7.0.19...example-typescript@7.1.0) (2021-09-11)
 
 

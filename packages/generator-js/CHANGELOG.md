@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.7...@anansi/generator-js@7.0.8) (2021-09-15)
+
+
+### 📦 Package
+
+* bump @types/yeoman-generator from 5.2.5 to 5.2.7 ([#864](https://github.com/ntucker/anansi/issues/864)) ([0965fc3](https://github.com/ntucker/anansi/commit/0965fc36698105fa4e7886a4f7625f0fe6f7efd1))
+* bump jest from 27.1.1 to 27.2.0 ([#860](https://github.com/ntucker/anansi/issues/860)) ([abba8b2](https://github.com/ntucker/anansi/commit/abba8b2437f8124e0e96adf049599bb1ece2e99b))
+
+
+
 ### [7.0.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.6...@anansi/generator-js@7.0.7) (2021-09-11)
 
 

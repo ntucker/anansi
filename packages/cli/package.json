@@ -1,6 +1,6 @@
 {
   "name": "@anansi/cli",
-  "version": "1.1.24",
+  "version": "1.1.25",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/cli#readme",
   "repository": {
@@ -51,7 +51,7 @@
     "npm": ">= 6.0.0"
   },
   "dependencies": {
-    "@anansi/generator-js": "^7.0.7",
+    "@anansi/generator-js": "^7.0.8",
     "bin-version-check": "^4.0.0",
     "commander": "^8.2.0",
     "execa": "^5.1.1",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.20](https://github.com/ntucker/anansi/compare/example-linaria@3.0.19...example-linaria@3.0.20) (2021-09-15)
+
+
+### 📦 Package
+
+* bump @linaria/react from 3.0.0-beta.7 to 3.0.0-beta.13 ([#869](https://github.com/ntucker/anansi/issues/869)) ([8da0b2e](https://github.com/ntucker/anansi/commit/8da0b2ea8459148ce9a9c70d0f698fe73844c6fc))
+* bump @linaria/shaker from 3.0.0-beta.12 to 3.0.0-beta.13 ([#867](https://github.com/ntucker/anansi/issues/867)) ([4eda1c9](https://github.com/ntucker/anansi/commit/4eda1c9fea1c5fae8f5b1485a60f183eaeda7da5))
+* bump @types/react-router-dom from 5.1.8 to 5.1.9 ([#865](https://github.com/ntucker/anansi/issues/865)) ([e3ce6c6](https://github.com/ntucker/anansi/commit/e3ce6c638722c6b922be56f26926ea5045362da1))
+
+
+
 ### [3.0.19](https://github.com/ntucker/anansi/compare/example-linaria@3.0.18...example-linaria@3.0.19) (2021-09-11)
 
 

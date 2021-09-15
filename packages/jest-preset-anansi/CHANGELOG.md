@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.13](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.12...@anansi/jest-preset@0.5.13) (2021-09-15)
+
+
+### 📦 Package
+
+* bump babel-jest from 27.1.1 to 27.2.0 ([#859](https://github.com/ntucker/anansi/issues/859)) ([0e55a94](https://github.com/ntucker/anansi/commit/0e55a94378741e4ee0719aac1049b620928125f8))
+
+
+
 ### [0.5.12](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.11...@anansi/jest-preset@0.5.12) (2021-09-11)
 
 

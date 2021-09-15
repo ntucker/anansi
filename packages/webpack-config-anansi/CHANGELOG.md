@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.6...@anansi/webpack-config@9.0.7) (2021-09-15)
+
+
+### 📦 Package
+
+* @pmmmwh/react-refresh-webpack-plugin 0.5.0 final ([379854c](https://github.com/ntucker/anansi/commit/379854cc360250b7138b2a328e724ee7ed9421d7))
+* bump @linaria/webpack-loader from 3.0.0-beta.12 to 3.0.0-beta.13 ([#866](https://github.com/ntucker/anansi/issues/866)) ([9293c7d](https://github.com/ntucker/anansi/commit/9293c7da88c68cf2cf4836b8390778754643c524))
+* bump svgo from 2.5.0 to 2.6.0 ([#862](https://github.com/ntucker/anansi/issues/862)) ([2f296f7](https://github.com/ntucker/anansi/commit/2f296f74197809e57c0cec1457cc06a0b47f5361))
+
+
+
 ### [9.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.5...@anansi/webpack-config@9.0.6) (2021-09-11)
 
 
