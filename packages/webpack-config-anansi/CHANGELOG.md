@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.7...@anansi/webpack-config@9.1.0) (2021-09-17)
+
+
+### 🚀 Features
+
+* Add WEBPACK_NO_CACHE env & vary cache for storybook ([8d69ede](https://github.com/ntucker/anansi/commit/8d69ede556ef9e382cb1a69a1ee6da57febd1354))
+
+
+### 💅 Enhancement
+
+* Don't compile linaria-cache ([1d578f5](https://github.com/ntucker/anansi/commit/1d578f5556a1427f64c5797ed134ffb99b344123))
+* Show errors for children modules ([26a43f1](https://github.com/ntucker/anansi/commit/26a43f1fc48b34c811515cd4cd531182761ea108))
+* Use 'oneOf' for loader rules ([bcd7f2d](https://github.com/ntucker/anansi/commit/bcd7f2d60852a658cfd9f4845d067cb218c8c3ac))
+* Vary cache by hot reload env ([71f98d9](https://github.com/ntucker/anansi/commit/71f98d96e048b7198a1e1e2d1c1e79acfff7a366))
+
+
+### 📦 Package
+
+* bump @pmmmwh/react-refresh-webpack-plugin from 0.5.0 to 0.5.1 ([#874](https://github.com/ntucker/anansi/issues/874)) ([68e3e5d](https://github.com/ntucker/anansi/commit/68e3e5dd3093c1a35e291a9b3d89e6ea7c19e5df))
+* bump svgo from 2.6.0 to 2.6.1 ([#875](https://github.com/ntucker/anansi/issues/875)) ([2b13cc7](https://github.com/ntucker/anansi/commit/2b13cc7a6e16a8672295ce281be3d9e849518bf8))
+
+
+
 ### [9.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.6...@anansi/webpack-config@9.0.7) (2021-09-15)
 
 

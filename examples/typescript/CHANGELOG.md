@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.2](https://github.com/ntucker/anansi/compare/example-typescript@7.1.1...example-typescript@7.1.2) (2021-09-17)
+
+
+### 💅 Enhancement
+
+* Use 'oneOf' for loader rules ([bcd7f2d](https://github.com/ntucker/anansi/commit/bcd7f2d60852a658cfd9f4845d067cb218c8c3ac))
+
+
+### 📦 Package
+
+* bump @types/lodash from 4.14.172 to 4.14.173 ([#873](https://github.com/ntucker/anansi/issues/873)) ([d019c62](https://github.com/ntucker/anansi/commit/d019c6253e26833baf2267700f6d3dec0ceeb637))
+* bump @types/node from 16.9.1 to 16.9.2 ([#879](https://github.com/ntucker/anansi/issues/879)) ([5a8d140](https://github.com/ntucker/anansi/commit/5a8d1405233ce2f8564f2266658b5185db40cd41))
+
+
+
 ### [7.1.1](https://github.com/ntucker/anansi/compare/example-typescript@7.1.0...example-typescript@7.1.1) (2021-09-15)
 
 
