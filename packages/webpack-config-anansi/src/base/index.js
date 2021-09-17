@@ -119,7 +119,7 @@ export default function makeBaseConfig({
                   loader: require.resolve('worker-loader'),
                   options: {
                     inline: 'fallback',
-                    filename: '[name].[contenthash].js',
+                    filename: nohash ? '[name].js' : '[name]-[contenthash].js',
                   },
                 },
                 generateBabelLoader({
