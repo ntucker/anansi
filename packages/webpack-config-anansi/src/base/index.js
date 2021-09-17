@@ -105,7 +105,7 @@ export default function makeBaseConfig({
           include: [
             new RegExp(basePath),
             path.join(rootPath, 'stories'),
-            /.storybook/,
+            /\.storybook/,
             libraryInclude,
           ],
           exclude: libraryExclude,
@@ -133,6 +133,7 @@ export default function makeBaseConfig({
             },
             {
               test: /\.(t|j)sx?$/,
+              exclude: /\.linaria-cache/,
               use: [
                 require.resolve('thread-loader'),
                 generateBabelLoader({
