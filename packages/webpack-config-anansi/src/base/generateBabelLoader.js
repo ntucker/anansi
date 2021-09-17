@@ -33,6 +33,7 @@ export function generateBabelLoader({
       target,
       mode,
       hasReactRefresh,
+      noHotReload,
       hasJsxRuntime,
       babelCoreVersion,
       babelLoaderVersion,
