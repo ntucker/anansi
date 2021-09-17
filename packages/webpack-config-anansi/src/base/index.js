@@ -101,49 +101,51 @@ export default function makeBaseConfig({
     module: {
       rules: [
         {
-          test: /\.worker\.(t|j)s$/,
-          use: [
-            generateBabelLoader({
-              rootPath,
-              babelRoot,
-              target: argv?.target,
-              mode,
-              babelLoaderOptions,
-              noHotReload: true,
-            }),
+          test: /\.(t|j)sx?$/,
+          include: [
+            new RegExp(basePath),
+            path.join(rootPath, 'stories'),
+            /.storybook/,
+            libraryInclude,
+          ],
+          exclude: libraryExclude,
+          oneOf: [
             {
-              loader: require.resolve('worker-loader'),
-              options: { inline: 'fallback' },
+              test: /\.worker\.(t|j)s$/,
+              include: [new RegExp(basePath), libraryInclude],
+              use: [
+                {
+                  loader: require.resolve('worker-loader'),
+                  options: {
+                    inline: 'fallback',
+                    filename: '[name].[contenthash].js',
+                  },
+                },
+                generateBabelLoader({
+                  rootPath,
+                  babelRoot,
+                  target: argv?.target,
+                  mode,
+                  babelLoaderOptions,
+                  noHotReload: true,
+                }),
+              ],
+            },
+            {
+              test: /\.(t|j)sx?$/,
+              use: [
+                require.resolve('thread-loader'),
+                generateBabelLoader({
+                  rootPath,
+                  babelRoot,
+                  target: argv?.target,
+                  mode,
+                  babelLoaderOptions,
+                }),
+                ...extraJsLoaders,
+              ],
             },
           ],
-          include: [
-            new RegExp(basePath),
-            path.join(rootPath, 'stories'),
-            /.storybook/,
-            libraryInclude,
-          ],
-          exclude: libraryExclude,
-        },
-        {
-          test: /\.(t|j)sx?$/,
-          use: [
-            require.resolve('thread-loader'),
-            generateBabelLoader({
-              rootPath,
-              babelRoot,
-              target: argv?.target,
-              mode,
-              babelLoaderOptions,
-            }),
-            ...extraJsLoaders,
-          ],
-          include: [
-            new RegExp(basePath),
-            path.join(rootPath, 'stories'),
-            /.storybook/,
-            libraryInclude,
-          ],
-          exclude: libraryExclude,
         },
         {
           test: /\.html$/,
@@ -155,50 +157,50 @@ export default function makeBaseConfig({
         },
         {
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-          issuer: /\.(j|t)sx?$/,
-          use: [
+          oneOf: [
             {
-              loader: require.resolve('@svgr/webpack'),
-              options: {
-                svgoConfig: {
-                  plugins: [
-                    { removeTitle: false },
-                    { removeComments: true },
-                    { removeDesc: true },
-                    { removeUselessDefs: true },
-                    { removeDoctype: true },
-                    { removeMetadata: true },
-                    { convertColors: true },
-                    { removeViewBox: false },
-                    { convertShapeToPath: false },
-                  ],
+              issuer: /\.(j|t)sx?$/,
+              use: [
+                {
+                  loader: require.resolve('@svgr/webpack'),
+                  options: {
+                    svgoConfig: {
+                      plugins: [
+                        { removeTitle: false },
+                        { removeComments: true },
+                        { removeDesc: true },
+                        { removeUselessDefs: true },
+                        { removeDoctype: true },
+                        { removeMetadata: true },
+                        { convertColors: true },
+                        { removeViewBox: false },
+                        { convertShapeToPath: false },
+                      ],
+                    },
+                    ...svgrOptions,
+                  },
                 },
-                ...svgrOptions,
-              },
+                {
+                  loader: require.resolve('file-loader'),
+                  options: {
+                    name: nohash
+                      ? '[name].[ext]'
+                      : mode === 'production'
+                      ? '[name].[contenthash].[ext]'
+                      : '[path][contenthash].[ext]',
+                  },
+                },
+              ],
+              type: 'javascript/auto',
             },
+            // for non-js files always use file-loader
             {
-              loader: require.resolve('file-loader'),
-              options: {
-                name: nohash
-                  ? '[name].[ext]'
-                  : mode === 'production'
-                  ? '[name].[contenthash].[ext]'
-                  : '[path][contenthash].[ext]',
+              type: 'asset',
+              generator: {
+                emit: !argv?.target?.includes?.('node'),
               },
             },
           ],
-          type: 'javascript/auto',
-        },
-        // for non-js files always use file-loader
-        {
-          test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
-          issuer: {
-            not: [/\.(j|t)sx?$/],
-          },
-          type: 'asset',
-          generator: {
-            emit: !argv?.target?.includes?.('node'),
-          },
         },
         {
           test: /\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf)(\?v=\d+\.\d+\.\d+)?$/,

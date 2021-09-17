@@ -97,74 +97,77 @@ export default function getStyleRules({
     const globalStyleRegex = new RegExp(`${globalStyleDir}/`);
     excludeCSSProcess.unshift(globalStyleRegex);
   }
-  return [
-    // css modules (local styles)
-    {
-      test: /\.scss$/i,
-      include: [absoluteBasePath, libraryInclude],
-      exclude: excludeCSSProcess,
-      use: [...cssModuleLoaders, ...sassLoaders],
-    },
-    // plain css as css-modules
-    {
-      test: /\.css$/i,
-      include: [absoluteBasePath, libraryInclude],
-      exclude: excludeCSSProcess,
-      use: cssModuleLoaders,
-    },
-    // global styles
-    globalStyleDir !== false && {
-      test: /\.scss$/i,
-      include: [absoluteBasePath],
-      exclude: [
-        /\.module\.scss$/,
-        new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
-      ],
-      use: [...cssLoaders, ...sassLoaders],
-      // Don't consider CSS imports dead code even if the
-      // containing package claims to have no side effects.
-      // Remove this when webpack adds a warning or an error for this.
-      // See https://github.com/webpack/webpack/issues/6571
-      sideEffects: true,
-    },
-    globalStyleDir !== false && {
-      test: /\.module\.scss$/i,
-      include: [absoluteBasePath],
-      exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
-      use: [...cssModuleLoaders, ...sassLoaders],
-    },
-    // css-in-js like linaria do not use css-modules
-    {
-      test: /\.css$/i,
-      include: [rootPath],
-      exclude: [/node_modules/, absoluteBasePath, libraryInclude],
-      use: cssLoaders,
-    },
-    // package css
-    {
-      test: /\.css$/i,
-      include: [/node_modules/],
-      use: cssModuleLoaders.slice(0, -1).map(loader => {
-        if (/($|\/)css-loader/.test(loader.loader)) {
-          return {
-            ...loader,
-            options: {
-              ...loader.options,
-              modules: {
-                ...loader.options.modules,
-                auto: true,
-                ...cssModulesOptions,
+  return {
+    test: /\.s?css$/i,
+    oneOf: [
+      // css modules (local styles)
+      {
+        test: /\.scss$/i,
+        include: [absoluteBasePath, libraryInclude],
+        exclude: excludeCSSProcess,
+        use: [...cssModuleLoaders, ...sassLoaders],
+      },
+      // plain css as css-modules
+      {
+        test: /\.css$/i,
+        include: [absoluteBasePath, libraryInclude],
+        exclude: excludeCSSProcess,
+        use: cssModuleLoaders,
+      },
+      // global styles
+      globalStyleDir !== false && {
+        test: /\.scss$/i,
+        include: [absoluteBasePath],
+        exclude: [
+          /\.module\.scss$/,
+          new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
+        ],
+        use: [...cssLoaders, ...sassLoaders],
+        // Don't consider CSS imports dead code even if the
+        // containing package claims to have no side effects.
+        // Remove this when webpack adds a warning or an error for this.
+        // See https://github.com/webpack/webpack/issues/6571
+        sideEffects: true,
+      },
+      globalStyleDir !== false && {
+        test: /\.module\.scss$/i,
+        include: [absoluteBasePath],
+        exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
+        use: [...cssModuleLoaders, ...sassLoaders],
+      },
+      // css-in-js like linaria do not use css-modules
+      {
+        test: /\.css$/i,
+        include: [rootPath],
+        exclude: [/node_modules/, absoluteBasePath, libraryInclude],
+        use: cssLoaders,
+      },
+      // package css
+      {
+        test: /\.css$/i,
+        include: [/node_modules/],
+        use: cssModuleLoaders.slice(0, -1).map(loader => {
+          if (/($|\/)css-loader/.test(loader.loader)) {
+            return {
+              ...loader,
+              options: {
+                ...loader.options,
+                modules: {
+                  ...loader.options.modules,
+                  auto: true,
+                  ...cssModulesOptions,
+                },
               },
-            },
-          };
-        }
-        return loader;
-      }),
-      // Don't consider CSS imports dead code even if the
-      // containing package claims to have no side effects.
-      // Remove this when webpack adds a warning or an error for this.
-      // See https://github.com/webpack/webpack/issues/6571
-      sideEffects: true,
-    },
-  ].filter(rule => rule);
+            };
+          }
+          return loader;
+        }),
+        // Don't consider CSS imports dead code even if the
+        // containing package claims to have no side effects.
+        // Remove this when webpack adds a warning or an error for this.
+        // See https://github.com/webpack/webpack/issues/6571
+        sideEffects: true,
+      },
+    ].filter(rule => rule),
+  };
 }

@@ -170,7 +170,7 @@ export default function makeProdConfig(
     globalStyleDir,
     target: argv?.target,
   });
-  config.module.rules = [...config.module.rules, ...styleRules];
+  config.module.rules = [...config.module.rules, styleRules];
 
   if (env?.profile) {
     config.resolve.alias = {

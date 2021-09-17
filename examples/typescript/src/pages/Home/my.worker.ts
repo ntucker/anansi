@@ -5,5 +5,5 @@ ctx.postMessage({ foo: 'foo' });
 
 // Respond to message from parent thread
 ctx.addEventListener('message', (event: MessageEventInit) =>
-  event.data.message.toUpperCase(),
+  console.log(event.data.message.toUpperCase()),
 );

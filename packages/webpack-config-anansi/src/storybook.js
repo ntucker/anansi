@@ -94,20 +94,25 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       module: {
         ...envConfig.module,
         rules: [
-          //web workers
-          envConfig.module.rules[0],
-          //normal js/ts
           {
             // don't use thread-loader
-            ...envConfig.module.rules[1],
-            use: envConfig.module.rules[1].use.filter(
-              l => !/($|\/)thread-loader/g.test(l),
-            ),
+            ...envConfig.module.rules[0],
+            oneOf: [
+              //web workers
+              envConfig.module.rules[0].oneOf[0],
+              //normal js/ts
+              {
+                ...envConfig.module.rules[0].oneOf[1],
+                use: envConfig.module.rules[0].oneOf[1].use.filter(
+                  l => !/($|\/)thread-loader/g.test(l),
+                ),
+              },
+            ],
           },
           // storybook node_module compiles
           libraryRule,
           // the rest of our rules
-          ...envConfig.module.rules.slice(2),
+          ...envConfig.module.rules.slice(1),
           // typically these are various plugins
           ...storybookRules,
         ],

@@ -23,6 +23,6 @@ export default function makeNobuildConfig(
     cssModulesOptions,
     globalStyleDir,
   });
-  config.module.rules = [...config.module.rules, ...styleRules];
+  config.module.rules = [...config.module.rules, styleRules];
   return config;
 }
