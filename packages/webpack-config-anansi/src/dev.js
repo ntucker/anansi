@@ -54,7 +54,11 @@ export default function makeDevConfig(
     allowedHosts: ['localhost', '127.0.0.1'],
     devMiddleware: {
       publicPath: config.output.publicPath,
-      stats: 'minimal',
+      stats: {
+        preset: 'minimal',
+        children: 'errors-only',
+        excludeAssets: [/\.map/],
+      },
     },
     client: {
       logging: 'warn',
@@ -123,6 +127,6 @@ export default function makeDevConfig(
     globalStyleDir,
     target: argv?.target,
   });
-  config.module.rules = [...config.module.rules, ...styleRules];
+  config.module.rules = [...config.module.rules, styleRules];
   return config;
 }
