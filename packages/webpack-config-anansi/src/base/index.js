@@ -50,8 +50,7 @@ export default function makeBaseConfig({
   if (globalStyleDir) {
     modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
   }
-
-  return {
+  const config = {
     context: rootPath,
     entry: {
       App: [`./${basePath}`],
@@ -72,6 +71,8 @@ export default function makeBaseConfig({
       },
       version: JSON.stringify({
         version,
+        target: argv?.target,
+        mode,
         env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
       }),
       cacheDirectory: path.resolve(rootPath, '.cache/webpack'),
@@ -244,4 +245,11 @@ export default function makeBaseConfig({
       excludeAssets: [/\.map/],
     },
   };
+  if (
+    process.env.WEBPACK_NO_CACHE === true ||
+    process.env.WEBPACK_NO_CACHE === 'true'
+  ) {
+    delete config.cache;
+  }
+  return config;
 }

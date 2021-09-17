@@ -68,7 +68,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
     // storybook doesn't like us setting this very much.
     delete envConfig.devServer;
 
-    return {
+    const config = {
       watchOptions: storybookConfig.watchOptions,
       ...envConfig,
       resolveLoader: {
@@ -88,6 +88,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
           ...(storybookConfig.resolve?.plugins ?? []),
         ],
       },
+
       entry: storybookConfig.entry,
       output: storybookConfig.output,
       plugins: [...storybookPlugins, ...basePlugins],
@@ -118,5 +119,12 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         ],
       },
     };
+    if (envConfig.cache) {
+      config.cache = {
+        ...envConfig.cache,
+        version: envConfig.cache.version + 'storybook',
+      };
+    }
+    return config;
   };
 }
