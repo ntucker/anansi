@@ -1,6 +1,5 @@
 import { Resource, RestEndpoint, RestFetch } from '@rest-hooks/rest';
-
-import type { Fixture } from '@rest-hooks/test';
+import type { FixtureEndpoint } from '@rest-hooks/test';
 
 // Visit https://resthooks.io/docs/guides/resource-types to read more about these definitions
 export default class ExchangeRatesResource extends Resource {
@@ -25,17 +24,19 @@ export default class ExchangeRatesResource extends Resource {
     });
   }
 
-  declare static fixtures: Record<string, Fixture>;
+  declare static fixtures: Record<string, FixtureEndpoint>;
 }
 
 if (process.env.NODE_ENV !== 'production') {
   ExchangeRatesResource.fixtures = {
     list: {
-      request: ExchangeRatesResource.list(),
-      params: {
-        currency: 'USD',
-      },
-      result: {
+      endpoint: ExchangeRatesResource.list(),
+      args: [
+        {
+          currency: 'USD',
+        },
+      ],
+      response: {
         data: {
           currency: 'USD',
           rates: {

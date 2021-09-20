@@ -16,7 +16,7 @@ export default {
       control: {
         type: 'select',
         options: Object.keys(
-          ExchangeRatesResource.fixtures.list.result.data.rates,
+          ExchangeRatesResource.fixtures.list.response.data.rates,
         ),
       },
     },
