@@ -1,5 +1,5 @@
 import { PageHeader } from 'antd';
-import { useFetcher, useResource } from 'rest-hooks';
+import { useController, useResource } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router';
 
 import { PostResource } from 'data/resources';
@@ -14,7 +14,7 @@ export default function PostEdit({
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const update = useFetcher(PostResource.update());
+  const controller = useController();
   const post = useResource(PostResource.detail(), { id });
   const routes = [
     {
@@ -35,7 +35,9 @@ export default function PostEdit({
     <PageHeader title={null} breadcrumb={{ routes, itemRender }}>
       <PostForm
         initialValues={post}
-        onSubmit={(data: object) => update({ id }, data)}
+        onSubmit={(data: object) =>
+          controller.fetch(PostResource.update(), { id }, data)
+        }
       />
     </PageHeader>
   );

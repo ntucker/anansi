@@ -3030,10 +3030,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-2.0.1.tgz#68b386f67cf8bb4d1d1a6d74a1a4d8e7007a0383"
-  integrity sha512-DlRHMCjabM8TKPhnirQhmNYiumaqkel5xapFCXUA7PjHCoMj1mIFvULgJoHH7nRFnb5MbYomixpSMtomC4AGHg==
+"@rest-hooks/core@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-2.1.0.tgz#1e4423c1805a14d9f22fe409285f0ec83e580157"
+  integrity sha512-ncQtgIuQisVQJM7CdQfTSF2yZqaQBLFaQX73t7+2mugPQrD+GJlPbMFBZwzrTm1gAwojlPM+vFWvSMH8a4EwuA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/endpoint" "^2.0.0"
@@ -3070,10 +3070,10 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
 
-"@rest-hooks/test@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-7.0.0.tgz#7b8f2eab817e1c21be7b908909df8077cdbe1db0"
-  integrity sha512-wU2YgAiZcYx5ofZlzIk9i3oumOU78z4dq860cD11rb3FeoNOqJfoNofmhjJvasjqUPWJ2dz/iKMMvVcv/kO5EQ==
+"@rest-hooks/test@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/test/-/test-7.1.0.tgz#c9e152b027d36f94ca36f0f12b8da17aa1375819"
+  integrity sha512-+W8pKdn8XhBv78q/P9QhM83WUnWcH9+DJhsBjO65fC8PwxEduQ9eV4Q8M7WTESW5EJODi6wFy0j8sXAT0E8SKw==
   dependencies:
     "@testing-library/react-hooks" "~7.0.0"
 
@@ -17326,13 +17326,13 @@ responselike@^2.0.0:
   dependencies:
     lowercase-keys "^2.0.0"
 
-rest-hooks@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-6.0.1.tgz#67346b67bc2fe507681c0b8c71be69fd13380f8c"
-  integrity sha512-RlWjWqrjSMpUEf8NLDfBqvIJMFhyEhjf55crE6ARhWY8hPkI5SRSuVqgyiZWerFnC1EaxFGbyJDDFETas9b6Vg==
+rest-hooks@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-6.1.0.tgz#982c5d78e4f290b321a1b5a4bf350d7ef01d85e6"
+  integrity sha512-kgTJgvgyAH0f17zui3oigX83xg200dFUd7QXrLlpIhp4v0xdrjJzpG+QCD7BNMzqZ85laxmhAvE7gmtuhTW3sQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^2.0.1"
+    "@rest-hooks/core" "^2.1.0"
     "@rest-hooks/endpoint" "^2.0.0"
 
 restore-cursor@^1.0.1:

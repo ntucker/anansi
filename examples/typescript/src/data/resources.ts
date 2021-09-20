@@ -11,6 +11,19 @@ export class PostResource extends Resource {
   }
 
   static urlRoot = 'https://jsonplaceholder.typicode.com/posts/';
+
+  static create<T extends typeof Resource>(this: T) {
+    const listkey = this.list().key({});
+    return super.create().extend({
+      schema: this,
+      update: (newResourceId: string) => ({
+        [listkey]: (resourceIds: string[] = []) => [
+          ...resourceIds,
+          newResourceId,
+        ],
+      }),
+    });
+  }
 }
 export class CommentResource extends Resource {
   readonly postId: number = 0;
