@@ -30,7 +30,7 @@
     "@types/jest": "^27.0.2",
     "@types/lodash": "^4.14.173",
     "@types/parse-link-header": "^1.0.0",
-    "@types/react-router-dom": "^5.1.9",
+    "@types/react-router-dom": "^5.3.0",
     "cross-env": "^7.0.3",
     "jest": "^27.2.1",
     "react-refresh": "next",
