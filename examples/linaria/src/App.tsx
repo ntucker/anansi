@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { css } from '@linaria/core';
 import { styled } from '@linaria/react';
+import MenuItem from 'MenuItem';
 
 // Linaria seems very particular about what exactly you can interpolate
 const media = {
@@ -70,6 +71,7 @@ const App = () => (
     <h1 className={header}>Linaria Test</h1>
     <Container>
       <Text>hello world!</Text>
+      <MenuItem>hi</MenuItem>
     </Container>
   </>
 );
