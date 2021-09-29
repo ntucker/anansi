@@ -6200,7 +6200,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@4.14.2, browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.6, browserslist@^4.17.0, browserslist@^4.17.1, browserslist@^4.6.4:
+browserslist@4.14.2, browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.6, browserslist@^4.17.1, browserslist@^4.6.4:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.17.1.tgz#a98d104f54af441290b7d592626dd541fa642eb9"
   integrity sha512-aLD0ZMDSnF4lUt4ZDNgqi5BUn9BZ7YdQdI/cYlILrhdSSZJLU9aNZoD5/NBmM4SK34APB2e83MOsRt1EnkuyaQ==
@@ -7294,12 +7294,12 @@ copyfiles@^2.1.1:
     untildify "^4.0.0"
     yargs "^16.1.0"
 
-core-js-compat@^3.16.0, core-js-compat@^3.18.0, core-js-compat@^3.8.1, core-js-compat@^3.9.1:
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.18.0.tgz#fb360652201e8ac8da812718c008cd0482ed9b42"
-  integrity sha512-tRVjOJu4PxdXjRMEgbP7lqWy1TWJu9a01oBkn8d+dNrhgmBwdTkzhHZpVJnEmhISLdoJI1lX08rcBcHi3TZIWg==
+core-js-compat@^3.16.0, core-js-compat@^3.18.1, core-js-compat@^3.8.1, core-js-compat@^3.9.1:
+  version "3.18.1"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.18.1.tgz#01942a0877caf9c6e5007c027183cf0bdae6a191"
+  integrity sha512-XJMYx58zo4W0kLPmIingVZA10+7TuKrMLPt83+EzDmxFJQUMcTVVmQ+n5JP4r6Z14qSzhQBRi3NSWoeVyKKXUg==
   dependencies:
-    browserslist "^4.17.0"
+    browserslist "^4.17.1"
     semver "7.0.0"
 
 core-js-pure@^3.0.0, core-js-pure@^3.8.1, core-js-pure@^3.8.2:
