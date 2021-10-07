@@ -16,6 +16,27 @@ scanner_configs:
       - advisory_id: 1754
         changed_by: ntucker
         notes: svgo updates
+      - advisory_id: 1002492
+        changed_by: ntucker
+        notes: dan abramov claims this is not real
+      - advisory_id: 1002487
+        changed_by: ntucker
+        notes: dan abramov claims this is not real
+      - advisory_id: 1002475
+        changed_by: ntucker
+        notes: no patch available for dep
+      - advisory_id: 1002624
+        changed_by: ntucker
+        notes: no patch available for dep
+      - advisory_id: 1002423
+        changed_by: ntucker
+        notes: svgo1 relies on - which can't quite get rid of yet
+      - advisory_id: 1002465
+        changed_by: ntucker
+        notes: svgo1 relies on - which can't quite get rid of yet
+      - advisory_id: 1002401
+        changed_by: ntucker
+        notes: svgo1 relies on - which can't quite get rid of yet
 active_scanners:
   - RepoNotEmpty
   - Brakeman
