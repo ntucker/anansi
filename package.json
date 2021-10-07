@@ -28,7 +28,7 @@
     "@babel/core": "7.15.8",
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
-    "@storybook/addon-essentials": "^6.3.9",
+    "@storybook/addon-essentials": "^6.3.10",
     "@storybook/addon-links": "^6.3.9",
     "@storybook/addons": "^6.3.1",
     "@storybook/builder-webpack5": "^6.3.10",
