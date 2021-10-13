@@ -3274,16 +3274,16 @@
     storybook-addon-outline "^1.4.1"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@^6.3.10":
-  version "6.3.10"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.10.tgz#0c4c95def9655a299f3e29aa6e1fe6cde8326ecf"
-  integrity sha512-/gp5+4+niwK7U+28trwvFAgbZat9m4v9xFd5W8jXo8HmPlyDUK5w9Zu14xH6PrAfufFMb+No9b8eZjzOgB5aOQ==
+"@storybook/addon-links@^6.3.11":
+  version "6.3.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.11.tgz#d4b024dea43120f24751c2b767659b8e8c4e6755"
+  integrity sha512-VNbOkXLebbu7D6NviB6FZlL3gyfXFo8s+R7GQVV5VHtUIH8R0d1WabIdPwszxlRQcxtFpbyxinnYVFDaTnesCA==
   dependencies:
-    "@storybook/addons" "6.3.10"
-    "@storybook/client-logger" "6.3.10"
-    "@storybook/core-events" "6.3.10"
+    "@storybook/addons" "6.3.11"
+    "@storybook/client-logger" "6.3.11"
+    "@storybook/core-events" "6.3.11"
     "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.3.10"
+    "@storybook/router" "6.3.11"
     "@types/qs" "^6.9.5"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -20823,10 +20823,10 @@ webpack-virtual-modules@^0.2.2, webpack-virtual-modules@^0.4.1, webpack-virtual-
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.3.tgz#cd597c6d51d5a5ecb473eea1983a58fa8a17ded9"
   integrity sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==
 
-webpack@4, webpack@^5, webpack@^5.51.2, webpack@^5.58.0, webpack@^5.9.0:
-  version "5.58.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.58.1.tgz#df8aad72b617a9d0db8c89d4f410784ee93320d7"
-  integrity sha512-4Z/dmbTU+VmkCb2XNgW7wkE5TfEcSooclprn/UEuVeAkwHhn07OcgUsyaKHGtCY/VobjnsYBlyhKeMLiSoOqPg==
+webpack@4, webpack@^5, webpack@^5.51.2, webpack@^5.58.2, webpack@^5.9.0:
+  version "5.58.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.58.2.tgz#6b4af12fc9bd5cbedc00dc0a2fc2b9592db16b44"
+  integrity sha512-3S6e9Vo1W2ijk4F4PPWRIu6D/uGgqaPmqw+av3W3jLDujuNkdxX5h5c+RQ6GkjVR+WwIPOfgY8av+j5j4tMqJw==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"
