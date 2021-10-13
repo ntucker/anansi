@@ -69,7 +69,7 @@
     "ejs": "^3.1.5",
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
-    "pacote": "^12.0.0",
+    "pacote": "^12.0.2",
     "shelobsay": "^1.0.1",
     "yeoman-generator": "^5.4.2"
   },
