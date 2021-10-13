@@ -101,7 +101,7 @@
     "raw-loader": "4.0.2",
     "react-dev-utils": "^11.0.4",
     "readable-stream": "^3.6.0",
-    "sass-loader": "^12.1.0",
+    "sass-loader": "^12.2.0",
     "sass-resources-loader": "^2.2.4",
     "semver": "^7.3.5",
     "stream-browserify": "^3.0.0",
