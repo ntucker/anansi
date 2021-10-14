@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.16](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.15...@anansi/babel-preset@2.7.16) (2021-10-14)
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-decorators from 7.15.4 to 7.15.8 ([#946](https://github.com/ntucker/anansi/issues/946)) ([10f2bb9](https://github.com/ntucker/anansi/commit/10f2bb9787a9036e573a0f079ee5d23ea7e05557))
+* bump @babel/plugin-transform-runtime from 7.15.0 to 7.15.8 ([#953](https://github.com/ntucker/anansi/issues/953)) ([a879ffe](https://github.com/ntucker/anansi/commit/a879ffe7ccb8a8b33215ef978723a63f6ee9de96))
+* bump @babel/plugin-transform-typescript from 7.15.4 to 7.15.8 ([#950](https://github.com/ntucker/anansi/issues/950)) ([c4c5e09](https://github.com/ntucker/anansi/commit/c4c5e09c651bcd1598b5a7b7ade58bacaef92238))
+* bump @babel/preset-env from 7.15.6 to 7.15.8 ([#951](https://github.com/ntucker/anansi/issues/951)) ([f4fb8a8](https://github.com/ntucker/anansi/commit/f4fb8a8ddb470b5ebbea2c3543a1d6ade3c7cf9a))
+* bump core-js-compat from 3.17.3 to 3.18.0 ([#885](https://github.com/ntucker/anansi/issues/885)) ([facaccd](https://github.com/ntucker/anansi/commit/facaccd9b49b2adffab9822791e1eb16782369b4))
+* bump core-js-compat from 3.18.0 to 3.18.1 ([#909](https://github.com/ntucker/anansi/issues/909)) ([bdf8e91](https://github.com/ntucker/anansi/commit/bdf8e91a5e66b242923036c3839ebc9fe20c8f7c))
+* bump core-js-compat from 3.18.1 to 3.18.2 ([#938](https://github.com/ntucker/anansi/issues/938)) ([ebbf035](https://github.com/ntucker/anansi/commit/ebbf035e82557800bdc5ce37d8d70151e9d870fd))
+* bump core-js-compat from 3.18.2 to 3.18.3 ([#983](https://github.com/ntucker/anansi/issues/983)) ([63bfb75](https://github.com/ntucker/anansi/commit/63bfb7578c216d6256c23971e139e7194ef9e413))
+
+
+
 ### [2.7.15](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.14...@anansi/babel-preset@2.7.15) (2021-09-11)
 
 

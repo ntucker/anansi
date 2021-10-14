@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.14](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.13...@anansi/jest-preset@0.5.14) (2021-10-14)
+
+
+### 📦 Package
+
+* bump babel-jest from 27.2.0 to 27.2.1 ([#882](https://github.com/ntucker/anansi/issues/882)) ([22fab4d](https://github.com/ntucker/anansi/commit/22fab4d9e8b58ad247ad4d8493d90e6f015ec877))
+* bump babel-jest from 27.2.1 to 27.2.3 ([#907](https://github.com/ntucker/anansi/issues/907)) ([93f59a5](https://github.com/ntucker/anansi/commit/93f59a55f32449aa792260076a41961152927bcd))
+* bump babel-jest from 27.2.3 to 27.2.4 ([#916](https://github.com/ntucker/anansi/issues/916)) ([1ad4baf](https://github.com/ntucker/anansi/commit/1ad4baf940713ad1271f601a702aac55760d973f))
+* bump babel-jest from 27.2.4 to 27.2.5 ([#964](https://github.com/ntucker/anansi/issues/964)) ([4fc8d81](https://github.com/ntucker/anansi/commit/4fc8d81b4562a4b1ec7a857b93c71e31e311588b))
+* bump core-js from 3.17.3 to 3.18.0 ([#883](https://github.com/ntucker/anansi/issues/883)) ([8c1f252](https://github.com/ntucker/anansi/commit/8c1f2524d03b37125207e19f737998ed7ed2fa63))
+* bump core-js from 3.18.0 to 3.18.1 ([#911](https://github.com/ntucker/anansi/issues/911)) ([7d63887](https://github.com/ntucker/anansi/commit/7d638872481ac01fc3f8c754e98da3fead97d0ea))
+* bump core-js from 3.18.1 to 3.18.2 ([#941](https://github.com/ntucker/anansi/issues/941)) ([b52355a](https://github.com/ntucker/anansi/commit/b52355a0f839763cc96621e45d02cbc1225f1728))
+* bump core-js from 3.18.2 to 3.18.3 ([#969](https://github.com/ntucker/anansi/issues/969)) ([fc79210](https://github.com/ntucker/anansi/commit/fc79210d1ee7448344dfb231448e533d967ba766))
+
+
+
 ### [0.5.13](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.12...@anansi/jest-preset@0.5.13) (2021-09-15)
 
 

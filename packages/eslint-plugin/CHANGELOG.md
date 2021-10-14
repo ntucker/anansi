@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.28](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.27...@anansi/eslint-plugin@0.11.28) (2021-10-14)
+
+
+### 📦 Package
+
+* bump @babel/eslint-parser from 7.15.4 to 7.15.7 ([#881](https://github.com/ntucker/anansi/issues/881)) ([6673018](https://github.com/ntucker/anansi/commit/6673018d11f7888fb0272ccc2b9216c166f7d42b))
+* bump @babel/eslint-parser from 7.15.7 to 7.15.8 ([#954](https://github.com/ntucker/anansi/issues/954)) ([99f2658](https://github.com/ntucker/anansi/commit/99f26588743ee104fede58237b07ed390074dc72))
+* bump @typescript-eslint/eslint-plugin from 4.31.1 to 4.31.2 ([#890](https://github.com/ntucker/anansi/issues/890)) ([89ad474](https://github.com/ntucker/anansi/commit/89ad474745ca386ecef7ddb22e5be445538b15ff))
+* bump @typescript-eslint/eslint-plugin from 4.31.2 to 4.32.0 ([#904](https://github.com/ntucker/anansi/issues/904)) ([8b445dd](https://github.com/ntucker/anansi/commit/8b445dda43e272874fa3cc157eaa96f78a9524c6))
+* bump @typescript-eslint/eslint-plugin from 4.32.0 to 4.33.0 ([#936](https://github.com/ntucker/anansi/issues/936)) ([435dc08](https://github.com/ntucker/anansi/commit/435dc087e30c2749550d34da60f46a6e7fee0ddc))
+* bump @typescript-eslint/parser from 4.31.1 to 4.31.2 ([#893](https://github.com/ntucker/anansi/issues/893)) ([d4ee536](https://github.com/ntucker/anansi/commit/d4ee536462584192980b323c7bec323bd4b578d9))
+* bump @typescript-eslint/parser from 4.31.2 to 4.32.0 ([#905](https://github.com/ntucker/anansi/issues/905)) ([7e371a1](https://github.com/ntucker/anansi/commit/7e371a15614224bf4ad16517fdfaa1bf305bba10))
+* bump @typescript-eslint/parser from 4.32.0 to 4.33.0 ([#937](https://github.com/ntucker/anansi/issues/937)) ([29cc652](https://github.com/ntucker/anansi/commit/29cc652b2271392daf0bb6e0209ab19be3301759))
+
+
+
 ### [0.11.27](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.26...@anansi/eslint-plugin@0.11.27) (2021-09-15)
 
 

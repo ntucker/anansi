@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.0...@anansi/webpack-config@9.1.1) (2021-10-14)
+
+
+### 🐛 Bug Fix
+
+* Worker modules should follow nohash name rules ([53d17ff](https://github.com/ntucker/anansi/commit/53d17ffde35f13c406f24890478f0272a5dd0502))
+
+
+### 📦 Package
+
+* bump autoprefixer from 10.3.4 to 10.3.5 ([#896](https://github.com/ntucker/anansi/issues/896)) ([9ddc17c](https://github.com/ntucker/anansi/commit/9ddc17c13f19d2065f083c5382a404d6c99e16f2))
+* bump autoprefixer from 10.3.5 to 10.3.6 ([#903](https://github.com/ntucker/anansi/issues/903)) ([8cf22a4](https://github.com/ntucker/anansi/commit/8cf22a41839d0226188b1858e8b4c2d151bcf1d9))
+* bump autoprefixer from 10.3.6 to 10.3.7 ([#930](https://github.com/ntucker/anansi/issues/930)) ([abec784](https://github.com/ntucker/anansi/commit/abec784908b65444bd100bfe46babb2ac24236b3))
+* bump core-js from 3.17.3 to 3.18.0 ([#883](https://github.com/ntucker/anansi/issues/883)) ([8c1f252](https://github.com/ntucker/anansi/commit/8c1f2524d03b37125207e19f737998ed7ed2fa63))
+* bump core-js from 3.18.0 to 3.18.1 ([#911](https://github.com/ntucker/anansi/issues/911)) ([7d63887](https://github.com/ntucker/anansi/commit/7d638872481ac01fc3f8c754e98da3fead97d0ea))
+* bump core-js from 3.18.1 to 3.18.2 ([#941](https://github.com/ntucker/anansi/issues/941)) ([b52355a](https://github.com/ntucker/anansi/commit/b52355a0f839763cc96621e45d02cbc1225f1728))
+* bump core-js from 3.18.2 to 3.18.3 ([#969](https://github.com/ntucker/anansi/issues/969)) ([fc79210](https://github.com/ntucker/anansi/commit/fc79210d1ee7448344dfb231448e533d967ba766))
+* bump css-minimizer-webpack-plugin from 3.0.2 to 3.1.0 ([#932](https://github.com/ntucker/anansi/issues/932)) ([fdf07a7](https://github.com/ntucker/anansi/commit/fdf07a7119c5e9fce5bcb880d1c705431cd2a7b1))
+* bump css-minimizer-webpack-plugin from 3.1.0 to 3.1.1 ([#939](https://github.com/ntucker/anansi/issues/939)) ([99043cf](https://github.com/ntucker/anansi/commit/99043cf46793c97f6dc1f0fc42caca67efc5ce1e))
+* bump mini-css-extract-plugin from 2.3.0 to 2.4.1 ([#940](https://github.com/ntucker/anansi/issues/940)) ([f675c6a](https://github.com/ntucker/anansi/commit/f675c6aacca8ccbae8e2f6fb693febde1d9d4dc8))
+* bump mini-css-extract-plugin from 2.4.1 to 2.4.2 ([#960](https://github.com/ntucker/anansi/issues/960)) ([fcd5dcf](https://github.com/ntucker/anansi/commit/fcd5dcf0c9228ee004ec27a740c1b73204f3428c))
+* bump postcss from 8.3.6 to 8.3.7 ([#894](https://github.com/ntucker/anansi/issues/894)) ([13d4266](https://github.com/ntucker/anansi/commit/13d42666f4a0647ca43e289d80d655ed8f0526e6))
+* bump postcss from 8.3.7 to 8.3.8 ([#901](https://github.com/ntucker/anansi/issues/901)) ([8d62808](https://github.com/ntucker/anansi/commit/8d628082888e32038530f21115a8951ec17890cd))
+* bump postcss from 8.3.8 to 8.3.9 ([#935](https://github.com/ntucker/anansi/issues/935)) ([3d4eae9](https://github.com/ntucker/anansi/commit/3d4eae909b5a6aa9ddf6a7972dabb38b4969869b))
+* bump postcss-loader from 6.1.1 to 6.2.0 ([#984](https://github.com/ntucker/anansi/issues/984)) ([5b28bb5](https://github.com/ntucker/anansi/commit/5b28bb529fdce208d1d39f270ff87686d01c636a))
+* bump sass-loader from 12.1.0 to 12.2.0 ([#980](https://github.com/ntucker/anansi/issues/980)) ([130de56](https://github.com/ntucker/anansi/commit/130de56f2ed8af127452864e7ff9b2f213e2d25d))
+* bump svgo from 2.6.1 to 2.7.0 ([#897](https://github.com/ntucker/anansi/issues/897)) ([ddad4ef](https://github.com/ntucker/anansi/commit/ddad4ef3f17e7f880c6445b997c484a417aac465))
+* bump webpack-bundle-analyzer from 4.4.2 to 4.5.0 ([#977](https://github.com/ntucker/anansi/issues/977)) ([b795b66](https://github.com/ntucker/anansi/commit/b795b66a7f42e2804f9fa56de758b752db9c53fc))
+
+
+
 ## [9.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.0.7...@anansi/webpack-config@9.1.0) (2021-09-17)
 
 

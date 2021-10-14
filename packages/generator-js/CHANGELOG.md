@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.0.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.9...@anansi/generator-js@7.0.10) (2021-10-14)
+
+
+### 💅 Enhancement
+
+* Install @rest-hooks/img when choosing react 18 ([313ef8c](https://github.com/ntucker/anansi/commit/313ef8cdb48656a6c992d74b39390318645a90b6))
+* Set env variables for stackblitz ([3158e64](https://github.com/ntucker/anansi/commit/3158e6419a3035f22a5628b05bd78dab7c5dda07))
+* Use new fixture interface ([74b7a55](https://github.com/ntucker/anansi/commit/74b7a55871d0b2fbd998de598321befc3e997417))
+
+
+### 📦 Package
+
+* bump @types/node from 16.10.1 to 16.10.2 ([#919](https://github.com/ntucker/anansi/issues/919)) ([357d062](https://github.com/ntucker/anansi/commit/357d0628d53350fd83be67361015aeefa36db166))
+* bump @types/node from 16.10.2 to 16.10.3 ([#943](https://github.com/ntucker/anansi/issues/943)) ([35b2971](https://github.com/ntucker/anansi/commit/35b2971d7b01cbcac49e45051f9932d6f51e8244))
+* bump @types/node from 16.10.3 to 16.10.7 ([#987](https://github.com/ntucker/anansi/issues/987)) ([4c73327](https://github.com/ntucker/anansi/commit/4c73327f92a69293b78f25234481f594ea6d034e))
+* bump @types/node from 16.10.7 to 16.10.9 ([#988](https://github.com/ntucker/anansi/issues/988)) ([ef4b5cd](https://github.com/ntucker/anansi/commit/ef4b5cd1d4e60f2ae6bb545c3e06a801bf6421c1))
+* bump @types/node from 16.9.2 to 16.9.6 ([#892](https://github.com/ntucker/anansi/issues/892)) ([d4fa0fc](https://github.com/ntucker/anansi/commit/d4fa0fccfcc9ac5098e9efd954e1976cd00c9ed4))
+* bump @types/node from 16.9.6 to 16.10.1 ([#906](https://github.com/ntucker/anansi/issues/906)) ([35ffcd9](https://github.com/ntucker/anansi/commit/35ffcd96031f19a11a904c74f5af39beca256430))
+* bump core-js from 3.17.3 to 3.18.0 ([#883](https://github.com/ntucker/anansi/issues/883)) ([8c1f252](https://github.com/ntucker/anansi/commit/8c1f2524d03b37125207e19f737998ed7ed2fa63))
+* bump core-js from 3.18.0 to 3.18.1 ([#911](https://github.com/ntucker/anansi/issues/911)) ([7d63887](https://github.com/ntucker/anansi/commit/7d638872481ac01fc3f8c754e98da3fead97d0ea))
+* bump core-js from 3.18.1 to 3.18.2 ([#941](https://github.com/ntucker/anansi/issues/941)) ([b52355a](https://github.com/ntucker/anansi/commit/b52355a0f839763cc96621e45d02cbc1225f1728))
+* bump core-js from 3.18.2 to 3.18.3 ([#969](https://github.com/ntucker/anansi/issues/969)) ([fc79210](https://github.com/ntucker/anansi/commit/fc79210d1ee7448344dfb231448e533d967ba766))
+* bump jest from 27.2.0 to 27.2.1 ([#889](https://github.com/ntucker/anansi/issues/889)) ([95d5496](https://github.com/ntucker/anansi/commit/95d5496e24875fb69f19b0539ce8746ccb4da5c4))
+* bump jest from 27.2.1 to 27.2.2 ([#900](https://github.com/ntucker/anansi/issues/900)) ([3b572b3](https://github.com/ntucker/anansi/commit/3b572b316194e18458a12e33dc7ae42e1c5caf57))
+* bump jest from 27.2.2 to 27.2.3 ([#910](https://github.com/ntucker/anansi/issues/910)) ([b9ff72e](https://github.com/ntucker/anansi/commit/b9ff72e2f8a9075f14099f44f8d88fc2d4f87531))
+* bump jest from 27.2.3 to 27.2.4 ([#918](https://github.com/ntucker/anansi/issues/918)) ([6d030d1](https://github.com/ntucker/anansi/commit/6d030d1229ba252f0ce2715c1b756cf0fb8a5520))
+* bump jest from 27.2.4 to 27.2.5 ([#962](https://github.com/ntucker/anansi/issues/962)) ([4decbf5](https://github.com/ntucker/anansi/commit/4decbf59cab6d231a7a8a872dfbb6ff16ff79c73))
+* bump pacote from 11.3.5 to 12.0.0 ([#944](https://github.com/ntucker/anansi/issues/944)) ([0f305f4](https://github.com/ntucker/anansi/commit/0f305f42e9ba9c9de0ba29225b7bb3d3ed022eb7))
+* bump pacote from 12.0.0 to 12.0.2 ([#975](https://github.com/ntucker/anansi/issues/975)) ([93698c7](https://github.com/ntucker/anansi/commit/93698c78ad520eba73b7fef372f19ac992e38d12))
+
+
+
 ### [7.0.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.8...@anansi/generator-js@7.0.9) (2021-09-17)
 
 
