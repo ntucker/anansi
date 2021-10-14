@@ -74,6 +74,15 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       // falsy is same as 'resolve latest'
       this.config.get('reactMode') === 'legacy' ? '' : '^18.0.0-0';
 
+    const dependencies: Record<string, string> = {
+      'rest-hooks': '',
+      '@rest-hooks/rest': '',
+      react: reactVersion,
+      'react-dom': reactVersion,
+    };
+    if (reactVersion === '^18.0.0-0') {
+      dependencies['@rest-hooks/img'] = '';
+    }
     await Promise.all([
       this.addDevDependencies([
         'serve',
@@ -86,12 +95,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         'react-refresh':
           this.config.get('reactMode') === 'legacy' ? '' : '^0.11.0-0',
       }),
-      await this.addDependencies({
-        'rest-hooks': '',
-        '@rest-hooks/rest': '',
-        react: reactVersion,
-        'react-dom': reactVersion,
-      }),
+      await this.addDependencies(dependencies),
     ]);
   }
 
