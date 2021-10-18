@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.1...@anansi/webpack-config@9.1.2) (2021-10-18)
+
+
+### 🐛 Bug Fix
+
+* Resolve buffer package ([5521dc6](https://github.com/ntucker/anansi/commit/5521dc66503b1ef69ba39cd22519e5a8a5296b95))
+
+
+### 📦 Package
+
+* bump html-webpack-plugin from 5.3.2 to 5.4.0 ([#998](https://github.com/ntucker/anansi/issues/998)) ([7891a0a](https://github.com/ntucker/anansi/commit/7891a0a569e90a42051a2e7fee908da896b70552))
+
+
+
 ### [9.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.0...@anansi/webpack-config@9.1.1) (2021-10-14)
 
 

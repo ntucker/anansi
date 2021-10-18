@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.15](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.14...@anansi/jest-preset@0.5.15) (2021-10-18)
+
+
+### 📦 Package
+
+* bump ts-jest from 27.0.5 to 27.0.6 ([#991](https://github.com/ntucker/anansi/issues/991)) ([ec5f6ef](https://github.com/ntucker/anansi/commit/ec5f6ef84b9350b75628480dbb616a5c6c76924f))
+
+
+
 ### [0.5.14](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.13...@anansi/jest-preset@0.5.14) (2021-10-14)
 
 
