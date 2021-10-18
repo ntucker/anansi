@@ -3,7 +3,7 @@ export const NODE_ALIAS = {
   stream: require.resolve('stream-browserify'),
   path: require.resolve('path-browserify'),
   crypto: require.resolve('crypto-browserify'),
-  buffer: require.resolve('buffer'),
+  buffer: require.resolve('buffer/'),
   vm: require.resolve('vm-browserify'),
   assert: require.resolve('assert/'),
   console: require.resolve('console-browserify'),
