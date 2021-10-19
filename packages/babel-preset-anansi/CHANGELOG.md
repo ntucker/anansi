@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.17](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.16...@anansi/babel-preset@2.7.17) (2021-10-19)
+
+
+### 💅 Enhancement
+
+* optimizeConstEnums in TypeScript ([28e3823](https://github.com/ntucker/anansi/commit/28e382363a09cd04d74e1ec173f11d9266962bb4))
+
+
+
 ### [2.7.16](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.15...@anansi/babel-preset@2.7.16) (2021-10-14)
 
 

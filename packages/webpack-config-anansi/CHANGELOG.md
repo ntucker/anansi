@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.2...@anansi/webpack-config@9.1.3) (2021-10-19)
+
+**Note:** Version bump only for package @anansi/webpack-config
+
+
+
+
+
 ### [9.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.1...@anansi/webpack-config@9.1.2) (2021-10-18)
 
 
