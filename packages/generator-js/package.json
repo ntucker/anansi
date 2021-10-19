@@ -53,7 +53,7 @@
     "@types/yeoman-generator": "^5.2.7",
     "copyfiles": "^2.1.1",
     "husky": "^7.0.2",
-    "jest": "^27.2.5",
+    "jest": "^27.3.0",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^6.2.0"
