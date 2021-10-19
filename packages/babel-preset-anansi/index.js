@@ -315,6 +315,7 @@ function buildPreset(api, options = {}) {
       isTSX,
       allowDeclareFields: true,
       allowNamespaces: true,
+      optimizeConstEnums: true,
     });
     preset.overrides = [
       {
