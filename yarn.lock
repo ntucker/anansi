@@ -3045,10 +3045,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rest-hooks/core@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-3.0.1.tgz#8e4d0456919a1bb732661bdef86fdc1f7774ef99"
-  integrity sha512-o2QkBgn70RP7xL8BrhzEypRet8ukop+0muesVYY+rlhq67zt8dFb+gUGfGh9k7R/6v8BZwLlfJqoMP7DDuUT3g==
+"@rest-hooks/core@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@rest-hooks/core/-/core-3.0.2.tgz#0bdd4b9d637aaa92d0f8ca71a85845bd1399118f"
+  integrity sha512-1FAc+73RvkYI6qe/uepLInwUDOAnHHBnffrpnPhOFQ+E8SvAfqeRSFAjinmsyF1Egyk5aPdMXLboBLTKsHIfWw==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@rest-hooks/endpoint" "^2.0.3"
@@ -17623,13 +17623,13 @@ responselike@^2.0.0:
   dependencies:
     lowercase-keys "^2.0.0"
 
-rest-hooks@^6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-6.1.5.tgz#f770954afd9ccc1b4980fe42f0c98a6266bdf680"
-  integrity sha512-bpl3oJPbcck8fP4M6qTbMjVaAg4E2PO1pdVFI65vu4rutTcV7dnFAhNdpZjnhUBtoBzBmBG9ACyzu1wSNyF04Q==
+rest-hooks@^6.1.6:
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/rest-hooks/-/rest-hooks-6.1.6.tgz#1e6cdafa8316a4d3903fe7931a6c40c26e25ca6b"
+  integrity sha512-BdwufxXAWyIFlxalhzVomm52ibBLCC3772cV5tbMuiiDC1z/nyiFCPe7sM2vokBa3D355pMvkW0OKkTQ8X5zBA==
   dependencies:
     "@babel/runtime" "^7.7.2"
-    "@rest-hooks/core" "^3.0.1"
+    "@rest-hooks/core" "^3.0.2"
     "@rest-hooks/endpoint" "^2.0.3"
 
 restore-cursor@^1.0.1:
