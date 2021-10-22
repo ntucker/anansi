@@ -34,7 +34,7 @@
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
     "@storybook/react": "^6.3.12",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.2.3",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.6.1",
