@@ -1,6 +1,6 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-//import CrittersPlugin from 'critters-webpack-plugin'; TODO - add once this supports htmlplugin, and non-vulnerable deps
+import CrittersPlugin from 'critters-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
@@ -46,8 +46,7 @@ export default function makeProdConfig(
     if (htmlOptions) {
       config.plugins.unshift(
         new HtmlWebpackPlugin(htmlOptions),
-        // TODO: doesn't work with latest htmlplugin https://github.com/GoogleChromeLabs/critters/issues/52
-        //new CrittersPlugin({}),
+        new CrittersPlugin({}),
         //new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]), this is a bad idea until CSP nonce can be added
       );
       if (fontPreload) {
@@ -59,7 +58,7 @@ export default function makeProdConfig(
           new PreloadWebpackPlugin({
             rel: fontPreload,
             include: 'allAssets',
-            fileWhitelist: [/\.(otf|woff)/],
+            fileWhitelist: [/\.(otf|woff|ttf)/],
             as,
           }),
         );
