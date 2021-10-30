@@ -25,7 +25,7 @@
     "@anansi/babel-preset": "^2.5.2",
     "@anansi/eslint-plugin": "^0.11.0",
     "@babel/cli": "7.16.0",
-    "@babel/core": "7.15.8",
+    "@babel/core": "7.16.0",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
     "@storybook/addon-essentials": "^6.3.12",
