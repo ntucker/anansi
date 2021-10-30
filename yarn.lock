@@ -779,10 +779,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-syntax-function-bind@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-function-bind/-/plugin-syntax-function-bind-7.14.5.tgz#eb7544014fe349f48acbebc5084eeadde2efe57e"
-  integrity sha512-gstAIrKtlPwrQaRz4uK+kT7zI2p5MQqX41SeO+kZKH1XGO1jL0nLZBWznRigPpkem6LfIoG2EduQZmPBcUwEmg==
+"@babel/plugin-syntax-function-bind@^7.16.0":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-function-bind/-/plugin-syntax-function-bind-7.16.0.tgz#b268e330febdb851f5b57c31751607f758dda4ac"
+  integrity sha512-L+B4rMnFg2ElQUTjSr3gfmIAJ3ej/BeKGW32AL01qpLhkI4Vw1C+W8p6wl8S6eYqWSj9X9d/lyuQWI5JFYjCWw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
