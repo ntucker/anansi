@@ -909,10 +909,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-object-assign@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.14.5.tgz#62537d54b6d85de04f4df48bfdba2eebff17b760"
-  integrity sha512-lvhjk4UN9xJJYB1mI5KC0/o1D5EcJXdbhVe+4fSk08D6ZN+iuAIs7LJC+71h8av9Ew4+uRq9452v9R93SFmQlQ==
+"@babel/plugin-transform-object-assign@^7.16.0":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.16.0.tgz#750c726397f1f6402fb1ceffe9d8ff3595c8a0df"
+  integrity sha512-TftKY6Hxo5Uf/EIoC3BKQyLvlH46tbtK4xub90vzi9+yS8z1+O/52YHyywCZvYeLPOvv//1j3BPokLuHTWPcbg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
