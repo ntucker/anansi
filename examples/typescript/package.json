@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.84",
-    "@babel/runtime": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
     "@rest-hooks/graphql": "^0.1.1",
     "@rest-hooks/rest": "^3.0.1",
     "@types/node": "^16.11.7",
