@@ -75,7 +75,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         'react-dom': reactVersion,
       });
       const reactPeerV =
-        reactVersion === 'experimental' ? '^18.0.0-0' : '^17.0.0';
+        reactVersion === 'experimental' ? '^18.0.0-0-0-0' : '^17.0.0';
       this.packageJson.merge({
         peerDependencies: {
           react: reactPeerV,

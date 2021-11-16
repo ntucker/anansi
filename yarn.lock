@@ -6125,12 +6125,12 @@ browserify-zlib@^0.2.0:
     pako "~1.0.5"
 
 browserslist@4.14.2, browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.6, browserslist@^4.17.5, browserslist@^4.17.6, browserslist@^4.6.4:
-  version "4.17.6"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.17.6.tgz#c76be33e7786b497f66cad25a73756c8b938985d"
-  integrity sha512-uPgz3vyRTlEiCv4ee9KlsKgo2V6qPk7Jsn0KAn2OBqbqKo3iNcPEC1Ti6J4dwnz+aIRfEEEuOzC9IBk8tXUomw==
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.18.1.tgz#60d3920f25b6860eb917c6c7b185576f4d8b017f"
+  integrity sha512-8ScCzdpPwR2wQh8IT82CA2VgDwjHyqMovPBZSNH54+tm4Jk2pCuv90gmAdH6J84OCRWi0b4gMe6O6XPXuJnjgQ==
   dependencies:
-    caniuse-lite "^1.0.30001274"
-    electron-to-chromium "^1.3.886"
+    caniuse-lite "^1.0.30001280"
+    electron-to-chromium "^1.3.896"
     escalade "^3.1.1"
     node-releases "^2.0.1"
     picocolors "^1.0.0"
@@ -6373,10 +6373,10 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, can
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001272.tgz#8e9790ff995e9eb6e1f4c45cd07ddaa87cddbb14"
   integrity sha512-DV1j9Oot5dydyH1v28g25KoVm7l8MTxazwuiH3utWiAS6iL/9Nh//TGwqFEeqqN8nnWYQ8HHhUq+o4QPt9kvYw==
 
-caniuse-lite@^1.0.30001274:
-  version "1.0.30001274"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001274.tgz#26ca36204d15b17601ba6fc35dbdad950a647cc7"
-  integrity sha512-+Nkvv0fHyhISkiMIjnyjmf5YJcQ1IQHZN6U9TLUMroWR38FNwpsC51Gb68yueafX1V6ifOisInSgP9WJFS13ew==
+caniuse-lite@^1.0.30001280:
+  version "1.0.30001282"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001282.tgz#38c781ee0a90ccfe1fe7fefd00e43f5ffdcb96fd"
+  integrity sha512-YhF/hG6nqBEllymSIjLtR2iWDDnChvhnVJqp+vloyt2tEHFG1yBR+ac2B/rOw0qOK0m0lEXU2dv4E/sMk5P9Kg==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -8271,10 +8271,10 @@ ejs@^3.1.5, ejs@^3.1.6:
   dependencies:
     jake "^10.6.1"
 
-electron-to-chromium@^1.3.886:
-  version "1.3.887"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.887.tgz#b36aeed12a28aaa19460a467823f5bbe1f3c6f06"
-  integrity sha512-QQUumrEjFDKSVYVdaeBmFdyQGoaV+fCSMyWHvfx/u22bRHSTeBQYt6P4jMY+gFd4kgKB9nqk7RMtWkDB49OYPA==
+electron-to-chromium@^1.3.896:
+  version "1.3.900"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.900.tgz#5be2c5818a2a012c511b4b43e87b6ab7a296d4f5"
+  integrity sha512-SuXbQD8D4EjsaBaJJxySHbC+zq8JrFfxtb4GIr4E9n1BcROyMcRrJCYQNpJ9N+Wjf5mFp7Wp0OHykd14JNEzzQ==
 
 element-resize-detector@^1.2.2:
   version "1.2.2"
@@ -16629,14 +16629,14 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-dom@next:
-  version "18.0.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-alpha-930c9e7ee-20211015.tgz#32648ee7ab0f00550bb74d501373911110619949"
-  integrity sha512-UN1DP4BkME7bEc25uSf7eRfnu5I3HkRY0ghZ6TN59+hk+NbZ5CB1z+Eis0psiLgFE0Dg+9UP+7OwyrCcVxushA==
+react-dom@beta:
+  version "18.0.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-beta-4ff5f5719-20211115.tgz#35b1dcdfc24eb9f9719226e678963aa39628eb11"
+  integrity sha512-GV/GkDV0Kvi/CC9Gbkipw5Cn4V/bl0DZHseldxW8laW2Ghb9CuwXcfBwT72pYL5ZKTf/BmCKMrjfMZN6ICcEJA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-alpha-930c9e7ee-20211015"
+    scheduler "0.21.0-beta-4ff5f5719-20211115"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -16691,10 +16691,10 @@ react-inspector@^5.1.0:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
-react-is@18.0.0-alpha-930c9e7ee-20211015:
-  version "18.0.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-alpha-930c9e7ee-20211015.tgz#62e7b4bd31fb908c179611211a089a4fec35008b"
-  integrity sha512-lEbNR13S0BPrcewGb4K7kEEtppseS+xdI9DOk4Hnleb+5WY4V8H4zYqBll6fyRQyX0xGdgPTqxJ9pgtmIsmMqA==
+react-is@18.0.0-beta-4ff5f5719-20211115:
+  version "18.0.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-beta-4ff5f5719-20211115.tgz#3d5da1695321fe750535b8d128721d74d14943a1"
+  integrity sha512-6gSb8RYQNPLrvmtHsDn/VbnCz881O9Kc/6fsFl0c4QhEUsBxjPOPADthPZ1Jd2uBaV8Lc8HzRQ0tQheXZ629BA==
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -16728,20 +16728,15 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.11.0-alpha-82583617b-20210812:
-  version "0.11.0-alpha-fd5e01c2e-20210913"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-fd5e01c2e-20210913.tgz#af62043973967c6231add3f2767ea837487e13a6"
-  integrity sha512-AnIP/UTwvGzzFWQ9Q563ZRqmsyS3mjoi1ZaMeJ49TJ/RWiQOBDtjCAQxQtfgcAhpY+sNCDdyWxj66S6o8hSQOw==
-
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-refresh@next:
-  version "0.11.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-alpha-930c9e7ee-20211015.tgz#6b66bf2fb5c285b3640e55ee07730f07a2c6c6e4"
-  integrity sha512-GiOqMd3b82h0yFmiJpEa7jIKz24ZbrXhk/CS1nMZxAh/QjNfcGJREViOjE1MuA8cGV5gSsQX3RFqz0SsznGPjQ==
+react-refresh@beta:
+  version "0.11.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0-beta-4ff5f5719-20211115.tgz#1fa67f838acf473013a0ecc2c43ae3a8bcf9f2be"
+  integrity sha512-fsceZYComLYS09FlgPSKBJh1nNWbio5O5mhKIVl7rWoiU9pZ0g+iXgwr6qEl7ldUfETyvj2JUd7Iywz3S8RCyg==
 
 react-router-dom@^5.3.0:
   version "5.3.0"
@@ -16809,15 +16804,15 @@ react-syntax-highlighter@^13.5.3:
     prismjs "^1.21.0"
     refractor "^3.1.0"
 
-react-test-renderer@next:
-  version "18.0.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-alpha-930c9e7ee-20211015.tgz#db83387f3224f58cd83003debc57051d57c8a091"
-  integrity sha512-5chSWLBs+pybKmZesZ4XGWdsqWCucA+0NP3+P19UhzWR9/G97H3sBIrVlUFviAVqyMcVKe0DfUBOaFqV/xDVUw==
+react-test-renderer@beta:
+  version "18.0.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-beta-4ff5f5719-20211115.tgz#3b696cb64548a3cedc1704008458f4df5bac39ca"
+  integrity sha512-SCgBu4bt+3R+4vXJvM1M30aVibgsUkBRPntXA2kyQhQj469FDpqrNd4Gw65BZkJ1wr4cAJ1WpfOKLiUhS+XsFA==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-alpha-930c9e7ee-20211015"
+    react-is "18.0.0-beta-4ff5f5719-20211115"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-alpha-930c9e7ee-20211015"
+    scheduler "0.21.0-beta-4ff5f5719-20211115"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -16828,10 +16823,10 @@ react-textarea-autosize@^8.3.0:
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
 
-react@next:
-  version "18.0.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-alpha-930c9e7ee-20211015.tgz#20611ebd6fb54fcf982d5d70097ceb94aaae93ec"
-  integrity sha512-x8uF81YkpWtx8V8ynOd3mE4LNIaLyI5HmUVwjTHsxqd8nv/NE/e4k5GT+3S4sWxEPdLOoK7PPr47LZdB6FZmhA==
+react@beta:
+  version "18.0.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-beta-4ff5f5719-20211115.tgz#fd2e0a9c8ddadae4a0d922ac48ff3b64be31888f"
+  integrity sha512-eCOzEV0VUTdSm/UNvw4bz8iLbURkycXIByvk83Cy9qa/sJ2UtjMalwS1/0I0UHaq7WwqEQSfiF5+0mEGpZVruQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -17677,10 +17672,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@0.21.0-alpha-930c9e7ee-20211015:
-  version "0.21.0-alpha-930c9e7ee-20211015"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-alpha-930c9e7ee-20211015.tgz#4e6a6c8cbe9f8c46e5628b8f9df53c7f45854e33"
-  integrity sha512-wnxCQ+pGMsuB1Y5zeUgLb5wZKICVlk2rMGo394Gg3a4AtEvPcoAlUdVe7JInzFa3FNW1gPU7qZADPGEfp2jEew==
+scheduler@0.21.0-beta-4ff5f5719-20211115:
+  version "0.21.0-beta-4ff5f5719-20211115"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-beta-4ff5f5719-20211115.tgz#298012b681e11e81488a8e43c3b6f37725f99b17"
+  integrity sha512-Yd/nK9tshp16jIi4xAwOFLSJp5oW6veB0l+W2UtJfWJKmOd7ALxgUAYacaujIhaba+fhyC8VzEPGmMjujAv+fw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
