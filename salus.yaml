@@ -22,6 +22,12 @@ scanner_configs:
       - advisory_id: 1002487
         changed_by: ntucker
         notes: dan abramov claims this is not real
+      - advisory_id: 1005029
+        changed_by: ntucker
+        notes: dan abramov claims this is not real
+      - advisory_id: 1005024
+        changed_by: ntucker
+        notes: dan abramov claims this is not real
       - advisory_id: 1002475
         changed_by: ntucker
         notes: no patch available for dep
@@ -37,6 +43,21 @@ scanner_configs:
       - advisory_id: 1002401
         changed_by: ntucker
         notes: svgo1 relies on - which can't quite get rid of yet
+      - advisory_id: 1006724
+        changed_by: ntucker
+        notes: node-gyp#request#http-signature#jsprim - request is deprecated, so look for node-gyp
+      - advisory_id: 1005151
+        changed_by: ntucker
+        notes: depen
+      - advisory_id: 1004946
+        changed_by: ntucker
+        notes: ansi-regex transitive dep of node-sass
+      - advisory_id: 1004967
+        changed_by: ntucker
+        notes: abc
+      - advisory_id: 1005009
+        changed_by: ntucker
+        notes: abc
 active_scanners:
   - RepoNotEmpty
   - Brakeman
