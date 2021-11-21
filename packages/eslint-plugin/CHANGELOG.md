@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.28...@anansi/eslint-plugin@0.12.0) (2021-11-21)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* https://github.com/typescript-eslint/typescript-eslint/releases/tag/v5.0.0
+
+### 📦 Package
+
+* @typescript-eslint/eslint-plugin, @typescript-eslint/parser major ([#1115](https://github.com/ntucker/anansi/issues/1115)) ([220456b](https://github.com/ntucker/anansi/commit/220456b9c1d826612fcf2b52ee3a451801825cc5))
+* bump @babel/eslint-parser from 7.15.8 to 7.16.0 ([#1053](https://github.com/ntucker/anansi/issues/1053)) ([a831b3d](https://github.com/ntucker/anansi/commit/a831b3d4783d3b7b13a28c393d1253cffe95c6dd))
+* bump @babel/eslint-parser from 7.16.0 to 7.16.3 ([#1080](https://github.com/ntucker/anansi/issues/1080)) ([2cd260b](https://github.com/ntucker/anansi/commit/2cd260b773f14dee1ec3ffea6691fe0c5a256bbf))
+* bump eslint-import-resolver-webpack from 0.13.1 to 0.13.2 ([#1015](https://github.com/ntucker/anansi/issues/1015)) ([c81ff63](https://github.com/ntucker/anansi/commit/c81ff63cb38e5d3a6a12d9f04cc3665f20ef6432))
+* bump eslint-plugin-jsx-a11y from 6.4.1 to 6.5.1 ([#1087](https://github.com/ntucker/anansi/issues/1087)) ([3dce792](https://github.com/ntucker/anansi/commit/3dce7923b4d948c200192413797ca64da000a3c5))
+
+
+
 ### [0.11.28](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.27...@anansi/eslint-plugin@0.11.28) (2021-10-14)
 
 

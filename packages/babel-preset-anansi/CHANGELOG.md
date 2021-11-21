@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.18](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.17...@anansi/babel-preset@2.7.18) (2021-11-21)
+
+
+### 🐛 Bug Fix
+
+* Prod build css; class properties for modern targets ([637a405](https://github.com/ntucker/anansi/commit/637a405986e2e68a9269278e2c69f227f9096db5))
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-class-properties from 7.14.5 to 7.16.0 ([#1050](https://github.com/ntucker/anansi/issues/1050)) ([228bb12](https://github.com/ntucker/anansi/commit/228bb1235442fde0457320ae3588f42a6669c462))
+* bump @babel/plugin-proposal-decorators from 7.15.8 to 7.16.0 ([#1046](https://github.com/ntucker/anansi/issues/1046)) ([babcc3a](https://github.com/ntucker/anansi/commit/babcc3aeb737d1176c08e2ee4a7d0449535bf910))
+* bump @babel/plugin-proposal-decorators from 7.16.0 to 7.16.4 ([#1099](https://github.com/ntucker/anansi/issues/1099)) ([39fa746](https://github.com/ntucker/anansi/commit/39fa746b423970f28903f9d95a6825bc389ef0cc))
+* bump @babel/plugin-proposal-export-default-from ([#1041](https://github.com/ntucker/anansi/issues/1041)) ([5d6b493](https://github.com/ntucker/anansi/commit/5d6b493f31057edac06541dbc8c80c1602f67262))
+* bump @babel/plugin-proposal-optional-chaining from 7.14.5 to 7.16.0 ([#1045](https://github.com/ntucker/anansi/issues/1045)) ([5bf3530](https://github.com/ntucker/anansi/commit/5bf353069c9f2b731787da034266ec8a4ef5846a))
+* bump @babel/plugin-proposal-record-and-tuple from 7.14.5 to 7.16.0 ([#1051](https://github.com/ntucker/anansi/issues/1051)) ([fb7bf7d](https://github.com/ntucker/anansi/commit/fb7bf7d59703510e0448b194b3d6352a32c0e617))
+* bump @babel/plugin-syntax-function-bind from 7.14.5 to 7.16.0 ([#1056](https://github.com/ntucker/anansi/issues/1056)) ([86f734b](https://github.com/ntucker/anansi/commit/86f734b9aace0615c5a2e18e56bc9e74342da3a3))
+* bump @babel/plugin-transform-flow-strip-types from 7.14.5 to 7.16.0 ([#1043](https://github.com/ntucker/anansi/issues/1043)) ([3d6fc5f](https://github.com/ntucker/anansi/commit/3d6fc5fc3583d0723bcb6c8896ee9b407b4c91e6))
+* bump @babel/plugin-transform-object-assign from 7.14.5 to 7.16.0 ([#1054](https://github.com/ntucker/anansi/issues/1054)) ([dca5e30](https://github.com/ntucker/anansi/commit/dca5e30432c0e4ef34ee48fb8fb327ba29bee3f0))
+* bump @babel/plugin-transform-react-constant-elements ([#1052](https://github.com/ntucker/anansi/issues/1052)) ([b501d58](https://github.com/ntucker/anansi/commit/b501d58fe2e8d5bacab8fb6e883ae1cc716ce801))
+* bump @babel/plugin-transform-react-inline-elements ([#1047](https://github.com/ntucker/anansi/issues/1047)) ([3ed8d56](https://github.com/ntucker/anansi/commit/3ed8d563a39af76d3fac30d4789f7bdcde38b17d))
+* bump @babel/plugin-transform-runtime from 7.15.8 to 7.16.0 ([#1049](https://github.com/ntucker/anansi/issues/1049)) ([ebd99e9](https://github.com/ntucker/anansi/commit/ebd99e9a8995977662c9792f781735f15c6cbeb8))
+* bump @babel/plugin-transform-runtime from 7.16.0 to 7.16.4 ([#1100](https://github.com/ntucker/anansi/issues/1100)) ([07aa065](https://github.com/ntucker/anansi/commit/07aa065634ddaaba23d0dcc0c1bbc932625c52be))
+* bump @babel/plugin-transform-typescript from 7.15.8 to 7.16.1 ([#1061](https://github.com/ntucker/anansi/issues/1061)) ([d125424](https://github.com/ntucker/anansi/commit/d125424dba422633d013dfe782bfb4c9135b178d))
+* bump @babel/preset-env from 7.15.8 to 7.16.0 ([#1059](https://github.com/ntucker/anansi/issues/1059)) ([075fae9](https://github.com/ntucker/anansi/commit/075fae929931ce78cb88b6535c8230df0a73aa86))
+* bump @babel/preset-env from 7.16.0 to 7.16.4 ([#1097](https://github.com/ntucker/anansi/issues/1097)) ([49ad4a3](https://github.com/ntucker/anansi/commit/49ad4a3c1f8d8210affd846fbc5f646c80940805))
+* bump @babel/preset-react from 7.14.5 to 7.16.0 ([#1039](https://github.com/ntucker/anansi/issues/1039)) ([fb5ddd5](https://github.com/ntucker/anansi/commit/fb5ddd53ebd9ca8a1081e751d270256711142924))
+* bump core-js-compat from 3.18.3 to 3.19.0 ([#1026](https://github.com/ntucker/anansi/issues/1026)) ([bf94705](https://github.com/ntucker/anansi/commit/bf9470523a61c53654d4955f37a86de3c0a960df))
+* bump core-js-compat from 3.19.0 to 3.19.1 ([#1064](https://github.com/ntucker/anansi/issues/1064)) ([d66c1fa](https://github.com/ntucker/anansi/commit/d66c1fa62cbd68ca18cd0d591300241d001ef0b5))
+
+
+
 ### [2.7.17](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.16...@anansi/babel-preset@2.7.17) (2021-10-19)
 
 

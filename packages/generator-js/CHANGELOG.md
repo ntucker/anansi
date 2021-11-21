@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.12...@anansi/generator-js@7.1.0) (2021-11-21)
+
+
+### 🚀 Features
+
+* New projects should use backCompat=false ([a6470c8](https://github.com/ntucker/anansi/commit/a6470c84b6c84e2255a2f14ff9d471527a23cd4d))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.15.4 to 7.16.0 ([#1044](https://github.com/ntucker/anansi/issues/1044)) ([7e4e3cd](https://github.com/ntucker/anansi/commit/7e4e3cdcc8896c5c6cf86fe83017d386b3d3d41a))
+* bump @babel/runtime from 7.16.0 to 7.16.3 ([#1079](https://github.com/ntucker/anansi/issues/1079)) ([7508841](https://github.com/ntucker/anansi/commit/7508841fadc1df1adf15a0ca055cfe20fc19c9eb))
+* bump @types/node from 16.11.1 to 16.11.2 ([#1022](https://github.com/ntucker/anansi/issues/1022)) ([bfb90d3](https://github.com/ntucker/anansi/commit/bfb90d3ee4cea4c71365e34cbd3d081690b1f443))
+* bump @types/node from 16.11.2 to 16.11.6 ([#1029](https://github.com/ntucker/anansi/issues/1029)) ([ac9b996](https://github.com/ntucker/anansi/commit/ac9b9969c4aab63214f3586b7054d1c6a16b0980))
+* bump @types/node from 16.11.6 to 16.11.7 ([#1078](https://github.com/ntucker/anansi/issues/1078)) ([d86f96e](https://github.com/ntucker/anansi/commit/d86f96e492c1920e96908f2fb74600a1f5df868f))
+* bump @types/node from 16.11.7 to 16.11.9 ([#1111](https://github.com/ntucker/anansi/issues/1111)) ([4917baf](https://github.com/ntucker/anansi/commit/4917bafe33868d49b7323f66773e07cae33c9be5))
+* bump core-js from 3.18.3 to 3.19.0 ([#1030](https://github.com/ntucker/anansi/issues/1030)) ([657795c](https://github.com/ntucker/anansi/commit/657795c1c60bb660940c89b55083b206d903409e))
+* bump core-js from 3.19.0 to 3.19.1 ([#1066](https://github.com/ntucker/anansi/issues/1066)) ([f82521f](https://github.com/ntucker/anansi/commit/f82521f16a8e24a69d5885b281d793a6555a190d))
+* bump husky from 7.0.2 to 7.0.4 ([#1012](https://github.com/ntucker/anansi/issues/1012)) ([bd875dd](https://github.com/ntucker/anansi/commit/bd875dde720b9658d7dd8502d5efe5d8430a1dc2))
+* bump jest from 27.3.0 to 27.3.1 ([#1008](https://github.com/ntucker/anansi/issues/1008)) ([cc62538](https://github.com/ntucker/anansi/commit/cc62538e625a74be57c46781bd63b21ffc2086c2))
+* React to beta ([153c419](https://github.com/ntucker/anansi/commit/153c419de3d4392f22fb42a386c9e81ba52ccf7b))
+
+
+
 ### [7.0.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.11...@anansi/generator-js@7.0.12) (2021-10-19)
 
 

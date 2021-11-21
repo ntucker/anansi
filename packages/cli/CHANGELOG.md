@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.30](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.29...@anansi/cli@1.1.30) (2021-11-21)
+
+
+### 📦 Package
+
+* bump commander from 8.2.0 to 8.3.0 ([#1024](https://github.com/ntucker/anansi/issues/1024)) ([1d5de49](https://github.com/ntucker/anansi/commit/1d5de4938434f17182bc6d9e341bbbc78e78064b))
+* React to beta ([153c419](https://github.com/ntucker/anansi/commit/153c419de3d4392f22fb42a386c9e81ba52ccf7b))
+
+
+
 ### [1.1.29](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.28...@anansi/cli@1.1.29) (2021-10-19)
 
 **Note:** Version bump only for package @anansi/cli

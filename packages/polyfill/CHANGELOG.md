@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.87](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.86...@anansi/polyfill@1.0.87) (2021-11-21)
+
+
+### 📦 Package
+
+* bump core-js from 3.18.3 to 3.19.0 ([#1030](https://github.com/ntucker/anansi/issues/1030)) ([657795c](https://github.com/ntucker/anansi/commit/657795c1c60bb660940c89b55083b206d903409e))
+* bump core-js from 3.19.0 to 3.19.1 ([#1066](https://github.com/ntucker/anansi/issues/1066)) ([f82521f](https://github.com/ntucker/anansi/commit/f82521f16a8e24a69d5885b281d793a6555a190d))
+* bump rollup from 2.58.0 to 2.58.3 ([#1033](https://github.com/ntucker/anansi/issues/1033)) ([cdaa3d2](https://github.com/ntucker/anansi/commit/cdaa3d2d05fa27ebfa9c72e18551d627dc139de7))
+* bump rollup from 2.58.3 to 2.59.0 ([#1063](https://github.com/ntucker/anansi/issues/1063)) ([39dd421](https://github.com/ntucker/anansi/commit/39dd42131f8944948c5c008638bd7b0e880e0ac0))
+* bump rollup from 2.59.0 to 2.60.0 ([#1089](https://github.com/ntucker/anansi/issues/1089)) ([fa4b575](https://github.com/ntucker/anansi/commit/fa4b575023ae14f5e2ad24c8f4a7f8cb620f16dd))
+
+
+
 ### [1.0.86](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.85...@anansi/polyfill@1.0.86) (2021-10-19)
 
 **Note:** Version bump only for package @anansi/polyfill

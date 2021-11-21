@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.3...@anansi/webpack-config@9.2.0) (2021-11-21)
+
+
+### 🚀 Features
+
+* Use CrittersPlugin again ([757e38c](https://github.com/ntucker/anansi/commit/757e38c989f6692313239ee42df32ae81d4566db))
+
+
+### 🐛 Bug Fix
+
+* Prod build css; class properties for modern targets ([637a405](https://github.com/ntucker/anansi/commit/637a405986e2e68a9269278e2c69f227f9096db5))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.15.4 to 7.16.0 ([#1044](https://github.com/ntucker/anansi/issues/1044)) ([7e4e3cd](https://github.com/ntucker/anansi/commit/7e4e3cdcc8896c5c6cf86fe83017d386b3d3d41a))
+* bump @babel/runtime from 7.16.0 to 7.16.3 ([#1079](https://github.com/ntucker/anansi/issues/1079)) ([7508841](https://github.com/ntucker/anansi/commit/7508841fadc1df1adf15a0ca055cfe20fc19c9eb))
+* bump autoprefixer from 10.3.7 to 10.4.0 ([#1038](https://github.com/ntucker/anansi/issues/1038)) ([6792e5a](https://github.com/ntucker/anansi/commit/6792e5a21ff81c6e5b2abdf2a4833b7dab451b3e))
+* bump babel-loader from 8.2.2 to 8.2.3 ([#1018](https://github.com/ntucker/anansi/issues/1018)) ([e24d649](https://github.com/ntucker/anansi/commit/e24d649537ef29360186923991498c885325f57b))
+* bump core-js from 3.18.3 to 3.19.0 ([#1030](https://github.com/ntucker/anansi/issues/1030)) ([657795c](https://github.com/ntucker/anansi/commit/657795c1c60bb660940c89b55083b206d903409e))
+* bump core-js from 3.19.0 to 3.19.1 ([#1066](https://github.com/ntucker/anansi/issues/1066)) ([f82521f](https://github.com/ntucker/anansi/commit/f82521f16a8e24a69d5885b281d793a6555a190d))
+* bump css-loader from 6.4.0 to 6.5.0 ([#1035](https://github.com/ntucker/anansi/issues/1035)) ([78639d9](https://github.com/ntucker/anansi/commit/78639d9e06f6457dd61e1223deb225f23e1d08a8))
+* bump css-loader from 6.5.0 to 6.5.1 ([#1069](https://github.com/ntucker/anansi/issues/1069)) ([2ee7415](https://github.com/ntucker/anansi/commit/2ee74151ea0f8ca67420c4aa1185989cc917de2c))
+* bump css-minimizer-webpack-plugin from 3.1.1 to 3.1.2 ([#1077](https://github.com/ntucker/anansi/issues/1077)) ([ee5f637](https://github.com/ntucker/anansi/commit/ee5f637da12a65c06d0572c8f4476903917c53bb))
+* bump css-minimizer-webpack-plugin from 3.1.2 to 3.1.3 ([#1086](https://github.com/ntucker/anansi/issues/1086)) ([7cd35da](https://github.com/ntucker/anansi/commit/7cd35da119d449d20ade81e79e784217eb9d7efd))
+* bump css-minimizer-webpack-plugin from 3.1.3 to 3.1.4 ([#1102](https://github.com/ntucker/anansi/issues/1102)) ([12f244e](https://github.com/ntucker/anansi/commit/12f244e1d5a574d23f077c8d70dde7d301412a47))
+* bump html-loader from 2.1.2 to 3.0.0 ([#1020](https://github.com/ntucker/anansi/issues/1020)) ([0b42f85](https://github.com/ntucker/anansi/commit/0b42f85b240fb3e7efc72516e0a4dbfe58e2701a))
+* bump html-loader from 3.0.0 to 3.0.1 ([#1067](https://github.com/ntucker/anansi/issues/1067)) ([0cd60c1](https://github.com/ntucker/anansi/commit/0cd60c1c1794b6f383a9579096e0b38805f684d4))
+* bump html-webpack-plugin from 5.4.0 to 5.5.0 ([#1028](https://github.com/ntucker/anansi/issues/1028)) ([44881c9](https://github.com/ntucker/anansi/commit/44881c9f0084fe7c31eaef59b7c91f4cc69b15f2))
+* bump mini-css-extract-plugin from 2.4.2 to 2.4.3 ([#1016](https://github.com/ntucker/anansi/issues/1016)) ([8b82f2f](https://github.com/ntucker/anansi/commit/8b82f2f28040eed36f98f5eabfd5c192336784dc))
+* bump mini-css-extract-plugin from 2.4.3 to 2.4.4 ([#1072](https://github.com/ntucker/anansi/issues/1072)) ([942cc25](https://github.com/ntucker/anansi/commit/942cc25308928bfdd357e4547b1f7be115478475))
+* bump mini-css-extract-plugin from 2.4.4 to 2.4.5 ([#1104](https://github.com/ntucker/anansi/issues/1104)) ([5185410](https://github.com/ntucker/anansi/commit/5185410b350a481e1e3d36807951b9df3bbf4a6f))
+* bump postcss from 8.3.10 to 8.3.11 ([#1019](https://github.com/ntucker/anansi/issues/1019)) ([fba6b06](https://github.com/ntucker/anansi/commit/fba6b06d0a284d23ca37e329a0f4176ae82ec454))
+* bump postcss from 8.3.9 to 8.3.10 ([#1013](https://github.com/ntucker/anansi/issues/1013)) ([ad7ab21](https://github.com/ntucker/anansi/commit/ad7ab2163fa00f344ba3b876111764d2bb60ea9b))
+* bump postcss-preset-env from 6.7.0 to 7.0.1 ([#1108](https://github.com/ntucker/anansi/issues/1108)) ([a7f9117](https://github.com/ntucker/anansi/commit/a7f91173c552dd8dc3ad98ae6c9d5709773069af))
+* bump sass-loader from 12.2.0 to 12.3.0 ([#1036](https://github.com/ntucker/anansi/issues/1036)) ([5503d91](https://github.com/ntucker/anansi/commit/5503d91fa13686e067d67d6c77b523aae354c8da))
+* bump svgo from 2.7.0 to 2.8.0 ([#1065](https://github.com/ntucker/anansi/issues/1065)) ([ecae554](https://github.com/ntucker/anansi/commit/ecae554ab7fc0ffe8f10a331d6b960838c92129d))
+* bump tsconfig-paths-webpack-plugin from 3.5.1 to 3.5.2 ([#1093](https://github.com/ntucker/anansi/issues/1093)) ([07b57a8](https://github.com/ntucker/anansi/commit/07b57a83ee5c02dce5033b0e2695c31603e4343d))
+
+
+
 ### [9.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.2...@anansi/webpack-config@9.1.3) (2021-10-19)
 
 **Note:** Version bump only for package @anansi/webpack-config
