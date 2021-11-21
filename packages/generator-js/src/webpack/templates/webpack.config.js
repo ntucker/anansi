@@ -14,6 +14,8 @@ const generateConfig = makeConfig(options);
 
 module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
+  if (!config.experiments) config.experiments = {};
+  config.experiments.backCompat = false;
   return config;
 };
 
