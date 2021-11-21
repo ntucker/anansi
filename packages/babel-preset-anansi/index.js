@@ -296,6 +296,8 @@ function buildPreset(api, options = {}) {
   const classPlugins = [
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
+    // this is included in preset-env, but must come before class-properties
+    require('@babel/plugin-proposal-class-static-block').default,
     // stage 3 but must come before flow
     [
       require('@babel/plugin-proposal-class-properties').default,
