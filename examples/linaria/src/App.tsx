@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { css } from '@linaria/core';
 import { styled } from '@linaria/react';
+
 import MenuItem from 'MenuItem';
 
 // Linaria seems very particular about what exactly you can interpolate

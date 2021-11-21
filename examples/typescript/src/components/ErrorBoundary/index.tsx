@@ -2,6 +2,7 @@ import { lazy, Suspense, Component } from 'react';
 import type { ReactChild } from 'react';
 import classNames from 'classnames';
 import { Spin } from 'antd';
+
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { history } from 'navigation';
 
