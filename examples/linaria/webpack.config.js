@@ -20,6 +20,8 @@ module.exports = (env, argv) => {
       chunks: 'all',
     };
   }
+  if (!config.experiments) config.experiments = {};
+  config.experiments.backCompat = false;
   return config;
 };
 
