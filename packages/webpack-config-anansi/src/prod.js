@@ -46,7 +46,7 @@ export default function makeProdConfig(
     if (htmlOptions) {
       config.plugins.unshift(
         new HtmlWebpackPlugin(htmlOptions),
-        new CrittersPlugin({}),
+        //new CrittersPlugin({}),
         //new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]), this is a bad idea until CSP nonce can be added
       );
       if (fontPreload) {
