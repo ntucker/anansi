@@ -92,7 +92,7 @@
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
     "path-browserify": "^1.0.1",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.1",
     "postcss-loader": "^6.2.0",
     "postcss-preset-env": "^7.0.1",
     "process": "^0.11.10",
