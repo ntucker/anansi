@@ -28,12 +28,12 @@
     "@babel/core": "7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.4.1",
-    "@storybook/addons": "^6.3.1",
-    "@storybook/builder-webpack5": "^6.3.12",
-    "@storybook/manager-webpack5": "^6.3.12",
-    "@storybook/react": "^6.3.12",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/addons": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "babel-loader": "8.2.3",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
@@ -47,13 +47,13 @@
     "lerna": "^4.0.0",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
-    "typescript": "^4.5.2",
+    "typescript": "^4.5.4",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
   },
   "resolutions": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "normalize-package-data": "3.0.2",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
@@ -61,19 +61,22 @@
     "get-pkg-repo": "4.1.2",
     "@types/webpack": "^5.0.0",
     "immer": "^8.0.1",
-    "webpack": "^5.51.2",
+    "webpack": "^5.64.0",
     "css-loader": "^6.0.0",
     "dotenv-webpack": "^6.0.0",
     "html-webpack-plugin": "^5.0.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.2.1",
     "webpack-virtual-modules": "^0.4.2",
-    "browserslist": "^4.16.6"
+    "browserslist": "^4.16.6",
+    "react-refresh": "^0.11.0-rc.0",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.2.1"
   },
   "dependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "react": "beta",
-    "react-dom": "beta"
+    "react": "^18.0.0-rc.0",
+    "react-dom": "^18.0.0-rc.0"
   }
 }
