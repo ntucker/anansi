@@ -58,6 +58,9 @@ scanner_configs:
       - advisory_id: 1005009
         changed_by: ntucker
         notes: abc
+      - advisory_id: 1006754
+        changed_by: ntucker
+        notes: abc
 active_scanners:
   - RepoNotEmpty
   - Brakeman

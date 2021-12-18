@@ -13,8 +13,10 @@ export default function makeStorybookConfigGenerator(baseConfig) {
           'DefinePlugin',
           'EnvironmentPlugin',
           'ReactRefreshPlugin',
-          'HotModuleReplacementPlugin',
+          //'HotModuleReplacementPlugin', since storybook 6.4 we need this again
           'CaseSensitivePathsPlugin',
+          // this makes process redundant
+          'ProvidePlugin',
         ].includes(plugin.constructor.name),
     );
     const basePlugins = envConfig.plugins.filter(
