@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.0...@anansi/eslint-plugin@0.12.1) (2021-12-19)
+
+
+### 📦 Package
+
+* typescript-eslint ([762ce23](https://github.com/ntucker/anansi/commit/762ce2338c3a68229cb7b4434e523d9bc4b0da60))
+
+
+
 ## [0.12.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.11.28...@anansi/eslint-plugin@0.12.0) (2021-11-21)
 
 

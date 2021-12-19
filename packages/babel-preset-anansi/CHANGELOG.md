@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.19](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.18...@anansi/babel-preset@2.7.19) (2021-12-19)
+
+
+### 📦 Package
+
+* babel patch ([1752bc2](https://github.com/ntucker/anansi/commit/1752bc28776ffd22a5649e444301bbe53042adbc))
+
+
+
 ### [2.7.18](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.17...@anansi/babel-preset@2.7.18) (2021-11-21)
 
 

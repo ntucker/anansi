@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.0...@anansi/generator-js@7.1.1) (2021-12-19)
+
+
+### 💅 Enhancement
+
+* Use react 18 rc ([ce64e98](https://github.com/ntucker/anansi/commit/ce64e9837fb9bca0b2b7a0bbe1a32dafa775b1a9))
+
+
+### 📦 Package
+
+* babel patch ([1752bc2](https://github.com/ntucker/anansi/commit/1752bc28776ffd22a5649e444301bbe53042adbc))
+* bump @types/node from 16.11.10 to 17.0.0 ([#1157](https://github.com/ntucker/anansi/issues/1157)) ([373b454](https://github.com/ntucker/anansi/commit/373b45431f214bd4c9e885659584427e7e80e3ad))
+* bump @types/node from 16.11.9 to 16.11.10 ([#1121](https://github.com/ntucker/anansi/issues/1121)) ([6fa0415](https://github.com/ntucker/anansi/commit/6fa0415c7ce478ecc897df01331f0e6550194c2d))
+
+
+
 ## [7.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.0.12...@anansi/generator-js@7.1.0) (2021-11-21)
 
 

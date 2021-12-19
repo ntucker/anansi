@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.2.0...@anansi/webpack-config@9.3.0) (2021-12-19)
+
+
+### 🚀 Features
+
+* Storybook 6.4 compatibility ([#1158](https://github.com/ntucker/anansi/issues/1158)) ([dda4247](https://github.com/ntucker/anansi/commit/dda42471bfe43f9511a868f17a7eb594e3180c08))
+
+
+### 📦 Package
+
+* bump css-minimizer-webpack-plugin from 3.1.4 to 3.2.0 ([#1120](https://github.com/ntucker/anansi/issues/1120)) ([147e874](https://github.com/ntucker/anansi/commit/147e87451cdd28c7a2e5d643451af0751a8c3638))
+* bump postcss from 8.3.11 to 8.4.1 ([#1123](https://github.com/ntucker/anansi/issues/1123)) ([480b8fd](https://github.com/ntucker/anansi/commit/480b8fdc77483670ffc48223192b7f2227213dc9))
+* bump postcss from 8.4.1 to 8.4.3 ([#1129](https://github.com/ntucker/anansi/issues/1129)) ([8f1f25f](https://github.com/ntucker/anansi/commit/8f1f25f048dc8a2f8e2f0fec9328068df2f2d5e8))
+* bump postcss-loader from 6.2.0 to 6.2.1 ([#1128](https://github.com/ntucker/anansi/issues/1128)) ([987ed55](https://github.com/ntucker/anansi/commit/987ed55d6a44e42b53515a98518a40b783e53803))
+* css-minimizer-webpack-plugin, sass-loader ([7c3c154](https://github.com/ntucker/anansi/commit/7c3c1549b6c1743deef1e43c1690cb2804617c30))
+
+
+
 ## [9.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.1.3...@anansi/webpack-config@9.2.0) (2021-11-21)
 
 

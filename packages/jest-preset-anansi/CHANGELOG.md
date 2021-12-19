@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.18](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.17...@anansi/jest-preset@0.5.18) (2021-12-19)
+
+
+### 📦 Package
+
+* babel-jest, ts-jest ([5392165](https://github.com/ntucker/anansi/commit/539216536bc4ec1a969d82862f7c2aa451bd4b1e))
+
+
+
 ### [0.5.17](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.16...@anansi/jest-preset@0.5.17) (2021-11-21)
 
 
