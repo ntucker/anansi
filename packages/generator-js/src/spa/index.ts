@@ -21,15 +21,15 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         name: 'reactMode',
         message:
           'What version of React?\nMore info: https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html',
-        default: 'legacy',
+        default: 'concurrent',
         choices: [
-          {
-            name: 'Synchronous (v17.0)',
-            value: 'legacy',
-          },
           {
             name: 'Concurrent (v18.0)',
             value: 'concurrent',
+          },
+          {
+            name: 'Synchronous (v17.0)',
+            value: 'legacy',
           },
         ],
         store: true,
