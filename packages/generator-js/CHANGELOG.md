@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.1...@anansi/generator-js@7.1.2) (2021-12-19)
+
+
+### 🐛 Bug Fix
+
+* Absolute paths when using sass ([c3132f7](https://github.com/ntucker/anansi/commit/c3132f758ba5557145d262db9d23ee21f6bed1dd))
+* Fix linaria version to last working until next release ([51458c5](https://github.com/ntucker/anansi/commit/51458c52c2c1c231393b490e2d5e1bb3a6fa7c34))
+
+
+
 ### [7.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.0...@anansi/generator-js@7.1.1) (2021-12-19)
 
 
