@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.2...@anansi/generator-js@7.1.3) (2021-12-19)
+
+
+### 💅 Enhancement
+
+* Make React 18 the default ([0d0e0c2](https://github.com/ntucker/anansi/commit/0d0e0c21aed7cea7e165d14911806dd9af9bbb3c))
+
+
+
 ### [7.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.1...@anansi/generator-js@7.1.2) (2021-12-19)
 
 
