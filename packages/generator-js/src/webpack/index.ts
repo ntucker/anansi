@@ -45,6 +45,15 @@ module.exports = class WebpackGenerator extends (
     this.packageJson.merge(
       this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
+    // TODO: Remove once bug is fixed
+    if (this?.props?.style === 'linaria') {
+      this.packageJson.merge({
+        resolutions: {
+          '**/@linaria/webpack-loader': '3.0.0-beta.13',
+          '**/@linaria/webpack5-loader': '3.0.0-beta.13',
+        },
+      });
+    }
   }
 
   async writingDependencies() {
