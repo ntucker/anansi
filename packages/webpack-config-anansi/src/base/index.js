@@ -26,6 +26,7 @@ export default function makeBaseConfig({
   extraJsLoaders,
   linariaOptions,
   tsconfigPathsOptions,
+  svgoOptions,
   svgrOptions,
   globalStyleDir,
   nohash,
@@ -166,19 +167,7 @@ export default function makeBaseConfig({
                 {
                   loader: require.resolve('@svgr/webpack'),
                   options: {
-                    svgoConfig: {
-                      plugins: [
-                        { removeTitle: false },
-                        { removeComments: true },
-                        { removeDesc: true },
-                        { removeUselessDefs: true },
-                        { removeDoctype: true },
-                        { removeMetadata: true },
-                        { convertColors: true },
-                        { removeViewBox: false },
-                        { convertShapeToPath: false },
-                      ],
-                    },
+                    svgoConfig: svgoOptions,
                     ...svgrOptions,
                   },
                 },
