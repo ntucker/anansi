@@ -30,7 +30,7 @@
     "@anansi/polyfill": "^1.0.88",
     "@babel/plugin-transform-modules-commonjs": "^7.16.5",
     "@babel/runtime": "^7.16.5",
-    "@linaria/core": "^3.0.0-beta.4",
+    "@linaria/core": "^3.0.0-beta.15",
     "@linaria/react": "^3.0.0-beta.13",
     "@linaria/shaker": "^3.0.0-beta.13",
     "classnames": "^2.2.6",
