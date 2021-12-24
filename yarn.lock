@@ -4818,10 +4818,10 @@
   resolved "https://registry.yarnpkg.com/@types/overlayscrollbars/-/overlayscrollbars-1.12.0.tgz#98456caceca8ad73bd5bb572632a585074e70764"
   integrity sha512-h/pScHNKi4mb+TrJGDon8Yb06ujFG0mSg12wIO0sWMUF3dQIe2ExRRdNRviaNt9IjxIiOfnRr7FsQAdHwK4sMg==
 
-"@types/pacote@^11.1.1":
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/@types/pacote/-/pacote-11.1.1.tgz#74b902bdf99a2e0763a84774f7cb00b8dc8443bd"
-  integrity sha512-ycBhPpDuNb5hwvWQJFaLyGspdWXkpqBOcGyWclC+hQfMvZt/13aXIt5vx5b+wx4lJd8n0ROZEPMCt6C9uGP0ag==
+"@types/pacote@^11.1.2":
+  version "11.1.2"
+  resolved "https://registry.yarnpkg.com/@types/pacote/-/pacote-11.1.2.tgz#bf73a41fd2e86e97a93b9526d1e788f2bb0f5fd3"
+  integrity sha512-uvzS3Xh0W6h6ji3/fg0DJPwr+RJRkpCH8Nu1yXLh3PWRF+6bOAaxXgilPFEENsckBYM6lxOd3US/etdZ2nU9yw==
   dependencies:
     "@types/node" "*"
     "@types/npm-registry-fetch" "*"
