@@ -7689,10 +7689,10 @@ copyfiles@^2.1.1:
     untildify "^4.0.0"
     yargs "^16.1.0"
 
-core-js-compat@^3.18.0, core-js-compat@^3.19.1, core-js-compat@^3.20.0, core-js-compat@^3.8.1:
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.20.0.tgz#fd704640c5a213816b6d10ec0192756111e2c9d1"
-  integrity sha512-relrah5h+sslXssTTOkvqcC/6RURifB0W5yhYBdBkaPYa5/2KBMiog3XiD+s3TwEHWxInWVv4Jx2/Lw0vng+IQ==
+core-js-compat@^3.18.0, core-js-compat@^3.19.1, core-js-compat@^3.20.1, core-js-compat@^3.8.1:
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.20.1.tgz#96917b4db634fbbbc7b36575b2e8fcbf7e4f9691"
+  integrity sha512-AVhKZNpqMV3Jz8hU0YEXXE06qoxtQGsAqU0u1neUngz5IusDJRX/ZJ6t3i7mS7QxNyEONbCo14GprkBrxPlTZA==
   dependencies:
     browserslist "^4.19.1"
     semver "7.0.0"
