@@ -689,12 +689,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.5"
 
-"@babel/plugin-syntax-function-bind@^7.16.5":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-function-bind/-/plugin-syntax-function-bind-7.16.5.tgz#df3edc186fc4bdfe6d24fc3c063d5ff373f1fd6e"
-  integrity sha512-Jn09tjgZuJIQdbqQCkBQErzjO4LV2NDUz03HSowJD0km7iXsKPX6Sk0G7xIkUItenYNLfkndlWojeTyYC6QbBA==
+"@babel/plugin-syntax-function-bind@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-function-bind/-/plugin-syntax-function-bind-7.16.7.tgz#9b8c9425740c5b39f9ba4c5f252a7500c4457b88"
+  integrity sha512-MMXirXtr3TWxevJuRwglyFJAkxKPzHKm6UUS4Ki5ZjelSTianSS8grdgAwPtKt6Jk9jjHUuR+QWma5LVfbfh8w==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/helper-plugin-utils" "^7.16.7"
 
 "@babel/plugin-syntax-import-meta@^7.8.3":
   version "7.10.4"
