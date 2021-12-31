@@ -36,7 +36,7 @@
     "@anansi/ts-utils": "^0.2.4",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.16.7",
-    "@babel/plugin-proposal-export-default-from": "^7.16.5",
+    "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.5",
     "@babel/plugin-proposal-optional-chaining": "^7.16.7",
     "@babel/plugin-proposal-private-methods": "^7.16.5",
