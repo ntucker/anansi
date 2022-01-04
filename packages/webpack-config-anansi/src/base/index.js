@@ -36,6 +36,7 @@ export default function makeBaseConfig({
     if (linariaOptions === undefined) {
       linariaOptions = {
         sourceMap: mode !== 'production',
+        cacheProvider: require.resolve('./linariaFileCache'),
       };
     }
     extraJsLoaders = [
@@ -135,6 +136,7 @@ export default function makeBaseConfig({
             },
             {
               test: /\.(t|j)sx?$/,
+              // TODO: Remove when we stop supporting linaria betas
               exclude: /\.linaria-cache/,
               use: [
                 require.resolve('thread-loader'),

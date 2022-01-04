@@ -23,16 +23,16 @@
     "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^5.3.2",
     "babel-loader": "8.2.3",
-    "react-refresh": "beta",
+    "react-refresh": "^0.11.0-rc.0",
     "serve": "^13.0.2"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.88",
     "@babel/plugin-transform-modules-commonjs": "^7.16.5",
     "@babel/runtime": "^7.16.7",
-    "@linaria/core": "3.0.0-beta.13",
-    "@linaria/react": "3.0.0-beta.13",
-    "@linaria/shaker": "3.0.0-beta.13",
+    "@linaria/core": "^3.0.0-beta.15",
+    "@linaria/react": "^3.0.0-beta.17",
+    "@linaria/shaker": "^3.0.0-beta.17",
     "classnames": "^2.2.6",
     "core-js": "^3.20.1",
     "redbox-react": "^1.6.0"

@@ -107,11 +107,18 @@ export default function getStyleRules({
         exclude: excludeCSSProcess,
         use: [...cssModuleLoaders, ...sassLoaders],
       },
+      // css-in-js like linaria do not use css-modules
+      {
+        test: /\.linaria\.css$/i,
+        include: [absoluteBasePath, libraryInclude],
+        exclude: excludeCSSProcess,
+        use: cssLoaders,
+      },
       // plain css as css-modules
       {
         test: /\.css$/i,
         include: [absoluteBasePath, libraryInclude],
-        exclude: excludeCSSProcess,
+        exclude: [...excludeCSSProcess, /\.linaria\.css$/i],
         use: cssModuleLoaders,
       },
       // global styles
@@ -135,7 +142,7 @@ export default function getStyleRules({
         exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
         use: [...cssModuleLoaders, ...sassLoaders],
       },
-      // css-in-js like linaria do not use css-modules
+      // css-in-js like linaria do not use css-modules - 3beta.14 and below
       {
         test: /\.css$/i,
         include: [rootPath],
