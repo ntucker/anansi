@@ -173,7 +173,7 @@ export default function makeProdConfig(
 
   if (env?.profile) {
     config.resolve.alias = {
-      ...config.resolve.alias,
+      ...config?.resolve?.alias,
       'react-dom$': 'react-dom/profiling',
       'scheduler/tracing': 'scheduler/tracing-profiling',
     };

@@ -223,7 +223,7 @@ export default function makeBaseConfig({
         '.scss',
         '.json',
       ],
-      alias: NODE_ALIAS,
+      fallback: NODE_ALIAS,
       plugins:
         tsconfigPathsOptions !== false
           ? [new TsconfigPathsPlugin(tsconfigPathsOptions)]
