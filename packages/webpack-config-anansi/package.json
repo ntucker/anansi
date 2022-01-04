@@ -100,7 +100,7 @@
     "querystring-es3": "^0.2.1",
     "ramda": "^0.27.1",
     "raw-loader": "4.0.2",
-    "react-dev-utils": "^11.0.4",
+    "react-dev-utils": "^12.0.0",
     "readable-stream": "^3.6.0",
     "sass-loader": "^12.4.0",
     "sass-resources-loader": "^2.2.4",
