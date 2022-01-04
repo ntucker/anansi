@@ -2,8 +2,6 @@ import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import { StatsWriterPlugin } from 'webpack-stats-plugin';
 
-import { NODE_ALIAS } from './base/node-polyfill';
-
 export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   const config = { ...baseConfig };
   config.target = 'node';
@@ -26,13 +24,6 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   config.plugins = config.plugins.filter(
     plugin => !(plugin instanceof StatsWriterPlugin),
   );
-  // remove node polyfills as we will execute this in node
-  if (config?.resolve?.alias) {
-    config.resolve.alias = { ...config.resolve.alias };
-    for (const alias in NODE_ALIAS) {
-      delete config.resolve.alias[alias];
-    }
-  }
 
   return config;
 }
