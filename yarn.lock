@@ -18274,7 +18274,7 @@ sort-keys@^2.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-sort-keys@^4.0.0:
+sort-keys@^4.0.0, sort-keys@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-4.2.0.tgz#6b7638cee42c506fff8c1cecde7376d21315be18"
   integrity sha512-aUYIEU/UviqPgc8mHR6IW1EGxkAXpeRETYcrzg8cLAvUPZcpAlleSXHV2mY7G12GphSH6Gzv+4MMVSSkbdteHg==
@@ -20889,10 +20889,10 @@ yeoman-environment@^3.5.1:
     textextensions "^5.12.0"
     untildify "^4.0.0"
 
-yeoman-generator@^5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.4.2.tgz#ad1ad7bf7c9771a8bbf07ead2eec79ebcdc51a20"
-  integrity sha512-xgS3A4r5VoEYq3vPdk1fWPVZ30y5NHlT2hn0OEyhKG79xojCtPkPkfWcKQamgvC9QLhaotVGvambBxwxwBeDTg==
+yeoman-generator@^5.5.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.5.2.tgz#1eaa2616da4b272fa31938b9a6836ac081492d3f"
+  integrity sha512-GY5VoKQb+sS41Lu0WBlCDeEn8UbV7AFTY5hI3f4DXzqEylhwBqL40h5FSeKljhrsbrixPciSKlwke13RoXtBBw==
   dependencies:
     chalk "^4.1.0"
     dargs "^7.0.0"
@@ -20905,6 +20905,7 @@ yeoman-generator@^5.4.2:
     run-async "^2.0.0"
     semver "^7.2.1"
     shelljs "^0.8.4"
+    sort-keys "^4.2.0"
     text-table "^0.2.0"
 
 yeoman-test@^6.2.0:
