@@ -45,6 +45,12 @@ module.exports = class WebpackGenerator extends (
     this.packageJson.merge(
       this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
+    // TODO: Remove once https://github.com/facebook/create-react-app/issues/11773 is fixed
+    this.packageJson.merge({
+      resolutions: {
+        'react-error-overlay': '6.0.9',
+      },
+    });
   }
 
   async writingDependencies() {
