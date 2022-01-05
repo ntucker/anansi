@@ -99,6 +99,7 @@ export default function makeProdConfig(
         styles: {
           test: new RegExp(`${globalStyleDir}/.*\\.scss$`),
           name: 'style',
+          type: 'css/mini-extract',
           chunks: 'all',
           enforce: true,
         },
