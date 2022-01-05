@@ -1,6 +1,5 @@
 import { useResource } from 'rest-hooks';
-import { RouteChildrenProps } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, RouteChildrenProps } from 'react-router-dom';
 import { EditOutlined } from '@ant-design/icons';
 import { Typography, Button, PageHeader } from 'antd';
 
