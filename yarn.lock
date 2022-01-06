@@ -16760,14 +16760,14 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-dom@^18.0.0-rc.0:
-  version "18.0.0-rc.0-next-f2a59df48-20211208"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-rc.0-next-f2a59df48-20211208.tgz#96b4e0f0d15ba5cbad24de2c852742f5ef9a6991"
-  integrity sha512-9v9UGcJRoPtPrKOxtfuZDy5ZQKat8Mz1crciGuyFOphxgtN5jShRj8KB2TTTfeEysyheKyaJ1dZG4Uj6+cRNGg==
+react-dom@18.0.0-rc.0:
+  version "18.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-rc.0.tgz#aa07044bdd6399ff94c664b2985e2e25948fbf3e"
+  integrity sha512-tdD1n0svTndHBQvVAq/f2Kx7FgQ30CpSLp87/neQKAHPW5WtdgW1sBSwmFAcMQOrmstTuP0M+zRlH86f9kMX/A==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-rc.0-next-f2a59df48-20211208"
+    scheduler "^0.21.0-rc.0"
 
 react-draggable@^4.4.3:
   version "4.4.3"
@@ -16828,15 +16828,15 @@ react-is@17.0.2, "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-is@18.0.0-rc.0-next-f2a59df48-20211208:
-  version "18.0.0-rc.0-next-f2a59df48-20211208"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-rc.0-next-f2a59df48-20211208.tgz#c50b7b764bf181c5ffe78a091ec56bd5d7303154"
-  integrity sha512-241AowbvmjjFzohG6KLOwClqbNc9xEksYPiox+W+hE8RFiNSJ/6YNroYhz5QzLKcI6SluH4tKW3TQUNcr/wzzQ==
-
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-is@^18.0.0-rc.0:
+  version "18.0.0-rc.0-next-f2a59df48-20211208"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0-rc.0-next-f2a59df48-20211208.tgz#c50b7b764bf181c5ffe78a091ec56bd5d7303154"
+  integrity sha512-241AowbvmjjFzohG6KLOwClqbNc9xEksYPiox+W+hE8RFiNSJ/6YNroYhz5QzLKcI6SluH4tKW3TQUNcr/wzzQ==
 
 react-popper-tooltip@^3.1.1:
   version "3.1.1"
@@ -16855,7 +16855,7 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-refresh@^0.10.0, react-refresh@^0.11.0-rc.0:
+react-refresh@^0.10.0, react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
@@ -16941,15 +16941,15 @@ react-syntax-highlighter@^13.5.3:
     prismjs "^1.21.0"
     refractor "^3.1.0"
 
-react-test-renderer@^18.0.0-rc.0:
-  version "18.0.0-rc.0-next-f2a59df48-20211208"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-rc.0-next-f2a59df48-20211208.tgz#3eccd48e89db0ef77d8292e8a5a969b2b629a43c"
-  integrity sha512-F7jgrEW1gmNN6sY1PtA4PEcyCv3tw+jAWaHLlWdGij/4QQoWjRnQMvl2Teja46Y3bsmls6OyrjtJXu3wAumbSA==
+react-test-renderer@18.0.0-rc.0:
+  version "18.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.0.0-rc.0.tgz#1859a2f10210f5d666faa34a22c93b5ecc869e77"
+  integrity sha512-F2+eDS0iQXwsLGa9laE6xyfmLcMzPOOy93bhQ1gq1r6kxn8/3eOnVxuw8itt7bT/mjgad/O6qzy/oAth9hhWEw==
   dependencies:
     object-assign "^4.1.1"
-    react-is "18.0.0-rc.0-next-f2a59df48-20211208"
+    react-is "^18.0.0-rc.0"
     react-shallow-renderer "^16.13.1"
-    scheduler "0.21.0-rc.0-next-f2a59df48-20211208"
+    scheduler "^0.21.0-rc.0"
 
 react-textarea-autosize@^8.3.0:
   version "8.3.2"
@@ -16960,10 +16960,10 @@ react-textarea-autosize@^8.3.0:
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
 
-react@^18.0.0-rc.0:
-  version "18.0.0-rc.0-next-f2a59df48-20211208"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-rc.0-next-f2a59df48-20211208.tgz#d53a505c35ad7cd416b6dcef81bc2fe7dc4cb554"
-  integrity sha512-7C9NnHiOJl/qYhP8POXy53+3C4M6MGs7DIEYbL5jHnYZ0VTk/+dZGFJYiGx+Zn+HKXk7hW+mMTWjvJr2EVD16A==
+react@18.0.0-rc.0:
+  version "18.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-rc.0.tgz#60bfcf1edd0b35fbeeeca852515c6cc2ce06a6eb"
+  integrity sha512-PawosMBgF8k5Nlc3++ibzjFqPvo1XKv80MNtVYqz3abHHB2w3IpU65sSdSmBd2ooCwVhcp9b1vkx/twqhakNtA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -17809,7 +17809,7 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@0.21.0-rc.0-next-f2a59df48-20211208:
+scheduler@^0.21.0-rc.0:
   version "0.21.0-rc.0-next-f2a59df48-20211208"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-rc.0-next-f2a59df48-20211208.tgz#54e18e1d360194fd54b47a00616e46403fcabdf1"
   integrity sha512-x0oLd3YIih9GHqWTaFYejVe6Au+4TadOWZciAq8m4+Fuo5qCi4/3M35a9irVSIP3+qcg/fCqHKJETT9G0ejD1A==
