@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.34](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.33...@anansi/cli@1.1.34) (2022-01-06)
+
+
+### 📦 Package
+
+* bump mem-fs-editor from 9.3.0 to 9.4.0 ([#1186](https://github.com/ntucker/anansi/issues/1186)) ([b08b1a0](https://github.com/ntucker/anansi/commit/b08b1a08f27b6010bf4ec76d7d22db7b1b7224ee))
+
+
+
 ### [1.1.33](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.32...@anansi/cli@1.1.33) (2021-12-19)
 
 **Note:** Version bump only for package @anansi/cli

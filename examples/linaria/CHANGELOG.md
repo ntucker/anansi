@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/example-linaria@3.0.21...example-linaria@4.0.0) (2022-01-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* https://github.com/typescript-eslint/typescript-eslint/releases/tag/v5.0.0
+
+### 🚀 Features
+
+* New projects should use backCompat=false ([a6470c8](https://github.com/ntucker/anansi/commit/a6470c84b6c84e2255a2f14ff9d471527a23cd4d))
+
+
+### 💅 Enhancement
+
+* More complex linaria examples ([4ac4576](https://github.com/ntucker/anansi/commit/4ac45768930aeef961e18b0bc53646669f9862b4))
+
+
+### 📦 Package
+
+* @typescript-eslint/eslint-plugin, @typescript-eslint/parser major ([#1115](https://github.com/ntucker/anansi/issues/1115)) ([220456b](https://github.com/ntucker/anansi/commit/220456b9c1d826612fcf2b52ee3a451801825cc5))
+* Anansi latest ([122fd98](https://github.com/ntucker/anansi/commit/122fd98a3fb770d3af240c3ae9f0fcf1f7618daf))
+* babel patch ([1752bc2](https://github.com/ntucker/anansi/commit/1752bc28776ffd22a5649e444301bbe53042adbc))
+* bump @babel/plugin-transform-modules-commonjs from 7.15.4 to 7.16.0 ([#1042](https://github.com/ntucker/anansi/issues/1042)) ([2a808c7](https://github.com/ntucker/anansi/commit/2a808c7f61f4576a6ad5d7e419dc06ac3158f368))
+* bump @babel/runtime from 7.15.4 to 7.16.0 ([#1044](https://github.com/ntucker/anansi/issues/1044)) ([7e4e3cd](https://github.com/ntucker/anansi/commit/7e4e3cdcc8896c5c6cf86fe83017d386b3d3d41a))
+* bump @babel/runtime from 7.16.0 to 7.16.3 ([#1079](https://github.com/ntucker/anansi/issues/1079)) ([7508841](https://github.com/ntucker/anansi/commit/7508841fadc1df1adf15a0ca055cfe20fc19c9eb))
+* bump @babel/runtime from 7.16.5 to 7.16.7 ([#1220](https://github.com/ntucker/anansi/issues/1220)) ([d787e69](https://github.com/ntucker/anansi/commit/d787e6991287f2563272b8401c5434975595f67c))
+* bump @types/react-router-dom from 5.1.9 to 5.3.0 ([#888](https://github.com/ntucker/anansi/issues/888)) ([1aea70d](https://github.com/ntucker/anansi/commit/1aea70dd595aa9e291aecd873518cb2f0a02cd3f))
+* bump @types/react-router-dom from 5.3.0 to 5.3.1 ([#959](https://github.com/ntucker/anansi/issues/959)) ([bb41205](https://github.com/ntucker/anansi/commit/bb412054c645716befbe72b55fa2df3b5b9fbf54))
+* bump @types/react-router-dom from 5.3.1 to 5.3.2 ([#1031](https://github.com/ntucker/anansi/issues/1031)) ([9b8c478](https://github.com/ntucker/anansi/commit/9b8c478e9705820a323e9af10f8fcdf85b41ddd1))
+* bump babel-loader from 8.2.2 to 8.2.3 ([#1018](https://github.com/ntucker/anansi/issues/1018)) ([e24d649](https://github.com/ntucker/anansi/commit/e24d649537ef29360186923991498c885325f57b))
+* bump core-js from 3.17.3 to 3.18.0 ([#883](https://github.com/ntucker/anansi/issues/883)) ([8c1f252](https://github.com/ntucker/anansi/commit/8c1f2524d03b37125207e19f737998ed7ed2fa63))
+* bump core-js from 3.18.0 to 3.18.1 ([#911](https://github.com/ntucker/anansi/issues/911)) ([7d63887](https://github.com/ntucker/anansi/commit/7d638872481ac01fc3f8c754e98da3fead97d0ea))
+* bump core-js from 3.18.1 to 3.18.2 ([#941](https://github.com/ntucker/anansi/issues/941)) ([b52355a](https://github.com/ntucker/anansi/commit/b52355a0f839763cc96621e45d02cbc1225f1728))
+* bump core-js from 3.18.2 to 3.18.3 ([#969](https://github.com/ntucker/anansi/issues/969)) ([fc79210](https://github.com/ntucker/anansi/commit/fc79210d1ee7448344dfb231448e533d967ba766))
+* bump core-js from 3.18.3 to 3.19.0 ([#1030](https://github.com/ntucker/anansi/issues/1030)) ([657795c](https://github.com/ntucker/anansi/commit/657795c1c60bb660940c89b55083b206d903409e))
+* bump core-js from 3.19.0 to 3.19.1 ([#1066](https://github.com/ntucker/anansi/issues/1066)) ([f82521f](https://github.com/ntucker/anansi/commit/f82521f16a8e24a69d5885b281d793a6555a190d))
+* bump core-js from 3.19.1 to 3.20.0 ([#1176](https://github.com/ntucker/anansi/issues/1176)) ([accbfa7](https://github.com/ntucker/anansi/commit/accbfa7c140f9a2a95112a5841cf1a55cdb14246))
+* bump core-js from 3.20.0 to 3.20.1 ([#1191](https://github.com/ntucker/anansi/issues/1191)) ([0714c8f](https://github.com/ntucker/anansi/commit/0714c8f0d721b533746b7998cce332ce71404cdf))
+* bump core-js from 3.20.1 to 3.20.2 ([#1231](https://github.com/ntucker/anansi/issues/1231)) ([09fa118](https://github.com/ntucker/anansi/commit/09fa1181ea886715052957c88b44044a9afe72dd))
+* bump serve from 12.0.1 to 13.0.2 ([#1073](https://github.com/ntucker/anansi/issues/1073)) ([ccf8ad2](https://github.com/ntucker/anansi/commit/ccf8ad2cfae23b3ae7d8c28557c459b734003961))
+* Fix react versions at 18-rc.0 ([1e87e34](https://github.com/ntucker/anansi/commit/1e87e349ac1af42894219a9e7e9677ec0048665a))
+* linaria to 3-beta.17 ([#1159](https://github.com/ntucker/anansi/issues/1159)) ([c808566](https://github.com/ntucker/anansi/commit/c808566061dd004cf74c1fcda028a6d06e143538))
+* linaria/core to beta.13 ([d8279c4](https://github.com/ntucker/anansi/commit/d8279c41a23c0613cb6e21d1a4c60f5c4cd99f30))
+* React to beta ([153c419](https://github.com/ntucker/anansi/commit/153c419de3d4392f22fb42a386c9e81ba52ccf7b))
+* Use internal version of anansi packages ([5fd2e36](https://github.com/ntucker/anansi/commit/5fd2e36456434e4421b0da50e59ab4e771f4f90a))
+
+
+
 ### [3.0.21](https://github.com/ntucker/anansi/compare/example-linaria@3.0.20...example-linaria@3.0.21) (2021-09-17)
 
 **Note:** Version bump only for package example-linaria

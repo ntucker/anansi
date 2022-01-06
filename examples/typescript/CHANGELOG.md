@@ -3,6 +3,105 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ntucker/anansi/compare/example-typescript@7.1.2...example-typescript@8.0.0) (2022-01-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* https://github.com/typescript-eslint/typescript-eslint/releases/tag/v5.0.0
+
+### 🚀 Features
+
+* Storybook 6.4 compatibility ([#1158](https://github.com/ntucker/anansi/issues/1158)) ([dda4247](https://github.com/ntucker/anansi/commit/dda42471bfe43f9511a868f17a7eb594e3180c08))
+
+
+### 🐛 Bug Fix
+
+* routes ([c5f4781](https://github.com/ntucker/anansi/commit/c5f4781c97a24b32627f3ded90ebfce8f2b6736b))
+
+
+### 📦 Package
+
+* @typescript-eslint/eslint-plugin, @typescript-eslint/parser major ([#1115](https://github.com/ntucker/anansi/issues/1115)) ([220456b](https://github.com/ntucker/anansi/commit/220456b9c1d826612fcf2b52ee3a451801825cc5))
+* Anansi latest ([122fd98](https://github.com/ntucker/anansi/commit/122fd98a3fb770d3af240c3ae9f0fcf1f7618daf))
+* babel patch ([1752bc2](https://github.com/ntucker/anansi/commit/1752bc28776ffd22a5649e444301bbe53042adbc))
+* bump @babel/runtime from 7.15.4 to 7.16.0 ([#1044](https://github.com/ntucker/anansi/issues/1044)) ([7e4e3cd](https://github.com/ntucker/anansi/commit/7e4e3cdcc8896c5c6cf86fe83017d386b3d3d41a))
+* bump @babel/runtime from 7.16.0 to 7.16.3 ([#1079](https://github.com/ntucker/anansi/issues/1079)) ([7508841](https://github.com/ntucker/anansi/commit/7508841fadc1df1adf15a0ca055cfe20fc19c9eb))
+* bump @babel/runtime from 7.16.5 to 7.16.7 ([#1220](https://github.com/ntucker/anansi/issues/1220)) ([d787e69](https://github.com/ntucker/anansi/commit/d787e6991287f2563272b8401c5434975595f67c))
+* bump @rest-hooks/rest from 3.0.0 to 3.0.1 ([#968](https://github.com/ntucker/anansi/issues/968)) ([2b4badc](https://github.com/ntucker/anansi/commit/2b4badc0becfdb53a87ddd061e5029ee97d50e50))
+* bump @rest-hooks/test from 7.1.0 to 7.1.2 ([#995](https://github.com/ntucker/anansi/issues/995)) ([9493710](https://github.com/ntucker/anansi/commit/9493710b9366f926d703c31d479a8563778a0ca0))
+* bump @rest-hooks/test from 7.1.2 to 7.1.3 ([#1003](https://github.com/ntucker/anansi/issues/1003)) ([faae1f5](https://github.com/ntucker/anansi/commit/faae1f5cf923a22ed1a3d86a0de2de8559557fef))
+* bump @types/jest from 27.0.1 to 27.0.2 ([#886](https://github.com/ntucker/anansi/issues/886)) ([7e972ee](https://github.com/ntucker/anansi/commit/7e972eec4f7d8aa34f3e1996c7b905a7cda02a6c))
+* bump @types/jest from 27.0.2 to 27.0.3 ([#1113](https://github.com/ntucker/anansi/issues/1113)) ([6ecf03f](https://github.com/ntucker/anansi/commit/6ecf03ffbb111d5412bd4646a947d52115b18ada))
+* bump @types/jest from 27.0.3 to 27.4.0 ([#1218](https://github.com/ntucker/anansi/issues/1218)) ([aec2c87](https://github.com/ntucker/anansi/commit/aec2c87302098c128b7f006ace24be9aeda5965b))
+* bump @types/lodash from 4.14.173 to 4.14.174 ([#899](https://github.com/ntucker/anansi/issues/899)) ([e3bd3e3](https://github.com/ntucker/anansi/commit/e3bd3e3625598e1fb51d9052139622f292c2899a))
+* bump @types/lodash from 4.14.174 to 4.14.175 ([#908](https://github.com/ntucker/anansi/issues/908)) ([92f5f8a](https://github.com/ntucker/anansi/commit/92f5f8a46447f6a09c412fb55e6e986e88f39185))
+* bump @types/lodash from 4.14.175 to 4.14.176 ([#1011](https://github.com/ntucker/anansi/issues/1011)) ([d20ce7c](https://github.com/ntucker/anansi/commit/d20ce7c3cb78e9bdb7e3d49448a857118585f19c))
+* bump @types/lodash from 4.14.176 to 4.14.177 ([#1095](https://github.com/ntucker/anansi/issues/1095)) ([ba82549](https://github.com/ntucker/anansi/commit/ba82549ecd6149b4a31130889938e394758bc876))
+* bump @types/lodash from 4.14.177 to 4.14.178 ([#1166](https://github.com/ntucker/anansi/issues/1166)) ([d136efa](https://github.com/ntucker/anansi/commit/d136efa2c1a64f197bc186ece32fcacec470a45b))
+* bump @types/node from 16.10.1 to 16.10.2 ([#919](https://github.com/ntucker/anansi/issues/919)) ([357d062](https://github.com/ntucker/anansi/commit/357d0628d53350fd83be67361015aeefa36db166))
+* bump @types/node from 16.10.2 to 16.10.3 ([#943](https://github.com/ntucker/anansi/issues/943)) ([35b2971](https://github.com/ntucker/anansi/commit/35b2971d7b01cbcac49e45051f9932d6f51e8244))
+* bump @types/node from 16.10.3 to 16.10.7 ([#987](https://github.com/ntucker/anansi/issues/987)) ([4c73327](https://github.com/ntucker/anansi/commit/4c73327f92a69293b78f25234481f594ea6d034e))
+* bump @types/node from 16.10.7 to 16.10.9 ([#988](https://github.com/ntucker/anansi/issues/988)) ([ef4b5cd](https://github.com/ntucker/anansi/commit/ef4b5cd1d4e60f2ae6bb545c3e06a801bf6421c1))
+* bump @types/node from 16.10.9 to 16.11.0 ([#994](https://github.com/ntucker/anansi/issues/994)) ([39a317b](https://github.com/ntucker/anansi/commit/39a317b8b5d60a39a8e8a0e4082a8b80c9f91add))
+* bump @types/node from 16.11.0 to 16.11.1 ([#1001](https://github.com/ntucker/anansi/issues/1001)) ([4133d1f](https://github.com/ntucker/anansi/commit/4133d1f1d3adfb47965b81014222251711ee47f2))
+* bump @types/node from 16.11.1 to 16.11.2 ([#1022](https://github.com/ntucker/anansi/issues/1022)) ([bfb90d3](https://github.com/ntucker/anansi/commit/bfb90d3ee4cea4c71365e34cbd3d081690b1f443))
+* bump @types/node from 16.11.10 to 17.0.0 ([#1157](https://github.com/ntucker/anansi/issues/1157)) ([373b454](https://github.com/ntucker/anansi/commit/373b45431f214bd4c9e885659584427e7e80e3ad))
+* bump @types/node from 16.11.2 to 16.11.6 ([#1029](https://github.com/ntucker/anansi/issues/1029)) ([ac9b996](https://github.com/ntucker/anansi/commit/ac9b9969c4aab63214f3586b7054d1c6a16b0980))
+* bump @types/node from 16.11.6 to 16.11.7 ([#1078](https://github.com/ntucker/anansi/issues/1078)) ([d86f96e](https://github.com/ntucker/anansi/commit/d86f96e492c1920e96908f2fb74600a1f5df868f))
+* bump @types/node from 16.11.7 to 16.11.9 ([#1111](https://github.com/ntucker/anansi/issues/1111)) ([4917baf](https://github.com/ntucker/anansi/commit/4917bafe33868d49b7323f66773e07cae33c9be5))
+* bump @types/node from 16.11.9 to 16.11.10 ([#1121](https://github.com/ntucker/anansi/issues/1121)) ([6fa0415](https://github.com/ntucker/anansi/commit/6fa0415c7ce478ecc897df01331f0e6550194c2d))
+* bump @types/node from 16.9.2 to 16.9.6 ([#892](https://github.com/ntucker/anansi/issues/892)) ([d4fa0fc](https://github.com/ntucker/anansi/commit/d4fa0fccfcc9ac5098e9efd954e1976cd00c9ed4))
+* bump @types/node from 16.9.6 to 16.10.1 ([#906](https://github.com/ntucker/anansi/issues/906)) ([35ffcd9](https://github.com/ntucker/anansi/commit/35ffcd96031f19a11a904c74f5af39beca256430))
+* bump @types/node from 17.0.0 to 17.0.2 ([#1170](https://github.com/ntucker/anansi/issues/1170)) ([2acf9ea](https://github.com/ntucker/anansi/commit/2acf9ea5dfb3d99ec9009c50012027d51e45f014))
+* bump @types/node from 17.0.2 to 17.0.3 ([#1185](https://github.com/ntucker/anansi/issues/1185)) ([f6911b1](https://github.com/ntucker/anansi/commit/f6911b1635c6693a9f536805a667c7a538ce06cd))
+* bump @types/node from 17.0.3 to 17.0.4 ([#1190](https://github.com/ntucker/anansi/issues/1190)) ([0cd7af7](https://github.com/ntucker/anansi/commit/0cd7af72372dc6e7ca9734af2cd82eec7f788e09))
+* bump @types/node from 17.0.4 to 17.0.5 ([#1202](https://github.com/ntucker/anansi/issues/1202)) ([6f0975e](https://github.com/ntucker/anansi/commit/6f0975e9e2fb815265f6db79c46fee418ea64151))
+* bump @types/node from 17.0.5 to 17.0.7 ([#1230](https://github.com/ntucker/anansi/issues/1230)) ([87467c7](https://github.com/ntucker/anansi/commit/87467c734dbdc62b01167c797457cf8825072129))
+* bump @types/node from 17.0.7 to 17.0.8 ([#1235](https://github.com/ntucker/anansi/issues/1235)) ([e1cca0f](https://github.com/ntucker/anansi/commit/e1cca0f08fdc7a7eb56d2079bd3f1908a60f0151))
+* bump @types/parse-link-header from 1.0.0 to 1.0.1 ([#1098](https://github.com/ntucker/anansi/issues/1098)) ([d1ce10f](https://github.com/ntucker/anansi/commit/d1ce10f424ad2b3b52564afd1aeb5dc07721fcff))
+* bump @types/react-router-dom from 5.1.9 to 5.3.0 ([#888](https://github.com/ntucker/anansi/issues/888)) ([1aea70d](https://github.com/ntucker/anansi/commit/1aea70dd595aa9e291aecd873518cb2f0a02cd3f))
+* bump @types/react-router-dom from 5.3.0 to 5.3.1 ([#959](https://github.com/ntucker/anansi/issues/959)) ([bb41205](https://github.com/ntucker/anansi/commit/bb412054c645716befbe72b55fa2df3b5b9fbf54))
+* bump @types/react-router-dom from 5.3.1 to 5.3.2 ([#1031](https://github.com/ntucker/anansi/issues/1031)) ([9b8c478](https://github.com/ntucker/anansi/commit/9b8c478e9705820a323e9af10f8fcdf85b41ddd1))
+* bump antd from 4.16.13 to 4.17.1 ([#1117](https://github.com/ntucker/anansi/issues/1117)) ([6245263](https://github.com/ntucker/anansi/commit/6245263714376c7135681b0327fd913c39d3a024))
+* bump antd from 4.17.1 to 4.17.2 ([#1130](https://github.com/ntucker/anansi/issues/1130)) ([159bc1b](https://github.com/ntucker/anansi/commit/159bc1ba2f636e1454061a919f75b1751375223b))
+* bump antd from 4.17.2 to 4.17.4 ([#1179](https://github.com/ntucker/anansi/issues/1179)) ([54d7ddf](https://github.com/ntucker/anansi/commit/54d7ddf6ff84660c3678e4b67134a328400c8ed3))
+* bump antd from 4.17.4 to 4.18.0 ([#1201](https://github.com/ntucker/anansi/issues/1201)) ([650186b](https://github.com/ntucker/anansi/commit/650186b0f60cd65cf364a71bcd49304e92510f6a))
+* bump antd from 4.18.0 to 4.18.2 ([#1208](https://github.com/ntucker/anansi/issues/1208)) ([9a61aa8](https://github.com/ntucker/anansi/commit/9a61aa8559a0e4c0409e53a1e1bdbb957917712d))
+* bump core-js from 3.17.3 to 3.18.0 ([#883](https://github.com/ntucker/anansi/issues/883)) ([8c1f252](https://github.com/ntucker/anansi/commit/8c1f2524d03b37125207e19f737998ed7ed2fa63))
+* bump core-js from 3.18.0 to 3.18.1 ([#911](https://github.com/ntucker/anansi/issues/911)) ([7d63887](https://github.com/ntucker/anansi/commit/7d638872481ac01fc3f8c754e98da3fead97d0ea))
+* bump core-js from 3.18.1 to 3.18.2 ([#941](https://github.com/ntucker/anansi/issues/941)) ([b52355a](https://github.com/ntucker/anansi/commit/b52355a0f839763cc96621e45d02cbc1225f1728))
+* bump core-js from 3.18.2 to 3.18.3 ([#969](https://github.com/ntucker/anansi/issues/969)) ([fc79210](https://github.com/ntucker/anansi/commit/fc79210d1ee7448344dfb231448e533d967ba766))
+* bump core-js from 3.18.3 to 3.19.0 ([#1030](https://github.com/ntucker/anansi/issues/1030)) ([657795c](https://github.com/ntucker/anansi/commit/657795c1c60bb660940c89b55083b206d903409e))
+* bump core-js from 3.19.0 to 3.19.1 ([#1066](https://github.com/ntucker/anansi/issues/1066)) ([f82521f](https://github.com/ntucker/anansi/commit/f82521f16a8e24a69d5885b281d793a6555a190d))
+* bump core-js from 3.19.1 to 3.20.0 ([#1176](https://github.com/ntucker/anansi/issues/1176)) ([accbfa7](https://github.com/ntucker/anansi/commit/accbfa7c140f9a2a95112a5841cf1a55cdb14246))
+* bump core-js from 3.20.0 to 3.20.1 ([#1191](https://github.com/ntucker/anansi/issues/1191)) ([0714c8f](https://github.com/ntucker/anansi/commit/0714c8f0d721b533746b7998cce332ce71404cdf))
+* bump core-js from 3.20.1 to 3.20.2 ([#1231](https://github.com/ntucker/anansi/issues/1231)) ([09fa118](https://github.com/ntucker/anansi/commit/09fa1181ea886715052957c88b44044a9afe72dd))
+* bump jest from 27.2.0 to 27.2.1 ([#889](https://github.com/ntucker/anansi/issues/889)) ([95d5496](https://github.com/ntucker/anansi/commit/95d5496e24875fb69f19b0539ce8746ccb4da5c4))
+* bump jest from 27.2.1 to 27.2.2 ([#900](https://github.com/ntucker/anansi/issues/900)) ([3b572b3](https://github.com/ntucker/anansi/commit/3b572b316194e18458a12e33dc7ae42e1c5caf57))
+* bump jest from 27.2.2 to 27.2.3 ([#910](https://github.com/ntucker/anansi/issues/910)) ([b9ff72e](https://github.com/ntucker/anansi/commit/b9ff72e2f8a9075f14099f44f8d88fc2d4f87531))
+* bump jest from 27.2.3 to 27.2.4 ([#918](https://github.com/ntucker/anansi/issues/918)) ([6d030d1](https://github.com/ntucker/anansi/commit/6d030d1229ba252f0ce2715c1b756cf0fb8a5520))
+* bump jest from 27.2.4 to 27.2.5 ([#962](https://github.com/ntucker/anansi/issues/962)) ([4decbf5](https://github.com/ntucker/anansi/commit/4decbf59cab6d231a7a8a872dfbb6ff16ff79c73))
+* bump jest from 27.2.5 to 27.3.0 ([#1004](https://github.com/ntucker/anansi/issues/1004)) ([c9fd30d](https://github.com/ntucker/anansi/commit/c9fd30dc506c7726c9b5be5b9eb669958970d443))
+* bump jest from 27.3.0 to 27.3.1 ([#1008](https://github.com/ntucker/anansi/issues/1008)) ([cc62538](https://github.com/ntucker/anansi/commit/cc62538e625a74be57c46781bd63b21ffc2086c2))
+* bump jest from 27.3.1 to 27.4.5 ([#1167](https://github.com/ntucker/anansi/issues/1167)) ([5e8d4f6](https://github.com/ntucker/anansi/commit/5e8d4f6f4d9cfb9b5a0404f6fa5adb8232588ede))
+* bump jest from 27.4.5 to 27.4.6 ([#1236](https://github.com/ntucker/anansi/issues/1236)) ([d1d0dcb](https://github.com/ntucker/anansi/commit/d1d0dcbe20a47938c7730599041c5ac12496211a))
+* bump parse-link-header from 1.0.1 to 2.0.0 ([#1181](https://github.com/ntucker/anansi/issues/1181)) ([a4e2cba](https://github.com/ntucker/anansi/commit/a4e2cbab708992fdf59303be2cfc0f5d6edcd90c))
+* bump rest-hooks from 6.1.0 to 6.1.1 ([#914](https://github.com/ntucker/anansi/issues/914)) ([144146d](https://github.com/ntucker/anansi/commit/144146d28877f776353a804eebd076fd49984020))
+* bump rest-hooks from 6.1.1 to 6.1.2 ([#917](https://github.com/ntucker/anansi/issues/917)) ([779013d](https://github.com/ntucker/anansi/commit/779013d29f89ee15860eb275988ab366df1887d3))
+* bump rest-hooks from 6.1.2 to 6.1.3 ([#966](https://github.com/ntucker/anansi/issues/966)) ([273e857](https://github.com/ntucker/anansi/commit/273e857590e5428471259d4c9e624d976671f0b2))
+* bump rest-hooks from 6.1.5 to 6.1.6 ([#1009](https://github.com/ntucker/anansi/issues/1009)) ([f59a61e](https://github.com/ntucker/anansi/commit/f59a61ed8c781d914628cca581b38e4f384b00ac))
+* bump rest-hooks from 6.1.6 to 6.1.7 ([#1017](https://github.com/ntucker/anansi/issues/1017)) ([212d2b8](https://github.com/ntucker/anansi/commit/212d2b85f7a41917ee7ec23eba4041908430b7da))
+* bump serve from 12.0.1 to 13.0.2 ([#1073](https://github.com/ntucker/anansi/issues/1073)) ([ccf8ad2](https://github.com/ntucker/anansi/commit/ccf8ad2cfae23b3ae7d8c28557c459b734003961))
+* Fix react versions at 18-rc.0 ([1e87e34](https://github.com/ntucker/anansi/commit/1e87e349ac1af42894219a9e7e9677ec0048665a))
+* react ([7185ca0](https://github.com/ntucker/anansi/commit/7185ca0c7ac38f27ff67d4ac9d1795e5ddf48e20))
+* React to beta ([153c419](https://github.com/ntucker/anansi/commit/153c419de3d4392f22fb42a386c9e81ba52ccf7b))
+* upgrade rest hooks ([ed35711](https://github.com/ntucker/anansi/commit/ed35711cb74aa453623ba7dd4c3bcb5c30368bcf))
+* Upgrade rest hooks to 6.1 ([0b2fa67](https://github.com/ntucker/anansi/commit/0b2fa6734713629bd6647bb940e8b7c7a7cf5326))
+* Use internal version of anansi packages ([5fd2e36](https://github.com/ntucker/anansi/commit/5fd2e36456434e4421b0da50e59ab4e771f4f90a))
+
+
+
 ### [7.1.2](https://github.com/ntucker/anansi/compare/example-typescript@7.1.1...example-typescript@7.1.2) (2021-09-17)
 
 

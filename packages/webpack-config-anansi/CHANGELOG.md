@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.3.0...@anansi/webpack-config@10.0.0) (2022-01-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* svgr uses SVGO 2 config
+
+Bumps [@svgr/webpack](https://github.com/gregberge/svgr) from 5.5.0 to 6.1.2.
+- [Release notes](https://github.com/gregberge/svgr/releases)
+- [Changelog](https://github.com/gregberge/svgr/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/gregberge/svgr/compare/v5.5.0...v6.1.2)
+
+### 💅 Enhancement
+
+* Improve prod scss extraction ([5b1aee6](https://github.com/ntucker/anansi/commit/5b1aee64df0a7ec8d85197e4da4563aef7d495cf))
+* Use fallback instead of alias for node polyfills ([1c4424c](https://github.com/ntucker/anansi/commit/1c4424c06a13e430e4e31b00a67aed91c4984c97))
+
+
+### 🐛 Bug Fix
+
+* fast refresh stops on needed bail outs ([#1240](https://github.com/ntucker/anansi/issues/1240)) ([864f2ff](https://github.com/ntucker/anansi/commit/864f2ff397ffab3450a83407c1d449abae26e72e))
+
+
+### 📦 Package
+
+* @linaria/webpack-loader fixed to beta.14 until it is fixed ([a45720c](https://github.com/ntucker/anansi/commit/a45720c30d2e9be1fa829703b901da14c6fc48cb))
+* bump @babel/runtime from 7.16.5 to 7.16.7 ([#1220](https://github.com/ntucker/anansi/issues/1220)) ([d787e69](https://github.com/ntucker/anansi/commit/d787e6991287f2563272b8401c5434975595f67c))
+* bump @pmmmwh/react-refresh-webpack-plugin from 0.5.3 to 0.5.4 ([#1172](https://github.com/ntucker/anansi/issues/1172)) ([7c43245](https://github.com/ntucker/anansi/commit/7c43245946a9ebe226089b05239c8fa74d395cdd))
+* bump @svgr/webpack from 5.5.0 to 6.1.2 ([#1156](https://github.com/ntucker/anansi/issues/1156)) ([79ba411](https://github.com/ntucker/anansi/commit/79ba41174f56dab38e63206050d404331423f061))
+* bump autoprefixer from 10.4.0 to 10.4.1 ([#1205](https://github.com/ntucker/anansi/issues/1205)) ([df3e619](https://github.com/ntucker/anansi/commit/df3e619a2472031d6164db5e7f6f9c0f7dc1a451))
+* bump core-js from 3.19.1 to 3.20.0 ([#1176](https://github.com/ntucker/anansi/issues/1176)) ([accbfa7](https://github.com/ntucker/anansi/commit/accbfa7c140f9a2a95112a5841cf1a55cdb14246))
+* bump core-js from 3.20.0 to 3.20.1 ([#1191](https://github.com/ntucker/anansi/issues/1191)) ([0714c8f](https://github.com/ntucker/anansi/commit/0714c8f0d721b533746b7998cce332ce71404cdf))
+* bump core-js from 3.20.1 to 3.20.2 ([#1231](https://github.com/ntucker/anansi/issues/1231)) ([09fa118](https://github.com/ntucker/anansi/commit/09fa1181ea886715052957c88b44044a9afe72dd))
+* bump critters-webpack-plugin from 3.0.1 to 3.0.2 ([#1241](https://github.com/ntucker/anansi/issues/1241)) ([e1ba6d4](https://github.com/ntucker/anansi/commit/e1ba6d4cff3eca756ecc0a860adff412aa43be0c))
+* bump css-minimizer-webpack-plugin from 3.3.0 to 3.3.1 ([#1180](https://github.com/ntucker/anansi/issues/1180)) ([6a00dbe](https://github.com/ntucker/anansi/commit/6a00dbe27fb63ac4ecfa63511e9a24d1dcbd015c))
+* bump node-sass from 6.0.1 to 7.0.0 ([#1177](https://github.com/ntucker/anansi/issues/1177)) ([e44b509](https://github.com/ntucker/anansi/commit/e44b509e2652cb4d67ccee9d92fa9bd025bb08a3))
+* bump node-sass from 7.0.0 to 7.0.1 ([#1195](https://github.com/ntucker/anansi/issues/1195)) ([2fb97c8](https://github.com/ntucker/anansi/commit/2fb97c84433ebc9ed2351ce36faf097bd198ed86))
+* bump postcss-preset-env from 7.0.2 to 7.1.0 ([#1183](https://github.com/ntucker/anansi/issues/1183)) ([0ca3337](https://github.com/ntucker/anansi/commit/0ca3337ad2936d208e7c2f3ac1eadc1c24d005a3))
+* bump postcss-preset-env from 7.1.0 to 7.2.0 ([#1229](https://github.com/ntucker/anansi/issues/1229)) ([a8e98ce](https://github.com/ntucker/anansi/commit/a8e98cee6da855e60b2789061707ce5008026635))
+* bump react-dev-utils from 11.0.4 to 12.0.0 ([#1162](https://github.com/ntucker/anansi/issues/1162)) ([3179b63](https://github.com/ntucker/anansi/commit/3179b6348c28eb8d28671075579078bb9c4952e1))
+* linaria to 3-beta.17 ([#1159](https://github.com/ntucker/anansi/issues/1159)) ([c808566](https://github.com/ntucker/anansi/commit/c808566061dd004cf74c1fcda028a6d06e143538))
+
+
+
 ## [9.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.2.0...@anansi/webpack-config@9.3.0) (2021-12-19)
 
 

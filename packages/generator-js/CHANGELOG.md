@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.3...@anansi/generator-js@7.1.4) (2022-01-06)
+
+
+### 🐛 Bug Fix
+
+* Fix react rc version as their relases don't follow semver ([de8516c](https://github.com/ntucker/anansi/commit/de8516c222556e578786c6ae77778ce3019d9230))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.16.5 to 7.16.7 ([#1220](https://github.com/ntucker/anansi/issues/1220)) ([d787e69](https://github.com/ntucker/anansi/commit/d787e6991287f2563272b8401c5434975595f67c))
+* bump @types/node from 17.0.0 to 17.0.2 ([#1170](https://github.com/ntucker/anansi/issues/1170)) ([2acf9ea](https://github.com/ntucker/anansi/commit/2acf9ea5dfb3d99ec9009c50012027d51e45f014))
+* bump @types/node from 17.0.2 to 17.0.3 ([#1185](https://github.com/ntucker/anansi/issues/1185)) ([f6911b1](https://github.com/ntucker/anansi/commit/f6911b1635c6693a9f536805a667c7a538ce06cd))
+* bump @types/node from 17.0.3 to 17.0.4 ([#1190](https://github.com/ntucker/anansi/issues/1190)) ([0cd7af7](https://github.com/ntucker/anansi/commit/0cd7af72372dc6e7ca9734af2cd82eec7f788e09))
+* bump @types/node from 17.0.4 to 17.0.5 ([#1202](https://github.com/ntucker/anansi/issues/1202)) ([6f0975e](https://github.com/ntucker/anansi/commit/6f0975e9e2fb815265f6db79c46fee418ea64151))
+* bump @types/node from 17.0.5 to 17.0.7 ([#1230](https://github.com/ntucker/anansi/issues/1230)) ([87467c7](https://github.com/ntucker/anansi/commit/87467c734dbdc62b01167c797457cf8825072129))
+* bump @types/node from 17.0.7 to 17.0.8 ([#1235](https://github.com/ntucker/anansi/issues/1235)) ([e1cca0f](https://github.com/ntucker/anansi/commit/e1cca0f08fdc7a7eb56d2079bd3f1908a60f0151))
+* bump @types/pacote from 11.1.1 to 11.1.2 ([#1188](https://github.com/ntucker/anansi/issues/1188)) ([281e08d](https://github.com/ntucker/anansi/commit/281e08d585ca1ef7288d422327ae03f104ed97f9))
+* bump @types/yeoman-generator from 5.2.7 to 5.2.8 ([#1189](https://github.com/ntucker/anansi/issues/1189)) ([933fec8](https://github.com/ntucker/anansi/commit/933fec8840c99c892f977e22712e7c5cff328d5d))
+* bump core-js from 3.19.1 to 3.20.0 ([#1176](https://github.com/ntucker/anansi/issues/1176)) ([accbfa7](https://github.com/ntucker/anansi/commit/accbfa7c140f9a2a95112a5841cf1a55cdb14246))
+* bump core-js from 3.20.0 to 3.20.1 ([#1191](https://github.com/ntucker/anansi/issues/1191)) ([0714c8f](https://github.com/ntucker/anansi/commit/0714c8f0d721b533746b7998cce332ce71404cdf))
+* bump core-js from 3.20.1 to 3.20.2 ([#1231](https://github.com/ntucker/anansi/issues/1231)) ([09fa118](https://github.com/ntucker/anansi/commit/09fa1181ea886715052957c88b44044a9afe72dd))
+* bump jest from 27.3.1 to 27.4.5 ([#1167](https://github.com/ntucker/anansi/issues/1167)) ([5e8d4f6](https://github.com/ntucker/anansi/commit/5e8d4f6f4d9cfb9b5a0404f6fa5adb8232588ede))
+* bump jest from 27.4.5 to 27.4.6 ([#1236](https://github.com/ntucker/anansi/issues/1236)) ([d1d0dcb](https://github.com/ntucker/anansi/commit/d1d0dcbe20a47938c7730599041c5ac12496211a))
+* bump react-dev-utils from 11.0.4 to 12.0.0 ([#1162](https://github.com/ntucker/anansi/issues/1162)) ([3179b63](https://github.com/ntucker/anansi/commit/3179b6348c28eb8d28671075579078bb9c4952e1))
+* bump yeoman-generator from 5.4.2 to 5.5.2 ([#1238](https://github.com/ntucker/anansi/issues/1238)) ([c431cc1](https://github.com/ntucker/anansi/commit/c431cc1dd3f17cd5bd4c37e4f6567c3a76689fdb))
+* linaria to 3-beta.17 ([#1159](https://github.com/ntucker/anansi/issues/1159)) ([c808566](https://github.com/ntucker/anansi/commit/c808566061dd004cf74c1fcda028a6d06e143538))
+
+
+
 ### [7.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.2...@anansi/generator-js@7.1.3) (2021-12-19)
 
 

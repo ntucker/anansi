@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.1...@anansi/eslint-plugin@0.12.2) (2022-01-06)
+
+
+### 📦 Package
+
+* bump @typescript-eslint/eslint-plugin from 5.7.0 to 5.8.0 ([#1163](https://github.com/ntucker/anansi/issues/1163)) ([7a5fcf9](https://github.com/ntucker/anansi/commit/7a5fcf9e224c7d852c376d2e0f8880d233873fe1))
+* bump @typescript-eslint/eslint-plugin from 5.8.0 to 5.8.1 ([#1198](https://github.com/ntucker/anansi/issues/1198)) ([976c3fe](https://github.com/ntucker/anansi/commit/976c3fed69170bdcb73cda973e9d6b28915c5810))
+* bump @typescript-eslint/eslint-plugin from 5.8.1 to 5.9.0 ([#1227](https://github.com/ntucker/anansi/issues/1227)) ([718abef](https://github.com/ntucker/anansi/commit/718abef1162938ff10f39ad7faf01b2f9fe84aed))
+* bump @typescript-eslint/parser from 5.7.0 to 5.8.0 ([#1173](https://github.com/ntucker/anansi/issues/1173)) ([3831431](https://github.com/ntucker/anansi/commit/3831431e301dffc2760f5776e3e1426f8db07b0e))
+* bump @typescript-eslint/parser from 5.8.0 to 5.8.1 ([#1203](https://github.com/ntucker/anansi/issues/1203)) ([e84cbec](https://github.com/ntucker/anansi/commit/e84cbec5b5334fe5317e14b4108d6819c34d5e50))
+* bump @typescript-eslint/parser from 5.8.1 to 5.9.0 ([#1233](https://github.com/ntucker/anansi/issues/1233)) ([64776ea](https://github.com/ntucker/anansi/commit/64776ea9c53f6d4cea07154e5ec8b86b177d25cc))
+
+
+
 ### [0.12.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.0...@anansi/eslint-plugin@0.12.1) (2021-12-19)
 
 
