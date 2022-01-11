@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.89",
-    "@babel/plugin-transform-modules-commonjs": "^7.16.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/runtime": "^7.16.7",
     "@linaria/core": "^3.0.0-beta.15",
     "@linaria/react": "^3.0.0-beta.17",
