@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.0...@anansi/webpack-config@10.0.1) (2022-01-12)
+
+
+### 📦 Package
+
+* bump @svgr/webpack from 6.1.2 to 6.2.0 ([#1257](https://github.com/ntucker/anansi/issues/1257)) ([d9ce524](https://github.com/ntucker/anansi/commit/d9ce5247dee4e4406000af4641fdbac6ab540fb8))
+* bump autoprefixer from 10.4.1 to 10.4.2 ([#1245](https://github.com/ntucker/anansi/issues/1245)) ([8e0f04f](https://github.com/ntucker/anansi/commit/8e0f04f1cba2612b30deec307ee59717c7ecffb2))
+* bump html-loader from 3.0.1 to 3.1.0 ([#1261](https://github.com/ntucker/anansi/issues/1261)) ([25d9ec7](https://github.com/ntucker/anansi/commit/25d9ec78f810e4938333a2599063c0fe26315c7c))
+* bump mini-css-extract-plugin from 2.4.5 to 2.4.6 ([#1244](https://github.com/ntucker/anansi/issues/1244)) ([97e7a86](https://github.com/ntucker/anansi/commit/97e7a86804ccb19aa5c299a95e59e83589ffbd5e))
+* bump ramda from 0.27.1 to 0.27.2 ([#1263](https://github.com/ntucker/anansi/issues/1263)) ([acb7d00](https://github.com/ntucker/anansi/commit/acb7d0082f1525e467737ebaaed72bd5566f6efe))
+
+
+
 ## [10.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@9.3.0...@anansi/webpack-config@10.0.0) (2022-01-06)
 
 

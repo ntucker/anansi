@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.4...@anansi/generator-js@7.1.5) (2022-01-12)
+
+
+### 📦 Package
+
+* bump @types/pacote from 11.1.2 to 11.1.3 ([#1253](https://github.com/ntucker/anansi/issues/1253)) ([afeaa73](https://github.com/ntucker/anansi/commit/afeaa735707f40dcad62a28ee27fbf6004dc4b25))
+* bump jest from 27.4.6 to 27.4.7 ([#1243](https://github.com/ntucker/anansi/issues/1243)) ([aad0c23](https://github.com/ntucker/anansi/commit/aad0c23d7ce5675262acad162a4d38e9be51e05a))
+
+
+
 ### [7.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.3...@anansi/generator-js@7.1.4) (2022-01-06)
 
 
