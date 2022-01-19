@@ -33,7 +33,7 @@
     "@storybook/addons": "^6.4.9",
     "@storybook/builder-webpack5": "^6.4.13",
     "@storybook/manager-webpack5": "^6.4.13",
-    "@storybook/react": "^6.4.12",
+    "@storybook/react": "^6.4.13",
     "babel-loader": "8.2.3",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
