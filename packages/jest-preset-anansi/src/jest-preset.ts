@@ -45,6 +45,11 @@ module.exports = {
       '^.+\\.(tsx?|html)$': require.resolve('ts-jest'),
       '^.+\\.jsx?$': [require.resolve('babel-jest'), babelConfig],
     },
+    // same as default, but we transform @babel/runtime
+    transformIgnorePatterns: [
+      '/node_modules/(?!@babel/runtime)',
+      '\\.pnp\\.[^\\/]+$',
+    ],
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
     coveragePathIgnorePatterns: ['node_modules'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'mjs', 'json'],
