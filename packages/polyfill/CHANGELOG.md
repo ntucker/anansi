@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.91](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.90...@anansi/polyfill@1.0.91) (2022-01-21)
+
+
+### 📦 Package
+
+* bump core-js from 3.20.2 to 3.20.3 ([#1280](https://github.com/ntucker/anansi/issues/1280)) ([31e90e5](https://github.com/ntucker/anansi/commit/31e90e5e5902a3dd1ae177219e54a9c8c97d7e7d))
+* mini-css-extract-plugin, ts-jest, rollup ([#1277](https://github.com/ntucker/anansi/issues/1277)) ([264419a](https://github.com/ntucker/anansi/commit/264419aa034985a17e8bacfaa9ca87c57102a087))
+
+
+
 ### [1.0.90](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.89...@anansi/polyfill@1.0.90) (2022-01-12)
 
 **Note:** Version bump only for package @anansi/polyfill

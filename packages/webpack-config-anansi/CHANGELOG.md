@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.1...@anansi/webpack-config@10.0.2) (2022-01-21)
+
+
+### 📦 Package
+
+* bump core-js from 3.20.2 to 3.20.3 ([#1280](https://github.com/ntucker/anansi/issues/1280)) ([31e90e5](https://github.com/ntucker/anansi/commit/31e90e5e5902a3dd1ae177219e54a9c8c97d7e7d))
+* bump css-minimizer-webpack-plugin from 3.3.1 to 3.4.1 ([#1293](https://github.com/ntucker/anansi/issues/1293)) ([9f3580e](https://github.com/ntucker/anansi/commit/9f3580e2767b932939ca8c4b1a5443abce9e29c2))
+* bump mini-css-extract-plugin from 2.4.6 to 2.4.7 ([#1272](https://github.com/ntucker/anansi/issues/1272)) ([2ea9c58](https://github.com/ntucker/anansi/commit/2ea9c580f166a6b20618480d84276ee43145747b))
+* bump mini-css-extract-plugin from 2.5.0 to 2.5.2 ([#1294](https://github.com/ntucker/anansi/issues/1294)) ([e021377](https://github.com/ntucker/anansi/commit/e0213774699229760d9f6e7891ff132fe65271a2))
+* bump postcss-preset-env from 7.2.0 to 7.2.3 ([#1269](https://github.com/ntucker/anansi/issues/1269)) ([28e32ec](https://github.com/ntucker/anansi/commit/28e32ec5e5cbf9c3bca56fc579a8c3cf00d0ad99))
+* bump ramda from 0.27.2 to 0.28.0 ([#1291](https://github.com/ntucker/anansi/issues/1291)) ([ea99455](https://github.com/ntucker/anansi/commit/ea99455ab0df2bc76454d32071f5d22216113ddb))
+* mini-css-extract-plugin, ts-jest, rollup ([#1277](https://github.com/ntucker/anansi/issues/1277)) ([264419a](https://github.com/ntucker/anansi/commit/264419aa034985a17e8bacfaa9ca87c57102a087))
+
+
+
 ### [10.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.0...@anansi/webpack-config@10.0.1) (2022-01-12)
 
 

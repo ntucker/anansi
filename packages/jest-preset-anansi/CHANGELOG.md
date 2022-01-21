@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.21](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.20...@anansi/jest-preset@0.5.21) (2022-01-21)
+
+
+### 💅 Enhancement
+
+* Transform @babel/runtime in jest ([#1302](https://github.com/ntucker/anansi/issues/1302)) ([1f19d93](https://github.com/ntucker/anansi/commit/1f19d93a0cdad9d8b88f20bb389e109cf98ecfa9))
+
+
+### 📦 Package
+
+* bump core-js from 3.20.2 to 3.20.3 ([#1280](https://github.com/ntucker/anansi/issues/1280)) ([31e90e5](https://github.com/ntucker/anansi/commit/31e90e5e5902a3dd1ae177219e54a9c8c97d7e7d))
+* mini-css-extract-plugin, ts-jest, rollup ([#1277](https://github.com/ntucker/anansi/issues/1277)) ([264419a](https://github.com/ntucker/anansi/commit/264419aa034985a17e8bacfaa9ca87c57102a087))
+
+
+
 ### [0.5.20](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.19...@anansi/jest-preset@0.5.20) (2022-01-12)
 
 **Note:** Version bump only for package @anansi/jest-preset
