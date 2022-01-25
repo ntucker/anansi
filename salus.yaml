@@ -67,6 +67,9 @@ scanner_configs:
       - advisory_id: 1006884
         changed_by: ntucker
         notes: not fixable yet
+      - advisory_id: 1006897
+        changed_by: ntucker
+        notes: not used (storybook webpack4)
 active_scanners:
   - RepoNotEmpty
   - Brakeman
