@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.92](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.91...@anansi/polyfill@1.0.92) (2022-01-28)
+
+
+### 📦 Package
+
+* bump rollup from 2.64.0 to 2.66.1 ([#1315](https://github.com/ntucker/anansi/issues/1315)) ([5841b85](https://github.com/ntucker/anansi/commit/5841b85763c0d4dec4deea93b3c0af539f4fd3fe))
+
+
+
 ### [1.0.91](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.90...@anansi/polyfill@1.0.91) (2022-01-21)
 
 

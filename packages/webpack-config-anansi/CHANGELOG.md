@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.2...@anansi/webpack-config@10.0.3) (2022-01-28)
+
+
+### 📦 Package
+
+* bump markdown-loader from 6.0.0 to 8.0.0 ([#1330](https://github.com/ntucker/anansi/issues/1330)) ([bbc4f95](https://github.com/ntucker/anansi/commit/bbc4f955fb18878d1792cd879f8e4ad10dfc582a))
+* bump mini-css-extract-plugin from 2.5.2 to 2.5.3 ([#1318](https://github.com/ntucker/anansi/issues/1318)) ([ebbd190](https://github.com/ntucker/anansi/commit/ebbd190cf16934f6241b772b98790d568a213a87))
+
+
+
 ### [10.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.1...@anansi/webpack-config@10.0.2) (2022-01-21)
 
 
