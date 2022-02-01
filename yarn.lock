@@ -6265,6 +6265,11 @@ ansi@^0.3.0, ansi@~0.3.1:
   resolved "https://registry.yarnpkg.com/ansi/-/ansi-0.3.1.tgz#0c42d4fb17160d5a9af1e484bace1c66922c1b21"
   integrity sha1-DELU+xcWDVqa8eSEus4cZpIsGyE=
 
+ansis@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/ansis/-/ansis-1.3.4.tgz#e94e32c6083c2eac9613ec6174c695a5bec9d9cb"
+  integrity sha512-BDXljGSG4gZXmWK64bQzXkI509i5fe8aAa9+eL29e3swaWUqxvxk/XlONjw9AUrNCpQWNdy++0GX7HAhWeR9BQ==
+
 antd@^4.18.5:
   version "4.18.5"
   resolved "https://registry.yarnpkg.com/antd/-/antd-4.18.5.tgz#e5ffbe238fd6fdfcd1ed39ba96e4b1bd5f589757"
@@ -21318,10 +21323,12 @@ webpack-node-externals@^3.0.0:
   resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz#1a3407c158d547a9feb4229a9e3385b7b60c9917"
   integrity sha512-LnL6Z3GGDPht/AigwRh2dvL9PQPFQ8skEpVrWZXLWBYmqcaojHNN0onvHzie6rq7EWKrrBfPYqNEzTJgiwEQDQ==
 
-webpack-remove-empty-scripts@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/webpack-remove-empty-scripts/-/webpack-remove-empty-scripts-0.7.2.tgz#54526ec529d34b45b727477c21fc98486041611d"
-  integrity sha512-yhQw/ktHnpqGZHoN9/I079uVNxKx/aznsx980AvaTOJANxS0BV8SWGDccCGPH5L3Nl+HTbkoexr3VREmFbFWYQ==
+webpack-remove-empty-scripts@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/webpack-remove-empty-scripts/-/webpack-remove-empty-scripts-0.7.3.tgz#f57b9823f5bd7016b44a4990f9257defd018513d"
+  integrity sha512-yipqb25A0qtH7X9vKt6yihwyYkTtSlRiDdBb2QsyrkqGM3hpfAcfOO1lYDef9HQUNm3s8ojmorbNg32XXX6FYg==
+  dependencies:
+    ansis "^1.3.4"
 
 webpack-sources@^1.3.0:
   version "1.4.3"
