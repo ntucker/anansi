@@ -17,27 +17,29 @@ options:
 */
 function buildPreset(api, options = {}) {
   const env = api.env();
+  const babelTargets = typeof api.targets === 'function' ? api.targets() : {};
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
+  // webpack sends on context about this specific build target
   const callerTarget = api.caller(caller => caller && caller.target);
-  // we are targetting using in node if this is not `undefined`
-  const nodeTarget = callerTarget === 'node' ? 'current' : undefined;
+  const nodeTarget =
+    callerTarget === 'node'
+      ? // default to current or use node config set
+        (babelTargets && babelTargets.node) || 'current'
+      : callerTarget === undefined
+      ? // infer based on babel target if caller doesn't send anything
+        babelTargets && babelTargets.node
+      : // if caller is not targetting node, we should ensure nodeTarget is not set
+        undefined;
   const hasJsxRuntime = Boolean(
     api.caller(
       caller => (!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime,
     ),
   );
-  const shouldHotReload =
-    !babelNode &&
-    !options.nodeTarget &&
-    callerCouldTargetWeb(callerTarget) &&
-    process.env.NO_HOT_RELOAD !== 'true' &&
-    process.env.NO_HOT_RELOAD !== true &&
-    api.caller(caller => !caller || !caller.noHotReload);
 
   options = {
     minify: false,
@@ -53,6 +55,14 @@ function buildPreset(api, options = {}) {
     resolver: { root: [], alias: {} },
     ...options,
   };
+  const shouldHotReload =
+    !babelNode &&
+    !options.nodeTarget &&
+    callerCouldTargetWeb(callerTarget) &&
+    process.env.NO_HOT_RELOAD !== 'true' &&
+    process.env.NO_HOT_RELOAD !== true &&
+    api.caller(caller => !caller || !caller.noHotReload);
+
   const modules =
     env === 'test' || options.nodeTarget || babelNode
       ? options.modules !== undefined
@@ -79,7 +89,7 @@ function buildPreset(api, options = {}) {
       : // when transpiling to commonjs, we should not use ESM version of babel runtime
       modules === 'commonjs' ||
         modules === 'cjs' ||
-        (modules === 'auto' && supportsModules === undefined)
+        (modules === 'auto' && !supportsModules)
       ? false
       : options.nodeTarget || babelNode
       ? nodeSupportsModules

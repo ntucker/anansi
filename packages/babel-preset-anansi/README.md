@@ -30,12 +30,10 @@ Or configure [options](#options)
 
 ```json
 {
+  "targets": { "node": "10" },
   "presets": [
     [
-      "@anansi",
-      {
-        "nodeTarget": "10"
-      }
+      "@anansi"
     ]
   ]
 }
@@ -106,8 +104,7 @@ Supports TypeScript 4.5
 
 ### nodeTarget : ?string = undefined
 
-[top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` can
-also be used to set this.
+> Deprecated: Prefer using [top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` instead
 
 ```json
 {
