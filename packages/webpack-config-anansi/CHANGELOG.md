@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.3...@anansi/webpack-config@10.0.4) (2022-02-02)
+
+
+### 🐛 Bug Fix
+
+* Fixed compiler errors should dismiss overlay ([7a07b80](https://github.com/ntucker/anansi/commit/7a07b80997b31d0394c03b96b4575d6e4c4596d8))
+
+
+### 📦 Package
+
+* bump @svgr/webpack from 6.2.0 to 6.2.1 ([#1349](https://github.com/ntucker/anansi/issues/1349)) ([de0c01d](https://github.com/ntucker/anansi/commit/de0c01dd0f1d689ebfe1fcec594d518b5a6a564c))
+* bump core-js from 3.20.3 to 3.21.0 ([#1356](https://github.com/ntucker/anansi/issues/1356)) ([6bee03a](https://github.com/ntucker/anansi/commit/6bee03a5327d8475d0a7d571d5a537fedbd9941c))
+* bump postcss from 8.4.5 to 8.4.6 ([#1355](https://github.com/ntucker/anansi/issues/1355)) ([72d8f84](https://github.com/ntucker/anansi/commit/72d8f845b11a3b9f3eb391eb0ee1e5eaf6d39772))
+* bump postcss-preset-env from 7.2.3 to 7.3.0 ([#1343](https://github.com/ntucker/anansi/issues/1343)) ([257403d](https://github.com/ntucker/anansi/commit/257403d39e5e6235ab9ae94eccbd8ec971f08903))
+* bump terser-webpack-plugin from 5.3.0 to 5.3.1 ([#1350](https://github.com/ntucker/anansi/issues/1350)) ([525a3a8](https://github.com/ntucker/anansi/commit/525a3a864dd3d16a9f316fadf9a57df4ec5ab547))
+* bump webpack-remove-empty-scripts from 0.7.2 to 0.7.3 ([#1347](https://github.com/ntucker/anansi/issues/1347)) ([f4ca92d](https://github.com/ntucker/anansi/commit/f4ca92df6e8c27737b218de3439026f3b924345a))
+
+
+
 ### [10.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.2...@anansi/webpack-config@10.0.3) (2022-01-28)
 
 

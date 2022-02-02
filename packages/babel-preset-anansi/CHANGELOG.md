@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.23](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.22...@anansi/babel-preset@2.7.23) (2022-02-02)
+
+
+### 🐛 Bug Fix
+
+* If modules is forced off - don't default transform to esm version ([#1357](https://github.com/ntucker/anansi/issues/1357)) ([de341f7](https://github.com/ntucker/anansi/commit/de341f742bba36404935b7a801f46a32caa7c477))
+
+
+### 📦 Package
+
+* bump core-js-compat from 3.20.3 to 3.21.0 ([#1353](https://github.com/ntucker/anansi/issues/1353)) ([986fc68](https://github.com/ntucker/anansi/commit/986fc68b0c8b26c1b9998ac66afab841b5cf97b6))
+
+
+
 ### [2.7.22](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.21...@anansi/babel-preset@2.7.22) (2022-01-21)
 
 
