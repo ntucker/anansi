@@ -1,5 +1,5 @@
 import { useResource } from 'rest-hooks';
-import { RouteChildrenProps } from 'react-router';
+import { RouteChildrenProps } from 'react-router-dom';
 import { Typography } from 'antd';
 
 import { UserResource, Address } from 'data/resources';

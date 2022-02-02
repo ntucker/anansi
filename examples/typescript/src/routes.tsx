@@ -1,6 +1,10 @@
 import { memo } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
-import { RouteChildrenProps } from 'react-router';
+import {
+  Route,
+  Switch,
+  withRouter,
+  RouteChildrenProps,
+} from 'react-router-dom';
 
 import lazyPage from 'components/lazyPage';
 

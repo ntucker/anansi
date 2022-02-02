@@ -1,6 +1,6 @@
 import { PageHeader } from 'antd';
 import { useController, useResource } from 'rest-hooks';
-import { RouteChildrenProps } from 'react-router';
+import { RouteChildrenProps } from 'react-router-dom';
 
 import { PostResource } from 'data/resources';
 import itemRender from 'navigation/breadcrumbItemRenderer';
