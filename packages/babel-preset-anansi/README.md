@@ -106,6 +106,16 @@ Supports TypeScript 4.0
 
 ### nodeTarget : ?string = undefined
 
+[top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` can
+also be used to set this.
+
+```json
+{
+  "targets": { "node": "current" },
+  "presets": ["@anansi"]
+}
+```
+
 Will run to target node instead of browsers. Specify a [valid node string](https://babeljs.io/docs/en/babel-preset-env#targetsnode) like "current", or "6.15".
 
 If unset, will automatically target current node version when webpack is targetting node.
@@ -124,18 +134,19 @@ Use a [browserslist config](https://github.com/browserslist/browserslist#package
 
 Feel free to use the [anansi browserlist config](/packages/browserslist-config-anansi).
 
-### modules: string|false = false
+### modules: "amd" | "umd" | "systemjs" | "commonjs" | "cjs" | "auto" | false = false
 
-Can be used to override our default of false in non-testing environments
-in case you want babel to transform imports.
+Enable transformation of ES module syntax to another module type.
 
-Warning: something other than 'false' will disable HMR and 'tree shaking'
-in webpack
+By default this tries to infer if ESModules is supported and if so, keep ESM. If this detection isn't
+working correct, feel free to explicitly set.
 
 ### useESModules: boolean = !(env === 'test' || options.nodeTarget)
 
 This uses the es6 module version of [@babel/runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules).
 "This allows for smaller builds in module systems like webpack, since it doesn't need to preserve commonjs semantics."
+
+By default, tries to infer whether this can be used.
 
 Set this to false for maximum compatibility.
 
