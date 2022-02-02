@@ -223,6 +223,9 @@ function tryApplyUpdates(onHotUpdateSuccess) {
   }
 
   if (!isUpdateAvailable() || !canApplyUpdates()) {
+    if (module.hot.status() === 'check') {
+      onHotUpdateSuccess();
+    }
     return;
   }
 
