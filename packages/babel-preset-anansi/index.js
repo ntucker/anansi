@@ -23,6 +23,7 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
+  // we are targetting using in node if this is not `undefined`
   const nodeTarget = api.caller(caller => caller && caller.target === 'node')
     ? 'current'
     : undefined;
@@ -52,25 +53,37 @@ function buildPreset(api, options = {}) {
     resolver: { root: [], alias: {} },
     ...options,
   };
-  const modules =
-    env === 'test' || options.nodeTarget || babelNode
-      ? options.modules || (supportsModules ? false : 'auto')
-      : // if supportsModules is undefined or true then assume it can handle es modules.
-        options.modules || (supportsModules === false ? 'auto' : false);
-
   const nodeSupportsModules = semver.gte(
     options.nodeTarget === 'current' || !options.nodeTarget
       ? process.version
       : semver.valid(semver.coerce(options.nodeTarget)),
     '16.0.0',
   );
+  const modules =
+    env === 'test' || options.nodeTarget || babelNode
+      ? options.modules !== undefined
+        ? options.modules
+        : supportsModules || nodeSupportsModules
+        ? false
+        : 'auto'
+      : // if supportsModules is undefined or true then assume it can handle es modules.
+      options.modules !== undefined
+      ? options.modules
+      : supportsModules === false
+      ? 'auto'
+      : false;
 
   const useESModules =
-    options.useESModules === undefined
-      ? options.nodeTarget || babelNode
-        ? nodeSupportsModules
-        : true
-      : options.useESModules;
+    options.useESModules !== undefined
+      ? options.useESModules
+      : // when transpiling to commonjs, we should not use ESM version of babel runtime
+      modules === 'commonjs' ||
+        modules === 'cjs' ||
+        (modules === 'auto' && supportsModules === undefined)
+      ? false
+      : options.nodeTarget || babelNode
+      ? nodeSupportsModules
+      : true;
 
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
