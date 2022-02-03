@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.5...@anansi/webpack-config@10.0.6) (2022-02-03)
+
+
+### 🐛 Bug Fix
+
+* Compile error overlay dismiss when hot reload previously already occured ([ab34089](https://github.com/ntucker/anansi/commit/ab340894e5405abebc962587b9470c60928cf2c2))
+
+
+### 📦 Package
+
+* bump css-loader from 6.5.1 to 6.6.0 ([#1363](https://github.com/ntucker/anansi/issues/1363)) ([7ad4e24](https://github.com/ntucker/anansi/commit/7ad4e24c7beef888bb26a1ed67cf070717a72575))
+
+
+
 ### [10.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.4...@anansi/webpack-config@10.0.5) (2022-02-03)
 
 **Note:** Version bump only for package @anansi/webpack-config

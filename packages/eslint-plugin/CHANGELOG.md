@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.7](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.6...@anansi/eslint-plugin@0.12.7) (2022-02-03)
+
+
+### 📦 Package
+
+* Babel 7.17.0 ([1c35d00](https://github.com/ntucker/anansi/commit/1c35d00070c23facbdbbc90ced0e54beb694b3e6))
+
+
+
 ### [0.12.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.5...@anansi/eslint-plugin@0.12.6) (2022-02-02)
 
 

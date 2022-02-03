@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.24...@anansi/babel-preset@2.8.0) (2022-02-03)
+
+
+### 🚀 Features
+
+* Support top-level targets option ([#1358](https://github.com/ntucker/anansi/issues/1358)) ([48746df](https://github.com/ntucker/anansi/commit/48746df30d48cfd49b425d9ea26b719517c20cd5))
+
+
+### 📦 Package
+
+* Babel 7.17.0 ([1c35d00](https://github.com/ntucker/anansi/commit/1c35d00070c23facbdbbc90ced0e54beb694b3e6))
+
+
+
 ### [2.7.24](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.23...@anansi/babel-preset@2.7.24) (2022-02-03)
 
 
