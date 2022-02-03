@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.24](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.23...@anansi/babel-preset@2.7.24) (2022-02-03)
+
+
+### 💅 Enhancement
+
+* Only consider react-refresh for 'web' caller targets ([d1b1ed3](https://github.com/ntucker/anansi/commit/d1b1ed323048e5a260cd548bcec8c7944b78fdf6))
+
+
+### 🐛 Bug Fix
+
+* Modules with node ([0fcf036](https://github.com/ntucker/anansi/commit/0fcf036a5785ed8c1d64f94b778d71c8a96be402))
+
+
+
 ### [2.7.23](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.22...@anansi/babel-preset@2.7.23) (2022-02-02)
 
 
