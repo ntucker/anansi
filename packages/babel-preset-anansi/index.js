@@ -53,17 +53,11 @@ function buildPreset(api, options = {}) {
     resolver: { root: [], alias: {} },
     ...options,
   };
-  const nodeSupportsModules = semver.gte(
-    options.nodeTarget === 'current' || !options.nodeTarget
-      ? process.version
-      : semver.valid(semver.coerce(options.nodeTarget)),
-    '16.0.0',
-  );
   const modules =
     env === 'test' || options.nodeTarget || babelNode
       ? options.modules !== undefined
         ? options.modules
-        : supportsModules || nodeSupportsModules
+        : supportsModules
         ? false
         : 'auto'
       : // if supportsModules is undefined or true then assume it can handle es modules.
@@ -73,6 +67,12 @@ function buildPreset(api, options = {}) {
       ? 'auto'
       : false;
 
+  const nodeSupportsModules = semver.gte(
+    options.nodeTarget === 'current' || !options.nodeTarget
+      ? process.version
+      : semver.valid(semver.coerce(options.nodeTarget)),
+    '16.0.0',
+  );
   const useESModules =
     options.useESModules !== undefined
       ? options.useESModules
