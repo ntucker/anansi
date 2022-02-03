@@ -222,10 +222,10 @@ function tryApplyUpdates(onHotUpdateSuccess) {
     return;
   }
 
+  // we know it's hot, so dismiss error
+  onHotUpdateSuccess();
+
   if (!isUpdateAvailable() || !canApplyUpdates()) {
-    if (module.hot.status() === 'check') {
-      onHotUpdateSuccess();
-    }
     return;
   }
 
