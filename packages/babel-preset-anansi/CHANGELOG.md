@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.8.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.0...@anansi/babel-preset@2.8.1) (2022-02-03)
+
+
+### 🐛 Bug Fix
+
+* Target misconfig when nodeTarget is inferred ([86220c4](https://github.com/ntucker/anansi/commit/86220c491d0abee0326b89f8d663f651380aba58))
+
+
+
 ## [2.8.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.7.24...@anansi/babel-preset@2.8.0) (2022-02-03)
 
 
