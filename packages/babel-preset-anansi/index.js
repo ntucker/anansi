@@ -23,10 +23,9 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
+  const callerTarget = api.caller(caller => caller && caller.target);
   // we are targetting using in node if this is not `undefined`
-  const nodeTarget = api.caller(caller => caller && caller.target === 'node')
-    ? 'current'
-    : undefined;
+  const nodeTarget = callerTarget === 'node' ? 'current' : undefined;
   const hasJsxRuntime = Boolean(
     api.caller(
       caller => (!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime,
@@ -35,6 +34,7 @@ function buildPreset(api, options = {}) {
   const shouldHotReload =
     !babelNode &&
     !options.nodeTarget &&
+    callerCouldTargetWeb(callerTarget) &&
     process.env.NO_HOT_RELOAD !== 'true' &&
     process.env.NO_HOT_RELOAD !== true &&
     api.caller(caller => !caller || !caller.noHotReload);
@@ -360,3 +360,16 @@ function buildPreset(api, options = {}) {
 }
 
 module.exports = buildPreset;
+
+function callerCouldTargetWeb(target) {
+  // without a target set, we don't explicitly know what its attempting
+  if (target === undefined) return true;
+  if (Array.isArray(target)) {
+    return target.some(callerCouldTargetWeb);
+  }
+  // based on https://webpack.js.org/configuration/target/
+  return (
+    ['web', 'webworker', 'browserslist'].includes(target) ||
+    target.startsWith('es')
+  );
+}
