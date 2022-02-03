@@ -41,6 +41,8 @@ function buildPreset(api, options = {}) {
     ),
   );
 
+  const explicitNodeTarget = !!options.nodeTarget;
+
   options = {
     minify: false,
     typing: false,
@@ -264,7 +266,8 @@ function buildPreset(api, options = {}) {
       break;
   }
 
-  if (!options.nodeTarget && env === 'production') {
+  // only helps if tree shaking happens
+  if (supportsModules && env === 'production') {
     preset.plugins.unshift(
       require('babel-plugin-ramda').default,
       require('babel-plugin-lodash'),
@@ -272,7 +275,7 @@ function buildPreset(api, options = {}) {
   }
 
   let envOptions = {};
-  if (babelNode || env === 'test' || options.nodeTarget) {
+  if (babelNode || env === 'test' || explicitNodeTarget) {
     envOptions = {
       targets: {
         node: options.nodeTarget || 'current',
