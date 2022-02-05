@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.7...@anansi/webpack-config@10.0.8) (2022-02-05)
+
+
+### 🐛 Bug Fix
+
+* Include error overlay so newer buggy version isn't used ([c372399](https://github.com/ntucker/anansi/commit/c37239911d6618b4ea386956fa754a412012370e))
+
+
+### 📦 Package
+
+* bump postcss-preset-env from 7.3.0 to 7.3.1 ([#1367](https://github.com/ntucker/anansi/issues/1367)) ([b629e08](https://github.com/ntucker/anansi/commit/b629e083faa4618086c8efd746cb05509782ba17))
+
+
+
 ### [10.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.6...@anansi/webpack-config@10.0.7) (2022-02-03)
 
 **Note:** Version bump only for package @anansi/webpack-config
