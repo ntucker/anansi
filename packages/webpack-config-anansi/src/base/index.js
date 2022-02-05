@@ -60,10 +60,18 @@ export default function makeBaseConfig({
     output: {
       path: path.join(rootPath, buildDir),
       publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
-      filename: nohash ? '[name].js' : '[name]-[contenthash].js',
-      chunkFilename: nohash
-        ? '[name].chunk.js'
-        : '[name]-[contenthash].chunk.js',
+      filename:
+        nohash || mode !== 'production'
+          ? '[name].js'
+          : '[name]-[contenthash].js',
+      chunkFilename:
+        nohash || mode !== 'production'
+          ? '[name].chunk.js'
+          : '[name]-[contenthash].chunk.js',
+      assetModuleFilename:
+        nohash || mode !== 'production'
+          ? '[name][ext][query]'
+          : '[hash][ext][query]',
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     cache: {
@@ -121,7 +129,11 @@ export default function makeBaseConfig({
                   loader: require.resolve('worker-loader'),
                   options: {
                     inline: 'fallback',
-                    filename: nohash ? '[name].js' : '[name]-[contenthash].js',
+                    filename: nohash
+                      ? '[name].js'
+                      : mode === 'production'
+                      ? '[name]-[contenthash].js'
+                      : '[name].js',
                   },
                 },
                 generateBabelLoader({
@@ -180,7 +192,7 @@ export default function makeBaseConfig({
                       ? '[name].[ext]'
                       : mode === 'production'
                       ? '[name].[contenthash].[ext]'
-                      : '[path][contenthash].[ext]',
+                      : '[name].[ext]',
                   },
                 },
               ],
