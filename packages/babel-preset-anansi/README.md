@@ -65,13 +65,16 @@ In dev mode, if `react-refresh` is installed it will be enabled.
 In addition to providing good production/development/testing transformations; some additional non-standard features
 are included:
 
-### Stage 3
+### Stage 4
 
-- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
-- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
-- [Decorators](https://github.com/tc39/proposal-decorators)
 - [Module level await](https://github.com/tc39/proposal-top-level-await)
 - [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
+- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
+
+### Stage 3
+
+- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
+- [Decorators](https://github.com/tc39/proposal-decorators)
 
 ### Stage 2
 
