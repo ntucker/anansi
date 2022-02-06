@@ -34,6 +34,8 @@ export default function makeDevConfig(
   config.optimization = {
     splitChunks: false,
     emitOnErrors: false,
+    // https://webpack.js.org/guides/build-performance/#minimal-entry-chunk
+    runtimeChunk: true,
   };
 
   const watchIgnorePaths = [/(hot-update\.[^.]|\.map|s?css\.d\.ts)$/];
