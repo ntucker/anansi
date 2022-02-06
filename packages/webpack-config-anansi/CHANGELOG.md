@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.11...@anansi/webpack-config@10.0.12) (2022-02-06)
+
+
+### 🐛 Bug Fix
+
+* Some cases of hot reloading broke ([e66d4b5](https://github.com/ntucker/anansi/commit/e66d4b5319dd8d11fba00531cd7a0770de49ceca))
+
+
+
 ### [10.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.10...@anansi/webpack-config@10.0.11) (2022-02-06)
 
 **Note:** Version bump only for package @anansi/webpack-config
