@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.0.0...@anansi/webpack-config@11.1.0) (2022-02-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Importing scss file requires including the file
+extension
+
+### 🚀 Features
+
+* Add sassOptions ([#1373](https://github.com/ntucker/anansi/issues/1373)) ([5dd7e5d](https://github.com/ntucker/anansi/commit/5dd7e5d23c06deae9f661f7e2501524e4a93e20f))
+* dev-server https config via ENV ([#1372](https://github.com/ntucker/anansi/issues/1372)) ([0c528a2](https://github.com/ntucker/anansi/commit/0c528a2f0f3d6205371b4d019486e47d167843c6))
+
+
+### 💅 Enhancement
+
+* Expand webpack dev server header allowances ([3c7fe81](https://github.com/ntucker/anansi/commit/3c7fe818e9646eb17170bae7ae28159a3f980c29))
+* Ignore watching cache directories ([49676e2](https://github.com/ntucker/anansi/commit/49676e2d6b1a3d3889f36ab4fb26b3fb7340da69))
+* Only support TypeScript and default webpack extensions ([#1371](https://github.com/ntucker/anansi/issues/1371)) ([2ca7bd2](https://github.com/ntucker/anansi/commit/2ca7bd2b882914094a9dce036e9e50c0e53b00c9))
+
+
+### 🐛 Bug Fix
+
+* Some cases of hot reloading broke ([86cbf12](https://github.com/ntucker/anansi/commit/86cbf12287722352f08eed5aafcc108272692257))
+
+
+
 ## [11.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.9...@anansi/webpack-config@11.0.0) (2022-02-06)
 
 
