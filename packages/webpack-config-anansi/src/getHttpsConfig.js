@@ -61,7 +61,10 @@ export default function getHttpsConfig(appPath) {
     };
 
     validateKeyAndCerts({ ...config, keyFile, crtFile });
-    return config;
+    return {
+      type: 'spdy',
+      options: config,
+    };
   }
-  return isHttps;
+  return isHttps ? { type: 'spdy' } : 'http';
 }

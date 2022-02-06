@@ -58,7 +58,7 @@ export default function makeDevConfig(
   if (!argv?.target?.includes?.('node')) {
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
-  const https = getHttpsConfig(path.join(rootPath, basePath));
+  const server = getHttpsConfig(path.join(rootPath, basePath));
   config.devServer = {
     hot: true,
     compress: true,
@@ -68,7 +68,7 @@ export default function makeDevConfig(
       'Access-Control-Allow-Headers': '*',
     },
     allowedHosts: ['localhost', '127.0.0.1'],
-    https,
+    server,
     devMiddleware: {
       publicPath: config.output.publicPath,
       stats: {
