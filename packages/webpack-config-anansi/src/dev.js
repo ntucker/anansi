@@ -5,6 +5,7 @@ import path from 'path';
 import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
 import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlugin';
 import { getStyleRules } from './base';
+import getHttpsConfig from './getHttpsConfig';
 
 export default function makeDevConfig(
   baseConfig,
@@ -52,6 +53,8 @@ export default function makeDevConfig(
   if (!argv?.target?.includes?.('node')) {
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
+  const https = getHttpsConfig(path.join(rootPath, basePath));
+  console.log('https', https);
   config.devServer = {
     hot: true,
     compress: true,
@@ -61,6 +64,7 @@ export default function makeDevConfig(
       'Access-Control-Allow-Headers': '*',
     },
     allowedHosts: ['localhost', '127.0.0.1'],
+    https,
     devMiddleware: {
       publicPath: config.output.publicPath,
       stats: {
