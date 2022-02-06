@@ -58,7 +58,7 @@ export default function makeDevConfig(
   if (!argv?.target?.includes?.('node')) {
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
-  const server = getHttpsConfig(path.join(rootPath, basePath));
+  const server = getHttpsConfig(rootPath);
   config.devServer = {
     hot: true,
     compress: true,
