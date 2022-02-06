@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.8...@anansi/webpack-config@10.0.9) (2022-02-06)
+
+
+### 💅 Enhancement
+
+* Don't hash files in development ([5c7fea7](https://github.com/ntucker/anansi/commit/5c7fea7a60beb0c5ef6fa69418d9a61de1046cc4))
+* Improve rebuilds by keeping entry chunk tiny in devmode ([d73a5c8](https://github.com/ntucker/anansi/commit/d73a5c85d3148bf18c44e14f6703eced602e611d))
+* Improve worker pool performance due to node-sass bug ([c00ffe3](https://github.com/ntucker/anansi/commit/c00ffe39f6d030c9963e973285bf12fbacc6571d))
+* Remove more expensive webpack operations in devmode ([f23b763](https://github.com/ntucker/anansi/commit/f23b763604a89d019a6e17d820fc67ff6c2a5af0))
+* Remove pathinfo in dev mode to reduce GC pressure ([1162713](https://github.com/ntucker/anansi/commit/11627132f4b3e02163e25a3dda3165e254f3fbe7))
+* Speed up incrmeental builds ([86f4c34](https://github.com/ntucker/anansi/commit/86f4c34763f2a7d443da4f7a66b656fd1852f7ed))
+
+
+
 ### [10.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.7...@anansi/webpack-config@10.0.8) (2022-02-05)
 
 
