@@ -107,7 +107,7 @@ export default function makeStorybookConfigGenerator(baseConfig) {
               {
                 ...envConfig.module.rules[0].oneOf[1],
                 use: envConfig.module.rules[0].oneOf[1].use.filter(
-                  l => !/($|\/)thread-loader/g.test(l),
+                  l => !/($|\/)thread-loader/g.test(l.loader),
                 ),
               },
             ],
