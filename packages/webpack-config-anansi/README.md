@@ -349,6 +349,14 @@ Note: dev mode sets its own path based assets serving is completely controlled b
 Forms the second half of the [publicPath](https://webpack.js.org/guides/public-path/). Can be useful when assets are served in subdirectories as
 opposed to custom domains like in the case of CDNs.
 
+### HTTPS, SSL_CRT_FILE, SSL_KEY_FILE
+
+> Applies to webpack-dev-server only
+
+`HTTPS=true` enables self-signed cert
+
+`SSL_CRT_FILE` and `SSL_KEY_FILE` enable using certificates stored in files
+
 ### NO_HOT_RELOAD
 
 Setting to 'true' will disable all hot reloading functionality (only enabled by default in dev mode).
