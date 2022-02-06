@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.0...@anansi/webpack-config@11.1.1) (2022-02-06)
+
+
+### 💅 Enhancement
+
+* No longer use deprecated onBeforeSetupMiddleware ([76c630e](https://github.com/ntucker/anansi/commit/76c630e75e94b3cd76b654a58c854ae7994a243f))
+* Use http2 when SSL is enabled ([eef2053](https://github.com/ntucker/anansi/commit/eef20534eb01be2215f54463d4ae89f6f17d19f9))
+
+
+### 🐛 Bug Fix
+
+* Still allow globalStyleDir when sass is disabled ([35ef93e](https://github.com/ntucker/anansi/commit/35ef93e03bad7891a21ac6b047143686b655e965))
+
+
+
 ## [11.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.0.0...@anansi/webpack-config@11.1.0) (2022-02-06)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.1.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.12...@anansi/generator-js@7.1.13) (2022-02-06)
+
+
+### 🐛 Bug Fix
+
+* Still allow globalStyleDir when sass is disabled ([35ef93e](https://github.com/ntucker/anansi/commit/35ef93e03bad7891a21ac6b047143686b655e965))
+
+
+
 ### [7.1.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.11...@anansi/generator-js@7.1.12) (2022-02-06)
 
 
