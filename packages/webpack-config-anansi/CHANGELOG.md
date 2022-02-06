@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.9...@anansi/webpack-config@10.0.10) (2022-02-06)
+
+
+### 🐛 Bug Fix
+
+* Storybook integration (after threadloader update) ([b64445a](https://github.com/ntucker/anansi/commit/b64445a5686880505318a4e22d8f4e80472e21fa))
+
+
+
 ### [10.0.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.8...@anansi/webpack-config@10.0.9) (2022-02-06)
 
 
