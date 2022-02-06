@@ -32,7 +32,11 @@ export default function makeDevConfig(
   config.output.devtoolModuleFilenameTemplate = info =>
     path.resolve(info.absoluteResourcePath).replace(/\\/g, '/');
   config.optimization = {
+    // https://webpack.js.org/guides/build-performance/#avoid-extra-optimization-steps
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
     splitChunks: false,
+    // save perf when errors occur
     emitOnErrors: false,
     // https://webpack.js.org/guides/build-performance/#minimal-entry-chunk
     runtimeChunk: true,
