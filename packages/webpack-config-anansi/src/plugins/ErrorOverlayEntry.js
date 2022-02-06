@@ -223,7 +223,9 @@ function tryApplyUpdates(onHotUpdateSuccess) {
   }
 
   // we know it's hot, so dismiss error
-  onHotUpdateSuccess();
+  if (typeof onHotUpdateSuccess === 'function') {
+    onHotUpdateSuccess();
+  }
 
   if (!isUpdateAvailable() || !canApplyUpdates()) {
     return;
