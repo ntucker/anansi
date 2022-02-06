@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.1](https://github.com/ntucker/anansi/compare/example-linaria@4.0.0...example-linaria@4.0.1) (2022-02-06)
+
+
+### 📦 Package
+
+* bump @babel/plugin-transform-modules-commonjs from 7.16.7 to 7.16.8 ([#1247](https://github.com/ntucker/anansi/issues/1247)) ([5ea1452](https://github.com/ntucker/anansi/commit/5ea145262be91b77c4b299f86cf734d5098015a6))
+* bump @types/react-router-dom from 5.3.2 to 5.3.3 ([#1285](https://github.com/ntucker/anansi/issues/1285)) ([db292e4](https://github.com/ntucker/anansi/commit/db292e44a1ba70b843bef241c92c267d2d5a2dfc))
+* bump core-js from 3.20.2 to 3.20.3 ([#1280](https://github.com/ntucker/anansi/issues/1280)) ([31e90e5](https://github.com/ntucker/anansi/commit/31e90e5e5902a3dd1ae177219e54a9c8c97d7e7d))
+* bump core-js from 3.20.3 to 3.21.0 ([#1356](https://github.com/ntucker/anansi/issues/1356)) ([6bee03a](https://github.com/ntucker/anansi/commit/6bee03a5327d8475d0a7d571d5a537fedbd9941c))
+
+
+
 ## [4.0.0](https://github.com/ntucker/anansi/compare/example-linaria@3.0.21...example-linaria@4.0.0) (2022-01-06)
 
 

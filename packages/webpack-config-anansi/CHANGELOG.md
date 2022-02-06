@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.9...@anansi/webpack-config@11.0.0) (2022-02-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Sass implementation now uses https://github.com/sass/dart-sass
+
+### 🐛 Bug Fix
+
+* Storybook integration (after threadloader update) ([8fd07cd](https://github.com/ntucker/anansi/commit/8fd07cd24be7fafce3dd2f0c04587e173a437073))
+
+
+### 📦 Package
+
+* Switch from node-sass to dart-sass ([31717cd](https://github.com/ntucker/anansi/commit/31717cd49c128013765286f229b3fe07205f2fbc))
+
+
+
 ### [10.0.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@10.0.8...@anansi/webpack-config@10.0.9) (2022-02-06)
 
 

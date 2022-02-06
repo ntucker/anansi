@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/ntucker/anansi/compare/example-typescript@8.0.0...example-typescript@9.0.0) (2022-02-06)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Sass implementation now uses https://github.com/sass/dart-sass
+
+### 📦 Package
+
+* bump @types/node from 17.0.10 to 17.0.12 ([#1326](https://github.com/ntucker/anansi/issues/1326)) ([61baa65](https://github.com/ntucker/anansi/commit/61baa65edc0f4e21f7d785d3e20a3cc1c585709a))
+* bump @types/node from 17.0.12 to 17.0.13 ([#1329](https://github.com/ntucker/anansi/issues/1329)) ([9528642](https://github.com/ntucker/anansi/commit/95286429871010a3f276760897661ba330953be9))
+* bump @types/node from 17.0.13 to 17.0.14 ([#1352](https://github.com/ntucker/anansi/issues/1352)) ([f6f9180](https://github.com/ntucker/anansi/commit/f6f9180d928290e5006d7347008db15188721a18))
+* bump @types/node from 17.0.14 to 17.0.15 ([#1369](https://github.com/ntucker/anansi/issues/1369)) ([1de7442](https://github.com/ntucker/anansi/commit/1de74421a87b089899b3dfa5fdf4e3df7fa8f020))
+* bump @types/node from 17.0.8 to 17.0.10 ([#1287](https://github.com/ntucker/anansi/issues/1287)) ([23c309f](https://github.com/ntucker/anansi/commit/23c309f71ceb1a9b6c5ed186e695bb18cd0a1ecd))
+* bump @types/react-router-dom from 5.3.2 to 5.3.3 ([#1285](https://github.com/ntucker/anansi/issues/1285)) ([db292e4](https://github.com/ntucker/anansi/commit/db292e44a1ba70b843bef241c92c267d2d5a2dfc))
+* bump antd from 4.18.2 to 4.18.3 ([#1258](https://github.com/ntucker/anansi/issues/1258)) ([a22f8e6](https://github.com/ntucker/anansi/commit/a22f8e6ea0e4713edb65b0e50ef59a80fcffb0bc))
+* bump antd from 4.18.3 to 4.18.4 ([#1289](https://github.com/ntucker/anansi/issues/1289)) ([897818e](https://github.com/ntucker/anansi/commit/897818ef0efd5534ae1c3f1e6d4c97fb1f107a81))
+* bump antd from 4.18.4 to 4.18.5 ([#1321](https://github.com/ntucker/anansi/issues/1321)) ([2cd5326](https://github.com/ntucker/anansi/commit/2cd53262a1e10673ee1af626f533156ac4319406))
+* bump core-js from 3.20.2 to 3.20.3 ([#1280](https://github.com/ntucker/anansi/issues/1280)) ([31e90e5](https://github.com/ntucker/anansi/commit/31e90e5e5902a3dd1ae177219e54a9c8c97d7e7d))
+* bump core-js from 3.20.3 to 3.21.0 ([#1356](https://github.com/ntucker/anansi/issues/1356)) ([6bee03a](https://github.com/ntucker/anansi/commit/6bee03a5327d8475d0a7d571d5a537fedbd9941c))
+* bump jest from 27.4.6 to 27.4.7 ([#1243](https://github.com/ntucker/anansi/issues/1243)) ([aad0c23](https://github.com/ntucker/anansi/commit/aad0c23d7ce5675262acad162a4d38e9be51e05a))
+* storybook 6.4.18 ([23da8a7](https://github.com/ntucker/anansi/commit/23da8a7cbb2e3da81b1cf68ab92122f11b326cbb))
+* Switch from node-sass to dart-sass ([31717cd](https://github.com/ntucker/anansi/commit/31717cd49c128013765286f229b3fe07205f2fbc))
+
+
+
 ## [8.0.0](https://github.com/ntucker/anansi/compare/example-typescript@7.1.2...example-typescript@8.0.0) (2022-01-06)
 
 
