@@ -153,11 +153,7 @@ export default function makeBaseConfig({
               use: [
                 {
                   loader: require.resolve('thread-loader'),
-                  options: {
-                    // node-sass has a bug which blocks threads from the Node.js thread pool
-                    // https://webpack.js.org/guides/build-performance/#sass
-                    workerParallelJobs: 2,
-                  },
+                  options: {},
                 },
                 generateBabelLoader({
                   rootPath,
