@@ -80,7 +80,7 @@ export default function makeDevConfig(
     historyApiFallback: true,
     // TODO: add proxy options
   };
-  config.devtool = 'eval-cheap-module-source-map';
+  config.devtool = 'cheap-module-source-map';
   // if we know the port, force it in case this is encapsulated in another host
   if (argv.port) {
     config.output.publicPath = `http://localhost:${argv.port}${config.output.publicPath}`;
