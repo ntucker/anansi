@@ -43,7 +43,11 @@ export default function makeDevConfig(
     runtimeChunk: true,
   };
 
-  const watchIgnorePaths = [/(hot-update\.[^.]|\.map|s?css\.d\.ts)$/];
+  const watchIgnorePaths = [
+    /(hot-update\.[^.]|\.map|s?css\.d\.ts)$/,
+    path.join(rootPath, '.cache'),
+    path.join(rootPath, 'node_modules', '.cache'),
+  ];
   config.plugins = [
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.WatchIgnorePlugin({ paths: watchIgnorePaths }),
