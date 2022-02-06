@@ -54,10 +54,11 @@ export default function makeDevConfig(
   }
   config.devServer = {
     hot: true,
+    compress: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers':
-        'Origin, X-Requested-With, Content-Type, Accept',
+      'Access-Control-Allow-Methods': '*',
+      'Access-Control-Allow-Headers': '*',
     },
     allowedHosts: ['localhost', '127.0.0.1'],
     devMiddleware: {
