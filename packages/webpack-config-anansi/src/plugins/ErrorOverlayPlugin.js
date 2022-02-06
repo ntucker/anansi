@@ -19,12 +19,19 @@ export default class ErrorOverlayPlugin {
 
     compiler.hooks.afterResolvers.tap(className, ({ options }) => {
       if (devServerEnabled) {
-        const originalBefore = options.devServer.onBeforeSetupMiddleware;
-        options.devServer.onBeforeSetupMiddleware = devServer => {
+        const originalBefore = options.devServer.setupMiddlewares;
+        options.devServer.setupMiddlewares = (middlewares, devServer) => {
+          if (!devServer) {
+            throw new Error('webpack-dev-server is not defined');
+          }
+
           if (originalBefore) {
             originalBefore(devServer);
           }
-          devServer.app.use(errorOverlayMiddleware());
+
+          middlewares.unshift(errorOverlayMiddleware());
+
+          return middlewares;
         };
       }
     });

@@ -61,7 +61,9 @@ export default function makeBaseConfig({
       path: path.join(rootPath, buildDir),
       publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
       filename:
-        nohash || mode !== 'production'
+        mode === 'development'
+          ? 'App.js'
+          : nohash || mode !== 'production'
           ? '[name].js'
           : '[name]-[contenthash].js',
       chunkFilename:
