@@ -18,6 +18,7 @@ export default function makeDevConfig(
     argv = {},
     // eslint-disable-next-line no-unused-vars
     env = {},
+    sassOptions,
     sassResources,
     cssModulesOptions,
     globalStyleDir,
@@ -58,7 +59,6 @@ export default function makeDevConfig(
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
   const https = getHttpsConfig(path.join(rootPath, basePath));
-  console.log('https', https);
   config.devServer = {
     hot: true,
     compress: true,
@@ -140,6 +140,7 @@ export default function makeDevConfig(
       localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
       ...cssModulesOptions,
     },
+    sassOptions,
     sassResources,
     globalStyleDir,
     target: argv?.target,

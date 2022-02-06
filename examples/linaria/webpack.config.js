@@ -3,6 +3,7 @@ const { makeConfig } = require('@anansi/webpack-config');
 const options = {
   basePath: 'src',
   buildDir: 'dist/',
+  sassOptions: false,
 };
 
 const generateConfig = makeConfig(options);

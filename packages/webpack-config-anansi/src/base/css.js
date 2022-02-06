@@ -40,11 +40,11 @@ const getCSSLoaders = ({ mode, target }) => {
   return loaders;
 };
 
-const getSASSLoaders = ({ sassResources }) => {
+const getSASSLoaders = ({ sassResources, sassOptions }) => {
   const loaders = [
     {
       loader: require.resolve('sass-loader'),
-      options: { sassOptions: { outputStyle: 'expanded' } },
+      options: { sassOptions },
     },
   ];
   if (sassResources) {
@@ -64,6 +64,7 @@ export default function getStyleRules({
   libraryInclude = always(false),
   libraryExclude = always(false),
   cssModulesOptions = {},
+  sassOptions = { outputStyle: 'expanded' },
   sassResources,
   globalStyleDir,
   mode,
@@ -89,7 +90,8 @@ export default function getStyleRules({
     }
     return loader;
   });
-  const sassLoaders = getSASSLoaders({ sassResources });
+  const sassLoaders =
+    sassOptions === false ? [] : getSASSLoaders({ sassResources, sassOptions });
   const excludeCSSProcess = [libraryExclude];
 
   // global styles
@@ -101,7 +103,7 @@ export default function getStyleRules({
     test: /\.s?css$/i,
     oneOf: [
       // css modules (local styles)
-      {
+      sassOptions !== false && {
         test: /\.scss$/i,
         include: [absoluteBasePath, libraryInclude],
         exclude: excludeCSSProcess,
@@ -122,26 +124,28 @@ export default function getStyleRules({
         use: cssModuleLoaders,
       },
       // global styles
-      globalStyleDir !== false && {
-        test: /\.scss$/i,
-        include: [absoluteBasePath],
-        exclude: [
-          /\.module\.scss$/,
-          new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
-        ],
-        use: [...cssLoaders, ...sassLoaders],
-        // Don't consider CSS imports dead code even if the
-        // containing package claims to have no side effects.
-        // Remove this when webpack adds a warning or an error for this.
-        // See https://github.com/webpack/webpack/issues/6571
-        sideEffects: true,
-      },
-      globalStyleDir !== false && {
-        test: /\.module\.scss$/i,
-        include: [absoluteBasePath],
-        exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
-        use: [...cssModuleLoaders, ...sassLoaders],
-      },
+      sassOptions !== false &&
+        globalStyleDir !== false && {
+          test: /\.scss$/i,
+          include: [absoluteBasePath],
+          exclude: [
+            /\.module\.scss$/,
+            new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
+          ],
+          use: [...cssLoaders, ...sassLoaders],
+          // Don't consider CSS imports dead code even if the
+          // containing package claims to have no side effects.
+          // Remove this when webpack adds a warning or an error for this.
+          // See https://github.com/webpack/webpack/issues/6571
+          sideEffects: true,
+        },
+      sassOptions !== false &&
+        globalStyleDir !== false && {
+          test: /\.module\.scss$/i,
+          include: [absoluteBasePath],
+          exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
+          use: [...cssModuleLoaders, ...sassLoaders],
+        },
       // css-in-js like linaria do not use css-modules - 3beta.14 and below
       {
         test: /\.css$/i,

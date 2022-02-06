@@ -38,6 +38,8 @@ module.exports = { options };
 module.exports = makeConfig(options);
 ```
 
+</details>
+
 <details><summary><b>Advanced configuration /webpack.config.js</b></summary>
 
 ```javascript
@@ -509,6 +511,33 @@ Set to `false` to disable
 ### terserOptions
 
 Used to customize [terser](https://github.com/webpack-contrib/terser-webpack-plugin#options) in prod builds.
+
+### sassOptions
+
+`false` disables sass altogether.
+
+Otherwise, these [configure the sass-loader](https://github.com/webpack-contrib/sass-loader#options)
+
+For instance, using node-sass can be done like so:
+
+<details><summary><b>/webpack.config.js</b></summary>
+
+```javascript
+const { makeConfig } = require('@anansi/webpack-config');
+
+// See #options below
+const options = {
+  sassOptions: {
+    implementation: require("sass"),
+  }
+};
+
+module.exports = { options };
+
+module.exports = makeConfig(options);
+```
+
+</details>
 
 ### sassResources
 

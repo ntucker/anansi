@@ -2,7 +2,7 @@ import { getStyleRules } from './base';
 
 export default function makeNobuildConfig(
   baseConfig,
-  { rootPath, basePath, cssModulesOptions, globalStyleDir },
+  { rootPath, basePath, cssModulesOptions, globalStyleDir, sassOptions },
 ) {
   const config = { ...baseConfig };
   config.output = {
@@ -21,6 +21,7 @@ export default function makeNobuildConfig(
     rootPath,
     basePath,
     cssModulesOptions,
+    sassOptions,
     globalStyleDir,
   });
   config.module.rules = [...config.module.rules, styleRules];

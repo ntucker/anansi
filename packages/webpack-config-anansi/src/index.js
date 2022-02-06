@@ -38,6 +38,11 @@ export function makeConfig(options) {
       env,
     };
     // option validation done here
+    if ('sassOptions' in options && options.sassOptions === undefined) {
+      throw new Error(
+        'Undefined is not a valid option for sassOptions. To disable use `false`',
+      );
+    }
     if ('htmlOptions' in options && options.htmlOptions === undefined) {
       throw new Error(
         'Undefined is not a valid option for htmlOptions. To disable use `false`',

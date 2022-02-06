@@ -9,6 +9,7 @@ import { StrictOptions } from '@linaria/babel-preset';
 import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import type { TransformOptions } from '@babel/core';
+import type { Options as SassOptions } from 'sass-loader';
 
 export interface Options {
   rootPath?: string;
@@ -29,6 +30,7 @@ export interface Options {
   linariaOptions?: StrictOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
   globalStyleDir?: string | false;
+  sassOptions?: SassOptions | false;
   sassResources?: string[];
   cssModuleOptions?: any;
   fontPreload?: 'preload' | 'prefetch';
