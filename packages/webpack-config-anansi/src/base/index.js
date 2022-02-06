@@ -151,7 +151,14 @@ export default function makeBaseConfig({
               // TODO: Remove when we stop supporting linaria betas
               exclude: /\.linaria-cache/,
               use: [
-                require.resolve('thread-loader'),
+                {
+                  loader: require.resolve('thread-loader'),
+                  options: {
+                    // node-sass has a bug which blocks threads from the Node.js thread pool
+                    // https://webpack.js.org/guides/build-performance/#sass
+                    workerParallelJobs: 2,
+                  },
+                },
                 generateBabelLoader({
                   rootPath,
                   babelRoot,
