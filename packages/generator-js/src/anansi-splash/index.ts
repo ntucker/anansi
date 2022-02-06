@@ -39,7 +39,7 @@ module.exports = class extends BetterGenerator {
     } else {
       this.fs.copyTpl(
         this.templatePath('src/style/main.scss'),
-        this.destinationPath(this.config.get('rootPath'), 'style/main.scss'),
+        this.destinationPath(this.config.get('rootPath'), 'style/main.css'),
         this.config.getAll(),
         {},
       );

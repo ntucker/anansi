@@ -124,28 +124,26 @@ export default function getStyleRules({
         use: cssModuleLoaders,
       },
       // global styles
-      sassOptions !== false &&
-        globalStyleDir !== false && {
-          test: /\.scss$/i,
-          include: [absoluteBasePath],
-          exclude: [
-            /\.module\.scss$/,
-            new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
-          ],
-          use: [...cssLoaders, ...sassLoaders],
-          // Don't consider CSS imports dead code even if the
-          // containing package claims to have no side effects.
-          // Remove this when webpack adds a warning or an error for this.
-          // See https://github.com/webpack/webpack/issues/6571
-          sideEffects: true,
-        },
-      sassOptions !== false &&
-        globalStyleDir !== false && {
-          test: /\.module\.scss$/i,
-          include: [absoluteBasePath],
-          exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
-          use: [...cssModuleLoaders, ...sassLoaders],
-        },
+      globalStyleDir !== false && {
+        test: sassOptions === false ? /\.css$/i : /\.s?css$/i,
+        include: [absoluteBasePath],
+        exclude: [
+          sassOptions === false ? /\.module\.css$/i : /\.module\.s?css$/i,
+          new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`),
+        ],
+        use: [...cssLoaders, ...sassLoaders],
+        // Don't consider CSS imports dead code even if the
+        // containing package claims to have no side effects.
+        // Remove this when webpack adds a warning or an error for this.
+        // See https://github.com/webpack/webpack/issues/6571
+        sideEffects: true,
+      },
+      globalStyleDir !== false && {
+        test: sassOptions === false ? /\.module\.css$/i : /\.module\.s?css$/i,
+        include: [absoluteBasePath],
+        exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
+        use: [...cssModuleLoaders, ...sassLoaders],
+      },
       // css-in-js like linaria do not use css-modules - 3beta.14 and below
       {
         test: /\.css$/i,
