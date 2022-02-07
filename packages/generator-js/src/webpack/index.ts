@@ -1,3 +1,5 @@
+import execa from 'execa';
+
 import { BetterGenerator, InstallPeersMixin } from '../utils';
 
 module.exports = class WebpackGenerator extends (
@@ -39,6 +41,21 @@ module.exports = class WebpackGenerator extends (
 
     this.props = await this.prompt(prompts);
     this.config.set('style', this?.props?.style);
+
+    await this.createCert();
+  }
+
+  async createCert() {
+    const cwd = this.destinationRoot();
+    try {
+      await execa(`mkcert localhost 127.0.0.1`, [], {
+        cwd,
+        shell: true,
+      });
+      this.config.set('devssl', true);
+    } catch (e) {
+      this.config.set('devssl', false);
+    }
   }
 
   configuring() {

@@ -1,2 +1,3 @@
 .linaria-cache/
 .cache
+*.pem
