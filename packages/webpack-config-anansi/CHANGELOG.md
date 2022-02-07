@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.2...@anansi/webpack-config@11.1.3) (2022-02-07)
+
+
+### 🐛 Bug Fix
+
+* Fixed output name does not work with runtime entry ([3ab8c2f](https://github.com/ntucker/anansi/commit/3ab8c2f4f4a94374c0c6e3225127fd5a08bc8e0e))
+
+
+
 ### [11.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.1...@anansi/webpack-config@11.1.2) (2022-02-07)
 
 
