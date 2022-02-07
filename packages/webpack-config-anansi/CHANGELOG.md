@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.3...@anansi/webpack-config@11.1.4) (2022-02-07)
+
+
+### 📦 Package
+
+* @linaria/webpack5-loader to beta.17 ([#1374](https://github.com/ntucker/anansi/issues/1374)) ([8665ff0](https://github.com/ntucker/anansi/commit/8665ff049487f3af648ce14dc26fb57164d55cf6))
+
+
+
 ### [11.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.2...@anansi/webpack-config@11.1.3) (2022-02-07)
 
 
