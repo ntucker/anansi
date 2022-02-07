@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.1...@anansi/webpack-config@11.1.2) (2022-02-07)
+
+
+### 🐛 Bug Fix
+
+* devmode file override ([cbb553d](https://github.com/ntucker/anansi/commit/cbb553d211f77b4836cbc534301e86bb2f455c61))
+* Fix https cert path ([87160db](https://github.com/ntucker/anansi/commit/87160dbcb4afbd3f4f0a3ee8ee49889298305dd1))
+
+
+
 ### [11.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.0...@anansi/webpack-config@11.1.1) (2022-02-06)
 
 

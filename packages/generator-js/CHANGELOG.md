@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.13...@anansi/generator-js@7.2.0) (2022-02-07)
+
+
+### 🚀 Features
+
+* Use SSL in devmode when mkcert is installed ([171d162](https://github.com/ntucker/anansi/commit/171d162e260b1d0fd82457db2213fb594f333a13))
+
+
+### 🐛 Bug Fix
+
+* css import when using linaria ([ef00f36](https://github.com/ntucker/anansi/commit/ef00f36c74c8e6b28e575eab60198cafe36ff7dd))
+
+
+
 ### [7.1.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.12...@anansi/generator-js@7.1.13) (2022-02-06)
 
 
