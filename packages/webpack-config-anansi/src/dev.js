@@ -27,8 +27,6 @@ export default function makeDevConfig(
   const config = { ...baseConfig };
 
   config.mode = 'development';
-  config.output.filename = 'App.js';
-  config.output.chunkFilename = '[name].chunk.js';
   // https://webpack.js.org/guides/build-performance/#output-without-path-info
   config.output.pathinfo = false;
   config.output.devtoolModuleFilenameTemplate = info =>
