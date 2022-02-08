@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.8.1",
-    "rollup": "^2.67.0",
+    "rollup": "^2.67.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0"
   },
