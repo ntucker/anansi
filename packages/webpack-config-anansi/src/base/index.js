@@ -52,6 +52,10 @@ export default function makeBaseConfig({
   if (globalStyleDir) {
     modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
   }
+  const assetModuleFilename =
+    nohash || mode !== 'production'
+      ? '[name].[ext][query]'
+      : '[contenthash].[ext][query]';
   const config = {
     context: rootPath,
     entry: {
@@ -68,10 +72,7 @@ export default function makeBaseConfig({
         nohash || mode !== 'production'
           ? '[name].chunk.js'
           : '[name]-[contenthash].chunk.js',
-      assetModuleFilename:
-        nohash || mode !== 'production'
-          ? '[name][ext][query]'
-          : '[hash][ext][query]',
+      assetModuleFilename,
       globalObject: "(typeof self !== 'undefined' ? self : this)",
     },
     cache: {
@@ -191,11 +192,7 @@ export default function makeBaseConfig({
                 {
                   loader: require.resolve('file-loader'),
                   options: {
-                    name: nohash
-                      ? '[name].[ext]'
-                      : mode === 'production'
-                      ? '[name].[contenthash].[ext]'
-                      : '[name].[ext]',
+                    name: assetModuleFilename,
                   },
                 },
               ],
