@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.4...@anansi/webpack-config@11.1.5) (2022-02-09)
+
+
+### 🐛 Bug Fix
+
+* Linaria works with svg urls ([#1388](https://github.com/ntucker/anansi/issues/1388)) ([8d24f56](https://github.com/ntucker/anansi/commit/8d24f562ea5a0bc6401e7e705239fb803db4ac45))
+* Make svg naming consistent between svgr and non-svgr ([9828b17](https://github.com/ntucker/anansi/commit/9828b17847c325abf8ec14b14945fffabe2e233e))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.17.0 to 7.17.2 ([#1386](https://github.com/ntucker/anansi/issues/1386)) ([6b2fe59](https://github.com/ntucker/anansi/commit/6b2fe59ac1832c099285a896386e7ab9c5daff3f))
+
+
+
 ### [11.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.3...@anansi/webpack-config@11.1.4) (2022-02-07)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.8.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.1...@anansi/babel-preset@2.8.2) (2022-02-09)
+
+
+### 📦 Package
+
+* bump @babel/plugin-proposal-decorators from 7.17.0 to 7.17.2 ([#1387](https://github.com/ntucker/anansi/issues/1387)) ([a1758a0](https://github.com/ntucker/anansi/commit/a1758a05790b3bf2a0d2a45c8d1af47c5aa8b065))
+
+
+### 📝 Documentation
+
+* Update stage of TC39 feature support ([b896503](https://github.com/ntucker/anansi/commit/b896503e5320f170a0fedaee27a26021aebc739d))
+
+
+
 ### [2.8.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.0...@anansi/babel-preset@2.8.1) (2022-02-03)
 
 

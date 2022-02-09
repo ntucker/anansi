@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.2.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.2.0...@anansi/generator-js@7.2.1) (2022-02-09)
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.17.0 to 7.17.2 ([#1386](https://github.com/ntucker/anansi/issues/1386)) ([6b2fe59](https://github.com/ntucker/anansi/commit/6b2fe59ac1832c099285a896386e7ab9c5daff3f))
+* bump @types/node from 17.0.15 to 17.0.16 ([#1382](https://github.com/ntucker/anansi/issues/1382)) ([209591e](https://github.com/ntucker/anansi/commit/209591e509a24f406b80daf9a69d26524778fb70))
+* bump @types/yeoman-generator from 5.2.8 to 5.2.9 ([#1380](https://github.com/ntucker/anansi/issues/1380)) ([a5178a8](https://github.com/ntucker/anansi/commit/a5178a877f4039fe542f729107b7b04f68475d31))
+* bump jest from 27.4.7 to 27.5.1 ([#1383](https://github.com/ntucker/anansi/issues/1383)) ([d88b2cc](https://github.com/ntucker/anansi/commit/d88b2cc4a8630196d985801ca01e29d0315b1789))
+
+
+
 ## [7.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.1.13...@anansi/generator-js@7.2.0) (2022-02-07)
 
 
