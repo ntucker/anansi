@@ -3,6 +3,9 @@ import { css } from '@linaria/core';
 import { styled } from '@linaria/react';
 
 import MenuItem from 'MenuItem';
+import Media from 'Media';
+
+import AngleDownUrl from './angle-down-solid.svg';
 
 // Linaria seems very particular about what exactly you can interpolate
 const media = {
@@ -74,6 +77,11 @@ const App = () => (
       <Text>hello world!</Text>
       <MenuItem>hi</MenuItem>
     </Container>
+    <div>
+      <img src={AngleDownUrl} style={{ width: '1em' }} />{' '}
+      {/*<AngleDown style={{ width: '1em' }} />*/}
+    </div>
+    <Media />
   </>
 );
 

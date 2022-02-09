@@ -41,7 +41,7 @@ export default function makeBaseConfig({
     }
     extraJsLoaders = [
       {
-        loader: require.resolve('@linaria/webpack5-loader'),
+        loader: require.resolve('@ntucker/linaria-webpack5-loader'),
         options: linariaOptions,
       },
       ...extraJsLoaders,
