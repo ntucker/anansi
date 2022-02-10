@@ -1,6 +1,8 @@
 import { styled } from '@linaria/react';
 import type { ReactElement, ReactNode } from 'react';
 
+import constants from './myconstants';
+
 const MenuItemContainer = styled.div`
   width: 32px;
   height: 32px;
@@ -13,7 +15,7 @@ const IconContainer = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 16px;
-  color: #4b5563;
+  color: ${constants.cringe};
   background-color: #ffffff;
   transition: background-color 0.25s;
 
