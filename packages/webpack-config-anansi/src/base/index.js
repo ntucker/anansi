@@ -225,7 +225,8 @@ export default function makeBaseConfig({
     },
     resolve: {
       modules,
-      extensions: ['.ts', '.tsx', '...'],
+      // TODO: remove '.js', '.json', '.wasm' once '...' is well supported in plugins like linaria
+      extensions: ['.ts', '.tsx', '.js', '.json', '.wasm', '...'],
       fallback: NODE_ALIAS,
       plugins:
         tsconfigPathsOptions !== false
