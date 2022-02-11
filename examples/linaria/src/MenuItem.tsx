@@ -1,7 +1,7 @@
 import { styled } from '@linaria/react';
 import type { ReactElement, ReactNode } from 'react';
 
-import constants from './myconstants';
+import constants from 'myconstants';
 
 const MenuItemContainer = styled.div`
   width: 32px;

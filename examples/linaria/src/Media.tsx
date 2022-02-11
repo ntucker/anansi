@@ -1,6 +1,6 @@
 import { styled } from '@linaria/react';
 
-import constants from './myconstants';
+import constants from 'myconstants';
 
 const SvgContainer = styled.div`
   width: 32px;
@@ -9,9 +9,9 @@ const SvgContainer = styled.div`
   color: ${constants.black};
 `;
 
-export default function Media() {
+export default function Media(props: any) {
   return (
-    <div>
+    <div {...props}>
       <h3>
         Hello World <a href="https://true.io">True IO</a>
       </h3>

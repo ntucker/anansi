@@ -70,6 +70,10 @@ const header = css`
   text-transform: uppercase;
 `;
 
+const WrappedMedia = styled(Media)`
+  border: 4px solid green;
+`;
+
 const App = () => (
   <>
     <h1 className={header}>Linaria Test</h1>
@@ -81,7 +85,7 @@ const App = () => (
       <img src={AngleDownUrl} style={{ width: '1em' }} />{' '}
       {/*<AngleDown style={{ width: '1em' }} />*/}
     </div>
-    <Media />
+    <WrappedMedia />
   </>
 );
 
