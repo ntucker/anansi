@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.5...@anansi/webpack-config@11.1.6) (2022-02-11)
+
+
+### 🐛 Bug Fix
+
+* Add back default extensions explicitly for compatibility with linaria ([c5837cd](https://github.com/ntucker/anansi/commit/c5837cd9dee93663a0099162f3159b2812cca911))
+* Linaria uses anansi resolution rules when using JS variables ([16ab5cb](https://github.com/ntucker/anansi/commit/16ab5cb9a91764489082f8b51c026cdc0fa70566))
+
+
+
 ### [11.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.4...@anansi/webpack-config@11.1.5) (2022-02-09)
 
 
