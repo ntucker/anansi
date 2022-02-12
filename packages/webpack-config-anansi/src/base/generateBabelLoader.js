@@ -50,7 +50,7 @@ export function generateBabelLoader({
     loader: require.resolve('babel-loader'),
     options: {
       cwd,
-      cacheDirectory: path.resolve(rootPath, '.cache/babel-loader'),
+      cacheDirectory: true,
       cacheIdentifier,
       cacheCompression: mode === 'production',
       compact: mode === 'production',
