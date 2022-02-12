@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.6...@anansi/webpack-config@11.2.0) (2022-02-12)
+
+
+### 🚀 Features
+
+* WEBPACK_CACHE allows full cache type control ([450349f](https://github.com/ntucker/anansi/commit/450349f652fcb5efd9057f6b2ddc573e0ffa03e8))
+
+
+### 💅 Enhancement
+
+* Move linaria cache to node_modules/.cache ([60aaad0](https://github.com/ntucker/anansi/commit/60aaad0fe32b37ff220213dc9bf40b4f215ebc53))
+* Use default cache directories ([85b20ee](https://github.com/ntucker/anansi/commit/85b20ee21e502c83cf5de4518010e184c59537b5))
+
+
+### 🐛 Bug Fix
+
+* Support webcontainers like stackblitz ([#1392](https://github.com/ntucker/anansi/issues/1392)) ([a74f0c3](https://github.com/ntucker/anansi/commit/a74f0c35965038ac1d8a232507a1ad50c357fe9d))
+
+
+
 ### [11.1.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.5...@anansi/webpack-config@11.1.6) (2022-02-11)
 
 

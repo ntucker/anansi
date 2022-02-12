@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.2.1...@anansi/generator-js@7.3.0) (2022-02-12)
+
+
+### 🚀 Features
+
+* WEBPACK_CACHE allows full cache type control ([450349f](https://github.com/ntucker/anansi/commit/450349f652fcb5efd9057f6b2ddc573e0ffa03e8))
+
+
+### 📦 Package
+
+* bump @types/node from 17.0.16 to 17.0.17 ([#1389](https://github.com/ntucker/anansi/issues/1389)) ([96d46e1](https://github.com/ntucker/anansi/commit/96d46e1328592eee5367ab5c204a61f1fc5ab9c5))
+
+
+
 ### [7.2.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.2.0...@anansi/generator-js@7.2.1) (2022-02-09)
 
 
