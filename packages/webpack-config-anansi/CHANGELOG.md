@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.0...@anansi/webpack-config@11.2.1) (2022-02-12)
+
+
+### 🐛 Bug Fix
+
+* WEBPACK_CACHE='memory' ([cdc96e1](https://github.com/ntucker/anansi/commit/cdc96e1354bec9bf51e3135fcd937238b8cf0e91))
+
+
+
 ## [11.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.1.6...@anansi/webpack-config@11.2.0) (2022-02-12)
 
 
