@@ -7,6 +7,8 @@ import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlug
 import { getStyleRules } from './base';
 import getHttpsConfig from './getHttpsConfig';
 
+const chalk = require('react-dev-utils/chalk');
+
 export default function makeDevConfig(
   baseConfig,
   {
@@ -56,7 +58,12 @@ export default function makeDevConfig(
   if (!argv?.target?.includes?.('node')) {
     config.plugins.unshift(new HtmlWebpackPlugin(htmlOptions));
   }
-  const server = getHttpsConfig(rootPath);
+  let server = 'http';
+  try {
+    server = getHttpsConfig(rootPath);
+  } catch (e) {
+    console.warn(chalk.yellow('Falling back to http'));
+  }
   config.devServer = {
     hot: true,
     compress: true,
