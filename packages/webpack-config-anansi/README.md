@@ -363,9 +363,9 @@ opposed to custom domains like in the case of CDNs.
 
 Setting to 'true' will disable all hot reloading functionality (only enabled by default in dev mode).
 
-### WEBPACK_NO_CACHE
+### WEBPACK_CACHE: 'none' | 'memory' | 'filesystem'
 
-Setting to 'true' will disable webpack cache in production and use in-memory in development mode.
+Sets [webpack cache type](https://webpack.js.org/configuration/cache/).
 
 ## Options
 

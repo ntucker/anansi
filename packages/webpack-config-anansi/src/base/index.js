@@ -252,9 +252,14 @@ export default function makeBaseConfig({
   };
   if (
     process.env.WEBPACK_NO_CACHE === true ||
-    process.env.WEBPACK_NO_CACHE === 'true'
+    process.env.WEBPACK_NO_CACHE === 'true' ||
+    process.env.WEBPACK_CACHE === 'none'
   ) {
     delete config.cache;
+  } else if (process.env.WEBPACK_CACHE === 'memory') {
+    config.cache.type = 'memory';
+  } else if (process.env.WEBPACK_CACHE === 'filesystem') {
+    config.cache.type = 'filesystem';
   }
   return config;
 }
