@@ -166,10 +166,15 @@ export default function makeBaseConfig({
               // TODO: Remove when we stop supporting linaria betas
               exclude: /\.linaria-cache/,
               use: [
-                {
-                  loader: require.resolve('thread-loader'),
-                  options: {},
-                },
+                Object.prototype.hasOwnProperty.call(
+                  process.versions,
+                  'webcontainer',
+                )
+                  ? undefined
+                  : {
+                      loader: require.resolve('thread-loader'),
+                      options: {},
+                    },
                 generateBabelLoader({
                   rootPath,
                   babelRoot,
@@ -178,7 +183,7 @@ export default function makeBaseConfig({
                   babelLoaderOptions,
                 }),
                 ...extraJsLoaders,
-              ],
+              ].filter(l => l),
             },
           ],
         },
