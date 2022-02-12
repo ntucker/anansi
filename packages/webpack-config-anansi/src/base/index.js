@@ -262,7 +262,7 @@ export default function makeBaseConfig({
   ) {
     delete config.cache;
   } else if (process.env.WEBPACK_CACHE === 'memory') {
-    config.cache.type = 'memory';
+    config.cache = true;
   } else if (process.env.WEBPACK_CACHE === 'filesystem') {
     config.cache.type = 'filesystem';
   }
