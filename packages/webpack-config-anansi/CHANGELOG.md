@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.1...@anansi/webpack-config@11.2.2) (2022-02-12)
+
+
+### 💅 Enhancement
+
+* Graceful fallback to http if cert cannot be found ([f37c13a](https://github.com/ntucker/anansi/commit/f37c13a87ca1ca2de97cedd4b5523296cd3c684e))
+
+
+
 ### [11.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.0...@anansi/webpack-config@11.2.1) (2022-02-12)
 
 
