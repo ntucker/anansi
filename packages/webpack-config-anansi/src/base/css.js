@@ -147,8 +147,8 @@ export default function getStyleRules({
       // css-in-js like linaria do not use css-modules - 3beta.14 and below
       {
         test: /\.css$/i,
-        include: [rootPath],
-        exclude: [/node_modules/, absoluteBasePath, libraryInclude],
+        include: [/node_modules\/\.cache/],
+        exclude: [absoluteBasePath, libraryInclude],
         use: cssLoaders,
       },
       // package css

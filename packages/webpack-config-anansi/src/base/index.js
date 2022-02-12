@@ -7,6 +7,8 @@ import { ROOT_PATH } from './constants';
 import { NODE_ALIAS } from './node-polyfill';
 import { generateBabelLoader } from './generateBabelLoader';
 import { version } from '../../package.json';
+
+const findCacheDir = require('find-cache-dir');
 export { default as getStyleRules } from './css';
 export { ROOT_PATH };
 
@@ -45,6 +47,10 @@ export default function makeBaseConfig({
       linariaOptions = {
         sourceMap: mode !== 'production',
         cacheProvider: require.resolve('./linariaFileCache'),
+        cacheDirectory: findCacheDir({
+          name: `.linaria-cache`,
+          cwd: process.cwd(),
+        }),
       };
     }
     extraJsLoaders = [
