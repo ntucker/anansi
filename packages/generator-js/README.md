@@ -66,6 +66,7 @@ anansi add testing
 - [x] babel
 - [x] webpack
 - [x] storybook
+- [x] stackblitz (for demos)
 - [ ] precommit hooks
 
 ### React SPA:

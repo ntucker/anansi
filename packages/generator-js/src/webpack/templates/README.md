@@ -48,3 +48,7 @@ yarn pkgcheck
 yarn storybook
 ```
 <% } %>
+
+#### Share demo on Stackblitz
+
+https://stackblitz.com/github/<%= githubOrg %>/<%= appName %>
