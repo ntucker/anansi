@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.0...@anansi/generator-js@7.3.1) (2022-02-13)
+
+
+### 💅 Enhancement
+
+* Link to stackbliz demo in readme ([200dee7](https://github.com/ntucker/anansi/commit/200dee7018bcf5d84758f55534626b6da0b4131e))
+
+
+
 ## [7.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.2.1...@anansi/generator-js@7.3.0) (2022-02-12)
 
 
