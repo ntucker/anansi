@@ -77,6 +77,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     const dependencies: Record<string, string> = {
       'rest-hooks': '',
       '@rest-hooks/rest': '',
+      '@rest-hooks/core': '',
+      '@rest-hooks/endpoint': '',
       react: reactVersion,
       'react-dom': reactVersion,
     };
