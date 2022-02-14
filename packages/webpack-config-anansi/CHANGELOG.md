@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.2...@anansi/webpack-config@11.2.3) (2022-02-14)
+
+
+### 💅 Enhancement
+
+* Use yarn2 if corepack is enabled ([53abc42](https://github.com/ntucker/anansi/commit/53abc425e4380a0c9547dc1c4607cc82f4604113))
+
+
+
 ### [11.2.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.1...@anansi/webpack-config@11.2.2) (2022-02-12)
 
 

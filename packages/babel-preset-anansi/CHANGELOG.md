@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.8.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.2...@anansi/babel-preset@2.8.3) (2022-02-14)
+
+
+### 💅 Enhancement
+
+* Only apply ramda and lodash optimizations if installed ([edb0412](https://github.com/ntucker/anansi/commit/edb04122c1a5c41b724bc5248135b06befd09e71))
+
+
+
 ### [2.8.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.1...@anansi/babel-preset@2.8.2) (2022-02-09)
 
 

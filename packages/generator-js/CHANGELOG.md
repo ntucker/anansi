@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.1...@anansi/generator-js@7.3.2) (2022-02-14)
+
+
+### 💅 Enhancement
+
+* babel/runtime is needed ([5926396](https://github.com/ntucker/anansi/commit/5926396c5b2cf99f59e318834540de8f0c3150bc))
+* Use yarn2 if corepack is enabled ([53abc42](https://github.com/ntucker/anansi/commit/53abc425e4380a0c9547dc1c4607cc82f4604113))
+
+
+
 ### [7.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.0...@anansi/generator-js@7.3.1) (2022-02-13)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.26...@anansi/jest-preset@0.6.0) (2022-02-14)
+
+
+### 🚀 Features
+
+* Support pnp packaging ([48c1ab3](https://github.com/ntucker/anansi/commit/48c1ab3e07131af8e8e949276593d5e2507b7dbb))
+
+
+
 ### [0.5.26](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.5.25...@anansi/jest-preset@0.5.26) (2022-02-09)
 
 
