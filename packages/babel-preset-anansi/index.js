@@ -268,10 +268,15 @@ function buildPreset(api, options = {}) {
 
   // only helps if tree shaking happens
   if (supportsModules && env === 'production') {
-    preset.plugins.unshift(
-      require('babel-plugin-ramda').default,
-      require('babel-plugin-lodash'),
-    );
+    // only use these plugins if their respective library is installed
+    try {
+      require.resolve('ramda');
+      preset.plugins.unshift(require('babel-plugin-ramda').default);
+    } catch (e) {}
+    try {
+      require.resolve('lodash');
+      preset.plugins.unshift(require('babel-plugin-lodash'));
+    } catch (e) {}
   }
 
   let envOptions = {};

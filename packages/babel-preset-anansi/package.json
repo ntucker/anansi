@@ -35,6 +35,7 @@
   "dependencies": {
     "@anansi/ts-utils": "^0.2.4",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-class-static-block": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.17.2",
     "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.7",
@@ -70,7 +71,9 @@
     "babel-minify": "^0.5.1",
     "react-hot-loader": "^4.12.0",
     "react-refresh": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0",
-    "typescript": "^3.0.0 || ^4.0.0"
+    "typescript": "^3.0.0 || ^4.0.0",
+    "ramda": "*",
+    "lodash": "*"
   },
   "peerDependenciesMeta": {
     "babel-minify": {
@@ -86,6 +89,12 @@
       "optional": true
     },
     "typescript": {
+      "optional": true
+    },
+    "ramda": {
+      "optional": true
+    },
+    "lodash": {
       "optional": true
     }
   }
