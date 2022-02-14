@@ -50,6 +50,7 @@ module.exports = {
       '/node_modules/(?!@babel/runtime)',
       '\\.pnp\\.[^\\/]+$',
     ],
+    resolver: require.resolve(`jest-pnp-resolver`),
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
     coveragePathIgnorePatterns: ['node_modules'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'mjs', 'json'],
