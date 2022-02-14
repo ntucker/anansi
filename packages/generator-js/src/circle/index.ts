@@ -28,7 +28,7 @@ ${badges}`,
       this.templatePath('**'),
       this.destinationRoot(),
       {
-        nodeImage: this.options.nodeImage ?? 'circleci/node:14',
+        nodeImage: this.options.nodeImage ?? 'circleci/node:16',
         circleParallelism: this.options['circle-parallelism'],
         ...this.config.getAll(),
       },

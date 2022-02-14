@@ -19,13 +19,13 @@ jobs:
       - run:
           name: yarn install
           command: |
-            yarn config set cache-folder ~/.cache/yarn
-            yarn install --prefer-offline --frozen-lockfile
+            sudo corepack enable
+            yarn install --immutable
+            yarn prepare
       - save_cache:
           paths:
-            - node_modules
-            #- packages/*/node_modules
-            - ~/.cache/yarn
+            - .yarn/cache
+            - .yarn/install-state.gz
           key: v1-dependencies-{{ checksum "yarn.lock" }}
       - persist_to_workspace:
           root: ~/

@@ -5,5 +5,4 @@ scanner_configs:
 enforced_scanners:
   - RepoNotEmpty
   - NPMAudit
-  - YarnAudit
   - PatternSearch

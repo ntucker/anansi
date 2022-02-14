@@ -1,25 +1,24 @@
 {
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "examples/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
   "lint-staged": {
     "*.ts*": [
       "eslint --fix"
     ]
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "release": "lerna publish",
     "build": "lerna run build --stream",
     "build:clean": "lerna run build:clean --stream",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
-    "prepare": "husky install && yarn lerna run build --ignore 'example-*'"
+    "prepare": "husky install && yarn lerna run build --ignore 'example-*'",
+    "postinstall": "yarn prepare"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.7.24",
@@ -28,12 +27,6 @@
     "@babel/core": "^7.17.2",
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
-    "@storybook/addon-essentials": "^6.4.18",
-    "@storybook/addon-links": "^6.4.18",
-    "@storybook/addons": "^6.4.18",
-    "@storybook/builder-webpack5": "^6.4.18",
-    "@storybook/manager-webpack5": "^6.4.18",
-    "@storybook/react": "^6.4.18",
     "babel-loader": "8.2.3",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
@@ -48,7 +41,7 @@
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5",
-    "webpack": "^5.66.0",
+    "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
@@ -61,7 +54,7 @@
     "get-pkg-repo": "4.1.2",
     "@types/webpack": "^5.0.0",
     "immer": "^8.0.1",
-    "webpack": "^5.65.0",
+    "webpack": "^5.68.0",
     "css-loader": "^6.0.0",
     "dotenv-webpack": "^6.0.0",
     "html-webpack-plugin": "^5.0.0",
@@ -76,5 +69,6 @@
     "@types/react-dom": "^17.0.11",
     "react": "18.0.0-rc.0",
     "react-dom": "18.0.0-rc.0"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }

@@ -78,4 +78,3 @@ active_scanners:
   - Gosec
   - NPMAudit
   - NodeAudit
-  - YarnAudit

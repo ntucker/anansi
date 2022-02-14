@@ -44,7 +44,6 @@ module.exports = class TestingGenerator extends BetterGenerator {
         '@anansi/jest-preset',
         'jest',
         '@types/jest',
-        'cross-env',
       ]),
       await this.addDevDependencies({
         'react-test-renderer': reactVersion,

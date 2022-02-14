@@ -10,6 +10,7 @@
     "dev": "yarn run build:lib -w",
     "build:clean": "rimraf lib",
     "prepare": "yarn run build:clean && yarn run build",
+    "prepack": "yarn prepare",
     "lint": "eslint src"
   },
   "files": [
@@ -147,16 +148,10 @@
     "@babel/core": {
       "optional": true
     },
-    "@linaria/babel-preset": {
-      "optional": true
-    },
-    "react": {
-      "optional": true
-    },
-    "react-refresh": {
-      "optional": true
-    },
     "@hot-loader/react-dom": {
+      "optional": true
+    },
+    "@linaria/babel-preset": {
       "optional": true
     },
     "@storybook/react": {
@@ -165,13 +160,19 @@
     "node-sass": {
       "optional": true
     },
+    "react": {
+      "optional": true
+    },
+    "react-refresh": {
+      "optional": true
+    },
     "svgo": {
       "optional": true
     },
-    "webpack-dev-server": {
+    "webpack-cli": {
       "optional": true
     },
-    "webpack-cli": {
+    "webpack-dev-server": {
       "optional": true
     }
   }

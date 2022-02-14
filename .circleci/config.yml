@@ -7,7 +7,7 @@ jobs:
   build:
     docker: &docker
       # specify the version you desire here
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     steps:
       - checkout
@@ -15,23 +15,22 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v5-dependencies-{{ checksum "yarn.lock" }}
+            - v6-dependencies-{{ checksum "yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - v5-dependencies-
+            - v6-dependencies-
 
       - run:
           name: yarn install
           command: |
-            yarn config set cache-folder ~/.cache/yarn
-            yarn install --prefer-offline --frozen-lockfile
+            sudo corepack enable
+            yarn install --immutable
+            yarn prepare
 
       - save_cache:
           paths:
-            - node_modules
-            - packages/*/node_modules
-            - examples/*/node_modules
-            - ~/.cache/yarn
-          key: v5-dependencies-{{ checksum "yarn.lock" }}
+            - .yarn/cache
+            - .yarn/install-state.gz
+          key: v6-dependencies-{{ checksum "yarn.lock" }}
 
       - persist_to_workspace:
           root: ~/
