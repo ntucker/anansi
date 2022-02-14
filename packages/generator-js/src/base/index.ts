@@ -112,5 +112,6 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       '@anansi/browserslist-config',
       'typescript',
     ]);
+    await this.addDependencies(['@babel/runtime']);
   }
 }
