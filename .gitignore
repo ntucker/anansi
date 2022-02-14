@@ -8,3 +8,11 @@ npm-debug.log*
 learna-debug.log
 dist
 .cache
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

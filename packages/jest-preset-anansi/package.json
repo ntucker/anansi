@@ -46,10 +46,13 @@
     "build": "yarn run build:lib && yarn run copyfiles",
     "build:clean": "rimraf lib",
     "dev": "yarn run build:lib -w",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "prepack": "yarn prepare"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.8.3"
+    "@anansi/babel-preset": "^2.8.3",
+    "copyfiles": "^2.1.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@anansi/ts-utils": "^0.2.4",

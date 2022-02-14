@@ -11,10 +11,12 @@ jobs:
       - run: mkdir /tmp/artifacts
       - uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
       - name: install and build
         run: |
-          yarn
+          sudo corepack enable
+          yarn install --immutable
+          yarn prepare
           yarn build:sizecompare
       - name: run Lighthouse CI
         working-directory: ./examples/typescript

@@ -26,6 +26,7 @@
     "dev": "yarn build:lib -w",
     "build:clean": "rimraf dist lib",
     "prepare": "yarn run build:clean && yarn run build",
+    "prepack": "yarn prepare",
     "lint": "eslint src/*.ts",
     "type-check": "yarn run tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
@@ -43,9 +44,11 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.8.3",
+    "rimraf": "^3.0.2",
     "rollup": "^2.67.2",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0"
+    "rollup-plugin-commonjs": "^10.1.0",
+    "typescript": "^4.5.5"
   },
   "bugs": {
     "url": "https://github.com/ntucker/anansi/issues"
