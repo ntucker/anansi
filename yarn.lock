@@ -4257,14 +4257,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@rest-hooks/rest@npm:3.0.1"
+"@rest-hooks/rest@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@rest-hooks/rest@npm:3.0.2"
   dependencies:
     "@babel/runtime": ^7.7.2
   peerDependencies:
     "@rest-hooks/endpoint": ^2.0.0
-  checksum: 7b893f3dee6506d1987a3e9c7423582033f48e7f7e097e69f4b7c0745dc82f844c069b84f898b51b4949ca39bed7b8eb304278c02b5cee4dffa8e1dfb5349ed4
+  checksum: c64f550a9f2ac9796d048646cccffe4ea5a9c3fdf59351b86ee877df961556660e804dd3baa619a511af335c86adeae4165e28c4d5803a04aee9568ffa0e3065
   languageName: node
   linkType: hard
 
@@ -12471,7 +12471,7 @@ __metadata:
     "@anansi/webpack-config": ^11.0.0
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": ^0.1.1
-    "@rest-hooks/rest": ^3.0.1
+    "@rest-hooks/rest": 3.0.2
     "@rest-hooks/test": ^7.1.3
     "@storybook/addon-essentials": ^6.4.18
     "@storybook/addon-links": ^6.4.18
