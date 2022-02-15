@@ -1,31 +1,5 @@
 {
-  "extends": ["group:allNonMajor", "group:definitelyTyped"],
-  "packageRules": [
-    {
-      "groupName": "storybook",
-      "matchPackagePrefixes": [
-        "@storybook/"
-      ]
-    },
-    {
-      "groupName": "babel",
-      "matchPackagePrefixes": [
-        "@babel/"
-      ]
-    },
-    {
-      "groupName": "linaria",
-      "matchPackagePrefixes": [
-        "@linaria/"
-      ]
-    },
-    {
-      "groupName": "rest hooks",
-      "matchPackagePrefixes": [
-        "@rest-hooks/"
-      ]
-    }
-  ],
+  "extends": ["group:allNonMajor", "group:monorepos"],
 	"assigneesFromCodeOwners": true,
 	"commitMessagePrefix": "pkg: ",
 	"commitMessageTopic": "`{{depName}}`",
