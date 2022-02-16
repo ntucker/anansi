@@ -1,6 +1,6 @@
 {
   "name": "@anansi/jest-preset",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Jest Preset for Anansi",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/jest-preset-anansi#readme",
   "repository": {
@@ -50,13 +50,13 @@
     "prepack": "yarn prepare"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.8.3",
+    "@anansi/babel-preset": "^2.8.4",
     "@babel/core": "7.17.4",
     "copyfiles": "^2.1.1",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@anansi/ts-utils": "^0.2.4",
+    "@anansi/ts-utils": "^0.2.5",
     "babel-jest": "^27.5.1",
     "core-js": "^3.21.0",
     "identity-obj-proxy": "^3.0.0",

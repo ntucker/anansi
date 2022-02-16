@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.3...@anansi/webpack-config@11.2.4) (2022-02-16)
+
+
+### 💅 Enhancement
+
+* Remove thread-loader ([#1421](https://github.com/ntucker/anansi/issues/1421)) ([b6adba5](https://github.com/ntucker/anansi/commit/b6adba589937800bb0b9140866399715ce59c76a))
+
+
+### 📦 Package
+
+* Update `@babel/core` to v7.17.4 ([#1420](https://github.com/ntucker/anansi/issues/1420)) ([16864d0](https://github.com/ntucker/anansi/commit/16864d039dafc73b139fe8107b42461e1ca3f314))
+* Update `@hot-loader/react-dom` to v17 ([#1417](https://github.com/ntucker/anansi/issues/1417)) ([bb63701](https://github.com/ntucker/anansi/commit/bb6370125d51fbf3eef386554459fae7e74a1a3f))
+* Update babel monorepo to v7.17.3 ([#1416](https://github.com/ntucker/anansi/issues/1416)) ([606e69f](https://github.com/ntucker/anansi/commit/606e69f48546f982904f0649def9b6c8adc051e9))
+
+
+
 ### [11.2.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.2...@anansi/webpack-config@11.2.3) (2022-02-14)
 
 

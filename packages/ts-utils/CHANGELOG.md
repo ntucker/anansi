@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.5](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.4...@anansi/ts-utils@0.2.5) (2022-02-16)
+
+
+### 📦 Package
+
+* Update `rimraf` to v3 ([#1414](https://github.com/ntucker/anansi/issues/1414)) ([7aab5ee](https://github.com/ntucker/anansi/commit/7aab5eecef0249e45158df7430102be081d5fcdf))
+
+
+
 ### [0.2.4](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.3...@anansi/ts-utils@0.2.4) (2021-04-24)
 
 

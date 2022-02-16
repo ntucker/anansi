@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.2...@anansi/generator-js@7.3.3) (2022-02-16)
+
+
+### 💅 Enhancement
+
+* Explicit dependencies ([60d6fa0](https://github.com/ntucker/anansi/commit/60d6fa012b1e1d05a25e8a861971ad11175d9773))
+* Include package correction for @linaria/babel-preset ([225bf4d](https://github.com/ntucker/anansi/commit/225bf4dc819a6f636c0ed3c35f711dc8180234b6))
+
+
+### 📦 Package
+
+* Update `pacote` to v13 ([#1412](https://github.com/ntucker/anansi/issues/1412)) ([c168400](https://github.com/ntucker/anansi/commit/c16840067f61a4e7f72aa52b3086fd2c4daad99e))
+* Update all non-major dependencies ([#1419](https://github.com/ntucker/anansi/issues/1419)) ([dbe0dad](https://github.com/ntucker/anansi/commit/dbe0dad880f0de133a5b399d0bc680629d8488df))
+
+
+
 ### [7.3.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.1...@anansi/generator-js@7.3.2) (2022-02-14)
 
 

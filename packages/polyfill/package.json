@@ -1,6 +1,6 @@
 {
   "name": "@anansi/polyfill",
-  "version": "1.0.99",
+  "version": "1.0.100",
   "description": "Feature detection triggered dynamic polyfills",
   "sideEffects": false,
   "keywords": [
@@ -43,7 +43,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^2.8.3",
+    "@anansi/babel-preset": "^2.8.4",
     "rimraf": "^3.0.2",
     "rollup": "^2.67.2",
     "rollup-plugin-babel": "^4.3.3",
