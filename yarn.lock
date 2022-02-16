@@ -25,11 +25,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@^2.7.20, @anansi/babel-preset@^2.7.24, @anansi/babel-preset@^2.8.3, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
+"@anansi/babel-preset@^2.7.20, @anansi/babel-preset@^2.7.24, @anansi/babel-preset@^2.8.4, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
-    "@anansi/ts-utils": ^0.2.4
+    "@anansi/ts-utils": ^0.2.5
     "@babel/plugin-proposal-class-properties": ^7.16.7
     "@babel/plugin-proposal-class-static-block": ^7.16.7
     "@babel/plugin-proposal-decorators": ^7.17.2
@@ -100,7 +100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/generator-js": ^7.3.2
+    "@anansi/generator-js": ^7.3.3
     bin-version-check: ^4.0.0
     chalk: ^4.1.2
     commander: ^9.0.0
@@ -146,11 +146,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/generator-js@^7.3.2, @anansi/generator-js@workspace:packages/generator-js":
+"@anansi/generator-js@^7.3.3, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
-    "@anansi/babel-preset": ^2.8.3
+    "@anansi/babel-preset": ^2.8.4
     "@babel/core": 7.17.4
     "@babel/runtime": ^7.17.2
     "@types/ejs": ^3.1.0
@@ -182,8 +182,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
-    "@anansi/babel-preset": ^2.8.3
-    "@anansi/ts-utils": ^0.2.4
+    "@anansi/babel-preset": ^2.8.4
+    "@anansi/ts-utils": ^0.2.5
     "@babel/core": 7.17.4
     babel-jest: ^27.5.1
     copyfiles: ^2.1.1
@@ -210,7 +210,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/polyfill@workspace:packages/polyfill"
   dependencies:
-    "@anansi/babel-preset": ^2.8.3
+    "@anansi/babel-preset": ^2.8.4
     "@types/intl": ^1.2.0
     core-js: ^3.21.0
     intl: ^1.2.5
@@ -224,7 +224,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/ts-utils@^0.2.4, @anansi/ts-utils@workspace:packages/ts-utils":
+"@anansi/ts-utils@^0.2.5, @anansi/ts-utils@workspace:packages/ts-utils":
   version: 0.0.0-use.local
   resolution: "@anansi/ts-utils@workspace:packages/ts-utils"
   dependencies:
@@ -238,7 +238,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
-    "@anansi/babel-preset": ^2.8.3
+    "@anansi/babel-preset": ^2.8.4
     "@babel/core": 7.17.4
     "@babel/runtime": ^7.17.2
     "@ntucker/linaria-webpack5-loader": 3.0.0-beta.17
