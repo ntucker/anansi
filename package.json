@@ -17,8 +17,7 @@
     "build": "lerna run build --stream",
     "build:clean": "lerna run build:clean --stream",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
-    "prepare": "husky install && yarn lerna run build --ignore 'example-*'",
-    "postinstall": "yarn prepare"
+    "prepare": "husky install && yarn lerna run build --ignore 'example-*'"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.7.24",
