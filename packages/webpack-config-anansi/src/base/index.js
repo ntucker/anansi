@@ -40,6 +40,10 @@ export default function makeBaseConfig({
     // TODO: remove '.js', '.json', '.wasm' once '...' is well supported in plugins like linaria
     extensions: ['.ts', '.tsx', '.js', '.json', '.wasm', '...'],
     fallback: NODE_ALIAS,
+    plugins:
+      tsconfigPathsOptions !== false
+        ? [new TsconfigPathsPlugin(tsconfigPathsOptions)]
+        : [],
   };
 
   if (linariaOptions !== false) {
@@ -56,18 +60,11 @@ export default function makeBaseConfig({
     extraJsLoaders = [
       {
         loader: require.resolve('@ntucker/linaria-webpack5-loader'),
-        options: { resolveOptions: { ...resolve }, ...linariaOptions },
+        options: { ...linariaOptions },
       },
       ...extraJsLoaders,
     ];
   }
-  // TODO: enhance-resolve is somehow getting spread of this instead of the instance, which
-  // makes the plugin break when using linaria
-  // Once this is resolved, we can allow this interaction with linaria files
-  resolve.plugins =
-    tsconfigPathsOptions !== false
-      ? [new TsconfigPathsPlugin(tsconfigPathsOptions)]
-      : [];
 
   if (globalStyleDir) {
     modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
@@ -171,15 +168,6 @@ export default function makeBaseConfig({
               // TODO: Remove when we stop supporting linaria betas
               exclude: /\.linaria-cache/,
               use: [
-                Object.prototype.hasOwnProperty.call(
-                  process.versions,
-                  'webcontainer',
-                )
-                  ? undefined
-                  : {
-                      loader: require.resolve('thread-loader'),
-                      options: {},
-                    },
                 generateBabelLoader({
                   rootPath,
                   babelRoot,

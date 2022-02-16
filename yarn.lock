@@ -286,7 +286,6 @@ __metadata:
     svgo: ^2.8.0
     svgo-loader: ^3.0.0
     terser-webpack-plugin: ^5.3.1
-    thread-loader: ^3.0.4
     timers-browserify: ^2.0.12
     tsconfig-paths-webpack-plugin: ^3.5.2
     tty-browserify: ^0.0.1
@@ -17611,7 +17610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-runner@npm:^4.1.0, loader-runner@npm:^4.2.0":
+"loader-runner@npm:^4.2.0":
   version: 4.2.0
   resolution: "loader-runner@npm:4.2.0"
   checksum: e61aea8b6904b8af53d9de6f0484da86c462c0001f4511bedc837cec63deb9475cea813db62f702cd7930420ccb0e75c78112270ca5c8b61b374294f53c0cb3a
@@ -26121,21 +26120,6 @@ __metadata:
   version: 5.14.0
   resolution: "textextensions@npm:5.14.0"
   checksum: 1f610ccf2a2c1445fb7156c23b5c8defd608c74e8047df18abd4b9ee44c74d29b453ba104d14c53c91f9026670f7c923114cd12200ee5ec458cc518fd0798c74
-  languageName: node
-  linkType: hard
-
-"thread-loader@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "thread-loader@npm:3.0.4"
-  dependencies:
-    json-parse-better-errors: ^1.0.2
-    loader-runner: ^4.1.0
-    loader-utils: ^2.0.0
-    neo-async: ^2.6.2
-    schema-utils: ^3.0.0
-  peerDependencies:
-    webpack: ^4.27.0 || ^5.0.0
-  checksum: 832edc6eac46df148465feb8d3e3e67a30ea82d1d29401ca1c6461d1a0386c6d1fed05739887fc9c69a7d189a68ca1686eaad214f283825e355de9b42663bcf0
   languageName: node
   linkType: hard
 
