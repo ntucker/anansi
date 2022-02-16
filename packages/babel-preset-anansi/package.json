@@ -69,6 +69,7 @@
     "@babel/core": "^7.12.0",
     "@babel/runtime": "^7.7.0",
     "babel-minify": "^0.5.1",
+    "core-js": "*",
     "lodash": "*",
     "ramda": "*",
     "react-hot-loader": "^4.12.0",
@@ -80,6 +81,9 @@
       "optional": true
     },
     "babel-minify": {
+      "optional": true
+    },
+    "core-js": {
       "optional": true
     },
     "lodash": {

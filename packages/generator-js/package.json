@@ -45,6 +45,7 @@
   ],
   "devDependencies": {
     "@anansi/babel-preset": "^2.8.3",
+    "@babel/core": "7.17.4",
     "@types/ejs": "^3.1.0",
     "@types/gulp-filter": "^3.0.34",
     "@types/mem-fs-editor": "^7.0.1",
@@ -67,8 +68,10 @@
     "chalk": "^4.1.2",
     "core-js": "^3.21.0",
     "ejs": "^3.1.5",
+    "execa": "^5.1.1",
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
+    "mem-fs-editor": "^9.4.0",
     "pacote": "^13.0.0",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.6.1"
