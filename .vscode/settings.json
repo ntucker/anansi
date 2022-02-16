@@ -1,6 +1,7 @@
 
 {
   "eslint.nodePath": "node_modules",
+  "eslint.runtime": "node",
   "typescript.format.enable": true,
   "typescript.validate.enable": true,
   "typescript.tsdk": "node_modules/typescript/lib",
