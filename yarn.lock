@@ -151,7 +151,7 @@ __metadata:
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
     "@anansi/babel-preset": ^2.8.4
-    "@babel/core": 7.17.4
+    "@babel/core": 7.17.5
     "@babel/runtime": ^7.17.2
     "@types/ejs": ^3.1.0
     "@types/gulp-filter": ^3.0.34
@@ -184,7 +184,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^2.8.4
     "@anansi/ts-utils": ^0.2.5
-    "@babel/core": 7.17.4
+    "@babel/core": 7.17.5
     babel-jest: ^27.5.1
     copyfiles: ^2.1.1
     core-js: ^3.21.0
@@ -239,7 +239,7 @@ __metadata:
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
     "@anansi/babel-preset": ^2.8.4
-    "@babel/core": 7.17.4
+    "@babel/core": 7.17.5
     "@babel/runtime": ^7.17.2
     "@ntucker/linaria-webpack5-loader": 3.0.0-beta.17
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.4
@@ -461,9 +461,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.17.4":
-  version: 7.17.4
-  resolution: "@babel/core@npm:7.17.4"
+"@babel/core@npm:7.17.5":
+  version: 7.17.5
+  resolution: "@babel/core@npm:7.17.5"
   dependencies:
     "@ampproject/remapping": ^2.1.0
     "@babel/code-frame": ^7.16.7
@@ -480,7 +480,7 @@ __metadata:
     gensync: ^1.0.0-beta.2
     json5: ^2.1.2
     semver: ^6.3.0
-  checksum: d367259b188fde69493fea407a1c134d6bb7a0d859cbe2c0f0d1f2464143bdee0fdfd3c8d45a2cdabdf321b95dd392cbc4f55e2d0c41a842a581d37fee4cef64
+  checksum: c5e7dddb4feaacb91175d22a6edc8e93804242328a82b80732c6e84a0647bc0a9c9d5b05f3ce13138b8e59bf7aba4ff9f7b7446302f141f243ba51df02c318a5
   languageName: node
   linkType: hard
 
@@ -24166,7 +24166,7 @@ __metadata:
     "@anansi/babel-preset": ^2.7.24
     "@anansi/eslint-plugin": ^0.12.0
     "@babel/cli": 7.17.3
-    "@babel/core": 7.17.4
+    "@babel/core": 7.17.5
     "@commitlint/cli": 16.2.1
     "@commitlint/config-conventional": 16.2.1
     "@types/react": ^17.0.39
