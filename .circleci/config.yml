@@ -24,7 +24,7 @@ jobs:
           command: |
             sudo corepack enable
             yarn install --immutable
-            yarn prepare
+            yarn build:pkg
 
       - save_cache:
           paths:

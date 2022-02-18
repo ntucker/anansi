@@ -17,7 +17,6 @@
     "build:clean": "rimraf <%= libPath %> <%= assetPath %> *.tsbuildinfo",
     "build": "npm run build:lib && npm run build:types",
     "dev": "npm run build:lib -w",
-    "prepare": "npm run build",
-    "prepack": "yarn prepare"
+    "prepack": "npm run build"
   }
 }

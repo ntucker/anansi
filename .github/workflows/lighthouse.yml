@@ -16,7 +16,7 @@ jobs:
         run: |
           sudo corepack enable
           yarn install --immutable
-          yarn prepare
+          yarn build:pkg
           yarn build:sizecompare
       - name: run Lighthouse CI
         working-directory: ./examples/typescript

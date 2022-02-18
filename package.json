@@ -13,11 +13,13 @@
     "node": ">=14.0.0"
   },
   "scripts": {
+    "postinstall": "husky install",
     "release": "lerna publish",
     "build": "lerna run build --stream",
+    "build:pkg": "yarn lerna run build --ignore 'example-*'",
     "build:clean": "lerna run build:clean --stream",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
-    "prepare": "husky install && yarn lerna run build --ignore 'example-*'"
+    "prepack": "yarn build:pkg"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.7.24",
