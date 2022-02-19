@@ -1,27 +1,19 @@
 {
-  "name": "@pojo-router/core",
-  "version": "0.2.3",
-  "description": "A react hooks library to associate metadata to a path",
-  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/pojo-router#readme",
+  "name": "@anansi/router",
+  "version": "0.1.0",
+  "description": "React 18 optimized router",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:ntucker/anansi.git",
-    "directory": "packages/pojo-router"
+    "directory": "packages/router"
   },
   "license": "Apache-2.0",
-  "author": "William Klancnik",
-  "contributors": [
-    {
-      "name": "Nathaniel Tucker",
-      "email": "me@ntucker.me",
-      "url": "https://ntucker.true.io"
-    },
-    {
-      "name": "Melissa Zhang",
-      "email": "melissa.zhang@coinbase.com",
-      "url": "https://twitter.com/melissazhang13"
-    }
-  ],
+  "author": {
+    "name": "Nathaniel Tucker",
+    "email": "me@ntucker.me",
+    "url": "https://ntucker.true.io"
+  },
   "files": [
     "src",
     "dist",
@@ -54,12 +46,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.5",
+    "@pojo-router/core": "^0.2.3",
     "history": "^5.2.0",
-    "path-to-regexp": "^6.2.0"
+    "nano-memoize": "^1.2.1"
   },
   "peerDependencies": {
-    "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0-0",
-    "react": "^16.8.2 || ^17.0.0 || ^18.0.0-0"
+    "@types/react": "^18.0.0-0",
+    "react": "^18.0.0-0"
   },
   "peerDependenciesMeta": {
     "@types/react": {

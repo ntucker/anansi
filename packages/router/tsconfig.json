@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig-base",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "src",
+    "types": [
+      "react/next",
+      "react-dom/next",
+    ]
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../pojo-router" }
+  ]
+}

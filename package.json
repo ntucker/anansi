@@ -16,6 +16,7 @@
     "postinstall": "husky install",
     "release": "lerna publish",
     "build": "lerna run build --stream",
+    "dev": "lerna run dev --stream --ignore 'example-*'",
     "build:types": "ttsc --build",
     "build:pkg": "yarn lerna run build --ignore 'example-*'",
     "build:clean": "lerna run build:clean --stream",

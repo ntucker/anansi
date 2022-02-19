@@ -17,5 +17,3 @@ export type AnyIfEmpty<T extends object> = keyof T extends never ? any : T;
 export type NamedPath = { path: string } & ParseOptions &
   TokensToRegexpOptions &
   RegexpToFunctionOptions;
-
-export type Route = readonly [string, AnyIfEmpty<DefaultRoutePojo>];

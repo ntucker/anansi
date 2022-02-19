@@ -10,12 +10,12 @@ export function useController() {
   return useContext(ControllerContext);
 }
 
-export function useRoutes() {
+export function useRoutes<Route>(): Route[] {
   const controller = useController();
   const location = useLocation();
 
   return useMemo(
-    () => controller.getMatchedRoutes(location.pathname),
+    () => controller.getMatchedRoutes(location.pathname) as any[],
     [location, controller],
   );
 }

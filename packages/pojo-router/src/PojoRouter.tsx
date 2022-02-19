@@ -1,31 +1,32 @@
-import React, { useMemo } from 'react';
-import type { Location } from 'history';
+import React, { memo, useEffect, useState } from 'react';
+import type { Location, Update } from 'history';
 
 import { ControllerContext, LocationContext } from './context';
-import type { AnyIfEmpty, DefaultRoutePojo, NamedPath, Route } from './types';
 import RouteController from './Controller';
 
 type Props = {
   children: React.ReactNode;
-  namedPaths: Record<string, string | NamedPath>;
-  routes: readonly Route[];
-  notFound: AnyIfEmpty<DefaultRoutePojo>;
-  location: Location;
+  router: RouteController;
+  initialPath: string;
+  onChange?: (update: Update, callback: () => void | undefined) => void;
 };
 
-const PojoRouter = ({
-  children,
-  namedPaths,
-  routes,
-  notFound,
-  location,
-}: Props) => {
-  const controller = useMemo(
-    () => new RouteController({ namedPaths, routes, notFound }),
-    [namedPaths, routes, notFound],
-  );
+const PojoRouter = ({ children, router, initialPath, onChange }: Props) => {
+  const [location, setLocation] = useState({
+    pathname: initialPath,
+  } as Location);
+  useEffect(() => {
+    return router.history.listen(({ action, location }) => {
+      if (onChange) {
+        onChange({ action, location }, () => setLocation(location));
+      } else {
+        setLocation(location);
+      }
+    });
+  });
+
   return (
-    <ControllerContext.Provider value={controller}>
+    <ControllerContext.Provider value={router}>
       <LocationContext.Provider value={location}>
         {children}
       </LocationContext.Provider>
@@ -35,4 +36,4 @@ const PojoRouter = ({
 PojoRouter.defaultValues = {
   namedPaths: {},
 };
-export default PojoRouter;
+export default memo(PojoRouter);

@@ -4,6 +4,9 @@ const options = {
   basePath: 'src',
   buildDir: 'dist/',
   sassOptions: false,
+  babelLoader: {
+    rootMode: 'upward',
+  },
 };
 
 const generateConfig = makeConfig(options);

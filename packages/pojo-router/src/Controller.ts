@@ -1,15 +1,17 @@
 import { match as matchPath, compile } from 'path-to-regexp';
 import type { MatchFunction, PathFunction } from 'path-to-regexp';
+import type { History } from 'history';
 
-import type { AnyIfEmpty, DefaultRoutePojo, NamedPath, Route } from './types';
+import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types';
 
-type Props = {
+type Props<Route> = {
+  history: History;
   namedPaths: Record<string, string | NamedPath>;
-  routes: readonly Route[];
+  routes: readonly [...(readonly [string, Route][])];
   notFound: AnyIfEmpty<DefaultRoutePojo>;
 };
 
-export default class RouteController {
+export default class RouteController<Route = unknown> {
   // cache for match lookups. Reset if routes ever change.
   // could make this LRU if it takes up too much space.
   private cachedMatches: Record<string, any> = {};
@@ -20,10 +22,12 @@ export default class RouteController {
     outboundPath: PathFunction<object>;
   }[];
 
+  declare readonly history: History;
   declare readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
   declare readonly pathBuilders: Record<string, PathFunction>;
 
-  constructor({ namedPaths, routes, notFound }: Props) {
+  constructor({ history, namedPaths, routes, notFound }: Props<Route>) {
+    this.history = history;
     this.notFound = notFound;
     this.normalizedRouter = routes.map(([pathOrPathName, values]) => {
       const pathObjectOrString =
@@ -51,7 +55,7 @@ export default class RouteController {
     );
   }
 
-  getMatchedRoutes(pathToMatch: string) {
+  getMatchedRoutes(pathToMatch: string): (Route & object)[] {
     if (pathToMatch in this.cachedMatches) {
       return this.cachedMatches[pathToMatch];
     }
@@ -74,11 +78,11 @@ export default class RouteController {
     return matches;
   }
 
-  buildPath(pathOrPathName: string, pathData?: object) {
+  buildPath(pathOrPathName: string, pathData?: object): string {
     if (
       !Object.prototype.hasOwnProperty.call(this.pathBuilders, pathOrPathName)
     )
       throw new Error(`Unknown route: ${pathOrPathName}`);
-    this.pathBuilders[pathOrPathName](pathData);
+    return this.pathBuilders[pathOrPathName](pathData);
   }
 }

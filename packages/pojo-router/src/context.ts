@@ -4,7 +4,12 @@ import type { Location } from 'history';
 import RouteController from './Controller';
 
 export const ControllerContext = createContext(
-  new RouteController({ namedPaths: {}, routes: [], notFound: undefined }),
+  new RouteController({
+    history: {} as any,
+    namedPaths: {},
+    routes: [],
+    notFound: undefined,
+  }),
 );
 
 export const LocationContext = createContext(
