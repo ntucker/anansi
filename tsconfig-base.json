@@ -53,7 +53,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "pojo-router/*": ["packages/pojo-router/src/*"]
+      "@pojo-router/core/*": ["packages/pojo-router/src/*"]
     },
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

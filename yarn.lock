@@ -4307,6 +4307,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pojo-router/core@workspace:packages/pojo-router":
+  version: 0.0.0-use.local
+  resolution: "@pojo-router/core@workspace:packages/pojo-router"
+  dependencies:
+    "@anansi/babel-preset": ^2.8.4
+    "@anansi/browserslist-config": 1.3.3
+    "@babel/core": 7.17.5
+    "@babel/runtime": ^7.10.5
+    history: ^5.2.0
+    jest: ^27.5.1
+    path-to-regexp: ^6.2.0
+    rimraf: ^3.0.0
+  peerDependencies:
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0-0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@polka/url@npm:^1.0.0-next.9":
   version: 1.0.0-next.11
   resolution: "@polka/url@npm:1.0.0-next.11"
@@ -20840,26 +20861,6 @@ __metadata:
   checksum: 0606a63db96400b07f182300168298da9518727a843f9e10cf5045d2a102a4be06bb18c73dc481281e3e0f1ed8d04ef0d285a342b6dcd0eff1340e28e5d2328d
   languageName: node
   linkType: hard
-
-"pojo-router@workspace:packages/pojo-router":
-  version: 0.0.0-use.local
-  resolution: "pojo-router@workspace:packages/pojo-router"
-  dependencies:
-    "@anansi/babel-preset": ^2.8.4
-    "@anansi/browserslist-config": 1.3.3
-    "@babel/core": 7.17.5
-    "@babel/runtime": ^7.10.5
-    jest: ^27.5.1
-    path-to-regexp: ^6.2.0
-    rimraf: ^3.0.0
-  peerDependencies:
-    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0-0
-    react: ^16.8.2 || ^17.0.0 || ^18.0.0-0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
 
 "polished@npm:^4.0.5":
   version: 4.1.1

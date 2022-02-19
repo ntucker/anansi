@@ -1,8 +1,8 @@
 # pojo-router
 <!--[![CircleCI](https://circleci.com/gh/notwillk/pojo-router.svg?style=shield)](https://circleci.com/gh/notwillk/pojo-router)-->
-[![npm downloads](https://img.shields.io/npm/dm/pojo-router.svg?style=flat-square)](https://www.npmjs.com/package/pojo-router)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/pojo-router?style=flat-square)](https://bundlephobia.com/result?p=pojo-router)
-[![npm version](https://img.shields.io/npm/v/pojo-router.svg?style=flat-square)](https://www.npmjs.com/package/pojo-router)
+[![npm downloads](https://img.shields.io/npm/dm/@pojo-router/core.svg?style=flat-square)](https://www.npmjs.com/package/@pojo-router/core)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@pojo-router/core?style=flat-square)](https://bundlephobia.com/result?p=@pojo-router/core)
+[![npm version](https://img.shields.io/npm/v/@pojo-router/core.svg?style=flat-square)](https://www.npmjs.com/package/@pojo-router/core)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A hook based machanism to convert a string (i.e. a path) into metadata.
@@ -37,32 +37,52 @@ const Router = ({ children }) => (
 );
 ```
 
+## Controller
+
+```ts
+type Props = {
+    namedPaths: Record<string, string | NamedPath>;
+    routes: readonly Route[];
+    notFound: AnyIfEmpty<DefaultRoutePojo>;
+};
+
+class RouteController {
+    constructor({ namedPaths, routes, notFound }: Props);
+
+    readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
+    readonly pathBuilders: Record<string, PathFunction>;
+    getMatchedRoutes(pathToMatch: string): any;
+    buildPath(pathOrPathName: string, pathData?: object): void;
+}
+```
+
+### notFound
+
+This is the passed in notFound object.
+
+### getMatchedRoutes(pathToMatch)
+
+Gets all routes matching the passed path.
+
+### buildPath(pathOrPathName, pathData)
+
+Given a named route (or route string if none is defined), this returns a function that will generate a matching string, including populating the dynamic variables.  E.g. for a route like `/entity/:id` an outbound routing function like `entityPath({ id: 123 })` will generate `/entity/123`.
+
+`controller.buildPath('entity', { id: 123 })`
+
+
+## Hooks
+
 Within your child component, use one of the hooks.
 
-## useCurrentPath
-
-Sets or gets the "current path".  This sets will use this path for all calls to `useCurrentMatch` until a new path is set.
-
-If a path is provided, it sets that path.
-
-It always returns the current path.
-
-## useMatches
+## useRoutes()
 
 Given a path, this returns all the metadata for routes that match.
 
-## useFirstMatch
+## useLocation()
 
-Given a path, this returns the metadata for the first route that matches.
+Get current location
 
-## useBestMatch
+## useController()
 
-Given a path and a compareFunction (see [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)), this returns the metadata for the best route that matches based on the provided compare function.
-
-## useCurrentMatch
-
-When a path is set via `useCurrentPath`, this returns the first match metadata for the current path that is set.
-
-## useOutboundRoute
-
-Given a named route (or route string if none is defined), this returns a function that will generate a matching string, including populating the dynamic variables.  E.g. for a route like `/entity/:id` an outbound routing function like `entityPath({ id: 123 })` will generate `/entity/123`.
+Return the [Controller](#controller) that can be used for computations
