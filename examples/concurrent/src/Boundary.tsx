@@ -1,6 +1,9 @@
 import { memo, Suspense } from 'react';
-import { NetworkErrorBoundary } from 'rest-hooks';
 import type { ReactNode } from 'react';
+
+import NotFound from 'components/NotFound';
+
+import ErrorBoundary from './ErrorBoundary';
 
 function Boundary({
   children,
@@ -16,7 +19,7 @@ function Boundary({
 }) {
   return (
     <Suspense fallback={fallback}>
-      <NetworkErrorBoundary>{children}</NetworkErrorBoundary>
+      <ErrorBoundary fallbackComponent={NotFound}>{children}</ErrorBoundary>
     </Suspense>
   );
 }
