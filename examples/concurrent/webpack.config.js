@@ -1,4 +1,3 @@
-const path = require('path');
 const { makeConfig } = require('@anansi/webpack-config');
 
 const generateConfig = makeConfig({
@@ -7,7 +6,12 @@ const generateConfig = makeConfig({
   fontPreload: 'prefetch',
   libraryInclude: /(@pojo-router\/core|@anansi\/router)/,
   babelLoader: {
-    rootMode: 'upward',
+    rootMode: Object.prototype.hasOwnProperty.call(
+      process.versions,
+      'webcontainer',
+    )
+      ? 'root'
+      : 'upward',
   },
 });
 
