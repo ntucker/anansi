@@ -100,7 +100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/generator-js": ^7.3.3
+    "@anansi/generator-js": ^7.3.4
     bin-version-check: ^4.0.0
     chalk: ^4.1.2
     commander: ^9.0.0
@@ -146,7 +146,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/generator-js@^7.3.3, @anansi/generator-js@workspace:packages/generator-js":
+"@anansi/generator-js@^7.3.4, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
@@ -178,7 +178,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.6.0, @anansi/jest-preset@^0.6.1, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.6.2, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -224,7 +224,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.1.0, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.2.0, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -233,7 +233,7 @@ __metadata:
     "@babel/cli": ^7.17.3
     "@babel/core": 7.17.5
     "@babel/runtime": ^7.10.5
-    "@pojo-router/core": ^0.2.3
+    "@pojo-router/core": ^0.3.0
     history: ^5.2.0
     jest: ^27.5.1
     nano-memoize: ^1.2.1
@@ -257,7 +257,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^11.0.0, @anansi/webpack-config@^11.2.4, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^11.3.0, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -4331,7 +4331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pojo-router/core@^0.2.3, @pojo-router/core@workspace:packages/pojo-router":
+"@pojo-router/core@^0.3.0, @pojo-router/core@workspace:packages/pojo-router":
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
@@ -12698,7 +12698,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/eslint-plugin": ^0.12.2
     "@anansi/polyfill": ^1.0.89
-    "@anansi/webpack-config": ^11.0.0
+    "@anansi/webpack-config": ^11.3.0
     "@babel/plugin-transform-modules-commonjs": ^7.16.8
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
@@ -12723,9 +12723,9 @@ __metadata:
     "@anansi/babel-preset": ^2.8.4
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/eslint-plugin": ^0.12.9
-    "@anansi/jest-preset": ^0.6.1
-    "@anansi/router": ^0.1.0
-    "@anansi/webpack-config": ^11.2.4
+    "@anansi/jest-preset": ^0.6.2
+    "@anansi/router": ^0.2.0
+    "@anansi/webpack-config": ^11.3.0
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
     "@linaria/react": ^3.0.0-beta.17
@@ -12761,9 +12761,9 @@ __metadata:
     "@anansi/babel-preset": ^2.7.20
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/eslint-plugin": ^0.12.2
-    "@anansi/jest-preset": ^0.6.0
+    "@anansi/jest-preset": ^0.6.2
     "@anansi/polyfill": ^1.0.89
-    "@anansi/webpack-config": ^11.0.0
+    "@anansi/webpack-config": ^11.3.0
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": ^0.1.1
     "@rest-hooks/rest": 3.0.2
