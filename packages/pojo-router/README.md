@@ -22,10 +22,10 @@ const namedPaths = {
 };
 
 const routes = [
-  ['page1', { abc: 123 }],
-  ['page2', { abc: 456 }],
-  ['page3', { abc: 789 }],
-  ['/page4', { abc: 0 }]
+  { name: 'page1', abc: 123 },
+  { name: 'page2', abc: 456 },
+  { name: 'page3', abc: 789 },
+  { name: '/page4', abc: 0 }
 ];
 
 const notFound = { nothing: true };

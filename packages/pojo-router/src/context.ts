@@ -7,7 +7,7 @@ export const ControllerContext = createContext(
   new RouteController({
     history: {} as any,
     namedPaths: {},
-    routes: [],
+    routes: [] as any[],
     notFound: undefined,
   }),
 );

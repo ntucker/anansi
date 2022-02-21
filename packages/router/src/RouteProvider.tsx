@@ -6,17 +6,19 @@ import type { Update } from 'history';
 import { IsLoadingContext } from './IsLoadingContext';
 import type { Route } from './types';
 
+type Props<ResolveWith> = {
+  children: React.ReactNode;
+  initialPath: string;
+  resolveWith: ResolveWith;
+  router: RouteController<Route<ResolveWith>>;
+};
+
 function RouteProvider<ResolveWith>({
   children,
   initialPath,
   router,
   resolveWith,
-}: {
-  children: React.ReactNode;
-  initialPath: string;
-  router: RouteController<Route<ResolveWith>>;
-  resolveWith: ResolveWith;
-}) {
+}: Props<ResolveWith>) {
   const preloadMatch = useCallback(
     (match: Route<ResolveWith>) => {
       // load component source
@@ -56,4 +58,5 @@ function RouteProvider<ResolveWith>({
   );
 }
 
-export default memo(RouteProvider);
+const m = memo(RouteProvider) as typeof RouteProvider;
+export default m;

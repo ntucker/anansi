@@ -4,20 +4,26 @@ import type { History } from 'history';
 
 import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types';
 
-type Props<Route> = {
+type Props<
+  Route extends { name: string } = {
+    name: string;
+  },
+> = {
   history: History;
   namedPaths: Record<string, string | NamedPath>;
-  routes: readonly [...(readonly [string, Route][])];
+  routes: readonly Route[];
   notFound: AnyIfEmpty<DefaultRoutePojo>;
 };
 
-export default class RouteController<Route = unknown> {
+export default class RouteController<
+  Route extends { name: string } = { name: string },
+> {
   // cache for match lookups. Reset if routes ever change.
   // could make this LRU if it takes up too much space.
   private cachedMatches: Record<string, any> = {};
   private declare normalizedRouter: {
     pathOrPathName: string;
-    values: any;
+    route: any;
     matcher: MatchFunction<object>;
     outboundPath: PathFunction<object>;
   }[];
@@ -29,7 +35,8 @@ export default class RouteController<Route = unknown> {
   constructor({ history, namedPaths, routes, notFound }: Props<Route>) {
     this.history = history;
     this.notFound = notFound;
-    this.normalizedRouter = routes.map(([pathOrPathName, values]) => {
+    this.normalizedRouter = routes.map(route => {
+      const pathOrPathName = route.name;
       const pathObjectOrString =
         pathOrPathName in namedPaths
           ? namedPaths[pathOrPathName]
@@ -40,7 +47,7 @@ export default class RouteController<Route = unknown> {
           : (pathObjectOrString as NamedPath);
       return {
         pathOrPathName,
-        values,
+        route,
         matcher: matchPath(path, options),
         outboundPath: compile(path, options),
       };
@@ -63,11 +70,11 @@ export default class RouteController<Route = unknown> {
     const allMatches = this.normalizedRouter.reduce(
       (
         acc: Record<string, any>[],
-        { matcher, values },
+        { matcher, route },
       ): Record<string, any>[] => {
         const match = matcher(pathToMatch);
         const params = match && match.params ? match.params : {};
-        return match ? [...acc, { ...values, ...params }] : acc;
+        return match ? [...acc, { ...route, ...params }] : acc;
       },
       [],
     );

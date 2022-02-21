@@ -1,4 +1,5 @@
 export interface Route<ResolveWith, Match = any> {
+  name: string;
   component: React.ComponentType<any> & {
     preload: () => Promise<React.ComponentType>;
   };
@@ -7,6 +8,7 @@ export interface Route<ResolveWith, Match = any> {
     match: Match & Route<ResolveWith, Match>,
   ) => Promise<void>;
 }
-export type LazyPage = React.ComponentType<any> & {
-  preload: () => Promise<React.ComponentType>;
+
+export type LazyPage<P = any> = React.ComponentType<P> & {
+  preload: () => Promise<React.ComponentType<P>>;
 };
