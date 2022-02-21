@@ -12743,7 +12743,6 @@ __metadata:
     core-js: 3.21.1
     history: ^5.2.0
     jest: ^27.5.1
-    nano-memoize: ^1.2.1
     react: 18.0.0-rc.0
     react-dom: 18.0.0-rc.0
     react-refresh: ^0.11.0
@@ -12751,6 +12750,8 @@ __metadata:
     rest-hooks: 6.2.0-beta.3
     serve: ^13.0.2
     webpack: 5.69.1
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.7.4
   languageName: unknown
   linkType: soft
 
