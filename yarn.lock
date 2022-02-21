@@ -224,7 +224,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.2.0, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.2.1, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -233,7 +233,7 @@ __metadata:
     "@babel/cli": ^7.17.3
     "@babel/core": 7.17.5
     "@babel/runtime": ^7.10.5
-    "@pojo-router/core": ^0.3.0
+    "@pojo-router/core": ^0.3.1
     history: ^5.2.0
     jest: ^27.5.1
     nano-memoize: ^1.2.1
@@ -4331,7 +4331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pojo-router/core@^0.3.0, @pojo-router/core@workspace:packages/pojo-router":
+"@pojo-router/core@^0.3.1, @pojo-router/core@workspace:packages/pojo-router":
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
@@ -12724,7 +12724,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/eslint-plugin": ^0.12.9
     "@anansi/jest-preset": ^0.6.2
-    "@anansi/router": ^0.2.0
+    "@anansi/router": ^0.2.1
     "@anansi/webpack-config": ^11.3.0
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
