@@ -5,15 +5,18 @@ import { getImage } from '@rest-hooks/img';
 import { CommentResource, PostResource, UserResource } from 'resources/Discuss';
 
 export const namedPaths = {
-  posts: '/',
+  home: '/',
+  posts: '/posts',
   postDetail: '/post/:id',
   userDetail: '/user/:id',
 };
 
 export const routes = [
+  ['home', { name: 'home', component: lazyPage('Home') }],
   [
     'posts',
     {
+      name: 'posts',
       component: lazyPage('Posts'),
       resolveData: async (controller: Controller) => {
         const posts = await controller.fetch(PostResource.list(), {});
@@ -33,6 +36,7 @@ export const routes = [
   [
     'postDetail',
     {
+      name: 'postDetail',
       component: lazyPage('PostDetail'),
       resolveData: async (controller: Controller, match: { id: string }) => {
         if (match) {
@@ -57,12 +61,15 @@ export const routes = [
   [
     'userDetail',
     {
+      name: 'userDetail',
       component: lazyPage('UserDetail'),
       resolveData: async (controller: Controller, match: { id: string }) => {
         if (match) {
           const fakeUser = UserResource.fromJS({
             id: Number.parseInt(match.id, 10),
           });
+          // don't block on posts but start fetching
+          controller.fetch(PostResource.list(), { userId: match.id });
           await Promise.all([
             controller.fetch(UserResource.detail(), match),
             controller.fetch(getImage, {

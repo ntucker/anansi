@@ -34,4 +34,20 @@ export default abstract class PlaceholderBaseResource extends Resource {
       },
     });
   }
+
+  static url(urlParams: Readonly<Record<string, any>>): string {
+    if (
+      Object.prototype.hasOwnProperty.call(urlParams, 'url') &&
+      urlParams.url &&
+      typeof urlParams.url === 'string'
+    ) {
+      return urlParams.url;
+    }
+    if (this.prototype.pk.call(urlParams as any) !== undefined) {
+      return `${this.urlRoot.replace(/\/$/, '')}/${this.prototype.pk.call(
+        urlParams as any,
+      )}`;
+    }
+    return this.urlRoot;
+  }
 }

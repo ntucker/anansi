@@ -1,4 +1,4 @@
-import { useResource } from 'rest-hooks';
+import { useFetch, useSuspense } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { Button, Breadcrumb } from 'antd';
 import { getImage } from '@rest-hooks/img';
@@ -19,12 +19,12 @@ const Breading = styled(Breadcrumb)`
 `;
 
 export default function PostDetail({ id }: Props) {
-  const post = useResource(PostResource.detail(), { id });
-  const author = useResource(
+  const post = useSuspense(PostResource.detail(), { id });
+  const author = useSuspense(
     UserResource.detail(),
     post.userId ? { id: post.userId } : null,
   );
-  useResource(
+  useFetch(
     getImage,
     author?.profileImage ? { src: author?.profileImage } : null,
   );

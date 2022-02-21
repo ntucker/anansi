@@ -1,24 +1,16 @@
-import { useResource } from 'rest-hooks';
-import { EditOutlined } from '@ant-design/icons';
-import { Button, Breadcrumb } from 'antd';
+import { useSuspense } from 'rest-hooks';
 import { Img } from '@rest-hooks/img';
 import { Card, Avatar } from 'antd';
-import { Link } from '@anansi/router';
-import { styled } from '@linaria/react';
 
-import { PostResource, UserResource } from 'resources/Discuss';
+import { UserResource } from 'resources/Discuss';
 import Boundary from 'Boundary';
 import PostList from 'pages/Posts';
 
 export type Props = { id: string };
 const { Meta } = Card;
 
-const Breading = styled(Breadcrumb)`
-  margin: 16px 0 !important;
-`;
-
 export default function UserDetail({ id }: Props) {
-  const user = useResource(UserResource.detail(), { id });
+  const user = useSuspense(UserResource.detail(), { id });
   return (
     <>
       <Card cover={<Img src={user.coverImage} />}>

@@ -1,4 +1,4 @@
-import { useResource } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { Card, Avatar } from 'antd';
 
 import { CommentResource } from 'resources/Discuss';
@@ -7,7 +7,7 @@ const { Meta } = Card;
 type Props = { postId: string };
 
 export default function CommentList({ postId }: Props) {
-  const comments = useResource(CommentResource.list(), { postId });
+  const comments = useSuspense(CommentResource.list(), { postId });
 
   return (
     <>

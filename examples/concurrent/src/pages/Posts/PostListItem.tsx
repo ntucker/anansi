@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useResource } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from '@anansi/router';
@@ -7,9 +7,14 @@ import { Link } from '@anansi/router';
 import { PostResource, UserResource } from 'resources/Discuss';
 
 export default function PostListItem({ post }: { post: PostResource }) {
-  const author = useResource(UserResource.detail(), {
-    id: post.userId,
-  });
+  const author = useSuspense(
+    UserResource.detail(),
+    post.userId
+      ? {
+          id: post.userId,
+        }
+      : null,
+  );
   const actions = [];
   actions.push(
     <Link name="postDetail" props={{ id: post.pk() }}>
@@ -20,9 +25,11 @@ export default function PostListItem({ post }: { post: PostResource }) {
     <List.Item actions={actions}>
       <List.Item.Meta
         avatar={
-          <Avatar src={author.profileImage}>
-            {author && author.name.substr(0, 1)}
-          </Avatar>
+          author && (
+            <Avatar src={author.profileImage}>
+              {author && author.name.substr(0, 1)}
+            </Avatar>
+          )
         }
         title={
           <Link name="postDetail" props={{ id: post.pk() }}>

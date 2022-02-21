@@ -48,7 +48,7 @@
     "nano-memoize": "^1.2.1",
     "react": "18.0.0-rc.0",
     "react-dom": "18.0.0-rc.0",
-    "rest-hooks": "^6.1.7"
+    "rest-hooks": "6.2.0-beta.3"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
