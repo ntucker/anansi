@@ -16,6 +16,8 @@ A simple router designed for React 18 concurrent mode.
 - Take advantage of Suspense with Concurrent rendering
   - Fetch-as-you-render
 
+## [Demo](https://stackblitz.com/github/ntucker/anansi/tree/master/examples/concurrent)
+
 
 <details><summary><b>Slow network</b></summary>
 
