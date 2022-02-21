@@ -1,14 +1,14 @@
-import { lazy, memo } from 'react';
+import React, { lazy, memo } from 'react';
 import memoize from 'nano-memoize';
 
 import type { LazyPage } from './types';
 
-function lazyPage(pageName: string): LazyPage {
-  const importStatement = () =>
-    import(/* webpackChunkName: '[request]' */ `pages/${pageName}`);
-  let PageComponent: any = lazy(importStatement);
+function lazyPage<T extends React.ComponentType<any>>(
+  factory: () => Promise<{ default: T }>,
+): LazyPage<React.ComponentProps<T>> {
+  let PageComponent: any = lazy(factory);
   PageComponent = memo(PageComponent);
-  PageComponent.preload = importStatement;
+  PageComponent.preload = factory;
   return PageComponent;
 }
 export default memoize(lazyPage);

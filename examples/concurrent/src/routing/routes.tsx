@@ -1,8 +1,11 @@
 import { Controller } from '@rest-hooks/core';
-import { lazyPage, Route } from '@anansi/router';
+import { lazy, Route } from '@anansi/router';
 import { getImage } from '@rest-hooks/img';
 
 import { CommentResource, PostResource, UserResource } from 'resources/Discuss';
+
+const lazyPage = (pageName: string) =>
+  lazy(() => import(/* webpackChunkName: '[request]' */ `pages/${pageName}`));
 
 export const namedPaths = {
   home: '/',

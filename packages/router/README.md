@@ -52,7 +52,10 @@ Even though all the data must be fetched - it appears instant because React dela
 ```tsx
 import { Controller, useController } from 'rest-hooks';
 import { createBrowserHistory } from 'history';
-import { lazyPage, Route, RouteController, RouteProvider } from '@anansi/router';
+import { lazy, Route, RouteController, RouteProvider } from '@anansi/router';
+
+const lazyPage = (pageName: string) =>
+  lazy(() => import(/* webpackChunkName: '[request]' */ `pages/${pageName}`));
 
 const routes: Route<Controller>[] = [
   { name: 'home', component: lazyPage('Home') },
@@ -123,10 +126,9 @@ This helps with dispatchers whose lifetime is restricted to React.
 
 Additional members can be defined and will be passed as props to the component.
 
-### lazyPage(pageName)
+### lazy(() => Promise<{ default: Component }>)
 
-Give it a path in the pages directory `/pages/:pageName`. This builds a 'lazy component'
-that will automatically codesplit and load all resources when used with anansi router.
+Like React.lazy() but built for fetch-as-you-render as well as being memo'd.
 
 Component will be rendered with props from the route match as well as any matching elements (like 'id' for `/users/:id`)
 
