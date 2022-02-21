@@ -1,6 +1,6 @@
 {
   "name": "@anansi/router",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React 18 optimized router",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {
@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.5",
-    "@pojo-router/core": "^0.2.3",
+    "@pojo-router/core": "^0.3.0",
     "history": "^5.2.0",
     "nano-memoize": "^1.2.1"
   },

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/ntucker/anansi/compare/example-linaria@4.0.1...example-linaria@4.1.0) (2022-02-21)
+
+
+### 🚀 Features
+
+* Add router and react-18 demo ([#1425](https://github.com/ntucker/anansi/issues/1425)) ([32e922c](https://github.com/ntucker/anansi/commit/32e922cb48d365128699f84adbcfa1a9d3c3f243))
+* Add sassOptions ([#1373](https://github.com/ntucker/anansi/issues/1373)) ([5dd7e5d](https://github.com/ntucker/anansi/commit/5dd7e5d23c06deae9f661f7e2501524e4a93e20f))
+
+
+### 🐛 Bug Fix
+
+* Linaria uses anansi resolution rules when using JS variables ([16ab5cb](https://github.com/ntucker/anansi/commit/16ab5cb9a91764489082f8b51c026cdc0fa70566))
+* Linaria works with svg urls ([#1388](https://github.com/ntucker/anansi/issues/1388)) ([8d24f56](https://github.com/ntucker/anansi/commit/8d24f562ea5a0bc6401e7e705239fb803db4ac45))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.17.0 to 7.17.2 ([#1386](https://github.com/ntucker/anansi/issues/1386)) ([6b2fe59](https://github.com/ntucker/anansi/commit/6b2fe59ac1832c099285a896386e7ab9c5daff3f))
+* Update all non-major dependencies ([#1419](https://github.com/ntucker/anansi/issues/1419)) ([dbe0dad](https://github.com/ntucker/anansi/commit/dbe0dad880f0de133a5b399d0bc680629d8488df))
+* Update all non-major dependencies ([#1422](https://github.com/ntucker/anansi/issues/1422)) ([be3e1a3](https://github.com/ntucker/anansi/commit/be3e1a3db7af21ce531e5836f9fad8e88482d365))
+
+
+
 ### [4.0.1](https://github.com/ntucker/anansi/compare/example-linaria@4.0.0...example-linaria@4.0.1) (2022-02-06)
 
 

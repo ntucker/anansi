@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.2](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.6.1...@anansi/jest-preset@0.6.2) (2022-02-21)
+
+
+### 📦 Package
+
+* Update `@babel/core` to v7.17.5 ([#1423](https://github.com/ntucker/anansi/issues/1423)) ([cb23726](https://github.com/ntucker/anansi/commit/cb23726f08ef9e0c630b6176eb768d2da89607ea))
+
+
+
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.6.0...@anansi/jest-preset@0.6.1) (2022-02-16)
 
 

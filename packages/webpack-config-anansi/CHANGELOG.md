@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.4...@anansi/webpack-config@11.3.0) (2022-02-21)
+
+
+### 🚀 Features
+
+* Add router and react-18 demo ([#1425](https://github.com/ntucker/anansi/issues/1425)) ([32e922c](https://github.com/ntucker/anansi/commit/32e922cb48d365128699f84adbcfa1a9d3c3f243))
+
+
+### 📦 Package
+
+* Update `@babel/core` to v7.17.5 ([#1423](https://github.com/ntucker/anansi/issues/1423)) ([cb23726](https://github.com/ntucker/anansi/commit/cb23726f08ef9e0c630b6176eb768d2da89607ea))
+
+
+
 ### [11.2.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.3...@anansi/webpack-config@11.2.4) (2022-02-16)
 
 

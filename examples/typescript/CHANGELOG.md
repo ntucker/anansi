@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ntucker/anansi/compare/example-typescript@9.0.0...example-typescript@9.1.0) (2022-02-21)
+
+
+### 🚀 Features
+
+* Add router and react-18 demo ([#1425](https://github.com/ntucker/anansi/issues/1425)) ([32e922c](https://github.com/ntucker/anansi/commit/32e922cb48d365128699f84adbcfa1a9d3c3f243))
+* Support pnp packaging ([48c1ab3](https://github.com/ntucker/anansi/commit/48c1ab3e07131af8e8e949276593d5e2507b7dbb))
+
+
+### 📦 Package
+
+* bump @babel/runtime from 7.17.0 to 7.17.2 ([#1386](https://github.com/ntucker/anansi/issues/1386)) ([6b2fe59](https://github.com/ntucker/anansi/commit/6b2fe59ac1832c099285a896386e7ab9c5daff3f))
+* bump @types/node from 17.0.15 to 17.0.16 ([#1382](https://github.com/ntucker/anansi/issues/1382)) ([209591e](https://github.com/ntucker/anansi/commit/209591e509a24f406b80daf9a69d26524778fb70))
+* bump @types/node from 17.0.16 to 17.0.17 ([#1389](https://github.com/ntucker/anansi/issues/1389)) ([96d46e1](https://github.com/ntucker/anansi/commit/96d46e1328592eee5367ab5c204a61f1fc5ab9c5))
+* bump antd from 4.18.5 to 4.18.6 ([#1378](https://github.com/ntucker/anansi/issues/1378)) ([b8805a5](https://github.com/ntucker/anansi/commit/b8805a54ff8681e3ec5af0633de2fce265a2590c))
+* bump jest from 27.4.7 to 27.5.1 ([#1383](https://github.com/ntucker/anansi/issues/1383)) ([d88b2cc](https://github.com/ntucker/anansi/commit/d88b2cc4a8630196d985801ca01e29d0315b1789))
+* Update all non-major dependencies ([#1409](https://github.com/ntucker/anansi/issues/1409)) ([d873f29](https://github.com/ntucker/anansi/commit/d873f290af3cd961832bccb805332853d3881dda))
+* Update all non-major dependencies ([#1419](https://github.com/ntucker/anansi/issues/1419)) ([dbe0dad](https://github.com/ntucker/anansi/commit/dbe0dad880f0de133a5b399d0bc680629d8488df))
+* Update all non-major dependencies ([#1422](https://github.com/ntucker/anansi/issues/1422)) ([be3e1a3](https://github.com/ntucker/anansi/commit/be3e1a3db7af21ce531e5836f9fad8e88482d365))
+* Update storybook monorepo to v6.4.19 ([#1410](https://github.com/ntucker/anansi/issues/1410)) ([c205ce0](https://github.com/ntucker/anansi/commit/c205ce0a848c7ab4192a9b06d49c66cc2ca041e8))
+
+
+
 ## [9.0.0](https://github.com/ntucker/anansi/compare/example-typescript@8.0.0...example-typescript@9.0.0) (2022-02-06)
 
 
