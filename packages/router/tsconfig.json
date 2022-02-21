@@ -6,6 +6,7 @@
     "types": [
       "react/next",
       "react-dom/next",
+      "./modules"
     ]
   },
   "include": ["src"],

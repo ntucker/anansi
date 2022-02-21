@@ -230,6 +230,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^2.8.4
     "@anansi/browserslist-config": 1.3.3
+    "@babel/cli": ^7.17.3
     "@babel/core": 7.17.5
     "@babel/runtime": ^7.10.5
     "@pojo-router/core": ^0.2.3
@@ -4336,6 +4337,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^2.8.4
     "@anansi/browserslist-config": 1.3.3
+    "@babel/cli": ^7.17.3
     "@babel/core": 7.17.5
     "@babel/runtime": ^7.10.5
     history: ^5.2.0

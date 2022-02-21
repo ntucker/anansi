@@ -53,8 +53,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "@pojo-router/core/*": ["packages/pojo-router/src/*"]/*,
-      "@pojo-router/history/*": ["packages/pojo-history/src/*"]*/
+      "@pojo-router/core/*": ["packages/pojo-router/src/*"],
+      "@anansi/router/*": ["packages/router/src/*"]
     },
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -69,7 +69,7 @@
     "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     "emitDecoratorMetadata": true         /* Enables experimental support for emitting type metadata for decorators. */
   },
-  "include": ["packages/pojo-router/src", "packages/pojo-history/src"],
+  "include": ["packages/pojo-router/src", "packages/router/src"],
   "exclude": [
     "node_modules",
     "dist",

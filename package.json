@@ -18,7 +18,7 @@
     "build": "lerna run build --stream",
     "dev": "lerna run dev --stream --ignore 'example-*'",
     "build:types": "ttsc --build",
-    "build:pkg": "yarn lerna run build --ignore 'example-*'",
+    "build:pkg": "yarn build:types && yarn lerna run build --ignore 'example-*'",
     "build:clean": "lerna run build:clean --stream",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
     "prepack": "yarn build:pkg"
