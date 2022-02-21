@@ -1,4 +1,4 @@
-import { PostResource, CommentResource, UserResource } from 'data/resources';
+import { PostResource, CommentResource, UserResource } from 'resources/Discuss';
 
 const user = {
   id: 1,

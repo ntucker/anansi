@@ -7,7 +7,11 @@ yarn-debug.log*
 npm-debug.log*
 learna-debug.log
 dist
+lib
 .cache
+
+# build info
+**/tsconfig*.tsbuildinfo
 
 .pnp.*
 .yarn/*

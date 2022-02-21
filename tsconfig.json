@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./packages/pojo-router/tsconfig.compile.json" },
+    { "path": "./packages/router/tsconfig.compile.json" }
+  ]
+}

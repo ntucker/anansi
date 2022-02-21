@@ -46,6 +46,20 @@ export default function makeBaseConfig({
         : [],
   };
 
+  const mainBabelLoader = generateBabelLoader({
+    rootPath,
+    babelRoot,
+    target: argv?.target,
+    mode,
+    babelLoaderOptions,
+  });
+  const linariaBabelOptions = {
+    ...mainBabelLoader.options,
+  };
+  delete linariaBabelOptions.cacheDirectory;
+  delete linariaBabelOptions.cacheIdentifier;
+  delete linariaBabelOptions.cacheCompression;
+
   if (linariaOptions !== false) {
     if (linariaOptions === undefined) {
       linariaOptions = {
@@ -60,7 +74,7 @@ export default function makeBaseConfig({
     extraJsLoaders = [
       {
         loader: require.resolve('@ntucker/linaria-webpack5-loader'),
-        options: { ...linariaOptions },
+        options: { babelOptions: linariaBabelOptions, ...linariaOptions },
       },
       ...extraJsLoaders,
     ];
@@ -167,16 +181,7 @@ export default function makeBaseConfig({
               test: /\.(t|j)sx?$/,
               // TODO: Remove when we stop supporting linaria betas
               exclude: /\.linaria-cache/,
-              use: [
-                generateBabelLoader({
-                  rootPath,
-                  babelRoot,
-                  target: argv?.target,
-                  mode,
-                  babelLoaderOptions,
-                }),
-                ...extraJsLoaders,
-              ].filter(l => l),
+              use: [mainBabelLoader, ...extraJsLoaders].filter(l => l),
             },
           ],
         },
