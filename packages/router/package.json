@@ -1,6 +1,6 @@
 {
   "name": "@anansi/router",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React 18 optimized router",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {
@@ -23,11 +23,9 @@
   ],
   "sideEffects": false,
   "publishConfig": {
-    "main": "lib/index.js",
     "module": "lib/index.js",
     "types": "lib/index.d.ts"
   },
-  "main": "src/index.ts",
   "module": "src/index.ts",
   "types": "src/index.ts",
   "keywords": [
@@ -47,7 +45,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.5",
-    "@pojo-router/core": "^0.3.1",
+    "@pojo-router/core": "^0.3.2",
     "history": "^5.2.0",
     "nano-memoize": "^1.2.1"
   },

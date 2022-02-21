@@ -35,7 +35,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@anansi/router": "^0.2.1",
+    "@anansi/router": "^0.2.2",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "^3.0.0-beta.15",
     "@linaria/react": "^3.0.0-beta.17",
