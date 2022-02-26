@@ -35,10 +35,10 @@
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.6.3",
-    "eslint": "8.9.0",
+    "eslint": "8.10.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react": "7.29.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "lerna": "^4.0.0",
@@ -68,7 +68,7 @@
     "webpack-virtual-modules": "^0.4.2",
     "browserslist": "^4.16.6",
     "react-refresh": "^0.11.0",
-    "@rest-hooks/core": "3.1.0-beta.3"
+    "@rest-hooks/core": "3.1.0-beta.6"
   },
   "dependencies": {
     "@types/react": "^17.0.39",
@@ -76,5 +76,5 @@
     "react": "18.0.0-rc.0",
     "react-dom": "18.0.0-rc.0"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
