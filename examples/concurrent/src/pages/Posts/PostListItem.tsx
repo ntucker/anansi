@@ -1,8 +1,7 @@
-import { Fragment } from 'react';
 import { useSuspense } from 'rest-hooks';
-import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from '@anansi/router';
+import { Img } from '@rest-hooks/img';
 
 import { PostResource, UserResource } from 'resources/Discuss';
 
@@ -26,9 +25,9 @@ export default function PostListItem({ post }: { post: PostResource }) {
       <List.Item.Meta
         avatar={
           author && (
-            <Avatar src={author.profileImage}>
+            <Img component={Avatar} src={author.profileImage}>
               {author && author.name.substr(0, 1)}
-            </Avatar>
+            </Img>
           )
         }
         title={

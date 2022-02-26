@@ -15,7 +15,7 @@ export default function UserDetail({ id }: Props) {
     <>
       <Card cover={<Img src={user.coverImage} />}>
         <Meta
-          avatar={<Avatar src={user.profileImage} size={64} />}
+          avatar={<Img component={Avatar} src={user.profileImage} size={64} />}
           title={user.name}
           description={
             <>

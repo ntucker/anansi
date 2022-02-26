@@ -1,5 +1,6 @@
 import { useSuspense } from 'rest-hooks';
 import { Card, Avatar } from 'antd';
+import { Img } from '@rest-hooks/img';
 
 import { CommentResource } from 'resources/Discuss';
 const { Meta } = Card;
@@ -22,7 +23,7 @@ function CommentInline({ comment }: { comment: CommentResource }) {
   return (
     <Card style={{ marginTop: 16 }}>
       <Meta
-        avatar={<Avatar src={comment.profileImage} />}
+        avatar={<Img component={Avatar} src={comment.profileImage} />}
         title={
           <>
             <a

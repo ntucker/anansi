@@ -1,7 +1,7 @@
-import { useFetch, useSuspense } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { Button, Breadcrumb } from 'antd';
-import { getImage } from '@rest-hooks/img';
+import { Img } from '@rest-hooks/img';
 import { Card, Avatar } from 'antd';
 import { Link } from '@anansi/router';
 import { styled } from '@linaria/react';
@@ -24,10 +24,7 @@ export default function PostDetail({ id }: Props) {
     UserResource.detail(),
     post.userId ? { id: post.userId } : null,
   );
-  useFetch(
-    getImage,
-    author?.profileImage ? { src: author?.profileImage } : null,
-  );
+
   return (
     <>
       <Breading>
@@ -46,7 +43,7 @@ export default function PostDetail({ id }: Props) {
         ]}
       >
         <Meta
-          avatar={<Avatar src={author?.profileImage} />}
+          avatar={<Img component={Avatar} src={author?.profileImage} />}
           title={post.title}
           description={post.body}
         />
