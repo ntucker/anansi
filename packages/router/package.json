@@ -46,7 +46,7 @@
   "dependencies": {
     "@babel/runtime": "^7.10.5",
     "@pojo-router/core": "^0.3.2",
-    "history": "^5.2.0",
+    "history": "5.3.0",
     "nano-memoize": "^1.2.1"
   },
   "peerDependencies": {
