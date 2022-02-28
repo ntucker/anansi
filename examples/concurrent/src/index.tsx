@@ -1,15 +1,30 @@
-import ReactDOM from 'react-dom/client';
-import 'antd/dist/antd.css';
+import { hydrateRoot } from 'react-dom/client';
+import { CacheProvider } from 'rest-hooks';
+import { createBrowserHistory } from 'history';
 
 import RootProvider from './RootProvider';
 import App from './App';
+import ServerDataComponent, { getDatafromDOM } from './ssr/ServerDataComponent';
+import Document from './ssr/Document';
+import { Router, createRouter } from './routing';
+
+// this is the client entry point (browser)
+
+const router = createRouter(createBrowserHistory());
+
+const data = getDatafromDOM();
 
 const content = (
-  <RootProvider>
-    <App />
-  </RootProvider>
+  <Document assets={(globalThis as any).assetManifest} title="Anansi">
+    <CacheProvider initialState={data}>
+      <Router router={router}>
+        <RootProvider>
+          <App />
+        </RootProvider>
+      </Router>
+      <ServerDataComponent data={data} />
+    </CacheProvider>
+  </Document>
 );
 
-ReactDOM.createRoot(document.getElementById('react') || document.body).render(
-  content,
-);
+hydrateRoot(document, content);
