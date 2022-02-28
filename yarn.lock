@@ -224,7 +224,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.2.2, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.2.4, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -12724,7 +12724,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/eslint-plugin": ^0.12.9
     "@anansi/jest-preset": ^0.6.2
-    "@anansi/router": ^0.2.2
+    "@anansi/router": ^0.2.4
     "@anansi/webpack-config": ^11.3.0
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
