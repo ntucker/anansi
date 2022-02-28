@@ -29,7 +29,7 @@ export default function PostDetail({ id }: Props) {
     <>
       <Breading>
         <Breadcrumb.Item>
-          <Link name="userDetail" props={{ id: post.userId }}>
+          <Link name="UserDetail" props={{ id: post.userId }}>
             {author?.name}
           </Link>
         </Breadcrumb.Item>

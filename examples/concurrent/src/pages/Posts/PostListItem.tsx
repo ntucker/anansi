@@ -16,7 +16,7 @@ export default function PostListItem({ post }: { post: PostResource }) {
   );
   const actions = [];
   actions.push(
-    <Link name="postDetail" props={{ id: post.pk() }}>
+    <Link name="PostDetail" props={{ id: post.pk() }}>
       🗨️
     </Link>,
   );
@@ -31,7 +31,7 @@ export default function PostListItem({ post }: { post: PostResource }) {
           )
         }
         title={
-          <Link name="postDetail" props={{ id: post.pk() }}>
+          <Link name="PostDetail" props={{ id: post.pk() }}>
             {post.title}
           </Link>
         }
@@ -41,7 +41,7 @@ export default function PostListItem({ post }: { post: PostResource }) {
               #{post.id}
             </a>{' '}
             by{' '}
-            <Link name="userDetail" props={{ id: post.userId }}>
+            <Link name="UserDetail" props={{ id: post.userId }}>
               {`${author.name}`}
             </Link>
           </>

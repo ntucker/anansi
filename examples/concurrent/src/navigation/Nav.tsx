@@ -35,10 +35,10 @@ function Nav() {
           defaultOpenKeys={openKeys}
         >
           <Menu.Item key="home" icon={<TeamOutlined />}>
-            <Link name="home">Home</Link>
+            <Link name="Home">Home</Link>
           </Menu.Item>
           <Menu.Item key="posts" icon={<PieChartOutlined />}>
-            <Link name="posts">Posts</Link>
+            <Link name="Posts">Posts</Link>
           </Menu.Item>
           <SubMenu key="users" icon={<UserOutlined />} title="User">
             <Boundary fallback={null} key="friends">
@@ -67,7 +67,7 @@ function Friends(): JSX.Element {
       })}
       style={{ transition: 'none' }}
     >
-      <Link name="userDetail" props={{ id: friend.id }}>
+      <Link name="UserDetail" props={{ id: friend.id }}>
         {friend.name}
       </Link>
     </Menu.Item>

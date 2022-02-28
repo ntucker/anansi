@@ -5,19 +5,24 @@ import { getImage } from '@rest-hooks/img';
 import { CommentResource, PostResource, UserResource } from 'resources/Discuss';
 
 const lazyPage = (pageName: string) =>
-  lazy(() => import(/* webpackChunkName: '[request]' */ `pages/${pageName}`));
+  lazy(
+    () =>
+      import(
+        /* webpackChunkName: '[request]', webpackPrefetch: true */ `pages/${pageName}`
+      ),
+  );
 
 export const namedPaths = {
-  home: '/',
-  posts: '/posts',
-  postDetail: '/post/:id',
-  userDetail: '/user/:id',
+  Home: '/',
+  Posts: '/posts',
+  PostDetail: '/post/:id',
+  UserDetail: '/user/:id',
 };
 
 export const routes: Route<Controller>[] = [
-  { name: 'home', component: lazyPage('Home') },
+  { name: 'Home', component: lazyPage('Home') },
   {
-    name: 'posts',
+    name: 'Posts',
     component: lazyPage('Posts'),
     resolveData: async (controller: Controller) => {
       const posts = await controller.fetch(PostResource.list(), {});
@@ -34,7 +39,7 @@ export const routes: Route<Controller>[] = [
     },
   },
   {
-    name: 'postDetail',
+    name: 'PostDetail',
     component: lazyPage('PostDetail'),
     resolveData: async (controller: Controller, match: { id: string }) => {
       if (match) {
@@ -56,7 +61,7 @@ export const routes: Route<Controller>[] = [
     },
   },
   {
-    name: 'userDetail',
+    name: 'UserDetail',
     component: lazyPage('UserDetail'),
     resolveData: async (controller: Controller, match: { id: string }) => {
       if (match) {
