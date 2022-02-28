@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import { Layout, Spin } from 'antd';
 import { MatchedRoute } from '@anansi/router';
 import { styled } from '@linaria/react';
+import 'antd/dist/antd.css';
 
 import Nav from 'navigation/Nav';
 import Boundary from 'Boundary';
@@ -17,7 +18,7 @@ const Wrapper = styled(Layout)`
 `;
 
 const App = () => (
-  <Wrapper>
+  <Wrapper className="ant-layout-has-sider">
     <Nav />
     <Content>
       <Boundary
