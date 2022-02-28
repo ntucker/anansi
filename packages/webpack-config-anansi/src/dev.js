@@ -104,7 +104,8 @@ export default function makeDevConfig(
   }
   if (
     process.env.NO_HOT_RELOAD !== 'true' &&
-    process.env.NO_HOT_RELOAD !== true
+    process.env.NO_HOT_RELOAD !== true &&
+    !argv?.target?.includes?.('node')
   ) {
     try {
       require('react-refresh/babel');
