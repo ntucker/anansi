@@ -1,11 +1,6 @@
 import React from 'react';
 import type { NetworkError } from '@rest-hooks/core';
-
-import { router } from 'routing/index';
-
-function isNetworkError(error: NetworkError | unknown): error is NetworkError {
-  return Object.prototype.hasOwnProperty.call(error, 'status');
-}
+import { ControllerContext } from '@anansi/router';
 
 interface Props<E extends NetworkError> {
   children: React.ReactNode;
@@ -20,7 +15,7 @@ interface State<E extends NetworkError> {
  */
 export default class ErrorBoundary<
   E extends NetworkError,
-> extends React.Component<Props<E>, State<E>> {
+> extends React.Component<Props<E>, State<E>, typeof ControllerContext> {
   private declare unsubscribe: () => void;
 
   static defaultProps = {
@@ -32,17 +27,15 @@ export default class ErrorBoundary<
   };
 
   static getDerivedStateFromError(error: NetworkError | any) {
-    if (isNetworkError(error)) {
-      return { error };
-    } else {
-      throw error;
-    }
+    return { error };
   }
+
+  static contextType = ControllerContext;
 
   state: State<E> = {};
 
   componentDidMount() {
-    this.unsubscribe = router.history.listen(update => {
+    this.unsubscribe = this.context.history.listen(() => {
       if (this.state.error) this.setState({ error: undefined });
     });
   }
