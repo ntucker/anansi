@@ -100,7 +100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/generator-js": ^7.3.4
+    "@anansi/generator-js": ^7.3.5
     bin-version-check: ^4.0.0
     chalk: ^4.1.2
     commander: ^9.0.0
@@ -146,7 +146,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/generator-js@^7.3.4, @anansi/generator-js@workspace:packages/generator-js":
+"@anansi/generator-js@^7.3.5, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
@@ -233,7 +233,7 @@ __metadata:
     "@babel/cli": ^7.17.3
     "@babel/core": 7.17.5
     "@babel/runtime": ^7.10.5
-    "@pojo-router/core": ^0.3.2
+    "@pojo-router/core": ^0.3.3
     history: 5.3.0
     jest: ^27.5.1
     nano-memoize: ^1.2.1
@@ -4331,7 +4331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pojo-router/core@^0.3.2, @pojo-router/core@workspace:packages/pojo-router":
+"@pojo-router/core@^0.3.3, @pojo-router/core@workspace:packages/pojo-router":
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
