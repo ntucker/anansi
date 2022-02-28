@@ -12,9 +12,6 @@ const findCacheDir = require('find-cache-dir');
 export { default as getStyleRules } from './css';
 export { ROOT_PATH };
 
-const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
-const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
-
 export default function makeBaseConfig({
   rootPath,
   basePath,
@@ -34,6 +31,9 @@ export default function makeBaseConfig({
   nohash,
   argv,
 }) {
+  const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
+  const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
+
   const modules = [path.join(rootPath, basePath), 'node_modules'];
   const resolve = {
     modules,
@@ -248,6 +248,7 @@ export default function makeBaseConfig({
       excludeAssets: [/\.map/],
     },
   };
+
   if (
     process.env.WEBPACK_NO_CACHE === true ||
     process.env.WEBPACK_NO_CACHE === 'true' ||
