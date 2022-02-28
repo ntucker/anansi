@@ -8,14 +8,12 @@ import type { Route } from './types';
 
 type Props<ResolveWith> = {
   children: React.ReactNode;
-  initialPath: string;
   resolveWith: ResolveWith;
   router: RouteController<Route<ResolveWith>>;
 };
 
 function RouteProvider<ResolveWith>({
   children,
-  initialPath,
   router,
   resolveWith,
 }: Props<ResolveWith>) {
@@ -46,11 +44,7 @@ function RouteProvider<ResolveWith>({
   );
 
   return (
-    <PojoRouter
-      router={router}
-      initialPath={initialPath}
-      onChange={transitionPathname}
-    >
+    <PojoRouter router={router} onChange={transitionPathname}>
       <IsLoadingContext.Provider value={isPending}>
         {children}
       </IsLoadingContext.Provider>

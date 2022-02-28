@@ -24,18 +24,10 @@ export function Router({ children }: { children: React.ReactNode }) {
   const controller = useController();
   const { concurrent } = useContext(demoContext);
   if (!concurrent) {
-    return (
-      <PojoRouter router={router} initialPath={globalThis.location.pathname}>
-        {children}
-      </PojoRouter>
-    );
+    return <PojoRouter router={router}>{children}</PojoRouter>;
   }
   return (
-    <RouteProvider
-      initialPath={globalThis.location.pathname}
-      router={router}
-      resolveWith={controller}
-    >
+    <RouteProvider router={router} resolveWith={controller}>
       {children}
     </RouteProvider>
   );
