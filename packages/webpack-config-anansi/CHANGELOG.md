@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.0...@anansi/webpack-config@11.3.1) (2022-02-28)
+
+
+### 💅 Enhancement
+
+* Support late process.env.WEBPACK_PUBLIC_PATH setting ([6789637](https://github.com/ntucker/anansi/commit/6789637b91bb61a5afe0ab5b2e65b6ba1248b6ec))
+
+
+### 🐛 Bug Fix
+
+* Do not include hot reloading in node builds ([9e9f5b3](https://github.com/ntucker/anansi/commit/9e9f5b3cc2511007fe8dee4d1d7b64f001b471b8))
+* React SSR Doesn't like the new JSX runtime ([65bb1f1](https://github.com/ntucker/anansi/commit/65bb1f1fbb4cf311847303dd0fe5b613f558fcdc))
+
+
+
 ## [11.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.2.4...@anansi/webpack-config@11.3.0) (2022-02-21)
 
 
