@@ -6,7 +6,7 @@ import type { History } from 'history';
 import { Controller } from '@rest-hooks/core';
 
 import NotFound from 'components/NotFound';
-import { demoContext } from 'DemoProvider';
+import { demoContext } from 'demo';
 
 import { routes, namedPaths } from './routes';
 

@@ -1,17 +1,15 @@
 type Props = {
   children: React.ReactNode;
-  //assets: Record<string, string>;
+  head: React.ReactNode;
   title: string;
   assets: { href: string; as?: string; rel?: string }[];
 };
 
-export default function Document({ assets, children, title }: Props) {
+export default function Document({ assets, head, children, title }: Props) {
   return (
     <html>
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        {head}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
         ))}
@@ -34,3 +32,12 @@ export default function Document({ assets, children, title }: Props) {
     </html>
   );
 }
+Document.defaultProps = {
+  head: (
+    <>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="shortcut icon" href="/assets/favicon.ico" />
+    </>
+  ),
+};

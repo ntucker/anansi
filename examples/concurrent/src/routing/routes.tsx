@@ -13,6 +13,7 @@ const lazyPage = (pageName: string) =>
   );
 
 export const namedPaths = {
+  FriendNav: '/(.*)',
   Home: '/',
   Posts: '/posts',
   PostDetail: '/post/:id',
@@ -20,15 +21,27 @@ export const namedPaths = {
 };
 
 export const routes: Route<Controller>[] = [
+  {
+    name: 'FriendNav',
+    component: lazy(
+      () =>
+        import(
+          /* webpackChunkName: '[request]', webpackPrefetch: true */ `navigation/FriendsNav`
+        ),
+    ),
+    resolveData: async (controller: Controller) => {
+      await controller.fetch(UserResource.list(), {});
+    },
+  },
   { name: 'Home', component: lazyPage('Home') },
   {
     name: 'Posts',
     component: lazyPage('Posts'),
     resolveData: async (controller: Controller) => {
       const posts = await controller.fetch(PostResource.list(), {});
-      await Promise.all(
+      await Promise.allSettled(
         posts.map((post: PostResource) =>
-          Promise.all([
+          Promise.allSettled([
             controller.fetch(UserResource.detail(), { id: post.userId }),
             controller.fetch(getImage, {
               src: UserResource.fromJS({ id: post.userId }).profileImage,
@@ -48,7 +61,7 @@ export const routes: Route<Controller>[] = [
         const post = await controller.fetch(PostResource.detail(), {
           id: match.id,
         });
-        await Promise.all([
+        await Promise.allSettled([
           controller.fetch(
             UserResource.detail(),
             post.userId ? { id: post.userId } : (null as any),
@@ -70,7 +83,7 @@ export const routes: Route<Controller>[] = [
         });
         // don't block on posts but start fetching
         controller.fetch(PostResource.list(), { userId: match.id });
-        await Promise.all([
+        await Promise.allSettled([
           controller.fetch(UserResource.detail(), match),
           controller.fetch(getImage, {
             src: fakeUser.profileImage,

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
-    "start:devserver": "babel-node --extensions '.ts,.tsx,.js' ./scripts/startDevserver.ts",
+    "start:devserver": "babel-node --extensions '.ts,.tsx,.js' ./scripts/startDevserver.ts ./src/index.tsx",
     "start:prod": "serve ./dist",
     "start:server": "node ./dist-server/main.js",
     "build": "webpack --mode=production",

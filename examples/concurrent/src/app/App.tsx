@@ -5,7 +5,7 @@ import { styled } from '@linaria/react';
 import 'antd/dist/antd.css';
 
 import Nav from 'navigation/Nav';
-import Boundary from 'Boundary';
+import Boundary from 'components/Boundary';
 
 const Content = styled(Layout.Content)`
   margin: 0;
@@ -28,7 +28,7 @@ const App = () => (
           </div>
         }
       >
-        <MatchedRoute />
+        <MatchedRoute index={1} />
       </Boundary>
     </Content>
   </Wrapper>

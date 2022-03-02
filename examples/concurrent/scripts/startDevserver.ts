@@ -1,11 +1,11 @@
 import { promisify } from 'util';
 import diskFs from 'fs';
 import path from 'path';
-import webpack, { MultiCompiler } from 'webpack';
+import webpack, { MultiCompiler, StatsCompilation } from 'webpack';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import { createFsFromVolume, Volume } from 'memfs';
-import { Server } from 'http';
-import express from 'express';
+import { Server, IncomingMessage, ServerResponse } from 'http';
+import express, { Express, NextFunction } from 'express';
 import ora from 'ora';
 import { patchRequire } from 'fs-monkey';
 import tmp from 'tmp';
@@ -13,7 +13,9 @@ import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import compress from 'compression';
 import type { StatsChunkGroup } from 'webpack';
+
 import 'cross-fetch/polyfill';
+import { Render } from './types';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const webpackConfig = require('../webpack.config');
@@ -24,7 +26,7 @@ process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`;
 process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
 if (!entrypoint) {
-  console.log(`Usage: ${process.argv0} <entrypoint-file>`);
+  console.log(`Usage: ${process.argv[0]} <entrypoint-file>`);
   process.exit(-1);
 }
 
@@ -85,16 +87,27 @@ compiler.outputFileSystem = {
 
 sourceMapSupport.install({ hookRequire: true });
 
-let render: (
-  url: string,
-  res: Response,
-  entrypoint: StatsChunkGroup,
-  publicPath: string,
-) => Promise<void>;
-
 function getServerBundle(serverStats: webpack.Stats) {
   const serverJson = serverStats.toJson({ assets: true });
   return path.join(serverJson.outputPath, 'main.js');
+}
+function handleErrors<
+  F extends (
+    req: Request | IncomingMessage,
+    res: Response | ServerResponse,
+  ) => Promise<void>,
+>(fn: F) {
+  return async function (
+    req: Request | IncomingMessage,
+    res: Response | ServerResponse,
+    next: NextFunction,
+  ) {
+    try {
+      return await fn(req, res);
+    } catch (x) {
+      next(x);
+    }
+  };
 }
 
 // Start the express server after the first compilation
@@ -111,12 +124,12 @@ function initializeApp(stats: webpack.Stats[]) {
     process.exit(-1);
   }
 
-  const clientManifest = clientStats.toJson();
-
   const wrappingApp = express();
   // eslint-disable-next-line
   //@ts-ignore
   wrappingApp.use(compress());
+
+  // ASSETS
   wrappingApp.use(
     webpackHotMiddleware(compiler.compilers[0], {
       log: console.log,
@@ -126,10 +139,7 @@ function initializeApp(stats: webpack.Stats[]) {
       name: 'client',
     }),
   );
-
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  render = require(getServerBundle(serverStats)).default;
-
+  const clientManifest = clientStats.toJson();
   const assetRoute = async (req, res) => {
     const filename = req.url.substr(process.env.WEBPACK_PUBLIC_PATH.length);
     const assetPath = path.join(clientManifest.outputPath, filename);
@@ -145,9 +155,13 @@ function initializeApp(stats: webpack.Stats[]) {
     }
   };
   wrappingApp.get(`${process.env.WEBPACK_PUBLIC_PATH}*`, assetRoute);
+
+  // SERVER SIDE RENDERING
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const render: Render = require(getServerBundle(serverStats)).default;
   wrappingApp.get(
     '/*',
-    handleErrors(async function (req, res) {
+    handleErrors(async function (req: any, res: any) {
       if (req.url.endsWith('favicon.ico')) {
         res.statusCode = 404;
         res.setHeader('Content-type', 'text/html');
@@ -158,12 +172,7 @@ function initializeApp(stats: webpack.Stats[]) {
         console.error('Fatal', error);
       });
 
-      render(
-        req.url,
-        res,
-        clientManifest.entrypoints.main,
-        clientManifest.publicPath,
-      );
+      await render(clientManifest, req, res);
     }),
   );
 
@@ -221,12 +230,3 @@ process.on('SIGINT', () => {
   });
   process.exit(-1);
 });
-function handleErrors(fn) {
-  return async function (req, res, next) {
-    try {
-      return await fn(req, res);
-    } catch (x) {
-      next(x);
-    }
-  };
-}

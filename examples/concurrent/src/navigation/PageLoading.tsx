@@ -12,8 +12,8 @@ const Logo = styled.div`
   overflow: hidden;
 `;
 
-const Eye = styled.div<{ loading: boolean }>`
-  display: ${({ loading }) => (loading ? 'block' : 'none')};
+const Eye = styled.div<{ dataLoading: boolean }>`
+  display: ${({ dataLoading }) => (dataLoading ? 'block' : 'none')};
   height: 100%;
   width: 20%;
   background-color: red;
@@ -40,7 +40,7 @@ export default function PageLoading({ timeout = 100 }: { timeout?: number }) {
 
   return (
     <Logo>
-      <Eye loading={loading} />
+      <Eye dataLoading={loading} />
     </Logo>
   );
 }
