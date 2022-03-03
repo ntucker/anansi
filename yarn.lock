@@ -216,7 +216,7 @@ __metadata:
     intl: ^1.2.5
     ric-shim: ^1.0.0
     rimraf: ^3.0.2
-    rollup: 2.68.0
+    rollup: 2.69.0
     rollup-plugin-babel: ^4.3.3
     rollup-plugin-commonjs: ^10.1.0
     typescript: 4.6.2
@@ -6655,7 +6655,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:>=16.9.0, @types/react-dom@npm:^17.0.11":
+"@types/react-dom@npm:17.0.13":
+  version: 17.0.13
+  resolution: "@types/react-dom@npm:17.0.13"
+  dependencies:
+    "@types/react": "*"
+  checksum: 62c42a54ac8961c23a0e74b9cdd8b0a78563757e462b1ab665b2aa365bfd8b86a73d3f6eafc09a4a80fb08659321db168f012aa597c41c0df36f645a94e9266b
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:>=16.9.0":
   version: 17.0.11
   resolution: "@types/react-dom@npm:17.0.11"
   dependencies:
@@ -12737,7 +12746,7 @@ __metadata:
     "@types/jest": 27.4.1
     "@types/node": 17.0.21
     "@types/react": ^17.0.39
-    "@types/react-dom": ^17.0.11
+    "@types/react-dom": 17.0.13
     antd: 4.18.9
     classnames: ^2.2.6
     core-js: 3.21.1
@@ -24300,9 +24309,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.68.0":
-  version: 2.68.0
-  resolution: "rollup@npm:2.68.0"
+"rollup@npm:2.69.0":
+  version: 2.69.0
+  resolution: "rollup@npm:2.69.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -24310,7 +24319,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: c883f6fb2e10e1c79a32527da0c50ef47a7beb8ddacfdae4197ff2d1911fb8d10bb2704496cf878d3048fbf3524d613bc87f25c5be0afc667fe30b7d04fa8092
+  checksum: 65a207c04ae900da58b86a108e5c438a01d2db1fee9cf8811e6c1b3433214739419b5ebd3eba0b8bb6402e38c04d42f7365298f67d7cd6e683b168c7594b7ea8
   languageName: node
   linkType: hard
 
@@ -24335,7 +24344,7 @@ __metadata:
     "@commitlint/cli": 16.2.1
     "@commitlint/config-conventional": 16.2.1
     "@types/react": ^17.0.39
-    "@types/react-dom": ^17.0.11
+    "@types/react-dom": 17.0.13
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.3
     babel-plugin-root-import: ^6.6.0
