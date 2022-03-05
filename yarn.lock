@@ -216,7 +216,7 @@ __metadata:
     intl: ^1.2.5
     ric-shim: ^1.0.0
     rimraf: ^3.0.2
-    rollup: 2.69.0
+    rollup: 2.69.1
     rollup-plugin-babel: ^4.3.3
     rollup-plugin-commonjs: ^10.1.0
     typescript: 4.6.2
@@ -11930,13 +11930,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.8.3":
-  version: 5.9.0
-  resolution: "enhanced-resolve@npm:5.9.0"
+"enhanced-resolve@npm:^5.9.2":
+  version: 5.9.2
+  resolution: "enhanced-resolve@npm:5.9.2"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 06435f52670229eb7fd8d92ea2d988a275f9a1b8c08b9023ba45767c6ed844bc87aa9c9c7e6d044eef99ad73fc3b066b78101163696e5c53121909e5bf8efe8b
+  checksum: 792b7a01abb4ee4433b658c71f92d5948675938e0c03cad1732abe843b87395f15cb880ace4f819f78ead94163278283afc79b8be63c0eddca8ab45f7d8c515d
   languageName: node
   linkType: hard
 
@@ -12360,9 +12360,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.29.2":
-  version: 7.29.2
-  resolution: "eslint-plugin-react@npm:7.29.2"
+"eslint-plugin-react@npm:7.29.3":
+  version: 7.29.3
+  resolution: "eslint-plugin-react@npm:7.29.3"
   dependencies:
     array-includes: ^3.1.4
     array.prototype.flatmap: ^1.2.5
@@ -12380,7 +12380,7 @@ __metadata:
     string.prototype.matchall: ^4.0.6
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-  checksum: fcd793c0fd8e4570dcf8f70dd4afae9882303f4a4b650e09dac2f85fdc0b28747cb97b79832f4b8f4eabdbfb9edf69dc0ff04e8b7f33e0bb8e3f024185f4b037
+  checksum: 5a7b0b5700a3ed9bc52f5e7caab31a60bba586d356d07b49aa78c4b7b83fb54f2e4f6d59f61a9a315f1f89ea74f422a41846ff3432647dd1e8ae629a96dc2814
   languageName: node
   linkType: hard
 
@@ -12721,7 +12721,7 @@ __metadata:
     react-refresh: ^0.11.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
-    webpack: 5.69.1
+    webpack: 5.70.0
   languageName: unknown
   linkType: soft
 
@@ -12758,7 +12758,7 @@ __metadata:
     react-test-renderer: 18.0.0-rc.0
     rest-hooks: 6.2.0-beta.8
     serve: ^13.0.2
-    webpack: 5.69.1
+    webpack: 5.70.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
   languageName: unknown
@@ -12804,7 +12804,7 @@ __metadata:
     redbox-react: ^1.6.0
     rest-hooks: 6.2.0-beta.8
     serve: ^13.0.2
-    webpack: 5.69.1
+    webpack: 5.70.0
   languageName: unknown
   linkType: soft
 
@@ -24309,9 +24309,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.69.0":
-  version: 2.69.0
-  resolution: "rollup@npm:2.69.0"
+"rollup@npm:2.69.1":
+  version: 2.69.1
+  resolution: "rollup@npm:2.69.1"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -24319,7 +24319,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 65a207c04ae900da58b86a108e5c438a01d2db1fee9cf8811e6c1b3433214739419b5ebd3eba0b8bb6402e38c04d42f7365298f67d7cd6e683b168c7594b7ea8
+  checksum: dc9b21b0ecfdbb5811b2110e80866f60420ffcd744faf38d58117f1c3ac2660d553196d2c4c343a9f9d67b5e83c23d4a3c6050524ae1b4159b8530f2593f2c07
   languageName: node
   linkType: hard
 
@@ -24353,7 +24353,7 @@ __metadata:
     eslint: 8.10.0
     eslint-plugin-import: ^2.25.4
     eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: 7.29.2
+    eslint-plugin-react: 7.29.3
     eslint-plugin-react-hooks: ^4.3.0
     husky: ^7.0.4
     lerna: ^4.0.0
@@ -24363,7 +24363,7 @@ __metadata:
     react-dom: 18.0.0-rc.0
     ttypescript: ^1.5.13
     typescript: 4.6.2
-    webpack: 5.69.1
+    webpack: 5.70.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
   languageName: unknown
@@ -28065,9 +28065,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.69.1":
-  version: 5.69.1
-  resolution: "webpack@npm:5.69.1"
+"webpack@npm:5.70.0":
+  version: 5.70.0
+  resolution: "webpack@npm:5.70.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -28078,7 +28078,7 @@ __metadata:
     acorn-import-assertions: ^1.7.6
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.8.3
+    enhanced-resolve: ^5.9.2
     es-module-lexer: ^0.9.0
     eslint-scope: 5.1.1
     events: ^3.2.0
@@ -28098,7 +28098,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 490a6e9e4cd9d0ed3b6c7ca08015da2628919fda8fcf9c36f0f6c0e3ad71eaaaf4b0d12753109f22a4faf79fe9a9063552d9708e0ee2352cf8568433b8e296a7
+  checksum: 00439884a9cdd5305aed3ce93735635785a15c5464a6d2cfce87e17727a07585de02420913e82aa85ddd2ae7322175d2cfda6ac0878a17f061cb605e6a7db57a
   languageName: node
   linkType: hard
 
