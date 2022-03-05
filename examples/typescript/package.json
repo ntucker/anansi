@@ -42,7 +42,7 @@
     "react-refresh": "^0.11.0",
     "react-test-renderer": "18.0.0-rc.0",
     "serve": "^13.0.2",
-    "webpack": "5.69.1"
+    "webpack": "5.70.0"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.89",
