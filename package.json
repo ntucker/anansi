@@ -67,8 +67,7 @@
     "terser-webpack-plugin": "^5.2.1",
     "webpack-virtual-modules": "^0.4.2",
     "browserslist": "^4.16.6",
-    "react-refresh": "^0.11.0",
-    "@rest-hooks/core": "3.1.0-beta.7"
+    "react-refresh": "^0.11.0"
   },
   "dependencies": {
     "@types/react": "^17.0.39",
