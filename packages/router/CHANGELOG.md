@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.5](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.3...@anansi/router@0.2.5) (2022-03-09)
+
+
+### 📦 Package
+
+* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+
+
+
 ### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.0...@anansi/router@0.2.3) (2022-02-28)
 
 
