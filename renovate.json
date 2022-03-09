@@ -5,7 +5,7 @@
 	"commitMessageTopic": "`{{depName}}`",
 	"dependencyDashboardApproval": true,
 	"rangeStrategy": "auto",
-  "ignoreDeps": ["whatwg-fetch","react","react-dom","react-test-renderer","react-refresh", "react-error-overlay"],
+  "ignoreDeps": ["whatwg-fetch","react-error-overlay"],
   "timezone": "America/Chicago",
   "schedule": ["after 6pm and before 1am every weekday", "every weekend"]
 }
