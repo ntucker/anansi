@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.1...@anansi/webpack-config@11.3.2) (2022-03-09)
+
+
+### 🐛 Bug Fix
+
+* linaria hot-reloading ([3d26586](https://github.com/ntucker/anansi/commit/3d2658681a846297d75991bda4ea153faff2322d))
+* Still need resolve options sent to linaria ([3d638cc](https://github.com/ntucker/anansi/commit/3d638ccec1e88d30ce6143a9daa5d6af72fe2aff))
+
+
+### 📦 Package
+
+* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+
+
+
 ### [11.3.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.0...@anansi/webpack-config@11.3.1) (2022-02-28)
 
 
