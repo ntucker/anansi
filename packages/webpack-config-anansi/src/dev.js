@@ -47,7 +47,7 @@ export default function makeDevConfig(
   const watchIgnorePaths = [
     /(hot-update\.[^.]|\.map|s?css\.d\.ts)$/,
     path.join(rootPath, '.cache'),
-    path.join(rootPath, 'node_modules', '.cache'),
+    /node_modules\/\.cache(?!\/(.linaria-cache\/))/,
   ];
   config.plugins = [
     new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
