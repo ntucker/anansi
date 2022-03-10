@@ -15,7 +15,7 @@ export type Props = { id: string };
 const { Meta } = Card;
 
 const Breading = styled(Breadcrumb)`
-  margin: 16px 0 !important;
+  margin: 16px 0;
 `;
 
 export default function PostDetail({ id }: Props) {

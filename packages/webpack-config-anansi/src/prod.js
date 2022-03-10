@@ -83,7 +83,7 @@ export default function makeProdConfig(
   }
   config.optimization = {
     splitChunks: {
-      chunks: 'all',
+      chunks: 'async',
       maxInitialRequests: 30,
       maxAsyncRequests: 30,
       cacheGroups: {
@@ -102,7 +102,6 @@ export default function makeProdConfig(
           name: 'style',
           type: 'css/mini-extract',
           chunks: 'all',
-          enforce: true,
         },
       },
     },
