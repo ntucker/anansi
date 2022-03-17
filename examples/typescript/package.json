@@ -34,7 +34,7 @@
     "@storybook/react": "6.4.19",
     "@types/classnames": "^2.2.9",
     "@types/jest": "27.4.1",
-    "@types/lodash": "4.14.179",
+    "@types/lodash": "4.14.180",
     "@types/parse-link-header": "^1.0.1",
     "@types/react-router": "^5.1.18",
     "@types/react-router-dom": "^5.3.3",
