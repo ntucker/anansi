@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@anansi/router": "^0.2.5",
-    "@babel/runtime": "^7.17.2",
+    "@babel/runtime": "7.17.7",
     "@linaria/core": "^3.0.0-beta.15",
     "@linaria/react": "^3.0.0-beta.17",
     "@linaria/shaker": "^3.0.0-beta.17",

@@ -45,7 +45,7 @@
   ],
   "devDependencies": {
     "@anansi/babel-preset": "^2.8.4",
-    "@babel/core": "7.17.5",
+    "@babel/core": "7.17.7",
     "@types/ejs": "^3.1.0",
     "@types/gulp-filter": "^3.0.34",
     "@types/mem-fs-editor": "^7.0.1",
