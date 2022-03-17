@@ -6606,10 +6606,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/parse-link-header@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@types/parse-link-header@npm:1.0.1"
-  checksum: d79921a85923b45739e989a3c6258ad49133f03c3f5a59d46223fa22686a6931278b35c5dd609e8975242d09e1040e6da81053bce2d91f289ae52fa6b4878ac5
+"@types/parse-link-header@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@types/parse-link-header@npm:2.0.0"
+  checksum: 127c89219ef077f70b9d0798d4766aa6583f5209d965b6987c3c37d4e54739ca9d9c8e91bc282e74d4a99154ee676f45163118ba03cd05f242cfda0e52b5088d
   languageName: node
   linkType: hard
 
@@ -12800,7 +12800,7 @@ __metadata:
     "@types/jest": 27.4.1
     "@types/lodash": 4.14.180
     "@types/node": 17.0.21
-    "@types/parse-link-header": ^1.0.1
+    "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
     antd: 4.19.2
