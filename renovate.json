@@ -1,11 +1,31 @@
 {
   "extends": ["group:allNonMajor", "group:monorepos"],
-	"assigneesFromCodeOwners": true,
-	"commitMessagePrefix": "pkg: ",
-	"commitMessageTopic": "`{{depName}}`",
-	"dependencyDashboardApproval": true,
-	"rangeStrategy": "auto",
-  "ignoreDeps": ["whatwg-fetch","react-error-overlay"],
+  "assigneesFromCodeOwners": true,
+  "commitMessagePrefix": "pkg: ",
+  "commitMessageTopic": "`{{depName}}`",
+  "dependencyDashboardApproval": true,
+  "rangeStrategy": "auto",
+  "ignoreDeps": ["whatwg-fetch", "react-error-overlay"],
   "timezone": "America/Chicago",
-  "schedule": ["after 6pm and before 1am every weekday", "every weekend"]
+  "schedule": ["after 6pm and before 1am every weekday", "every weekend"],
+  "packageRules": [
+    {
+      "matchPaths": [
+        "packages/webpack-config-anansi",
+        "packages/babel-preset-anansi",
+        "packages/browserslist-config-anansi",
+        "packages/cli",
+        "packages/generator-js",
+        "packages/jest-preset-anansi",
+        "packages/ts-utils"
+      ],
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchPackageNames": ["@babel/runtime", "core-js"],
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "replace"
+    }
+  ]
 }
