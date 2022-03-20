@@ -151,6 +151,7 @@ __metadata:
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
     "@anansi/babel-preset": ^2.8.5
+    "@babel/cli": ^7.17.6
     "@babel/core": 7.17.8
     "@babel/runtime": ^7.17.2
     "@types/ejs": ^3.1.0
@@ -184,6 +185,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^2.8.5
     "@anansi/ts-utils": ^0.2.5
+    "@babel/cli": ^7.17.6
     "@babel/core": 7.17.8
     babel-jest: ^27.5.1
     copyfiles: ^2.1.1
@@ -211,6 +213,7 @@ __metadata:
   resolution: "@anansi/polyfill@workspace:packages/polyfill"
   dependencies:
     "@anansi/babel-preset": ^2.8.5
+    "@babel/cli": ^7.17.6
     "@types/intl": ^1.2.0
     core-js: ^3.21.0
     intl: ^1.2.5
@@ -417,7 +420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:7.17.6":
+"@babel/cli@npm:7.17.6, @babel/cli@npm:^7.17.6":
   version: 7.17.6
   resolution: "@babel/cli@npm:7.17.6"
   dependencies:

@@ -14,7 +14,8 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "release": "lerna publish",
+    "changelog": "yarn lerna version",
+    "release": "yarn workspaces foreach -tiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -tpi --exclude 'example-*' run build",
     "dev": "yarn workspaces foreach -tpi --exclude 'example-*' run dev",
     "build:types": "ttsc --build",

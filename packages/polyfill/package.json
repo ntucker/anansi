@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^2.8.5",
+    "@babel/cli": "^7.17.6",
     "rimraf": "^3.0.2",
     "rollup": "2.70.1",
     "rollup-plugin-babel": "^4.3.3",
