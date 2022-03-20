@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.7](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.3...@anansi/router@0.2.7) (2022-03-20)
+
+
+### 📦 Package
+
+* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+* Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
+* Widen react types range ([4a18af6](https://github.com/ntucker/anansi/commit/4a18af665ad15a44facf3b5d6f2e55d1b16675d6))
+
+
+
 ### [0.2.5](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.3...@anansi/router@0.2.5) (2022-03-09)
 
 

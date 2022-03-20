@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.5...@anansi/generator-js@7.3.7) (2022-03-20)
+
+
+### 📦 Package
+
+* Update actions/checkout action ([#1431](https://github.com/ntucker/anansi/issues/1431)) ([aaa6b84](https://github.com/ntucker/anansi/commit/aaa6b84a0818392a1a3b1fd1e614d8d4c129e8e8))
+* Update actions/setup-node action to v3 ([#1430](https://github.com/ntucker/anansi/issues/1430)) ([58479e1](https://github.com/ntucker/anansi/commit/58479e16aec97e353da9ce4e834e0b0ae67b89bf))
+* Update all non-major dependencies ([#1441](https://github.com/ntucker/anansi/issues/1441)) ([b4b7be5](https://github.com/ntucker/anansi/commit/b4b7be5c3ef5c9e5ab870a045942c80b0dc6a4e8))
+* Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
+
+
+
 ### [7.3.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.5...@anansi/generator-js@7.3.6) (2022-03-09)
 
 

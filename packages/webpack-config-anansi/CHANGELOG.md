@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.1...@anansi/webpack-config@11.3.3) (2022-03-20)
+
+
+### 💅 Enhancement
+
+* Split chunks async-only by default ([36cc19b](https://github.com/ntucker/anansi/commit/36cc19b560933a15927730fab4f9d18aeeb45964))
+
+
+### 🐛 Bug Fix
+
+* linaria hot-reloading ([3d26586](https://github.com/ntucker/anansi/commit/3d2658681a846297d75991bda4ea153faff2322d))
+* Still need resolve options sent to linaria ([3d638cc](https://github.com/ntucker/anansi/commit/3d638ccec1e88d30ce6143a9daa5d6af72fe2aff))
+
+
+### 📦 Package
+
+* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+* Update all non-major dependencies ([#1441](https://github.com/ntucker/anansi/issues/1441)) ([b4b7be5](https://github.com/ntucker/anansi/commit/b4b7be5c3ef5c9e5ab870a045942c80b0dc6a4e8))
+* Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
+
+
+
 ### [11.3.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.1...@anansi/webpack-config@11.3.2) (2022-03-09)
 
 
