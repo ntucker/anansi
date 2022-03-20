@@ -1,12 +1,7 @@
-import { RouteController, PojoRouter } from '@pojo-router/core';
-import { Route, RouteProvider } from '@anansi/router';
-import { useController } from 'rest-hooks';
-import { useContext, useMemo } from 'react';
+import { RouteController } from '@pojo-router/core';
 import type { History } from 'history';
-import { Controller } from '@rest-hooks/core';
 
 import NotFound from 'components/NotFound';
-import { demoContext } from 'demo';
 
 import { routes, namedPaths } from './routes';
 
@@ -18,6 +13,12 @@ export function createRouter(history: History) {
     notFound: { component: NotFound },
   });
 }
+
+/*
+import { Route, RouteProvider } from '@anansi/router';
+import { useController } from 'rest-hooks';
+import { useContext, useMemo } from 'react';
+import { demoContext } from '../app/demo';
 
 export function Router({
   children,
@@ -38,3 +39,5 @@ export function Router({
     </RouteProvider>
   );
 }
+TODO: Incorporate 'demo' behavior into spouts method
+*/

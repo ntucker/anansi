@@ -1,15 +1,18 @@
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
-import buildPageRoot from './buildPageRoot';
 import { Render } from '../../scripts/types';
-import { RenderApp, CreateRouter } from './types';
+import { ServerProps } from './spouts/types';
 
-export default function laySpouts(createRouter: CreateRouter, app: RenderApp) {
+export default function laySpouts(
+  spouts: (props: ServerProps) => Promise<{
+    app: JSX.Element;
+  }>,
+) {
   const render: Render = async (clientManifest, req, res) => {
-    const Root = await buildPageRoot(createRouter, clientManifest, req);
+    const { app } = await spouts({ clientManifest, req, res });
     let didError = false;
     const { pipe, abort } = reactRender(
-      app(Root),
+      app,
       /*
       This is not documented, so included the types here for reference:
 type Options = {|
