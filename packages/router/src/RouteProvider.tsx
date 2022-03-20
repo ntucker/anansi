@@ -33,8 +33,7 @@ function RouteProvider<ResolveWith>({
       // fetch as transition/render
       const matches = router.getMatchedRoutes(location.pathname);
       if (matches.length) {
-        // TODO: should we preload every match?
-        preloadMatch(matches[0]);
+        matches.forEach(match => preloadMatch(match));
       }
 
       // transition begins
