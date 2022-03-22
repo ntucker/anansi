@@ -16,6 +16,7 @@ options:
   tsConfigPath
 */
 function buildPreset(api, options = {}) {
+  api.assertVersion(7);
   const env = api.env();
   const babelTargets = typeof api.targets === 'function' ? api.targets() : {};
   const supportsModules = api.caller(
@@ -46,7 +47,6 @@ function buildPreset(api, options = {}) {
   options = {
     minify: false,
     typing: false,
-    loose: false,
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
@@ -317,12 +317,20 @@ function buildPreset(api, options = {}) {
 
   /*  block is at the end so they are unshifted to the start of plugins  */
   preset.plugins.unshift(require('babel-plugin-macros'));
-  const decoratorsOptions = {
-    legacy: options.loose,
+
+  if (
+    typeof options.decoratorsOptions !== 'object' &&
+    options.decoratorsOptions !== undefined
+  ) {
+    throw new Error('decoratorsOptions must be an Object');
+  }
+  const decoratorsOptions = options.decoratorsOptions || {
+    version: options.loose ? 'legacy' : '2018-09',
   };
-  if (!options.loose) {
+  if (decoratorsOptions.version !== 'legacy') {
     decoratorsOptions.decoratorsBeforeExport = true;
   }
+
   const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
     // stage 3, but must come before class-properties

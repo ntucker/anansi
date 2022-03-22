@@ -171,6 +171,11 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 - all things in preset-env
 - legacy decorators
 
+### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
+
+- `version`: "2021-12", "2018-09" or "legacy". defaults to 'legacy' if 'loose' is true, otherwise "2018-09"
+- `decoratorsBeforeExport`
+
 ### reactRequire: bool = true
 
 Automatically add react import if JSX is used.
