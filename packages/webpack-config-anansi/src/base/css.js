@@ -119,7 +119,7 @@ export default function getStyleRules({
       // plain css as css-modules
       {
         test: /\.css$/i,
-        include: [absoluteBasePath, libraryInclude],
+        include: [absoluteBasePath, /\.storybook/, libraryInclude],
         exclude: [...excludeCSSProcess, /\.linaria\.css$/i],
         use: cssModuleLoaders,
       },
