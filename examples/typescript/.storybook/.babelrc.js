@@ -1,3 +1,3 @@
 module.exports = {
-  presets: [['@anansi/babel-preset', { typing: 'typescript', loose:true }]],
+  presets: [['@anansi/babel-preset', { typing: 'typescript' }]],
 };
