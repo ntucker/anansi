@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.2](https://github.com/ntucker/anansi/compare/example-typescript@9.1.0...example-typescript@9.1.2) (2022-03-22)
+
+
+### 📦 Package
+
+* Update `@types/parse-link-header` to v2 ([#1439](https://github.com/ntucker/anansi/issues/1439)) ([cce313c](https://github.com/ntucker/anansi/commit/cce313c822e824aa1bca87df186b4296ee637afa))
+* Update all non-major dependencies ([#1426](https://github.com/ntucker/anansi/issues/1426)) ([00372c1](https://github.com/ntucker/anansi/commit/00372c104ecd4a226de3a10f46d608016342f96f))
+* Update all non-major dependencies ([#1428](https://github.com/ntucker/anansi/issues/1428)) ([980127f](https://github.com/ntucker/anansi/commit/980127fb61215c7bb7e3896204c8e090c0bc334f))
+* Update all non-major dependencies ([#1433](https://github.com/ntucker/anansi/issues/1433)) ([a2cecb8](https://github.com/ntucker/anansi/commit/a2cecb858f5e883e67aed53d5b92d866a32762d1))
+* Update all non-major dependencies ([#1434](https://github.com/ntucker/anansi/issues/1434)) ([a0c9edb](https://github.com/ntucker/anansi/commit/a0c9edb5cb3910c8f3584344f7e4adb20f70e6df))
+* Update all non-major dependencies ([#1436](https://github.com/ntucker/anansi/issues/1436)) ([6b3d6af](https://github.com/ntucker/anansi/commit/6b3d6af5ca3bdd9702267d42f4ed500f50cc765b))
+* Update all non-major dependencies ([#1438](https://github.com/ntucker/anansi/issues/1438)) ([d121297](https://github.com/ntucker/anansi/commit/d1212974971cacb6a71b5800c08a2259c93adf23))
+* Update all non-major dependencies ([#1441](https://github.com/ntucker/anansi/issues/1441)) ([b4b7be5](https://github.com/ntucker/anansi/commit/b4b7be5c3ef5c9e5ab870a045942c80b0dc6a4e8))
+* Update all non-major dependencies ([#1444](https://github.com/ntucker/anansi/issues/1444)) ([46d8a6a](https://github.com/ntucker/anansi/commit/46d8a6a61ae80c750882730d1ebf0b74cc36dde1))
+* Update react monorepo to v18.0.0-rc.2-next-b9de50d2f-20220308 ([#1435](https://github.com/ntucker/anansi/issues/1435)) ([4dfa02f](https://github.com/ntucker/anansi/commit/4dfa02fbeab669d35d6f52861b39d23afbdaf1e6))
+* Upgrade rest hooks ([d739fff](https://github.com/ntucker/anansi/commit/d739fffb23f6293e99a1ce593bea149127e9718a))
+
+
+
 ### [9.1.1](https://github.com/ntucker/anansi/compare/example-typescript@9.1.0...example-typescript@9.1.1) (2022-03-09)
 
 

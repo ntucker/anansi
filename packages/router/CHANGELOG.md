@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.7...@anansi/router@0.3.0) (2022-03-22)
+
+
+### 🚀 Features
+
+* Handle multiple route matches ([9ba701c](https://github.com/ntucker/anansi/commit/9ba701cc3dab710cac1ac34cf1c8442bf2724128))
+
+
+
 ### [0.2.7](https://github.com/ntucker/anansi/compare/@anansi/router@0.2.3...@anansi/router@0.2.7) (2022-03-20)
 
 

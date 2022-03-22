@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.5...@anansi/babel-preset@3.0.0) (2022-03-22)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Drop support for node 10
+* - loose defaults to undefined
+
+### 🚀 Features
+
+* Add decoratorsOptions ([ae7f1f2](https://github.com/ntucker/anansi/commit/ae7f1f2863702e982eab21f05d5bd12d22ce31cf))
+
+
+### 💅 Enhancement
+
+* Require node 12 ([61ac1fb](https://github.com/ntucker/anansi/commit/61ac1fb3b8d9fa2ea14aa02fd5c048b67997353d))
+
+
+
 ### [2.8.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.4...@anansi/babel-preset@2.8.5) (2022-03-20)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.3...@anansi/webpack-config@11.3.4) (2022-03-22)
+
+
+### 🐛 Bug Fix
+
+* Process css files in .storybook dir ([d806928](https://github.com/ntucker/anansi/commit/d806928f79dcf652e6479a1398289c44814438e9))
+
+
+
 ### [11.3.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.1...@anansi/webpack-config@11.3.3) (2022-03-20)
 
 

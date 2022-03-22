@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.2](https://github.com/ntucker/anansi/compare/example-linaria@4.1.0...example-linaria@4.1.2) (2022-03-22)
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1433](https://github.com/ntucker/anansi/issues/1433)) ([a2cecb8](https://github.com/ntucker/anansi/commit/a2cecb858f5e883e67aed53d5b92d866a32762d1))
+* Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
+
+
+
 ### [4.1.1](https://github.com/ntucker/anansi/compare/example-linaria@4.1.0...example-linaria@4.1.1) (2022-03-09)
 
 
