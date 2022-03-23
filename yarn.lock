@@ -275,7 +275,7 @@ __metadata:
     "@vue/preload-webpack-plugin": ^2.0.0
     assert: ^2.0.0
     autoprefixer: ^10.4.4
-    babel-loader: ^8.2.3
+    babel-loader: ^8.2.4
     browserify-zlib: ^0.2.0
     buffer: ^6.0.3
     circular-dependency-plugin: ^5.2.2
@@ -8596,7 +8596,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:8.2.3, babel-loader@npm:^8.0.0, babel-loader@npm:^8.2.3":
+"babel-loader@npm:8.2.4, babel-loader@npm:^8.2.4":
+  version: 8.2.4
+  resolution: "babel-loader@npm:8.2.4"
+  dependencies:
+    find-cache-dir: ^3.3.1
+    loader-utils: ^2.0.0
+    make-dir: ^3.1.0
+    schema-utils: ^2.6.5
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    webpack: ">=2"
+  checksum: 4968251fc4af4279c8e44adba523ed4ad18942f04b37061298e81640d09a570f66e6d53948e39a7d3c3d24ca2b025f0a07c606fadd8e3fbffa8912fd789fd4f0
+  languageName: node
+  linkType: hard
+
+"babel-loader@npm:^8.0.0":
   version: 8.2.3
   resolution: "babel-loader@npm:8.2.3"
   dependencies:
@@ -12977,7 +12992,7 @@ __metadata:
     "@linaria/shaker": ^3.0.0-beta.17
     "@types/classnames": ^2.2.9
     "@types/react-router-dom": ^5.3.3
-    babel-loader: 8.2.3
+    babel-loader: 8.2.4
     classnames: ^2.2.6
     core-js: 3.21.1
     react-refresh: ^0.11.0
@@ -24761,7 +24776,7 @@ __metadata:
     "@types/react": 17.0.41
     "@types/react-dom": 17.0.14
     "@zerollup/ts-transform-paths": ^1.7.18
-    babel-loader: 8.2.3
+    babel-loader: 8.2.4
     babel-plugin-root-import: ^6.6.0
     conventional-changelog-anansi: ^0.2.0
     conventional-changelog-conventionalcommits: ^4.6.3
