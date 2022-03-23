@@ -40,7 +40,7 @@
     "@types/react-router-dom": "^5.3.3",
     "jest": "^27.5.1",
     "react-refresh": "^0.11.0",
-    "react-test-renderer": "18.0.0-rc.2-next-b9de50d2f-20220308",
+    "react-test-renderer": "18.0.0-rc.3-next-de516ca5a-20220321",
     "serve": "^13.0.2",
     "webpack": "5.70.0"
   },
