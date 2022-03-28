@@ -109,10 +109,17 @@ export default function makeStorybookConfigGenerator(baseConfig) {
       },
     };
     if (envConfig.cache) {
-      config.cache = {
-        ...envConfig.cache,
-        version: envConfig.cache.version + 'storybook',
-      };
+      if (
+        typeof envConfig.cache === 'object' &&
+        envConfig.cache.type === 'filesystem'
+      ) {
+        config.cache = {
+          ...envConfig.cache,
+          version: envConfig.cache.version + 'storybook',
+        };
+      } else {
+        config.cache = envConfig.cache;
+      }
     }
     return config;
   };
