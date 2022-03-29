@@ -28,7 +28,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
             value: 'concurrent',
           },
           {
-            name: 'Synchronous (v17.0)',
+            name: 'Legacy (v17.0)',
             value: 'legacy',
           },
         ],
@@ -72,7 +72,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   async writingDependencies() {
     const reactVersion =
       // falsy is same as 'resolve latest'
-      this.config.get('reactMode') === 'legacy' ? '' : '18.0.0-rc.0';
+      this.config.get('reactMode') === 'legacy' ? '' : '18.0.0';
 
     const dependencies: Record<string, string> = {
       'rest-hooks': '',
@@ -82,7 +82,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       react: reactVersion,
       'react-dom': reactVersion,
     };
-    if (reactVersion === '18.0.0-rc.0') {
+    if (reactVersion === '18.0.0') {
       dependencies['@rest-hooks/img'] = '';
     }
     await Promise.all([
