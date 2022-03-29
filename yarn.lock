@@ -68,7 +68,7 @@ __metadata:
     lodash: "*"
     ramda: "*"
     react-hot-loader: ^4.12.0
-    react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0
+    react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0 || ^0.12.0
     typescript: ^3.0.0 || ^4.0.0
   peerDependenciesMeta:
     "@babel/runtime":
@@ -346,7 +346,7 @@ __metadata:
     "@storybook/react": ^6.2.0
     node-sass: ^7.0.1
     react: "*"
-    react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0
+    react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0 || ^0.12.0
     svgo: ^2.8.0
     webpack: ^5.12.0
     webpack-cli: ^4.1.0
@@ -12628,12 +12628,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "eslint-plugin-react-hooks@npm:4.3.0"
+"eslint-plugin-react-hooks@npm:4.4.0":
+  version: 4.4.0
+  resolution: "eslint-plugin-react-hooks@npm:4.4.0"
   peerDependencies:
     eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
-  checksum: 0ba1566ba0780bbc75a5921f49188edf232db2085ab32c8d3889592f0db9d6fadc97fcf639775e0101dec6b5409ca3c803ec44213b90c8bacaf0bdf921871c2e
+  checksum: 350b50d45677cb2df682b9e54475912746bd2f56fc342e4d47fad78d71eb1b2b742e702f1e6c04ab2196346d3d7a2e327b5eee826f5b96bfb84b5c41d35e44e9
   languageName: node
   linkType: hard
 
@@ -12995,7 +12995,7 @@ __metadata:
     babel-loader: 8.2.4
     classnames: ^2.2.6
     core-js: 3.21.1
-    react-refresh: ^0.11.0
+    react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
     webpack: 5.70.0
@@ -13029,10 +13029,10 @@ __metadata:
     core-js: 3.21.1
     history: 5.3.0
     jest: ^27.5.1
-    react: 18.0.0-rc.3-next-e7d0053e6-20220325
-    react-dom: 18.0.0-rc.3-next-e7d0053e6-20220325
-    react-refresh: ^0.11.0
-    react-test-renderer: 18.0.0-rc.3-next-e7d0053e6-20220325
+    react: 18.0.0
+    react-dom: 18.0.0
+    react-refresh: 0.12.0
+    react-test-renderer: 18.0.0
     rest-hooks: 6.2.0
     serve: ^13.0.2
     webpack: 5.70.0
@@ -13074,10 +13074,10 @@ __metadata:
     jest: ^27.5.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
-    react-refresh: ^0.11.0
+    react-refresh: 0.12.0
     react-router-dom: ^5.3.0
     react-router-scroll-4: ^1.0.0-beta.2
-    react-test-renderer: 18.0.0-rc.3-next-e7d0053e6-20220325
+    react-test-renderer: 18.0.0
     redbox-react: ^1.6.0
     rest-hooks: 6.2.0
     serve: ^13.0.2
@@ -23445,15 +23445,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.0.0-rc.3-next-e7d0053e6-20220325":
-  version: 18.0.0-rc.3-next-e7d0053e6-20220325
-  resolution: "react-dom@npm:18.0.0-rc.3-next-e7d0053e6-20220325"
+"react-dom@npm:18.0.0":
+  version: 18.0.0
+  resolution: "react-dom@npm:18.0.0"
   dependencies:
     loose-envify: ^1.1.0
-    scheduler: 0.21.0-rc.3-next-e7d0053e6-20220325
+    scheduler: ^0.21.0
   peerDependencies:
-    react: 18.0.0-rc.3-next-e7d0053e6-20220325
-  checksum: 43b96d7a58ccb03b7b86162c0bb7563a2a8d8801e625cc4774bca1d8418d6cc88cdeea36def24cee66e6f4384394faf47f53211f244fd8470f26ce6ce5c23609
+    react: ^18.0.0
+  checksum: dd0ba9f2f31dd728076c892a95b2f5a8dfe79136431b0289afb46eec39d0ca6b6f0f40a60fd8aa6ef702c98ce7c26100d3d4dbc35c7c9e87429cd04f84cb58bd
   languageName: node
   linkType: hard
 
@@ -23549,17 +23549,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:18.0.0-rc.3-next-e7d0053e6-20220325":
-  version: 18.0.0-rc.3-next-e7d0053e6-20220325
-  resolution: "react-is@npm:18.0.0-rc.3-next-e7d0053e6-20220325"
-  checksum: 742d179c607aa01ecddf1620b8ca14be1a2d6344ed784a4bc17d37d74f8530110594c92ae5e64550d1e6537d80efeb61d994003db7add52a37c7841d45c0f911
-  languageName: node
-  linkType: hard
-
 "react-is@npm:^16.12.0, react-is@npm:^16.13.1, react-is@npm:^16.6.0, react-is@npm:^16.7.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "react-is@npm:18.0.0"
+  checksum: d38f6afee4d8d791cdd69c715841c01a503c9b06da6158e0893447cea6ba50cd262dca9bde84127720cf44fd05c58185eafc32accace4bb2deb03b3cdbeb6b6b
   languageName: node
   linkType: hard
 
@@ -23590,10 +23590,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "react-refresh@npm:0.11.0"
-  checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
+"react-refresh@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "react-refresh@npm:0.12.0"
+  checksum: 046522ed9e26c2846afb734303d9461a825a96f863ea373b9296a90e7112e1602bdf5954d8b48193e763f3ff0108f2e4c00e42f0e3d45382bb9d38dc87348867
   languageName: node
   linkType: hard
 
@@ -23715,16 +23715,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:18.0.0-rc.3-next-e7d0053e6-20220325":
-  version: 18.0.0-rc.3-next-e7d0053e6-20220325
-  resolution: "react-test-renderer@npm:18.0.0-rc.3-next-e7d0053e6-20220325"
+"react-test-renderer@npm:18.0.0":
+  version: 18.0.0
+  resolution: "react-test-renderer@npm:18.0.0"
   dependencies:
-    react-is: 18.0.0-rc.3-next-e7d0053e6-20220325
+    react-is: ^18.0.0
     react-shallow-renderer: ^16.13.1
-    scheduler: 0.21.0-rc.3-next-e7d0053e6-20220325
+    scheduler: ^0.21.0
   peerDependencies:
-    react: 18.0.0-rc.3-next-e7d0053e6-20220325
-  checksum: 7ca0fb500079074df6d210b778ff2312806172a8326b5a932cda37b7def144a6f9cc2d5079c5dab76f6f4f19877488bdeca8150303ef5614c56ca4c9b7b967bd
+    react: ^18.0.0
+  checksum: c0e5250fa2e4c3650e247b986c262631bec68f18c06817269ab7a4e2cffa5a152bb58ce0fe4182ffa8c333e6c2a8d763ac92e0928e5f6914a7aa188c2de1943a
   languageName: node
   linkType: hard
 
@@ -23741,12 +23741,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.0.0-rc.3-next-e7d0053e6-20220325":
-  version: 18.0.0-rc.3-next-e7d0053e6-20220325
-  resolution: "react@npm:18.0.0-rc.3-next-e7d0053e6-20220325"
+"react@npm:18.0.0":
+  version: 18.0.0
+  resolution: "react@npm:18.0.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 487a6171328100f0b700fe74499f5a689bcdb2c122acbef582cc2bb78817b64346c10480b43c9ae9ac175410401e82a3b044de6b4a1ba3f399fb0615fa5036f9
+  checksum: 293020b96536b3c7113ee57ca5c990a3f25649d1751b1c7a3aabd16dff0691fe9f1eed1206616d0906d05933536052037340a0c8d0941ff870b0eb469a2f975b
   languageName: node
   linkType: hard
 
@@ -24784,13 +24784,13 @@ __metadata:
     eslint-plugin-import: ^2.25.4
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: 7.29.4
-    eslint-plugin-react-hooks: ^4.3.0
+    eslint-plugin-react-hooks: 4.4.0
     husky: ^7.0.4
     lerna: ^4.0.0
     lint-staged: 12.3.7
     prettier: 2.6.1
-    react: 18.0.0-rc.3-next-e7d0053e6-20220325
-    react-dom: 18.0.0-rc.3-next-e7d0053e6-20220325
+    react: 18.0.0
+    react-dom: 18.0.0
     ttypescript: ^1.5.13
     typescript: 4.6.3
     webpack: 5.70.0
@@ -24960,12 +24960,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:0.21.0-rc.3-next-e7d0053e6-20220325":
-  version: 0.21.0-rc.3-next-e7d0053e6-20220325
-  resolution: "scheduler@npm:0.21.0-rc.3-next-e7d0053e6-20220325"
+"scheduler@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "scheduler@npm:0.21.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: de8ac6ef95b71a39a2a0523d7358aea114b875526812ae9707bfe67588ffe05d2cf8c32e106994ee354c21761f2b85b6651edfa5f1b6cfd18009241e5f661fa7
+  checksum: 4f8285076041ed2c81acdd1faa987f1655fdbd30554bc667c1ea64743fc74fb3a04ca7d27454b3d678735df5a230137a3b84756061b43dc5796e80701b66d124
   languageName: node
   linkType: hard
 
