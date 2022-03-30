@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.8...@anansi/generator-js@7.3.9) (2022-03-30)
+
+
+### 💅 Enhancement
+
+* Install React 18 final ([f43ffb3](https://github.com/ntucker/anansi/commit/f43ffb3e35c4518d13478ea3e17dc6077caa57d1))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1449](https://github.com/ntucker/anansi/issues/1449)) ([e24be11](https://github.com/ntucker/anansi/commit/e24be11af399370647dcfe115f75eab26176aeae))
+
+
+
 ### [7.3.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.7...@anansi/generator-js@7.3.8) (2022-03-22)
 
 

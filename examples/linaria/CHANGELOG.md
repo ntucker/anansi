@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.3](https://github.com/ntucker/anansi/compare/example-linaria@4.1.2...example-linaria@4.1.3) (2022-03-30)
+
+
+### 📦 Package
+
+* Update `babel-loader` to v8.2.4 ([#1448](https://github.com/ntucker/anansi/issues/1448)) ([ea8659b](https://github.com/ntucker/anansi/commit/ea8659bd18d1677f27d2436cba81076c38d3acdb))
+* Update react monorepo ([#1451](https://github.com/ntucker/anansi/issues/1451)) ([890a11f](https://github.com/ntucker/anansi/commit/890a11f8a03e57c69a4bc2202550776222dfa2be))
+
+
+
 ### [4.1.2](https://github.com/ntucker/anansi/compare/example-linaria@4.1.0...example-linaria@4.1.2) (2022-03-22)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.3](https://github.com/ntucker/anansi/compare/example-typescript@9.1.2...example-typescript@9.1.3) (2022-03-30)
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1449](https://github.com/ntucker/anansi/issues/1449)) ([e24be11](https://github.com/ntucker/anansi/commit/e24be11af399370647dcfe115f75eab26176aeae))
+* Update react monorepo ([#1451](https://github.com/ntucker/anansi/issues/1451)) ([890a11f](https://github.com/ntucker/anansi/commit/890a11f8a03e57c69a4bc2202550776222dfa2be))
+* Update react monorepo to v18.0.0-rc.3-next-de516ca5a-20220321 ([#1447](https://github.com/ntucker/anansi/issues/1447)) ([7b93c76](https://github.com/ntucker/anansi/commit/7b93c76857807961c03b59547464a2393f5e1f52))
+* Update react monorepo to v18.0.0-rc.3-next-e7d0053e6-20220325 ([#1450](https://github.com/ntucker/anansi/issues/1450)) ([aed2919](https://github.com/ntucker/anansi/commit/aed2919059233b593a33e3ff4102a0bd8d99cb8c))
+
+
+
 ### [9.1.2](https://github.com/ntucker/anansi/compare/example-typescript@9.1.0...example-typescript@9.1.2) (2022-03-22)
 
 

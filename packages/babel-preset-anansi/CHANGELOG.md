@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.0.0...@anansi/babel-preset@3.0.1) (2022-03-30)
+
+
+### 📦 Package
+
+* Update react monorepo ([#1451](https://github.com/ntucker/anansi/issues/1451)) ([890a11f](https://github.com/ntucker/anansi/commit/890a11f8a03e57c69a4bc2202550776222dfa2be))
+
+
+
 ## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@2.8.5...@anansi/babel-preset@3.0.0) (2022-03-22)
 
 

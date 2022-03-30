@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.4...@anansi/webpack-config@11.3.5) (2022-03-30)
+
+
+### 🐛 Bug Fix
+
+* Storybook works with all cache configs ([a7c419e](https://github.com/ntucker/anansi/commit/a7c419eec92486f4d1369152cb78df04750545c3))
+
+
+### 📦 Package
+
+* Update `babel-loader` to v8.2.4 ([#1448](https://github.com/ntucker/anansi/issues/1448)) ([ea8659b](https://github.com/ntucker/anansi/commit/ea8659bd18d1677f27d2436cba81076c38d3acdb))
+* Update react monorepo ([#1451](https://github.com/ntucker/anansi/issues/1451)) ([890a11f](https://github.com/ntucker/anansi/commit/890a11f8a03e57c69a4bc2202550776222dfa2be))
+
+
+
 ### [11.3.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.3...@anansi/webpack-config@11.3.4) (2022-03-22)
 
 
