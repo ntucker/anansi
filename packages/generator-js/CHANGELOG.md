@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.9...@anansi/generator-js@7.3.10) (2022-03-30)
+
+
+### 💅 Enhancement
+
+* Update React version link ([dbd6413](https://github.com/ntucker/anansi/commit/dbd6413360fa533e203d76bd8c16cb5fcf96ee15))
+* useResource -> useSuspense ([ebeb48c](https://github.com/ntucker/anansi/commit/ebeb48c506e78a85e925afdabbacced76990d613))
+
+
+
 ### [7.3.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.8...@anansi/generator-js@7.3.9) (2022-03-30)
 
 
