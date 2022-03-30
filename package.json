@@ -22,7 +22,8 @@
     "build:pkg": "yarn build:types && yarn workspaces foreach -t --no-private run build",
     "build:clean": "yarn workspaces foreach -tpi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
-    "prepack": "yarn build:pkg"
+    "prepack": "yarn build:pkg",
+    "version": "yarn install"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.0.0",
