@@ -28,17 +28,19 @@ program
     }
     try {
       const cwd = options.dir || `./${projectName}`;
-      await Promise.all([
-        verifyAndPrompt(),
-        execa('npx yo', ['@anansi/js', projectName], {
-          stdio: 'inherit',
-          shell: true,
-          cwd,
-          env: {
-            PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
-          },
-        }),
-      ]);
+      const yosub = execa('npx yo', ['@anansi/js', projectName], {
+        stdio: ['pipe', process.stdout, process.stderr],
+        shell: true,
+        cwd,
+        env: {
+          PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
+        },
+      });
+      // pipe with raw mode allows us to know when this exits with Ctrl+C (SIGINT)
+      process.stdin.setRawMode(true);
+      process.stdin.pipe(yosub.stdin, { end: false });
+      await Promise.all([verifyAndPrompt(), yosub]);
+
       const readme = path.join(cwd, 'README.md');
       // if user exits early this is still exit code 0, so we need to validate
       // whether the setup completed before going on to the next step
@@ -64,7 +66,8 @@ program
         });
       }
     } catch (error) {
-      console.error(error.message);
+      // Don't display error for user-triggered exit (SIGINT)
+      if (error.exitCode !== 130) console.error(error.message);
       process.exit(2);
     }
   });
