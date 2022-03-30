@@ -20,7 +20,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         type: 'list',
         name: 'reactMode',
         message:
-          'What version of React?\nMore info: https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html',
+          'What version of React?\nMore info: https://reactjs.org/blog/2022/03/29/react-v18.html',
         default: 'concurrent',
         choices: [
           {
