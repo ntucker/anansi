@@ -159,7 +159,7 @@ __metadata:
     "@types/mem-fs-editor": ^7.0.1
     "@types/node": 17.0.23
     "@types/pacote": ^11.1.3
-    "@types/yeoman-generator": ^5.2.9
+    "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
     copyfiles: ^2.1.1
     core-js: ^3.21.0
@@ -239,7 +239,7 @@ __metadata:
     "@pojo-router/core": ^0.3.9
     history: 5.3.0
     jest: ^27.5.1
-    nano-memoize: ^1.2.1
+    nano-memoize: 1.3.0
     rimraf: ^3.0.0
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -316,7 +316,7 @@ __metadata:
     react-error-overlay: 6.0.9
     readable-stream: ^3.6.0
     rimraf: ^3.0.2
-    sass: ^1.49.9
+    sass: ^1.49.10
     sass-loader: ^12.6.0
     sass-resources-loader: ^2.2.4
     semver: ^7.3.5
@@ -336,7 +336,7 @@ __metadata:
     vm-browserify: ^1.1.2
     webpack-bundle-analyzer: ^4.5.0
     webpack-node-externals: ^3.0.0
-    webpack-remove-empty-scripts: ^0.7.3
+    webpack-remove-empty-scripts: ^0.8.0
     webpack-stats-plugin: ^1.0.3
     worker-loader: ^3.0.8
   peerDependencies:
@@ -3931,12 +3931,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@linaria/babel-preset@npm:^3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/babel-preset@npm:3.0.0-beta.18"
+  dependencies:
+    "@babel/generator": ">=7"
+    "@babel/plugin-syntax-dynamic-import": ">=7"
+    "@babel/template": ">=7"
+    "@linaria/core": ^3.0.0-beta.18
+    "@linaria/logger": ^3.0.0-beta.15
+    "@linaria/utils": ^3.0.0-beta.18
+    cosmiconfig: ^5.1.0
+    source-map: ^0.7.3
+    stylis: ^3.5.4
+  peerDependencies:
+    "@babel/core": ">=7"
+  checksum: 17dfa0dad87618f2527ba92736f7a050a3da5a23fd888d3e3c08c1c59f09de8a7d6ddf5365c8cc690cbb6dd247018b65bebe832c019090f653fccee0a0952003
+  languageName: node
+  linkType: hard
+
 "@linaria/core@npm:^3.0.0-beta.15":
   version: 3.0.0-beta.15
   resolution: "@linaria/core@npm:3.0.0-beta.15"
   dependencies:
     "@linaria/utils": ^3.0.0-beta.15
   checksum: 77b3763d10e73712a8126263b93fc063fb7075368aabd059bf37f04e6524a19213aeb5f66dabd509ad138decd0ae1ffe65ae0bf4e1a7c44422be43fd438765f8
+  languageName: node
+  linkType: hard
+
+"@linaria/core@npm:^3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/core@npm:3.0.0-beta.18"
+  dependencies:
+    "@linaria/utils": ^3.0.0-beta.18
+  checksum: a685b272dccf53e8b7d73e1246ca0e6eeb5a4c5576a344d7619ddaf17e55a63093b783b3b8daba90d9209de00c66b28f53dfe4d60e36ddf70d78fc8833560969
   languageName: node
   linkType: hard
 
@@ -3950,45 +3978,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/preeval@npm:^3.0.0-beta.17":
-  version: 3.0.0-beta.17
-  resolution: "@linaria/preeval@npm:3.0.0-beta.17"
+"@linaria/preeval@npm:^3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/preeval@npm:3.0.0-beta.18"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.17
+    "@linaria/babel-preset": ^3.0.0-beta.18
   peerDependencies:
     "@babel/core": ">=7"
-  checksum: 0cfcdb713af3cfc3012b29ca00523a3cf691a559b5deed730293fe84d23a24c0d442b317054ddb98573a68dc16d525efa3b1c5656035241db6080712121b1d83
+  checksum: 0bc5f8786165db87d4700dfdb75a54e98b7ae7ae6929ff37c3df265bed759398cf346ea422b6fc5de7e271e605915363d060f564aec27ba508ef8b419e55c34d
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:^3.0.0-beta.17":
-  version: 3.0.0-beta.17
-  resolution: "@linaria/react@npm:3.0.0-beta.17"
+"@linaria/react@npm:3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/react@npm:3.0.0-beta.18"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.8
-    "@linaria/core": ^3.0.0-beta.15
+    "@linaria/core": ^3.0.0-beta.18
   peerDependencies:
     react: ">=16"
-  checksum: 90551ea056ae29da0039df312db2144b6262382b69c2a52cc1dddfbc7e2e1db1544a277491236e4228a64a705d138d18c8086f91aa29a1abeaa2751cd7a26e1d
+  checksum: 5f7661d31e35bea46f9cdf2e582518c1a8d0cb85afa63b265be2e95691bd4952bb06cb400d2dd32c9d61f6c2c0920e20ea0d9de2069532b5afe2d816f518f63b
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:^3.0.0-beta.17":
-  version: 3.0.0-beta.17
-  resolution: "@linaria/shaker@npm:3.0.0-beta.17"
+"@linaria/shaker@npm:3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/shaker@npm:3.0.0-beta.18"
   dependencies:
     "@babel/generator": ">=7"
     "@babel/plugin-transform-runtime": ">=7"
     "@babel/plugin-transform-template-literals": ">=7"
     "@babel/preset-env": ">=7"
-    "@linaria/babel-preset": ^3.0.0-beta.17
+    "@linaria/babel-preset": ^3.0.0-beta.18
     "@linaria/logger": ^3.0.0-beta.15
-    "@linaria/preeval": ^3.0.0-beta.17
+    "@linaria/preeval": ^3.0.0-beta.18
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.9.0
   peerDependencies:
     "@babel/core": ">=7"
-  checksum: a93cff47b266fca304ab4cfd76e6bd246a720c7eeff501b569344ef5d085a690c3903d4e1822d2ac80dcc06ecba95d3935dd5565d250306efca50a3d09a6a4a1
+  checksum: 7740b9a4ec513e4be6e897a9c618b7bb30296717a30b62da7ee9d181e8243e55ff2073540db4b2abae24e5ed57027298a939f254f8f870f4795015aa97b849f7
   languageName: node
   linkType: hard
 
@@ -3996,6 +4024,13 @@ __metadata:
   version: 3.0.0-beta.15
   resolution: "@linaria/utils@npm:3.0.0-beta.15"
   checksum: 05f16972d91a396d3e356a310a037fe1ec4cd7b1ed63923cbb46e583dece687e2342ba77983aa392c4631d841d6df303c6d2883c5c2c484999c58ae4d2bc27a0
+  languageName: node
+  linkType: hard
+
+"@linaria/utils@npm:^3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/utils@npm:3.0.0-beta.18"
+  checksum: ecbd189c93fc31175e5107eb9ced88da260181d16eb93ee22b54abff72858bef12edfd29771865f85babe4a6b6166dc8616a030c78c352ac3896f5d875cf80a4
   languageName: node
   linkType: hard
 
@@ -6651,10 +6686,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.180":
-  version: 4.14.180
-  resolution: "@types/lodash@npm:4.14.180"
-  checksum: fc42ae3473695cac6e91553f832fef8eb51a31c1c0381cafa81b00dc3efe18e279786bdda77caf0b90a8340ba2ba7aa46ae6541d69870565f775d04c89128bc1
+"@types/lodash@npm:4.14.181":
+  version: 4.14.181
+  resolution: "@types/lodash@npm:4.14.181"
+  checksum: 0d1863d8383fd2f8bb42e9e3fc1d6255bb88ff034d6df848941063698944313dae944fc1270315613e3d303fae7c7a9a86085ad3235ed6204c56c4b0b3699aa9
   languageName: node
   linkType: hard
 
@@ -7133,7 +7168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:^5.2.9":
+"@types/yeoman-generator@npm:*":
   version: 5.2.9
   resolution: "@types/yeoman-generator@npm:5.2.9"
   dependencies:
@@ -7144,6 +7179,20 @@ __metadata:
     "@types/yeoman-environment": "*"
     rxjs: ^6.4.0
   checksum: 5caefdbe9423ad60b1a88a8136559c44101a2824e37499a6587986b8251e393d2878104247e3e45a63d3a38a36998d3e0c2b03a952d1dd5661644c9e454d4886
+  languageName: node
+  linkType: hard
+
+"@types/yeoman-generator@npm:5.2.10":
+  version: 5.2.10
+  resolution: "@types/yeoman-generator@npm:5.2.10"
+  dependencies:
+    "@types/debug": "*"
+    "@types/ejs": "*"
+    "@types/inquirer": "*"
+    "@types/mem-fs-editor": "*"
+    "@types/yeoman-environment": "*"
+    rxjs: ^6.4.0
+  checksum: 85744da9b4565e347c737a8490572d019457e0ef7da5ca3dae9b2c71f31fc973a3381e673ecc195499ad9db3101318af9a9afc4324393461854158953bbaf0ad
   languageName: node
   linkType: hard
 
@@ -12988,8 +13037,8 @@ __metadata:
     "@babel/plugin-transform-modules-commonjs": 7.17.7
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
-    "@linaria/react": ^3.0.0-beta.17
-    "@linaria/shaker": ^3.0.0-beta.17
+    "@linaria/react": 3.0.0-beta.18
+    "@linaria/shaker": 3.0.0-beta.18
     "@types/classnames": ^2.2.9
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.4
@@ -12998,7 +13047,7 @@ __metadata:
     react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
-    webpack: 5.70.0
+    webpack: 5.71.0
   languageName: unknown
   linkType: soft
 
@@ -13014,8 +13063,8 @@ __metadata:
     "@anansi/webpack-config": ^11.3.5
     "@babel/runtime": ^7.17.2
     "@linaria/core": ^3.0.0-beta.15
-    "@linaria/react": ^3.0.0-beta.17
-    "@linaria/shaker": ^3.0.0-beta.17
+    "@linaria/react": 3.0.0-beta.18
+    "@linaria/shaker": 3.0.0-beta.18
     "@rest-hooks/img": 0.6.0
     "@rest-hooks/rest": 3.0.3
     "@rest-hooks/test": 7.2.1
@@ -13035,7 +13084,7 @@ __metadata:
     react-test-renderer: 18.0.0
     rest-hooks: 6.2.0
     serve: ^13.0.2
-    webpack: 5.70.0
+    webpack: 5.71.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
   languageName: unknown
@@ -13063,7 +13112,7 @@ __metadata:
     "@storybook/react": 6.4.19
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
-    "@types/lodash": 4.14.180
+    "@types/lodash": 4.14.181
     "@types/node": 17.0.23
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
@@ -13081,7 +13130,7 @@ __metadata:
     redbox-react: ^1.6.0
     rest-hooks: 6.2.0
     serve: ^13.0.2
-    webpack: 5.70.0
+    webpack: 5.71.0
   languageName: unknown
   linkType: soft
 
@@ -19446,10 +19495,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "nano-memoize@npm:1.2.1"
-  checksum: 2778bba1f6bb241c308b07143eb891b2632fe69e73c0c35c88eda93ba3f5f1d474d1bc981a15ab7d1a74b97be66baa24dd76c10878cb84482d02dbd90f7f3e4e
+"nano-memoize@npm:1.3.0":
+  version: 1.3.0
+  resolution: "nano-memoize@npm:1.3.0"
+  checksum: 2ece19b674da68db3f7ab449981182737babec0cb1c5804620535f0fa2aa12d965fe22b95a24723640bf738658ca5b284c9f323d3005fec0536e67dce589ab89
   languageName: node
   linkType: hard
 
@@ -24793,7 +24842,7 @@ __metadata:
     react-dom: 18.0.0
     ttypescript: ^1.5.13
     typescript: 4.6.3
-    webpack: 5.70.0
+    webpack: 5.71.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
   languageName: unknown
@@ -24938,16 +24987,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.9":
-  version: 1.49.9
-  resolution: "sass@npm:1.49.9"
+"sass@npm:^1.49.10":
+  version: 1.49.10
+  resolution: "sass@npm:1.49.10"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: e5653e3499274c5127dcb5c9e7c5f6930378fc61764d999a5d8965782e027181ed09714f94836dec74ef55e3a858107fe6c571954c0cab0ad0be5ab8e586829c
+  checksum: 7b767ece77df47382ac80ff279f5c1cff24dec6684ccaf3f9657f52a793e7ba7b85e4d30a45fb6c70f9fc46da507559fe83e771dcb804341d03af908ad6404c9
   languageName: node
   linkType: hard
 
@@ -28454,14 +28503,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-remove-empty-scripts@npm:^0.7.3":
-  version: 0.7.3
-  resolution: "webpack-remove-empty-scripts@npm:0.7.3"
+"webpack-remove-empty-scripts@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "webpack-remove-empty-scripts@npm:0.8.0"
   dependencies:
     ansis: ^1.3.4
   peerDependencies:
     webpack: ">=5.32.0"
-  checksum: bf16347b5683b920a5246242cb971e719591c9dd5dda691f521550c46e5292c4905afff27c3d47cf5888c3b4d96db92d24e6a89e6c1c96b5022186ad93f43d38
+  checksum: cf78e7516b18321cd234d5a86231d01403d4393f9e802b8552e150315772adb5889a24a4eb8c067aba0dc831e238513196e59f6225e5bb098d31c2da7be19cc7
   languageName: node
   linkType: hard
 
@@ -28496,9 +28545,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.70.0":
-  version: 5.70.0
-  resolution: "webpack@npm:5.70.0"
+"webpack@npm:5.71.0":
+  version: 5.71.0
+  resolution: "webpack@npm:5.71.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -28529,7 +28578,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 00439884a9cdd5305aed3ce93735635785a15c5464a6d2cfce87e17727a07585de02420913e82aa85ddd2ae7322175d2cfda6ac0878a17f061cb605e6a7db57a
+  checksum: 84b273a15180d45dafe4fc4a3ccccba2f72210f327a1af39713b3ef78148768afb0e18fa0cddaea4af5dd54ace199fbbdfcef9aec8da7e9c248f8b1b7cc413e1
   languageName: node
   linkType: hard
 

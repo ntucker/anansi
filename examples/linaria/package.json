@@ -25,15 +25,15 @@
     "babel-loader": "8.2.4",
     "react-refresh": "0.12.0",
     "serve": "^13.0.2",
-    "webpack": "5.70.0"
+    "webpack": "5.71.0"
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.105",
     "@babel/plugin-transform-modules-commonjs": "7.17.7",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "^3.0.0-beta.15",
-    "@linaria/react": "^3.0.0-beta.17",
-    "@linaria/shaker": "^3.0.0-beta.17",
+    "@linaria/react": "3.0.0-beta.18",
+    "@linaria/shaker": "3.0.0-beta.18",
     "classnames": "^2.2.6",
     "core-js": "3.21.1",
     "redbox-react": "^1.6.0"
