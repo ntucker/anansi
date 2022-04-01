@@ -237,9 +237,9 @@ __metadata:
     "@babel/core": 7.17.8
     "@babel/runtime": ^7.10.5
     "@pojo-router/core": ^0.3.9
-    history: 5.3.0
+    history: ^5.3.0
     jest: ^27.5.1
-    nano-memoize: 1.3.0
+    nano-memoize: ^1.3.0
     rimraf: ^3.0.0
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -3912,26 +3912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:^3.0.0-beta.17":
-  version: 3.0.0-beta.17
-  resolution: "@linaria/babel-preset@npm:3.0.0-beta.17"
-  dependencies:
-    "@babel/generator": ">=7"
-    "@babel/plugin-syntax-dynamic-import": ">=7"
-    "@babel/template": ">=7"
-    "@linaria/core": ^3.0.0-beta.15
-    "@linaria/logger": ^3.0.0-beta.15
-    "@linaria/utils": ^3.0.0-beta.15
-    cosmiconfig: ^5.1.0
-    source-map: ^0.7.3
-    stylis: ^3.5.4
-  peerDependencies:
-    "@babel/core": ">=7"
-  checksum: 7b581f1fda66ca441ecf13f45451c327791a2245d6a02bedd1f4c9fccf6dcd9a8ea12b3a2da0a419bdf551450768a06f052d55e76e5ce5ea3cd6cfd231316286
-  languageName: node
-  linkType: hard
-
-"@linaria/babel-preset@npm:^3.0.0-beta.18":
+"@linaria/babel-preset@npm:^3.0.0-beta.17, @linaria/babel-preset@npm:^3.0.0-beta.18":
   version: 3.0.0-beta.18
   resolution: "@linaria/babel-preset@npm:3.0.0-beta.18"
   dependencies:
@@ -3947,15 +3928,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ">=7"
   checksum: 17dfa0dad87618f2527ba92736f7a050a3da5a23fd888d3e3c08c1c59f09de8a7d6ddf5365c8cc690cbb6dd247018b65bebe832c019090f653fccee0a0952003
-  languageName: node
-  linkType: hard
-
-"@linaria/core@npm:^3.0.0-beta.15":
-  version: 3.0.0-beta.15
-  resolution: "@linaria/core@npm:3.0.0-beta.15"
-  dependencies:
-    "@linaria/utils": ^3.0.0-beta.15
-  checksum: 77b3763d10e73712a8126263b93fc063fb7075368aabd059bf37f04e6524a19213aeb5f66dabd509ad138decd0ae1ffe65ae0bf4e1a7c44422be43fd438765f8
   languageName: node
   linkType: hard
 
@@ -4017,13 +3989,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ">=7"
   checksum: 7740b9a4ec513e4be6e897a9c618b7bb30296717a30b62da7ee9d181e8243e55ff2073540db4b2abae24e5ed57027298a939f254f8f870f4795015aa97b849f7
-  languageName: node
-  linkType: hard
-
-"@linaria/utils@npm:^3.0.0-beta.15":
-  version: 3.0.0-beta.15
-  resolution: "@linaria/utils@npm:3.0.0-beta.15"
-  checksum: 05f16972d91a396d3e356a310a037fe1ec4cd7b1ed63923cbb46e583dece687e2342ba77983aa392c4631d841d6df303c6d2883c5c2c484999c58ae4d2bc27a0
   languageName: node
   linkType: hard
 
@@ -7168,21 +7133,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-generator@npm:*":
-  version: 5.2.9
-  resolution: "@types/yeoman-generator@npm:5.2.9"
-  dependencies:
-    "@types/debug": "*"
-    "@types/ejs": "*"
-    "@types/inquirer": "*"
-    "@types/mem-fs-editor": "*"
-    "@types/yeoman-environment": "*"
-    rxjs: ^6.4.0
-  checksum: 5caefdbe9423ad60b1a88a8136559c44101a2824e37499a6587986b8251e393d2878104247e3e45a63d3a38a36998d3e0c2b03a952d1dd5661644c9e454d4886
-  languageName: node
-  linkType: hard
-
-"@types/yeoman-generator@npm:5.2.10":
+"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.2.10":
   version: 5.2.10
   resolution: "@types/yeoman-generator@npm:5.2.10"
   dependencies:
@@ -13036,7 +12987,7 @@ __metadata:
     "@anansi/webpack-config": ^11.3.5
     "@babel/plugin-transform-modules-commonjs": 7.17.7
     "@babel/runtime": ^7.17.2
-    "@linaria/core": ^3.0.0-beta.15
+    "@linaria/core": ^3.0.0-beta.18
     "@linaria/react": 3.0.0-beta.18
     "@linaria/shaker": 3.0.0-beta.18
     "@types/classnames": ^2.2.9
@@ -13062,7 +13013,7 @@ __metadata:
     "@anansi/router": ^0.3.1
     "@anansi/webpack-config": ^11.3.5
     "@babel/runtime": ^7.17.2
-    "@linaria/core": ^3.0.0-beta.15
+    "@linaria/core": ^3.0.0-beta.18
     "@linaria/react": 3.0.0-beta.18
     "@linaria/shaker": 3.0.0-beta.18
     "@rest-hooks/img": 0.6.0
@@ -15087,7 +15038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"history@npm:5.3.0":
+"history@npm:5.3.0, history@npm:^5.3.0":
   version: 5.3.0
   resolution: "history@npm:5.3.0"
   dependencies:
@@ -19495,7 +19446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:1.3.0":
+"nano-memoize@npm:^1.3.0":
   version: 1.3.0
   resolution: "nano-memoize@npm:1.3.0"
   checksum: 2ece19b674da68db3f7ab449981182737babec0cb1c5804620535f0fa2aa12d965fe22b95a24723640bf738658ca5b284c9f323d3005fec0536e67dce589ab89
