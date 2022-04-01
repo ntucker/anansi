@@ -5,8 +5,7 @@
     "rootDir": "src",
     "types": [
       "react/next",
-      "react-dom/next",
-      "./modules"
+      "react-dom/next"
     ]
   },
   "include": ["src"],
