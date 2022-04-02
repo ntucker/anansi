@@ -4588,13 +4588,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@rest-hooks/core@npm:3.1.1"
+"@rest-hooks/core@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "@rest-hooks/core@npm:3.1.2"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/endpoint": ^2.2.1
-    "@rest-hooks/normalizr": ^8.2.1
+    "@rest-hooks/endpoint": ^2.2.2
+    "@rest-hooks/normalizr": ^8.2.2
     "@rest-hooks/use-enhanced-reducer": ^1.1.1
     flux-standard-action: ^2.1.1
   peerDependencies:
@@ -4603,28 +4603,28 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: e6ef94d9d6af11dcf46d0da3accf7348217b24b0fbb90443e8d6b5abc00a70586fef6fb565bcd0ef89cbe0012e32cb878dca6c799e41becc430f66d479b8d536
+  checksum: 52346a35957375c7e146b0511f6d20331acb3f9e9f7866f15aa3605de15e045ba8c7babcbac5e19597b4df78c0cbf6daf035f7825d323bf7a2573e47f20646d2
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "@rest-hooks/endpoint@npm:2.2.1"
+"@rest-hooks/endpoint@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@rest-hooks/endpoint@npm:2.2.2"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/normalizr": ^8.2.1
-  checksum: 96a673c51c3d13ad2be41dc1f440fee8947b3f85ea62af5a8f1a23a92767581432a2ea302f39b88e3c186cc24ddd56c2cd9172fd67a947262e27ade535e575f1
+    "@rest-hooks/normalizr": ^8.2.2
+  checksum: 1d5f9bf2e49d37a56c0baa6f829a6ff043d065db84bedf733cf5266ca0b84864333fe8f5255bac36c7e686db139578be9ba4df87e510b4f57a0a3bef91e11f0e
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@rest-hooks/graphql@npm:0.1.3"
+"@rest-hooks/graphql@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@rest-hooks/graphql@npm:0.1.4"
   dependencies:
     "@babel/runtime": ^7.7.2
   peerDependencies:
     "@rest-hooks/endpoint": ^2.0.0
-  checksum: fbd5b9151a620253665c350c2664c391fc455a27507afe63a6ff57149218ba1984ba2243d1e29ec99533cbe36ad0f88b93d6570d4fd6a74610726144d838b8bb
+  checksum: 91b6facff656c643ff75871f356222ae77f5bc8a61076914027ffce0a51d73096ec8b23421457a107151d6c560024591b3aa46f91e8a7ab5fe5f08853bbb704f
   languageName: node
   linkType: hard
 
@@ -4645,12 +4645,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^8.2.1":
-  version: 8.2.1
-  resolution: "@rest-hooks/normalizr@npm:8.2.1"
+"@rest-hooks/normalizr@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "@rest-hooks/normalizr@npm:8.2.2"
   dependencies:
     "@babel/runtime": ^7.7.2
-  checksum: d9649f5a16a339e811e12016857f7911b45eb717caae4d73c122ac87db8ac93020b3fa9098563c70b72ca60ce8ac15784ad138de0cb7ec8ce0f00e8a6861e844
+  checksum: d11fcc918a78db3d45cf99938ef28629d51dc684f3268a97db5b404cb709cebce07f10922aa813927c02a58642c7b79137c2a12e91656bb4c42ec7f2e2015734
   languageName: node
   linkType: hard
 
@@ -4665,9 +4665,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:7.2.1":
-  version: 7.2.1
-  resolution: "@rest-hooks/test@npm:7.2.1"
+"@rest-hooks/test@npm:7.2.2":
+  version: 7.2.2
+  resolution: "@rest-hooks/test@npm:7.2.2"
   dependencies:
     "@testing-library/react-hooks": ~7.0.0
   peerDependencies:
@@ -4681,7 +4681,7 @@ __metadata:
       optional: true
     redux:
       optional: true
-  checksum: baf5a45e2d63c07cbc459c82a42250b73b3c0dac8058c431b3534376791e2460c9ff7e8941e92040aa363b79ef2504c5f03bed2719e260cd8be2ea82cd2dfd4c
+  checksum: 72b0d062be669bd4321f66b1e5558f4cb051e299095572e2010fa75f8449c9726bb666e3d46b88d485fe2c684d73d645175cbc708a0fca885a6462b46f809a7b
   languageName: node
   linkType: hard
 
@@ -13018,7 +13018,7 @@ __metadata:
     "@linaria/shaker": 3.0.0-beta.18
     "@rest-hooks/img": 0.6.0
     "@rest-hooks/rest": 3.0.3
-    "@rest-hooks/test": 7.2.1
+    "@rest-hooks/test": 7.2.2
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/node": 17.0.23
@@ -13033,7 +13033,7 @@ __metadata:
     react-dom: 18.0.0
     react-refresh: 0.11.0
     react-test-renderer: 18.0.0
-    rest-hooks: 6.2.1
+    rest-hooks: 6.2.2
     serve: ^13.0.2
     webpack: 5.71.0
     webpack-cli: ^4.9.2
@@ -13052,9 +13052,9 @@ __metadata:
     "@anansi/polyfill": ^1.0.105
     "@anansi/webpack-config": ^11.3.5
     "@babel/runtime": ^7.17.2
-    "@rest-hooks/graphql": 0.1.3
+    "@rest-hooks/graphql": 0.1.4
     "@rest-hooks/rest": 3.0.3
-    "@rest-hooks/test": 7.2.1
+    "@rest-hooks/test": 7.2.2
     "@storybook/addon-essentials": 6.4.20
     "@storybook/addon-links": 6.4.20
     "@storybook/addons": 6.4.20
@@ -13079,7 +13079,7 @@ __metadata:
     react-router-scroll-4: ^1.0.0-beta.2
     react-test-renderer: 18.0.0
     redbox-react: ^1.6.0
-    rest-hooks: 6.2.1
+    rest-hooks: 6.2.2
     serve: ^13.0.2
     webpack: 5.71.0
   languageName: unknown
@@ -24542,20 +24542,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rest-hooks@npm:6.2.1":
-  version: 6.2.1
-  resolution: "rest-hooks@npm:6.2.1"
+"rest-hooks@npm:6.2.2":
+  version: 6.2.2
+  resolution: "rest-hooks@npm:6.2.2"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/core": ^3.1.1
-    "@rest-hooks/endpoint": ^2.2.1
+    "@rest-hooks/core": ^3.1.2
+    "@rest-hooks/endpoint": ^2.2.2
   peerDependencies:
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 18ff7574d86d78e46dcf9fa132f8a8ea3ccf37f03625099a59ff6bb817e74dee7798c0d94f9321bb1acb08196a4d0ce3511afc205fccf8a12264bfdd5cef3c41
+  checksum: 4aad6f930378e00871d29903878f6c493fd958cfc92449f97e9854a177d008d5cea00733a2e1021cfdd951d2272ce075c8924c0a43c25e837e53c16662db44e1
   languageName: node
   linkType: hard
 
