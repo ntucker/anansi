@@ -7,7 +7,6 @@
   "rangeStrategy": "auto",
   "ignoreDeps": ["whatwg-fetch", "react-error-overlay"],
   "timezone": "America/Chicago",
-  "schedule": ["after 6pm and before 1am every weekday", "every weekend"],
   "packageRules": [
     {
       "matchPaths": [
