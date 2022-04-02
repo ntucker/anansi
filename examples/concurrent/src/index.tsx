@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import 'antd/dist/antd.css';
 
 import RootProvider from './RootProvider';

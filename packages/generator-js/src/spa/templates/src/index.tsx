@@ -1,5 +1,5 @@
 <% if (reactMode === 'legacy') { %>import { StrictMode } from 'react';<% } %>
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom<% if (reactMode !== 'legacy') { %>/client<% } %>';
 
 import RootProvider from './RootProvider';
 import App from './App';
