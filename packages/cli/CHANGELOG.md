@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.57](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.55...@anansi/cli@1.1.57) (2022-04-02)
+
+
+### 💅 Enhancement
+
+* Better handling of Ctrl+C (SIGNINT) ([42e732d](https://github.com/ntucker/anansi/commit/42e732d88045f07363dcc8fe893f5d4266cd65fd))
+
+
+
 ### [1.1.56](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.55...@anansi/cli@1.1.56) (2022-03-30)
 
 **Note:** Version bump only for package @anansi/cli

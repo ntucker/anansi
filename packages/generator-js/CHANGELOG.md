@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.9...@anansi/generator-js@7.3.11) (2022-04-02)
+
+
+### 💅 Enhancement
+
+* Import from react-dom/client ([cd492e9](https://github.com/ntucker/anansi/commit/cd492e9bb852d56fa8da3be1e36c9a42501a6b31))
+* Update React version link ([dbd6413](https://github.com/ntucker/anansi/commit/dbd6413360fa533e203d76bd8c16cb5fcf96ee15))
+* useResource -> useSuspense ([ebeb48c](https://github.com/ntucker/anansi/commit/ebeb48c506e78a85e925afdabbacced76990d613))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1452](https://github.com/ntucker/anansi/issues/1452)) ([354fb41](https://github.com/ntucker/anansi/commit/354fb41e650d2e7c0af0dd8c368718e790899dfe))
+
+
+
 ### [7.3.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.9...@anansi/generator-js@7.3.10) (2022-03-30)
 
 

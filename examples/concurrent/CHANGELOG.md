@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.4](https://github.com/ntucker/anansi/compare/example-react-18@1.1.3...example-react-18@1.1.4) (2022-04-02)
+
+
+### 💅 Enhancement
+
+* Import from react-dom/client ([cd492e9](https://github.com/ntucker/anansi/commit/cd492e9bb852d56fa8da3be1e36c9a42501a6b31))
+
+
+### 📦 Package
+
+* react-refresh to 0.11 until webpack plugin is fixed ([497a150](https://github.com/ntucker/anansi/commit/497a150edc04d95091e065ee6b8e114d3edabf94))
+* Update all non-major dependencies ([#1452](https://github.com/ntucker/anansi/issues/1452)) ([354fb41](https://github.com/ntucker/anansi/commit/354fb41e650d2e7c0af0dd8c368718e790899dfe))
+* Update all non-major dependencies ([#1454](https://github.com/ntucker/anansi/issues/1454)) ([9ae28ef](https://github.com/ntucker/anansi/commit/9ae28ef72001b2152c74c581e902bae863ef1426))
+* Update all non-major dependencies ([#1455](https://github.com/ntucker/anansi/issues/1455)) ([4e4a13a](https://github.com/ntucker/anansi/commit/4e4a13af239e3fd1a0325e9953516a462b7a0b0b))
+
+
+
 ### [1.1.3](https://github.com/ntucker/anansi/compare/example-react-18@1.1.2...example-react-18@1.1.3) (2022-03-30)
 
 

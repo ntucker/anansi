@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.4](https://github.com/ntucker/anansi/compare/example-linaria@4.1.3...example-linaria@4.1.4) (2022-04-02)
+
+
+### 📦 Package
+
+* react-refresh to 0.11 until webpack plugin is fixed ([497a150](https://github.com/ntucker/anansi/commit/497a150edc04d95091e065ee6b8e114d3edabf94))
+* Update all non-major dependencies ([#1452](https://github.com/ntucker/anansi/issues/1452)) ([354fb41](https://github.com/ntucker/anansi/commit/354fb41e650d2e7c0af0dd8c368718e790899dfe))
+
+
+
 ### [4.1.3](https://github.com/ntucker/anansi/compare/example-linaria@4.1.2...example-linaria@4.1.3) (2022-03-30)
 
 
