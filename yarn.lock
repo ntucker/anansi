@@ -316,7 +316,7 @@ __metadata:
     react-error-overlay: 6.0.9
     readable-stream: ^3.6.0
     rimraf: ^3.0.2
-    sass: ^1.49.10
+    sass: ^1.49.11
     sass-loader: ^12.6.0
     sass-resources-loader: ^2.2.4
     semver: ^7.3.5
@@ -4588,13 +4588,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@rest-hooks/core@npm:3.1.0"
+"@rest-hooks/core@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@rest-hooks/core@npm:3.1.1"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/endpoint": ^2.2.0
-    "@rest-hooks/normalizr": ^8.2.0
+    "@rest-hooks/endpoint": ^2.2.1
+    "@rest-hooks/normalizr": ^8.2.1
     "@rest-hooks/use-enhanced-reducer": ^1.1.1
     flux-standard-action: ^2.1.1
   peerDependencies:
@@ -4603,28 +4603,28 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 4bea1d77b10ce17b9f1f060d0fb68a7aa58a0889ead11d71c53d1123633feaf5a64c7118de008a0ed0d031d6e5f5c437a68403fb866b2a8742b0410304804c19
+  checksum: e6ef94d9d6af11dcf46d0da3accf7348217b24b0fbb90443e8d6b5abc00a70586fef6fb565bcd0ef89cbe0012e32cb878dca6c799e41becc430f66d479b8d536
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@rest-hooks/endpoint@npm:2.2.0"
+"@rest-hooks/endpoint@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@rest-hooks/endpoint@npm:2.2.1"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/normalizr": ^8.2.0
-  checksum: 50f88247d9df8678c04a551360c2393dbb0259c1b362ce58c20d7109bc0e091ec92d1bdfc5b8130220c6930f1b04bcfe6cfa0aaa9b392981bc9a7662a07b6738
+    "@rest-hooks/normalizr": ^8.2.1
+  checksum: 96a673c51c3d13ad2be41dc1f440fee8947b3f85ea62af5a8f1a23a92767581432a2ea302f39b88e3c186cc24ddd56c2cd9172fd67a947262e27ade535e575f1
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.1.2":
-  version: 0.1.2
-  resolution: "@rest-hooks/graphql@npm:0.1.2"
+"@rest-hooks/graphql@npm:0.1.3":
+  version: 0.1.3
+  resolution: "@rest-hooks/graphql@npm:0.1.3"
   dependencies:
     "@babel/runtime": ^7.7.2
   peerDependencies:
     "@rest-hooks/endpoint": ^2.0.0
-  checksum: b2c91a04804b3426e067300c5cc28105ffabae6b1481c5d3ddb82a78b5c4cf1cc12c0a186b52e1cb096b0f43ba162807586aea3ca861b6e0b3af05301f4e7a31
+  checksum: fbd5b9151a620253665c350c2664c391fc455a27507afe63a6ff57149218ba1984ba2243d1e29ec99533cbe36ad0f88b93d6570d4fd6a74610726144d838b8bb
   languageName: node
   linkType: hard
 
@@ -4645,12 +4645,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@rest-hooks/normalizr@npm:8.2.0"
+"@rest-hooks/normalizr@npm:^8.2.1":
+  version: 8.2.1
+  resolution: "@rest-hooks/normalizr@npm:8.2.1"
   dependencies:
     "@babel/runtime": ^7.7.2
-  checksum: e9f58dbf3a8e11fdfedaeb568fb1a27bf561e5924b2aca00e1aa2e434768d915e586d8b04ccfb937337cd5f42a520280c7f6260058aa34e28d15073f5f1dfc43
+  checksum: d9649f5a16a339e811e12016857f7911b45eb717caae4d73c122ac87db8ac93020b3fa9098563c70b72ca60ce8ac15784ad138de0cb7ec8ce0f00e8a6861e844
   languageName: node
   linkType: hard
 
@@ -8029,9 +8029,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.19.3":
-  version: 4.19.3
-  resolution: "antd@npm:4.19.3"
+"antd@npm:4.19.5":
+  version: 4.19.5
+  resolution: "antd@npm:4.19.5"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -8049,7 +8049,7 @@ __metadata:
     rc-dialog: ~8.6.0
     rc-drawer: ~4.4.2
     rc-dropdown: ~3.3.2
-    rc-field-form: ~1.24.0
+    rc-field-form: ~1.25.0
     rc-image: ~5.2.5
     rc-input: ~0.0.1-alpha.5
     rc-input-number: ~7.3.0
@@ -8079,7 +8079,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 214da2c2b4c4b85834fc2775f63d7f6fe64fe83806838e9adcd10e480770f6b462c97354a9b80a9a697d60b52fc5dbb27c3aa2696286d95c0a10f1dacfa09918
+  checksum: 08f543da4712fc069d04f69295ac4d0088138a0e27d14692f4c6a8f9bdfa592eb4e239a0208fcd63871ea4bc84896e3e8fa39ab2c975ac5719a9efdf072332dd
   languageName: node
   linkType: hard
 
@@ -13024,7 +13024,7 @@ __metadata:
     "@types/node": 17.0.23
     "@types/react": 17.0.43
     "@types/react-dom": 17.0.14
-    antd: 4.19.3
+    antd: 4.19.5
     classnames: ^2.2.6
     core-js: 3.21.1
     history: 5.3.0
@@ -13033,7 +13033,7 @@ __metadata:
     react-dom: 18.0.0
     react-refresh: 0.11.0
     react-test-renderer: 18.0.0
-    rest-hooks: 6.2.0
+    rest-hooks: 6.2.1
     serve: ^13.0.2
     webpack: 5.71.0
     webpack-cli: ^4.9.2
@@ -13052,7 +13052,7 @@ __metadata:
     "@anansi/polyfill": ^1.0.105
     "@anansi/webpack-config": ^11.3.5
     "@babel/runtime": ^7.17.2
-    "@rest-hooks/graphql": 0.1.2
+    "@rest-hooks/graphql": 0.1.3
     "@rest-hooks/rest": 3.0.3
     "@rest-hooks/test": 7.2.1
     "@storybook/addon-essentials": 6.4.20
@@ -13068,7 +13068,7 @@ __metadata:
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
-    antd: 4.19.3
+    antd: 4.19.5
     classnames: ^2.2.6
     core-js: 3.21.1
     jest: ^27.5.1
@@ -13079,7 +13079,7 @@ __metadata:
     react-router-scroll-4: ^1.0.0-beta.2
     react-test-renderer: 18.0.0
     redbox-react: ^1.6.0
-    rest-hooks: 6.2.0
+    rest-hooks: 6.2.1
     serve: ^13.0.2
     webpack: 5.71.0
   languageName: unknown
@@ -22228,12 +22228,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.6.1":
-  version: 2.6.1
-  resolution: "prettier@npm:2.6.1"
+"prettier@npm:2.6.2":
+  version: 2.6.2
+  resolution: "prettier@npm:2.6.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 78be1f8a3ddfad7c3d8a854b6c8941a3bb1ddfca4225c38d778e0fe1029a55368f71b3bbefff82c689015fbb4d391ec44add957f01308ad2725e01a7c1f37cb6
+  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
   languageName: node
   linkType: hard
 
@@ -22830,9 +22830,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-field-form@npm:~1.24.0":
-  version: 1.24.0
-  resolution: "rc-field-form@npm:1.24.0"
+"rc-field-form@npm:~1.25.0":
+  version: 1.25.0
+  resolution: "rc-field-form@npm:1.25.0"
   dependencies:
     "@babel/runtime": ^7.8.4
     async-validator: ^4.0.2
@@ -22840,7 +22840,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 9df11592fb9c736170ee1ef33b64a9d8cfc790f3f6a72457f2a1d805939b1f3bc3a161590962bd772fd96e97029d4c3ea36cb202fc5000097719194b6fafe261
+  checksum: 3c4441241b480bb208490ddb61a1a401249b6533839908c532b81752169ba774a88511c811cee1062649ef5119df071736fdc49d558638c75224c12b0925ff70
   languageName: node
   linkType: hard
 
@@ -24542,20 +24542,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rest-hooks@npm:6.2.0":
-  version: 6.2.0
-  resolution: "rest-hooks@npm:6.2.0"
+"rest-hooks@npm:6.2.1":
+  version: 6.2.1
+  resolution: "rest-hooks@npm:6.2.1"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/core": ^3.1.0
-    "@rest-hooks/endpoint": ^2.2.0
+    "@rest-hooks/core": ^3.1.1
+    "@rest-hooks/endpoint": ^2.2.1
   peerDependencies:
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 248a600d39f84bab3697ffabe1805b9baaa3fa3f73dc7fe88ac7a4880eb3cff3449a7eac9f257f1f4410c33fefd4609bd2455a7d882abaad48a7f878772e545c
+  checksum: 18ff7574d86d78e46dcf9fa132f8a8ea3ccf37f03625099a59ff6bb817e74dee7798c0d94f9321bb1acb08196a4d0ce3511afc205fccf8a12264bfdd5cef3c41
   languageName: node
   linkType: hard
 
@@ -24788,7 +24788,7 @@ __metadata:
     husky: ^7.0.4
     lerna: ^4.0.0
     lint-staged: 12.3.7
-    prettier: 2.6.1
+    prettier: 2.6.2
     react: 18.0.0
     react-dom: 18.0.0
     ttypescript: ^1.5.13
@@ -24938,16 +24938,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.10":
-  version: 1.49.10
-  resolution: "sass@npm:1.49.10"
+"sass@npm:^1.49.11":
+  version: 1.49.11
+  resolution: "sass@npm:1.49.11"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 7b767ece77df47382ac80ff279f5c1cff24dec6684ccaf3f9657f52a793e7ba7b85e4d30a45fb6c70f9fc46da507559fe83e771dcb804341d03af908ad6404c9
+  checksum: f81cabfc43d6baf710979d647e24019f7cfb68242f8421d20dfc8c864cf83512b0b74a89098331696f758756829cb736f7b8aca70a11cff365928393ae351bcc
   languageName: node
   linkType: hard
 
