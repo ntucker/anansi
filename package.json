@@ -53,7 +53,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "resolutions": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "normalize-package-data": "3.0.3",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
