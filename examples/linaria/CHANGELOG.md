@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.5](https://github.com/ntucker/anansi/compare/example-linaria@4.1.4...example-linaria@4.1.5) (2022-04-04)
+
+
+### 📦 Package
+
+* Update `react-refresh` to v0.12.0 ([#1458](https://github.com/ntucker/anansi/issues/1458)) ([466c4be](https://github.com/ntucker/anansi/commit/466c4bede480bb69032e3c0779d82fef196f9b80))
+
+
+
 ### [4.1.4](https://github.com/ntucker/anansi/compare/example-linaria@4.1.3...example-linaria@4.1.4) (2022-04-02)
 
 
