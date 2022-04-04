@@ -12995,7 +12995,7 @@ __metadata:
     babel-loader: 8.2.4
     classnames: ^2.2.6
     core-js: 3.21.1
-    react-refresh: 0.11.0
+    react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
     webpack: 5.71.0
@@ -13031,7 +13031,7 @@ __metadata:
     jest: ^27.5.1
     react: 18.0.0
     react-dom: 18.0.0
-    react-refresh: 0.11.0
+    react-refresh: 0.12.0
     react-test-renderer: 18.0.0
     rest-hooks: 6.2.2
     serve: ^13.0.2
@@ -13074,7 +13074,7 @@ __metadata:
     jest: ^27.5.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
-    react-refresh: 0.11.0
+    react-refresh: 0.12.0
     react-router-dom: ^5.3.0
     react-router-scroll-4: ^1.0.0-beta.2
     react-test-renderer: 18.0.0
@@ -23590,10 +23590,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "react-refresh@npm:0.11.0"
-  checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
+"react-refresh@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "react-refresh@npm:0.12.0"
+  checksum: 046522ed9e26c2846afb734303d9461a825a96f863ea373b9296a90e7112e1602bdf5954d8b48193e763f3ff0108f2e4c00e42f0e3d45382bb9d38dc87348867
   languageName: node
   linkType: hard
 
