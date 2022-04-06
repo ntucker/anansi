@@ -52,7 +52,7 @@
   "devDependencies": {
     "@anansi/babel-preset": "^3.0.1",
     "@babel/cli": "^7.17.6",
-    "@babel/core": "7.17.8",
+    "@babel/core": "7.17.9",
     "copyfiles": "^2.1.1",
     "rimraf": "^3.0.2"
   },

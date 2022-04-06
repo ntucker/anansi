@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@anansi/polyfill": "^1.0.105",
-    "@babel/plugin-transform-modules-commonjs": "7.17.7",
+    "@babel/plugin-transform-modules-commonjs": "7.17.9",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "^3.0.0-beta.18",
     "@linaria/react": "3.0.0-beta.18",
