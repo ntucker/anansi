@@ -316,7 +316,7 @@ __metadata:
     react-error-overlay: 6.0.9
     readable-stream: ^3.6.0
     rimraf: ^3.0.2
-    sass: ^1.49.11
+    sass: ^1.50.0
     sass-loader: ^12.6.0
     sass-resources-loader: ^2.2.4
     semver: ^7.3.6
@@ -4659,13 +4659,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "@rest-hooks/core@npm:3.1.2"
+"@rest-hooks/core@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@rest-hooks/core@npm:3.2.0"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/endpoint": ^2.2.2
-    "@rest-hooks/normalizr": ^8.2.2
+    "@rest-hooks/endpoint": ^2.2.3
+    "@rest-hooks/normalizr": ^8.2.3
     "@rest-hooks/use-enhanced-reducer": ^1.1.1
     flux-standard-action: ^2.1.1
   peerDependencies:
@@ -4674,17 +4674,17 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 52346a35957375c7e146b0511f6d20331acb3f9e9f7866f15aa3605de15e045ba8c7babcbac5e19597b4df78c0cbf6daf035f7825d323bf7a2573e47f20646d2
+  checksum: cdfab6df83460cec57f91e46f3f20c31a730cc9095f9fc4812d339e24b351faf07e32cf3e7c9857018263a6fe3c26642a9ecc6d7767e89259cb3f3cf4e859708
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@rest-hooks/endpoint@npm:2.2.2"
+"@rest-hooks/endpoint@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@rest-hooks/endpoint@npm:2.2.3"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/normalizr": ^8.2.2
-  checksum: 1d5f9bf2e49d37a56c0baa6f829a6ff043d065db84bedf733cf5266ca0b84864333fe8f5255bac36c7e686db139578be9ba4df87e510b4f57a0a3bef91e11f0e
+    "@rest-hooks/normalizr": ^8.2.3
+  checksum: 7c3387cc1d30a36a1bec86f1788219ced660df7abb3705dcd7023f7591c7785c1519512f21fe205a68a6010fc7a7a74c2c6efa448196c02bad154eea0758b142
   languageName: node
   linkType: hard
 
@@ -4716,12 +4716,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^8.2.2":
-  version: 8.2.2
-  resolution: "@rest-hooks/normalizr@npm:8.2.2"
+"@rest-hooks/normalizr@npm:^8.2.3":
+  version: 8.2.3
+  resolution: "@rest-hooks/normalizr@npm:8.2.3"
   dependencies:
     "@babel/runtime": ^7.7.2
-  checksum: d11fcc918a78db3d45cf99938ef28629d51dc684f3268a97db5b404cb709cebce07f10922aa813927c02a58642c7b79137c2a12e91656bb4c42ec7f2e2015734
+  checksum: e3832a8173fbb1672c64ba253107b6d8bdf2e3b773faf4b682da2898b43b57dc237569ebdc8837219c5aa56be44d54de9a2779aaae70abc88a0c2a39702eed6a
   languageName: node
   linkType: hard
 
@@ -4736,9 +4736,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:7.2.2":
-  version: 7.2.2
-  resolution: "@rest-hooks/test@npm:7.2.2"
+"@rest-hooks/test@npm:7.3.0":
+  version: 7.3.0
+  resolution: "@rest-hooks/test@npm:7.3.0"
   dependencies:
     "@testing-library/react-hooks": ~7.0.0
   peerDependencies:
@@ -4752,7 +4752,7 @@ __metadata:
       optional: true
     redux:
       optional: true
-  checksum: 72b0d062be669bd4321f66b1e5558f4cb051e299095572e2010fa75f8449c9726bb666e3d46b88d485fe2c684d73d645175cbc708a0fca885a6462b46f809a7b
+  checksum: bb4fcf6248e5a33f244df596f89d1f8d26db672d27035641f5c2f94db4d0bf0b4ae1d8ca74657d1fe9a4462ab8e729a6a41dbce67a54c8d318c1befef0e7a580
   languageName: node
   linkType: hard
 
@@ -13080,7 +13080,7 @@ __metadata:
     react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
-    webpack: 5.71.0
+    webpack: 5.72.0
   languageName: unknown
   linkType: soft
 
@@ -13100,7 +13100,7 @@ __metadata:
     "@linaria/shaker": 3.0.0-beta.18
     "@rest-hooks/img": 0.6.0
     "@rest-hooks/rest": 4.0.0
-    "@rest-hooks/test": 7.2.2
+    "@rest-hooks/test": 7.3.0
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/node": 17.0.23
@@ -13115,9 +13115,9 @@ __metadata:
     react-dom: 18.0.0
     react-refresh: 0.12.0
     react-test-renderer: 18.0.0
-    rest-hooks: 6.2.2
+    rest-hooks: 6.2.3
     serve: ^13.0.2
-    webpack: 5.71.0
+    webpack: 5.72.0
     webpack-cli: ^4.9.2
     webpack-dev-server: 4.8.1
   languageName: unknown
@@ -13136,7 +13136,7 @@ __metadata:
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": 0.1.4
     "@rest-hooks/rest": 4.0.0
-    "@rest-hooks/test": 7.2.2
+    "@rest-hooks/test": 7.3.0
     "@storybook/addon-essentials": 6.4.20
     "@storybook/addon-links": 6.4.20
     "@storybook/addons": 6.4.20
@@ -13161,9 +13161,9 @@ __metadata:
     react-router-scroll-4: ^1.0.0-beta.2
     react-test-renderer: 18.0.0
     redbox-react: ^1.6.0
-    rest-hooks: 6.2.2
+    rest-hooks: 6.2.3
     serve: ^13.0.2
-    webpack: 5.71.0
+    webpack: 5.72.0
   languageName: unknown
   linkType: soft
 
@@ -24750,20 +24750,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rest-hooks@npm:6.2.2":
-  version: 6.2.2
-  resolution: "rest-hooks@npm:6.2.2"
+"rest-hooks@npm:6.2.3":
+  version: 6.2.3
+  resolution: "rest-hooks@npm:6.2.3"
   dependencies:
     "@babel/runtime": ^7.7.2
-    "@rest-hooks/core": ^3.1.2
-    "@rest-hooks/endpoint": ^2.2.2
+    "@rest-hooks/core": ^3.2.0
+    "@rest-hooks/endpoint": ^2.2.3
   peerDependencies:
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 4aad6f930378e00871d29903878f6c493fd958cfc92449f97e9854a177d008d5cea00733a2e1021cfdd951d2272ce075c8924c0a43c25e837e53c16662db44e1
+  checksum: 5a51884fcf5b54f8d9d10cb1980b20c880da7502d10b834990e71808c8884c37c81f7c6ffc2e0379b25af9e109b7072a1c9cf54fbe68897419f78d1cebf823d9
   languageName: node
   linkType: hard
 
@@ -25001,7 +25001,7 @@ __metadata:
     react-dom: 18.0.0
     ttypescript: ^1.5.13
     typescript: 4.6.3
-    webpack: 5.71.0
+    webpack: 5.72.0
     webpack-cli: ^4.9.2
     webpack-dev-server: 4.8.1
   languageName: unknown
@@ -25146,16 +25146,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.11":
-  version: 1.49.11
-  resolution: "sass@npm:1.49.11"
+"sass@npm:^1.50.0":
+  version: 1.50.0
+  resolution: "sass@npm:1.50.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: f81cabfc43d6baf710979d647e24019f7cfb68242f8421d20dfc8c864cf83512b0b74a89098331696f758756829cb736f7b8aca70a11cff365928393ae351bcc
+  checksum: 43738cc83a3921731456f769aba190277f0620f8b80c14426ab098be9ab8dc8465957f5bf2edbcffda189edb3024ed83dee2cb8cd580459ca4984a9fc88c18f7
   languageName: node
   linkType: hard
 
@@ -28782,9 +28782,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.71.0":
-  version: 5.71.0
-  resolution: "webpack@npm:5.71.0"
+"webpack@npm:5.72.0":
+  version: 5.72.0
+  resolution: "webpack@npm:5.72.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -28815,7 +28815,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 84b273a15180d45dafe4fc4a3ccccba2f72210f327a1af39713b3ef78148768afb0e18fa0cddaea4af5dd54ace199fbbdfcef9aec8da7e9c248f8b1b7cc413e1
+  checksum: 8365f1466d0f7adbf80ebc9b780f263a28eeeabcd5fb515249bfd9a56ab7fe8d29ea53df3d9364d0732ab39ae774445eb28abce694ed375b13882a6b2fe93ffc
   languageName: node
   linkType: hard
 
