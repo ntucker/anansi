@@ -36,7 +36,7 @@ export default function Link<C extends ComponentConstraint = 'a'>({
   const shouldHandle =
     !Object.prototype.hasOwnProperty.call(rest, 'target') ||
     (rest as any).target === '_self';
-  const handleClick = useCallback(
+  const handleClick: React.MouseEventHandler<HTMLAnchorElement> = useCallback(
     e => {
       e?.preventDefault();
       onClick?.(e);
