@@ -95,7 +95,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       await this.addDevDependencies({
         'react-test-renderer': reactVersion,
         'react-refresh':
-          this.config.get('reactMode') === 'legacy' ? '' : '^0.11.0',
+          this.config.get('reactMode') === 'legacy' ? '' : '^0.12.0',
       }),
       await this.addDependencies(dependencies),
     ]);
