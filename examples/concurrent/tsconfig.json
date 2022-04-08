@@ -49,8 +49,6 @@
     //"rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
 
     "types": [
-      "react/next",
-      "react-dom/next",
       "jest",
       "@anansi/webpack-config/types",
       "node"

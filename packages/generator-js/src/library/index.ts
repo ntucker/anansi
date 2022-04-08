@@ -68,8 +68,8 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
           ? ''
           : 'experimental';
       await this.addDevDependencies({
-        '@types/react': '',
-        '@types/react-dom': '',
+        '@types/react': reactVersion,
+        '@types/react-dom': reactVersion,
         react: reactVersion,
         'react-dom': reactVersion,
       });

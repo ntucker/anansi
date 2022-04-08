@@ -54,8 +54,6 @@
     ] /* List of folders to include type definitions from. */,
 
     "types": [
-      "react/next",
-      "react-dom/next",
       "jest",
       "@anansi/webpack-config/types",
       "node"
