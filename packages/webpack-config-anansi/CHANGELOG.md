@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.7...@anansi/webpack-config@11.3.8) (2022-04-08)
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1460](https://github.com/ntucker/anansi/issues/1460)) ([0e6a89b](https://github.com/ntucker/anansi/commit/0e6a89b3e988f1d2ed039e36a9e306b2e5c85fa1))
+* Update all non-major dependencies ([#1464](https://github.com/ntucker/anansi/issues/1464)) ([70d77dd](https://github.com/ntucker/anansi/commit/70d77dd529ca862cc523d0bf2229354605e9a4ac))
+* Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
+
+
+
 ### [11.3.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.6...@anansi/webpack-config@11.3.7) (2022-04-04)
 
 

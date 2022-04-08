@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.3.3](https://github.com/ntucker/anansi/compare/@anansi/router@0.3.2...@anansi/router@0.3.3) (2022-04-08)
+
+
+### 💅 Enhancement
+
+* Use react 18 main types rather than next ([c2ab640](https://github.com/ntucker/anansi/commit/c2ab64021ef60c9d5e9ce5b71418c1673ab32f4a))
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
+
+
+
 ### [0.3.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.3.1...@anansi/router@0.3.2) (2022-04-02)
 
 

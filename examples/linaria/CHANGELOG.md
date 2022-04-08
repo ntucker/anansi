@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.6](https://github.com/ntucker/anansi/compare/example-linaria@4.1.5...example-linaria@4.1.6) (2022-04-08)
+
+
+### 💅 Enhancement
+
+* Use react 18 main types rather than next ([c2ab640](https://github.com/ntucker/anansi/commit/c2ab64021ef60c9d5e9ce5b71418c1673ab32f4a))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1464](https://github.com/ntucker/anansi/issues/1464)) ([70d77dd](https://github.com/ntucker/anansi/commit/70d77dd529ca862cc523d0bf2229354605e9a4ac))
+* Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
+
+
+
 ### [4.1.5](https://github.com/ntucker/anansi/compare/example-linaria@4.1.4...example-linaria@4.1.5) (2022-04-04)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.11...@anansi/generator-js@7.3.12) (2022-04-08)
+
+
+### 💅 Enhancement
+
+* Install react-refresh 0.12 since it's now compatible ([395063f](https://github.com/ntucker/anansi/commit/395063fa1a60254d0bcbeef3ee0fa62aff217106))
+* Use react 18 main types rather than next ([c2ab640](https://github.com/ntucker/anansi/commit/c2ab64021ef60c9d5e9ce5b71418c1673ab32f4a))
+
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v4 ([#1463](https://github.com/ntucker/anansi/issues/1463)) ([7d228ca](https://github.com/ntucker/anansi/commit/7d228ca76a7b306ce2bca4168b7ca5c7b961310f))
+* Update all non-major dependencies ([#1460](https://github.com/ntucker/anansi/issues/1460)) ([0e6a89b](https://github.com/ntucker/anansi/commit/0e6a89b3e988f1d2ed039e36a9e306b2e5c85fa1))
+* Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
+
+
+
 ### [7.3.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.9...@anansi/generator-js@7.3.11) (2022-04-02)
 
 

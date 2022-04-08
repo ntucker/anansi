@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.6](https://github.com/ntucker/anansi/compare/example-react-18@1.1.5...example-react-18@1.1.6) (2022-04-08)
+
+
+### 💅 Enhancement
+
+* Use react 18 main types rather than next ([c2ab640](https://github.com/ntucker/anansi/commit/c2ab64021ef60c9d5e9ce5b71418c1673ab32f4a))
+
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v4 ([#1463](https://github.com/ntucker/anansi/issues/1463)) ([7d228ca](https://github.com/ntucker/anansi/commit/7d228ca76a7b306ce2bca4168b7ca5c7b961310f))
+* Update `@types/react-dom` to v18 ([#1461](https://github.com/ntucker/anansi/issues/1461)) ([2b45381](https://github.com/ntucker/anansi/commit/2b45381f8e9d0c0434d037eb8ef6af00b43cc9ed))
+* Update `@types/react` to v18 ([#1462](https://github.com/ntucker/anansi/issues/1462)) ([bce4fd0](https://github.com/ntucker/anansi/commit/bce4fd0df17a40e8358e6dd66a0c8d413b70e1e8))
+* Update all non-major dependencies ([#1460](https://github.com/ntucker/anansi/issues/1460)) ([0e6a89b](https://github.com/ntucker/anansi/commit/0e6a89b3e988f1d2ed039e36a9e306b2e5c85fa1))
+* Update all non-major dependencies ([#1464](https://github.com/ntucker/anansi/issues/1464)) ([70d77dd](https://github.com/ntucker/anansi/commit/70d77dd529ca862cc523d0bf2229354605e9a4ac))
+
+
+
 ### [1.1.5](https://github.com/ntucker/anansi/compare/example-react-18@1.1.4...example-react-18@1.1.5) (2022-04-04)
 
 

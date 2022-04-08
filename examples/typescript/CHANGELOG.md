@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.1.6](https://github.com/ntucker/anansi/compare/example-typescript@9.1.5...example-typescript@9.1.6) (2022-04-08)
+
+
+### 💅 Enhancement
+
+* Use react 18 main types rather than next ([c2ab640](https://github.com/ntucker/anansi/commit/c2ab64021ef60c9d5e9ce5b71418c1673ab32f4a))
+
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v4 ([#1463](https://github.com/ntucker/anansi/issues/1463)) ([7d228ca](https://github.com/ntucker/anansi/commit/7d228ca76a7b306ce2bca4168b7ca5c7b961310f))
+* Update all non-major dependencies ([#1464](https://github.com/ntucker/anansi/issues/1464)) ([70d77dd](https://github.com/ntucker/anansi/commit/70d77dd529ca862cc523d0bf2229354605e9a4ac))
+
+
+
 ### [9.1.5](https://github.com/ntucker/anansi/compare/example-typescript@9.1.4...example-typescript@9.1.5) (2022-04-04)
 
 
