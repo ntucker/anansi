@@ -74,7 +74,7 @@ export default class IssueResource extends BaseResource {
   static list<T extends typeof Resource>(
     this: T,
   ): RestEndpoint<
-    RestFetch<Pick<IssueResource, 'repositoryUrl' | 'state'>>,
+    RestFetch<[Pick<IssueResource, 'repositoryUrl' | 'state'>]>,
     { results: T[]; link: string },
     undefined
   > {

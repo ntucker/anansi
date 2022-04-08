@@ -18,7 +18,7 @@ export default class ExchangeRatesResource extends Resource {
 
   static list<T extends typeof Resource>(
     this: T,
-  ): RestEndpoint<RestFetch<{ currency: string }>, { data: T }, undefined> {
+  ): RestEndpoint<RestFetch<[{ currency: string }]>, { data: T }, undefined> {
     return super.list().extend({
       schema: { data: this },
     });
