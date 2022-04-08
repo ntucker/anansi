@@ -7015,14 +7015,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.43":
-  version: 17.0.43
-  resolution: "@types/react@npm:17.0.43"
+"@types/react@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@types/react@npm:18.0.0"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 981b0993f5b3ea9d3488b8cc883201e8ae47ba7732929f788f450a79fd72829e658080d5084e67caa008e58d989b0abc1d5f36ff0a1cda09315ea3a3c0c9dc11
+  checksum: 8a9769e2cabe335c86179881577e6ca32f3a6abdd5adbe2d498e48b78d532130da828a53ef25f21915179da454654b811292e0a8191c8a81af3bf4b05f5673bd
   languageName: node
   linkType: hard
 
@@ -13104,7 +13104,7 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/node": 17.0.23
-    "@types/react": 17.0.43
+    "@types/react": 18.0.0
     "@types/react-dom": 18.0.0
     antd: 4.19.5
     classnames: ^2.2.6
@@ -24981,7 +24981,7 @@ __metadata:
     "@babel/core": 7.17.9
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
-    "@types/react": 17.0.43
+    "@types/react": 18.0.0
     "@types/react-dom": 18.0.0
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.4

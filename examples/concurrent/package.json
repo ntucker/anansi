@@ -24,7 +24,7 @@
     "@rest-hooks/test": "7.2.2",
     "@types/classnames": "^2.2.9",
     "@types/jest": "27.4.1",
-    "@types/react": "17.0.43",
+    "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
     "jest": "^27.5.1",
     "react-refresh": "0.12.0",
