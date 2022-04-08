@@ -4725,14 +4725,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:3.0.3":
-  version: 3.0.3
-  resolution: "@rest-hooks/rest@npm:3.0.3"
+"@rest-hooks/rest@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@rest-hooks/rest@npm:4.0.0"
   dependencies:
     "@babel/runtime": ^7.7.2
   peerDependencies:
     "@rest-hooks/endpoint": ^2.0.0
-  checksum: 27d8678517ba1fb51dfa5e7e6a3dfa7088c9cd1f594197f42b826d9b86b8d503b369511933ce6c1ca25da020e6ea5bb5b8310a1b37e1f858720605d567728d1f
+  checksum: 0d5ae332ac37b7e7b7a2bc4d130ae1388c41c23b5f7dc24ef6a3360f37d69bb0027683b40cd1c5da4c6c888403c53edd649b6ec12b46505d681b3fc9cfd63676
   languageName: node
   linkType: hard
 
@@ -13099,7 +13099,7 @@ __metadata:
     "@linaria/react": 3.0.0-beta.18
     "@linaria/shaker": 3.0.0-beta.18
     "@rest-hooks/img": 0.6.0
-    "@rest-hooks/rest": 3.0.3
+    "@rest-hooks/rest": 4.0.0
     "@rest-hooks/test": 7.2.2
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
@@ -13135,7 +13135,7 @@ __metadata:
     "@anansi/webpack-config": ^11.3.7
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": 0.1.4
-    "@rest-hooks/rest": 3.0.3
+    "@rest-hooks/rest": 4.0.0
     "@rest-hooks/test": 7.2.2
     "@storybook/addon-essentials": 6.4.20
     "@storybook/addon-links": 6.4.20
