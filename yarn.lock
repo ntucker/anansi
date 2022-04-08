@@ -6947,12 +6947,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.14":
-  version: 17.0.14
-  resolution: "@types/react-dom@npm:17.0.14"
+"@types/react-dom@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@types/react-dom@npm:18.0.0"
   dependencies:
     "@types/react": "*"
-  checksum: b54cd0ef573236b3d87fe7493e6d1c36d8b4ca37a3b46364272a5c91ac178e3296b68ea1aeb299ce68f12ad663c5720ee890d0539b14881c6754bdcbdb0befa0
+  checksum: 0d8c9cb3e72aefe0dd2b58a49845a200369f01ae92f3f11f642e04efc95dfd1c9380b6592d4273dd6113fb8707947d15b66d56c75c41f39f28bd897f0c08dfa9
   languageName: node
   linkType: hard
 
@@ -13105,7 +13105,7 @@ __metadata:
     "@types/jest": 27.4.1
     "@types/node": 17.0.23
     "@types/react": 17.0.43
-    "@types/react-dom": 17.0.14
+    "@types/react-dom": 18.0.0
     antd: 4.19.5
     classnames: ^2.2.6
     core-js: 3.21.1
@@ -24982,7 +24982,7 @@ __metadata:
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
     "@types/react": 17.0.43
-    "@types/react-dom": 17.0.14
+    "@types/react-dom": 18.0.0
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.4
     babel-plugin-root-import: ^6.6.0
