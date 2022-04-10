@@ -18,6 +18,11 @@ module.exports = {
         '@typescript-eslint/explicit-member-accessibility': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          // ignoreRestSiblings is disabled by default
+          { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+        ],
         '@typescript-eslint/ban-ts-comment': [
           'error',
           {
