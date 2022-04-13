@@ -62,7 +62,7 @@
     "core-js-compat": "^3.21.1",
     "glob-to-regexp": "^0.4.1",
     "path": "^0.12.7",
-    "semver": "^7.3.6",
+    "semver": "^7.3.7",
     "stable": "^0.1.8"
   },
   "peerDependencies": {
