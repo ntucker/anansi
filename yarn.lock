@@ -157,7 +157,7 @@ __metadata:
     "@types/ejs": ^3.1.0
     "@types/gulp-filter": ^3.0.34
     "@types/mem-fs-editor": ^7.0.1
-    "@types/node": 17.0.23
+    "@types/node": 17.0.24
     "@types/pacote": ^11.1.3
     "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
@@ -318,7 +318,7 @@ __metadata:
     rimraf: ^3.0.2
     sass: ^1.50.0
     sass-loader: ^12.6.0
-    sass-resources-loader: ^2.2.4
+    sass-resources-loader: ^2.2.5
     semver: ^7.3.7
     stream-browserify: ^3.0.0
     stream-http: ^3.2.0
@@ -6810,10 +6810,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.23":
-  version: 17.0.23
-  resolution: "@types/node@npm:17.0.23"
-  checksum: a3517554737cbb042e76c30d0e5482192ac4d9bea0eeb086e2622d9cabf460a0eb52a696b99fcd18e7fcc93c96db6cc7ae507f6608f256ef0b5c1d8c87a5a470
+"@types/node@npm:17.0.24":
+  version: 17.0.24
+  resolution: "@types/node@npm:17.0.24"
+  checksum: 9e7c4f863601b2430b4c2429a89935f22eba692956f5013c90a4c7fb0e1401ed8add8c4307453c5d6b8b985384500f8c3f644427ab88632640cc396159af479a
   languageName: node
   linkType: hard
 
@@ -6947,12 +6947,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.0":
-  version: 18.0.0
-  resolution: "@types/react-dom@npm:18.0.0"
+"@types/react-dom@npm:18.0.1":
+  version: 18.0.1
+  resolution: "@types/react-dom@npm:18.0.1"
   dependencies:
     "@types/react": "*"
-  checksum: 0d8c9cb3e72aefe0dd2b58a49845a200369f01ae92f3f11f642e04efc95dfd1c9380b6592d4273dd6113fb8707947d15b66d56c75c41f39f28bd897f0c08dfa9
+  checksum: 6c183e2e50240b77ed767cd968fe061ef4f2b47f84da5ec9e412a767d68c9a004d1f6ccca4295a5aa2c3ee723377e59006a2031f3767c00d8ac9e240a51bb142
   languageName: node
   linkType: hard
 
@@ -7015,14 +7015,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.3":
-  version: 18.0.3
-  resolution: "@types/react@npm:18.0.3"
+"@types/react@npm:18.0.5":
+  version: 18.0.5
+  resolution: "@types/react@npm:18.0.5"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 4bd1f088b4650af95fa3c6f592221b5d151af96ea619d34536fdc4f8bbf7c0807a5154c4e75911ed851e654da3a99d7c138f5f14aa17e00d39d3258af89c0d98
+  checksum: 70d3336d43ef25509fa89ef3278f57fdf1945fc921e69b7890a78ab9a52a55ee38e2f13aa71eb4f6032b7311e7557860ce8836c1acf3028304989571c9736a96
   languageName: node
   linkType: hard
 
@@ -8557,10 +8557,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "async@npm:3.2.0"
-  checksum: 6739fae769e6c9f76b272558f118ef041d45c979c573a8fe93f8cfbc32eb9c92da032e9effe6bbcc9b1131292cde6c4a9e61a442894aa06a262addd8dd3adda1
+"async@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "async@npm:3.2.3"
+  checksum: c4bee57ab2249af3dc83ca3ef9acfa8e822c0d5e5aa41bae3eaf7f673648343cd64ecd7d26091ffd357f3f044428b17b5f00098494b6cf8b6b3e9681f0636ca1
   languageName: node
   linkType: hard
 
@@ -13103,9 +13103,9 @@ __metadata:
     "@rest-hooks/test": 7.3.0
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
-    "@types/node": 17.0.23
-    "@types/react": 18.0.3
-    "@types/react-dom": 18.0.0
+    "@types/node": 17.0.24
+    "@types/react": 18.0.5
+    "@types/react-dom": 18.0.1
     antd: 4.19.5
     classnames: ^2.2.6
     core-js: 3.21.1
@@ -13146,7 +13146,7 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/lodash": 4.14.181
-    "@types/node": 17.0.23
+    "@types/node": 17.0.24
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
@@ -24974,8 +24974,8 @@ __metadata:
     "@babel/core": 7.17.9
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
-    "@types/react": 18.0.3
-    "@types/react-dom": 18.0.0
+    "@types/react": 18.0.5
+    "@types/react-dom": 18.0.1
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.4
     babel-plugin-root-import: ^6.6.0
@@ -25127,15 +25127,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-resources-loader@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "sass-resources-loader@npm:2.2.4"
+"sass-resources-loader@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "sass-resources-loader@npm:2.2.5"
   dependencies:
-    async: ^3.2.0
+    async: ^3.2.3
     chalk: ^4.1.0
     glob: ^7.1.6
     loader-utils: ^2.0.0
-  checksum: db9ad846f902207955a4d5c35ea9064898e34308c415dc358d9d7952b6a95d91e21388f77414b7cd0c6bb969fa6fe0b8b06f9e9aecc9cc834245c420c30a04ff
+  checksum: 7b406e7b31abd053c4a3a87825bbb20cdf89a5f7e189a4d9cd0607a3e35c1e48a6a680336a34ff842ae71e7f67d95b942bba98cfb2ccb836e98f8e1e371c534c
   languageName: node
   linkType: hard
 
