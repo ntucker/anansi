@@ -100,7 +100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/generator-js": ^7.3.13
+    "@anansi/generator-js": ^7.3.14
     bin-version-check: ^4.0.0
     chalk: ^4.1.2
     commander: ^9.2.0
@@ -146,7 +146,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/generator-js@^7.3.13, @anansi/generator-js@workspace:packages/generator-js":
+"@anansi/generator-js@^7.3.14, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
