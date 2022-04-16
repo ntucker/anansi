@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.12.10](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.9...@anansi/eslint-plugin@0.12.10) (2022-04-16)
+
+
+### 💅 Enhancement
+
+* Allow unused ...rest siblings ([da7aa85](https://github.com/ntucker/anansi/commit/da7aa85643be89872ed650837e593c4be3eb3155))
+
+
+
 ### [0.12.9](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.8...@anansi/eslint-plugin@0.12.9) (2022-02-16)
 
 

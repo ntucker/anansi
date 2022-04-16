@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.59](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.58...@anansi/cli@1.1.59) (2022-04-16)
+
+
+### 💅 Enhancement
+
+* Always find yeoman generator package ([f273ce2](https://github.com/ntucker/anansi/commit/f273ce2f54bf07a6665ee149feb76b456ab04f61))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1471](https://github.com/ntucker/anansi/issues/1471)) ([000d642](https://github.com/ntucker/anansi/commit/000d642055ee042dfb9049dd4cbc07d1fd5f3c9c))
+
+
+
 ### [1.1.58](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.57...@anansi/cli@1.1.58) (2022-04-08)
 
 **Note:** Version bump only for package @anansi/cli

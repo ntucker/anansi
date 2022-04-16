@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.7](https://github.com/ntucker/anansi/compare/example-react-18@1.1.6...example-react-18@1.1.7) (2022-04-16)
+
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v5 ([#1467](https://github.com/ntucker/anansi/issues/1467)) ([e477fdd](https://github.com/ntucker/anansi/commit/e477fdd60567cdb59d736f53506b231ee90344ca))
+* Update all non-major dependencies ([#1466](https://github.com/ntucker/anansi/issues/1466)) ([0a625c6](https://github.com/ntucker/anansi/commit/0a625c6bfb80bac62a5950b4ce31b01ede81662f))
+* Update all non-major dependencies ([#1468](https://github.com/ntucker/anansi/issues/1468)) ([9c11a58](https://github.com/ntucker/anansi/commit/9c11a589cb06dbb5b0d9d2fc46899f716bf7a198))
+* Update all non-major dependencies ([#1470](https://github.com/ntucker/anansi/issues/1470)) ([7989b53](https://github.com/ntucker/anansi/commit/7989b53c38673e9cda2d2c72be3d3f2193ac81d0))
+* Update all non-major dependencies ([#1471](https://github.com/ntucker/anansi/issues/1471)) ([000d642](https://github.com/ntucker/anansi/commit/000d642055ee042dfb9049dd4cbc07d1fd5f3c9c))
+
+
+
 ### [1.1.6](https://github.com/ntucker/anansi/compare/example-react-18@1.1.5...example-react-18@1.1.6) (2022-04-08)
 
 

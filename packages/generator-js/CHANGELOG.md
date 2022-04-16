@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [7.3.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.12...@anansi/generator-js@7.3.13) (2022-04-16)
+
+
+### 💅 Enhancement
+
+* Always find yeoman generator package ([f273ce2](https://github.com/ntucker/anansi/commit/f273ce2f54bf07a6665ee149feb76b456ab04f61))
+* Remove react/next as 18 has types ([5103034](https://github.com/ntucker/anansi/commit/5103034551c5c1ad22a5a378c5b2f79444137141))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1470](https://github.com/ntucker/anansi/issues/1470)) ([7989b53](https://github.com/ntucker/anansi/commit/7989b53c38673e9cda2d2c72be3d3f2193ac81d0))
+
+
+
 ### [7.3.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.11...@anansi/generator-js@7.3.12) (2022-04-08)
 
 
