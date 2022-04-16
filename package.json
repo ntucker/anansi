@@ -13,7 +13,7 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "postinstall": "husky install",
+    "postinstall": "husky install && yarn workspace \"@anansi/webpack-config\" run build",
     "changelog": "yarn lerna version",
     "release": "yarn workspaces foreach -tiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -tpi --no-private run build",
