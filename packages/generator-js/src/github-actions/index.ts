@@ -9,7 +9,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath('.github/**'),
+      this.templatePath('dot-github/**'),
       this.destinationPath('.github'),
       this.config.getAll(),
       {},
