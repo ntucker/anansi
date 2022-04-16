@@ -25,7 +25,7 @@
     "generators",
     "run.js"
   ],
-  "main": "generators/index.js",
+  "main": "generators/app/index.js",
   "keywords": [
     "cli",
     "react",
