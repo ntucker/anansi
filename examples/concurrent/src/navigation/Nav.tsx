@@ -11,7 +11,7 @@ import {
 import { useController } from 'rest-hooks';
 import { MatchedRoute } from '@anansi/router';
 
-import { demoContext } from 'demo';
+import { demoContext } from 'app/demo';
 import Boundary from 'components/Boundary';
 
 import PageLoading from './PageLoading';

@@ -1,8 +1,9 @@
 import { CacheProvider } from 'rest-hooks';
 import type { ReactNode } from 'react';
 
-import { DemoProvider } from 'demo';
 import Boundary from 'components/Boundary';
+
+import { DemoProvider } from './demo';
 
 type ComponentProps<T> = T extends
   | React.ComponentType<infer P>

@@ -12,7 +12,6 @@ import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import compress from 'compression';
-import type { StatsChunkGroup } from 'webpack';
 
 import 'cross-fetch/polyfill';
 import { Render } from './types';

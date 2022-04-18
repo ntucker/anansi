@@ -1,8 +1,8 @@
 type Props = {
   children: React.ReactNode;
+  assets: { href: string; as?: string; rel?: string }[];
   head: React.ReactNode;
   title: string;
-  assets: { href: string; as?: string; rel?: string }[];
 };
 
 export default function Document({ assets, head, children, title }: Props) {
