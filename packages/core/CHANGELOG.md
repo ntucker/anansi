@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.0...@anansi/core@0.2.1) (2022-04-18)
+
+
+### 🐛 Bug Fix
+
+* Make start-anansi command executable in bash ([4ae313c](https://github.com/ntucker/anansi/commit/4ae313c7d2137df63e74e5a8064237189c04adc8))
+
+
+
 ## 0.2.0 (2022-04-18)
 
 

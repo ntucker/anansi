@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.2.1](https://github.com/ntucker/anansi/compare/example-react-18@1.2.0...example-react-18@1.2.1) (2022-04-18)
+
+
+### 💅 Enhancement
+
+* Make 'start' command use devserver ([bf003b5](https://github.com/ntucker/anansi/commit/bf003b52dceaa5d9967768677b6b826b990cc33d))
+
+
+
 ## [1.2.0](https://github.com/ntucker/anansi/compare/example-react-18@1.1.7...example-react-18@1.2.0) (2022-04-18)
 
 
