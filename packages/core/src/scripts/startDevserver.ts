@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { promisify } from 'util';
 import diskFs from 'fs';
 import path from 'path';
