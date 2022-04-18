@@ -1,15 +1,21 @@
-import ReactDOM from 'react-dom/client';
-import 'antd/dist/antd.css';
+import { useController } from 'rest-hooks';
+import {
+  floodSpouts,
+  documentSpout,
+  restHooksSpout,
+  routerSpout,
+} from '@anansi/core';
 
-import RootProvider from './RootProvider';
-import App from './App';
+import app from 'app';
 
-const content = (
-  <RootProvider>
-    <App />
-  </RootProvider>
+import { createRouter } from './routing';
+
+const appSpout = () => Promise.resolve({ app });
+
+const spouts = documentSpout({ title: 'anansi' })(
+  restHooksSpout()(
+    routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+  ),
 );
 
-ReactDOM.createRoot(document.getElementById('react') || document.body).render(
-  content,
-);
+floodSpouts(spouts);

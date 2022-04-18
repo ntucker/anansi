@@ -7,7 +7,7 @@ import { Link } from '@anansi/router';
 import { styled } from '@linaria/react';
 
 import { PostResource, UserResource } from 'resources/Discuss';
-import Boundary from 'Boundary';
+import Boundary from 'components/Boundary';
 
 import CommentList from './CommentList';
 

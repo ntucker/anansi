@@ -1,25 +1,23 @@
-import { Link, useRoutes } from '@anansi/router';
+import { Link } from '@anansi/router';
 import { Menu, Layout, Switch } from 'antd';
 import { memo, useContext } from 'react';
 import {
   DesktopOutlined,
   PieChartOutlined,
-  FileOutlined,
   TeamOutlined,
   UserOutlined,
   ControlOutlined,
 } from '@ant-design/icons';
-import { useController, useSuspense } from 'rest-hooks';
-import classNames from 'classnames';
+import { useController } from 'rest-hooks';
+import { MatchedRoute } from '@anansi/router';
 
-import { UserResource } from 'resources/Discuss';
-import Boundary from 'Boundary';
-import { demoContext } from 'DemoProvider';
+import { demoContext } from 'app/demo';
+import Boundary from 'components/Boundary';
 
 import PageLoading from './PageLoading';
 
 const { SubMenu } = Menu;
-const { Header, Content, Footer, Sider } = Layout;
+const { Sider } = Layout;
 
 const openKeys = ['users'];
 
@@ -42,7 +40,7 @@ function Nav() {
           </Menu.Item>
           <SubMenu key="users" icon={<UserOutlined />} title="User">
             <Boundary fallback={null} key="friends">
-              <Friends key="friends2" />
+              <MatchedRoute key="friends2" index={0} />
             </Boundary>
           </SubMenu>
           <SubMenu key="sub4" icon={<ControlOutlined />} title="Controls">
@@ -54,25 +52,6 @@ function Nav() {
   );
 }
 export default memo(Nav);
-
-function Friends(): JSX.Element {
-  const route = useRoutes()[0] as any;
-  const friends = useSuspense(UserResource.list(), {});
-  return friends.map(friend => (
-    <Menu.Item
-      key={friend.pk()}
-      className={classNames({
-        'ant-menu-item-selected':
-          route.id === friend.pk() && route.name === 'userDetail',
-      })}
-      style={{ transition: 'none' }}
-    >
-      <Link name="UserDetail" props={{ id: friend.id }}>
-        {friend.name}
-      </Link>
-    </Menu.Item>
-  )) as any;
-}
 
 function Controls(): JSX.Element {
   const contoller = useController();

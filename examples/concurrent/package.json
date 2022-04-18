@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
+    "start:devserver": "start-anansi ./src/index.tsx",
     "start:prod": "serve ./dist",
+    "start:server": "node ./dist-server/main.js",
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
     "build:clean": "rm -rf dist && rm -rf server_assets",
@@ -35,6 +37,7 @@
     "webpack-dev-server": "4.8.1"
   },
   "dependencies": {
+    "@anansi/core": "^0.1.0",
     "@anansi/router": "^0.3.4",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "^3.0.0-beta.18",

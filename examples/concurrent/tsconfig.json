@@ -9,7 +9,7 @@
     ] /* Specify library files to be included in the compilation. */,
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
-    "jsx": "preserve" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "jsx": "react-jsx" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
     "declaration": true /* Generates corresponding '.d.ts' file. */,
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
@@ -44,7 +44,8 @@
     "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
 
     "paths": {
-      "@standard-endpoint/github/*": ["github/*"]
+      "@standard-endpoint/github/*": ["github/*"],
+      "@anansi/core/*": ["packages/core/src/*"]
     } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
     //"rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
 

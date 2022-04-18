@@ -3,7 +3,7 @@ import { Img } from '@rest-hooks/img';
 import { Card, Avatar } from 'antd';
 
 import { UserResource } from 'resources/Discuss';
-import Boundary from 'Boundary';
+import Boundary from 'components/Boundary';
 import PostList from 'pages/Posts';
 
 export type Props = { id: string };

@@ -3,6 +3,7 @@ const { makeConfig } = require('@anansi/webpack-config');
 const generateConfig = makeConfig({
   basePath: 'src',
   buildDir: 'dist/',
+  serverDir: 'dist-server/',
   fontPreload: 'prefetch',
   libraryInclude: /(@pojo-router\/core|@anansi\/router)/,
   babelLoader: {
@@ -19,5 +20,12 @@ module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (!config.experiments) config.experiments = {};
   config.experiments.backCompat = false;
+
+  if (env.entrypoint) {
+    config.entry = env.entrypoint;
+  }
+  if (env.name) {
+    config.name = env.name;
+  }
   return config;
 };

@@ -1,27 +1,34 @@
-import { RouteController, PojoRouter } from '@pojo-router/core';
-import { createBrowserHistory } from 'history';
-import { RouteProvider } from '@anansi/router';
-import { useController } from 'rest-hooks';
-import { useContext } from 'react';
+import { RouteController } from '@pojo-router/core';
+import type { History } from 'history';
 
 import NotFound from 'components/NotFound';
-import { demoContext } from 'DemoProvider';
 
 import { routes, namedPaths } from './routes';
 
-const history = createBrowserHistory();
+export function createRouter(history: History) {
+  return new RouteController({
+    history,
+    namedPaths,
+    routes,
+    notFound: { component: NotFound },
+  });
+}
 
-export const router = new RouteController({
-  history,
-  namedPaths,
-  routes,
-  notFound: { component: NotFound },
-});
+/*
+import { Route, RouteProvider } from '@anansi/router';
+import { useController } from 'rest-hooks';
+import { useContext, useMemo } from 'react';
+import { demoContext } from '../app/demo';
 
-export default router;
-
-export function Router({ children }: { children: React.ReactNode }) {
+export function Router({
+  children,
+  router,
+}: {
+  children: React.ReactNode;
+  router: RouteController<Route<Controller, any>>;
+}) {
   const controller = useController();
+
   const { concurrent } = useContext(demoContext);
   if (!concurrent) {
     return <PojoRouter router={router}>{children}</PojoRouter>;
@@ -32,3 +39,5 @@ export function Router({ children }: { children: React.ReactNode }) {
     </RouteProvider>
   );
 }
+TODO: Incorporate 'demo' behavior into spouts method
+*/

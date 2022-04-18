@@ -1,10 +1,9 @@
 import { CacheProvider } from 'rest-hooks';
 import type { ReactNode } from 'react';
 
-import { DemoProvider } from 'DemoProvider';
+import Boundary from 'components/Boundary';
 
-import { Router } from './routing';
-import Boundary from './Boundary';
+import { DemoProvider } from './demo';
 
 type ComponentProps<T> = T extends
   | React.ComponentType<infer P>
@@ -16,12 +15,8 @@ type Props = { children: ReactNode } & ComponentProps<typeof CacheProvider>;
 
 export default function RootProvider({ children, ...rest }: Props) {
   return (
-    <CacheProvider {...rest}>
-      <DemoProvider>
-        <Router>
-          <Boundary fallback={null}>{children}</Boundary>
-        </Router>
-      </DemoProvider>
-    </CacheProvider>
+    <DemoProvider>
+      <Boundary fallback={null}>{children}</Boundary>
+    </DemoProvider>
   );
 }
