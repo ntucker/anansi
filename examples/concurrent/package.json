@@ -45,14 +45,14 @@
     "@linaria/shaker": "3.0.0-beta.18",
     "@rest-hooks/img": "0.6.0",
     "@rest-hooks/rest": "5.0.0",
-    "@types/node": "17.0.24",
+    "@types/node": "17.0.25",
     "antd": "4.19.5",
     "classnames": "^2.2.6",
     "core-js": "3.22.0",
     "history": "5.3.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "rest-hooks": "6.3.1"
+    "rest-hooks": "6.3.2"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
