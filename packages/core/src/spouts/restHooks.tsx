@@ -1,4 +1,3 @@
-import React from 'react';
 import { CacheProvider, Manager, NetworkManager } from '@rest-hooks/core';
 import { ServerDataComponent, getDatafromDOM } from '@rest-hooks/ssr';
 

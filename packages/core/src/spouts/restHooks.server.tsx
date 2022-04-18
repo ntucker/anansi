@@ -1,4 +1,3 @@
-import React from 'react';
 import { Manager, NetworkManager } from '@rest-hooks/core';
 import { createPersistedStore } from '@rest-hooks/ssr';
 

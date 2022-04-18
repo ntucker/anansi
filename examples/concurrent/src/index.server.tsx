@@ -1,10 +1,12 @@
 import { useController } from 'rest-hooks';
+import {
+  laySpouts,
+  documentSpout,
+  restHooksSpout,
+  prefetchSpout,
+  routerSpout,
+} from '@anansi/core/server';
 
-import laySpouts from 'ssr/laySpouts';
-import documentSpout from 'ssr/spouts/document.server';
-import restHooksSpout from 'ssr/spouts/restHooks.server';
-import prefetchSpout from 'ssr/spouts/prefetch.server';
-import routerSpout from 'ssr/spouts/router.server';
 import app from 'app';
 
 import { createRouter } from './routing';

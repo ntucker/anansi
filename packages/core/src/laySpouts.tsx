@@ -1,12 +1,13 @@
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
-import { Render } from '../../scripts/types';
+import { Render } from './scripts/types';
 import { ServerProps } from './spouts/types';
 
 export default function laySpouts(
   spouts: (props: ServerProps) => Promise<{
     app: JSX.Element;
   }>,
+  { timeoutMS = 1000 }: { timeoutMS?: number } = {},
 ) {
   const render: Render = async (clientManifest, req, res) => {
     const { app } = await spouts({ clientManifest, req, res });
@@ -53,7 +54,7 @@ type Options = {|
     );
     // Abandon and switch to client rendering if enough time passes.
     // Try lowering this to see the client recover.
-    setTimeout(abort, 1000);
+    setTimeout(abort, timeoutMS);
   };
   return render;
 }

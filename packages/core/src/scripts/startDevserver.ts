@@ -1,11 +1,11 @@
 import { promisify } from 'util';
 import diskFs from 'fs';
 import path from 'path';
-import webpack, { MultiCompiler, StatsCompilation } from 'webpack';
+import webpack, { MultiCompiler } from 'webpack';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import { createFsFromVolume, Volume } from 'memfs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
-import express, { Express, NextFunction } from 'express';
+import express, { NextFunction } from 'express';
 import ora from 'ora';
 import { patchRequire } from 'fs-monkey';
 import tmp from 'tmp';
@@ -17,7 +17,10 @@ import 'cross-fetch/polyfill';
 import { Render } from './types';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const webpackConfig = require('../webpack.config');
+const webpackConfig = require(require.resolve(
+  // TODO: use normal resolution algorithm to find webpack file
+  path.join(process.cwd(), 'webpack.config'),
+));
 
 const entrypoint = process.argv[2];
 const PORT = process.env.PORT || 3000;
@@ -46,7 +49,7 @@ function hotEntry(entryPath: string) {
   // @ts-ignore for some reason it's not picking up that other options are optional
   const generatedEntrypoint = tmp.fileSync({ postfix: '.js' });
   diskFs.writeSync(
-    Number.parseInt(generatedEntrypoint.fd),
+    generatedEntrypoint.fd,
     `
 import entry from "${path.resolve(process.cwd(), entryPath)}";
 
@@ -88,7 +91,7 @@ sourceMapSupport.install({ hookRequire: true });
 
 function getServerBundle(serverStats: webpack.Stats) {
   const serverJson = serverStats.toJson({ assets: true });
-  return path.join(serverJson.outputPath, 'main.js');
+  return path.join(serverJson.outputPath ?? '', 'main.js');
 }
 function handleErrors<
   F extends (
@@ -134,14 +137,15 @@ function initializeApp(stats: webpack.Stats[]) {
       log: console.log,
       path: '/__webpack_hmr',
       heartbeat: 10 * 1000,
-      noInfo: true,
-      name: 'client',
+      //noInfo: true,
+      //name: 'client',
     }),
   );
   const clientManifest = clientStats.toJson();
-  const assetRoute = async (req, res) => {
-    const filename = req.url.substr(process.env.WEBPACK_PUBLIC_PATH.length);
-    const assetPath = path.join(clientManifest.outputPath, filename);
+  const assetRoute = async (req: Request | IncomingMessage, res: any) => {
+    const filename =
+      req.url?.substr((process.env.WEBPACK_PUBLIC_PATH as string).length) ?? '';
+    const assetPath = path.join(clientManifest.outputPath ?? '', filename);
 
     try {
       const fileContent = (await readFile(assetPath)).toString();
@@ -167,7 +171,7 @@ function initializeApp(stats: webpack.Stats[]) {
         res.send('not found');
         return;
       }
-      res.socket.on('error', error => {
+      res.socket.on('error', (error: unknown) => {
         console.error('Fatal', error);
       });
 
@@ -183,7 +187,7 @@ function initializeApp(stats: webpack.Stats[]) {
       if (error.syscall !== 'listen') {
         throw error;
       }
-      const isPipe = portOrPipe => Number.isNaN(portOrPipe);
+      const isPipe = (portOrPipe: string | number) => Number.isNaN(portOrPipe);
       const bind = isPipe(PORT) ? 'Pipe ' + PORT : 'Port ' + PORT;
       switch (error.code) {
         case 'EACCES':
@@ -202,6 +206,10 @@ function initializeApp(stats: webpack.Stats[]) {
 
 // Watch the files for changes
 const watcher = compiler.watch({}, (err, multiStats) => {
+  if (!multiStats) {
+    console.error('stats not send');
+    process.exit(-1);
+  }
   if (err) {
     console.error(err);
     process.exit(-1);

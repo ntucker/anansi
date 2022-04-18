@@ -8,7 +8,7 @@
     "lib": ["dom", "esnext"],                             /* Specify library files to be included in the compilation. */
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
-    "jsx": "react",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "jsx": "react-jsx",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     "declaration": true,                      /* Generates corresponding '.d.ts' file. */
     "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
@@ -54,7 +54,8 @@
     "baseUrl": ".",
     "paths": {
       "@pojo-router/core/*": ["packages/pojo-router/src/*"],
-      "@anansi/router/*": ["packages/router/src/*"]
+      "@anansi/router/*": ["packages/router/src/*"],
+      "@anansi/core/*": ["packages/core/src/*"]
     },
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -69,7 +70,7 @@
     "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     "emitDecoratorMetadata": true         /* Enables experimental support for emitting type metadata for decorators. */
   },
-  "include": ["packages/pojo-router/src", "packages/router/src"],
+  "include": ["packages/pojo-router/src", "packages/router/src", "packages/core/src"],
   "exclude": [
     "node_modules",
     "dist",

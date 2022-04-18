@@ -18,7 +18,7 @@ export const namedPaths = {
   Posts: '/posts',
   PostDetail: '/post/:id',
   UserDetail: '/user/:id',
-};
+} as const;
 
 export const routes: Route<Controller>[] = [
   {
