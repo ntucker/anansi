@@ -213,6 +213,7 @@ const watcher = compiler.watch({}, (err, multiStats) => {
     process.exit(-1);
   }
   if (err) {
+    console.error('Error in compilation');
     console.error(err);
     process.exit(-1);
   }
