@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "private": true,
   "scripts": {
-    "start": "start-anansi ./src/index.tsx",
+    "start": "node ./startDevserver.js ./src/index.tsx",
     "start:prod": "serve ./dist",
     "start:server": "node ./dist-server/main.js",
     "build": "webpack --mode=production",
