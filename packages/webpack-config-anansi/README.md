@@ -381,11 +381,22 @@ regexes.
 libraryExclude defaults to `/node_modules/`, which will exclude libraries from expensive
 and potentially incorrect processing from babel loaders.
 
-To match all libraries in namespace `@myspacespace`:
+With a monorepo layout like so
+
+```
+/
+  /packages
+    /package-a
+    /package-b
+  /myapp
+    webpack.config.js
+```
+
+Where `package-a` and `package-b` are namespaced under `@myspacespace`:
 
 ```js
 const myConfig = makeConfig({
-  libraryInclude: /node_modules\/(@mynamespace\/)/,
+  libraryInclude: path.resolve(__dirname, '../packages'),
   libraryExclude: /node_modules(?!\/(@mynamespace\/))/,
 });
 ```
