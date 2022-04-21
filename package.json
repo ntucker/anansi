@@ -33,7 +33,7 @@
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
     "@zerollup/ts-transform-paths": "^1.7.18",
-    "babel-loader": "8.2.4",
+    "babel-loader": "8.2.5",
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.6.3",
