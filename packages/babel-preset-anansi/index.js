@@ -185,7 +185,8 @@ function buildPreset(api, options = {}) {
     ],
     plugins: [
       (Object.keys(options.resolver.alias).length ||
-        Object.keys(options.resolver.root).length) && [
+        Object.keys(options.resolver.root).length ||
+        Object.keys(options.resolver).length > 2) && [
         require('babel-plugin-module-resolver').default,
         options.resolver,
       ],
