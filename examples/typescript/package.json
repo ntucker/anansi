@@ -52,7 +52,7 @@
     "@types/node": "17.0.25",
     "antd": "4.19.5",
     "classnames": "^2.2.6",
-    "core-js": "3.22.1",
+    "core-js": "3.22.2",
     "lodash": "^4.17.15",
     "parse-link-header": "^2.0.0",
     "react-router-dom": "^5.3.0",

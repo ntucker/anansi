@@ -55,7 +55,7 @@ __metadata:
     babel-plugin-react-require: ^3.1.3
     babel-plugin-root-import: ^6.6.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-    core-js-compat: ^3.22.1
+    core-js-compat: ^3.22.2
     glob-to-regexp: ^0.4.1
     path: ^0.12.7
     semver: ^7.3.7
@@ -7019,12 +7019,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.1":
-  version: 18.0.1
-  resolution: "@types/react-dom@npm:18.0.1"
+"@types/react-dom@npm:18.0.2":
+  version: 18.0.2
+  resolution: "@types/react-dom@npm:18.0.2"
   dependencies:
     "@types/react": "*"
-  checksum: 6c183e2e50240b77ed767cd968fe061ef4f2b47f84da5ec9e412a767d68c9a004d1f6ccca4295a5aa2c3ee723377e59006a2031f3767c00d8ac9e240a51bb142
+  checksum: 2b0b138d8634ccfd8a86b17cb5414b122ee0cb6f650377d772f6008761a27e4c2531c08e3cab71aaa19b6893af6a508c664aa314db3ebcff5b8179173c9c9307
   languageName: node
   linkType: hard
 
@@ -7087,14 +7087,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.5":
-  version: 18.0.5
-  resolution: "@types/react@npm:18.0.5"
+"@types/react@npm:18.0.6":
+  version: 18.0.6
+  resolution: "@types/react@npm:18.0.6"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 70d3336d43ef25509fa89ef3278f57fdf1945fc921e69b7890a78ab9a52a55ee38e2f13aa71eb4f6032b7311e7557860ce8836c1acf3028304989571c9736a96
+  checksum: 368b40176f0dab30a611c3263bf1d9878cebede9ce8015bc5661a396787dbe41f0b667b8d6d448dea7bc8c0557bf3cb329ab2b16ad2dacb18eaa764358bd16d4
   languageName: node
   linkType: hard
 
@@ -10970,13 +10970,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-compat@npm:^3.22.1":
-  version: 3.22.1
-  resolution: "core-js-compat@npm:3.22.1"
+"core-js-compat@npm:^3.22.2":
+  version: 3.22.2
+  resolution: "core-js-compat@npm:3.22.2"
   dependencies:
     browserslist: ^4.20.2
     semver: 7.0.0
-  checksum: 2f9f885ea006fed7717279e36e644734aea722f0d8e06e272636c030eb2efcf1bab1471fa82e8ef89a39d60e0257a3f24573a014c334dc5b6f2085da90221c98
+  checksum: 4460d99c1e618a543976ebcc329c5e063254d746bf1eeda5e2ab7b43589071e8627b950c10e6189d8d231982788969203dbcdc264a5bb6dcea6ddfb32cce0214
   languageName: node
   linkType: hard
 
@@ -10987,10 +10987,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.22.1":
-  version: 3.22.1
-  resolution: "core-js@npm:3.22.1"
-  checksum: 04f5e97b069e8d9137cd72151d8f4e6b0e51e338c1e9fa04da1a582695bb5b789abf96b0b2bb3d716c63ca68c0e67eea6680d8ee0a206e93e97ebba8aaf40e9c
+"core-js@npm:3.22.2":
+  version: 3.22.2
+  resolution: "core-js@npm:3.22.2"
+  checksum: 23efd6148d2f564852f23de426401c86f1d8af410eacccf22ae5dd82b1e9de558f05692cacd4b7e709d47993c670d7bca6f601d0b2ab32cf397a113fc5b7d80c
   languageName: node
   linkType: hard
 
@@ -13223,7 +13223,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.5
     classnames: ^2.2.6
-    core-js: 3.22.1
+    core-js: 3.22.2
     react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
@@ -13252,11 +13252,11 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/node": 17.0.25
-    "@types/react": 18.0.5
-    "@types/react-dom": 18.0.1
+    "@types/react": 18.0.6
+    "@types/react-dom": 18.0.2
     antd: 4.19.5
     classnames: ^2.2.6
-    core-js: 3.22.1
+    core-js: 3.22.2
     history: 5.3.0
     jest: ^27.5.1
     react: 18.0.0
@@ -13300,7 +13300,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     antd: 4.19.5
     classnames: ^2.2.6
-    core-js: 3.22.1
+    core-js: 3.22.2
     jest: ^27.5.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
@@ -25169,8 +25169,8 @@ __metadata:
     "@babel/core": 7.17.9
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
-    "@types/react": 18.0.5
-    "@types/react-dom": 18.0.1
+    "@types/react": 18.0.6
+    "@types/react-dom": 18.0.2
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.5
     babel-plugin-root-import: ^6.6.0
