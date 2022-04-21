@@ -22,7 +22,7 @@
     "@anansi/webpack-config": "^11.3.9",
     "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^5.3.3",
-    "babel-loader": "8.2.4",
+    "babel-loader": "8.2.5",
     "react-refresh": "0.12.0",
     "serve": "^13.0.2",
     "webpack": "5.72.0"
