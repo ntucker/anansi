@@ -55,7 +55,7 @@ __metadata:
     babel-plugin-react-require: ^3.1.3
     babel-plugin-root-import: ^6.6.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-    core-js-compat: ^3.22.0
+    core-js-compat: ^3.22.1
     glob-to-regexp: ^0.4.1
     path: ^0.12.7
     semver: ^7.3.7
@@ -208,7 +208,7 @@ __metadata:
     chalk: ^4.1.2
     copyfiles: ^2.1.1
     core-js: ^3.21.0
-    ejs: ^3.1.6
+    ejs: ^3.1.7
     execa: ^5.1.1
     gulp-filter: ^7.0.0
     gulp-prettier: ^4.0.0
@@ -361,7 +361,7 @@ __metadata:
     react-error-overlay: 6.0.9
     readable-stream: ^3.6.0
     rimraf: ^3.0.2
-    sass: ^1.50.0
+    sass: ^1.50.1
     sass-loader: ^12.6.0
     sass-resources-loader: ^2.2.5
     semver: ^7.3.7
@@ -6794,10 +6794,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.181":
-  version: 4.14.181
-  resolution: "@types/lodash@npm:4.14.181"
-  checksum: 0d1863d8383fd2f8bb42e9e3fc1d6255bb88ff034d6df848941063698944313dae944fc1270315613e3d303fae7c7a9a86085ad3235ed6204c56c4b0b3699aa9
+"@types/lodash@npm:4.14.182":
+  version: 4.14.182
+  resolution: "@types/lodash@npm:4.14.182"
+  checksum: 7dd137aa9dbabd632408bd37009d984655164fa1ecc3f2b6eb94afe35bf0a5852cbab6183148d883e9c73a958b7fec9a9bcf7c8e45d41195add6a18c34958209
   languageName: node
   linkType: hard
 
@@ -9890,7 +9890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -10970,13 +10970,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-compat@npm:^3.22.0":
-  version: 3.22.0
-  resolution: "core-js-compat@npm:3.22.0"
+"core-js-compat@npm:^3.22.1":
+  version: 3.22.1
+  resolution: "core-js-compat@npm:3.22.1"
   dependencies:
     browserslist: ^4.20.2
     semver: 7.0.0
-  checksum: ad204cfbe203803d2d86f7bb95f60525b1f9e3701b92d68d08e575932a5d8ea2ec31e121350a328a4035d8f0ef8793392efd74b1fede2702c26c80865b49597c
+  checksum: 2f9f885ea006fed7717279e36e644734aea722f0d8e06e272636c030eb2efcf1bab1471fa82e8ef89a39d60e0257a3f24573a014c334dc5b6f2085da90221c98
   languageName: node
   linkType: hard
 
@@ -10987,10 +10987,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.22.0":
-  version: 3.22.0
-  resolution: "core-js@npm:3.22.0"
-  checksum: 88ac28dfb8e7fdcd80d32a69dc634900e3daf3bc873ebefb6f189b598ce96e9b68fe553428627e5c43f27749779389faceb865a2a120cf2d44f05795830b5cd7
+"core-js@npm:3.22.1":
+  version: 3.22.1
+  resolution: "core-js@npm:3.22.1"
+  checksum: 04f5e97b069e8d9137cd72151d8f4e6b0e51e338c1e9fa04da1a582695bb5b789abf96b0b2bb3d716c63ca68c0e67eea6680d8ee0a206e93e97ebba8aaf40e9c
   languageName: node
   linkType: hard
 
@@ -12281,6 +12281,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ejs@npm:^3.1.7":
+  version: 3.1.7
+  resolution: "ejs@npm:3.1.7"
+  dependencies:
+    jake: ^10.8.5
+  bin:
+    ejs: bin/cli.js
+  checksum: fe40764af39955ce8f8b116716fc8b911959946698edb49ecab85df597746c07aa65d5b74ead28a1e2ffa75b0f92d9bedd752f1c29437da6137b3518271e988c
+  languageName: node
+  linkType: hard
+
 "electron-to-chromium@npm:^1.4.17":
   version: 1.4.24
   resolution: "electron-to-chromium@npm:1.4.24"
@@ -13212,7 +13223,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.5
     classnames: ^2.2.6
-    core-js: 3.22.0
+    core-js: 3.22.1
     react-refresh: 0.12.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
@@ -13245,7 +13256,7 @@ __metadata:
     "@types/react-dom": 18.0.1
     antd: 4.19.5
     classnames: ^2.2.6
-    core-js: 3.22.0
+    core-js: 3.22.1
     history: 5.3.0
     jest: ^27.5.1
     react: 18.0.0
@@ -13282,14 +13293,14 @@ __metadata:
     "@storybook/react": 6.4.22
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
-    "@types/lodash": 4.14.181
+    "@types/lodash": 4.14.182
     "@types/node": 17.0.25
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
     antd: 4.19.5
     classnames: ^2.2.6
-    core-js: 3.22.0
+    core-js: 3.22.1
     jest: ^27.5.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
@@ -17100,6 +17111,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jake@npm:^10.8.5":
+  version: 10.8.5
+  resolution: "jake@npm:10.8.5"
+  dependencies:
+    async: ^3.2.3
+    chalk: ^4.0.2
+    filelist: ^1.0.1
+    minimatch: ^3.0.4
+  bin:
+    jake: ./bin/cli.js
+  checksum: 56c913ecf5a8d74325d0af9bc17a233bad50977438d44864d925bb6c45c946e0fee8c4c1f5fe2225471ef40df5222e943047982717ebff0d624770564d3c46ba
+  languageName: node
+  linkType: hard
+
 "jest-changed-files@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-changed-files@npm:27.5.1"
@@ -18213,9 +18238,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.3.8":
-  version: 12.3.8
-  resolution: "lint-staged@npm:12.3.8"
+"lint-staged@npm:12.4.0":
+  version: 12.4.0
+  resolution: "lint-staged@npm:12.4.0"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -18233,7 +18258,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: af6a89ae4244e4eac7180c6e7da452f378fd156ff38eaa666ecbb78f1e2efb7f1a9fc766dcc1cdde2bd76e03da68e602056ca9d2f1c6e46cf10aa83d20bf4d49
+  checksum: e25b273a73b79f224ff1ccb22432c34a9050fe8318b9cf7e08c748e2efc80e1f48ed4f2aa61cd16a701bb7fd6323ecf0d94a497c97732db04f2b5382d6b70131
   languageName: node
   linkType: hard
 
@@ -25158,7 +25183,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.4.0
     husky: ^7.0.4
     lerna: ^4.0.0
-    lint-staged: 12.3.8
+    lint-staged: 12.4.0
     prettier: 2.6.2
     react: 18.0.0
     react-dom: 18.0.0
@@ -25309,16 +25334,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.50.0":
-  version: 1.50.0
-  resolution: "sass@npm:1.50.0"
+"sass@npm:^1.50.1":
+  version: 1.50.1
+  resolution: "sass@npm:1.50.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 43738cc83a3921731456f769aba190277f0620f8b80c14426ab098be9ab8dc8465957f5bf2edbcffda189edb3024ed83dee2cb8cd580459ca4984a9fc88c18f7
+  checksum: c06334dbf8eddd508d90ca529c6ffb88cb5861d18cec285480d212b9dbe0a46441cbfd8aa10565780551c71372617465e6c77298e734180e2da2628ce6c46545
   languageName: node
   linkType: hard
 
