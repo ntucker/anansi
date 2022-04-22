@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.2.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.1...@anansi/core@0.2.2) (2022-04-22)
+
+
+### 💅 Enhancement
+
+* Indicate compilation errors ([82682b9](https://github.com/ntucker/anansi/commit/82682b9ed22686eb58f5421b6043852d2006842e))
+
+
+
 ### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.0...@anansi/core@0.2.1) (2022-04-18)
 
 

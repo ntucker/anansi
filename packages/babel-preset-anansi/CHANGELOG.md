@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.0.3...@anansi/babel-preset@3.0.4) (2022-04-22)
+
+
+### 🐛 Bug Fix
+
+* Ensure resolver options set are used ([86b52cd](https://github.com/ntucker/anansi/commit/86b52cd7fb6767c75fd16bed581d72124f8b317a))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1474](https://github.com/ntucker/anansi/issues/1474)) ([0c51250](https://github.com/ntucker/anansi/commit/0c5125030474a72dc4dfa6a50fda76154c1662c9))
+* Update all non-major dependencies ([#1475](https://github.com/ntucker/anansi/issues/1475)) ([5b7e91e](https://github.com/ntucker/anansi/commit/5b7e91ece65cb856541566fc8859aae15abb461d))
+
+
+
 ### [3.0.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.0.2...@anansi/babel-preset@3.0.3) (2022-04-16)
 
 

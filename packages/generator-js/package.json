@@ -1,6 +1,6 @@
 {
   "name": "@anansi/generator-js",
-  "version": "7.3.15",
+  "version": "7.3.16",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator-js#readme",
   "repository": {
@@ -44,7 +44,7 @@
     "storybook"
   ],
   "devDependencies": {
-    "@anansi/babel-preset": "^3.0.3",
+    "@anansi/babel-preset": "^3.0.4",
     "@babel/cli": "^7.17.6",
     "@babel/core": "7.17.9",
     "@types/ejs": "^3.1.0",
