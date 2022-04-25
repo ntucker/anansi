@@ -150,8 +150,10 @@ function buildPreset(api, options = {}) {
     }
   }
   options.resolver.extensions = [
-    '.ts.',
+    '.ts',
     '.tsx',
+    '.mts',
+    '.mtsx',
     '.js',
     '.jsx',
     '.es',
@@ -361,15 +363,15 @@ function buildPreset(api, options = {}) {
     });
     preset.overrides = [
       {
-        test: /\.ts$/,
+        test: /\.(m|c)?ts$/,
         plugins: [[transformTypeScript, pluginOptions(false)], ...classPlugins],
       },
       {
-        test: /\.tsx$/,
+        test: /\.(m|c)?tsx$/,
         plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(m|c)?(js|jsx)$/,
         plugins: classPlugins,
       },
     ];

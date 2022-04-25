@@ -41,9 +41,11 @@ module.exports = {
       },
     },
     transform: {
-      '^.+\\.worker.[t|j]s$': require.resolve('./transformers/worker-loader'),
-      '^.+\\.(tsx?|html)$': require.resolve('ts-jest'),
-      '^.+\\.jsx?$': [require.resolve('babel-jest'), babelConfig],
+      '^.+\\.worker.(m|c)?[t|j]s$': require.resolve(
+        './transformers/worker-loader',
+      ),
+      '^.+\\.(m|c)?(tsx?|html)$': require.resolve('ts-jest'),
+      '^.+\\.(m|c)?jsx?$': [require.resolve('babel-jest'), babelConfig],
     },
     // same as default, but we transform @babel/runtime
     transformIgnorePatterns: [
@@ -51,9 +53,18 @@ module.exports = {
       '\\.pnp\\.[^\\/]+$',
     ],
     resolver: require.resolve(`jest-pnp-resolver`),
-    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(j|t)sx?$',
+    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(m|c)?(j|t)sx?$',
     coveragePathIgnorePatterns: ['node_modules'],
-    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'mjs', 'json'],
+    moduleFileExtensions: [
+      'ts',
+      'tsx',
+      'mts',
+      'mtsx',
+      'js',
+      'jsx',
+      'mjs',
+      'json',
+    ],
     moduleNameMapper: {
       '\\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga)$':
         require.resolve('./mocks/fileMock.js'),
