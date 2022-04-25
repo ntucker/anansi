@@ -107,6 +107,7 @@
   ],
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
+    "dev": "yarn run build:lib -w",
     "test": "jest",
     "test:type": "tsc",
     "build": "yarn run build:lib",
