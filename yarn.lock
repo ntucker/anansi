@@ -240,13 +240,13 @@ __metadata:
     mitt: ^3.0.0
     rimraf: ^3.0.2
     semver: ^7.3.7
-    ts-jest: ^27.1.4
+    ts-jest: ^28.0.0-0
     whatwg-fetch: ^3.0.0
   peerDependencies:
     "@babel/core": ^7.0.0
-    jest: ^27.0.0 || ^28.0.0
+    jest: ^28.0.0
     react: "*"
-    typescript: ^3.0.0 || ^4.0.0
+    typescript: ^4.3.0
   peerDependenciesMeta:
     react:
       optional: true
@@ -17580,21 +17580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-util@npm:^27.0.0":
-  version: 27.4.2
-  resolution: "jest-util@npm:27.4.2"
-  dependencies:
-    "@jest/types": ^27.4.2
-    "@types/node": "*"
-    chalk: ^4.0.0
-    ci-info: ^3.2.0
-    graceful-fs: ^4.2.4
-    picomatch: ^2.2.3
-  checksum: bcf16881aff1421c5f7c2df2ef9492cf8cd92fcd0a2a99bec5ab16f7185ee19aea48eda41d9dfa7b5bf4354bdc21628f5931cd2e7281741e6d2983965efb631e
-  languageName: node
-  linkType: hard
-
-"jest-util@npm:^28.0.1":
+"jest-util@npm:^28.0.0, jest-util@npm:^28.0.1":
   version: 28.0.1
   resolution: "jest-util@npm:28.0.1"
   dependencies:
@@ -27462,24 +27448,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^27.1.4":
-  version: 27.1.4
-  resolution: "ts-jest@npm:27.1.4"
+"ts-jest@npm:^28.0.0-0":
+  version: 28.0.0-next.1
+  resolution: "ts-jest@npm:28.0.0-next.1"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
-    jest-util: ^27.0.0
+    jest-util: ^28.0.0
     json5: 2.x
     lodash.memoize: 4.x
     make-error: 1.x
     semver: 7.x
-    yargs-parser: 20.x
+    yargs-parser: ^20.x
   peerDependencies:
     "@babel/core": ">=7.0.0-beta.0 <8"
     "@types/jest": ^27.0.0
-    babel-jest: ">=27.0.0 <28"
-    jest: ^27.0.0
-    typescript: ">=3.8 <5.0"
+    babel-jest: ^28.0.0
+    jest: ^28.0.0
+    typescript: ">=4.3"
   peerDependenciesMeta:
     "@babel/core":
       optional: true
@@ -27491,7 +27477,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: d2cc2719ed2884a880ab50d2c14c311834be9c88bc79d0064fa0189afce5c296d7676314d26cc3f7e82ddd52df272c2d4137a832c89616f30cbe8f43e30f9a29
+  checksum: 81e9fe6872ec092ec23c4a40b40f9d2c1df67185a1fd7f26282ab3c3fa4c741a27edb9ddaafb2cebd34ad9a69c76d11ed9c3d430d7072871dfedb4739f3a5dcc
   languageName: node
   linkType: hard
 
@@ -29338,13 +29324,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:20.x, yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
-  version: 20.2.7
-  resolution: "yargs-parser@npm:20.2.7"
-  checksum: ec0ea9e1b5699977380583f5ab1c0e2c6fc5f1ed374eb3053c458df00c543effba53628ad3297f3ccc769660518d5e376fd1cfb298b8e37077421aca8d75ae89
-  languageName: node
-  linkType: hard
-
 "yargs-parser@npm:^13.1.2":
   version: 13.1.2
   resolution: "yargs-parser@npm:13.1.2"
@@ -29362,6 +29341,20 @@ __metadata:
     camelcase: ^5.0.0
     decamelize: ^1.2.0
   checksum: 60e8c7d1b85814594d3719300ecad4e6ae3796748b0926137bfec1f3042581b8646d67e83c6fc80a692ef08b8390f21ddcacb9464476c39bbdf52e34961dd4d9
+  languageName: node
+  linkType: hard
+
+"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
+  version: 20.2.7
+  resolution: "yargs-parser@npm:20.2.7"
+  checksum: ec0ea9e1b5699977380583f5ab1c0e2c6fc5f1ed374eb3053c458df00c543effba53628ad3297f3ccc769660518d5e376fd1cfb298b8e37077421aca8d75ae89
+  languageName: node
+  linkType: hard
+
+"yargs-parser@npm:^20.x":
+  version: 20.2.9
+  resolution: "yargs-parser@npm:20.2.9"
+  checksum: 8bb69015f2b0ff9e17b2c8e6bfe224ab463dd00ca211eece72a4cd8a906224d2703fb8a326d36fdd0e68701e201b2a60ed7cf81ce0fd9b3799f9fe7745977ae3
   languageName: node
   linkType: hard
 

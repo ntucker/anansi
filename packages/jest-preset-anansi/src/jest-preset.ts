@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import type * as _babel from 'babel__core';
 
-const { pathsToModuleNameMapper } = require('ts-jest/utils');
+const { pathsToModuleNameMapper } = require('ts-jest');
 const { readTsConfig } = require('@anansi/ts-utils');
 const semver = require('semver');
 
