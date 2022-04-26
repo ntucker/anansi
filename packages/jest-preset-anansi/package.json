@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@anansi/ts-utils": "^0.2.5",
-    "babel-jest": "^27.5.1",
+    "babel-jest": "^28.0.1",
     "core-js": "^3.21.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-pnp-resolver": "^1.2.2",
@@ -69,7 +69,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
-    "jest": "^27.0.0",
+    "jest": "^27.0.0 || ^28.0.0",
     "react": "*",
     "typescript": "^3.0.0 || ^4.0.0"
   },
