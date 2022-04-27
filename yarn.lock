@@ -313,7 +313,7 @@ __metadata:
     "@babel/cli": 7.17.6
     "@babel/core": 7.17.9
     "@babel/runtime": ^7.17.2
-    "@ntucker/linaria-webpack5-loader": 3.0.0-beta.17
+    "@linaria/webpack5-loader": ^3.0.0-beta.18
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.5
     "@svgr/webpack": ^6.2.1
     "@types/webpack-bundle-analyzer": ^4.4.1
@@ -4070,7 +4070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:^3.0.0-beta.17, @linaria/babel-preset@npm:^3.0.0-beta.18":
+"@linaria/babel-preset@npm:^3.0.0-beta.18":
   version: 3.0.0-beta.18
   resolution: "@linaria/babel-preset@npm:3.0.0-beta.18"
   dependencies:
@@ -4154,6 +4154,22 @@ __metadata:
   version: 3.0.0-beta.18
   resolution: "@linaria/utils@npm:3.0.0-beta.18"
   checksum: ecbd189c93fc31175e5107eb9ced88da260181d16eb93ee22b54abff72858bef12edfd29771865f85babe4a6b6166dc8616a030c78c352ac3896f5d875cf80a4
+  languageName: node
+  linkType: hard
+
+"@linaria/webpack5-loader@npm:^3.0.0-beta.18":
+  version: 3.0.0-beta.18
+  resolution: "@linaria/webpack5-loader@npm:3.0.0-beta.18"
+  dependencies:
+    "@linaria/babel-preset": ^3.0.0-beta.18
+    "@linaria/logger": ^3.0.0-beta.15
+    enhanced-resolve: ^5.3.1
+    loader-utils: ^2.0.0
+    mkdirp: ^0.5.1
+  peerDependencies:
+    "@babel/core": ">=7"
+    webpack: ">=5"
+  checksum: 92db233501d21e4eefe5b5159a377438842a5717ec17cca43c05434dfb02c3344b818f3c908524682731fb5888d2d20a438f35b30081a46eeedb629744d89e8e
   languageName: node
   linkType: hard
 
@@ -4478,25 +4494,6 @@ __metadata:
     node-gyp: ^9.0.0
     read-package-json-fast: ^2.0.3
   checksum: 81fd97182ef84d976f3e808f6aac0cec0ec4096fcfad59f606f4068aa1b4f79d510354804459467c1f98c453a5739937f88e1141a30450d4379bf175f23d46a1
-  languageName: node
-  linkType: hard
-
-"@ntucker/linaria-webpack5-loader@npm:3.0.0-beta.17":
-  version: 3.0.0-beta.17
-  resolution: "@ntucker/linaria-webpack5-loader@npm:3.0.0-beta.17"
-  dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.17
-    "@linaria/logger": ^3.0.0-beta.15
-    cosmiconfig: ^5.1.0
-    enhanced-resolve: ^5.3.1
-    find-yarn-workspace-root: ^1.2.1
-    loader-utils: ^2.0.0
-    mkdirp: ^0.5.1
-    normalize-path: ^3.0.0
-  peerDependencies:
-    "@babel/core": ">=7"
-    webpack: ">=5"
-  checksum: 63155468e05e70faf59a5714b9aaf25836b2bb908c08427ef81c2a591246a8b13e678dc820b65ad604a230f1eb1a8457169b8e70167cb2a911caaa5e62d2743a
   languageName: node
   linkType: hard
 
@@ -13933,16 +13930,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-yarn-workspace-root@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "find-yarn-workspace-root@npm:1.2.1"
-  dependencies:
-    fs-extra: ^4.0.3
-    micromatch: ^3.1.4
-  checksum: a8f4565fb1ead6122acc0d324fa3257c20f7b0c91b7b266dab9eee7251fb5558fcff5b35dbfd301bfd1cbb91c1cdd1799b28ffa5b9a92efd8c7ded3663652bbe
-  languageName: node
-  linkType: hard
-
 "first-chunk-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "first-chunk-stream@npm:2.0.0"
@@ -14177,17 +14164,6 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: 5285a3d8f34b917cf2b66af8c231a40c1623626e9d701a20051d3337be16c6d7cac94441c8b3732d47a92a2a027886ca93c69b6a4ae6aee3c89650d2a8880c0a
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "fs-extra@npm:4.0.3"
-  dependencies:
-    graceful-fs: ^4.1.2
-    jsonfile: ^4.0.0
-    universalify: ^0.1.0
-  checksum: c5ae3c7043ad7187128e619c0371da01b58694c1ffa02c36fb3f5b459925d9c27c3cb1e095d9df0a34a85ca993d8b8ff6f6ecef868fd5ebb243548afa7fc0936
   languageName: node
   linkType: hard
 
@@ -17840,18 +17816,6 @@ __metadata:
     graceful-fs:
       optional: true
   checksum: f5064aabbc9e35530dc471d8b203ae1f40dbe949ddde4391c6f6a6d310619a15f0efdae5587df594d1d70c555193aaeee9d2ed4aec9ffd5767bd5e4e62d49c3d
-  languageName: node
-  linkType: hard
-
-"jsonfile@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "jsonfile@npm:4.0.0"
-  dependencies:
-    graceful-fs: ^4.1.6
-  dependenciesMeta:
-    graceful-fs:
-      optional: true
-  checksum: 6447d6224f0d31623eef9b51185af03ac328a7553efcee30fa423d98a9e276ca08db87d71e17f2310b0263fd3ffa6c2a90a6308367f661dc21580f9469897c9e
   languageName: node
   linkType: hard
 
@@ -28070,13 +28034,6 @@ __metadata:
   version: 6.0.0
   resolution: "universal-user-agent@npm:6.0.0"
   checksum: 5092bbc80dd0d583cef0b62c17df0043193b74f425112ea6c1f69bc5eda21eeec7a08d8c4f793a277eb2202ffe9b44bec852fa3faff971234cd209874d1b79ef
-  languageName: node
-  linkType: hard
-
-"universalify@npm:^0.1.0":
-  version: 0.1.2
-  resolution: "universalify@npm:0.1.2"
-  checksum: 40cdc60f6e61070fe658ca36016a8f4ec216b29bf04a55dce14e3710cc84c7448538ef4dad3728d0bfe29975ccd7bfb5f414c45e7b78883567fb31b246f02dff
   languageName: node
   linkType: hard
 

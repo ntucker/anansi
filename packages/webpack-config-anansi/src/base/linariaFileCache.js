@@ -25,14 +25,14 @@ class LinariaFileCache {
 
   async get(key) {
     return fs.promises.readFile(
-      path.join(this.linariaCacheDir, `${hashFileName(key)}.css`),
+      path.join(this.linariaCacheDir, `${hashFileName(key)}.linaria.css`),
       'utf8',
     );
   }
 
   async set(key, value) {
     return fs.promises.writeFile(
-      path.join(this.linariaCacheDir, `${hashFileName(key)}.css`),
+      path.join(this.linariaCacheDir, `${hashFileName(key)}.linaria.css`),
       value,
       'utf8',
     );
