@@ -202,7 +202,7 @@ __metadata:
     "@types/ejs": ^3.1.0
     "@types/gulp-filter": ^3.0.34
     "@types/mem-fs-editor": ^7.0.1
-    "@types/node": 17.0.29
+    "@types/node": 17.0.30
     "@types/pacote": ^11.1.3
     "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
@@ -240,7 +240,7 @@ __metadata:
     mitt: ^3.0.0
     rimraf: ^3.0.2
     semver: ^7.3.7
-    ts-jest: ^28.0.0-next.2
+    ts-jest: ^28.0.0-next.3
     whatwg-fetch: ^3.0.0
   peerDependencies:
     "@babel/core": ^7.0.0
@@ -267,7 +267,7 @@ __metadata:
     rollup: 2.70.2
     rollup-plugin-babel: ^4.3.3
     rollup-plugin-commonjs: ^10.1.0
-    typescript: 4.6.3
+    typescript: 4.6.4
     whatwg-fetch: ^3.0.0
   languageName: unknown
   linkType: soft
@@ -7243,10 +7243,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.29":
-  version: 17.0.29
-  resolution: "@types/node@npm:17.0.29"
-  checksum: bb9d7bce9d6d3882efd9d63b773b548dce98df4bd57eff8ceaa316aa2f3346e36d3618764cc93da84bbff92005174a35eec3465cde91ee973ef1c351ffa40074
+"@types/node@npm:17.0.30":
+  version: 17.0.30
+  resolution: "@types/node@npm:17.0.30"
+  checksum: b3cd2db6474aae3ddac5a312f340f6e4ca200429371e62cb74698fe7f23d7414d0200f643204ddfaa797846328539359e3797d7f2baaf3cdd643b159cf53baa6
   languageName: node
   linkType: hard
 
@@ -7380,12 +7380,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.2":
-  version: 18.0.2
-  resolution: "@types/react-dom@npm:18.0.2"
+"@types/react-dom@npm:18.0.3":
+  version: 18.0.3
+  resolution: "@types/react-dom@npm:18.0.3"
   dependencies:
     "@types/react": "*"
-  checksum: 2b0b138d8634ccfd8a86b17cb5414b122ee0cb6f650377d772f6008761a27e4c2531c08e3cab71aaa19b6893af6a508c664aa314db3ebcff5b8179173c9c9307
+  checksum: 5c87fb610e212f0942ebbf522dfca4c9dc2ac8afa4c601454415e7c42f993518868207faff7658d11974142937ba7af2f80e274c3a3f5e0e697bdd5547dbe1b0
   languageName: node
   linkType: hard
 
@@ -13547,9 +13547,9 @@ __metadata:
     "@rest-hooks/test": 7.3.0
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
-    "@types/node": 17.0.29
+    "@types/node": 17.0.30
     "@types/react": 18.0.8
-    "@types/react-dom": 18.0.2
+    "@types/react-dom": 18.0.3
     antd: 4.20.1
     classnames: ^2.2.6
     core-js: 3.22.3
@@ -13590,7 +13590,7 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 27.4.1
     "@types/lodash": 4.14.182
-    "@types/node": 17.0.29
+    "@types/node": 17.0.30
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
@@ -25417,7 +25417,7 @@ __metadata:
     "@commitlint/cli": 16.2.4
     "@commitlint/config-conventional": 16.2.4
     "@types/react": 18.0.8
-    "@types/react-dom": 18.0.2
+    "@types/react-dom": 18.0.3
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.5
     babel-plugin-root-import: ^6.6.0
@@ -25435,7 +25435,7 @@ __metadata:
     react: 18.1.0
     react-dom: 18.1.0
     ttypescript: ^1.5.13
-    typescript: 4.6.3
+    typescript: 4.6.4
     webpack: 5.72.0
     webpack-cli: ^4.9.2
     webpack-dev-server: 4.8.1
@@ -27781,9 +27781,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^28.0.0-next.2":
-  version: 28.0.0-next.2
-  resolution: "ts-jest@npm:28.0.0-next.2"
+"ts-jest@npm:^28.0.0-next.3":
+  version: 28.0.0-next.3
+  resolution: "ts-jest@npm:28.0.0-next.3"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
@@ -27810,7 +27810,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: 50ade2a9a70404f73b0d65a0fdeb5ae340b440da3caee4f6b00525d16859b17f951308573dd6437007cbf9f29f85dda87a04f51698094054328316d41e0d5be9
+  checksum: 51efe1efc3c0a11f55648cc6d8518e4b02e197f879134f2c969eda7fc9968c34e24940c8ea2892ab5feeaeaa102e2f524eab499104a2bc69f97f1c993bcd3869
   languageName: node
   linkType: hard
 
@@ -28093,13 +28093,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:4.6.4":
+  version: 4.6.4
+  resolution: "typescript@npm:4.6.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: e7bfcc39cd4571a63a54e5ea21f16b8445268b9900bf55aee0e02ad981be576acc140eba24f1af5e3c1457767c96cea6d12861768fb386cf3ffb34013718631a
   languageName: node
   linkType: hard
 
@@ -28123,13 +28123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+"typescript@patch:typescript@4.6.4#~builtin<compat/typescript>":
+  version: 4.6.4
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 6bf45caf847062420592e711bc9c28bf5f9a9a7fa8245343b81493e4ededae33f1774009d1234d911422d1646a2c839f44e1a23ecb111b40a60ac2ea4c1482a8
+  checksum: 1cb434fbc637d347be90e3a0c6cd05e33c38f941713c8786d3031faf1842c2c148ba91d2fac01e7276b0ae3249b8633f1660e32686cc7a8c6a8fd5361dc52c66
   languageName: node
   linkType: hard
 
