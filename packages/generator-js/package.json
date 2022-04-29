@@ -55,7 +55,7 @@
     "@types/yeoman-generator": "5.2.10",
     "copyfiles": "^2.1.1",
     "husky": "^7.0.4",
-    "jest": "28.0.2",
+    "jest": "28.0.3",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^6.3.0"
