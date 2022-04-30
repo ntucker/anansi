@@ -22,7 +22,7 @@
     "@anansi/eslint-plugin": "^0.12.10",
     "@anansi/jest-preset": "^0.7.0",
     "@anansi/webpack-config": "^11.3.11",
-    "@rest-hooks/test": "7.3.0",
+    "@rest-hooks/test": "7.3.1",
     "@types/classnames": "^2.2.9",
     "@types/jest": "27.4.1",
     "@types/react": "18.0.8",
@@ -43,15 +43,15 @@
     "@linaria/react": "3.0.0-beta.18",
     "@linaria/shaker": "3.0.0-beta.18",
     "@rest-hooks/img": "0.6.0",
-    "@rest-hooks/rest": "5.0.0",
+    "@rest-hooks/rest": "5.0.1",
     "@types/node": "17.0.30",
-    "antd": "4.20.1",
+    "antd": "4.20.2",
     "classnames": "^2.2.6",
     "core-js": "3.22.3",
     "history": "5.3.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "rest-hooks": "6.3.2"
+    "rest-hooks": "6.3.3"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
