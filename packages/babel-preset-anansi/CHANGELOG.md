@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.0.4...@anansi/babel-preset@3.1.0) (2022-04-30)
+
+
+### 🚀 Features
+
+* Support mjs cjs extensions ([954628d](https://github.com/ntucker/anansi/commit/954628d3eea3ab7857e41d4d3fff1487d9326235))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1481](https://github.com/ntucker/anansi/issues/1481)) ([0debae7](https://github.com/ntucker/anansi/commit/0debae7a11cadc9acd4113603b829285cf5eb84a))
+* Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
+* Update react monorepo ([#1482](https://github.com/ntucker/anansi/issues/1482)) ([6c297e0](https://github.com/ntucker/anansi/commit/6c297e0c43dff82d52309915695b6700b367171c))
+
+
+
 ### [3.0.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.0.3...@anansi/babel-preset@3.0.4) (2022-04-22)
 
 

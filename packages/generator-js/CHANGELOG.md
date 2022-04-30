@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.16...@anansi/generator-js@8.0.0) (2022-04-30)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires TypeScript 4.3 and Jest 28
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Nathaniel Tucker <me@ntucker.me>
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1476](https://github.com/ntucker/anansi/issues/1476)) ([d6d2876](https://github.com/ntucker/anansi/commit/d6d28766edb86d743952caa6779cdae0316820ef))
+* Update all non-major dependencies ([#1477](https://github.com/ntucker/anansi/issues/1477)) ([3d7e740](https://github.com/ntucker/anansi/commit/3d7e740bb76abc0bd2a4179a97870134202fc1f6))
+* Update all non-major dependencies ([#1480](https://github.com/ntucker/anansi/issues/1480)) ([81a8df7](https://github.com/ntucker/anansi/commit/81a8df726666ea6d6ab83b0eac290d4eb650d24f))
+* Update all non-major dependencies ([#1481](https://github.com/ntucker/anansi/issues/1481)) ([0debae7](https://github.com/ntucker/anansi/commit/0debae7a11cadc9acd4113603b829285cf5eb84a))
+* Update all non-major dependencies ([#1489](https://github.com/ntucker/anansi/issues/1489)) ([5a35c99](https://github.com/ntucker/anansi/commit/5a35c99189ba3ee34a41ba83a6425231ad9ffa60))
+* Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
+* Update jest monorepo to ^28.0.2 ([#1484](https://github.com/ntucker/anansi/issues/1484)) ([0792dbf](https://github.com/ntucker/anansi/commit/0792dbf9e9fe2c6b22eb5414ec2a7c7aaf1d9e48))
+* Update jest monorepo to ^28.0.3 ([#1486](https://github.com/ntucker/anansi/issues/1486)) ([a5b325a](https://github.com/ntucker/anansi/commit/a5b325af0166351f40c421d4a3a0bef59f6d1218))
+* Update jest monorepo to v28 (major) ([#1479](https://github.com/ntucker/anansi/issues/1479)) ([06338de](https://github.com/ntucker/anansi/commit/06338de8bf871945dac4b6b35155e49fd062bfdb))
+
+
+
 ### [7.3.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@7.3.15...@anansi/generator-js@7.3.16) (2022-04-22)
 
 

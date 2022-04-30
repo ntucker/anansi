@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.3.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.10...@anansi/webpack-config@11.3.11) (2022-04-30)
+
+
+### 💅 Enhancement
+
+* Switch back to mainstream linaria loader ([#1483](https://github.com/ntucker/anansi/issues/1483)) ([7a014fb](https://github.com/ntucker/anansi/commit/7a014fb446c690f79d7d574d20128ad72cd30baa))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1476](https://github.com/ntucker/anansi/issues/1476)) ([d6d2876](https://github.com/ntucker/anansi/commit/d6d28766edb86d743952caa6779cdae0316820ef))
+* Update all non-major dependencies ([#1477](https://github.com/ntucker/anansi/issues/1477)) ([3d7e740](https://github.com/ntucker/anansi/commit/3d7e740bb76abc0bd2a4179a97870134202fc1f6))
+* Update all non-major dependencies ([#1480](https://github.com/ntucker/anansi/issues/1480)) ([81a8df7](https://github.com/ntucker/anansi/commit/81a8df726666ea6d6ab83b0eac290d4eb650d24f))
+* Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
+* Update react monorepo ([#1482](https://github.com/ntucker/anansi/issues/1482)) ([6c297e0](https://github.com/ntucker/anansi/commit/6c297e0c43dff82d52309915695b6700b367171c))
+
+
+
 ### [11.3.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.9...@anansi/webpack-config@11.3.10) (2022-04-22)
 
 
