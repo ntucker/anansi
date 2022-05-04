@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "11.3.11",
+  "version": "11.3.12",
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "types": "./index.d.ts",
@@ -53,7 +53,7 @@
     "node": ">=12.13.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^3.1.0",
+    "@anansi/babel-preset": "^3.1.1",
     "@babel/cli": "7.17.10",
     "@babel/core": "7.17.10",
     "debug": "4.3.4",
