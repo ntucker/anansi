@@ -57,7 +57,7 @@
     "@babel/cli": "7.17.10",
     "@babel/core": "7.17.10",
     "debug": "4.3.4",
-    "prettier-eslint-cli": "^5.0.0",
+    "prettier-eslint-cli": "6.0.1",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
