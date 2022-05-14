@@ -14633,17 +14633,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-pkg-repo@npm:4.2.1":
-  version: 4.2.1
-  resolution: "get-pkg-repo@npm:4.2.1"
+"get-pkg-repo@npm:5.0.0":
+  version: 5.0.0
+  resolution: "get-pkg-repo@npm:5.0.0"
   dependencies:
     "@hutson/parse-repository-url": ^3.0.0
     hosted-git-info: ^4.0.0
     through2: ^2.0.0
-    yargs: ^16.2.0
+    yargs: ^17.0.1
   bin:
     get-pkg-repo: src/cli.js
-  checksum: 5abf169137665e45b09a857b33ad2fdcf2f4a09f0ecbd0ebdd789a7ce78c39186a21f58621127eb724d2d4a3a7ee8e6bd4ac7715efda01ad5200665afc218e0d
+  checksum: 33a84d48387723b741c0adb3a84c6aff0abcc717e33e3a591da75755ab4129a4304212fca853c81e1aac976181c50c1e9251b7f1a44da433cfd8ebf03cc45381
   languageName: node
   linkType: hard
 
@@ -15545,21 +15545,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hosted-git-info@npm:^4.0.0, hosted-git-info@npm:^4.1.0":
+"hosted-git-info@npm:^4.0.0, hosted-git-info@npm:^4.0.1, hosted-git-info@npm:^4.1.0":
   version: 4.1.0
   resolution: "hosted-git-info@npm:4.1.0"
   dependencies:
     lru-cache: ^6.0.0
   checksum: c3f87b3c2f7eb8c2748c8f49c0c2517c9a95f35d26f4bf54b2a8cba05d2e668f3753548b6ea366b18ec8dadb4e12066e19fa382a01496b0ffa0497eb23cbe461
-  languageName: node
-  linkType: hard
-
-"hosted-git-info@npm:^4.0.1":
-  version: 4.0.2
-  resolution: "hosted-git-info@npm:4.0.2"
-  dependencies:
-    lru-cache: ^6.0.0
-  checksum: d1b2d7720398ce96a788bd38d198fbddce089a2381f63cfb01743e6c7e5aed656e5547fe74090fb9fe53b2cb785b0e8c9ebdddadff48ed26bb471dd23cd25458
   languageName: node
   linkType: hard
 
@@ -29566,9 +29557,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.0.0":
-  version: 17.3.1
-  resolution: "yargs@npm:17.3.1"
+"yargs@npm:^17.0.0, yargs@npm:^17.0.1, yargs@npm:^17.3.1":
+  version: 17.5.0
+  resolution: "yargs@npm:17.5.0"
   dependencies:
     cliui: ^7.0.2
     escalade: ^3.1.1
@@ -29577,22 +29568,7 @@ __metadata:
     string-width: ^4.2.3
     y18n: ^5.0.5
     yargs-parser: ^21.0.0
-  checksum: 64fc2e32c56739f1d14d2d24acd17a6944c3c8e3e3558f09fc1953ac112e868cc16013d282886b9d5be22187f8b9ed4f60741a6b1011f595ce2718805a656852
-  languageName: node
-  linkType: hard
-
-"yargs@npm:^17.3.1":
-  version: 17.4.1
-  resolution: "yargs@npm:17.4.1"
-  dependencies:
-    cliui: ^7.0.2
-    escalade: ^3.1.1
-    get-caller-file: ^2.0.5
-    require-directory: ^2.1.1
-    string-width: ^4.2.3
-    y18n: ^5.0.5
-    yargs-parser: ^21.0.0
-  checksum: e9012322870d7e4e912a6ae1f63b203e365f911c0cf158be92c36edefddfb3bd38ce17eb9ef0d18858a4777f047c50589ea22dacb44bd949169ba37dc6d34bee
+  checksum: e2c662a7a63aa125a162cc0d77e38bdfe2a0dd5121a0d485a464499cd7782c5198b57103aed4608df96a017d01cb6a834bc22d4a1f20b92649fa82983d53522b
   languageName: node
   linkType: hard
 
