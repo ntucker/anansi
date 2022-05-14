@@ -57,7 +57,7 @@
     "normalize-package-data": "4.0.0",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
-    "read-package-json": "3.0.1",
+    "read-package-json": "5.0.1",
     "get-pkg-repo": "5.0.0",
     "@types/webpack": "^5.0.0",
     "immer": "^9.0.0",
