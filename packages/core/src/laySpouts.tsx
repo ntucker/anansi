@@ -7,7 +7,7 @@ export default function laySpouts(
   spouts: (props: ServerProps) => Promise<{
     app: JSX.Element;
   }>,
-  { timeoutMS = 1000 }: { timeoutMS?: number } = {},
+  { timeoutMS = 100 }: { timeoutMS?: number } = {},
 ) {
   const render: Render = async (clientManifest, req, res) => {
     const { app } = await spouts({ clientManifest, req, res });

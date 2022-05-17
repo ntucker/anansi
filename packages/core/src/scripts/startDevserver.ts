@@ -4,7 +4,6 @@ import { promisify } from 'util';
 import diskFs from 'fs';
 import path from 'path';
 import webpack, { MultiCompiler } from 'webpack';
-import webpackHotMiddleware from 'webpack-hot-middleware';
 import { createFsFromVolume, Volume } from 'memfs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import express, { NextFunction } from 'express';
@@ -14,6 +13,9 @@ import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import compress from 'compression';
+import WebpackDevServer from 'webpack-dev-server';
+import importFresh from 'import-fresh';
+import chalk from 'chalk';
 
 import 'cross-fetch/polyfill';
 import { Render } from './types';
@@ -34,7 +36,11 @@ if (!entrypoint) {
   process.exit(-1);
 }
 
-const loader = ora('Building the assets').start();
+console.log(
+  chalk.greenBright(`Starting SSR at`),
+  chalk.cyanBright(process.env.WEBPACK_PUBLIC_HOST),
+);
+const loader = ora().start();
 
 // Set up in memory filesystem
 const volume = new Volume();
@@ -75,19 +81,18 @@ const webpackConfigs = [
   ),
   webpackConfig(
     {
-      entrypoint: hotEntry(entrypoint.replace('.tsx', '.server.tsx')).name,
+      entrypoint: entrypoint.replace('.tsx', '.server.tsx'),
       name: 'server',
     },
     { mode: 'development', target: 'node' },
   ),
 ] as const;
+// only have one output for server so we can avoid cached modules
+webpackConfigs[1].plugins.push(
+  new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
+);
 // initialize the webpack compiler
 const compiler: MultiCompiler = webpack(webpackConfigs);
-
-compiler.outputFileSystem = {
-  ...fs,
-  join: path.join as any,
-} as any as typeof fs;
 
 sourceMapSupport.install({ hookRequire: true });
 
@@ -113,19 +118,20 @@ function handleErrors<
     }
   };
 }
-
+let render: Render;
 // Start the express server after the first compilation
 function initializeApp(stats: webpack.Stats[]) {
-  loader.info('Launching server');
   const [clientStats, serverStats] = stats;
   if (
     clientStats?.compilation?.errors?.length ||
     serverStats?.compilation?.errors?.length
   ) {
-    console.log('Errors for client build: ', clientStats.compilation.errors);
-    console.log('Errors for server build:', serverStats.compilation.errors);
+    loader.fail('Errors for client build: ' + clientStats.compilation.errors);
+    loader.fail('Errors for server build: ' + serverStats.compilation.errors);
     // TODO: handle more gracefully
     process.exit(-1);
+  } else {
+    loader.info('Launching server');
   }
 
   const wrappingApp = express();
@@ -134,19 +140,12 @@ function initializeApp(stats: webpack.Stats[]) {
   wrappingApp.use(compress());
 
   // ASSETS
-  wrappingApp.use(
-    webpackHotMiddleware(compiler.compilers[0], {
-      log: console.log,
-      path: '/__webpack_hmr',
-      heartbeat: 10 * 1000,
-      //noInfo: true,
-      //name: 'client',
-    }),
-  );
   const clientManifest = clientStats.toJson();
   const assetRoute = async (req: Request | IncomingMessage, res: any) => {
     const filename =
-      req.url?.substr((process.env.WEBPACK_PUBLIC_PATH as string).length) ?? '';
+      req.url
+        ?.substring((process.env.WEBPACK_PUBLIC_PATH as string).length)
+        .split('?')[0] ?? '';
     const assetPath = path.join(clientManifest.outputPath ?? '', filename);
 
     try {
@@ -163,7 +162,7 @@ function initializeApp(stats: webpack.Stats[]) {
 
   // SERVER SIDE RENDERING
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const render: Render = require(getServerBundle(serverStats)).default;
+  render = require(getServerBundle(serverStats)).default;
   wrappingApp.get(
     '/*',
     handleErrors(async function (req: any, res: any) {
@@ -183,7 +182,7 @@ function initializeApp(stats: webpack.Stats[]) {
 
   server = wrappingApp
     .listen(PORT, () => {
-      console.log(`Listening at ${PORT}...`);
+      loader.succeed(`SSR Running`);
     })
     .on('error', function (error: any) {
       if (error.syscall !== 'listen') {
@@ -206,37 +205,67 @@ function initializeApp(stats: webpack.Stats[]) {
     });
 }
 
-// Watch the files for changes
-const watcher = compiler.watch({}, (err, multiStats) => {
-  if (!multiStats) {
-    console.error('stats not send');
-    process.exit(-1);
-  }
-  if (err) {
-    console.error('Error in compilation');
-    console.error(err);
-    process.exit(-1);
-  }
-  if (server) {
-    loader.succeed('Webpack bundle updated');
-    return;
-  }
-  try {
-    initializeApp(multiStats.stats);
-  } catch (e) {
-    console.error('Failed to initialize app');
-    console.error(e);
-  }
-});
+const devServer = new WebpackDevServer(
+  // write to memory filesystem so we can import
+  {
+    ...webpackConfigs[0].devServer,
+    /*client: {
+      ...webpackConfigs[0].devServer?.client,
+      webSocketURL: {
+        ...webpackConfigs[0].devServer?.client.webSocketURL,
+        port: 8080,
+      },
+    },*/
+    devMiddleware: {
+      ...webpackConfigs[0]?.devServer?.devMiddleware,
+      outputFileSystem: {
+        ...fs,
+        join: path.join as any,
+      } as any as typeof fs,
+    },
+  },
+  compiler,
+);
+const runServer = async () => {
+  await devServer.start();
+  devServer.compiler.hooks.done.tap(
+    'Anansi Server',
+    (multiStats: webpack.MultiStats | webpack.Stats) => {
+      if (!multiStats) {
+        loader.fail('stats not send');
+        process.exit(-1);
+      }
+
+      if (!Object.hasOwn(multiStats, 'stats')) return;
+      if (server && (multiStats as webpack.MultiStats).stats.length > 1) {
+        render = (
+          importFresh(
+            getServerBundle((multiStats as webpack.MultiStats).stats[1]),
+          ) as any
+        ).default;
+        return;
+      }
+      if (!server) {
+        try {
+          initializeApp((multiStats as webpack.MultiStats).stats);
+        } catch (e) {
+          loader.fail('Failed to initialize app');
+          console.error(e);
+        }
+      }
+    },
+  );
+};
+const stopServer = async () => {
+  loader.info('Stopping server...');
+  await devServer.stop();
+  loader.info('Server closed');
+};
 
 process.on('SIGINT', () => {
   loader.warn('Received SIGINT, devserver shutting down');
-  if (server) console.log('Closing server');
-  server?.close(() => {
-    loader.info('Server closed');
-  });
-  watcher.close(() => {
-    loader.info('webpack build stopped');
-  });
+  stopServer();
   process.exit(-1);
 });
+
+runServer();
