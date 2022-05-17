@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.2](https://github.com/ntucker/anansi/compare/example-typescript@10.0.1...example-typescript@10.0.2) (2022-05-17)
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1495](https://github.com/ntucker/anansi/issues/1495)) ([e1c7851](https://github.com/ntucker/anansi/commit/e1c7851312bc2b203a471f37056c2747987bdb77))
+* Update all non-major dependencies ([#1497](https://github.com/ntucker/anansi/issues/1497)) ([84d1fe3](https://github.com/ntucker/anansi/commit/84d1fe3884930b7abd74c65f5826ac1c20e16b29))
+* Update all non-major dependencies ([#1506](https://github.com/ntucker/anansi/issues/1506)) ([f10170b](https://github.com/ntucker/anansi/commit/f10170b33abd3bd582d0df7d57638e16246325b6))
+* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+
+
+
 ### [10.0.1](https://github.com/ntucker/anansi/compare/example-typescript@10.0.0...example-typescript@10.0.1) (2022-05-04)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.4.1...@anansi/router@0.4.2) (2022-05-17)
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
+* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+
+
+
 ### [0.4.1](https://github.com/ntucker/anansi/compare/@anansi/router@0.4.0...@anansi/router@0.4.1) (2022-05-04)
 
 **Note:** Version bump only for package @anansi/router

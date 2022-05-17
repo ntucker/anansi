@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.3.1...@anansi/core@0.4.0) (2022-05-17)
+
+
+### 🚀 Features
+
+* SSR uses webpack devserver and responds to code changes ([#1504](https://github.com/ntucker/anansi/issues/1504)) ([25803a5](https://github.com/ntucker/anansi/commit/25803a5b49316c7e73846efbe774d5cbe3eb28a3))
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
+* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+
+
+
 ### [0.3.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.3.0...@anansi/core@0.3.1) (2022-05-04)
 
 

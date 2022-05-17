@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/example-react-18@2.0.1...example-react-18@2.1.0) (2022-05-17)
+
+
+### 🚀 Features
+
+* SSR uses webpack devserver and responds to code changes ([#1504](https://github.com/ntucker/anansi/issues/1504)) ([25803a5](https://github.com/ntucker/anansi/commit/25803a5b49316c7e73846efbe774d5cbe3eb28a3))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1494](https://github.com/ntucker/anansi/issues/1494)) ([d6cef4c](https://github.com/ntucker/anansi/commit/d6cef4ce2c190caddb5e4c7de654b5f1d32a4dd3))
+* Update all non-major dependencies ([#1495](https://github.com/ntucker/anansi/issues/1495)) ([e1c7851](https://github.com/ntucker/anansi/commit/e1c7851312bc2b203a471f37056c2747987bdb77))
+* Update all non-major dependencies ([#1497](https://github.com/ntucker/anansi/issues/1497)) ([84d1fe3](https://github.com/ntucker/anansi/commit/84d1fe3884930b7abd74c65f5826ac1c20e16b29))
+* Update all non-major dependencies ([#1506](https://github.com/ntucker/anansi/issues/1506)) ([f10170b](https://github.com/ntucker/anansi/commit/f10170b33abd3bd582d0df7d57638e16246325b6))
+* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+
+
+
 ### [2.0.1](https://github.com/ntucker/anansi/compare/example-react-18@2.0.0...example-react-18@2.0.1) (2022-05-04)
 
 

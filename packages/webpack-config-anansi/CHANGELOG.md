@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.4.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.12...@anansi/webpack-config@11.4.0) (2022-05-17)
+
+
+### 🚀 Features
+
+* SSR uses webpack devserver and responds to code changes ([#1504](https://github.com/ntucker/anansi/issues/1504)) ([25803a5](https://github.com/ntucker/anansi/commit/25803a5b49316c7e73846efbe774d5cbe3eb28a3))
+
+
+### 📦 Package
+
+* Update `@pmmmwh/react-refresh-webpack-plugin` to ^0.5.6 ([#1496](https://github.com/ntucker/anansi/issues/1496)) ([1544fa1](https://github.com/ntucker/anansi/commit/1544fa1233284eed03c9ece0a4edee4dc88769ee))
+* Update `prettier-eslint-cli` to v6 ([#1498](https://github.com/ntucker/anansi/issues/1498)) ([8817be1](https://github.com/ntucker/anansi/commit/8817be1b186e4495e8de1a9f3e6d2733d7af5419))
+* Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
+
+
+
 ### [11.3.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.3.11...@anansi/webpack-config@11.3.12) (2022-05-04)
 
 
