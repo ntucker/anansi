@@ -7,3 +7,4 @@ export const app = (
   </RootProvider>
 );
 export default app;
+export { RootProvider, App };

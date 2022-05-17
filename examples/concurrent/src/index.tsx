@@ -18,4 +18,4 @@ const spouts = documentSpout({ title: 'anansi' })(
   ),
 );
 
-floodSpouts(spouts);
+export default floodSpouts(spouts);

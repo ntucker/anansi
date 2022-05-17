@@ -27,6 +27,20 @@ ErrorOverlay.setEditorHandler(function editorHandler(errorLocation) {
   );
 });
 
+// Don't show overlay for certain errors as they are disruptive
+if (typeof window !== 'undefined') {
+  window.addEventListener('error', e => {
+    if (
+      e.message.includes(
+        'The server could not finish this Suspense boundary',
+      ) ||
+      e.status
+    ) {
+      e.stopImmediatePropagation();
+    }
+  });
+}
+
 // We need to keep track of if there has been a runtime error.
 // Essentially, we cannot guarantee application state was not corrupted by the
 // runtime error. To prevent confusing behavior, we forcibly reload the entire

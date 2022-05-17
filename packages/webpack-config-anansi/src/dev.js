@@ -1,6 +1,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
+import logging from 'webpack/lib/logging/runtime';
 
 import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
 import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlugin';
@@ -132,7 +133,9 @@ export default function makeDevConfig(
         new ErrorOverlayPlugin(),
       );
       config.devServer.hot = 'only';
-      console.log('Fast refresh detected and enabled');
+      logging
+        .getLogger('anansi')
+        .info('React fast refresh detected and enabled');
       // eslint-disable-next-line no-empty
     } catch (e) {}
   }

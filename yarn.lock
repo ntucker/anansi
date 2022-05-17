@@ -129,10 +129,12 @@ __metadata:
     "@types/source-map-support": ^0.5.4
     "@types/tmp": ^0.2.3
     "@types/webpack-hot-middleware": ^2.25.6
+    chalk: ^4.0.0
     compression: ^1.7.4
     cross-fetch: ^3.1.5
     express: ^4.17.3
     fs-monkey: ^1.0.3
+    import-fresh: ^3.3.0
     jest: 28.1.0
     memfs: ^3.4.1
     ora: ^5.0.0
@@ -142,13 +144,14 @@ __metadata:
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
-    webpack-hot-middleware: ^2.25.1
+    webpack-dev-server: ^4.9.0
     whatwg-fetch: ^3.6.2
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
     "@types/react-dom": ^17.0.40 || ^18.0.0-0
     react: ^18.0.0-0
     react-dom: ^18.0.0-0
+    webpack: ^5.60.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
@@ -16001,7 +16004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1, import-fresh@npm:^3.3.0":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
   dependencies:
@@ -28894,7 +28897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:4.9.0":
+"webpack-dev-server@npm:4.9.0, webpack-dev-server@npm:^4.9.0":
   version: 4.9.0
   resolution: "webpack-dev-server@npm:4.9.0"
   dependencies:
