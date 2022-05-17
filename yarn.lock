@@ -205,7 +205,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": ^3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 17.0.33
+    "@types/node": 17.0.34
     "@types/pacote": ^11.1.3
     "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
@@ -218,7 +218,7 @@ __metadata:
     husky: ^7.0.4
     jest: 28.1.0
     mem-fs-editor: ^9.4.0
-    pacote: ^13.3.0
+    pacote: ^13.4.0
     rimraf: ^3.0.0
     shelobsay: ^2.0.0
     yeoman-assert: ^3.1.1
@@ -7748,10 +7748,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.33":
-  version: 17.0.33
-  resolution: "@types/node@npm:17.0.33"
-  checksum: 6620652cc89ce125e1162e060ec4608c25b3635185e3e5dcaae4ed09e4770dc8bf168ba48bcd7059a1a56087a05000d7ed562e81aea7b6a512e2b13d4409c6b6
+"@types/node@npm:17.0.34":
+  version: 17.0.34
+  resolution: "@types/node@npm:17.0.34"
+  checksum: eb9a640ab85b62e8f7b9db1f19b674cc4ff49b94d55085ab6c28c997dbe90356631c4df484fe686082c938bfc6fb02c9e85eb805d1415dfe6de7e31f47a09a70
   languageName: node
   linkType: hard
 
@@ -9058,9 +9058,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.20.4":
-  version: 4.20.4
-  resolution: "antd@npm:4.20.4"
+"antd@npm:4.20.5":
+  version: 4.20.5
+  resolution: "antd@npm:4.20.5"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -9109,7 +9109,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 31d86113a5cc77d4ea96b7bce662af321c5534e88e5fd0f7ef5ab437764eec3162f3203999a564c722dc2e95cabd1e308c5a43e4e767d2d4a2ea28337792eccf
+  checksum: 974e6f3ce1b2d38ee0c250d119a3d83740f6c0ef4ed637206e3cf57059e0f3017a37c12259a7a3f03e563a91ed77f86bf5dc9db20454a1e5168f305983a236a0
   languageName: node
   linkType: hard
 
@@ -13948,10 +13948,10 @@ __metadata:
     "@rest-hooks/test": 7.3.1
     "@types/classnames": ^2.2.9
     "@types/jest": 27.5.1
-    "@types/node": 17.0.33
+    "@types/node": 17.0.34
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.4
-    antd: 4.20.4
+    antd: 4.20.5
     classnames: ^2.2.6
     core-js: 3.22.5
     history: 5.3.0
@@ -13991,11 +13991,11 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 27.5.1
     "@types/lodash": 4.14.182
-    "@types/node": 17.0.33
+    "@types/node": 17.0.34
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
-    antd: 4.20.4
+    antd: 4.20.5
     classnames: ^2.2.6
     core-js: 3.22.5
     jest: 28.1.0
@@ -21644,9 +21644,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^13.3.0":
-  version: 13.3.0
-  resolution: "pacote@npm:13.3.0"
+"pacote@npm:^13.4.0":
+  version: 13.4.0
+  resolution: "pacote@npm:13.4.0"
   dependencies:
     "@npmcli/git": ^3.0.0
     "@npmcli/installed-package-contents": ^1.0.7
@@ -21671,7 +21671,7 @@ __metadata:
     tar: ^6.1.11
   bin:
     pacote: lib/bin.js
-  checksum: 49badbafac64e7cd9c87aa14342424ee90946e0ac729faeffb489a94ed6cdab815bd7ffec7673b4863e20e113ee678b8038ace95ee2fc1f58206bc4482ff0bf5
+  checksum: 0fed43864e7a4cd9b90c9dda855c2cb5e6078deb32f224c5906631f4592d6a37b551c011fc229e3eedfeb99d6104e73cb04346d249521867c690233534b22048
   languageName: node
   linkType: hard
 
