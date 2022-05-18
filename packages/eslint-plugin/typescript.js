@@ -2,7 +2,7 @@ module.exports = {
   extends: ['./base.js'],
   overrides: [
     {
-      files: ['**/*.ts?(x)'],
+      files: ['**/*.?(m|c)ts?(x)'],
       parser: '@typescript-eslint/parser',
       settings: {
         'import/resolver': {

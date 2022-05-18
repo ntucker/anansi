@@ -36,7 +36,7 @@ const config = {
   },
   overrides: [
     {
-      files: ['**/*.ts?(x)'],
+      files: ['**/*.?(m|c)ts?(x)'],
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
