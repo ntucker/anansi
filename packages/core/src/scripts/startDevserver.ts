@@ -28,7 +28,7 @@ const webpackConfig = require(require.resolve(
 
 const entrypoint = process.argv[2];
 const PORT = process.env.PORT || 3000;
-process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`;
+//process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`; this breaks compatibility with stackblitz
 process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
 if (!entrypoint) {
