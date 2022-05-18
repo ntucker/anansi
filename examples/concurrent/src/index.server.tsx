@@ -6,10 +6,14 @@ import {
   prefetchSpout,
   routerSpout,
 } from '@anansi/core/server';
+import React from 'react';
 
 import app from 'app';
 
 import { createRouter } from './routing';
+
+// get rid of warning spam
+React.useLayoutEffect = React.useEffect;
 
 const appSpout = () => Promise.resolve({ app });
 
