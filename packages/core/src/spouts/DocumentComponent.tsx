@@ -8,7 +8,7 @@ type Props = {
 export default function Document({ assets, head, children, title }: Props) {
   return (
     <html>
-      <head>
+      <head suppressHydrationWarning={true}>
         {head}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
