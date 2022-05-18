@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.1.2...@anansi/babel-preset@3.1.3) (2022-05-18)
+
+
+### 💅 Enhancement
+
+* Remove legacy 'useESModules' transform-runtime option ([e14cbd7](https://github.com/ntucker/anansi/commit/e14cbd7c91df87d49a44e5d8ac3498a3fe4ef258))
+
+
+
 ### [3.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.1.1...@anansi/babel-preset@3.1.2) (2022-05-17)
 
 
