@@ -30,6 +30,7 @@ export default function makeBaseConfig({
   globalStyleDir,
   nohash,
   argv,
+  env,
 }) {
   const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
   const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
@@ -94,7 +95,7 @@ export default function makeBaseConfig({
   const config = {
     context: rootPath,
     entry: {
-      App: [`./${basePath}`],
+      [env.name || 'App']: [`./${basePath}`],
     },
     output: {
       path: path.join(rootPath, buildDir),

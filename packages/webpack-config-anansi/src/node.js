@@ -2,7 +2,10 @@ import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import { StatsWriterPlugin } from 'webpack-stats-plugin';
 
-export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
+export default function makeNodeConfig(
+  baseConfig,
+  { rootPath, serverDir, pkg },
+) {
   const config = { ...baseConfig };
   config.target = 'node';
   if (config.optimization) {
@@ -18,12 +21,26 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
   config.externalsPresets = { node: true };
   config.externals = [
     nodeExternals({
-      allowlist: [/^@anansi\//, /^@pojo-router\//, /^path-to-regexp/, /\.css$/],
+      allowlist: [
+        /@babel\/runtime/,
+        ...(pkg
+          ? []
+          : [
+              /\.(svg|css)$/,
+              /\.css!=!/,
+              'react' /* react is needed for svgr */,
+            ]),
+      ],
+      additionalModuleDirs: ['../../node_modules'],
     }),
   ];
-  config.output.path = path.join(rootPath, serverDir);
-  config.output.filename = '[name].js';
+  config.output.path =
+    pkg?.publishConfig?.main ?? pkg?.main
+      ? rootPath
+      : path.join(rootPath, serverDir);
+  config.output.filename = pkg?.publishConfig?.main ?? pkg?.main ?? '[name].js';
   config.output.chunkFilename = '[name].chunk.js';
+
   delete config.output.globalObject;
   config.output.libraryTarget = 'commonjs2';
   // don't output stats for server builds as they won't need to reference manifests
