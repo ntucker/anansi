@@ -2,7 +2,6 @@ import React from 'react';
 import type { Route } from '@anansi/router';
 
 import type { ResolveProps } from './types';
-import Document from './DocumentComponent';
 
 type NeededProps = {
   matchedRoutes: Route<any>[];
@@ -17,18 +16,7 @@ export default function documentSpout(options: {
     return async () => {
       const nextProps = await next();
 
-      return {
-        ...nextProps,
-        app: (
-          <Document
-            {...options}
-            title={nextProps.title ?? options.title}
-            assets={(globalThis as any).assetManifest}
-          >
-            {nextProps.app}
-          </Document>
-        ),
-      };
+      return nextProps;
     };
   };
 }

@@ -12,6 +12,7 @@ type NeededProps = {
 export default function DocumentSpout(options: {
   head?: React.ReactNode;
   title: string;
+  rootId: string;
 }) {
   return function <T extends NeededProps>(
     next: (props: ServerProps) => Promise<T>,
@@ -50,6 +51,7 @@ export default function DocumentSpout(options: {
             {...options}
             title={nextProps.title ?? options.title}
             assets={assets}
+            rootId={options.rootId}
           >
             {nextProps.app}
           </Document>

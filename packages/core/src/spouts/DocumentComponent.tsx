@@ -3,12 +3,19 @@ type Props = {
   assets: { href: string; as?: string; rel?: string }[];
   head: React.ReactNode;
   title: string;
+  rootId: string;
 };
 
-export default function Document({ assets, head, children, title }: Props) {
+export default function Document({
+  assets,
+  head,
+  children,
+  title,
+  rootId,
+}: Props) {
   return (
     <html>
-      <head suppressHydrationWarning={true}>
+      <head>
         {head}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
@@ -16,7 +23,7 @@ export default function Document({ assets, head, children, title }: Props) {
         <title>{title}</title>
       </head>
       <body>
-        {children}
+        <div id={rootId}>{children}</div>
         {/* this ensures the client can hydrate the assets prop */}
         <script
           dangerouslySetInnerHTML={{
@@ -40,4 +47,5 @@ Document.defaultProps = {
       <link rel="shortcut icon" href="/assets/favicon.ico" />
     </>
   ),
+  rootId: 'anansi-root',
 };
