@@ -79,24 +79,6 @@ function buildPreset(api, options = {}) {
       ? 'auto'
       : false;
 
-  const nodeSupportsModules = semver.gte(
-    options.nodeTarget === 'current' || !options.nodeTarget
-      ? process.version
-      : semver.valid(semver.coerce(options.nodeTarget)),
-    '16.0.0',
-  );
-  const useESModules =
-    options.useESModules !== undefined
-      ? options.useESModules
-      : // when transpiling to commonjs, we should not use ESM version of babel runtime
-      modules === 'commonjs' ||
-        modules === 'cjs' ||
-        (modules === 'auto' && !supportsModules)
-      ? false
-      : options.nodeTarget || babelNode
-      ? nodeSupportsModules
-      : true;
-
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
   try {
@@ -209,7 +191,6 @@ function buildPreset(api, options = {}) {
             corejs: false,
             helpers: true,
             regenerator: true,
-            useESModules,
             version: require('@babel/runtime/package.json').version,
           },
         ],
