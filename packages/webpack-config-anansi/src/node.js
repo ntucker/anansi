@@ -16,7 +16,11 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
     __filename: true,
   };
   config.externalsPresets = { node: true };
-  config.externals = [nodeExternals({ allowlist: [/^@anansi\//, /^@pojo-router\//, /^path-to-regexp/, /\.css$/]})];
+  config.externals = [
+    nodeExternals({
+      allowlist: [/^@anansi\//, /^@pojo-router\//, /^path-to-regexp/, /\.css$/],
+    }),
+  ];
   config.output.path = path.join(rootPath, serverDir);
   config.output.filename = '[name].js';
   config.output.chunkFilename = '[name].chunk.js';
