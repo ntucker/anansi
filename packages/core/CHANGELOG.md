@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.2...@anansi/core@0.4.3) (2022-05-18)
+
+
+### 💅 Enhancement
+
+* Use relative asset paths ([799b69e](https://github.com/ntucker/anansi/commit/799b69e52394edc26290b9f01ff60ad772f739da))
+
+
+
 ### [0.4.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.1...@anansi/core@0.4.2) (2022-05-18)
 
 **Note:** Version bump only for package @anansi/core
