@@ -32,7 +32,7 @@ process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`;
 process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
 if (!entrypoint) {
-  console.log(`Usage: ${process.argv[0]} <entrypoint-file>`);
+  console.log(`Usage: start-anansi <entrypoint-file>`);
   process.exit(-1);
 }
 

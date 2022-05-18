@@ -9,12 +9,14 @@ export default function makeNodeConfig(baseConfig, { rootPath, serverDir }) {
     config.optimization.minimize = false;
     config.optimization.splitChunks = {};
     config.optimization.runtimeChunk = false;
+    config.optimization.concatenateModules = true;
   }
   config.node = {
     __dirname: true,
     __filename: true,
   };
-  config.externals = [nodeExternals()];
+  config.externalsPresets = { node: true };
+  config.externals = [nodeExternals({ allowlist: [/^@anansi\//, /^@pojo-router\//, /^path-to-regexp/, /\.css$/]})];
   config.output.path = path.join(rootPath, serverDir);
   config.output.filename = '[name].js';
   config.output.chunkFilename = '[name].chunk.js';

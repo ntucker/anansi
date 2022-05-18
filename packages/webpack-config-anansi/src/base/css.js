@@ -175,7 +175,7 @@ export default function getStyleRules({
         // containing package claims to have no side effects.
         // Remove this when webpack adds a warning or an error for this.
         // See https://github.com/webpack/webpack/issues/6571
-        sideEffects: true,
+        sideEffects: !target?.includes?.('node'),
       },
     ].filter(rule => rule),
   };
