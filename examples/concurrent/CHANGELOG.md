@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.4](https://github.com/ntucker/anansi/compare/example-react-18@2.1.3...example-react-18@2.1.4) (2022-05-18)
+
+
+### 💅 Enhancement
+
+* Get rid of warning spam ([b2bb2c1](https://github.com/ntucker/anansi/commit/b2bb2c1b33b91916898d2450032e4328ab22096c))
+
+
+
 ### [2.1.3](https://github.com/ntucker/anansi/compare/example-react-18@2.1.2...example-react-18@2.1.3) (2022-05-18)
 
 **Note:** Version bump only for package example-react-18

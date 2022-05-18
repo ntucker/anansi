@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.3...@anansi/core@0.4.4) (2022-05-18)
+
+
+### 💅 Enhancement
+
+* Supress hydration warnings in head for stackblitz compat ([38ac992](https://github.com/ntucker/anansi/commit/38ac99237af30d97408fb23bfb95b3bbe5384a03))
+
+
+
 ### [0.4.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.2...@anansi/core@0.4.3) (2022-05-18)
 
 
