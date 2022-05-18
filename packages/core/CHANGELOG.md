@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.4.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.0...@anansi/core@0.4.1) (2022-05-18)
+
+
+### 🐛 Bug Fix
+
+* Server compilation ([d8a1c9a](https://github.com/ntucker/anansi/commit/d8a1c9a05718cde13c99d56dcc79a5cc823fa6bb))
+
+
+
 ## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.3.1...@anansi/core@0.4.0) (2022-05-17)
 
 
