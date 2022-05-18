@@ -37,8 +37,8 @@ if (!entrypoint) {
 }
 
 console.log(
-  chalk.greenBright(`Starting SSR at`),
-  chalk.cyanBright(process.env.WEBPACK_PUBLIC_HOST),
+  chalk.greenBright(`Starting SSR at:`),
+  chalk.cyanBright(process.env.WEBPACK_PUBLIC_HOST || `http://localhost:${PORT}`),
 );
 const loader = ora().start();
 
