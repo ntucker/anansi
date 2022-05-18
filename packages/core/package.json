@@ -17,6 +17,7 @@
   "files": [
     "src",
     "lib",
+    "dist",
     "server.d.ts",
     "LICENSE",
     "README.md"
@@ -35,13 +36,16 @@
     ".": {
       "node": {
         "types": "./lib/index.server.d.ts",
+        "require": "./dist/server.js",
         "import": "./lib/index.server.js"
       },
       "types": "./lib/index.d.ts",
+      "require": "./dist/client.js",
       "default": "./lib/index.js"
     },
     "./server": {
       "types": "./lib/index.server.d.ts",
+      "require": "./dist/server.js",
       "default": "./lib/index.server.js"
     },
     "./package.json": "./package.json"
@@ -58,6 +62,7 @@
   "devDependencies": {
     "@anansi/babel-preset": "^3.1.3",
     "@anansi/browserslist-config": "1.3.3",
+    "@anansi/webpack-config": "11.4.3",
     "@babel/cli": "7.17.10",
     "@babel/core": "7.17.12",
     "@types/compression": "^1.7.2",
@@ -65,7 +70,9 @@
     "@types/tmp": "^0.2.3",
     "@types/webpack-hot-middleware": "^2.25.6",
     "jest": "28.1.0",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "@anansi/router": "^0.4.3",
@@ -76,11 +83,11 @@
     "cross-fetch": "^3.1.5",
     "express": "^4.17.3",
     "fs-monkey": "^1.0.3",
+    "history": "^5.3.0",
     "import-fresh": "^3.3.0",
     "memfs": "^3.4.1",
     "ora": "^5.0.0",
     "redux": "^4.1.2",
-    "rest-hooks": "6.3.3",
     "source-map-support": "^0.5.21",
     "tmp": "^0.2.1",
     "unionfs": "^4.4.0",
@@ -88,6 +95,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
+    "@rest-hooks/core": "^3.0.0",
     "@types/react": "^17.0.40 || ^18.0.0-0",
     "@types/react-dom": "^17.0.40 || ^18.0.0-0",
     "react": "^18.0.0-0",
@@ -95,6 +103,9 @@
     "webpack": "^5.60.0"
   },
   "peerDependenciesMeta": {
+    "@rest-hooks/core": {
+      "optional": true
+    },
     "@types/react": {
       "optional": true
     },
@@ -110,12 +121,13 @@
   ],
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
-    "dev": "yarn run build:lib -w",
+    "dev": "yarn run build:lib -w & yarn run build:bundle -w && fg",
     "test": "jest",
     "test:type": "tsc",
-    "build": "yarn run build:lib",
+    "build": "yarn run build:lib && yarn run build:bundle",
     "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:clean": "rimraf lib ts3.4 legacy *.tsbuildinfo",
+    "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=development --target=node",
+    "build:clean": "rimraf lib dist ts3.4 legacy *.tsbuildinfo",
     "prepack": "yarn build"
   }
 }
