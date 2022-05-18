@@ -140,6 +140,11 @@ export default function makeDevConfig(
     } catch (e) {}
   }
 
+  if (!config.experiments) {
+    config.experiments = {};
+  }
+  config.experiments.lazyCompilation = { entries: false };
+
   const styleRules = getStyleRules({
     rootPath,
     basePath,
