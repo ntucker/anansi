@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.4.3...@pojo-router/core@0.5.0) (2022-05-18)
+
+
+### 🚀 Features
+
+* Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
+
+
+
 ### [0.4.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.4.2...@pojo-router/core@0.4.3) (2022-05-18)
 
 **Note:** Version bump only for package @pojo-router/core

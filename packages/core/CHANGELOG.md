@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.4...@anansi/core@0.5.0) (2022-05-18)
+
+
+### 🚀 Features
+
+* Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
+
+
+### 💅 Enhancement
+
+* Ensure output works without WEBPACK_PUBLIC_HOST set ([1df3f57](https://github.com/ntucker/anansi/commit/1df3f57cf0d3966a371e89f8c2333f3f29e23b65))
+* Only hydrate body content ([1a6412c](https://github.com/ntucker/anansi/commit/1a6412c2e2b55b176fa0491228888490e45de98f))
+
+
+
 ### [0.4.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.3...@anansi/core@0.4.4) (2022-05-18)
 
 
