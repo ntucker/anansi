@@ -200,39 +200,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^0.12.0":
-  version: 0.12.10
-  resolution: "@anansi/eslint-plugin@npm:0.12.10"
-  dependencies:
-    "@babel/eslint-parser": ^7.17.0
-    "@typescript-eslint/eslint-plugin": ^5.11.0
-    "@typescript-eslint/parser": ^5.11.0
-    eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-typescript: ^2.5.0
-    eslint-import-resolver-webpack: ^0.13.2
-    eslint-plugin-babel: ^5.3.1
-    eslint-plugin-jsx-a11y: ^6.5.1
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    eslint: ^7.0.0 || ^8.0.0
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.22.0
-    eslint-plugin-react-hooks: ^4.2.0
-    prettier: ^2.2.1
-    typescript: ^3.7.3 || ^4.0.0
-    webpack: ^3.0.0 || ^4.0.0 || ^5.0.0
-  peerDependenciesMeta:
-    "@babel/core":
-      optional: true
-    typescript:
-      optional: true
-    webpack:
-      optional: true
-  checksum: eaf9133464414bceda39f2083308aef0a2684309a3171869dd01419db53897a034bbe912abde5ff43451e84c5a56a7ee18ed2531b0413ca3ea2e1db0a1e95249
-  languageName: node
-  linkType: hard
-
 "@anansi/generator-js@^8.0.3, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
@@ -13953,7 +13920,6 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.1.3
     "@anansi/browserslist-config": ^1.3.3
-    "@anansi/eslint-plugin": ^0.13.0
     "@anansi/polyfill": ^1.0.112
     "@anansi/webpack-config": ^11.5.0
     "@babel/plugin-transform-modules-commonjs": 7.17.12
@@ -13980,7 +13946,6 @@ __metadata:
     "@anansi/babel-preset": ^3.1.3
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/core": ^0.5.0
-    "@anansi/eslint-plugin": ^0.13.0
     "@anansi/jest-preset": ^0.7.3
     "@anansi/router": ^0.5.0
     "@anansi/webpack-config": ^11.5.0
@@ -14019,7 +13984,6 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.1.3
     "@anansi/browserslist-config": ^1.3.3
-    "@anansi/eslint-plugin": ^0.13.0
     "@anansi/jest-preset": ^0.7.3
     "@anansi/polyfill": ^1.0.112
     "@anansi/webpack-config": ^11.5.0
@@ -25793,7 +25757,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@anansi/babel-preset": ^3.0.0
-    "@anansi/eslint-plugin": ^0.12.0
+    "@anansi/eslint-plugin": ^0.13.0
     "@babel/cli": 7.17.10
     "@babel/core": 7.17.12
     "@commitlint/cli": 17.0.0
