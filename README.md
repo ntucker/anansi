@@ -4,6 +4,12 @@
 
 [Anansi](https://en.wikipedia.org/wiki/Anansi) (/əˈnɑːnsi/ ə-NAHN-see) is an Akan folktale character. He often takes the shape of a spider and is considered to be the god of all knowledge of stories. Anansi uses his knowledge to help JavaScript developers spin new web projects.
 
+<div align="center">
+
+[🎮Demo](https://stackblitz.com/github/ntucker/anansi/tree/master/examples/concurrent)
+
+</div>
+
 ## Motivation
 
 Starting a new React project can be a lot of work. There are many tools that need to work together. The best tools available keep a tight technical focus with high levels of configurability. In practice this means it's a lot of work to get started and even more work to maintain, while keeping the tools cleanly working together.
