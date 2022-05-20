@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.5.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.0...@anansi/webpack-config@11.5.1) (2022-05-20)
+
+
+### 💅 Enhancement
+
+* Use lazy-compilation in dev mode for faster build times ([#1513](https://github.com/ntucker/anansi/issues/1513)) ([1dcbf4e](https://github.com/ntucker/anansi/commit/1dcbf4ed3658dc90e192d4c7dd6a1d1f66448474))
+
+
+### 📦 Package
+
+* Update `css-minimizer-webpack-plugin` to v4 ([#1511](https://github.com/ntucker/anansi/issues/1511)) ([5a685ed](https://github.com/ntucker/anansi/commit/5a685edf69183c42a6838e2216295d6d71f4c33a))
+* Update `postcss-loader` to v7 ([#1514](https://github.com/ntucker/anansi/issues/1514)) ([b14857d](https://github.com/ntucker/anansi/commit/b14857d4911f1b38adefe8a0636db007dcf7a702))
+* Update `postcss` to ^8.4.14 ([#1509](https://github.com/ntucker/anansi/issues/1509)) ([4c11d2b](https://github.com/ntucker/anansi/commit/4c11d2b36be143846f5a58853fc3f441e9d60dea))
+* Update `sass-loader` to v13 ([#1510](https://github.com/ntucker/anansi/issues/1510)) ([d83e0f6](https://github.com/ntucker/anansi/commit/d83e0f605408674277fc43f0f806a3bb131fc2c8))
+* Update all non-major dependencies ([#1516](https://github.com/ntucker/anansi/issues/1516)) ([5d3e9c7](https://github.com/ntucker/anansi/commit/5d3e9c7e9dffcd2f3904e2bf2113df704ed18ffb))
+* Update babel monorepo ([#1515](https://github.com/ntucker/anansi/issues/1515)) ([9d51b13](https://github.com/ntucker/anansi/commit/9d51b13218a67c17cfef56a1be88ac4af7933d03))
+
+
+
 ## [11.5.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.4.3...@anansi/webpack-config@11.5.0) (2022-05-18)
 
 
