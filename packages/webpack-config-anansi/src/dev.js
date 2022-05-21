@@ -25,6 +25,7 @@ export default function makeDevConfig(
     sassResources,
     cssModulesOptions,
     globalStyleDir,
+    isStackblitz,
   },
 ) {
   const config = { ...baseConfig };
@@ -143,7 +144,10 @@ export default function makeDevConfig(
   if (!config.experiments) {
     config.experiments = {};
   }
-  config.experiments.lazyCompilation = { entries: false };
+  // this doesn't work well with webcontainers
+  if (!isStackblitz) {
+    config.experiments.lazyCompilation = { entries: false };
+  }
 
   const styleRules = getStyleRules({
     rootPath,

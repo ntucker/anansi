@@ -36,6 +36,10 @@ export function makeConfig(options) {
           process.env.WEBPACK_ANALYZE === true),
       argv,
       env,
+      isStackblitz: Object.prototype.hasOwnProperty.call(
+        process.versions,
+        'webcontainer',
+      ),
     };
     // option validation done here
     if ('sassOptions' in options && options.sassOptions === undefined) {
