@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.5.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.1...@anansi/webpack-config@11.5.2) (2022-05-21)
+
+
+### 🐛 Bug Fix
+
+* Dev compilation in stackblitz ([10f9235](https://github.com/ntucker/anansi/commit/10f9235170276bb3c4f2060100eb6b7bb37fdd6c))
+
+
+
 ### [11.5.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.0...@anansi/webpack-config@11.5.1) (2022-05-20)
 
 
