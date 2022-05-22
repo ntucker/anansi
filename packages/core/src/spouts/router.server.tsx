@@ -40,6 +40,7 @@ export default function routerSpout<ResolveWith>(options: {
       return {
         ...nextProps,
         matchedRoutes,
+        router,
         app: <Router>{nextProps.app}</Router>,
       };
     };
