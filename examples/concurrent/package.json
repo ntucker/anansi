@@ -1,6 +1,6 @@
 {
   "name": "example-react-18",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "private": true,
   "scripts": {
     "start": "start-anansi ./src/index.tsx",
@@ -35,7 +35,7 @@
     "webpack-dev-server": "4.9.0"
   },
   "dependencies": {
-    "@anansi/core": "^0.5.2",
+    "@anansi/core": "^0.6.0",
     "@anansi/router": "^0.5.2",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "^3.0.0-beta.18",
