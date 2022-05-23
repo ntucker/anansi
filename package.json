@@ -37,7 +37,7 @@
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "^4.6.3",
-    "eslint": "8.15.0",
+    "eslint": "8.16.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.30.0",
