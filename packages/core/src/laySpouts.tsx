@@ -7,7 +7,7 @@ export default function laySpouts(
   spouts: (props: ServerProps) => Promise<{
     app: JSX.Element;
   }>,
-  { timeoutMS = 100 }: { timeoutMS?: number } = {},
+  { timeoutMS = 200 }: { timeoutMS?: number } = {},
 ) {
   const render: Render = async (clientManifest, req, res) => {
     const { app } = await spouts({ clientManifest, req, res });
@@ -48,7 +48,7 @@ type Options = {|
           didError = true;
           console.error(x);
           res.statusCode = 500;
-          pipe(res);
+          //pipe(res); Removing this avoids, "React currently only supports piping to one writable stream."
         },
       },
     );
