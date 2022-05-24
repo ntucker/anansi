@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.0...@anansi/core@0.6.1) (2022-05-24)
+
+
+### 🐛 Bug Fix
+
+* Don't error with 'React currently only supports piping to one writable stream' ([cf55fdb](https://github.com/ntucker/anansi/commit/cf55fdb82ee158e26ee596f86db0231faa8e98f5))
+
+
+
 ## [0.6.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.5.2...@anansi/core@0.6.0) (2022-05-22)
 
 
