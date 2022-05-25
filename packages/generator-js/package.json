@@ -73,7 +73,7 @@
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
     "mem-fs-editor": "^9.4.0",
-    "pacote": "^13.4.1",
+    "pacote": "^13.5.0",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.6.1"
   },
