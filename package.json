@@ -29,7 +29,7 @@
     "@anansi/babel-preset": "^3.0.0",
     "@anansi/eslint-plugin": "^0.13.0",
     "@babel/cli": "7.17.10",
-    "@babel/core": "7.18.0",
+    "@babel/core": "7.18.2",
     "@commitlint/cli": "17.0.0",
     "@commitlint/config-conventional": "17.0.0",
     "@zerollup/ts-transform-paths": "^1.7.18",
