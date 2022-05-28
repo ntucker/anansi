@@ -7,13 +7,13 @@ import webpack, { MultiCompiler } from 'webpack';
 import { createFsFromVolume, Volume } from 'memfs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import type { NextFunction } from 'express';
-import ora from 'ora';
 import { patchRequire } from 'fs-monkey';
 import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import WebpackDevServer from 'webpack-dev-server';
 import importFresh from 'import-fresh';
+import logging from 'webpack/lib/logging/runtime';
 
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';
@@ -33,7 +33,7 @@ if (!entrypoint) {
   process.exit(-1);
 }
 
-const loader = ora().start().stop();
+const log = logging.getLogger('anansi-devserver');
 
 // Set up in memory filesystem
 const volume = new Volume();
@@ -112,19 +112,18 @@ function handleErrors<
   };
 }
 let render: BoundRender;
-// Start the express server after the first compilation
-function initializeApp(stats: webpack.Stats[]) {
+function importRender(stats: webpack.Stats[]) {
   const [clientStats, serverStats] = stats;
   if (
     clientStats?.compilation?.errors?.length ||
     serverStats?.compilation?.errors?.length
   ) {
-    loader.fail('Errors for client build: ' + clientStats.compilation.errors);
-    loader.fail('Errors for server build: ' + serverStats.compilation.errors);
+    log.error('Errors for client build: ' + clientStats.compilation.errors);
+    log.error('Errors for server build: ' + serverStats.compilation.errors);
     // TODO: handle more gracefully
     process.exit(-1);
   } else {
-    loader.info('Launching server');
+    log.info('Launching SSR');
   }
 
   // ASSETS
@@ -132,7 +131,7 @@ function initializeApp(stats: webpack.Stats[]) {
 
   // SERVER SIDE RENDERING
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  render = require(getServerBundle(serverStats)).default.bind(
+  render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
     undefined,
     clientManifest,
   );
@@ -190,27 +189,16 @@ const runServer = async () => {
     'Anansi Server',
     (multiStats: webpack.MultiStats | webpack.Stats) => {
       if (!multiStats) {
-        loader.fail('stats not send');
+        log.error('stats not send');
         process.exit(-1);
       }
 
       if (!Object.hasOwn(multiStats, 'stats')) return;
-      if (server && (multiStats as webpack.MultiStats).stats.length > 1) {
-        render = (
-          importFresh(
-            getServerBundle((multiStats as webpack.MultiStats).stats[1]),
-          ) as any
-        ).default.bind(
-          undefined,
-          (multiStats as webpack.MultiStats).stats[0].toJson(),
-        );
-        return;
-      }
-      if (!server) {
+      if ((multiStats as webpack.MultiStats).stats.length > 1) {
         try {
-          initializeApp((multiStats as webpack.MultiStats).stats);
+          importRender((multiStats as webpack.MultiStats).stats);
         } catch (e) {
-          loader.fail('Failed to initialize app');
+          log.error('Failed to load serve entrypoint');
           console.error(e);
         }
       }
@@ -218,13 +206,13 @@ const runServer = async () => {
   );
 };
 const stopServer = async () => {
-  loader.info('Stopping server...');
+  log.info('Stopping server...');
   await devServer.stop();
-  loader.info('Server closed');
+  log.info('Server closed');
 };
 
 process.on('SIGINT', () => {
-  loader.warn('Received SIGINT, devserver shutting down');
+  log.warn('Received SIGINT, devserver shutting down');
   stopServer();
   process.exit(-1);
 });

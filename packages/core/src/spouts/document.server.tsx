@@ -59,13 +59,15 @@ export default function DocumentSpout(options: {
         href: string;
         as?: string | undefined;
         rel?: string | undefined;
-      }[] = assetList.map(asset =>
-        asset.endsWith('.css')
-          ? { href: asset, rel: 'stylesheet' }
-          : asset.endsWith('.js')
-          ? { href: asset, as: 'script' }
-          : { href: asset },
-      );
+      }[] = assetList
+        .filter(asset => !asset.endsWith('.hot-update.js'))
+        .map(asset =>
+          asset.endsWith('.css')
+            ? { href: asset, rel: 'stylesheet' }
+            : asset.endsWith('.js')
+            ? { href: asset, as: 'script' }
+            : { href: asset },
+        );
 
       return {
         ...nextProps,
