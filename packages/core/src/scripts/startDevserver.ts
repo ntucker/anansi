@@ -112,7 +112,15 @@ function handleErrors<
     }
   };
 }
-let render: BoundRender;
+
+const initRender:
+  | { args: Parameters<BoundRender>; resolve: () => void }[]
+  | undefined = [];
+let render: BoundRender = (...args) =>
+  new Promise(resolve => {
+    initRender.push({ args, resolve });
+  });
+
 function importRender(stats: webpack.Stats[]) {
   const [clientStats, serverStats] = stats;
   if (
@@ -131,12 +139,13 @@ function importRender(stats: webpack.Stats[]) {
   const clientManifest = clientStats.toJson();
 
   // SERVER SIDE ENTRYPOINT
-  if (!render) {
+  if (Array.isArray(initRender)) {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     render = (require(getServerBundle(serverStats)) as any).default.bind(
       undefined,
       clientManifest,
     );
+    initRender.forEach(init => render(...init.args).then(init.resolve));
   } else {
     render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
       undefined,
@@ -182,12 +191,6 @@ const devServer = new WebpackDevServer(
             console.error('Fatal', error);
           });
 
-          if (!render) {
-            res.statusCode = 500;
-            res.setHeader('Content-type', 'text/html');
-            res.send('Render not initialized');
-            return;
-          }
           await render(req, res);
         }),
       );
