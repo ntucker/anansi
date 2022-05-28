@@ -175,6 +175,12 @@ const devServer = new WebpackDevServer(
             console.error('Fatal', error);
           });
 
+          if (!render) {
+            res.statusCode = 500;
+            res.setHeader('Content-type', 'text/html');
+            res.send('Render not initialized');
+            return;
+          }
           await render(req, res);
         }),
       );
@@ -198,10 +204,13 @@ const runServer = async () => {
       if ((multiStats as webpack.MultiStats).stats.length > 1) {
         try {
           importRender((multiStats as webpack.MultiStats).stats);
-        } catch (e) {
+        } catch (e: any) {
           log.error('Failed to load serve entrypoint');
           console.error(e);
+          console.error(e.stack);
         }
+      } else {
+        log.error('Only compiler one stat');
       }
     },
   );
