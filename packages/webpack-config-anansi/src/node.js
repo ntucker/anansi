@@ -1,6 +1,7 @@
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import { StatsWriterPlugin } from 'webpack-stats-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export default function makeNodeConfig(
   baseConfig,
@@ -45,7 +46,9 @@ export default function makeNodeConfig(
   config.output.libraryTarget = 'commonjs2';
   // don't output stats for server builds as they won't need to reference manifests
   config.plugins = config.plugins.filter(
-    plugin => !(plugin instanceof StatsWriterPlugin),
+    plugin =>
+      !(plugin instanceof StatsWriterPlugin) &&
+      !(plugin instanceof MiniCssExtractPlugin),
   );
 
   return config;
