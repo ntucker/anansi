@@ -130,12 +130,19 @@ function importRender(stats: webpack.Stats[]) {
   // ASSETS
   const clientManifest = clientStats.toJson();
 
-  // SERVER SIDE RENDERING
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
-    undefined,
-    clientManifest,
-  );
+  // SERVER SIDE ENTRYPOINT
+  if (!render) {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    render = (require(getServerBundle(serverStats)) as any).default.bind(
+      undefined,
+      clientManifest,
+    );
+  } else {
+    render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
+      undefined,
+      clientManifest,
+    );
+  }
 }
 
 const devServer = new WebpackDevServer(
@@ -206,8 +213,7 @@ const runServer = async () => {
           importRender((multiStats as webpack.MultiStats).stats);
         } catch (e: any) {
           log.error('Failed to load serve entrypoint');
-          console.error(e);
-          console.error(e.stack);
+          throw e;
         }
       } else {
         log.error('Only compiler one stat');
