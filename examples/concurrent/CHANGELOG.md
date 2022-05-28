@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.2](https://github.com/ntucker/anansi/compare/example-react-18@2.3.1...example-react-18@2.3.2) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Simplified allowlist ([9af19ae](https://github.com/ntucker/anansi/commit/9af19ae982bf118821f849093d0800bf763763bb))
+
+
+
 ### [2.3.1](https://github.com/ntucker/anansi/compare/example-react-18@2.3.0...example-react-18@2.3.1) (2022-05-28)
 
 
