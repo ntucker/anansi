@@ -5,6 +5,7 @@
     "build": "webpack --mode=production",
     "build:analyze": "webpack --mode=production --env analyze",
     "build:profile": "webpack --mode=production --env profile",
-    "test:pkg": "webpack --env check=nobuild"
+    "test:pkg": "webpack --env check=nobuild",
+    "postinstall": "rm -rf node_modules/.cache"
   }
 }

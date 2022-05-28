@@ -14,7 +14,8 @@
     "pkgcheck": "webpack --env check=nobuild",
     "test:type": "tsc --noEmit",
     "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,ts,tsx}\""
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.2.2",
