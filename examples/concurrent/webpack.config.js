@@ -27,9 +27,13 @@ module.exports = (env, argv) => {
       nodeExternals({
         additionalModuleDirs: ['../../node_modules'],
         allowlist: [
-          /@babel\/runtime/,
-          /^@anansi\//,
-          /^@pojo-router\//,
+          ...(Object.prototype.hasOwnProperty.call(
+            process.versions,
+            'webcontainer',
+          )
+            ? [/^@anansi\/router/, /^@pojo-router\//]
+            : []),
+          /^@anansi\/core\/server/,
           /^path-to-regexp/,
           /\.css$/,
         ],
