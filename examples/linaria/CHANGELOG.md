@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.20](https://github.com/ntucker/anansi/compare/example-linaria@4.1.19...example-linaria@4.1.20) (2022-05-28)
+
+**Note:** Version bump only for package example-linaria
+
+
+
+
+
 ### [4.1.19](https://github.com/ntucker/anansi/compare/example-linaria@4.1.18...example-linaria@4.1.19) (2022-05-28)
 
 

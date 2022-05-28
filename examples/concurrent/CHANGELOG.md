@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.3.1](https://github.com/ntucker/anansi/compare/example-react-18@2.3.0...example-react-18@2.3.1) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Clear webpack cache on postinstall ([ea5b509](https://github.com/ntucker/anansi/commit/ea5b50942c96cf68a2855268361e1e4608449d68))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1523](https://github.com/ntucker/anansi/issues/1523)) ([1fdc897](https://github.com/ntucker/anansi/commit/1fdc897d632269e0405946419f632156aef71a14))
+
+
+
 ## [2.3.0](https://github.com/ntucker/anansi/compare/example-react-18@2.2.4...example-react-18@2.3.0) (2022-05-28)
 
 

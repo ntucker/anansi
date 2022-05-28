@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.6.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.0...@anansi/webpack-config@11.6.1) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Exclude minicssextract for node builds ([1fdd03c](https://github.com/ntucker/anansi/commit/1fdd03c57f05ee5d6eac1e9de9b47052b338864a))
+
+
+### 🐛 Bug Fix
+
+* Repeat compiles in watchmode ([3a08fcd](https://github.com/ntucker/anansi/commit/3a08fcd0fab3fe258a603854cb43c0cd6660bd51))
+
+
+
 ## [11.6.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.3...@anansi/webpack-config@11.6.0) (2022-05-28)
 
 

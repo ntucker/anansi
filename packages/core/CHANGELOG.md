@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.0...@anansi/core@0.7.1) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Do not use additional express server for dev ([ce29cbb](https://github.com/ntucker/anansi/commit/ce29cbb0b8547b736a31f9bac6309338b6114bae))
+* Target current node for server devbuild ([262bd1e](https://github.com/ntucker/anansi/commit/262bd1e79d56dacdb4114d8ea959d819df16b687))
+
+
+### 🐛 Bug Fix
+
+* SSR hot reloading ([3b08106](https://github.com/ntucker/anansi/commit/3b081066463020fdbef2c01efd4922d09e02d8aa))
+
+
+
 ## [0.7.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.1...@anansi/core@0.7.0) (2022-05-28)
 
 
