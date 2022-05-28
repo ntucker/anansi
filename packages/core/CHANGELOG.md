@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.2...@anansi/core@0.7.3) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Require, then import fresh ([7de7d8d](https://github.com/ntucker/anansi/commit/7de7d8d73e533b69bdf78698965121a35375692c))
+
+
+
 ### [0.7.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.1...@anansi/core@0.7.2) (2022-05-28)
 
 
