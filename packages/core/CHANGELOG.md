@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.1...@anansi/core@0.7.0) (2022-05-28)
+
+
+### 🚀 Features
+
+* env.entrypath override ([a918d32](https://github.com/ntucker/anansi/commit/a918d3247c22ea00d0e1d5395553752280d32d99))
+
+
+### 💅 Enhancement
+
+* Improve route asset identification ([c07e9a2](https://github.com/ntucker/anansi/commit/c07e9a29935e0e24f815371ad6610bed77da967e))
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
+
+
+
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.0...@anansi/core@0.6.1) (2022-05-24)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/ntucker/anansi/compare/example-react-18@2.2.4...example-react-18@2.3.0) (2022-05-28)
+
+
+### 🚀 Features
+
+* env.entrypath override ([a918d32](https://github.com/ntucker/anansi/commit/a918d3247c22ea00d0e1d5395553752280d32d99))
+
+
+### 🐛 Bug Fix
+
+* Disable lazyCompilation due to compat issues with SSR ([c5618da](https://github.com/ntucker/anansi/commit/c5618daa1937ef7460aaa6360fefa58bb825bc8c))
+
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1518](https://github.com/ntucker/anansi/issues/1518)) ([3d196fe](https://github.com/ntucker/anansi/commit/3d196fe164b66bde1375442758d8a9952e6e8a53))
+
+
+
 ### [2.2.4](https://github.com/ntucker/anansi/compare/example-react-18@2.2.3...example-react-18@2.2.4) (2022-05-24)
 
 

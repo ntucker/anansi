@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.6.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.3...@anansi/webpack-config@11.6.0) (2022-05-28)
+
+
+### 🚀 Features
+
+* env.entrypath override ([a918d32](https://github.com/ntucker/anansi/commit/a918d3247c22ea00d0e1d5395553752280d32d99))
+
+
+### 🐛 Bug Fix
+
+* Disable lazyCompilation due to compat issues with SSR ([c5618da](https://github.com/ntucker/anansi/commit/c5618daa1937ef7460aaa6360fefa58bb825bc8c))
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
+
+
+
 ### [11.5.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.5.2...@anansi/webpack-config@11.5.3) (2022-05-24)
 
 
