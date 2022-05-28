@@ -8,7 +8,7 @@
     "start:server": "node ./dist-server/main.js",
     "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node --env entrypoint=index.server.tsx",
-    "build:clean": "rm -rf dist && rm -rf server_assets",
+    "build:clean": "rm -rf dist && rm -rf dist-server",
     "build:analyze": "webpack --mode=production --env analyze",
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",

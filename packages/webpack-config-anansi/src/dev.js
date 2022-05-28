@@ -146,7 +146,8 @@ export default function makeDevConfig(
   }
   // this doesn't work well with webcontainers
   if (!isStackblitz) {
-    config.experiments.lazyCompilation = { entries: false };
+    // TODO: enable once we can figure out how to make it work with manifest and await for SSR
+    //config.experiments.lazyCompilation = { entries: false };
   }
 
   const styleRules = getStyleRules({
