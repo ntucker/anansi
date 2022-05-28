@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.3...@anansi/core@0.7.4) (2022-05-28)
+
+
+### 💅 Enhancement
+
+* Stall SSR requests until build is ready ([fe2616a](https://github.com/ntucker/anansi/commit/fe2616ac2d957f7243310d896f4a2ad5cb7d910e))
+
+
+
 ### [0.7.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.2...@anansi/core@0.7.3) (2022-05-28)
 
 
