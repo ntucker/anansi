@@ -38,7 +38,9 @@ if (!entrypoint) {
 
 console.log(
   chalk.greenBright(`Starting SSR at:`),
-  chalk.cyanBright(process.env.WEBPACK_PUBLIC_HOST || `http://localhost:${PORT}`),
+  chalk.cyanBright(
+    process.env.WEBPACK_PUBLIC_HOST || `http://localhost:${PORT}`,
+  ),
 );
 const loader = ora().start();
 
@@ -74,14 +76,14 @@ export default entry;
 const webpackConfigs = [
   webpackConfig(
     {
-      entrypoint: hotEntry(entrypoint).name,
+      entrypath: hotEntry(entrypoint).name,
       name: 'client',
     },
     { mode: 'development' },
   ),
   webpackConfig(
     {
-      entrypoint: entrypoint.replace('.tsx', '.server.tsx'),
+      entrypath: entrypoint.replace('.tsx', '.server.tsx'),
       name: 'server',
     },
     { mode: 'development', target: 'node' },
@@ -98,7 +100,7 @@ sourceMapSupport.install({ hookRequire: true });
 
 function getServerBundle(serverStats: webpack.Stats) {
   const serverJson = serverStats.toJson({ assets: true });
-  return path.join(serverJson.outputPath ?? '', 'main.js');
+  return path.join(serverJson.outputPath ?? '', 'server.js');
 }
 function handleErrors<
   F extends (

@@ -5,11 +5,10 @@ import { Img } from '@rest-hooks/img';
 import { Card, Avatar } from 'antd';
 import { Link } from '@anansi/router';
 import { styled } from '@linaria/react';
+import { lazy } from 'react';
 
 import { PostResource, UserResource } from 'resources/Discuss';
 import Boundary from 'components/Boundary';
-
-import CommentList from './CommentList';
 
 export type Props = { id: string };
 const { Meta } = Card;
@@ -17,6 +16,10 @@ const { Meta } = Card;
 const Breading = styled(Breadcrumb)`
   margin: 16px 0;
 `;
+
+const CommentList = lazy(
+  () => import(/* webpackPreload: true */ './CommentList'),
+);
 
 export default function PostDetail({ id }: Props) {
   const post = useSuspense(PostResource.detail(), { id });

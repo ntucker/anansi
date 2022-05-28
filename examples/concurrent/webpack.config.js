@@ -36,12 +36,6 @@ module.exports = (env, argv) => {
       }),
     ];
   }
-  if (env.entrypoint) {
-    config.entry = env.entrypoint;
-  }
-  if (env.name) {
-    config.name = env.name;
-  }
 
   return config;
 };

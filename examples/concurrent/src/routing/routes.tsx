@@ -26,7 +26,7 @@ export const routes: Route<Controller>[] = [
     component: lazy(
       () =>
         import(
-          /* webpackChunkName: '[request]', webpackPrefetch: true */ `navigation/FriendsNav`
+          /* webpackChunkName: 'FriendNav', webpackPreload: true */ `navigation/FriendsNav`
         ),
     ),
     resolveData: async (controller: Controller) => {
