@@ -6,19 +6,17 @@ import path from 'path';
 import webpack, { MultiCompiler } from 'webpack';
 import { createFsFromVolume, Volume } from 'memfs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
-import express, { NextFunction } from 'express';
+import type { NextFunction } from 'express';
 import ora from 'ora';
 import { patchRequire } from 'fs-monkey';
 import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
-import compress from 'compression';
 import WebpackDevServer from 'webpack-dev-server';
 import importFresh from 'import-fresh';
-import chalk from 'chalk';
 
 import 'cross-fetch/polyfill';
-import { Render } from './types';
+import { BoundRender } from './types';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const webpackConfig = require(require.resolve(
@@ -27,7 +25,6 @@ const webpackConfig = require(require.resolve(
 ));
 
 const entrypoint = process.argv[2];
-const PORT = process.env.PORT || 3000;
 //process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`; this breaks compatibility with stackblitz
 process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
@@ -36,13 +33,7 @@ if (!entrypoint) {
   process.exit(-1);
 }
 
-console.log(
-  chalk.greenBright(`Starting SSR at:`),
-  chalk.cyanBright(
-    process.env.WEBPACK_PUBLIC_HOST || `http://localhost:${PORT}`,
-  ),
-);
-const loader = ora().start();
+const loader = ora().start().stop();
 
 // Set up in memory filesystem
 const volume = new Volume();
@@ -120,7 +111,7 @@ function handleErrors<
     }
   };
 }
-let render: Render;
+let render: BoundRender;
 // Start the express server after the first compilation
 function initializeApp(stats: webpack.Stats[]) {
   const [clientStats, serverStats] = stats;
@@ -136,75 +127,15 @@ function initializeApp(stats: webpack.Stats[]) {
     loader.info('Launching server');
   }
 
-  const wrappingApp = express();
-  // eslint-disable-next-line
-  //@ts-ignore
-  wrappingApp.use(compress());
-
   // ASSETS
   const clientManifest = clientStats.toJson();
-  const assetRoute = async (req: Request | IncomingMessage, res: any) => {
-    const filename =
-      req.url
-        ?.substring((process.env.WEBPACK_PUBLIC_PATH as string).length)
-        .split('?')[0] ?? '';
-    const assetPath = path.join(clientManifest.outputPath ?? '', filename);
-
-    try {
-      const fileContent = (await readFile(assetPath)).toString();
-      res.contentType(filename);
-      res.send(fileContent);
-    } catch (e) {
-      res.status(404);
-      res.send(e);
-      return;
-    }
-  };
-  wrappingApp.get(`${process.env.WEBPACK_PUBLIC_PATH}*`, assetRoute);
 
   // SERVER SIDE RENDERING
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  render = require(getServerBundle(serverStats)).default;
-  wrappingApp.get(
-    '/*',
-    handleErrors(async function (req: any, res: any) {
-      if (req.url.endsWith('favicon.ico')) {
-        res.statusCode = 404;
-        res.setHeader('Content-type', 'text/html');
-        res.send('not found');
-        return;
-      }
-      res.socket.on('error', (error: unknown) => {
-        console.error('Fatal', error);
-      });
-
-      await render(clientManifest, req, res);
-    }),
+  render = require(getServerBundle(serverStats)).default.bind(
+    undefined,
+    clientManifest,
   );
-
-  server = wrappingApp
-    .listen(PORT, () => {
-      loader.succeed(`SSR Running`);
-    })
-    .on('error', function (error: any) {
-      if (error.syscall !== 'listen') {
-        throw error;
-      }
-      const isPipe = (portOrPipe: string | number) => Number.isNaN(portOrPipe);
-      const bind = isPipe(PORT) ? 'Pipe ' + PORT : 'Port ' + PORT;
-      switch (error.code) {
-        case 'EACCES':
-          console.error(bind + ' requires elevated privileges');
-          process.exit(1);
-          break;
-        case 'EADDRINUSE':
-          console.error(bind + ' is already in use');
-          process.exit(1);
-          break;
-        default:
-          throw error;
-      }
-    });
 }
 
 const devServer = new WebpackDevServer(
@@ -225,6 +156,31 @@ const devServer = new WebpackDevServer(
         join: path.join as any,
       } as any as typeof fs,
     },
+    setupMiddlewares: (middlewares, devServer) => {
+      if (!devServer) {
+        throw new Error('webpack-dev-server is not defined');
+      }
+
+      // serve SSR for non-WEBPACK_PUBLIC_PATH
+      devServer.app?.get(
+        new RegExp(`^(?!${process.env.WEBPACK_PUBLIC_PATH})`),
+        handleErrors(async function (req: any, res: any) {
+          if (req.url.endsWith('favicon.ico')) {
+            res.statusCode = 404;
+            res.setHeader('Content-type', 'text/html');
+            res.send('not found');
+            return;
+          }
+          res.socket.on('error', (error: unknown) => {
+            console.error('Fatal', error);
+          });
+
+          await render(req, res);
+        }),
+      );
+
+      return middlewares;
+    },
   },
   compiler,
 );
@@ -244,7 +200,10 @@ const runServer = async () => {
           importFresh(
             getServerBundle((multiStats as webpack.MultiStats).stats[1]),
           ) as any
-        ).default;
+        ).default.bind(
+          undefined,
+          (multiStats as webpack.MultiStats).stats[0].toJson(),
+        );
         return;
       }
       if (!server) {

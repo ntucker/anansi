@@ -7,3 +7,8 @@ export type Render = (
   req: Request | IncomingMessage,
   res: Response | ServerResponse,
 ) => Promise<void>;
+
+export type BoundRender = (
+  req: Request | IncomingMessage,
+  res: Response | ServerResponse,
+) => Promise<void>;
