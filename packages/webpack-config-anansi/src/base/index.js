@@ -65,7 +65,8 @@ export default function makeBaseConfig({
     if (linariaOptions === undefined) {
       linariaOptions = {
         sourceMap: mode !== 'production',
-        cacheProvider: require.resolve('./linariaFileCache'),
+        //cacheProvider: require.resolve('./linariaFileCache'), we don't need this since we don't use thread-loader anymore
+        // TODO: Remove when we stop supporting linaria betas
         cacheDirectory: findCacheDir({
           name: `.linaria-cache`,
           cwd: process.cwd(),

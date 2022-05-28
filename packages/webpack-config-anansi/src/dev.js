@@ -4,7 +4,6 @@ import path from 'path';
 import logging from 'webpack/lib/logging/runtime';
 
 import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
-import WatchMissingNodeModulesPlugin from './plugins/WatchMissingNodeModulesPlugin';
 import { getStyleRules } from './base';
 import getHttpsConfig from './getHttpsConfig';
 
@@ -49,10 +48,9 @@ export default function makeDevConfig(
   const watchIgnorePaths = [
     /(hot-update\.[^.]|\.map|s?css\.d\.ts)$/,
     path.join(rootPath, '.cache'),
-    /node_modules\/\.cache(?!\/(.linaria-cache\/))/,
+    /node_modules\/\.cache(?!\/(\.linaria-(cache|development|production)\/))/,
   ];
   config.plugins = [
-    new WatchMissingNodeModulesPlugin(path.join(rootPath, 'node_modules')),
     new webpack.WatchIgnorePlugin({ paths: watchIgnorePaths }),
     ...config.plugins,
   ];
