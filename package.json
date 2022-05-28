@@ -17,7 +17,7 @@
     "changelog": "yarn lerna version",
     "release": "yarn workspaces foreach -tiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -tpi --no-private run build",
-    "dev": "yarn workspaces foreach -tpi --no-private run dev",
+    "dev": "yarn workspaces foreach -pi --no-private run dev",
     "build:types": "ttsc --build",
     "build:pkg": "yarn build:types && yarn workspaces foreach -t --no-private run build",
     "build:clean": "yarn workspaces foreach -tpi --no-private run build:clean",
