@@ -76,6 +76,7 @@ const webpackConfigs = [
     {
       entrypath: entrypoint.replace('.tsx', '.server.tsx'),
       name: 'server',
+      BROWSERSLIST_ENV: 'current node',
     },
     { mode: 'development', target: 'node' },
   ),
