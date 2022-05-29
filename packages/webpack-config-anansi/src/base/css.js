@@ -7,6 +7,10 @@ import { always } from 'ramda';
 const getCSSLoaders = ({ mode, target }) => {
   const loaders = [
     {
+      loader: MiniCssExtractPlugin.loader,
+      options: { emit: !target?.includes?.('node') },
+    },
+    {
       loader: require.resolve('css-loader'),
       options:
         mode === 'development'
@@ -33,12 +37,6 @@ const getCSSLoaders = ({ mode, target }) => {
       },
     },
   ];
-  if (!target?.includes?.('node')) {
-    loaders.unshift({
-      loader: MiniCssExtractPlugin.loader,
-      options: { emit: !target?.includes?.('node') },
-    });
-  }
   return loaders;
 };
 
