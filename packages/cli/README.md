@@ -58,3 +58,26 @@ Features can be incrementally adopted by running sub-generators from an existing
 cd my-app-name
 anansi add testing
 ```
+
+## Running SSR
+
+```bash
+Usage: anansi serve [options] <entrypath>
+
+runs server for SSR projects
+
+Arguments:
+  entrypath             Path to entrypoint
+
+Options:
+  -p, --pubPath <path>  Where to serve assets from
+  -d, --dev             Run devserver rather than using previously compiled output
+  -h, --help            display help for command
+```
+
+```json
+{
+  "start": "anansi serve --dev ./src/index.tsx",
+  "start:prod": "anansi serve --pubPath=/assets/ ./dist-server/App.js",
+}
+```

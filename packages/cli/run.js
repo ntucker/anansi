@@ -102,4 +102,36 @@ program
     }
   });
 
+program
+  .command('serve')
+  .description('runs server for SSR projects')
+  .argument('<entrypath>', 'Path to entrypoint')
+  .option('-p, --pubPath <path>', 'Where to serve assets from')
+  .option(
+    '-d, --dev',
+    'Run devserver rather than using previously compiled output',
+  )
+  .action(async (entrypath, options) => {
+    try {
+      const { serve, devServe } = await import('@anansi/core/scripts');
+
+      if (options.pubPath) process.env.WEBPACK_PUBLIC_PATH = options.pubPath;
+      else if (!process.env.WEBPACK_PUBLIC_PATH)
+        process.env.WEBPACK_PUBLIC_PATH = '/assets/';
+
+      if (options.dev) {
+        devServe(entrypath);
+      } else {
+        serve(entrypath);
+      }
+    } catch (error) {
+      if (error.code === 'ERR_MODULE_NOT_FOUND') {
+        console.error('@anansi/core must be installed to run this subcommand');
+      } else {
+        console.error(error.message);
+      }
+      process.exit(2);
+    }
+  });
+
 program.parse(process.argv);

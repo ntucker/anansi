@@ -47,7 +47,7 @@
     "jest"
   ],
   "engines": {
-    "node": ">= 12.10.0",
+    "node": ">= 12.20.0",
     "npm": ">= 6.0.0"
   },
   "dependencies": {
@@ -60,6 +60,14 @@
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.4.0",
     "yo": "^4.3.0"
+  },
+  "peerDependencies": {
+    "@anansi/core": "^0.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@anansi/core": {
+      "optional": true
+    }
   },
   "jest": {
     "testEnvironment": "node"

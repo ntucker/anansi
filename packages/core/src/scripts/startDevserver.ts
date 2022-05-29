@@ -18,226 +18,238 @@ import logging from 'webpack/lib/logging/runtime';
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const webpackConfig = require(require.resolve(
-  // TODO: use normal resolution algorithm to find webpack file
-  path.join(process.cwd(), 'webpack.config'),
-));
+// run directly from node
+if (require.main === module) {
+  const entrypoint = process.argv[2];
+  //process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`; this breaks compatibility with stackblitz
+  process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
-const entrypoint = process.argv[2];
-//process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`; this breaks compatibility with stackblitz
-process.env.WEBPACK_PUBLIC_PATH = '/assets/';
+  if (!entrypoint) {
+    console.log(`Usage: start-anansi <entrypoint-file>`);
+    process.exit(-1);
+  }
 
-if (!entrypoint) {
-  console.log(`Usage: start-anansi <entrypoint-file>`);
-  process.exit(-1);
+  startDevServer(entrypoint);
 }
 
-const log = logging.getLogger('anansi-devserver');
+export default function startDevServer(
+  entrypoint: string,
+  env: Record<string, unknown> = {},
+) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const webpackConfig = require(require.resolve(
+    // TODO: use normal resolution algorithm to find webpack file
+    path.join(process.cwd(), 'webpack.config'),
+  ));
 
-// Set up in memory filesystem
-const volume = new Volume();
-const fs = createFsFromVolume(volume);
-ufs.use(diskFs).use(fs as any);
+  const log = logging.getLogger('anansi-devserver');
 
-patchRequire(ufs);
-const readFile = promisify(ufs.readFile);
-let server: Server | undefined;
+  // Set up in memory filesystem
+  const volume = new Volume();
+  const fs = createFsFromVolume(volume);
+  ufs.use(diskFs).use(fs as any);
 
-// Generate a temporary file so we can hot reload from the root of the application
-function hotEntry(entryPath: string) {
-  // eslint-disable-next-line
-  // @ts-ignore for some reason it's not picking up that other options are optional
-  const generatedEntrypoint = tmp.fileSync({ postfix: '.js' });
-  diskFs.writeSync(
-    generatedEntrypoint.fd,
-    `
-import entry from "${path.resolve(process.cwd(), entryPath)}";
+  patchRequire(ufs);
+  const readFile = promisify(ufs.readFile);
+  let server: Server | undefined;
 
-if (module.hot) {
-  module.hot.accept();
-}
+  // Generate a temporary file so we can hot reload from the root of the application
+  function hotEntry(entryPath: string) {
+    // eslint-disable-next-line
+    // @ts-ignore for some reason it's not picking up that other options are optional
+    const generatedEntrypoint = tmp.fileSync({ postfix: '.js' });
+    diskFs.writeSync(
+      generatedEntrypoint.fd,
+      `
+  import entry from "${path.resolve(process.cwd(), entryPath)}";
 
-export default entry;
-  `,
+  if (module.hot) {
+    module.hot.accept();
+  }
+
+  export default entry;
+    `,
+    );
+    return generatedEntrypoint;
+  }
+
+  const webpackConfigs = [
+    webpackConfig(
+      {
+        ...env,
+        entrypath: hotEntry(entrypoint).name,
+        name: 'client',
+      },
+      { mode: 'development' },
+    ),
+    webpackConfig(
+      {
+        ...env,
+        entrypath: entrypoint.replace('.tsx', '.server.tsx'),
+        name: 'server',
+        BROWSERSLIST_ENV: 'current node',
+      },
+      { mode: 'development', target: 'node' },
+    ),
+  ] as const;
+  // only have one output for server so we can avoid cached modules
+  webpackConfigs[1].plugins.push(
+    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
   );
-  return generatedEntrypoint;
-}
+  // initialize the webpack compiler
+  const compiler: MultiCompiler = webpack(webpackConfigs);
 
-const webpackConfigs = [
-  webpackConfig(
-    {
-      entrypath: hotEntry(entrypoint).name,
-      name: 'client',
-    },
-    { mode: 'development' },
-  ),
-  webpackConfig(
-    {
-      entrypath: entrypoint.replace('.tsx', '.server.tsx'),
-      name: 'server',
-      BROWSERSLIST_ENV: 'current node',
-    },
-    { mode: 'development', target: 'node' },
-  ),
-] as const;
-// only have one output for server so we can avoid cached modules
-webpackConfigs[1].plugins.push(
-  new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
-);
-// initialize the webpack compiler
-const compiler: MultiCompiler = webpack(webpackConfigs);
+  sourceMapSupport.install({ hookRequire: true });
 
-sourceMapSupport.install({ hookRequire: true });
+  function getServerBundle(serverStats: webpack.Stats) {
+    const serverJson = serverStats.toJson({ assets: true });
+    return path.join(serverJson.outputPath ?? '', 'server.js');
+  }
+  function handleErrors<
+    F extends (
+      req: Request | IncomingMessage,
+      res: Response | ServerResponse,
+    ) => Promise<void>,
+  >(fn: F) {
+    return async function (
+      req: Request | IncomingMessage,
+      res: Response | ServerResponse,
+      next: NextFunction,
+    ) {
+      try {
+        return await fn(req, res);
+      } catch (x) {
+        next(x);
+      }
+    };
+  }
 
-function getServerBundle(serverStats: webpack.Stats) {
-  const serverJson = serverStats.toJson({ assets: true });
-  return path.join(serverJson.outputPath ?? '', 'server.js');
-}
-function handleErrors<
-  F extends (
-    req: Request | IncomingMessage,
-    res: Response | ServerResponse,
-  ) => Promise<void>,
->(fn: F) {
-  return async function (
-    req: Request | IncomingMessage,
-    res: Response | ServerResponse,
-    next: NextFunction,
-  ) {
-    try {
-      return await fn(req, res);
-    } catch (x) {
-      next(x);
+  const initRender:
+    | { args: Parameters<BoundRender>; resolve: () => void }[]
+    | undefined = [];
+  let render: BoundRender = (...args) =>
+    new Promise(resolve => {
+      initRender.push({ args, resolve });
+    });
+
+  function importRender(stats: webpack.Stats[]) {
+    const [clientStats, serverStats] = stats;
+    if (
+      clientStats?.compilation?.errors?.length ||
+      serverStats?.compilation?.errors?.length
+    ) {
+      log.error('Errors for client build: ' + clientStats.compilation.errors);
+      log.error('Errors for server build: ' + serverStats.compilation.errors);
+      // TODO: handle more gracefully
+      process.exit(-1);
+    } else {
+      log.info('Launching SSR');
     }
-  };
-}
 
-const initRender:
-  | { args: Parameters<BoundRender>; resolve: () => void }[]
-  | undefined = [];
-let render: BoundRender = (...args) =>
-  new Promise(resolve => {
-    initRender.push({ args, resolve });
+    // ASSETS
+    const clientManifest = clientStats.toJson();
+
+    // SERVER SIDE ENTRYPOINT
+    if (Array.isArray(initRender)) {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      render = (require(getServerBundle(serverStats)) as any).default.bind(
+        undefined,
+        clientManifest,
+      );
+      initRender.forEach(init => render(...init.args).then(init.resolve));
+    } else {
+      render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
+        undefined,
+        clientManifest,
+      );
+    }
+  }
+
+  const devServer = new WebpackDevServer(
+    // write to memory filesystem so we can import
+    {
+      ...webpackConfigs[0].devServer,
+      /*client: {
+        ...webpackConfigs[0].devServer?.client,
+        webSocketURL: {
+          ...webpackConfigs[0].devServer?.client.webSocketURL,
+          port: 8080,
+        },
+      },*/
+      devMiddleware: {
+        ...webpackConfigs[0]?.devServer?.devMiddleware,
+        outputFileSystem: {
+          ...fs,
+          join: path.join as any,
+        } as any as typeof fs,
+      },
+      setupMiddlewares: (middlewares, devServer) => {
+        if (!devServer) {
+          throw new Error('webpack-dev-server is not defined');
+        }
+
+        const otherRoutes = [
+          process.env.WEBPACK_PUBLIC_PATH,
+          ...Object.keys(webpackConfigs[0].devServer?.proxy ?? {}),
+        ];
+        // serve SSR for non-WEBPACK_PUBLIC_PATH
+        devServer.app?.get(
+          new RegExp(`^(?!${otherRoutes.join('|')})`),
+          handleErrors(async function (req: any, res: any) {
+            if (req.url.endsWith('favicon.ico')) {
+              res.statusCode = 404;
+              res.setHeader('Content-type', 'text/html');
+              res.send('not found');
+              return;
+            }
+            res.socket.on('error', (error: unknown) => {
+              console.error('Fatal', error);
+            });
+
+            await render(req, res);
+          }),
+        );
+
+        return middlewares;
+      },
+    },
+    compiler,
+  );
+  const runServer = async () => {
+    await devServer.start();
+    devServer.compiler.hooks.done.tap(
+      'Anansi Server',
+      (multiStats: webpack.MultiStats | webpack.Stats) => {
+        if (!multiStats) {
+          log.error('stats not send');
+          process.exit(-1);
+        }
+
+        if (!Object.hasOwn(multiStats, 'stats')) return;
+        if ((multiStats as webpack.MultiStats).stats.length > 1) {
+          try {
+            importRender((multiStats as webpack.MultiStats).stats);
+          } catch (e: any) {
+            log.error('Failed to load serve entrypoint');
+            throw e;
+          }
+        } else {
+          log.error('Only compiler one stat');
+        }
+      },
+    );
+  };
+  const stopServer = async () => {
+    log.info('Stopping server...');
+    await devServer.stop();
+    log.info('Server closed');
+  };
+
+  process.on('SIGINT', () => {
+    log.warn('Received SIGINT, devserver shutting down');
+    stopServer();
+    process.exit(-1);
   });
 
-function importRender(stats: webpack.Stats[]) {
-  const [clientStats, serverStats] = stats;
-  if (
-    clientStats?.compilation?.errors?.length ||
-    serverStats?.compilation?.errors?.length
-  ) {
-    log.error('Errors for client build: ' + clientStats.compilation.errors);
-    log.error('Errors for server build: ' + serverStats.compilation.errors);
-    // TODO: handle more gracefully
-    process.exit(-1);
-  } else {
-    log.info('Launching SSR');
-  }
-
-  // ASSETS
-  const clientManifest = clientStats.toJson();
-
-  // SERVER SIDE ENTRYPOINT
-  if (Array.isArray(initRender)) {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    render = (require(getServerBundle(serverStats)) as any).default.bind(
-      undefined,
-      clientManifest,
-    );
-    initRender.forEach(init => render(...init.args).then(init.resolve));
-  } else {
-    render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
-      undefined,
-      clientManifest,
-    );
-  }
+  runServer();
 }
-
-const devServer = new WebpackDevServer(
-  // write to memory filesystem so we can import
-  {
-    ...webpackConfigs[0].devServer,
-    /*client: {
-      ...webpackConfigs[0].devServer?.client,
-      webSocketURL: {
-        ...webpackConfigs[0].devServer?.client.webSocketURL,
-        port: 8080,
-      },
-    },*/
-    devMiddleware: {
-      ...webpackConfigs[0]?.devServer?.devMiddleware,
-      outputFileSystem: {
-        ...fs,
-        join: path.join as any,
-      } as any as typeof fs,
-    },
-    setupMiddlewares: (middlewares, devServer) => {
-      if (!devServer) {
-        throw new Error('webpack-dev-server is not defined');
-      }
-
-      const otherRoutes = [
-        process.env.WEBPACK_PUBLIC_PATH,
-        ...Object.keys(webpackConfigs[0].devServer?.proxy ?? {}),
-      ];
-      // serve SSR for non-WEBPACK_PUBLIC_PATH
-      devServer.app?.get(
-        new RegExp(`^(?!${otherRoutes.join('|')})`),
-        handleErrors(async function (req: any, res: any) {
-          if (req.url.endsWith('favicon.ico')) {
-            res.statusCode = 404;
-            res.setHeader('Content-type', 'text/html');
-            res.send('not found');
-            return;
-          }
-          res.socket.on('error', (error: unknown) => {
-            console.error('Fatal', error);
-          });
-
-          await render(req, res);
-        }),
-      );
-
-      return middlewares;
-    },
-  },
-  compiler,
-);
-const runServer = async () => {
-  await devServer.start();
-  devServer.compiler.hooks.done.tap(
-    'Anansi Server',
-    (multiStats: webpack.MultiStats | webpack.Stats) => {
-      if (!multiStats) {
-        log.error('stats not send');
-        process.exit(-1);
-      }
-
-      if (!Object.hasOwn(multiStats, 'stats')) return;
-      if ((multiStats as webpack.MultiStats).stats.length > 1) {
-        try {
-          importRender((multiStats as webpack.MultiStats).stats);
-        } catch (e: any) {
-          log.error('Failed to load serve entrypoint');
-          throw e;
-        }
-      } else {
-        log.error('Only compiler one stat');
-      }
-    },
-  );
-};
-const stopServer = async () => {
-  log.info('Stopping server...');
-  await devServer.stop();
-  log.info('Server closed');
-};
-
-process.on('SIGINT', () => {
-  log.warn('Received SIGINT, devserver shutting down');
-  stopServer();
-  process.exit(-1);
-});
-
-runServer();

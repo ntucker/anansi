@@ -49,6 +49,10 @@
       "require": "./dist/server.js",
       "default": "./lib/index.server.js"
     },
+    "./scripts": {
+      "types": "./lib/scripts/index.d.ts",
+      "default": "./lib/scripts/index.js"
+    },
     "./package.json": "./package.json"
   },
   "keywords": [
