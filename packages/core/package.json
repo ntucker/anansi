@@ -23,6 +23,7 @@
     "README.md"
   ],
   "bin": {
+    "serve-anansi": "./lib/scripts/serve.js",
     "start-anansi": "./lib/scripts/startDevserver.js"
   },
   "sideEffects": false,
