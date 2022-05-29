@@ -11,6 +11,7 @@ import compress from 'compression';
 
 import 'cross-fetch/polyfill';
 import { Render } from './types';
+import getProxyMiddlewares from './getProxyMiddlewares';
 
 // run directly from node
 if (require.main === module) {
@@ -25,13 +26,24 @@ if (require.main === module) {
 
 export default function serve(
   entrypoint: string,
-  options: { serveAssets?: boolean } = {},
+  options: { serveAssets?: boolean; serveProxy?: boolean } = {},
 ) {
   const PORT = process.env.PORT || 8080;
 
   const loader = ora('Initializing').start();
 
-  const manifestPath = getManifestPathFromWebpackconfig();
+  const webpackConfig: (
+    env: any,
+    argv: any,
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+  ) => webpack.Configuration = require(require.resolve(
+    // TODO: use normal resolution algorithm to find webpack file
+    path.join(process.cwd(), 'webpack.config'),
+  ));
+
+  const manifestPath = getManifestPathFromWebpackconfig(
+    webpackConfig({}, { mode: 'production' }),
+  );
 
   const readFile = promisify(diskFs.readFile);
   let server: Server | undefined;
@@ -69,31 +81,9 @@ export default function serve(
     //@ts-ignore
     wrappingApp.use(compress());
 
-    // SERVER SIDE RENDERING
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const render: Render = require(path.join(
-      process.cwd(),
-      entrypoint,
-    )).default;
-    const handlers = [
-      handleErrors(async function (req: any, res: any) {
-        if (req.url.endsWith('favicon.ico')) {
-          res.statusCode = 404;
-          res.setHeader('Content-type', 'text/html');
-          res.send('not found');
-          return;
-        }
-        res.socket.on('error', (error: unknown) => {
-          console.error('Fatal', error);
-        });
-
-        await render(clientManifest, req, res);
-      }),
-    ];
-
     // ASSETS
     if (options.serveAssets) {
-      handlers.unshift(
+      wrappingApp.use(
         async (
           req: Request | IncomingMessage,
           res: any,
@@ -117,7 +107,7 @@ export default function serve(
               res.contentType(filename);
               res.send(fileContent);
             } catch (e) {
-              return next(e);
+              return next();
             }
           } else {
             next();
@@ -126,7 +116,43 @@ export default function serve(
       );
     }
 
-    wrappingApp.get('/*', ...handlers);
+    // PROXIES
+    if (options.serveProxy) {
+      const devConfig: webpack.Configuration = webpackConfig(
+        {},
+        { mode: 'development' },
+      );
+      if (devConfig.devServer?.proxy) {
+        const middlewares = getProxyMiddlewares(devConfig.devServer?.proxy);
+        if (middlewares) {
+          wrappingApp.use(...middlewares.map(({ middleware }) => middleware));
+        }
+      }
+    }
+
+    // SERVER SIDE RENDERING
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const render: Render = require(path.join(
+      process.cwd(),
+      entrypoint,
+    )).default;
+
+    wrappingApp.get(
+      '/*',
+      handleErrors(async function (req: any, res: any) {
+        if (req.url.endsWith('favicon.ico')) {
+          res.statusCode = 404;
+          res.setHeader('Content-type', 'text/html');
+          res.send('not found');
+          return;
+        }
+        res.socket.on('error', (error: unknown) => {
+          console.error('Fatal', error);
+        });
+
+        await render(clientManifest, req, res);
+      }),
+    );
 
     server = wrappingApp
       .listen(PORT, () => {
@@ -167,12 +193,9 @@ export default function serve(
   });
 }
 
-function getManifestPathFromWebpackconfig() {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const webpackConfig: webpack.Configuration = require(require.resolve(
-    // TODO: use normal resolution algorithm to find webpack file
-    path.join(process.cwd(), 'webpack.config'),
-  ))({}, { mode: 'production' });
+function getManifestPathFromWebpackconfig(
+  webpackConfig: webpack.Configuration,
+) {
   const manifestFilename: string =
     (
       webpackConfig?.plugins?.find(plugin => {

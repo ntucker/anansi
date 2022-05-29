@@ -21,8 +21,6 @@ import { BoundRender } from './types';
 // run directly from node
 if (require.main === module) {
   const entrypoint = process.argv[2];
-  //process.env.WEBPACK_PUBLIC_HOST = `http://localhost:${PORT}`; this breaks compatibility with stackblitz
-  process.env.WEBPACK_PUBLIC_PATH = '/assets/';
 
   if (!entrypoint) {
     console.log(`Usage: start-anansi <entrypoint-file>`);
@@ -169,13 +167,6 @@ export default function startDevServer(
     // write to memory filesystem so we can import
     {
       ...webpackConfigs[0].devServer,
-      /*client: {
-        ...webpackConfigs[0].devServer?.client,
-        webSocketURL: {
-          ...webpackConfigs[0].devServer?.client.webSocketURL,
-          port: 8080,
-        },
-      },*/
       devMiddleware: {
         ...webpackConfigs[0]?.devServer?.devMiddleware,
         outputFileSystem: {

@@ -106,12 +106,13 @@ program
   .command('serve')
   .description('runs server for SSR projects')
   .argument('<entrypath>', 'Path to entrypoint')
-  .option('-p, --pubPath <path>', 'Where to serve assets from')
+  .option('--pubPath <path>', 'Where to serve assets from')
   .option(
     '-d, --dev',
     'Run devserver rather than using previously compiled output',
   )
-  .option('-a, --serveAssets', '[only prod] also serves client assets')
+  .option('-a, --serveAssets', '[non-dev] also serves client assets')
+  .option('-p, --serveProxy', '[non-dev] uses webpack proxy config')
   .action(async (entrypath, options) => {
     try {
       const { serve, devServe } = await import('@anansi/core/scripts');
