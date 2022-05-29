@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.8.0...@anansi/core@0.9.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* --serveProxy: [non-dev] uses webpack proxy config ([774f826](https://github.com/ntucker/anansi/commit/774f82646542d8acfcb0ddceb6fc75fcc2851a01))
+* Add option to serve assets with production server ([bfb20eb](https://github.com/ntucker/anansi/commit/bfb20eb1564fc2c6b72fea79d0722ac6186797fe))
+
+
+### 💅 Enhancement
+
+* Handle root asset path ([a770c77](https://github.com/ntucker/anansi/commit/a770c77c4775b09ff86f26cfd5983eab5d211f74))
+
+
+### 🐛 Bug Fix
+
+* documentSpout options type ([6707d35](https://github.com/ntucker/anansi/commit/6707d3592f7f0ab772a10d623d1d765a9301c3ae))
+
+
+
 ## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.4...@anansi/core@0.8.0) (2022-05-29)
 
 

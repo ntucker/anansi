@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.2.0...@anansi/cli@1.3.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* --serveProxy: [non-dev] uses webpack proxy config ([774f826](https://github.com/ntucker/anansi/commit/774f82646542d8acfcb0ddceb6fc75fcc2851a01))
+* Add option to serve assets with production server ([bfb20eb](https://github.com/ntucker/anansi/commit/bfb20eb1564fc2c6b72fea79d0722ac6186797fe))
+
+
+
 ## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.70...@anansi/cli@1.2.0) (2022-05-29)
 
 

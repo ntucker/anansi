@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.0](https://github.com/ntucker/anansi/compare/example-react-18@2.4.0...example-react-18@2.5.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* --serveProxy: [non-dev] uses webpack proxy config ([774f826](https://github.com/ntucker/anansi/commit/774f82646542d8acfcb0ddceb6fc75fcc2851a01))
+* Add option to serve assets with production server ([bfb20eb](https://github.com/ntucker/anansi/commit/bfb20eb1564fc2c6b72fea79d0722ac6186797fe))
+
+
+
 ## [2.4.0](https://github.com/ntucker/anansi/compare/example-react-18@2.3.4...example-react-18@2.4.0) (2022-05-29)
 
 
