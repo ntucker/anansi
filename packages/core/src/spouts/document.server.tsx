@@ -8,12 +8,14 @@ import Document from './DocumentComponent';
 type NeededProps = {
   matchedRoutes: Route<any>[];
   title?: string;
+  charSet?: string;
 } & ResolveProps;
 
 export default function DocumentSpout(options: {
   head?: React.ReactNode;
   title: string;
   rootId: string;
+  charSet: string;
 }) {
   return function <T extends NeededProps>(
     next: (props: ServerProps) => Promise<T>,

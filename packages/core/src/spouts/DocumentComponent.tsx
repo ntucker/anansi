@@ -4,6 +4,7 @@ type Props = {
   head: React.ReactNode;
   title: string;
   rootId: string;
+  charSet: string;
 };
 
 export default function Document({
@@ -12,10 +13,12 @@ export default function Document({
   children,
   title,
   rootId,
+  charSet,
 }: Props) {
   return (
     <html>
       <head>
+        <meta charSet={charSet} />
         {head}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
@@ -42,10 +45,13 @@ export default function Document({
 Document.defaultProps = {
   head: (
     <>
-      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="shortcut icon" href="/assets/favicon.ico" />
+      <link
+        rel="shortcut icon"
+        href={`${process.env.WEBPACK_PUBLIC_PATH ?? '/'}favicon.ico`}
+      />
     </>
   ),
+  charSet: 'utf-8',
   rootId: 'anansi-root',
 };
