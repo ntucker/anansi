@@ -17,9 +17,10 @@ jobs:
           sudo corepack enable
           yarn install --immutable
           yarn build:pkg
-          yarn build:sizecompare
+          yarn workspace example-react-18 run build
+          yarn workspace example-react-18 run build:server
       - name: run Lighthouse CI
-        working-directory: ./examples/typescript
+        working-directory: ./examples/concurrent
         run: |
           npx @lhci/cli@0.7.x autorun
         env:
