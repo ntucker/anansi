@@ -14,7 +14,7 @@ import { Render } from './types';
 
 const entrypoint = process.argv[2];
 const manifestPath = process.argv[3];
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 if (!entrypoint || !manifestPath) {
   console.log(
