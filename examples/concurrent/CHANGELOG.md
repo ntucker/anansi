@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/ntucker/anansi/compare/example-react-18@2.3.4...example-react-18@2.4.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* Add anansi serve command ([#1525](https://github.com/ntucker/anansi/issues/1525)) ([ac5a396](https://github.com/ntucker/anansi/commit/ac5a396f9640ce18058813c1594d49367a8aa468))
+* Add production node service ([bceeb56](https://github.com/ntucker/anansi/commit/bceeb56c23c8f8c3dc4a15d35dc8877f277e3d2f))
+
+
+
 ### [2.3.4](https://github.com/ntucker/anansi/compare/example-react-18@2.3.3...example-react-18@2.3.4) (2022-05-28)
 
 **Note:** Version bump only for package example-react-18

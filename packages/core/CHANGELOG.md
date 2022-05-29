@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.4...@anansi/core@0.8.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* Add anansi serve command ([#1525](https://github.com/ntucker/anansi/issues/1525)) ([ac5a396](https://github.com/ntucker/anansi/commit/ac5a396f9640ce18058813c1594d49367a8aa468))
+* Add charSet option to documentSpout ([51d3168](https://github.com/ntucker/anansi/commit/51d31681d27144d06b8ed4c7da9aae43fd10f12b))
+* Add production node service ([bceeb56](https://github.com/ntucker/anansi/commit/bceeb56c23c8f8c3dc4a15d35dc8877f277e3d2f))
+* Handle devserver proxy ([e7c5b38](https://github.com/ntucker/anansi/commit/e7c5b38cdb60b236db15ffb28622889b0b771515))
+
+
+
 ### [0.7.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.3...@anansi/core@0.7.4) (2022-05-28)
 
 

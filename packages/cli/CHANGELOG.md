@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.70...@anansi/cli@1.2.0) (2022-05-29)
+
+
+### 🚀 Features
+
+* Add anansi serve command ([#1525](https://github.com/ntucker/anansi/issues/1525)) ([ac5a396](https://github.com/ntucker/anansi/commit/ac5a396f9640ce18058813c1594d49367a8aa468))
+
+
+
 ### [1.1.70](https://github.com/ntucker/anansi/compare/@anansi/cli@1.1.69...@anansi/cli@1.1.70) (2022-05-28)
 
 
