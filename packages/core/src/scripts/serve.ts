@@ -23,7 +23,10 @@ if (require.main === module) {
   serve(entrypoint);
 }
 
-export default function serve(entrypoint: string) {
+export default function serve(
+  entrypoint: string,
+  options: { serveAssets?: boolean } = {},
+) {
   const PORT = process.env.PORT || 8080;
 
   const loader = ora('Initializing').start();
@@ -67,23 +70,25 @@ export default function serve(entrypoint: string) {
     wrappingApp.use(compress());
 
     // ASSETS
-    const assetRoute = async (req: Request | IncomingMessage, res: any) => {
-      const filename =
-        req.url?.substr((process.env.WEBPACK_PUBLIC_PATH as string).length) ??
-        '';
-      const assetPath = path.join(clientManifest.outputPath ?? '', filename);
+    if (options.serveAssets) {
+      const assetRoute = async (req: Request | IncomingMessage, res: any) => {
+        const filename =
+          req.url?.substr((process.env.WEBPACK_PUBLIC_PATH as string).length) ??
+          '';
+        const assetPath = path.join(clientManifest.outputPath ?? '', filename);
 
-      try {
-        const fileContent = (await readFile(assetPath)).toString();
-        res.contentType(filename);
-        res.send(fileContent);
-      } catch (e) {
-        res.status(404);
-        res.send(e);
-        return;
-      }
-    };
-    wrappingApp.get(`${process.env.WEBPACK_PUBLIC_PATH}*`, assetRoute);
+        try {
+          const fileContent = (await readFile(assetPath)).toString();
+          res.contentType(filename);
+          res.send(fileContent);
+        } catch (e) {
+          res.status(404);
+          res.send(e);
+          return;
+        }
+      };
+      wrappingApp.get(`${process.env.WEBPACK_PUBLIC_PATH}*`, assetRoute);
+    }
 
     // SERVER SIDE RENDERING
     // eslint-disable-next-line @typescript-eslint/no-var-requires

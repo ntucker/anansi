@@ -111,6 +111,7 @@ program
     '-d, --dev',
     'Run devserver rather than using previously compiled output',
   )
+  .option('-a, --serveAssets', '[only prod] also serves client assets')
   .action(async (entrypath, options) => {
     try {
       const { serve, devServe } = await import('@anansi/core/scripts');
@@ -122,7 +123,7 @@ program
       if (options.dev) {
         devServe(entrypath);
       } else {
-        serve(entrypath);
+        serve(entrypath, options);
       }
     } catch (error) {
       if (error.code === 'ERR_MODULE_NOT_FOUND') {
