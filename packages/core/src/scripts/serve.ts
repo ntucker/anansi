@@ -69,35 +69,13 @@ export default function serve(
     //@ts-ignore
     wrappingApp.use(compress());
 
-    // ASSETS
-    if (options.serveAssets) {
-      const assetRoute = async (req: Request | IncomingMessage, res: any) => {
-        const filename =
-          req.url?.substr((process.env.WEBPACK_PUBLIC_PATH as string).length) ??
-          '';
-        const assetPath = path.join(clientManifest.outputPath ?? '', filename);
-
-        try {
-          const fileContent = (await readFile(assetPath)).toString();
-          res.contentType(filename);
-          res.send(fileContent);
-        } catch (e) {
-          res.status(404);
-          res.send(e);
-          return;
-        }
-      };
-      wrappingApp.get(`${process.env.WEBPACK_PUBLIC_PATH}*`, assetRoute);
-    }
-
     // SERVER SIDE RENDERING
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const render: Render = require(path.join(
       process.cwd(),
       entrypoint,
     )).default;
-    wrappingApp.get(
-      '/*',
+    const handlers = [
       handleErrors(async function (req: any, res: any) {
         if (req.url.endsWith('favicon.ico')) {
           res.statusCode = 404;
@@ -111,7 +89,44 @@ export default function serve(
 
         await render(clientManifest, req, res);
       }),
-    );
+    ];
+
+    // ASSETS
+    if (options.serveAssets) {
+      handlers.unshift(
+        async (
+          req: Request | IncomingMessage,
+          res: any,
+          next: NextFunction,
+        ) => {
+          const filename =
+            req.url?.substr(
+              (process.env.WEBPACK_PUBLIC_PATH as string).length,
+            ) ?? '';
+          const assetPath = path.join(
+            clientManifest.outputPath ?? '',
+            filename,
+          );
+
+          if (
+            diskFs.existsSync(assetPath) &&
+            !diskFs.lstatSync(assetPath).isDirectory()
+          ) {
+            try {
+              const fileContent = (await readFile(assetPath)).toString();
+              res.contentType(filename);
+              res.send(fileContent);
+            } catch (e) {
+              return next(e);
+            }
+          } else {
+            next();
+          }
+        },
+      );
+    }
+
+    wrappingApp.get('/*', ...handlers);
 
     server = wrappingApp
       .listen(PORT, () => {
