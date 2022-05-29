@@ -177,9 +177,13 @@ const devServer = new WebpackDevServer(
         throw new Error('webpack-dev-server is not defined');
       }
 
+      const otherRoutes = [
+        process.env.WEBPACK_PUBLIC_PATH,
+        ...Object.keys(webpackConfigs[0].devServer?.proxy ?? {}),
+      ];
       // serve SSR for non-WEBPACK_PUBLIC_PATH
       devServer.app?.get(
-        new RegExp(`^(?!${process.env.WEBPACK_PUBLIC_PATH})`),
+        new RegExp(`^(?!${otherRoutes.join('|')})`),
         handleErrors(async function (req: any, res: any) {
           if (req.url.endsWith('favicon.ico')) {
             res.statusCode = 404;
