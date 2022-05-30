@@ -5,3 +5,4 @@ export { default as lazy } from './lazyPage';
 export { default as RouteProvider } from './RouteProvider';
 export { default as useShowLoading } from './useShowLoading';
 export { default as MatchedRoute } from './MatchedRoute';
+export { default as ErrorBoundary } from './ErrorBoundary';
