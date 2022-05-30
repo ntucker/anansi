@@ -1,6 +1,7 @@
 import { Route, RouteProvider, RouteController } from '@anansi/router';
 import React from 'react';
 import { createBrowserHistory } from 'history';
+import type { Update } from 'history';
 
 import type { ResolveProps, CreateRouter } from './types';
 
@@ -10,6 +11,7 @@ export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;
   useResolveWith: () => ResolveWith;
   createRouter: CreateRouter<ResolveWith>;
+  onChange?: (update: Update, callback: () => void | undefined) => void;
 }) {
   const createRouteComponent = (
     router: RouteController<Route<ResolveWith, any>>,
@@ -18,7 +20,11 @@ export default function routerSpout<ResolveWith>(options: {
       const resolveWith = options.useResolveWith();
 
       return (
-        <RouteProvider router={router} resolveWith={resolveWith}>
+        <RouteProvider
+          router={router}
+          resolveWith={resolveWith}
+          onChange={options.onChange}
+        >
           {children}
         </RouteProvider>
       );

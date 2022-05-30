@@ -10,12 +10,14 @@ type Props<ResolveWith> = {
   children: React.ReactNode;
   resolveWith: ResolveWith;
   router: RouteController<Route<ResolveWith>>;
+  onChange?: (update: Update, callback: () => void | undefined) => void;
 };
 
 function RouteProvider<ResolveWith>({
   children,
   router,
   resolveWith,
+  onChange,
 }: Props<ResolveWith>) {
   const preloadMatch = useCallback(
     (match: Route<ResolveWith>) => {
@@ -29,17 +31,17 @@ function RouteProvider<ResolveWith>({
 
   const [isPending, startTransition] = useTransition();
   const transitionPathname = useCallback(
-    ({ location }: Update, callback: () => void) => {
+    (update: Update, callback: () => void) => {
       // fetch as transition/render
-      const matches = router.getMatchedRoutes(location.pathname);
+      const matches = router.getMatchedRoutes(update.location.pathname);
       if (matches.length) {
         matches.forEach(match => preloadMatch(match));
       }
 
       // transition begins
-      startTransition(callback);
+      startTransition(onChange ? () => onChange(update, callback) : callback);
     },
-    [preloadMatch, router],
+    [preloadMatch, router, onChange],
   );
 
   return (

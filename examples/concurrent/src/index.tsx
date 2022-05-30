@@ -14,7 +14,10 @@ const appSpout = () => Promise.resolve({ app });
 
 const spouts = documentSpout({ title: 'anansi' })(
   restHooksSpout()(
-    routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+    routerSpout({
+      useResolveWith: useController,
+      createRouter,
+    })(appSpout),
   ),
 );
 
