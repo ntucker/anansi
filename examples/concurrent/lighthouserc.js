@@ -4,7 +4,7 @@ module.exports = {
       // collect options here
       //staticDistDir: 'dist',
       //isSinglePageApplication: true,
-      startServerCommand: 'yarn start:prod',
+      startServerCommand: 'yarn start:server',
       startServerReadyPattern: 'Listening at',
       url: [
         'http://localhost:8080',
