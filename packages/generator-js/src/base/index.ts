@@ -1,5 +1,3 @@
-import Generator from 'yeoman-generator';
-
 import { InstallPeersMixin } from '../utils';
 import { ConfigureGenerator } from '../app';
 
@@ -11,7 +9,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
   }
 
   async prompting() {
-    const prompts: Array<Generator.Question> = [
+    const prompts = [
       {
         type: 'checkbox',
         name: 'features',
@@ -20,11 +18,18 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
           { name: 'storybook', value: 'storybook' },
           { name: 'testing (Jest)', value: 'testing' },
           { name: 'Continuous Integration', value: 'CI' },
-        ] as const,
-        default: ['testing', 'CI'],
+        ] as { name: string; value: string }[],
+        default: ['SSR', 'testing', 'CI'] as string[],
         store: true,
       },
-    ];
+    ] as const;
+    if (this.options.projectType === 'SPA') {
+      prompts[0].choices.unshift({
+        name: 'Server Side Rendering',
+        value: 'SSR',
+      });
+      prompts[0].default.unshift('SSR');
+    }
 
     const props = await this.prompt(prompts);
     this.config.set('features', props.features);

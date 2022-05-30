@@ -1,7 +1,21 @@
-import { CacheProvider } from 'rest-hooks';
+import { CacheProvider, useController } from 'rest-hooks';
+import { RouteProvider } from '@anansi/router';
 import type { ReactNode } from 'react';
+import { createBrowserHistory } from 'history';
+import Boundary from 'components/Boundary';
 
-import Boundary from './Boundary';
+import { createRouter } from './routing';
+
+const router = createRouter(createBrowserHistory());
+function Router({ children }: { children: React.ReactNode }) {
+  const controller = useController();
+
+  return (
+    <RouteProvider router={router} resolveWith={controller}>
+      {children}
+    </RouteProvider>
+  );
+}
 
 type ComponentProps<T> = T extends
   | React.ComponentType<infer P>
@@ -14,7 +28,9 @@ type Props = { children: ReactNode } & ComponentProps<typeof CacheProvider>;
 export default function RootProvider({ children, ...rest }: Props) {
   return (
     <CacheProvider {...rest}>
-      <Boundary>{children}</Boundary>
+      <Router>
+        <Boundary fallback={null}>{children}</Boundary>
+      </Router>
     </CacheProvider>
   );
 }

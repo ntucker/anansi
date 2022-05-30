@@ -71,22 +71,22 @@ module.exports = class WebpackGenerator extends (
   }
 
   async writingDependencies() {
-    await this.addDevDependencies(['webpack-cli', 'webpack-dev-server']);
-    if (this?.props?.style === 'linaria') {
-      await this.addDevDependencies([
-        '@linaria/core',
-        '@linaria/react',
-        '@linaria/babel-preset',
-        '@linaria/shaker',
-      ]);
+    await this.addDevDependencies([
+      'webpack',
+      'webpack-cli',
+      'webpack-dev-server',
+      '@anansi/webpack-config',
+    ]);
+    if (!this.config.get('features').includes('SSR')) {
+      await this.addDevDependencies(['serve']);
     }
-    if (this.config.get('webpack-version')) {
+    if (this?.props?.style === 'linaria') {
       await this.addDevDependencies({
-        webpack: this.config.get('webpack-version'),
-        '@anansi/webpack-config': '^5',
+        '@linaria/core': '^3.0.0-beta.18',
+        '@linaria/react': '^3.0.0-beta.18',
+        '@linaria/babel-preset': '^3.0.0-beta.18',
+        '@linaria/shaker': '^3.0.0-beta.18',
       });
-    } else {
-      await this.addDevDependencies(['webpack', '@anansi/webpack-config']);
     }
   }
 

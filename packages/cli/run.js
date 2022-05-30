@@ -119,7 +119,7 @@ program
 
       if (options.pubPath) process.env.WEBPACK_PUBLIC_PATH = options.pubPath;
       else if (!process.env.WEBPACK_PUBLIC_PATH)
-        process.env.WEBPACK_PUBLIC_PATH = '/assets/';
+        process.env.WEBPACK_PUBLIC_PATH = options.dev ? '/assets/' : '/';
 
       if (options.dev) {
         devServe(entrypath);

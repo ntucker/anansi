@@ -1,11 +1,16 @@
 import { BetterGenerator } from '../utils';
-import { DEFAULT_ASSET_PATH, DEFAULT_ROOT_PATH } from '../defaults';
+import {
+  DEFAULT_ASSET_PATH,
+  DEFAULT_ROOT_PATH,
+  DEFAULT_SERVER_PATH,
+} from '../defaults';
 
 interface Options {
   appName: string;
   githubDomain: string;
   'root-path': string;
   'build-path': string;
+  'server-path': string;
   'npm-namespace': string;
 }
 
@@ -26,6 +31,12 @@ export default class extends BetterGenerator<Options> {
       type: String,
       default: DEFAULT_ASSET_PATH,
     });
+    this.option('server-path', {
+      alias: 's',
+      description: 'Server build destination',
+      type: String,
+      default: DEFAULT_SERVER_PATH,
+    });
     this.option('npm-namespace', {
       alias: 'n',
       description: 'NPM namespace like @anansi (be sure to include the @)',
@@ -43,6 +54,11 @@ export default class extends BetterGenerator<Options> {
       this.config.set('assetPath', this.options['build-path']);
     } else if (!this.config.get('assetPath')) {
       this.config.set('assetPath', DEFAULT_ASSET_PATH);
+    }
+    if (this.options['server-path']) {
+      this.config.set('serverPath', this.options['server-path']);
+    } else if (!this.config.get('serverPath')) {
+      this.config.set('serverPath', DEFAULT_ASSET_PATH);
     }
     this.config.set('appName', this.options.appName);
     this.config.set('githubDomain', this.options.githubDomain ?? 'github.com');

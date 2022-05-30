@@ -2,19 +2,14 @@ import { memo, Suspense } from 'react';
 import type { ReactNode } from 'react';
 import { ErrorBoundary } from '@anansi/router';
 
-import NotFound from 'components/NotFound';
+import NotFound from './NotFound';
 
 function Boundary({
   children,
   fallback,
 }: {
   children: ReactNode;
-  fallback:
-    | boolean
-    | React.ReactChild
-    | React.ReactFragment
-    | React.ReactPortal
-    | null;
+  fallback: ReactNode | undefined;
 }) {
   return (
     <Suspense fallback={fallback}>
