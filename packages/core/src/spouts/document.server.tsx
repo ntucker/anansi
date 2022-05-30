@@ -13,7 +13,7 @@ type NeededProps = {
 export default function DocumentSpout(options: {
   head?: React.ReactNode;
   title: string;
-  rootId: string;
+  rootId?: string;
   charSet?: string;
 }) {
   return function <T extends NeededProps>(
