@@ -122,12 +122,12 @@ export default function startDevServer(
     };
   }
 
-  const initRender:
+  let initRender:
     | { args: Parameters<BoundRender>; resolve: () => void }[]
     | undefined = [];
   let render: BoundRender = (...args) =>
     new Promise(resolve => {
-      initRender.push({ args, resolve });
+      initRender?.push({ args, resolve });
     });
 
   function importRender(stats: webpack.Stats[]) {
@@ -155,6 +155,7 @@ export default function startDevServer(
         clientManifest,
       );
       initRender.forEach(init => render(...init.args).then(init.resolve));
+      initRender = undefined;
     } else {
       render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
         undefined,
