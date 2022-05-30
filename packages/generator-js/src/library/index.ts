@@ -62,23 +62,16 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       'rimraf',
     ]);
     if (this.config.get('features').includes('storybook')) {
-      const reactVersion =
-        this.config.get('reactMode') === 'legacy' ||
-        !this.config.get('reactMode')
-          ? ''
-          : 'experimental';
-      await this.addDevDependencies({
-        '@types/react': reactVersion,
-        '@types/react-dom': reactVersion,
-        react: reactVersion,
-        'react-dom': reactVersion,
-      });
-      const reactPeerV =
-        reactVersion === 'experimental' ? '^18.0.0' : '^17.0.0';
+      await this.addDevDependencies([
+        '@types/react',
+        '@types/react-dom',
+        'react',
+        'react-dom',
+      ]);
       this.packageJson.merge({
         peerDependencies: {
-          react: reactPeerV,
-          'react-dom': reactPeerV,
+          react: '^18.0.0',
+          'react-dom': '^18.0.0',
         },
       });
     }

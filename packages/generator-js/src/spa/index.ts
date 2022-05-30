@@ -13,33 +13,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     this.config.set('spa', true);
   }
 
-  async prompting() {
-    const prompts = [
-      // TODO: actually do something with this
-      {
-        type: 'list',
-        name: 'reactMode',
-        message:
-          'What version of React?\nMore info: https://reactjs.org/blog/2022/03/29/react-v18.html',
-        default: 'concurrent',
-        choices: [
-          {
-            name: 'Concurrent (v18.0)',
-            value: 'concurrent',
-          },
-          {
-            name: 'Legacy (v17.0)',
-            value: 'legacy',
-          },
-        ],
-        store: true,
-      },
-    ];
-
-    this.props = await this.prompt(prompts);
-    this.config.set('reactMode', this?.props?.reactMode);
-  }
-
   initializing() {
     this.composeWith(require.resolve('../webpack'), this.options);
     if (this.options.branded) {
@@ -70,34 +43,24 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   async writingDependencies() {
-    const reactVersion =
-      // falsy is same as 'resolve latest'
-      this.config.get('reactMode') === 'legacy' ? '' : '18.0.0';
-
-    const dependencies: Record<string, string> = {
-      'rest-hooks': '',
-      '@rest-hooks/rest': '',
-      '@rest-hooks/core': '',
-      '@rest-hooks/endpoint': '',
-      react: reactVersion,
-      'react-dom': reactVersion,
-    };
-    if (reactVersion === '18.0.0') {
-      dependencies['@rest-hooks/img'] = '';
-    }
     await Promise.all([
       this.addDevDependencies([
         'serve',
         '@types/react',
         '@types/react-dom',
         '@rest-hooks/test',
+        'react-test-renderer',
+        'react-refresh',
       ]),
-      await this.addDevDependencies({
-        'react-test-renderer': reactVersion,
-        'react-refresh':
-          this.config.get('reactMode') === 'legacy' ? '' : '^0.12.0',
-      }),
-      await this.addDependencies(dependencies),
+      await this.addDependencies([
+        'rest-hooks',
+        '@rest-hooks/rest',
+        '@rest-hooks/core',
+        '@rest-hooks/endpoint',
+        'react',
+        'react-dom',
+        '@rest-hooks/img',
+      ]),
     ]);
   }
 
