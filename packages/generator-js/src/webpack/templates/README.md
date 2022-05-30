@@ -20,7 +20,7 @@ yarn build
 #### Run prod: (after build)
 
 ```bash
-yarn start:prod
+yarn start:server
 ```
 
 #### Analyze production bundle sizes:

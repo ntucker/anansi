@@ -1,9 +1,12 @@
 const { makeConfig } = require('@anansi/webpack-config');
+const nodeExternals = require('webpack-node-externals');
 
 const options = {
   basePath: '<%= rootPath %>',
   buildDir: '<%= assetPath %>/',
-  htmlOptions: { title: '<%= appName %>', scriptLoading: 'defer', template: 'index.ejs' },
+  serverDir: '<%= serverPath %>/',
+  <% if (!features.includes('SSR')) { %>
+  htmlOptions: { title: '<%= appName %>', scriptLoading: 'defer', template: 'index.ejs' },<% } %>
   globalStyleDir: 'style',
   <% if (style === 'sass') { %>
   sassResources: [`${__dirname}/src/style/export.scss`],
@@ -16,6 +19,14 @@ module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (!config.experiments) config.experiments = {};
   config.experiments.backCompat = false;
+
+  if (argv?.target?.includes('node')) {
+    config.externals = [
+      nodeExternals({
+        allowlist: [/^@anansi\/core\/server/, /^path-to-regexp/, /\.css$/],
+      }),
+    ];
+  }
   return config;
 };
 

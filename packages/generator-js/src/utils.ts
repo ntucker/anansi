@@ -4,7 +4,7 @@ import execa from 'execa';
 import pacote from 'pacote';
 import type { Editor } from 'mem-fs-editor';
 
-interface FsEditor extends Editor {
+export interface FsEditor extends Editor {
   extendJSONTpl(
     from: string,
     to: string,

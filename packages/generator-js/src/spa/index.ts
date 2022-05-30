@@ -15,6 +15,9 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
 
   initializing() {
     this.composeWith(require.resolve('../webpack'), this.options);
+    if (this.config.get('features').includes('SSR')) {
+      this.composeWith(require.resolve('../ssr'), this.options);
+    }
     if (this.options.branded) {
       this.composeWith(require.resolve('../anansi-splash'), this.options);
     }
@@ -45,7 +48,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   async writingDependencies() {
     await Promise.all([
       this.addDevDependencies([
-        'serve',
         '@types/react',
         '@types/react-dom',
         '@rest-hooks/test',
@@ -53,6 +55,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         'react-refresh',
       ]),
       await this.addDependencies([
+        '@anansi/router',
         'rest-hooks',
         '@rest-hooks/rest',
         '@rest-hooks/core',
