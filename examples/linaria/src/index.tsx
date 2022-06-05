@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import loadPolyfills from '@anansi/polyfill';
 
 import App from './App';
@@ -7,4 +7,4 @@ async function init() {
   await loadPolyfills();
 }
 init();
-ReactDOM.render(<App />, document.body);
+ReactDOM.createRoot(document.body).render(<App />);
