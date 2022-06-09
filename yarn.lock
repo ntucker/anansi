@@ -138,7 +138,7 @@ __metadata:
     chalk: ^4.0.0
     compression: ^1.7.4
     cross-fetch: ^3.1.5
-    fs-monkey: ^1.0.3
+    fs-require: ^1.4.0
     history: ^5.3.0
     http-proxy-middleware: ^2.0.6
     jest: 28.1.1
@@ -15124,7 +15124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-monkey@npm:1.0.3, fs-monkey@npm:^1.0.0, fs-monkey@npm:^1.0.3":
+"fs-monkey@npm:1.0.3, fs-monkey@npm:^1.0.0":
   version: 1.0.3
   resolution: "fs-monkey@npm:1.0.3"
   checksum: cf50804833f9b88a476911ae911fe50f61a98d986df52f890bd97e7262796d023698cb2309fa9b74fdd8974f04315b648748a0a8ee059e7d5257b293bfc409c0
@@ -15135,6 +15135,13 @@ __metadata:
   version: 1.1.0
   resolution: "fs-readdir-recursive@npm:1.1.0"
   checksum: 29d50f3d2128391c7fc9fd051c8b7ea45bcc8aa84daf31ef52b17218e20bfd2bd34d02382742801954cc8d1905832b68227f6b680a666ce525d8b6b75068ad1e
+  languageName: node
+  linkType: hard
+
+"fs-require@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "fs-require@npm:1.4.0"
+  checksum: e30e038fb36971e1e2782fe0176e6f95c8b7bb15ec1746d150ccd8960518750eeb8b17d9dc05e5fd91f5db5d55c7aa2a62618b7341359188ff3cb436d08e2d79
   languageName: node
   linkType: hard
 

@@ -7,12 +7,12 @@ import webpack, { MultiCompiler } from 'webpack';
 import { createFsFromVolume, Volume } from 'memfs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import type { NextFunction } from 'express';
-import { patchRequire } from 'fs-monkey';
 import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import WebpackDevServer from 'webpack-dev-server';
 import logging from 'webpack/lib/logging/runtime';
+import { createFsRequire } from 'fs-require';
 
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';
@@ -46,7 +46,7 @@ export default function startDevServer(
   const fs = createFsFromVolume(volume);
   ufs.use(diskFs).use(fs as any);
 
-  patchRequire(ufs);
+  const fsRequire = createFsRequire(ufs);
   const readFile = promisify(ufs.readFile);
   let server: Server | undefined;
 
@@ -149,9 +149,9 @@ export default function startDevServer(
     const serverEntry = getServerBundle(serverStats);
     // reload modules
     // TODO: should we just reset entire cache each time? then we could avoid needing one output
-    delete require.cache[require.resolve(serverEntry)];
+    delete fsRequire.cache[fsRequire.resolve(serverEntry)];
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    render = (require(serverEntry) as any).default.bind(
+    render = (fsRequire(serverEntry) as any).default.bind(
       undefined,
       clientManifest,
     );
