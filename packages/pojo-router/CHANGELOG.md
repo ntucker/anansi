@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.9](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.8...@pojo-router/core@0.5.9) (2022-06-09)
+
+
+### 📦 Package
+
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+
+
+
 ### [0.5.8](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.7...@pojo-router/core@0.5.8) (2022-05-29)
 
 **Note:** Version bump only for package @pojo-router/core

@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.9.0...@anansi/core@0.10.0) (2022-06-09)
+
+
+### 🚀 Features
+
+* add router onChange() ([5c981ed](https://github.com/ntucker/anansi/commit/5c981ed587b55a80fd4f604fc24fb143d2355a06))
+
+
+### 💅 Enhancement
+
+* Do require cache invalidation ourselves ([22b4e4c](https://github.com/ntucker/anansi/commit/22b4e4c2e4ce3d7de999813bd4e9397e770fe788))
+* Improve devserver node 'require' reliability ([#1538](https://github.com/ntucker/anansi/issues/1538)) ([96b6a54](https://github.com/ntucker/anansi/commit/96b6a54562b97f116fc987b41fbf7547770debc8))
+
+
+### 🐛 Bug Fix
+
+* rootId is optional ([ff43166](https://github.com/ntucker/anansi/commit/ff43166d457ac93ffca2eae0738d81e734b6936e))
+* SSR hot-reloading ([9809ad5](https://github.com/ntucker/anansi/commit/9809ad5798e9082554f0358fcd9c301a87e4acbf))
+
+
+### 📦 Package
+
+* Move compression to correct package ([1ce18ba](https://github.com/ntucker/anansi/commit/1ce18ba9d7dc4d04682184bc1fa74354684294bb))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+
+
+
 ## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.8.0...@anansi/core@0.9.0) (2022-05-29)
 
 

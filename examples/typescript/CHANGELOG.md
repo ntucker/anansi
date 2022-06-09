@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.14](https://github.com/ntucker/anansi/compare/example-typescript@10.0.13...example-typescript@10.0.14) (2022-06-09)
+
+
+### 📦 Package
+
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* linaria, sass ([#1537](https://github.com/ntucker/anansi/issues/1537)) ([4e9b77a](https://github.com/ntucker/anansi/commit/4e9b77a51aaafb8d8a4bdcb0791315fff984c423))
+* Update `@types/jest` to v28 ([#1540](https://github.com/ntucker/anansi/issues/1540)) ([549389a](https://github.com/ntucker/anansi/commit/549389a71acf7a9d4d585dc1ad6fcfeb6c118e75))
+* Update all non-major dependencies ([#1529](https://github.com/ntucker/anansi/issues/1529)) ([f9e4bef](https://github.com/ntucker/anansi/commit/f9e4bef904b70c93b60f3a3f29ccb506a45368c8))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+* Update storybook monorepo to v6.5.6 ([#1527](https://github.com/ntucker/anansi/issues/1527)) ([9123822](https://github.com/ntucker/anansi/commit/9123822491d462013b3f7cd09073b645c7200102))
+* Update storybook monorepo to v6.5.7 ([#1533](https://github.com/ntucker/anansi/issues/1533)) ([529d92b](https://github.com/ntucker/anansi/commit/529d92b0bae23c1d6d5f920b67790ada51b028e6))
+* Update storybook monorepo to v6.5.8 ([#1536](https://github.com/ntucker/anansi/issues/1536)) ([9a665a7](https://github.com/ntucker/anansi/commit/9a665a76821bdd5adcfc5708dff4bba31f56e585))
+
+
+
 ### [10.0.13](https://github.com/ntucker/anansi/compare/example-typescript@10.0.12...example-typescript@10.0.13) (2022-05-29)
 
 **Note:** Version bump only for package example-typescript

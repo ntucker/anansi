@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.3.0...@anansi/cli@1.4.0) (2022-06-09)
+
+
+### 🚀 Features
+
+* SSR feature to codegen ([#1528](https://github.com/ntucker/anansi/issues/1528)) ([ad4e886](https://github.com/ntucker/anansi/commit/ad4e886e073ca17b26d6c33828836a06304c1cee))
+
+
+
 ## [1.3.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.2.0...@anansi/cli@1.3.0) (2022-05-29)
 
 

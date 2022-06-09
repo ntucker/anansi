@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.0](https://github.com/ntucker/anansi/compare/example-react-18@2.5.0...example-react-18@2.6.0) (2022-06-09)
+
+
+### 🚀 Features
+
+* add router onChange() ([5c981ed](https://github.com/ntucker/anansi/commit/5c981ed587b55a80fd4f604fc24fb143d2355a06))
+* SSR feature to codegen ([#1528](https://github.com/ntucker/anansi/issues/1528)) ([ad4e886](https://github.com/ntucker/anansi/commit/ad4e886e073ca17b26d6c33828836a06304c1cee))
+
+
+### 📦 Package
+
+* Downgrade linaria until fixed ([1df0b64](https://github.com/ntucker/anansi/commit/1df0b647c9afe08eecc2a3f335fcc811be6c0a8c))
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* linaria, sass ([#1537](https://github.com/ntucker/anansi/issues/1537)) ([4e9b77a](https://github.com/ntucker/anansi/commit/4e9b77a51aaafb8d8a4bdcb0791315fff984c423))
+* Move compression to correct package ([1ce18ba](https://github.com/ntucker/anansi/commit/1ce18ba9d7dc4d04682184bc1fa74354684294bb))
+* Update `@types/jest` to v28 ([#1540](https://github.com/ntucker/anansi/issues/1540)) ([549389a](https://github.com/ntucker/anansi/commit/549389a71acf7a9d4d585dc1ad6fcfeb6c118e75))
+* Update all non-major dependencies ([#1529](https://github.com/ntucker/anansi/issues/1529)) ([f9e4bef](https://github.com/ntucker/anansi/commit/f9e4bef904b70c93b60f3a3f29ccb506a45368c8))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+
+
+
 ## [2.5.0](https://github.com/ntucker/anansi/compare/example-react-18@2.4.0...example-react-18@2.5.0) (2022-05-29)
 
 

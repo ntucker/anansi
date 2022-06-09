@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.7...@anansi/jest-preset@0.7.8) (2022-06-09)
+
+
+### 📦 Package
+
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+
+
+
 ### [0.7.7](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.6...@anansi/jest-preset@0.7.7) (2022-05-29)
 
 **Note:** Version bump only for package @anansi/jest-preset

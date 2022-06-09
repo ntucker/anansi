@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.118](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.117...@anansi/polyfill@1.0.118) (2022-06-09)
+
+
+### 📦 Package
+
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* linaria, sass ([#1537](https://github.com/ntucker/anansi/issues/1537)) ([4e9b77a](https://github.com/ntucker/anansi/commit/4e9b77a51aaafb8d8a4bdcb0791315fff984c423))
+* Update all non-major dependencies ([#1529](https://github.com/ntucker/anansi/issues/1529)) ([f9e4bef](https://github.com/ntucker/anansi/commit/f9e4bef904b70c93b60f3a3f29ccb506a45368c8))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+
+
+
 ### [1.0.117](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.116...@anansi/polyfill@1.0.117) (2022-05-29)
 
 **Note:** Version bump only for package @anansi/polyfill

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.23](https://github.com/ntucker/anansi/compare/example-linaria@4.1.22...example-linaria@4.1.23) (2022-06-09)
+
+
+### 💅 Enhancement
+
+* Use ReactDOM.createRoot ([c85f2c4](https://github.com/ntucker/anansi/commit/c85f2c42602fda03594966eb7a2b90d3e45cfd4e))
+
+
+### 📦 Package
+
+* Downgrade linaria until fixed ([1df0b64](https://github.com/ntucker/anansi/commit/1df0b647c9afe08eecc2a3f335fcc811be6c0a8c))
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* linaria, sass ([#1537](https://github.com/ntucker/anansi/issues/1537)) ([4e9b77a](https://github.com/ntucker/anansi/commit/4e9b77a51aaafb8d8a4bdcb0791315fff984c423))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+
+
+
 ### [4.1.22](https://github.com/ntucker/anansi/compare/example-linaria@4.1.21...example-linaria@4.1.22) (2022-05-29)
 
 **Note:** Version bump only for package example-linaria

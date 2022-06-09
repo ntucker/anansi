@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.0.8...@anansi/generator-js@8.1.0) (2022-06-09)
+
+
+### 🚀 Features
+
+* SSR feature to codegen ([#1528](https://github.com/ntucker/anansi/issues/1528)) ([ad4e886](https://github.com/ntucker/anansi/commit/ad4e886e073ca17b26d6c33828836a06304c1cee))
+
+
+### 💅 Enhancement
+
+* Remove legacy react mode ([6301b57](https://github.com/ntucker/anansi/commit/6301b5739b873eaac6ec279767030e7cdc31f1f1))
+
+
+### 📦 Package
+
+* linaria, postcss-preset-env, ts-jest ([#1532](https://github.com/ntucker/anansi/issues/1532)) ([9bc617f](https://github.com/ntucker/anansi/commit/9bc617f664a1217f6a1553e7dabc44706c013429))
+* linaria, sass ([#1537](https://github.com/ntucker/anansi/issues/1537)) ([4e9b77a](https://github.com/ntucker/anansi/commit/4e9b77a51aaafb8d8a4bdcb0791315fff984c423))
+* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+
+
+
 ### [8.0.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.0.7...@anansi/generator-js@8.0.8) (2022-05-29)
 
 **Note:** Version bump only for package @anansi/generator-js
