@@ -12,7 +12,6 @@ import tmp from 'tmp';
 import sourceMapSupport from 'source-map-support';
 import { ufs } from 'unionfs';
 import WebpackDevServer from 'webpack-dev-server';
-import importFresh from 'import-fresh';
 import logging from 'webpack/lib/logging/runtime';
 
 import 'cross-fetch/polyfill';
@@ -147,20 +146,19 @@ export default function startDevServer(
     // ASSETS
     const clientManifest = clientStats.toJson();
 
+    const serverEntry = getServerBundle(serverStats);
+    // reload modules
+    // TODO: should we just reset entire cache each time? then we could avoid needing one output
+    delete require.cache[require.resolve(serverEntry)];
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    render = (require(serverEntry) as any).default.bind(
+      undefined,
+      clientManifest,
+    );
     // SERVER SIDE ENTRYPOINT
     if (Array.isArray(initRender)) {
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
-      render = (require(getServerBundle(serverStats)) as any).default.bind(
-        undefined,
-        clientManifest,
-      );
       initRender.forEach(init => render(...init.args).then(init.resolve));
       initRender = undefined;
-    } else {
-      render = (importFresh(getServerBundle(serverStats)) as any).default.bind(
-        undefined,
-        clientManifest,
-      );
     }
   }
 
