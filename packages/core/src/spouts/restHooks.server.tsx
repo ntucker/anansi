@@ -1,9 +1,9 @@
 import { Manager, NetworkManager } from '@rest-hooks/core';
-import { createPersistedStore } from '@rest-hooks/ssr';
 
+import { createPersistedStore } from './rhHelp';
 import type { ResolveProps, ServerProps } from './types';
 
-type NeededProps = ResolveProps;
+type NeededProps = { initData?: Record<string, () => unknown> } & ResolveProps;
 
 export default function restHooksSpout(
   options: {
@@ -14,7 +14,7 @@ export default function restHooksSpout(
     next: (props: ServerProps) => Promise<T>,
   ) {
     return async (props: ServerProps) => {
-      const [ServerCacheProvider, controller] = createPersistedStore(
+      const [ServerCacheProvider, controller, store] = createPersistedStore(
         options.getManagers(),
       );
 
@@ -23,6 +23,10 @@ export default function restHooksSpout(
       return {
         ...nextProps,
         controller,
+        initData: {
+          ...nextProps.initData,
+          resthooks: () => store.getState(),
+        },
         app: <ServerCacheProvider>{nextProps.app}</ServerCacheProvider>,
       };
     };

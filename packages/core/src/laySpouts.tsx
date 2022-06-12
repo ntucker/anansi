@@ -1,4 +1,5 @@
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
+import crypto from 'crypto';
 
 import { Render } from './scripts/types';
 import { ServerProps } from './spouts/types';
@@ -10,7 +11,9 @@ export default function laySpouts(
   { timeoutMS = 200 }: { timeoutMS?: number } = {},
 ) {
   const render: Render = async (clientManifest, req, res) => {
-    const { app } = await spouts({ clientManifest, req, res });
+    const nonce = crypto.randomBytes(16).toString('base64');
+
+    const { app } = await spouts({ clientManifest, req, res, nonce });
     let didError = false;
     const { pipe, abort } = reactRender(
       app,
@@ -31,6 +34,7 @@ type Options = {|
 |};
   */
       {
+        nonce,
         //bootstrapScripts: assets.filter(asset => asset.endsWith('.js')),
         onShellReady() {
           //managers.forEach(manager => manager.cleanup());

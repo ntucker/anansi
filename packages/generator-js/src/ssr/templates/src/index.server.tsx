@@ -19,8 +19,21 @@ const app = (
 
 const appSpout = () => Promise.resolve({ app });
 
+const csPolicy = {
+  'base-uri': "'self'",
+  'object-src': "'none'",
+  'script-src': ["'self'"],
+  'style-src': ["'unsafe-inline'", "'self'"],
+};
+if (process.env.NODE_ENV !== 'production') {
+  csPolicy['script-src'].push("'unsafe-inline");
+}
+
 const spouts = prefetchSpout('controller')(
-  documentSpout({ title: 'anansi' })(
+  documentSpout({
+    title: 'anansi',
+    csPolicy,
+  })(
     restHooksSpout()(
       routerSpout({ useResolveWith: useController, createRouter })(appSpout),
     ),

@@ -1,10 +1,16 @@
+import type { Policy } from './csp';
+import { buildPolicy } from './csp';
+
 type Props = {
   children: React.ReactNode;
   assets: { href: string; as?: string; rel?: string }[];
   head: React.ReactNode;
+  scripts: React.ReactNode;
   title: string;
   rootId: string;
   charSet: string;
+  csPolicy?: Policy;
+  nonce?: string | undefined;
 };
 
 export default function Document({
@@ -14,11 +20,32 @@ export default function Document({
   title,
   rootId,
   charSet,
+  csPolicy,
+  nonce,
+  scripts,
 }: Props) {
+  let cspMeta: null | React.ReactNode = null;
+  if (csPolicy) {
+    // add nonce to policy
+    const policy = {
+      ...csPolicy,
+    };
+    if (nonce) {
+      if (typeof policy['script-src'] === 'string') {
+        policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];
+      } else {
+        policy['script-src'] = [...policy['script-src'], `'nonce-${nonce}'`];
+      }
+    }
+    cspMeta = (
+      <meta httpEquiv="Content-Security-Policy" content={buildPolicy(policy)} />
+    );
+  }
   return (
     <html>
       <head>
         <meta charSet={charSet} />
+        {cspMeta}
         {head}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
@@ -27,12 +54,7 @@ export default function Document({
       </head>
       <body>
         <div id={rootId}>{children}</div>
-        {/* this ensures the client can hydrate the assets prop */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `assetManifest = ${JSON.stringify(assets)};`,
-          }}
-        />
+        {scripts}
         {assets
           .filter(({ href }) => href.endsWith('.js'))
           .map(({ href }, i) => (
@@ -54,4 +76,5 @@ Document.defaultProps = {
   ),
   charSet: 'utf-8',
   rootId: 'anansi-root',
+  scripts: null,
 };
