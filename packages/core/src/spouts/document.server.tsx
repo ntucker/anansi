@@ -3,11 +3,13 @@ import type { Route } from '@anansi/router';
 import { StatsChunkGroup } from 'webpack';
 
 import type { ServerProps, ResolveProps } from './types';
+import type { Policy } from './csp';
 import Document from './DocumentComponent';
 
 type NeededProps = {
   matchedRoutes: Route<any>[];
   title?: string;
+  scripts?: React.ReactNode[];
 } & ResolveProps;
 
 export default function DocumentSpout(options: {
@@ -15,6 +17,7 @@ export default function DocumentSpout(options: {
   title: string;
   rootId?: string;
   charSet?: string;
+  csPolicy?: Policy;
 }) {
   return function <T extends NeededProps>(
     next: (props: ServerProps) => Promise<T>,
@@ -78,6 +81,9 @@ export default function DocumentSpout(options: {
             title={nextProps.title ?? options.title}
             assets={assets}
             rootId={options.rootId}
+            nonce={props.nonce}
+            csPolicy={options.csPolicy}
+            scripts={nextProps.scripts}
           >
             {nextProps.app}
           </Document>

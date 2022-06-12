@@ -30,13 +30,15 @@ export default function routerSpout<ResolveWith>(options: {
       );
     };
 
-  return function <T extends NeededProps>(next: () => Promise<T>) {
-    return async () => {
+  return function <T extends NeededProps>(
+    next: (initData: Record<string, unknown>) => Promise<T>,
+  ) {
+    return async (initData: Record<string, unknown>) => {
       const history = createBrowserHistory();
       const router = options.createRouter(history);
       const matchedRoutes = router.getMatchedRoutes(history.location.pathname);
 
-      const nextProps = await next();
+      const nextProps = await next(initData);
 
       const Router = createRouteComponent(router);
       return {

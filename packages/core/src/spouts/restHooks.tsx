@@ -1,5 +1,9 @@
-import { CacheProvider, Manager, NetworkManager } from '@rest-hooks/core';
-import { ServerDataComponent, getDatafromDOM } from '@rest-hooks/ssr';
+import {
+  CacheProvider,
+  Manager,
+  NetworkManager,
+  State,
+} from '@rest-hooks/core';
 
 import type { ResolveProps } from './types';
 
@@ -10,18 +14,19 @@ export default function restHooksSpout(
     getManagers: () => Manager[];
   } = { getManagers: () => [new NetworkManager()] },
 ) {
-  return function <T extends NeededProps>(next: () => Promise<T>) {
-    return async () => {
-      const data = getDatafromDOM();
+  return function <T extends NeededProps>(
+    next: (initData: Record<string, unknown>) => Promise<T>,
+  ) {
+    return async (initData: Record<string, unknown>) => {
+      const data = initData.resthooks as State<unknown>;
 
-      const nextProps = await next();
+      const nextProps = await next(initData);
 
       return {
         ...nextProps,
         app: (
           <CacheProvider initialState={data} managers={options.getManagers()}>
             {nextProps.app}
-            <ServerDataComponent data={data} />
           </CacheProvider>
         ),
       };

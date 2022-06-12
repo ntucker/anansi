@@ -9,6 +9,7 @@ export type ServerProps = {
   req: Request | IncomingMessage;
   res: Response | ServerResponse;
   clientManifest: StatsCompilation;
+  nonce: string;
 };
 
 /* Baseline expectations of return value */
