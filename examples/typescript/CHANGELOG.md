@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.15](https://github.com/ntucker/anansi/compare/example-typescript@10.0.14...example-typescript@10.0.15) (2022-06-12)
+
+
+### 📦 Package
+
+* Update `@types/node` to v17.0.42 ([#1542](https://github.com/ntucker/anansi/issues/1542)) ([7172056](https://github.com/ntucker/anansi/commit/7172056afa5b6027bb5ae0f9b5ec6362387fa276))
+
+
+
 ### [10.0.14](https://github.com/ntucker/anansi/compare/example-typescript@10.0.13...example-typescript@10.0.14) (2022-06-09)
 
 

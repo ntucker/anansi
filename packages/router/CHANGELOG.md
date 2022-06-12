@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.0...@anansi/router@0.6.1) (2022-06-12)
+
+
+### 🐛 Bug Fix
+
+* Circular dependency ([794d417](https://github.com/ntucker/anansi/commit/794d41741a775d5de4a05df9b087657717b5996b))
+
+
+
 ## [0.6.0](https://github.com/ntucker/anansi/compare/@anansi/router@0.5.8...@anansi/router@0.6.0) (2022-06-09)
 
 

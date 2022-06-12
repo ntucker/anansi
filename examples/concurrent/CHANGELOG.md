@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.0](https://github.com/ntucker/anansi/compare/example-react-18@2.6.0...example-react-18@2.7.0) (2022-06-12)
+
+
+### 🚀 Features
+
+* Add CSP support ([#1541](https://github.com/ntucker/anansi/issues/1541)) ([e8a7415](https://github.com/ntucker/anansi/commit/e8a7415db892d725b76a2d7d451670437d6fb8eb))
+* Add server-side import error handling example route ([1c1d941](https://github.com/ntucker/anansi/commit/1c1d9410c96fa40a523a57efc7e45d7073bba421))
+
+
+### 📦 Package
+
+* Update `@types/node` to v17.0.42 ([#1542](https://github.com/ntucker/anansi/issues/1542)) ([7172056](https://github.com/ntucker/anansi/commit/7172056afa5b6027bb5ae0f9b5ec6362387fa276))
+
+
+
 ## [2.6.0](https://github.com/ntucker/anansi/compare/example-react-18@2.5.0...example-react-18@2.6.0) (2022-06-09)
 
 

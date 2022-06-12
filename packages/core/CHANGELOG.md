@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.10.0...@anansi/core@0.11.0) (2022-06-12)
+
+
+### 🚀 Features
+
+* Add CSP support ([#1541](https://github.com/ntucker/anansi/issues/1541)) ([e8a7415](https://github.com/ntucker/anansi/commit/e8a7415db892d725b76a2d7d451670437d6fb8eb))
+
+
+### 💅 Enhancement
+
+* Multi-module server side devserver ([b1b6f87](https://github.com/ntucker/anansi/commit/b1b6f873f2a50a9af05683a80d587ac87d90f8f9))
+
+
+
 ## [0.10.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.9.0...@anansi/core@0.10.0) (2022-06-09)
 
 
