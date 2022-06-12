@@ -89,10 +89,7 @@ export default function startDevServer(
       { mode: 'development', target: 'node' },
     ),
   ] as const;
-  // only have one output for server so we can avoid cached modules
-  webpackConfigs[1].plugins.push(
-    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
-  );
+
   // initialize the webpack compiler
   const compiler: MultiCompiler = webpack(webpackConfigs);
 
@@ -148,8 +145,9 @@ export default function startDevServer(
 
     const serverEntry = getServerBundle(serverStats);
     // reload modules
-    // TODO: should we just reset entire cache each time? then we could avoid needing one output
-    delete fsRequire.cache[fsRequire.resolve(serverEntry)];
+    Object.keys(fsRequire.cache).forEach(key => {
+      delete fsRequire.cache[key];
+    });
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     render = (fsRequire(serverEntry) as any).default.bind(
       undefined,
