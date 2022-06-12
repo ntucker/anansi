@@ -1,4 +1,4 @@
-import { ControllerContext } from '@anansi/router';
+import { ControllerContext } from '@pojo-router/core';
 import { Component } from 'react';
 import type { ReactNode, ComponentType, ContextType } from 'react';
 
