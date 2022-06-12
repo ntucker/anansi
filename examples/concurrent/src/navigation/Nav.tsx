@@ -7,6 +7,7 @@ import {
   TeamOutlined,
   UserOutlined,
   ControlOutlined,
+  StopOutlined,
 } from '@ant-design/icons';
 import { useController } from 'rest-hooks';
 import { MatchedRoute } from '@anansi/router';
@@ -43,6 +44,10 @@ function Nav() {
               <MatchedRoute key="friends2" index={0} />
             </Boundary>
           </SubMenu>
+          <Menu.Item key="ssrerror" icon={<StopOutlined />}>
+            <Link name="SSRError">SSRError</Link>
+          </Menu.Item>
+
           <SubMenu key="sub4" icon={<ControlOutlined />} title="Controls">
             <Controls key="controls" />
           </SubMenu>

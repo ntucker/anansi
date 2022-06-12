@@ -15,6 +15,7 @@ const lazyPage = (pageName: string) =>
 export const namedPaths = {
   FriendNav: '/(.*)',
   Home: '/',
+  SSRError: '/ssr-error',
   Posts: '/posts',
   PostDetail: '/post/:id',
   UserDetail: '/user/:id',
@@ -34,6 +35,7 @@ export const routes: Route<Controller>[] = [
     },
   },
   { name: 'Home', component: lazyPage('Home') },
+  { name: 'SSRError', component: lazyPage('SSRError') },
   {
     name: 'Posts',
     component: lazyPage('Posts'),
