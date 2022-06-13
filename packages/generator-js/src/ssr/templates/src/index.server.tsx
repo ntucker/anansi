@@ -5,6 +5,7 @@ import {
   restHooksSpout,
   prefetchSpout,
   routerSpout,
+  JSONSpout,
 } from '@anansi/core/server';
 import Boundary from 'components/Boundary';
 
@@ -34,8 +35,10 @@ const spouts = prefetchSpout('controller')(
     title: 'anansi',
     csPolicy,
   })(
-    restHooksSpout()(
-      routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+    JSONSpout()(
+      restHooksSpout()(
+        routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+      ),
     ),
   ),
 );
