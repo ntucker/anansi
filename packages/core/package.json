@@ -69,7 +69,7 @@
     "@anansi/browserslist-config": "1.3.3",
     "@anansi/webpack-config": "^11.6.4",
     "@babel/cli": "7.17.10",
-    "@babel/core": "7.18.2",
+    "@babel/core": "7.18.5",
     "@types/compression": "^1.7.2",
     "@types/source-map-support": "^0.5.4",
     "@types/tmp": "^0.2.3",
