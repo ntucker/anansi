@@ -20,6 +20,6 @@ export default function JSONSpout({
   };
 }
 function getDatafromDOM(id: string): Record<string, unknown> {
-  const element = document.querySelector(`#${id}`);
-  return element?.innerHTML ? JSON.parse(element?.innerHTML) : undefined;
+  const element: HTMLScriptElement | null = document.querySelector(`#${id}`);
+  return element?.text ? JSON.parse(element?.text) : undefined;
 }
