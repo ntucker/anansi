@@ -155,7 +155,16 @@ export default function startDevServer(
     );
     // SERVER SIDE ENTRYPOINT
     if (Array.isArray(initRender)) {
-      initRender.forEach(init => render(...init.args).then(init.resolve));
+      initRender.forEach(async init => {
+        try {
+          log.info('Resolving queued requests');
+          await render(...init.args);
+          init.resolve();
+        } catch (e) {
+          log.error('Error when attempting to render queued requests');
+          log.error(e);
+        }
+      });
       initRender = undefined;
     }
   }
@@ -197,6 +206,13 @@ export default function startDevServer(
             await render(req, res);
           }),
         );
+
+        if (webpackConfigs[0].devServer?.setupMiddlewares) {
+          return webpackConfigs[0].devServer.setupMiddlewares(
+            middlewares,
+            devServer,
+          );
+        }
 
         return middlewares;
       },
