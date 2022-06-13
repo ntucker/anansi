@@ -30,7 +30,12 @@ export default function Document({
     const policy = {
       ...csPolicy,
     };
-    if (nonce) {
+    if (
+      nonce &&
+      // nonces negate 'unsafe-inline' so do not add it if that directive exists
+      (!policy['script-src'] ||
+        !policy['script-src'].includes("'unsafe-inline'"))
+    ) {
       if (typeof policy['script-src'] === 'string') {
         policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];
       } else {
