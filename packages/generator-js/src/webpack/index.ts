@@ -82,10 +82,10 @@ module.exports = class WebpackGenerator extends (
     }
     if (this?.props?.style === 'linaria') {
       await this.addDevDependencies({
-        '@linaria/core': '^3.0.0-beta.18',
-        '@linaria/react': '^3.0.0-beta.18',
-        '@linaria/babel-preset': '^3.0.0-beta.18',
-        '@linaria/shaker': '^3.0.0-beta.18',
+        '@linaria/core': '^3.0.0-beta.21',
+        '@linaria/react': '^3.0.0-beta.21',
+        '@linaria/babel-preset': '^3.0.0-beta.21',
+        '@linaria/shaker': '^3.0.0-beta.21',
       });
     }
   }
