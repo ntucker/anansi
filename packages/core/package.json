@@ -1,6 +1,6 @@
 {
   "name": "@anansi/core",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "React 18 Framework",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/core#readme",
   "repository": {
@@ -80,7 +80,7 @@
     "webpack-cli": "4.10.0"
   },
   "dependencies": {
-    "@anansi/router": "^0.6.1",
+    "@anansi/router": "^0.6.2",
     "@babel/runtime": "^7.10.5",
     "@rest-hooks/ssr": "^0.2.0",
     "chalk": "^4.0.0",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.10](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.9...@pojo-router/core@0.5.10) (2022-06-13)
+
+
+### 📦 Package
+
+* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+
+
+
 ### [0.5.9](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.8...@pojo-router/core@0.5.9) (2022-06-09)
 
 

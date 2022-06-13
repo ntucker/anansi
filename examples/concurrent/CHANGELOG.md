@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.2](https://github.com/ntucker/anansi/compare/example-react-18@2.7.1...example-react-18@2.7.2) (2022-06-13)
+
+
+### 📦 Package
+
+* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+
+
+
 ### [2.7.1](https://github.com/ntucker/anansi/compare/example-react-18@2.7.0...example-react-18@2.7.1) (2022-06-13)
 
 **Note:** Version bump only for package example-react-18

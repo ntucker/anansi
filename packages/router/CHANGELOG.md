@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.1...@anansi/router@0.6.2) (2022-06-13)
+
+
+### 📦 Package
+
+* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+
+
+
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.0...@anansi/router@0.6.1) (2022-06-12)
 
 

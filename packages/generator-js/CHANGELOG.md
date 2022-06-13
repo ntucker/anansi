@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.3.0...@anansi/generator-js@8.3.1) (2022-06-13)
+
+
+### 💅 Enhancement
+
+* Add comment on why 'unsafe-inline' is needed in devmode ([51a9882](https://github.com/ntucker/anansi/commit/51a988270aeb032a31ccf39cbc392d8857e7b281))
+* Newer linaria version ([9a4006e](https://github.com/ntucker/anansi/commit/9a4006e648c58a675c4d719304c0aa470d317d9f))
+
+
+### 🐛 Bug Fix
+
+* Typo in CSP ([908e1ae](https://github.com/ntucker/anansi/commit/908e1ae164189fef2726e4ab5d6f211fd9e6b70a))
+
+
+
 ## [8.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.2.0...@anansi/generator-js@8.3.0) (2022-06-13)
 
 

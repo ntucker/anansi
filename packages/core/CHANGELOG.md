@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.1...@anansi/core@0.11.2) (2022-06-13)
+
+
+### 💅 Enhancement
+
+* Do not override 'unsafe-inline' with nonce for CSP ([cfbd2bd](https://github.com/ntucker/anansi/commit/cfbd2bdfa69ae97ef2db6a824496888420251371))
+* Use 'text' to get inline JSON ([9ecdb07](https://github.com/ntucker/anansi/commit/9ecdb074d01e6f09c28a685433105cf0d6f711cc))
+
+
+### 📦 Package
+
+* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+
+
+
 ### [0.11.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.0...@anansi/core@0.11.1) (2022-06-13)
 
 
