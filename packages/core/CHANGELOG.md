@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.0...@anansi/core@0.11.1) (2022-06-13)
+
+
+### 🐛 Bug Fix
+
+* Use call user-config devServer.setupMiddleware ([99acd8c](https://github.com/ntucker/anansi/commit/99acd8c9386bfc338ef8733d19a734b2a8be21dd))
+
+
+
 ## [0.11.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.10.0...@anansi/core@0.11.0) (2022-06-12)
 
 

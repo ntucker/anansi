@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.2.0...@anansi/generator-js@8.3.0) (2022-06-13)
+
+
+### 🚀 Features
+
+* Use JSONSpout ([8051a47](https://github.com/ntucker/anansi/commit/8051a478c0c59db5ec91b4282ea959a638867990))
+
+
+
 ## [8.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.1.0...@anansi/generator-js@8.2.0) (2022-06-12)
 
 

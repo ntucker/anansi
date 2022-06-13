@@ -96,11 +96,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^1.4.1, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^1.4.2, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/generator-js": ^8.2.0
+    "@anansi/generator-js": ^8.3.0
     bin-version-check: ^4.0.0
     chalk: ^4.1.2
     commander: ^9.3.0
@@ -119,7 +119,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.11.0, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.11.1, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -205,7 +205,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/generator-js@^8.2.0, @anansi/generator-js@workspace:packages/generator-js":
+"@anansi/generator-js@^8.3.0, @anansi/generator-js@workspace:packages/generator-js":
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
@@ -14178,8 +14178,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.2.4
     "@anansi/browserslist-config": ^1.3.3
-    "@anansi/cli": ^1.4.1
-    "@anansi/core": ^0.11.0
+    "@anansi/cli": ^1.4.2
+    "@anansi/core": ^0.11.1
     "@anansi/jest-preset": ^0.7.8
     "@anansi/router": ^0.6.1
     "@anansi/webpack-config": ^11.6.4
