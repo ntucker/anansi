@@ -51,11 +51,11 @@ __metadata:
     babel-plugin-lodash: ^3.3.4
     babel-plugin-macros: ^3.1.0
     babel-plugin-module-resolver: ^4.1.0
-    babel-plugin-ramda: ^2.0.0
+    babel-plugin-ramda: ^2.1.0
     babel-plugin-react-require: ^3.1.3
     babel-plugin-root-import: ^6.6.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-    core-js-compat: ^3.23.0
+    core-js-compat: ^3.23.1
     glob-to-regexp: ^0.4.1
     path: ^0.12.7
     semver: ^7.3.7
@@ -387,7 +387,7 @@ __metadata:
     string_decoder: ^1.3.0
     strip-ansi: ^6.0.1
     svgo: ^2.8.0
-    svgo-loader: ^3.0.0
+    svgo-loader: ^3.0.1
     terser-webpack-plugin: ^5.3.3
     timers-browserify: ^2.0.12
     tsconfig-paths-webpack-plugin: ^3.5.2
@@ -398,7 +398,7 @@ __metadata:
     vm-browserify: ^1.1.2
     webpack-bundle-analyzer: ^4.5.0
     webpack-node-externals: ^3.0.0
-    webpack-remove-empty-scripts: ^0.8.0
+    webpack-remove-empty-scripts: ^0.8.1
     webpack-stats-plugin: ^1.0.3
     worker-loader: ^3.0.8
   peerDependencies:
@@ -9274,16 +9274,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansis@npm:^1.3.4":
-  version: 1.3.4
-  resolution: "ansis@npm:1.3.4"
-  checksum: ad562e7cd242a64346e09e69be2e280200c7822480dcc19df3b3a966e988939e18e9e261351a36db23a5f668f03e3bc32fdb394b51835cf4180dd946649d2235
+"ansis@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "ansis@npm:1.3.6"
+  checksum: 8d9341558abee49884a34bb4ac3421a1c478a06938f452cbaeec75f6bfa76a8ac24f3e98f3d3a22a9587257e6739ede36fb082af8a004c81814c02a8cff2bf52
   languageName: node
   linkType: hard
 
-"antd@npm:4.21.1":
-  version: 4.21.1
-  resolution: "antd@npm:4.21.1"
+"antd@npm:4.21.2":
+  version: 4.21.2
+  resolution: "antd@npm:4.21.2"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -9332,7 +9332,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 1ab7d19cac732610ec2ca7badbaf2663b156d6ca13c8d927366696bef58d28bf36b30d66a8e08215ba23bc7cbcc2d102d5ecf50e49b36e6ae87e9a0804f5148f
+  checksum: 0fa921bc1b418dd530d42b46d139e2e02a4994287d40fc7065ab2b277e56b3e58daa9e7d9403156290e5bbd8c1526591bc8c1a2c7c670433c5d42e14cfc4844a
   languageName: node
   linkType: hard
 
@@ -10067,13 +10067,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-ramda@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "babel-plugin-ramda@npm:2.0.0"
+"babel-plugin-ramda@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "babel-plugin-ramda@npm:2.1.0"
   dependencies:
     "@babel/helper-module-imports": ^7.0.0
-    ramda: "*"
-  checksum: 9715530ee08bef43575dd3e1f6b1870b5c377f2dd66ba7f10fb380ccd0b781d348603ec9dee8a800c02bb39d2ed9b186132d9c9d49d0e9f2a9301452283ce5a2
+  checksum: 9b2f55df334120a4215cf81793d1fde071c1202cbbefbbe5b90a59e2c6231e6c48f599ecef732a7d2045f820d0ce39715964b52d085a7e0aaf6bf421a438011e
   languageName: node
   linkType: hard
 
@@ -12091,13 +12090,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-compat@npm:^3.23.0":
-  version: 3.23.0
-  resolution: "core-js-compat@npm:3.23.0"
+"core-js-compat@npm:^3.23.1":
+  version: 3.23.1
+  resolution: "core-js-compat@npm:3.23.1"
   dependencies:
     browserslist: ^4.20.4
     semver: 7.0.0
-  checksum: 507fb820bce963f5b23521ed9100c000a46064dd01c9dd80740f706d091621f185741222d235d8f0c2286c9ec6e2c1b3c752587d42789a70d857db9d76fb7395
+  checksum: 3d715f3afa83241d304da84fa40e7afa3e9a08fa6c048fb23f1b0ab0715299d69c72a038e8a6d4c19b3a42058b2d18a45785d89c7c43ccd207af6daf1d305c4a
   languageName: node
   linkType: hard
 
@@ -12108,10 +12107,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.23.0":
-  version: 3.23.0
-  resolution: "core-js@npm:3.23.0"
-  checksum: 4fcfec8133bd31ae34482bcdf891d8dcff4a64de656b82749c56d984b227cc107f755104aefb884b284f78d3e59fad24592de039ff7f78e60316cd4ade734af4
+"core-js@npm:3.23.1":
+  version: 3.23.1
+  resolution: "core-js@npm:3.23.1"
+  checksum: 460328e0b743900d48fc744aab475f6dabdae498cc73f6d038321b0ae1488cb5e73d1670b5914abfe7dd84d0843a828b5d4dd3eba0a5b6a4450f0d7094cda2a5
   languageName: node
   linkType: hard
 
@@ -14231,7 +14230,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.5
     classnames: ^2.2.6
-    core-js: 3.23.0
+    core-js: 3.23.1
     react-refresh: 0.13.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
@@ -14262,9 +14261,9 @@ __metadata:
     "@types/node": 17.0.42
     "@types/react": 18.0.12
     "@types/react-dom": 18.0.5
-    antd: 4.21.1
+    antd: 4.21.2
     classnames: ^2.2.6
-    core-js: 3.23.0
+    core-js: 3.23.1
     history: 5.3.0
     jest: 28.1.1
     react: 18.1.0
@@ -14304,9 +14303,9 @@ __metadata:
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
-    antd: 4.21.1
+    antd: 4.21.2
     classnames: ^2.2.6
-    core-js: 3.23.0
+    core-js: 3.23.1
     jest: 28.1.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
@@ -19291,7 +19290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^1.0.3, loader-utils@npm:^1.4.0":
+"loader-utils@npm:^1.4.0":
   version: 1.4.0
   resolution: "loader-utils@npm:1.4.0"
   dependencies:
@@ -23585,12 +23584,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.6.2, prettier@npm:^2.5.1":
-  version: 2.6.2
-  resolution: "prettier@npm:2.6.2"
+"prettier@npm:2.7.0":
+  version: 2.7.0
+  resolution: "prettier@npm:2.7.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
+  checksum: 5b55bb1dced9d16635b83229df8e670d150890fdb343f19e8a66e610094a108e960c0f57352b3e5cdbc4eff4ef00a834406047ffcd9f20bd22a6497ba143c81f
   languageName: node
   linkType: hard
 
@@ -23609,6 +23608,15 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: aad1b35b73e7c14596d389d90977a83dad0db689ba5802a0ef319c357b7867f55b885db197972aa6a56c30f53088c9f8e0d7f7930ae074c275a4e9cbe091d21d
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.5.1":
+  version: 2.6.2
+  resolution: "prettier@npm:2.6.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
   languageName: node
   linkType: hard
 
@@ -24008,17 +24016,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ramda@npm:*, ramda@npm:^0.28.0":
-  version: 0.28.0
-  resolution: "ramda@npm:0.28.0"
-  checksum: 44ea6e5010bba70151b6a92d8114a91915e8b5a16105cce65fae58c9d7386b812c429645e35f21141d7087568550ce383bc10ee1a65cdec951f4b69ea457e6a4
-  languageName: node
-  linkType: hard
-
 "ramda@npm:^0.21.0":
   version: 0.21.0
   resolution: "ramda@npm:0.21.0"
   checksum: e08d63c12ed4bab70bfd700a843901d9fa340d1a88c50085a6ef0ecf25f528e5ac7c71848481270923491e7315a34301bb35905d45861cb13cc75b8ca05add32
+  languageName: node
+  linkType: hard
+
+"ramda@npm:^0.28.0":
+  version: 0.28.0
+  resolution: "ramda@npm:0.28.0"
+  checksum: 44ea6e5010bba70151b6a92d8114a91915e8b5a16105cce65fae58c9d7386b812c429645e35f21141d7087568550ce383bc10ee1a65cdec951f4b69ea457e6a4
   languageName: node
   linkType: hard
 
@@ -26089,7 +26097,7 @@ __metadata:
     husky: ^7.0.4
     lerna: 5.1.2
     lint-staged: 12.5.0
-    prettier: 2.6.2
+    prettier: 2.7.0
     react: 18.1.0
     react-dom: 18.1.0
     ttypescript: ^1.5.13
@@ -27851,17 +27859,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo-loader@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "svgo-loader@npm:3.0.0"
+"svgo-loader@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "svgo-loader@npm:3.0.1"
   dependencies:
-    loader-utils: ^1.0.3
-    svgo: ^2.2.0
-  checksum: 4ac0eec5713dab828acb0af2e933e617eb516ee37568358d19ce1fe55600b6387857b43e73632ef794a7be11ca82258a983083c27e74d8813bfd6e2738e16eb5
+    loader-utils: ^1.4.0
+    svgo: ^2.8.0
+  checksum: f38e925fc9bb5a7d3ac2d701223cc37432003b156418d5bee688d062d4dc2bf55658bb7a2ca94286274252a8ec5c0d2d7fb383e2a02130cdaa37858ed90ff3c5
   languageName: node
   linkType: hard
 
-"svgo@npm:^2.2.0, svgo@npm:^2.5.0, svgo@npm:^2.7.0, svgo@npm:^2.8.0":
+"svgo@npm:^2.5.0, svgo@npm:^2.7.0, svgo@npm:^2.8.0":
   version: 2.8.0
   resolution: "svgo@npm:2.8.0"
   dependencies:
@@ -29779,14 +29787,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-remove-empty-scripts@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "webpack-remove-empty-scripts@npm:0.8.0"
+"webpack-remove-empty-scripts@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "webpack-remove-empty-scripts@npm:0.8.1"
   dependencies:
-    ansis: ^1.3.4
+    ansis: ^1.3.6
   peerDependencies:
     webpack: ">=5.32.0"
-  checksum: cf78e7516b18321cd234d5a86231d01403d4393f9e802b8552e150315772adb5889a24a4eb8c067aba0dc831e238513196e59f6225e5bb098d31c2da7be19cc7
+  checksum: 79d070c415c954d86f556d3da311cc0f9e0bed7e89872e9df14d7bdb4982237c1f04fdc8c572cde9e697389b98c468def4047373793f8cdbb2a86d11a1ef4444
   languageName: node
   linkType: hard
 
