@@ -134,8 +134,12 @@ export default function startDevServer(
     ) {
       log.error('Errors for client build: ' + clientStats.compilation.errors);
       log.error('Errors for server build: ' + serverStats.compilation.errors);
-      // TODO: handle more gracefully
-      process.exit(-1);
+      // first time, rather than re-render
+      if (Array.isArray(initRender)) {
+        process.exit(-1);
+      }
+      log.error('Above compiler errors blocking reload');
+      return;
     } else {
       log.info('Launching SSR');
     }
