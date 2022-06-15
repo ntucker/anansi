@@ -1,5 +1,6 @@
-import { Link } from '@anansi/router';
-import { Menu, Layout, Switch } from 'antd';
+import { Link, useRoutes } from '@anansi/router';
+import { Menu, Layout, Switch, MenuProps } from 'antd';
+import type { ItemType } from 'antd/lib/menu/hooks/useItems';
 import { memo, useContext } from 'react';
 import {
   DesktopOutlined,
@@ -10,21 +11,77 @@ import {
   StopOutlined,
 } from '@ant-design/icons';
 import { useController } from 'rest-hooks';
-import { MatchedRoute } from '@anansi/router';
 
 import { demoContext } from 'app/demo';
-import Boundary from 'components/Boundary';
+import { UserResource } from 'resources/Discuss';
 
 import PageLoading from './PageLoading';
 
-const { SubMenu } = Menu;
 const { Sider } = Layout;
 
 const openKeys = ['users'];
 
-function Nav() {
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuProps['items'],
+  type?: 'group',
+): ItemType {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  } as ItemType;
+}
+
+function Nav({
+  friends,
+  selectedFriend,
+}: {
+  friends: UserResource[];
+  selectedFriend: false | string;
+}) {
+  const contoller = useController();
+  const route = useRoutes()[1] as any;
+  const items: MenuProps['items'] = [
+    getItem(<Link name="Home">Home</Link>, 'Home', <TeamOutlined />),
+    getItem(<Link name="Posts">Posts</Link>, 'Posts', <PieChartOutlined />),
+
+    getItem(
+      'Users',
+      'users',
+      <UserOutlined />,
+      friends.map(friend => ({
+        label: (
+          <Link name="UserDetail" props={{ id: friend.id }}>
+            {friend.name}
+          </Link>
+        ),
+        key: friend.pk(),
+      })),
+    ),
+
+    getItem(
+      <Link name="SSRError">SSRError</Link>,
+      'SSRError',
+      <StopOutlined />,
+    ),
+    getItem('Controls', 'controls', <ControlOutlined />, [
+      getItem(
+        <div onClick={() => contoller.resetEntireStore()}>Reset Cache</div>,
+        'reset',
+        <DesktopOutlined />,
+      ),
+      getItem('RH Cache', 'cache', <CacheSwitch />),
+      getItem('Concurrent', 'concurrent', <ConcurrentSwitch />),
+    ]),
+  ];
+
   return (
-    <Sider>
+    <Sider style={{ transition: 'none' }}>
       <div style={{ position: 'fixed', height: '100vh', width: '200px' }}>
         <PageLoading />
         <Menu
@@ -32,70 +89,39 @@ function Nav() {
           mode="inline"
           selectable={false}
           defaultOpenKeys={openKeys}
-        >
-          <Menu.Item key="home" icon={<TeamOutlined />}>
-            <Link name="Home">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="posts" icon={<PieChartOutlined />}>
-            <Link name="Posts">Posts</Link>
-          </Menu.Item>
-          <SubMenu key="users" icon={<UserOutlined />} title="User">
-            <Boundary fallback={null} key="friends">
-              <MatchedRoute key="friends2" index={0} />
-            </Boundary>
-          </SubMenu>
-          <Menu.Item key="ssrerror" icon={<StopOutlined />}>
-            <Link name="SSRError">SSRError</Link>
-          </Menu.Item>
-
-          <SubMenu key="sub4" icon={<ControlOutlined />} title="Controls">
-            <Controls key="controls" />
-          </SubMenu>
-        </Menu>
+          items={items}
+          selectedKeys={[selectedFriend || route.name]}
+        />
       </div>
     </Sider>
   );
 }
+Nav.defaultProps = {
+  selectedFriend: false,
+};
 export default memo(Nav);
 
-function Controls(): JSX.Element {
-  const contoller = useController();
-  const { set, cache, concurrent } = useContext(demoContext);
-  return [
-    <Menu.Item
-      key="reset"
-      icon={<DesktopOutlined />}
-      onClick={() => contoller.resetEntireStore()}
-    >
-      Reset Cache
-    </Menu.Item>,
-    <Menu.Item
-      key="cache"
-      icon={
-        <Switch
-          defaultChecked={cache}
-          onChange={value => {
-            set({ cache: value });
-          }}
-          size="small"
-        />
-      }
-    >
-      RH Cache
-    </Menu.Item>,
-    <Menu.Item
-      key="concurrent"
-      icon={
-        <Switch
-          defaultChecked={concurrent}
-          onChange={value => {
-            set({ concurrent: value });
-          }}
-          size="small"
-        />
-      }
-    >
-      Concurrent
-    </Menu.Item>,
-  ] as any;
+function CacheSwitch() {
+  const { set, cache } = useContext(demoContext);
+  return (
+    <Switch
+      defaultChecked={cache}
+      onChange={value => {
+        set({ cache: value });
+      }}
+      size="small"
+    />
+  );
+}
+function ConcurrentSwitch() {
+  const { set, concurrent } = useContext(demoContext);
+  return (
+    <Switch
+      defaultChecked={concurrent}
+      onChange={value => {
+        set({ concurrent: value });
+      }}
+      size="small"
+    />
+  );
 }

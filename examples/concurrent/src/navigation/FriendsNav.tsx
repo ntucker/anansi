@@ -1,27 +1,21 @@
-import { Link, useRoutes } from '@anansi/router';
-import { Menu } from 'antd';
+import { useRoutes } from '@anansi/router';
 import { useSuspense } from 'rest-hooks';
-import classNames from 'classnames';
 import { memo } from 'react';
 
 import { UserResource } from 'resources/Discuss';
 
+import Nav from './Nav';
+
 function FriendsNav(): JSX.Element {
-  const route = useRoutes()[0] as any;
+  const route = useRoutes()[1] as any;
   const friends = useSuspense(UserResource.list(), {});
-  return friends.map(friend => (
-    <Menu.Item
-      key={friend.pk()}
-      className={classNames({
-        'ant-menu-item-selected':
-          route.id === friend.pk() && route.name === 'userDetail',
-      })}
-      style={{ transition: 'none' }}
-    >
-      <Link name="UserDetail" props={{ id: friend.id }}>
-        {friend.name}
-      </Link>
-    </Menu.Item>
-  )) as any;
+
+  return (
+    <Nav
+      key="nav"
+      friends={friends}
+      selectedFriend={route.name === 'UserDetail' && route.id}
+    />
+  );
 }
 export default memo(FriendsNav);

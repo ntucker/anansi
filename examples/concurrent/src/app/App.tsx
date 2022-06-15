@@ -4,7 +4,7 @@ import { MatchedRoute } from '@anansi/router';
 import { styled } from '@linaria/react';
 import 'antd/dist/antd.css';
 
-import Nav from 'navigation/Nav';
+import Nav from 'navigation';
 import Boundary from 'components/Boundary';
 
 const Content = styled(Layout.Content)`
