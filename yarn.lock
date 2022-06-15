@@ -216,7 +216,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": ^3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 17.0.42
+    "@types/node": 17.0.44
     "@types/pacote": 11.1.4
     "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
@@ -7985,10 +7985,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.42":
-  version: 17.0.42
-  resolution: "@types/node@npm:17.0.42"
-  checksum: a200cd87e4f12d4d5682a893ad6e1140720c6c074a2cd075f254b3b8306d6174f5a3630e5d2347efb5e9b80d420404b5fafc8fe3c7d4c81998cd914c50b19f75
+"@types/node@npm:17.0.44":
+  version: 17.0.44
+  resolution: "@types/node@npm:17.0.44"
+  checksum: 8e2786472507575a9c49ec6c4b056cbe1f4fd6766fd03299f8510bbdce558d8522691b2cc24329396742002c2a8c3708cb453053ecbe0ce09c10b9d48887c9d8
   languageName: node
   linkType: hard
 
@@ -14258,7 +14258,7 @@ __metadata:
     "@rest-hooks/test": 7.3.1
     "@types/classnames": ^2.2.9
     "@types/jest": 28.1.1
-    "@types/node": 17.0.42
+    "@types/node": 17.0.44
     "@types/react": 18.0.12
     "@types/react-dom": 18.0.5
     antd: 4.21.2
@@ -14299,7 +14299,7 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 28.1.1
     "@types/lodash": 4.14.182
-    "@types/node": 17.0.42
+    "@types/node": 17.0.44
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
