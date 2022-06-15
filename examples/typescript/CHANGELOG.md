@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.16](https://github.com/ntucker/anansi/compare/example-typescript@10.0.15...example-typescript@10.0.16) (2022-06-15)
+
+
+### 📦 Package
+
+* babel-plugin-ramda, prettier, svgo-loader, webpack-remove-empty-scripts ([#1548](https://github.com/ntucker/anansi/issues/1548)) ([3188449](https://github.com/ntucker/anansi/commit/3188449fa1cb126bd2e97d38f1ad2920b74fd062))
+* ts-jest, core-js ([#1547](https://github.com/ntucker/anansi/issues/1547)) ([5ce69db](https://github.com/ntucker/anansi/commit/5ce69db30109aece708e7be7c33c3d3b9e7c5f73))
+* Update `@types/node` to v17.0.44 ([#1550](https://github.com/ntucker/anansi/issues/1550)) ([70ae057](https://github.com/ntucker/anansi/commit/70ae057cd141088ab5ff94897b1e0d3d51188971))
+* Update react monorepo ([#1549](https://github.com/ntucker/anansi/issues/1549)) ([7c06c5b](https://github.com/ntucker/anansi/commit/7c06c5b7056e62bdf24005799a918ecf5da2e41b))
+* Update storybook monorepo to v6.5.9 ([#1546](https://github.com/ntucker/anansi/issues/1546)) ([3ca7f31](https://github.com/ntucker/anansi/commit/3ca7f31923e65e7f7d3c07e42c6dbc2b13864e81))
+
+
+
 ### [10.0.15](https://github.com/ntucker/anansi/compare/example-typescript@10.0.14...example-typescript@10.0.15) (2022-06-12)
 
 

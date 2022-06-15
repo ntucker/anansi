@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.9](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.8...@anansi/jest-preset@0.7.9) (2022-06-15)
+
+
+### 📦 Package
+
+* ts-jest, core-js ([#1547](https://github.com/ntucker/anansi/issues/1547)) ([5ce69db](https://github.com/ntucker/anansi/commit/5ce69db30109aece708e7be7c33c3d3b9e7c5f73))
+* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+
+
+
 ### [0.7.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.7...@anansi/jest-preset@0.7.8) (2022-06-09)
 
 

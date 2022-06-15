@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.24](https://github.com/ntucker/anansi/compare/example-linaria@4.1.23...example-linaria@4.1.24) (2022-06-15)
+
+
+### 📦 Package
+
+* babel-plugin-ramda, prettier, svgo-loader, webpack-remove-empty-scripts ([#1548](https://github.com/ntucker/anansi/issues/1548)) ([3188449](https://github.com/ntucker/anansi/commit/3188449fa1cb126bd2e97d38f1ad2920b74fd062))
+* ts-jest, core-js ([#1547](https://github.com/ntucker/anansi/issues/1547)) ([5ce69db](https://github.com/ntucker/anansi/commit/5ce69db30109aece708e7be7c33c3d3b9e7c5f73))
+* Update react monorepo ([#1549](https://github.com/ntucker/anansi/issues/1549)) ([7c06c5b](https://github.com/ntucker/anansi/commit/7c06c5b7056e62bdf24005799a918ecf5da2e41b))
+
+
+
 ### [4.1.23](https://github.com/ntucker/anansi/compare/example-linaria@4.1.22...example-linaria@4.1.23) (2022-06-09)
 
 

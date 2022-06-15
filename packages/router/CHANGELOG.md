@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.3](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.2...@anansi/router@0.6.3) (2022-06-15)
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+
+
+
 ### [0.6.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.1...@anansi/router@0.6.2) (2022-06-13)
 
 

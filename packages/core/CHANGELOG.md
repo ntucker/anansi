@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.2...@anansi/core@0.12.0) (2022-06-15)
+
+
+### 🚀 Features
+
+* Add onError option to laySpouts ([a0ef72b](https://github.com/ntucker/anansi/commit/a0ef72bcaab1440a3d997d21636f81ca767a5a1c))
+
+
+### 💅 Enhancement
+
+* Don't crash devserver on compiler errors ([3c764e4](https://github.com/ntucker/anansi/commit/3c764e4dd67a57409c64ff7dd144386623a1d93f))
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+
+
+
 ### [0.11.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.1...@anansi/core@0.11.2) (2022-06-13)
 
 

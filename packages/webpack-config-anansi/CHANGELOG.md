@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.6.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.4...@anansi/webpack-config@11.6.5) (2022-06-15)
+
+
+### 📦 Package
+
+* babel-plugin-ramda, prettier, svgo-loader, webpack-remove-empty-scripts ([#1548](https://github.com/ntucker/anansi/issues/1548)) ([3188449](https://github.com/ntucker/anansi/commit/3188449fa1cb126bd2e97d38f1ad2920b74fd062))
+* html-loader, mini-css-extract-plugin ([#1552](https://github.com/ntucker/anansi/issues/1552)) ([45d7b69](https://github.com/ntucker/anansi/commit/45d7b691bf3b68b14567a09cd3f99872ffd48fe9))
+* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+* Update react monorepo ([#1549](https://github.com/ntucker/anansi/issues/1549)) ([7c06c5b](https://github.com/ntucker/anansi/commit/7c06c5b7056e62bdf24005799a918ecf5da2e41b))
+
+
+
 ### [11.6.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.3...@anansi/webpack-config@11.6.4) (2022-06-09)
 
 

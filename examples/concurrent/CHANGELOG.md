@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.7.3](https://github.com/ntucker/anansi/compare/example-react-18@2.7.2...example-react-18@2.7.3) (2022-06-15)
+
+
+### 💅 Enhancement
+
+* Use modern antd menu practices ([83b2937](https://github.com/ntucker/anansi/commit/83b2937492899b04be737c2090e624b0e21f52b5))
+
+
+### 📦 Package
+
+* babel-plugin-ramda, prettier, svgo-loader, webpack-remove-empty-scripts ([#1548](https://github.com/ntucker/anansi/issues/1548)) ([3188449](https://github.com/ntucker/anansi/commit/3188449fa1cb126bd2e97d38f1ad2920b74fd062))
+* ts-jest, core-js ([#1547](https://github.com/ntucker/anansi/issues/1547)) ([5ce69db](https://github.com/ntucker/anansi/commit/5ce69db30109aece708e7be7c33c3d3b9e7c5f73))
+* Update `@types/node` to v17.0.44 ([#1550](https://github.com/ntucker/anansi/issues/1550)) ([70ae057](https://github.com/ntucker/anansi/commit/70ae057cd141088ab5ff94897b1e0d3d51188971))
+* Update react monorepo ([#1549](https://github.com/ntucker/anansi/issues/1549)) ([7c06c5b](https://github.com/ntucker/anansi/commit/7c06c5b7056e62bdf24005799a918ecf5da2e41b))
+
+
+
 ### [2.7.2](https://github.com/ntucker/anansi/compare/example-react-18@2.7.1...example-react-18@2.7.2) (2022-06-13)
 
 

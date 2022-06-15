@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.4...@anansi/babel-preset@3.2.5) (2022-06-15)
+
+
+### 📦 Package
+
+* babel-plugin-ramda, prettier, svgo-loader, webpack-remove-empty-scripts ([#1548](https://github.com/ntucker/anansi/issues/1548)) ([3188449](https://github.com/ntucker/anansi/commit/3188449fa1cb126bd2e97d38f1ad2920b74fd062))
+* ts-jest, core-js ([#1547](https://github.com/ntucker/anansi/issues/1547)) ([5ce69db](https://github.com/ntucker/anansi/commit/5ce69db30109aece708e7be7c33c3d3b9e7c5f73))
+* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+* Update react monorepo ([#1549](https://github.com/ntucker/anansi/issues/1549)) ([7c06c5b](https://github.com/ntucker/anansi/commit/7c06c5b7056e62bdf24005799a918ecf5da2e41b))
+
+
+
 ### [3.2.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.3...@anansi/babel-preset@3.2.4) (2022-06-09)
 
 
