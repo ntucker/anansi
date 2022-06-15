@@ -8,32 +8,19 @@ export default function laySpouts(
   spouts: (props: ServerProps) => Promise<{
     app: JSX.Element;
   }>,
-  { timeoutMS = 200 }: { timeoutMS?: number } = {},
+  {
+    timeoutMS = 200,
+    onError,
+  }: { timeoutMS?: number; onError?: (error: unknown) => void } = {},
 ) {
   const render: Render = async (clientManifest, req, res) => {
     const nonce = crypto.randomBytes(16).toString('base64');
 
-    const { app } = await spouts({ clientManifest, req, res, nonce });
-    let didError = false;
-    const { pipe, abort } = reactRender(
-      app,
-      /*
-      This is not documented, so included the types here for reference:
-type Options = {|
-  identifierPrefix?: string,
-  namespaceURI?: string,
-  nonce?: string,
-  bootstrapScriptContent?: string,
-  bootstrapScripts?: Array<string>,
-  bootstrapModules?: Array<string>,
-  progressiveChunkSize?: number,
-  onShellReady?: () => void,
-  onShellError?: () => void,
-  onAllReady?: () => void,
-  onError?: (error: mixed) => void,
-|};
-  */
-      {
+    try {
+      const { app } = await spouts({ clientManifest, req, res, nonce });
+
+      let didError = false;
+      const { pipe, abort } = reactRender(app, {
         nonce,
         //bootstrapScripts: assets.filter(asset => asset.endsWith('.js')),
         onShellReady() {
@@ -48,17 +35,24 @@ type Options = {|
           res.statusCode = 500;
           pipe(res);
         },
-        onError(x: any) {
+        onError(e: any) {
           didError = true;
-          console.error(x);
+          console.error(e);
           res.statusCode = 500;
           //pipe(res); Removing this avoids, "React currently only supports piping to one writable stream."
+          if (onError) onError(e);
         },
-      },
-    );
-    // Abandon and switch to client rendering if enough time passes.
-    // Try lowering this to see the client recover.
-    setTimeout(abort, timeoutMS);
+      });
+      // Abandon and switch to client rendering if enough time passes.
+      // Try lowering this to see the client recover.
+      setTimeout(
+        () => (abort as any)(`Timeout of ${timeoutMS}ms exceeded`),
+        timeoutMS,
+      );
+    } catch (e: unknown) {
+      if (onError) onError(e);
+      throw e;
+    }
   };
   return render;
 }
