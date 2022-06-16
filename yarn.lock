@@ -216,8 +216,8 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": ^3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 17.0.44
-    "@types/pacote": 11.1.4
+    "@types/node": 17.0.45
+    "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.10
     chalk: ^4.1.2
     copyfiles: ^2.1.1
@@ -7985,10 +7985,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.44":
-  version: 17.0.44
-  resolution: "@types/node@npm:17.0.44"
-  checksum: 8e2786472507575a9c49ec6c4b056cbe1f4fd6766fd03299f8510bbdce558d8522691b2cc24329396742002c2a8c3708cb453053ecbe0ce09c10b9d48887c9d8
+"@types/node@npm:17.0.45":
+  version: 17.0.45
+  resolution: "@types/node@npm:17.0.45"
+  checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
   languageName: node
   linkType: hard
 
@@ -8047,15 +8047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pacote@npm:11.1.4":
-  version: 11.1.4
-  resolution: "@types/pacote@npm:11.1.4"
+"@types/pacote@npm:11.1.5":
+  version: 11.1.5
+  resolution: "@types/pacote@npm:11.1.5"
   dependencies:
     "@types/node": "*"
     "@types/npm-registry-fetch": "*"
     "@types/npmlog": "*"
     "@types/ssri": "*"
-  checksum: a898498dbb752c5b2b38b909f8771de56b8fc9246d5e14702eba40b9833ea3432adfa5cd2ed4c8d96bf2cc49435e00cbfdc2141b6b367d2b4c616ec8bfe5e95f
+  checksum: 0042061a6eb126d85c0bb4948632a3c0a4a6be0ea9860fef941798281028663864bf3001c02497f1bd0efb93f8c28498e043bcec4239d132fa14b85fe88f520f
   languageName: node
   linkType: hard
 
@@ -8183,14 +8183,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.12":
-  version: 18.0.12
-  resolution: "@types/react@npm:18.0.12"
+"@types/react@npm:18.0.13":
+  version: 18.0.13
+  resolution: "@types/react@npm:18.0.13"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 526ea13b3adf7fe4b475e55b7426510a7861ef2910664a9014ef42cba0c699d5167dc378eb161e2ec26c07a3b6fde9b6bdcbbb6f4b5580612246bc289395ef03
+  checksum: ef976dbcd5605f3b8db2b286b1b35471d574dca711a2b6928c164075efd3ee731b3f32708f1ae09cfb04b003f9a4a9774cc386c32688f7fae864ea53a1c238f6
   languageName: node
   linkType: hard
 
@@ -14258,8 +14258,8 @@ __metadata:
     "@rest-hooks/test": 7.3.1
     "@types/classnames": ^2.2.9
     "@types/jest": 28.1.1
-    "@types/node": 17.0.44
-    "@types/react": 18.0.12
+    "@types/node": 17.0.45
+    "@types/react": 18.0.13
     "@types/react-dom": 18.0.5
     antd: 4.21.2
     classnames: ^2.2.6
@@ -14299,7 +14299,7 @@ __metadata:
     "@types/classnames": ^2.2.9
     "@types/jest": 28.1.1
     "@types/lodash": 4.14.182
-    "@types/node": 17.0.44
+    "@types/node": 17.0.45
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
@@ -23584,12 +23584,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.7.0":
-  version: 2.7.0
-  resolution: "prettier@npm:2.7.0"
+"prettier@npm:2.7.1":
+  version: 2.7.1
+  resolution: "prettier@npm:2.7.1"
   bin:
     prettier: bin-prettier.js
-  checksum: 5b55bb1dced9d16635b83229df8e670d150890fdb343f19e8a66e610094a108e960c0f57352b3e5cdbc4eff4ef00a834406047ffcd9f20bd22a6497ba143c81f
+  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
   languageName: node
   linkType: hard
 
@@ -26089,7 +26089,7 @@ __metadata:
     "@babel/core": 7.18.5
     "@commitlint/cli": 17.0.2
     "@commitlint/config-conventional": 17.0.2
-    "@types/react": 18.0.12
+    "@types/react": 18.0.13
     "@types/react-dom": 18.0.5
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-loader: 8.2.5
@@ -26104,7 +26104,7 @@ __metadata:
     husky: ^7.0.4
     lerna: 5.1.4
     lint-staged: 12.5.0
-    prettier: 2.7.0
+    prettier: 2.7.1
     react: 18.2.0
     react-dom: 18.2.0
     ttypescript: ^1.5.13

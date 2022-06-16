@@ -48,7 +48,7 @@
     "@babel/runtime": "^7.17.2",
     "@rest-hooks/graphql": "0.1.6",
     "@rest-hooks/rest": "5.0.2",
-    "@types/node": "17.0.44",
+    "@types/node": "17.0.45",
     "antd": "4.21.2",
     "classnames": "^2.2.6",
     "core-js": "3.23.1",
