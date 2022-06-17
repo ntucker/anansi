@@ -5874,6 +5874,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rest-hooks/hooks@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@rest-hooks/hooks@npm:3.0.2"
+  dependencies:
+    "@babel/runtime": ^7.13.0
+  peerDependencies:
+    "@rest-hooks/endpoint": ^0.6.1 || ^1.0.0-0 || ^2.0.0-0
+    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
+    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 7640a767fc485af4817a781a48e956ab881e678f741115c3d05f1e7ea5e0a1434e60c3644d783f5cb9aab944d3b4e3168b63684b741ed33b9073dd6f0ac16141
+  languageName: node
+  linkType: hard
+
 "@rest-hooks/img@npm:0.6.1":
   version: 0.6.1
   resolution: "@rest-hooks/img@npm:0.6.1"
@@ -14253,6 +14269,7 @@ __metadata:
     "@linaria/core": 3.0.0-beta.21
     "@linaria/react": 3.0.0-beta.21
     "@linaria/shaker": 3.0.0-beta.21
+    "@rest-hooks/hooks": ^3.0.2
     "@rest-hooks/img": 0.6.1
     "@rest-hooks/rest": 5.0.2
     "@rest-hooks/test": 7.3.1
