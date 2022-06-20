@@ -278,7 +278,7 @@ __metadata:
     intl: ^1.2.5
     ric-shim: ^1.0.0
     rimraf: ^3.0.2
-    rollup: 2.75.6
+    rollup: 2.75.7
     rollup-plugin-babel: ^4.3.3
     rollup-plugin-commonjs: ^10.1.0
     typescript: 4.7.4
@@ -330,7 +330,7 @@ __metadata:
     "@babel/cli": 7.17.10
     "@babel/core": 7.18.5
     "@babel/runtime": ^7.17.2
-    "@linaria/webpack5-loader": 3.0.0-beta.21
+    "@linaria/webpack5-loader": 3.0.0-beta.22
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     "@svgr/webpack": ^6.2.1
     "@types/webpack-bundle-analyzer": ^4.4.1
@@ -5038,9 +5038,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/babel-preset@npm:3.0.0-beta.21"
+"@linaria/babel-preset@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/babel-preset@npm:3.0.0-beta.22"
   dependencies:
     "@babel/core": ^7.18.2
     "@babel/generator": ">=7"
@@ -5049,24 +5049,24 @@ __metadata:
     "@babel/plugin-transform-modules-commonjs": ^7.18.2
     "@babel/template": ">=7"
     "@babel/traverse": ">=7"
-    "@linaria/core": ^3.0.0-beta.21
+    "@linaria/core": ^3.0.0-beta.22
     "@linaria/logger": ^3.0.0-beta.20
     "@linaria/utils": ^3.0.0-beta.20
     cosmiconfig: ^5.1.0
     find-up: ^5.0.0
     source-map: ^0.7.3
     stylis: ^3.5.4
-  checksum: a5c1e97d12da93f7a054bcc964558918614713cf128fada8c7a57281343387df9553df86c4ff4b595c538e8acdf03cbb20f987199976452983739f6847213328
+  checksum: fb1d1f5366fdb91bb6ca4fcda94e6aabe9602f06782d36c5805d0de67ff26b18adc352d6e2e474da81892bad1ba2669ffe98a13c784f6b48dedd077024be2557
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/core@npm:3.0.0-beta.21"
+"@linaria/core@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/core@npm:3.0.0-beta.22"
   dependencies:
     "@linaria/logger": ^3.0.0-beta.20
     "@linaria/utils": ^3.0.0-beta.20
-  checksum: 2b6cde7254372df70a6c0da8b318e95118a6bad63c286e7405531a46cc64bd8388f6683f474d08456b3b57dd74d4b4b356d8151a704536e9168d4157567b2784
+  checksum: 67f57811c78821eb4866e3f307078e3c1cf375ca84f23b4a25cf7f4c34b48b76eaef70a4320436a51145a73b4d0fbac54db7459ab5a23049e7c347fee3644abb
   languageName: node
   linkType: hard
 
@@ -5080,43 +5080,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/preeval@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/preeval@npm:3.0.0-beta.21"
+"@linaria/preeval@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/preeval@npm:3.0.0-beta.22"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.21
-  checksum: 66ee3dcb0fac3b70a2ee1a21a64f53bea6ffc63fb539bb93bb875fe4b6d40b3d5b48e384f3e72d8eae0909be9f725e643890ba3961c39ba0e76e69e6475d6bc0
+    "@linaria/babel-preset": ^3.0.0-beta.22
+  checksum: 3f1cf0c27cbcfd3ebd6e82346ee3ad00f146a8dd2e41b440a677707893e03a82937be5aee3f33fabba2c537b0639d1280cafa139558123548f1473eee08bb446
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/react@npm:3.0.0-beta.21"
+"@linaria/react@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/react@npm:3.0.0-beta.22"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.8
-    "@linaria/core": ^3.0.0-beta.21
+    "@linaria/core": ^3.0.0-beta.22
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: e139127281d0d0580f2470abd6b0ca5f3904833f55e15b0e4e1030d72a97fb2294d8010b0981ffa143bc9d5da87bb7107fa8877fb01772f6747cd55ded00b4c8
+  checksum: 6bdeb867d6cbc255288a5f289724d9227cab8f05fa0569d198d246c095395a84fcbd044df8d30b34d0611740836b52a38c7cc71a0c9479e5e0a5c3d98bab73f2
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/shaker@npm:3.0.0-beta.21"
+"@linaria/shaker@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/shaker@npm:3.0.0-beta.22"
   dependencies:
     "@babel/core": ^7.18.2
     "@babel/generator": ">=7"
     "@babel/plugin-transform-runtime": ">=7"
     "@babel/plugin-transform-template-literals": ">=7"
     "@babel/preset-env": ">=7"
-    "@linaria/babel-preset": ^3.0.0-beta.21
+    "@linaria/babel-preset": ^3.0.0-beta.22
     "@linaria/logger": ^3.0.0-beta.20
-    "@linaria/preeval": ^3.0.0-beta.21
+    "@linaria/preeval": ^3.0.0-beta.22
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.10.3
-  checksum: 00f41a71fc9cafbd908d6c0f45a555d7724a24f28ee06746f67a76df9ae66e216043d3dbb34b24fdc5cf0548422d0e72a0aeb38063cf8d10fce8ac8be967f90a
+  checksum: 4b9d3d5112f82317fddbe9369e3b96f5023a4c212aa220e51c32165fe33ba9487683a61263cacb6ad2e202c13e9f1bdba80f0264d3e0074a97a2bcb15af22e9b
   languageName: node
   linkType: hard
 
@@ -5127,17 +5127,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/webpack5-loader@npm:3.0.0-beta.21":
-  version: 3.0.0-beta.21
-  resolution: "@linaria/webpack5-loader@npm:3.0.0-beta.21"
+"@linaria/webpack5-loader@npm:3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/webpack5-loader@npm:3.0.0-beta.22"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.21
+    "@linaria/babel-preset": ^3.0.0-beta.22
     "@linaria/logger": ^3.0.0-beta.20
     enhanced-resolve: ^5.3.1
     mkdirp: ^0.5.1
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 135cd4789fd80d739f8e4036e82af7cc6c70c04a208cb2ef01ace732d73e8c4dd6fc8c5745ffdd9dd4511b59214c9121d1b00c1e77510b519f263c920c83e87f
+  checksum: c0411e7a549b9b37703615027bf119a3ddb3357954f6fd5bee21b7bc3f7ee8ca7694f7c76397b21b9f65daaad11b498747c7228da2bc7dd181404040a3b126d9
   languageName: node
   linkType: hard
 
@@ -14226,9 +14226,9 @@ __metadata:
     "@anansi/webpack-config": ^11.6.5
     "@babel/plugin-transform-modules-commonjs": 7.18.2
     "@babel/runtime": ^7.17.2
-    "@linaria/core": 3.0.0-beta.21
-    "@linaria/react": 3.0.0-beta.21
-    "@linaria/shaker": 3.0.0-beta.21
+    "@linaria/core": 3.0.0-beta.22
+    "@linaria/react": 3.0.0-beta.22
+    "@linaria/shaker": 3.0.0-beta.22
     "@types/classnames": ^2.2.9
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.5
@@ -14253,9 +14253,9 @@ __metadata:
     "@anansi/router": ^0.6.3
     "@anansi/webpack-config": ^11.6.5
     "@babel/runtime": ^7.17.2
-    "@linaria/core": 3.0.0-beta.21
-    "@linaria/react": 3.0.0-beta.21
-    "@linaria/shaker": 3.0.0-beta.21
+    "@linaria/core": 3.0.0-beta.22
+    "@linaria/react": 3.0.0-beta.22
+    "@linaria/shaker": 3.0.0-beta.22
     "@rest-hooks/hooks": ^3.0.2
     "@rest-hooks/img": 0.6.1
     "@rest-hooks/rest": 5.0.2
@@ -26014,9 +26014,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.75.6":
-  version: 2.75.6
-  resolution: "rollup@npm:2.75.6"
+"rollup@npm:2.75.7":
+  version: 2.75.7
+  resolution: "rollup@npm:2.75.7"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -26024,7 +26024,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: df83c6d43a144a296daf82bed7f12f2dfcc6c495a64245e840d15fd21f2ab8b66bb3423e61c974875b33ccf53fb659d2ed099f272937ecf23af48815277c6cd5
+  checksum: a6331d46b01062b184efdcb42ce12caf2e1575f989963944534b02f5855f6f3bc239ed0c1a18893572d7695af6d83166f3aef59dbd0365084e1531cb67824674
   languageName: node
   linkType: hard
 
