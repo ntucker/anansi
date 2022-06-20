@@ -4,6 +4,7 @@ import { styled } from '@linaria/react';
 
 import MenuItem from 'MenuItem';
 import Media from 'Media';
+import NestedTest from 'NestedTest';
 
 import AngleDownUrl from './angle-down-solid.svg';
 
@@ -85,6 +86,7 @@ const App = () => (
       <img src={AngleDownUrl} style={{ width: '1em' }} />{' '}
       {/*<AngleDown style={{ width: '1em' }} />*/}
     </div>
+    <NestedTest />
     <WrappedMedia />
   </>
 );
