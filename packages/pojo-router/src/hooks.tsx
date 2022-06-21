@@ -6,12 +6,12 @@ export function useLocation() {
   return useContext(LocationContext);
 }
 
-export function useController() {
+export function useRouter() {
   return useContext(ControllerContext);
 }
 
 export function useRoutes<Route>(): Route[] {
-  const controller = useController();
+  const controller = useRouter();
   const location = useLocation();
 
   return useMemo(

@@ -5,13 +5,13 @@ import type { History } from 'history';
 import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types';
 
 type Props<
-  Route extends { name: string } = {
+  Route extends { name: string; routes?: Record<string, readonly Route[]> } = {
     name: string;
   },
 > = {
   history: History;
   namedPaths: Record<string, string | NamedPath>;
-  routes: readonly Route[];
+  routes: Record<string, readonly Route[]>;
   notFound: AnyIfEmpty<DefaultRoutePojo>;
 };
 
