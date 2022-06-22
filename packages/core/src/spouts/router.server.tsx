@@ -50,6 +50,9 @@ export default function routerSpout<ResolveWith>(options: {
       return {
         ...nextProps,
         app: <Router>{nextProps.app}</Router>,
+        // TODO: figure out how to only inject in next and not have to also put here
+        matchedRoutes,
+        router,
       };
     };
   };

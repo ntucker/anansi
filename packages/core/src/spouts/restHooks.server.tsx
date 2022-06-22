@@ -34,6 +34,9 @@ export default function restHooksSpout(
           resthooks: () => store.getState(),
         },
         app: <ServerCacheProvider>{nextProps.app}</ServerCacheProvider>,
+        // TODO: figure out how to only inject in next and not have to also put here
+        controller,
+        store,
       };
     };
   };

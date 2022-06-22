@@ -17,8 +17,6 @@ import { createFsRequire } from 'fs-require';
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';
 
-process.env.NODE_OPTIONS = process.env.NODE_OPTIONS ?? '--enable-source-maps';
-
 // run directly from node
 if (require.main === module) {
   const entrypoint = process.argv[2];
