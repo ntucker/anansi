@@ -4,7 +4,7 @@ import { createMemoryHistory } from 'history';
 
 import type { ResolveProps, ServerProps, CreateRouter } from './types';
 
-type NeededProps = ResolveProps;
+type NeededNext = ResolveProps;
 
 export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;
@@ -24,23 +24,31 @@ export default function routerSpout<ResolveWith>(options: {
       );
     };
 
-  return function <T extends NeededProps>(
-    next: (props: ServerProps) => Promise<T>,
+  return function <N extends NeededNext, I extends ServerProps>(
+    next: (
+      props: I & {
+        matchedRoutes: Route<ResolveWith>[];
+        router: RouteController<Route<ResolveWith, any>>;
+      },
+    ) => Promise<N>,
   ) {
-    return async (props: ServerProps) => {
+    return async (props: I) => {
       const url = props.req.url || '';
       const router = options.createRouter(
         createMemoryHistory({ initialEntries: [url] }),
       );
       const matchedRoutes: Route<ResolveWith>[] = router.getMatchedRoutes(url);
 
-      const nextProps = await next(props);
-
-      const Router = createRouteComponent(router);
-      return {
-        ...nextProps,
+      const nextProps = await next({
+        ...props,
         matchedRoutes,
         router,
+      });
+
+      const Router = createRouteComponent(router);
+
+      return {
+        ...nextProps,
         app: <Router>{nextProps.app}</Router>,
       };
     };

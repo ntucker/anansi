@@ -7,20 +7,20 @@ import {
 
 import type { ResolveProps } from './types';
 
-type NeededProps = ResolveProps;
+type NeededNext = ResolveProps;
 
 export default function restHooksSpout(
   options: {
     getManagers: () => Manager[];
   } = { getManagers: () => [new NetworkManager()] },
 ) {
-  return function <T extends NeededProps>(
-    next: (initData: Record<string, unknown>) => Promise<T>,
+  return function <N extends NeededNext, I extends Record<string, unknown>>(
+    next: (props: I) => Promise<N>,
   ) {
-    return async (initData: Record<string, unknown>) => {
-      const data = initData.resthooks as State<unknown>;
+    return async (props: I & { initData: Record<string, unknown> }) => {
+      const data = props.initData.resthooks as State<unknown>;
 
-      const nextProps = await next(initData);
+      const nextProps = await next(props);
 
       return {
         ...nextProps,

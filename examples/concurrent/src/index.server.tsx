@@ -6,17 +6,12 @@ import {
   prefetchSpout,
   routerSpout,
   JSONSpout,
+  appSpout,
 } from '@anansi/core/server';
-import React from 'react';
 
 import app from 'app';
 
 import { createRouter } from './routing';
-
-// get rid of warning spam
-React.useLayoutEffect = React.useEffect;
-
-const appSpout = () => Promise.resolve({ app });
 
 const csPolicy = {
   'base-uri': "'self'",
@@ -35,7 +30,9 @@ const spouts = prefetchSpout('controller')(
   })(
     JSONSpout()(
       restHooksSpout()(
-        routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+        routerSpout({ useResolveWith: useController, createRouter })(
+          appSpout(app),
+        ),
       ),
     ),
   ),
