@@ -62,7 +62,7 @@
     "yo": "^4.3.0"
   },
   "peerDependencies": {
-    "@anansi/core": "^0.8.0"
+    "@anansi/core": "^0.13.0 || ^0.14.0"
   },
   "peerDependenciesMeta": {
     "@anansi/core": {
