@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.120](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.119...@anansi/polyfill@1.0.120) (2022-06-23)
+
+
+### 📦 Package
+
+* linaria ([#1558](https://github.com/ntucker/anansi/issues/1558)) ([33b1441](https://github.com/ntucker/anansi/commit/33b144157ba3efe576c59e9f0dc8cb9901d5da0b))
+* Update all non-major dependencies ([#1557](https://github.com/ntucker/anansi/issues/1557)) ([95606ff](https://github.com/ntucker/anansi/commit/95606ff16a12a9c97062136616e6b67c7e398cdc))
+
+
+
 ### [1.0.119](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.118...@anansi/polyfill@1.0.119) (2022-06-15)
 
 **Note:** Version bump only for package @anansi/polyfill

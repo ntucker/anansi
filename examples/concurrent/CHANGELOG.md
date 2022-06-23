@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/ntucker/anansi/compare/example-react-18@2.7.3...example-react-18@3.0.0) (2022-06-23)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Must use appSpout; Spouts need two generics
+
+### 💅 Enhancement
+
+* Add post edit ([63313c1](https://github.com/ntucker/anansi/commit/63313c1bc7dc4b0196cb1a663b4da00a4c66aeec))
+* Spouts produce props in both directions ([#1559](https://github.com/ntucker/anansi/issues/1559)) ([898cdde](https://github.com/ntucker/anansi/commit/898cdde500a204a7a4dc155ac7ee51930172380e))
+
+
+### 📦 Package
+
+* linaria ([#1558](https://github.com/ntucker/anansi/issues/1558)) ([33b1441](https://github.com/ntucker/anansi/commit/33b144157ba3efe576c59e9f0dc8cb9901d5da0b))
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+* Update all non-major dependencies ([#1553](https://github.com/ntucker/anansi/issues/1553)) ([87df815](https://github.com/ntucker/anansi/commit/87df8150d050dc0d782c1a93cc1aef460baf9b1f))
+* Update all non-major dependencies ([#1556](https://github.com/ntucker/anansi/issues/1556)) ([9b72985](https://github.com/ntucker/anansi/commit/9b72985163965f57edba8a0606b8aa9192a190d9))
+
+
+
 ### [2.7.3](https://github.com/ntucker/anansi/compare/example-react-18@2.7.2...example-react-18@2.7.3) (2022-06-15)
 
 

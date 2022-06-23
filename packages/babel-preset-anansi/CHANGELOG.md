@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.5...@anansi/babel-preset@3.2.6) (2022-06-23)
+
+
+### 📦 Package
+
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+
+
+
 ### [3.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.4...@anansi/babel-preset@3.2.5) (2022-06-15)
 
 

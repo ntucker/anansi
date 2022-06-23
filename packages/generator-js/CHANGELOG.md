@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.3.2...@anansi/generator-js@9.0.0) (2022-06-23)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Must use appSpout; Spouts need two generics
+
+### 💅 Enhancement
+
+* Spouts produce props in both directions ([#1559](https://github.com/ntucker/anansi/issues/1559)) ([898cdde](https://github.com/ntucker/anansi/commit/898cdde500a204a7a4dc155ac7ee51930172380e))
+
+
+### 📦 Package
+
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+* Update all non-major dependencies ([#1553](https://github.com/ntucker/anansi/issues/1553)) ([87df815](https://github.com/ntucker/anansi/commit/87df8150d050dc0d782c1a93cc1aef460baf9b1f))
+
+
+
 ### [8.3.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.3.1...@anansi/generator-js@8.3.2) (2022-06-15)
 
 

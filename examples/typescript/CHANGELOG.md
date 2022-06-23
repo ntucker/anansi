@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.17](https://github.com/ntucker/anansi/compare/example-typescript@10.0.16...example-typescript@10.0.17) (2022-06-23)
+
+
+### 📦 Package
+
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+* Update all non-major dependencies ([#1553](https://github.com/ntucker/anansi/issues/1553)) ([87df815](https://github.com/ntucker/anansi/commit/87df8150d050dc0d782c1a93cc1aef460baf9b1f))
+* Update all non-major dependencies ([#1556](https://github.com/ntucker/anansi/issues/1556)) ([9b72985](https://github.com/ntucker/anansi/commit/9b72985163965f57edba8a0606b8aa9192a190d9))
+
+
+
 ### [10.0.16](https://github.com/ntucker/anansi/compare/example-typescript@10.0.15...example-typescript@10.0.16) (2022-06-15)
 
 

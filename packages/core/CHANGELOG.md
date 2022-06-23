@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.12.0...@anansi/core@0.13.0) (2022-06-23)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Must use appSpout; Spouts need two generics
+
+### 💅 Enhancement
+
+* Spouts produce props in both directions ([#1559](https://github.com/ntucker/anansi/issues/1559)) ([898cdde](https://github.com/ntucker/anansi/commit/898cdde500a204a7a4dc155ac7ee51930172380e))
+
+
+
 ## [0.12.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.2...@anansi/core@0.12.0) (2022-06-15)
 
 

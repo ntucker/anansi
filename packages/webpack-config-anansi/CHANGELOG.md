@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.6.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.5...@anansi/webpack-config@11.6.6) (2022-06-23)
+
+
+### 📦 Package
+
+* linaria ([#1558](https://github.com/ntucker/anansi/issues/1558)) ([33b1441](https://github.com/ntucker/anansi/commit/33b144157ba3efe576c59e9f0dc8cb9901d5da0b))
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+* Update `readable-stream` to v4 ([#1555](https://github.com/ntucker/anansi/issues/1555)) ([4cfe47d](https://github.com/ntucker/anansi/commit/4cfe47d0b62a3b69e20fc961d65b44f1137f756c))
+
+
+
 ### [11.6.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.4...@anansi/webpack-config@11.6.5) (2022-06-15)
 
 

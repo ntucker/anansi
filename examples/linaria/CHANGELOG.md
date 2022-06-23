@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.25](https://github.com/ntucker/anansi/compare/example-linaria@4.1.24...example-linaria@4.1.25) (2022-06-23)
+
+
+### 💅 Enhancement
+
+* Add linaria case from [#995](https://github.com/ntucker/anansi/issues/995) ([f9ab97b](https://github.com/ntucker/anansi/commit/f9ab97bc47fb15a70b441b4d0eaf16c935c87e59))
+
+
+### 📦 Package
+
+* linaria ([#1558](https://github.com/ntucker/anansi/issues/1558)) ([33b1441](https://github.com/ntucker/anansi/commit/33b144157ba3efe576c59e9f0dc8cb9901d5da0b))
+* sass, babel-plugin-ramda, pacote ([#1560](https://github.com/ntucker/anansi/issues/1560)) ([8d959de](https://github.com/ntucker/anansi/commit/8d959def13bb4d185c1617ef2380b61da1024e26))
+
+
+
 ### [4.1.24](https://github.com/ntucker/anansi/compare/example-linaria@4.1.23...example-linaria@4.1.24) (2022-06-15)
 
 
