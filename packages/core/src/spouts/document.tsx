@@ -3,7 +3,7 @@ import type { Route } from '@anansi/router';
 
 import type { ResolveProps } from './types';
 
-type NeededProps = {
+type NeededNext = {
   matchedRoutes: Route<any>[];
   title?: string;
 } & ResolveProps;
@@ -12,11 +12,11 @@ export default function documentSpout(options: {
   head?: React.ReactNode;
   title: string;
 }) {
-  return function <T extends NeededProps>(
-    next: (initData: Record<string, unknown>) => Promise<T>,
+  return function <N extends NeededNext, I extends Record<string, unknown>>(
+    next: (props: I) => Promise<N>,
   ) {
-    return async (initData: Record<string, unknown>) => {
-      const nextProps = await next(initData);
+    return async (props: I) => {
+      const nextProps = await next(props);
 
       return nextProps;
     };

@@ -7,14 +7,18 @@ type NeededProps<RouteWith> = {
 } & ResolveProps;
 
 export default function prefetchSpout<F extends string>(field: F) {
-  return function <RouteWith, T extends NeededProps<RouteWith>>(
-    next: (props: ServerProps) => Promise<
+  return function <
+    RouteWith,
+    N extends NeededProps<RouteWith>,
+    I extends ServerProps,
+  >(
+    next: (props: I) => Promise<
       {
         [K in F]: RouteWith;
-      } & T
+      } & N
     >,
   ) {
-    return async (props: ServerProps) => {
+    return async (props: I) => {
       const nextProps = await next(props);
 
       try {

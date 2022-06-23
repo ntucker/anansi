@@ -6,7 +6,7 @@ import type { ServerProps, ResolveProps } from './types';
 import type { Policy } from './csp';
 import Document from './DocumentComponent';
 
-type NeededProps = {
+type NeededNext = {
   matchedRoutes: Route<any>[];
   title?: string;
   scripts?: React.ReactNode[];
@@ -19,10 +19,10 @@ export default function DocumentSpout(options: {
   charSet?: string;
   csPolicy?: Policy;
 }) {
-  return function <T extends NeededProps>(
-    next: (props: ServerProps) => Promise<T>,
+  return function <N extends NeededNext, I extends ServerProps>(
+    next: (props: I) => Promise<N>,
   ) {
-    return async (props: ServerProps) => {
+    return async (props: I) => {
       const nextProps = await next(props);
 
       const publicPath = props.clientManifest.publicPath;

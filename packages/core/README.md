@@ -1,5 +1,7 @@
 # @anansi/core
+
 <!--[![CircleCI](https://circleci.com/gh/notwillk/pojo-router.svg?style=shield)](https://circleci.com/gh/notwillk/pojo-router)-->
+
 [![npm downloads](https://img.shields.io/npm/dm/@anansi/core.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/core)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@anansi/core?style=flat-square)](https://bundlephobia.com/result?p=@anansi/core)
 [![npm version](https://img.shields.io/npm/v/@anansi/core.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/core)
@@ -28,24 +30,27 @@ import {
   restHooksSpout,
   prefetchSpout,
   routerSpout,
+  JSONSpout,
+  appSpout,
 } from '@anansi/core/server';
 
 import app from 'app';
 
 import { createRouter } from './routing';
 
-const appSpout = () => Promise.resolve({ app });
-
 const spouts = prefetchSpout('controller')(
   documentSpout({ title: 'anansi' })(
-    restHooksSpout()(
-      routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+    JSONSpout()(
+      restHooksSpout()(
+        routerSpout({ useResolveWith: useController, createRouter })(
+          appSpout(app),
+        ),
+      ),
     ),
   ),
 );
 
 export default laySpouts(spouts);
-
 ```
 
 </details>
@@ -59,6 +64,8 @@ import {
   documentSpout,
   restHooksSpout,
   routerSpout,
+  JSONSpout,
+  appSpout,
 } from '@anansi/core';
 
 import app from 'app';
@@ -68,8 +75,12 @@ import { createRouter } from './routing';
 const appSpout = () => Promise.resolve({ app });
 
 const spouts = documentSpout({ title: 'anansi' })(
-  restHooksSpout()(
-    routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+  JSONSpout()(
+    restHooksSpout()(
+      routerSpout({ useResolveWith: useController, createRouter })(
+        appSpout(app),
+      ),
+    ),
   ),
 );
 

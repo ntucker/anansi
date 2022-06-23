@@ -6,6 +6,7 @@ import {
   prefetchSpout,
   routerSpout,
   JSONSpout,
+  appSpout,
 } from '@anansi/core/server';
 import Boundary from 'components/Boundary';
 
@@ -17,8 +18,6 @@ const app = (
     <App />
   </Boundary>
 );
-
-const appSpout = () => Promise.resolve({ app });
 
 const csPolicy = {
   'base-uri': "'self'",
@@ -38,7 +37,9 @@ const spouts = prefetchSpout('controller')(
   })(
     JSONSpout()(
       restHooksSpout()(
-        routerSpout({ useResolveWith: useController, createRouter })(appSpout),
+        routerSpout({ useResolveWith: useController, createRouter })(
+          appSpout(app),
+        ),
       ),
     ),
   ),

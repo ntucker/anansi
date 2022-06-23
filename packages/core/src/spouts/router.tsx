@@ -5,7 +5,7 @@ import type { Update } from 'history';
 
 import type { ResolveProps, CreateRouter } from './types';
 
-type NeededProps = ResolveProps;
+type NeededNext = ResolveProps;
 
 export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;
@@ -30,15 +30,15 @@ export default function routerSpout<ResolveWith>(options: {
       );
     };
 
-  return function <T extends NeededProps>(
-    next: (initData: Record<string, unknown>) => Promise<T>,
+  return function <N extends NeededNext, I extends Record<string, unknown>>(
+    next: (initData: Record<string, unknown>) => Promise<N>,
   ) {
-    return async (initData: Record<string, unknown>) => {
+    return async (props: I) => {
       const history = createBrowserHistory();
       const router = options.createRouter(history);
       const matchedRoutes = router.getMatchedRoutes(history.location.pathname);
 
-      const nextProps = await next(initData);
+      const nextProps = await next(props);
 
       const Router = createRouteComponent(router);
       return {

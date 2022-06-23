@@ -5,21 +5,20 @@ import {
   restHooksSpout,
   routerSpout,
   JSONSpout,
+  appSpout,
 } from '@anansi/core';
 
 import app from 'app';
 
 import { createRouter } from './routing';
 
-const appSpout = (v: unknown) => Promise.resolve({ app });
-
-const spouts = JSONSpout()(
-  documentSpout({ title: 'anansi' })(
+const spouts = documentSpout({ title: 'anansi' })(
+  JSONSpout()(
     restHooksSpout()(
       routerSpout({
         useResolveWith: useController,
         createRouter,
-      })(appSpout),
+      })(appSpout(app)),
     ),
   ),
 );

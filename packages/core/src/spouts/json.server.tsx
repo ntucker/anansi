@@ -1,12 +1,8 @@
 import React from 'react';
-import type { Route } from '@anansi/router';
-import { StatsChunkGroup } from 'webpack';
 
 import type { ServerProps, ResolveProps } from './types';
-import type { Policy } from './csp';
-import Document from './DocumentComponent';
 
-type NeededProps = {
+type NeededNext = {
   initData?: Record<string, () => unknown>;
   scripts?: React.ReactNode[];
 } & ResolveProps;
@@ -14,10 +10,10 @@ type NeededProps = {
 export default function JSONSpout({
   id = 'anansi-json',
 }: { id?: string } = {}) {
-  return function <T extends NeededProps>(
-    next: (props: ServerProps) => Promise<T>,
+  return function <N extends NeededNext, I extends ServerProps>(
+    next: (props: I) => Promise<N>,
   ) {
-    return async (props: ServerProps) => {
+    return async (props: I) => {
       const nextProps = await next(props);
 
       const scripts: React.ReactNode[] = nextProps.scripts ?? [];

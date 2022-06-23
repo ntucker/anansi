@@ -1,21 +1,16 @@
-import React from 'react';
-import type { Route } from '@anansi/router';
-
 import type { ResolveProps } from './types';
 
-type NeededProps = ResolveProps;
+type NeededNext = ResolveProps;
 
 export default function JSONSpout({
   id = 'anansi-json',
 }: { id?: string } = {}) {
-  return function <T extends NeededProps>(
-    next: (initData: Record<string, unknown>) => Promise<T>,
+  return function <N extends NeededNext, I extends Record<string, unknown>>(
+    next: (props: I & { initData: Record<string, unknown> }) => Promise<N>,
   ) {
-    return async () => {
+    return async (props: I) => {
       const initData = getDatafromDOM(id);
-      const nextProps = await next(initData);
-
-      return nextProps;
+      return await next({ ...props, initData });
     };
   };
 }

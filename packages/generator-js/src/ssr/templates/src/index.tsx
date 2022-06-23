@@ -5,6 +5,7 @@ import {
   restHooksSpout,
   routerSpout,
   JSONSpout,
+  appSpout,
 } from '@anansi/core';
 import Boundary from 'components/Boundary';
 
@@ -17,15 +18,13 @@ const app = (
   </Boundary>
 );
 
-const appSpout = () => Promise.resolve({ app });
-
 const spouts = JSONSpout()(
   documentSpout({ title: 'anansi' })(
     restHooksSpout()(
       routerSpout({
         useResolveWith: useController,
         createRouter,
-      })(appSpout),
+      })(appSpout(app)),
     ),
   ),
 );
