@@ -3,16 +3,20 @@ import React from 'react';
 import { createBrowserHistory } from 'history';
 import type { Update } from 'history';
 
-import type { ResolveProps, CreateRouter } from './types';
-
-type NeededNext = ResolveProps;
+import type { CreateRouter, ClientSpout } from './types';
 
 export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;
   useResolveWith: () => ResolveWith;
   createRouter: CreateRouter<ResolveWith>;
   onChange?: (update: Update, callback: () => void | undefined) => void;
-}) {
+}): ClientSpout<
+  Record<string, unknown>,
+  {
+    matchedRoutes: Route<ResolveWith, any>[];
+    router: RouteController<Route<ResolveWith, any>>;
+  }
+> {
   const createRouteComponent = (
     router: RouteController<Route<ResolveWith, any>>,
   ) =>
@@ -30,23 +34,19 @@ export default function routerSpout<ResolveWith>(options: {
       );
     };
 
-  return function <N extends NeededNext, I extends Record<string, unknown>>(
-    next: (initData: Record<string, unknown>) => Promise<N>,
-  ) {
-    return async (props: I) => {
-      const history = createBrowserHistory();
-      const router = options.createRouter(history);
-      const matchedRoutes = router.getMatchedRoutes(history.location.pathname);
+  return next => async props => {
+    const history = createBrowserHistory();
+    const router = options.createRouter(history);
+    const matchedRoutes = router.getMatchedRoutes(history.location.pathname);
 
-      const nextProps = await next(props);
+    const nextProps = await next({ ...props, matchedRoutes, router });
 
-      const Router = createRouteComponent(router);
-      return {
-        ...nextProps,
-        matchedRoutes,
-        router,
-        app: <Router>{nextProps.app}</Router>,
-      };
+    const Router = createRouteComponent(router);
+    return {
+      ...nextProps,
+      matchedRoutes,
+      router,
+      app: <Router>{nextProps.app}</Router>,
     };
   };
 }
