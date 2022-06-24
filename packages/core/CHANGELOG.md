@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.13.0...@anansi/core@0.14.0) (2022-06-24)
+
+
+### 🚀 Features
+
+* Add Spout type for easy spout construction ([8f93eb3](https://github.com/ntucker/anansi/commit/8f93eb363f1bfe30d1ac30395df1a3d9fbd9cab3))
+
+
+
 ## [0.13.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.12.0...@anansi/core@0.13.0) (2022-06-23)
 
 

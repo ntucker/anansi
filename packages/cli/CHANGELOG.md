@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.6](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.5...@anansi/cli@1.4.6) (2022-06-24)
+
+
+### 🐛 Bug Fix
+
+* anansi/core peerdeps ([9b8bdbc](https://github.com/ntucker/anansi/commit/9b8bdbc40fd76e18fcf685033eaba4474bc99308))
+
+
+
 ### [1.4.5](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.4...@anansi/cli@1.4.5) (2022-06-23)
 
 **Note:** Version bump only for package @anansi/cli

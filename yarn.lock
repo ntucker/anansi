@@ -96,7 +96,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^1.4.5, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^1.4.6, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -119,7 +119,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.13.0, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.14.0, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -14259,8 +14259,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.2.6
     "@anansi/browserslist-config": ^1.3.3
-    "@anansi/cli": ^1.4.5
-    "@anansi/core": ^0.13.0
+    "@anansi/cli": ^1.4.6
+    "@anansi/core": ^0.14.0
     "@anansi/jest-preset": ^0.7.10
     "@anansi/router": ^0.6.4
     "@anansi/webpack-config": ^11.6.6
