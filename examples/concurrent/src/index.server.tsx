@@ -6,8 +6,11 @@ import {
   prefetchSpout,
   routerSpout,
   JSONSpout,
-  appSpout,
+  ServerProps,
+  //appSpout,
+  Spout,
 } from '@anansi/core/server';
+import { Controller } from '@rest-hooks/core';
 
 import app from 'app';
 
@@ -23,6 +26,21 @@ if (process.env.NODE_ENV !== 'production') {
   csPolicy['script-src'].push("'unsafe-inline'");
 }
 
+const appSpout =
+  (app: JSX.Element) =>
+  (props: ServerProps): Promise<{ app: JSX.Element }> =>
+    Promise.resolve({ ...props, app });
+
+const authSpout: Spout<{ controller: Controller }, unknown, unknown> =
+  next => async props => {
+    const nextProps = await next(props);
+
+    return nextProps;
+  };
+const ap = appSpout(app);
+const r = routerSpout({ useResolveWith: useController, createRouter })(ap);
+const a = authSpout(r);
+const b = restHooksSpout()(a);
 const spouts = prefetchSpout('controller')(
   documentSpout({
     title: 'anansi',
@@ -30,8 +48,10 @@ const spouts = prefetchSpout('controller')(
   })(
     JSONSpout()(
       restHooksSpout()(
-        routerSpout({ useResolveWith: useController, createRouter })(
-          appSpout(app),
+        authSpout(
+          routerSpout({ useResolveWith: useController, createRouter })(
+            appSpout(app),
+          ),
         ),
       ),
     ),
@@ -39,3 +59,5 @@ const spouts = prefetchSpout('controller')(
 );
 
 export default laySpouts(spouts);
+
+type A = unknown & ServerProps;

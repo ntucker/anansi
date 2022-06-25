@@ -22,19 +22,26 @@ export type CreateRouter<T> = (
 ) => RouteController<Route<T, any>>;
 
 /* Spouts are middleware for Anansi */
-export type ServerSpout<
-  NeededProps extends Record<string, unknown> = Record<string, unknown>,
-  ProvidedProps extends Record<string, unknown> = Record<string, unknown>,
-  NeededNext extends Record<string, unknown> = NeededProps,
-> = <N extends NeededNext & ResolveProps, I extends NeededProps & ServerProps>(
-  next: (props: I & ProvidedProps) => Promise<N>,
-) => (props: I) => Promise<N & ProvidedProps>;
+export declare type ServerSpout<
+  NeededProps = unknown,
+  ProvidedProps = unknown,
+  NeededNext = unknown,
+> = <
+  N extends NeededNext & ResolveProps,
+  I extends ServerProps & ProvidedProps,
+>(
+  next: (props: I) => Promise<N>,
+) => (
+  props: NeededProps & Omit<I, keyof ProvidedProps>,
+) => Promise<N & ProvidedProps>;
 
 /* Spouts are middleware for Anansi */
-export type ClientSpout<
-  NeededProps extends Record<string, unknown> = Record<string, unknown>,
-  ProvidedProps extends Record<string, unknown> = Record<string, unknown>,
-  NeededNext extends Record<string, unknown> = NeededProps,
-> = <N extends NeededNext & ResolveProps, I extends NeededProps>(
-  next: (props: I & ProvidedProps) => Promise<N>,
-) => (props: I) => Promise<N & ProvidedProps>;
+export declare type ClientSpout<
+  NeededProps = unknown,
+  ProvidedProps = unknown,
+  NeededNext = unknown,
+> = <N extends NeededNext & ResolveProps, I extends ProvidedProps>(
+  next: (props: I) => Promise<N>,
+) => (
+  props: NeededProps & Omit<I, keyof ProvidedProps>,
+) => Promise<N & ProvidedProps>;
