@@ -108,7 +108,7 @@
     "react-error-overlay": "6.0.9",
     "readable-stream": "^4.0.0",
     "sass": "^1.53.0",
-    "sass-loader": "^13.0.0",
+    "sass-loader": "^13.0.1",
     "sass-resources-loader": "^2.2.5",
     "semver": "^7.3.7",
     "stream-browserify": "^3.0.0",
