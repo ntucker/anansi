@@ -55,7 +55,7 @@ __metadata:
     babel-plugin-react-require: ^3.1.3
     babel-plugin-root-import: ^6.6.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-    core-js-compat: ^3.23.2
+    core-js-compat: ^3.23.3
     glob-to-regexp: ^0.4.1
     path: ^0.12.7
     semver: ^7.3.7
@@ -379,7 +379,7 @@ __metadata:
     readable-stream: ^4.0.0
     rimraf: ^3.0.2
     sass: ^1.53.0
-    sass-loader: ^13.0.1
+    sass-loader: ^13.0.2
     sass-resources-loader: ^2.2.5
     semver: ^7.3.7
     stream-browserify: ^3.0.0
@@ -9322,14 +9322,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.21.3":
-  version: 4.21.3
-  resolution: "antd@npm:4.21.3"
+"antd@npm:4.21.4":
+  version: 4.21.4
+  resolution: "antd@npm:4.21.4"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
     "@ant-design/react-slick": ~0.29.1
-    "@babel/runtime": ^7.12.5
+    "@babel/runtime": ^7.18.3
     "@ctrl/tinycolor": ^3.4.0
     classnames: ^2.2.6
     copy-to-clipboard: ^3.2.0
@@ -9368,12 +9368,12 @@ __metadata:
     rc-tree-select: ~5.4.0
     rc-trigger: ^5.2.10
     rc-upload: ~4.3.0
-    rc-util: ^5.20.0
+    rc-util: ^5.22.5
     scroll-into-view-if-needed: ^2.2.25
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 34e964b0b9b7cbbe9dbe767c39a2628cc80a9754bd0702362ccdd00ec6ec2aade644291a0cdfcc4cad6d825c70f4e742a213e59b7168a7d4ccb25e027739fe91
+  checksum: 14c36e12e965e7d6d15ded618258ea0c3759a071eef1bc0cd07b6a4e916adbb1d853a66f6685e41c7302e01162c6d4d54a6ca9aa152c3a9832fca2e2eeb8069f
   languageName: node
   linkType: hard
 
@@ -12131,13 +12131,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-compat@npm:^3.23.2":
-  version: 3.23.2
-  resolution: "core-js-compat@npm:3.23.2"
+"core-js-compat@npm:^3.23.3":
+  version: 3.23.3
+  resolution: "core-js-compat@npm:3.23.3"
   dependencies:
-    browserslist: ^4.20.4
+    browserslist: ^4.21.0
     semver: 7.0.0
-  checksum: cc5e436fd0527bec0135301c65cdc7957fdca038b3ce0a9a17272b43c2158d03a52e60120ae60d3618173922fad91597d749bca8decf92c8fb4ee109a887b72b
+  checksum: a5fd680a31b8e667ce0f852238a2fd6769d495ecf0e8a6e04a240e5e259e9a33a77b2839131b640f03c206fff12c51dca7e362ac1897f629bf4c5e39075c83a7
   languageName: node
   linkType: hard
 
@@ -12148,10 +12148,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.23.2":
-  version: 3.23.2
-  resolution: "core-js@npm:3.23.2"
-  checksum: dc388ec8565610eff11d8ea81c390b002c8aeaaff20224b132737680c4ed13d1c2feddd4a4e803e9fa60cef633c66847e1cbc51d387c2c2cd8928927267af3a3
+"core-js@npm:3.23.3":
+  version: 3.23.3
+  resolution: "core-js@npm:3.23.3"
+  checksum: f517546388e468bd3155afbf06f38f8fe0448134fe086c4ed9c4d371d52db71e80585073b59362948777e01f2377ef7064925e1a3d9312a1c56da47eadfaca9a
   languageName: node
   linkType: hard
 
@@ -13953,9 +13953,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "eslint-plugin-prettier@npm:4.0.0"
+"eslint-plugin-prettier@npm:4.1.0":
+  version: 4.1.0
+  resolution: "eslint-plugin-prettier@npm:4.1.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
@@ -13964,7 +13964,7 @@ __metadata:
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: 03d69177a3c21fa2229c7e427ce604429f0b20ab7f411e2e824912f572a207c7f5a41fd1f0a95b9b8afe121e291c1b1f1dc1d44c7aad4b0837487f9c19f5210d
+  checksum: 3f731b9988383851f1a42bd67a093461886fc56dc5d0ca4c72bdd0755dc0f843faedde843c1812710a75782a9711096aad22b6140fe7d6f996cc4a672c8b3643
   languageName: node
   linkType: hard
 
@@ -14273,7 +14273,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     babel-loader: 8.2.5
     classnames: ^2.2.6
-    core-js: 3.23.2
+    core-js: 3.23.3
     react-refresh: 0.14.0
     redbox-react: ^1.6.0
     serve: ^13.0.2
@@ -14305,9 +14305,9 @@ __metadata:
     "@types/node": 17.0.45
     "@types/react": 18.0.14
     "@types/react-dom": 18.0.5
-    antd: 4.21.3
+    antd: 4.21.4
     classnames: ^2.2.6
-    core-js: 3.23.2
+    core-js: 3.23.3
     history: 5.3.0
     jest: 28.1.1
     react: 18.2.0
@@ -14347,9 +14347,9 @@ __metadata:
     "@types/parse-link-header": 2.0.0
     "@types/react-router": ^5.1.18
     "@types/react-router-dom": ^5.3.3
-    antd: 4.21.3
+    antd: 4.21.4
     classnames: ^2.2.6
-    core-js: 3.23.2
+    core-js: 3.23.3
     jest: 28.1.1
     lodash: ^4.17.15
     parse-link-header: ^2.0.0
@@ -24740,7 +24740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-util@npm:^5.17.0, rc-util@npm:^5.20.0, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0":
+"rc-util@npm:^5.17.0, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0":
   version: 5.21.0
   resolution: "rc-util@npm:5.21.0"
   dependencies:
@@ -24779,6 +24779,20 @@ __metadata:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
   checksum: 39434002f228381b6a6dbb135a1c099b2e5c5f63aba4616cee1ed9b1436cdc8011d78055b06cc169d44b1a79c42d40ecd3d2f6123a61043510aa2a9de48e0e72
+  languageName: node
+  linkType: hard
+
+"rc-util@npm:^5.22.5":
+  version: 5.22.5
+  resolution: "rc-util@npm:5.22.5"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    react-is: ^16.12.0
+    shallowequal: ^1.1.0
+  peerDependencies:
+    react: ">=16.9.0"
+    react-dom: ">=16.9.0"
+  checksum: 006c172fdba5de580430ed5b921a098e455d8115d020e801822731a63578749cc7fea70aaab3e40ce5947846b68c814532c924195723042d4ecaa1f19f9508e3
   languageName: node
   linkType: hard
 
@@ -26160,7 +26174,7 @@ __metadata:
     conventional-changelog-conventionalcommits: 5.0.0
     eslint: 8.18.0
     eslint-plugin-import: 2.26.0
-    eslint-plugin-prettier: ^4.0.0
+    eslint-plugin-prettier: 4.1.0
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
     husky: ^7.0.4
@@ -26279,9 +26293,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^13.0.1":
-  version: 13.0.1
-  resolution: "sass-loader@npm:13.0.1"
+"sass-loader@npm:^13.0.2":
+  version: 13.0.2
+  resolution: "sass-loader@npm:13.0.2"
   dependencies:
     klona: ^2.0.4
     neo-async: ^2.6.2
@@ -26300,7 +26314,7 @@ __metadata:
       optional: true
     sass-embedded:
       optional: true
-  checksum: 21a4e59947c4a0dd851a7f3e5079ca4cdb0af17cc603862318585f5f72683a0c72926ef73e65a249b5210347894e47df38bfa5fee91132c9f2d29393c7d82b57
+  checksum: 6306712cc75bd4b4260ce67178778c92110089485f358b5956b6b12aba15a55e5c7287154daaf8b32678891df915b7bcda7356991afe8bf08ca7356ed30eb448
   languageName: node
   linkType: hard
 
