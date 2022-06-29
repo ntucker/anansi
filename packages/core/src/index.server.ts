@@ -5,5 +5,5 @@ export { default as routerSpout } from './spouts/router.server';
 export { default as prefetchSpout } from './spouts/prefetch.server';
 export { default as JSONSpout } from './spouts/json.server';
 export { default as appSpout } from './spouts/app.server';
-export { ServerProps } from './spouts/types';
-export { ServerSpout as Spout } from './spouts/types';
+export type { ServerProps } from './spouts/types';
+export type { ServerSpout as Spout } from './spouts/types';
