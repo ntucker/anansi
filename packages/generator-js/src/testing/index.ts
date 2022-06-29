@@ -43,6 +43,7 @@ module.exports = class TestingGenerator extends BetterGenerator {
         'jest',
         '@types/jest',
         'react-test-renderer',
+        'jest-environment-jsdom',
       ]),
     ]);
   }
