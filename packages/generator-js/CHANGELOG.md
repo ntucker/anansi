@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.1...@anansi/generator-js@9.0.2) (2022-06-29)
+
+
+### 🐛 Bug Fix
+
+* Include .yarnrc.yml when publishing ([1e4c243](https://github.com/ntucker/anansi/commit/1e4c243528626650048a7cda62e1fc90fe391565))
+* install jest-environment-jsdom ([86617b1](https://github.com/ntucker/anansi/commit/86617b1dfd5da027936fa8712a69b05be009b3bb))
+
+
+
 ### [9.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.0...@anansi/generator-js@9.0.1) (2022-06-29)
 
 
