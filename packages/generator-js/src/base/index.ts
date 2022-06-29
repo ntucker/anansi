@@ -101,6 +101,11 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       this.destinationPath('.gitignore.tpl'),
       this.destinationPath('.gitignore'),
     );
+    // set .yarnrc.yml to proper location
+    this.fs.move(
+      this.destinationPath('.yarnrc.yml.tpl'),
+      this.destinationPath('.yarnrc.yml'),
+    );
   }
 
   async configuringLinterPackages() {
