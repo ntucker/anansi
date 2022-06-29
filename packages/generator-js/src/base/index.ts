@@ -86,6 +86,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       homepage: `https://${repository}#readme`,
       keywords: ['anansi'],
       author: this.config.get('author'),
+      type: 'module',
     };
     this.packageJson.merge(packageSettings);
 
