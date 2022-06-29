@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-// in case of pnp environment
-try {
-  require('./.pnp.cjs').setup();
-}catch(e) {}
 const fs = require('fs');
 const execa = require('execa');
 const path = require('path');
