@@ -104,6 +104,7 @@
     "@types/react-dom": "^17.0.40 || ^18.0.0-0",
     "react": "^18.0.0-0",
     "react-dom": "^18.0.0-0",
+    "rest-hooks": "^6.0.0",
     "webpack": "^5.60.0"
   },
   "peerDependenciesMeta": {
@@ -114,6 +115,9 @@
       "optional": true
     },
     "@types/react-dom": {
+      "optional": true
+    },
+    "rest-hooks": {
       "optional": true
     }
   },
