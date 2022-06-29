@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.0...@anansi/generator-js@9.0.1) (2022-06-29)
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
+* Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
+
+
+
 ## [9.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@8.3.2...@anansi/generator-js@9.0.0) (2022-06-23)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.2](https://github.com/ntucker/anansi/compare/example-react-18@3.0.1...example-react-18@3.0.2) (2022-06-29)
+
+
+### 📦 Package
+
+* eslint-plugin-prettier, sass-loader ([#1565](https://github.com/ntucker/anansi/issues/1565)) ([981dd8b](https://github.com/ntucker/anansi/commit/981dd8b5f4645d62b05f05bc858d5e64cc5d5ff6))
+* Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
+
+
+
 ### [3.0.1](https://github.com/ntucker/anansi/compare/example-react-18@3.0.0...example-react-18@3.0.1) (2022-06-24)
 
 **Note:** Version bump only for package example-react-18

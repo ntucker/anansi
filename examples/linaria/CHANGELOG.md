@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.26](https://github.com/ntucker/anansi/compare/example-linaria@4.1.25...example-linaria@4.1.26) (2022-06-29)
+
+
+### 📦 Package
+
+* eslint-plugin-prettier, sass-loader ([#1565](https://github.com/ntucker/anansi/issues/1565)) ([981dd8b](https://github.com/ntucker/anansi/commit/981dd8b5f4645d62b05f05bc858d5e64cc5d5ff6))
+* Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
+
+
+
 ### [4.1.25](https://github.com/ntucker/anansi/compare/example-linaria@4.1.24...example-linaria@4.1.25) (2022-06-23)
 
 

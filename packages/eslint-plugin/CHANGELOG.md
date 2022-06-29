@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.13.0...@anansi/eslint-plugin@0.14.0) (2022-06-29)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* eslint-import-resolver-typescript major
+
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### 📦 Package
+
+* Update `eslint-import-resolver-typescript` to v3 ([#1564](https://github.com/ntucker/anansi/issues/1564)) ([5401aef](https://github.com/ntucker/anansi/commit/5401aefea92b2c59c472677d9046d6370b5afb16))
+
+
+
 ## [0.13.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.12.10...@anansi/eslint-plugin@0.13.0) (2022-05-18)
 
 
