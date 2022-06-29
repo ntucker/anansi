@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.8](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.7...@anansi/cli@1.4.8) (2022-06-29)
+
+
+### 💅 Enhancement
+
+* Support pnp environments ([aa3266c](https://github.com/ntucker/anansi/commit/aa3266c36d5ad58c5bd89aa39aa8cd44c2fae79a))
+
+
+
 ### [1.4.7](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.6...@anansi/cli@1.4.7) (2022-06-29)
 
 **Note:** Version bump only for package @anansi/cli
