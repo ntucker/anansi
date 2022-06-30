@@ -10,7 +10,7 @@ export default function restHooksSpout(
   } = { getManagers: () => [new NetworkManager()] },
 ): ServerSpout<
   Record<string, unknown>,
-  { controller: Controller; store: Store<State<unknown>> },
+  { controller: Controller } & { store: Store<State<unknown>> },
   { initData?: Record<string, () => unknown> }
 > {
   return next => async props => {

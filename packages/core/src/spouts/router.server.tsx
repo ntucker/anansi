@@ -12,9 +12,9 @@ export default function routerSpout<ResolveWith>(options: {
   Record<string, unknown>,
   {
     matchedRoutes: Route<ResolveWith>[];
+  } & {
     router: RouteController<Route<ResolveWith, any>>;
-  },
-  Record<string, unknown>
+  }
 > {
   const createRouteComponent = (
     router: RouteController<Route<ResolveWith, any>>,
