@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.1...@anansi/core@0.14.2) (2022-07-01)
+
+
+### 🐛 Bug Fix
+
+* Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
+
+
+
 ### [0.14.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.0...@anansi/core@0.14.1) (2022-06-29)
 
 
