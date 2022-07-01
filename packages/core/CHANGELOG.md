@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.1...@anansi/core@0.14.2) (2022-07-01)
+
+
+### 🐛 Bug Fix
+
+* spout types: ([7666611](https://github.com/ntucker/anansi/commit/76666114833a416e79c7b8e8953bb11d2170bca8))
+* Use split by field requirements ([f9133b7](https://github.com/ntucker/anansi/commit/f9133b760845b9dfa7037d14373bfe48a456475c))
+
+
+
 ### [0.14.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.0...@anansi/core@0.14.1) (2022-06-29)
 
 

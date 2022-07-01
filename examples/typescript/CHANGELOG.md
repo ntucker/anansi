@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.19](https://github.com/ntucker/anansi/compare/example-typescript@10.0.18...example-typescript@10.0.19) (2022-07-01)
+
+
+### 🐛 Bug Fix
+
+* Use split by field requirements ([f9133b7](https://github.com/ntucker/anansi/commit/f9133b760845b9dfa7037d14373bfe48a456475c))
+
+
+### 📦 Package
+
+* eslint-plugin-prettier ([#1571](https://github.com/ntucker/anansi/issues/1571)) ([54b46ff](https://github.com/ntucker/anansi/commit/54b46ff26d2266c3c6874be43380b37425ce9c14))
+
+
+
 ### [10.0.18](https://github.com/ntucker/anansi/compare/example-typescript@10.0.17...example-typescript@10.0.18) (2022-06-29)
 
 

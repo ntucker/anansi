@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.5](https://github.com/ntucker/anansi/compare/example-react-18@3.0.4...example-react-18@3.0.5) (2022-07-01)
+
+
+### 🐛 Bug Fix
+
+* spout types: ([7666611](https://github.com/ntucker/anansi/commit/76666114833a416e79c7b8e8953bb11d2170bca8))
+* Use split by field requirements ([f9133b7](https://github.com/ntucker/anansi/commit/f9133b760845b9dfa7037d14373bfe48a456475c))
+
+
+### 📦 Package
+
+* eslint-plugin-prettier ([#1571](https://github.com/ntucker/anansi/issues/1571)) ([54b46ff](https://github.com/ntucker/anansi/commit/54b46ff26d2266c3c6874be43380b37425ce9c14))
+* Update `webpack-dev-server` to v4.9.3 ([#1570](https://github.com/ntucker/anansi/issues/1570)) ([18df3f3](https://github.com/ntucker/anansi/commit/18df3f3bc3a618bbdcf92e5b3354f17ab5a4de08))
+
+
+
 ### [3.0.4](https://github.com/ntucker/anansi/compare/example-react-18@3.0.3...example-react-18@3.0.4) (2022-06-29)
 
 **Note:** Version bump only for package example-react-18
