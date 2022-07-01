@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.20](https://github.com/ntucker/anansi/compare/example-typescript@10.0.18...example-typescript@10.0.20) (2022-07-01)
+
+
+### 🐛 Bug Fix
+
+* Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
+
+
+### 📦 Package
+
+* eslint-plugin-prettier ([#1571](https://github.com/ntucker/anansi/issues/1571)) ([54b46ff](https://github.com/ntucker/anansi/commit/54b46ff26d2266c3c6874be43380b37425ce9c14))
+
+
+
 ### [10.0.19](https://github.com/ntucker/anansi/compare/example-typescript@10.0.18...example-typescript@10.0.19) (2022-07-01)
 
 
