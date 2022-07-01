@@ -8405,13 +8405,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:28.1.3":
-  version: 28.1.3
-  resolution: "@types/jest@npm:28.1.3"
+"@types/jest@npm:28.1.4":
+  version: 28.1.4
+  resolution: "@types/jest@npm:28.1.4"
   dependencies:
     jest-matcher-utils: ^28.0.0
     pretty-format: ^28.0.0
-  checksum: 28141f2d5b3bafd063362de9790cb8f219488d9b0ad47524a84bef1142a4f0d9d35be0c56988d9f922205225cc83c986acd4be424bd8653b38dc27ab672455e2
+  checksum: 97e22c600397bb4f30e39b595f8285ae92e4eb29a1ef6d1689749e4a4da683d88ecfe717b64492f6adc4c17c1c989520c3546f938c84a7d435c6ac3acf1a2bdc
   languageName: node
   linkType: hard
 
@@ -14545,9 +14545,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:4.1.0":
-  version: 4.1.0
-  resolution: "eslint-plugin-prettier@npm:4.1.0"
+"eslint-plugin-prettier@npm:4.2.1":
+  version: 4.2.1
+  resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
@@ -14556,7 +14556,7 @@ __metadata:
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: 3f731b9988383851f1a42bd67a093461886fc56dc5d0ca4c72bdd0755dc0f843faedde843c1812710a75782a9711096aad22b6140fe7d6f996cc4a672c8b3643
+  checksum: b9e839d2334ad8ec7a5589c5cb0f219bded260839a857d7a486997f9870e95106aa59b8756ff3f37202085ebab658de382b0267cae44c3a7f0eb0bcc03a4f6d6
   languageName: node
   linkType: hard
 
@@ -14893,7 +14893,7 @@ __metadata:
     "@rest-hooks/rest": 5.0.2
     "@rest-hooks/test": 7.3.1
     "@types/classnames": ^2.2.9
-    "@types/jest": 28.1.3
+    "@types/jest": 28.1.4
     "@types/node": 17.0.45
     "@types/react": 18.0.14
     "@types/react-dom": 18.0.5
@@ -14933,7 +14933,7 @@ __metadata:
     "@storybook/manager-webpack5": 6.5.9
     "@storybook/react": 6.5.9
     "@types/classnames": ^2.2.9
-    "@types/jest": 28.1.3
+    "@types/jest": 28.1.4
     "@types/lodash": 4.14.182
     "@types/node": 17.0.45
     "@types/parse-link-header": 2.0.0
@@ -26766,7 +26766,7 @@ __metadata:
     conventional-changelog-conventionalcommits: 5.0.0
     eslint: 8.18.0
     eslint-plugin-import: 2.26.0
-    eslint-plugin-prettier: 4.1.0
+    eslint-plugin-prettier: 4.2.1
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
     husky: ^7.0.4
