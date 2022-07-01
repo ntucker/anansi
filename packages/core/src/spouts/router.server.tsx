@@ -12,6 +12,7 @@ export default function routerSpout<ResolveWith>(options: {
   Record<string, unknown>,
   {
     matchedRoutes: Route<ResolveWith>[];
+  } & {
     router: RouteController<Route<ResolveWith, any>>;
   }
 > {
