@@ -39,7 +39,7 @@
     "conventional-changelog-conventionalcommits": "5.0.0",
     "eslint": "8.18.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-prettier": "4.1.0",
+    "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "^7.0.4",
