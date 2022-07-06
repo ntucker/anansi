@@ -37,7 +37,7 @@
     "babel-plugin-root-import": "^6.6.0",
     "conventional-changelog-anansi": "^0.2.0",
     "conventional-changelog-conventionalcommits": "5.0.0",
-    "eslint": "8.18.0",
+    "eslint": "8.19.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.30.1",
@@ -76,8 +76,8 @@
     "react-refresh": "^0.14.0"
   },
   "dependencies": {
-    "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
