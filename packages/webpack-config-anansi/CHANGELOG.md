@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.6.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.7...@anansi/webpack-config@11.6.8) (2022-07-08)
+
+
+### 🐛 Bug Fix
+
+* Allow importing directly from global style dir ([d05106b](https://github.com/ntucker/anansi/commit/d05106bb3f09776a8eb3e6c323f753e1628b3810))
+
+
+
 ### [11.6.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.6...@anansi/webpack-config@11.6.7) (2022-06-29)
 
 

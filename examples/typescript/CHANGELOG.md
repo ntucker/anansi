@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.21](https://github.com/ntucker/anansi/compare/example-typescript@10.0.20...example-typescript@10.0.21) (2022-07-08)
+
+
+### 📦 Package
+
+* Consolidate babel/runtime ([a2197bd](https://github.com/ntucker/anansi/commit/a2197bdaae8173a26bb670742f949a061e8f72ed))
+* pkg: types/react, antd, eslint ([#1574](https://github.com/ntucker/anansi/issues/1574)) ([2e8c3de](https://github.com/ntucker/anansi/commit/2e8c3ded462487631415a44df11b6ad8a62f5c08))
+* rest-hooks ([#1573](https://github.com/ntucker/anansi/issues/1573)) ([06a4b68](https://github.com/ntucker/anansi/commit/06a4b68f18278d1ab604810cda5f2728d6ad4707))
+
+
+
 ### [10.0.20](https://github.com/ntucker/anansi/compare/example-typescript@10.0.18...example-typescript@10.0.20) (2022-07-01)
 
 

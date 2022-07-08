@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.2...@anansi/generator-js@9.0.3) (2022-07-08)
+
+
+### 🐛 Bug Fix
+
+* Add base module resolution to jest template ([3935e6a](https://github.com/ntucker/anansi/commit/3935e6a20da17eccfb943b0488388d74db0bc0d3))
+* Don't use scss extension when linaria is used ([a88153b](https://github.com/ntucker/anansi/commit/a88153bcef0bf5665a1d34f8db4bfc3c74dd1e1a))
+
+
+
 ### [9.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.1...@anansi/generator-js@9.0.2) (2022-06-29)
 
 
