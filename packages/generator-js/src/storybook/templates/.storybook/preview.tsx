@@ -4,7 +4,7 @@ import RootProvider from '../src/RootProvider'
   import { Suspense } from 'react';
   import { CacheProvider, NetworkErrorBoundary } from 'rest-hooks';
 <% } %>
-import 'style/main.scss';
+import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 
 
 export const decorators = [
