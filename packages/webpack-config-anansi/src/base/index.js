@@ -36,6 +36,9 @@ export default function makeBaseConfig({
   const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
 
   const modules = [path.join(rootPath, basePath), 'node_modules'];
+  if (globalStyleDir) {
+    modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
+  }
   const resolve = {
     modules,
     // TODO: remove '.js', '.json', '.wasm' once '...' is well supported in plugins like linaria
@@ -86,9 +89,6 @@ export default function makeBaseConfig({
     ];
   }
 
-  if (globalStyleDir) {
-    modules.splice(1, 0, path.join(rootPath, basePath, globalStyleDir));
-  }
   const assetModuleFilename =
     nohash || mode !== 'production'
       ? '[name].[ext][query]'
