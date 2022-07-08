@@ -45,7 +45,7 @@ __metadata:
     "@babel/plugin-transform-react-constant-elements": ^7.18.6
     "@babel/plugin-transform-react-inline-elements": ^7.18.6
     "@babel/plugin-transform-runtime": ^7.18.6
-    "@babel/plugin-transform-typescript": ^7.18.6
+    "@babel/plugin-transform-typescript": ^7.18.8
     "@babel/preset-env": ^7.18.6
     "@babel/preset-react": ^7.18.6
     babel-plugin-lodash: ^3.3.4
@@ -3362,16 +3362,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.18.6":
-  version: 7.18.6
-  resolution: "@babel/plugin-transform-typescript@npm:7.18.6"
+"@babel/plugin-transform-typescript@npm:^7.18.8":
+  version: 7.18.8
+  resolution: "@babel/plugin-transform-typescript@npm:7.18.8"
   dependencies:
     "@babel/helper-create-class-features-plugin": ^7.18.6
     "@babel/helper-plugin-utils": ^7.18.6
     "@babel/plugin-syntax-typescript": ^7.18.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 9dc070304688dd183b2abb6bdac6f4b1939df7cc8caf32c57327bf90de26abce2130c5d807e82e25287d3a3e23f7532c9f7afd44a2e7bb815cae92015d352925
+  checksum: 627211f1658870274fcabf38a71bb08ae219e3ac672423083574fabe2c857f28d39243cb7279adada8468c912a7beebc0622770ed66885a1e33b84ccc8bfd7df
   languageName: node
   linkType: hard
 
