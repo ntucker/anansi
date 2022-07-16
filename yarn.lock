@@ -25444,63 +25444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-util@npm:^5.0.0, rc-util@npm:^5.0.1, rc-util@npm:^5.0.6, rc-util@npm:^5.0.7, rc-util@npm:^5.12.0, rc-util@npm:^5.14.0, rc-util@npm:^5.15.0, rc-util@npm:^5.16.1, rc-util@npm:^5.2.0, rc-util@npm:^5.2.1, rc-util@npm:^5.4.0, rc-util@npm:^5.5.0, rc-util@npm:^5.5.1, rc-util@npm:^5.6.1, rc-util@npm:^5.7.0, rc-util@npm:^5.8.0, rc-util@npm:^5.9.4, rc-util@npm:^5.9.8":
-  version: 5.16.1
-  resolution: "rc-util@npm:5.16.1"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    react-is: ^16.12.0
-    shallowequal: ^1.1.0
-  peerDependencies:
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: f2a6fd262d91d0b2ee1d84853c5ab212c9138b535ce5df8fa807fad4d8772539cbf0fee8cf7044ce9d47d8847950dfa5ae2f884c40eda9b0e9879050e4d549ec
-  languageName: node
-  linkType: hard
-
-"rc-util@npm:^5.17.0, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0":
-  version: 5.21.0
-  resolution: "rc-util@npm:5.21.0"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    react-is: ^16.12.0
-    shallowequal: ^1.1.0
-  peerDependencies:
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: a2a3347db820ed0a29697f52bcedc4374edcb28d4069ebc8d9c6c2b9e2172ae62e4876aaa3f6273b21c989a06176f54b6a772ac59af7d1d03f9cdd49149fc2d3
-  languageName: node
-  linkType: hard
-
-"rc-util@npm:^5.18.1":
-  version: 5.18.1
-  resolution: "rc-util@npm:5.18.1"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    react-is: ^16.12.0
-    shallowequal: ^1.1.0
-  peerDependencies:
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: e005831e0c3aad15b999c7940eb196bf5960e88196549afb2f3b39757ccbbb5e3098266941b10ed8e9ccf988af1befd4106895b3f2fb47778792fae572c238be
-  languageName: node
-  linkType: hard
-
-"rc-util@npm:^5.19.2":
-  version: 5.21.5
-  resolution: "rc-util@npm:5.21.5"
-  dependencies:
-    "@babel/runtime": ^7.18.3
-    react-is: ^16.12.0
-    shallowequal: ^1.1.0
-  peerDependencies:
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: 39434002f228381b6a6dbb135a1c099b2e5c5f63aba4616cee1ed9b1436cdc8011d78055b06cc169d44b1a79c42d40ecd3d2f6123a61043510aa2a9de48e0e72
-  languageName: node
-  linkType: hard
-
-"rc-util@npm:^5.22.5":
+"rc-util@npm:^5.0.0, rc-util@npm:^5.0.1, rc-util@npm:^5.0.6, rc-util@npm:^5.0.7, rc-util@npm:^5.12.0, rc-util@npm:^5.14.0, rc-util@npm:^5.15.0, rc-util@npm:^5.16.1, rc-util@npm:^5.17.0, rc-util@npm:^5.18.1, rc-util@npm:^5.19.2, rc-util@npm:^5.2.0, rc-util@npm:^5.2.1, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0, rc-util@npm:^5.22.5, rc-util@npm:^5.4.0, rc-util@npm:^5.5.0, rc-util@npm:^5.5.1, rc-util@npm:^5.6.1, rc-util@npm:^5.7.0, rc-util@npm:^5.8.0, rc-util@npm:^5.9.4, rc-util@npm:^5.9.8":
   version: 5.22.5
   resolution: "rc-util@npm:5.22.5"
   dependencies:
