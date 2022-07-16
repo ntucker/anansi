@@ -50,7 +50,7 @@
     "directory": "packages/webpack-config-anansi"
   },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=14.15.0"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.2.8",
