@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.8...@anansi/webpack-config@12.0.0) (2022-07-16)
+
+
+### ⚠ 💥 BREAKING CHANGES
+
+* minimum supported Node.js version is 14.15.0
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+* Update `html-loader` to v4 ([#1578](https://github.com/ntucker/anansi/issues/1578)) ([48d8a1c](https://github.com/ntucker/anansi/commit/48d8a1c7180ba65bb5ba47121502d7cb7c035d6c))
+
+
+
 ### [11.6.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@11.6.7...@anansi/webpack-config@11.6.8) (2022-07-08)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.13](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.12...@anansi/jest-preset@0.7.13) (2022-07-16)
+
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+* Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
+
+
+
 ### [0.7.12](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.11...@anansi/jest-preset@0.7.12) (2022-07-08)
 
 **Note:** Version bump only for package @anansi/jest-preset

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.7](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.6...@anansi/router@0.6.7) (2022-07-16)
+
+
+### 📦 Package
+
+* Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
+
+
+
 ### [0.6.6](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.5...@anansi/router@0.6.6) (2022-07-08)
 
 **Note:** Version bump only for package @anansi/router

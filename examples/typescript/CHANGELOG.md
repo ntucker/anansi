@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.22](https://github.com/ntucker/anansi/compare/example-typescript@10.0.21...example-typescript@10.0.22) (2022-07-16)
+
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+* Update `serve` to v14 ([#1580](https://github.com/ntucker/anansi/issues/1580)) ([e73973f](https://github.com/ntucker/anansi/commit/e73973fc7901a286b48b3adb46eb18fd285bd8dd))
+* Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
+
+
+
 ### [10.0.21](https://github.com/ntucker/anansi/compare/example-typescript@10.0.20...example-typescript@10.0.21) (2022-07-08)
 
 

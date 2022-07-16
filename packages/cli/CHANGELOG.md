@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.11](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.10...@anansi/cli@1.4.11) (2022-07-16)
+
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+
+
+
 ### [1.4.10](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.9...@anansi/cli@1.4.10) (2022-07-08)
 
 **Note:** Version bump only for package @anansi/cli

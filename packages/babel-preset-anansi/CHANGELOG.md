@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.8...@anansi/babel-preset@3.2.9) (2022-07-16)
+
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+
+
+
 ### [3.2.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.7...@anansi/babel-preset@3.2.8) (2022-07-08)
 
 

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.28](https://github.com/ntucker/anansi/compare/example-linaria@4.1.27...example-linaria@4.1.28) (2022-07-16)
+
+
+### 📦 Package
+
+* commander, postcss-loader, readable-stream, ts-jest ([#1581](https://github.com/ntucker/anansi/issues/1581)) ([02e7eb8](https://github.com/ntucker/anansi/commit/02e7eb876e14e8a9ec9d453d4d19e6b5a0c81bee))
+* Update `serve` to v14 ([#1580](https://github.com/ntucker/anansi/issues/1580)) ([e73973f](https://github.com/ntucker/anansi/commit/e73973fc7901a286b48b3adb46eb18fd285bd8dd))
+
+
+
 ### [4.1.27](https://github.com/ntucker/anansi/compare/example-linaria@4.1.26...example-linaria@4.1.27) (2022-07-08)
 
 **Note:** Version bump only for package example-linaria
