@@ -50,7 +50,7 @@
     "directory": "packages/webpack-config-anansi"
   },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=14.15.0"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.2.8",
@@ -86,7 +86,7 @@
     "events": "^3.3.0",
     "file-loader": "^6.2.0",
     "find-cache-dir": "^3.3.2",
-    "html-loader": "^3.1.2",
+    "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
