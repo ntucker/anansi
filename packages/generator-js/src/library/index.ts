@@ -58,7 +58,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     await this.addDevDependencies([
       '@babel/cli',
       '@zerollup/ts-transform-paths',
-      'ttypescript',
       'rimraf',
     ]);
     if (this.config.get('features').includes('storybook')) {

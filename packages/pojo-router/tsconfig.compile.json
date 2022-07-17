@@ -1,9 +1,4 @@
 {
   "extends": "./tsconfig",
-  "compilerOptions": {
-    "paths": {
-      "@pojo-router/core/*": ["packages/pojo-router/src/*"]
-    }
-  },
   "exclude": ["node_modules", "dist", "lib", "legacy", "ts3.4", "src-legacy-types", "**/__tests__"]
 }
