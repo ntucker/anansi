@@ -33,6 +33,9 @@ const config = {
     react: {
       version: 'detect',
     },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts'],
+    },
   },
   overrides: [
     {

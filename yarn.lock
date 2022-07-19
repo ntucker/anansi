@@ -206,7 +206,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
     eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-typescript: ^3.0.0
+    eslint-import-resolver-typescript: ^3.3.0
     eslint-import-resolver-webpack: ^0.13.2
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-jsx-a11y: ^6.5.1
@@ -4633,9 +4633,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pkgr/utils@npm:^2.1.0":
-  version: 2.2.0
-  resolution: "@pkgr/utils@npm:2.2.0"
+"@pkgr/utils@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@pkgr/utils@npm:2.3.0"
   dependencies:
     cross-spawn: ^7.0.3
     is-glob: ^4.0.3
@@ -4643,7 +4643,7 @@ __metadata:
     picocolors: ^1.0.0
     tiny-glob: ^0.2.9
     tslib: ^2.4.0
-  checksum: 0ae76a6b92ca581388cedb8433bd5becdab2b226781d1ff4fafa30104c2f8e3227d982f39f66f7109df95122491973af8335f15e82818dc346ec6ae1a36e63bf
+  checksum: d2fe95c51d548497425182b284dea8155d9e80bb36fa744c670174d7deae53743b13aa9f63a8bfaa8b31dcf7c53dc279a99372f2c2c35ff9fcebf91c5c5c8190
   languageName: node
   linkType: hard
 
@@ -12397,6 +12397,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"enhanced-resolve@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "enhanced-resolve@npm:5.10.0"
+  dependencies:
+    graceful-fs: ^4.2.4
+    tapable: ^2.2.0
+  checksum: 0bb9830704db271610f900e8d79d70a740ea16f251263362b0c91af545576d09fe50103496606c1300a05e588372d6f9780a9bc2e30ce8ef9b827ec8f44687ff
+  languageName: node
+  linkType: hard
+
 "enhanced-resolve@npm:^5.3.1, enhanced-resolve@npm:^5.7.0":
   version: 5.8.3
   resolution: "enhanced-resolve@npm:5.8.3"
@@ -12772,21 +12782,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "eslint-import-resolver-typescript@npm:3.1.0"
+"eslint-import-resolver-typescript@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "eslint-import-resolver-typescript@npm:3.3.0"
   dependencies:
     debug: ^4.3.4
-    enhanced-resolve: ^5.9.3
-    get-tsconfig: ^4.0.6
+    enhanced-resolve: ^5.10.0
+    get-tsconfig: ^4.2.0
     globby: ^13.1.2
     is-core-module: ^2.9.0
     is-glob: ^4.0.3
-    synckit: ^0.7.1
+    synckit: ^0.8.1
   peerDependencies:
     eslint: "*"
     eslint-plugin-import: "*"
-  checksum: 95fec6f747e5de16739e50f7cc51f7a5ee865647175f0abe7edd04bf6fbe04b8452c0a716a82a15422f73a710b3cad1a1b8fab45c9a81c24f6e0bca861584a31
+  checksum: c5ccb5c15dbf7a7cddcb5daca9d7a412d523f8009a82e5869ef131f3e8717d501fddd1707528f516d9e54aef2936ea2d1e0f39ae7bfc62efa35ed7e329590c05
   languageName: node
   linkType: hard
 
@@ -14500,10 +14510,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-tsconfig@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "get-tsconfig@npm:4.0.6"
-  checksum: f4b2779748c04725c91ac4af96ec6d0a358aecce4704977cefcb7e994d98b004d041169cbcca9954e4cf319dc0c26e82ea331051f5dd449b1b5b93862e3dbf89
+"get-tsconfig@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "get-tsconfig@npm:4.2.0"
+  checksum: dfae3520bee20b71a651fdc93fd29901013dfc4df9fb41a423cf3efb4468c79087ef9d3bc3d0625b6486397730991d2a749eed4985d8ab411f481319c3e931e5
   languageName: node
   linkType: hard
 
@@ -26883,13 +26893,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "synckit@npm:0.7.1"
+"synckit@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "synckit@npm:0.8.1"
   dependencies:
-    "@pkgr/utils": ^2.1.0
+    "@pkgr/utils": ^2.3.0
     tslib: ^2.4.0
-  checksum: 6a3587b7fa2b822755ab3651843e2e68dd28cf203e104cf7f8bf7fc0806ccac77cbb35d583e2a8ae5fc296e6c1068801829a2338be3fc32e1807a1ca28ef3826
+  checksum: 36a1b699996f3bb251c8f828364e101cf08b2a20225cb39df9d7c2186380554b8172374babfe10f03f4b52ab8c453c16447c3cbf61108221f2c58c446bf8425a
   languageName: node
   linkType: hard
 
