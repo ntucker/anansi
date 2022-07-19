@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.124](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.123...@anansi/polyfill@1.0.124) (2022-07-19)
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
+
+
+
 ### [1.0.123](https://github.com/ntucker/anansi/compare/@anansi/polyfill@1.0.122...@anansi/polyfill@1.0.123) (2022-07-16)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.16](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.15...@pojo-router/core@0.5.16) (2022-07-19)
+
+
+### 📦 Package
+
+* Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
+
+
+
 ### [0.5.15](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.14...@pojo-router/core@0.5.15) (2022-07-16)
 
 

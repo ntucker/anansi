@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.4...@anansi/generator-js@9.0.5) (2022-07-19)
+
+
+### 📦 Package
+
+* Update `dotenv-webpack` to v8 ([#1584](https://github.com/ntucker/anansi/issues/1584)) ([3597690](https://github.com/ntucker/anansi/commit/3597690f7c334a7ae6a3f009b0ee1a1f6bb1edfc))
+* Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
+
+
+
 ### [9.0.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.3...@anansi/generator-js@9.0.4) (2022-07-16)
 
 
