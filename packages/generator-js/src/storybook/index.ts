@@ -27,13 +27,13 @@ module.exports = class WebpackGenerator extends (
     this.packageJson.merge({
       resolutions: {
         '@types/webpack': '^5.0.0',
-        immer: '^8.0.1',
-        webpack: '^5.51.1',
+        immer: '^9.0.0',
+        webpack: '^5.73.0',
         'css-loader': '^6.0.0',
-        'dotenv-webpack': '^6.0.0',
+        'dotenv-webpack': '^8.0.0',
         'html-webpack-plugin': '^5.0.0',
         'style-loader': '^2.0.0',
-        'terser-webpack-plugin': '^5.0.0',
+        'terser-webpack-plugin': '^5.2.1',
         'webpack-virtual-modules': '^0.4.2',
       },
     });
