@@ -54,8 +54,8 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.2.9",
-    "@babel/cli": "7.18.6",
-    "@babel/core": "7.18.6",
+    "@babel/cli": "7.18.9",
+    "@babel/core": "7.18.9",
     "debug": "4.3.4",
     "prettier-eslint-cli": "6.0.1",
     "rimraf": "^3.0.2"
