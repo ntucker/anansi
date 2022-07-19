@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.0...@anansi/eslint-plugin@0.14.1) (2022-07-19)
+
+
+### 💅 Enhancement
+
+* Better typescript support for import rules ([3f8aa6b](https://github.com/ntucker/anansi/commit/3f8aa6b05237f05b71c8cee987f7aecab78f7540))
+
+
+
 ## [0.14.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.13.0...@anansi/eslint-plugin@0.14.0) (2022-06-29)
 
 
