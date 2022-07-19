@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build:lib": "NODE_ENV=production babel <%= rootPath %> --out-dir <%= libPath %> --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:types": "ttsc --build",
+    "build:types": "tsc --build",
     "build:clean": "rimraf <%= libPath %> <%= assetPath %> *.tsbuildinfo",
     "build": "npm run build:lib && npm run build:types",
     "dev": "npm run build:lib -w",
