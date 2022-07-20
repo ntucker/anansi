@@ -48,7 +48,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn lerna run test:ci
+      - run: yarn workspaces foreach run test:ci
       # only run coverage if repo token is available (so third parties don't fail the build)
       - run:
           name: coverage
@@ -59,28 +59,28 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn lerna run lint
+      - run: yarn run lint
 
   build_production:
     docker: *docker
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn lerna run --scope 'example-*' build
+      - run: yarn workspaces foreach --include 'example-*' run build
 
   build_server:
     docker: *docker
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn lerna run build:server
+      - run: yarn workspaces foreach run build:server
 
   build_storybook:
     docker: *docker
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn lerna run build:storybook
+      - run: yarn workspaces foreach run build:storybook
 
 
 workflows:

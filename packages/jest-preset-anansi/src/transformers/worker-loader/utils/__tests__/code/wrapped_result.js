@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import BaseWorker from '@anansi/jest-preset/lib/transformers/worker-loader/lib/baseworker';
 
 import workerHandler from './handlers';
