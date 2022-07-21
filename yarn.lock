@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@^3.0.0, @anansi/babel-preset@^3.2.10, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
+"@anansi/babel-preset@^3.2.10, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
@@ -165,45 +165,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^0.13.0":
-  version: 0.13.0
-  resolution: "@anansi/eslint-plugin@npm:0.13.0"
-  dependencies:
-    "@babel/eslint-parser": ^7.17.0
-    "@typescript-eslint/eslint-plugin": ^5.11.0
-    "@typescript-eslint/parser": ^5.11.0
-    eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-typescript: ^2.5.0
-    eslint-import-resolver-webpack: ^0.13.2
-    eslint-plugin-babel: ^5.3.1
-    eslint-plugin-jsx-a11y: ^6.5.1
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    eslint: ^7.0.0 || ^8.0.0
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.22.0
-    eslint-plugin-react-hooks: ^4.2.0
-    prettier: ^2.2.1
-    typescript: ^3.7.3 || ^4.0.0
-    webpack: ^3.0.0 || ^4.0.0 || ^5.0.0
-  peerDependenciesMeta:
-    "@babel/core":
-      optional: true
-    typescript:
-      optional: true
-    webpack:
-      optional: true
-  checksum: 905680c23faac75488a6e8b573cad11ec7a0f75e498b730d1a3adc6940f9a52831bb262157fec43e75f2e8aaeb2138fd672b804156d03311f721dad496dcb286
-  languageName: node
-  linkType: hard
-
-"@anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
     "@babel/eslint-parser": ^7.17.0
-    "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
     eslint-config-prettier: ^8.3.0
     eslint-import-resolver-typescript: ^3.3.0
@@ -212,6 +178,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.5.1
   peerDependencies:
     "@babel/core": ^7.0.0
+    "@typescript-eslint/eslint-plugin": ^5.11.0
     eslint: ^7.0.0 || ^8.0.0
     eslint-plugin-import: ^2.22.0
     eslint-plugin-prettier: ^4.0.0
@@ -12099,22 +12066,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^2.5.0":
-  version: 2.7.1
-  resolution: "eslint-import-resolver-typescript@npm:2.7.1"
-  dependencies:
-    debug: ^4.3.4
-    glob: ^7.2.0
-    is-glob: ^4.0.3
-    resolve: ^1.22.0
-    tsconfig-paths: ^3.14.1
-  peerDependencies:
-    eslint: "*"
-    eslint-plugin-import: "*"
-  checksum: 1d81b657b1f73bf95b8f0b745c0305574b91630c1db340318f3ca8918e206fce20a933b95e7c419338cc4452cb80bb2b2d92acaf01b6aa315c78a332d832545c
-  languageName: node
-  linkType: hard
-
 "eslint-import-resolver-typescript@npm:^3.3.0":
   version: 3.3.0
   resolution: "eslint-import-resolver-typescript@npm:3.3.0"
@@ -12557,6 +12508,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/cli": ^1.4.12
     "@anansi/core": ^0.14.6
+    "@anansi/eslint-plugin": "workspace:*"
     "@anansi/jest-preset": ^0.7.14
     "@anansi/router": ^0.6.8
     "@anansi/webpack-config": ^12.0.1
@@ -24334,8 +24286,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@anansi/babel-preset": ^3.0.0
-    "@anansi/eslint-plugin": ^0.13.0
+    "@anansi/babel-preset": "workspace:*"
+    "@anansi/eslint-plugin": "workspace:*"
     "@babel/cli": 7.18.9
     "@babel/core": 7.18.9
     "@commitlint/cli": 17.0.3
@@ -24343,6 +24295,7 @@ __metadata:
     "@lerna-lite/cli": ^1.6.0
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
+    "@typescript-eslint/eslint-plugin": ^5.11.0
     babel-loader: 8.2.5
     babel-plugin-module-resolver: ^4.1.0
     babel-plugin-root-import: ^6.6.0
