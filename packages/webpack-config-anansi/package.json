@@ -52,7 +52,7 @@
     "node": ">=14.15.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^3.2.10",
+    "@anansi/babel-preset": "workspace:*",
     "@babel/cli": "7.18.9",
     "@babel/core": "7.18.9",
     "debug": "4.3.4",

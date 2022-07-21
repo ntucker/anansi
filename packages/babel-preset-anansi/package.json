@@ -33,7 +33,7 @@
     "node": ">=12.17"
   },
   "dependencies": {
-    "@anansi/ts-utils": "^0.2.5",
+    "@anansi/ts-utils": "workspace:^",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-class-static-block": "^7.18.6",
     "@babel/plugin-proposal-decorators": "^7.18.9",

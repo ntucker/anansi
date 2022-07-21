@@ -42,7 +42,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^3.2.10",
+    "@anansi/babel-preset": "workspace:*",
     "@babel/cli": "7.18.9",
     "rimraf": "^3.0.2",
     "rollup": "2.77.0",
