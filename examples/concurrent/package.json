@@ -12,8 +12,6 @@
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
     "test:type": "tsc --noEmit",
-    "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {

@@ -10,8 +10,7 @@
     "dev": "yarn run build:lib -w",
     "build:clean": "rimraf lib",
     "prepare": "yarn run build:clean && yarn run build",
-    "prepack": "yarn prepare",
-    "lint": "eslint src"
+    "prepack": "yarn prepare"
   },
   "files": [
     "lib",

@@ -14,8 +14,6 @@
     "test": "NODE_ENV=test jest",
     "test:ci": "yarn test --ci --no-cache",
     "test:type": "tsc --noEmit",
-    "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   },

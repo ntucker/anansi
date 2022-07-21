@@ -11,9 +11,7 @@
     "build:analyze": "webpack --mode=production --env analyze",
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
-    "test:type": "tsc --noEmit",
-    "format": "eslint --fix \"src/**/*.{js,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,ts,tsx}\""
+    "test:type": "tsc --noEmit"
   },
   "devDependencies": {
     "@anansi/babel-preset": "^3.2.10",

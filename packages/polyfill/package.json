@@ -27,7 +27,6 @@
     "build:clean": "rimraf dist lib",
     "prepare": "yarn run build:clean && yarn run build",
     "prepack": "yarn prepare",
-    "lint": "eslint src/*.ts",
     "type-check": "yarn run tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
