@@ -51,6 +51,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         '@types/react',
         '@types/react-dom',
         '@rest-hooks/test',
+        '@types/react-test-renderer',
         'react-test-renderer',
         'react-refresh',
       ]),

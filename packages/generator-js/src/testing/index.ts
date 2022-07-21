@@ -42,6 +42,7 @@ module.exports = class TestingGenerator extends BetterGenerator {
         '@anansi/jest-preset',
         'jest',
         '@types/jest',
+        '@types/react-test-renderer',
         'react-test-renderer',
         'jest-environment-jsdom',
       ]),
