@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { useResource } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { PlusOutlined } from '@ant-design/icons';
 import { List, Button, PageHeader } from 'antd';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useResource(PostResource.list(), {});
+  const posts = useSuspense(PostResource.list(), {});
   return (
     <PageHeader
       title="Post List"

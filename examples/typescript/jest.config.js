@@ -1,4 +1,5 @@
 module.exports = {
   preset: '@anansi/jest-preset',
-  roots: ['<rootDir>/src'],
+  testEnvironment: 'jsdom',
+  modulePaths: ['src'],
 };

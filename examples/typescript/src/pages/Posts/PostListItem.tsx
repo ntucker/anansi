@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useResource } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { PostResource, UserResource } from 'data/resources';
 
 export default function IssueListItem({ post }: { post: PostResource }) {
-  const author = useResource(UserResource.detail(), {
+  const author = useSuspense(UserResource.detail(), {
     id: post.userId,
   });
   const actions = [];

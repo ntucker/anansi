@@ -1,5 +1,5 @@
 import { PageHeader } from 'antd';
-import { useController, useResource } from 'rest-hooks';
+import { useController, useSuspense } from 'rest-hooks';
 import { RouteChildrenProps } from 'react-router-dom';
 
 import { PostResource } from 'data/resources';
@@ -15,7 +15,7 @@ export default function PostEdit({
     id = Number.parseInt(match.params.id);
   }
   const controller = useController();
-  const post = useResource(PostResource.detail(), { id });
+  const post = useSuspense(PostResource.detail(), { id });
   const routes = [
     {
       path: '/posts',
