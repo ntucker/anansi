@@ -165,7 +165,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.14.2, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -12748,7 +12748,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.3.3
     "@anansi/cli": ^1.4.13
     "@anansi/core": ^0.14.7
-    "@anansi/eslint-plugin": "workspace:*"
+    "@anansi/eslint-plugin": ^0.14.2
     "@anansi/jest-preset": ^0.7.15
     "@anansi/router": ^0.6.9
     "@anansi/webpack-config": ^12.0.2
