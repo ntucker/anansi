@@ -32,7 +32,7 @@
     "@linaria/react": "3.0.0-beta.22",
     "@linaria/shaker": "3.0.0-beta.22",
     "classnames": "^2.2.6",
-    "core-js": "3.23.4",
+    "core-js": "3.23.5",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
