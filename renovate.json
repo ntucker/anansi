@@ -25,6 +25,10 @@
       "matchPackageNames": ["@babel/runtime", "core-js"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
+    },
+    {
+      "matchPackagePrefixes": ["@linaria"],
+      "groupName": "linaria"
     }
   ]
 }
