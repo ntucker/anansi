@@ -13,7 +13,11 @@ export default function restHooksSpout(
   } = { getManagers: () => [new NetworkManager()] },
 ): ClientSpout<{ initData: Record<string, unknown> }> {
   return next => async props => {
-    const data = props.initData.resthooks as State<unknown>;
+    const data = props.initData?.resthooks as State<unknown>;
+
+    if (process.env.NODE_ENV !== 'production' && !data) {
+      console.error('Rest Hooks init data not found');
+    }
 
     const nextProps = await next(props);
 
