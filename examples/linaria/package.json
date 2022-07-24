@@ -25,7 +25,6 @@
     "webpack": "5.73.0"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.125",
     "@babel/plugin-transform-modules-commonjs": "7.18.6",
     "@babel/runtime": "^7.17.2",
     "@linaria/core": "3.0.0-beta.22",

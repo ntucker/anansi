@@ -44,7 +44,6 @@
     "webpack": "5.73.0"
   },
   "dependencies": {
-    "@anansi/polyfill": "^1.0.125",
     "@babel/runtime": "^7.17.2",
     "@rest-hooks/graphql": "0.1.9",
     "@rest-hooks/rest": "5.0.5",
