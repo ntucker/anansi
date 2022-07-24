@@ -304,7 +304,7 @@ __metadata:
     "@babel/cli": 7.18.9
     "@babel/core": 7.18.9
     "@babel/runtime": ^7.17.2
-    "@linaria/webpack5-loader": 3.0.0-beta.22
+    "@linaria/webpack5-loader": 4.0.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     "@svgr/webpack": ^6.3.1
     "@types/webpack-bundle-analyzer": ^4.4.1
@@ -3276,6 +3276,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@linaria/logger@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@linaria/logger@npm:4.0.0"
+  dependencies:
+    debug: ^4.1.1
+    picocolors: ^1.0.0
+  checksum: 261b955d5cb53a3eaf8b9c7890b761ba72bd16d6f81096659f31a75c84b4df3004d4a5598a2261b2d810828eb84e7e8067f38b58492544db42dc4ee56726f2d1
+  languageName: node
+  linkType: hard
+
 "@linaria/preeval@npm:3.0.0-beta.22":
   version: 3.0.0-beta.22
   resolution: "@linaria/preeval@npm:3.0.0-beta.22"
@@ -3323,17 +3333,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/webpack5-loader@npm:3.0.0-beta.22":
-  version: 3.0.0-beta.22
-  resolution: "@linaria/webpack5-loader@npm:3.0.0-beta.22"
+"@linaria/webpack5-loader@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@linaria/webpack5-loader@npm:4.0.0"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.22
-    "@linaria/logger": ^3.0.0-beta.20
+    "@linaria/babel-preset": ^4.0.0
+    "@linaria/logger": ^4.0.0
     enhanced-resolve: ^5.3.1
     mkdirp: ^0.5.1
   peerDependencies:
     webpack: ^5.0.0
-  checksum: c0411e7a549b9b37703615027bf119a3ddb3357954f6fd5bee21b7bc3f7ee8ca7694f7c76397b21b9f65daaad11b498747c7228da2bc7dd181404040a3b126d9
+  checksum: fe8d8cd3992c8ec8aab6facc63b986048fb8b79667093a453b015abd5efebd1a416d92c04d012dec53dfb7b70c172f83b5aab3035a8ac4b16fe0a912a5421c38
   languageName: node
   linkType: hard
 
