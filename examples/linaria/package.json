@@ -22,7 +22,7 @@
     "babel-loader": "8.2.5",
     "react-refresh": "0.14.0",
     "serve": "14.0.1",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.18.6",
@@ -31,7 +31,7 @@
     "@linaria/react": "3.0.0-beta.22",
     "@linaria/shaker": "3.0.0-beta.22",
     "classnames": "^2.2.6",
-    "core-js": "3.23.5",
+    "core-js": "3.24.0",
     "redbox-react": "^1.6.0"
   },
   "browserslist": [
