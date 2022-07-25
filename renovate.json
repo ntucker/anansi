@@ -1,5 +1,5 @@
 {
-  "extends": ["group:allNonMajor", "group:monorepos"],
+  "extends": ["group:allNonMajor", "group:jsTestMonMajor", "group:monorepos"],
   "assigneesFromCodeOwners": true,
   "commitMessagePrefix": "pkg: ",
   "commitMessageTopic": "`{{depName}}`",
@@ -7,6 +7,7 @@
   "rangeStrategy": "auto",
   "ignoreDeps": ["whatwg-fetch", "react-error-overlay"],
   "timezone": "America/Chicago",
+  "postUpdateOptions": ["yarnDedupeFewer"],
   "packageRules": [
     {
       "matchPaths": [
@@ -22,13 +23,22 @@
       "rangeStrategy": "bump"
     },
     {
-      "matchPackageNames": ["@babel/runtime", "core-js"],
+      "matchPackageNames": ["@babel/runtime", "core-js", "core-js-compat"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
     },
     {
       "matchPackagePrefixes": ["@linaria"],
       "groupName": "linaria"
+    },
+    {
+      "extends": "group:linters",
+      "matchPackageNames": [
+        "@anansi/eslint-plugin",
+        "prettier",
+        "eslint-plugin-prettier",
+        "@typescript-eslint/eslint-plugin"
+      ]
     }
   ]
 }
