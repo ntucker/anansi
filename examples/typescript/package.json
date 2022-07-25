@@ -41,7 +41,7 @@
     "react-refresh": "0.14.0",
     "react-test-renderer": "18.2.0",
     "serve": "14.0.1",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
@@ -52,7 +52,7 @@
     "@types/react-dom": "18.0.6",
     "antd": "4.21.7",
     "classnames": "^2.2.6",
-    "core-js": "3.23.5",
+    "core-js": "3.24.0",
     "lodash": "^4.17.15",
     "parse-link-header": "^2.0.0",
     "react": "18.2.0",
