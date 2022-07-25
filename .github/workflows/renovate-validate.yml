@@ -1,0 +1,21 @@
+name: renovate-validate
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Validate
+        uses: rinchsan/renovate-config-validator@v0.0.0
+        with:
+          pattern: 'renovate.json'

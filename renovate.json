@@ -27,12 +27,10 @@
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
     },
+    { "matchPackagePrefixes": ["@linaria"], "groupName": "linaria" },
     {
-      "matchPackagePrefixes": ["@linaria"],
-      "groupName": "linaria"
-    },
-    {
-      "extends": "group:linters",
+      "extends": ["packages:linters"],
+      "groupName": "linters",
       "matchPackageNames": [
         "@anansi/eslint-plugin",
         "prettier",
