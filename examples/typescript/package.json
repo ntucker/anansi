@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "10.0.24",
+  "version": "10.0.25",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -18,10 +18,10 @@
     "build:storybook": "build-storybook"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^3.2.11",
+    "@anansi/babel-preset": "^3.2.12",
     "@anansi/browserslist-config": "^1.3.3",
-    "@anansi/jest-preset": "^0.7.15",
-    "@anansi/webpack-config": "^12.0.2",
+    "@anansi/jest-preset": "^0.7.16",
+    "@anansi/webpack-config": "^12.0.3",
     "@rest-hooks/test": "7.3.4",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-links": "6.5.9",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.7...@anansi/core@0.14.8) (2022-07-26)
+
+### 💅 Enhancement
+
+* Provide warnings when SSR init has issues ([27c1c8a](https://github.com/ntucker/anansi/commit/27c1c8a90e474c01ad7c5a48d05dedc36508ede0))
+
 ### [0.14.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.6...@anansi/core@0.14.7) (2022-07-23)
 
 **Note:** Version bump only for package @anansi/core

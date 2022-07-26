@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.11...@anansi/babel-preset@3.2.12) (2022-07-26)
+
+### 📦 Package
+
+* **fix:** Remove unnecessary 'stable' dependency ([cfbd832](https://github.com/ntucker/anansi/commit/cfbd832e8a824104453dc043d35f247397756d67))
+
 ### [3.2.11](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.10...@anansi/babel-preset@3.2.11) (2022-07-23)
 
 ### 📦 Package
