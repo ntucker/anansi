@@ -57,10 +57,10 @@
   },
   "resolutions": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
-    "@linaria/core": "3.0.0-beta.22",
+    "@linaria/core": "4.1.0",
     "@linaria/preeval": "3.0.0-beta.22",
-    "@linaria/babel-preset": "3.0.0-beta.22",
-    "@linaria/utils": "3.0.0-beta.20",
+    "@linaria/babel-preset": "4.1.1",
+    "@linaria/utils": "4.1.0",
     "normalize-package-data": "4.0.0",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
