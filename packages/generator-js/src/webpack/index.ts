@@ -81,12 +81,12 @@ module.exports = class WebpackGenerator extends (
       await this.addDevDependencies(['serve']);
     }
     if (this?.props?.style === 'linaria') {
-      await this.addDevDependencies({
-        '@linaria/core': '^3.0.0-beta.21',
-        '@linaria/react': '^3.0.0-beta.21',
-        '@linaria/babel-preset': '^3.0.0-beta.21',
-        '@linaria/shaker': '^3.0.0-beta.21',
-      });
+      await this.addDevDependencies([
+        '@linaria/core',
+        '@linaria/react',
+        '@linaria/babel-preset',
+        '@linaria/shaker',
+      ]);
     }
   }
 
