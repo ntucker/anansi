@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.3.3",
     "@anansi/jest-preset": "^0.7.16",
     "@anansi/webpack-config": "^12.0.3",
-    "@rest-hooks/test": "7.3.4",
+    "@rest-hooks/test": "7.3.5",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-links": "6.5.9",
     "@storybook/addons": "6.5.9",
@@ -45,12 +45,12 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
-    "@rest-hooks/graphql": "0.1.9",
-    "@rest-hooks/rest": "5.0.5",
+    "@rest-hooks/graphql": "0.1.10",
+    "@rest-hooks/rest": "5.0.6",
     "@types/node": "17.0.45",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "antd": "4.21.7",
+    "antd": "4.22.2",
     "classnames": "^2.2.6",
     "core-js": "3.24.0",
     "lodash": "^4.17.15",
@@ -60,7 +60,7 @@
     "react-router-dom": "^5.3.0",
     "react-router-scroll-4": "^1.0.0-beta.2",
     "redbox-react": "^1.6.0",
-    "rest-hooks": "6.3.8"
+    "rest-hooks": "6.3.9"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"

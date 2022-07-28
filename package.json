@@ -34,7 +34,7 @@
     "@babel/core": "7.18.9",
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
-    "@lerna-lite/cli": "1.8.0",
+    "@lerna-lite/cli": "1.9.0",
     "@typescript-eslint/eslint-plugin": "5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
     "babel-loader": "8.2.5",
