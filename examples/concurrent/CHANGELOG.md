@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/example-react-18@3.0.11...example-react-18@4.0.0) (2022-07-28)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Require Linaria 4
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Nathaniel Tucker <me@ntucker.me>
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1593](https://github.com/ntucker/anansi/issues/1593)) ([8cf72bd](https://github.com/ntucker/anansi/commit/8cf72bdbfd6914e79474c94287499543eaf72789))
+* Update linaria to v4 (major) ([#1591](https://github.com/ntucker/anansi/issues/1591)) ([1aab741](https://github.com/ntucker/anansi/commit/1aab74172d68728db5aa443edc7cdad074cbbf9c))
+
 ### [3.0.11](https://github.com/ntucker/anansi/compare/example-react-18@3.0.10...example-react-18@3.0.11) (2022-07-26)
 
 ### 📦 Package

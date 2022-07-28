@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@12.0.3...@anansi/webpack-config@13.0.0) (2022-07-28)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Require Linaria 4
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Nathaniel Tucker <me@ntucker.me>
+
+### 📦 Package
+
+* Update linaria to v4 (major) ([#1591](https://github.com/ntucker/anansi/issues/1591)) ([1aab741](https://github.com/ntucker/anansi/commit/1aab74172d68728db5aa443edc7cdad074cbbf9c))
+
 ### [12.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@12.0.2...@anansi/webpack-config@12.0.3) (2022-07-26)
 
 **Note:** Version bump only for package @anansi/webpack-config
