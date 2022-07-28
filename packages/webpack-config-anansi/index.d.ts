@@ -5,7 +5,7 @@ import type {
 } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import type { OptimizeOptions } from 'svgo';
-import { StrictOptions } from '@linaria/babel-preset';
+import { PluginOptions } from '@linaria/babel-preset';
 import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import type { TransformOptions } from '@babel/core';
@@ -27,7 +27,7 @@ export interface Options {
   htmlOptions?: HtmlWebpackPlugin.Options | false;
   svgoOptions?: OptimizeOptions | false;
   svgrOptions?: any | false;
-  linariaOptions?: StrictOptions | false;
+  linariaOptions?: PluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
   globalStyleDir?: string | false;
   sassOptions?: SassOptions | false;
