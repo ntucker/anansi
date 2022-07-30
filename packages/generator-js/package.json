@@ -59,7 +59,7 @@
     "mem-fs": "^2.2.1",
     "rimraf": "^3.0.0",
     "yeoman-assert": "^3.1.1",
-    "yeoman-environment": "^3.9.1",
+    "yeoman-environment": "3.10.0",
     "yeoman-test": "^6.3.0"
   },
   "engines": {
@@ -77,7 +77,7 @@
     "mem-fs-editor": "^9.4.0",
     "pacote": "^13.6.1",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^5.6.1"
+    "yeoman-generator": "^5.7.0"
   },
   "jest": {
     "testEnvironment": "node"
