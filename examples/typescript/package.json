@@ -52,7 +52,7 @@
     "@types/react-dom": "18.0.6",
     "antd": "4.22.2",
     "classnames": "^2.2.6",
-    "core-js": "3.24.0",
+    "core-js": "3.24.1",
     "lodash": "^4.17.15",
     "parse-link-header": "^2.0.0",
     "react": "18.2.0",
