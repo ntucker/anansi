@@ -1,5 +1,5 @@
 {
-  "extends": ["group:allNonMajor", "group:jsTestMonMajor", "group:monorepos"],
+  "extends": ["group:allNonMajor", "group:monorepos"],
   "assigneesFromCodeOwners": true,
   "commitMessagePrefix": "pkg: ",
   "commitMessageTopic": "`{{depName}}`",
@@ -27,10 +27,62 @@
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
     },
-    { "matchPackagePrefixes": ["@linaria"], "groupName": "linaria" },
+    {
+      "extends": ["monorepo:react"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupName": "react"
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/webpack",
+        "https://github.com/callstack/linaria"
+      ],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "webpack",
+      "groupName": "webpack packages"
+    },
+    {
+      "matchPackageNames": ["@anansi/webpack-config"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "webpack",
+      "groupName": "webpack packages"
+    },
+    {
+      "extends": ["monorepo:babel"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "babel",
+      "groupName": "babel packages"
+    },
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchPackageNames": [
+        "@anansi/babel-preset",
+        "core-js",
+        "core-js-compat"
+      ],
+      "groupSlug": "babel",
+      "groupName": "babel packages"
+    },
+    {
+      "extends": ["packages:jsTest"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupName": "JS test packages"
+    },
+    {
+      "matchPackageNames": ["@anansi/jest-preset", "@types/jsdom", "jest-environment-jsdom"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupName": "JS test packages"
+    },
     {
       "extends": ["packages:linters"],
-      "groupName": "linters",
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "linters",
+      "groupName": "linting packages"
+    },
+    {
+      "groupSlug": "linters",
+      "groupName": "linting packages",
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "@anansi/eslint-plugin",
         "prettier",
