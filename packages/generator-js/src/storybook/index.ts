@@ -32,7 +32,7 @@ module.exports = class WebpackGenerator extends (
         'css-loader': '^6.0.0',
         'dotenv-webpack': '^8.0.0',
         'html-webpack-plugin': '^5.0.0',
-        'style-loader': '^2.0.0',
+        'style-loader': '^3.0.0',
         'terser-webpack-plugin': '^5.2.1',
         'webpack-virtual-modules': '^0.4.2',
       },
