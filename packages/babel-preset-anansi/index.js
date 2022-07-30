@@ -1,5 +1,4 @@
 const path = require('path');
-const semver = require('semver');
 var globToRegExp = require('glob-to-regexp');
 
 /*

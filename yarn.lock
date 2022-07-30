@@ -47,7 +47,6 @@ __metadata:
     core-js-compat: ^3.23.5
     glob-to-regexp: ^0.4.1
     path: ^0.12.7
-    semver: ^7.3.7
   peerDependencies:
     "@babel/core": ^7.12.0
     "@babel/runtime": ^7.7.0

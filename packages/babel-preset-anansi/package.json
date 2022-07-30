@@ -61,8 +61,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js-compat": "^3.23.5",
     "glob-to-regexp": "^0.4.1",
-    "path": "^0.12.7",
-    "semver": "^7.3.7"
+    "path": "^0.12.7"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.0",
