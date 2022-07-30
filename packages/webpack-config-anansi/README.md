@@ -152,7 +152,7 @@ only work with npm v7 and above, or yarn.
     "css-loader": "^5.0.0",
     "dotenv-webpack": "^6.0.0",
     "html-webpack-plugin": "^5.0.0",
-    "style-loader": "^2.0.0",
+    "style-loader": "^3.0.0",
     "terser-webpack-plugin": "^5.0.0",
     "webpack-virtual-modules": "^0.4.2"
   }
