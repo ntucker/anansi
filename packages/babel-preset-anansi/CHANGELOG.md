@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.13](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.12...@anansi/babel-preset@3.2.13) (2022-07-30)
+
+### 💅 Enhancement
+
+* Remove extraneous semver package ([12f3d00](https://github.com/ntucker/anansi/commit/12f3d00408d3470adf61f650c87ad254b2e0ad66))
+
 ### [3.2.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.11...@anansi/babel-preset@3.2.12) (2022-07-26)
 
 ### 📦 Package

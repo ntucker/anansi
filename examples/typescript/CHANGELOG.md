@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.27](https://github.com/ntucker/anansi/compare/example-typescript@10.0.26...example-typescript@10.0.27) (2022-07-30)
+
+### 📦 Package
+
+* Update `core-js` to v3.24.1 ([#1599](https://github.com/ntucker/anansi/issues/1599)) ([d3165ca](https://github.com/ntucker/anansi/commit/d3165caed1fda4ca8fb16bcbd5a6fc1e007d84f6))
+
 ### [10.0.26](https://github.com/ntucker/anansi/compare/example-typescript@10.0.25...example-typescript@10.0.26) (2022-07-28)
 
 ### 📦 Package

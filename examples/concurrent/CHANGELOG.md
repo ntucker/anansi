@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.1](https://github.com/ntucker/anansi/compare/example-react-18@4.0.0...example-react-18@4.0.1) (2022-07-30)
+
+### 📦 Package
+
+* Update `core-js` to v3.24.1 ([#1599](https://github.com/ntucker/anansi/issues/1599)) ([d3165ca](https://github.com/ntucker/anansi/commit/d3165caed1fda4ca8fb16bcbd5a6fc1e007d84f6))
+* Update linting packages to v5.31.0 ([#1594](https://github.com/ntucker/anansi/issues/1594)) ([bd8f6c9](https://github.com/ntucker/anansi/commit/bd8f6c965205b6faaa4079b1f9be00f4f1cfcc2b))
+
 ## [4.0.0](https://github.com/ntucker/anansi/compare/example-react-18@3.0.11...example-react-18@4.0.0) (2022-07-28)
 
 ### ⚠ 💥 BREAKING CHANGES

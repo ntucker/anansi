@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.0...@anansi/webpack-config@13.0.1) (2022-07-30)
+
+### 📦 Package
+
+* autoprefixer, yeoman-environment, yeoman-generator ([#1596](https://github.com/ntucker/anansi/issues/1596)) ([79dbc39](https://github.com/ntucker/anansi/commit/79dbc39d66394cf01e7bb8ed656b4a0a5adac2aa))
+* Update `style-loader` to v3 ([#1598](https://github.com/ntucker/anansi/issues/1598)) ([c0b2d0d](https://github.com/ntucker/anansi/commit/c0b2d0d3dc421c8109123159d064cf6e5e5b6ec0))
+* Update `tsconfig-paths-webpack-plugin` to v4 ([#1595](https://github.com/ntucker/anansi/issues/1595)) ([0f4a50e](https://github.com/ntucker/anansi/commit/0f4a50e96dc98dcbbcd9d23a3969c5749451ab7f))
+
 ## [13.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@12.0.3...@anansi/webpack-config@13.0.0) (2022-07-28)
 
 ### ⚠ 💥 BREAKING CHANGES

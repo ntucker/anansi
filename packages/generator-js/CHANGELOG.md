@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.7...@anansi/generator-js@9.0.8) (2022-07-30)
+
+### 💅 Enhancement
+
+* Use latest linaria ([7d888bc](https://github.com/ntucker/anansi/commit/7d888bc191542578aa7cd0605092f6f4a4303b07))
+
+### 📦 Package
+
+* autoprefixer, yeoman-environment, yeoman-generator ([#1596](https://github.com/ntucker/anansi/issues/1596)) ([79dbc39](https://github.com/ntucker/anansi/commit/79dbc39d66394cf01e7bb8ed656b4a0a5adac2aa))
+* Update `style-loader` to v3 ([#1598](https://github.com/ntucker/anansi/issues/1598)) ([c0b2d0d](https://github.com/ntucker/anansi/commit/c0b2d0d3dc421c8109123159d064cf6e5e5b6ec0))
+
 ### [9.0.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.6...@anansi/generator-js@9.0.7) (2022-07-26)
 
 **Note:** Version bump only for package @anansi/generator-js
