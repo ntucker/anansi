@@ -7,7 +7,7 @@
   "rangeStrategy": "auto",
   "ignoreDeps": ["whatwg-fetch", "react-error-overlay"],
   "timezone": "America/Chicago",
-  "postUpdateOptions": ["yarnDedupeFewer"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
       "matchPaths": [
