@@ -60,7 +60,7 @@
     "@rest-hooks/img": "0.6.2",
     "@rest-hooks/rest": "5.0.6",
     "@types/node": "17.0.45",
-    "antd": "4.22.2",
+    "antd": "4.22.3",
     "classnames": "^2.2.6",
     "core-js": "3.24.1",
     "history": "5.3.0",
