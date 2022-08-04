@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.17](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.16...@anansi/cli@1.4.17) (2022-08-04)
+
+### 📦 Package
+
+* mem-fs-editor, sass ([#1606](https://github.com/ntucker/anansi/issues/1606)) ([5466f13](https://github.com/ntucker/anansi/commit/5466f13e92b808259e51fda6e50fa96bd41df81d))
+* Remove extraneous deps ([6c311fa](https://github.com/ntucker/anansi/commit/6c311fa7cb5c9db94a5ca43fd54396f35de6c40e))
+
 ### [1.4.16](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.15...@anansi/cli@1.4.16) (2022-08-01)
 
 **Note:** Version bump only for package @anansi/cli

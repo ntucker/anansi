@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.2...@anansi/webpack-config@13.0.3) (2022-08-04)
+
+### 💅 Enhancement
+
+* Node 16+18 compat + perf improvement ([8608e1d](https://github.com/ntucker/anansi/commit/8608e1d8589fc4cbb158729956255c3dedc81040))
+
+### 📦 Package
+
+* mem-fs-editor, sass ([#1606](https://github.com/ntucker/anansi/issues/1606)) ([5466f13](https://github.com/ntucker/anansi/commit/5466f13e92b808259e51fda6e50fa96bd41df81d))
+
 ### [13.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.1...@anansi/webpack-config@13.0.2) (2022-08-01)
 
 ### 📦 Package
