@@ -111,6 +111,8 @@ export default function makeBaseConfig({
           : '[name]-[contenthash].chunk.js',
       assetModuleFilename,
       globalObject: "(typeof self !== 'undefined' ? self : this)",
+      // this improves performance and makes this compatible across node 16 and 18 at the same time.
+      hashFunction: 'xxhash64',
     },
     cache: {
       type: 'filesystem',
