@@ -80,7 +80,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn workspaces foreach run build:storybook
+      - run: yarn workspace example-typescript build:storybook
 
 
 workflows:
