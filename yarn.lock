@@ -358,7 +358,7 @@ __metadata:
     strip-ansi: ^6.0.1
     svgo: ^2.8.0
     svgo-loader: ^3.0.1
-    terser-webpack-plugin: ^5.3.3
+    terser-webpack-plugin: ^5.3.4
     timers-browserify: ^2.0.12
     tsconfig-paths-webpack-plugin: ^4.0.0
     tty-browserify: ^0.0.1
