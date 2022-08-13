@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.19](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.18...@anansi/jest-preset@0.7.19) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+
 ### [0.7.18](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.17...@anansi/jest-preset@0.7.18) (2022-08-01)
 
 ### 📦 Package

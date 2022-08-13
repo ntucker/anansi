@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.4](https://github.com/ntucker/anansi/compare/example-react-18@4.0.3...example-react-18@4.0.4) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+* sass, webpack-stats, postcss ([#1611](https://github.com/ntucker/anansi/issues/1611)) ([7c49064](https://github.com/ntucker/anansi/commit/7c49064e6e0364958c2a79252978a97c8c9700b4))
+* Update `webpack-dev-server` to v4.10.0 ([#1612](https://github.com/ntucker/anansi/issues/1612)) ([d7f8879](https://github.com/ntucker/anansi/commit/d7f88791a4b1b98d724c04e1833129bc53a3d712))
+* Update linting packages to v5.33.0 ([#1610](https://github.com/ntucker/anansi/issues/1610)) ([e94a934](https://github.com/ntucker/anansi/commit/e94a934bb9afbc5e0fc8698ff8a865b1bc130bd4))
+
 ### [4.0.3](https://github.com/ntucker/anansi/compare/example-react-18@4.0.2...example-react-18@4.0.3) (2022-08-04)
 
 **Note:** Version bump only for package example-react-18

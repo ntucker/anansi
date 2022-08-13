@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.23](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.22...@pojo-router/core@0.5.23) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+
 ### [0.5.22](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.21...@pojo-router/core@0.5.22) (2022-08-04)
 
 **Note:** Version bump only for package @pojo-router/core

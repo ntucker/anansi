@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.13](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.12...@anansi/core@0.14.13) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+
 ### [0.14.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.11...@anansi/core@0.14.12) (2022-08-04)
 
 **Note:** Version bump only for package @anansi/core

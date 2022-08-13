@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.3...@anansi/webpack-config@13.0.4) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+* sass, webpack-stats, postcss ([#1611](https://github.com/ntucker/anansi/issues/1611)) ([7c49064](https://github.com/ntucker/anansi/commit/7c49064e6e0364958c2a79252978a97c8c9700b4))
+* Update `terser-webpack-plugin` to ^5.3.4 ([#1613](https://github.com/ntucker/anansi/issues/1613)) ([5b78dfb](https://github.com/ntucker/anansi/commit/5b78dfbdad423d0f29aa19640661e771b238f3e8))
+
 ### [13.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.2...@anansi/webpack-config@13.0.3) (2022-08-04)
 
 ### 💅 Enhancement

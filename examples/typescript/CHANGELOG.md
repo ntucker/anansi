@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.30](https://github.com/ntucker/anansi/compare/example-typescript@10.0.29...example-typescript@10.0.30) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+* sass, webpack-stats, postcss ([#1611](https://github.com/ntucker/anansi/issues/1611)) ([7c49064](https://github.com/ntucker/anansi/commit/7c49064e6e0364958c2a79252978a97c8c9700b4))
+
 ### [10.0.29](https://github.com/ntucker/anansi/compare/example-typescript@10.0.28...example-typescript@10.0.29) (2022-08-04)
 
 ### 📦 Package

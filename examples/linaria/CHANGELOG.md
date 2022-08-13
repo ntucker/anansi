@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.4](https://github.com/ntucker/anansi/compare/example-linaria@5.0.3...example-linaria@5.0.4) (2022-08-13)
+
+### 📦 Package
+
+* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+
 ### [5.0.3](https://github.com/ntucker/anansi/compare/example-linaria@5.0.2...example-linaria@5.0.3) (2022-08-04)
 
 **Note:** Version bump only for package example-linaria
