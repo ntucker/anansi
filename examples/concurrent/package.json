@@ -26,7 +26,7 @@
     "@rest-hooks/test": "7.3.5",
     "@types/babel__core": "7.1.19",
     "@types/classnames": "2.3.1",
-    "@types/eslint": "8.4.5",
+    "@types/eslint": "8.4.6",
     "@types/jest": "28.1.7",
     "@types/prettier": "2.7.0",
     "@types/react": "18.0.17",
