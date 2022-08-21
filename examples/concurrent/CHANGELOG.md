@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.5](https://github.com/ntucker/anansi/compare/example-react-18@4.0.4...example-react-18@4.0.5) (2022-08-21)
+
+### 📦 Package
+
+* sass, pacote ([#1621](https://github.com/ntucker/anansi/issues/1621)) ([668d60d](https://github.com/ntucker/anansi/commit/668d60dc88224acd9ee7c7defca640ebbfc6cf62))
+* Update `@types/eslint` to v8.4.6 ([#1619](https://github.com/ntucker/anansi/issues/1619)) ([e90e72e](https://github.com/ntucker/anansi/commit/e90e72ec471ca7bed221c3656f179834e299ab25))
+* Update all non-major dependencies ([#1616](https://github.com/ntucker/anansi/issues/1616)) ([00e5885](https://github.com/ntucker/anansi/commit/00e588516d58f736f780ac0ef3469c3f69a48360))
+* Update JS test packages ([#1615](https://github.com/ntucker/anansi/issues/1615)) ([4a13b34](https://github.com/ntucker/anansi/commit/4a13b340d610cce350f733c7f5fee1774c932292))
+* Update linting packages ([#1614](https://github.com/ntucker/anansi/issues/1614)) ([2765804](https://github.com/ntucker/anansi/commit/2765804fb7ae4fb240cd5553c630c4b227cdfc4d))
+
 ### [4.0.4](https://github.com/ntucker/anansi/compare/example-react-18@4.0.3...example-react-18@4.0.4) (2022-08-13)
 
 ### 📦 Package

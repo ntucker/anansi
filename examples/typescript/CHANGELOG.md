@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.31](https://github.com/ntucker/anansi/compare/example-typescript@10.0.30...example-typescript@10.0.31) (2022-08-21)
+
+### 📦 Package
+
+* sass, pacote ([#1621](https://github.com/ntucker/anansi/issues/1621)) ([668d60d](https://github.com/ntucker/anansi/commit/668d60dc88224acd9ee7c7defca640ebbfc6cf62))
+* Update all non-major dependencies ([#1616](https://github.com/ntucker/anansi/issues/1616)) ([00e5885](https://github.com/ntucker/anansi/commit/00e588516d58f736f780ac0ef3469c3f69a48360))
+* Update JS test packages ([#1615](https://github.com/ntucker/anansi/issues/1615)) ([4a13b34](https://github.com/ntucker/anansi/commit/4a13b340d610cce350f733c7f5fee1774c932292))
+
 ### [10.0.30](https://github.com/ntucker/anansi/compare/example-typescript@10.0.29...example-typescript@10.0.30) (2022-08-13)
 
 ### 📦 Package

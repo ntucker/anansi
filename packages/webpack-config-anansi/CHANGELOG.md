@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.4...@anansi/webpack-config@13.0.5) (2022-08-21)
+
+### 📦 Package
+
+* sass, pacote ([#1621](https://github.com/ntucker/anansi/issues/1621)) ([668d60d](https://github.com/ntucker/anansi/commit/668d60dc88224acd9ee7c7defca640ebbfc6cf62))
+* Update `prettier-eslint-cli` to v7 ([#1620](https://github.com/ntucker/anansi/issues/1620)) ([0adda87](https://github.com/ntucker/anansi/commit/0adda877e3b4d0afa9412bedc57e2babd3aa51d6))
+* Update `terser-webpack-plugin` to ^5.3.5 ([#1617](https://github.com/ntucker/anansi/issues/1617)) ([83832f5](https://github.com/ntucker/anansi/commit/83832f564acd2a56e6af90756b28b7c660488539))
+* Update `webpack-bundle-analyzer` to ^4.6.0 ([#1618](https://github.com/ntucker/anansi/issues/1618)) ([c1f4f6a](https://github.com/ntucker/anansi/commit/c1f4f6acb3906b4d9ab7d66dc9927f34c08862b0))
+* Update all non-major dependencies ([#1616](https://github.com/ntucker/anansi/issues/1616)) ([00e5885](https://github.com/ntucker/anansi/commit/00e588516d58f736f780ac0ef3469c3f69a48360))
+
 ### [13.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.3...@anansi/webpack-config@13.0.4) (2022-08-13)
 
 ### 📦 Package
