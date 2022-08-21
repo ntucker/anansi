@@ -75,7 +75,7 @@
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.5.0",
-    "pacote": "^13.6.1",
+    "pacote": "^13.6.2",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.7.0"
   },
