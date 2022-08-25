@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.6](https://github.com/ntucker/anansi/compare/example-react-18@4.0.5...example-react-18@4.0.6) (2022-08-25)
+
+### 📦 Package
+
+* Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
+* Update `@types/jest` to v28.1.8 ([#1630](https://github.com/ntucker/anansi/issues/1630)) ([94ce1fa](https://github.com/ntucker/anansi/commit/94ce1fa54ac4e472b2bbcc6a72a78fddc3b4b124))
+* Update `core-js` to v3.25.0 ([#1627](https://github.com/ntucker/anansi/issues/1627)) ([9ecb36f](https://github.com/ntucker/anansi/commit/9ecb36f7ae8a2946d6a8026579cd8f1ba5f14ace))
+* Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
+* Update linting packages ([#1625](https://github.com/ntucker/anansi/issues/1625)) ([44012e3](https://github.com/ntucker/anansi/commit/44012e3bd0e44c6e0cc1a17df53283670035c114))
+* Update linting packages to v5.34.0 ([#1624](https://github.com/ntucker/anansi/issues/1624)) ([bdbbb98](https://github.com/ntucker/anansi/commit/bdbbb986098d7861fac2cb9670e3dd42e06b5330))
+
 ### [4.0.5](https://github.com/ntucker/anansi/compare/example-react-18@4.0.4...example-react-18@4.0.5) (2022-08-21)
 
 ### 📦 Package

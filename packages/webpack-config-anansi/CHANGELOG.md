@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.5...@anansi/webpack-config@13.0.6) (2022-08-25)
+
+### 📦 Package
+
+* Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
+* Update `webpack-bundle-analyzer` to ^4.6.1 ([#1623](https://github.com/ntucker/anansi/issues/1623)) ([718ad5f](https://github.com/ntucker/anansi/commit/718ad5fceb1ef1b577e3978cc09ff0ebf3acbbab))
+* Update all non-major dependencies ([#1626](https://github.com/ntucker/anansi/issues/1626)) ([05b1837](https://github.com/ntucker/anansi/commit/05b1837691fd0796ce3141c8535013bdc3996bc3))
+
 ### [13.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.4...@anansi/webpack-config@13.0.5) (2022-08-21)
 
 ### 📦 Package

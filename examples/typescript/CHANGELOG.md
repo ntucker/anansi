@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.32](https://github.com/ntucker/anansi/compare/example-typescript@10.0.31...example-typescript@10.0.32) (2022-08-25)
+
+### 📦 Package
+
+* Update `@types/jest` to v28.1.8 ([#1630](https://github.com/ntucker/anansi/issues/1630)) ([94ce1fa](https://github.com/ntucker/anansi/commit/94ce1fa54ac4e472b2bbcc6a72a78fddc3b4b124))
+* Update `core-js` to v3.25.0 ([#1627](https://github.com/ntucker/anansi/issues/1627)) ([9ecb36f](https://github.com/ntucker/anansi/commit/9ecb36f7ae8a2946d6a8026579cd8f1ba5f14ace))
+* Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
+
 ### [10.0.31](https://github.com/ntucker/anansi/compare/example-typescript@10.0.30...example-typescript@10.0.31) (2022-08-21)
 
 ### 📦 Package
