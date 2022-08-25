@@ -34,7 +34,7 @@
     "@babel/core": "7.18.13",
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
-    "@lerna-lite/cli": "1.11.0",
+    "@lerna-lite/cli": "1.11.1",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
     "babel-loader": "8.2.5",
@@ -63,7 +63,7 @@
     "normalize-package-data": "4.0.1",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
-    "read-package-json": "5.0.1",
+    "read-package-json": "5.0.2",
     "get-pkg-repo": "5.0.0",
     "@types/webpack": "^5.0.0",
     "immer": "^9.0.0",
@@ -83,5 +83,5 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.3"
 }
