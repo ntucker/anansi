@@ -42,11 +42,11 @@ exports[`renders 1`] = `
     >
       <div
         className="ant-space ant-space-horizontal ant-space-align-center"
-        style={Object {}}
+        style={{}}
       >
         <div
           className="ant-space-item"
-          style={Object {}}
+          style={{}}
         >
           <a
             href="/posts/new"
@@ -115,12 +115,12 @@ exports[`renders 1`] = `
                 >
                   <span
                     className="ant-avatar ant-avatar-circle"
-                    style={Object {}}
+                    style={{}}
                   >
                     <span
                       className="ant-avatar-string"
                       style={
-                        Object {
+                        {
                           "opacity": 0,
                         }
                       }
@@ -191,12 +191,12 @@ exports[`renders 1`] = `
                 >
                   <span
                     className="ant-avatar ant-avatar-circle"
-                    style={Object {}}
+                    style={{}}
                   >
                     <span
                       className="ant-avatar-string"
                       style={
-                        Object {
+                        {
                           "opacity": 0,
                         }
                       }

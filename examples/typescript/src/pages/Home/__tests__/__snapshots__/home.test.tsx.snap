@@ -9,7 +9,7 @@ exports[`renders correctly 1`] = `
     <img
       src="SvgrURL"
       style={
-        Object {
+        {
           "width": "1em",
         }
       }
@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
      
     <div
       style={
-        Object {
+        {
           "width": "1em",
         }
       }
@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
     </a>
     <span
       style={
-        Object {
+        {
           "display": "inline-block",
           "height": "10px",
           "width": "10px",
