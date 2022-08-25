@@ -12,7 +12,7 @@
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
     "test:type": "tsc --noEmit",
-    "test:ci": "echo hi",
+    "test:ci": "echo ''",
     "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {
