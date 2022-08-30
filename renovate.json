@@ -42,7 +42,7 @@
       "groupName": "webpack packages"
     },
     {
-      "matchPackageNames": ["@anansi/webpack-config"],
+      "matchPackageNames": ["@anansi/webpack-config", "sass", "node-sass", "svgo", "@svgr/webpack"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "webpack",
       "groupName": "webpack packages"
@@ -69,7 +69,7 @@
       "groupName": "JS test packages"
     },
     {
-      "matchPackageNames": ["@anansi/jest-preset", "@types/jsdom", "jest-environment-jsdom"],
+      "matchPackageNames": ["@anansi/jest-preset", "@types/jsdom", "jest-environment-jsdom", "babel-jest"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupName": "JS test packages"
     },
