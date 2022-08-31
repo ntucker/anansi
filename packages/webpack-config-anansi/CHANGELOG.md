@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.6...@anansi/webpack-config@13.0.7) (2022-08-31)
+
+### 📦 Package
+
+* sass, terser-webpack-plugin ([#1635](https://github.com/ntucker/anansi/issues/1635)) ([26496ce](https://github.com/ntucker/anansi/commit/26496ce4bf362b4e0bdf07cbb000b560282dcfa2))
+
 ### [13.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.5...@anansi/webpack-config@13.0.6) (2022-08-25)
 
 ### 📦 Package
