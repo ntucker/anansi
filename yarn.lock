@@ -3014,16 +3014,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna-lite/cli@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/cli@npm:1.11.1"
+"@lerna-lite/cli@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/cli@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
-    "@lerna-lite/info": 1.11.1
-    "@lerna-lite/init": 1.11.1
-    "@lerna-lite/listable": 1.11.1
-    "@lerna-lite/publish": 1.11.1
-    "@lerna-lite/version": 1.11.1
+    "@lerna-lite/core": 1.11.2
+    "@lerna-lite/info": 1.11.2
+    "@lerna-lite/init": 1.11.2
+    "@lerna-lite/listable": 1.11.2
+    "@lerna-lite/publish": 1.11.2
+    "@lerna-lite/version": 1.11.2
     dedent: ^0.7.0
     dotenv: ^16.0.1
     import-local: ^3.1.0
@@ -3033,13 +3033,13 @@ __metadata:
     yargs: ^17.5.1
   bin:
     lerna: dist/cli.js
-  checksum: f97545c803f1e2792ee686532a62a8cd280db03f2bd9e585d1f1ab202c1bf33372c72d862ffc38c4e6825c65572c04360c4f0713f3f4ac243265df126c61aea7
+  checksum: a88a6ac2cec231d0cfa9ce184fab27d5fbc38d9043a1f345092399ef349497362d969e908e06d478b6194ac23c45d5b331efdf29e2349fd5ceb8f405585b2d68
   languageName: node
   linkType: hard
 
-"@lerna-lite/core@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/core@npm:1.11.1"
+"@lerna-lite/core@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/core@npm:1.11.2"
   dependencies:
     "@npmcli/run-script": ^4.2.1
     "@octokit/plugin-enterprise-rest": ^6.0.1
@@ -3072,7 +3072,7 @@ __metadata:
     minimatch: ^5.1.0
     node-fetch: ^2.6.7
     npm-package-arg: ^9.1.0
-    npm-packlist: ^5.1.2
+    npm-packlist: ^5.1.3
     npm-registry-fetch: ^13.3.1
     npmlog: ^6.0.2
     os: ^0.1.2
@@ -3095,51 +3095,51 @@ __metadata:
     write-json-file: ^4.3.0
     write-pkg: ^4.0.0
     yargs: ^17.5.1
-  checksum: c119a044252edb89fa7f9b358c7ad9bba01a591da621fcf43fec80fa774c413446132914d2822df5b5a7e2f1d387a2a4fc585eea8af39e9c6537dcdf6b236885
+  checksum: 2a39dd9aa46532a39b874af11a99efe4652a6b7f9adf20a6bedb35d0861903ca780cced584753094768c2eb0f11601306e24b703d151e773733070fa72495c4d
   languageName: node
   linkType: hard
 
-"@lerna-lite/info@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/info@npm:1.11.1"
+"@lerna-lite/info@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/info@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
+    "@lerna-lite/core": 1.11.2
     dedent: ^0.7.0
     envinfo: ^7.8.1
     yargs: ^17.5.1
-  checksum: f4da70a9aed6cf6219a2c1c74b1193f2ed73ddfb941344bf155accb9788bb33c28fd886b510bb6ba6b9d08e851e59858b6761c7f7b4619f510bc73d838145d28
+  checksum: d1dc8ab678647cef2c58074c17c644b6c5cbc6b0786f2cc50c57b1f1f5aa22f604400ef587d53a9677634d8139611a20a78e370f37e5ec88579db882c0fc86b8
   languageName: node
   linkType: hard
 
-"@lerna-lite/init@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/init@npm:1.11.1"
+"@lerna-lite/init@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/init@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
+    "@lerna-lite/core": 1.11.2
     fs-extra: ^10.1.0
     p-map: ^4.0.0
     write-json-file: ^4.3.0
-  checksum: ccc031ef5ee575c153190aac1c98a7af5371a1954fc982622f6e75aeaa20cec07e6993c6e922c38399bc1ec2df9b2f8add11b1f871709e6540c74bd2336a0523
+  checksum: e29ee2167c035db461e22160c9d2d6b91e25ee19d741d412452b6bcc3384996cada01e042c8268cbf01aeb9aedd99d8a36c97c64e222995681bf037226a322ff
   languageName: node
   linkType: hard
 
-"@lerna-lite/listable@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/listable@npm:1.11.1"
+"@lerna-lite/listable@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/listable@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
+    "@lerna-lite/core": 1.11.2
     chalk: ^4.1.2
     columnify: ^1.6.0
-  checksum: 6525899c0228dea97b2b1fe098762a73059573ab6a73aa15e327086d8ab92aeca0e382c0cb4e72997891bf42195414c23dbb729f5df32a5e66d30f4481d08ea9
+  checksum: cbd221f51d1c01343935ed497e755dea3a33981beb2c90d1d42d327d48cae43b944de476aebf0ec3e9e9f03340f74fad19bab56b33dcb94f6f54e399fa285542
   languageName: node
   linkType: hard
 
-"@lerna-lite/publish@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/publish@npm:1.11.1"
+"@lerna-lite/publish@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/publish@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
-    "@lerna-lite/version": 1.11.1
+    "@lerna-lite/core": 1.11.2
+    "@lerna-lite/version": 1.11.2
     byte-size: ^7.0.1
     columnify: ^1.6.0
     fs-extra: ^10.1.0
@@ -3147,7 +3147,7 @@ __metadata:
     libnpmaccess: ^6.0.3
     libnpmpublish: ^6.0.4
     npm-package-arg: ^9.1.0
-    npm-packlist: ^5.1.2
+    npm-packlist: ^5.1.3
     npm-registry-fetch: ^13.3.1
     npmlog: ^6.0.2
     os: ^0.1.2
@@ -3167,15 +3167,15 @@ __metadata:
     write-json-file: ^4.3.0
     write-pkg: ^4.0.0
     yargs: ^17.5.1
-  checksum: 26d6b505981bef1677df4f06a40f2512f9ee4a32c1ef19753d4bae1f469b7391cb3b4a2afc111141eae7f83491dba204718867e319f9b5bcac39b8233a9e6b2c
+  checksum: 2b4e38afafe9d99f3144405d1e83e46417c4e268f9e7325d90e68cbf31bf0914f99e8ca1172e3bb44d57d75461e485abbec66e89306d6460dedeba215bebab23
   languageName: node
   linkType: hard
 
-"@lerna-lite/version@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@lerna-lite/version@npm:1.11.1"
+"@lerna-lite/version@npm:1.11.2":
+  version: 1.11.2
+  resolution: "@lerna-lite/version@npm:1.11.2"
   dependencies:
-    "@lerna-lite/core": 1.11.1
+    "@lerna-lite/core": 1.11.2
     chalk: ^4.1.2
     dedent: ^0.7.0
     load-json-file: ^6.2.0
@@ -3190,7 +3190,7 @@ __metadata:
     slash: ^3.0.0
     write-json-file: ^4.3.0
     yargs: ^17.5.1
-  checksum: c0f00e97d627b15425830950de525a6444188af0eeb8c00f018a3543f2b6fc3f1d1d334a1b69618d72f1084d1c7fe54c27440b8225e9a663664bfc1b3a5fb6d0
+  checksum: 2ed08fc2fa46053f21de8846884eadf8a5ce67ab84b969b6b364d7dd4dec0e2bbbc8a19d4fa8b662924293cdb6554e65c8ee2643fafc7f1952b21a1bf20918a6
   languageName: node
   linkType: hard
 
@@ -6282,14 +6282,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.17":
-  version: 18.0.17
-  resolution: "@types/react@npm:18.0.17"
+"@types/react@npm:*, @types/react@npm:18.0.18":
+  version: 18.0.18
+  resolution: "@types/react@npm:18.0.18"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 18cae64f5bfd6bb58fbd8ee2ba52ec82de844f114254e26de7b513e4b86621f643f9b71d7066958cd571b0d78cb86cbceda449c5289f9349ca573df29ab69252
+  checksum: 6d72d35ab3eecf382a5e0f225923f5a2c753045fce02e4e29713f36c99a24f0f770666a49dde96167f37c86271f93339d1b7e2b8969d011b137a9ebd24ee6806
   languageName: node
   linkType: hard
 
@@ -11866,7 +11866,7 @@ __metadata:
     "@types/jest": 29.0.0
     "@types/node": 17.0.45
     "@types/prettier": 2.7.0
-    "@types/react": 18.0.17
+    "@types/react": 18.0.18
     "@types/react-dom": 18.0.6
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.36.1
@@ -11917,7 +11917,7 @@ __metadata:
     "@types/lodash": 4.14.184
     "@types/node": 17.0.45
     "@types/parse-link-header": 2.0.0
-    "@types/react": 18.0.17
+    "@types/react": 18.0.18
     "@types/react-dom": 18.0.6
     "@types/react-router": 5.1.18
     "@types/react-router-dom": 5.3.3
@@ -17962,12 +17962,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-bundled@npm:^1.1.1, npm-bundled@npm:^1.1.2":
+"npm-bundled@npm:^1.1.1":
   version: 1.1.2
   resolution: "npm-bundled@npm:1.1.2"
   dependencies:
     npm-normalize-package-bin: ^1.0.1
   checksum: 6e599155ef28d0b498622f47f1ba189dfbae05095a1ed17cb3a5babf961e965dd5eab621f0ec6f0a98de774e5836b8f5a5ee639010d64f42850a74acec3d4d09
+  languageName: node
+  linkType: hard
+
+"npm-bundled@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "npm-bundled@npm:2.0.1"
+  dependencies:
+    npm-normalize-package-bin: ^2.0.0
+  checksum: 7747293985c48c5268871efe691545b03731cb80029692000cbdb0b3344b9617be5187aa36281cabbe6b938e3651b4e87236d1c31f9e645eef391a1a779413e6
   languageName: node
   linkType: hard
 
@@ -18051,17 +18060,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-packlist@npm:^5.1.0, npm-packlist@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "npm-packlist@npm:5.1.2"
+"npm-packlist@npm:^5.1.0, npm-packlist@npm:^5.1.3":
+  version: 5.1.3
+  resolution: "npm-packlist@npm:5.1.3"
   dependencies:
     glob: ^8.0.1
     ignore-walk: ^5.0.1
-    npm-bundled: ^1.1.2
+    npm-bundled: ^2.0.0
     npm-normalize-package-bin: ^2.0.0
   bin:
     npm-packlist: bin/index.js
-  checksum: 68750c29111b9d724ab344ad599349fdee6a86357d07be0b2203503686006331f4d49950ab36cddf23f3e146960bcc79ac5c67fdb2ae56279a5bc836eb7f46e2
+  checksum: 94cc9c66740e8f80243301de85eb0a2cec5bbd570c3f26b6ad7af1a3eca155f7e810580dc7ea4448f12a8fd82f6db307e7132a5fe69e157eb45b325acadeb22a
   languageName: node
   linkType: hard
 
@@ -22391,8 +22400,8 @@ __metadata:
     "@babel/core": 7.18.13
     "@commitlint/cli": 17.0.3
     "@commitlint/config-conventional": 17.0.3
-    "@lerna-lite/cli": 1.11.1
-    "@types/react": 18.0.17
+    "@lerna-lite/cli": 1.11.2
+    "@types/react": 18.0.18
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": 5.36.1
     "@typescript-eslint/parser": 5.36.1
