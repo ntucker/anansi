@@ -23,7 +23,7 @@
     "@anansi/jest-preset": "^0.7.22",
     "@anansi/webpack-config": "^13.0.7",
     "@babel/core": "7.18.13",
-    "@rest-hooks/test": "7.3.5",
+    "@rest-hooks/test": "7.3.6",
     "@types/babel__core": "7.1.19",
     "@types/classnames": "2.3.1",
     "@types/eslint": "8.4.6",
@@ -55,11 +55,11 @@
     "@linaria/core": "4.1.1",
     "@linaria/react": "4.1.2",
     "@linaria/shaker": "4.1.2",
-    "@rest-hooks/core": "3.2.9",
-    "@rest-hooks/endpoint": "2.2.12",
-    "@rest-hooks/hooks": "3.0.3",
-    "@rest-hooks/img": "0.6.2",
-    "@rest-hooks/rest": "5.0.6",
+    "@rest-hooks/core": "3.2.10",
+    "@rest-hooks/endpoint": "2.3.0",
+    "@rest-hooks/hooks": "3.0.4",
+    "@rest-hooks/img": "0.6.3",
+    "@rest-hooks/rest": "5.1.0",
     "@types/node": "17.0.45",
     "antd": "4.22.8",
     "classnames": "2.3.1",
@@ -67,7 +67,7 @@
     "history": "5.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rest-hooks": "6.3.9"
+    "rest-hooks": "6.3.10"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
