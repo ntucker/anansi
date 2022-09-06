@@ -125,7 +125,7 @@
     "vm-browserify": "^1.1.2",
     "webpack-bundle-analyzer": "^4.6.1",
     "webpack-node-externals": "^3.0.0",
-    "webpack-remove-empty-scripts": "^0.8.1",
+    "webpack-remove-empty-scripts": "^0.8.3",
     "webpack-stats-plugin": "^1.1.0",
     "worker-loader": "^3.0.8"
   },
