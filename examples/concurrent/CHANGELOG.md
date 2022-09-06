@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.8](https://github.com/ntucker/anansi/compare/example-react-18@4.0.7...example-react-18@4.0.8) (2022-09-06)
+
+### 📦 Package
+
+* Update `@types/node` to v18 ([#1644](https://github.com/ntucker/anansi/issues/1644)) ([190de8b](https://github.com/ntucker/anansi/commit/190de8b00a2f7674ba4130a0b8046f9752c85957))
+* Update all non-major dependencies ([#1636](https://github.com/ntucker/anansi/issues/1636)) ([ba46673](https://github.com/ntucker/anansi/commit/ba46673f9f809b16fb9ff89e65a87b23e02a432f))
+* Update all non-major dependencies ([#1637](https://github.com/ntucker/anansi/issues/1637)) ([d276aa0](https://github.com/ntucker/anansi/commit/d276aa0c65d7f51ff3ff63aba3a3d4738e15bed9))
+* Update all non-major dependencies ([#1642](https://github.com/ntucker/anansi/issues/1642)) ([8fc92a0](https://github.com/ntucker/anansi/commit/8fc92a0888bb62b7b534f447faefb5240e7f93e9))
+* Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
+* Update JS test packages to ^29.0.2 ([#1640](https://github.com/ntucker/anansi/issues/1640)) ([102b01a](https://github.com/ntucker/anansi/commit/102b01a5c30b3df270e1b73062acaee2e9b1c774))
+* Update linting packages ([#1639](https://github.com/ntucker/anansi/issues/1639)) ([28e924d](https://github.com/ntucker/anansi/commit/28e924d51a38b49709d8d810b929f2633c0b4dd5))
+
 ### [4.0.7](https://github.com/ntucker/anansi/compare/example-react-18@4.0.6...example-react-18@4.0.7) (2022-08-31)
 
 ### 📦 Package

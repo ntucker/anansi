@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.7...@anansi/webpack-config@13.0.8) (2022-09-06)
+
+### 📦 Package
+
+* Update `sass` to ^1.54.8 ([#1643](https://github.com/ntucker/anansi/issues/1643)) ([a47733d](https://github.com/ntucker/anansi/commit/a47733d6e3c5212d32cebacd043fe1907403e499))
+* Update all non-major dependencies ([#1642](https://github.com/ntucker/anansi/issues/1642)) ([8fc92a0](https://github.com/ntucker/anansi/commit/8fc92a0888bb62b7b534f447faefb5240e7f93e9))
+* Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
+
 ### [13.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.6...@anansi/webpack-config@13.0.7) (2022-08-31)
 
 ### 📦 Package
