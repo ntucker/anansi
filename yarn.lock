@@ -368,7 +368,7 @@ __metadata:
     vm-browserify: ^1.1.2
     webpack-bundle-analyzer: ^4.6.1
     webpack-node-externals: ^3.0.0
-    webpack-remove-empty-scripts: ^0.8.1
+    webpack-remove-empty-scripts: ^0.8.3
     webpack-stats-plugin: ^1.1.0
     worker-loader: ^3.0.8
   peerDependencies:
@@ -7263,16 +7263,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansis@npm:^1.3.6":
-  version: 1.3.6
-  resolution: "ansis@npm:1.3.6"
-  checksum: 8d9341558abee49884a34bb4ac3421a1c478a06938f452cbaeec75f6bfa76a8ac24f3e98f3d3a22a9587257e6739ede36fb082af8a004c81814c02a8cff2bf52
+"ansis@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "ansis@npm:1.4.0"
+  checksum: d8cda1d5f65a35d37f65dc4a2a3a8bbde13907e05a96865392ba5e83e380803cb7ddcc2ceae108cda9ce2d41eca27ca90c52be438403664eb01d64724f348e8e
   languageName: node
   linkType: hard
 
-"antd@npm:4.22.8":
-  version: 4.22.8
-  resolution: "antd@npm:4.22.8"
+"antd@npm:4.23.0":
+  version: 4.23.0
+  resolution: "antd@npm:4.23.0"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -7292,7 +7292,7 @@ __metadata:
     rc-dropdown: ~4.0.0
     rc-field-form: ~1.27.0
     rc-image: ~5.7.0
-    rc-input: ~0.0.1-alpha.5
+    rc-input: ~0.1.2
     rc-input-number: ~7.3.5
     rc-mentions: ~1.9.1
     rc-menu: ~9.6.3
@@ -7308,8 +7308,8 @@ __metadata:
     rc-slider: ~10.0.0
     rc-steps: ~4.1.0
     rc-switch: ~3.2.0
-    rc-table: ~7.25.3
-    rc-tabs: ~11.16.0
+    rc-table: ~7.26.0
+    rc-tabs: ~12.1.0-alpha.1
     rc-textarea: ~0.3.0
     rc-tooltip: ~5.2.0
     rc-tree: ~5.6.5
@@ -7321,7 +7321,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: e7fffd8e09e796c69935c2b16831a59c5e5d6b459afc3a55c9ae0c24f177c3fdb5a575efbb291fc88e5bd92f2c74b26a6e48e2d67523b0ac0b0f7692035592d2
+  checksum: 1500100022a74259f574336a25ae694371b4374697180cfda4a9e6672881ebf8844cd9935d9052ce92bf1dcb88ed750dd9cfb7b5e7671ee39fbc4b212e457ee0
   languageName: node
   linkType: hard
 
@@ -11882,7 +11882,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.36.2
     "@typescript-eslint/parser": 5.36.2
-    antd: 4.22.8
+    antd: 4.23.0
     classnames: 2.3.1
     core-js: 3.25.0
     eslint: 8.23.0
@@ -11933,7 +11933,7 @@ __metadata:
     "@types/react-router": 5.1.18
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
-    antd: 4.22.8
+    antd: 4.23.0
     classnames: 2.3.1
     core-js: 3.25.0
     jest: 29.0.2
@@ -20876,9 +20876,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-input@npm:~0.0.1-alpha.5":
-  version: 0.0.1-alpha.5
-  resolution: "rc-input@npm:0.0.1-alpha.5"
+"rc-input@npm:~0.1.2":
+  version: 0.1.2
+  resolution: "rc-input@npm:0.1.2"
   dependencies:
     "@babel/runtime": ^7.11.1
     classnames: ^2.2.1
@@ -20886,7 +20886,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: f74a5da86c1a24ee250b82cc9733bcebb96e8ba8370fcd4a380893bb8fd19f297e7f3a06f38c1d7dd8b79b3c254180c6329fca5eaa36d57007e8a153fac8c929
+  checksum: 18c501c30ea7b98e17bc83762539009e1f7ab9d46258bec8a11cd4017850cfaf0b21acab0bdce9b05c34963311f17704df4b763d69fdbc49cb3cb4374968a28c
   languageName: node
   linkType: hard
 
@@ -20925,7 +20925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-motion@npm:^2.0.0, rc-motion@npm:^2.0.1, rc-motion@npm:^2.2.0, rc-motion@npm:^2.3.0, rc-motion@npm:^2.3.4, rc-motion@npm:^2.4.3, rc-motion@npm:^2.4.4, rc-motion@npm:^2.6.1":
+"rc-motion@npm:^2.0.0, rc-motion@npm:^2.0.1, rc-motion@npm:^2.2.0, rc-motion@npm:^2.3.0, rc-motion@npm:^2.3.4, rc-motion@npm:^2.4.3, rc-motion@npm:^2.4.4, rc-motion@npm:^2.6.1, rc-motion@npm:^2.6.2":
   version: 2.6.2
   resolution: "rc-motion@npm:2.6.2"
   dependencies:
@@ -21136,9 +21136,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-table@npm:~7.25.3":
-  version: 7.25.3
-  resolution: "rc-table@npm:7.25.3"
+"rc-table@npm:~7.26.0":
+  version: 7.26.0
+  resolution: "rc-table@npm:7.26.0"
   dependencies:
     "@babel/runtime": ^7.10.1
     classnames: ^2.2.5
@@ -21148,24 +21148,25 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: d5c4f82b06cceeec69bbcb3a91cd7b03f9f733e2f14e18c654416bdf772007e145b8f781be1ec56d94085fd544d79c301277642dae6edebde7772d098d1b3073
+  checksum: 78970d0140203d57541bf5952c542ca7448608bbd29da949e51007c4b3f94570a35b4e95b35ce4d49954c6c88a9e44d2f36f8f4015bfe1b97e926a381141d251
   languageName: node
   linkType: hard
 
-"rc-tabs@npm:~11.16.0":
-  version: 11.16.0
-  resolution: "rc-tabs@npm:11.16.0"
+"rc-tabs@npm:~12.1.0-alpha.1":
+  version: 12.1.0-alpha.1
+  resolution: "rc-tabs@npm:12.1.0-alpha.1"
   dependencies:
     "@babel/runtime": ^7.11.2
     classnames: 2.x
     rc-dropdown: ~4.0.0
     rc-menu: ~9.6.0
+    rc-motion: ^2.6.2
     rc-resize-observer: ^1.0.0
     rc-util: ^5.5.0
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 855bc92121a95ea39de54073c6f64ccefcc3f69a265b996032d566fc1a1fa7d421cc039da3b27ee8ca41a6573d0f4851e556608d82cd21052d9b105fa82970cb
+  checksum: 5f5d642ee7b88d793f107c5c7a12a8a7aae95baefbe95edde10513343ded71326e3a12c5bec645cd4f62eff809e1f939d2a1d981315a0a1d9241aa231703634b
   languageName: node
   linkType: hard
 
@@ -25783,14 +25784,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-remove-empty-scripts@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "webpack-remove-empty-scripts@npm:0.8.1"
+"webpack-remove-empty-scripts@npm:^0.8.3":
+  version: 0.8.3
+  resolution: "webpack-remove-empty-scripts@npm:0.8.3"
   dependencies:
-    ansis: ^1.3.6
+    ansis: ^1.4.0
   peerDependencies:
     webpack: ">=5.32.0"
-  checksum: 79d070c415c954d86f556d3da311cc0f9e0bed7e89872e9df14d7bdb4982237c1f04fdc8c572cde9e697389b98c468def4047373793f8cdbb2a86d11a1ef4444
+  checksum: e64e12d43c417c1168960e993e8ef66a7efb2aabc8ceab03c476aa00b2724b956eb47f31d4c82a078d977a86c7642d654d0616094981bb0d18602aafac40cd1b
   languageName: node
   linkType: hard
 
