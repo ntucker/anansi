@@ -9883,10 +9883,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.25.0, core-js@npm:^3.0.4, core-js@npm:^3.21.0, core-js@npm:^3.24.1, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
-  version: 3.25.0
-  resolution: "core-js@npm:3.25.0"
-  checksum: 5a72740bf5babaf2e6203da4c0e831a0b97c3fe6f21b4c1aa8601d3a927660a22128dd8f0e86ce84778c4e5372ab0fc03c7944afa7e215c7fb13b2c79d5d5504
+"core-js@npm:3.25.1, core-js@npm:^3.0.4, core-js@npm:^3.21.0, core-js@npm:^3.24.1, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
+  version: 3.25.1
+  resolution: "core-js@npm:3.25.1"
+  checksum: bfacb078e790913841e2d5008b9b6705ae56ed23f83c7f0ae08d330d874561012611089d53b71520105234ed0abba36f28d91b391514a16541a8c8d98c464239
   languageName: node
   linkType: hard
 
@@ -11817,7 +11817,7 @@ __metadata:
     "@types/react-router-dom": 5.3.3
     babel-loader: 8.2.5
     classnames: 2.3.1
-    core-js: 3.25.0
+    core-js: 3.25.1
     react-refresh: 0.14.0
     redbox-react: 1.6.0
     serve: 14.0.1
@@ -11861,7 +11861,7 @@ __metadata:
     "@typescript-eslint/parser": 5.36.2
     antd: 4.23.1
     classnames: 2.3.1
-    core-js: 3.25.0
+    core-js: 3.25.1
     eslint: 8.23.0
     eslint-plugin-import: 2.26.0
     eslint-plugin-prettier: 4.2.1
@@ -11912,7 +11912,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     antd: 4.23.1
     classnames: 2.3.1
-    core-js: 3.25.0
+    core-js: 3.25.1
     jest: 29.0.2
     jest-environment-jsdom: 29.0.2
     lodash: 4.17.21
