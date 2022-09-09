@@ -43,7 +43,7 @@
     "prettier": "2.7.1",
     "react-refresh": "0.14.0",
     "react-test-renderer": "18.2.0",
-    "typescript": "4.8.2",
+    "typescript": "4.8.3",
     "webpack": "5.74.0",
     "webpack-cli": "4.10.0",
     "webpack-dev-server": "4.11.0"
@@ -61,7 +61,7 @@
     "@rest-hooks/img": "0.6.3",
     "@rest-hooks/rest": "5.1.0",
     "@types/node": "18.7.16",
-    "antd": "4.23.0",
+    "antd": "4.23.1",
     "classnames": "2.3.1",
     "core-js": "3.25.0",
     "history": "5.3.0",
