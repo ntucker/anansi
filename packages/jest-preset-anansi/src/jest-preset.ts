@@ -29,22 +29,22 @@ if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
 module.exports = {
   babelConfig,
   default: {
-    /**
-     *  If you comment this out, you will get error unexpected token with optional chaining because you are using babel in your project
-     *  When using babel together with ts-jest in a project, you need to let ts-jest know about it
-     */
-    globals: {
-      'ts-jest': {
-        babelConfig: babelConfig,
-        tsconfig: `<rootDir>/${TSCONFIG}`,
-        stringifyContentPathRegex: '\\.html$',
-      },
-    },
     transform: {
       '^.+\\.worker.(m|c)?[t|j]s$': require.resolve(
         './transformers/worker-loader',
       ),
-      '^.+\\.(m|c)?(tsx?|html)$': require.resolve('ts-jest'),
+      '^.+\\.(m|c)?(tsx?|html)$': [
+        require.resolve('ts-jest'),
+        /**
+         *  If you comment this out, you will get error unexpected token with optional chaining because you are using babel in your project
+         *  When using babel together with ts-jest in a project, you need to let ts-jest know about it
+         */
+        {
+          babelConfig: babelConfig,
+          tsconfig: `<rootDir>/${TSCONFIG}`,
+          stringifyContentPathRegex: '\\.html$',
+        },
+      ],
       '^.+\\.(m|c)?jsx?$': [require.resolve('babel-jest'), babelConfig],
     },
     // same as default, but we transform @babel/runtime
