@@ -30,7 +30,7 @@
     "@linaria/core": "4.1.2",
     "@linaria/react": "4.1.3",
     "@linaria/shaker": "4.2.0",
-    "classnames": "2.3.1",
+    "classnames": "2.3.2",
     "core-js": "3.25.1",
     "redbox-react": "1.6.0"
   },
