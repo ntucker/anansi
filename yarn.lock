@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.7.16
+    "@types/node": 18.7.17
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -307,7 +307,7 @@ __metadata:
     "@types/webpack-bundle-analyzer": ^4.4.2
     "@vue/preload-webpack-plugin": ^2.0.0
     assert: ^2.0.0
-    autoprefixer: ^10.4.8
+    autoprefixer: ^10.4.9
     babel-loader: ^8.2.5
     browserify-zlib: ^0.2.0
     buffer: ^6.0.3
@@ -6103,10 +6103,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.7.16":
-  version: 18.7.16
-  resolution: "@types/node@npm:18.7.16"
-  checksum: 01a3d35c764a3f0e7370b56e1ad4203731131883c65784e020009014171b3f53c4649cde6c7aa4f1026b907ee87ef6ae6ece2bc518151dc7b81100fe8b1db3ad
+"@types/node@npm:*, @types/node@npm:18.7.17":
+  version: 18.7.17
+  resolution: "@types/node@npm:18.7.17"
+  checksum: bb1b832f4ad42a106d189d87e95aef117f0026a7ea291f34c5d106a25419d6d4c9d39099688ad46746cc3c2307c263be4adec1049a35dc12c9e48f19975b2dc6
   languageName: node
   linkType: hard
 
@@ -7712,12 +7712,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.8":
-  version: 10.4.8
-  resolution: "autoprefixer@npm:10.4.8"
+"autoprefixer@npm:^10.4.8, autoprefixer@npm:^10.4.9":
+  version: 10.4.9
+  resolution: "autoprefixer@npm:10.4.9"
   dependencies:
     browserslist: ^4.21.3
-    caniuse-lite: ^1.0.30001373
+    caniuse-lite: ^1.0.30001394
     fraction.js: ^4.2.0
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
@@ -7726,7 +7726,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 06cb4c497bb948714d5b1b4f7e7465fd88c50f90788fc2020b3d97d7661fb4dd0d9918c1b09dd3e909acd4485cbb27ad99085487d8ed5d75915e646d2b535770
+  checksum: ea5e2067d36ff170af97c68c286ad29cc56640532100a63ebe1464cff2fcb7d7685a1926774141a78faf8bb09f1746edf4918fa1decfd25761e5ccf9ebc0531d
   languageName: node
   linkType: hard
 
@@ -8822,10 +8822,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001373":
-  version: 1.0.30001373
-  resolution: "caniuse-lite@npm:1.0.30001373"
-  checksum: cd2f027e2fcf66ed3b0e3eccec89df871f951f2e7600944fae2c3f6f1c37ac82392e573c279e15bf851b75f9696472e38d33fd52d964819ffb8af7af4078ceba
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001394":
+  version: 1.0.30001399
+  resolution: "caniuse-lite@npm:1.0.30001399"
+  checksum: dd105b06fbbdc89867780a2f4debc3ecb184cff82f35b34aaac486628fcc9cf6bacf37573a9cc22dedc661178d460fa8401374a933cb9d2f8ee67316d98b2a8f
   languageName: node
   linkType: hard
 
@@ -9038,10 +9038,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:*, classnames@npm:2.3.1, classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "classnames@npm:2.3.1"
-  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
+"classnames@npm:*, classnames@npm:2.3.2, classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1":
+  version: 2.3.2
+  resolution: "classnames@npm:2.3.2"
+  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
   languageName: node
   linkType: hard
 
@@ -11818,7 +11818,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/react-router-dom": 5.3.3
     babel-loader: 8.2.5
-    classnames: 2.3.1
+    classnames: 2.3.2
     core-js: 3.25.1
     react-refresh: 0.14.0
     redbox-react: 1.6.0
@@ -11854,7 +11854,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
     "@types/jest": 29.0.1
-    "@types/node": 18.7.16
+    "@types/node": 18.7.17
     "@types/prettier": 2.7.0
     "@types/react": 18.0.19
     "@types/react-dom": 18.0.6
@@ -11862,7 +11862,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.37.0
     "@typescript-eslint/parser": 5.37.0
     antd: 4.23.1
-    classnames: 2.3.1
+    classnames: 2.3.2
     core-js: 3.25.1
     eslint: 8.23.1
     eslint-plugin-import: 2.26.0
@@ -11905,7 +11905,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.0.1
     "@types/lodash": 4.14.185
-    "@types/node": 18.7.16
+    "@types/node": 18.7.17
     "@types/parse-link-header": 2.0.0
     "@types/react": 18.0.19
     "@types/react-dom": 18.0.6
@@ -11913,7 +11913,7 @@ __metadata:
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
     antd: 4.23.1
-    classnames: 2.3.1
+    classnames: 2.3.2
     core-js: 3.25.1
     jest: 29.0.3
     jest-environment-jsdom: 29.0.3
