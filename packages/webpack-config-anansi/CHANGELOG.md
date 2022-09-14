@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.9...@anansi/webpack-config@13.0.10) (2022-09-14)
+
+### 📦 Package
+
+* Update `autoprefixer` to ^10.4.10 ([#1658](https://github.com/ntucker/anansi/issues/1658)) ([fdbb517](https://github.com/ntucker/anansi/commit/fdbb5171a5b5b97a7f3ade8759c8bcbd4ff5410b))
+* Update `css-minimizer-webpack-plugin` to ^4.1.0 ([#1653](https://github.com/ntucker/anansi/issues/1653)) ([ca90ac3](https://github.com/ntucker/anansi/commit/ca90ac304ca6ab2abf74be6ee532b812587a66aa))
+* Update `webpack-remove-empty-scripts` to v1 ([#1655](https://github.com/ntucker/anansi/issues/1655)) ([bca1eb8](https://github.com/ntucker/anansi/commit/bca1eb8ff81df687075187c18c05fe828218156b))
+* Update all non-major dependencies ([#1657](https://github.com/ntucker/anansi/issues/1657)) ([7ba73d3](https://github.com/ntucker/anansi/commit/7ba73d31db314f42157cac0012524b6654f2aaba))
+
 ### [13.0.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.8...@anansi/webpack-config@13.0.9) (2022-09-08)
 
 ### 📦 Package
