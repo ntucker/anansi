@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.30](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.29...@pojo-router/core@0.5.30) (2022-09-14)
+
+### 📦 Package
+
+* Update babel packages to v7.19.1 ([#1662](https://github.com/ntucker/anansi/issues/1662)) ([28c2a3f](https://github.com/ntucker/anansi/commit/28c2a3f10b72f3474092a8f2fa51318941336d5b))
+
 ### [0.5.29](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.28...@pojo-router/core@0.5.29) (2022-09-14)
 
 ### 📦 Package
