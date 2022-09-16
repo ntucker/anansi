@@ -1,5 +1,5 @@
 declare module '*.svg' {
-  let ReactComponent: import('react').SFC<import('react').SVGProps<SVGElement>>;
+  let ReactComponent: import('react').FC<import('react').SVGProps<SVGElement>>;
   let url: string;
   export { ReactComponent };
   export default url;
