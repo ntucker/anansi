@@ -9,6 +9,7 @@ module.exports = {
   legacy: [
     '> 0.5%',
     'Firefox ESR',
+    'since 2018 and supports es6-module',
     'not dead',
     'not ie<11',
     'not safari<12.1',
