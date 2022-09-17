@@ -29,10 +29,12 @@ module.exports = {
   2019: ['since 2019 and supports es6-module'],
   2020: ['since 2020 and supports es6-module'],
   2021: ['since 2021 and supports es6-module'],
+  2022: ['since 2022 and supports es6-module'],
   test: ['current node', 'last 1 Chrome versions', 'last 1 Firefox versions'],
   server: ['current node'],
   node10: ['node 10'],
   node12: ['node 12'],
   node14: ['node 14'],
   node16: ['node 16'],
+  node18: ['node 18'],
 };
