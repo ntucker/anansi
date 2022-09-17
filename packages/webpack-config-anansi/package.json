@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "13.0.11",
+  "version": "13.0.12",
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "types": "./index.d.ts",
@@ -130,11 +130,11 @@
     "worker-loader": "^3.0.8"
   },
   "peerDependencies": {
-    "@types/react": "^16.0.0 || ^17.0.0 || ^18.0.0",
     "@babel/core": "^6 || ^7 || ^8",
     "@hot-loader/react-dom": "^16.0.0 || ^17.0.0",
     "@linaria/babel-preset": "^4.0.0",
     "@storybook/react": "^6.2.0",
+    "@types/react": "^16.0.0 || ^17.0.0 || ^18.0.0",
     "node-sass": "^7.0.1",
     "react": "*",
     "react-refresh": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0 || ^0.12.0 || ^0.13.0 || ^0.14.0",
@@ -144,9 +144,6 @@
     "webpack-dev-server": "^4.0.0"
   },
   "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
-    },
     "@babel/core": {
       "optional": true
     },
@@ -157,6 +154,9 @@
       "optional": true
     },
     "@storybook/react": {
+      "optional": true
+    },
+    "@types/react": {
       "optional": true
     },
     "node-sass": {

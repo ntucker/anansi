@@ -3,71 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-### [1.3.3](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.2...@anansi/browserslist-config@1.3.3) (2021-07-01)
+## [1.4.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.3...@anansi/browserslist-config@1.4.0) (2022-09-17)
 
+### 🚀 Features
+
+* Add node18 and 2022 ([3ea8dc8](https://github.com/ntucker/anansi/commit/3ea8dc8ab4c5317b66118defd5615d14e0209e6c))
+
+### 💅 Enhancement
+
+* 'legacy' should include 2018+ browsers ([08eb49e](https://github.com/ntucker/anansi/commit/08eb49ee6eb9dad074cb327936517031747b85cd))
+
+### [1.3.3](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.2...@anansi/browserslist-config@1.3.3) (2021-07-01)
 
 ### 💅 Enhancement
 
 * Add more mobile browsers to 'modern' ([996ee18](https://github.com/ntucker/anansi/commit/996ee1827405779cc7a58b7cd99da621731fe589))
 
-
-
 ### [1.3.2](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.1...@anansi/browserslist-config@1.3.2) (2021-06-29)
-
 
 ### 🐛 Bug Fix
 
 * test env ([968414e](https://github.com/ntucker/anansi/commit/968414e907b01af13437196de60388b94ba373a6))
 
-
-
 ### [1.3.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.0...@anansi/browserslist-config@1.3.1) (2021-06-29)
-
 
 ### 💅 Enhancement
 
 * Date targets are only for es6-module support ([62d3858](https://github.com/ntucker/anansi/commit/62d385857c513b82d4024de7518a322c1ec95ddd))
 
-
-
 ## [1.3.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.2.0...@anansi/browserslist-config@1.3.0) (2021-06-09)
-
 
 ### 🚀 Features
 
 * Add year-based envs ([9468a7a](https://github.com/ntucker/anansi/commit/9468a7a9ab93e47794c8abdf14c42bdde9cf8d78))
 
-
-
 ## [1.2.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.1.0...@anansi/browserslist-config@1.2.0) (2021-03-01)
-
 
 ### 🚀 Features
 
 * Add node specific versions for targetted output ([22134ce](https://github.com/ntucker/anansi/commit/22134ce38c80fcbb6b4009fe0dff0b0e90ecc275))
 
-
-
 ## [1.1.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.0.1...@anansi/browserslist-config@1.1.0) (2021-01-23)
-
 
 ### 🚀 Features
 
 * Add 'modern' browserslist config ([a587f20](https://github.com/ntucker/anansi/commit/a587f207286d4d90a6abf630f62e2c1337f391c6))
 
-
-
 ### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.0.0...@anansi/browserslist-config@1.0.1) (2020-07-01)
-
 
 ### 🐛 Bug Fix
 
 * Optional chaining 'Module parse failed' when targetting newer browsers ([55d7c1e](https://github.com/ntucker/anansi/commit/55d7c1e5ba3ab9d8e22567790173ca868b9536ef))
 
-
-
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@0.0.6...@anansi/browserslist-config@1.0.0) (2020-04-21)
-
 
 ### ⚠ 💥 BREAKING CHANGES
 
@@ -77,15 +65,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * Browserslist environments ([315d206](https://github.com/ntucker/anansi/commit/315d206ace5ae316129d687a4868c096fa41be0f))
 
-
 ### 📝 Documentation
 
 * Add environment information to readme ([9b1653b](https://github.com/ntucker/anansi/commit/9b1653b03e10b12b4c87475d341a60b86ae1a9a4))
 
-
-
 ### [0.0.6](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@0.0.5...@anansi/browserslist-config@0.0.6) (2019-12-11)
-
 
 ### 📝 Documentation
 

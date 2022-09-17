@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.11...@anansi/webpack-config@13.0.12) (2022-09-17)
+
+### 🐛 Bug Fix
+
+* Add @types/react as optional peerDep ([c30c36c](https://github.com/ntucker/anansi/commit/c30c36c3b024beb54a06576ab00e3d41b2ee1bfc))
+* **types:** Update svg types for recent react type deprecations ([cbc3ade](https://github.com/ntucker/anansi/commit/cbc3adeaed04042dd2ecb0f9688ad109caff409d))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1663](https://github.com/ntucker/anansi/issues/1663)) ([dfbf979](https://github.com/ntucker/anansi/commit/dfbf9796cb82bdb62baabc10099eac58c0accc10))
+
 ### [13.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.10...@anansi/webpack-config@13.0.11) (2022-09-14)
 
 ### 📦 Package
