@@ -67,7 +67,7 @@
     "@types/webpack-bundle-analyzer": "^4.4.2",
     "@vue/preload-webpack-plugin": "^2.0.0",
     "assert": "^2.0.0",
-    "autoprefixer": "^10.4.11",
+    "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
@@ -125,7 +125,7 @@
     "vm-browserify": "^1.1.2",
     "webpack-bundle-analyzer": "^4.6.1",
     "webpack-node-externals": "^3.0.0",
-    "webpack-remove-empty-scripts": "^1.0.0",
+    "webpack-remove-empty-scripts": "^1.0.1",
     "webpack-stats-plugin": "^1.1.0",
     "worker-loader": "^3.0.8"
   },
