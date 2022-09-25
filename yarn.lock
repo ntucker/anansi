@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.7.18
+    "@types/node": 18.7.20
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -222,7 +222,7 @@ __metadata:
     rimraf: 3.0.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.10.0
+    yeoman-environment: 3.11.0
     yeoman-generator: ^5.7.0
     yeoman-test: 6.3.0
   languageName: unknown
@@ -346,7 +346,7 @@ __metadata:
     raw-loader: 4.0.2
     react-dev-utils: ^12.0.1
     react-error-overlay: 6.0.9
-    readable-stream: ^4.1.0
+    readable-stream: ^4.2.0
     rimraf: 3.0.2
     sass: ^1.55.0
     sass-loader: ^13.0.2
@@ -6102,10 +6102,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.7.18":
-  version: 18.7.18
-  resolution: "@types/node@npm:18.7.18"
-  checksum: 8aec61f0f96e2a69ce51f1f40f949ca578bbb4fe05d7c0b8ce3aeeb848e90f755837f17f6ac132ca404d974fe9b2974150ad3b4984fc9dc7c3ceddb10bae0167
+"@types/node@npm:*, @types/node@npm:18.7.20":
+  version: 18.7.20
+  resolution: "@types/node@npm:18.7.20"
+  checksum: 83905b5528afe8c4e3f5f33de2699e1a12064d0e1b89310b179ab1801fca73157158ecf84c8dac3681afa77026f12440d34c37bc1107ca461da8df0f086b09e9
   languageName: node
   linkType: hard
 
@@ -6197,10 +6197,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:2.7.0, @types/prettier@npm:^2.1.5, @types/prettier@npm:^2.6.0":
-  version: 2.7.0
-  resolution: "@types/prettier@npm:2.7.0"
-  checksum: bf5d0c7c1270909b39399539ac106d20ddaa85fe92eb1d59922dc99159604b4f8d5e41b0045fb29c8011585cf5bca2350b7441ef3d9816c08bd0e10ebd4b31d4
+"@types/prettier@npm:2.7.1, @types/prettier@npm:^2.1.5, @types/prettier@npm:^2.6.0":
+  version: 2.7.1
+  resolution: "@types/prettier@npm:2.7.1"
+  checksum: 5e3f58e229d6c73b5f5cae2e8f96c1c4a5b5805f83459e17a045ba8e96152b1d38e86b63e3172fb159dac923388699660862b75b2d37e54220805f0e691e26f1
   languageName: node
   linkType: hard
 
@@ -6271,14 +6271,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.20":
-  version: 18.0.20
-  resolution: "@types/react@npm:18.0.20"
+"@types/react@npm:*, @types/react@npm:18.0.21":
+  version: 18.0.21
+  resolution: "@types/react@npm:18.0.21"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: f67f5b16efd89e237bf0e40d133218c398cf2a2f81166ce1e9fa32d0df6b869106740983396c51df9708a1b79b2a9d725eda1230cc3064c92d86d9ea6a4b714c
+  checksum: 36c1a7c9d507e81e2e629c1ad3db51d7b84d8b010c2d5008da411874286c6a5ccc711ae1d4c470efc0bdc77153cc8804a40e927e929e5164c669ca41b84b846d
   languageName: node
   linkType: hard
 
@@ -11860,9 +11860,9 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
     "@types/jest": 29.0.3
-    "@types/node": 18.7.18
-    "@types/prettier": 2.7.0
-    "@types/react": 18.0.20
+    "@types/node": 18.7.20
+    "@types/prettier": 2.7.1
+    "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.38.0
@@ -11911,9 +11911,9 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.0.3
     "@types/lodash": 4.14.185
-    "@types/node": 18.7.18
+    "@types/node": 18.7.20
     "@types/parse-link-header": 2.0.0
-    "@types/react": 18.0.20
+    "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
     "@types/react-router": 5.1.19
     "@types/react-router-dom": 5.3.3
@@ -21655,12 +21655,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "readable-stream@npm:4.1.0"
+"readable-stream@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "readable-stream@npm:4.2.0"
   dependencies:
     abort-controller: ^3.0.0
-  checksum: ff2bb513af6fb43618c8360211b5b9052e25a59e6626d3669c7ba060d021dfffa43c43832e11b18acd6aac15b057c6deae1c41004c1731688c95c455ad02f982
+    buffer: ^6.0.3
+    events: ^3.3.0
+    process: ^0.11.10
+  checksum: aa8447f781e6df90af78f6b0b9b9a77da2816dcf6c8220e7021c4de36e04f8129fed7ead81eac0baad2f42098209f9e7d7cd43169e1c156efcd2613828a37439
   languageName: node
   linkType: hard
 
@@ -22398,7 +22401,7 @@ __metadata:
     "@commitlint/cli": 17.1.2
     "@commitlint/config-conventional": 17.1.0
     "@lerna-lite/cli": 1.11.3
-    "@types/react": 18.0.20
+    "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": 5.38.0
     "@typescript-eslint/parser": 5.38.0
@@ -26409,9 +26412,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.10.0, yeoman-environment@npm:^3.5.1":
-  version: 3.10.0
-  resolution: "yeoman-environment@npm:3.10.0"
+"yeoman-environment@npm:3.11.0, yeoman-environment@npm:^3.5.1":
+  version: 3.11.0
+  resolution: "yeoman-environment@npm:3.11.0"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -26454,7 +26457,7 @@ __metadata:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 2ab844358d148889285fc9cd68b9eb6660af4721033c86f833ad60a0028bbe8b5c637fa290a1c29f54c4957df53e6c5cd05692c6e25e7d88c9442c9a5f9775dc
+  checksum: 5240506ab46f8ac0cf28a55233ad4d19948b7035fccebda91de7d6d5a0cb0b98868171823e6e298779e556cab0ae582f31e011e0bcfa51899a43e4e80d72d7f5
   languageName: node
   linkType: hard
 
