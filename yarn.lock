@@ -244,7 +244,7 @@ __metadata:
     mitt: ^3.0.0
     rimraf: 3.0.2
     semver: ^7.3.7
-    ts-jest: ^29.0.1
+    ts-jest: ^29.0.2
     whatwg-fetch: ^3.0.0
   peerDependencies:
     "@babel/core": ^7.0.0
@@ -5987,13 +5987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.0.2":
-  version: 29.0.2
-  resolution: "@types/jest@npm:29.0.2"
+"@types/jest@npm:29.0.3":
+  version: 29.0.3
+  resolution: "@types/jest@npm:29.0.3"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 27c46b58fad9791adf88167ba2c14ae3513cb1fe5df038faafe7fc4513ebb230dd8029a1dd0acd1abeb82aa014839ac10e0dcf1bfae9fcc0e69bc1eb1e5204f0
+  checksum: 14a8ec1954540ec59f4072c3c4dbc6b5d5ff616556c98671aca26606bdf9d49616a3f269f3e488c80cd481ee19880351575c1f6895827628818e193600c121e0
   languageName: node
   linkType: hard
 
@@ -11850,7 +11850,7 @@ __metadata:
     "@types/babel__core": 7.1.19
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
-    "@types/jest": 29.0.2
+    "@types/jest": 29.0.3
     "@types/node": 18.7.18
     "@types/prettier": 2.7.0
     "@types/react": 18.0.20
@@ -11900,7 +11900,7 @@ __metadata:
     "@storybook/manager-webpack5": 6.5.12
     "@storybook/react": 6.5.12
     "@types/classnames": 2.3.1
-    "@types/jest": 29.0.2
+    "@types/jest": 29.0.3
     "@types/lodash": 4.14.185
     "@types/node": 18.7.18
     "@types/parse-link-header": 2.0.0
@@ -24511,9 +24511,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.0.1":
-  version: 29.0.1
-  resolution: "ts-jest@npm:29.0.1"
+"ts-jest@npm:^29.0.2":
+  version: 29.0.2
+  resolution: "ts-jest@npm:29.0.2"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
@@ -24540,7 +24540,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: f126675beb0d103d440b0297dc331ce37ba0f1e1a8002f4e97bfeb9043cf21b4de03deebf11ac1f08b7e4978d87f6a1c71e398b1c2f8535df3b684338786408e
+  checksum: 66ece9c36e0b3b00ed617c1aad254578c77bca60409cf0d316c353ae94c9f05bc5be541366be94df6b1bc33c974701f0cd5304aa9f86c1b94917709575a13ba9
   languageName: node
   linkType: hard
 
