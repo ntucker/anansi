@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.14](https://github.com/ntucker/anansi/compare/example-react-18@4.0.13...example-react-18@4.0.14) (2022-09-25)
+
+### 📦 Package
+
+* Update `@rest-hooks/endpoint` to v3 ([#1667](https://github.com/ntucker/anansi/issues/1667)) ([3cbd252](https://github.com/ntucker/anansi/commit/3cbd2522583659877c7e085ada2ae5ef56ff9e73))
+* Update `core-js` to v3.25.2 ([#1672](https://github.com/ntucker/anansi/issues/1672)) ([788c551](https://github.com/ntucker/anansi/commit/788c551cd4134dccb028eee7c564368156545884))
+* Update `eslint` to v8.24.0 ([#1670](https://github.com/ntucker/anansi/issues/1670)) ([93ff8ef](https://github.com/ntucker/anansi/commit/93ff8efcd34bec5eb4d062b4885b172bde70492f))
+* Update `webpack-dev-server` to v4.11.1 ([#1665](https://github.com/ntucker/anansi/issues/1665)) ([a908fc1](https://github.com/ntucker/anansi/commit/a908fc1b0ce48aac29155ef02d17a0b8e08d1ed1))
+* Update all non-major dependencies ([#1664](https://github.com/ntucker/anansi/issues/1664)) ([818cc40](https://github.com/ntucker/anansi/commit/818cc4092187a8c9a08251a5a4e2d34b4b4a3ce6))
+* Update all non-major dependencies ([#1671](https://github.com/ntucker/anansi/issues/1671)) ([8a7ae7e](https://github.com/ntucker/anansi/commit/8a7ae7e9798a92ff5e260f1b000fe63abb6478e0))
+* Update JS test packages ([#1668](https://github.com/ntucker/anansi/issues/1668)) ([6573f99](https://github.com/ntucker/anansi/commit/6573f99746d1f57bc17752308c8ba86e9d71cc84))
+* Update linting packages to v5.38.0 ([#1666](https://github.com/ntucker/anansi/issues/1666)) ([d6d522d](https://github.com/ntucker/anansi/commit/d6d522d728d67f7832b2879b6031b8ac51095413))
+
 ### [4.0.13](https://github.com/ntucker/anansi/compare/example-react-18@4.0.12...example-react-18@4.0.13) (2022-09-17)
 
 **Note:** Version bump only for package example-react-18

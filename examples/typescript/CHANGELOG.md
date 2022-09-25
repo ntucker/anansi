@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.40](https://github.com/ntucker/anansi/compare/example-typescript@10.0.39...example-typescript@10.0.40) (2022-09-25)
+
+### 📦 Package
+
+* Update `core-js` to v3.25.2 ([#1672](https://github.com/ntucker/anansi/issues/1672)) ([788c551](https://github.com/ntucker/anansi/commit/788c551cd4134dccb028eee7c564368156545884))
+* Update all non-major dependencies ([#1664](https://github.com/ntucker/anansi/issues/1664)) ([818cc40](https://github.com/ntucker/anansi/commit/818cc4092187a8c9a08251a5a4e2d34b4b4a3ce6))
+* Update all non-major dependencies ([#1671](https://github.com/ntucker/anansi/issues/1671)) ([8a7ae7e](https://github.com/ntucker/anansi/commit/8a7ae7e9798a92ff5e260f1b000fe63abb6478e0))
+* Update JS test packages ([#1668](https://github.com/ntucker/anansi/issues/1668)) ([6573f99](https://github.com/ntucker/anansi/commit/6573f99746d1f57bc17752308c8ba86e9d71cc84))
+
 ### [10.0.39](https://github.com/ntucker/anansi/compare/example-typescript@10.0.38...example-typescript@10.0.39) (2022-09-17)
 
 **Note:** Version bump only for package example-typescript

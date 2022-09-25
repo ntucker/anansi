@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.27](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.26...@anansi/jest-preset@0.7.27) (2022-09-25)
+
+### 📦 Package
+
+* Update JS test packages ([#1668](https://github.com/ntucker/anansi/issues/1668)) ([6573f99](https://github.com/ntucker/anansi/commit/6573f99746d1f57bc17752308c8ba86e9d71cc84))
+
 ### [0.7.26](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.25...@anansi/jest-preset@0.7.26) (2022-09-14)
 
 ### 📦 Package
