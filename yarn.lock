@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.7.20
+    "@types/node": 18.7.23
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -222,7 +222,7 @@ __metadata:
     rimraf: 3.0.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.11.0
+    yeoman-environment: 3.11.1
     yeoman-generator: ^5.7.0
     yeoman-test: 6.3.0
   languageName: unknown
@@ -6102,10 +6102,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.7.20":
-  version: 18.7.20
-  resolution: "@types/node@npm:18.7.20"
-  checksum: 83905b5528afe8c4e3f5f33de2699e1a12064d0e1b89310b179ab1801fca73157158ecf84c8dac3681afa77026f12440d34c37bc1107ca461da8df0f086b09e9
+"@types/node@npm:*, @types/node@npm:18.7.23":
+  version: 18.7.23
+  resolution: "@types/node@npm:18.7.23"
+  checksum: 2c8df0830d8345e5cd1ca17feb9cf43fa667aae749888e0a068c5c1b35eaedd2f9b24ed987a0758078395edf7a03681e5e0b7790a518ff7afe1ff6d8459f7b4a
   languageName: node
   linkType: hard
 
@@ -11860,7 +11860,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
     "@types/jest": 29.0.3
-    "@types/node": 18.7.20
+    "@types/node": 18.7.23
     "@types/prettier": 2.7.1
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
@@ -11883,7 +11883,7 @@ __metadata:
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
     rest-hooks: 6.4.0
-    typescript: 4.8.3
+    typescript: 4.8.4
     webpack: 5.74.0
     webpack-cli: 4.10.0
     webpack-dev-server: 4.11.1
@@ -11911,7 +11911,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.0.3
     "@types/lodash": 4.14.185
-    "@types/node": 18.7.20
+    "@types/node": 18.7.23
     "@types/parse-link-header": 2.0.0
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
@@ -22420,7 +22420,7 @@ __metadata:
     prettier: 2.7.1
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: 4.8.3
+    typescript: 4.8.4
     webpack: 5.74.0
     webpack-cli: 4.10.0
     webpack-dev-server: 4.11.1
@@ -24845,23 +24845,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.8.3, typescript@npm:^4.5.4, typescript@npm:^4.6.4":
-  version: 4.8.3
-  resolution: "typescript@npm:4.8.3"
+"typescript@npm:4.8.4, typescript@npm:^4.5.4, typescript@npm:^4.6.4":
+  version: 4.8.4
+  resolution: "typescript@npm:4.8.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8286a5edcaf3d68e65c451aa1e7150ad1cf53ee0813c07ec35b7abdfdb10f355ecaa13c6a226a694ae7a67785fd7eeebf89f845da0b4f7e4a35561ddc459aba0
+  checksum: 3e4f061658e0c8f36c820802fa809e0fd812b85687a9a2f5430bc3d0368e37d1c9605c3ce9b39df9a05af2ece67b1d844f9f6ea8ff42819f13bcb80f85629af0
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.8.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
-  version: 4.8.3
-  resolution: "typescript@patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"
+"typescript@patch:typescript@4.8.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
+  version: 4.8.4
+  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2222d2382fb3146089b1d27ce2b55e9d1f99cc64118f1aba75809b693b856c5d3c324f052f60c75b577947fc538bc1c27bad0eb76cbdba9a63a253489504ba7e
+  checksum: 563a0ef47abae6df27a9a3ab38f75fc681f633ccf1a3502b1108e252e187787893de689220f4544aaf95a371a4eb3141e4a337deb9895de5ac3c1ca76430e5f0
   languageName: node
   linkType: hard
 
@@ -26412,9 +26412,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.11.0, yeoman-environment@npm:^3.5.1":
-  version: 3.11.0
-  resolution: "yeoman-environment@npm:3.11.0"
+"yeoman-environment@npm:3.11.1, yeoman-environment@npm:^3.5.1":
+  version: 3.11.1
+  resolution: "yeoman-environment@npm:3.11.1"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -26457,7 +26457,7 @@ __metadata:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 5240506ab46f8ac0cf28a55233ad4d19948b7035fccebda91de7d6d5a0cb0b98868171823e6e298779e556cab0ae582f31e011e0bcfa51899a43e4e80d72d7f5
+  checksum: c2748e5c03325e89942059dc832ed127b76bcfe65db55285b3a10ad5d9db60636c0e1d5a171a6e6e9af1c667b51b47677cc947ada1db1e575d2d620720a2507e
   languageName: node
   linkType: hard
 
