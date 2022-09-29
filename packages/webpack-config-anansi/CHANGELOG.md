@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.14](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.13...@anansi/webpack-config@13.0.14) (2022-09-29)
+
+### 📦 Package
+
+* Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
+
 ### [13.0.13](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.12...@anansi/webpack-config@13.0.13) (2022-09-25)
 
 ### 📦 Package

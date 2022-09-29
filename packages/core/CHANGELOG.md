@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.22...@anansi/core@0.14.23) (2022-09-29)
+
+### 📦 Package
+
+* Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
+* Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
+
 ### [0.14.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.21...@anansi/core@0.14.22) (2022-09-25)
 
 **Note:** Version bump only for package @anansi/core

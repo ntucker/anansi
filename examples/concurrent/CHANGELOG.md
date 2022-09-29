@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.15](https://github.com/ntucker/anansi/compare/example-react-18@4.0.14...example-react-18@4.0.15) (2022-09-29)
+
+### 📦 Package
+
+* Update `antd` to v4.23.3 ([#1676](https://github.com/ntucker/anansi/issues/1676)) ([b2f1771](https://github.com/ntucker/anansi/commit/b2f1771c1157566adf45581bf8ab084dc5697223))
+* Update all non-major dependencies ([#1674](https://github.com/ntucker/anansi/issues/1674)) ([1356e7b](https://github.com/ntucker/anansi/commit/1356e7bdd2b52b45d771f84e42bcb77e4326b424))
+* Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
+* Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
+* Update JS test packages ([#1678](https://github.com/ntucker/anansi/issues/1678)) ([fb50aaa](https://github.com/ntucker/anansi/commit/fb50aaa7922c312e47bf521703f8aa535bdb01de))
+* Update linting packages to v5.38.1 ([#1675](https://github.com/ntucker/anansi/issues/1675)) ([78b6173](https://github.com/ntucker/anansi/commit/78b61737d978cf60da8c5c758598d6690a7f3e35))
+
 ### [4.0.14](https://github.com/ntucker/anansi/compare/example-react-18@4.0.13...example-react-18@4.0.14) (2022-09-25)
 
 ### 📦 Package
