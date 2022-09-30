@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.23...@anansi/core@0.14.24) (2022-09-30)
+
+### 📦 Package
+
+* Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
+
 ### [0.14.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.22...@anansi/core@0.14.23) (2022-09-29)
 
 ### 📦 Package

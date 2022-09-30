@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.21](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.20...@anansi/generator-js@9.0.21) (2022-09-30)
+
+### 📦 Package
+
+* Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
+
 ### [9.0.20](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.19...@anansi/generator-js@9.0.20) (2022-09-29)
 
 ### 📦 Package
