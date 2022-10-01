@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.17](https://github.com/ntucker/anansi/compare/example-react-18@4.0.16...example-react-18@4.0.17) (2022-10-01)
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v6 ([#1684](https://github.com/ntucker/anansi/issues/1684)) ([3a6d82d](https://github.com/ntucker/anansi/commit/3a6d82d2d82291354bd1125fe3f24f294a643e03))
+* Update all non-major dependencies ([#1683](https://github.com/ntucker/anansi/issues/1683)) ([35a4eb3](https://github.com/ntucker/anansi/commit/35a4eb3c40023c3918f3b751a677d59f2dd023ca))
+
 ### [4.0.16](https://github.com/ntucker/anansi/compare/example-react-18@4.0.15...example-react-18@4.0.16) (2022-09-30)
 
 ### 📦 Package

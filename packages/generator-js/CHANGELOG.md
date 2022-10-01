@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.22](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.21...@anansi/generator-js@9.0.22) (2022-10-01)
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v6 ([#1684](https://github.com/ntucker/anansi/issues/1684)) ([3a6d82d](https://github.com/ntucker/anansi/commit/3a6d82d2d82291354bd1125fe3f24f294a643e03))
+
 ### [9.0.21](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.20...@anansi/generator-js@9.0.21) (2022-09-30)
 
 ### 📦 Package
