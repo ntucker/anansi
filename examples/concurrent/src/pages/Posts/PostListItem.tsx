@@ -3,11 +3,11 @@ import { List, Avatar } from 'antd';
 import { Link } from '@anansi/router';
 import { Img } from '@rest-hooks/img';
 
-import { PostResource, UserResource } from 'resources/Discuss';
+import { Post, UserResource } from 'resources/Discuss';
 
-export default function PostListItem({ post }: { post: PostResource }) {
+export default function PostListItem({ post }: { post: Post }) {
   const author = useSuspense(
-    UserResource.detail(),
+    UserResource.get,
     post.userId
       ? {
           id: post.userId,

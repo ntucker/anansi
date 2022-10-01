@@ -15,7 +15,7 @@ export default function PostEdit({
     id = Number.parseInt(match.params.id);
   }
   const controller = useController();
-  const post = useSuspense(PostResource.detail(), { id });
+  const post = useSuspense(PostResource.get, { id });
   const routes = [
     {
       path: '/posts',
@@ -36,7 +36,7 @@ export default function PostEdit({
       <PostForm
         initialValues={post}
         onSubmit={(data: object) =>
-          controller.fetch(PostResource.update(), { id }, data)
+          controller.fetch(PostResource.update, { id }, data)
         }
       />
     </PageHeader>

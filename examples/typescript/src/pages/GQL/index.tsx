@@ -1,4 +1,4 @@
-import { useResource } from '@rest-hooks/core';
+import { useSuspense } from '@rest-hooks/core';
 import { GQLEndpoint, GQLEntity } from '@rest-hooks/graphql';
 
 const gql = new GQLEndpoint('https://nosy-baritone.glitch.me');
@@ -20,7 +20,7 @@ const userList = gql.query(
 );
 
 export default function GQL() {
-  const { users } = useResource(userList, {});
+  const { users } = useSuspense(userList);
   return (
     <div>
       {users.map(user => (

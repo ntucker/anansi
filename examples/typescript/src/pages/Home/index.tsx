@@ -3,7 +3,7 @@ import variables from 'variables.scss';
 import 'code.scss';
 import sillyStyle from 'silly.module.scss';
 
-import IssueResource from '@standard-endpoint/github/IssueResource';
+import { IssueResource } from '@standard-endpoint/github/Issue';
 import StaticBlock from '@standard-endpoint/github/StaticBlock';
 
 import { ReactComponent as Copy } from './Copy.svg';
@@ -35,7 +35,7 @@ export default function Home() {
       </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
-        {null ?? IssueResource.urlRoot} {StaticBlock.a}
+        {null ?? IssueResource.get.path} {StaticBlock.a}
       </p>
       <p className={sillyStyle.silly}>$text-color: {variables.textColor}</p>
       <p>

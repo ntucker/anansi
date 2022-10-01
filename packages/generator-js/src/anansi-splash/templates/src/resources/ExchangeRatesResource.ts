@@ -1,36 +1,29 @@
-import { Resource, RestEndpoint, RestFetch } from '@rest-hooks/rest';
+import { Entity, RestEndpoint } from '@rest-hooks/rest';
 import type { FixtureEndpoint } from '@rest-hooks/test';
 
 // Visit https://resthooks.io/docs/guides/resource-types to read more about these definitions
-export default class ExchangeRatesResource extends Resource {
+export class ExchangeRates extends Entity {
   readonly currency: string = 'USD';
   readonly rates: Record<string, string> = {};
 
   pk(): string {
     return this.currency;
   }
-
-  static urlRoot = 'https://www.coinbase.com/api/v2/exchange-rates';
-
-  static getEndpointExtra() {
-    return { pollFrequency: 15000 };
-  }
-
-  static list<T extends typeof Resource>(
-    this: T,
-  ): RestEndpoint<RestFetch<[{ currency: string }]>, { data: T }, undefined> {
-    return super.list().extend({
-      schema: { data: this },
-    });
-  }
-
-  declare static fixtures: Record<string, FixtureEndpoint>;
 }
 
+export const getExchangeRates = new RestEndpoint({
+  urlPrefix: 'https://www.coinbase.com/api/v2',
+  path: '/exchange-rates',
+  schema: { data: ExchangeRates },
+  pollFrequency: 15000
+})
+
+export let ExchangeRatesFixtures: Record<string, FixtureEndpoint> = {}
+
 if (process.env.NODE_ENV !== 'production') {
-  ExchangeRatesResource.fixtures = {
+  ExchangeRatesFixtures = {
     list: {
-      endpoint: ExchangeRatesResource.list(),
+      endpoint: getExchangeRates,
       args: [
         {
           currency: 'USD',

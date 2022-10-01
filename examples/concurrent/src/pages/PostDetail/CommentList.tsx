@@ -2,13 +2,13 @@ import { useSuspense } from 'rest-hooks';
 import { Card, Avatar } from 'antd';
 import { Img } from '@rest-hooks/img';
 
-import { CommentResource } from 'resources/Discuss';
+import { CommentResource, Comment } from 'resources/Discuss';
 const { Meta } = Card;
 
 type Props = { postId: string };
 
 export default function CommentList({ postId }: Props) {
-  const comments = useSuspense(CommentResource.list(), { postId });
+  const comments = useSuspense(CommentResource.getList, { postId });
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function CommentList({ postId }: Props) {
   );
 }
 
-function CommentInline({ comment }: { comment: CommentResource }) {
+function CommentInline({ comment }: { comment: Comment }) {
   return (
     <Card style={{ marginTop: 16 }}>
       <Meta

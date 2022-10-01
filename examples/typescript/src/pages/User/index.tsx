@@ -12,7 +12,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = useResource(UserResource.detail(), { id });
+  const author = useResource(UserResource.get, { id });
   return (
     <>
       <Typography.Title level={2}>{author.name}</Typography.Title>

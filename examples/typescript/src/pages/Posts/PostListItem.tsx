@@ -4,12 +4,17 @@ import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
-import { PostResource, UserResource } from 'data/resources';
+import { Post, UserResource } from 'data/resources';
 
-export default function IssueListItem({ post }: { post: PostResource }) {
-  const author = useSuspense(UserResource.detail(), {
-    id: post.userId,
-  });
+export default function IssueListItem({ post }: { post: Post }) {
+  const author = useSuspense(
+    UserResource.get,
+    post.userId
+      ? {
+          id: post.userId,
+        }
+      : null,
+  );
   const actions = [];
   actions.push(
     <Link to={`/post/${post.id}/edit`}>

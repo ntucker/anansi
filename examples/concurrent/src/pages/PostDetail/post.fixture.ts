@@ -72,24 +72,24 @@ const post = {
 export default {
   full: [
     {
-      request: PostResource.detail(),
+      request: PostResource.get,
       params: { id: 1 },
       result: post,
     },
     {
-      request: CommentResource.list(),
+      request: CommentResource.getList,
       params: { postId: 1 },
       result: comments,
     },
     {
-      request: UserResource.detail(),
+      request: UserResource.get,
       params: { id: 1 },
       result: user,
     },
   ],
   error: [
     {
-      request: PostResource.detail(),
+      request: PostResource.get,
       params: { id: 1 },
       result: { message: 'Bad request', status: 400, name: 'Not Found' },
       error: true,

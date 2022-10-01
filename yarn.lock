@@ -4038,7 +4038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.0.1, @rest-hooks/endpoint@npm:^3.0.0, @rest-hooks/endpoint@npm:^3.0.1":
+"@rest-hooks/endpoint@npm:3.0.1, @rest-hooks/endpoint@npm:^3.0.1":
   version: 3.0.1
   resolution: "@rest-hooks/endpoint@npm:3.0.1"
   dependencies:
@@ -4100,13 +4100,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:5.2.0":
-  version: 5.2.0
-  resolution: "@rest-hooks/rest@npm:5.2.0"
+"@rest-hooks/rest@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@rest-hooks/rest@npm:6.0.0"
   dependencies:
     "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.0.0
-  checksum: 9f2501ae2127f007c3f41d64b5beae8ab942dddd3430044af768df7febf2b564f82a6e84054e43ef800099b916e6e7e31f8d8afdf1508c7816e5ebf5526acb61
+    "@rest-hooks/endpoint": ^3.0.1
+    copyfiles: ^2.4.1
+    path-to-regexp: ^6.2.1
+  checksum: 4d3850a9b7740ef1dd177bfbd4c19c16b7948577006c043b62586d05c16072c055b4ac384353f593da22e3b5738b8b7624f1d3d8f28d9da94b1cae5b7d8fcd92
   languageName: node
   linkType: hard
 
@@ -9865,7 +9867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copyfiles@npm:2.4.1":
+"copyfiles@npm:2.4.1, copyfiles@npm:^2.4.1":
   version: 2.4.1
   resolution: "copyfiles@npm:2.4.1"
   dependencies:
@@ -11866,7 +11868,7 @@ __metadata:
     "@rest-hooks/endpoint": 3.0.1
     "@rest-hooks/hooks": 3.0.7
     "@rest-hooks/img": 0.6.6
-    "@rest-hooks/rest": 5.2.0
+    "@rest-hooks/rest": 6.0.0
     "@rest-hooks/test": 7.3.9
     "@types/babel__core": 7.1.19
     "@types/classnames": 2.3.1
@@ -11912,7 +11914,7 @@ __metadata:
     "@anansi/webpack-config": ^13.0.15
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": 0.3.0
-    "@rest-hooks/rest": 5.2.0
+    "@rest-hooks/rest": 6.0.0
     "@rest-hooks/test": 7.3.9
     "@storybook/addon-essentials": 6.5.12
     "@storybook/addon-links": 6.5.12
@@ -19227,7 +19229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:6.2.1":
+"path-to-regexp@npm:6.2.1, path-to-regexp@npm:^6.2.1":
   version: 6.2.1
   resolution: "path-to-regexp@npm:6.2.1"
   checksum: f0227af8284ea13300f4293ba111e3635142f976d4197f14d5ad1f124aebd9118783dd2e5f1fe16f7273743cc3dbeddfb7493f237bb27c10fdae07020cc9b698

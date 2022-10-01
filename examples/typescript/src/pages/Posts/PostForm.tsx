@@ -1,7 +1,7 @@
 import { Input, Button, Form } from 'antd';
 import { useMemo } from 'react';
 
-import { PostResource } from 'data/resources';
+import { Post } from 'data/resources';
 
 import useForm from './useForm';
 
@@ -21,10 +21,7 @@ type FormProps = {
   initialValues: object;
 };
 export default function PostForm({ onSubmit, initialValues }: FormProps) {
-  const [values, handleChange, handleSubmit] = useForm(
-    PostResource,
-    initialValues,
-  );
+  const [values, handleChange, handleSubmit] = useForm(Post, initialValues);
 
   const onFinish = useMemo(
     () => handleSubmit(onSubmit),
