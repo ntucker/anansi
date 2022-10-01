@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.23](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.22...@anansi/generator-js@9.0.23) (2022-10-01)
+
+### 🐛 Bug Fix
+
+* fix path for exchange endpoint ([fcb47d5](https://github.com/ntucker/anansi/commit/fcb47d55232dfa30b7d1a036ff97896f7c210253))
+* Fix test for new rest ([603770a](https://github.com/ntucker/anansi/commit/603770a584ef7429f066649fb401b2246d0f2abf))
+
 ### [9.0.22](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.21...@anansi/generator-js@9.0.22) (2022-10-01)
 
 ### 📦 Package
