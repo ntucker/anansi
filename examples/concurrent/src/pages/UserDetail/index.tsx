@@ -10,7 +10,7 @@ export type Props = { id: string };
 const { Meta } = Card;
 
 export default function UserDetail({ id }: Props) {
-  const user = useSuspense(UserResource.detail(), { id });
+  const user = useSuspense(UserResource.get, { id });
   return (
     <>
       <Card cover={<Img src={user.coverImage} />}>

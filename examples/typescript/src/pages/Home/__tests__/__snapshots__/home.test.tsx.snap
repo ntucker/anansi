@@ -54,7 +54,7 @@ exports[`renders correctly 1`] = `
      
     /hi/bob/test.txt
      
-    https://api.github.com/repos/issues
+    /repos/:owner/:repo/issues/:number
      
     /2/
   </p>

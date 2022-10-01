@@ -1,28 +1,29 @@
 import React from 'react';
-import { useResource, useSubscription } from 'rest-hooks';
+import { useSuspense } from 'rest-hooks';
 import { Link } from 'react-router-dom';
 import { List, Avatar } from 'antd';
 import moment from 'moment';
 
+import { IssueResource, Issue } from '@standard-endpoint/github/Issue';
 import LinkPagination from 'navigation/LinkPagination';
-import IssueResource from '@standard-endpoint/github/IssueResource';
 
-type Props = Pick<IssueResource, 'repositoryUrl'> &
+type Props = Pick<Issue, 'repositoryUrl'> &
   (
     | {
         page: number;
       }
     | {
-        state: IssueResource['state'];
+        state: Issue['state'];
       }
   );
 
 export default function IssueList(props: Props) {
   const params = {
-    repositoryUrl: 'https://api.github.com/repos/coinbase/rest-hooks',
+    owner: 'coinbase',
+    repo: 'rest-hooks',
     state: 'open' as const,
   };
-  const { results: issues, link } = useResource(IssueResource.list(), params);
+  const { results: issues, link } = useSuspense(IssueResource.getList, params);
   //useSubscription(IssueResource.list(), params);
 
   return (
@@ -39,7 +40,7 @@ export default function IssueList(props: Props) {
   );
 }
 
-function IssueListItem({ issue }: { issue: IssueResource }) {
+function IssueListItem({ issue }: { issue: Issue }) {
   const actions = [];
   if (issue.comments) {
     actions.push(

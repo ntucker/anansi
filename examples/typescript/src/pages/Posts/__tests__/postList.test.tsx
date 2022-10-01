@@ -11,7 +11,7 @@ import PostList from '../index';
 const results = {
   full: [
     {
-      endpoint: PostResource.list(),
+      endpoint: PostResource.getList,
       args: [{}],
       response: [
         {
@@ -29,7 +29,7 @@ const results = {
       ],
     },
     {
-      endpoint: UserResource.detail(),
+      endpoint: UserResource.get,
       args: [{ id: 2 }],
       response: {
         id: 5,
@@ -39,7 +39,7 @@ const results = {
       },
     },
     {
-      endpoint: UserResource.detail(),
+      endpoint: UserResource.get,
       args: [{ id: 23 }],
       response: {
         id: 5,

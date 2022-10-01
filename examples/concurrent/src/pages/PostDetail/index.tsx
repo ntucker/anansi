@@ -9,7 +9,7 @@ import { styled } from '@linaria/react';
 import { lazy, useCallback, useState } from 'react';
 import { css } from '@linaria/core';
 
-import { PostResource, UserResource } from 'resources/Discuss';
+import { PostResource, UserResource, Post, User } from 'resources/Discuss';
 import Boundary from 'components/Boundary';
 
 export type Props = { id: string };
@@ -32,9 +32,9 @@ const CommentList = lazy(
 );
 
 export default function PostDetail({ id }: Props) {
-  const post = useSuspense(PostResource.detail(), { id });
+  const post = useSuspense(PostResource.get, { id });
   const author = useSuspense(
-    UserResource.detail(),
+    UserResource.get,
     post.userId ? { id: post.userId } : null,
   );
 
@@ -59,13 +59,7 @@ export function CardLoading() {
   return <Card style={{ marginTop: 16 }} loading={true} />;
 }
 
-function PostMain({
-  post,
-  author,
-}: {
-  post: PostResource;
-  author: UserResource;
-}) {
+function PostMain({ post, author }: { post: Post; author: User }) {
   const { fetch } = useController();
 
   const [edit, setEdit] = useState(false);
@@ -78,7 +72,7 @@ function PostMain({
   const [onFinish, loading] = useLoading(
     async (values: any) => {
       if (edit)
-        await fetch(PostResource.partialUpdate(), { id: post.id }, values);
+        await fetch(PostResource.partialUpdate, { id: post.id }, values);
       setEdit(edit => !edit);
     },
     [post.id, fetch, edit],

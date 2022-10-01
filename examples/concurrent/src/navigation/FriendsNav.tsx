@@ -8,7 +8,7 @@ import Nav from './Nav';
 
 function FriendsNav(): JSX.Element {
   const route = useRoutes()[1] as any;
-  const friends = useSuspense(UserResource.list(), {});
+  const friends = useSuspense(UserResource.getList, {});
 
   return (
     <Nav

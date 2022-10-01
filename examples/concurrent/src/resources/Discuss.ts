@@ -1,29 +1,33 @@
-import PlaceholderBaseResource from './PlaceholderBaseResource';
+import {
+  createPlaceholderResource,
+  PlaceholderEntity,
+} from './PlaceholderBaseResource';
 
-export class PostResource extends PlaceholderBaseResource {
+export class Post extends PlaceholderEntity {
   readonly userId: number | undefined = undefined;
   readonly title: string = '';
   readonly body: string = '';
-
-  static getEndpointExtra() {
-    return { dataExpiryLength: 10000 };
-  }
-
-  static urlRoot = 'https://jsonplaceholder.typicode.com/posts/';
 }
+export const PostResource = createPlaceholderResource({
+  path: '/posts/:id',
+  schema: Post,
+  dataExpiryLength: 10000,
+});
 
-export class CommentResource extends PlaceholderBaseResource {
+export class Comment extends PlaceholderEntity {
   readonly postId: number = 0;
   readonly name: string = '';
   readonly email: string = '';
   readonly body: string = '';
 
-  static urlRoot = 'https://jsonplaceholder.typicode.com/comments/';
-
   get profileImage() {
     return `https://i.pravatar.cc/256?img=${(this.id + 15) % 70}`;
   }
 }
+export const CommentResource = createPlaceholderResource({
+  path: '/comments/:id',
+  schema: Comment,
+});
 
 export class Address {
   readonly street: string = '';
@@ -40,7 +44,7 @@ export class Company {
   readonly catchPhrase: string = '';
   readonly bs: string = '';
 }
-export class UserResource extends PlaceholderBaseResource {
+export class User extends PlaceholderEntity {
   readonly name: string = '';
   readonly username: string = '';
   readonly email: string = '';
@@ -53,8 +57,6 @@ export class UserResource extends PlaceholderBaseResource {
     //address: Address,
     //company: Company,
   };
-
-  static urlRoot = 'https://jsonplaceholder.typicode.com/users/';
 
   get addressDisplay() {
     return `${this.address?.street} ${this.address?.city}`;
@@ -76,3 +78,7 @@ export class UserResource extends PlaceholderBaseResource {
     return `https://i.pravatar.cc/256?img=${this.id + 4}`;
   }
 }
+export const UserResource = createPlaceholderResource({
+  path: '/users/:id',
+  schema: User,
+});

@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { schema } from '@rest-hooks/rest';
 
-import PlaceholderBaseResource from 'resources/PlaceholderBaseResource';
+import { PlaceholderEntity } from 'resources/PlaceholderBaseResource';
 
 export const demoContext = createContext({
   cache: true,
@@ -29,8 +29,8 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
       // super hack to disable cool rest hooks caching
       if ('cache' in v) {
         if (v.cache) {
-          (PlaceholderBaseResource as any).memo = function (...args: any) {
-            return (PlaceholderBaseResource as any).ogMemo
+          (PlaceholderEntity as any).memo = function (...args: any) {
+            return (PlaceholderEntity as any).ogMemo
               .call(this, ...args)
               .extend({
                 invalidIfStale: false,
@@ -38,24 +38,18 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
                 errorExpiryLength: 1000,
               });
           };
-          (PlaceholderBaseResource as any).normalize = (
-            PlaceholderBaseResource as any
+          (PlaceholderEntity as any).normalize = (
+            PlaceholderEntity as any
           ).ogNormalize;
-          (PlaceholderBaseResource as any).denormalize = (
-            PlaceholderBaseResource as any
+          (PlaceholderEntity as any).denormalize = (
+            PlaceholderEntity as any
           ).ogDenormalize;
-          (PlaceholderBaseResource as any).infer = (
-            PlaceholderBaseResource as any
-          ).ogInfer;
-          (PlaceholderBaseResource as any).pk = (
-            PlaceholderBaseResource as any
-          ).ogPk;
+          (PlaceholderEntity as any).infer = (PlaceholderEntity as any).ogInfer;
+          (PlaceholderEntity as any).pk = (PlaceholderEntity as any).ogPk;
         } else {
-          (PlaceholderBaseResource as any).ogMemo = (
-            PlaceholderBaseResource as any
-          ).memo;
-          (PlaceholderBaseResource as any).memo = function (...args: any) {
-            return (PlaceholderBaseResource as any).ogMemo
+          (PlaceholderEntity as any).ogMemo = (PlaceholderEntity as any).memo;
+          (PlaceholderEntity as any).memo = function (...args: any) {
+            return (PlaceholderEntity as any).ogMemo
               .call(this, ...args)
               .extend({
                 invalidIfStale: true,
@@ -65,20 +59,16 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
           };
 
           // all Resources act like objects instead of entities
-          (PlaceholderBaseResource as any).ogNormalize = (
-            PlaceholderBaseResource as any
+          (PlaceholderEntity as any).ogNormalize = (
+            PlaceholderEntity as any
           ).normalize;
-          (PlaceholderBaseResource as any).ogDenormalize = (
-            PlaceholderBaseResource as any
+          (PlaceholderEntity as any).ogDenormalize = (
+            PlaceholderEntity as any
           ).denormalize;
-          (PlaceholderBaseResource as any).ogInfer = (
-            PlaceholderBaseResource as any
-          ).infer;
-          (PlaceholderBaseResource as any).ogPk = (
-            PlaceholderBaseResource as any
-          ).pk;
+          (PlaceholderEntity as any).ogInfer = (PlaceholderEntity as any).infer;
+          (PlaceholderEntity as any).ogPk = (PlaceholderEntity as any).pk;
 
-          (PlaceholderBaseResource as any).normalize = function (
+          (PlaceholderEntity as any).normalize = function (
             this,
             ...args: [any, any, any, any, any, any]
           ) {
@@ -86,16 +76,16 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
               schema.Object.prototype.normalize.apply(this, args) as any,
             );
           };
-          (PlaceholderBaseResource as any).denormalize = function (
+          (PlaceholderEntity as any).denormalize = function (
             this,
             ...args: [any, any]
           ) {
             return schema.Object.prototype.denormalize.apply(this, args) as any;
           };
-          (PlaceholderBaseResource as any).infer = function () {
+          (PlaceholderEntity as any).infer = function () {
             return undefined;
           };
-          (PlaceholderBaseResource as any).pk = undefined;
+          (PlaceholderEntity as any).pk = undefined;
         }
       }
       setState(existing => ({ ...existing, ...v }));

@@ -1,15 +1,12 @@
-import { Resource, Endpoint } from '@rest-hooks/rest';
+import { createGithubResource, GithubEndpoint, GithubEntity } from './Base';
 
-import BaseResource from './BaseResource';
-
-export default class UserResource extends BaseResource {
-  readonly id: number | undefined = undefined;
+export class User extends GithubEntity {
   readonly nodeId: string = '';
   readonly login: string = '';
   readonly avatarUrl: string = '';
   readonly gravatarUrl: string = '';
   readonly gravatarId: string = '';
-  readonly type: 'User' = 'User';
+  readonly type = 'User';
   readonly siteAdmin: boolean = false;
   readonly htmlUrl: string = '';
   readonly followersUrl: string = '';
@@ -47,18 +44,13 @@ export default class UserResource extends BaseResource {
   pk() {
     return this.login;
   }
-
-  static urlRoot = 'https://api.github.com/users/';
-
-  /** Retrieves current logged in user */
-  static current<T extends typeof Resource>(this: T) {
-    return new Endpoint(
-      (params: unknown, body?: object) => {
-        return this.fetch('https://api.github.com/user/', {
-          body: JSON.stringify(body),
-        });
-      },
-      { key: () => 'GET https://api.github.com/user/', schema: this },
-    );
-  }
 }
+export const UserResource = {
+  ...createGithubResource({ path: '/users/:login', schema: User }),
+  current: new GithubEndpoint({
+    path: '/user',
+    schema: User,
+  }),
+};
+
+export default UserResource;

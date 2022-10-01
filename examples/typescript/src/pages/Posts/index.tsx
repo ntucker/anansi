@@ -4,7 +4,7 @@ import { PlusOutlined } from '@ant-design/icons';
 import { List, Button, PageHeader } from 'antd';
 import { Link } from 'react-router-dom';
 
-import { PostResource } from 'data/resources';
+import { PostResource, Post } from 'data/resources';
 
 import PostListItem from './PostListItem';
 
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useSuspense(PostResource.list(), {});
+  const posts = useSuspense(PostResource.getList, {});
   return (
     <PageHeader
       title="Post List"
@@ -35,7 +35,7 @@ function PostList() {
       <List
         itemLayout="horizontal"
         dataSource={posts}
-        renderItem={(post: PostResource) => (
+        renderItem={(post: Post) => (
           <PostListItem key={post.pk() || ''} post={post} />
         )}
       />

@@ -1,6 +1,6 @@
-import BaseResource from './BaseResource';
+import { Entity } from '@rest-hooks/rest';
 
-abstract class StaticResource extends BaseResource {
+abstract class StaticEntity extends Entity {
   static a: string;
   static urlRoot = '/2/';
 
@@ -9,7 +9,7 @@ abstract class StaticResource extends BaseResource {
   }
 }
 
-export default class MyResource extends StaticResource {
+export default class MyEntity extends StaticEntity {
   readonly id: string = '';
 
   static urlRoot = '/rootof/static/';
