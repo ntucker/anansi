@@ -1,5 +1,5 @@
 import { useSuspense, useSubscription } from 'rest-hooks';
-import ExchangeRatesResource from 'resources/ExchangeRatesResource';
+import { getExchangeRates } from 'resources/ExchangeRatesResource';
 
 export interface Props {
   symbol: string;
@@ -7,11 +7,11 @@ export interface Props {
 
 export default function AssetPrice({ symbol }: Props) {
   // Learn more about Rest Hooks: https://resthooks.io/docs/getting-started/usage
-  const { data: price } = useSuspense(ExchangeRatesResource.list(), {
+  const { data: price } = useSuspense(getExchangeRates, {
     currency: 'USD',
   });
   // https://resthooks.io/docs/api/useSubscription
-  useSubscription(ExchangeRatesResource.list(), {
+  useSubscription(getExchangeRates, {
     currency: 'USD',
   });
   const displayPrice = new Intl.NumberFormat('en-US', {

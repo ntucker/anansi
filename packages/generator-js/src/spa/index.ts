@@ -60,7 +60,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         'rest-hooks',
         '@rest-hooks/rest',
         '@rest-hooks/core',
-        '@rest-hooks/endpoint',
         'react',
         'react-dom',
         '@rest-hooks/img',
