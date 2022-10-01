@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.43](https://github.com/ntucker/anansi/compare/example-typescript@10.0.42...example-typescript@10.0.43) (2022-10-01)
+
+### 💅 Enhancement
+
+* Update api def for new rest version ([39ede80](https://github.com/ntucker/anansi/commit/39ede80c52b25194b2e57092f051b883a5bd486c))
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v6 ([09d32f4](https://github.com/ntucker/anansi/commit/09d32f4fe10eb53b506fe922a59e9d31decbffd9))
+* Update all non-major dependencies ([#1683](https://github.com/ntucker/anansi/issues/1683)) ([35a4eb3](https://github.com/ntucker/anansi/commit/35a4eb3c40023c3918f3b751a677d59f2dd023ca))
+
 ### [10.0.42](https://github.com/ntucker/anansi/compare/example-typescript@10.0.41...example-typescript@10.0.42) (2022-09-30)
 
 ### 📦 Package

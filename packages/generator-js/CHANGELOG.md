@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.22](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.21...@anansi/generator-js@9.0.22) (2022-10-01)
+
+### 💅 Enhancement
+
+* Update api def for new rest version ([39ede80](https://github.com/ntucker/anansi/commit/39ede80c52b25194b2e57092f051b883a5bd486c))
+* Update generative template for rest v6 ([138e4d8](https://github.com/ntucker/anansi/commit/138e4d8e41fe2344a2e55c3a489c64a655eb2120))
+
 ### [9.0.21](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.20...@anansi/generator-js@9.0.21) (2022-09-30)
 
 ### 📦 Package

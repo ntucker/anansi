@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "10.0.42",
+  "version": "10.0.43",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
