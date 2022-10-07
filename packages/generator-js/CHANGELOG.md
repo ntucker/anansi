@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.23...@anansi/generator-js@10.0.0) (2022-10-07)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* node 14 or higher required
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+Co-authored-by: Nathaniel Tucker <me@ntucker.me>
+
+### 📦 Package
+
+* Update `pacote` to v14 ([#1691](https://github.com/ntucker/anansi/issues/1691)) ([a52004b](https://github.com/ntucker/anansi/commit/a52004b54b3764a50534f17c4e5acb4d31d14f40))
+* Update all non-major dependencies ([#1685](https://github.com/ntucker/anansi/issues/1685)) ([3ac2591](https://github.com/ntucker/anansi/commit/3ac2591d0cef167fd0a36d0c6d84c6c5d83462fb))
+* Update all non-major dependencies ([#1689](https://github.com/ntucker/anansi/issues/1689)) ([1acc72c](https://github.com/ntucker/anansi/commit/1acc72c4028dab8805db6478e96cfcc235a72dfd))
+
 ### [9.0.23](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.22...@anansi/generator-js@9.0.23) (2022-10-01)
 
 ### 🐛 Bug Fix

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.19](https://github.com/ntucker/anansi/compare/example-react-18@4.0.18...example-react-18@4.0.19) (2022-10-07)
+
+### 📦 Package
+
+* Update `core-js` to v3.25.5 ([#1692](https://github.com/ntucker/anansi/issues/1692)) ([ea93162](https://github.com/ntucker/anansi/commit/ea9316252a66595f1d5229da39509622aea43e28))
+* Update all non-major dependencies ([#1685](https://github.com/ntucker/anansi/issues/1685)) ([3ac2591](https://github.com/ntucker/anansi/commit/3ac2591d0cef167fd0a36d0c6d84c6c5d83462fb))
+* Update all non-major dependencies ([#1689](https://github.com/ntucker/anansi/issues/1689)) ([1acc72c](https://github.com/ntucker/anansi/commit/1acc72c4028dab8805db6478e96cfcc235a72dfd))
+* Update linting packages to v5.39.0 ([#1686](https://github.com/ntucker/anansi/issues/1686)) ([31adbe7](https://github.com/ntucker/anansi/commit/31adbe7f82b25af916a8c000e9b5504549f9adaf))
+
 ### [4.0.18](https://github.com/ntucker/anansi/compare/example-react-18@4.0.17...example-react-18@4.0.18) (2022-10-01)
 
 **Note:** Version bump only for package example-react-18
