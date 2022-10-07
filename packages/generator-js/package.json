@@ -62,7 +62,7 @@
     "yeoman-test": "6.3.0"
   },
   "engines": {
-    "node": ">= 12.10.0",
+    "node": "^14.17.0 || ^16.13.0 || >=18.0.0",
     "npm": ">= 5.0.0"
   },
   "dependencies": {
@@ -75,7 +75,7 @@
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.5.0",
-    "pacote": "^13.6.2",
+    "pacote": "^14.0.0",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.7.0"
   },
