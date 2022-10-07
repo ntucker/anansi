@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.8.2
+    "@types/node": 18.8.3
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -304,7 +304,7 @@ __metadata:
     "@linaria/webpack5-loader": 4.1.4
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     "@svgr/webpack": ^6.4.0
-    "@types/webpack-bundle-analyzer": ^4.4.3
+    "@types/webpack-bundle-analyzer": ^4.6.0
     "@vue/preload-webpack-plugin": ^2.0.0
     assert: ^2.0.0
     autoprefixer: ^10.4.12
@@ -6105,10 +6105,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.8.2":
-  version: 18.8.2
-  resolution: "@types/node@npm:18.8.2"
-  checksum: b7c74dea0e835fb7faf69b4a2e87d43c1d228d88adacdff464d9e92d18a0b43bec6147b9eb3287650ac75fe5af730c53391869d02175e6b032dcb99ae2f54c92
+"@types/node@npm:*, @types/node@npm:18.8.3":
+  version: 18.8.3
+  resolution: "@types/node@npm:18.8.3"
+  checksum: 9201adc6dc389644c9f478f950ef8926a93e5827865dcd80d7d12fefacab665c96879c87cd6ec74d5eccdd998c4603d02e1e07a35d71a63fe4c20670a381f6ef
   languageName: node
   linkType: hard
 
@@ -6408,14 +6408,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-bundle-analyzer@npm:^4.4.3":
-  version: 4.4.3
-  resolution: "@types/webpack-bundle-analyzer@npm:4.4.3"
+"@types/webpack-bundle-analyzer@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "@types/webpack-bundle-analyzer@npm:4.6.0"
   dependencies:
     "@types/node": "*"
     tapable: ^2.2.0
     webpack: ^5
-  checksum: 9daea2e87e31c7f27f158f765bff6acb8d284c6b96c05bcf315291def98c1714b488df16980778aa8f9d0d54490b95a18e11e55faf59c59288097c493567d5b5
+  checksum: 1cd5baa621a1dbe820bacf981d6e48f3423b733fb5e33c1356347e73d5e3e880ae6ebacf8f43d9e47e135d3ed2653ec5e40e12c6ce187f2eb3f548d9c949f6aa
   languageName: node
   linkType: hard
 
@@ -11865,7 +11865,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
     "@types/jest": 29.1.1
-    "@types/node": 18.8.2
+    "@types/node": 18.8.3
     "@types/prettier": 2.7.1
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
@@ -11916,7 +11916,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.1.1
     "@types/lodash": 4.14.186
-    "@types/node": 18.8.2
+    "@types/node": 18.8.3
     "@types/parse-link-header": 2.0.0
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
