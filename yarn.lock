@@ -218,7 +218,7 @@ __metadata:
     jest: 29.1.2
     mem-fs: ^2.2.1
     mem-fs-editor: ^9.5.0
-    pacote: ^13.6.2
+    pacote: ^14.0.0
     rimraf: 3.0.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
@@ -18080,6 +18080,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"npm-packlist@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "npm-packlist@npm:7.0.0"
+  dependencies:
+    ignore-walk: ^5.0.1
+  checksum: 43bd3a822c9d68c327b16d595f4a0073af38d49357bcfecfca5999568b61d1e804c6f3ed1720a7b3e41ba0d0053d0b18e3c86922c91a33e7e84d60c33ef7e558
+  languageName: node
+  linkType: hard
+
 "npm-pick-manifest@npm:^6.0.0, npm-pick-manifest@npm:^6.1.0, npm-pick-manifest@npm:^6.1.1":
   version: 6.1.1
   resolution: "npm-pick-manifest@npm:6.1.1"
@@ -18936,6 +18945,37 @@ __metadata:
   bin:
     pacote: lib/bin.js
   checksum: a7b7f97094ab570a23e1c174537e9953a4d53176cc4b18bac77d7728bd89e2b9fa331d0f78fa463add03df79668a918bbdaa2750819504ee39242063abf53c6e
+  languageName: node
+  linkType: hard
+
+"pacote@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "pacote@npm:14.0.0"
+  dependencies:
+    "@npmcli/git": ^3.0.0
+    "@npmcli/installed-package-contents": ^1.0.7
+    "@npmcli/promise-spawn": ^3.0.0
+    "@npmcli/run-script": ^4.1.0
+    cacache: ^16.0.0
+    chownr: ^2.0.0
+    fs-minipass: ^2.1.0
+    infer-owner: ^1.0.4
+    minipass: ^3.1.6
+    mkdirp: ^1.0.4
+    npm-package-arg: ^9.0.0
+    npm-packlist: ^7.0.0
+    npm-pick-manifest: ^7.0.0
+    npm-registry-fetch: ^13.0.1
+    proc-log: ^2.0.0
+    promise-retry: ^2.0.1
+    read-package-json: ^5.0.0
+    read-package-json-fast: ^2.0.3
+    rimraf: ^3.0.2
+    ssri: ^9.0.0
+    tar: ^6.1.11
+  bin:
+    pacote: lib/bin.js
+  checksum: 23d6b3a16668e6f3180b8bbf2c14f368683517bbc234da6eec105f85d34805178aad139fa60a146cffa4ac028adaccfa778274878e77ba4c5e54b4157518f8bf
   languageName: node
   linkType: hard
 
