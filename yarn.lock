@@ -100,7 +100,7 @@ __metadata:
     "@anansi/core":
       optional: true
   bin:
-    anansi: ./run.js
+    anansi: ./run.mjs
   languageName: unknown
   linkType: soft
 

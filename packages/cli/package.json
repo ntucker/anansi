@@ -22,11 +22,11 @@
     }
   ],
   "files": [
-    "run.js",
-    "check-version.js"
+    "run.mjs",
+    "check-version.mjs"
   ],
   "bin": {
-    "anansi": "./run.js"
+    "anansi": "./run.mjs"
   },
   "keywords": [
     "cli",

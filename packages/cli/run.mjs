@@ -1,11 +1,20 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const execa = require('execa');
-const path = require('path');
-const { Command } = require('commander');
+import fs from 'fs';
+import execa from 'execa';
+import path from 'path';
+import { Command } from 'commander';
+import { createRequire } from 'module';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const { verifyAndPrompt } = require('./check-version');
-const { version } = require('./package.json');
+import pkg from './package.json' assert { type: 'json' };
+import { verifyAndPrompt } from './check-version.mjs';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// need for require.resolve (until import.meta.resolve is not experimental)
+const require = createRequire(import.meta.url);
+
+const { version } = pkg;
 
 const program = new Command();
 
