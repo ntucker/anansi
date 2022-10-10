@@ -1,5 +1,5 @@
 import { useSuspense, useSubscription } from 'rest-hooks';
-import { getExchangeRates } from 'resources/ExchangeRatesResource';
+import { getExchangeRates } from 'api/ExchangeRates';
 
 export interface Props {
   symbol: string;

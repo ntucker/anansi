@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react/types-6-0';
 import { MockResolver } from '@rest-hooks/test';
-import { ExchangeRatesFixtures } from 'resources/ExchangeRatesResource';
+import { ExchangeRatesFixtures } from 'api/ExchangeRates';
 
 import Price from './AssetPrice';
 

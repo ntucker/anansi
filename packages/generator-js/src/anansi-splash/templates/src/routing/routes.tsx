@@ -1,7 +1,7 @@
 import { Controller } from '@rest-hooks/core';
 import { lazy, Route } from '@anansi/router';
 import { getImage } from '@rest-hooks/img';
-import { getExchangeRates } from 'resources/ExchangeRatesResource';
+import { getExchangeRates } from 'api/ExchangeRates';
 
 const lazyPage = (pageName: string) =>
   lazy(

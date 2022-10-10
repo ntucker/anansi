@@ -2,7 +2,7 @@
   "compilerOptions": {
     "types": ["@anansi/webpack-config/types"<% if (features.includes('testing')) {%>, "jest"<% } %>],
     "paths": {
-      "resources/*": ["resources/*"]
+      "api/*": ["api/*"]
     },
     "noEmit": true
   }

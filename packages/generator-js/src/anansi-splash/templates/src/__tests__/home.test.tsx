@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import { mockInitialState } from '@rest-hooks/test';
-import { ExchangeRatesFixtures } from 'resources/ExchangeRatesResource';
+import { ExchangeRatesFixtures } from 'api/ExchangeRates';
 
 import RootProvider from '../RootProvider';
 import Home from '../pages/Home';
