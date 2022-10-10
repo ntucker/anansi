@@ -48,7 +48,7 @@ const config = {
       ],
     },
     {
-      files: ['**/*.js?(x)'],
+      files: ['**/*.?(m)js?(x)'],
       extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
       parser: '@babel/eslint-parser',
       parserOptions: {
