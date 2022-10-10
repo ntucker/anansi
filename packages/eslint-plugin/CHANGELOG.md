@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.2...@anansi/eslint-plugin@0.14.3) (2022-10-10)
+
+### 💅 Enhancement
+
+* Support mjs ([0aae8b4](https://github.com/ntucker/anansi/commit/0aae8b463152702d9bde712dea78dedc209efa41))
+
 ### [0.14.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.1...@anansi/eslint-plugin@0.14.2) (2022-07-23)
 
 ### 🐛 Bug Fix

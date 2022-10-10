@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.0.0...@anansi/generator-js@10.0.1) (2022-10-10)
+
+### 💅 Enhancement
+
+* Move api definition to new canonical location ([9527090](https://github.com/ntucker/anansi/commit/952709067b3283bbf6619114da69530d649121a7))
+
+### 🐛 Bug Fix
+
+* Node requirements for cli ([8dc6622](https://github.com/ntucker/anansi/commit/8dc6622d06a77aacbda77aa32f5b22bf5ae5f307))
+
 ## [10.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@9.0.23...@anansi/generator-js@10.0.0) (2022-10-07)
 
 ### ⚠ 💥 BREAKING CHANGES

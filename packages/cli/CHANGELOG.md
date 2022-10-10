@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.31...@anansi/cli@2.0.0) (2022-10-10)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires node 14
+
+### 💅 Enhancement
+
+* Move to ESM ([febdb01](https://github.com/ntucker/anansi/commit/febdb01583a257a39b7c9b5600e2ac556ccd122e))
+
+### 🐛 Bug Fix
+
+* Node requirements for cli ([8dc6622](https://github.com/ntucker/anansi/commit/8dc6622d06a77aacbda77aa32f5b22bf5ae5f307))
+
 ### [1.4.31](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.30...@anansi/cli@1.4.31) (2022-10-07)
 
 **Note:** Version bump only for package @anansi/cli

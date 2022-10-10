@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.20](https://github.com/ntucker/anansi/compare/example-react-18@4.0.19...example-react-18@4.0.20) (2022-10-10)
+
+### 📦 Package
+
+* Update `@types/jest` to v29.1.2 ([#1696](https://github.com/ntucker/anansi/issues/1696)) ([8520028](https://github.com/ntucker/anansi/commit/8520028546db0347160b14f2037cad9fe3f00c27))
+* Update `antd` to v4.23.5 ([#1697](https://github.com/ntucker/anansi/issues/1697)) ([96ecf64](https://github.com/ntucker/anansi/commit/96ecf6457a886dad58137fc47a5aa0f423d4732a))
+* Update linting packages ([#1694](https://github.com/ntucker/anansi/issues/1694)) ([e210578](https://github.com/ntucker/anansi/commit/e2105786e202d8a3daf648f6e6da3eaa4154e35d))
+
 ### [4.0.19](https://github.com/ntucker/anansi/compare/example-react-18@4.0.18...example-react-18@4.0.19) (2022-10-07)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.0...@anansi/browserslist-config@1.4.1) (2022-10-10)
+
+### 💅 Enhancement
+
+* Keep non-dead browsers up to a year for defaults ([86c768a](https://github.com/ntucker/anansi/commit/86c768a18cdcc05c56f9608045966cf69e305384))
+
 ## [1.4.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.3.3...@anansi/browserslist-config@1.4.0) (2022-09-17)
 
 ### 🚀 Features
