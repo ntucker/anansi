@@ -5,6 +5,7 @@ module.exports = {
     'not dead',
     'not ie<12',
     'not OperaMini all',
+    'last 1 years',
   ],
   legacy: [
     '> 0.5%',
