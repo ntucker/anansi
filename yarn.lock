@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.8.3
+    "@types/node": 18.8.5
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -222,7 +222,7 @@ __metadata:
     rimraf: 3.0.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.12.0
+    yeoman-environment: 3.12.1
     yeoman-generator: ^5.7.0
     yeoman-test: 6.3.0
   languageName: unknown
@@ -335,7 +335,7 @@ __metadata:
     os-browserify: ^0.3.0
     path: ^0.12.7
     path-browserify: ^1.0.1
-    postcss: ^8.4.17
+    postcss: ^8.4.18
     postcss-loader: ^7.0.1
     postcss-preset-env: ^7.8.2
     prettier-eslint-cli: 7.1.0
@@ -6097,10 +6097,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.8.3":
-  version: 18.8.3
-  resolution: "@types/node@npm:18.8.3"
-  checksum: 9201adc6dc389644c9f478f950ef8926a93e5827865dcd80d7d12fefacab665c96879c87cd6ec74d5eccdd998c4603d02e1e07a35d71a63fe4c20670a381f6ef
+"@types/node@npm:*, @types/node@npm:18.8.5":
+  version: 18.8.5
+  resolution: "@types/node@npm:18.8.5"
+  checksum: f7d896f54743178e64c534c6da16f582505acf18904ecd0ee8541cb4bc1d429ba514e7ecfd5145221b71adbd6ae1ff72df082f667e56d056fcd1a719df948e08
   languageName: node
   linkType: hard
 
@@ -11857,7 +11857,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.6
     "@types/jest": 29.1.2
-    "@types/node": 18.8.3
+    "@types/node": 18.8.5
     "@types/prettier": 2.7.1
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
@@ -11908,7 +11908,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.1.2
     "@types/lodash": 4.14.186
-    "@types/node": 18.8.3
+    "@types/node": 18.8.5
     "@types/parse-link-header": 2.0.0
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
@@ -20262,14 +20262,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.17, postcss@npm:^8.4.5":
-  version: 8.4.17
-  resolution: "postcss@npm:8.4.17"
+"postcss@npm:^8.4.17, postcss@npm:^8.4.18, postcss@npm:^8.4.5":
+  version: 8.4.18
+  resolution: "postcss@npm:8.4.18"
   dependencies:
     nanoid: ^3.3.4
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: a6d9096dd711e17f7b1d18ff5dcb4fdedf3941d5a3dc8b0e4ea873b8f31972d57f73d6da9a8aed7ff389eb52190ed34f6a94f299a7f5ddc68b08a24a48f77eb9
+  checksum: 9349fd99849b2e3d2e134ff949b7770ecb12375f352723ce2bcc06167eba3850ea7844c1b191a85cd915d6a396b4e8ee9a5267e6cc5d8d003d0cbc7a97555d39
   languageName: node
   linkType: hard
 
@@ -26426,9 +26426,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.12.0, yeoman-environment@npm:^3.5.1":
-  version: 3.12.0
-  resolution: "yeoman-environment@npm:3.12.0"
+"yeoman-environment@npm:3.12.1, yeoman-environment@npm:^3.5.1":
+  version: 3.12.1
+  resolution: "yeoman-environment@npm:3.12.1"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -26471,7 +26471,7 @@ __metadata:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 29c6624b57ac32945f18372fa3e29883a36c0dcaecec7b5ca2c247e46fe13b845c3ab5a01c2778340bd4ee51b3753ee2997a88e5202545f1939180c58c266177
+  checksum: 71e777fcfa4baf26f9848265292447d7283f4bcb0e6b781018c8f8610c47c430e5a331eb0da03491621a7bcdd6ed40a2854c664a4f9f1ceb9ee111def37f52d1
   languageName: node
   linkType: hard
 
