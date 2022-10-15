@@ -3,8 +3,12 @@ import path from 'path';
 import binVersionCheck from 'bin-version-check';
 import latestVersion from 'latest-version';
 import chalk from 'chalk';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
+// TODO: Use this once stackblitz works with it
 //import pkg from './package.json' assert { type: 'json' };
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(
   fs.readFileSync(path.join(__dirname, './package.json'), 'utf8'),
 );
