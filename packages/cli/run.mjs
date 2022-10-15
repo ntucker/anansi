@@ -7,13 +7,17 @@ import { createRequire } from 'module';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-import pkg from './package.json' assert { type: 'json' };
+// TODO: Use this once stackblitz works with it
+//import pkg from './package.json' assert { type: 'json' };
 import { verifyAndPrompt } from './check-version.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 // need for require.resolve (until import.meta.resolve is not experimental)
 const require = createRequire(import.meta.url);
 
+const pkg = JSON.parse(
+  fs.readFileSync(path.join(__dirname, './package.json'), 'utf8'),
+);
 const { version } = pkg;
 
 const program = new Command();
