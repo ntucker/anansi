@@ -1,8 +1,13 @@
+import fs from 'fs';
+import path from 'path';
 import binVersionCheck from 'bin-version-check';
 import latestVersion from 'latest-version';
 import chalk from 'chalk';
 
-import pkg from './package.json' assert { type: 'json' };
+//import pkg from './package.json' assert { type: 'json' };
+const pkg = JSON.parse(
+  fs.readFileSync(path.join(__dirname, './package.json'), 'utf8'),
+);
 
 export const description = 'version';
 
