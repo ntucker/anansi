@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.1](https://github.com/ntucker/anansi/compare/@anansi/cli@2.0.0...@anansi/cli@2.0.1) (2022-10-15)
+
+### 💅 Enhancement
+
+* Fix compatibility with stackblitz ([13585de](https://github.com/ntucker/anansi/commit/13585de96e2c23696454298b41b5ccf395263abc))
+
 ## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/cli@1.4.31...@anansi/cli@2.0.0) (2022-10-10)
 
 ### ⚠ 💥 BREAKING CHANGES
