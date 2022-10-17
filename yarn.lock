@@ -301,7 +301,7 @@ __metadata:
     "@babel/cli": 7.19.3
     "@babel/core": 7.19.3
     "@babel/runtime": ^7.17.2
-    "@linaria/webpack5-loader": 4.1.4
+    "@linaria/webpack5-loader": 4.1.5
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.8
     "@svgr/webpack": ^6.5.0
     "@types/webpack-bundle-analyzer": ^4.6.0
@@ -3152,9 +3152,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:4.2.1":
-  version: 4.2.1
-  resolution: "@linaria/babel-preset@npm:4.2.1"
+"@linaria/babel-preset@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@linaria/babel-preset@npm:4.2.2"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/generator": ^7.18.9
@@ -3162,27 +3162,27 @@ __metadata:
     "@babel/template": ^7.18.6
     "@babel/traverse": ^7.18.9
     "@babel/types": ^7.18.9
-    "@linaria/core": ^4.1.3
+    "@linaria/core": ^4.1.4
     "@linaria/logger": ^4.0.0
-    "@linaria/shaker": ^4.2.1
-    "@linaria/tags": ^4.1.3
-    "@linaria/utils": ^4.2.1
+    "@linaria/shaker": ^4.2.2
+    "@linaria/tags": ^4.1.4
+    "@linaria/utils": ^4.2.2
     cosmiconfig: ^5.1.0
     find-up: ^5.0.0
     source-map: ^0.7.3
     stylis: ^3.5.4
-  checksum: c19e24a8c72f21899c3a2cc2ba4d47ab6cd71de22f73ad66cac05ddd991936056e641b07d8e1f5dfa885bfe25a23e59bdc0773527cda275bff9de6d8fb8c9a6b
+  checksum: de05421863b8b708e129feb37ae93ebd72c5c8008d6a31d86f375410bb43ccfff7a435e4117c2cc233a7cfdd0870cedb7a011187a446bd28b4bcf7f5a072c771
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:4.1.3":
-  version: 4.1.3
-  resolution: "@linaria/core@npm:4.1.3"
+"@linaria/core@npm:4.1.4":
+  version: 4.1.4
+  resolution: "@linaria/core@npm:4.1.4"
   dependencies:
     "@linaria/logger": ^4.0.0
-    "@linaria/tags": ^4.1.3
-    "@linaria/utils": ^4.2.1
-  checksum: 63cdb957bc903db41897983f2d29d481382d5c584ee57292cd81d44cade2a3317956ff8ba3a6d6ad0d365f0d90d1ddf95b72aad5b030a2a485ab80608dd61025
+    "@linaria/tags": ^4.1.4
+    "@linaria/utils": ^4.2.2
+  checksum: 4484b74eaecbac57f34a3d3e82307b9d74076a8df0567ad2fb6dbdb1dc2217891273aa20da17225c622a3c0652e44ee37d8cc2e894495239018d7ef82a619bdb
   languageName: node
   linkType: hard
 
@@ -3196,23 +3196,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:4.1.4":
-  version: 4.1.4
-  resolution: "@linaria/react@npm:4.1.4"
+"@linaria/react@npm:4.1.5":
+  version: 4.1.5
+  resolution: "@linaria/react@npm:4.1.5"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.8
-    "@linaria/core": ^4.1.3
-    "@linaria/tags": ^4.1.3
+    "@linaria/core": ^4.1.4
+    "@linaria/tags": ^4.1.4
+    "@linaria/utils": ^4.2.2
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: 5004df7c4896a37d502f6e57eeadce74cbc8aa14327997bf704e5da139101d57374626063bc5e8c26a46fc6eb280ba8081898bd2702f832ebff85fe94086c0d3
+  checksum: b7e31a3ab69f5b8ea4d6aec59870ceec7807c374cea4b74fa76576ffe685a36c5ec97afa01e315ccb5a524e9d41af8bde45c305e06f10e4aea22f6e90ca0f510
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:4.2.1, @linaria/shaker@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@linaria/shaker@npm:4.2.1"
+"@linaria/shaker@npm:4.2.2, @linaria/shaker@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@linaria/shaker@npm:4.2.2"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/generator": ^7.18.9
@@ -3221,27 +3222,27 @@ __metadata:
     "@babel/plugin-transform-template-literals": ">=7"
     "@babel/preset-env": ">=7"
     "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.2.1
+    "@linaria/utils": ^4.2.2
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.10.3
-  checksum: ca07c21876817c208f21f3334fc33cd3d4cff1d486331aedc6422c30899951195b2779aa2e5097ecfd0a49518b5ffdf1ad084d0502b17cccb66fa765d9fb8369
+  checksum: 24c41df1c2a357f4e19347cdb28288fb426f24edcc7486b2d2be24bf3d694c1ab10cd94288ab9d1c169116b49301ee31462b9507e90cdbe86f433e8356de07f3
   languageName: node
   linkType: hard
 
-"@linaria/tags@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "@linaria/tags@npm:4.1.3"
+"@linaria/tags@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "@linaria/tags@npm:4.1.4"
   dependencies:
     "@babel/generator": ^7.18.9
     "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.2.1
-  checksum: 2e18cc0053a018951af21b44e0d9b02bcf88917c22b7c048b6c8d2b7044531f47d944c2c86d461e35f30161129ad220aa7a1ca6ffb4cc5d8b709ce6fcbc7fd4c
+    "@linaria/utils": ^4.2.2
+  checksum: baadab1a8310afb1e551b1e4244c569b69fbd0830641782f12fb943874d0bd49722ef8dac9dd7d64861844f61e3b86b3702152980482d9a04c0a593053aad0a6
   languageName: node
   linkType: hard
 
-"@linaria/utils@npm:4.2.1":
-  version: 4.2.1
-  resolution: "@linaria/utils@npm:4.2.1"
+"@linaria/utils@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@linaria/utils@npm:4.2.2"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/plugin-proposal-export-namespace-from": ">=7"
@@ -3251,21 +3252,21 @@ __metadata:
     "@babel/types": ^7.18.9
     "@linaria/logger": ^4.0.0
     babel-merge: ^3.0.0
-  checksum: 433d48d83745a21aebdf1639ebcfb4fe1eebb5ae16fab0b7ca2ac5cd875c1b500f982fa4664dcb77f9652c371fb6f1457b608c48912607577526dc3d5ee4eb89
+  checksum: 9ae04a17333ea89319fd2bc44d7e4c0c725228fd13f429340b538fda3b03838159816633201dd7e0892234bf02a813f331a497323af1fd957c32521e99073fb7
   languageName: node
   linkType: hard
 
-"@linaria/webpack5-loader@npm:4.1.4":
-  version: 4.1.4
-  resolution: "@linaria/webpack5-loader@npm:4.1.4"
+"@linaria/webpack5-loader@npm:4.1.5":
+  version: 4.1.5
+  resolution: "@linaria/webpack5-loader@npm:4.1.5"
   dependencies:
-    "@linaria/babel-preset": ^4.2.1
+    "@linaria/babel-preset": ^4.2.2
     "@linaria/logger": ^4.0.0
     enhanced-resolve: ^5.3.1
     mkdirp: ^0.5.1
   peerDependencies:
     webpack: ^5.0.0
-  checksum: d8dcfbf993a70d1348de23af7fa19ba495ff858d4d3d57429f5f6f659a6bb8014ab9080c5a5d43b2c14c0ab76e47b19fe5917363096adaafa53d7cabe2f71679
+  checksum: 22f66a60fd3510ac3176059b1f8cf9453a4afa07b9c5d7ede6b4c12a5ef64dc00c95431823857b60c48a7226eca59cfd8221a519d4865e7a20035b405145e71c
   languageName: node
   linkType: hard
 
@@ -11955,9 +11956,9 @@ __metadata:
     "@anansi/webpack-config": ^13.0.18
     "@babel/plugin-transform-modules-commonjs": 7.18.6
     "@babel/runtime": ^7.17.2
-    "@linaria/core": 4.1.3
-    "@linaria/react": 4.1.4
-    "@linaria/shaker": 4.2.1
+    "@linaria/core": 4.1.4
+    "@linaria/react": 4.1.5
+    "@linaria/shaker": 4.2.2
     "@types/classnames": 2.3.1
     "@types/react-router-dom": 5.3.3
     babel-loader: 8.2.5
@@ -11984,9 +11985,9 @@ __metadata:
     "@anansi/webpack-config": ^13.0.18
     "@babel/core": 7.19.3
     "@babel/runtime": ^7.17.2
-    "@linaria/core": 4.1.3
-    "@linaria/react": 4.1.4
-    "@linaria/shaker": 4.2.1
+    "@linaria/core": 4.1.4
+    "@linaria/react": 4.1.5
+    "@linaria/shaker": 4.2.2
     "@rest-hooks/core": 3.3.1
     "@rest-hooks/endpoint": 3.0.1
     "@rest-hooks/hooks": 3.0.7
