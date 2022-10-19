@@ -6,7 +6,6 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
 import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
-import isWsl from 'is-wsl';
 
 import { getStyleRules } from './base';
 
@@ -143,9 +142,6 @@ export default function makeProdConfig(
           keep_fnames: !!env?.profile || terserOptions?.keep_fnames,
         },
         extractComments: true,
-        // Disabled on WSL (Windows Subsystem for Linux) due to an issue with Terser
-        // https://github.com/webpack-contrib/terser-webpack-plugin/issues/21
-        parallel: !isWsl,
       }),
       // cssnano on node_modules as well as our loaders
       new CssMinimizerPlugin(),
