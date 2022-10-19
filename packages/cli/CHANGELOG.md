@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/ntucker/anansi/compare/@anansi/cli@2.0.3...@anansi/cli@2.0.4) (2022-10-19)
+
+### 📦 Package
+
+* Update `bin-version-check` to v5 ([#1702](https://github.com/ntucker/anansi/issues/1702)) ([632a02a](https://github.com/ntucker/anansi/commit/632a02acb58010d48ce0e09198482856187c0525))
+* Update `latest-version` to v7 ([#1704](https://github.com/ntucker/anansi/issues/1704)) ([8b0121d](https://github.com/ntucker/anansi/commit/8b0121d1dcf8273912346282cfc72d2f10a4e76f))
+
 ### [2.0.3](https://github.com/ntucker/anansi/compare/@anansi/cli@2.0.2...@anansi/cli@2.0.3) (2022-10-15)
 
 ### 💅 Enhancement

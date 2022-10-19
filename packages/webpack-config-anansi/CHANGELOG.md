@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.19](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.18...@anansi/webpack-config@13.0.19) (2022-10-19)
+
+### 💅 Enhancement
+
+* Enable terser parallelism in WSL ([#1710](https://github.com/ntucker/anansi/issues/1710)) ([ff8a730](https://github.com/ntucker/anansi/commit/ff8a7303f4488d11b1c770e18032301eb7e35480))
+
+### 🐛 Bug Fix
+
+* Production builds work in node 18 ([#1714](https://github.com/ntucker/anansi/issues/1714)) ([755d3a6](https://github.com/ntucker/anansi/commit/755d3a697bdb6ca786e0c6ee8d6c9e4fa3f2d968))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1706](https://github.com/ntucker/anansi/issues/1706)) ([34e8025](https://github.com/ntucker/anansi/commit/34e80259fe1452112af2ec5641477e7002e4b9d5))
+* Update webpack packages ([#1707](https://github.com/ntucker/anansi/issues/1707)) ([5864e29](https://github.com/ntucker/anansi/commit/5864e291022c59aa14ccd7cd9c91e1a560a35e51))
+* Update webpack packages ([#1711](https://github.com/ntucker/anansi/issues/1711)) ([993dc18](https://github.com/ntucker/anansi/commit/993dc18171fe776bed364faa03ae354bcd323c31))
+
 ### [13.0.18](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.17...@anansi/webpack-config@13.0.18) (2022-10-15)
 
 ### 📦 Package
