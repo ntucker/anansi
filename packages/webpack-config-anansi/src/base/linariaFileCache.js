@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const mkdirp = require('mkdirp');
 
 const hashFileName = name => {
-  const hash = crypto.createHash('md4');
+  const hash = crypto.createHash('md5');
   hash.update(name);
   return hash.digest('hex');
 };

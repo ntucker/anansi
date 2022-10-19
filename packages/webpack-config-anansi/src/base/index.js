@@ -217,7 +217,10 @@ export default function makeBaseConfig({
                 {
                   loader: require.resolve('file-loader'),
                   options: {
-                    name: assetModuleFilename,
+                    name:
+                      nohash || mode !== 'production'
+                        ? '[name].[ext][query]'
+                        : '[md5:contenthash:base64:8].[ext][query]',
                   },
                 },
               ],

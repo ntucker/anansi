@@ -154,7 +154,7 @@ export default function makeDevConfig(
     libraryInclude,
     libraryExclude,
     cssModulesOptions: {
-      localIdentName: '[folder]_[name]__[local]___[hash:base64:5]',
+      localIdentName: '[folder]_[name]__[local]___[xxhash64:hash:base64:5]',
       ...cssModulesOptions,
     },
     sassOptions,
