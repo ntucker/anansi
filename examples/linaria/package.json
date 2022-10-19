@@ -27,8 +27,8 @@
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.18.6",
     "@babel/runtime": "^7.17.2",
-    "@linaria/core": "4.1.4",
-    "@linaria/react": "4.1.5",
+    "@linaria/core": "4.2.0",
+    "@linaria/react": "4.2.0",
     "@linaria/shaker": "4.2.2",
     "classnames": "2.3.2",
     "core-js": "3.25.5",
