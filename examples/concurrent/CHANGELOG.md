@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.25](https://github.com/ntucker/anansi/compare/example-react-18@4.0.24...example-react-18@4.0.25) (2022-10-21)
+
+### 📦 Package
+
+* Update `@types/eslint` to v8.4.7 ([#1716](https://github.com/ntucker/anansi/issues/1716)) ([303b260](https://github.com/ntucker/anansi/commit/303b260cf56a5ce0ce747d2868d2e33a5076610e))
+* Update babel packages to v7.19.6 ([#1715](https://github.com/ntucker/anansi/issues/1715)) ([6be2305](https://github.com/ntucker/anansi/commit/6be2305008f4fd7d16dddc2f6b90b88f88372394))
+* Update webpack packages ([#1717](https://github.com/ntucker/anansi/issues/1717)) ([f6008ed](https://github.com/ntucker/anansi/commit/f6008ed4a36d6e1718de8cebb57723f47d048894))
+
 ### [4.0.24](https://github.com/ntucker/anansi/compare/example-react-18@4.0.23...example-react-18@4.0.24) (2022-10-19)
 
 ### 📦 Package
