@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.11.2
+    "@types/node": 18.11.5
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -357,7 +357,7 @@ __metadata:
     string_decoder: ^1.3.0
     strip-ansi: ^6.0.1
     svgo: ^2.8.0
-    svgo-loader: ^3.0.1
+    svgo-loader: ^3.0.2
     terser-webpack-plugin: ^5.3.6
     timers-browserify: ^2.0.12
     tsconfig-paths-webpack-plugin: ^4.0.0
@@ -6224,10 +6224,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.11.2":
-  version: 18.11.2
-  resolution: "@types/node@npm:18.11.2"
-  checksum: 0ff5c90fb9ab653e018b858479aea4d2f763b07b31f9502383d408936f525ca37cac82ea27774a0dd0356ff9badba2792a6a3fff94f79fd7c82ee2a892c43ed5
+"@types/node@npm:*, @types/node@npm:18.11.5":
+  version: 18.11.5
+  resolution: "@types/node@npm:18.11.5"
+  checksum: ac54e9287dd4549ea3dc8aabc0cf7bfa04c52f02925d7fd68414789617ec770f034c8ae2e111e8bd00d446a46fcac42587b5a316a1303e2f6ea094854248c9ff
   languageName: node
   linkType: hard
 
@@ -6354,12 +6354,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.6":
-  version: 18.0.6
-  resolution: "@types/react-dom@npm:18.0.6"
+"@types/react-dom@npm:18.0.7":
+  version: 18.0.7
+  resolution: "@types/react-dom@npm:18.0.7"
   dependencies:
     "@types/react": "*"
-  checksum: db571047af1a567631758700b9f7d143e566df939cfe5fbf7535347cc0c726a1cdbb5e3f8566d076e54cf708b6c1166689de194a9ba09ee35efc9e1d45911685
+  checksum: 4fd47dd114d61e7228637de9bee685b81ea18b89b220a67662b05ebe74f69aad7cd929ebe69e8fd572cc8e0e9adf9bba1ea5586cfd37eb9045778851e78bcd66
   languageName: node
   linkType: hard
 
@@ -6393,14 +6393,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.21":
-  version: 18.0.21
-  resolution: "@types/react@npm:18.0.21"
+"@types/react@npm:*, @types/react@npm:18.0.23":
+  version: 18.0.23
+  resolution: "@types/react@npm:18.0.23"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 36c1a7c9d507e81e2e629c1ad3db51d7b84d8b010c2d5008da411874286c6a5ccc711ae1d4c470efc0bdc77153cc8804a40e927e929e5164c669ca41b84b846d
+  checksum: 8b915793b9d6d53c19d76aab35d50a407cac6f4fb1e349cf037196302e8a7661d6c75870dc2fcb0b029c6f0db89d23fee910b777d28dd0e26becf8b312ddb61b
   languageName: node
   linkType: hard
 
@@ -12056,10 +12056,10 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.7
     "@types/jest": 29.2.0
-    "@types/node": 18.11.2
+    "@types/node": 18.11.5
     "@types/prettier": 2.7.1
-    "@types/react": 18.0.21
-    "@types/react-dom": 18.0.6
+    "@types/react": 18.0.23
+    "@types/react-dom": 18.0.7
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.40.1
     "@typescript-eslint/parser": 5.40.1
@@ -12107,10 +12107,10 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.2.0
     "@types/lodash": 4.14.186
-    "@types/node": 18.11.2
+    "@types/node": 18.11.5
     "@types/parse-link-header": 2.0.0
-    "@types/react": 18.0.21
-    "@types/react-dom": 18.0.6
+    "@types/react": 18.0.23
+    "@types/react-dom": 18.0.7
     "@types/react-router": 5.1.19
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
@@ -16790,17 +16790,6 @@ __metadata:
   version: 4.2.0
   resolution: "loader-runner@npm:4.2.0"
   checksum: e61aea8b6904b8af53d9de6f0484da86c462c0001f4511bedc837cec63deb9475cea813db62f702cd7930420ccb0e75c78112270ca5c8b61b374294f53c0cb3a
-  languageName: node
-  linkType: hard
-
-"loader-utils@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "loader-utils@npm:1.4.0"
-  dependencies:
-    big.js: ^5.2.2
-    emojis-list: ^3.0.0
-    json5: ^1.0.1
-  checksum: d150b15e7a42ac47d935c8b484b79e44ff6ab4c75df7cc4cb9093350cf014ec0b17bdb60c5d6f91a37b8b218bd63b973e263c65944f58ca2573e402b9a27e717
   languageName: node
   linkType: hard
 
@@ -22815,8 +22804,8 @@ __metadata:
     "@commitlint/cli": 17.1.2
     "@commitlint/config-conventional": 17.1.0
     "@lerna-lite/cli": 1.12.0
-    "@types/react": 18.0.21
-    "@types/react-dom": 18.0.6
+    "@types/react": 18.0.23
+    "@types/react-dom": 18.0.7
     "@typescript-eslint/eslint-plugin": 5.40.1
     "@typescript-eslint/parser": 5.40.1
     babel-loader: 8.2.5
@@ -24441,13 +24430,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo-loader@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "svgo-loader@npm:3.0.1"
+"svgo-loader@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "svgo-loader@npm:3.0.2"
   dependencies:
-    loader-utils: ^1.4.0
+    loader-utils: ^3.2.0
     svgo: ^2.8.0
-  checksum: f38e925fc9bb5a7d3ac2d701223cc37432003b156418d5bee688d062d4dc2bf55658bb7a2ca94286274252a8ec5c0d2d7fb383e2a02130cdaa37858ed90ff3c5
+  checksum: 1bd16a8e9f678e1e1d4fd08790eaefd26082a4ad40d6d3a933490061c1681d24c699c94afbf894b8945003747cf4427c3c191b8a604052314854ca9ce190766b
   languageName: node
   linkType: hard
 
