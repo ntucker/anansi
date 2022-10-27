@@ -308,7 +308,7 @@ __metadata:
     "@vue/preload-webpack-plugin": ^2.0.0
     assert: ^2.0.0
     autoprefixer: ^10.4.12
-    babel-loader: ^8.2.5
+    babel-loader: ^9.0.0
     browserify-zlib: ^0.2.0
     buffer: ^6.0.3
     circular-dependency-plugin: ^5.2.2
@@ -7947,7 +7947,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:8.2.5, babel-loader@npm:^8.0.0, babel-loader@npm:^8.2.5":
+"babel-loader@npm:9.0.0, babel-loader@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "babel-loader@npm:9.0.0"
+  dependencies:
+    find-cache-dir: ^3.3.2
+    schema-utils: ^4.0.0
+  peerDependencies:
+    "@babel/core": ^7.12.0
+    webpack: ">=5"
+  checksum: 6b146e33c81fd948ffdefa8a6319efa1bea6e17c946bfac4641375710e51831aeb7f4a20c88604eaa00f5ecd4b6591da5a65ade326feba792609f932df150645
+  languageName: node
+  linkType: hard
+
+"babel-loader@npm:^8.0.0":
   version: 8.2.5
   resolution: "babel-loader@npm:8.2.5"
   dependencies:
@@ -12027,7 +12040,7 @@ __metadata:
     "@linaria/shaker": 4.2.4
     "@types/classnames": 2.3.1
     "@types/react-router-dom": 5.3.3
-    babel-loader: 8.2.5
+    babel-loader: 9.0.0
     classnames: 2.3.2
     core-js: 3.26.0
     react-refresh: 0.14.0
@@ -22823,7 +22836,7 @@ __metadata:
     "@types/react-dom": 18.0.8
     "@typescript-eslint/eslint-plugin": 5.41.0
     "@typescript-eslint/parser": 5.41.0
-    babel-loader: 8.2.5
+    babel-loader: 9.0.0
     babel-plugin-module-resolver: 4.1.0
     babel-plugin-root-import: 6.6.0
     conventional-changelog-anansi: 0.2.0
