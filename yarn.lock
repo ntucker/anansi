@@ -21,7 +21,7 @@ __metadata:
     "@anansi/ts-utils": "workspace:^"
     "@babel/plugin-proposal-class-properties": ^7.18.6
     "@babel/plugin-proposal-class-static-block": ^7.18.6
-    "@babel/plugin-proposal-decorators": ^7.19.6
+    "@babel/plugin-proposal-decorators": ^7.20.0
     "@babel/plugin-proposal-export-default-from": ^7.18.10
     "@babel/plugin-proposal-export-namespace-from": ^7.18.9
     "@babel/plugin-proposal-optional-chaining": ^7.18.9
@@ -34,7 +34,7 @@ __metadata:
     "@babel/plugin-transform-react-constant-elements": ^7.18.12
     "@babel/plugin-transform-react-inline-elements": ^7.18.6
     "@babel/plugin-transform-runtime": ^7.19.6
-    "@babel/plugin-transform-typescript": ^7.19.3
+    "@babel/plugin-transform-typescript": ^7.20.0
     "@babel/preset-env": ^7.19.4
     "@babel/preset-react": ^7.18.6
     babel-plugin-lodash: ^3.3.4
@@ -951,9 +951,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-decorators@npm:^7.12.12, @babel/plugin-proposal-decorators@npm:^7.19.6":
-  version: 7.19.6
-  resolution: "@babel/plugin-proposal-decorators@npm:7.19.6"
+"@babel/plugin-proposal-decorators@npm:^7.12.12, @babel/plugin-proposal-decorators@npm:^7.20.0":
+  version: 7.20.0
+  resolution: "@babel/plugin-proposal-decorators@npm:7.20.0"
   dependencies:
     "@babel/helper-create-class-features-plugin": ^7.19.0
     "@babel/helper-plugin-utils": ^7.19.0
@@ -962,7 +962,7 @@ __metadata:
     "@babel/plugin-syntax-decorators": ^7.19.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 69162475282507e1579232fdaae26330cfcfa7843f4a943383d76c61a5e225ea1fe08edd7c700c400694ab9b57e8b3928b757da985ac613ddfc78be5a9b61c47
+  checksum: b882bf758c9e098ead68a05e3e912f427a5b286c7174a582ccf38cf02a679ce1372282a45fb1987b2ffd7e9923fc38e6913fa54e165f5640c334c2c6a74e761f
   languageName: node
   linkType: hard
 
@@ -1419,14 +1419,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-typescript@npm:^7.18.6, @babel/plugin-syntax-typescript@npm:^7.7.2":
-  version: 7.18.6
-  resolution: "@babel/plugin-syntax-typescript@npm:7.18.6"
+"@babel/plugin-syntax-typescript@npm:^7.20.0, @babel/plugin-syntax-typescript@npm:^7.7.2":
+  version: 7.20.0
+  resolution: "@babel/plugin-syntax-typescript@npm:7.20.0"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.18.6
+    "@babel/helper-plugin-utils": ^7.19.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 2cde73725ec51118ebf410bf02d78781c03fa4d3185993fcc9d253b97443381b621c44810084c5dd68b92eb8bdfae0e5b163e91b32bebbb33852383d1815c05d
+  checksum: 6189c0b5c32ba3c9a80a42338bd50719d783b20ef29b853d4f03929e971913d3cefd80184e924ae98ad6db09080be8fe6f1ffde9a6db8972523234f0274d36f7
   languageName: node
   linkType: hard
 
@@ -1898,16 +1898,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.18.6, @babel/plugin-transform-typescript@npm:^7.19.3":
-  version: 7.19.3
-  resolution: "@babel/plugin-transform-typescript@npm:7.19.3"
+"@babel/plugin-transform-typescript@npm:^7.18.6, @babel/plugin-transform-typescript@npm:^7.20.0":
+  version: 7.20.0
+  resolution: "@babel/plugin-transform-typescript@npm:7.20.0"
   dependencies:
     "@babel/helper-create-class-features-plugin": ^7.19.0
     "@babel/helper-plugin-utils": ^7.19.0
-    "@babel/plugin-syntax-typescript": ^7.18.6
+    "@babel/plugin-syntax-typescript": ^7.20.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 094c8c4ad05fee7f1bda243923cadb2b05b58448ea7cf9560e734c7cffd72acfeab3e1e0d2b084eb47a5a950ac316f970b83904b3504c203fa6fe9d8d61526a8
+  checksum: 7cc335a95374d03e09ec48fe313dccde477ab4784f26f7b24fdc7a9db3c670759c3c8177a671a68365467c0885dad82b5dda3f57ba0b6bf7459f4ae55fae4ee4
   languageName: node
   linkType: hard
 
