@@ -204,7 +204,7 @@ __metadata:
     "@types/ejs": 3.1.1
     "@types/gulp-filter": 3.0.34
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.11.5
+    "@types/node": 18.11.7
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -218,7 +218,7 @@ __metadata:
     jest: 29.2.2
     mem-fs: ^2.2.1
     mem-fs-editor: ^9.5.0
-    pacote: ^15.0.3
+    pacote: ^15.0.4
     rimraf: 3.0.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
@@ -357,7 +357,7 @@ __metadata:
     string_decoder: ^1.3.0
     strip-ansi: ^6.0.1
     svgo: ^2.8.0
-    svgo-loader: ^3.0.2
+    svgo-loader: ^3.0.3
     terser-webpack-plugin: ^5.3.6
     timers-browserify: ^2.0.12
     tsconfig-paths-webpack-plugin: ^4.0.0
@@ -3720,6 +3720,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@npmcli/promise-spawn@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@npmcli/promise-spawn@npm:5.0.0"
+  checksum: f6b9a0b41ea827faf752c72d10094be072851ec7b31f7cf97b151293850216bdf58c4c3bcce7466399da28224f4faa372190c13f242c6d9eb32967e71cb8e03d
+  languageName: node
+  linkType: hard
+
 "@npmcli/query@npm:^1.2.0":
   version: 1.2.0
   resolution: "@npmcli/query@npm:1.2.0"
@@ -6224,10 +6231,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.11.5":
-  version: 18.11.5
-  resolution: "@types/node@npm:18.11.5"
-  checksum: ac54e9287dd4549ea3dc8aabc0cf7bfa04c52f02925d7fd68414789617ec770f034c8ae2e111e8bd00d446a46fcac42587b5a316a1303e2f6ea094854248c9ff
+"@types/node@npm:*, @types/node@npm:18.11.7":
+  version: 18.11.7
+  resolution: "@types/node@npm:18.11.7"
+  checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
   languageName: node
   linkType: hard
 
@@ -6354,12 +6361,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.7":
-  version: 18.0.7
-  resolution: "@types/react-dom@npm:18.0.7"
+"@types/react-dom@npm:18.0.8":
+  version: 18.0.8
+  resolution: "@types/react-dom@npm:18.0.8"
   dependencies:
     "@types/react": "*"
-  checksum: 4fd47dd114d61e7228637de9bee685b81ea18b89b220a67662b05ebe74f69aad7cd929ebe69e8fd572cc8e0e9adf9bba1ea5586cfd37eb9045778851e78bcd66
+  checksum: 522e5e949d05f35c6037a2290838c9c7ff92a9d06f7d96b993c7c3f5a86d8f3a6337e059c94e6fb0920227f445e5d1ce10fbfe3d9bbd95fb82a5539249d90646
   languageName: node
   linkType: hard
 
@@ -6393,14 +6400,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.23":
-  version: 18.0.23
-  resolution: "@types/react@npm:18.0.23"
+"@types/react@npm:*, @types/react@npm:18.0.24":
+  version: 18.0.24
+  resolution: "@types/react@npm:18.0.24"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 8b915793b9d6d53c19d76aab35d50a407cac6f4fb1e349cf037196302e8a7661d6c75870dc2fcb0b029c6f0db89d23fee910b777d28dd0e26becf8b312ddb61b
+  checksum: 7d06125bac61e1c6661e5dfbeeeb56d5b6d1d4c743292faebaa6b0f30f8414c7af3cadf674923fd86e4ca14e82566ff9156cd40c56786be024600c31b97d6c03
   languageName: node
   linkType: hard
 
@@ -12057,10 +12064,10 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.8
     "@types/jest": 29.2.0
-    "@types/node": 18.11.5
+    "@types/node": 18.11.7
     "@types/prettier": 2.7.1
-    "@types/react": 18.0.23
-    "@types/react-dom": 18.0.7
+    "@types/react": 18.0.24
+    "@types/react-dom": 18.0.8
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.41.0
     "@typescript-eslint/parser": 5.41.0
@@ -12108,10 +12115,10 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.2.0
     "@types/lodash": 4.14.186
-    "@types/node": 18.11.5
+    "@types/node": 18.11.7
     "@types/parse-link-header": 2.0.0
-    "@types/react": 18.0.23
-    "@types/react-dom": 18.0.7
+    "@types/react": 18.0.24
+    "@types/react-dom": 18.0.8
     "@types/react-router": 5.1.19
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
@@ -16801,14 +16808,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^2.0.0":
-  version: 2.0.2
-  resolution: "loader-utils@npm:2.0.2"
+"loader-utils@npm:^2.0.0, loader-utils@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "loader-utils@npm:2.0.3"
   dependencies:
     big.js: ^5.2.2
     emojis-list: ^3.0.0
     json5: ^2.1.2
-  checksum: 9078d1ed47cadc57f4c6ddbdb2add324ee7da544cea41de3b7f1128e8108fcd41cd3443a85b7ee8d7d8ac439148aa221922774efe4cf87506d4fb054d5889303
+  checksum: d055c61ce5927b64cb4af40218606603a7d3a39adb7b6eec116bb31d19203875950e478152dea056de404eced8e87e9bfd336ec636591ded040ea451f63c7d88
   languageName: node
   linkType: hard
 
@@ -19304,13 +19311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^15.0.0, pacote@npm:^15.0.3":
-  version: 15.0.3
-  resolution: "pacote@npm:15.0.3"
+"pacote@npm:^15.0.0, pacote@npm:^15.0.4":
+  version: 15.0.4
+  resolution: "pacote@npm:15.0.4"
   dependencies:
     "@npmcli/git": ^4.0.0
     "@npmcli/installed-package-contents": ^2.0.1
-    "@npmcli/promise-spawn": ^4.0.0
+    "@npmcli/promise-spawn": ^5.0.0
     "@npmcli/run-script": ^5.0.0
     cacache: ^17.0.0
     fs-minipass: ^2.1.0
@@ -19327,7 +19334,7 @@ __metadata:
     tar: ^6.1.11
   bin:
     pacote: lib/bin.js
-  checksum: 8664a89509532b8a2fa871c14ba5dafba41527d8b492aa908edef5ae60dd52557daabf71da7ba2450f506e0b89056461a70bf551444f93fd0b31a05a3f01ef9e
+  checksum: fe7e73f3cf53ec16ee8c078d7c28c587bb470eaaa53cb19ae67580d6749ff3a53d49a143e2af0872c12197fb47d298c808310de204abe85b4c7e8df46bba4351
   languageName: node
   linkType: hard
 
@@ -22812,8 +22819,8 @@ __metadata:
     "@commitlint/cli": 17.1.2
     "@commitlint/config-conventional": 17.1.0
     "@lerna-lite/cli": 1.12.0
-    "@types/react": 18.0.23
-    "@types/react-dom": 18.0.7
+    "@types/react": 18.0.24
+    "@types/react-dom": 18.0.8
     "@typescript-eslint/eslint-plugin": 5.41.0
     "@typescript-eslint/parser": 5.41.0
     babel-loader: 8.2.5
@@ -24438,13 +24445,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo-loader@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "svgo-loader@npm:3.0.2"
+"svgo-loader@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "svgo-loader@npm:3.0.3"
   dependencies:
-    loader-utils: ^3.2.0
+    loader-utils: ^2.0.3
     svgo: ^2.8.0
-  checksum: 1bd16a8e9f678e1e1d4fd08790eaefd26082a4ad40d6d3a933490061c1681d24c699c94afbf894b8945003747cf4427c3c191b8a604052314854ca9ce190766b
+  checksum: 50f0241dec806da548e7034b19499488e47da40cf278135e18e9650ce159d2c8b38bc753fba87f6af297a002f2d2a0a6f202544be1e4217e92d90819834e7186
   languageName: node
   linkType: hard
 
