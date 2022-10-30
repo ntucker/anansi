@@ -369,7 +369,7 @@ __metadata:
     webpack-bundle-analyzer: ^4.7.0
     webpack-node-externals: ^3.0.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-stats-plugin: ^1.1.0
+    webpack-stats-plugin: ^1.1.1
     worker-loader: ^3.0.8
   peerDependencies:
     "@babel/core": ^6 || ^7 || ^8
@@ -26270,10 +26270,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-stats-plugin@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "webpack-stats-plugin@npm:1.1.0"
-  checksum: f692f3003813122a1745607c1db78fbcdf51dca570984a591f53f8e6e4a856ebb1490c43837ad4728ca2b62aed9bdadecb79e5e04efc5bff41ff075e5d809c54
+"webpack-stats-plugin@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "webpack-stats-plugin@npm:1.1.1"
+  checksum: aa553ccfb9389f2d8a2d04eb6289230bc323edb11b0cbdd676d41617dd790a7f0d0844c46b927a9465139b3edb9da2cc7a2ef664891920c052ef4fa5f2797230
   languageName: node
   linkType: hard
 
