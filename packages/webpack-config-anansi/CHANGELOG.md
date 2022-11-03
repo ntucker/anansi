@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.23](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.22...@anansi/webpack-config@13.0.23) (2022-11-03)
+
+### 📦 Package
+
+* Update `@svgr/webpack` to ^6.5.1 ([#1729](https://github.com/ntucker/anansi/issues/1729)) ([fd0aff2](https://github.com/ntucker/anansi/commit/fd0aff2bdf5ff48c1ec50f60d628fc81f8ed98fe))
+* Update `babel-loader` to v9.0.1 ([#1732](https://github.com/ntucker/anansi/issues/1732)) ([aa3d881](https://github.com/ntucker/anansi/commit/aa3d8814e8066255d2685d1900d0443d16aeb974))
+* Update `webpack-stats-plugin` to ^1.1.1 ([#1731](https://github.com/ntucker/anansi/issues/1731)) ([8854904](https://github.com/ntucker/anansi/commit/88549042a3d081398c0ca7b78041b51f4fe088bd))
+* Update all non-major dependencies ([#1730](https://github.com/ntucker/anansi/issues/1730)) ([518fab0](https://github.com/ntucker/anansi/commit/518fab0ef935e1783e3d6a3a8573afc98c3fcb72))
+
 ### [13.0.22](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.21...@anansi/webpack-config@13.0.22) (2022-10-27)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.24](https://github.com/ntucker/anansi/compare/example-linaria@5.0.23...example-linaria@5.0.24) (2022-11-03)
+
+### 📦 Package
+
+* Update `babel-loader` to v9.0.1 ([#1732](https://github.com/ntucker/anansi/issues/1732)) ([aa3d881](https://github.com/ntucker/anansi/commit/aa3d8814e8066255d2685d1900d0443d16aeb974))
+
 ### [5.0.23](https://github.com/ntucker/anansi/compare/example-linaria@5.0.22...example-linaria@5.0.23) (2022-10-27)
 
 ### 📦 Package
