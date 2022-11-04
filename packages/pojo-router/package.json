@@ -50,7 +50,7 @@
     "@anansi/browserslist-config": "^1.4.1",
     "@anansi/webpack-config": "^13.0.23",
     "@babel/cli": "7.19.3",
-    "@babel/core": "7.19.6",
+    "@babel/core": "7.20.2",
     "jest": "29.2.2",
     "rimraf": "3.0.2",
     "webpack": "5.74.0",
