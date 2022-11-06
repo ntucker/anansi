@@ -6218,10 +6218,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.187, @types/lodash@npm:^4.14.167":
-  version: 4.14.187
-  resolution: "@types/lodash@npm:4.14.187"
-  checksum: 5f8a4fe6d8a6785b8ecbd9efdc8b7d3341b873f63c5390ad0f269a517508e92c1b1d7d43e97bdfb6bba5bba9a8501b30a54f791ef4c30b854382745c75c607d4
+"@types/lodash@npm:4.14.188, @types/lodash@npm:^4.14.167":
+  version: 4.14.188
+  resolution: "@types/lodash@npm:4.14.188"
+  checksum: 89c32f0a18e0da6ae914b430e76b3d0451c4c85b9c838b440c0c9a8d4966c8e2a76dbb30964c7126402856b2997ec56a8c36d8d6461ec14387689ec37594f09f
   languageName: node
   linkType: hard
 
@@ -6458,14 +6458,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.24":
-  version: 18.0.24
-  resolution: "@types/react@npm:18.0.24"
+"@types/react@npm:*, @types/react@npm:18.0.25":
+  version: 18.0.25
+  resolution: "@types/react@npm:18.0.25"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 7d06125bac61e1c6661e5dfbeeeb56d5b6d1d4c743292faebaa6b0f30f8414c7af3cadf674923fd86e4ca14e82566ff9156cd40c56786be024600c31b97d6c03
+  checksum: 231d658c45abdef044a716b4502774f1585d8336d73b2f5bd68f181acbfc874b7a457686ecd29b415b43ed0922c309bab7e2cf96832d188a3f4f1b02f2af760a
   languageName: node
   linkType: hard
 
@@ -7442,9 +7442,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.24.0":
-  version: 4.24.0
-  resolution: "antd@npm:4.24.0"
+"antd@npm:4.24.1":
+  version: 4.24.1
+  resolution: "antd@npm:4.24.1"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -7477,7 +7477,7 @@ __metadata:
     rc-segmented: ~2.1.0
     rc-select: ~14.1.13
     rc-slider: ~10.0.0
-    rc-steps: ~5.0.0-alpha.0
+    rc-steps: ~5.0.0-alpha.2
     rc-switch: ~3.2.0
     rc-table: ~7.26.0
     rc-tabs: ~12.2.0
@@ -7492,7 +7492,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 6f67f469823a5bd3d7d35c3a08d31caa89df29175cf30816c7c8cbafa8475fab77154d5d19acdb3411164007dd9ba64ad1bef018b08fe8640350e1b974090ab8
+  checksum: 3dee7cdb9a37fd0a22bba0eb1272d7f6fd21a5d3198195dc5f2cd0a6fa2ee127c1f170d92bec93fba094f312354d9f4fef1e499ea0ea28a3d865175319920f30
   languageName: node
   linkType: hard
 
@@ -12128,12 +12128,12 @@ __metadata:
     "@types/jest": 29.2.0
     "@types/node": 18.11.9
     "@types/prettier": 2.7.1
-    "@types/react": 18.0.24
+    "@types/react": 18.0.25
     "@types/react-dom": 18.0.8
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.42.0
     "@typescript-eslint/parser": 5.42.0
-    antd: 4.24.0
+    antd: 4.24.1
     classnames: 2.3.2
     core-js: 3.26.0
     eslint: 8.27.0
@@ -12176,15 +12176,15 @@ __metadata:
     "@storybook/react": 6.5.13
     "@types/classnames": 2.3.1
     "@types/jest": 29.2.0
-    "@types/lodash": 4.14.187
+    "@types/lodash": 4.14.188
     "@types/node": 18.11.9
     "@types/parse-link-header": 2.0.0
-    "@types/react": 18.0.24
+    "@types/react": 18.0.25
     "@types/react-dom": 18.0.8
     "@types/react-router": 5.1.19
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
-    antd: 4.24.0
+    antd: 4.24.1
     classnames: 2.3.2
     core-js: 3.26.0
     jest: 29.2.2
@@ -21555,7 +21555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-steps@npm:~5.0.0-alpha.0":
+"rc-steps@npm:~5.0.0-alpha.2":
   version: 5.0.0
   resolution: "rc-steps@npm:5.0.0"
   dependencies:
@@ -22900,7 +22900,7 @@ __metadata:
     "@commitlint/cli": 17.2.0
     "@commitlint/config-conventional": 17.2.0
     "@lerna-lite/cli": 1.12.0
-    "@types/react": 18.0.24
+    "@types/react": 18.0.25
     "@types/react-dom": 18.0.8
     "@typescript-eslint/eslint-plugin": 5.42.0
     "@typescript-eslint/parser": 5.42.0
