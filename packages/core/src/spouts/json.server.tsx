@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import type { ServerSpout } from './types';
 
@@ -18,52 +18,36 @@ export default function JSONSpout({
     const nextProps = await next(props);
 
     const scripts: React.ReactNode[] = nextProps.scripts ?? [];
-    /*
-      Object.entries(nextProps.initData ?? {}).forEach(([key, data]) => {
+
+    Object.entries(nextProps.initData ?? {}).forEach(([key, useData]) => {
+      const globalId = `${id}.${key}`;
+      const Script = () => {
+        const data: any = useData();
         try {
           const encoded = JSON.stringify(data);
-          scripts.push(
+          return (
             <script
-              key={key}
-              id={`${id}-${key}`}
+              id={globalId}
               type="application/json"
               dangerouslySetInnerHTML={{
                 __html: encoded,
               }}
               nonce={props.nonce}
-            />,
+            />
           );
         } catch (e) {
           // TODO: Use unified logging
+          console.error(`Error serializing json for ${key}`);
           console.error(e);
+          return null;
         }
-      });*/
-    const Script = () => {
-      try {
-        const data: any = {};
-        Object.entries(nextProps.initData ?? {}).forEach(([key, getData]) => {
-          data[key] = getData();
-        });
-        const encoded = JSON.stringify(data);
-        return (
-          <script
-            key={id}
-            id={id}
-            type="application/json"
-            dangerouslySetInnerHTML={{
-              __html: encoded,
-            }}
-            nonce={props.nonce}
-          />
-        );
-      } catch (e) {
-        // TODO: Use unified logging
-        console.error('Error serializing json');
-        console.error(e);
-        return null;
-      }
-    };
-    scripts.push(<Script />);
+      };
+      scripts.push(
+        <Suspense key={globalId}>
+          <Script />
+        </Suspense>,
+      );
+    });
 
     return {
       ...nextProps,

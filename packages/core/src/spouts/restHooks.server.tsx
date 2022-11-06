@@ -1,7 +1,7 @@
 import { Controller, Manager, NetworkManager, State } from '@rest-hooks/core';
 import type { Store } from 'redux';
+import { createPersistedStore } from '@rest-hooks/ssr';
 
-import { createPersistedStore } from './rhHelp';
 import type { ServerSpout } from './types';
 
 export default function restHooksSpout(
@@ -11,24 +11,23 @@ export default function restHooksSpout(
 ): ServerSpout<
   Record<string, unknown>,
   { controller: Controller } & { store: Store<State<unknown>> },
-  { initData?: Record<string, () => unknown> }
+  { initData?: Record<string, () => unknown>; scripts?: React.ReactNode[] }
 > {
+  const managers = options.getManagers();
   return next => async props => {
-    const [ServerCacheProvider, controller, store] = createPersistedStore(
-      options.getManagers(),
-    );
+    const [ServerCacheProvider, useReadyCacheState, controller, store] =
+      createPersistedStore(managers);
 
     const nextProps = await next({
       ...props,
       controller,
       store,
     });
-
     return {
       ...nextProps,
       initData: {
         ...nextProps.initData,
-        resthooks: () => store.getState(),
+        resthooks: useReadyCacheState,
       },
       app: <ServerCacheProvider>{nextProps.app}</ServerCacheProvider>,
       // TODO: figure out how to only inject in next and not have to also put here

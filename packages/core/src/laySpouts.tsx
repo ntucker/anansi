@@ -9,7 +9,7 @@ export default function laySpouts(
     app: JSX.Element;
   }>,
   {
-    timeoutMS = 200,
+    timeoutMS = 10000,
     onError,
   }: { timeoutMS?: number; onError?: (error: unknown) => void } = {},
 ) {

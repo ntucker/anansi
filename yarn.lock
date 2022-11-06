@@ -115,7 +115,7 @@ __metadata:
     "@babel/cli": 7.19.3
     "@babel/core": 7.20.2
     "@babel/runtime": ^7.10.5
-    "@rest-hooks/ssr": ^0.2.0
+    "@rest-hooks/ssr": ^0.3.0-beta.2
     "@types/compression": 1.7.2
     "@types/source-map-support": 0.5.6
     "@types/tmp": 0.2.3
@@ -4172,7 +4172,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:3.3.2, @rest-hooks/core@npm:^3.3.2":
+"@rest-hooks/core@npm:3.4.0-beta.6, @rest-hooks/core@npm:^3.4.0-beta.1":
+  version: 3.4.0-beta.6
+  resolution: "@rest-hooks/core@npm:3.4.0-beta.6"
+  dependencies:
+    "@babel/runtime": ^7.13.0
+    "@rest-hooks/normalizr": ^9.1.0
+    "@rest-hooks/use-enhanced-reducer": ^1.2.0-beta.0
+    flux-standard-action: ^2.1.1
+  peerDependencies:
+    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
+    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 9f85433334a6869bd00581a6e57ca630196ccccfb6a160b81ae9a759e7ca219df509083ee774fb163348584f920c6275c3f790961d6c41ffea305b491153703a
+  languageName: node
+  linkType: hard
+
+"@rest-hooks/core@npm:^3.3.2":
   version: 3.3.2
   resolution: "@rest-hooks/core@npm:3.3.2"
   dependencies:
@@ -4264,13 +4282,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/ssr@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@rest-hooks/ssr@npm:0.2.0"
+"@rest-hooks/ssr@npm:^0.3.0-beta.2":
+  version: 0.3.0-beta.2
+  resolution: "@rest-hooks/ssr@npm:0.3.0-beta.2"
   dependencies:
     "@babel/runtime": ^7.13.0
   peerDependencies:
-    "@rest-hooks/core": ^3.0.0
+    "@rest-hooks/core": ^3.4.0-beta.5
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
     redux: ^4.0.0
@@ -4278,7 +4296,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: ba292c7b12dc76b5859032b4e31552d709bf58624c784219ad436bc9e1498e6f0cd4f68cffdc7cb5949d880a4549eb6cfc264c6222dd89e2d9e74bcb4273095b
+  checksum: 49febd866e551599d7cd705acfbc842b6b67d04d1e5b136eda984ab002c10335ffdc2aac7edafeafa8edd467c94734a27140594710c465ff1e1a169e59211bda
   languageName: node
   linkType: hard
 
@@ -4313,6 +4331,19 @@ __metadata:
     "@types/react":
       optional: true
   checksum: d02c204a4b3e46885149bdd7d110245c32ff4e8ba6c682cb3890090048e4df06092adeb030f01f83aa42d0016f25968343255b15328f33ad7a0983eb47074dc4
+  languageName: node
+  linkType: hard
+
+"@rest-hooks/use-enhanced-reducer@npm:^1.2.0-beta.0":
+  version: 1.2.0-beta.0
+  resolution: "@rest-hooks/use-enhanced-reducer@npm:1.2.0-beta.0"
+  peerDependencies:
+    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
+    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 0f9e4ce0c71809ee54cfc15d747d735a90ac799e0e8b536979d9f8d473f4e22d78f5c09c8253c1ea9e170daa09e1a733bc3a727dd5adb5283c33774006945099
   languageName: node
   linkType: hard
 
@@ -12085,7 +12116,7 @@ __metadata:
     "@linaria/core": 4.2.2
     "@linaria/react": 4.3.0
     "@linaria/shaker": 4.2.4
-    "@rest-hooks/core": 3.3.2
+    "@rest-hooks/core": 3.4.0-beta.6
     "@rest-hooks/endpoint": 3.1.0
     "@rest-hooks/hooks": 3.0.8
     "@rest-hooks/img": 0.6.7
@@ -12117,7 +12148,7 @@ __metadata:
     react-dom: 18.2.0
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
-    rest-hooks: 6.4.2
+    rest-hooks: 6.5.0-beta.1
     typescript: 4.8.4
     webpack: 5.74.0
     webpack-cli: 4.10.0
@@ -22717,6 +22748,23 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 35e3983f3769684f15de9592aa7c5d958489728d8978de37a17020d0df6cb34952b36de27519acd90aa57d615dfb55d062bca3935163915f17f1d31b47f43480
+  languageName: node
+  linkType: hard
+
+"rest-hooks@npm:6.5.0-beta.1":
+  version: 6.5.0-beta.1
+  resolution: "rest-hooks@npm:6.5.0-beta.1"
+  dependencies:
+    "@babel/runtime": ^7.13.0
+    "@rest-hooks/core": ^3.4.0-beta.1
+    "@rest-hooks/endpoint": ^3.1.0
+  peerDependencies:
+    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
+    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 5bc4a033ae9dee326032583ee88a1ce8757b70966f9dd0d7347962392cda36688409c90a33dfdc4ff447860f6bf5cbe015c7a667a04f8cae49af76002bbb41b6
   languageName: node
   linkType: hard
 

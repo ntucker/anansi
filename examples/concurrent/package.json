@@ -55,7 +55,7 @@
     "@linaria/core": "4.2.2",
     "@linaria/react": "4.3.0",
     "@linaria/shaker": "4.2.4",
-    "@rest-hooks/core": "3.3.2",
+    "@rest-hooks/core": "3.4.0-beta.6",
     "@rest-hooks/endpoint": "3.1.0",
     "@rest-hooks/hooks": "3.0.8",
     "@rest-hooks/img": "0.6.7",
@@ -67,7 +67,7 @@
     "history": "5.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rest-hooks": "6.4.2"
+    "rest-hooks": "6.5.0-beta.1"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"

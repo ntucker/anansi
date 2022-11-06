@@ -4,19 +4,33 @@ export default function JSONSpout({
   id = 'anansi-json',
 }: { id?: string } = {}): ClientSpout<
   Record<string, unknown>,
-  { initData: Record<string, unknown> }
+  { getInitialData: (key: string) => Promise<any> }
 > {
   return next => async props => {
-    const initData = getDatafromDOM(id);
-    return { ...(await next({ ...props, initData })), initData };
+    const getInitialData = (key: string) => {
+      const globalId = `${id}.${key}`;
+      return new Promise<any>((resolve, reject) => {
+        let el: HTMLScriptElement | null;
+        if ((el = document.getElementById(globalId) as any)) {
+          resolve(getDataFromEl(el, globalId));
+          return;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+          el = document.getElementById(globalId) as any;
+          if (el) resolve(getDataFromEl(el, globalId));
+          else reject(new Error(`failed to find DOM with ${key} state`));
+        });
+      });
+    };
+    return { ...(await next({ ...props, getInitialData })), getInitialData };
   };
 }
-function getDatafromDOM(id: string): Record<string, unknown> {
-  const element: HTMLScriptElement | null = document.querySelector(`#${id}`);
-  if (element && element.text === undefined) {
+
+function getDataFromEl(el: HTMLScriptElement, key: string) {
+  if (el.text === undefined) {
     console.error(
-      `#${id} is completely empty. This could be due to CSP issues.`,
+      `#${key} is completely empty. This could be due to CSP issues.`,
     );
   }
-  return element?.text ? JSON.parse(element?.text) : undefined;
+  return el?.text ? JSON.parse(el?.text) : undefined;
 }
