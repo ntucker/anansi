@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.0.29](https://github.com/ntucker/anansi/compare/example-react-18@4.0.28...example-react-18@4.0.29) (2022-11-06)
+
+### 💅 Enhancement
+
+* Better streaming SSR support ([9bc8c77](https://github.com/ntucker/anansi/commit/9bc8c77747b7e111038b75316b4d3216afb1289f))
+
+### 📦 Package
+
+* Update `@types/jest` to v29.2.2 ([#1741](https://github.com/ntucker/anansi/issues/1741)) ([f803f04](https://github.com/ntucker/anansi/commit/f803f04ac0332812f306608b72b7db6ed91d3059))
+* Update all non-major dependencies ([#1742](https://github.com/ntucker/anansi/issues/1742)) ([e643e9c](https://github.com/ntucker/anansi/commit/e643e9cd71cea90f67cab07d048b37e11e71d707))
+* Update babel packages ([#1736](https://github.com/ntucker/anansi/issues/1736)) ([2ec01f5](https://github.com/ntucker/anansi/commit/2ec01f585dc90f5d366e7d1626a3f8b1cf7b752c))
+* Update linting packages ([#1739](https://github.com/ntucker/anansi/issues/1739)) ([1797119](https://github.com/ntucker/anansi/commit/1797119f140679481edee33742531557af0197c2))
+
 ### [4.0.28](https://github.com/ntucker/anansi/compare/example-react-18@4.0.27...example-react-18@4.0.28) (2022-11-03)
 
 ### 📦 Package
