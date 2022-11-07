@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.14.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.3...@anansi/eslint-plugin@0.14.4) (2022-11-07)
+
+### 💅 Enhancement
+
+* Do not ban {} type ([5b669e1](https://github.com/ntucker/anansi/commit/5b669e18d5b7ba95b7c34b6269217c91a48eba62))
+
 ### [0.14.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.2...@anansi/eslint-plugin@0.14.3) (2022-10-10)
 
 ### 💅 Enhancement
