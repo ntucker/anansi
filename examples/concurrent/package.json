@@ -24,7 +24,7 @@
     "@anansi/webpack-config": "^13.0.24",
     "@babel/core": "7.20.2",
     "@rest-hooks/test": "7.4.2",
-    "@types/babel__core": "7.1.19",
+    "@types/babel__core": "7.1.20",
     "@types/classnames": "2.3.1",
     "@types/eslint": "8.4.10",
     "@types/jest": "29.2.2",
