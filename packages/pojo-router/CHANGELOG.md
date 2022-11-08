@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.44](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.43...@pojo-router/core@0.5.44) (2022-11-08)
+
+### 📦 Package
+
+* Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
+
 ### [0.5.43](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.42...@pojo-router/core@0.5.43) (2022-11-06)
 
 ### 📦 Package

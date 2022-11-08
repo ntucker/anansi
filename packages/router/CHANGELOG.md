@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.36](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.35...@anansi/router@0.6.36) (2022-11-08)
+
+### 📦 Package
+
+* Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
+
 ### [0.6.35](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.34...@anansi/router@0.6.35) (2022-11-06)
 
 ### 📦 Package

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.0.54](https://github.com/ntucker/anansi/compare/example-typescript@10.0.53...example-typescript@10.0.54) (2022-11-08)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1744](https://github.com/ntucker/anansi/issues/1744)) ([47dd9a2](https://github.com/ntucker/anansi/commit/47dd9a22ba38810162bf11dac5daea74d011f68e))
+* Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
+
 ### [10.0.53](https://github.com/ntucker/anansi/compare/example-typescript@10.0.52...example-typescript@10.0.53) (2022-11-07)
 
 ### 📦 Package
