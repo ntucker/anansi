@@ -22,7 +22,7 @@
     "babel-loader": "9.1.0",
     "react-refresh": "0.14.0",
     "serve": "14.1.0",
-    "webpack": "5.74.0"
+    "webpack": "5.75.0"
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.19.6",
