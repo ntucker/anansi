@@ -56,10 +56,10 @@
     "@linaria/react": "4.3.0",
     "@linaria/shaker": "4.2.4",
     "@rest-hooks/core": "3.4.0",
-    "@rest-hooks/endpoint": "3.2.0",
+    "@rest-hooks/endpoint": "3.2.1",
     "@rest-hooks/hooks": "3.0.9",
     "@rest-hooks/img": "0.6.8",
-    "@rest-hooks/rest": "6.1.0",
+    "@rest-hooks/rest": "6.1.1",
     "@types/node": "18.11.9",
     "antd": "4.24.1",
     "classnames": "2.3.2",
@@ -67,7 +67,7 @@
     "history": "5.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rest-hooks": "6.5.0"
+    "rest-hooks": "6.5.1"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
