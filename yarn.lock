@@ -2647,7 +2647,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@istanbuljs/schema@npm:^0.1.2, @istanbuljs/schema@npm:^0.1.3":
+"@istanbuljs/schema@npm:^0.1.2":
   version: 0.1.3
   resolution: "@istanbuljs/schema@npm:0.1.3"
   checksum: 5282759d961d61350f33d9118d16bcaed914ebf8061a52f4fa474b2cb08720c9c81d165e13b82f2e5a8a212cc5af482f0c6fc1ac27b9e067e5394c9a6ed186c9
@@ -4190,22 +4190,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.2.0, @rest-hooks/endpoint@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@rest-hooks/endpoint@npm:3.2.0"
+"@rest-hooks/endpoint@npm:3.2.1, @rest-hooks/endpoint@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@rest-hooks/endpoint@npm:3.2.1"
   dependencies:
     "@babel/runtime": ^7.13.0
-  checksum: fa0ef772f256dca9867be3d80035a8700afdfc2ff58bb801c9bd9f2b4d05bda65620a9d4a0c0a7aa1bfad80a543743adf1e18740220515f453bb3e6e3bc6a6e5
+  checksum: 5e2903bc5b7b9d0226d652ef57900409b41815a4b6850ce3388af2b16d85cd0bbae04a8ca28ed4011282630237bab41e235be0cfd11eb308d0458347d23fb87e
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.3.3":
-  version: 0.3.3
-  resolution: "@rest-hooks/graphql@npm:0.3.3"
+"@rest-hooks/graphql@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@rest-hooks/graphql@npm:0.3.4"
   dependencies:
     "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.2.0
-  checksum: 5fe5ea0459fe7725e425d973666314c45a7a7f5481e321d5dffb2fc58e4fa3c8e447a3dde11615c7cee584f8d04860cb45142b453959d9ff6e0d5aeae4454127
+    "@rest-hooks/endpoint": ^3.2.1
+  checksum: 07b739177dc5772107284d1406c0600de397d141733f631268f481154c6891f36d273faddaacc858af7a07982f4a39db230cde7b6be40e9c603f593a89425b14
   languageName: node
   linkType: hard
 
@@ -4252,15 +4252,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@rest-hooks/rest@npm:6.1.0"
+"@rest-hooks/rest@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@rest-hooks/rest@npm:6.1.1"
   dependencies:
     "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.2.0
+    "@rest-hooks/endpoint": ^3.2.1
     copyfiles: ^2.4.1
     path-to-regexp: ^6.2.1
-  checksum: 92ad210fbeb03ee8b15b83136d537202800e0c21d45f63837c78512fb7c008f5651f8395ac45a4c0862ebe876c1bf919a19369e0961251ad65a66b406a84e01a
+  checksum: 254cd7824a87de64b2379671cb2dcc9074b4b7cc4a394c00e194f0c1b095cec41fda52947a18e52737025ead3fac9ac3dacbaadd778504cb60a54a62bee55cd6
   languageName: node
   linkType: hard
 
@@ -8699,28 +8699,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"c8@npm:7.11.3":
-  version: 7.11.3
-  resolution: "c8@npm:7.11.3"
-  dependencies:
-    "@bcoe/v8-coverage": ^0.2.3
-    "@istanbuljs/schema": ^0.1.3
-    find-up: ^5.0.0
-    foreground-child: ^2.0.0
-    istanbul-lib-coverage: ^3.2.0
-    istanbul-lib-report: ^3.0.0
-    istanbul-reports: ^3.1.4
-    rimraf: ^3.0.2
-    test-exclude: ^6.0.0
-    v8-to-istanbul: ^9.0.0
-    yargs: ^16.2.0
-    yargs-parser: ^20.2.9
-  bin:
-    c8: bin/c8.js
-  checksum: 9f7272bb5fd3d4f7d1c2f7fb986c1025a09c3afefce168c3ba62497dd6294f887c1678d23736126485ec534263ec6b4ed9b4bd2a05aa8d1682c949c3db1f5359
-  languageName: node
-  linkType: hard
-
 "cacache@npm:^15.0.3, cacache@npm:^15.0.5, cacache@npm:^15.2.0":
   version: 15.2.0
   resolution: "cacache@npm:15.2.0"
@@ -10230,7 +10208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -11989,7 +11967,7 @@ __metadata:
     core-js: 3.26.0
     react-refresh: 0.14.0
     redbox-react: 1.6.0
-    serve: 14.1.0
+    serve: 14.1.1
     webpack: 5.75.0
   languageName: unknown
   linkType: soft
@@ -12012,10 +11990,10 @@ __metadata:
     "@linaria/react": 4.3.0
     "@linaria/shaker": 4.2.4
     "@rest-hooks/core": 3.4.0
-    "@rest-hooks/endpoint": 3.2.0
+    "@rest-hooks/endpoint": 3.2.1
     "@rest-hooks/hooks": 3.0.9
     "@rest-hooks/img": 0.6.8
-    "@rest-hooks/rest": 6.1.0
+    "@rest-hooks/rest": 6.1.1
     "@rest-hooks/test": 7.4.2
     "@types/babel__core": 7.1.20
     "@types/classnames": 2.3.1
@@ -12043,7 +12021,7 @@ __metadata:
     react-dom: 18.2.0
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
-    rest-hooks: 6.5.0
+    rest-hooks: 6.5.1
     typescript: 4.8.4
     webpack: 5.75.0
     webpack-cli: 4.10.0
@@ -12060,8 +12038,8 @@ __metadata:
     "@anansi/jest-preset": ^0.7.38
     "@anansi/webpack-config": ^13.0.24
     "@babel/runtime": ^7.17.2
-    "@rest-hooks/graphql": 0.3.3
-    "@rest-hooks/rest": 6.1.0
+    "@rest-hooks/graphql": 0.3.4
+    "@rest-hooks/rest": 6.1.1
     "@rest-hooks/test": 7.4.2
     "@storybook/addon-essentials": 6.5.13
     "@storybook/addon-links": 6.5.13
@@ -12093,8 +12071,8 @@ __metadata:
     react-router-scroll-4: 1.0.0-beta.2
     react-test-renderer: 18.2.0
     redbox-react: 1.6.0
-    rest-hooks: 6.5.0
-    serve: 14.1.0
+    rest-hooks: 6.5.1
+    serve: 14.1.1
     webpack: 5.75.0
   languageName: unknown
   linkType: soft
@@ -12708,16 +12686,6 @@ __metadata:
   version: 3.0.0
   resolution: "foreachasync@npm:3.0.0"
   checksum: 4791f64b539b06c751b14adb2881173c780d41ce37d881715a5e5787fa4a08961f2c6a6cf3bccdfa48e56fb91d8676d867fdc63c008cdb576bd33261716e8381
-  languageName: node
-  linkType: hard
-
-"foreground-child@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "foreground-child@npm:2.0.0"
-  dependencies:
-    cross-spawn: ^7.0.0
-    signal-exit: ^3.0.2
-  checksum: f77ec9aff621abd6b754cb59e690743e7639328301fbea6ff09df27d2befaf7dd5b77cec51c32323d73a81a7d91caaf9413990d305cbe3d873eec4fe58960956
   languageName: node
   linkType: hard
 
@@ -15457,7 +15425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"istanbul-reports@npm:^3.1.3, istanbul-reports@npm:^3.1.4":
+"istanbul-reports@npm:^3.1.3":
   version: 3.1.5
   resolution: "istanbul-reports@npm:3.1.5"
   dependencies:
@@ -22401,20 +22369,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rest-hooks@npm:6.5.0":
-  version: 6.5.0
-  resolution: "rest-hooks@npm:6.5.0"
+"rest-hooks@npm:6.5.1":
+  version: 6.5.1
+  resolution: "rest-hooks@npm:6.5.1"
   dependencies:
     "@babel/runtime": ^7.13.0
     "@rest-hooks/core": ^3.4.0
-    "@rest-hooks/endpoint": ^3.2.0
+    "@rest-hooks/endpoint": ^3.2.1
   peerDependencies:
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: aca188f13bbec17bb9ec94b94e7a7af06783705007edf61e4da9caded7d259ab767f228ab340add0d662dd3ab8ee1cbe214a4f36104c208211ef76ce344dd77a
+  checksum: 58ae0a69474aed720a4bcb0b8cdb4fb38225adae5d3e589ec3daf2c52e63ab6b06d2313a9c86029252cec8f086e8190fa999e8928cfbafcfc60c23b85b13af70
   languageName: node
   linkType: hard
 
@@ -23013,15 +22981,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serve@npm:14.1.0":
-  version: 14.1.0
-  resolution: "serve@npm:14.1.0"
+"serve@npm:14.1.1":
+  version: 14.1.1
+  resolution: "serve@npm:14.1.1"
   dependencies:
     "@zeit/schemas": 2.21.0
     ajv: 8.11.0
     arg: 5.0.2
     boxen: 7.0.0
-    c8: 7.11.3
     chalk: 5.0.1
     chalk-template: 0.4.0
     clipboardy: 3.0.0
@@ -23031,7 +22998,7 @@ __metadata:
     update-check: 1.5.4
   bin:
     serve: build/main.js
-  checksum: da31862538bcb2d641f31840499ca7cf3fb8c011cc9c8868d902b276b818b963e7bc911ec3bc86f2d5bde31a05283f5b0cbee3b0cc28e0c0ea5710c4ce35ac9d
+  checksum: 7db310dfbe05699b51b1ff5932598c666cecceceb7a5dfaf0b04bb90a7f5fdca4c4dd5eaa1224e0df35fdd6a59c5ca98a730aca99bb7765e003a8236e6e81743
   languageName: node
   linkType: hard
 
@@ -25456,7 +25423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"v8-to-istanbul@npm:^9.0.0, v8-to-istanbul@npm:^9.0.1":
+"v8-to-istanbul@npm:^9.0.1":
   version: 9.0.1
   resolution: "v8-to-istanbul@npm:9.0.1"
   dependencies:
@@ -26441,7 +26408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3, yargs-parser@npm:^20.2.9":
+"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
   version: 20.2.9
   resolution: "yargs-parser@npm:20.2.9"
   checksum: 8bb69015f2b0ff9e17b2c8e6bfe224ab463dd00ca211eece72a4cd8a906224d2703fb8a326d36fdd0e68701e201b2a60ed7cf81ce0fd9b3799f9fe7745977ae3
@@ -26473,7 +26440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^16.1.0, yargs@npm:^16.2.0":
+"yargs@npm:^16.1.0":
   version: 16.2.0
   resolution: "yargs@npm:16.2.0"
   dependencies:
