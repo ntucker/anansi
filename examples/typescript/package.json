@@ -41,7 +41,7 @@
     "react-refresh": "0.14.0",
     "react-test-renderer": "18.2.0",
     "serve": "14.1.0",
-    "webpack": "5.74.0"
+    "webpack": "5.75.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",

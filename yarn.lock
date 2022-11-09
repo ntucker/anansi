@@ -134,7 +134,7 @@ __metadata:
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
-    webpack: 5.74.0
+    webpack: 5.75.0
     webpack-cli: 4.10.0
     webpack-dev-server: ^4.9.0
     whatwg-fetch: ^3.6.2
@@ -272,7 +272,7 @@ __metadata:
     jest: 29.3.0
     nano-memoize: ^1.3.0
     rimraf: 3.0.2
-    webpack: 5.74.0
+    webpack: 5.75.0
     webpack-cli: 4.10.0
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -348,7 +348,7 @@ __metadata:
     react-error-overlay: 6.0.9
     readable-stream: ^4.2.0
     rimraf: 3.0.2
-    sass: ^1.56.0
+    sass: ^1.56.1
     sass-loader: ^13.1.0
     sass-resources-loader: ^2.2.5
     semver: ^7.3.8
@@ -4118,7 +4118,7 @@ __metadata:
     jest: 29.3.0
     path-to-regexp: 6.2.1
     rimraf: 3.0.2
-    webpack: 5.74.0
+    webpack: 5.75.0
     webpack-cli: 4.10.0
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0-0
@@ -11990,7 +11990,7 @@ __metadata:
     react-refresh: 0.14.0
     redbox-react: 1.6.0
     serve: 14.1.0
-    webpack: 5.74.0
+    webpack: 5.75.0
   languageName: unknown
   linkType: soft
 
@@ -12045,7 +12045,7 @@ __metadata:
     react-test-renderer: 18.2.0
     rest-hooks: 6.5.0
     typescript: 4.8.4
-    webpack: 5.74.0
+    webpack: 5.75.0
     webpack-cli: 4.10.0
     webpack-dev-server: 4.11.1
   languageName: unknown
@@ -12095,7 +12095,7 @@ __metadata:
     redbox-react: 1.6.0
     rest-hooks: 6.5.0
     serve: 14.1.0
-    webpack: 5.74.0
+    webpack: 5.75.0
   languageName: unknown
   linkType: soft
 
@@ -22560,7 +22560,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.8.4
-    webpack: 5.74.0
+    webpack: 5.75.0
     webpack-cli: 4.10.0
     webpack-dev-server: 4.11.1
   languageName: unknown
@@ -22712,16 +22712,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.56.0":
-  version: 1.56.0
-  resolution: "sass@npm:1.56.0"
+"sass@npm:^1.56.1":
+  version: 1.56.1
+  resolution: "sass@npm:1.56.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 37fb48b838f7a12f3c3efbf27bfc5f2b7fba015ed4b11effe32bd9488e30e1d5cefcbfef1e5c5dbd95557889fe2c7ec72f33e898cfc76182ea34eae03b1a4fb1
+  checksum: 78e693e5992b149574c95d5adfe39ca3e5b97d80befa11191a20d1daa41fe201a98ac099beab726cd3095e2d2e7991a2c408ba0fcc3fa9f525879de7eee18dad
   languageName: node
   linkType: hard
 
@@ -25921,9 +25921,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.74.0":
-  version: 5.74.0
-  resolution: "webpack@npm:5.74.0"
+"webpack@npm:5.75.0":
+  version: 5.75.0
+  resolution: "webpack@npm:5.75.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -25954,7 +25954,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 320c41369a75051b19e18c63f408b3dcc481852e992f83d311771c5ec0f05f2946385e8ebef62030cf3587f0a3d2f12779ffdb191569a966847289ba7313f946
+  checksum: 2bcc5f3c195f375944e8af2f00bf2feea39cb9fda5f763b0d1b00077f1c51783db25c94d3fae96a07dead9fa085e6ae7474417e5ab31719c9776ea5969ceb83a
   languageName: node
   linkType: hard
 
