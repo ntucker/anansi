@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.25](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.24...@anansi/webpack-config@13.0.25) (2022-11-10)
+
+### 📦 Package
+
+* Update `@pmmmwh/react-refresh-webpack-plugin` to ^0.5.9 ([#1752](https://github.com/ntucker/anansi/issues/1752)) ([e9ea77b](https://github.com/ntucker/anansi/commit/e9ea77b6c23ba16921194ca30274de67560a68a5))
+* Update `sass-loader` to ^13.2.0 ([#1751](https://github.com/ntucker/anansi/issues/1751)) ([6a3aabc](https://github.com/ntucker/anansi/commit/6a3aabcd67a1d3e2270df0858de7e552b0e8b0ff))
+* Update webpack packages ([#1747](https://github.com/ntucker/anansi/issues/1747)) ([666c74a](https://github.com/ntucker/anansi/commit/666c74a6b19920293e182526a42b7343dbf25c05))
+
 ### [13.0.24](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.23...@anansi/webpack-config@13.0.24) (2022-11-06)
 
 ### 📦 Package
