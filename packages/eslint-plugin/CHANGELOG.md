@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.4...@anansi/eslint-plugin@0.15.0) (2022-11-10)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* imports are sorted
+
+### 🚀 Features
+
+* Sort imports (after grouping) ([4eda1a9](https://github.com/ntucker/anansi/commit/4eda1a9d140513a3b08b438be0e80984ad9a0fca))
+
 ### [0.14.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.14.3...@anansi/eslint-plugin@0.14.4) (2022-11-07)
 
 ### 💅 Enhancement
