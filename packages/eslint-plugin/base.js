@@ -26,6 +26,10 @@ const config = {
           ['parent', 'sibling', 'index'],
         ],
         'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
       },
     ],
   },
