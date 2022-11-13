@@ -82,7 +82,7 @@
   "dependencies": {
     "@anansi/router": "workspace:^",
     "@babel/runtime": "^7.10.5",
-    "@rest-hooks/ssr": "^0.3.0-beta.2",
+    "@rest-hooks/ssr": "^0.4.0",
     "chalk": "^4.0.0",
     "compression": "^1.7.4",
     "cross-fetch": "^3.1.5",
@@ -99,7 +99,6 @@
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
-    "@rest-hooks/core": "^3.0.0",
     "@types/react": "^17.0.40 || ^18.0.0-0",
     "@types/react-dom": "^17.0.40 || ^18.0.0-0",
     "react": "^18.0.0-0",
@@ -108,9 +107,6 @@
     "webpack": "^5.60.0"
   },
   "peerDependenciesMeta": {
-    "@rest-hooks/core": {
-      "optional": true
-    },
     "@types/react": {
       "optional": true
     },

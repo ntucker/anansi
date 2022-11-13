@@ -1,6 +1,6 @@
-import { Controller } from '@rest-hooks/core';
 import { lazy, Route } from '@anansi/router';
 import { getImage } from '@rest-hooks/img';
+import { Controller } from 'rest-hooks';
 
 import {
   CommentResource,
