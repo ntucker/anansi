@@ -139,7 +139,6 @@ __metadata:
     webpack-dev-server: ^4.9.0
     whatwg-fetch: ^3.6.2
   peerDependencies:
-    "@rest-hooks/core": ^3.0.0
     "@types/react": ^17.0.40 || ^18.0.0-0
     "@types/react-dom": ^17.0.40 || ^18.0.0-0
     react: ^18.0.0-0
@@ -147,8 +146,6 @@ __metadata:
     rest-hooks: ^6.0.0
     webpack: ^5.60.0
   peerDependenciesMeta:
-    "@rest-hooks/core":
-      optional: true
     "@types/react":
       optional: true
     "@types/react-dom":
@@ -4172,24 +4169,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@rest-hooks/core@npm:3.4.0"
-  dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/normalizr": ^9.2.0
-    "@rest-hooks/use-enhanced-reducer": ^1.2.0
-    flux-standard-action: ^2.1.1
-  peerDependencies:
-    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
-    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: d6faa079f5a892e84ec9c5cd83507e8363c8fe1f97e29e450b0576ea93249b034d888a4fb1aa383393d3a003bd15aa9a79c0f7f08e22e52b0de2f5cb29cddd69
-  languageName: node
-  linkType: hard
-
 "@rest-hooks/core@npm:^4.0.0":
   version: 4.0.0
   resolution: "@rest-hooks/core@npm:4.0.0"
@@ -4253,7 +4232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^9.2.0, @rest-hooks/normalizr@npm:^9.3.0":
+"@rest-hooks/normalizr@npm:^9.3.0":
   version: 9.3.0
   resolution: "@rest-hooks/normalizr@npm:9.3.0"
   dependencies:
@@ -4327,24 +4306,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:7.4.2":
-  version: 7.4.2
-  resolution: "@rest-hooks/test@npm:7.4.2"
+"@rest-hooks/test@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@rest-hooks/test@npm:8.0.0"
   dependencies:
     "@babel/runtime": ^7.13.0
     "@testing-library/react-hooks": ~8.0.0
   peerDependencies:
-    "@rest-hooks/core": ^1.0.0-0 || ^2.0.0-0 || ^3.0.0-0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
-    redux: ^4.0.0
-    rest-hooks: ^5.0.11 || ^6.0.0-0
+    rest-hooks: ^6.6.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-    redux:
-      optional: true
-  checksum: d1e4a84ebb944365c4d4ea593a9cc3560a7e45574c5dceaf7ef6a3deff0bc2ad641b9650e70dd9bbedb157131f7f664f578da24be083dc266d7a446f2eaeb6f7
+  checksum: 10121022f99b858e10b1ca558ea78c7bf33fdd49be4c7379d23c5f4dffb673dce6385c5e4c38c40b60e2143a0f41c26437cb85ae97901310de1e98adf0871cb9
   languageName: node
   linkType: hard
 
@@ -12034,12 +12009,11 @@ __metadata:
     "@linaria/core": 4.2.2
     "@linaria/react": 4.3.0
     "@linaria/shaker": 4.2.4
-    "@rest-hooks/core": 3.4.0
     "@rest-hooks/endpoint": 3.2.1
     "@rest-hooks/hooks": 3.1.0
     "@rest-hooks/img": 0.7.0
     "@rest-hooks/rest": 6.1.1
-    "@rest-hooks/test": 7.4.2
+    "@rest-hooks/test": 8.0.0
     "@types/babel__core": 7.1.20
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.10
@@ -12085,7 +12059,7 @@ __metadata:
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": 0.3.4
     "@rest-hooks/rest": 6.1.1
-    "@rest-hooks/test": 7.4.2
+    "@rest-hooks/test": 8.0.0
     "@storybook/addon-essentials": 6.5.13
     "@storybook/addon-links": 6.5.13
     "@storybook/addons": 6.5.13
