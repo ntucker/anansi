@@ -59,7 +59,6 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
         '@anansi/router',
         'rest-hooks',
         '@rest-hooks/rest',
-        '@rest-hooks/core',
         'react',
         'react-dom',
         '@rest-hooks/img',
