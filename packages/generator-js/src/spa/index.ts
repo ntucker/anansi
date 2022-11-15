@@ -58,6 +58,7 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       await this.addDependencies([
         '@anansi/router',
         'rest-hooks',
+        '@rest-hooks/react',
         '@rest-hooks/rest',
         'react',
         'react-dom',
