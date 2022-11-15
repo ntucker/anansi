@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.26](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.25...@anansi/webpack-config@13.0.26) (2022-11-15)
+
+### 📦 Package
+
+* Allow node-sass v8 ([b17c552](https://github.com/ntucker/anansi/commit/b17c5525e2161bcc7ff96bff4381aa4813d9cba5))
+* Update `css-loader` to ^6.7.2 ([#1754](https://github.com/ntucker/anansi/issues/1754)) ([3c4a58e](https://github.com/ntucker/anansi/commit/3c4a58ed0eef8e4ae256c1ced60144641d249ebe))
+* Update all non-major dependencies ([#1753](https://github.com/ntucker/anansi/issues/1753)) ([82e33a4](https://github.com/ntucker/anansi/commit/82e33a49c0bb63397f6e4ece0fca0b9207f560a6))
+* Update all non-major dependencies ([#1758](https://github.com/ntucker/anansi/issues/1758)) ([351d6ac](https://github.com/ntucker/anansi/commit/351d6ac869585cd39b016b94a6c9d39c506f3e66))
+
 ### [13.0.25](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.24...@anansi/webpack-config@13.0.25) (2022-11-10)
 
 ### 📦 Package
