@@ -1,10 +1,9 @@
-import { useSuspense } from '@rest-hooks/react';
 import { Img } from '@rest-hooks/img';
+import { AsyncBoundary, useSuspense } from '@rest-hooks/react';
 import { Card, Avatar } from 'antd';
 
-import { UserResource } from 'resources/Discuss';
-import Boundary from 'components/Boundary';
 import PostList from 'pages/Posts';
+import { UserResource } from 'resources/Discuss';
 
 export type Props = { id: string };
 const { Meta } = Card;
@@ -25,9 +24,9 @@ export default function UserDetail({ id }: Props) {
           }
         />
       </Card>
-      <Boundary fallback={<CardLoading />}>
+      <AsyncBoundary fallback={<CardLoading />}>
         <PostList userId={user.pk()} />
-      </Boundary>
+      </AsyncBoundary>
     </>
   );
 }

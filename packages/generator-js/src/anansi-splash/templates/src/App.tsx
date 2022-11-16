@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { MatchedRoute } from '@anansi/router';
+import { AsyncBoundary } from '@rest-hooks/react';
 
 <% if (style === 'linaria') { %>
 import { css } from '@linaria/core';
@@ -8,7 +9,6 @@ import 'style/main.css';
 import 'style/main.scss';
 <% } %>
 
-import Boundary from 'components/Boundary';
 
 <% if (style === 'linaria') { %>
 const margin = '8px';
@@ -43,9 +43,9 @@ function App() {
     <div className={home}>
       <nav>Anansi</nav>
       <main>
-        <Boundary fallback={null}>
+        <AsyncBoundary>
           <MatchedRoute index={0} />
-        </Boundary>
+        </AsyncBoundary>
       </main>
     </div>
   );

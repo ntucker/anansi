@@ -1,16 +1,15 @@
-import { useSuspense, useController } from '@rest-hooks/react';
-import { EditOutlined, SaveOutlined, LoadingOutlined } from '@ant-design/icons';
-import { Button, Input, Breadcrumb, Form } from 'antd';
-import { Img } from '@rest-hooks/img';
-import { useLoading } from '@rest-hooks/hooks';
-import { Card, Avatar } from 'antd';
 import { Link } from '@anansi/router';
-import { styled } from '@linaria/react';
-import { lazy, useCallback, useState } from 'react';
+import { EditOutlined, SaveOutlined, LoadingOutlined } from '@ant-design/icons';
 import { css } from '@linaria/core';
+import { styled } from '@linaria/react';
+import { useLoading } from '@rest-hooks/hooks';
+import { Img } from '@rest-hooks/img';
+import { useSuspense, useController, AsyncBoundary } from '@rest-hooks/react';
+import { Button, Input, Breadcrumb, Form } from 'antd';
+import { Card, Avatar } from 'antd';
+import { lazy, useCallback, useState } from 'react';
 
 import { PostResource, UserResource, Post, User } from 'resources/Discuss';
-import Boundary from 'components/Boundary';
 
 export type Props = { id: string };
 const { Meta } = Card;
@@ -49,9 +48,9 @@ export default function PostDetail({ id }: Props) {
         <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
       </Breading>
       <PostMain post={post} author={author} />
-      <Boundary fallback={<CardLoading />}>
+      <AsyncBoundary fallback={<CardLoading />}>
         <CommentList postId={id} />
-      </Boundary>
+      </AsyncBoundary>
     </>
   );
 }

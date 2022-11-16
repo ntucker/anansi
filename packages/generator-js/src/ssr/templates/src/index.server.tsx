@@ -1,4 +1,4 @@
-import { useController } from '@rest-hooks/react';
+import { useController, AsyncBoundary } from '@rest-hooks/react';
 import {
   laySpouts,
   documentSpout,
@@ -8,15 +8,14 @@ import {
   JSONSpout,
   appSpout,
 } from '@anansi/core/server';
-import Boundary from 'components/Boundary';
 
 import App from './App';
 import { createRouter } from './routing';
 
 const app = (
-  <Boundary fallback={null}>
+  <AsyncBoundary>
     <App />
-  </Boundary>
+  </AsyncBoundary>
 );
 
 const csPolicy = {

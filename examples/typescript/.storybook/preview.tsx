@@ -1,7 +1,5 @@
-import { Suspense } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { CacheProvider, NetworkManager } from '@rest-hooks/react';
-import { NetworkErrorBoundary } from '@rest-hooks/react';
+import { AsyncBoundary, CacheProvider, NetworkManager } from '@rest-hooks/react';
 import 'style/main.scss';
 
 
@@ -10,11 +8,9 @@ export const decorators = [
   (Story) => (
   <CacheProvider managers={managers}>
     <MemoryRouter initialEntries={['/']}>
-      <Suspense fallback={'loading'}>
-        <NetworkErrorBoundary>
-          <Story/>
-        </NetworkErrorBoundary>
-      </Suspense>
+      <AsyncBoundary fallback={'loading'}>
+        <Story/>
+      </AsyncBoundary>
     </MemoryRouter>
   </CacheProvider>
   )

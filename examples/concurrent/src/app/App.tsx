@@ -4,8 +4,9 @@ import { MatchedRoute } from '@anansi/router';
 import { styled } from '@linaria/react';
 import 'antd/dist/antd.css';
 
+import { AsyncBoundary } from '@rest-hooks/react';
+
 import Nav from 'navigation';
-import Boundary from 'components/Boundary';
 
 const Content = styled(Layout.Content)`
   margin: 0;
@@ -21,7 +22,7 @@ const App = () => (
   <Wrapper className="ant-layout-has-sider">
     <Nav />
     <Content>
-      <Boundary
+      <AsyncBoundary
         fallback={
           <div className="center">
             <Spin size="large" />
@@ -29,7 +30,7 @@ const App = () => (
         }
       >
         <MatchedRoute index={1} />
-      </Boundary>
+      </AsyncBoundary>
     </Content>
   </Wrapper>
 );

@@ -1,4 +1,4 @@
-import { useController } from '@rest-hooks/react';
+import { useController, AsyncBoundary } from '@rest-hooks/react';
 import {
   floodSpouts,
   documentSpout,
@@ -7,15 +7,14 @@ import {
   JSONSpout,
   appSpout,
 } from '@anansi/core';
-import Boundary from 'components/Boundary';
 
 import App from './App';
 import { createRouter } from './routing';
 
 const app = (
-  <Boundary fallback={null}>
+  <AsyncBoundary>
     <App />
-  </Boundary>
+  </AsyncBoundary>
 );
 
 const spouts = JSONSpout()(

@@ -1,17 +1,16 @@
 <% if (spa) { %>
 import RootProvider from '../src/RootProvider'
 <% } else { %>
-  import { Suspense } from 'react';
-  import { CacheProvider, NetworkErrorBoundary } from '@rest-hooks/react';
+  import { CacheProvider, AsyncBoundary } from '@rest-hooks/react';
 <% } %>
 import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 
 
 export const decorators = [
   (Story) => (
-<% if (spa) { %><RootProvider><% } else { %><CacheProvider><Suspense fallback={'loading'}><NetworkErrorBoundary><% } %>
+<% if (spa) { %><RootProvider><% } else { %><CacheProvider><AsyncBoundary fallback="loading"><% } %>
         <Story/>
-<% if (spa) { %></RootProvider><% } else { %></NetworkErrorBoundary></Suspense></CacheProvider><% } %>
+<% if (spa) { %></RootProvider><% } else { %></AsyncBoundary></CacheProvider><% } %>
   )
 ];
 
