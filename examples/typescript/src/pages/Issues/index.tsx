@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 import { Link } from 'react-router-dom';
 import { List, Avatar } from 'antd';
 import moment from 'moment';

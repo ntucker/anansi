@@ -1,4 +1,4 @@
-import { useSuspense, useSubscription } from 'rest-hooks';
+import { useSuspense, useSubscription } from '@rest-hooks/react';
 import { getExchangeRates } from 'api/ExchangeRates';
 
 export interface Props {

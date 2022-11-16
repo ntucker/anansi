@@ -1,4 +1,3 @@
-import { useController } from 'rest-hooks';
 import {
   laySpouts,
   documentSpout,
@@ -8,6 +7,7 @@ import {
   JSONSpout,
   appSpout,
 } from '@anansi/core/server';
+import { useController } from '@rest-hooks/react';
 
 import app from 'app';
 

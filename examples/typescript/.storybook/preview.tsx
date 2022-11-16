@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { CacheProvider, NetworkManager } from 'rest-hooks';
-import { NetworkErrorBoundary } from 'rest-hooks';
+import { CacheProvider, NetworkManager } from '@rest-hooks/react';
+import { NetworkErrorBoundary } from '@rest-hooks/react';
 import 'style/main.scss';
 
 

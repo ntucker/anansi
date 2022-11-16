@@ -10,7 +10,7 @@ import {
   ControlOutlined,
   StopOutlined,
 } from '@ant-design/icons';
-import { useController } from 'rest-hooks';
+import { useController } from '@rest-hooks/react';
 
 import { demoContext } from 'app/demo';
 import { UserResource } from 'resources/Discuss';

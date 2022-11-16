@@ -1,4 +1,4 @@
-import { CacheProvider, useController } from 'rest-hooks';
+import { CacheProvider, useController } from '@rest-hooks/react';
 import { RouteProvider } from '@anansi/router';
 import type { ReactNode } from 'react';
 import { createBrowserHistory } from 'history';

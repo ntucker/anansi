@@ -1,6 +1,6 @@
-import { useResource } from 'rest-hooks';
-import { RouteChildrenProps } from 'react-router-dom';
+import { useSuspense } from '@rest-hooks/react';
 import { Typography } from 'antd';
+import { RouteChildrenProps } from 'react-router-dom';
 
 import { UserResource, Address } from 'data/resources';
 
@@ -12,7 +12,7 @@ export default function User({ match }: RouteChildrenProps<{ id: string }>) {
   if (match && match.params && match.params.id) {
     id = Number.parseInt(match.params.id);
   }
-  const author = useResource(UserResource.get, { id });
+  const author = useSuspense(UserResource.get, { id });
   return (
     <>
       <Typography.Title level={2}>{author.name}</Typography.Title>

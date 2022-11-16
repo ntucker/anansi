@@ -1,5 +1,5 @@
 import { useRoutes } from '@anansi/router';
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 import { memo } from 'react';
 
 import { UserResource } from 'resources/Discuss';

@@ -1,6 +1,6 @@
 import { Typography, PageHeader } from 'antd';
 import { useHistory } from 'react-router-dom';
-import { useController } from 'rest-hooks';
+import { useController } from '@rest-hooks/react';
 
 import { PostResource } from 'data/resources';
 import itemRender from 'navigation/breadcrumbItemRenderer';

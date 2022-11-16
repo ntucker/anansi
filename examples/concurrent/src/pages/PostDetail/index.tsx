@@ -1,4 +1,4 @@
-import { useSuspense, useController } from 'rest-hooks';
+import { useSuspense, useController } from '@rest-hooks/react';
 import { EditOutlined, SaveOutlined, LoadingOutlined } from '@ant-design/icons';
 import { Button, Input, Breadcrumb, Form } from 'antd';
 import { Img } from '@rest-hooks/img';

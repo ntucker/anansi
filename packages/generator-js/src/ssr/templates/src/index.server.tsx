@@ -1,4 +1,4 @@
-import { useController } from 'rest-hooks';
+import { useController } from '@rest-hooks/react';
 import {
   laySpouts,
   documentSpout,

@@ -1,5 +1,5 @@
 import { PageHeader } from 'antd';
-import { useController, useSuspense } from 'rest-hooks';
+import { useController, useSuspense } from '@rest-hooks/react';
 import { RouteChildrenProps } from 'react-router-dom';
 
 import { PostResource } from 'data/resources';

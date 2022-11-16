@@ -18,7 +18,13 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
   }
 
   async writingDependencies() {
-    await Promise.all([this.addDependencies(['@anansi/cli', '@anansi/core'])]);
+    await Promise.all([
+      this.addDependencies([
+        '@anansi/cli',
+        '@anansi/core',
+        '@rest-hooks/redux',
+      ]),
+    ]);
   }
 
   writing() {

@@ -1,4 +1,4 @@
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 import { Img } from '@rest-hooks/img';
 import { Card, Avatar } from 'antd';
 

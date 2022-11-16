@@ -2,7 +2,7 @@
 import RootProvider from '../src/RootProvider'
 <% } else { %>
   import { Suspense } from 'react';
-  import { CacheProvider, NetworkErrorBoundary } from 'rest-hooks';
+  import { CacheProvider, NetworkErrorBoundary } from '@rest-hooks/react';
 <% } %>
 import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 

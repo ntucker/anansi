@@ -1,5 +1,5 @@
 import { GQLEndpoint, GQLEntity } from '@rest-hooks/graphql';
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 
 const gql = new GQLEndpoint('https://nosy-baritone.glitch.me');
 

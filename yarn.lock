@@ -12048,7 +12048,6 @@ __metadata:
     react-dom: 18.2.0
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
-    rest-hooks: 7.0.0
     typescript: 4.9.3
     webpack: 5.75.0
     webpack-cli: 4.10.0
@@ -12099,7 +12098,6 @@ __metadata:
     react-router-scroll-4: 1.0.0-beta.2
     react-test-renderer: 18.2.0
     redbox-react: 1.6.0
-    rest-hooks: 7.0.0
     serve: 14.1.1
     webpack: 5.75.0
   languageName: unknown
@@ -21951,7 +21949,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux@npm:^4.0.0, redux@npm:^4.1.2":
+"redux@npm:^4.1.2":
   version: 4.2.0
   resolution: "redux@npm:4.2.0"
   dependencies:
@@ -22410,24 +22408,6 @@ __metadata:
   dependencies:
     lowercase-keys: ^2.0.0
   checksum: 6a4d32c37d4e88678ae0a9d69fcc90aafa15b1a3eab455bd65c06af3c6c4976afc47d07a0e5a60d277ab041a465f43bf0a581e0d7ab33786e7a7741573f2e487
-  languageName: node
-  linkType: hard
-
-"rest-hooks@npm:7.0.0":
-  version: 7.0.0
-  resolution: "rest-hooks@npm:7.0.0"
-  dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.2.2
-    redux: ^4.0.0
-  peerDependencies:
-    "@rest-hooks/react": ^6.0.0 || ^7.0.0
-    "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
-    react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 4573f881b55ec89eae2a4ba5ed4cd703b9f573487ff99f970bd64f26c3886b2bac00bb365a6114ef52d1384635461dd1589c585a0e202e6e76510b303aaaef13
   languageName: node
   linkType: hard
 

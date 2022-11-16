@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 import { EditOutlined } from '@ant-design/icons';
 import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';

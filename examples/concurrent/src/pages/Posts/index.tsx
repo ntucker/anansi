@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { useSuspense } from 'rest-hooks';
+import { useSuspense } from '@rest-hooks/react';
 import { PlusOutlined } from '@ant-design/icons';
 import { List, Avatar, Button, PageHeader } from 'antd';
 

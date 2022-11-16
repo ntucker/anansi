@@ -50,7 +50,7 @@ Even though all the data must be fetched - it appears instant because React dela
 </details>
 
 ```tsx
-import { Controller, useController } from 'rest-hooks';
+import { Controller, useController } from '@rest-hooks/react';
 import { createBrowserHistory } from 'history';
 import { lazy, Route, RouteController, RouteProvider } from '@anansi/router';
 
