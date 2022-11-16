@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.0.11...@anansi/generator-js@10.1.0) (2022-11-16)
+
+### 🚀 Features
+
+* Support latest @rest-hooks/react pkg ([7d48c2e](https://github.com/ntucker/anansi/commit/7d48c2eae1842c1f24335f27a1bb1da5582287e9))
+
+### 💅 Enhancement
+
+* Compatibility with rest-hooks@7 ([779a8a7](https://github.com/ntucker/anansi/commit/779a8a70830ea3d2510757e983295d015020b68b))
+* start:server should serve assets ([8628c33](https://github.com/ntucker/anansi/commit/8628c338c886ed875f6f69fe731559271801b18d))
+
 ### [10.0.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.0.10...@anansi/generator-js@10.0.11) (2022-11-15)
 
 ### 💅 Enhancement

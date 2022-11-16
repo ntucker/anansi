@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.36...@anansi/core@0.15.0) (2022-11-16)
+
+### 🚀 Features
+
+* Support latest @rest-hooks/react pkg ([7d48c2e](https://github.com/ntucker/anansi/commit/7d48c2eae1842c1f24335f27a1bb1da5582287e9))
+
+### 📦 Package
+
+* Update `rest-hooks` to v7 ([#1762](https://github.com/ntucker/anansi/issues/1762)) ([49957e2](https://github.com/ntucker/anansi/commit/49957e2b9a2a9ca4232b88e7f32c41b041c5bcae))
+* Update all non-major dependencies ([#1760](https://github.com/ntucker/anansi/issues/1760)) ([0fd6bb9](https://github.com/ntucker/anansi/commit/0fd6bb98aa0eeaef4b84d92a92aa62b9a7d01485))
+
 ### [0.14.36](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.35...@anansi/core@0.14.36) (2022-11-15)
 
 ### 📦 Package
