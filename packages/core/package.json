@@ -99,21 +99,25 @@
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
+    "@rest-hooks/react": "^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0",
+    "@rest-hooks/redux": "^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0",
     "@types/react": "^17.0.40 || ^18.0.0-0",
     "@types/react-dom": "^17.0.40 || ^18.0.0-0",
     "react": "^18.0.0-0",
     "react-dom": "^18.0.0-0",
-    "rest-hooks": "^6.0.0 || ^7.0.0",
     "webpack": "^5.60.0"
   },
   "peerDependenciesMeta": {
+    "@rest-hooks/react": {
+      "optional": true
+    },
+    "@rest-hooks/redux": {
+      "optional": true
+    },
     "@types/react": {
       "optional": true
     },
     "@types/react-dom": {
-      "optional": true
-    },
-    "rest-hooks": {
       "optional": true
     }
   },

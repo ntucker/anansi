@@ -1,11 +1,11 @@
-import { createPersistedStore } from '@rest-hooks/ssr';
-import type { Store } from 'redux';
 import {
   type Controller,
   type Manager,
   NetworkManager,
   type State,
-} from 'rest-hooks';
+} from '@rest-hooks/react';
+import { createPersistedStore } from '@rest-hooks/ssr';
+import type { Store } from 'redux';
 
 import type { ServerSpout } from './types';
 
