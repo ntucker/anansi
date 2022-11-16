@@ -23,7 +23,7 @@
     "@anansi/jest-preset": "^0.7.40",
     "@anansi/webpack-config": "^13.0.26",
     "@babel/core": "7.20.2",
-    "@rest-hooks/test": "8.0.1",
+    "@rest-hooks/test": "9.1.0",
     "@types/babel__core": "7.1.20",
     "@types/classnames": "2.3.1",
     "@types/eslint": "8.4.10",
@@ -58,6 +58,8 @@
     "@rest-hooks/endpoint": "3.2.2",
     "@rest-hooks/hooks": "3.1.0",
     "@rest-hooks/img": "0.8.0",
+    "@rest-hooks/react": "^7.0.0",
+    "@rest-hooks/redux": "^6.1.0",
     "@rest-hooks/rest": "6.2.0",
     "@types/node": "18.11.9",
     "antd": "4.24.2",
@@ -66,7 +68,7 @@
     "history": "5.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rest-hooks": "6.6.2"
+    "rest-hooks": "7.0.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"

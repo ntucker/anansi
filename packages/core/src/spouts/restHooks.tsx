@@ -1,4 +1,4 @@
-import { CacheProvider, Manager, NetworkManager } from 'rest-hooks';
+import { CacheProvider, Manager, NetworkManager } from '@rest-hooks/react';
 
 import type { ClientSpout } from './types';
 
