@@ -35,6 +35,7 @@
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/webpack",
+        "https://github.com/webpack-contrib",
         "https://github.com/callstack/linaria"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
@@ -42,7 +43,16 @@
       "groupName": "webpack packages"
     },
     {
-      "matchPackageNames": ["@anansi/webpack-config", "sass", "node-sass", "svgo", "@svgr/webpack"],
+      "matchPackageNames": [
+        "@anansi/webpack-config",
+        "sass",
+        "node-sass",
+        "sass-resources-loader",
+        "postcss",
+        "postcss-preset-env",
+        "svgo-loader",
+        "@svgr/webpack"
+      ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "webpack",
       "groupName": "webpack packages"
@@ -69,7 +79,12 @@
       "groupName": "JS test packages"
     },
     {
-      "matchPackageNames": ["@anansi/jest-preset", "@types/jsdom", "jest-environment-jsdom", "babel-jest"],
+      "matchPackageNames": [
+        "@anansi/jest-preset",
+        "@types/jsdom",
+        "jest-environment-jsdom",
+        "babel-jest"
+      ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupName": "JS test packages"
     },
