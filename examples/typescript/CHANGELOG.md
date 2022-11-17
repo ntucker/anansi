@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.1.1](https://github.com/ntucker/anansi/compare/example-typescript@10.1.0...example-typescript@10.1.1) (2022-11-17)
+
+### 💅 Enhancement
+
+* Use AsyncBoundary from rest-hooks ([eaeb925](https://github.com/ntucker/anansi/commit/eaeb9259494e2f2660c27c213c77a3924b6589f5))
+
+### 📦 Package
+
+* Update `core-js` to v3.26.1 ([#1764](https://github.com/ntucker/anansi/issues/1764)) ([6efbad4](https://github.com/ntucker/anansi/commit/6efbad49d224c02259f8efe915cc4a61c18f0024))
+
 ## [10.1.0](https://github.com/ntucker/anansi/compare/example-typescript@10.0.56...example-typescript@10.1.0) (2022-11-16)
 
 ### 🚀 Features

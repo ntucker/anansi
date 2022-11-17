@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.38...@anansi/router@0.7.0) (2022-11-17)
+
+### 🚀 Features
+
+* Support latest @rest-hooks/react pkg ([7d48c2e](https://github.com/ntucker/anansi/commit/7d48c2eae1842c1f24335f27a1bb1da5582287e9))
+
+### 📦 Package
+
+* Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
+
 ### [0.6.38](https://github.com/ntucker/anansi/compare/@anansi/router@0.6.37...@anansi/router@0.6.38) (2022-11-15)
 
 **Note:** Version bump only for package @anansi/router

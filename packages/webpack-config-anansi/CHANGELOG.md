@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.27](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.26...@anansi/webpack-config@13.0.27) (2022-11-17)
+
+### 📦 Package
+
+* Update `mini-css-extract-plugin` to ^2.7.0 ([#1763](https://github.com/ntucker/anansi/issues/1763)) ([fd3a9be](https://github.com/ntucker/anansi/commit/fd3a9bedd1c8827bbe4e494b41c089ef86c7b198))
+* Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
+
 ### [13.0.26](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.25...@anansi/webpack-config@13.0.26) (2022-11-15)
 
 ### 📦 Package

@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "10.1.0",
+  "version": "10.1.1",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -21,7 +21,7 @@
     "@anansi/babel-preset": "^3.2.22",
     "@anansi/browserslist-config": "^1.4.1",
     "@anansi/jest-preset": "^0.7.40",
-    "@anansi/webpack-config": "^13.0.26",
+    "@anansi/webpack-config": "^13.0.27",
     "@rest-hooks/test": "9.1.0",
     "@storybook/addon-essentials": "6.5.13",
     "@storybook/addon-links": "6.5.13",

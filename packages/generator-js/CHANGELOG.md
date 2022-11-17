@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.1.0...@anansi/generator-js@10.1.1) (2022-11-17)
+
+### 💅 Enhancement
+
+* Use AsyncBoundary from rest-hooks ([eaeb925](https://github.com/ntucker/anansi/commit/eaeb9259494e2f2660c27c213c77a3924b6589f5))
+
 ## [10.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.0.11...@anansi/generator-js@10.1.0) (2022-11-16)
 
 ### 🚀 Features

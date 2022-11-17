@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.29](https://github.com/ntucker/anansi/compare/example-linaria@5.0.28...example-linaria@5.0.29) (2022-11-17)
+
+### 📦 Package
+
+* Update `core-js` to v3.26.1 ([#1764](https://github.com/ntucker/anansi/issues/1764)) ([6efbad4](https://github.com/ntucker/anansi/commit/6efbad49d224c02259f8efe915cc4a61c18f0024))
+
 ### [5.0.28](https://github.com/ntucker/anansi/compare/example-linaria@5.0.27...example-linaria@5.0.28) (2022-11-15)
 
 **Note:** Version bump only for package example-linaria

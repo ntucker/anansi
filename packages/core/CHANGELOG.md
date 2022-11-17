@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.15.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.0...@anansi/core@0.15.1) (2022-11-17)
+
+### 📦 Package
+
+* Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
+
 ## [0.15.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.36...@anansi/core@0.15.0) (2022-11-16)
 
 ### 🚀 Features
