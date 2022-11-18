@@ -87,6 +87,8 @@ module.exports = class WebpackGenerator extends (
         '@linaria/babel-preset',
         '@linaria/shaker',
       ]);
+    } else if (this?.props?.style === 'sass') {
+      await this.addDevDependencies(['sass']);
     }
   }
 
