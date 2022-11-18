@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Layout, Spin } from 'antd';
 import { MatchedRoute } from '@anansi/router';
 import { styled } from '@linaria/react';
-import 'antd/dist/antd.css';
+import 'antd/dist/reset.css';
 
 import { AsyncBoundary } from '@rest-hooks/react';
 

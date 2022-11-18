@@ -1,6 +1,6 @@
+import { Img } from '@rest-hooks/img';
 import { useSuspense } from '@rest-hooks/react';
 import { Card, Avatar } from 'antd';
-import { Img } from '@rest-hooks/img';
 
 import { CommentResource, Comment } from 'resources/Discuss';
 const { Meta } = Card;

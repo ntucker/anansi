@@ -1,7 +1,4 @@
 import { Link, useRoutes } from '@anansi/router';
-import { Menu, Layout, Switch, MenuProps } from 'antd';
-import type { ItemType } from 'antd/lib/menu/hooks/useItems';
-import { memo, useContext } from 'react';
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -11,9 +8,11 @@ import {
   StopOutlined,
 } from '@ant-design/icons';
 import { useController } from '@rest-hooks/react';
+import { Menu, Layout, Switch, MenuProps } from 'antd';
+import { memo, useContext } from 'react';
 
 import { demoContext } from 'app/demo';
-import { UserResource } from 'resources/Discuss';
+import { User } from 'resources/Discuss';
 
 import PageLoading from './PageLoading';
 
@@ -27,21 +26,21 @@ function getItem(
   icon?: React.ReactNode,
   children?: MenuProps['items'],
   type?: 'group',
-): ItemType {
+) {
   return {
     key,
     icon,
     children,
     label,
     type,
-  } as ItemType;
+  };
 }
 
 function Nav({
   friends,
   selectedFriend,
 }: {
-  friends: UserResource[];
+  friends: User[];
   selectedFriend: false | string;
 }) {
   const contoller = useController();

@@ -45,6 +45,7 @@
     "webpack": "5.75.0"
   },
   "dependencies": {
+    "@ant-design/pro-components": "^2.3.34",
     "@babel/runtime": "^7.17.2",
     "@rest-hooks/graphql": "0.3.5",
     "@rest-hooks/react": "^7.0.0",
