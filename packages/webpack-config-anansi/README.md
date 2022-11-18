@@ -20,6 +20,12 @@ or
 npm install --save-dev webpack webpack-cli webpack-dev-server react-refresh @anansi/webpack-config
 ```
 
+If using sass, be sure to install it as well
+
+```bash
+yarn add --dev sass
+```
+
 ## Configuration
 
 <details open><summary><b>/webpack.config.js</b></summary>
