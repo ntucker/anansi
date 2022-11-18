@@ -7439,9 +7439,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.24.2":
-  version: 4.24.2
-  resolution: "antd@npm:4.24.2"
+"antd@npm:4.24.3":
+  version: 4.24.3
+  resolution: "antd@npm:4.24.3"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -7489,7 +7489,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: baf39848951d749b45afdeae5f8e0634124da7360d3907d4495d4012f286d80f17bd0eee18733ff490e8abbd8cdecb39ebb4548a7fe7429ccbaa8a426ce43728
+  checksum: 42f0183e9365764daefd21119f59cedfe7e0d6d0ccb02d679000eba1b76ddd2b7e1d3a64ebd2963a43b41e3fffd8e25d37fff4329d179c42ea157422b2abe72f
   languageName: node
   linkType: hard
 
@@ -11995,7 +11995,7 @@ __metadata:
     core-js: 3.26.1
     react-refresh: 0.14.0
     redbox-react: 1.6.0
-    serve: 14.1.1
+    serve: 14.1.2
     webpack: 5.75.0
   languageName: unknown
   linkType: soft
@@ -12035,7 +12035,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.43.0
     "@typescript-eslint/parser": 5.43.0
-    antd: 4.24.2
+    antd: 4.24.3
     classnames: 2.3.2
     core-js: 3.26.1
     eslint: 8.27.0
@@ -12086,7 +12086,7 @@ __metadata:
     "@types/react-router": 5.1.19
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
-    antd: 4.24.2
+    antd: 4.24.3
     classnames: 2.3.2
     core-js: 3.26.1
     jest: 29.3.1
@@ -12101,7 +12101,7 @@ __metadata:
     react-test-renderer: 18.2.0
     redbox-react: 1.6.0
     sass: ^1.56.1
-    serve: 14.1.1
+    serve: 14.1.2
     webpack: 5.75.0
   languageName: unknown
   linkType: soft
@@ -23016,9 +23016,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serve@npm:14.1.1":
-  version: 14.1.1
-  resolution: "serve@npm:14.1.1"
+"serve@npm:14.1.2":
+  version: 14.1.2
+  resolution: "serve@npm:14.1.2"
   dependencies:
     "@zeit/schemas": 2.21.0
     ajv: 8.11.0
@@ -23033,7 +23033,7 @@ __metadata:
     update-check: 1.5.4
   bin:
     serve: build/main.js
-  checksum: 7db310dfbe05699b51b1ff5932598c666cecceceb7a5dfaf0b04bb90a7f5fdca4c4dd5eaa1224e0df35fdd6a59c5ca98a730aca99bb7765e003a8236e6e81743
+  checksum: 814e429f2373addca7e57c38c548ae1d4ef7afe52f5091aa421604f4c61633417e891834d5c7bcb6439ee4b0aeb7a4871e3e704c42173b602986566be21f5375
   languageName: node
   linkType: hard
 
