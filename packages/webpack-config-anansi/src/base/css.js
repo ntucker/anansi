@@ -1,7 +1,7 @@
 import autoprefixer from 'autoprefixer';
-import cssPresetEnv from 'postcss-preset-env';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
+import cssPresetEnv from 'postcss-preset-env';
 import { always } from 'ramda';
 
 const getCSSLoaders = ({ mode, target }) => {
@@ -90,8 +90,23 @@ export default function getStyleRules({
     }
     return loader;
   });
+  // we don't need to find it if they specified the directory
+  let foundSass = sassOptions?.implementation;
+  try {
+    if (!foundSass)
+      foundSass = require.resolve('sass') || require.resolve('node-sass');
+  } catch (e) {
+    foundSass = sassOptions?.implementation;
+    if (sassOptions !== false) {
+      console.warn(
+        '`sass` or `node-sass` packages not found. SASS cannot be used.',
+      );
+    }
+  }
   const sassLoaders =
-    sassOptions === false ? [] : getSASSLoaders({ sassResources, sassOptions });
+    sassOptions === false || !foundSass
+      ? []
+      : getSASSLoaders({ sassResources, sassOptions });
   const excludeCSSProcess = [libraryExclude];
 
   // global styles
