@@ -1,7 +1,6 @@
-import { memo } from 'react';
 import { useSuspense } from '@rest-hooks/react';
-import { PlusOutlined } from '@ant-design/icons';
-import { List, Avatar, Button, PageHeader } from 'antd';
+import { List } from 'antd';
+import { memo } from 'react';
 
 import { PostResource, Post } from 'resources/Discuss';
 

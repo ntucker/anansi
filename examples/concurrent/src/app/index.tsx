@@ -1,5 +1,5 @@
-import RootProvider from './RootProvider';
 import App from './App';
+import RootProvider from './RootProvider';
 
 export const app = (
   <RootProvider>

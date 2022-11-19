@@ -1,4 +1,4 @@
-import { PageHeader } from 'antd';
+import { PageHeader } from '@ant-design/pro-components';
 import { useController, useSuspense } from '@rest-hooks/react';
 import { RouteChildrenProps } from 'react-router-dom';
 

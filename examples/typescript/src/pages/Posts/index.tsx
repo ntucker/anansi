@@ -1,7 +1,8 @@
-import { memo } from 'react';
-import { useSuspense } from '@rest-hooks/react';
 import { PlusOutlined } from '@ant-design/icons';
-import { List, Button, PageHeader } from 'antd';
+import { PageHeader } from '@ant-design/pro-components';
+import { useSuspense } from '@rest-hooks/react';
+import { List, Button } from 'antd';
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 import { PostResource, Post } from 'data/resources';

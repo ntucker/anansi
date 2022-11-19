@@ -1,6 +1,6 @@
-import { Spin } from 'antd';
 import { useShowLoading } from '@anansi/router';
 import { styled } from '@linaria/react';
+import { Spin } from 'antd';
 
 const stat = 'rgba(255, 255, 255, 0.3)';
 const dynamic = 'rgba(255, 255, 255, 0.5)';

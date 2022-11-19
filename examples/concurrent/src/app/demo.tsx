@@ -1,4 +1,5 @@
 import { useController } from '@rest-hooks/react';
+import { schema } from '@rest-hooks/rest';
 import React, {
   createContext,
   memo,
@@ -6,7 +7,6 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import { schema } from '@rest-hooks/rest';
 
 import { PlaceholderEntity } from 'resources/PlaceholderBaseResource';
 
