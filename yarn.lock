@@ -4450,14 +4450,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@rest-hooks/core@npm:4.0.2"
+"@rest-hooks/core@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@rest-hooks/core@npm:4.1.0"
   dependencies:
     "@babel/runtime": ^7.13.0
     "@rest-hooks/normalizr": ^9.3.1
     flux-standard-action: ^2.1.1
-  checksum: a3c5ad6dddab83453c19ad96af2757dc637808ba84cdf063ea1c5bfdbcbe3cdaf76f9ca5368069e5e1730b6e207a126b8d86d40908e0f2cd35f0fd42bc923fd2
+  checksum: 688468963f9608b82a650370df5b285297e807557df2398cb8704bfbf1491a58f72dec4f3acd84a5ae1b6aebb6ad297f341b43c48e01d2e4745d9e9a33e6f0e2
   languageName: node
   linkType: hard
 
@@ -4523,12 +4523,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@rest-hooks/react@npm:7.0.0"
+"@rest-hooks/react@npm:7.1.0, @rest-hooks/react@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@rest-hooks/react@npm:7.1.0"
   dependencies:
     "@babel/runtime": ^7.13.0
-    "@rest-hooks/core": ^4.0.2
+    "@rest-hooks/core": ^4.1.0
     "@rest-hooks/use-enhanced-reducer": ^1.2.0
   peerDependencies:
     "@react-navigation/native": ^6.0.0
@@ -4539,13 +4539,13 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: a94adac8b713074eeda00a250fbc254c92a579f6e3e869513a35a84f2658f446fd8e39bcc581f078efdfc8f0158271b94f073a68f9297ea20511e3e21513d46e
+  checksum: 4421f93e622f0d61fc712093380b76cdf7cbe4b55db58cea298915ca28a5f828f4c886fa8d0e0c04466bfb90fd9288dc7f8c211892d23b783693a7310e48538e
   languageName: node
   linkType: hard
 
-"@rest-hooks/redux@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@rest-hooks/redux@npm:6.1.0"
+"@rest-hooks/redux@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "@rest-hooks/redux@npm:6.2.0"
   dependencies:
     "@babel/runtime": ^7.13.0
   peerDependencies:
@@ -4556,7 +4556,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 396936bd2a25637a8c23cec99eaa69d13ab69e533ab863f66dd3e0c91a9cceca2469a954291667ae3761be3d468c673b640c43c649c6dbdd3a99c638ceae00be
+  checksum: 8f87cbe71bb24ba8e241b7a1705699df43f0d2db7e761a49930d549d1765a0b625b279b7db4e05c8f8479eca8ca274bbd61fc5ac0c2a74ee5e02dbba602f8282
   languageName: node
   linkType: hard
 
@@ -12384,8 +12384,8 @@ __metadata:
     "@rest-hooks/endpoint": 3.2.3
     "@rest-hooks/hooks": 3.1.0
     "@rest-hooks/img": 0.8.0
-    "@rest-hooks/react": ^7.0.0
-    "@rest-hooks/redux": ^6.1.0
+    "@rest-hooks/react": ^7.1.0
+    "@rest-hooks/redux": ^6.2.0
     "@rest-hooks/rest": 6.2.1
     "@rest-hooks/test": 9.1.0
     "@types/babel__core": 7.1.20
@@ -12432,7 +12432,7 @@ __metadata:
     "@ant-design/pro-components": ^2.3.34
     "@babel/runtime": ^7.17.2
     "@rest-hooks/graphql": 0.3.6
-    "@rest-hooks/react": ^7.0.0
+    "@rest-hooks/react": 7.1.0
     "@rest-hooks/rest": 6.2.1
     "@rest-hooks/test": 9.1.0
     "@storybook/addon-essentials": 6.5.13

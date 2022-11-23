@@ -48,7 +48,7 @@
     "@ant-design/pro-components": "^2.3.34",
     "@babel/runtime": "^7.17.2",
     "@rest-hooks/graphql": "0.3.6",
-    "@rest-hooks/react": "^7.0.0",
+    "@rest-hooks/react": "7.1.0",
     "@rest-hooks/rest": "6.2.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

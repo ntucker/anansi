@@ -1,8 +1,7 @@
-import React from 'react';
-import { useSuspense } from '@rest-hooks/react';
-import { Link } from 'react-router-dom';
+import { useLive } from '@rest-hooks/react';
 import { List, Avatar } from 'antd';
-import moment from 'moment';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { IssueResource, Issue } from '@standard-endpoint/github/Issue';
 import LinkPagination from 'navigation/LinkPagination';
@@ -23,8 +22,7 @@ export default function IssueList(props: Props) {
     repo: 'rest-hooks',
     state: 'open' as const,
   };
-  const { results: issues, link } = useSuspense(IssueResource.getList, params);
-  //useSubscription(IssueResource.list(), params);
+  const { results: issues, link } = useLive(IssueResource.getList, params);
 
   return (
     <>
@@ -66,7 +64,7 @@ function IssueListItem({ issue }: { issue: Issue }) {
             <a href={issue.htmlUrl} target="_blank" rel="noreferrer noopener">
               #{issue.number}
             </a>{' '}
-            opened {moment(issue.createdAt).fromNow()} by{' '}
+            opened {fromNow(issue.createdAt.getTime())} by{' '}
             <a
               href={issue.user.htmlUrl}
               target="_blank"
@@ -79,4 +77,33 @@ function IssueListItem({ issue }: { issue: Issue }) {
       />
     </List.Item>
   );
+}
+const rtf = new Intl.RelativeTimeFormat('en', {
+  localeMatcher: 'best fit',
+  numeric: 'auto',
+  style: 'long',
+});
+
+function fromNow(time: number) {
+  const seconds = (time - Date.now()) / 1000;
+  if (Math.abs(seconds) < 60) {
+    return rtf.format(Math.round(seconds), 'seconds');
+  }
+  const minutes = seconds / 60;
+  if (Math.abs(minutes) < 60) {
+    return rtf.format(Math.round(minutes), 'minutes');
+  }
+  const hours = minutes / 60;
+  if (Math.abs(hours) < 24) {
+    return rtf.format(Math.round(hours), 'hours');
+  }
+  const days = hours / 24;
+  if (Math.abs(days) < 7) {
+    return rtf.format(Math.round(days), 'days');
+  }
+  const weeks = days / 7;
+  if (Math.abs(weeks) < 52) {
+    return rtf.format(Math.round(weeks), 'weeks');
+  }
+  return rtf.format(Math.round(days / 365), 'years');
 }
