@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ntucker/anansi/compare/example-typescript@10.1.1...example-typescript@11.0.0) (2022-11-23)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Install 'sass' package yourself
+
+### 💅 Enhancement
+
+* Don't auto-include sass package ([5a91398](https://github.com/ntucker/anansi/commit/5a91398aa2dcc053c1bd764390d60b3ad68790aa))
+* Fix menu deprecation ([aa59a62](https://github.com/ntucker/anansi/commit/aa59a628dcf5c22489c188d821f3f297f92862aa))
+
+### 📦 Package
+
+* Update `antd` to v5 ([#1766](https://github.com/ntucker/anansi/issues/1766)) ([a44ccf7](https://github.com/ntucker/anansi/commit/a44ccf77b618a450650a51772fa1df19bcd78b41))
+* Update all non-major dependencies ([4ad4ffa](https://github.com/ntucker/anansi/commit/4ad4ffa11a495eafc9184575a39adee0232cacd0))
+* Update all non-major dependencies ([#1769](https://github.com/ntucker/anansi/issues/1769)) ([150a3d7](https://github.com/ntucker/anansi/commit/150a3d7cc343c505d516c842247646ba53e440a3))
+
 ### [10.1.1](https://github.com/ntucker/anansi/compare/example-typescript@10.1.0...example-typescript@10.1.1) (2022-11-17)
 
 ### 💅 Enhancement

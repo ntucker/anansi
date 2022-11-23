@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.1.1...@anansi/generator-js@10.2.0) (2022-11-23)
+
+### 🚀 Features
+
+* Support new webpack config ([1aeae19](https://github.com/ntucker/anansi/commit/1aeae1981501aaa896d8920ce55261087eedad47))
+
+### 💅 Enhancement
+
+* useLive() in template ([af4b618](https://github.com/ntucker/anansi/commit/af4b618c57e7561927c8b4b2d8d77496903732b8))
+
 ### [10.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.1.0...@anansi/generator-js@10.1.1) (2022-11-17)
 
 ### 💅 Enhancement

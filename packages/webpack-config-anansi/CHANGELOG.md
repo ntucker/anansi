@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.27...@anansi/webpack-config@14.0.0) (2022-11-23)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Install 'sass' package yourself
+
+### 💅 Enhancement
+
+* Don't auto-include sass package ([5a91398](https://github.com/ntucker/anansi/commit/5a91398aa2dcc053c1bd764390d60b3ad68790aa))
+
 ### [13.0.27](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.26...@anansi/webpack-config@13.0.27) (2022-11-17)
 
 ### 📦 Package

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.2](https://github.com/ntucker/anansi/compare/example-react-18@4.1.1...example-react-18@4.1.2) (2022-11-23)
+
+### 📦 Package
+
+* Update `antd` to v5 ([#1766](https://github.com/ntucker/anansi/issues/1766)) ([a44ccf7](https://github.com/ntucker/anansi/commit/a44ccf77b618a450650a51772fa1df19bcd78b41))
+* Update `prettier` to v2.8.0 ([#1772](https://github.com/ntucker/anansi/issues/1772)) ([f7b0185](https://github.com/ntucker/anansi/commit/f7b01850e18515157ecb051863e5c8b9b982cacd))
+* Update all non-major dependencies ([4ad4ffa](https://github.com/ntucker/anansi/commit/4ad4ffa11a495eafc9184575a39adee0232cacd0))
+* Update all non-major dependencies ([#1769](https://github.com/ntucker/anansi/issues/1769)) ([150a3d7](https://github.com/ntucker/anansi/commit/150a3d7cc343c505d516c842247646ba53e440a3))
+* Update linting packages ([#1768](https://github.com/ntucker/anansi/issues/1768)) ([b65dbfe](https://github.com/ntucker/anansi/commit/b65dbfe13584c7283ce60a34914361980805456d))
+* Update linting packages to v5.44.0 ([#1771](https://github.com/ntucker/anansi/issues/1771)) ([730702c](https://github.com/ntucker/anansi/commit/730702cc796e102b4a14667bbea144adcf5d4c56))
+
 ### [4.1.1](https://github.com/ntucker/anansi/compare/example-react-18@4.1.0...example-react-18@4.1.1) (2022-11-17)
 
 ### 💅 Enhancement
