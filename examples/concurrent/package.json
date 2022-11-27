@@ -62,7 +62,7 @@
     "@rest-hooks/redux": "^6.2.0",
     "@rest-hooks/rest": "6.2.1",
     "@types/node": "18.11.9",
-    "antd": "5.0.1",
+    "antd": "5.0.2",
     "classnames": "2.3.2",
     "core-js": "3.26.1",
     "history": "5.3.0",
