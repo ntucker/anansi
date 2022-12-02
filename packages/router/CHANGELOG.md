@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.1...@anansi/router@0.7.2) (2022-12-02)
+
+### 💅 Enhancement
+
+* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+
+### 📦 Package
+
+* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+
 ### [0.7.1](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.0...@anansi/router@0.7.1) (2022-11-23)
 
 **Note:** Version bump only for package @anansi/router

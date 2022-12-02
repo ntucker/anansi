@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.31](https://github.com/ntucker/anansi/compare/example-linaria@5.0.30...example-linaria@5.0.31) (2022-12-02)
+
+### 💅 Enhancement
+
+* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+
+### 📦 Package
+
+* Update webpack packages ([#1780](https://github.com/ntucker/anansi/issues/1780)) ([cd232aa](https://github.com/ntucker/anansi/commit/cd232aae109d81433107f7ca081b0493d4746a33))
+
 ### [5.0.30](https://github.com/ntucker/anansi/compare/example-linaria@5.0.29...example-linaria@5.0.30) (2022-11-23)
 
 ### 📦 Package

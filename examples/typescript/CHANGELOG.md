@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.1](https://github.com/ntucker/anansi/compare/example-typescript@11.0.0...example-typescript@11.0.1) (2022-12-02)
+
+### 💅 Enhancement
+
+* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+
+### 📦 Package
+
+* Update `antd` to v5.0.2 ([#1775](https://github.com/ntucker/anansi/issues/1775)) ([a8562cb](https://github.com/ntucker/anansi/commit/a8562cb20365de8fc9a9dd76ed582e119a1f4c4c))
+* Update all non-major dependencies ([#1773](https://github.com/ntucker/anansi/issues/1773)) ([cb227d0](https://github.com/ntucker/anansi/commit/cb227d059260700faf2ff9978256cdac5339fd1f))
+* Update all non-major dependencies ([#1778](https://github.com/ntucker/anansi/issues/1778)) ([fdd9086](https://github.com/ntucker/anansi/commit/fdd908697735303705402bcc9567f7edeb4c0969))
+
 ## [11.0.0](https://github.com/ntucker/anansi/compare/example-typescript@10.1.1...example-typescript@11.0.0) (2022-11-23)
 
 ### ⚠ 💥 BREAKING CHANGES

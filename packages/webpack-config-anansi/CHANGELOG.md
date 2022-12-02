@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.0.0...@anansi/webpack-config@14.0.1) (2022-12-02)
+
+### 💅 Enhancement
+
+* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1773](https://github.com/ntucker/anansi/issues/1773)) ([cb227d0](https://github.com/ntucker/anansi/commit/cb227d059260700faf2ff9978256cdac5339fd1f))
+* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+* Update webpack packages ([#1777](https://github.com/ntucker/anansi/issues/1777)) ([cdcd35c](https://github.com/ntucker/anansi/commit/cdcd35c55cc0ecd4b79193496fea26940ffed1ed))
+* Update webpack packages ([#1780](https://github.com/ntucker/anansi/issues/1780)) ([cd232aa](https://github.com/ntucker/anansi/commit/cd232aae109d81433107f7ca081b0493d4746a33))
+
 ## [14.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@13.0.27...@anansi/webpack-config@14.0.0) (2022-11-23)
 
 ### ⚠ 💥 BREAKING CHANGES

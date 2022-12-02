@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.3](https://github.com/ntucker/anansi/compare/example-react-18@4.1.2...example-react-18@4.1.3) (2022-12-02)
+
+### 💅 Enhancement
+
+* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+
+### 📦 Package
+
+* Update `antd` to v5.0.2 ([#1775](https://github.com/ntucker/anansi/issues/1775)) ([a8562cb](https://github.com/ntucker/anansi/commit/a8562cb20365de8fc9a9dd76ed582e119a1f4c4c))
+* Update all non-major dependencies ([#1778](https://github.com/ntucker/anansi/issues/1778)) ([fdd9086](https://github.com/ntucker/anansi/commit/fdd908697735303705402bcc9567f7edeb4c0969))
+* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+* Update linting packages to v5.45.0 ([#1779](https://github.com/ntucker/anansi/issues/1779)) ([0070e31](https://github.com/ntucker/anansi/commit/0070e313bb1ecfd5b5d94ee21ee2108761db65e0))
+* Update webpack packages ([#1780](https://github.com/ntucker/anansi/issues/1780)) ([cd232aa](https://github.com/ntucker/anansi/commit/cd232aae109d81433107f7ca081b0493d4746a33))
+
 ### [4.1.2](https://github.com/ntucker/anansi/compare/example-react-18@4.1.1...example-react-18@4.1.2) (2022-11-23)
 
 ### 📦 Package

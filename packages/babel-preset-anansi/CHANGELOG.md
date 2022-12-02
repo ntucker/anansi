@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.22...@anansi/babel-preset@3.3.0) (2022-12-02)
+
+### 🚀 Features
+
+* Use @babel/runtime-corejs3 if available ([f5363a8](https://github.com/ntucker/anansi/commit/f5363a8714af15420cf5aaf1d761a84a20ff537b))
+
+### 📦 Package
+
+* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+
 ### [3.2.22](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.21...@anansi/babel-preset@3.2.22) (2022-11-06)
 
 ### 📦 Package
