@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "build:lib": "babel --root-mode upward src --out-dir lib --source-maps inline",
+    "build:lib": "BROWSERSLIST_ENV=node14 babel --root-mode upward src --out-dir lib --source-maps inline",
     "build": "yarn run build:lib",
     "dev": "yarn run build:lib -w",
     "build:clean": "rimraf lib",

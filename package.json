@@ -12,6 +12,9 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "browserslist": [
+    "extends @anansi/browserslist-config"
+  ],
   "scripts": {
     "postinstall": "husky install && yarn workspace \"@anansi/webpack-config\" run build",
     "changelog": "yarn lerna version",

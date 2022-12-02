@@ -73,9 +73,6 @@
   "engines": {
     "node": "^12.17 || ^13.7 || >=14"
   },
-  "browserslist": [
-    "extends @anansi/browserslist-config"
-  ],
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
     "test": "jest",

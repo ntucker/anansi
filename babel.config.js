@@ -1,16 +1,15 @@
 const { resolvePath } = require('babel-plugin-module-resolver');
 
 module.exports = function (api) {
-  api.cache.using(() => process.env.NODE_ENV);
+  api.cache.using(() => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV);
   return {
-    // TODO: grab this from current package.json engine target
-    targets: { node: '12.13.0' },
     presets: [
       [
         '@anansi',
         {
           typing: 'typescript',
           loose: true,
+          useBuiltIns: 'usage',
           resolver: {
             extensions: ['.ts.', '.tsx', '.js', '.jsx', '.es', '.es6', '.mjs'],
             resolvePath(sourcePath, currentFile, opts) {
