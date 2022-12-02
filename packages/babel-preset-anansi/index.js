@@ -1,5 +1,5 @@
-const path = require('path');
 var globToRegExp = require('glob-to-regexp');
+const path = require('path');
 
 /*
 options:
@@ -12,7 +12,8 @@ options:
   corejs,
   minify,
   loose,
-  tsConfigPath
+  tsConfigPath,
+  corejs
 */
 function buildPreset(api, options = {}) {
   api.assertVersion(7);
@@ -80,13 +81,6 @@ function buildPreset(api, options = {}) {
 
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
-  try {
-    // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
-    absoluteRuntimePath = path.dirname(
-      require.resolve('@babel/runtime/package.json'),
-    );
-    runtimeVersion = require('@babel/runtime/package.json').version;
-  } catch (e) {}
 
   if (!options.corejs) {
     try {
@@ -97,6 +91,30 @@ function buildPreset(api, options = {}) {
     } catch (e) {
       options.corejs = { version: 3, proposals: true };
     }
+  }
+
+  let runtimeCoreJS = false;
+  let runtimePkg = '@babel/runtime';
+  if (options.corejs && options.corejs.version) {
+    runtimeCoreJS = Math.floor(parseFloat(options.corejs.version));
+    runtimePkg = `@babel/runtime-corejs${runtimeCoreJS}`;
+  }
+
+  try {
+    // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
+    absoluteRuntimePath = path.dirname(
+      require.resolve(`${runtimePkg}/package.json`),
+    );
+    runtimeVersion = require(`${runtimePkg}/package.json`).version;
+  } catch (e) {
+    runtimePkg = '@babel/runtime';
+    runtimeCoreJS = false;
+    try {
+      absoluteRuntimePath = path.dirname(
+        require.resolve(`${runtimePkg}/package.json`),
+      );
+      runtimeVersion = require(`${runtimePkg}/package.json`).version;
+    } catch (e) {}
   }
 
   if (process.env.TS_CONFIG_PATH) {
@@ -187,10 +205,10 @@ function buildPreset(api, options = {}) {
         runtimeVersion && [
           require('@babel/plugin-transform-runtime').default,
           {
-            corejs: false,
+            corejs: runtimeCoreJS,
             helpers: true,
             regenerator: true,
-            version: require('@babel/runtime/package.json').version,
+            version: runtimeVersion,
           },
         ],
       //stage 1

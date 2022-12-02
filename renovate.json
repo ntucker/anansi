@@ -23,7 +23,7 @@
       "rangeStrategy": "bump"
     },
     {
-      "matchPackageNames": ["@babel/runtime", "core-js", "core-js-compat"],
+      "matchPackageNames": ["@babel/runtime", "@babel/runtime-corejs3", "core-js", "core-js-compat"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
     },
