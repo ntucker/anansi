@@ -98,7 +98,7 @@ function buildPreset(api, options = {}) {
   let runtimePkg = '@babel/runtime';
   try {
     if (options.runtimePkg === '@babel/runtime')
-      require.resolve(options.runtimePkg);
+      require.resolve(`${options.runtimePkg}/package.json`);
   } catch (e) {
     // if we can't find default of @babel/runtime, fallback to something else
     options.runtimePkg = `@babel/runtime-corejs3`;
