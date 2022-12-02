@@ -55,6 +55,7 @@ function buildPreset(api, options = {}) {
     reactConstantElementsOptions: {},
     nodeTarget,
     resolver: { root: [], alias: {} },
+    runtimePkg: '@babel/runtime',
     ...options,
   };
   const shouldHotReload =
@@ -95,7 +96,18 @@ function buildPreset(api, options = {}) {
 
   let runtimeCoreJS = false;
   let runtimePkg = '@babel/runtime';
-  if (options.corejs && options.corejs.version) {
+  try {
+    if (options.runtimePkg === '@babel/runtime')
+      require.resolve(options.runtimePkg);
+  } catch (e) {
+    // if we can't find default of @babel/runtime, fallback to something else
+    options.runtimePkg = `@babel/runtime-corejs3`;
+  }
+  if (
+    options.corejs &&
+    options.corejs.version &&
+    options.runtimePkg !== '@babel/runtime'
+  ) {
     runtimeCoreJS = Math.floor(parseFloat(options.corejs.version));
     runtimePkg = `@babel/runtime-corejs${runtimeCoreJS}`;
   }
