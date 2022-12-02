@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.3.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.3.0...@anansi/babel-preset@3.3.1) (2022-12-02)
+
+### 🐛 Bug Fix
+
+* @babel/runtime detection ([bad6b45](https://github.com/ntucker/anansi/commit/bad6b45fe4bfd7e26b9aeb920fb9aae53dc3a63b))
+* Continue default of @babel/runtime unless overridden ([1ec19d2](https://github.com/ntucker/anansi/commit/1ec19d2b67f6d1f5e34447b01a6d14ddb4a8e991))
+
+### 📝 Documentation
+
+* Update runtimePkg, useBuiltins sections ([a34864d](https://github.com/ntucker/anansi/commit/a34864d89d78650655c151b00fd06c9e723ccd1e))
+
 ## [3.3.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.2.22...@anansi/babel-preset@3.3.0) (2022-12-02)
 
 ### 🚀 Features

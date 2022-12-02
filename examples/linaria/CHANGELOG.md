@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.32](https://github.com/ntucker/anansi/compare/example-linaria@5.0.31...example-linaria@5.0.32) (2022-12-02)
+
+### 💅 Enhancement
+
+* Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
+
 ### [5.0.31](https://github.com/ntucker/anansi/compare/example-linaria@5.0.30...example-linaria@5.0.31) (2022-12-02)
 
 ### 💅 Enhancement

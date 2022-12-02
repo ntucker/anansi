@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.3](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.2...@anansi/router@0.7.3) (2022-12-02)
+
+### 💅 Enhancement
+
+* Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
+
 ### [0.7.2](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.1...@anansi/router@0.7.2) (2022-12-02)
 
 ### 💅 Enhancement

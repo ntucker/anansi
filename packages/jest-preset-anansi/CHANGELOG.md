@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.42](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.41...@anansi/jest-preset@0.7.42) (2022-12-02)
+
+**Note:** Version bump only for package @anansi/jest-preset
+
 ### [0.7.41](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.40...@anansi/jest-preset@0.7.41) (2022-12-02)
 
 ### 📦 Package

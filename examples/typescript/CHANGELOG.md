@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.2](https://github.com/ntucker/anansi/compare/example-typescript@11.0.1...example-typescript@11.0.2) (2022-12-02)
+
+### 💅 Enhancement
+
+* Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1783](https://github.com/ntucker/anansi/issues/1783)) ([3019ede](https://github.com/ntucker/anansi/commit/3019ede92dd7ab24ba87422fc9bcec2e2dab7296))
+* Update storybook monorepo to v6.5.14 ([#1784](https://github.com/ntucker/anansi/issues/1784)) ([ecb0725](https://github.com/ntucker/anansi/commit/ecb0725dc22411baaf1eb17bacec06fffb24fef5))
+
 ### [11.0.1](https://github.com/ntucker/anansi/compare/example-typescript@11.0.0...example-typescript@11.0.1) (2022-12-02)
 
 ### 💅 Enhancement
