@@ -81,7 +81,7 @@
   },
   "dependencies": {
     "@anansi/router": "workspace:^",
-    "@babel/runtime-corejs3": "^7.17.0",
+    "@babel/runtime": "^7.17.0",
     "@rest-hooks/ssr": "^0.7.0",
     "chalk": "^4.0.0",
     "compression": "^1.7.4",

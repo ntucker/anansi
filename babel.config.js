@@ -1,8 +1,7 @@
 const { resolvePath } = require('babel-plugin-module-resolver');
 
 module.exports = function (api) {
-  api.cache.never();
-  //api.cache.using(() => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV);
+  api.cache.using(() => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV);
   return {
     presets: [
       [
@@ -10,9 +9,7 @@ module.exports = function (api) {
         {
           typing: 'typescript',
           loose: true,
-          useBuiltIns: 'usage',
           modules: 'commonjs',
-          runtimePkg: '@babel/runtime-corejs3',
           resolver: {
             extensions: ['.ts.', '.tsx', '.js', '.jsx', '.es', '.es6', '.mjs'],
             resolvePath(sourcePath, currentFile, opts) {
