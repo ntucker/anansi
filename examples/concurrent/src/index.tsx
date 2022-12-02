@@ -1,4 +1,3 @@
-import { useController } from '@rest-hooks/react';
 import {
   floodSpouts,
   documentSpout,
@@ -7,6 +6,7 @@ import {
   JSONSpout,
   appSpout,
 } from '@anansi/core';
+import { useController } from '@rest-hooks/react';
 
 import app from 'app';
 
