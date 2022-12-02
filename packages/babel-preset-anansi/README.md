@@ -152,11 +152,24 @@ Set this to false for maximum compatibility.
 
 ### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
 
-This option configures how @anansi/babel-preset handles polyfills.
+This option configures how @anansi/babel-preset handles polyfills. Both `usage` and `entry` will
+only include polyfills needed for the target.
+
+`entry` allows you to control when/where the polyfills are loaded by
+adding your own import of core-js. You can even import pieces selectively.
+
+`usage` will add imports everywhere a file is used, which can make it harder to split polyfills if they
+are not needed.
 
 ### [corejs](https://babeljs.io/docs/en/babel-preset-env#corejs): { version: 3, proposals: true }
 
 Which core-js version to use when useBuiltIns is not false
+
+### runtimePkg = "@babel/runtime"
+
+Can be `@babel/runtime-corejs3` or `@babel/runtime-corejs2`. Using the corejs version will
+add imports to the 'pure' form of core-js, which doesn't change global objects. This will however
+result in heavily increased bundle sizes, so it's generally preferred to stay with the default.
 
 ### minify: bool = false
 
