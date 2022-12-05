@@ -4462,41 +4462,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@rest-hooks/core@npm:4.1.0"
+"@rest-hooks/core@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@rest-hooks/core@npm:4.1.1"
   dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/normalizr": ^9.3.1
+    "@babel/runtime": ^7.17.0
+    "@rest-hooks/normalizr": ^9.3.2
+    core-js: ^3.17.0
     flux-standard-action: ^2.1.1
-  checksum: 688468963f9608b82a650370df5b285297e807557df2398cb8704bfbf1491a58f72dec4f3acd84a5ae1b6aebb6ad297f341b43c48e01d2e4745d9e9a33e6f0e2
+  checksum: 4dbec321f3d8567a288c5dee05bb0e258ba49d884c3fd30cd00d82148664a2ecb5c00bbf721da212c701820c23aa997f210ea275258edbb121cfbbba87637a53
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.2.3, @rest-hooks/endpoint@npm:^3.2.3":
-  version: 3.2.3
-  resolution: "@rest-hooks/endpoint@npm:3.2.3"
+"@rest-hooks/endpoint@npm:3.2.4, @rest-hooks/endpoint@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "@rest-hooks/endpoint@npm:3.2.4"
   dependencies:
-    "@babel/runtime": ^7.13.0
-  checksum: b93202659312946784930622aaadae27534010322cfe13d4d696f81d0b2e6531fc80d2854a9e56d49f06543570768d0e6095f739f50b113822968a9fd09da748
+    "@babel/runtime": ^7.17.0
+    core-js: ^3.17.0
+  checksum: 9818089c76248b54e5de07e160d5f2a7ce9a66362d8709f8f21ba5d161df7bdbe8791f11fe9ed0164251f4fb1e168adf228aace1e5863190f79d0e5cbe10b82f
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.3.6":
-  version: 0.3.6
-  resolution: "@rest-hooks/graphql@npm:0.3.6"
+"@rest-hooks/graphql@npm:0.3.7":
+  version: 0.3.7
+  resolution: "@rest-hooks/graphql@npm:0.3.7"
   dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.2.3
-  checksum: 616b1361712be3dca4c4cfe989176eea4a93d9da903e197e2d2575ea2f2061079759ba2881f9f32ea36cf8d51f60ddaa9dc4bf8bcd2d80681c9a9ae701481a2f
+    "@babel/runtime": ^7.17.0
+    "@rest-hooks/endpoint": ^3.2.4
+  checksum: a23b2f6fb82d96b150edbac1b0f72b56cd0302dc63d8694bbb2dd320bccb702ebb3e5b0e15c85eae8ffff6a9e2239b2c56be561b06e2ab181844d12dc37b430c
   languageName: node
   linkType: hard
 
-"@rest-hooks/hooks@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@rest-hooks/hooks@npm:3.1.0"
+"@rest-hooks/hooks@npm:3.1.1":
+  version: 3.1.1
+  resolution: "@rest-hooks/hooks@npm:3.1.1"
   dependencies:
-    "@babel/runtime": ^7.13.0
+    "@babel/runtime": ^7.17.0
   peerDependencies:
     "@rest-hooks/endpoint": ^0.6.1 || ^1.0.0-0 || ^2.0.0-0 || ^3.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
@@ -4504,15 +4506,15 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 4fc187fa81c71038af5a63660d24f3bf53e70340789a7726e6891294bc32cd5fdfc8755ef18f725780feff5edfc7169d14737f3a48440aa27d55e5f55aecc573
+  checksum: 5c80853077a0173960f29e1f0b7b524c656c885361ed4cbe77fd745ae7bfb47faf8f032148cef9ebe3f4435f44a56b94fdaec38d4f9598a656b70b0022b04c29
   languageName: node
   linkType: hard
 
-"@rest-hooks/img@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@rest-hooks/img@npm:0.8.0"
+"@rest-hooks/img@npm:0.8.1":
+  version: 0.8.1
+  resolution: "@rest-hooks/img@npm:0.8.1"
   dependencies:
-    "@babel/runtime": ^7.13.0
+    "@babel/runtime": ^7.17.0
   peerDependencies:
     "@rest-hooks/endpoint": ^1.0.3 || ^2.0.0-0 || ^3.0.0
     "@rest-hooks/react": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
@@ -4521,27 +4523,29 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 31d741745ad5c9db95fb607126e98d91fd0901b63ce411b73449181cf8ca1368177affe34017f956dea458d2e45aeaa7e3f4b8608f3b910a0826a9b69a88ba35
+  checksum: f366c5826c8d163527ae01371b201361f972246c8983d15987211a4a98df29cd7604deebf86e89a36dac481019ddcffeb620513b88173890ed2e099f1e37e17b
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^9.3.1":
-  version: 9.3.1
-  resolution: "@rest-hooks/normalizr@npm:9.3.1"
+"@rest-hooks/normalizr@npm:^9.3.2":
+  version: 9.3.2
+  resolution: "@rest-hooks/normalizr@npm:9.3.2"
   dependencies:
-    "@babel/runtime": ^7.13.0
+    "@babel/runtime": ^7.17.0
+    core-js: ^3.17.0
     npm-run-all: ^4.1.5
-  checksum: 1697eecad983f4950637e6ac4a5f91376d7c4f7a81cf4f9cdf16490f47d49462f25b35f04c5dc2742faebed12171196d0144f8c212b8d7bf025c730097dae67b
+  checksum: 4b607cfb117494d526a478cd29163e17abba191e0010e43101a5f03c46d9951cf05613afa54d4f78274e94324a47475ad4fab6eb340493e36634c37d03673d78
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:7.1.0, @rest-hooks/react@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@rest-hooks/react@npm:7.1.0"
+"@rest-hooks/react@npm:7.1.1, @rest-hooks/react@npm:^7.1.0":
+  version: 7.1.1
+  resolution: "@rest-hooks/react@npm:7.1.1"
   dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/core": ^4.1.0
-    "@rest-hooks/use-enhanced-reducer": ^1.2.0
+    "@babel/runtime": ^7.17.0
+    "@rest-hooks/core": ^4.1.1
+    "@rest-hooks/use-enhanced-reducer": ^1.2.1
+    core-js: ^3.17.0
   peerDependencies:
     "@react-navigation/native": ^6.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
@@ -4551,7 +4555,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 4421f93e622f0d61fc712093380b76cdf7cbe4b55db58cea298915ca28a5f828f4c886fa8d0e0c04466bfb90fd9288dc7f8c211892d23b783693a7310e48538e
+  checksum: 3b7554c6a58f75897a792d836c76aff765dab4cf651eab1192fe0e9447d800cf89908b73540e9b49f53ca133b26cb522bc7914469501c8d07ffecfd4ca29b42d
   languageName: node
   linkType: hard
 
@@ -4572,15 +4576,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.2.1":
-  version: 6.2.1
-  resolution: "@rest-hooks/rest@npm:6.2.1"
+"@rest-hooks/rest@npm:6.2.2":
+  version: 6.2.2
+  resolution: "@rest-hooks/rest@npm:6.2.2"
   dependencies:
-    "@babel/runtime": ^7.13.0
-    "@rest-hooks/endpoint": ^3.2.3
+    "@babel/runtime": ^7.17.0
+    "@rest-hooks/endpoint": ^3.2.4
     copyfiles: ^2.4.1
+    core-js: ^3.17.0
     path-to-regexp: ^6.2.1
-  checksum: faa6a8418a7f1a891a8fa7d29c79aa0c95f87a7c4f75c5a3ad1f673a411630ffd53622e0937769e0a83bacc90d47d51dfc288de22e43c8964f394935a47cf254
+  checksum: fa0688de507b1b45b70e04f4b274b47366cf7aeac8c048c8caab08b759fe301b392c01e33378aef25e23d154d07088553964d7f91586a69351317893fb872975
   languageName: node
   linkType: hard
 
@@ -4605,12 +4610,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:9.1.0":
-  version: 9.1.0
-  resolution: "@rest-hooks/test@npm:9.1.0"
+"@rest-hooks/test@npm:9.1.1":
+  version: 9.1.1
+  resolution: "@rest-hooks/test@npm:9.1.1"
   dependencies:
-    "@babel/runtime": ^7.13.0
+    "@babel/runtime": ^7.17.0
     "@testing-library/react-hooks": ~8.0.0
+    core-js: ^3.17.0
   peerDependencies:
     "@rest-hooks/react": ^0.2.0 || ^0.3.0 || ^1.0.0 || ^6.0.0 || ^7.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
@@ -4618,20 +4624,20 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 35f92fad55500a772ff9c12c7dc1ce61add1180c44faf8be6ec49d9b84a4f5f7e01402bd7087ae3ae84ae75b21de315fe030e2ff1be996bd51cd5af7c97327df
+  checksum: 20743990bf2e88dab71c0e26c1b4685e562936dd1c615805b897184e5131cdd5c260cdc7c7330d2036e1ed3cdabe20da3747beb3cada5005f242a34ad1494dd3
   languageName: node
   linkType: hard
 
-"@rest-hooks/use-enhanced-reducer@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@rest-hooks/use-enhanced-reducer@npm:1.2.0"
+"@rest-hooks/use-enhanced-reducer@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@rest-hooks/use-enhanced-reducer@npm:1.2.1"
   peerDependencies:
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: ac9e770e571d5b0dbc006d25b85fd19afe7780631cfc6bf3718dfd29c22feb722d87a3758b93ac7d3694aead6d9105eba8ded4b16cf5754079c243a186e91b1a
+  checksum: 8520eb8ea3409b6ba9d03a29256532ed826f96e397d929782633c7c122d871a850d25916cf33c2df6c20dff6c716bdac0b7d3f3c55a61234955415d88192c068
   languageName: node
   linkType: hard
 
@@ -10458,7 +10464,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.26.1, core-js@npm:^3.0.4, core-js@npm:^3.21.0, core-js@npm:^3.24.1, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
+"core-js@npm:3.26.1, core-js@npm:^3.0.4, core-js@npm:^3.17.0, core-js@npm:^3.21.0, core-js@npm:^3.24.1, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
   version: 3.26.1
   resolution: "core-js@npm:3.26.1"
   checksum: 0a01149f51ff1e9f41d1ea49cc4c9222047949ea597189ede7c4cf8cde3b097766b9c7615acc77c86fe65b4002f20b638a133dfba7b41dba830d707aeeed45ad
@@ -12405,13 +12411,13 @@ __metadata:
     "@linaria/core": 4.2.3
     "@linaria/react": 4.3.1
     "@linaria/shaker": 4.2.5
-    "@rest-hooks/endpoint": 3.2.3
-    "@rest-hooks/hooks": 3.1.0
-    "@rest-hooks/img": 0.8.0
+    "@rest-hooks/endpoint": 3.2.4
+    "@rest-hooks/hooks": 3.1.1
+    "@rest-hooks/img": 0.8.1
     "@rest-hooks/react": ^7.1.0
     "@rest-hooks/redux": ^6.2.0
-    "@rest-hooks/rest": 6.2.1
-    "@rest-hooks/test": 9.1.0
+    "@rest-hooks/rest": 6.2.2
+    "@rest-hooks/test": 9.1.1
     "@types/babel__core": 7.1.20
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.10
@@ -12455,10 +12461,10 @@ __metadata:
     "@anansi/webpack-config": ^14.0.2
     "@ant-design/pro-components": ^2.3.34
     "@babel/runtime": ^7.20.6
-    "@rest-hooks/graphql": 0.3.6
-    "@rest-hooks/react": 7.1.0
-    "@rest-hooks/rest": 6.2.1
-    "@rest-hooks/test": 9.1.0
+    "@rest-hooks/graphql": 0.3.7
+    "@rest-hooks/react": 7.1.1
+    "@rest-hooks/rest": 6.2.2
+    "@rest-hooks/test": 9.1.1
     "@storybook/addon-essentials": 6.5.14
     "@storybook/addon-links": 6.5.14
     "@storybook/addons": 6.5.14
@@ -16928,9 +16934,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:13.0.4":
-  version: 13.0.4
-  resolution: "lint-staged@npm:13.0.4"
+"lint-staged@npm:13.1.0":
+  version: 13.1.0
+  resolution: "lint-staged@npm:13.1.0"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.19
@@ -16947,7 +16953,7 @@ __metadata:
     yaml: ^2.1.3
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4676172df5dc734a7f409ad786a72d39bd2239de8b2e5eb1d99eaa751479f60f7b4ef85c8508698855b51b125a512f395ac6a3c7d2d57de8e8221e0aaaab6f4f
+  checksum: adf20c4ca9285c4a93b06598b970d71b04cfe58a1a4c9006f753b83e02c1c622d1866c32a4f1e7e29a98091c501eac3345f7678af247b4f97d5be88b3d8727c1
   languageName: node
   linkType: hard
 
@@ -22997,7 +23003,7 @@ __metadata:
     eslint-plugin-react: 7.31.11
     eslint-plugin-react-hooks: 4.6.0
     husky: 7.0.4
-    lint-staged: 13.0.4
+    lint-staged: 13.1.0
     prettier: 2.8.0
     react: 18.2.0
     react-dom: 18.2.0
