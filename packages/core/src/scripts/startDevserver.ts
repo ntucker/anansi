@@ -1,18 +1,22 @@
 #!/usr/bin/env node
-
-import { promisify } from 'util';
-import diskFs from 'fs';
-import path from 'path';
-import webpack, { MultiCompiler } from 'webpack';
-import { createFsFromVolume, Volume } from 'memfs';
-import { Server, IncomingMessage, ServerResponse } from 'http';
+Object.hasOwn =
+  Object.hasOwn ||
+  /* istanbul ignore next */ function hasOwn(it, key) {
+    return Object.prototype.hasOwnProperty.call(it, key);
+  };
 import type { NextFunction } from 'express';
-import tmp from 'tmp';
+import diskFs from 'fs';
+import { createFsRequire } from 'fs-require';
+import { Server, IncomingMessage, ServerResponse } from 'http';
+import { createFsFromVolume, Volume } from 'memfs';
+import path from 'path';
 import sourceMapSupport from 'source-map-support';
+import tmp from 'tmp';
 import { ufs } from 'unionfs';
+import { promisify } from 'util';
+import webpack, { MultiCompiler } from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 import logging from 'webpack/lib/logging/runtime';
-import { createFsRequire } from 'fs-require';
 
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';

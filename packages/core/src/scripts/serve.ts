@@ -1,17 +1,21 @@
 #!/usr/bin/env node
-
-import { promisify } from 'util';
-import diskFs from 'fs';
-import path from 'path';
-import webpack, { web } from 'webpack';
-import { Server, IncomingMessage, ServerResponse } from 'http';
-import express, { NextFunction } from 'express';
-import ora from 'ora';
+Object.hasOwn =
+  Object.hasOwn ||
+  /* istanbul ignore next */ function hasOwn(it, key) {
+    return Object.prototype.hasOwnProperty.call(it, key);
+  };
 import compress from 'compression';
+import express, { NextFunction } from 'express';
+import diskFs from 'fs';
+import { Server, IncomingMessage, ServerResponse } from 'http';
+import ora from 'ora';
+import path from 'path';
+import { promisify } from 'util';
+import webpack, { web } from 'webpack';
 
 import 'cross-fetch/polyfill';
-import { Render } from './types';
 import getProxyMiddlewares from './getProxyMiddlewares';
+import { Render } from './types';
 
 // run directly from node
 if (require.main === module) {
