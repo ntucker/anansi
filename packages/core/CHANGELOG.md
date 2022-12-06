@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.15.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.4...@anansi/core@0.15.5) (2022-12-06)
+
+### 🐛 Bug Fix
+
+* Polyfill Object.hasOwn for node 14 or lower ([268ba81](https://github.com/ntucker/anansi/commit/268ba81b5c4aa4811262aa59d346d69404adf298))
+
+### 📦 Package
+
+* Update webpack packages ([#1787](https://github.com/ntucker/anansi/issues/1787)) ([d297255](https://github.com/ntucker/anansi/commit/d29725594e94e3f30b7648c62715eb863534261f))
+
 ### [0.15.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.3...@anansi/core@0.15.4) (2022-12-02)
 
 ### 💅 Enhancement

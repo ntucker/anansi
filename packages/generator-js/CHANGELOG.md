@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.2...@anansi/generator-js@10.2.3) (2022-12-06)
+
+### 📦 Package
+
+* Update `yeoman-test` to v7 ([#1785](https://github.com/ntucker/anansi/issues/1785)) ([bb630e6](https://github.com/ntucker/anansi/commit/bb630e6a8983a1f2a61826ee3d06f488ad630f77))
+
 ### [10.2.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.1...@anansi/generator-js@10.2.2) (2022-12-02)
 
 ### 💅 Enhancement

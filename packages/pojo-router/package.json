@@ -1,6 +1,6 @@
 {
   "name": "@pojo-router/core",
-  "version": "0.5.50",
+  "version": "0.5.51",
   "description": "A react hooks library to associate metadata to a path",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/pojo-router#readme",
   "repository": {
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@anansi/babel-preset": "^3.3.1",
     "@anansi/browserslist-config": "^1.4.1",
-    "@anansi/webpack-config": "^14.0.2",
+    "@anansi/webpack-config": "^14.0.3",
     "@babel/cli": "7.19.3",
     "@babel/core": "7.20.5",
     "jest": "29.3.1",
