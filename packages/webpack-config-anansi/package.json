@@ -89,7 +89,7 @@
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
     "markdown-loader": "^8.0.0",
-    "mini-css-extract-plugin": "^2.7.1",
+    "mini-css-extract-plugin": "^2.7.2",
     "mkdirp": "^1.0.4",
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
