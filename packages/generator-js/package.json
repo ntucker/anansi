@@ -50,7 +50,7 @@
     "@types/ejs": "3.1.1",
     "@types/gulp-filter": "3.0.34",
     "@types/mem-fs-editor": "7.0.2",
-    "@types/node": "18.11.11",
+    "@types/node": "18.11.16",
     "@types/pacote": "11.1.5",
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
@@ -75,7 +75,7 @@
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.5.0",
-    "pacote": "^15.0.6",
+    "pacote": "^15.0.8",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.7.0"
   },
