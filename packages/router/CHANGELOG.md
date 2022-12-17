@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.5](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.4...@anansi/router@0.7.5) (2022-12-17)
+
+### 📦 Package
+
+* Update `nano-memoize` to v2 ([#1791](https://github.com/ntucker/anansi/issues/1791)) ([adcd2c7](https://github.com/ntucker/anansi/commit/adcd2c728c10f342181ffbc79a36a1576894202b))
+
 ### [0.7.4](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.3...@anansi/router@0.7.4) (2022-12-06)
 
 ### 📦 Package
