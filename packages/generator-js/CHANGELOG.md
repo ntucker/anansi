@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.4...@anansi/generator-js@10.2.5) (2022-12-22)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1798](https://github.com/ntucker/anansi/issues/1798)) ([1287199](https://github.com/ntucker/anansi/commit/12871994f6b96801fa11d0470e386a14759c50a4))
+* Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
+
 ### [10.2.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.3...@anansi/generator-js@10.2.4) (2022-12-17)
 
 ### 📦 Package

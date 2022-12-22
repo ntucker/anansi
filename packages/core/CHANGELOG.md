@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.15.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.6...@anansi/core@0.15.7) (2022-12-22)
+
+### 📦 Package
+
+* Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
+
 ### [0.15.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.5...@anansi/core@0.15.6) (2022-12-17)
 
 **Note:** Version bump only for package @anansi/core
