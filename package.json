@@ -33,8 +33,8 @@
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
     "@anansi/eslint-plugin": "workspace:*",
-    "@babel/cli": "7.19.3",
-    "@babel/core": "7.20.5",
+    "@babel/cli": "7.20.7",
+    "@babel/core": "7.20.7",
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@lerna-lite/cli": "1.13.0",
