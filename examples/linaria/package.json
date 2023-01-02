@@ -25,13 +25,13 @@
     "webpack": "5.75.0"
   },
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.20.7",
+    "@babel/plugin-transform-modules-commonjs": "7.20.11",
     "@babel/runtime": "^7.20.6",
     "@linaria/core": "4.2.4",
     "@linaria/react": "4.3.2",
     "@linaria/shaker": "4.2.6",
     "classnames": "2.3.2",
-    "core-js": "3.26.1",
+    "core-js": "3.27.1",
     "redbox-react": "1.6.0"
   },
   "browserslist": [
