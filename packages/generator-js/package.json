@@ -50,7 +50,7 @@
     "@types/ejs": "3.1.1",
     "@types/gulp-filter": "3.0.34",
     "@types/mem-fs-editor": "7.0.2",
-    "@types/node": "18.11.17",
+    "@types/node": "18.11.18",
     "@types/pacote": "11.1.5",
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
