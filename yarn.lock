@@ -89,7 +89,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^2.0.20, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^2.0.21, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -110,7 +110,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.15.7, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.15.8, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -234,7 +234,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.7.43, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.7.44, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -263,7 +263,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.7.6, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.7.7, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -299,7 +299,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^14.0.5, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^14.0.6, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -4378,7 +4378,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.3.2
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.0.5
+    "@anansi/webpack-config": ^14.0.6
     "@babel/cli": 7.20.7
     "@babel/core": 7.20.12
     "@babel/runtime": ^7.17.0
@@ -12371,7 +12371,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.3.2
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.0.5
+    "@anansi/webpack-config": ^14.0.6
     "@babel/plugin-transform-modules-commonjs": 7.20.11
     "@babel/runtime": ^7.20.6
     "@linaria/core": 4.2.4
@@ -12395,12 +12395,12 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.3.2
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/cli": ^2.0.20
-    "@anansi/core": ^0.15.7
+    "@anansi/cli": ^2.0.21
+    "@anansi/core": ^0.15.8
     "@anansi/eslint-plugin": ^0.15.0
-    "@anansi/jest-preset": ^0.7.43
-    "@anansi/router": ^0.7.6
-    "@anansi/webpack-config": ^14.0.5
+    "@anansi/jest-preset": ^0.7.44
+    "@anansi/router": ^0.7.7
+    "@anansi/webpack-config": ^14.0.6
     "@babel/core": 7.20.12
     "@babel/runtime": ^7.20.6
     "@linaria/core": 4.2.4
@@ -12452,8 +12452,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.3.2
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/jest-preset": ^0.7.43
-    "@anansi/webpack-config": ^14.0.5
+    "@anansi/jest-preset": ^0.7.44
+    "@anansi/webpack-config": ^14.0.6
     "@ant-design/pro-components": ^2.3.34
     "@babel/runtime": ^7.20.6
     "@rest-hooks/graphql": 0.3.9

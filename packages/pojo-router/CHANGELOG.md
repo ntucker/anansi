@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.54](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.53...@pojo-router/core@0.5.54) (2023-01-05)
+
+### 📦 Package
+
+* Update `@babel/core` to v7.20.12 ([#1802](https://github.com/ntucker/anansi/issues/1802)) ([9074ddf](https://github.com/ntucker/anansi/commit/9074ddfad34ef219db99a29ed4941d4da56238c2))
+
 ### [0.5.53](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.52...@pojo-router/core@0.5.53) (2022-12-22)
 
 ### 📦 Package
