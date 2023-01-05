@@ -69,7 +69,7 @@
     "@anansi/browserslist-config": "workspace:*",
     "@anansi/webpack-config": "workspace:*",
     "@babel/cli": "7.20.7",
-    "@babel/core": "7.20.7",
+    "@babel/core": "7.20.12",
     "@types/compression": "1.7.2",
     "@types/source-map-support": "0.5.6",
     "@types/tmp": "0.2.3",
