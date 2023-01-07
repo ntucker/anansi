@@ -1,6 +1,6 @@
 {
   "name": "example-react-18",
-  "version": "4.1.8",
+  "version": "4.1.9",
   "private": true,
   "scripts": {
     "start": "anansi serve --dev ./src/index.tsx",
@@ -21,7 +21,7 @@
     "@anansi/cli": "^2.0.21",
     "@anansi/eslint-plugin": "^0.15.0",
     "@anansi/jest-preset": "^0.7.44",
-    "@anansi/webpack-config": "^14.0.6",
+    "@anansi/webpack-config": "^14.0.7",
     "@babel/core": "7.20.12",
     "@rest-hooks/test": "9.1.3",
     "@types/babel__core": "7.1.20",
@@ -49,8 +49,8 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
-    "@anansi/core": "^0.15.8",
-    "@anansi/router": "^0.7.7",
+    "@anansi/core": "^0.15.9",
+    "@anansi/router": "^0.7.8",
     "@babel/runtime": "^7.20.6",
     "@linaria/core": "4.2.5",
     "@linaria/react": "4.3.3",

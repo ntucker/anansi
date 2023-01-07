@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.9](https://github.com/ntucker/anansi/compare/example-react-18@4.1.8...example-react-18@4.1.9) (2023-01-07)
+
+### 📦 Package
+
+* Update webpack packages ([#1806](https://github.com/ntucker/anansi/issues/1806)) ([524c9a4](https://github.com/ntucker/anansi/commit/524c9a4a3a4d5c97eaae91d82180e71963e4cb43))
+
 ### [4.1.8](https://github.com/ntucker/anansi/compare/example-react-18@4.1.7...example-react-18@4.1.8) (2023-01-05)
 
 ### 📦 Package
