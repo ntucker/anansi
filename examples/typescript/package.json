@@ -30,7 +30,7 @@
     "@storybook/manager-webpack5": "6.5.15",
     "@storybook/react": "6.5.15",
     "@types/classnames": "2.3.1",
-    "@types/jest": "29.2.3",
+    "@types/jest": "29.2.5",
     "@types/lodash": "4.14.191",
     "@types/parse-link-header": "2.0.0",
     "@types/react-router": "5.1.20",
