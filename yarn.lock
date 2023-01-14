@@ -96,7 +96,7 @@ __metadata:
     "@anansi/generator-js": "workspace:^"
     bin-version-check: ^5.0.0
     chalk: ^4.1.2
-    commander: ^9.5.0
+    commander: ^10.0.0
     execa: ^5.1.1
     latest-version: ^7.0.0
     yo: ^4.3.1
@@ -10045,6 +10045,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "commander@npm:10.0.0"
+  checksum: 9f6495651f878213005ac744dd87a85fa3d9f2b8b90d1c19d0866d666bda7f735adfd7c2f10dfff345782e2f80ea258f98bb4efcef58e4e502f25f883940acfd
+  languageName: node
+  linkType: hard
+
 "commander@npm:^2.19.0, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
@@ -10080,7 +10087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.0.0, commander@npm:^9.4.0, commander@npm:^9.4.1, commander@npm:^9.5.0":
+"commander@npm:^9.0.0, commander@npm:^9.4.0, commander@npm:^9.4.1":
   version: 9.5.0
   resolution: "commander@npm:9.5.0"
   checksum: c7a3e27aa59e913b54a1bafd366b88650bc41d6651f0cbe258d4ff09d43d6a7394232a4dadd0bf518b3e696fdf595db1028a0d82c785b88bd61f8a440cecfade
