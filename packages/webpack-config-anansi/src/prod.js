@@ -1,11 +1,11 @@
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-//import CrittersPlugin from 'critters-webpack-plugin';
-import TerserPlugin from 'terser-webpack-plugin';
+import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
+import webpack from 'webpack';
+//import CrittersPlugin from 'critters-webpack-plugin';
 import RemoveEmptyScriptsPlugin from 'webpack-remove-empty-scripts';
-import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 
 import { getStyleRules } from './base';
 

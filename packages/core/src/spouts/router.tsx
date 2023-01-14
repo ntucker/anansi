@@ -1,7 +1,7 @@
 import { Route, RouteProvider, RouteController } from '@anansi/router';
-import React from 'react';
 import { createBrowserHistory } from 'history';
 import type { Update } from 'history';
+import React from 'react';
 
 import type { CreateRouter, ClientSpout } from './types';
 

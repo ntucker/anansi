@@ -1,8 +1,8 @@
-import React, { memo, Suspense } from 'react';
 import { Layout, Spin } from 'antd';
+import React, { memo, Suspense } from 'react';
 
-import Nav from 'navigation/Nav';
 import ErrorBoundary from 'components/ErrorBoundary';
+import Nav from 'navigation/Nav';
 
 import Routes from './routes';
 

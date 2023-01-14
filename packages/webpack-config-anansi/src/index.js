@@ -1,13 +1,13 @@
 import { always } from 'ramda';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import webpack from 'webpack';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import makeBaseConfig, { ROOT_PATH } from './base';
-import makeDevConfig from './dev';
-import makeProdConfig from './prod';
 import makeCheckConfig from './check';
+import makeDevConfig from './dev';
 import makeNobuildConfig from './nobuild';
 import makeNodeConfig from './node';
+import makeProdConfig from './prod';
 
 export * from './base';
 export { default as makeStorybookConfigGenerator } from './storybook';

@@ -22,7 +22,7 @@
     "build": "yarn workspaces foreach -tpi --no-private run build",
     "dev": "yarn workspaces foreach -pi --no-private run dev",
     "lint": "eslint packages/*/src",
-    "format": "eslint --fix packages/**/src",
+    "format": "eslint --fix packages/*/src",
     "build:types": "tsc --build",
     "build:pkg": "yarn build:types && yarn workspaces foreach -t --no-private run build",
     "build:clean": "yarn workspaces foreach -tpi --no-private run build:clean",

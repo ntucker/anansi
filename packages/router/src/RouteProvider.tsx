@@ -1,7 +1,7 @@
 // TODO: Mock useTransition() to support earlier versions of react, just without v18 features
-import React, { memo, useCallback, useTransition } from 'react';
 import { PojoRouter, RouteController } from '@pojo-router/core';
 import type { Update } from 'history';
+import React, { memo, useCallback, useTransition } from 'react';
 
 import { IsLoadingContext } from './IsLoadingContext';
 import type { Route } from './types';

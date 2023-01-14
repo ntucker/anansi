@@ -1,6 +1,5 @@
 import { Entity, Schema } from '@rest-hooks/endpoint';
 import { GQLEndpoint } from '@rest-hooks/graphql';
-import { camelCase, snakeCase } from 'lodash';
 import {
   PathArgs,
   RestEndpoint,
@@ -10,6 +9,7 @@ import {
   GetEndpoint,
   RestGenerics,
 } from '@rest-hooks/rest';
+import { camelCase, snakeCase } from 'lodash';
 
 import { getAuth } from './Auth';
 
@@ -122,7 +122,7 @@ export interface GithubResource<U extends string, S extends Schema>
 
 function deeplyApplyKeyTransform(obj: any, transform: (key: string) => string) {
   const ret: any = Array.isArray(obj) ? [] : {};
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).forEach(key => {
     if (obj[key] != null && typeof obj[key] === 'object') {
       ret[transform(key)] = deeplyApplyKeyTransform(obj[key], transform);
     } else {

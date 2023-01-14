@@ -1,5 +1,5 @@
-import React from 'react';
 import { useRoutes } from '@pojo-router/core';
+import React from 'react';
 
 import { Route } from './types';
 

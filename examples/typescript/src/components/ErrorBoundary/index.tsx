@@ -1,13 +1,13 @@
+import { Spin } from 'antd';
+import classNames from 'classnames';
 import { lazy, Suspense, Component } from 'react';
 import type { ReactChild } from 'react';
-import classNames from 'classnames';
-import { Spin } from 'antd';
 
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { history } from 'navigation';
 
-import styles from './index.scss';
 import { ReactComponent as BigAlertIcon } from './big-alert.svg';
+import styles from './index.scss';
 
 function handleRefresh() {
   window.location.reload(true);

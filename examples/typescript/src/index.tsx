@@ -1,7 +1,7 @@
+import { CacheProvider } from '@rest-hooks/react';
 import ReactDOM from 'react-dom/client';
 import { Router, RouteChildrenProps } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
-import { CacheProvider } from '@rest-hooks/react';
 
 import { history } from 'navigation';
 

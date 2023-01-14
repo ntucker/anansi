@@ -1,5 +1,5 @@
-import React, { memo, useEffect, useState } from 'react';
 import type { Update } from 'history';
+import React, { memo, useEffect, useState } from 'react';
 
 import { ControllerContext, LocationContext } from './context';
 import RouteController from './Controller';

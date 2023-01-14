@@ -1,11 +1,11 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import webpack from 'webpack';
 import path from 'path';
+import webpack from 'webpack';
 import logging from 'webpack/lib/logging/runtime';
 
-import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
 import { getStyleRules } from './base';
 import getHttpsConfig from './getHttpsConfig';
+import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
 
 const chalk = require('react-dev-utils/chalk');
 

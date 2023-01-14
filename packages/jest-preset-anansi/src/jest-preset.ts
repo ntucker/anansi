@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import type * as _babel from 'babel__core';
 
-const { pathsToModuleNameMapper } = require('ts-jest');
 const { readTsConfig } = require('@anansi/ts-utils');
 const semver = require('semver');
+const { pathsToModuleNameMapper } = require('ts-jest');
 
 const TSCONFIG = process.env.ANANSI_JEST_TSCONFIG ?? 'tsconfig.json';
 const BABELCONFIG = process.env.ANANSI_JEST_BABELCONFIG ?? true;

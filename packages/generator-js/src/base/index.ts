@@ -1,5 +1,5 @@
-import { InstallPeersMixin } from '../utils';
 import { ConfigureGenerator } from '../app';
+import { InstallPeersMixin } from '../utils';
 
 export default class extends InstallPeersMixin(ConfigureGenerator) {
   initializing() {

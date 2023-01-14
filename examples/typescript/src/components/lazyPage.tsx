@@ -1,5 +1,5 @@
-import { lazy } from 'react';
 import { memoize } from 'lodash';
+import { lazy } from 'react';
 
 function lazyPage(pageName: string) {
   const Page = lazy(

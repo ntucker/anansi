@@ -1,8 +1,8 @@
-import Generator from 'yeoman-generator';
 import ejs from 'ejs';
 import execa from 'execa';
-import pacote from 'pacote';
 import type { Editor } from 'mem-fs-editor';
+import pacote from 'pacote';
+import Generator from 'yeoman-generator';
 
 export interface FsEditor extends Editor {
   extendJSONTpl(

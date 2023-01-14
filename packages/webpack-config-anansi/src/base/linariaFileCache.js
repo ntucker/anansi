@@ -1,8 +1,8 @@
+const crypto = require('crypto');
 const findCacheDir = require('find-cache-dir');
 const fs = require('fs');
-const path = require('path');
-const crypto = require('crypto');
 const mkdirp = require('mkdirp');
+const path = require('path');
 
 const hashFileName = name => {
   const hash = crypto.createHash('md5');

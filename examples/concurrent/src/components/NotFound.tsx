@@ -1,5 +1,5 @@
-import { Result, Button } from 'antd';
 import { Link } from '@anansi/router';
+import { Result, Button } from 'antd';
 
 export default function NotFound({ error }: { error: any }) {
   return (
