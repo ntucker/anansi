@@ -1,5 +1,5 @@
-import React, { lazy, memo } from 'react';
 import memoize from 'nano-memoize';
+import React, { lazy, memo } from 'react';
 
 import type { LazyPage } from './types';
 

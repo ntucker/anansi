@@ -1,8 +1,8 @@
-import path from 'path';
-import semver from 'semver';
 import * as babel from '@babel/core';
 import { version as babelCoreVersion } from '@babel/core/package.json';
 import { version as babelLoaderVersion } from 'babel-loader/package.json';
+import path from 'path';
+import semver from 'semver';
 
 import { version } from '../../package.json';
 

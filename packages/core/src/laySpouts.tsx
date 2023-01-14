@@ -1,5 +1,5 @@
-import { renderToPipeableStream as reactRender } from 'react-dom/server';
 import crypto from 'crypto';
+import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
 import { Render } from './scripts/types';
 import { ServerProps } from './spouts/types';

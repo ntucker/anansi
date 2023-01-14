@@ -1,6 +1,6 @@
-import { useState, SyntheticEvent } from 'react';
 import { AbstractInstanceType } from '@rest-hooks/react';
 import { Entity, Resource } from '@rest-hooks/rest';
+import { useState, SyntheticEvent } from 'react';
 
 export default function useForm<T extends typeof Entity>(
   R: T,

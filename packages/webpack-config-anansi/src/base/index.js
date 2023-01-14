@@ -1,11 +1,11 @@
-import path from 'path';
-import { StatsWriterPlugin } from 'webpack-stats-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import path from 'path';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import { StatsWriterPlugin } from 'webpack-stats-plugin';
 
 import { ROOT_PATH } from './constants';
-import { NODE_ALIAS } from './node-polyfill';
 import { generateBabelLoader } from './generateBabelLoader';
+import { NODE_ALIAS } from './node-polyfill';
 import { version } from '../../package.json';
 
 const findCacheDir = require('find-cache-dir');

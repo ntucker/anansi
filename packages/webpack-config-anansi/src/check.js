@@ -1,5 +1,5 @@
-import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plugin';
 import CircularDependencyPlugin from 'circular-dependency-plugin';
+import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plugin';
 
 export default function makeCheckConfig(
   baseConfig,

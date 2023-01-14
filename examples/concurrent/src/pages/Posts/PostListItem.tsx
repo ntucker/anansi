@@ -1,7 +1,7 @@
-import { useSuspense } from '@rest-hooks/react';
-import { List, Avatar } from 'antd';
 import { Link } from '@anansi/router';
 import { Img } from '@rest-hooks/img';
+import { useSuspense } from '@rest-hooks/react';
+import { List, Avatar } from 'antd';
 
 import { Post, UserResource } from 'resources/Discuss';
 

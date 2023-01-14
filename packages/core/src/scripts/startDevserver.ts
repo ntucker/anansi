@@ -15,8 +15,8 @@ import tmp from 'tmp';
 import { ufs } from 'unionfs';
 import { promisify } from 'util';
 import webpack, { MultiCompiler } from 'webpack';
-import WebpackDevServer from 'webpack-dev-server';
 import logging from 'webpack/lib/logging/runtime';
+import WebpackDevServer from 'webpack-dev-server';
 
 import 'cross-fetch/polyfill';
 import { BoundRender } from './types';

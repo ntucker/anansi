@@ -8,11 +8,11 @@
 
 // This is adapted to hook create-react-app directly into react-refresh's existing socket connections
 
-var stripAnsi = require('strip-ansi');
-var launchEditorEndpoint = require('react-dev-utils/launchEditorEndpoint');
-var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 var runWithPatchedUrl = require('@pmmmwh/react-refresh-webpack-plugin/client/utils/patchUrl');
+var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
+var launchEditorEndpoint = require('react-dev-utils/launchEditorEndpoint');
 var ErrorOverlay = require('react-error-overlay');
+var stripAnsi = require('strip-ansi');
 
 ErrorOverlay.setEditorHandler(function editorHandler(errorLocation) {
   // Keep this sync with errorOverlayMiddleware.js

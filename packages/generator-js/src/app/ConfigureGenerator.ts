@@ -1,9 +1,9 @@
-import { BetterGenerator } from '../utils';
 import {
   DEFAULT_ASSET_PATH,
   DEFAULT_ROOT_PATH,
   DEFAULT_SERVER_PATH,
 } from '../defaults';
+import { BetterGenerator } from '../utils';
 
 interface Options {
   appName: string;

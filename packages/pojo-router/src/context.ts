@@ -1,5 +1,5 @@
-import { createContext } from 'react';
 import type { Location } from 'history';
+import { createContext } from 'react';
 
 import RouteController from './Controller';
 

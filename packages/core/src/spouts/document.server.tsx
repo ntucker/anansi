@@ -1,10 +1,10 @@
-import React from 'react';
 import type { Route } from '@anansi/router';
+import React from 'react';
 import { StatsChunkGroup } from 'webpack';
 
-import type { ServerSpout } from './types';
 import type { Policy } from './csp';
 import Document from './DocumentComponent';
+import type { ServerSpout } from './types';
 
 type NeededNext = {
   matchedRoutes: Route<any>[];

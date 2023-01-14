@@ -6,14 +6,14 @@ import sillyStyle from 'silly.module.scss';
 import { IssueResource } from '@standard-endpoint/github/Issue';
 import StaticBlock from '@standard-endpoint/github/StaticBlock';
 
-import { ReactComponent as Copy } from './Copy.svg';
-import style from './index.scss';
-import plain from './plain.css';
-import Worker from './my.worker.ts';
-import animated from './animated-overlay.gif';
 import AngleDownUrl, {
   ReactComponent as AngleDown,
 } from './angle-down-solid.svg';
+import animated from './animated-overlay.gif';
+import { ReactComponent as Copy } from './Copy.svg';
+import style from './index.scss';
+import Worker from './my.worker.ts';
+import plain from './plain.css';
 import restHooks from './rest_hooks_logo_and_text.svg';
 import myHtml from './test.html';
 

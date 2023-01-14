@@ -1,7 +1,7 @@
 import chalk from 'chalk';
-import shelobsay from 'shelobsay';
-import prettier from 'gulp-prettier';
 import filter from 'gulp-filter';
+import prettier from 'gulp-prettier';
+import shelobsay from 'shelobsay';
 
 import ConfigureGenerator from './ConfigureGenerator';
 
