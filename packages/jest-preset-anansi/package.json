@@ -64,7 +64,7 @@
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.0",
     "semver": "^7.3.8",
-    "ts-jest": "^29.0.3",
+    "ts-jest": "^29.0.5",
     "whatwg-fetch": "^3.0.0"
   },
   "peerDependencies": {
