@@ -89,7 +89,7 @@ function Nav({
           selectable={false}
           defaultOpenKeys={openKeys}
           items={items}
-          selectedKeys={[selectedFriend || route.name]}
+          selectedKeys={[selectedFriend || route?.name]}
         />
       </div>
     </Sider>
