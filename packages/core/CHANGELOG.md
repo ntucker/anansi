@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.9...@anansi/core@0.16.0) (2023-01-18)
+
+### 🚀 Features
+
+* Add antdSpout ([651586d](https://github.com/ntucker/anansi/commit/651586d46213a4d91aec055720a6dc11bee64a46))
+
+### 📦 Package
+
+* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+
 ### [0.15.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.8...@anansi/core@0.15.9) (2023-01-07)
 
 **Note:** Version bump only for package @anansi/core

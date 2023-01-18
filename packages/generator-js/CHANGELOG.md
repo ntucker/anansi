@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.6...@anansi/generator-js@10.2.7) (2023-01-18)
+
+### 📦 Package
+
+* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+* Update all non-major dependencies ([#1808](https://github.com/ntucker/anansi/issues/1808)) ([9db0adf](https://github.com/ntucker/anansi/commit/9db0adf6c856d981cd32f40775b202244b42a763))
+* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+
 ### [10.2.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.5...@anansi/generator-js@10.2.6) (2023-01-05)
 
 ### 📦 Package

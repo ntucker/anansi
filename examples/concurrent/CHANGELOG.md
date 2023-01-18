@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/ntucker/anansi/compare/example-react-18@4.1.9...example-react-18@4.2.0) (2023-01-18)
+
+### 🚀 Features
+
+* Add antdSpout ([651586d](https://github.com/ntucker/anansi/commit/651586d46213a4d91aec055720a6dc11bee64a46))
+
+### 🐛 Bug Fix
+
+* Route might not always exist ([00fcb1a](https://github.com/ntucker/anansi/commit/00fcb1a5c2290c7e53a1ee2b82996ba93f0100e6))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1808](https://github.com/ntucker/anansi/issues/1808)) ([9db0adf](https://github.com/ntucker/anansi/commit/9db0adf6c856d981cd32f40775b202244b42a763))
+* Update all non-major dependencies ([#1813](https://github.com/ntucker/anansi/issues/1813)) ([d366218](https://github.com/ntucker/anansi/commit/d366218b40eba2c7b3ac632fb137235fd6937fdf))
+* Update JS test packages ([#1812](https://github.com/ntucker/anansi/issues/1812)) ([9f55b79](https://github.com/ntucker/anansi/commit/9f55b7924396911c0a45830996a0211302dc61f3))
+* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+* Update linting packages ([#1815](https://github.com/ntucker/anansi/issues/1815)) ([4a0d67b](https://github.com/ntucker/anansi/commit/4a0d67b36bf382bb2fab2e25e2b50ae3de341479))
+
 ### [4.1.9](https://github.com/ntucker/anansi/compare/example-react-18@4.1.8...example-react-18@4.1.9) (2023-01-07)
 
 ### 📦 Package

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.0.7...@anansi/webpack-config@14.1.0) (2023-01-18)
+
+### 🚀 Features
+
+* Add option `cssExtractOptions` to control MiniCssExtractPlugin ([#1810](https://github.com/ntucker/anansi/issues/1810)) ([15525db](https://github.com/ntucker/anansi/commit/15525dba67f38c719593f4b00b47ea9fcdcfea34))
+
+### 📦 Package
+
+* Update `mkdirp` to v2 ([#1816](https://github.com/ntucker/anansi/issues/1816)) ([7d99bc8](https://github.com/ntucker/anansi/commit/7d99bc827a02696455a97390ea82bdc2ff9cb759))
+* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+* Update all non-major dependencies ([#1808](https://github.com/ntucker/anansi/issues/1808)) ([9db0adf](https://github.com/ntucker/anansi/commit/9db0adf6c856d981cd32f40775b202244b42a763))
+* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+
 ### [14.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.0.6...@anansi/webpack-config@14.0.7) (2023-01-07)
 
 ### 📦 Package

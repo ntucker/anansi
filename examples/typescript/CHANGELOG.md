@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.8](https://github.com/ntucker/anansi/compare/example-typescript@11.0.7...example-typescript@11.0.8) (2023-01-18)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1808](https://github.com/ntucker/anansi/issues/1808)) ([9db0adf](https://github.com/ntucker/anansi/commit/9db0adf6c856d981cd32f40775b202244b42a763))
+* Update all non-major dependencies ([#1813](https://github.com/ntucker/anansi/issues/1813)) ([d366218](https://github.com/ntucker/anansi/commit/d366218b40eba2c7b3ac632fb137235fd6937fdf))
+* Update JS test packages ([#1812](https://github.com/ntucker/anansi/issues/1812)) ([9f55b79](https://github.com/ntucker/anansi/commit/9f55b7924396911c0a45830996a0211302dc61f3))
+* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+
 ### [11.0.7](https://github.com/ntucker/anansi/compare/example-typescript@11.0.6...example-typescript@11.0.7) (2023-01-07)
 
 **Note:** Version bump only for package example-typescript
