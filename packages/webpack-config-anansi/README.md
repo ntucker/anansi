@@ -483,6 +483,11 @@ linaria has its own config files it can use, and it is recommended to use those 
 
 [Configuring Linaria](https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#options)
 
+### cssExtractOptions
+
+Can configure how [MiniCssExtractPlugin](https://github.com/webpack-contrib/mini-css-extract-plugin) operates.  Set to `false` to disable CSS extraction altogether.
+
+[Configuration options](https://github.com/webpack-contrib/mini-css-extract-plugin#options)
 ### tsconfigPathOptions
 
 Enabled by default. Uses any module resolution specifications like aliases in `tsconfig`.

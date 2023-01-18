@@ -31,6 +31,7 @@ export default function makeBaseConfig({
   nohash,
   argv,
   env,
+  cssExtractOptions,
 }) {
   const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
   const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
@@ -89,6 +90,33 @@ export default function makeBaseConfig({
     ];
   }
 
+  const plugins = [
+    new StatsWriterPlugin({
+      filename: manifestFilename,
+      stats: {
+        chunkModules: false,
+        source: false,
+        chunks: false,
+        modules: false,
+        assets: true,
+      },
+    }),
+  ]
+
+  if(cssExtractOptions !== false) {
+    plugins.push(new MiniCssExtractPlugin({
+      filename:
+        (mode !== 'production') | nohash
+          ? '[name].css'
+          : '[name].[contenthash].css',
+      chunkFilename:
+        (mode !== 'production') | nohash
+          ? '[name].css'
+          : '[name].[contenthash].css',
+      ...cssExtractOptions,
+    }))
+  }
+
   const assetModuleFilename =
     nohash || mode !== 'production'
       ? '[name].[ext][query]'
@@ -126,28 +154,7 @@ export default function makeBaseConfig({
         env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
       }),
     },
-    plugins: [
-      new StatsWriterPlugin({
-        filename: manifestFilename,
-        stats: {
-          chunkModules: false,
-          source: false,
-          chunks: false,
-          modules: false,
-          assets: true,
-        },
-      }),
-      new MiniCssExtractPlugin({
-        filename:
-          (mode !== 'production') | nohash
-            ? '[name].css'
-            : '[name].[contenthash].css',
-        chunkFilename:
-          (mode !== 'production') | nohash
-            ? '[name].css'
-            : '[name].[contenthash].css',
-      }),
-    ],
+    plugins: plugins,
     module: {
       rules: [
         {

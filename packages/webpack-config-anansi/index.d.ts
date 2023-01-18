@@ -10,6 +10,7 @@ import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plu
 import type { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import type { TransformOptions } from '@babel/core';
 import type { Options as SassOptions } from 'sass-loader';
+import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
 
 export interface Options {
   rootPath?: string;
@@ -28,6 +29,7 @@ export interface Options {
   svgoOptions?: OptimizeOptions | false;
   svgrOptions?: any | false;
   linariaOptions?: PluginOptions | false;
+  cssExtractOptions?: MiniCssExtractPluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
   globalStyleDir?: string | false;
   sassOptions?: SassOptions | false;

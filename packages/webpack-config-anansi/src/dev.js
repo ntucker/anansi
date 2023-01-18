@@ -25,6 +25,7 @@ export default function makeDevConfig(
     cssModulesOptions,
     globalStyleDir,
     isStackblitz,
+    cssExtractOptions,
   },
 ) {
   const config = { ...baseConfig };
@@ -161,6 +162,7 @@ export default function makeDevConfig(
     sassResources,
     globalStyleDir,
     target: argv?.target,
+    cssExtractOptions,
   });
   config.module.rules = [...config.module.rules, styleRules];
   return config;

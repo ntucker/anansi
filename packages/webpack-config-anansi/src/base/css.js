@@ -4,12 +4,13 @@ import path from 'path';
 import cssPresetEnv from 'postcss-preset-env';
 import { always } from 'ramda';
 
-const getCSSLoaders = ({ mode, target }) => {
+const getCSSLoaders = ({ mode, target, cssExtractOptions }) => {
+  const miniCssExtractPluginLoader = {
+    loader: MiniCssExtractPlugin.loader,
+    options: { emit: !target?.includes?.('node') },
+  };
+
   const loaders = [
-    {
-      loader: MiniCssExtractPlugin.loader,
-      options: { emit: !target?.includes?.('node') },
-    },
     {
       loader: require.resolve('css-loader'),
       options:
@@ -37,7 +38,10 @@ const getCSSLoaders = ({ mode, target }) => {
       },
     },
   ];
-  return loaders;
+
+  return cssExtractOptions === false
+    ? loaders
+    : [miniCssExtractPluginLoader, ...loaders];
 };
 
 const getSASSLoaders = ({ sassResources, sassOptions }) => {
@@ -69,9 +73,10 @@ export default function getStyleRules({
   globalStyleDir,
   mode,
   target,
+  cssExtractOptions,
 }) {
   const absoluteBasePath = path.join(rootPath, basePath);
-  const cssLoaders = getCSSLoaders({ mode, target });
+  const cssLoaders = getCSSLoaders({ mode, target, cssExtractOptions });
   const cssModuleLoaders = cssLoaders.map(loader => {
     if (/($|\/)css-loader/.test(loader.loader)) {
       return {
