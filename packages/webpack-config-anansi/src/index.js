@@ -27,7 +27,6 @@ export function makeConfig(options) {
       serverDir: 'server_assets/',
       manifestFilename: 'manifest.json',
       extraJsLoaders: [],
-      cssExtractOptions: {},
       ...options,
       mode: argv?.mode || process.env.NODE_ENV,
       nohash:
@@ -66,6 +65,11 @@ export function makeConfig(options) {
     if ('linariaOptions' in options && options.linariaOptions === undefined) {
       throw new Error(
         'Undefined is not a valid option for linariaOptions. To disable use `false`',
+      );
+    }
+    if ('cssExtractOptions' in options && options.cssExtractOptions === undefined) {
+      throw new Error(
+        'Undefined is not a valid option for cssExtractOptions. To disable use `false`',
       );
     }
     if (
