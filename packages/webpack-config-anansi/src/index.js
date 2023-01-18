@@ -68,6 +68,14 @@ export function makeConfig(options) {
       );
     }
     if (
+      'cssExtractOptions' in options &&
+      options.cssExtractOptions === undefined
+    ) {
+      throw new Error(
+        'Undefined is not a valid option for cssExtractOptions. To disable use `false`',
+      );
+    }
+    if (
       'tsconfigPathsOptions' in options &&
       options.tsconfigPathsOptions === undefined
     ) {

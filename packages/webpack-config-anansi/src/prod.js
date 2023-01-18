@@ -27,6 +27,7 @@ export default function makeProdConfig(
     fontPreload,
     svgoOptions,
     nohash,
+    cssExtractOptions,
   },
 ) {
   const config = { ...baseConfig };
@@ -166,6 +167,7 @@ export default function makeProdConfig(
     cssModulesOptions,
     globalStyleDir,
     target: argv?.target,
+    cssExtractOptions,
   });
   config.module.rules = [...config.module.rules, styleRules];
 
