@@ -6,6 +6,7 @@ import {
   routerSpout,
   JSONSpout,
   appSpout,
+  antdSpout,
 } from '@anansi/core/server';
 import { useController } from '@rest-hooks/react';
 
@@ -28,10 +29,12 @@ const spouts = prefetchSpout('controller')(
     title: 'anansi',
     csPolicy,
   })(
-    JSONSpout()(
-      restHooksSpout()(
-        routerSpout({ useResolveWith: useController, createRouter })(
-          appSpout(app),
+    antdSpout()(
+      JSONSpout()(
+        restHooksSpout()(
+          routerSpout({ useResolveWith: useController, createRouter })(
+            appSpout(app),
+          ),
         ),
       ),
     ),

@@ -10,6 +10,7 @@ type NeededNext = {
   matchedRoutes: Route<any>[];
   title?: string;
   scripts?: React.ReactNode[];
+  extraStyle?: React.ReactNode[];
 };
 
 export default function DocumentSpout(options: {
@@ -75,6 +76,7 @@ export default function DocumentSpout(options: {
       app: (
         <Document
           {...options}
+          extraStyle={nextProps.extraStyle}
           title={nextProps.title ?? options.title}
           assets={assets}
           rootId={options.rootId}

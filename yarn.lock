@@ -145,6 +145,7 @@ __metadata:
     webpack-dev-server: ^4.9.0
     whatwg-fetch: ^3.6.2
   peerDependencies:
+    "@ant-design/cssinjs": ^1.5.1
     "@rest-hooks/react": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
     "@rest-hooks/redux": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -153,6 +154,8 @@ __metadata:
     react-dom: ^18.0.0-0
     webpack: ^5.60.0
   peerDependenciesMeta:
+    "@ant-design/cssinjs":
+      optional: true
     "@rest-hooks/react":
       optional: true
     "@rest-hooks/redux":
@@ -445,9 +448,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@ant-design/cssinjs@npm:1.4.0"
+"@ant-design/cssinjs@npm:^1.4.0, @ant-design/cssinjs@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@ant-design/cssinjs@npm:1.5.1"
   dependencies:
     "@babel/runtime": ^7.11.1
     "@emotion/hash": ^0.8.0
@@ -459,7 +462,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: c488599af25ddccb947007df13d14b1917ae5a639d8d1636af86081ff59850ce47cb964375c5920fddcf657010ec2be84b91b6273fd8d4a45b98b9be85154bf9
+  checksum: 19ff1167ec51d5fcd2f02affd1300e33804d7cddd0543367161ea8b87ba1882b9937ff5857c91c4f20b4669fc6df246e05dc86fc8f5638d566ff28c9126ef725
   languageName: node
   linkType: hard
 
@@ -12427,6 +12430,7 @@ __metadata:
     "@anansi/jest-preset": ^0.7.44
     "@anansi/router": ^0.7.8
     "@anansi/webpack-config": ^14.0.7
+    "@ant-design/cssinjs": ^1.5.1
     "@babel/core": 7.20.12
     "@babel/runtime": ^7.20.6
     "@linaria/core": 4.2.5

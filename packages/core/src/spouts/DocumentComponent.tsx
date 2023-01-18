@@ -5,6 +5,7 @@ type Props = {
   children: React.ReactNode;
   assets: { href: string; as?: string; rel?: string }[];
   head: React.ReactNode;
+  extraStyle: React.ReactNode;
   scripts: React.ReactNode;
   title: string;
   rootId: string;
@@ -23,6 +24,7 @@ export default function Document({
   csPolicy,
   nonce,
   scripts,
+  extraStyle,
 }: Props) {
   let cspMeta: null | React.ReactNode = null;
   if (csPolicy) {
@@ -52,6 +54,7 @@ export default function Document({
         <meta charSet={charSet} />
         {cspMeta}
         {head}
+        {extraStyle}
         {assets.map((asset, i) => (
           <link key={i} rel="preload" {...asset} />
         ))}
