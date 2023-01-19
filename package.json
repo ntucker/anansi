@@ -63,7 +63,7 @@
     "@linaria/core": "4.2.5",
     "@linaria/babel-preset": "4.3.3",
     "@linaria/utils": "4.3.0",
-    "normalize-package-data": "4.0.1",
+    "normalize-package-data": "5.0.0",
     "package-json": "^7.0.0",
     "normalize-url": "^6",
     "read-package-json": "5.0.2",
