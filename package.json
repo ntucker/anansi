@@ -65,7 +65,7 @@
     "@linaria/utils": "4.3.0",
     "normalize-package-data": "5.0.0",
     "package-json": "^7.0.0",
-    "normalize-url": "^6",
+    "normalize-url": "^8.0.0",
     "read-package-json": "5.0.2",
     "get-pkg-repo": "5.0.0",
     "@types/webpack": "^5.0.0",
