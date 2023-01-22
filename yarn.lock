@@ -97,7 +97,7 @@ __metadata:
     bin-version-check: ^5.0.0
     chalk: ^4.1.2
     commander: ^10.0.0
-    execa: ^5.1.1
+    execa: ^6.1.0
     latest-version: ^7.0.0
     yo: ^4.3.1
   peerDependencies:
@@ -220,7 +220,7 @@ __metadata:
     copyfiles: 2.4.1
     core-js: ^3.21.0
     ejs: ^3.1.8
-    execa: ^5.1.1
+    execa: ^6.1.0
     gulp-filter: ^7.0.0
     gulp-prettier: ^4.0.0
     husky: 7.0.4
