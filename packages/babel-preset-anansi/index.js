@@ -165,11 +165,13 @@ function buildPreset(api, options = {}) {
     '.tsx',
     '.mts',
     '.mtsx',
+    '.cts',
     '.js',
     '.jsx',
     '.es',
     '.es6',
     '.mjs',
+    '.cjs',
   ];
   options.resolver.alias = {
     ...options.resolver.alias,

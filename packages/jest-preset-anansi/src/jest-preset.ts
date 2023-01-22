@@ -60,9 +60,11 @@ module.exports = {
       'tsx',
       'mts',
       'mtsx',
+      'cts',
       'js',
       'jsx',
       'mjs',
+      'cjs',
       'json',
     ],
     moduleNameMapper: {
