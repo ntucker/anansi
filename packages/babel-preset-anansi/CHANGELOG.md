@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.3.3...@anansi/babel-preset@3.4.0) (2023-01-22)
+
+### 🚀 Features
+
+* Support cjs files ([4ef2b29](https://github.com/ntucker/anansi/commit/4ef2b296b32af57440cc4c670128dc88f4a27dce))
+
+### 📦 Package
+
+* Update babel packages ([#1822](https://github.com/ntucker/anansi/issues/1822)) ([bcdda91](https://github.com/ntucker/anansi/commit/bcdda91913fccaab2d937543123199bbb2b514c9))
+
 ### [3.3.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.3.2...@anansi/babel-preset@3.3.3) (2023-01-18)
 
 ### 📦 Package

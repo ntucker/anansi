@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.57](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.56...@pojo-router/core@0.5.57) (2023-01-22)
+
+**Note:** Version bump only for package @pojo-router/core
+
 ### [0.5.56](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.55...@pojo-router/core@0.5.56) (2023-01-18)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.45...@anansi/jest-preset@0.8.0) (2023-01-22)
+
+### 🚀 Features
+
+* Support cjs files ([4ef2b29](https://github.com/ntucker/anansi/commit/4ef2b296b32af57440cc4c670128dc88f4a27dce))
+
 ### [0.7.45](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.7.44...@anansi/jest-preset@0.7.45) (2023-01-18)
 
 ### 📦 Package
