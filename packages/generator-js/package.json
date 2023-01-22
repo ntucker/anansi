@@ -48,7 +48,7 @@
     "@babel/cli": "7.20.7",
     "@babel/core": "7.20.12",
     "@types/ejs": "3.1.1",
-    "@types/gulp-filter": "3.0.34",
+    "@types/gulp-filter": "3.0.35",
     "@types/mem-fs-editor": "7.0.2",
     "@types/node": "18.11.18",
     "@types/pacote": "11.1.5",
@@ -74,7 +74,7 @@
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.2.1",
-    "mem-fs-editor": "^9.5.0",
+    "mem-fs-editor": "^9.6.0",
     "pacote": "^15.0.8",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.7.0"
