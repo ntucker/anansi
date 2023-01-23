@@ -23,7 +23,7 @@
     "@anansi/jest-preset": "^0.8.0",
     "@anansi/webpack-config": "^14.1.1",
     "@babel/core": "7.20.12",
-    "@rest-hooks/test": "9.1.4",
+    "@rest-hooks/test": "10.0.0",
     "@types/babel__core": "7.20.0",
     "@types/classnames": "2.3.1",
     "@types/eslint": "8.4.10",

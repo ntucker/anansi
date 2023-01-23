@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.4.1",
     "@anansi/jest-preset": "^0.8.0",
     "@anansi/webpack-config": "^14.1.1",
-    "@rest-hooks/test": "9.1.4",
+    "@rest-hooks/test": "10.0.0",
     "@storybook/addon-essentials": "6.5.15",
     "@storybook/addon-links": "6.5.15",
     "@storybook/addons": "6.5.15",
