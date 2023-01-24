@@ -4637,14 +4637,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.2.7":
-  version: 6.2.7
-  resolution: "@rest-hooks/rest@npm:6.2.7"
+"@rest-hooks/rest@npm:6.3.0":
+  version: 6.3.0
+  resolution: "@rest-hooks/rest@npm:6.3.0"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@rest-hooks/endpoint": ^3.3.0
     path-to-regexp: ^6.2.1
-  checksum: 06b8fdc828572166edb926003579f3c501a91db047305531b8dd5d4eac436468520f4525479361c71a3552fee67e883e6c309b3900e516e2807522b6152a8887
+  checksum: fdf12c826896c3867e7943545c8587435c0da57ff895084cf230b04bef2672e7391ecc90dc0a427f353e0921e583f9f2e850ecc0c7715c79cd1c6ecbbee35270
   languageName: node
   linkType: hard
 
@@ -4669,9 +4669,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:10.0.0":
-  version: 10.0.0
-  resolution: "@rest-hooks/test@npm:10.0.0"
+"@rest-hooks/test@npm:10.1.0":
+  version: 10.1.0
+  resolution: "@rest-hooks/test@npm:10.1.0"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@testing-library/react": ^13.4.0
@@ -4697,7 +4697,7 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: a259d35354829f4b1e226bb65055940f03e62ed8a9b49eca861ce0c2bf5d2617652fd3b2295b47cf591dcf7a9b8151a68076add3ef36037333234a06a1895db7
+  checksum: b7203fdd742de48ddce245c1e9b38a0ae1267fa5711255e790f2a34aa40c778c06852b3769f320eb1bf6a69e0419cc20cd88886cd29ccb0cc11964f8c8131427
   languageName: node
   linkType: hard
 
@@ -12584,8 +12584,8 @@ __metadata:
     "@rest-hooks/img": 0.8.3
     "@rest-hooks/react": ^7.1.0
     "@rest-hooks/redux": ^6.2.0
-    "@rest-hooks/rest": 6.2.7
-    "@rest-hooks/test": 10.0.0
+    "@rest-hooks/rest": 6.3.0
+    "@rest-hooks/test": 10.1.0
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": 8.4.10
@@ -12631,8 +12631,8 @@ __metadata:
     "@babel/runtime": ^7.20.6
     "@rest-hooks/graphql": 0.3.12
     "@rest-hooks/react": 7.1.7
-    "@rest-hooks/rest": 6.2.7
-    "@rest-hooks/test": 10.0.0
+    "@rest-hooks/rest": 6.3.0
+    "@rest-hooks/test": 10.1.0
     "@storybook/addon-essentials": 6.5.15
     "@storybook/addon-links": 6.5.15
     "@storybook/addons": 6.5.15
