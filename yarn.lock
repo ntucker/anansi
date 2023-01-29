@@ -279,7 +279,7 @@ __metadata:
     "@pojo-router/core": "workspace:^"
     history: ^5.3.0
     jest: 29.4.1
-    nano-memoize: ^2.0.0
+    nano-memoize: ^3.0.0
     rimraf: 4.1.2
     webpack: 5.75.0
     webpack-cli: 5.0.1
@@ -18628,10 +18628,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "nano-memoize@npm:2.0.0"
-  checksum: 2251c7cd81237c1551a27cd6299063973283683576d5aa33831a0cc88323f1b8da6b7bdd1e59a10b227dea97676fe01b4e699440e1c786f8d57490b899c77e27
+"nano-memoize@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "nano-memoize@npm:3.0.0"
+  checksum: abb04a5edd02d7e5d53b30ef8c2523034b4107a76240225b32cb5eff3e6193669ba052ff8181328cc599d4135813f7bd1a36915912f0605f20ddf462d510c8bb
   languageName: node
   linkType: hard
 
