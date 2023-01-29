@@ -146,8 +146,8 @@ __metadata:
     whatwg-fetch: ^3.6.2
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1
-    "@rest-hooks/react": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
-    "@rest-hooks/redux": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
+    "@rest-hooks/react": ^6.0.0 || ^7.0.0
+    "@rest-hooks/redux": ^6.3.0 || ^7.0.0
     "@types/react": ^17.0.40 || ^18.0.0-0
     "@types/react-dom": ^17.0.40 || ^18.0.0-0
     react: ^18.0.0-0
@@ -2407,7 +2407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.0, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
   dependencies:
@@ -4590,7 +4590,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:7.2.0, @rest-hooks/react@npm:^7.1.0":
+"@rest-hooks/react@npm:7.2.0, @rest-hooks/react@npm:^7.2.0":
   version: 7.2.0
   resolution: "@rest-hooks/react@npm:7.2.0"
   dependencies:
@@ -4610,11 +4610,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/redux@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "@rest-hooks/redux@npm:6.2.0"
+"@rest-hooks/redux@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@rest-hooks/redux@npm:6.3.0"
   dependencies:
-    "@babel/runtime": ^7.13.0
+    "@babel/runtime": ^7.17.0
   peerDependencies:
     "@rest-hooks/react": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
@@ -4623,7 +4623,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 8f87cbe71bb24ba8e241b7a1705699df43f0d2db7e761a49930d549d1765a0b625b279b7db4e05c8f8479eca8ca274bbd61fc5ac0c2a74ee5e02dbba602f8282
+  checksum: 4a9b654cbd371ae5358f75b8fd5827e6e9453dff4fce2af556fcb79f67ad56bcf058eaf4a27f5e813268b4916da5e59ec6b5838160380f823f705be0bdeffd9e
   languageName: node
   linkType: hard
 
@@ -12577,8 +12577,8 @@ __metadata:
     "@rest-hooks/endpoint": 3.4.0
     "@rest-hooks/hooks": 3.1.6
     "@rest-hooks/img": 0.8.3
-    "@rest-hooks/react": ^7.1.0
-    "@rest-hooks/redux": ^6.2.0
+    "@rest-hooks/react": ^7.2.0
+    "@rest-hooks/redux": ^6.3.0
     "@rest-hooks/rest": 6.3.2
     "@rest-hooks/test": 10.1.0
     "@types/babel__core": 7.20.0
