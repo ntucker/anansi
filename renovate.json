@@ -17,6 +17,13 @@
       "rangeStrategy": "bump"
     },
     {
+      "matchPaths": [
+        "examples/**"
+      ],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
       "matchPackageNames": ["@babel/runtime", "@babel/runtime-corejs3", "core-js", "core-js-compat"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
