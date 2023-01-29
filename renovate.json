@@ -11,13 +11,7 @@
   "packageRules": [
     {
       "matchPaths": [
-        "packages/webpack-config-anansi",
-        "packages/babel-preset-anansi",
-        "packages/browserslist-config-anansi",
-        "packages/cli",
-        "packages/generator-js",
-        "packages/jest-preset-anansi",
-        "packages/ts-utils"
+        "packages/**"
       ],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump"
@@ -51,12 +45,23 @@
         "postcss",
         "postcss-preset-env",
         "svgo-loader",
+        "svgo",
         "@svgr/webpack"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "webpack",
       "groupName": "webpack packages"
     },
+    {
+      "matchPackageNames": [
+        "svgo-loader",
+        "svgo"
+      ],
+      "matchUpdateTypes": ["major"],
+      "groupSlug": "svg",
+      "groupName": "svg processors"
+    },
+
     {
       "extends": ["monorepo:babel"],
       "matchUpdateTypes": ["major", "minor", "patch"],
