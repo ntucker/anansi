@@ -1,4 +1,3 @@
-import { Entity, Schema } from '@rest-hooks/endpoint';
 import { GQLEndpoint } from '@rest-hooks/graphql';
 import {
   PathArgs,
@@ -8,6 +7,8 @@ import {
   createResource,
   GetEndpoint,
   RestGenerics,
+  Entity,
+  Schema,
 } from '@rest-hooks/rest';
 import { camelCase, snakeCase } from 'lodash';
 
