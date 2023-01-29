@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@^3.4.0, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
+"@anansi/babel-preset@^3.4.1, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
@@ -89,7 +89,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^2.0.23, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^2.0.24, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -110,7 +110,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.16.1, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.16.2, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -170,7 +170,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@^0.15.0, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.15.1, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -237,7 +237,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.8.0, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.8.1, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -266,7 +266,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.7.10, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.7.11, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -302,7 +302,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^14.1.1, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^14.1.2, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -4495,9 +4495,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
-    "@anansi/babel-preset": ^3.4.0
+    "@anansi/babel-preset": ^3.4.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.1.1
+    "@anansi/webpack-config": ^14.1.2
     "@babel/cli": 7.20.7
     "@babel/core": 7.20.12
     "@babel/runtime": ^7.17.0
@@ -12632,9 +12632,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-linaria@workspace:examples/linaria"
   dependencies:
-    "@anansi/babel-preset": ^3.4.0
+    "@anansi/babel-preset": ^3.4.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.1.1
+    "@anansi/webpack-config": ^14.1.2
     "@babel/plugin-transform-modules-commonjs": 7.20.11
     "@babel/runtime": ^7.20.6
     "@linaria/core": 4.2.5
@@ -12656,14 +12656,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-react-18@workspace:examples/concurrent"
   dependencies:
-    "@anansi/babel-preset": ^3.4.0
+    "@anansi/babel-preset": ^3.4.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/cli": ^2.0.23
-    "@anansi/core": ^0.16.1
-    "@anansi/eslint-plugin": ^0.15.0
-    "@anansi/jest-preset": ^0.8.0
-    "@anansi/router": ^0.7.10
-    "@anansi/webpack-config": ^14.1.1
+    "@anansi/cli": ^2.0.24
+    "@anansi/core": ^0.16.2
+    "@anansi/eslint-plugin": ^0.15.1
+    "@anansi/jest-preset": ^0.8.1
+    "@anansi/router": ^0.7.11
+    "@anansi/webpack-config": ^14.1.2
     "@ant-design/cssinjs": ^1.5.1
     "@babel/core": 7.20.12
     "@babel/runtime": ^7.20.6
@@ -12714,10 +12714,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-typescript@workspace:examples/typescript"
   dependencies:
-    "@anansi/babel-preset": ^3.4.0
+    "@anansi/babel-preset": ^3.4.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/jest-preset": ^0.8.0
-    "@anansi/webpack-config": ^14.1.1
+    "@anansi/jest-preset": ^0.8.1
+    "@anansi/webpack-config": ^14.1.2
     "@ant-design/pro-components": ^2.3.34
     "@babel/runtime": ^7.20.6
     "@rest-hooks/graphql": 0.3.13

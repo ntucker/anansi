@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.10](https://github.com/ntucker/anansi/compare/example-typescript@11.0.9...example-typescript@11.0.10) (2023-01-29)
+
+### 📦 Package
+
+* Update `@rest-hooks/test` to v10 ([#1824](https://github.com/ntucker/anansi/issues/1824)) ([c28ece6](https://github.com/ntucker/anansi/commit/c28ece6f673b4857660018b13f04e425374026f2))
+* Update all non-major dependencies ([#1823](https://github.com/ntucker/anansi/issues/1823)) ([0b4a107](https://github.com/ntucker/anansi/commit/0b4a10796cebcee4f62999f130b4f23c2c20d801))
+* Update all non-major dependencies ([#1825](https://github.com/ntucker/anansi/issues/1825)) ([6c164d2](https://github.com/ntucker/anansi/commit/6c164d201911aa27d5c537a8e27ea44befff5dce))
+* Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
+* Update all non-major dependencies ([#1833](https://github.com/ntucker/anansi/issues/1833)) ([4fb7484](https://github.com/ntucker/anansi/commit/4fb74845a9bc1179758413ca919806c45d1418c7))
+* Update JS test packages ([#1827](https://github.com/ntucker/anansi/issues/1827)) ([b0eb13e](https://github.com/ntucker/anansi/commit/b0eb13efce78005fe179169d5e9e21d0e9d5bd57))
+* Update storybook monorepo to v6.5.16 ([#1826](https://github.com/ntucker/anansi/issues/1826)) ([1c7e727](https://github.com/ntucker/anansi/commit/1c7e727f9021484ad93663e68b8aca8e2d6048e6))
+
 ### [11.0.9](https://github.com/ntucker/anansi/compare/example-typescript@11.0.8...example-typescript@11.0.9) (2023-01-22)
 
 ### 📦 Package
