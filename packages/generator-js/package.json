@@ -56,10 +56,10 @@
     "copyfiles": "2.4.1",
     "husky": "7.0.4",
     "jest": "29.4.1",
-    "rimraf": "4.1.1",
+    "rimraf": "4.1.2",
     "yeoman-assert": "3.1.1",
     "yeoman-environment": "3.13.0",
-    "yeoman-test": "7.2.0"
+    "yeoman-test": "7.3.0"
   },
   "engines": {
     "node": "^14.17.0 || ^16.13.0 || >=18.0.0",
