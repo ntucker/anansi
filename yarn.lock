@@ -142,7 +142,7 @@ __metadata:
     unionfs: ^4.4.0
     webpack: 5.75.0
     webpack-cli: 5.0.1
-    webpack-dev-server: ^4.9.0
+    webpack-dev-server: ^4.11.1
     whatwg-fetch: ^3.6.2
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1
@@ -26651,7 +26651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:4.11.1, webpack-dev-server@npm:^4.9.0":
+"webpack-dev-server@npm:4.11.1, webpack-dev-server@npm:^4.11.1":
   version: 4.11.1
   resolution: "webpack-dev-server@npm:4.11.1"
   dependencies:
