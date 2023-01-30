@@ -1,4 +1,3 @@
-import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import React from 'react';
 
 import type { ServerSpout } from './types';
@@ -15,6 +14,9 @@ export default function antdSpout(): ServerSpout<
   NeededNext
 > {
   return next => async props => {
+    const { createCache, extractStyle, StyleProvider } = await import(
+      '@ant-design/cssinjs'
+    );
     const cache = createCache();
 
     const nextProps = await next(props);
