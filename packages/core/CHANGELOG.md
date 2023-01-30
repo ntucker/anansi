@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.2...@anansi/core@0.16.3) (2023-01-30)
+
+### 💅 Enhancement
+
+* Dynamic import for antd deps ([cc7838a](https://github.com/ntucker/anansi/commit/cc7838a830ae949fb85a6f7d46b4de17ad70b99e))
+* Dynamic import for rest-hooks deps ([a31f409](https://github.com/ntucker/anansi/commit/a31f4097ef068f5db79f7e3ea45a71e450321ac1))
+* lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
+
 ### [0.16.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.1...@anansi/core@0.16.2) (2023-01-29)
 
 ### 📦 Package

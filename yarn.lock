@@ -110,7 +110,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.16.2, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.16.3, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -266,7 +266,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.7.11, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.7.12, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -12659,10 +12659,10 @@ __metadata:
     "@anansi/babel-preset": ^3.4.1
     "@anansi/browserslist-config": ^1.4.1
     "@anansi/cli": ^2.0.24
-    "@anansi/core": ^0.16.2
+    "@anansi/core": ^0.16.3
     "@anansi/eslint-plugin": ^0.15.1
     "@anansi/jest-preset": ^0.8.1
-    "@anansi/router": ^0.7.11
+    "@anansi/router": ^0.7.12
     "@anansi/webpack-config": ^14.1.2
     "@ant-design/cssinjs": ^1.5.1
     "@babel/core": 7.20.12

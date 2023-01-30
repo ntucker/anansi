@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.12](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.11...@anansi/router@0.7.12) (2023-01-30)
+
+### 💅 Enhancement
+
+* lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
+
 ### [0.7.11](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.10...@anansi/router@0.7.11) (2023-01-29)
 
 ### 📦 Package
