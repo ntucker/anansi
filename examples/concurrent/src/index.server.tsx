@@ -17,12 +17,9 @@ import { createRouter } from './routing';
 const csPolicy = {
   'base-uri': "'self'",
   'object-src': "'none'",
-  'script-src': ["'self'"],
+  'script-src': ["'self'", "'unsafe-inline'"],
   'style-src': ["'unsafe-inline'", "'self'"],
 };
-if (process.env.NODE_ENV !== 'production') {
-  csPolicy['script-src'].push("'unsafe-inline'");
-}
 
 const spouts = prefetchSpout('controller')(
   documentSpout({

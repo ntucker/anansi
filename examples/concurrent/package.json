@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "anansi serve --dev ./src/index.tsx",
-    "start:server": "WEBPACK_PUBLIC_PATH='/assets/' anansi serve ./dist-server/App.js",
-    "build": "WEBPACK_PUBLIC_PATH='/assets/' webpack --mode=production",
+    "start:server": "NODE_ENV=production WEBPACK_PUBLIC_PATH='/assets/' anansi serve ./dist-server/App.js",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "WEBPACK_PUBLIC_PATH='/assets/' webpack --mode=production",
     "build:server": "WEBPACK_PUBLIC_PATH='/assets/' webpack --mode=production --target=node --env entrypath=index.server.tsx",
     "build:clean": "rm -rf dist && rm -rf dist-server",
     "build:analyze": "webpack --mode=production --env analyze",

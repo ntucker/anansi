@@ -34,9 +34,8 @@ export default function Document({
     };
     if (
       nonce &&
-      // nonces negate 'unsafe-inline' so do not add it if that directive exists
-      (!policy['script-src'] ||
-        !policy['script-src'].includes("'unsafe-inline'"))
+      // nonces negate 'unsafe-inline' so do not add it in development to keep things easier
+      process.env.NODE_ENV === 'production'
     ) {
       if (typeof policy['script-src'] === 'string') {
         policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];

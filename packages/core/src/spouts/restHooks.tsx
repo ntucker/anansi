@@ -16,6 +16,8 @@ export default function restHooksSpout(
 
     if (process.env.NODE_ENV !== 'production' && !data) {
       console.error('Rest Hooks init data not found');
+    } else if (!data) {
+      console.info('Rest Hooks init missing');
     }
 
     return {

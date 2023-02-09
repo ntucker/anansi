@@ -19,7 +19,7 @@
     "postinstall": "husky install && yarn workspace \"@anansi/webpack-config\" run build",
     "changelog": "yarn lerna version",
     "release": "yarn workspaces foreach -tiv --no-private npm publish --access public --tolerate-republish",
-    "build": "yarn workspaces foreach -tpi --no-private run build",
+    "build": "yarn workspaces foreach -t --no-private run build",
     "dev": "yarn workspaces foreach -pi --no-private run dev",
     "lint": "eslint packages/*/src",
     "format": "eslint --fix packages/*/src",
