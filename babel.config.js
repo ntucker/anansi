@@ -1,7 +1,12 @@
 const { resolvePath } = require('babel-plugin-module-resolver');
 
 module.exports = function (api) {
-  api.cache.using(() => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV);
+  api.cache.using(
+    () =>
+      process.env.NODE_ENV +
+      process.env.BROWSERSLIST_ENV +
+      process.env.BABEL_MODULE,
+  );
   return {
     presets: [
       [
@@ -9,7 +14,10 @@ module.exports = function (api) {
         {
           typing: 'typescript',
           loose: true,
-          modules: 'commonjs',
+          modules:
+            process.env.BABEL_MODULE === 'false'
+              ? false
+              : process.env.BABEL_MODULE || 'commonjs',
           resolver: {
             extensions: ['.ts.', '.tsx', '.js', '.jsx', '.es', '.es6', '.mjs'],
             resolvePath(sourcePath, currentFile, opts) {
