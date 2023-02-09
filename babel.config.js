@@ -9,10 +9,7 @@ module.exports = function (api) {
         {
           typing: 'typescript',
           loose: true,
-          modules:
-            process.env.BABEL_MODULE === 'false'
-              ? false
-              : process.env.BABEL_MODULE || 'commonjs',
+          modules: 'commonjs',
           resolver: {
             extensions: ['.ts.', '.tsx', '.js', '.jsx', '.es', '.es6', '.mjs'],
             resolvePath(sourcePath, currentFile, opts) {
