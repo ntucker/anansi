@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.2...@anansi/webpack-config@14.1.3) (2023-02-09)
+
+### 💅 Enhancement
+
+* Add support for tsconfig 'nodenext' | 'node16' ([32bd97b](https://github.com/ntucker/anansi/commit/32bd97b7d3b2f9ff0697602a9747927a4fbf7ffc))
+
+### 📦 Package
+
+* Update webpack packages ([#1840](https://github.com/ntucker/anansi/issues/1840)) ([090f00f](https://github.com/ntucker/anansi/commit/090f00f91969eaa1e96401495d4264e0e8bc7a97))
+
 ### [14.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.1...@anansi/webpack-config@14.1.2) (2023-01-29)
 
 ### 📦 Package

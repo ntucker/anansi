@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.3...@anansi/core@0.16.4) (2023-02-09)
+
+### 💅 Enhancement
+
+* Use unsafe-inline for better legacy browser compat ([595cacb](https://github.com/ntucker/anansi/commit/595cacb9f157537bd0db7b71df8cc5e39dabfd85))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1838](https://github.com/ntucker/anansi/issues/1838)) ([0bd6008](https://github.com/ntucker/anansi/commit/0bd60089c57d81801d24fa1927cb50a285dde121))
+* Update JS test packages to ^29.4.2 ([#1842](https://github.com/ntucker/anansi/issues/1842)) ([2a8c989](https://github.com/ntucker/anansi/commit/2a8c989127268c46524558f4c69714df20d6ca58))
+
 ### [0.16.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.2...@anansi/core@0.16.3) (2023-01-30)
 
 ### 💅 Enhancement
