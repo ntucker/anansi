@@ -82,7 +82,7 @@
   "dependencies": {
     "@anansi/router": "workspace:^",
     "@babel/runtime": "^7.17.0",
-    "@rest-hooks/ssr": "^0.7.7",
+    "@rest-hooks/ssr": "^0.7.8",
     "chalk": "^4.1.2",
     "compression": "^1.7.4",
     "cross-fetch": "^3.1.5",
