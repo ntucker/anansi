@@ -231,7 +231,7 @@ __metadata:
     rimraf: 4.1.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.13.0
+    yeoman-environment: 3.14.0
     yeoman-generator: ^5.7.0
     yeoman-test: 7.3.0
   languageName: unknown
@@ -27393,9 +27393,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.13.0, yeoman-environment@npm:^3.5.1":
-  version: 3.13.0
-  resolution: "yeoman-environment@npm:3.13.0"
+"yeoman-environment@npm:3.14.0, yeoman-environment@npm:^3.5.1":
+  version: 3.14.0
+  resolution: "yeoman-environment@npm:3.14.0"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -27438,7 +27438,7 @@ __metadata:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 2d622d18d2e3fff179477b6dabbdee8b380d58b5d639d300c3ace75e0533223cecb9b325baaf0f46f71879eaa5778d64b11fa660403a26ec3086b2a428484ce6
+  checksum: 7d10f3d1b4fccb1a2618382dceb42205097ebd948a89d805553af75d2315edda9d02a8474f9d4de9a92d231dc98a61de862aa38a8ab933ebad47d0aab54a21a9
   languageName: node
   linkType: hard
 
