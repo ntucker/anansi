@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.3...@anansi/webpack-config@14.1.4) (2023-02-10)
+
+### 🐛 Bug Fix
+
+* Compatibility with ESM exports packages ([#1845](https://github.com/ntucker/anansi/issues/1845)) ([8c21961](https://github.com/ntucker/anansi/commit/8c219613d4c9d5ee58a6813c0556854ad81a573c))
+
 ### [14.1.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.2...@anansi/webpack-config@14.1.3) (2023-02-09)
 
 ### 💅 Enhancement
