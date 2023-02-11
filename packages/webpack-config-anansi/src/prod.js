@@ -139,7 +139,8 @@ export default function makeProdConfig(
             ascii_only: true,
           },
           ...terserOptions,
-          keep_classnames: !!env?.profile || terserOptions?.keep_classnames,
+          keep_classnames:
+            !!env?.profile || (terserOptions?.keep_classnames ?? true),
           keep_fnames: !!env?.profile || terserOptions?.keep_fnames,
         },
         extractComments: true,
