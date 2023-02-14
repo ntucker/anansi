@@ -75,9 +75,9 @@
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.2.1",
     "mem-fs-editor": "^9.6.0",
-    "pacote": "^15.0.8",
+    "pacote": "^15.1.0",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^5.7.0"
+    "yeoman-generator": "^5.7.1"
   },
   "jest": {
     "testEnvironment": "node"
