@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.15.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.15.2...@anansi/eslint-plugin@0.15.3) (2023-02-14)
+
+### 💅 Enhancement
+
+* Allow unused '_' variable to help destructuring ([5471dd5](https://github.com/ntucker/anansi/commit/5471dd56f37f48484cc5bf838277e0ba6563e7b6))
+
 ### [0.15.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.15.1...@anansi/eslint-plugin@0.15.2) (2023-02-09)
 
 ### 📦 Package

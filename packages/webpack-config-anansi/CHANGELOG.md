@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.4...@anansi/webpack-config@14.1.5) (2023-02-14)
+
+### 💅 Enhancement
+
+* Don't mangle class names by default ([a92c53e](https://github.com/ntucker/anansi/commit/a92c53ef4571d5ab9784d1e4852e2247d5fd09fa))
+
+### 📦 Package
+
+* Update `webpack-bundle-analyzer` to ^4.8.0 ([#1849](https://github.com/ntucker/anansi/issues/1849)) ([55be6f2](https://github.com/ntucker/anansi/commit/55be6f2da82ad21a1efcac520c88af7538925e82))
+
 ### [14.1.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.3...@anansi/webpack-config@14.1.4) (2023-02-10)
 
 ### 🐛 Bug Fix
