@@ -225,14 +225,14 @@ __metadata:
     gulp-prettier: ^4.0.0
     husky: 7.0.4
     jest: 29.4.2
-    mem-fs: ^2.2.1
+    mem-fs: ^2.3.0
     mem-fs-editor: ^9.6.0
     pacote: ^15.1.0
     rimraf: 4.1.2
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
     yeoman-environment: 3.14.1
-    yeoman-generator: ^5.7.1
+    yeoman-generator: ^5.8.0
     yeoman-test: 7.3.0
   languageName: unknown
   linkType: soft
@@ -4646,12 +4646,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.5.1, @rest-hooks/endpoint@npm:^3.5.1":
-  version: 3.5.1
-  resolution: "@rest-hooks/endpoint@npm:3.5.1"
+"@rest-hooks/endpoint@npm:3.5.2, @rest-hooks/endpoint@npm:^3.5.1, @rest-hooks/endpoint@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "@rest-hooks/endpoint@npm:3.5.2"
   dependencies:
     "@babel/runtime": ^7.17.0
-  checksum: 1452db9677d38b48bd7caac27b536bfffd14c2e8c912d79e10cca81a1ca67be5a2c3bf7a52b596bdfbf3b48a9d18749873337614df111adac41e573fa840da64
+  checksum: 4d8a6a3cc70f5523a206dd8473e418120c02dcafa701df50ed35fea40a0bee648dc58fa5775695ec1e999a1e9c733a0dace25a2ad123428c97d7d95d15410f11
   languageName: node
   linkType: hard
 
@@ -4744,14 +4744,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.3.5":
-  version: 6.3.5
-  resolution: "@rest-hooks/rest@npm:6.3.5"
+"@rest-hooks/rest@npm:6.3.6":
+  version: 6.3.6
+  resolution: "@rest-hooks/rest@npm:6.3.6"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/endpoint": ^3.5.1
+    "@rest-hooks/endpoint": ^3.5.2
     path-to-regexp: ^6.2.1
-  checksum: 7bcb914eba9c564ca0acd9fa3ada81b05fa7bad2374cc12ef8ed795f114c62b0718df088dd1b2dcb946502570afc9314f3455a4f55c28a31d2e382db39448f67
+  checksum: b92e23ef25d4c260583d44570d700a74d6da217bea1e78705aaf96bc86be35b6c97ab0c77319cbb53030307535660d978a04df3868b0ccb53439dc85341ba8c1
   languageName: node
   linkType: hard
 
@@ -6865,10 +6865,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^15.6.1":
-  version: 15.14.0
-  resolution: "@types/node@npm:15.14.0"
-  checksum: 94bdbf5e92b915b439478c421b1a9554e3411a6770cb01af2703356c1ea46c202e10fb486264a19fbddf028a6b0e260f21cd970b719e6e8b81dd7c64cc9f69c8
+"@types/node@npm:^15.6.2":
+  version: 15.14.9
+  resolution: "@types/node@npm:15.14.9"
+  checksum: 49f7f0522a3af4b8389aee660e88426490cd54b86356672a1fedb49919a8797c00d090ec2dcc4a5df34edc2099d57fc2203d796c4e7fbd382f2022ccd789eee7
   languageName: node
   linkType: hard
 
@@ -12651,12 +12651,12 @@ __metadata:
     "@linaria/core": 4.2.6
     "@linaria/react": 4.3.4
     "@linaria/shaker": 4.2.8
-    "@rest-hooks/endpoint": 3.5.1
+    "@rest-hooks/endpoint": 3.5.2
     "@rest-hooks/hooks": 3.1.9
     "@rest-hooks/img": 0.8.6
     "@rest-hooks/react": ^7.2.0
     "@rest-hooks/redux": ^6.3.0
-    "@rest-hooks/rest": 6.3.5
+    "@rest-hooks/rest": 6.3.6
     "@rest-hooks/test": 10.1.2
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
@@ -12703,7 +12703,7 @@ __metadata:
     "@babel/runtime": ^7.20.6
     "@rest-hooks/graphql": 0.3.16
     "@rest-hooks/react": 7.2.3
-    "@rest-hooks/rest": 6.3.5
+    "@rest-hooks/rest": 6.3.6
     "@rest-hooks/test": 10.1.2
     "@storybook/addon-essentials": 6.5.16
     "@storybook/addon-links": 6.5.16
@@ -17910,7 +17910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.5.0, mem-fs-editor@npm:^9.6.0":
+"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.5.0, mem-fs-editor@npm:^9.6.0":
   version: 9.6.0
   resolution: "mem-fs-editor@npm:9.6.0"
   dependencies:
@@ -17933,15 +17933,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^1.2.0 || ^2.0.0, mem-fs@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "mem-fs@npm:2.2.1"
+"mem-fs@npm:^1.2.0 || ^2.0.0, mem-fs@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "mem-fs@npm:2.3.0"
   dependencies:
-    "@types/node": ^15.6.1
+    "@types/node": ^15.6.2
     "@types/vinyl": ^2.0.4
     vinyl: ^2.0.1
     vinyl-file: ^3.0.0
-  checksum: e44fb4acf8391a847b9e9494115b27300eda77aa7c6caea533786f43d385253515b0c0ff4f00906744b2bd31010df923cc448bb6efb9593f41df5d40b0e69046
+  checksum: 375c6b81da35b6a73ce98b209f8795fb25d6f8ef6a60b67aa4f9cf32e16078484c1e704e0008b0fc095675af9679dc74a9891cab51cc34433939ae13c706a59c
   languageName: node
   linkType: hard
 
@@ -27466,9 +27466,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^5.7.1":
-  version: 5.7.1
-  resolution: "yeoman-generator@npm:5.7.1"
+"yeoman-generator@npm:^5.8.0":
+  version: 5.8.0
+  resolution: "yeoman-generator@npm:5.8.0"
   dependencies:
     chalk: ^4.1.0
     dargs: ^7.0.0
@@ -27476,6 +27476,7 @@ __metadata:
     execa: ^5.1.1
     github-username: ^6.0.0
     lodash: ^4.17.11
+    mem-fs-editor: ^9.0.0
     minimist: ^1.2.5
     read-pkg-up: ^7.0.1
     run-async: ^2.0.0
@@ -27488,7 +27489,7 @@ __metadata:
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: 9eaa64b264f31541d2d2fcbdc1aa74f8895b9e7bc8e82b6ca71f14d7d819278fe539f4cf79d8ee4fdc8c5c195153251834dd3828bfd69bc167c795f2d91d2ba0
+  checksum: dd9fbbfca7c37cc002c794b897a92b4c83b3019b662896d92a12671823a1ad7f04da2c0d1b14c85afdabf691a2f38630afc08f5250de29ab1a5cadd6e792ad41
   languageName: node
   linkType: hard
 
