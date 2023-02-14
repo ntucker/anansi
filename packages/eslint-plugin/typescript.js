@@ -21,7 +21,12 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           'warn',
           // ignoreRestSiblings is disabled by default
-          { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+          {
+            vars: 'all',
+            args: 'after-used',
+            ignoreRestSiblings: true,
+            argsIgnorePattern: '^_',
+          },
         ],
         '@typescript-eslint/ban-ts-comment': [
           'error',
