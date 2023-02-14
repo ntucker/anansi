@@ -73,11 +73,11 @@
     "execa": "^5.1.1",
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
-    "mem-fs": "^2.2.1",
+    "mem-fs": "^2.3.0",
     "mem-fs-editor": "^9.6.0",
     "pacote": "^15.1.0",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^5.7.1"
+    "yeoman-generator": "^5.8.0"
   },
   "jest": {
     "testEnvironment": "node"
