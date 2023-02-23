@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
-    "babel-jest": "^29.4.2",
+    "babel-jest": "^29.4.3",
     "core-js": "^3.21.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-pnp-resolver": "^1.2.3",
