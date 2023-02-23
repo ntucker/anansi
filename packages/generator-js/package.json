@@ -47,10 +47,10 @@
     "@anansi/babel-preset": "workspace:*",
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.0",
-    "@types/ejs": "3.1.1",
+    "@types/ejs": "3.1.2",
     "@types/gulp-filter": "3.0.35",
     "@types/mem-fs-editor": "7.0.2",
-    "@types/node": "18.13.0",
+    "@types/node": "18.14.1",
     "@types/pacote": "11.1.5",
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
@@ -58,7 +58,7 @@
     "jest": "29.4.2",
     "rimraf": "4.1.2",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "3.14.1",
+    "yeoman-environment": "3.15.1",
     "yeoman-test": "7.3.0"
   },
   "engines": {
@@ -75,7 +75,7 @@
     "gulp-prettier": "^4.0.0",
     "mem-fs": "^2.3.0",
     "mem-fs-editor": "^9.6.0",
-    "pacote": "^15.1.0",
+    "pacote": "^15.1.1",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^5.8.0"
   },
