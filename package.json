@@ -60,9 +60,9 @@
   },
   "resolutions": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
-    "@linaria/core": "4.2.6",
-    "@linaria/babel-preset": "4.4.1",
-    "@linaria/utils": "4.3.1",
+    "@linaria/core": "4.2.8",
+    "@linaria/babel-preset": "4.4.3",
+    "@linaria/utils": "4.3.2",
     "normalize-package-data": "5.0.0",
     "package-json": "^7.0.0",
     "normalize-url": "^6",

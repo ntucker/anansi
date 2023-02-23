@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
-    "@linaria/webpack5-loader": "4.1.13",
+    "@linaria/webpack5-loader": "4.1.15",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^6.5.1",
     "@types/webpack-bundle-analyzer": "^4.6.0",
