@@ -2,7 +2,7 @@ import { ControllerContext } from '@pojo-router/core';
 import { Component } from 'react';
 import type { ReactNode, ComponentType, ContextType } from 'react';
 
-import type { ErrorTypes } from './types';
+import type { ErrorTypes } from './types.js';
 
 interface Props<E extends ErrorTypes> {
   children: ReactNode;

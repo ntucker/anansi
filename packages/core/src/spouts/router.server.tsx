@@ -2,7 +2,7 @@ import { Route, RouteProvider, RouteController } from '@anansi/router';
 import { createMemoryHistory } from 'history';
 import React from 'react';
 
-import type { CreateRouter, ServerSpout } from './types';
+import type { CreateRouter, ServerSpout } from './types.js';
 
 export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;

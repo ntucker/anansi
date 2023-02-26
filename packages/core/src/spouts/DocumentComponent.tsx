@@ -1,5 +1,5 @@
-import type { Policy } from './csp';
-import { buildPolicy } from './csp';
+import type { Policy } from './csp.js';
+import { buildPolicy } from './csp.js';
 
 type Props = {
   children: React.ReactNode;

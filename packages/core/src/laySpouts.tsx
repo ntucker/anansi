@@ -1,8 +1,8 @@
 import crypto from 'crypto';
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
-import { Render } from './scripts/types';
-import { ServerProps } from './spouts/types';
+import type { Render } from './scripts/types.js';
+import type { ServerProps } from './spouts/types.js';
 
 export default function laySpouts(
   spouts: (props: ServerProps) => Promise<{

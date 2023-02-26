@@ -1,6 +1,6 @@
 import { type Manager } from '@rest-hooks/react';
 
-import type { ClientSpout } from './types';
+import type { ClientSpout } from './types.js';
 
 export default function restHooksSpout(
   options: {
@@ -11,7 +11,7 @@ export default function restHooksSpout(
     const nextProps = await next(props);
     const [data, { CacheProvider }] = await Promise.all([
       props.getInitialData('resthooks'),
-      import('./restHooks.provider'),
+      import('./restHooks.provider.js'),
     ]);
 
     if (process.env.NODE_ENV !== 'production' && !data) {

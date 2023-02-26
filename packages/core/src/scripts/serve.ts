@@ -11,11 +11,11 @@ import { Server, IncomingMessage, ServerResponse } from 'http';
 import ora from 'ora';
 import path from 'path';
 import { promisify } from 'util';
-import webpack, { web } from 'webpack';
+import webpack from 'webpack';
 
-import 'cross-fetch/polyfill';
-import getProxyMiddlewares from './getProxyMiddlewares';
-import { Render } from './types';
+import 'cross-fetch/dist/node-polyfill';
+import getProxyMiddlewares from './getProxyMiddlewares.js';
+import { Render } from './types.js';
 
 // run directly from node
 if (require.main === module) {

@@ -1,7 +1,7 @@
 import memoize from 'nano-memoize';
 import React, { lazy, memo } from 'react';
 
-import type { LazyPage } from './types';
+import type { LazyPage } from './types.js';
 
 function lazyPage<T extends React.ComponentType<any>>(
   factory: () => Promise<{ default: T }>,

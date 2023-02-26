@@ -3,7 +3,7 @@ import { createBrowserHistory } from 'history';
 import type { Update } from 'history';
 import React from 'react';
 
-import type { CreateRouter, ClientSpout } from './types';
+import type { CreateRouter, ClientSpout } from './types.js';
 
 export default function routerSpout<ResolveWith>(options: {
   resolveWith?: any;

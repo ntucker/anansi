@@ -18,8 +18,8 @@ import webpack, { MultiCompiler } from 'webpack';
 import logging from 'webpack/lib/logging/runtime';
 import WebpackDevServer from 'webpack-dev-server';
 
-import 'cross-fetch/polyfill';
-import { BoundRender } from './types';
+import 'cross-fetch/dist/node-polyfill';
+import { BoundRender } from './types.js';
 
 // run directly from node
 if (require.main === module) {
@@ -186,7 +186,7 @@ export default function startDevServer(
         outputFileSystem: {
           ...fs,
           join: path.join as any,
-        } as any as typeof fs,
+        } as any,
       },
       setupMiddlewares: (middlewares, devServer) => {
         if (!devServer) {

@@ -1,6 +1,6 @@
 import { Route } from '@anansi/router';
 
-import type { ResolveProps, ServerProps } from './types';
+import type { ResolveProps, ServerProps } from './types.js';
 
 type NeededProps<RouteWith> = {
   matchedRoutes: Route<RouteWith>[];
