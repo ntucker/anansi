@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.7](https://github.com/ntucker/anansi/compare/example-react-18@4.2.6...example-react-18@4.2.7) (2023-02-26)
+
+### 💅 Enhancement
+
+* Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
+
+### 📦 Package
+
+* Update `eslint` to v8.35.0 ([#1857](https://github.com/ntucker/anansi/issues/1857)) ([99182a9](https://github.com/ntucker/anansi/commit/99182a9f168bc3e15e05e2d017c532bf81a31e00))
+* Update all non-major dependencies ([#1853](https://github.com/ntucker/anansi/issues/1853)) ([6d67bf2](https://github.com/ntucker/anansi/commit/6d67bf2b70571d3d062383a0e4b727704551e3f2))
+* Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
+* Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
+* Update linting packages ([#1855](https://github.com/ntucker/anansi/issues/1855)) ([b045465](https://github.com/ntucker/anansi/commit/b045465b7ab8427a4d65ff728420e37d34682d50))
+* Update webpack packages ([#1856](https://github.com/ntucker/anansi/issues/1856)) ([44a06e1](https://github.com/ntucker/anansi/commit/44a06e124fc2cbde08bd6d3a98d3b152365da77d))
+
 ### [4.2.6](https://github.com/ntucker/anansi/compare/example-react-18@4.2.5...example-react-18@4.2.6) (2023-02-14)
 
 ### 📦 Package

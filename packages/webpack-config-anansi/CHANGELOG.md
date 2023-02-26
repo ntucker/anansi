@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.5...@anansi/webpack-config@14.2.0) (2023-02-26)
+
+### 🚀 Features
+
+* Add library option ([cb59120](https://github.com/ntucker/anansi/commit/cb59120ba1ce85ebec366e1abb1d2c72002b195d))
+
+### 📦 Package
+
+* Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
+* Update webpack packages ([#1856](https://github.com/ntucker/anansi/issues/1856)) ([44a06e1](https://github.com/ntucker/anansi/commit/44a06e124fc2cbde08bd6d3a98d3b152365da77d))
+
 ### [14.1.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.4...@anansi/webpack-config@14.1.5) (2023-02-14)
 
 ### 💅 Enhancement

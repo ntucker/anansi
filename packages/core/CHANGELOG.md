@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.6...@anansi/core@0.16.7) (2023-02-26)
+
+### 💅 Enhancement
+
+* Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
+* Detect .cjs webpack configs ([111d6e4](https://github.com/ntucker/anansi/commit/111d6e4414d2f1fcfe8998b07918d328af059810))
+* Use fully qualified module names at import ([159a96e](https://github.com/ntucker/anansi/commit/159a96ea0bf57917325e842cd0584e3a8cfb83df))
+
+### 📦 Package
+
+* Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
+* Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
+
 ### [0.16.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.5...@anansi/core@0.16.6) (2023-02-14)
 
 ### 📦 Package
