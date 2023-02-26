@@ -9,6 +9,7 @@ export class ExchangeRates extends Entity {
   pk(): string {
     return this.currency;
   }
+  static key = 'ExchangeRates';
 }
 
 export const getExchangeRates = new RestEndpoint({
