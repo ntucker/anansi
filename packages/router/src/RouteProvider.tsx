@@ -3,8 +3,8 @@ import { PojoRouter, RouteController } from '@pojo-router/core';
 import type { Update } from 'history';
 import React, { memo, useCallback, useTransition } from 'react';
 
-import { IsLoadingContext } from './IsLoadingContext';
-import type { Route } from './types';
+import { IsLoadingContext } from './IsLoadingContext.js';
+import type { Route } from './types.js';
 
 type Props<ResolveWith> = {
   children: React.ReactNode;

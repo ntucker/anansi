@@ -1,6 +1,6 @@
-export * from './types';
-export { default as PojoRouter } from './PojoRouter';
-export { default as RouteController } from './Controller';
-export * from './hooks';
-export { default as Link } from './Link';
-export * from './context';
+export * from './types.js';
+export { default as PojoRouter } from './PojoRouter.js';
+export { default as RouteController } from './Controller.js';
+export * from './hooks.js';
+export { default as Link } from './Link.js';
+export * from './context.js';

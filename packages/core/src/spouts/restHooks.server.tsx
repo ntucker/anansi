@@ -1,7 +1,7 @@
 import { type Controller, type Manager, type State } from '@rest-hooks/react';
 import type { Store } from 'redux';
 
-import type { ServerSpout } from './types';
+import type { ServerSpout } from './types.js';
 
 export default function restHooksSpout(
   options: {

@@ -2,7 +2,7 @@ import type { History } from 'history';
 import { match as matchPath, compile } from 'path-to-regexp';
 import type { MatchFunction, PathFunction } from 'path-to-regexp';
 
-import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types';
+import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types.js';
 
 type Props<
   Route extends { name: string } = {

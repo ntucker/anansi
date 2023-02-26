@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 
-import { IsLoadingContext } from './IsLoadingContext';
+import { IsLoadingContext } from './IsLoadingContext.js';
 
 export default function useShowLoading(timeout = 100) {
   const isLoading = useContext(IsLoadingContext);

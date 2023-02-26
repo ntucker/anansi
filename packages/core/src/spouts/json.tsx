@@ -1,4 +1,4 @@
-import type { ClientSpout } from './types';
+import type { ClientSpout } from './types.js';
 
 export default function JSONSpout({
   id = 'anansi-json',

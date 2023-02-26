@@ -1,7 +1,6 @@
-import type { Route } from '@anansi/router';
 import React from 'react';
 
-import type { ClientSpout } from './types';
+import type { ClientSpout } from './types.js';
 
 export default function documentSpout(options: {
   head?: React.ReactNode;

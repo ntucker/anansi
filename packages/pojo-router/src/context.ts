@@ -1,7 +1,7 @@
 import type { Location } from 'history';
 import { createContext } from 'react';
 
-import RouteController from './Controller';
+import RouteController from './Controller.js';
 
 export const ControllerContext = createContext(
   new RouteController({

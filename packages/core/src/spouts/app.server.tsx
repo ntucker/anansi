@@ -1,4 +1,4 @@
-import { ServerProps } from './types';
+import { ServerProps } from './types.js';
 
 const appSpout =
   (app: JSX.Element) =>

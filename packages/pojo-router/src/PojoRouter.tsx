@@ -1,8 +1,8 @@
 import type { Update } from 'history';
 import React, { memo, useEffect, useState } from 'react';
 
-import { ControllerContext, LocationContext } from './context';
-import RouteController from './Controller';
+import { ControllerContext, LocationContext } from './context.js';
+import RouteController from './Controller.js';
 
 type Props = {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { ServerSpout } from './types';
+import type { ServerSpout } from './types.js';
 
 type NeededNext = {
   initData?: Record<string, () => unknown>;

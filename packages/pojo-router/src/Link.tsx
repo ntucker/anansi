@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useController } from './hooks';
+import { useController } from './hooks.js';
 
 type ComponentConstraint =
   | keyof JSX.IntrinsicElements

@@ -1,6 +1,6 @@
 import { useContext, useMemo } from 'react';
 
-import { ControllerContext, LocationContext } from './context';
+import { ControllerContext, LocationContext } from './context.js';
 
 export function useLocation() {
   return useContext(LocationContext);

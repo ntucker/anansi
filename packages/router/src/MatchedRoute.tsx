@@ -1,7 +1,6 @@
 import { useRoutes } from '@pojo-router/core';
-import React from 'react';
 
-import { Route } from './types';
+import type { Route } from './types.js';
 
 export default function MatchedRoute({ index }: { index: number }) {
   const routes = useRoutes<Route<any>>();
