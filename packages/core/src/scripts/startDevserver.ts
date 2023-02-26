@@ -19,6 +19,7 @@ import logging from 'webpack/lib/logging/runtime';
 import WebpackDevServer from 'webpack-dev-server';
 
 import 'cross-fetch/dist/node-polyfill';
+import { getWebpackConfig } from './getWebpackConfig.js';
 import { BoundRender } from './types.js';
 
 // run directly from node
@@ -37,11 +38,7 @@ export default function startDevServer(
   entrypoint: string,
   env: Record<string, unknown> = {},
 ) {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const webpackConfig = require(require.resolve(
-    // TODO: use normal resolution algorithm to find webpack file
-    path.join(process.cwd(), 'webpack.config'),
-  ));
+  const webpackConfig = getWebpackConfig();
 
   const log = logging.getLogger('anansi-devserver');
 

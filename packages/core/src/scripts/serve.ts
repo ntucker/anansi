@@ -15,6 +15,7 @@ import webpack from 'webpack';
 
 import 'cross-fetch/dist/node-polyfill';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
+import { getWebpackConfig } from './getWebpackConfig.js';
 import { Render } from './types.js';
 
 // run directly from node
@@ -36,14 +37,7 @@ export default function serve(
 
   const loader = ora('Initializing').start();
 
-  const webpackConfig: (
-    env: any,
-    argv: any,
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-  ) => webpack.Configuration = require(require.resolve(
-    // TODO: use normal resolution algorithm to find webpack file
-    path.join(process.cwd(), 'webpack.config'),
-  ));
+  const webpackConfig = getWebpackConfig();
 
   const manifestPath = getManifestPathFromWebpackconfig(
     webpackConfig({}, { mode: 'production' }),
@@ -140,6 +134,15 @@ export default function serve(
       process.cwd(),
       entrypoint,
     )).default;
+
+    if (typeof render !== 'function') {
+      throw new Error(
+        `default export of ${path.join(
+          process.cwd(),
+          entrypoint,
+        )} is not a function`,
+      );
+    }
 
     wrappingApp.get(
       '/*',
