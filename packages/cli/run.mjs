@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import fs from 'fs';
-import execa from 'execa';
-import path from 'path';
 import { Command } from 'commander';
+import execa from 'execa';
+import fs from 'fs';
 import { createRequire } from 'module';
+import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -140,6 +140,7 @@ program
         serve(entrypath, options);
       }
     } catch (error) {
+      console.error(error);
       if (error.code === 'ERR_MODULE_NOT_FOUND') {
         console.error('@anansi/core must be installed to run this subcommand');
       } else {
