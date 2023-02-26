@@ -5,6 +5,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import makeBaseConfig, { ROOT_PATH } from './base';
 import makeCheckConfig from './check';
 import makeDevConfig from './dev';
+import makeLibraryConfig from './library';
 import makeNobuildConfig from './nobuild';
 import makeNodeConfig from './node';
 import makeProdConfig from './prod';
@@ -143,6 +144,9 @@ export function makeConfig(options) {
           process: require.resolve('process/browser.js'),
         }),
       );
+    }
+    if (options.library) {
+      config = makeLibraryConfig(config, options);
     }
     if (env?.check) {
       config = makeCheckConfig(config, options, env?.check);
