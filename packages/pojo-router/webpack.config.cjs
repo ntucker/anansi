@@ -7,6 +7,9 @@ const generateConfig = makeConfig({
     rootMode: 'upward',
   },
   pkg: require('./package.json'),
+  library: {
+    type: 'commonjs2',
+  },
 });
 
 module.exports = (env, argv) => {
@@ -14,19 +17,5 @@ module.exports = (env, argv) => {
   if (!config.experiments) config.experiments = {};
   config.experiments.backCompat = false;
 
-  config.entry = {
-    server: {
-      import: './src/index.server.ts',
-      library: {
-        type: 'commonjs2',
-      },
-    },
-    client: {
-      import: './src/index.ts',
-      library: {
-        type: 'commonjs2',
-      },
-    },
-  };
   return config;
 };

@@ -31,6 +31,7 @@
     "module": "lib/index.js",
     "types": "lib/index.d.ts"
   },
+  "type": "module",
   "module": "src/index.ts",
   "types": "src/index.ts",
   "exports": {
@@ -47,7 +48,7 @@
     "./server": {
       "types": "./lib/index.server.d.ts",
       "require": "./dist/server.js",
-      "default": "./lib/index.server.js"
+      "default": "./dist/server.js"
     },
     "./scripts": {
       "types": "./lib/scripts/index.d.ts",
@@ -134,9 +135,10 @@
     "dev": "yarn run build:lib -w & yarn run build:bundle -w && fg",
     "test": "jest",
     "test:type": "tsc",
-    "build": "yarn run build:lib && yarn run build:bundle",
-    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=development --target=node",
+    "build": "yarn run build:lib && yarn build:scripts && yarn run build:bundle",
+    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
+    "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node12' babel --root-mode upward src/scripts --out-dir lib/scripts --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts' && echo '{\"type\":\"commonjs\"}' > lib/scripts/package.json",
+    "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=development --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
     "build:clean": "rimraf lib dist ts3.4 legacy *.tsbuildinfo",
     "prepack": "yarn build"
   }
