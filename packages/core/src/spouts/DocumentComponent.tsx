@@ -32,11 +32,7 @@ export default function Document({
     const policy = {
       ...csPolicy,
     };
-    if (
-      nonce &&
-      // nonces negate 'unsafe-inline' so do not add it in development to keep things easier
-      process.env.NODE_ENV === 'production'
-    ) {
+    if (nonce) {
       if (typeof policy['script-src'] === 'string') {
         policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];
       } else {

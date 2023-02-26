@@ -1,4 +1,5 @@
 import type { Route } from '@anansi/router';
+import { Request } from 'express';
 import React from 'react';
 import { StatsChunkGroup } from 'webpack';
 
@@ -70,6 +71,13 @@ export default function DocumentSpout(options: {
           ? { href: asset, as: 'script' }
           : { href: asset },
       );
+    const nonce =
+      // nonces negate 'unsafe-inline' so do not add it in development to keep things easier
+      props.nonce &&
+      (process.env.NODE_ENV === 'production' ||
+        (props.req as Request)?.protocol !== 'http')
+        ? props.nonce
+        : undefined;
 
     return {
       ...nextProps,
@@ -80,7 +88,7 @@ export default function DocumentSpout(options: {
           title={nextProps.title ?? options.title}
           assets={assets}
           rootId={options.rootId}
-          nonce={props.nonce}
+          nonce={nonce}
           csPolicy={options.csPolicy}
           scripts={nextProps.scripts}
         >
