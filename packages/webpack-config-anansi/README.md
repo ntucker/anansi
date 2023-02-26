@@ -377,6 +377,20 @@ Sets [webpack cache type](https://webpack.js.org/configuration/cache/).
 
 Pass these to makeConfig.
 
+### library
+
+Use this option to compile for libraries rather than web applications.
+
+Options are from https://webpack.js.org/configuration/output/#outputlibrary
+
+```js
+const myConfig = makeConfig({
+  library: {
+    type: 'commonjs2',
+  },
+});
+```
+
 ### libraryInclude/libraryExclude
 
 Regex to match libraries to include in the normal build process. This is useful for

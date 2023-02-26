@@ -42,7 +42,11 @@ export default function makeNodeConfig(
   config.output.chunkFilename = '[name].chunk.js';
 
   delete config.output.globalObject;
-  config.output.libraryTarget = 'commonjs2';
+
+  config.output.library = {
+    type: 'commonjs2',
+  };
+
   // don't output stats for server builds as they won't need to reference manifests
   config.plugins = config.plugins.filter(
     plugin => !(plugin instanceof StatsWriterPlugin),
