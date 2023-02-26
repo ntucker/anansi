@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.13...@anansi/generator-js@10.2.14) (2023-02-26)
+
+### 💅 Enhancement
+
+* Add key to ExchangeRates ([d923155](https://github.com/ntucker/anansi/commit/d923155f318e6f65cfef25e097797d534a441acb))
+
 ### [10.2.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.12...@anansi/generator-js@10.2.13) (2023-02-26)
 
 ### 📦 Package

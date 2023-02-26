@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.17](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.16...@anansi/router@0.7.17) (2023-02-26)
+
+### 🐛 Bug Fix
+
+* Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
+
 ### [0.7.16](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.15...@anansi/router@0.7.16) (2023-02-26)
 
 ### 💅 Enhancement

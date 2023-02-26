@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.7...@anansi/core@0.16.8) (2023-02-26)
+
+### 💅 Enhancement
+
+* Always use nonce for https ([a7d29ee](https://github.com/ntucker/anansi/commit/a7d29ee5960b5a6a7a87483c41e2ba89df80a1b8))
+
+### 🐛 Bug Fix
+
+* Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
+
 ### [0.16.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.6...@anansi/core@0.16.7) (2023-02-26)
 
 ### 💅 Enhancement

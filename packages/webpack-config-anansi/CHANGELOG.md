@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.2.0...@anansi/webpack-config@14.2.1) (2023-02-26)
+
+### 🐛 Bug Fix
+
+* Exclude externals when library option is specified ([c951e51](https://github.com/ntucker/anansi/commit/c951e5131a13f6d14d0981ab9e9fa7f06197a756))
+
 ## [14.2.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.1.5...@anansi/webpack-config@14.2.0) (2023-02-26)
 
 ### 🚀 Features
