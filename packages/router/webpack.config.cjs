@@ -2,10 +2,14 @@ const { makeConfig } = require('@anansi/webpack-config');
 
 const generateConfig = makeConfig({
   basePath: 'src',
+  serverDir: 'dist',
   babelLoader: {
     rootMode: 'upward',
   },
   pkg: require('./package.json'),
+  library: {
+    type: 'commonjs2',
+  },
 });
 
 module.exports = (env, argv) => {

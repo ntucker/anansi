@@ -6,12 +6,11 @@ const generateConfig = makeConfig({
   buildDir: 'dist/',
   serverDir: 'dist-server/',
   fontPreload: 'prefetch',
-  libraryInclude: /(@pojo-router\/core|@anansi\/router)/,
+  //libraryInclude: /(@pojo-router\/core|@anansi\/router)/,
   babelLoader: {
     rootMode: Object.prototype.hasOwnProperty.call(
       process.versions,
-      'webcontainer',
-    )
+      'webcontainer')
       ? 'root'
       : 'upward',
   },
