@@ -4,16 +4,19 @@ import { StatsWriterPlugin } from 'webpack-stats-plugin';
 
 export default function makeNodeConfig(
   baseConfig,
-  { rootPath, serverDir, pkg },
+  { rootPath, serverDir, pkg, library },
 ) {
   const config = { ...baseConfig };
   config.target = 'node';
-  if (config.optimization) {
-    config.optimization.minimize = false;
-    config.optimization.splitChunks = {};
-    config.optimization.runtimeChunk = false;
-    config.optimization.concatenateModules = true;
+  if (!config.optimization) {
+    config.optimization = {};
   }
+  config.optimization.minimize = false;
+  config.optimization.splitChunks = {};
+  config.optimization.runtimeChunk = false;
+  config.optimization.concatenateModules = true;
+  config.optimization.removeEmptyChunks = true;
+
   config.node = {
     __dirname: true,
     __filename: true,
@@ -23,7 +26,7 @@ export default function makeNodeConfig(
     nodeExternals({
       allowlist: [
         /@babel\/runtime/,
-        ...(pkg
+        ...(pkg || library
           ? []
           : [
               /\.(svg|css)$/,
