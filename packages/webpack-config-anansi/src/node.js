@@ -7,7 +7,6 @@ export default function makeNodeConfig(
   { rootPath, serverDir, pkg, library },
 ) {
   const config = { ...baseConfig };
-  config.target = 'node';
   if (!config.optimization) {
     config.optimization = {};
   }
