@@ -13,13 +13,13 @@ import path from 'path';
 import { promisify } from 'util';
 import webpack from 'webpack';
 
-import 'cross-fetch/dist/node-polyfill';
+import 'cross-fetch/dist/node-polyfill.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
 import { Render } from './types.js';
 
 // run directly from node
-if (require.main === module) {
+if ('main' in import.meta) {
   const entrypoint = process.argv[2];
 
   if (!entrypoint) {
@@ -29,7 +29,7 @@ if (require.main === module) {
   serve(entrypoint);
 }
 
-export default function serve(
+export default async function serve(
   entrypoint: string,
   options: { serveAssets?: boolean; serveProxy?: boolean } = {},
 ) {
@@ -37,7 +37,7 @@ export default function serve(
 
   const loader = ora('Initializing').start();
 
-  const webpackConfig = getWebpackConfig();
+  const webpackConfig = await getWebpackConfig();
 
   const manifestPath = getManifestPathFromWebpackconfig(
     webpackConfig({}, { mode: 'production' }),
@@ -66,7 +66,7 @@ export default function serve(
   }
 
   // Start the express server after the first compilation
-  function initializeApp(clientManifest: webpack.StatsCompilation) {
+  async function initializeApp(clientManifest: webpack.StatsCompilation) {
     loader.info('Launching server');
     if (!clientManifest) {
       loader.fail('Manifest not found');
@@ -129,11 +129,12 @@ export default function serve(
     }
 
     // SERVER SIDE RENDERING
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const render: Render = require(path.join(
-      process.cwd(),
-      entrypoint,
-    )).default;
+    let render: Render = (await import(path.join(process.cwd(), entrypoint)))
+      .default;
+
+    if ('default' in render) {
+      render = render.default as any;
+    }
 
     if (typeof render !== 'function') {
       throw new Error(
@@ -187,8 +188,14 @@ export default function serve(
       });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  initializeApp(require(manifestPath));
+  let manifest = await import(manifestPath, {
+    assert: { type: 'json' },
+  });
+  // handle inconsistent import conditions
+  if ('default' in manifest) {
+    manifest = manifest.default;
+  }
+  await initializeApp(manifest);
 
   process.on('SIGINT', () => {
     loader.warn('Received SIGINT, devserver shutting down');
