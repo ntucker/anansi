@@ -52,7 +52,7 @@ module.exports = class WebpackGenerator extends (
         cwd,
         shell: true,
       });
-      this.config.set('devssl', true);
+      //this.config.set('devssl', true); TODO: figure out how to make this actually work
     } catch (e) {
       this.config.set('devssl', false);
     }
