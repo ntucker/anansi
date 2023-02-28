@@ -24,7 +24,7 @@ export default function IssueListItem({ post }: { post: Post }) {
   return (
     <List.Item actions={actions}>
       <List.Item.Meta
-        avatar={<Avatar>{author && author.name.substr(0, 1)}</Avatar>}
+        avatar={<Avatar>{author && author.name.substring(0, 1)}</Avatar>}
         title={<Link to={`/post/${post.pk()}`}>{post.title}</Link>}
         description={<Fragment>{post.body}</Fragment>}
       />

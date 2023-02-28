@@ -26,7 +26,7 @@ export default function PostListItem({ post }: { post: Post }) {
         avatar={
           author && (
             <Img component={Avatar} src={author.profileImage}>
-              {author && author.name.substr(0, 1)}
+              {author && author.name.substring(0, 1)}
             </Img>
           )
         }

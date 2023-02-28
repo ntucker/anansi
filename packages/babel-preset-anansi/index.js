@@ -147,7 +147,7 @@ function buildPreset(api, options = {}) {
     if (tsconfig.options.paths) {
       for (const k in tsconfig.options.paths) {
         const key = globToRegExp(k).toString().replace('.*', '(.*)');
-        options.resolver.alias[key.substr(1, key.length - 2)] =
+        options.resolver.alias[key.substring(1, key.length - 1)] =
           './' + tsconfig.options.paths[k][0].replace('*', '\\1');
       }
       options.resolver.root = [path.resolve(tsconfig.options.baseUrl)];

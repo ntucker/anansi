@@ -88,7 +88,7 @@ export default async function serve(
           next: NextFunction,
         ) => {
           const filename =
-            req.url?.substr(
+            req.url?.substring(
               (process.env.WEBPACK_PUBLIC_PATH as string).length,
             ) ?? '';
           const assetPath = path.join(
