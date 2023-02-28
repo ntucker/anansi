@@ -1,4 +1,5 @@
 const { makeConfig } = require('@anansi/webpack-config');
+const nodeExternals = require('webpack-node-externals');
 
 const generateConfig = makeConfig({
   basePath: 'src',
@@ -33,5 +34,16 @@ module.exports = (env, argv) => {
       },
     },
   };
+  const ext = nodeExternals({
+    allowlist: [/@babel\/runtime/],
+    additionalModuleDirs: ['../../node_modules'],
+  });
+  config.externals = [
+    function ({ context, request, contextInfo, getResolve }, callback) {
+      if (request === '@ant-design/cssinjs') {
+        callback(null, 'import ' + request);
+      } else ext({ context, request, contextInfo, getResolve }, callback);
+    },
+  ];
   return config;
 };
