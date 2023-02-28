@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
   if (argv?.target?.includes('node')) {
     config.externals = [
       nodeExternals({
-        allowlist: [/^@anansi\/core\/server/, /^path-to-regexp/, /\.css$/],
+        allowlist: [/^path-to-regexp/, /\.css$/],
       }),
     ];
   }
