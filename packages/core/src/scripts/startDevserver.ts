@@ -35,6 +35,7 @@ if ('main' in import.meta) {
 }
 
 let serverFileContents: Promise<string> = Promise.resolve('');
+let serverEntry = '';
 
 export default async function startDevServer(
   entrypoint: string,
@@ -150,7 +151,7 @@ export default async function startDevServer(
     // ASSETS
     const clientManifest = clientStats.toJson();
 
-    const serverEntry = getServerBundle(serverStats);
+    serverEntry = getServerBundle(serverStats);
     serverFileContents = readFile(serverEntry).then(buf => buf.toString());
     // reload modules
     Object.keys(fsRequire.cache).forEach(key => {
@@ -242,6 +243,23 @@ export default async function startDevServer(
             importRender((multiStats as webpack.MultiStats).stats);
           } catch (e: any) {
             log.error('Failed to load serve entrypoint');
+            const finder = new RegExp(`${serverEntry}:([\\d]+):([\\d]+)`, 'g');
+            serverFileContents.then(fileText => {
+              const textRows = fileText.split('\n');
+              for (const match of e.stack.matchAll(finder) ?? []) {
+                const row = Number.parseInt(match[1]);
+                const col = Number.parseInt(match[2]);
+                log.error('>>> Stack Context [serve entrypoint] <<<');
+                log.error(row + ':' + col);
+                log.error(textRows[row - 2]);
+                log.error(textRows[row - 1]);
+                log.error(Array(col).join(' ') + '^');
+                log.error(textRows[row]);
+                log.error(textRows[row + 1]);
+                log.error(textRows[row + 2]);
+              }
+              diskFs.writeFileSync(serverEntry, fileText);
+            });
 
             throw e;
           }
