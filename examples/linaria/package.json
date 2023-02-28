@@ -1,6 +1,6 @@
 {
   "name": "example-linaria",
-  "version": "5.0.45",
+  "version": "5.0.46",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -16,7 +16,7 @@
   "devDependencies": {
     "@anansi/babel-preset": "^3.4.2",
     "@anansi/browserslist-config": "^1.4.1",
-    "@anansi/webpack-config": "^14.2.1",
+    "@anansi/webpack-config": "^14.3.0",
     "@types/classnames": "2.3.1",
     "@types/react-router-dom": "5.3.3",
     "babel-loader": "9.1.2",

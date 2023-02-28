@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.8...@anansi/core@0.16.9) (2023-02-28)
+
+### 💅 Enhancement
+
+* Give more context when server entrypoint throws ([cefcfbb](https://github.com/ntucker/anansi/commit/cefcfbba8acc4bacc851620a5a171314439a2ec2))
+* Improve logging on errors ([5c01408](https://github.com/ntucker/anansi/commit/5c014082e8b4476bd715cd96d3c4adb717b9f440))
+* Scripts are now ESM ([#1858](https://github.com/ntucker/anansi/issues/1858)) ([acdcb3b](https://github.com/ntucker/anansi/commit/acdcb3b09c36726e5f63e91f937bf19515c3cb25))
+
+### 🐛 Bug Fix
+
+* @ant-design/cssinjs is dynamically imported so its not needed ([1def2db](https://github.com/ntucker/anansi/commit/1def2dbf849edbe92ce3986209296c1518db2330))
+
 ### [0.16.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.7...@anansi/core@0.16.8) (2023-02-26)
 
 ### 💅 Enhancement

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.2.1...@anansi/webpack-config@14.3.0) (2023-02-28)
+
+### 🚀 Features
+
+* We support node 12+ therefore, dynamicImports ([be1a608](https://github.com/ntucker/anansi/commit/be1a60851a54ab6d6d4ddefeb443a990a8512d07))
+
+### 💅 Enhancement
+
+* Remove redundant config ([5d22f59](https://github.com/ntucker/anansi/commit/5d22f595dbb9f772c0425db34633afe00f904c6f))
+
 ### [14.2.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.2.0...@anansi/webpack-config@14.2.1) (2023-02-26)
 
 ### 🐛 Bug Fix
