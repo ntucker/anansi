@@ -22,20 +22,25 @@ export default function makeNodeConfig(
     __filename: true,
   };
   config.externalsPresets = { node: true };
+  const externalsFunc = nodeExternals({
+    allowlist: [
+      /@babel\/runtime/,
+      ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
+    ],
+    additionalModuleDirs: ['../../node_modules'],
+  });
   config.externals = [
-    nodeExternals({
-      allowlist: [
-        /@babel\/runtime/,
-        ...(pkg || library
-          ? []
-          : [
-              /\.(svg|css)$/,
-              /\.css!=!/,
-              'react' /* react is needed for svgr */,
-            ]),
-      ],
-      additionalModuleDirs: ['../../node_modules'],
-    }),
+    function ({ context, request, contextInfo, getResolve }, callback) {
+      // svgr + linaria have issues with require('react')
+      // instead we'll detect this specific case and embed it
+      if (
+        request === 'react' &&
+        contextInfo.issuer.substring(contextInfo.issuer.length - 4) === '.svg'
+      ) {
+        callback();
+      } else
+        externalsFunc({ context, request, contextInfo, getResolve }, callback);
+    },
   ];
   config.output.path =
     pkg?.publishConfig?.main ?? pkg?.main
