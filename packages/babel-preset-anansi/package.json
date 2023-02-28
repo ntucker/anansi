@@ -30,7 +30,7 @@
     "directory": "packages/babel-preset-anansi"
   },
   "engines": {
-    "node": ">=12.17"
+    "node": ">=14"
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
