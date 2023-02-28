@@ -246,11 +246,11 @@ export default async function startDevServer(
             const finder = new RegExp(`${serverEntry}:([\\d]+):([\\d]+)`, 'g');
             serverFileContents.then(fileText => {
               const textRows = fileText.split('\n');
+              log.error('>>> Stack Context [serve entrypoint] <<<');
               for (const match of e.stack.matchAll(finder) ?? []) {
                 const row = Number.parseInt(match[1]);
                 const col = Number.parseInt(match[2]);
-                log.error('>>> Stack Context [serve entrypoint] <<<');
-                log.error(row + ':' + col);
+                log.error(path.basename(serverEntry) + ' ' + row + ':' + col);
                 log.error(textRows[row - 2]);
                 log.error(textRows[row - 1]);
                 log.error(Array(col).join(' ') + '^');
