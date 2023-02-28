@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.4.3...@anansi/babel-preset@3.5.0) (2023-02-28)
+
+### 🚀 Features
+
+* Support TypeScript 5.0 ([0aab1f9](https://github.com/ntucker/anansi/commit/0aab1f9bc0d4af803217184f65f8f7642c4acd4c))
+
 ### [3.4.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.4.2...@anansi/babel-preset@3.4.3) (2023-02-28)
 
 ### 💅 Enhancement
