@@ -101,9 +101,7 @@ export default async function serve(
             !diskFs.lstatSync(assetPath).isDirectory()
           ) {
             try {
-              const fileContent = (await readFile(assetPath)).toString();
-              res.contentType(filename);
-              res.send(fileContent);
+              res.sendFile(assetPath);
             } catch (e) {
               return next();
             }
