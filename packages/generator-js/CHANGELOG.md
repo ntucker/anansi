@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.15...@anansi/generator-js@10.2.16) (2023-02-28)
+
+### 🐛 Bug Fix
+
+* devssl must be defined for templates ([abc58e6](https://github.com/ntucker/anansi/commit/abc58e6fd3820b60c3b715efcd7456dc91180408))
+
 ### [10.2.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.14...@anansi/generator-js@10.2.15) (2023-02-28)
 
 ### 💅 Enhancement

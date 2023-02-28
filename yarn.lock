@@ -90,7 +90,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^2.0.30, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^2.0.31, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -12660,7 +12660,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^3.4.2
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/cli": ^2.0.30
+    "@anansi/cli": ^2.0.31
     "@anansi/core": ^0.16.9
     "@anansi/eslint-plugin": ^0.15.4
     "@anansi/jest-preset": ^0.8.3
