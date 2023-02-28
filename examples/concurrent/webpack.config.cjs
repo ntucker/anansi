@@ -10,7 +10,8 @@ const generateConfig = makeConfig({
   babelLoader: {
     rootMode: Object.prototype.hasOwnProperty.call(
       process.versions,
-      'webcontainer')
+      'webcontainer',
+    )
       ? 'root'
       : 'upward',
   },
@@ -20,18 +21,6 @@ module.exports = (env, argv) => {
   const config = generateConfig(env, argv);
   if (!config.experiments) config.experiments = {};
   config.experiments.backCompat = false;
-
-  if (argv?.target?.includes('node')) {
-    config.externals = [
-      nodeExternals({
-        additionalModuleDirs: ['../../node_modules'],
-        allowlist: [
-          /^path-to-regexp/,
-          /\.css$/,
-        ],
-      }),
-    ];
-  }
 
   return config;
 };
