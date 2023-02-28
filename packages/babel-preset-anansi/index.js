@@ -68,7 +68,8 @@ function buildPreset(api, options = {}) {
     callerCouldTargetWeb(callerTarget) &&
     process.env.NO_HOT_RELOAD !== 'true' &&
     process.env.NO_HOT_RELOAD !== true &&
-    api.caller(caller => !caller || !caller.noHotReload);
+    api.caller(caller => !caller || !caller.noHotReload) &&
+    !['commonjs', 'cjs'].includes(options.modules);
 
   const modules =
     // cli won't say what it supports; but we assume if they are calling without a tool they are
