@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.11...@anansi/core@0.16.12) (2023-02-28)
+
+### 💅 Enhancement
+
+* ESM compatible hot-reloading ([61c9b8a](https://github.com/ntucker/anansi/commit/61c9b8aea96aa35e3634b270b0bf516f5cabcadd))
+
 ### [0.16.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.10...@anansi/core@0.16.11) (2023-02-28)
 
 **Note:** Version bump only for package @anansi/core

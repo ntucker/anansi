@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.5.0...@anansi/babel-preset@4.0.0) (2023-02-28)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* * Drop support for ancient jest versions that don't use caller options
+* CLI defaults to ESM even when node is target
+* Requires node 14+
+
+### 🚀 Features
+
+* Default to ESM when babel cli is used ([1363e85](https://github.com/ntucker/anansi/commit/1363e85424c32921e789c52a180f105ee3e1ab25))
+
+### 💅 Enhancement
+
+* Never hot reload (web-only) when targetting commonjs ([0d5b8f5](https://github.com/ntucker/anansi/commit/0d5b8f512e3d37021d53c1ba170f4d0aacbb5be4))
+* Require node 14 ([43c1b38](https://github.com/ntucker/anansi/commit/43c1b38a72fbdf133f92681c3f51255285c5b43f))
+
 ## [3.5.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.4.3...@anansi/babel-preset@3.5.0) (2023-02-28)
 
 ### 🚀 Features
