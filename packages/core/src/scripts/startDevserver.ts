@@ -64,8 +64,8 @@ export default async function startDevServer(
       `
   import entry from "${path.resolve(process.cwd(), entryPath)}";
 
-  if (module.hot) {
-    module.hot.accept();
+  if (import.meta.webpackHot) {
+    import.meta.webpackHot.accept();
   }
 
   export default entry;
