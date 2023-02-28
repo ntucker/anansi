@@ -49,6 +49,11 @@ export default function makeNodeConfig(
   config.output.library = {
     type: 'commonjs2',
   };
+  if (!config.output.environment) {
+    config.output.environment = {};
+  }
+  // node12+ supports import()
+  config.output.environment.dynamicImport = true;
 
   // don't output stats for server builds as they won't need to reference manifests
   config.plugins = config.plugins.filter(
