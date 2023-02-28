@@ -15,15 +15,15 @@ import tmp from 'tmp';
 import { ufs } from 'unionfs';
 import { promisify } from 'util';
 import webpack, { MultiCompiler } from 'webpack';
-import logging from 'webpack/lib/logging/runtime';
+import logging from 'webpack/lib/logging/runtime.js';
 import WebpackDevServer from 'webpack-dev-server';
 
-import 'cross-fetch/dist/node-polyfill';
+import 'cross-fetch/dist/node-polyfill.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
 import { BoundRender } from './types.js';
 
 // run directly from node
-if (require.main === module) {
+if ('main' in import.meta) {
   const entrypoint = process.argv[2];
 
   if (!entrypoint) {
@@ -34,11 +34,13 @@ if (require.main === module) {
   startDevServer(entrypoint);
 }
 
-export default function startDevServer(
+let serverFileContents: Promise<string> = Promise.resolve('');
+
+export default async function startDevServer(
   entrypoint: string,
   env: Record<string, unknown> = {},
 ) {
-  const webpackConfig = getWebpackConfig();
+  const webpackConfig = await getWebpackConfig();
 
   const log = logging.getLogger('anansi-devserver');
 
@@ -149,11 +151,11 @@ export default function startDevServer(
     const clientManifest = clientStats.toJson();
 
     const serverEntry = getServerBundle(serverStats);
+    serverFileContents = readFile(serverEntry).then(buf => buf.toString());
     // reload modules
     Object.keys(fsRequire.cache).forEach(key => {
       delete fsRequire.cache[key];
     });
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
     render = (fsRequire(serverEntry) as any).default.bind(
       undefined,
       clientManifest,
@@ -240,6 +242,7 @@ export default function startDevServer(
             importRender((multiStats as webpack.MultiStats).stats);
           } catch (e: any) {
             log.error('Failed to load serve entrypoint');
+
             throw e;
           }
         } else {
