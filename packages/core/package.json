@@ -48,7 +48,7 @@
     "./server": {
       "types": "./lib/index.server.d.ts",
       "require": "./dist/server.js",
-      "default": "./dist/server.js"
+      "default": "./lib/index.server.js"
     },
     "./scripts": {
       "types": "./lib/scripts/index.d.ts",
