@@ -215,7 +215,7 @@ __metadata:
     "@types/ejs": 3.1.2
     "@types/gulp-filter": 3.0.35
     "@types/mem-fs-editor": 7.0.2
-    "@types/node": 18.14.1
+    "@types/node": 18.14.2
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -228,7 +228,7 @@ __metadata:
     husky: 7.0.4
     jest: 29.4.3
     mem-fs: ^2.3.0
-    mem-fs-editor: ^9.6.0
+    mem-fs-editor: ^9.7.0
     pacote: ^15.1.1
     rimraf: 4.1.2
     shelobsay: ^2.0.0
@@ -6871,10 +6871,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.14.1":
-  version: 18.14.1
-  resolution: "@types/node@npm:18.14.1"
-  checksum: 58556bbdb0050e44a4934742c1da2530812782c06d266a758e669e44c5aa196166c5fce45fdb03f016876717e3840478b3220129bb77367f979607564047f0a3
+"@types/node@npm:*, @types/node@npm:18.14.2":
+  version: 18.14.2
+  resolution: "@types/node@npm:18.14.2"
+  checksum: 53c07e721f6ae33de71306f6a0b75dae6066a4f55bd5484c93bd59ff25f0c5f004ceafeef509a4d0cb9e24a247efc34d50489bcc1b05a53ecc68e2fc088e65cb
   languageName: node
   linkType: hard
 
@@ -8049,9 +8049,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.2.2":
-  version: 5.2.2
-  resolution: "antd@npm:5.2.2"
+"antd@npm:5.2.3":
+  version: 5.2.3
+  resolution: "antd@npm:5.2.3"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.5.6
@@ -8103,7 +8103,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: e758fb8b1c5604c4f61bf3fab0f272fbf40251ef1dda6c60e824cec1549c92f7e4a4e28ee1260cde703c2a374ba501fa97da9788db4d379e81888473cdb94fc9
+  checksum: 01024f7e2d091bfdb261a47e9ac50ae73a8dd3000f3b4a0c19574bbd02c931da85876e765a16162982329a79008dac98b7457cb4375ec6e8e9d0343ffe8cc9e2
   languageName: node
   linkType: hard
 
@@ -12710,14 +12710,14 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.21.1
     "@types/jest": 29.4.0
-    "@types/node": 18.14.1
+    "@types/node": 18.14.2
     "@types/prettier": 2.7.2
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.53.0
     "@typescript-eslint/parser": 5.53.0
-    antd: 5.2.2
+    antd: 5.2.3
     classnames: 2.3.2
     core-js: 3.28.0
     eslint: 8.35.0
@@ -12762,14 +12762,14 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/jest": 29.4.0
     "@types/lodash": 4.14.191
-    "@types/node": 18.14.1
+    "@types/node": 18.14.2
     "@types/parse-link-header": 2.0.1
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
-    antd: 5.2.2
+    antd: 5.2.3
     classnames: 2.3.2
     core-js: 3.28.0
     jest: 29.4.3
@@ -16096,10 +16096,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbinaryfile@npm:^4.0.10, isbinaryfile@npm:^4.0.8":
+"isbinaryfile@npm:^4.0.10":
   version: 4.0.10
   resolution: "isbinaryfile@npm:4.0.10"
   checksum: a6b28db7e23ac7a77d3707567cac81356ea18bd602a4f21f424f862a31d0e7ab4f250759c98a559ece35ffe4d99f0d339f1ab884ffa9795172f632ab8f88e686
+  languageName: node
+  linkType: hard
+
+"isbinaryfile@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "isbinaryfile@npm:5.0.0"
+  checksum: 25cc27388d51b8322c103f5894f9e72ec04e017734e57c4b70be2666501ec7e7f6cbb4a5fcfd15260a7cac979bd1ddb7f5231f5a3098c0695c4e7c049513dfaf
   languageName: node
   linkType: hard
 
@@ -17981,17 +17988,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.5.0, mem-fs-editor@npm:^9.6.0":
-  version: 9.6.0
-  resolution: "mem-fs-editor@npm:9.6.0"
+"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.5.0, mem-fs-editor@npm:^9.7.0":
+  version: 9.7.0
+  resolution: "mem-fs-editor@npm:9.7.0"
   dependencies:
     binaryextensions: ^4.16.0
     commondir: ^1.0.1
     deep-extend: ^0.6.0
     ejs: ^3.1.8
     globby: ^11.1.0
-    isbinaryfile: ^4.0.8
-    minimatch: ^3.1.2
+    isbinaryfile: ^5.0.0
+    minimatch: ^7.2.0
     multimatch: ^5.0.0
     normalize-path: ^3.0.0
     textextensions: ^5.13.0
@@ -18000,7 +18007,7 @@ __metadata:
   peerDependenciesMeta:
     mem-fs:
       optional: true
-  checksum: e8bbab0366308725e841c16761560832b9e3525e81253c8d40c2e06512e8ef169227d67ffc8a167715304bbef91126d23d3ed79dade18eb7b6b23a92c7b5a119
+  checksum: 25d566b0a0b841ea347f91196f4486386622070655907dab5cc63c0fd49c0ef9f752a1c3e6384b43e9dbd0518086d4a316d1fbed1f0a002b68f291167d1b9520
   languageName: node
   linkType: hard
 
@@ -18383,6 +18390,15 @@ __metadata:
   dependencies:
     brace-expansion: ^2.0.1
   checksum: 0ffb77d05bd483fcc344ba3e64a501d569e658fa6c592d94e9716ffc7925de7a8c2ac294cafa822b160bd8b2cbf7e01012917e06ffb9a85cfa9604629b3f2c04
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^7.2.0":
+  version: 7.3.0
+  resolution: "minimatch@npm:7.3.0"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: c4d9af992958339d5fc593c9ce496f4b9615597e57cdd663e57bd3a745ebd208c2bba19c3290c25ed8dcf259586fa1f68e4e1acf304f8694927b84c5381167d0
   languageName: node
   linkType: hard
 
