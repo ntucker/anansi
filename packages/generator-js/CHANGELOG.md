@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.15](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.14...@anansi/generator-js@10.2.15) (2023-02-28)
+
+### 💅 Enhancement
+
+* Temp disable https until feature works ([28c36c8](https://github.com/ntucker/anansi/commit/28c36c8cda06d91b3f4c0628a781ffea3d4bf6ea))
+
+### 🐛 Bug Fix
+
+* Don't include core/server so cssinjs is not needed ([d831036](https://github.com/ntucker/anansi/commit/d83103672f54a8e33bf194ec887cdbff3afa285a))
+
 ### [10.2.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.13...@anansi/generator-js@10.2.14) (2023-02-26)
 
 ### 💅 Enhancement
