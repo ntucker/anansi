@@ -25,7 +25,11 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
-  // webpack sends on context about this specific build target
+  // babel cli will have no caller information, so in this case we should be aware and
+  // possibly default to different options
+  // (no caller info: https://github.com/babel/babel/issues/8930)
+  const babelCli = api.caller(caller => caller && caller.name === '@babel/cli');
+  // webpack and jest sends on context about this specific build target
   const callerTarget = api.caller(caller => caller && caller.target);
   const nodeTarget =
     callerTarget === 'node'
@@ -67,7 +71,9 @@ function buildPreset(api, options = {}) {
     api.caller(caller => !caller || !caller.noHotReload);
 
   const modules =
-    env === 'test' || options.nodeTarget || babelNode
+    // cli won't say what it supports; but we assume if they are calling without a tool they are
+    // trying to make ESM
+    (options.nodeTarget || babelNode) && !babelCli
       ? options.modules !== undefined
         ? options.modules
         : supportsModules
