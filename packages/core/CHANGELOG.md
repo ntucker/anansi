@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.9...@anansi/core@0.16.10) (2023-02-28)
+
+### 💅 Enhancement
+
+* Default to ESM for server ([#1861](https://github.com/ntucker/anansi/issues/1861)) ([4a656e8](https://github.com/ntucker/anansi/commit/4a656e84d1756c407e418cc8e490a3a27ee87995))
+* Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
+
+### 🐛 Bug Fix
+
+* Serve assets with correct type ([1507130](https://github.com/ntucker/anansi/commit/15071305a8d924737184ffa5dab1ef154dbdec8e))
+
+### 📦 Package
+
+* Update `ora` to v6 ([#1859](https://github.com/ntucker/anansi/issues/1859)) ([cf1468d](https://github.com/ntucker/anansi/commit/cf1468d80482923d807b49917889a621afcf22da))
+
 ### [0.16.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.8...@anansi/core@0.16.9) (2023-02-28)
 
 ### 💅 Enhancement

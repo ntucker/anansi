@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.3.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.0...@anansi/webpack-config@14.3.1) (2023-02-28)
+
+### 🐛 Bug Fix
+
+* Don't bundle react with commonjs bundles ([941f078](https://github.com/ntucker/anansi/commit/941f0782129bcf6b37c5550b7a2d3e019804bf26))
+
 ## [14.3.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.2.1...@anansi/webpack-config@14.3.0) (2023-02-28)
 
 ### 🚀 Features

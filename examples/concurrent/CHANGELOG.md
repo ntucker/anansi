@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.12](https://github.com/ntucker/anansi/compare/example-react-18@4.2.11...example-react-18@4.2.12) (2023-02-28)
+
+### 💅 Enhancement
+
+* Add svg to test to ensure working ([d4091c6](https://github.com/ntucker/anansi/commit/d4091c69596ee4874532f3ca8f7601545a0f1adf))
+* Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
+* No need for custom webpack externals ([7e27d6b](https://github.com/ntucker/anansi/commit/7e27d6b9ebd3f8bb1e930475a123d593bd9b9675))
+
+### 🐛 Bug Fix
+
+* Stackblitz ([b06770e](https://github.com/ntucker/anansi/commit/b06770e793e4fc7aece330d08409c8fb4069ee14))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1860](https://github.com/ntucker/anansi/issues/1860)) ([01da4c5](https://github.com/ntucker/anansi/commit/01da4c50d9e8cde4d26bc0b456e2eb5bfb04d100))
+
 ### [4.2.11](https://github.com/ntucker/anansi/compare/example-react-18@4.2.10...example-react-18@4.2.11) (2023-02-28)
 
 **Note:** Version bump only for package example-react-18

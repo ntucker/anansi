@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [10.2.17](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.16...@anansi/generator-js@10.2.17) (2023-02-28)
+
+### 💅 Enhancement
+
+* No need for custom webpack externals ([7e27d6b](https://github.com/ntucker/anansi/commit/7e27d6b9ebd3f8bb1e930475a123d593bd9b9675))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1860](https://github.com/ntucker/anansi/issues/1860)) ([01da4c5](https://github.com/ntucker/anansi/commit/01da4c50d9e8cde4d26bc0b456e2eb5bfb04d100))
+
 ### [10.2.16](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.15...@anansi/generator-js@10.2.16) (2023-02-28)
 
 ### 🐛 Bug Fix

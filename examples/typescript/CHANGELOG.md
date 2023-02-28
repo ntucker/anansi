@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.17](https://github.com/ntucker/anansi/compare/example-typescript@11.0.16...example-typescript@11.0.17) (2023-02-28)
+
+### 💅 Enhancement
+
+* Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1860](https://github.com/ntucker/anansi/issues/1860)) ([01da4c5](https://github.com/ntucker/anansi/commit/01da4c50d9e8cde4d26bc0b456e2eb5bfb04d100))
+
 ### [11.0.16](https://github.com/ntucker/anansi/compare/example-typescript@11.0.15...example-typescript@11.0.16) (2023-02-28)
 
 **Note:** Version bump only for package example-typescript

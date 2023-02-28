@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.4.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.4.2...@anansi/babel-preset@3.4.3) (2023-02-28)
+
+### 💅 Enhancement
+
+* Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
+
 ### [3.4.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@3.4.1...@anansi/babel-preset@3.4.2) (2023-02-26)
 
 ### 📦 Package
