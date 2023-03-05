@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.20...@anansi/generator-js@11.0.0) (2023-03-05)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Package is now ESM
+
+### 💅 Enhancement
+
+* Package is now ESM only ([d05d436](https://github.com/ntucker/anansi/commit/d05d436e0dd21b98205ed020a2c063bdb9263e7c))
+
+### 📦 Package
+
+* Update `execa` to v7 ([#1867](https://github.com/ntucker/anansi/issues/1867)) ([04adea9](https://github.com/ntucker/anansi/commit/04adea946dd5eabfd54eb5ffe1ca7241ddc0e6f3))
+
 ### [10.2.20](https://github.com/ntucker/anansi/compare/@anansi/generator-js@10.2.19...@anansi/generator-js@10.2.20) (2023-03-05)
 
 ### 🐛 Bug Fix

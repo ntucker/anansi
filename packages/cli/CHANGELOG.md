@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/@anansi/cli@2.0.35...@anansi/cli@2.1.0) (2023-03-05)
+
+### 🚀 Features
+
+* Support ESM generator-js ([a7714a3](https://github.com/ntucker/anansi/commit/a7714a3e02fa7265c06c4ddee96acfd9b2f5bd85))
+
+### 📦 Package
+
+* Update `execa` to v7 ([#1867](https://github.com/ntucker/anansi/issues/1867)) ([04adea9](https://github.com/ntucker/anansi/commit/04adea946dd5eabfd54eb5ffe1ca7241ddc0e6f3))
+
 ### [2.0.35](https://github.com/ntucker/anansi/compare/@anansi/cli@2.0.34...@anansi/cli@2.0.35) (2023-03-05)
 
 **Note:** Version bump only for package @anansi/cli
