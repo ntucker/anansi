@@ -31,16 +31,20 @@ export default class extends ConfigureGenerator {
     );
 
     // this is actually improperly typed
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     this.queueTransformStream([
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       jsFilter,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       prettier({
         printWidth: 80,
         semi: true,
         singleQuote: true,
         trailingComma: 'all',
       }),
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       jsFilter.restore,
     ]);
   }
