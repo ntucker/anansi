@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.3.1](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.0...@anansi/ts-utils@0.3.1) (2023-03-05)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
+* Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
+
 ## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.8...@anansi/ts-utils@0.3.0) (2023-02-28)
 
 ### 🚀 Features
