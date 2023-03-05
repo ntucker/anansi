@@ -1,7 +1,7 @@
 'use strict';
 import Generator from 'yeoman-generator';
 
-const licenses = [
+export const licenses = [
   { name: 'Apache 2.0', value: 'Apache-2.0' },
   { name: 'MIT', value: 'MIT' },
   { name: 'Mozilla Public License 2.0', value: 'MPL-2.0' },
@@ -15,7 +15,7 @@ const licenses = [
   { name: 'No License (Copyrighted)', value: 'UNLICENSED' },
 ];
 
-module.exports = class GeneratorLicense extends Generator {
+export default class GeneratorLicense extends Generator {
   private declare gitc: Record<string, any>;
   private declare props: Record<string, any>;
 
@@ -175,6 +175,4 @@ module.exports = class GeneratorLicense extends Generator {
 
     this.packageJson.merge(pkg);
   }
-};
-
-module.exports.licenses = licenses;
+}

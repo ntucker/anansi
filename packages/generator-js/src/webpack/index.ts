@@ -1,9 +1,9 @@
 import execa from 'execa';
 
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin } from '../utils.js';
 
-module.exports = class WebpackGenerator extends (
-  InstallPeersMixin(BetterGenerator)
+export default class WebpackGenerator extends InstallPeersMixin(
+  BetterGenerator,
 ) {
   props?: Record<string, any>;
 
@@ -129,4 +129,4 @@ module.exports = class WebpackGenerator extends (
       );
     }
   }
-};
+}

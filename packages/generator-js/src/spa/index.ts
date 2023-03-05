@@ -1,6 +1,6 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
 
-module.exports = class extends InstallPeersMixin(BetterGenerator) {
+export default class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
   constructor(
@@ -13,13 +13,22 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     this.config.set('spa', true);
   }
 
-  initializing() {
-    this.composeWith(require.resolve('../webpack'), this.options);
+  async initializing() {
+    this.composeWith(
+      await resolvePath('../webpack', import.meta.url),
+      this.options,
+    );
     if (this.config.get('features').includes('SSR')) {
-      this.composeWith(require.resolve('../ssr'), this.options);
+      this.composeWith(
+        await resolvePath('../ssr', import.meta.url),
+        this.options,
+      );
     }
     if (this.options.branded) {
-      this.composeWith(require.resolve('../anansi-splash'), this.options);
+      this.composeWith(
+        await resolvePath('../anansi-splash', import.meta.url),
+        this.options,
+      );
     }
   }
 
@@ -80,4 +89,4 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       this.config.getAll(),
     );
   }
-};
+}

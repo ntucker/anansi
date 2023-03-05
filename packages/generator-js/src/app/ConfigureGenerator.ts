@@ -2,8 +2,8 @@ import {
   DEFAULT_ASSET_PATH,
   DEFAULT_ROOT_PATH,
   DEFAULT_SERVER_PATH,
-} from '../defaults';
-import { BetterGenerator } from '../utils';
+} from '../defaults.js';
+import { BetterGenerator } from '../utils.js';
 
 interface Options {
   appName: string;

@@ -1,6 +1,6 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin } from '../utils.js';
 
-module.exports = class extends InstallPeersMixin(BetterGenerator) {
+export default class extends InstallPeersMixin(BetterGenerator) {
   constructor(
     args: string | string[],
     options: Record<string, unknown>,
@@ -36,4 +36,4 @@ ${badges}`,
       { globOptions: { dot: true } },
     );
   }
-};
+}

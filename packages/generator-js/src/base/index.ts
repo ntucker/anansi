@@ -1,5 +1,5 @@
-import { ConfigureGenerator } from '../app';
-import { InstallPeersMixin } from '../utils';
+import { ConfigureGenerator } from '../app/index.js';
+import { InstallPeersMixin, resolvePath } from '../utils.js';
 
 export default class extends InstallPeersMixin(ConfigureGenerator) {
   initializing() {
@@ -35,27 +35,45 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     this.config.set('features', props.features);
 
     if (props.features.includes('CI')) {
-      this.composeWith(require.resolve('../circle'), this.options);
+      this.composeWith(
+        await resolvePath('../circle', import.meta.url),
+        this.options,
+      );
       if (this.options.projectType === 'SPA') {
-        this.composeWith(require.resolve('../github-actions'), this.options);
+        this.composeWith(
+          await resolvePath('../github-actions', import.meta.url),
+          this.options,
+        );
       }
     }
     if (props.features.includes('testing')) {
-      this.composeWith(require.resolve('../testing'), this.options);
+      this.composeWith(
+        await resolvePath('../testing', import.meta.url),
+        this.options,
+      );
     }
     if (this.options.projectType === 'SPA') {
-      this.composeWith(require.resolve('../spa'), this.options);
+      this.composeWith(
+        await resolvePath('../spa', import.meta.url),
+        this.options,
+      );
     } else {
-      this.composeWith(require.resolve('../library'), this.options);
+      this.composeWith(
+        await resolvePath('../library', import.meta.url),
+        this.options,
+      );
     }
     if (props.features.includes('storybook')) {
-      this.composeWith(require.resolve('../storybook'), this.options);
+      this.composeWith(
+        await resolvePath('../storybook', import.meta.url),
+        this.options,
+      );
     }
     return props;
   }
 
-  configuring() {
-    this.composeWith(require.resolve('../license'), {
+  async configuring() {
+    this.composeWith(await resolvePath('../license', import.meta.url), {
       ...this.options,
       defaultLicense: 'BSD',
     });
