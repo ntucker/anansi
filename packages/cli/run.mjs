@@ -2,7 +2,7 @@
 import { Command } from 'commander';
 import execa from 'execa';
 import fs from 'fs';
-import { createRequire } from 'module';
+import { resolve } from 'import-meta-resolve';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -12,8 +12,6 @@ import { fileURLToPath } from 'url';
 import { verifyAndPrompt } from './check-version.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-// need for require.resolve (until import.meta.resolve is not experimental)
-const require = createRequire(import.meta.url);
 
 const pkg = JSON.parse(
   fs.readFileSync(path.join(__dirname, './package.json'), 'utf8'),
@@ -43,7 +41,11 @@ program
       const cwd = options.dir || `./${projectName}`;
       const yosub = execa(
         'npx yo',
-        [require.resolve('@anansi/generator-js'), projectName],
+        [
+          // get rid of 'file://' prefix
+          (await resolve('@anansi/generator-js', import.meta.url)).substring(7),
+          projectName,
+        ],
         {
           stdio: ['pipe', process.stdout, process.stderr],
           shell: true,
