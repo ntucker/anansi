@@ -1,6 +1,6 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin } from '../utils.js';
 
-module.exports = class extends InstallPeersMixin(BetterGenerator) {
+export default class extends InstallPeersMixin(BetterGenerator) {
   configuring() {
     this.packageJson.merge(
       this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
@@ -16,4 +16,4 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       { globOptions: { dot: true } },
     );
   }
-};
+}

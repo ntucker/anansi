@@ -1,8 +1,8 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
 
 const DEFAULT_LIB_PATH = 'lib';
 
-module.exports = class extends InstallPeersMixin(BetterGenerator) {
+export default class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
   constructor(
@@ -30,13 +30,16 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 
-  initializing() {
+  async initializing() {
     if (this.options['lib-path']) {
       this.config.set('libPath', this.options['lib-path']);
     } else if (!this.config.get('libPath')) {
       this.config.set('libPath', DEFAULT_LIB_PATH);
     }
-    this.composeWith(require.resolve('../rollup'), this.options);
+    this.composeWith(
+      await resolvePath('../rollup', import.meta.url),
+      this.options,
+    );
   }
 
   configuring() {
@@ -90,4 +93,4 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
       this.config.getAll(),
     );
   }
-};
+}

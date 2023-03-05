@@ -1,6 +1,6 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin } from '../utils.js';
 
-module.exports = class extends InstallPeersMixin(BetterGenerator) {
+export default class extends InstallPeersMixin(BetterGenerator) {
   props?: Record<string, any>;
 
   constructor(
@@ -37,4 +37,4 @@ module.exports = class extends InstallPeersMixin(BetterGenerator) {
     );
     this.fs.delete(this.destinationPath('index.ejs'));
   }
-};
+}

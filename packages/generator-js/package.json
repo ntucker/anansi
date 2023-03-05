@@ -25,7 +25,14 @@
     "generators",
     "run.js"
   ],
+  "type": "module",
   "main": "generators/app/index.js",
+  "module": "generators/app/index.js",
+  "exports": {
+    ".": {
+      "default": "./generators/app/index.js"
+    }
+  },
   "keywords": [
     "cli",
     "react",
@@ -73,6 +80,7 @@
     "execa": "^5.1.1",
     "gulp-filter": "^7.0.0",
     "gulp-prettier": "^4.0.0",
+    "import-meta-resolve": "^2.2.1",
     "mem-fs": "^2.3.0",
     "mem-fs-editor": "^9.7.0",
     "pacote": "^15.1.1",

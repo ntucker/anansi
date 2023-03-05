@@ -3,7 +3,8 @@ import filter from 'gulp-filter';
 import prettier from 'gulp-prettier';
 import shelobsay from 'shelobsay';
 
-import ConfigureGenerator from './ConfigureGenerator';
+import ConfigureGenerator from './ConfigureGenerator.js';
+import { resolvePath } from '../utils.js';
 
 export { ConfigureGenerator };
 
@@ -52,7 +53,7 @@ export default class extends ConfigureGenerator {
   async prompting() {
     this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
     const props = await super.prompting();
-    this.composeWith(require.resolve('../base'), {
+    this.composeWith(await resolvePath('../base', import.meta.url), {
       ...this.options,
       arguments: this.args,
       branded: true,

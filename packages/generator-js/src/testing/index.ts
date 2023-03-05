@@ -1,6 +1,6 @@
-import { BetterGenerator } from '../utils';
+import { BetterGenerator } from '../utils.js';
 
-module.exports = class TestingGenerator extends BetterGenerator {
+export default class TestingGenerator extends BetterGenerator {
   constructor(
     args: string | string[],
     options: Record<string, unknown>,
@@ -58,4 +58,4 @@ module.exports = class TestingGenerator extends BetterGenerator {
       { globOptions: { dot: true } },
     );
   }
-};
+}

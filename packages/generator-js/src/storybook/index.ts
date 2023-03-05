@@ -1,7 +1,7 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils';
+import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
 
-module.exports = class WebpackGenerator extends (
-  InstallPeersMixin(BetterGenerator)
+export default class WebpackGenerator extends InstallPeersMixin(
+  BetterGenerator,
 ) {
   constructor(
     args: string | string[],
@@ -12,10 +12,13 @@ module.exports = class WebpackGenerator extends (
     this.config.set('storybook', true);
   }
 
-  initializing() {
+  async initializing() {
     // SPA will already have webpack
     if (this.options.projectType !== 'SPA') {
-      this.composeWith(require.resolve('../webpack'), this.options);
+      this.composeWith(
+        await resolvePath('../webpack', import.meta.url),
+        this.options,
+      );
     }
   }
 
@@ -85,4 +88,4 @@ module.exports = class WebpackGenerator extends (
       { globOptions: { dot: true } },
     );
   }
-};
+}

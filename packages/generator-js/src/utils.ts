@@ -1,5 +1,6 @@
 import ejs from 'ejs';
 import execa from 'execa';
+import { resolve } from 'import-meta-resolve';
 import type { Editor } from 'mem-fs-editor';
 import pacote from 'pacote';
 import Generator from 'yeoman-generator';
@@ -125,3 +126,7 @@ export function InstallPeersMixin<
 const capitalize = <T extends string>(s: T): Capitalize<T> => {
   return (s.charAt(0).toUpperCase() + s.slice(1)) as any;
 };
+
+export async function resolvePath(path: string, url: string) {
+  return (await resolve(path, url)).substring(7);
+}

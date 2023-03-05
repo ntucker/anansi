@@ -1,6 +1,6 @@
-import { BetterGenerator } from '../utils';
+import { BetterGenerator } from '../utils.js';
 
-module.exports = class extends BetterGenerator {
+export default class extends BetterGenerator {
   writing() {
     this.fs.copyTpl(
       this.templatePath('src/**/*.ts*'),
@@ -45,4 +45,4 @@ module.exports = class extends BetterGenerator {
       );
     }
   }
-};
+}
