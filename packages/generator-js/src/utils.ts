@@ -1,5 +1,5 @@
 import ejs from 'ejs';
-import execa from 'execa';
+import { execa } from 'execa';
 import { resolve } from 'import-meta-resolve';
 import type { Editor } from 'mem-fs-editor';
 import pacote from 'pacote';
