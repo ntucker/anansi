@@ -139,7 +139,7 @@ __metadata:
     memfs: ^3.4.13
     ora: ^6.1.2
     redux: ^4.2.1
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
@@ -232,7 +232,7 @@ __metadata:
     mem-fs: ^2.3.0
     mem-fs-editor: ^9.7.0
     pacote: ^15.1.1
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
     yeoman-environment: 3.15.1
@@ -255,7 +255,7 @@ __metadata:
     identity-obj-proxy: ^3.0.0
     jest-pnp-resolver: ^1.2.3
     mitt: ^3.0.0
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     semver: ^7.3.8
     ts-jest: ^29.0.5
     whatwg-fetch: ^3.0.0
@@ -284,7 +284,7 @@ __metadata:
     history: ^5.3.0
     jest: 29.5.0
     nano-memoize: ^3.0.8
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     webpack: 5.75.0
     webpack-cli: 5.0.1
   peerDependencies:
@@ -300,7 +300,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/ts-utils@workspace:packages/ts-utils"
   dependencies:
-    rimraf: 4.3.0
+    rimraf: 4.3.1
   peerDependencies:
     typescript: ^3.0.0 || ^4.0.0 || ^5.0.0
   languageName: unknown
@@ -360,7 +360,7 @@ __metadata:
     react-dev-utils: ^12.0.1
     react-error-overlay: 6.0.9
     readable-stream: ^4.3.0
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     sass-loader: ^13.2.0
     sass-resources-loader: ^2.2.5
     semver: ^7.3.8
@@ -4543,7 +4543,7 @@ __metadata:
     history: 5.3.0
     jest: 29.5.0
     path-to-regexp: 6.2.1
-    rimraf: 4.3.0
+    rimraf: 4.3.1
     webpack: 5.75.0
     webpack-cli: 5.0.1
   peerDependencies:
@@ -23405,14 +23405,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:4.3.0":
-  version: 4.3.0
-  resolution: "rimraf@npm:4.3.0"
+"rimraf@npm:4.3.1":
+  version: 4.3.1
+  resolution: "rimraf@npm:4.3.1"
   dependencies:
     glob: ^9.2.0
   bin:
     rimraf: dist/cjs/src/bin.js
-  checksum: 48498f1eeb9b6b848605d93fa79e7bf3c57bb47807500ee636848dc0fd3b69b6b532f1ce9d4e46c4feeb4c3ff0e8ab85cd177cbbbd65f635f8bc8cb88aee151c
+  checksum: d5893862a1e96cde610599ae76e338a709252667408d38bffa07cd24891a840a95957c4bb7178a9b0d3b6141e3b1bea20b9ba4b4f99d8c9edc492723e7b125ec
   languageName: node
   linkType: hard
 
