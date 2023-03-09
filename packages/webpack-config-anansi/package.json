@@ -57,7 +57,7 @@
     "@babel/core": "7.21.0",
     "debug": "4.3.4",
     "prettier-eslint-cli": "7.1.0",
-    "rimraf": "4.3.1"
+    "rimraf": "4.4.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
@@ -116,7 +116,7 @@
     "svgo-loader": "^3.0.3",
     "terser-webpack-plugin": "^5.3.7",
     "timers-browserify": "^2.0.12",
-    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
     "tty-browserify": "^0.0.1",
     "url": "^0.11.0",
     "url-loader": "^4.1.1",
