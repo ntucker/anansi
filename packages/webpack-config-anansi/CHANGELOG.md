@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.3.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.4...@anansi/webpack-config@14.3.5) (2023-03-09)
+
+### 📦 Package
+
+* Update `mini-css-extract-plugin` to ^2.7.3 ([#1871](https://github.com/ntucker/anansi/issues/1871)) ([f0a3597](https://github.com/ntucker/anansi/commit/f0a3597373848be3267bf9edc6aa9fe9c917a1cd))
+* Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
+* Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
+* Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
+
 ### [14.3.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.3...@anansi/webpack-config@14.3.4) (2023-03-05)
 
 ### 📦 Package

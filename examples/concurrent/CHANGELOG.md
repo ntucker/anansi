@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.17](https://github.com/ntucker/anansi/compare/example-react-18@4.2.16...example-react-18@4.2.17) (2023-03-09)
+
+### 📦 Package
+
+* Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
+* Update linting packages ([#1869](https://github.com/ntucker/anansi/issues/1869)) ([61cbeb8](https://github.com/ntucker/anansi/commit/61cbeb8033be18eb04e194126f4f9942fd0eef3b))
+* Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
+
 ### [4.2.16](https://github.com/ntucker/anansi/compare/example-react-18@4.2.15...example-react-18@4.2.16) (2023-03-05)
 
 **Note:** Version bump only for package example-react-18

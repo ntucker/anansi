@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.8.7...@anansi/jest-preset@0.8.8) (2023-03-09)
+
+### 📦 Package
+
+* Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
+* Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
+* Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
+
 ### [0.8.7](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.8.6...@anansi/jest-preset@0.8.7) (2023-03-05)
 
 ### 📦 Package
