@@ -139,7 +139,7 @@ __metadata:
     memfs: ^3.4.13
     ora: ^6.1.2
     redux: ^4.2.1
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
@@ -232,7 +232,7 @@ __metadata:
     mem-fs: ^2.3.0
     mem-fs-editor: ^9.7.0
     pacote: ^15.1.1
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
     yeoman-environment: 3.15.1
@@ -255,7 +255,7 @@ __metadata:
     identity-obj-proxy: ^3.0.0
     jest-pnp-resolver: ^1.2.3
     mitt: ^3.0.0
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     semver: ^7.3.8
     ts-jest: ^29.0.5
     whatwg-fetch: ^3.0.0
@@ -284,7 +284,7 @@ __metadata:
     history: ^5.3.0
     jest: 29.5.0
     nano-memoize: ^3.0.8
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     webpack: 5.76.0
     webpack-cli: 5.0.1
   peerDependencies:
@@ -300,7 +300,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/ts-utils@workspace:packages/ts-utils"
   dependencies:
-    rimraf: 4.3.1
+    rimraf: 4.4.0
   peerDependencies:
     typescript: ^3.0.0 || ^4.0.0 || ^5.0.0
   languageName: unknown
@@ -360,7 +360,7 @@ __metadata:
     react-dev-utils: ^12.0.1
     react-error-overlay: 6.0.9
     readable-stream: ^4.3.0
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     sass-loader: ^13.2.0
     sass-resources-loader: ^2.2.5
     semver: ^7.3.8
@@ -372,7 +372,7 @@ __metadata:
     svgo-loader: ^3.0.3
     terser-webpack-plugin: ^5.3.7
     timers-browserify: ^2.0.12
-    tsconfig-paths-webpack-plugin: ^4.0.0
+    tsconfig-paths-webpack-plugin: ^4.0.1
     tty-browserify: ^0.0.1
     url: ^0.11.0
     url-loader: ^4.1.1
@@ -4543,7 +4543,7 @@ __metadata:
     history: 5.3.0
     jest: 29.5.0
     path-to-regexp: 6.2.1
-    rimraf: 4.3.1
+    rimraf: 4.4.0
     webpack: 5.76.0
     webpack-cli: 5.0.1
   peerDependencies:
@@ -17040,7 +17040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.1.1, json5@npm:^2.1.2, json5@npm:^2.2.1, json5@npm:^2.2.2, json5@npm:^2.2.3":
+"json5@npm:^2.1.1, json5@npm:^2.1.2, json5@npm:^2.2.2, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -23405,14 +23405,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:4.3.1":
-  version: 4.3.1
-  resolution: "rimraf@npm:4.3.1"
+"rimraf@npm:4.4.0":
+  version: 4.4.0
+  resolution: "rimraf@npm:4.4.0"
   dependencies:
     glob: ^9.2.0
   bin:
     rimraf: dist/cjs/src/bin.js
-  checksum: d5893862a1e96cde610599ae76e338a709252667408d38bffa07cd24891a840a95957c4bb7178a9b0d3b6141e3b1bea20b9ba4b4f99d8c9edc492723e7b125ec
+  checksum: 0cedaf9d138589d1bb0ab851f05804c6d30827aa66563472b04ab76245f83537e23e7b94f1f79ea6c368c0d84a18fcde6a756fca3a44c967e08792671b3a0a6e
   languageName: node
   linkType: hard
 
@@ -25744,14 +25744,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths-webpack-plugin@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "tsconfig-paths-webpack-plugin@npm:4.0.0"
+"tsconfig-paths-webpack-plugin@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "tsconfig-paths-webpack-plugin@npm:4.0.1"
   dependencies:
     chalk: ^4.1.0
     enhanced-resolve: ^5.7.0
-    tsconfig-paths: ^4.0.0
-  checksum: 7ff7d63c1153e6dd30ce660b006495ae5cb5cbb78b30bb59b3cb627567325d4af52c7a69dda8aec7b94d576f5385581a69307472992954c40fe6949564155397
+    tsconfig-paths: ^4.1.2
+  checksum: a09e765c4939379fa060f78bbc906d0a7be541b9b49d3ad4744e99a2e87f28aa30d549a549196159bc5a50f420fdb1391b8eed360f47ee8ce40e15dcb800b5aa
   languageName: node
   linkType: hard
 
@@ -25767,14 +25767,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "tsconfig-paths@npm:4.0.0"
+"tsconfig-paths@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "tsconfig-paths@npm:4.1.2"
   dependencies:
-    json5: ^2.2.1
+    json5: ^2.2.2
     minimist: ^1.2.6
     strip-bom: ^3.0.0
-  checksum: a8cf746ffe438513a71c70c1bcdee8da7d62ab2af286efbe2728ff55c4d4c92c2aea80a0822982ded6d0a13c7686c24632934d7c0f4f564be9e1b2cdc3d65eea
+  checksum: 3d9151ecea139594e25618717de15769ab9f38f8e6d510ac16e592b23e7f7105ea13cec5694c3de7e132c98277b775e18edd1651964164ee6d75737c408494cc
   languageName: node
   linkType: hard
 
