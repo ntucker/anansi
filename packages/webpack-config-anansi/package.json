@@ -114,7 +114,7 @@
     "strip-ansi": "^6.0.1",
     "svgo": "^2.8.0",
     "svgo-loader": "^3.0.3",
-    "terser-webpack-plugin": "^5.3.6",
+    "terser-webpack-plugin": "^5.3.7",
     "timers-browserify": "^2.0.12",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "tty-browserify": "^0.0.1",
