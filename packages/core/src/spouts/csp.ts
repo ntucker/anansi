@@ -23,3 +23,16 @@ export function buildPolicy(policyObj: Policy) {
     })
     .join('; ');
 }
+
+export function joinNonce(policyObj: Policy, nonce?: string | undefined) {
+  if (!nonce) return policyObj;
+  const policy = {
+    ...policyObj,
+  };
+  if (typeof policy['script-src'] === 'string') {
+    policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];
+  } else {
+    policy['script-src'] = [...policy['script-src'], `'nonce-${nonce}'`];
+  }
+  return policy;
+}

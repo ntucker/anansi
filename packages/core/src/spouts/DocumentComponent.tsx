@@ -1,6 +1,3 @@
-import type { Policy } from './csp.js';
-import { buildPolicy } from './csp.js';
-
 type Props = {
   children: React.ReactNode;
   assets: { href: string; as?: string; rel?: string }[];
@@ -10,8 +7,6 @@ type Props = {
   title: string;
   rootId: string;
   charSet: string;
-  csPolicy?: Policy;
-  nonce?: string | undefined;
 };
 
 export default function Document({
@@ -21,33 +16,13 @@ export default function Document({
   title,
   rootId,
   charSet,
-  csPolicy,
-  nonce,
   scripts,
   extraStyle,
 }: Props) {
-  let cspMeta: null | React.ReactNode = null;
-  if (csPolicy) {
-    // add nonce to policy
-    const policy = {
-      ...csPolicy,
-    };
-    if (nonce) {
-      if (typeof policy['script-src'] === 'string') {
-        policy['script-src'] = [policy['script-src'], `'nonce-${nonce}'`];
-      } else {
-        policy['script-src'] = [...policy['script-src'], `'nonce-${nonce}'`];
-      }
-    }
-    cspMeta = (
-      <meta httpEquiv="Content-Security-Policy" content={buildPolicy(policy)} />
-    );
-  }
   return (
     <html>
       <head>
         <meta charSet={charSet} />
-        {cspMeta}
         {head}
         {extraStyle}
         {assets.map((asset, i) => (
