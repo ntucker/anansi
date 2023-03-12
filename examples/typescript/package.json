@@ -42,7 +42,7 @@
     "react-test-renderer": "18.2.0",
     "sass": "^1.56.1",
     "serve": "14.2.0",
-    "webpack": "5.76.0"
+    "webpack": "5.76.1"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.3.34",
