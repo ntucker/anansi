@@ -53,6 +53,7 @@
         "postcss-preset-env",
         "svgo-loader",
         "svgo",
+        "@svgr/plugin-svgo",
         "@svgr/webpack"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
@@ -62,7 +63,8 @@
     {
       "matchPackageNames": [
         "svgo-loader",
-        "svgo"
+        "svgo",
+        "@svgr/plugin-svgo"
       ],
       "matchUpdateTypes": ["major"],
       "groupSlug": "svg",
