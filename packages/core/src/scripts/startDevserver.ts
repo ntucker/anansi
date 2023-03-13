@@ -208,7 +208,12 @@ export default async function startDevServer(
               return;
             }
             res.socket.on('error', (error: unknown) => {
-              console.error('Fatal', error);
+              log.error('Fatal:', error);
+              if ((error as any).code === 'ECONNRESET') {
+                log.error(
+                  'ECONNRESET is usually due to browser closing the connection',
+                );
+              }
             });
 
             await render(req, res);
