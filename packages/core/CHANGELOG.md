@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.14...@anansi/core@0.16.15) (2023-03-13)
+
+### 💅 Enhancement
+
+* Improve error messaging for devserver ([ba0a4f6](https://github.com/ntucker/anansi/commit/ba0a4f6249faaee02627f907380a47c1520ee9e9))
+* Move CSP to header; report-only in dev-mode ([#1878](https://github.com/ntucker/anansi/issues/1878)) ([f8544ec](https://github.com/ntucker/anansi/commit/f8544ec179e26d45453cb79e04c3300c750c2f7e))
+
+### 📦 Package
+
+* Update `webpack` to v5.76.1 ([#1876](https://github.com/ntucker/anansi/issues/1876)) ([16341ef](https://github.com/ntucker/anansi/commit/16341efd8bc5e3a5811d88dbf575cca77ef03cc4))
+
 ### [0.16.14](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.13...@anansi/core@0.16.14) (2023-03-09)
 
 ### 📦 Package
