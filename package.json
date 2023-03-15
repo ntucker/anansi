@@ -69,7 +69,7 @@
     "read-package-json": "5.0.2",
     "get-pkg-repo": "5.0.0",
     "@types/webpack": "^5.0.0",
-    "immer": "^9.0.0",
+    "immer": "^9.0.19",
     "webpack": "5.76.1",
     "css-loader": "^6.0.0",
     "dotenv-webpack": "^8.0.0",
