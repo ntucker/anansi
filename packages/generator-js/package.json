@@ -53,7 +53,7 @@
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
     "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.0",
+    "@babel/core": "7.21.3",
     "@types/ejs": "3.1.2",
     "@types/gulp-filter": "3.0.35",
     "@types/mem-fs-editor": "7.0.2",
