@@ -46,6 +46,7 @@
     {
       "matchPackageNames": [
         "@anansi/webpack-config",
+        "@pmmmwh/react-refresh-webpack-plugin",
         "sass",
         "node-sass",
         "sass-resources-loader",
