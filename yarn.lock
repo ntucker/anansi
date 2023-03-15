@@ -143,7 +143,7 @@ __metadata:
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
-    webpack: 5.76.1
+    webpack: 5.76.2
     webpack-cli: 5.0.1
     webpack-dev-server: ^4.12.0
     whatwg-fetch: ^3.6.2
@@ -285,7 +285,7 @@ __metadata:
     jest: 29.5.0
     nano-memoize: ^3.0.8
     rimraf: 4.4.0
-    webpack: 5.76.1
+    webpack: 5.76.2
     webpack-cli: 5.0.1
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -2393,21 +2393,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.21.0":
+"@babel/runtime@npm:7.21.0, @babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.21.0
   resolution: "@babel/runtime@npm:7.21.0"
   dependencies:
     regenerator-runtime: ^0.13.11
   checksum: 7b33e25bfa9e0e1b9e8828bb61b2d32bdd46b41b07ba7cb43319ad08efc6fda8eb89445193e67d6541814627df0ca59122c0ea795e412b99c5183a0540d338ab
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
-  version: 7.20.13
-  resolution: "@babel/runtime@npm:7.20.13"
-  dependencies:
-    regenerator-runtime: ^0.13.11
-  checksum: 09b7a97a05c80540db6c9e4ddf8c5d2ebb06cae5caf3a87e33c33f27f8c4d49d9c67a2d72f1570e796045288fad569f98a26ceba0c4f5fad2af84b6ad855c4fb
   languageName: node
   linkType: hard
 
@@ -4552,7 +4543,7 @@ __metadata:
     jest: 29.5.0
     path-to-regexp: 6.2.1
     rimraf: 4.4.0
-    webpack: 5.76.1
+    webpack: 5.76.2
     webpack-cli: 5.0.1
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0-0
@@ -10962,21 +10953,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.0.0":
-  version: 6.6.0
-  resolution: "css-loader@npm:6.6.0"
+"css-loader@npm:6.7.3":
+  version: 6.7.3
+  resolution: "css-loader@npm:6.7.3"
   dependencies:
     icss-utils: ^5.1.0
-    postcss: ^8.4.5
+    postcss: ^8.4.19
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
     postcss-modules-values: ^4.0.0
     postcss-value-parser: ^4.2.0
-    semver: ^7.3.5
+    semver: ^7.3.8
   peerDependencies:
     webpack: ^5.0.0
-  checksum: cc4117320c2bfbbc3e84cdf811fb29219f1900cf4dcebb7dbf916b7cbdfc193cd9017d19b62be2d57d22baeb791919de52bf2e3086213d184875813817ac290f
+  checksum: 473cc32b6c837c2848e2051ad1ba331c1457449f47442e75a8c480d9891451434ada241f7e3de2347e57de17fcd84610b3bcfc4a9da41102cdaedd1e17902d31
   languageName: node
   linkType: hard
 
@@ -12675,7 +12666,7 @@ __metadata:
     react-refresh: 0.14.0
     redbox-react: 1.6.0
     serve: 14.2.0
-    webpack: 5.76.1
+    webpack: 5.76.2
   languageName: unknown
   linkType: soft
 
@@ -12731,7 +12722,7 @@ __metadata:
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
     typescript: 4.9.5
-    webpack: 5.76.1
+    webpack: 5.76.2
     webpack-cli: 5.0.1
     webpack-dev-server: 4.12.0
   languageName: unknown
@@ -12783,7 +12774,7 @@ __metadata:
     redbox-react: 1.6.0
     sass: ^1.56.1
     serve: 14.2.0
-    webpack: 5.76.1
+    webpack: 5.76.2
   languageName: unknown
   linkType: soft
 
@@ -21205,7 +21196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.17, postcss@npm:^8.4.21, postcss@npm:^8.4.5":
+"postcss@npm:^8.4.17, postcss@npm:^8.4.19, postcss@npm:^8.4.21":
   version: 8.4.21
   resolution: "postcss@npm:8.4.21"
   dependencies:
@@ -23445,7 +23436,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.9.5
-    webpack: 5.76.1
+    webpack: 5.76.2
     webpack-cli: 5.0.1
     webpack-dev-server: 4.12.0
   languageName: unknown
@@ -26935,9 +26926,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.76.1":
-  version: 5.76.1
-  resolution: "webpack@npm:5.76.1"
+"webpack@npm:5.76.2":
+  version: 5.76.2
+  resolution: "webpack@npm:5.76.2"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -26968,7 +26959,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: b01fe0bc2dbca0e10d290ddb0bf81e807a031de48028176e2b21afd696b4d3f25ab9accdad888ef4a1f7c7f4d41f13d5bf2395b7653fdf3e5e3dafa54e56dab2
+  checksum: 86db98299a175c371031449c26077e87b33acd8f45de7f7945ed4b9b37c8ca11bc5169af9c44743efccd4d55e08042a3aa3a3bc42aff831309a0821ffbcd395e
   languageName: node
   linkType: hard
 
