@@ -112,7 +112,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.16.16, @anansi/core@workspace:packages/core":
+"@anansi/core@0.16.16, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -270,7 +270,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.7.25, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@0.7.25, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -443,7 +443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:^1.5.1, @ant-design/cssinjs@npm:^1.5.6":
+"@ant-design/cssinjs@npm:1.6.1, @ant-design/cssinjs@npm:^1.5.6":
   version: 1.6.1
   resolution: "@ant-design/cssinjs@npm:1.6.1"
   dependencies:
@@ -519,7 +519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/pro-components@npm:^2.3.34":
+"@ant-design/pro-components@npm:2.4.2":
   version: 2.4.2
   resolution: "@ant-design/pro-components@npm:2.4.2"
   dependencies:
@@ -2393,7 +2393,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:7.21.0":
+  version: 7.21.0
+  resolution: "@babel/runtime@npm:7.21.0"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 7b33e25bfa9e0e1b9e8828bb61b2d32bdd46b41b07ba7cb43319ad08efc6fda8eb89445193e67d6541814627df0ca59122c0ea795e412b99c5183a0540d338ab
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
   dependencies:
@@ -4739,7 +4748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:^7.2.0":
+"@rest-hooks/react@npm:7.2.7":
   version: 7.2.7
   resolution: "@rest-hooks/react@npm:7.2.7"
   dependencies:
@@ -4759,7 +4768,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/redux@npm:^6.3.0":
+"@rest-hooks/redux@npm:6.3.4":
   version: 6.3.4
   resolution: "@rest-hooks/redux@npm:6.3.4"
   dependencies:
@@ -12654,7 +12663,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.4.1
     "@anansi/webpack-config": ^14.3.7
     "@babel/plugin-transform-modules-commonjs": 7.21.2
-    "@babel/runtime": ^7.20.6
+    "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
     "@linaria/react": 4.3.6
     "@linaria/shaker": 4.2.9
@@ -12677,22 +12686,22 @@ __metadata:
     "@anansi/babel-preset": ^4.0.3
     "@anansi/browserslist-config": ^1.4.1
     "@anansi/cli": ^2.1.3
-    "@anansi/core": ^0.16.16
+    "@anansi/core": 0.16.16
     "@anansi/eslint-plugin": ^0.16.2
     "@anansi/jest-preset": ^0.9.0
-    "@anansi/router": ^0.7.25
+    "@anansi/router": 0.7.25
     "@anansi/webpack-config": ^14.3.7
-    "@ant-design/cssinjs": ^1.5.1
+    "@ant-design/cssinjs": 1.6.1
     "@babel/core": 7.21.3
-    "@babel/runtime": ^7.20.6
+    "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
     "@linaria/react": 4.3.6
     "@linaria/shaker": 4.2.9
     "@rest-hooks/endpoint": 3.7.2
     "@rest-hooks/hooks": 3.1.12
     "@rest-hooks/img": 0.8.10
-    "@rest-hooks/react": ^7.2.0
-    "@rest-hooks/redux": ^6.3.0
+    "@rest-hooks/react": 7.2.7
+    "@rest-hooks/redux": 6.3.4
     "@rest-hooks/rest": 6.3.10
     "@rest-hooks/test": 10.3.1
     "@types/babel__core": 7.20.0
@@ -12736,10 +12745,10 @@ __metadata:
     "@anansi/browserslist-config": ^1.4.1
     "@anansi/jest-preset": ^0.9.0
     "@anansi/webpack-config": ^14.3.7
-    "@ant-design/pro-components": ^2.3.34
-    "@babel/runtime": ^7.20.6
+    "@ant-design/pro-components": 2.4.2
+    "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.3
-    "@rest-hooks/react": ^7.2.0
+    "@rest-hooks/react": 7.2.7
     "@rest-hooks/rest": 6.3.10
     "@rest-hooks/test": 10.3.1
     "@storybook/addon-essentials": 6.5.16
