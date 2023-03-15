@@ -59,26 +59,7 @@
     "webpack-dev-server": "4.12.0"
   },
   "resolutions": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
-    "@linaria/core": "4.2.8",
-    "@linaria/babel-preset": "4.4.3",
-    "@linaria/utils": "4.3.2",
-    "normalize-package-data": "5.0.0",
-    "package-json": "^7.0.0",
-    "normalize-url": "^6",
-    "read-package-json": "5.0.2",
-    "get-pkg-repo": "5.0.0",
-    "@types/webpack": "^5.0.0",
-    "immer": "^9.0.19",
-    "webpack": "5.76.2",
-    "css-loader": "6.7.3",
-    "dotenv-webpack": "^8.0.0",
-    "html-webpack-plugin": "^5.0.0",
-    "style-loader": "^3.3.2",
-    "terser-webpack-plugin": "^5.3.7",
-    "webpack-virtual-modules": "^0.5.0",
-    "browserslist": "^4.21.5",
-    "react-refresh": "^0.14.0"
+    "normalize-url": "^6"
   },
   "dependencies": {
     "@types/react": "18.0.28",

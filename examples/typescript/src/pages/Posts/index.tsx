@@ -17,7 +17,7 @@ const routes = [
 ];
 
 function PostList() {
-  const posts = useSuspense(PostResource.getList, {});
+  const posts = useSuspense(PostResource.getList);
   return (
     <PageHeader
       title="Post List"

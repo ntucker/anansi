@@ -1,15 +1,16 @@
 module.exports = {
-  core: {
-    builder: "webpack5",
-  },
   stories: ['../**/*.stories.tsx'],
-  addons: [
-    '@storybook/addon-essentials'
-  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-mdx-gfm'],
   typescript: {
-    reactDocgen: 'react-docgen-typescript',
+    reactDocgen: 'react-docgen-typescript'
   },
-  reactOptions: {
-    fastRefresh: true,
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {
+      fastRefresh: true
+    }
   },
+  docs: {
+    autodocs: true
+  }
 };
