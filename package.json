@@ -71,7 +71,7 @@
     "@types/webpack": "^5.0.0",
     "immer": "^9.0.19",
     "webpack": "5.76.2",
-    "css-loader": "^6.0.0",
+    "css-loader": "6.7.3",
     "dotenv-webpack": "^8.0.0",
     "html-webpack-plugin": "^5.0.0",
     "style-loader": "^3.3.2",
