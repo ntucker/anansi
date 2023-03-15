@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.8.8...@anansi/jest-preset@0.9.0) (2023-03-15)
+
+### 🚀 Features
+
+* Support TypeScript 5.0 ([ee1ae7c](https://github.com/ntucker/anansi/commit/ee1ae7c533df43679da0ee17eef796ca9595b0b2))
+
+### 📦 Package
+
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+
 ### [0.8.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.8.7...@anansi/jest-preset@0.8.8) (2023-03-09)
 
 ### 📦 Package

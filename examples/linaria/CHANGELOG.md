@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.53](https://github.com/ntucker/anansi/compare/example-linaria@5.0.52...example-linaria@5.0.53) (2023-03-15)
+
+### 📦 Package
+
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+
 ### [5.0.52](https://github.com/ntucker/anansi/compare/example-linaria@5.0.51...example-linaria@5.0.52) (2023-03-13)
 
 ### 📦 Package

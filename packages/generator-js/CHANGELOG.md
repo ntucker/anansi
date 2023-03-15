@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.0.2...@anansi/generator-js@11.0.3) (2023-03-15)
+
+### 💅 Enhancement
+
+* Use moduleResolution: bundler for apps ([66e369b](https://github.com/ntucker/anansi/commit/66e369bf0c7c8378c46f9679d771de5f30316631))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1881](https://github.com/ntucker/anansi/issues/1881)) ([9f1b6ec](https://github.com/ntucker/anansi/commit/9f1b6eca48e28d74f422c1147ce145a6f9463a6d))
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+
 ### [11.0.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.0.1...@anansi/generator-js@11.0.2) (2023-03-13)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.25](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.24...@anansi/router@0.7.25) (2023-03-15)
+
+### 📦 Package
+
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+
 ### [0.7.24](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.23...@anansi/router@0.7.24) (2023-03-13)
 
 ### 📦 Package

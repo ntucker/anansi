@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.15...@anansi/core@0.16.16) (2023-03-15)
+
+### 📦 Package
+
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+* Update webpack packages ([#1880](https://github.com/ntucker/anansi/issues/1880)) ([403fb51](https://github.com/ntucker/anansi/commit/403fb5187372225604e9d3130dfff8ef547d12bf))
+
 ### [0.16.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.14...@anansi/core@0.16.15) (2023-03-13)
 
 ### 💅 Enhancement

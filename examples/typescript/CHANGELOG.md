@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.0.23](https://github.com/ntucker/anansi/compare/example-typescript@11.0.22...example-typescript@11.0.23) (2023-03-15)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1881](https://github.com/ntucker/anansi/issues/1881)) ([9f1b6ec](https://github.com/ntucker/anansi/commit/9f1b6eca48e28d74f422c1147ce145a6f9463a6d))
+* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+
 ### [11.0.22](https://github.com/ntucker/anansi/compare/example-typescript@11.0.21...example-typescript@11.0.22) (2023-03-13)
 
 ### 📦 Package
