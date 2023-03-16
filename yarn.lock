@@ -296,6 +296,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@anansi/storybook@^0.1.0, @anansi/storybook@workspace:packages/storybook":
+  version: 0.0.0-use.local
+  resolution: "@anansi/storybook@workspace:packages/storybook"
+  dependencies:
+    "@anansi/babel-preset": "workspace:*"
+    "@anansi/browserslist-config": "workspace:*"
+    "@babel/cli": 7.21.0
+    "@babel/core": 7.21.3
+    "@babel/runtime": ^7.17.0
+    "@storybook/builder-webpack5": 7.0.0-rc.3
+    "@storybook/preset-react-webpack": ^7.0.0-rc.3
+    "@storybook/react": 7.0.0-rc.3
+    "@types/node": ^16.0.0
+    jest: 29.5.0
+    rimraf: 4.4.0
+  peerDependencies:
+    "@anansi/babel-preset": ^3.0.0 || ^4.0.0
+    "@anansi/webpack-config": ^13.0.0 || ^14.0.0
+    "@types/react": ^17.0.40 || ^18.0.0-0
+    react: ^18.0.0-0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@anansi/ts-utils@workspace:^, @anansi/ts-utils@workspace:packages/ts-utils":
   version: 0.0.0-use.local
   resolution: "@anansi/ts-utils@workspace:packages/ts-utils"
@@ -5836,7 +5862,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preset-react-webpack@npm:7.0.0-rc.3":
+"@storybook/preset-react-webpack@npm:^7.0.0-rc.3":
   version: 7.0.0-rc.3
   resolution: "@storybook/preset-react-webpack@npm:7.0.0-rc.3"
   dependencies:
@@ -5925,27 +5951,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 20316935a038b3c5ff1369b9d9dffd5d2cb6d817ebc410143b3e58c097826b9f18f6ed1ce019d9da4babeeea97fc634fb6bac0060119cf2639203251c68a0782
-  languageName: node
-  linkType: hard
-
-"@storybook/react-webpack5@npm:7.0.0-rc.3":
-  version: 7.0.0-rc.3
-  resolution: "@storybook/react-webpack5@npm:7.0.0-rc.3"
-  dependencies:
-    "@storybook/builder-webpack5": 7.0.0-rc.3
-    "@storybook/preset-react-webpack": 7.0.0-rc.3
-    "@storybook/react": 7.0.0-rc.3
-    "@types/node": ^16.0.0
-  peerDependencies:
-    "@babel/core": ^7.11.5
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@babel/core":
-      optional: true
-    typescript:
-      optional: true
-  checksum: 4f4e90acf2282efce2e78593211435d568b5344ee21caf42cff0f0349516498020477eb3ee696f1c3789088143bf8c8ee2f2414ffd8423c8ba2da12e223b2bbd
   languageName: node
   linkType: hard
 
@@ -12489,6 +12494,7 @@ __metadata:
     "@anansi/babel-preset": ^4.0.3
     "@anansi/browserslist-config": ^1.4.1
     "@anansi/jest-preset": ^0.9.0
+    "@anansi/storybook": ^0.1.0
     "@anansi/webpack-config": ^14.3.7
     "@ant-design/pro-components": 2.4.2
     "@babel/runtime": 7.21.0
@@ -12501,7 +12507,6 @@ __metadata:
     "@storybook/addon-mdx-gfm": 7.0.0-rc.3
     "@storybook/addons": 7.0.0-rc.3
     "@storybook/react": 7.0.0-rc.3
-    "@storybook/react-webpack5": 7.0.0-rc.3
     "@types/classnames": 2.3.1
     "@types/jest": 29.4.0
     "@types/lodash": 4.14.191

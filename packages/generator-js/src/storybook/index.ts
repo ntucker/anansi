@@ -26,26 +26,7 @@ export default class WebpackGenerator extends InstallPeersMixin(
     this.packageJson.merge(
       this.fs.readJSONTpl(this.templatePath('package.json.tpl')),
     );
-    // storybook with webpack 5 is a bit tricky
-    this.packageJson.merge({
-      resolutions: {
-        '@types/webpack': '^5.0.0',
-        immer: '^9.0.0',
-        webpack: '^5.73.0',
-        'css-loader': '^6.0.0',
-        'dotenv-webpack': '^8.0.0',
-        'html-webpack-plugin': '^5.0.0',
-        'style-loader': '^3.0.0',
-        'terser-webpack-plugin': '^5.2.1',
-        'webpack-virtual-modules': '^0.4.2',
-      },
-    });
 
-    this.fs.copyTpl(
-      this.templatePath('.storybook/.babelrc.js'),
-      this.destinationPath('.storybook/.babelrc.js'),
-      this.config.getAll(),
-    );
     this.fs.copyTpl(
       this.templatePath('.storybook/main.js'),
       this.destinationPath('.storybook/main.js'),
@@ -59,24 +40,17 @@ export default class WebpackGenerator extends InstallPeersMixin(
         this.config.getAll(),
       );
     }
-    if (this.config.get('webpack')) {
-      this.fs.copyTpl(
-        this.templatePath('.storybook/webpack.config.js'),
-        this.destinationPath('.storybook/webpack.config.js'),
-        this.config.getAll(),
-      );
-    }
   }
 
   async writingDependencies() {
-    await this.addDevDependencies([
-      '@storybook/addon-essentials',
-      '@storybook/addon-links',
-      '@storybook/addons',
-      '@storybook/react',
-      '@storybook/builder-webpack5',
-      '@storybook/manager-webpack5',
-    ]);
+    await this.addDevDependencies({
+      storybook: 'next',
+      '@storybook/addon-essentials': 'next',
+      '@storybook/addon-links': 'next',
+      '@storybook/addons': 'next',
+      '@storybook/react': 'next',
+      '@anansi/storybook': 'latest',
+    });
   }
 
   writing() {

@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react/types-6-0';
+import { type StoryObj } from '@storybook/react';
 import { MockResolver } from '@rest-hooks/test';
 import { ExchangeRatesFixtures } from 'api/ExchangeRates';
 
@@ -13,24 +13,19 @@ export default {
       defaultValue: {
         symbol: 'BTC',
       },
+      options: Object.keys(ExchangeRatesFixtures.list.response.data.rates),
       control: {
         type: 'select',
-        options: Object.keys(
-          ExchangeRatesFixtures.list.response.data.rates,
-        ),
       },
     },
   },
 };
 
-const Template: Story<{ symbol: string }> = args => (
-  <MockResolver fixtures={[ExchangeRatesFixtures.list]}>
-    <Price {...args} />
-  </MockResolver>
-);
-
-export const BTCPrice = Template.bind({});
-
-BTCPrice.args = {
-  symbol: 'BTC',
-};
+export const BTCPrice: StoryObj<typeof Price> = {
+  render: args => (
+    <MockResolver fixtures={[ExchangeRatesFixtures.list]}>
+      <Price {...args} />
+    </MockResolver>
+  ),
+  args: { symbol: 'BTC' }
+}

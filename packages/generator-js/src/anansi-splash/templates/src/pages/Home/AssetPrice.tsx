@@ -5,6 +5,7 @@ export interface Props {
   symbol: string;
 }
 
+/** Shows the current trading price for a given asset */
 export default function AssetPrice({ symbol }: Props) {
   // Learn more about Rest Hooks: https://resthooks.io/docs/getting-started/usage
   const { data: price } = useLive(getExchangeRates, {

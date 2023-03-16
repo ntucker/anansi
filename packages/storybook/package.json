@@ -1,0 +1,77 @@
+{
+  "name": "@anansi/storybook",
+  "version": "0.1.0",
+  "description": "Storybook framework for anansi",
+  "homepage": "https://github.com/ntucker/anansi/tree/master/packages/storybook#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ntucker/anansi.git",
+    "directory": "packages/storybook"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Nathaniel Tucker",
+    "email": "me@ntucker.me",
+    "url": "https://ntucker.true.io"
+  },
+  "files": [
+    "src",
+    "dist",
+    "lib",
+    "preset.js",
+    "preview.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "storybook",
+    "react"
+  ],
+  "devDependencies": {
+    "@anansi/babel-preset": "workspace:*",
+    "@anansi/browserslist-config": "workspace:*",
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.3",
+    "jest": "29.5.0",
+    "rimraf": "4.4.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.0",
+    "@storybook/builder-webpack5": "7.0.0-rc.3",
+    "@storybook/preset-react-webpack": "^7.0.0-rc.3",
+    "@storybook/react": "7.0.0-rc.3",
+    "@types/node": "^16.0.0"
+  },
+  "peerDependencies": {
+    "@anansi/babel-preset": "^3.0.0 || ^4.0.0",
+    "@anansi/webpack-config": "^13.0.0 || ^14.0.0",
+    "@types/react": "^17.0.40 || ^18.0.0-0",
+    "react": "^18.0.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "pretest": "eslint --ext .ts,.tsx .",
+    "test": "jest",
+    "test:type": "tsc",
+    "dev": "yarn run build:lib -w",
+    "build": "yarn run build:lib",
+    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV=node16 babel --root-mode upward src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
+    "build:clean": "rimraf lib dist ts3.4 legacy dist *.tsbuildinfo",
+    "prepack": "yarn build"
+  }
+}

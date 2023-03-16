@@ -4,6 +4,7 @@
   "references": [
     { "path": "./packages/core/tsconfig.compile.json" },
     { "path": "./packages/pojo-router/tsconfig.compile.json" },
-    { "path": "./packages/router/tsconfig.compile.json" }
+    { "path": "./packages/router/tsconfig.compile.json" },
+    { "path": "./packages/storybook/tsconfig.compile.json" }
   ]
 }

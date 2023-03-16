@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { Post, UserResource } from 'data/resources';
 
+/** Displays one item in the list */
 export default function IssueListItem({ post }: { post: Post }) {
   const author = useSuspense(
     UserResource.get,
