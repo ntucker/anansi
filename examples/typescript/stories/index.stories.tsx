@@ -1,13 +1,11 @@
-import { Button } from '@storybook/react/demo';
-
 export default { title: 'atoms/Button' };
 
-export const text = () => <Button>Hello Button</Button>;
+export const text = () => <div>Hello Button</div>;
 
 export const emoji = () => (
-  <Button>
+  <div>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
-  </Button>
+  </div>
 );
