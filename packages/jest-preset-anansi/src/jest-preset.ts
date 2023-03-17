@@ -29,6 +29,7 @@ if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
 module.exports = {
   babelConfig,
   default: {
+    setupFiles: [require.resolve('./scripts/testSetup.js')],
     transform: {
       '^.+\\.worker.(m|c)?[t|j]s$': require.resolve(
         './transformers/worker-loader',
