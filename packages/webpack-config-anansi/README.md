@@ -594,16 +594,17 @@ Add `@anansi/webpack-config/types` to the types in `tsconfig.json`
 }
 ```
 
-This makes all imports of supported formats typed correctly, including svgs, media files and workers.
+This makes all imports of supported formats typed correctly, including svgs, media files and [workers](https://webpack.js.org/guides/web-workers/).
 
 e.g.,
 
 ```tsx
 import plain from './plain.css';
-import Worker from './my.worker.ts';
 import angleDownUrl, {
   ReactComponent as AngleDown,
 } from './angle-down-solid.svg';
+
+const worker = new Worker(new URL('./echo.js', import.meta.url));
 
 worker.postMessage({ message: 'rendered' });
 
@@ -616,6 +617,10 @@ export default function MyComponent() {
   );
 }
 ```
+
+> Note: Importing workers using URL is now recommended.
+> However, it means the file cannot be named .worker.(js|ts)
+> This is to keep backwards compatibility with workers imported via worker-loader
 
 ### Working with Linaria
 

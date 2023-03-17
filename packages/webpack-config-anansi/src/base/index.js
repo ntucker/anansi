@@ -174,6 +174,7 @@ export default function makeBaseConfig({
           ],
           exclude: libraryExclude,
           oneOf: [
+            /* TODO(deprecated): Drop this once people have a chance to migrate */
             {
               test: /\.worker\.(t|j)s$/,
               include: [new RegExp(basePath), libraryInclude],
