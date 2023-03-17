@@ -132,7 +132,7 @@
   },
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
-    "dev": "yarn run build:lib -w & yarn run build:bundle -w && fg",
+    "dev": "yarn run build:lib -w & yarn run build:bundle -w",
     "test": "jest",
     "test:type": "tsc",
     "build": "yarn run build:lib && yarn build:scripts && yarn run build:bundle",

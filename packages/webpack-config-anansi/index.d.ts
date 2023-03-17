@@ -1,16 +1,16 @@
+import type { TransformOptions } from '@babel/core';
+import { PluginOptions } from '@linaria/babel-preset';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
+import type { Options as SassOptions } from 'sass-loader';
+import type { OptimizeOptions } from 'svgo';
+import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type {
   Configuration,
   RuleSetUseItem,
   RuleSetConditionAbsolute,
 } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import type { OptimizeOptions } from 'svgo';
-import { PluginOptions } from '@linaria/babel-preset';
-import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import type { TransformOptions } from '@babel/core';
-import type { Options as SassOptions } from 'sass-loader';
-import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
 
 export interface Options {
   rootPath?: string;
