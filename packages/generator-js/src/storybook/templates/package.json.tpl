@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   }
 }

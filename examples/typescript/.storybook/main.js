@@ -5,7 +5,7 @@ module.exports = {
     reactDocgen: 'react-docgen-typescript'
   },
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@anansi/storybook',
     options: {
       fastRefresh: true
     }

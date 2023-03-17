@@ -1,16 +1,15 @@
 import { action } from '@storybook/addon-actions';
-import { Button } from '@storybook/react/demo';
 
 export default { title: 'atoms/Button' };
 
 export const text = () => (
-  <Button onClick={action('clicked')}>Hello Button</Button>
+  <div onClick={action('clicked')}>Hello Button</div>
 );
 
 export const emoji = () => (
-  <Button onClick={action('clicked')}>
+  <div onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
-  </Button>
+  </div>
 );

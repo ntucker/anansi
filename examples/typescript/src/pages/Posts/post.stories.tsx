@@ -1,4 +1,7 @@
-import PostList from './index';
-export default { title: 'posts/Post' };
+import { type StoryObj } from '@storybook/react';
 
-export const postList = () => <PostList />;
+import PostList from './index';
+
+export default { title: 'posts/Post', component: PostList };
+
+export const postList: StoryObj<typeof PostList> = {};
