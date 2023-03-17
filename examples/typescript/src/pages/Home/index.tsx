@@ -12,12 +12,13 @@ import AngleDownUrl, {
 import animated from './animated-overlay.gif';
 import { ReactComponent as Copy } from './Copy.svg';
 import style from './index.scss';
-import Worker from './my.worker.ts';
 import plain from './plain.css';
 import restHooks from './rest_hooks_logo_and_text.svg';
 import myHtml from './test.html';
 
-const worker = new Worker();
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const worker = new Worker(new URL('./echo.js', import.meta.url));
 
 export default function Home() {
   worker.postMessage({ message: 'rendered' });
