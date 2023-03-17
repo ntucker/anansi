@@ -254,6 +254,12 @@ function buildPreset(api, options = {}) {
   if (options.reactRequire && !hasJsxRuntime) {
     preset.plugins.unshift(require('babel-plugin-react-require').default);
   }
+  // import.meta.url doesn't work in commonjs
+  if (modules !== false && supportsModules === false) {
+    preset.plugins.unshift(
+      require('babel-plugin-transform-import-meta').default,
+    );
+  }
 
   switch (env) {
     case 'production':
