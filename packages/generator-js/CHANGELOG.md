@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.1...@anansi/generator-js@11.1.2) (2023-03-18)
+
+### 🐛 Bug Fix
+
+* Don't use addon we don't install ([cbb111f](https://github.com/ntucker/anansi/commit/cbb111f405026074b31890eccf3ca8734cb65f18))
+* Proper transitive peerDeps ([2f6e870](https://github.com/ntucker/anansi/commit/2f6e8709d8db5180c9249eb705810da5a313e8fc))
+
 ### [11.1.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.0...@anansi/generator-js@11.1.1) (2023-03-18)
 
 **Note:** Version bump only for package @anansi/generator-js

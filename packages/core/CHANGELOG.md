@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.18...@anansi/core@0.16.19) (2023-03-18)
+
+### 🐛 Bug Fix
+
+* Proper transitive peerDeps ([2f6e870](https://github.com/ntucker/anansi/commit/2f6e8709d8db5180c9249eb705810da5a313e8fc))
+
 ### [0.16.18](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.17...@anansi/core@0.16.18) (2023-03-18)
 
 **Note:** Version bump only for package @anansi/core

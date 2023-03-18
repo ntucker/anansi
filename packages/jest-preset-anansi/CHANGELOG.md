@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.2](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.1...@anansi/jest-preset@0.10.2) (2023-03-18)
+
+### 🐛 Bug Fix
+
+* Setup script works with native and node env ([f579032](https://github.com/ntucker/anansi/commit/f5790325d664d7c3b0ee90e6eafe7923e1e998c1))
+
 ### [0.10.1](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.0...@anansi/jest-preset@0.10.1) (2023-03-18)
 
 **Note:** Version bump only for package @anansi/jest-preset

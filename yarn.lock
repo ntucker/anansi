@@ -89,7 +89,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^2.1.5, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^2.1.6, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -111,7 +111,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.16.18, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.16.19, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -243,7 +243,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.10.1, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.10.2, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -12436,10 +12436,10 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/cli": ^2.1.5
-    "@anansi/core": ^0.16.18
+    "@anansi/cli": ^2.1.6
+    "@anansi/core": ^0.16.19
     "@anansi/eslint-plugin": ^0.16.2
-    "@anansi/jest-preset": ^0.10.1
+    "@anansi/jest-preset": ^0.10.2
     "@anansi/router": ^0.7.27
     "@anansi/webpack-config": ^14.3.9
     "@ant-design/cssinjs": 1.6.1
@@ -12494,7 +12494,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/jest-preset": ^0.10.1
+    "@anansi/jest-preset": ^0.10.2
     "@anansi/storybook": ^0.2.1
     "@anansi/webpack-config": ^14.3.9
     "@ant-design/pro-components": 2.4.2
