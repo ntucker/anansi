@@ -1,7 +1,7 @@
 module.exports = {
   stories: ['../<%= rootPath %>/**/*.stories.@(tsx)'],
   addons: [
-    '@storybook/addon-essentials', '@storybook/addon-links', '@storybook/addon-mdx-gfm'
+    '@storybook/addon-essentials', '@storybook/addon-links'
   ],
   framework: {
     name: '@anansi/storybook',
