@@ -103,7 +103,7 @@ are included:
 Adds support for these typecheckers. These remove the typings so the output runs in the target environment.
 If false, no static typechecker will be supported.
 
-Supports TypeScript 4.5
+Supports TypeScript 3, 4, and 5
 
 ### nodeTarget : ?string = undefined
 
