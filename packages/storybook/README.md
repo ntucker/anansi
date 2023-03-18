@@ -1,9 +1,10 @@
-# Storybook for HTML
+# Storybook for Anansi
 
 ---
 
-Storybook for HTML is a UI development environment for your plain HTML snippets.
-With it, you can visualize different states of your UI components and develop them interactively.
+Storybook for Anansi is a UI development environment for the [Anansi framework](https://github.com/ntucker/anansi).
+With it, storybook will automatically work with all components you build, even when customizing and extending
+your Anansi integration.
 
 ![Storybook Screenshot](https://github.com/storybookjs/storybook/blob/main/media/storybook-intro.gif)
 
