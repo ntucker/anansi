@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.1.0...@anansi/babel-preset@4.1.1) (2023-03-18)
+
+### 💅 Enhancement
+
+* Drop lodash,ramda plugins ([580daf9](https://github.com/ntucker/anansi/commit/580daf93f7103c267e2206410f15d2d6276cd544))
+
 ## [4.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.0.3...@anansi/babel-preset@4.1.0) (2023-03-18)
 
 ### 🚀 Features

@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@^4.1.0, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
+"@anansi/babel-preset@^4.1.1, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
@@ -89,7 +89,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^2.1.4, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^2.1.5, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -111,7 +111,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@0.16.17, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.16.18, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -240,7 +240,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.10.0, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.10.1, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -269,7 +269,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@0.7.26, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.7.27, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -295,7 +295,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@^0.2.0, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@^0.2.1, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -331,7 +331,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^14.3.8, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^14.3.9, @anansi/webpack-config@workspace:*, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -4622,9 +4622,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
-    "@anansi/babel-preset": ^4.1.0
+    "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.3.8
+    "@anansi/webpack-config": ^14.3.9
     "@babel/cli": 7.21.0
     "@babel/core": 7.21.3
     "@babel/runtime": ^7.17.0
@@ -12398,9 +12398,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-linaria@workspace:examples/linaria"
   dependencies:
-    "@anansi/babel-preset": ^4.1.0
+    "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/webpack-config": ^14.3.8
+    "@anansi/webpack-config": ^14.3.9
     "@babel/plugin-transform-modules-commonjs": 7.21.2
     "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
@@ -12422,14 +12422,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-react-18@workspace:examples/concurrent"
   dependencies:
-    "@anansi/babel-preset": ^4.1.0
+    "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/cli": ^2.1.4
-    "@anansi/core": 0.16.17
+    "@anansi/cli": ^2.1.5
+    "@anansi/core": ^0.16.18
     "@anansi/eslint-plugin": ^0.16.2
-    "@anansi/jest-preset": ^0.10.0
-    "@anansi/router": 0.7.26
-    "@anansi/webpack-config": ^14.3.8
+    "@anansi/jest-preset": ^0.10.1
+    "@anansi/router": ^0.7.27
+    "@anansi/webpack-config": ^14.3.9
     "@ant-design/cssinjs": 1.6.1
     "@babel/core": 7.21.3
     "@babel/runtime": 7.21.0
@@ -12480,11 +12480,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-typescript@workspace:examples/typescript"
   dependencies:
-    "@anansi/babel-preset": ^4.1.0
+    "@anansi/babel-preset": ^4.1.1
     "@anansi/browserslist-config": ^1.4.1
-    "@anansi/jest-preset": ^0.10.0
-    "@anansi/storybook": ^0.2.0
-    "@anansi/webpack-config": ^14.3.8
+    "@anansi/jest-preset": ^0.10.1
+    "@anansi/storybook": ^0.2.1
+    "@anansi/webpack-config": ^14.3.9
     "@ant-design/pro-components": 2.4.2
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.3

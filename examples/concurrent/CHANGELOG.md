@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.20](https://github.com/ntucker/anansi/compare/example-react-18@4.2.19...example-react-18@4.2.20) (2023-03-18)
+
+### 💅 Enhancement
+
+* Use TypeScript 5 moduleResolution settings ([370dec0](https://github.com/ntucker/anansi/commit/370dec02081a25fbf31317b5ed10510611883a48))
+
+### 📦 Package
+
+* Update `typescript` to v5 ([#1893](https://github.com/ntucker/anansi/issues/1893)) ([e1c17b5](https://github.com/ntucker/anansi/commit/e1c17b5ba4159ee7459da079b10ee9b17321c681))
+* Update `webpack-dev-server` to v4.13.0 ([#1899](https://github.com/ntucker/anansi/issues/1899)) ([ca813ee](https://github.com/ntucker/anansi/commit/ca813ee84d2af8701db0c956a8639ab1b443c934))
+* Update all non-major dependencies ([#1885](https://github.com/ntucker/anansi/issues/1885)) ([bd9c667](https://github.com/ntucker/anansi/commit/bd9c667d7ebae08caf6de3e03ab2eaa5d906de50))
+* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+
 ### [4.2.19](https://github.com/ntucker/anansi/compare/example-react-18@4.2.18...example-react-18@4.2.19) (2023-03-15)
 
 ### 📦 Package

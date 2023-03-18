@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.3.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.8...@anansi/webpack-config@14.3.9) (2023-03-18)
+
+**Note:** Version bump only for package @anansi/webpack-config
+
 ### [14.3.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.7...@anansi/webpack-config@14.3.8) (2023-03-18)
 
 ### 💅 Enhancement

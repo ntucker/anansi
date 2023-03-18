@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.54](https://github.com/ntucker/anansi/compare/example-linaria@5.0.53...example-linaria@5.0.54) (2023-03-18)
+
+### 💅 Enhancement
+
+* Use TypeScript 5 moduleResolution settings ([370dec0](https://github.com/ntucker/anansi/commit/370dec02081a25fbf31317b5ed10510611883a48))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1885](https://github.com/ntucker/anansi/issues/1885)) ([bd9c667](https://github.com/ntucker/anansi/commit/bd9c667d7ebae08caf6de3e03ab2eaa5d906de50))
+* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+
 ### [5.0.53](https://github.com/ntucker/anansi/compare/example-linaria@5.0.52...example-linaria@5.0.53) (2023-03-15)
 
 ### 📦 Package
