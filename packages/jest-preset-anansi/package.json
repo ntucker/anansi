@@ -60,9 +60,11 @@
     "@anansi/ts-utils": "workspace:^",
     "babel-jest": "^29.5.0",
     "core-js": "^3.21.0",
+    "cross-fetch": "^3.1.5",
     "identity-obj-proxy": "^3.0.0",
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.0",
+    "node-fetch": "^3.3.1",
     "semver": "^7.3.8",
     "ts-jest": "^29.0.5",
     "whatwg-fetch": "^3.0.0"
