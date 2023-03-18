@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.0.3...@anansi/babel-preset@4.1.0) (2023-03-18)
+
+### 🚀 Features
+
+* Transform import.meta.url when targetting cjs ([c1b5b68](https://github.com/ntucker/anansi/commit/c1b5b6889f303777d1d54c1b9e80340294a615b3))
+
 ### [4.0.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.0.2...@anansi/babel-preset@4.0.3) (2023-03-15)
 
 ### 📦 Package

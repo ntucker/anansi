@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.9.0...@anansi/jest-preset@0.10.0) (2023-03-18)
+
+### 🚀 Features
+
+* Mock window.Worker ([3793b9c](https://github.com/ntucker/anansi/commit/3793b9c7745a345cc1c710c93237154e72a3a26a))
+
 ## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.8.8...@anansi/jest-preset@0.9.0) (2023-03-15)
 
 ### 🚀 Features

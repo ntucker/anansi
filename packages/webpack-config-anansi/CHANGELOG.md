@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [14.3.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.7...@anansi/webpack-config@14.3.8) (2023-03-18)
+
+### 💅 Enhancement
+
+* Document new worker recommendation ([f6a8508](https://github.com/ntucker/anansi/commit/f6a85083b1d19afc417fa4bc04075bd5773231c4))
+* Update worker types ([6997bb0](https://github.com/ntucker/anansi/commit/6997bb0b22c6fabd7cb9f433e1af872aba896da9))
+
+### 📦 Package
+
+* Update `mini-css-extract-plugin` to ^2.7.5 ([#1896](https://github.com/ntucker/anansi/issues/1896)) ([1888955](https://github.com/ntucker/anansi/commit/188895500f813a307b91885c6607aeb19075895f))
+* Update webpack packages ([#1890](https://github.com/ntucker/anansi/issues/1890)) ([82cfbe8](https://github.com/ntucker/anansi/commit/82cfbe803496d649507971fbbce5dd77c7ab9e89))
+* Upgrade to Storybook 7 ([#1888](https://github.com/ntucker/anansi/issues/1888)) ([547775a](https://github.com/ntucker/anansi/commit/547775a26fcf27ceaffb522de7e941afd0b091b7))
+
 ### [14.3.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.6...@anansi/webpack-config@14.3.7) (2023-03-15)
 
 ### 📦 Package

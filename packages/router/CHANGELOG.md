@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.26](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.25...@anansi/router@0.7.26) (2023-03-18)
+
+### 📦 Package
+
+* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+
 ### [0.7.25](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.24...@anansi/router@0.7.25) (2023-03-15)
 
 ### 📦 Package

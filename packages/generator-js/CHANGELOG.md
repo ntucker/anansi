@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.0.3...@anansi/generator-js@11.1.0) (2023-03-18)
+
+### 🚀 Features
+
+* Add @anansi/storybook ([#1891](https://github.com/ntucker/anansi/issues/1891)) ([65c6cd4](https://github.com/ntucker/anansi/commit/65c6cd4bed72c02ad4fb4fdc290cfae22d9b6a66))
+
+### 💅 Enhancement
+
+* Use TypeScript 5 moduleResolution settings ([370dec0](https://github.com/ntucker/anansi/commit/370dec02081a25fbf31317b5ed10510611883a48))
+
 ### [11.0.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.0.2...@anansi/generator-js@11.0.3) (2023-03-15)
 
 ### 💅 Enhancement

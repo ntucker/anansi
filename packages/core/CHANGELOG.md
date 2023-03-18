@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.17](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.16...@anansi/core@0.16.17) (2023-03-18)
+
+### 💅 Enhancement
+
+* Update worker types ([6997bb0](https://github.com/ntucker/anansi/commit/6997bb0b22c6fabd7cb9f433e1af872aba896da9))
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v4.13.0 ([#1899](https://github.com/ntucker/anansi/issues/1899)) ([ca813ee](https://github.com/ntucker/anansi/commit/ca813ee84d2af8701db0c956a8639ab1b443c934))
+* Update all non-major dependencies ([#1885](https://github.com/ntucker/anansi/issues/1885)) ([bd9c667](https://github.com/ntucker/anansi/commit/bd9c667d7ebae08caf6de3e03ab2eaa5d906de50))
+* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+
 ### [0.16.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.15...@anansi/core@0.16.16) (2023-03-15)
 
 ### 📦 Package
