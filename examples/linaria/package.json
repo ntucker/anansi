@@ -1,6 +1,5 @@
 {
   "name": "example-linaria",
-  "version": "5.0.53",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
