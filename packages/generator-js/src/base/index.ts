@@ -139,6 +139,7 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
       '@anansi/eslint-plugin',
       '@anansi/browserslist-config',
       'typescript',
+      '@typescript-eslint/parser',
     ]);
     await this.addDependencies(['@babel/runtime']);
   }
