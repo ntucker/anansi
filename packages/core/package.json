@@ -97,7 +97,7 @@
     "source-map-support": "^0.5.21",
     "tmp": "^0.2.1",
     "unionfs": "^4.4.0",
-    "webpack-dev-server": "^4.13.0",
+    "webpack-dev-server": "^4.13.1",
     "whatwg-fetch": "^3.6.2"
   },
   "peerDependencies": {
