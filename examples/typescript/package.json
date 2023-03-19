@@ -48,9 +48,9 @@
   "dependencies": {
     "@ant-design/pro-components": "2.4.2",
     "@babel/runtime": "7.21.0",
-    "@rest-hooks/graphql": "0.4.3",
-    "@rest-hooks/react": "7.2.7",
-    "@rest-hooks/rest": "6.3.10",
+    "@rest-hooks/graphql": "0.4.4",
+    "@rest-hooks/react": "7.2.8",
+    "@rest-hooks/rest": "6.3.11",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
