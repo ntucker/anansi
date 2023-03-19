@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution": "bundler",
+    "skipLibCheck": true,
     "types": ["@anansi/webpack-config/types"<% if (features.includes('testing')) {%>, "jest"<% } %>],
     "paths": {
       "api/*": ["api/*"]
