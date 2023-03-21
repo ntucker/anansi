@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.2...@anansi/generator-js@11.1.3) (2023-03-21)
+
+### 💅 Enhancement
+
+* Skip lib check for applications ([5099135](https://github.com/ntucker/anansi/commit/5099135017e516b51c73e897e1241b2eb95fc257))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1906](https://github.com/ntucker/anansi/issues/1906)) ([babee96](https://github.com/ntucker/anansi/commit/babee967b98dbb86e1f61c280c8067c3ee5e357c))
+
 ### [11.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.1...@anansi/generator-js@11.1.2) (2023-03-18)
 
 ### 🐛 Bug Fix

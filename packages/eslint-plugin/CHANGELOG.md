@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.2...@anansi/eslint-plugin@0.16.3) (2023-03-21)
+
+### 📦 Package
+
+* Update linting packages ([#1905](https://github.com/ntucker/anansi/issues/1905)) ([99f1a20](https://github.com/ntucker/anansi/commit/99f1a20878b805c56f6145705f52073e618ef734))
+
 ### [0.16.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.1...@anansi/eslint-plugin@0.16.2) (2023-03-15)
 
 ### 📦 Package
