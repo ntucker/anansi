@@ -4772,7 +4772,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.7.4, @rest-hooks/endpoint@npm:^3.7.3, @rest-hooks/endpoint@npm:^3.7.4":
+"@rest-hooks/endpoint@npm:3.7.4, @rest-hooks/endpoint@npm:^3.7.4":
   version: 3.7.4
   resolution: "@rest-hooks/endpoint@npm:3.7.4"
   dependencies:
@@ -4870,14 +4870,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.3.11":
-  version: 6.3.11
-  resolution: "@rest-hooks/rest@npm:6.3.11"
+"@rest-hooks/rest@npm:6.3.12":
+  version: 6.3.12
+  resolution: "@rest-hooks/rest@npm:6.3.12"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/endpoint": ^3.7.3
+    "@rest-hooks/endpoint": ^3.7.4
     path-to-regexp: ^6.2.1
-  checksum: 61d856eb746bff2d3f84a9b9a96bc301bb529bed94cae5ef30e102676fc028568c6e38f675a892fdde0659e999eef5334581620476f709b544ca951c7b7b1981
+  checksum: f9c181eb466fcf7fbe8f671047444d91e25d4b04ccf817981cad1ce75833cfdbe6677ba420032810d49eb52a6960021cb7d3196393cd478110726914fd0fc8f1
   languageName: node
   linkType: hard
 
@@ -12453,7 +12453,7 @@ __metadata:
     "@rest-hooks/img": 0.8.12
     "@rest-hooks/react": 7.2.9
     "@rest-hooks/redux": 6.3.5
-    "@rest-hooks/rest": 6.3.11
+    "@rest-hooks/rest": 6.3.12
     "@rest-hooks/test": 10.3.1
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
@@ -12501,7 +12501,7 @@ __metadata:
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
     "@rest-hooks/react": 7.2.9
-    "@rest-hooks/rest": 6.3.11
+    "@rest-hooks/rest": 6.3.12
     "@rest-hooks/test": 10.3.1
     "@storybook/addon-essentials": 7.0.0-rc.5
     "@storybook/addon-links": 7.0.0-rc.5
