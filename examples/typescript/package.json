@@ -50,7 +50,7 @@
     "@babel/runtime": "7.21.0",
     "@rest-hooks/graphql": "0.4.5",
     "@rest-hooks/react": "7.2.9",
-    "@rest-hooks/rest": "6.3.11",
+    "@rest-hooks/rest": "6.3.12",
     "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
