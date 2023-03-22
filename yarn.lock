@@ -142,7 +142,7 @@ __metadata:
     source-map-support: ^0.5.21
     tmp: ^0.2.1
     unionfs: ^4.4.0
-    webpack: 5.76.2
+    webpack: 5.76.3
     webpack-cli: 5.0.1
     webpack-dev-server: ^4.13.1
     whatwg-fetch: ^3.6.2
@@ -289,7 +289,7 @@ __metadata:
     jest: 29.5.0
     nano-memoize: ^3.0.8
     rimraf: 4.4.0
-    webpack: 5.76.2
+    webpack: 5.76.3
     webpack-cli: 5.0.1
   peerDependencies:
     "@types/react": ^17.0.40 || ^18.0.0-0
@@ -4637,7 +4637,7 @@ __metadata:
     jest: 29.5.0
     path-to-regexp: 6.2.1
     rimraf: 4.4.0
-    webpack: 5.76.2
+    webpack: 5.76.3
     webpack-cli: 5.0.1
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0-0
@@ -12426,7 +12426,7 @@ __metadata:
     react-refresh: 0.14.0
     redbox-react: 1.6.0
     serve: 14.2.0
-    webpack: 5.76.2
+    webpack: 5.76.3
   languageName: unknown
   linkType: soft
 
@@ -12482,7 +12482,7 @@ __metadata:
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
     typescript: 5.0.2
-    webpack: 5.76.2
+    webpack: 5.76.3
     webpack-cli: 5.0.1
     webpack-dev-server: 4.13.1
   languageName: unknown
@@ -12535,7 +12535,7 @@ __metadata:
     sass: ^1.56.1
     serve: 14.2.0
     storybook: 7.0.0-rc.5
-    webpack: 5.76.2
+    webpack: 5.76.3
   languageName: unknown
   linkType: soft
 
@@ -23030,7 +23030,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 5.0.2
-    webpack: 5.76.2
+    webpack: 5.76.3
     webpack-cli: 5.0.1
     webpack-dev-server: 4.13.1
   languageName: unknown
@@ -26306,9 +26306,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5, webpack@npm:5.76.2, webpack@npm:^5":
-  version: 5.76.2
-  resolution: "webpack@npm:5.76.2"
+"webpack@npm:5, webpack@npm:5.76.3, webpack@npm:^5":
+  version: 5.76.3
+  resolution: "webpack@npm:5.76.3"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -26339,7 +26339,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 86db98299a175c371031449c26077e87b33acd8f45de7f7945ed4b9b37c8ca11bc5169af9c44743efccd4d55e08042a3aa3a3bc42aff831309a0821ffbcd395e
+  checksum: 363f536b56971d056e34ab4cffa4cbc630b220e51be1a8c3adea87d9f0b51c49cfc7c3720d6614a1fd2c8c63f1ab3100db916fe8367c8bb9299327ff8c3f856d
   languageName: node
   linkType: hard
 

@@ -43,7 +43,7 @@
     "sass": "^1.56.1",
     "serve": "14.2.0",
     "storybook": "7.0.0-rc.5",
-    "webpack": "5.76.2"
+    "webpack": "5.76.3"
   },
   "dependencies": {
     "@ant-design/pro-components": "2.4.2",
