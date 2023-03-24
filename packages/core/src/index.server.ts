@@ -8,3 +8,4 @@ export { default as JSONSpout } from './spouts/json.server.js';
 export { default as appSpout } from './spouts/app.server.js';
 export type { ServerProps } from './spouts/types.js';
 export type { ServerSpout as Spout } from './spouts/types.js';
+export * from './scripts/types.js';
