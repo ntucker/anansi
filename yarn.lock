@@ -102,7 +102,7 @@ __metadata:
     latest-version: ^7.0.0
     yo: ^4.3.1
   peerDependencies:
-    "@anansi/core": ^0.13.0 || ^0.14.0
+    "@anansi/core": ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0
   peerDependenciesMeta:
     "@anansi/core":
       optional: true
@@ -317,7 +317,7 @@ __metadata:
     rimraf: 4.4.1
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
-    "@anansi/webpack-config": ^13.0.0 || ^14.0.0
+    "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
     "@types/react": ^17.0.40 || ^18.0.0-0
     react: ^18.0.0-0
   peerDependenciesMeta:
