@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.21...@anansi/core@0.16.22) (2023-03-24)
+
+### 🐛 Bug Fix
+
+* Export server types ([b5d8540](https://github.com/ntucker/anansi/commit/b5d8540448c53e74ea857bd207f91ec562a7715e))
+
 ### [0.16.21](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.20...@anansi/core@0.16.21) (2023-03-24)
 
 ### 📦 Package

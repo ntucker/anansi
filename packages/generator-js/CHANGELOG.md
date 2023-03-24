@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.4...@anansi/generator-js@11.1.5) (2023-03-24)
+
+### 🐛 Bug Fix
+
+* vscode typescript path ([7824398](https://github.com/ntucker/anansi/commit/78243987dc3ab2f2aa60a9f9d3b1400c18445739))
+
 ### [11.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.3...@anansi/generator-js@11.1.4) (2023-03-24)
 
 ### 📦 Package

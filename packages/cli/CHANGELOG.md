@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/ntucker/anansi/compare/@anansi/cli@2.1.8...@anansi/cli@2.2.0) (2023-03-24)
+
+### 🚀 Features
+
+* Support latest versions (peerdeps) ([a04d383](https://github.com/ntucker/anansi/commit/a04d38371f7d54e6a817ff0427bf4e377ab3d86e))
+
 ### [2.1.8](https://github.com/ntucker/anansi/compare/@anansi/cli@2.1.7...@anansi/cli@2.1.8) (2023-03-24)
 
 **Note:** Version bump only for package @anansi/cli

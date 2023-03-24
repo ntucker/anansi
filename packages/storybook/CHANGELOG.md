@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@0.2.3...@anansi/storybook@0.3.0) (2023-03-24)
+
+### 🚀 Features
+
+* Support latest versions (peerdeps) ([a04d383](https://github.com/ntucker/anansi/commit/a04d38371f7d54e6a817ff0427bf4e377ab3d86e))
+
 ### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/storybook@0.2.2...@anansi/storybook@0.2.3) (2023-03-24)
 
 ### 📦 Package
