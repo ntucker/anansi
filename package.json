@@ -52,7 +52,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "7.0.4",
     "lint-staged": "13.2.0",
-    "prettier": "2.8.6",
+    "prettier": "2.8.7",
     "typescript": "5.0.2",
     "webpack": "5.76.3",
     "webpack-cli": "5.0.1",
