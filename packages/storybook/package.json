@@ -41,14 +41,14 @@
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.3",
     "jest": "29.5.0",
-    "rimraf": "4.4.0"
+    "rimraf": "4.4.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.0",
     "@storybook/builder-webpack5": "7.0.0-rc.7",
     "@storybook/preset-react-webpack": "^7.0.0-rc.7",
     "@storybook/react": "7.0.0-rc.7",
-    "@types/node": "^16.18.18"
+    "@types/node": "^16.18.19"
   },
   "peerDependencies": {
     "@anansi/babel-preset": "^3.0.0 || ^4.0.0",
