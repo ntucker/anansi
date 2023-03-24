@@ -65,7 +65,8 @@
       "matchPackageNames": [
         "svgo-loader",
         "svgo",
-        "@svgr/plugin-svgo"
+        "@svgr/plugin-svgo",
+        "@svgr/webpack"
       ],
       "matchUpdateTypes": ["major"],
       "groupSlug": "svg",
