@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.10...@anansi/webpack-config@15.0.0) (2023-03-24)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Switched to SVGO 3, see its breaking changes: https://github.com/svg/svgo/releases/tag/v3.0.0
+
+### 📦 Package
+
+* Make svgo peerdep 3 ([046f326](https://github.com/ntucker/anansi/commit/046f326e886a76dc4dc91d62864a0386bcf33428))
+* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+* Update svg processors (major) ([#1897](https://github.com/ntucker/anansi/issues/1897)) ([0cc8079](https://github.com/ntucker/anansi/commit/0cc80793c33c07afac85f422a23fa1c753183a85))
+
 ### [14.3.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.9...@anansi/webpack-config@14.3.10) (2023-03-21)
 
 ### 📦 Package

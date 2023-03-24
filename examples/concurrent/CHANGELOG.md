@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.23](https://github.com/ntucker/anansi/compare/example-react-18@4.2.22...example-react-18@4.2.23) (2023-03-24)
+
+### 📦 Package
+
+* Update `@rest-hooks/rest` to v6.3.12 ([#1907](https://github.com/ntucker/anansi/issues/1907)) ([dc7cc6f](https://github.com/ntucker/anansi/commit/dc7cc6f301156754005d55841f32850b6e280f62))
+* Update `prettier` to v2.8.7 ([#1914](https://github.com/ntucker/anansi/issues/1914)) ([47035cd](https://github.com/ntucker/anansi/commit/47035cd7b60dfd0f711b4732ddfeb7834706ce2b))
+* Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
+* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+
 ### [4.2.22](https://github.com/ntucker/anansi/compare/example-react-18@4.2.21...example-react-18@4.2.22) (2023-03-21)
 
 ### 📦 Package

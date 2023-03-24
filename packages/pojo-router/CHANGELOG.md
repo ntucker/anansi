@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.76](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.75...@pojo-router/core@0.5.76) (2023-03-24)
+
+### 📦 Package
+
+* Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
+* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+
 ### [0.5.75](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.74...@pojo-router/core@0.5.75) (2023-03-21)
 
 **Note:** Version bump only for package @pojo-router/core
