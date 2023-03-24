@@ -27,7 +27,9 @@ export interface Options {
   env?: any;
   htmlOptions?: HtmlWebpackPlugin.Options | false;
   svgoOptions?: OptimizeOptions | false;
-  svgrOptions?: any | false;
+  svgrOptions?:
+    | { svgoConfig?: OptimizeOptions; [key: string]: unknown }
+    | false;
   linariaOptions?: PluginOptions | false;
   cssExtractOptions?: MiniCssExtractPluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
