@@ -94,10 +94,10 @@
     "pretest": "eslint --ext .ts,.tsx .",
     "test": "jest",
     "test:type": "tsc",
-    "build": "yarn run build:lib && yarn run copyfiles",
+    "build": "run build:lib && run copyfiles",
     "build:lib": "BROWSERSLIST_ENV=node14 babel --root-mode upward src --out-dir generators --source-maps inline --extensions '.ts,.tsx,.js' --ignore \"**/templates/**/*\",\"**/templates/*\",\"**/yeoman-types/*\"",
     "build:clean": "rimraf generators",
     "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" generators",
-    "prepack": "yarn build:clean && yarn build"
+    "prepack": "run build:clean && run build"
   }
 }

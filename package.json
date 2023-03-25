@@ -17,18 +17,18 @@
   ],
   "scripts": {
     "postinstall": "husky install && yarn workspace \"@anansi/webpack-config\" run build",
-    "changelog": "yarn lerna version",
+    "changelog": "run lerna version",
     "release": "yarn workspaces foreach -tiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -t --no-private run build",
     "dev": "yarn workspaces foreach -pi --no-private run dev",
     "lint": "eslint packages/*/src",
     "format": "eslint --fix packages/*/src",
     "build:types": "tsc --build",
-    "build:pkg": "yarn build:types && yarn workspaces foreach -t --no-private run build",
-    "build:clean": "yarn workspaces foreach -tpi --no-private run build:clean",
+    "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -t --no-private run build",
+    "build:clean": "yarn workspaces foreach -pi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
-    "prepack": "yarn build:pkg",
-    "version": "yarn install && git add yarn.lock"
+    "prepack": "run build:pkg",
+    "version": "run install && git add yarn.lock"
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",

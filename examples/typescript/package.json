@@ -12,7 +12,7 @@
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
     "test": "NODE_ENV=test jest",
-    "test:ci": "yarn test --ci --no-cache",
+    "test:ci": "run test --ci --no-cache",
     "test:type": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build"

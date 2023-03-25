@@ -5,12 +5,14 @@
   "main": "lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"Error: no test specified\"",
     "build:lib": "BROWSERSLIST_ENV=node14 babel --root-mode upward src --out-dir lib --source-maps inline",
-    "build": "yarn run build:lib",
-    "dev": "yarn run build:lib -w",
+    "build": "run build:lib",
+    "dev": "run build:lib -w",
     "build:clean": "rimraf lib",
-    "prepare": "yarn run build:clean && yarn run build",
-    "prepack": "yarn prepare"
+    "prepare": "run build:clean && run build",
+    "prepack": "run prepare"
   },
   "files": [
     "lib",

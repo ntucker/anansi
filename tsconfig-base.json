@@ -67,6 +67,7 @@
   "include": ["packages/pojo-router/src", "packages/router/src", "packages/core/src"],
   "exclude": [
     "node_modules",
+    ".yarn",
     "dist",
     "lib",
     "ts3.4",

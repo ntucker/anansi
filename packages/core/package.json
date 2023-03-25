@@ -136,14 +136,14 @@
   },
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
-    "dev": "yarn run build:lib -w & yarn run build:bundle -w",
+    "dev": "run build:lib -w & run build:bundle -w",
     "test": "jest",
     "test:type": "tsc",
-    "build": "yarn run build:lib && yarn build:scripts && yarn run build:bundle",
+    "build": "run build:lib && run build:scripts && run build:bundle",
     "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
     "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node12' babel --root-mode upward src/scripts --out-dir lib/scripts --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
     "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
     "build:clean": "rimraf lib dist ts3.4 legacy *.tsbuildinfo",
-    "prepack": "yarn build"
+    "prepack": "run build"
   }
 }

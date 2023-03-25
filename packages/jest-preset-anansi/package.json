@@ -43,11 +43,11 @@
     "pretest": "eslint --ext .ts,.tsx ./src",
     "build:lib": "BROWSERSLIST_ENV=node10 babel --root-mode upward ./src --out-dir ./lib --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/templates/**' --ignore '**/lib/**' --ignore '**/__tests__/**'",
     "copyfiles": "copyfiles -u 1 \"src/**/lib/**/*\" \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" lib",
-    "build": "yarn run build:lib && yarn run copyfiles",
+    "build": "run build:lib && run copyfiles",
     "build:clean": "rimraf lib",
-    "dev": "yarn run build:lib -w",
-    "prepare": "yarn build",
-    "prepack": "yarn prepare"
+    "dev": "run build:lib -w",
+    "prepare": "run build",
+    "prepack": "run prepare"
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
