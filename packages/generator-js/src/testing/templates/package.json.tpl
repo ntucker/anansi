@@ -1,8 +1,8 @@
 {
   "scripts": {
     "test": "NODE_ENV=test jest",
-    "test:ci": "npm test -- --ci",
-    "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test -- --coverage"
+    "test:ci": "run test -- --ci",
+    "test:watch": "run test -- --watch",
+    "test:coverage": "run test -- --coverage"
   }
 }

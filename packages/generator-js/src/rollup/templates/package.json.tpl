@@ -1,6 +1,6 @@
 {
   "scripts": {
     "build:bundle": "rollup -c",
-    "prepublishOnly": "npm run build:bundle"
+    "prepublishOnly": "run build:bundle"
   }
 }
