@@ -12,8 +12,9 @@
     "build:analyze": "webpack --mode=production --env analyze",
     "build:profile": "webpack --mode=production --env profile",
     "pkgcheck": "webpack --env check=nobuild",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"Error: no test specified\"",
     "test:type": "tsc --noEmit",
-    "test:ci": "echo ''",
     "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {
@@ -53,6 +54,7 @@
     "@anansi/core": "^0.16.22",
     "@anansi/router": "^0.7.29",
     "@ant-design/cssinjs": "1.6.2",
+    "@ant-design/icons": "^4.7.0",
     "@babel/runtime": "7.21.0",
     "@linaria/core": "4.2.8",
     "@linaria/react": "4.3.6",

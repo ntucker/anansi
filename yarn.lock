@@ -156,7 +156,7 @@ __metadata:
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1
     "@rest-hooks/react": ^6.0.0 || ^7.0.0
-    "@rest-hooks/ssr": ^6.3.0 || ^7.0.0
+    "@rest-hooks/ssr": ^0.6.0 || ^0.7.0
     "@types/react": ^17.0.40 || ^18.0.0
     "@types/ssr": ^0.6.0 || ^0.7.0
     react: ^18.0.0
@@ -182,7 +182,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@^0.16.3, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.16.3, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -504,7 +504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^4.3.0":
+"@ant-design/icons@npm:^4.3.0, @ant-design/icons@npm:^4.7.0":
   version: 4.8.0
   resolution: "@ant-design/icons@npm:4.8.0"
   dependencies:
@@ -533,6 +533,22 @@ __metadata:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
   checksum: a6d96f8f822208193433a78754e013341f9c8c1c26599a0eefb63978c3581c1f6d404c2eadd0e72e32e9d218349e09dab9ade145af39176886974cd37ed1c226
+  languageName: node
+  linkType: hard
+
+"@ant-design/icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@ant-design/icons@npm:5.0.1"
+  dependencies:
+    "@ant-design/colors": ^7.0.0
+    "@ant-design/icons-svg": ^4.2.1
+    "@babel/runtime": ^7.11.2
+    classnames: ^2.2.6
+    rc-util: ^5.9.4
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 426371e3a2d5d571a2df18229512ea5951ea71b97f1fa3a3a4dc2feda58498c70da7025c6e3ffcf0ae2dab0fb496d117f8962222f17d95dc58498850d9a21566
   languageName: node
   linkType: hard
 
@@ -6434,7 +6450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:7.20.0, @types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
+"@types/babel__core@npm:7.20.0, @types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.20.0":
   version: 7.20.0
   resolution: "@types/babel__core@npm:7.20.0"
   dependencies:
@@ -6604,7 +6620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:8.21.3, @types/eslint@npm:^8.4.2":
+"@types/eslint@npm:*, @types/eslint@npm:8.21.3, @types/eslint@npm:^8.21.3, @types/eslint@npm:^8.4.2":
   version: 8.21.3
   resolution: "@types/eslint@npm:8.21.3"
   dependencies:
@@ -7001,7 +7017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:2.7.2, @types/prettier@npm:^2.1.5, @types/prettier@npm:^2.6.0":
+"@types/prettier@npm:2.7.2, @types/prettier@npm:^2.1.5, @types/prettier@npm:^2.6.0, @types/prettier@npm:^2.7.2":
   version: 2.7.2
   resolution: "@types/prettier@npm:2.7.2"
   checksum: b47d76a5252265f8d25dd2fe2a5a61dc43ba0e6a96ffdd00c594cb4fd74c1982c2e346497e3472805d97915407a09423804cc2110a0b8e1b22cffcab246479b7
@@ -7019,6 +7035,13 @@ __metadata:
   version: 15.7.1
   resolution: "@types/prop-types@npm:15.7.1"
   checksum: f8b33d7d15a70d0b709bcf5f281c7647ca8aaeaf377431725b4fda4949f2845476652d355eec0cde2a62ba3f7a5fb3194788aebaecc2048eb28db201121c2310
+  languageName: node
+  linkType: hard
+
+"@types/prop-types@npm:^15.7.5":
+  version: 15.7.5
+  resolution: "@types/prop-types@npm:15.7.5"
+  checksum: 5b43b8b15415e1f298243165f1d44390403bb2bd42e662bca3b5b5633fdd39c938e91b7fce3a9483699db0f7a715d08cef220c121f723a634972fdf596aec980
   languageName: node
   linkType: hard
 
@@ -7295,7 +7318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:5.56.0":
+"@typescript-eslint/eslint-plugin@npm:5.56.0, @typescript-eslint/eslint-plugin@npm:^5.56.0":
   version: 5.56.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.56.0"
   dependencies:
@@ -12310,7 +12333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.27.5":
+"eslint-plugin-import@npm:2.27.5, eslint-plugin-import@npm:^2.27.5":
   version: 2.27.5
   resolution: "eslint-plugin-import@npm:2.27.5"
   dependencies:
@@ -12361,7 +12384,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:4.2.1":
+"eslint-plugin-prettier@npm:4.2.1, eslint-plugin-prettier@npm:^4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
@@ -12376,7 +12399,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:4.6.0":
+"eslint-plugin-react-hooks@npm:4.6.0, eslint-plugin-react-hooks@npm:^4.6.0":
   version: 4.6.0
   resolution: "eslint-plugin-react-hooks@npm:4.6.0"
   peerDependencies:
@@ -12385,7 +12408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.32.2":
+"eslint-plugin-react@npm:7.32.2, eslint-plugin-react@npm:^7.32.2":
   version: 7.32.2
   resolution: "eslint-plugin-react@npm:7.32.2"
   dependencies:
@@ -12451,7 +12474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.36.0, eslint@npm:^8.21.0, eslint@npm:^8.7.0":
+"eslint@npm:8.36.0, eslint@npm:^8.21.0, eslint@npm:^8.36.0, eslint@npm:^8.7.0":
   version: 8.36.0
   resolution: "eslint@npm:8.36.0"
   dependencies:
@@ -12617,21 +12640,41 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.1.2
     "@anansi/browserslist-config": ^1.4.1
+    "@anansi/eslint-plugin": ^0.16.3
     "@anansi/webpack-config": ^15.0.0
+    "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.21.2
     "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
     "@linaria/react": 4.3.6
     "@linaria/shaker": 4.2.9
+    "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1
+    "@types/eslint": ^8.21.3
+    "@types/prettier": ^2.7.2
+    "@types/react": ^18.0.29
+    "@types/react-dom": ^18.0.11
     "@types/react-router-dom": 5.3.3
+    "@typescript-eslint/eslint-plugin": ^5.56.0
+    "@typescript-eslint/parser": ^5.56.0
     babel-loader: 9.1.2
     classnames: 2.3.2
     core-js: 3.29.1
+    eslint: ^8.36.0
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-react: ^7.32.2
+    eslint-plugin-react-hooks: ^4.6.0
+    prettier: ^2.8.7
     react-refresh: 0.14.0
     redbox-react: 1.6.0
     serve: 14.2.0
     webpack: 5.76.3
+    webpack-cli: ^5.0.1
+    webpack-dev-server: ^4.13.1
+  peerDependencies:
+    "@types/react": ^17.0.40 || ^18.0.0
+    "@types/react-dom": ^17.0.40 || ^18.0.0
   languageName: unknown
   linkType: soft
 
@@ -12648,6 +12691,7 @@ __metadata:
     "@anansi/router": ^0.7.29
     "@anansi/webpack-config": ^15.0.0
     "@ant-design/cssinjs": 1.6.2
+    "@ant-design/icons": ^4.7.0
     "@babel/core": 7.21.3
     "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
@@ -12699,10 +12743,13 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.1.2
     "@anansi/browserslist-config": ^1.4.1
+    "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": ^0.10.3
     "@anansi/storybook": ^0.3.0
     "@anansi/webpack-config": ^15.0.0
+    "@ant-design/icons": ^5.0.1
     "@ant-design/pro-components": 2.4.2
+    "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
     "@rest-hooks/react": 7.2.9
@@ -12713,23 +12760,37 @@ __metadata:
     "@storybook/addon-mdx-gfm": 7.0.0-rc.8
     "@storybook/addons": 7.0.0-rc.8
     "@storybook/react": 7.0.0-rc.8
+    "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1
+    "@types/eslint": ^8.21.3
     "@types/jest": 29.5.0
     "@types/lodash": 4.14.191
     "@types/node": 18.15.7
     "@types/parse-link-header": 2.0.1
+    "@types/prettier": ^2.7.2
+    "@types/prop-types": ^15.7.5
     "@types/react": 18.0.29
     "@types/react-dom": 18.0.11
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
+    "@typescript-eslint/eslint-plugin": ^5.56.0
+    "@typescript-eslint/parser": ^5.56.0
     antd: 5.3.2
     classnames: 2.3.2
     core-js: 3.29.1
+    eslint: ^8.36.0
+    eslint-plugin-babel: ^5.3.1
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-react: ^7.32.2
+    eslint-plugin-react-hooks: ^4.6.0
+    history: ^5.3.0
     jest: 29.5.0
     jest-environment-jsdom: 29.5.0
     lodash: 4.17.21
     parse-link-header: 2.0.0
+    prettier: ^2.8.7
     react: 18.2.0
     react-dom: 18.2.0
     react-refresh: 0.14.0
@@ -12741,6 +12802,8 @@ __metadata:
     serve: 14.2.0
     storybook: 7.0.0-rc.8
     webpack: 5.76.3
+    webpack-cli: ^5.0.1
+    webpack-dev-server: ^4.13.1
   languageName: unknown
   linkType: soft
 
@@ -21192,7 +21255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.8.7, prettier@npm:^2.0.0, prettier@npm:^2.5.1, prettier@npm:^2.8.0":
+"prettier@npm:2.8.7, prettier@npm:^2.0.0, prettier@npm:^2.5.1, prettier@npm:^2.8.0, prettier@npm:^2.8.7":
   version: 2.8.7
   resolution: "prettier@npm:2.8.7"
   bin:
@@ -26477,7 +26540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:5.0.1":
+"webpack-cli@npm:5.0.1, webpack-cli@npm:^5.0.1":
   version: 5.0.1
   resolution: "webpack-cli@npm:5.0.1"
   dependencies:

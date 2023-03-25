@@ -1,4 +1,4 @@
-import { RouteController } from '@pojo-router/core';
+import { RouteController } from '@anansi/router';
 import type { History } from 'history';
 
 import NotFound from 'components/NotFound';
