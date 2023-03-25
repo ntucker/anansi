@@ -54,7 +54,7 @@
     "@anansi/core": "^0.16.22",
     "@anansi/router": "^0.7.29",
     "@ant-design/cssinjs": "1.6.2",
-    "@ant-design/icons": "^4.7.0",
+    "@ant-design/icons": "^5.0.1",
     "@babel/runtime": "7.21.0",
     "@linaria/core": "4.2.8",
     "@linaria/react": "4.3.6",

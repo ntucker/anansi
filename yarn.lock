@@ -504,7 +504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^4.3.0, @ant-design/icons@npm:^4.7.0":
+"@ant-design/icons@npm:^4.3.0":
   version: 4.8.0
   resolution: "@ant-design/icons@npm:4.8.0"
   dependencies:
@@ -12691,7 +12691,7 @@ __metadata:
     "@anansi/router": ^0.7.29
     "@anansi/webpack-config": ^15.0.0
     "@ant-design/cssinjs": 1.6.2
-    "@ant-design/icons": ^4.7.0
+    "@ant-design/icons": ^5.0.1
     "@babel/core": 7.21.3
     "@babel/runtime": 7.21.0
     "@linaria/core": 4.2.8
