@@ -38,6 +38,7 @@
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
     "@lerna-lite/cli": "1.17.0",
+    "@types/node": "^18.15.9",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
     "babel-loader": "9.1.2",

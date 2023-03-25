@@ -72,6 +72,8 @@
     "testEnvironment": "node"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"Error: no test specified\"",
     "pretest": "eslint --ext .js,.ts,.tsx ."
   }
 }

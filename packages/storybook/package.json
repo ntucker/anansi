@@ -67,6 +67,7 @@
   "scripts": {
     "pretest": "eslint --ext .ts,.tsx .",
     "test": "jest",
+    "test:ci": "jest",
     "test:type": "tsc",
     "dev": "run build:lib -w",
     "build": "run build:lib",
