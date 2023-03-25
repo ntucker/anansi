@@ -372,7 +372,6 @@ __metadata:
     html-webpack-plugin: ^5.5.0
     https-browserify: ^1.0.0
     is-wsl: ^2.2.0
-    markdown-loader: ^8.0.0
     mini-css-extract-plugin: ^2.7.5
     mkdirp: ^2.1.6
     os-browserify: ^0.3.0
@@ -386,7 +385,6 @@ __metadata:
     punycode: ^2.3.0
     querystring-es3: ^0.2.1
     ramda: ^0.28.0
-    raw-loader: 4.0.2
     react-dev-utils: ^12.0.1
     react-error-overlay: 6.0.9
     readable-stream: ^4.3.0
@@ -405,7 +403,6 @@ __metadata:
     tsconfig-paths-webpack-plugin: ^4.0.1
     tty-browserify: ^0.0.1
     url: ^0.11.0
-    url-loader: ^4.1.1
     util: ^0.12.5
     vm-browserify: ^1.1.2
     webpack-bundle-analyzer: ^4.8.0
@@ -17403,17 +17400,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-loader@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "markdown-loader@npm:8.0.0"
-  dependencies:
-    marked: ^4.0.12
-  peerDependencies:
-    webpack: ^5.0.0
-  checksum: c5f878a24afb80ba7fa1de098b50434393dc4ed3d7477f9d7f710c2f2dc9ddb7a93b6edeaaaaece54a2f16adf26a699d4bc4fb50c68edd4b6288f2dd53d4485c
-  languageName: node
-  linkType: hard
-
 "markdown-table@npm:^3.0.0":
   version: 3.0.3
   resolution: "markdown-table@npm:3.0.3"
@@ -17427,15 +17413,6 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 81ab9bd0ad93d4e90c39a67a4df2cc2d3b24579f8f018852f05abce442b246cee9cd705ea9d01304144729a48c972b8b535d40a33e04a0a05d5073958e96ae76
-  languageName: node
-  linkType: hard
-
-"marked@npm:^4.0.12":
-  version: 4.0.12
-  resolution: "marked@npm:4.0.12"
-  bin:
-    marked: bin/marked.js
-  checksum: 7575117f85a8986652f3ac8b8a7b95056c4c5fce01a1fc76dc4c7960412cb4c9bd9da8133487159b6b3ff84f52b543dfe9a36f826a5f358892b5ec4b6824f192
   languageName: node
   linkType: hard
 
@@ -21488,18 +21465,6 @@ __metadata:
     iconv-lite: 0.4.24
     unpipe: 1.0.0
   checksum: d2961fa3c71c9c22dc2c3fd60ff377bf36dfed7d7a748f2b25d585934a3e9df565bb9aa5bc2e3a716ea941f4bc2a6ddc795c8b0cf7219fb071029b59b1985394
-  languageName: node
-  linkType: hard
-
-"raw-loader@npm:4.0.2":
-  version: 4.0.2
-  resolution: "raw-loader@npm:4.0.2"
-  dependencies:
-    loader-utils: ^2.0.0
-    schema-utils: ^3.0.0
-  peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 51cc1b0d0e8c37c4336b5318f3b2c9c51d6998ad6f56ea09612afcfefc9c1f596341309e934a744ae907177f28efc9f1654eacd62151e82853fcc6d37450e795
   languageName: node
   linkType: hard
 
@@ -25886,23 +25851,6 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 5a91c55d8ae6d9a1ff9dc1b0774888a99aae7cc6e9056c57b709275c0f6753b05cd1a9f2728a1479244b93a9f57ab37c60d277a48d9f2d032d6ae65837bf9bc7
-  languageName: node
-  linkType: hard
-
-"url-loader@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "url-loader@npm:4.1.1"
-  dependencies:
-    loader-utils: ^2.0.0
-    mime-types: ^2.1.27
-    schema-utils: ^3.0.0
-  peerDependencies:
-    file-loader: "*"
-    webpack: ^4.0.0 || ^5.0.0
-  peerDependenciesMeta:
-    file-loader:
-      optional: true
-  checksum: c1122a992c6cff70a7e56dfc2b7474534d48eb40b2cc75467cde0c6972e7597faf8e43acb4f45f93c2473645dfd803bcbc20960b57544dd1e4c96e77f72ba6fd
   languageName: node
   linkType: hard
 
