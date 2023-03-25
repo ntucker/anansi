@@ -53,8 +53,8 @@
   "peerDependencies": {
     "@anansi/babel-preset": "^3.0.0 || ^4.0.0",
     "@anansi/webpack-config": "^13.0.0 || ^14.0.0 || ^15.0.0",
-    "@types/react": "^17.0.40 || ^18.0.0-0",
-    "react": "^18.0.0-0"
+    "@types/react": "^17.0.40 || ^18.0.0",
+    "react": "^18.0.0"
   },
   "peerDependenciesMeta": {
     "@types/react": {
