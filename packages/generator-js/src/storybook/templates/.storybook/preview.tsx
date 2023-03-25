@@ -1,15 +1,14 @@
 <% if (spa) { %>
-import RootProvider from '../src/RootProvider'
-<% } else { %>
+import RootProvider from '../src/RootProvider';
 <% } %>
 import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 
-
+<% if (spa) { %>
 export const decorators = [
   (Story) => (
-<% if (spa) { %><RootProvider><% } else { %><% } %>
-        <Story/>
-<% if (spa) { %></RootProvider><% } else { %><% } %>
+    <RootProvider>
+      <Story/>
+    </RootProvider>
   )
 ];
-
+<% } %>
