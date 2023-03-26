@@ -73,7 +73,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn workspaces foreach -v run build:server
+      - run: yarn workspaces foreach -v --include 'example-*' run build:server
 
   build_storybook:
     docker: *docker
