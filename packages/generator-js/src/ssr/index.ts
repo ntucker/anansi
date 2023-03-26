@@ -23,6 +23,7 @@ export default class extends InstallPeersMixin(BetterGenerator) {
         '@anansi/cli',
         '@anansi/core',
         '@rest-hooks/redux',
+        'redux',
       ]),
     ]);
   }
