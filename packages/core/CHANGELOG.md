@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.22...@anansi/core@0.16.23) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+* Add missing packages ([f0b7a3c](https://github.com/ntucker/anansi/commit/f0b7a3c1b75ecd9971c0b4f42124516dff321c5b))
+* Fix peerdeps ([9a136e3](https://github.com/ntucker/anansi/commit/9a136e3c3c99b146f826d06dc12b2e670e9339bf))
+* Fix peerdeps for rest hooks ([c7fa0c9](https://github.com/ntucker/anansi/commit/c7fa0c9fc19420867b3be0f28957d1cb20672213))
+* Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
+
 ### [0.16.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.21...@anansi/core@0.16.22) (2023-03-24)
 
 ### 🐛 Bug Fix

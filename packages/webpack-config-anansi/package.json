@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "15.0.0",
+  "version": "15.0.1",
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "types": "./index.d.ts",
@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
-    "@anansi/browserslist-config": "workspace: *",
+    "@anansi/browserslist-config": "workspace:1.4.2",
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.3",
     "@types/node": "^18.15.9",

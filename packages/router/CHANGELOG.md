@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.30](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.29...@anansi/router@0.7.30) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
+* Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
+
 ### [0.7.29](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.28...@anansi/router@0.7.29) (2023-03-24)
 
 ### 📦 Package

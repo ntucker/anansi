@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.4](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.3...@anansi/jest-preset@0.10.4) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+
 ### [0.10.3](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.2...@anansi/jest-preset@0.10.3) (2023-03-24)
 
 ### 📦 Package

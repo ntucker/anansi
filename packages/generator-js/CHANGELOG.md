@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.5...@anansi/generator-js@11.1.6) (2023-03-26)
+
+### 💅 Enhancement
+
+* Scripts should just use 'run' rather than mention 'npm' ([2ea9e84](https://github.com/ntucker/anansi/commit/2ea9e8431ac924a7d0a881293e4ba43a2dff79b3))
+* Simplify storybook preview template ([977e7d5](https://github.com/ntucker/anansi/commit/977e7d56259503891e2375b2717746717c639de6))
+
+### 📦 Package
+
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+* Update all non-major dependencies ([#1919](https://github.com/ntucker/anansi/issues/1919)) ([229fc87](https://github.com/ntucker/anansi/commit/229fc87a11f2e6ddc83aab052636eb46bb6327c3))
+* We need redux for @rest-hooks/redux ([db60377](https://github.com/ntucker/anansi/commit/db603772d89a8fc85f091a5732c4f6e96c842f3b))
+
 ### [11.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.4...@anansi/generator-js@11.1.5) (2023-03-24)
 
 ### 🐛 Bug Fix

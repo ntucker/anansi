@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.4.2](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.1...@anansi/browserslist-config@1.4.2) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+
 ### [1.4.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.0...@anansi/browserslist-config@1.4.1) (2022-10-10)
 
 ### 💅 Enhancement

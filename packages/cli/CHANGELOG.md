@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.2.1](https://github.com/ntucker/anansi/compare/@anansi/cli@2.2.0...@anansi/cli@2.2.1) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+
 ## [2.2.0](https://github.com/ntucker/anansi/compare/@anansi/cli@2.1.8...@anansi/cli@2.2.0) (2023-03-24)
 
 ### 🚀 Features

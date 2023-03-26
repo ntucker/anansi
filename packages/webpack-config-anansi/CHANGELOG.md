@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.0...@anansi/webpack-config@15.0.1) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
+* Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
+* Remove unused deps ([#1918](https://github.com/ntucker/anansi/issues/1918)) ([e53c994](https://github.com/ntucker/anansi/commit/e53c99453c732ff5b7e588966b039b4f44730e07))
+* Update `postcss-preset-env` to ^8.1.0 ([#1917](https://github.com/ntucker/anansi/issues/1917)) ([80c0f7a](https://github.com/ntucker/anansi/commit/80c0f7a2efaf1f7622a27a246622f762455447fd))
+
 ## [15.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@14.3.10...@anansi/webpack-config@15.0.0) (2023-03-24)
 
 ### ⚠ 💥 BREAKING CHANGES

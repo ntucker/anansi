@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.25](https://github.com/ntucker/anansi/compare/example-react-18@4.2.24...example-react-18@4.2.25) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([c8b0596](https://github.com/ntucker/anansi/commit/c8b0596fcdeb1cd4a48100c2baf052b5ffb27e22))
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+* Add missing packages ([f0b7a3c](https://github.com/ntucker/anansi/commit/f0b7a3c1b75ecd9971c0b4f42124516dff321c5b))
+* Update all non-major dependencies ([#1919](https://github.com/ntucker/anansi/issues/1919)) ([229fc87](https://github.com/ntucker/anansi/commit/229fc87a11f2e6ddc83aab052636eb46bb6327c3))
+* Update ant design icons ([71f1908](https://github.com/ntucker/anansi/commit/71f1908183d268904f7de040cf2807175b8ecea1))
+
 ### [4.2.24](https://github.com/ntucker/anansi/compare/example-react-18@4.2.23...example-react-18@4.2.24) (2023-03-24)
 
 ### 📦 Package

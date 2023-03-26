@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.3...@anansi/eslint-plugin@0.16.4) (2023-03-26)
+
+### 📦 Package
+
+* Add missing packages ([c8b0596](https://github.com/ntucker/anansi/commit/c8b0596fcdeb1cd4a48100c2baf052b5ffb27e22))
+* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+
 ### [0.16.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.2...@anansi/eslint-plugin@0.16.3) (2023-03-21)
 
 ### 📦 Package
