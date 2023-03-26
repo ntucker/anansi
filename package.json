@@ -28,7 +28,7 @@
     "build:clean": "yarn workspaces foreach -pi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
     "prepack": "run build:pkg",
-    "version": "run install && git add yarn.lock"
+    "version": "yarn install && git add yarn.lock"
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
