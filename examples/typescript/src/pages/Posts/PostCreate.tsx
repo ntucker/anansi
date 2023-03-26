@@ -1,4 +1,4 @@
-import { PageHeader } from '@ant-design/pro-components';
+import { PageHeader } from '@ant-design/pro-layout';
 import { useController } from '@rest-hooks/react';
 import { Typography } from 'antd';
 import { useHistory } from 'react-router-dom';
