@@ -36,6 +36,6 @@ module.exports = function (api) {
       pureGetters: true,
     },
     // allows us to load .babelrc in addition to this
-    babelrcRoots: ['packages/*', 'examples/*'],
+    babelrcRoots: ['packages/*'],
   };
 };
