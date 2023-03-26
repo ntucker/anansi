@@ -24,7 +24,7 @@
     "lint": "eslint packages/*/src",
     "format": "eslint --fix packages/*/src",
     "build:types": "tsc --build",
-    "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -t --no-private run build",
+    "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -tv --no-private run build",
     "build:clean": "yarn workspaces foreach -pi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
     "prepack": "run build:pkg",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
+    "@anansi/browserslist-config": "workspace:*",
     "@anansi/eslint-plugin": "workspace:*",
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.3",

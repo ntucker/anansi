@@ -50,6 +50,9 @@
     "node": "^14.17.0 || ^16.13.0 || >=18.0.0",
     "npm": ">= 6.0.0"
   },
+  "devDependencies": {
+    "@types/node": "^18.15.9"
+  },
   "dependencies": {
     "@anansi/generator-js": "workspace:^",
     "bin-version-check": "^5.0.0",
