@@ -63,7 +63,7 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.6.2",
+    "@ant-design/cssinjs": "^1.7.1",
     "@ant-design/icons": "^5.0.1",
     "@ant-design/pro-layout": "7.10.3",
     "@babel/runtime": "7.21.0",

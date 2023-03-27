@@ -69,7 +69,7 @@
     "@anansi/babel-preset": "workspace:*",
     "@anansi/browserslist-config": "workspace:*",
     "@anansi/webpack-config": "workspace:*",
-    "@ant-design/cssinjs": "^1.6.2",
+    "@ant-design/cssinjs": "^1.7.1",
     "@babel/cli": "7.21.0",
     "@babel/core": "7.21.3",
     "@rest-hooks/react": "^7.2.9",
