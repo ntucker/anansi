@@ -80,16 +80,24 @@ export class BetterGenerator<
     // we're overriding a private member
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    const before = this.env.detectPackageManager;
+    const superDetectPackageManager = this.env.detectPackageManager;
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     this.env.detectPackageManager = async function () {
-      const name = await before.call(this);
+      const name = await superDetectPackageManager.call(this);
       // use yarn if installed.
       // if someone installed yarn they probably mean to use it on any new projects.
       if (!name) {
         try {
           await execa('which', ['yarn'], { shell: true });
+
+          try {
+            await execa(`yarn`, ['set version berry'], {
+              shell: true,
+            });
+            // eslint-disable-next-line no-empty
+          } catch (e) {}
+
           return 'yarn';
           // eslint-disable-next-line no-empty
         } catch (e) {}
