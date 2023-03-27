@@ -141,6 +141,10 @@ Enable transformation of ES module syntax to another module type.
 By default this tries to infer if ESModules is supported and if so, keep ESM. If this detection isn't
 working correct, feel free to explicitly set.
 
+### BABEL_MODULES
+
+This will override or set `modules` option from above.
+
 ### useESModules: boolean = !(env === 'test' || options.nodeTarget)
 
 This uses the es6 module version of [@babel/runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules).

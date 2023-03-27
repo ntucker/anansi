@@ -62,6 +62,9 @@ function buildPreset(api, options = {}) {
     runtimePkg: '@babel/runtime',
     ...options,
   };
+  if (process.env.BABEL_MODULES) {
+    options.modules = process.env.BABEL_MODULES;
+  }
   const shouldHotReload =
     !babelNode &&
     !options.nodeTarget &&
