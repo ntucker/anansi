@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.6...@anansi/generator-js@11.2.0) (2023-03-27)
+
+### 🚀 Features
+
+* Attempt to use yarn berry when yarn is detected ([abd5a8e](https://github.com/ntucker/anansi/commit/abd5a8eaf6bb5bad5d648ab13ef2856de888867c))
+
+### 🐛 Bug Fix
+
+* Templates reference packages correctly ([bb14f2f](https://github.com/ntucker/anansi/commit/bb14f2f2fa13940b0bf7eb4cf776c217650222f6))
+
 ### [11.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.1.5...@anansi/generator-js@11.1.6) (2023-03-26)
 
 ### 💅 Enhancement

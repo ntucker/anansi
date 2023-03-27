@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.1...@anansi/webpack-config@15.0.2) (2023-03-27)
+
+**Note:** Version bump only for package @anansi/webpack-config
+
 ### [15.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.0...@anansi/webpack-config@15.0.1) (2023-03-26)
 
 ### 📦 Package

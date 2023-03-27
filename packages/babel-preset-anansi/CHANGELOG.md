@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.1.3...@anansi/babel-preset@4.2.0) (2023-03-27)
+
+### 🚀 Features
+
+* Add BABEL_MODULES env ([95493e3](https://github.com/ntucker/anansi/commit/95493e34cd2aea8cebf33c17757b59337e9ee379))
+
 ### [4.1.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.1.2...@anansi/babel-preset@4.1.3) (2023-03-26)
 
 ### 📦 Package
