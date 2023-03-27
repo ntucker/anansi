@@ -25,7 +25,7 @@
     "@anansi/storybook": "^0.3.2",
     "@anansi/webpack-config": "^15.0.2",
     "@babel/core": "^7.21.3",
-    "@rest-hooks/test": "10.3.1",
+    "@rest-hooks/test": "10.3.2",
     "@storybook/addon-essentials": "7.0.0-rc.8",
     "@storybook/addon-links": "7.0.0-rc.8",
     "@storybook/addon-mdx-gfm": "7.0.0-rc.8",
@@ -65,7 +65,7 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.6.2",
     "@ant-design/icons": "^5.0.1",
-    "@ant-design/pro-layout": "7.10.2",
+    "@ant-design/pro-layout": "7.10.3",
     "@babel/runtime": "7.21.0",
     "@rest-hooks/graphql": "0.4.5",
     "@rest-hooks/react": "7.2.10",
