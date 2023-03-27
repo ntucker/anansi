@@ -1,5 +1,4 @@
 const { makeConfig } = require('@anansi/webpack-config');
-const nodeExternals = require('webpack-node-externals');
 
 const options = {
   basePath: '<%= rootPath %>',

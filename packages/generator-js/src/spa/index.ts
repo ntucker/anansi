@@ -71,6 +71,7 @@ export default class extends InstallPeersMixin(BetterGenerator) {
         'react',
         'react-dom',
         '@rest-hooks/img',
+        'history',
       ]),
     ]);
   }
