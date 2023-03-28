@@ -1,6 +1,6 @@
 {
   "name": "@anansi/generator-js",
-  "version": "11.2.0",
+  "version": "11.2.1",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator-js#readme",
   "repository": {

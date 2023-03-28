@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.27](https://github.com/ntucker/anansi/compare/example-react-18@4.2.26...example-react-18@4.2.27) (2023-03-28)
+
+### 📦 Package
+
+* @ant-design/cssinjs ([230c1b1](https://github.com/ntucker/anansi/commit/230c1b1a1f47bd846023a64764ba479524211c5a))
+* Update all non-major dependencies ([#1920](https://github.com/ntucker/anansi/issues/1920)) ([5743808](https://github.com/ntucker/anansi/commit/5743808f41efbb2a3c472c6b5a7b91855f1dd81a))
+
 ### [4.2.26](https://github.com/ntucker/anansi/compare/example-react-18@4.2.25...example-react-18@4.2.26) (2023-03-27)
 
 **Note:** Version bump only for package example-react-18

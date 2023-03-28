@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.2...@anansi/webpack-config@15.0.3) (2023-03-28)
+
+### 📦 Package
+
+* Update `css-minimizer-webpack-plugin` to v5 ([#1924](https://github.com/ntucker/anansi/issues/1924)) ([79af9c3](https://github.com/ntucker/anansi/commit/79af9c3cc6ed7d900d308cf7af7d71e883de3891))
+* Update `sass-loader` to ^13.2.2 ([#1923](https://github.com/ntucker/anansi/issues/1923)) ([b8a2c87](https://github.com/ntucker/anansi/commit/b8a2c879aee11384b2d1e259c53379aee0d3c9d5))
+
 ### [15.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.1...@anansi/webpack-config@15.0.2) (2023-03-27)
 
 **Note:** Version bump only for package @anansi/webpack-config

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.24...@anansi/core@0.16.25) (2023-03-28)
+
+### 📦 Package
+
+* @ant-design/cssinjs ([230c1b1](https://github.com/ntucker/anansi/commit/230c1b1a1f47bd846023a64764ba479524211c5a))
+
 ### [0.16.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.23...@anansi/core@0.16.24) (2023-03-27)
 
 **Note:** Version bump only for package @anansi/core

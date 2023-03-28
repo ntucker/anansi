@@ -1,6 +1,6 @@
 {
   "name": "@anansi/ts-utils",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Higher order utils for typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

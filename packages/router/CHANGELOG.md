@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.32](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.31...@anansi/router@0.7.32) (2023-03-28)
+
+**Note:** Version bump only for package @anansi/router
+
 ### [0.7.31](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.30...@anansi/router@0.7.31) (2023-03-27)
 
 **Note:** Version bump only for package @anansi/router

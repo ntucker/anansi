@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.7](https://github.com/ntucker/anansi/compare/example-typescript@11.1.6...example-typescript@11.1.7) (2023-03-28)
+
+### 📦 Package
+
+* @ant-design/cssinjs ([230c1b1](https://github.com/ntucker/anansi/commit/230c1b1a1f47bd846023a64764ba479524211c5a))
+* Fix dependencies ([b0f1d45](https://github.com/ntucker/anansi/commit/b0f1d456006a03a73709dcbbe8866d509ccb066a))
+* Update all non-major dependencies ([#1920](https://github.com/ntucker/anansi/issues/1920)) ([5743808](https://github.com/ntucker/anansi/commit/5743808f41efbb2a3c472c6b5a7b91855f1dd81a))
+
 ### [11.1.6](https://github.com/ntucker/anansi/compare/example-typescript@11.1.5...example-typescript@11.1.6) (2023-03-27)
 
 **Note:** Version bump only for package example-typescript
