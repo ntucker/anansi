@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.0.0-rc.8
     "@storybook/react": ^7.0.0-rc.8
     "@storybook/types": ^7.0.0-rc.8
-    "@types/node": ^16.18.21
+    "@types/node": ^18.15.9
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -4564,14 +4564,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^4.2.9":
-  version: 4.2.9
-  resolution: "@rest-hooks/core@npm:4.2.9"
+"@rest-hooks/core@npm:^4.2.10, @rest-hooks/core@npm:^4.2.9":
+  version: 4.2.10
+  resolution: "@rest-hooks/core@npm:4.2.10"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@rest-hooks/normalizr": ^10.0.3
     flux-standard-action: ^2.1.1
-  checksum: d1607d0b1f0e914935e89141827d7fdea4e837a922be461f634cf83fd34fa9f219cac6b7e2b1824d54ce568aaaa86ffb6fea5452aad480f8cb6e9cf0f2fe1c61
+  checksum: a4260ed212213b19f309fce4c78d356d95e5ce709d77041e8dbe076203c0ac77a7c9a18043c0ab57ba72e2ebad09c04f66177b893e6642a6198cbc2239f9be92
   languageName: node
   linkType: hard
 
@@ -4636,12 +4636,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:7.2.10, @rest-hooks/react@npm:^7.2.9":
-  version: 7.2.10
-  resolution: "@rest-hooks/react@npm:7.2.10"
+"@rest-hooks/react@npm:^7.2.9":
+  version: 7.2.11
+  resolution: "@rest-hooks/react@npm:7.2.11"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/core": ^4.2.9
+    "@rest-hooks/core": ^4.2.10
     "@rest-hooks/use-enhanced-reducer": ^1.2.8
   peerDependencies:
     "@react-navigation/native": ^6.0.0
@@ -4652,7 +4652,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 50aac0d2a0e8c0ea58b0d710256ddfd0e7e551c3d35ca729cc31cad061e788c1a8b59da2a4aa162142a385bec867654a465eb20ba7cbe54d04b4ecfec7fde1f7
+  checksum: 6a0a798d0a77eb522894d70119f85565abf09e52f31d26667361c18daf6f02eab48cd632d824007cc1b493ac8c5094e490227910074b01b17b295209fe260361
   languageName: node
   linkType: hard
 
@@ -4706,9 +4706,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:10.3.3":
-  version: 10.3.3
-  resolution: "@rest-hooks/test@npm:10.3.3"
+"@rest-hooks/test@npm:10.3.4":
+  version: 10.3.4
+  resolution: "@rest-hooks/test@npm:10.3.4"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@testing-library/react": ^14.0.0
@@ -4719,6 +4719,7 @@ __metadata:
     "@rest-hooks/react": ^0.2.0 || ^0.3.0 || ^1.0.0 || ^6.0.0 || ^7.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
     "@types/react-dom": "*"
+    jest: "*"
     react: ^16.8.4 || ^17.0.0 || ^18.0.0
     react-dom: "*"
     react-native: "*"
@@ -4728,13 +4729,15 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
+    jest:
+      optional: true
     react-dom:
       optional: true
     react-native:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 0821fc4f65ed42edc25bc457dbc9b9b110d83c8c4f5ef5ee6ae626066c34c79baed6fe01e90edb39a46704728d2a2201fdc85d2f50650eb503885882b267b417
+  checksum: 109bc4d8d0ffd44c278160b399fa02f0d5b55ce4aebf537ef9af5580fb7c514b75fdd696ac73e2e298dbb3f15ababe90710ea0d5a779f34f404a359254f26b69
   languageName: node
   linkType: hard
 
@@ -6649,10 +6652,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.15.10, @types/node@npm:^18.15.9":
-  version: 18.15.10
-  resolution: "@types/node@npm:18.15.10"
-  checksum: 9aeae0b683eda82892def5315812bdee3f1a28c4898b7e70f8e2514564538b16c4dccbe8339c1266f8fc1d707a48f152689264a854f5ebc2eba5011e793612d9
+"@types/node@npm:*, @types/node@npm:^18.15.9":
+  version: 18.15.11
+  resolution: "@types/node@npm:18.15.11"
+  checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
   languageName: node
   linkType: hard
 
@@ -6663,7 +6666,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.0.0, @types/node@npm:^16.18.21":
+"@types/node@npm:^16.0.0":
   version: 16.18.21
   resolution: "@types/node@npm:16.18.21"
   checksum: 152e7976f30b4e599d37e5a92a0c62dbe0751a63dab1aef44a0c2db940fa6f79a23be9783886b6afe34aa20485679c6bdd7b787b304fdbb05e72326c95d2b255
@@ -6804,14 +6807,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.30, @types/react@npm:>=16, @types/react@npm:^18.0.29":
-  version: 18.0.30
-  resolution: "@types/react@npm:18.0.30"
+"@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.0.29":
+  version: 18.0.31
+  resolution: "@types/react@npm:18.0.31"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3ca13fd10a1ee92826e37cd8c2fe563bff65d4bdb3ff53f632bc46c8fba2e94e24247b4b77ce957677a54e592299782e1235f7a3dfcfea327cb3213ddc98e968
+  checksum: 6befbd5587e266905b50fd6bbd7c1cacd557bddf99e6a9862ca2f1d06df3dca71b9d485a37d010479730f021aab93b852d417c714de5efc2f41be0ff4c09b4db
   languageName: node
   linkType: hard
 
@@ -12292,17 +12295,17 @@ __metadata:
     "@rest-hooks/endpoint": 3.7.4
     "@rest-hooks/hooks": 3.1.13
     "@rest-hooks/img": 0.8.12
-    "@rest-hooks/react": 7.2.10
+    "@rest-hooks/react": ^7.2.9
     "@rest-hooks/redux": 6.3.6
     "@rest-hooks/rest": 6.3.12
-    "@rest-hooks/test": 10.3.3
+    "@rest-hooks/test": 10.3.4
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": 8.21.3
     "@types/jest": 29.5.0
-    "@types/node": 18.15.10
+    "@types/node": ^18.15.9
     "@types/prettier": 2.7.2
-    "@types/react": 18.0.30
+    "@types/react": ^18.0.29
     "@types/react-dom": 18.0.11
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.57.0
@@ -12347,9 +12350,9 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
-    "@rest-hooks/react": 7.2.10
+    "@rest-hooks/react": ^7.2.9
     "@rest-hooks/rest": 6.3.12
-    "@rest-hooks/test": 10.3.3
+    "@rest-hooks/test": 10.3.4
     "@storybook/addon-essentials": 7.0.0-rc.8
     "@storybook/addon-links": 7.0.0-rc.8
     "@storybook/addon-mdx-gfm": 7.0.0-rc.8
@@ -12363,11 +12366,11 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.0
     "@types/lodash": 4.14.192
-    "@types/node": 18.15.10
+    "@types/node": ^18.15.9
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
-    "@types/react": 18.0.30
+    "@types/react": ^18.0.29
     "@types/react-dom": 18.0.11
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
@@ -22715,7 +22718,7 @@ __metadata:
     "@commitlint/config-conventional": 17.4.4
     "@lerna-lite/cli": 1.17.0
     "@types/node": ^18.15.9
-    "@types/react": 18.0.30
+    "@types/react": ^18.0.29
     "@types/react-dom": 18.0.11
     "@typescript-eslint/eslint-plugin": 5.57.0
     "@typescript-eslint/parser": 5.57.0
