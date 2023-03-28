@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import type * as _babel from 'babel__core';
+import type * as _babel from '@babel/core';
 
 const { readTsConfig } = require('@anansi/ts-utils');
 const semver = require('semver');

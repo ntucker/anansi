@@ -7,10 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"Error: no test specified\"",
-    "build:lib": "BROWSERSLIST_ENV=node14 babel --root-mode upward src --out-dir lib --source-maps inline",
+    "build:lib": "BROWSERSLIST_ENV=node14 yarn g:babel --out-dir lib",
     "build": "run build:lib",
     "dev": "run build:lib -w",
-    "build:clean": "rimraf lib",
+    "build:clean": "yarn g:clean",
     "prepare": "run build:clean && run build",
     "prepack": "run prepare"
   },
@@ -54,14 +54,7 @@
     "node": ">=14.15.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "workspace:*",
-    "@anansi/browserslist-config": "workspace:1.4.2",
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.3",
-    "@types/node": "^18.15.9",
-    "debug": "4.3.4",
-    "prettier-eslint-cli": "7.1.0",
-    "rimraf": "4.4.1"
+    "@types/node": "^18.15.9"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",

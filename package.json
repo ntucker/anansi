@@ -28,7 +28,13 @@
     "build:clean": "yarn workspaces foreach -pi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
     "prepack": "run build:pkg",
-    "version": "yarn install && git add yarn.lock"
+    "version": "yarn install && git add yarn.lock",
+    "g:babel": "cd $INIT_CWD && babel --root-mode upward src --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
+    "g:webpack": "cd $INIT_CWD && webpack",
+    "g:clean": "cd $INIT_CWD && rimraf lib dist ts3.4 legacy dist *.tsbuildinfo",
+    "g:tsc": "cd $INIT_CWD && tsc",
+    "g:test": "cd $INIT_CWD && jest",
+    "g:lint": "cd $INIT_CWD && eslint --ext .ts,.tsx"
   },
   "devDependencies": {
     "@anansi/babel-preset": "workspace:*",
@@ -54,8 +60,10 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "7.0.4",
+    "jest": "^29.5.0",
     "lint-staged": "13.2.0",
     "prettier": "2.8.7",
+    "rimraf": "^4.4.1",
     "typescript": "5.0.2",
     "webpack": "5.76.3",
     "webpack-cli": "5.0.1",

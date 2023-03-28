@@ -47,18 +47,9 @@
     "browser"
   ],
   "devDependencies": {
-    "@anansi/babel-preset": "^4.2.0",
-    "@anansi/browserslist-config": "^1.4.2",
-    "@anansi/webpack-config": "^15.0.2",
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.3",
     "@types/node": "^18.15.9",
     "@types/react": "^18.0.29",
-    "jest": "29.5.0",
-    "react": "^18.2.0",
-    "rimraf": "4.4.1",
-    "webpack": "5.76.3",
-    "webpack-cli": "5.0.1"
+    "react": "^18.2.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.0",
@@ -78,15 +69,15 @@
     "node": "^12.17 || ^13.7 || >=14"
   },
   "scripts": {
-    "pretest": "eslint --ext .ts,.tsx .",
-    "test": "jest",
-    "test:ci": "jest",
-    "test:type": "tsc",
+    "pretest": "yarn g:lint .",
+    "test": "yarn g:test",
+    "test:ci": "yarn g:test",
+    "test:type": "yarn g:tsc",
     "dev": "run build:bundle -w",
     "build": "run build:lib && run build:bundle",
-    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:clean": "rimraf lib dist ts3.4 legacy dist *.tsbuildinfo",
-    "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
+    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' yarn g:babel --out-dir lib",
+    "build:clean": "yarn g:clean",
+    "build:bundle": "BROWSERSLIST_ENV=node12 yarn g:webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
     "prepack": "run build"
   }
 }
