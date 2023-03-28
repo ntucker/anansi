@@ -311,9 +311,14 @@ __metadata:
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
     "@rest-hooks/react": ^6.0.0 || ^7.0.0
     "@types/react": ^17.0.40 || ^18.0.0
+    "@types/react-dom": ^17.0.40 || ^18.0.0
     react: ^18.0.0
+    react-dom: ^18.0.0
+    webpack: "*"
   peerDependenciesMeta:
     "@types/react":
+      optional: true
+    "@types/react-dom":
       optional: true
   languageName: unknown
   linkType: soft
@@ -12335,6 +12340,9 @@ __metadata:
     "@storybook/addon-links": 7.0.0-rc.8
     "@storybook/addon-mdx-gfm": 7.0.0-rc.8
     "@storybook/addons": 7.0.0-rc.8
+    "@storybook/channel-postmessage": 7.0.0-rc.8
+    "@storybook/channel-websocket": 7.0.0-rc.8
+    "@storybook/preview-api": 7.0.0-rc.8
     "@storybook/react": 7.0.0-rc.8
     "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1

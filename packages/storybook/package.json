@@ -48,10 +48,16 @@
     "@anansi/webpack-config": "^13.0.0 || ^14.0.0 || ^15.0.0",
     "@rest-hooks/react": "^6.0.0 || ^7.0.0",
     "@types/react": "^17.0.40 || ^18.0.0",
-    "react": "^18.0.0"
+    "@types/react-dom": "^17.0.40 || ^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "webpack": "*"
   },
   "peerDependenciesMeta": {
     "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
       "optional": true
     }
   },
