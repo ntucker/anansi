@@ -187,7 +187,7 @@ __metadata:
   dependencies:
     "@babel/eslint-parser": ^7.21.3
     "@types/node": ^18.15.9
-    "@typescript-eslint/parser": ^5.56.0
+    "@typescript-eslint/parser": ^5.57.0
     eslint-config-prettier: ^8.8.0
     eslint-import-resolver-typescript: ^3.5.3
     eslint-import-resolver-webpack: ^0.13.2
@@ -7020,7 +7020,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.56.0":
+"@typescript-eslint/eslint-plugin@npm:5.57.0, @typescript-eslint/eslint-plugin@npm:^5.56.0":
   version: 5.57.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.57.0"
   dependencies:
@@ -7044,7 +7044,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.56.0":
+"@typescript-eslint/parser@npm:5.57.0, @typescript-eslint/parser@npm:^5.56.0, @typescript-eslint/parser@npm:^5.57.0":
   version: 5.57.0
   resolution: "@typescript-eslint/parser@npm:5.57.0"
   dependencies:
@@ -12291,8 +12291,8 @@ __metadata:
     "@types/react": 18.0.30
     "@types/react-dom": 18.0.11
     "@types/react-test-renderer": 18.0.0
-    "@typescript-eslint/eslint-plugin": ^5.56.0
-    "@typescript-eslint/parser": ^5.56.0
+    "@typescript-eslint/eslint-plugin": 5.57.0
+    "@typescript-eslint/parser": 5.57.0
     antd: 5.3.2
     classnames: 2.3.2
     core-js: 3.29.1
@@ -22702,8 +22702,8 @@ __metadata:
     "@types/node": ^18.15.9
     "@types/react": 18.0.30
     "@types/react-dom": 18.0.11
-    "@typescript-eslint/eslint-plugin": ^5.56.0
-    "@typescript-eslint/parser": ^5.56.0
+    "@typescript-eslint/eslint-plugin": 5.57.0
+    "@typescript-eslint/parser": 5.57.0
     babel-loader: 9.1.2
     babel-plugin-module-resolver: 5.0.0
     babel-plugin-root-import: 6.6.0
