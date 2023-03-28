@@ -66,12 +66,7 @@
     "browser"
   ],
   "devDependencies": {
-    "@anansi/babel-preset": "workspace:*",
-    "@anansi/browserslist-config": "workspace:*",
-    "@anansi/webpack-config": "workspace:*",
     "@ant-design/cssinjs": "^1.7.1",
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.3",
     "@rest-hooks/react": "^7.2.9",
     "@rest-hooks/redux": "^6.3.5",
     "@types/compression": "1.7.2",
@@ -83,13 +78,8 @@
     "@types/tmp": "0.2.3",
     "@types/webpack-hot-middleware": "2.25.6",
     "@types/webpack-node-externals": "^3",
-    "jest": "29.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rimraf": "4.4.1",
-    "webpack": "5.76.3",
-    "webpack-cli": "5.0.1",
-    "webpack-node-externals": "^3.0.0"
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@anansi/router": "workspace:^",
@@ -147,16 +137,16 @@
     "node": "^12.17 || ^13.7 || >=14"
   },
   "scripts": {
-    "pretest": "eslint --ext .ts,.tsx .",
+    "pretest": "yarn g:lint .",
     "dev": "run build:lib -w & run build:bundle -w",
-    "test": "jest",
-    "test:ci": "jest",
-    "test:type": "tsc",
+    "test": "yarn g:test",
+    "test:ci": "yarn g:test",
+    "test:type": "yarn g:tsc",
     "build": "run build:lib && run build:scripts && run build:bundle",
-    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' babel --root-mode upward src --out-dir lib --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node12' babel --root-mode upward src/scripts --out-dir lib/scripts --source-maps inline --extensions '.ts,.tsx,.cts,.js' --ignore '**/__tests__/**' --ignore '**/*.d.ts'",
-    "build:bundle": "BROWSERSLIST_ENV=node12 webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
-    "build:clean": "rimraf lib dist ts3.4 legacy *.tsbuildinfo",
+    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' yarn g:babel --out-dir lib",
+    "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node12' yarn g:babel src/scripts --out-dir lib/scripts",
+    "build:bundle": "BROWSERSLIST_ENV=node12 yarn g:webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
+    "build:clean": "yarn g:clean",
     "prepack": "run build"
   }
 }
