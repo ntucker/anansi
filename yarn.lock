@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.0.0-rc.8
     "@storybook/react": ^7.0.0-rc.8
     "@storybook/types": ^7.0.0-rc.8
-    "@types/node": ^18.15.9
+    "@types/node": ^16.18.22
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -4636,7 +4636,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:^7.2.9":
+"@rest-hooks/react@npm:7.2.11, @rest-hooks/react@npm:^7.2.9":
   version: 7.2.11
   resolution: "@rest-hooks/react@npm:7.2.11"
   dependencies:
@@ -6652,7 +6652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.15.9":
+"@types/node@npm:*, @types/node@npm:18.15.11, @types/node@npm:^18.15.9":
   version: 18.15.11
   resolution: "@types/node@npm:18.15.11"
   checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
@@ -6666,10 +6666,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.0.0":
-  version: 16.18.21
-  resolution: "@types/node@npm:16.18.21"
-  checksum: 152e7976f30b4e599d37e5a92a0c62dbe0751a63dab1aef44a0c2db940fa6f79a23be9783886b6afe34aa20485679c6bdd7b787b304fdbb05e72326c95d2b255
+"@types/node@npm:^16.0.0, @types/node@npm:^16.18.22":
+  version: 16.18.22
+  resolution: "@types/node@npm:16.18.22"
+  checksum: 0fa5b7ca37855125988eb90207b9ebd50cc9c30a559be6d69e53f7e4cc474ce514994012c806d2e83e03bf1f48705b7e3d1c45a424f6e11ee39818ee4c4c2c2d
   languageName: node
   linkType: hard
 
@@ -6807,7 +6807,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.0.29":
+"@types/react@npm:*, @types/react@npm:18.0.31, @types/react@npm:>=16, @types/react@npm:^18.0.29":
   version: 18.0.31
   resolution: "@types/react@npm:18.0.31"
   dependencies:
@@ -12295,7 +12295,7 @@ __metadata:
     "@rest-hooks/endpoint": 3.7.4
     "@rest-hooks/hooks": 3.1.13
     "@rest-hooks/img": 0.8.12
-    "@rest-hooks/react": ^7.2.9
+    "@rest-hooks/react": 7.2.11
     "@rest-hooks/redux": 6.3.6
     "@rest-hooks/rest": 6.3.12
     "@rest-hooks/test": 10.3.4
@@ -12303,9 +12303,9 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.21.3
     "@types/jest": 29.5.0
-    "@types/node": ^18.15.9
+    "@types/node": 18.15.11
     "@types/prettier": 2.7.2
-    "@types/react": ^18.0.29
+    "@types/react": 18.0.31
     "@types/react-dom": 18.0.11
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.57.0
@@ -12350,7 +12350,7 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
-    "@rest-hooks/react": ^7.2.9
+    "@rest-hooks/react": 7.2.11
     "@rest-hooks/rest": 6.3.12
     "@rest-hooks/test": 10.3.4
     "@storybook/addon-essentials": 7.0.0-rc.8
@@ -12366,11 +12366,11 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.0
     "@types/lodash": 4.14.192
-    "@types/node": ^18.15.9
+    "@types/node": 18.15.11
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
-    "@types/react": ^18.0.29
+    "@types/react": 18.0.31
     "@types/react-dom": 18.0.11
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
@@ -22718,7 +22718,7 @@ __metadata:
     "@commitlint/config-conventional": 17.4.4
     "@lerna-lite/cli": 1.17.0
     "@types/node": ^18.15.9
-    "@types/react": ^18.0.29
+    "@types/react": 18.0.31
     "@types/react-dom": 18.0.11
     "@typescript-eslint/eslint-plugin": 5.57.0
     "@typescript-eslint/parser": 5.57.0
