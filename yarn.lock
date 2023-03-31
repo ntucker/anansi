@@ -6338,7 +6338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^8.21.3":
+"@types/eslint@npm:*, @types/eslint@npm:8.37.0, @types/eslint@npm:^8.21.3":
   version: 8.37.0
   resolution: "@types/eslint@npm:8.37.0"
   dependencies:
@@ -12060,7 +12060,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.36.0":
+"eslint@npm:8.37.0, eslint@npm:^8.36.0":
   version: 8.37.0
   resolution: "eslint@npm:8.37.0"
   dependencies:
@@ -12296,7 +12296,7 @@ __metadata:
     "@rest-hooks/test": 10.3.6
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
-    "@types/eslint": ^8.21.3
+    "@types/eslint": 8.37.0
     "@types/jest": 29.5.0
     "@types/node": 18.15.11
     "@types/prettier": 2.7.2
@@ -12308,7 +12308,7 @@ __metadata:
     antd: 5.3.3
     classnames: 2.3.2
     core-js: 3.29.1
-    eslint: ^8.36.0
+    eslint: 8.37.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: 2.27.5
     eslint-plugin-prettier: 4.2.1
@@ -22722,7 +22722,7 @@ __metadata:
     babel-plugin-root-import: 6.6.0
     conventional-changelog-anansi: 0.2.0
     conventional-changelog-conventionalcommits: 5.0.0
-    eslint: ^8.36.0
+    eslint: 8.37.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: 2.27.5
     eslint-plugin-prettier: 4.2.1
