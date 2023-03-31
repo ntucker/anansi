@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.0.0-rc.10
     "@storybook/react": ^7.0.0-rc.10
     "@storybook/types": ^7.0.0-rc.10
-    "@types/node": ^16.18.22
+    "@types/node": ^16.18.23
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -4564,14 +4564,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^4.2.10, @rest-hooks/core@npm:^4.2.9":
-  version: 4.2.10
-  resolution: "@rest-hooks/core@npm:4.2.10"
+"@rest-hooks/core@npm:^4.2.9, @rest-hooks/core@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "@rest-hooks/core@npm:4.3.1"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@rest-hooks/normalizr": ^10.0.3
     flux-standard-action: ^2.1.1
-  checksum: a4260ed212213b19f309fce4c78d356d95e5ce709d77041e8dbe076203c0ac77a7c9a18043c0ab57ba72e2ebad09c04f66177b893e6642a6198cbc2239f9be92
+  checksum: 4e33518289288a617d8e1f701f5c6b39ccc2756afd9011b52211c50b5eb9dee4d7a867d7fad8781ce896e64379c08975794f5e69553bee0c3994c4eec3ea007c
   languageName: node
   linkType: hard
 
@@ -4636,12 +4636,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/react@npm:7.2.11, @rest-hooks/react@npm:^7.2.9":
-  version: 7.2.11
-  resolution: "@rest-hooks/react@npm:7.2.11"
+"@rest-hooks/react@npm:^7.2.9":
+  version: 7.3.1
+  resolution: "@rest-hooks/react@npm:7.3.1"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/core": ^4.2.10
+    "@rest-hooks/core": ^4.3.1
     "@rest-hooks/use-enhanced-reducer": ^1.2.8
   peerDependencies:
     "@react-navigation/native": ^6.0.0
@@ -4652,7 +4652,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 6a0a798d0a77eb522894d70119f85565abf09e52f31d26667361c18daf6f02eab48cd632d824007cc1b493ac8c5094e490227910074b01b17b295209fe260361
+  checksum: 05938cbe6aac18f8fc3432c375dd1abcf3d7f8849545c2a1993efdbe88b14124bd05bd33fa5c3aa85cc50b72ee94a948f67397ebe439cd3da41b62d1d9eb0ab5
   languageName: node
   linkType: hard
 
@@ -4674,14 +4674,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.3.12":
-  version: 6.3.12
-  resolution: "@rest-hooks/rest@npm:6.3.12"
+"@rest-hooks/rest@npm:6.5.0":
+  version: 6.5.0
+  resolution: "@rest-hooks/rest@npm:6.5.0"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@rest-hooks/endpoint": ^3.7.4
     path-to-regexp: ^6.2.1
-  checksum: f9c181eb466fcf7fbe8f671047444d91e25d4b04ccf817981cad1ce75833cfdbe6677ba420032810d49eb52a6960021cb7d3196393cd478110726914fd0fc8f1
+  checksum: 8bb6729a475b4cea437992704e7c3ec999db3f86248052802c2f5915392f7791f45c4aa227220c7295bef76321a74448d8cb343ac30aff29b3b685382e0c8c12
   languageName: node
   linkType: hard
 
@@ -4706,9 +4706,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/test@npm:10.3.4":
-  version: 10.3.4
-  resolution: "@rest-hooks/test@npm:10.3.4"
+"@rest-hooks/test@npm:10.3.6":
+  version: 10.3.6
+  resolution: "@rest-hooks/test@npm:10.3.6"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@testing-library/react": ^14.0.0
@@ -4737,7 +4737,7 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 109bc4d8d0ffd44c278160b399fa02f0d5b55ce4aebf537ef9af5580fb7c514b75fdd696ac73e2e298dbb3f15ababe90710ea0d5a779f34f404a359254f26b69
+  checksum: 221f59c429787c39f6c7695989939303e78c5f0165c08e2f0ba20a41b2b4d96553f76dde40f66a4a75b374e4abd261f7c1dbc3e6e26f3cfb3d89f600c4967398
   languageName: node
   linkType: hard
 
@@ -6661,10 +6661,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.0.0, @types/node@npm:^16.18.22":
-  version: 16.18.22
-  resolution: "@types/node@npm:16.18.22"
-  checksum: 0fa5b7ca37855125988eb90207b9ebd50cc9c30a559be6d69e53f7e4cc474ce514994012c806d2e83e03bf1f48705b7e3d1c45a424f6e11ee39818ee4c4c2c2d
+"@types/node@npm:^16.0.0, @types/node@npm:^16.18.23":
+  version: 16.18.23
+  resolution: "@types/node@npm:16.18.23"
+  checksum: 00e51db28fc7a182747f37215b3f25400b1c7a8525e09fa14e55be5798891a118ebf636a49d3197335a3580fcb8222fd4ecc20c2ccff69f1c0d233fc5697465d
   languageName: node
   linkType: hard
 
@@ -12290,10 +12290,10 @@ __metadata:
     "@rest-hooks/endpoint": 3.7.4
     "@rest-hooks/hooks": 3.1.13
     "@rest-hooks/img": 0.8.12
-    "@rest-hooks/react": 7.2.11
+    "@rest-hooks/react": ^7.2.9
     "@rest-hooks/redux": 6.3.6
-    "@rest-hooks/rest": 6.3.12
-    "@rest-hooks/test": 10.3.4
+    "@rest-hooks/rest": 6.5.0
+    "@rest-hooks/test": 10.3.6
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": 8.21.3
@@ -12322,7 +12322,7 @@ __metadata:
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
     redux: ^4.2.1
-    typescript: 5.0.2
+    typescript: ^5.0.2
     webpack: 5.77.0
     webpack-cli: 5.0.1
     webpack-dev-server: 4.13.1
@@ -12345,9 +12345,9 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
-    "@rest-hooks/react": 7.2.11
-    "@rest-hooks/rest": 6.3.12
-    "@rest-hooks/test": 10.3.4
+    "@rest-hooks/react": ^7.2.9
+    "@rest-hooks/rest": 6.5.0
+    "@rest-hooks/test": 10.3.6
     "@storybook/addon-essentials": 7.0.0-rc.10
     "@storybook/addon-links": 7.0.0-rc.10
     "@storybook/addon-mdx-gfm": 7.0.0-rc.10
@@ -22735,7 +22735,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     rimraf: ^4.4.1
-    typescript: 5.0.2
+    typescript: ^5.0.2
     webpack: 5.77.0
     webpack-cli: 5.0.1
     webpack-dev-server: 4.13.1
@@ -24976,16 +24976,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.0.2, typescript@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "typescript@npm:5.0.2"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: bef1dcd166acfc6934b2ec4d72f93edb8961a5fab36b8dd2aaf6f4f4cd5c0210f2e0850aef4724f3b4913d5aef203a94a28ded731b370880c8bcff7e4ff91fc1
-  languageName: node
-  linkType: hard
-
 "typescript@npm:^4.6.4":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
@@ -24996,13 +24986,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.0.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
-  version: 5.0.2
-  resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"
+"typescript@npm:^5.0.2":
+  version: 5.0.3
+  resolution: "typescript@npm:5.0.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b63cb742fbb9aeb3085e002ad8f10d5fd963606aa4d6b3b65b4e76c396ff09739f03b5dbae08e1698c3bce9d5619d3f67aeb7ee470ed4016bd345b3cfe37b54a
+  checksum: 3cce0576d218cb4277ff8b6adfef1a706e9114a98b4261a38ad658a7642f1b274a8396394f6cbff8c0ba852996d7ed2e233e9b8431d5d55ac7c2f6fea645af02
   languageName: node
   linkType: hard
 
@@ -25013,6 +25003,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
+  version: 5.0.3
+  resolution: "typescript@patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5580367025ff7ee1f2a61e5affdbddccfe6e893bc662aa33fefdbf12de7e493173fa7d47475e9e15121828691004c4ed13bcd115e57866baed97b54c60954e1c
   languageName: node
   linkType: hard
 
