@@ -34,7 +34,7 @@
     "@babel/eslint-parser": "^7.21.3",
     "@typescript-eslint/parser": "^5.57.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-import-resolver-typescript": "^3.5.4",
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-jsx-a11y": "^6.7.1"
   },
