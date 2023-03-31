@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.2...@anansi/generator-js@11.2.3) (2023-03-31)
+
+### 💅 Enhancement
+
+* Install normal storybook versions since 7 final release ([b97cd29](https://github.com/ntucker/anansi/commit/b97cd2938b69d08b0c49f2d6d970a6c1798c7271))
+
 ### [11.2.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.1...@anansi/generator-js@11.2.2) (2023-03-31)
 
 **Note:** Version bump only for package @anansi/generator-js
