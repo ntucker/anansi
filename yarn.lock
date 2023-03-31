@@ -296,35 +296,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@npm:^0.3.4":
-  version: 0.3.4
-  resolution: "@anansi/storybook@npm:0.3.4"
-  dependencies:
-    "@babel/runtime": ^7.17.0
-    "@storybook/builder-webpack5": ^7.0.0-rc.10
-    "@storybook/preset-react-webpack": ^7.0.0-rc.10
-    "@storybook/react": ^7.0.0-rc.10
-    "@storybook/types": ^7.0.0-rc.10
-    "@types/node": ^16.18.23
-  peerDependencies:
-    "@anansi/babel-preset": ^3.0.0 || ^4.0.0
-    "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
-    "@rest-hooks/react": ^6.0.0 || ^7.0.0
-    "@types/react": ^17.0.40 || ^18.0.0
-    "@types/react-dom": ^17.0.40 || ^18.0.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
-    webpack: "*"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  checksum: fdccc61a2331abb42376d89b8d7ae5050245821e4f6b073a6d377d290cc3312b5d29883319aedd2c4dc77845c191e0cf72d8ebe95b26c74f9e05fe6b9c13582e
-  languageName: node
-  linkType: hard
-
-"@anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@^1.0.0, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -5349,7 +5321,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-webpack5@npm:^7.0.0, @storybook/builder-webpack5@npm:^7.0.0-rc.10":
+"@storybook/builder-webpack5@npm:^7.0.0":
   version: 7.0.0
   resolution: "@storybook/builder-webpack5@npm:7.0.0"
   dependencies:
@@ -5790,7 +5762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preset-react-webpack@npm:^7.0.0, @storybook/preset-react-webpack@npm:^7.0.0-rc.10":
+"@storybook/preset-react-webpack@npm:^7.0.0":
   version: 7.0.0
   resolution: "@storybook/preset-react-webpack@npm:7.0.0"
   dependencies:
@@ -5881,7 +5853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.0.0, @storybook/react@npm:^7.0.0, @storybook/react@npm:^7.0.0-rc.10":
+"@storybook/react@npm:7.0.0, @storybook/react@npm:^7.0.0":
   version: 7.0.0
   resolution: "@storybook/react@npm:7.0.0"
   dependencies:
@@ -5972,7 +5944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/types@npm:7.0.0, @storybook/types@npm:^7.0.0, @storybook/types@npm:^7.0.0-rc.10":
+"@storybook/types@npm:7.0.0, @storybook/types@npm:^7.0.0":
   version: 7.0.0
   resolution: "@storybook/types@npm:7.0.0"
   dependencies:
@@ -12458,7 +12430,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.4.2
     "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": ^0.10.6
-    "@anansi/storybook": ^0.3.4
+    "@anansi/storybook": ^1.0.0
     "@anansi/webpack-config": ^15.0.4
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1

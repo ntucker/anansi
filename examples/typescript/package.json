@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.4.2",
     "@anansi/eslint-plugin": "workspace:^",
     "@anansi/jest-preset": "^0.10.6",
-    "@anansi/storybook": "^0.3.4",
+    "@anansi/storybook": "^1.0.0",
     "@anansi/webpack-config": "^15.0.4",
     "@babel/core": "^7.21.3",
     "@rest-hooks/test": "10.3.6",
