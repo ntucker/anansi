@@ -43,14 +43,14 @@ export default class WebpackGenerator extends InstallPeersMixin(
   }
 
   async writingDependencies() {
-    await this.addDevDependencies({
-      storybook: 'next',
-      '@storybook/addon-essentials': 'next',
-      '@storybook/addon-links': 'next',
-      '@storybook/addons': 'next',
-      '@storybook/react': 'next',
-      '@anansi/storybook': 'latest',
-    });
+    await this.addDevDependencies([
+      'storybook',
+      '@storybook/addon-essentials',
+      '@storybook/addon-links',
+      '@storybook/addons',
+      '@storybook/react',
+      '@anansi/storybook',
+    ]);
   }
 
   writing() {
