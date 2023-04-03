@@ -244,7 +244,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.10.6, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.10.7, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -296,7 +296,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@^1.0.0, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@^1.0.1, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -333,7 +333,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^15.0.4, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^15.0.5, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -12249,7 +12249,7 @@ __metadata:
     "@anansi/babel-preset": ^4.2.2
     "@anansi/browserslist-config": ^1.4.2
     "@anansi/eslint-plugin": ^0.16.5
-    "@anansi/webpack-config": ^15.0.4
+    "@anansi/webpack-config": ^15.0.5
     "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.21.2
     "@babel/runtime": 7.21.0
@@ -12299,9 +12299,9 @@ __metadata:
     "@anansi/cli": ^2.2.5
     "@anansi/core": ^0.16.25
     "@anansi/eslint-plugin": ^0.16.5
-    "@anansi/jest-preset": ^0.10.6
+    "@anansi/jest-preset": ^0.10.7
     "@anansi/router": ^0.7.32
-    "@anansi/webpack-config": ^15.0.4
+    "@anansi/webpack-config": ^15.0.5
     "@ant-design/cssinjs": 1.7.1
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.21.4
@@ -12358,9 +12358,9 @@ __metadata:
     "@anansi/babel-preset": ^4.2.2
     "@anansi/browserslist-config": ^1.4.2
     "@anansi/eslint-plugin": "workspace:^"
-    "@anansi/jest-preset": ^0.10.6
-    "@anansi/storybook": ^1.0.0
-    "@anansi/webpack-config": ^15.0.4
+    "@anansi/jest-preset": ^0.10.7
+    "@anansi/storybook": ^1.0.1
+    "@anansi/webpack-config": ^15.0.5
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1
     "@ant-design/pro-layout": 7.10.3

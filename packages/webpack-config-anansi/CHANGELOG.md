@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.4...@anansi/webpack-config@15.0.5) (2023-04-03)
+
+### 📦 Package
+
+* Update `postcss-preset-env` to ^8.3.0 ([#1936](https://github.com/ntucker/anansi/issues/1936)) ([5a31f7a](https://github.com/ntucker/anansi/commit/5a31f7a8909ad30804281ade3fc44a39bbf6eac6))
+* Update all non-major dependencies ([#1937](https://github.com/ntucker/anansi/issues/1937)) ([3d6f79a](https://github.com/ntucker/anansi/commit/3d6f79a4a5f6be191f01451b98a205214b43dcf7))
+
 ### [15.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.3...@anansi/webpack-config@15.0.4) (2023-03-31)
 
 ### 📦 Package

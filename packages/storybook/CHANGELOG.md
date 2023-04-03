@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/storybook@1.0.0...@anansi/storybook@1.0.1) (2023-04-03)
+
+### 📦 Package
+
+* Update storybook monorepo to v7.0.2 ([#1940](https://github.com/ntucker/anansi/issues/1940)) ([9a8314d](https://github.com/ntucker/anansi/commit/9a8314d80774cb3a04a918bfcb7e8ed4e8648399))
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@0.3.4...@anansi/storybook@1.0.0) (2023-03-31)
 
 ### 📦 Package
