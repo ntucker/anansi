@@ -10222,10 +10222,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.29.1, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
-  version: 3.29.1
-  resolution: "core-js@npm:3.29.1"
-  checksum: b38446dbfcfd3887b3d4922990da487e2c95044cb4c5717aaf95e786a4c6b218f05c056c7ed6c699169b9794a49fec890e402659d54661fc56965a0eb717e7bd
+"core-js@npm:3.30.0, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
+  version: 3.30.0
+  resolution: "core-js@npm:3.30.0"
+  checksum: 276d4444a1261739ea4c350ef3f6aeab4c7ae7f36ac197f02d197a4566b42867c3a9b12c2fcda8a736aeca888d2c4131c8cb58ad17ed02294a10c9c97606df71
   languageName: node
   linkType: hard
 
@@ -12268,7 +12268,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.56.0
     babel-loader: 9.1.2
     classnames: 2.3.2
-    core-js: 3.29.1
+    core-js: 3.30.0
     eslint: ^8.36.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: ^2.27.5
@@ -12329,7 +12329,7 @@ __metadata:
     "@typescript-eslint/parser": 5.57.0
     antd: 5.4.0
     classnames: 2.3.2
-    core-js: 3.29.1
+    core-js: 3.30.0
     eslint: 8.37.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: 2.27.5
@@ -12396,7 +12396,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.56.0
     antd: 5.4.0
     classnames: 2.3.2
-    core-js: 3.29.1
+    core-js: 3.30.0
     eslint: ^8.36.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: ^2.27.5
