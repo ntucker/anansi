@@ -181,7 +181,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@^0.16.5, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.16.6, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -333,7 +333,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^15.0.6, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^15.0.7, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -12249,8 +12249,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.2.2
     "@anansi/browserslist-config": ^1.4.2
-    "@anansi/eslint-plugin": ^0.16.5
-    "@anansi/webpack-config": ^15.0.6
+    "@anansi/eslint-plugin": ^0.16.6
+    "@anansi/webpack-config": ^15.0.7
     "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.21.2
     "@babel/runtime": 7.21.0
@@ -12299,10 +12299,10 @@ __metadata:
     "@anansi/browserslist-config": ^1.4.2
     "@anansi/cli": ^2.2.5
     "@anansi/core": ^0.16.26
-    "@anansi/eslint-plugin": ^0.16.5
+    "@anansi/eslint-plugin": ^0.16.6
     "@anansi/jest-preset": ^0.10.7
     "@anansi/router": ^0.7.32
-    "@anansi/webpack-config": ^15.0.6
+    "@anansi/webpack-config": ^15.0.7
     "@ant-design/cssinjs": 1.7.1
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.21.4
@@ -12361,7 +12361,7 @@ __metadata:
     "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": ^0.10.7
     "@anansi/storybook": ^1.0.1
-    "@anansi/webpack-config": ^15.0.6
+    "@anansi/webpack-config": ^15.0.7
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1
     "@ant-design/pro-layout": 7.10.3

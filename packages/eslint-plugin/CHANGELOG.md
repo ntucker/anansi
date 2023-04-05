@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.6](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.5...@anansi/eslint-plugin@0.16.6) (2023-04-05)
+
+### 📦 Package
+
+* Update `eslint-import-resolver-typescript` to ^3.5.5 ([#1946](https://github.com/ntucker/anansi/issues/1946)) ([8c4d928](https://github.com/ntucker/anansi/commit/8c4d9285531809ca24e77361eb1407bd21487d28))
+* Update linting packages to v5.57.1 ([#1939](https://github.com/ntucker/anansi/issues/1939)) ([ffc63a6](https://github.com/ntucker/anansi/commit/ffc63a64e03ef532ed6460ff4953785a3ced0330))
+
 ### [0.16.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.4...@anansi/eslint-plugin@0.16.5) (2023-03-31)
 
 ### 📦 Package
