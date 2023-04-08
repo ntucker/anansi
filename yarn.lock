@@ -285,7 +285,7 @@ __metadata:
     "@types/node": ^18.15.9
     "@types/react": ^18.0.29
     history: ^5.3.0
-    nano-memoize: ^3.0.8
+    nano-memoize: ^3.0.10
     react: ^18.2.0
   peerDependencies:
     "@types/react": ^18.0.0
@@ -462,9 +462,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.7.1, @ant-design/cssinjs@npm:^1.5.6, @ant-design/cssinjs@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "@ant-design/cssinjs@npm:1.7.1"
+"@ant-design/cssinjs@npm:1.8.1, @ant-design/cssinjs@npm:^1.5.6, @ant-design/cssinjs@npm:^1.7.1":
+  version: 1.8.1
+  resolution: "@ant-design/cssinjs@npm:1.8.1"
   dependencies:
     "@babel/runtime": ^7.11.1
     "@emotion/hash": ^0.8.0
@@ -476,7 +476,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: cdc3e0bdfe9897eaf5a6df98f89477db373128d84224a4d80d32242fe9c3fd8d03c9483437504b0896306bd460fb9d9fd862e059801eea7014dc43a92358cdec
+  checksum: 5a5c18916b21ae3ec2bbd75df03768ea381afb65b670b757fa8fa744f2eefb799b7bf06a2ae3a35cdb782de2bafb42491cee25573abff304123091fd76795585
   languageName: node
   linkType: hard
 
@@ -12303,7 +12303,7 @@ __metadata:
     "@anansi/jest-preset": ^0.10.7
     "@anansi/router": ^0.7.32
     "@anansi/webpack-config": ^15.0.7
-    "@ant-design/cssinjs": 1.7.1
+    "@ant-design/cssinjs": 1.8.1
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.21.4
     "@babel/runtime": 7.21.0
@@ -18255,10 +18255,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "nano-memoize@npm:3.0.8"
-  checksum: 10609457767663bf1cac2608222607dd82c58c75a99a2867057b2e5efdf9dfb353a312b96d6e36b99e6743eb95297fb4e780bc2462063a9531d8a5b6b2353e81
+"nano-memoize@npm:^3.0.10":
+  version: 3.0.10
+  resolution: "nano-memoize@npm:3.0.10"
+  checksum: 10ee5ffeee18e557292f0dbe1da9f73d6a37f6fadb81ee172f5bddd0135730e15ae388187b1266764846d706982fb30df37caea4065fae44b4214408717c1f22
   languageName: node
   linkType: hard
 
