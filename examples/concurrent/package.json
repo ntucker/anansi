@@ -54,7 +54,7 @@
   "dependencies": {
     "@anansi/core": "^0.16.26",
     "@anansi/router": "^0.7.32",
-    "@ant-design/cssinjs": "1.7.1",
+    "@ant-design/cssinjs": "1.8.1",
     "@ant-design/icons": "^5.0.1",
     "@babel/runtime": "7.21.0",
     "@linaria/core": "4.2.8",
