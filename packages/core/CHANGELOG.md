@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.27](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.26...@anansi/core@0.16.27) (2023-04-11)
+
+### 📦 Package
+
+* Update `memfs` to ^3.5.0 ([#1948](https://github.com/ntucker/anansi/issues/1948)) ([dbda24d](https://github.com/ntucker/anansi/commit/dbda24d623767fb8b5bcdbc67f12f44ad75121a8))
+
 ### [0.16.26](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.25...@anansi/core@0.16.26) (2023-04-04)
 
 ### 📦 Package

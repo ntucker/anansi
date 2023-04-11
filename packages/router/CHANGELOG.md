@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.7.33](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.32...@anansi/router@0.7.33) (2023-04-11)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#1951](https://github.com/ntucker/anansi/issues/1951)) ([74dcceb](https://github.com/ntucker/anansi/commit/74dccebf4286ee93b66eadb9820af535a49b8d2b))
+
 ### [0.7.32](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.31...@anansi/router@0.7.32) (2023-03-28)
 
 **Note:** Version bump only for package @anansi/router
