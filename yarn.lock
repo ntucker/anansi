@@ -6808,14 +6808,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.34, @types/react@npm:>=16, @types/react@npm:^18.0.29":
-  version: 18.0.34
-  resolution: "@types/react@npm:18.0.34"
+"@types/react@npm:*, @types/react@npm:18.0.35, @types/react@npm:>=16, @types/react@npm:^18.0.29":
+  version: 18.0.35
+  resolution: "@types/react@npm:18.0.35"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 60d2766e7644ec480075bbb154bf8fb8476089466b643662ef59964e27cae2d8c71fd9c717a4dfa9627c3e050fa2ae866d10d16f66b4509058d1bfe2a564b18c
+  checksum: e65670397216e037b150a509ec08189140b4c20b82b612ac00b2a7133202be2d1def1e7ee69617b2df06ab4c00c43c4ee23e84788ad661aea9664da2f27c518a
   languageName: node
   linkType: hard
 
@@ -7754,9 +7754,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.4.1":
-  version: 5.4.1
-  resolution: "antd@npm:5.4.1"
+"antd@npm:5.4.2":
+  version: 5.4.2
+  resolution: "antd@npm:5.4.2"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.7.1
@@ -7786,7 +7786,7 @@ __metadata:
     rc-motion: ^2.6.1
     rc-notification: ~5.0.0
     rc-pagination: ~3.3.1
-    rc-picker: ~3.5.0
+    rc-picker: ~3.6.1
     rc-progress: ~3.4.1
     rc-rate: ~2.10.0
     rc-resize-observer: ^1.2.0
@@ -7809,7 +7809,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 6efe4dcf587e93453ae3711f556dd3bd487cfc6c052c8e5f8c4dde2893b5b1b0dff09da95160313baa185502d72c0840a7ce0ce26411b4f5d95df7592a684405
+  checksum: 7bb67818b35e07bdf7f5b87768f75925e8d17a5e5f06767b52368b09ab72342bacee180c0312e818ac06f533704283ef757542deeee7554984ba76d3560f9783
   languageName: node
   linkType: hard
 
@@ -12246,7 +12246,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/node": ^18.15.9
     "@types/prettier": ^2.7.2
-    "@types/react": 18.0.34
+    "@types/react": 18.0.35
     "@types/react-dom": 18.0.11
     "@types/react-router-dom": 5.3.3
     "@typescript-eslint/eslint-plugin": ^5.56.0
@@ -12307,12 +12307,12 @@ __metadata:
     "@types/jest": 29.5.0
     "@types/node": 18.15.11
     "@types/prettier": 2.7.2
-    "@types/react": 18.0.34
+    "@types/react": 18.0.35
     "@types/react-dom": 18.0.11
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.58.0
     "@typescript-eslint/parser": 5.58.0
-    antd: 5.4.1
+    antd: 5.4.2
     classnames: 2.3.2
     core-js: 3.30.0
     eslint: 8.38.0
@@ -12372,14 +12372,14 @@ __metadata:
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
-    "@types/react": 18.0.34
+    "@types/react": 18.0.35
     "@types/react-dom": 18.0.11
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": ^5.56.0
     "@typescript-eslint/parser": ^5.56.0
-    antd: 5.4.1
+    antd: 5.4.2
     classnames: 2.3.2
     core-js: 3.30.0
     eslint: ^8.36.0
@@ -21380,9 +21380,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-picker@npm:~3.5.0":
-  version: 3.5.1
-  resolution: "rc-picker@npm:3.5.1"
+"rc-picker@npm:~3.6.1":
+  version: 3.6.2
+  resolution: "rc-picker@npm:3.6.2"
   dependencies:
     "@babel/runtime": ^7.10.1
     "@rc-component/trigger": ^1.5.0
@@ -21404,7 +21404,7 @@ __metadata:
       optional: true
     moment:
       optional: true
-  checksum: b7e76fd39c01a501a648a83af51ad22371c001529265bc027d9c1a6e67bb117fa8f1e7dcd138e817827bfd330c35427fde7d5d15f546f98ed18be60de801cc36
+  checksum: 72fd7948bd6a81984a4c0668a0b9e853e2ff250531d55efedb09694ca18a458f484d92d5a7d564b4b34a229f98442ffb567ef30c4c67324f266897890322fe92
   languageName: node
   linkType: hard
 
@@ -22749,7 +22749,7 @@ __metadata:
     "@commitlint/config-conventional": 17.4.4
     "@lerna-lite/cli": 1.17.0
     "@types/node": ^18.15.9
-    "@types/react": 18.0.34
+    "@types/react": 18.0.35
     "@types/react-dom": 18.0.11
     "@typescript-eslint/eslint-plugin": 5.58.0
     "@typescript-eslint/parser": 5.58.0
