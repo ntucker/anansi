@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.34](https://github.com/ntucker/anansi/compare/example-react-18@4.2.33...example-react-18@4.2.34) (2023-04-16)
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v4.13.3 ([#1963](https://github.com/ntucker/anansi/issues/1963)) ([6ef290e](https://github.com/ntucker/anansi/commit/6ef290e5233436d40f4f1afd10a04784fd6b1882))
+* Update all non-major dependencies ([#1959](https://github.com/ntucker/anansi/issues/1959)) ([72f86e0](https://github.com/ntucker/anansi/commit/72f86e0534dc4c7aa6b61a341e1d1f53fc1b18cb))
+* Update webpack packages ([#1958](https://github.com/ntucker/anansi/issues/1958)) ([1566399](https://github.com/ntucker/anansi/commit/15663990d594afd8199db61213ed2e4502f129a3))
+
 ### [4.2.33](https://github.com/ntucker/anansi/compare/example-react-18@4.2.32...example-react-18@4.2.33) (2023-04-11)
 
 ### 📦 Package
