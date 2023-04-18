@@ -234,7 +234,7 @@ __metadata:
     gulp-prettier: ^4.0.0
     import-meta-resolve: ^2.2.2
     mem-fs: ^3.0.0
-    mem-fs-editor: ^9.7.0
+    mem-fs-editor: ^10.0.1
     pacote: ^15.1.1
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
@@ -6280,7 +6280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ejs@npm:*, @types/ejs@npm:3.1.2, @types/ejs@npm:^3.1.1":
+"@types/ejs@npm:*, @types/ejs@npm:3.1.2, @types/ejs@npm:^3.1.1, @types/ejs@npm:^3.1.2":
   version: 3.1.2
   resolution: "@types/ejs@npm:3.1.2"
   checksum: e4f0745b6ed53a63c08bdfdeb019a7d0e0c400896722b44d6732b4ee6bf6061d2dc965206186b8b0ae2ecd71303c29f1af1feddbca2df0acbd7bd234a74ca518
@@ -6589,10 +6589,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/minimatch@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@types/minimatch@npm:3.0.3"
-  checksum: b80259d55b96ef24cb3bb961b6dc18b943f2bb8838b4d8e7bead204f3173e551a416ffa49f9aaf1dc431277fffe36214118628eacf4aea20119df8835229901b
+"@types/minimatch@npm:^3.0.3, @types/minimatch@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "@types/minimatch@npm:3.0.5"
+  checksum: c41d136f67231c3131cf1d4ca0b06687f4a322918a3a5adddc87ce90ed9dbd175a3610adee36b106ae68c0b92c637c35e02b58c8a56c424f71d30993ea220b92
   languageName: node
   linkType: hard
 
@@ -7930,6 +7930,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"array-differ@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "array-differ@npm:4.0.0"
+  checksum: 1de99a06bc3219f96b062a561a4c19af7a68bfaf2c1e0ccedd1d82ce1fbc7757f939e03cf0d3ad76b71f855a8ad2b2a16bf53df331bf5f0c90002774f04fb0b5
+  languageName: node
+  linkType: hard
+
 "array-find-index@npm:^1.0.1":
   version: 1.0.2
   resolution: "array-find-index@npm:1.0.2"
@@ -7998,6 +8005,13 @@ __metadata:
   version: 2.1.0
   resolution: "array-union@npm:2.1.0"
   checksum: 5bee12395cba82da674931df6d0fea23c4aa4660cb3b338ced9f828782a65caa232573e6bf3968f23e0c5eb301764a382cef2f128b170a9dc59de0e36c39f98d
+  languageName: node
+  linkType: hard
+
+"array-union@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "array-union@npm:3.0.1"
+  checksum: 47b29f88258e8f37ffb93ddaa327d4308edd950b52943c172b73558afdd3fa74cfd68816ba5aa4b894242cf281fa3c6d0362ae057e4a18bddbaedbe46ebe7112
   languageName: node
   linkType: hard
 
@@ -17368,6 +17382,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mem-fs-editor@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "mem-fs-editor@npm:10.0.1"
+  dependencies:
+    "@types/ejs": ^3.1.2
+    binaryextensions: ^4.16.0
+    commondir: ^1.0.1
+    deep-extend: ^0.6.0
+    ejs: ^3.1.9
+    globby: ^13.1.4
+    isbinaryfile: ^5.0.0
+    mem-fs: ^3.0.0
+    minimatch: ^9.0.0
+    multimatch: ^6.0.0
+    normalize-path: ^3.0.0
+    textextensions: ^5.13.0
+    vinyl: ^3.0.0
+  checksum: b941bc4b82507b013592a8b4b60ee9640cf6ce8f832c3c72d64e2d2ca6a44954fc1237701763c7e56fdf5508230f5ddc097630f7052fc6f3346d045e400c60b2
+  languageName: node
+  linkType: hard
+
 "mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.7.0":
   version: 9.7.0
   resolution: "mem-fs-editor@npm:9.7.0"
@@ -18331,6 +18366,18 @@ __metadata:
     arrify: ^2.0.1
     minimatch: ^3.0.4
   checksum: 82c8030a53af965cab48da22f1b0f894ef99e16ee680dabdfbd38d2dfacc3c8208c475203d747afd9e26db44118ed0221d5a0d65268c864f06d6efc7ac6df812
+  languageName: node
+  linkType: hard
+
+"multimatch@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "multimatch@npm:6.0.0"
+  dependencies:
+    "@types/minimatch": ^3.0.5
+    array-differ: ^4.0.0
+    array-union: ^3.0.1
+    minimatch: ^3.0.4
+  checksum: c04233765f664f556af12309cdad1a11c137655f756674b853a981f287984a49f3916955b57d306ed36bba3d2d6d5b6fbba4b48f483f11bd24e3c124a09e05b5
   languageName: node
   linkType: hard
 
