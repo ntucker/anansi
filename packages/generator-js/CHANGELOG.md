@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.2.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.4...@anansi/generator-js@11.2.5) (2023-04-19)
+
+### 📦 Package
+
+* Update `mem-fs-editor` to v10 ([#1966](https://github.com/ntucker/anansi/issues/1966)) ([cbfe6ef](https://github.com/ntucker/anansi/commit/cbfe6ef9645d794c526c6a2e7c9032f1d23ab0f3))
+* Update `mem-fs` to v3 ([#1967](https://github.com/ntucker/anansi/issues/1967)) ([5814b27](https://github.com/ntucker/anansi/commit/5814b279c169fa8020dc2357174db571455a12fc))
+
 ### [11.2.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.3...@anansi/generator-js@11.2.4) (2023-04-16)
 
 ### 📦 Package

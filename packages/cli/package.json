@@ -1,6 +1,6 @@
 {
   "name": "@anansi/cli",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/cli#readme",
   "repository": {

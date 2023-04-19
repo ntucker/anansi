@@ -1,6 +1,6 @@
 {
   "name": "@anansi/eslint-plugin",
-  "version": "0.16.7",
+  "version": "0.16.8",
   "description": "Sane community baseline for React and TypeScript",
   "main": "index.js",
   "scripts": {
