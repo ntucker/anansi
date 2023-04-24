@@ -43,7 +43,7 @@ program
         'npx yo',
         [
           // get rid of 'file://' prefix
-          (await resolve('@anansi/generator-js', import.meta.url)).substring(7),
+          resolve('@anansi/generator-js', import.meta.url).substring(7),
           projectName,
         ],
         {
