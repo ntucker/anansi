@@ -135,6 +135,6 @@ const capitalize = <T extends string>(s: T): Capitalize<T> => {
   return (s.charAt(0).toUpperCase() + s.slice(1)) as any;
 };
 
-export async function resolvePath(path: string, url: string) {
-  return (await resolve(path, url)).substring(7);
+export function resolvePath(path: string, url: string) {
+  return resolve(path, url).substring(7);
 }
