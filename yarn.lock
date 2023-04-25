@@ -444,15 +444,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ant-design/colors@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@ant-design/colors@npm:6.0.0"
-  dependencies:
-    "@ctrl/tinycolor": ^3.4.0
-  checksum: 55110ac8a3353f3ec2d2fdee6ffb841967dd75f3783ef4e68c22731e042606bc5b3c3febb6cd20aed3f14585729ce8eddf75b531c703c06a2e95b8569861bb47
-  languageName: node
-  linkType: hard
-
 "@ant-design/colors@npm:^7.0.0":
   version: 7.0.0
   resolution: "@ant-design/colors@npm:7.0.0"
@@ -462,7 +453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.9.1, @ant-design/cssinjs@npm:^1.5.6, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
+"@ant-design/cssinjs@npm:1.9.1, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
   version: 1.9.1
   resolution: "@ant-design/cssinjs@npm:1.9.1"
   dependencies:
@@ -487,22 +478,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^4.3.0":
-  version: 4.8.0
-  resolution: "@ant-design/icons@npm:4.8.0"
-  dependencies:
-    "@ant-design/colors": ^6.0.0
-    "@ant-design/icons-svg": ^4.2.1
-    "@babel/runtime": ^7.11.2
-    classnames: ^2.2.6
-    rc-util: ^5.9.4
-  peerDependencies:
-    react: ">=16.0.0"
-    react-dom: ">=16.0.0"
-  checksum: d569dae9f84245a90fb5152af4c4e6e9f1bce9d638b5831f3e9d126ff654c9477e3c9d9192c6b3f349ade39c9e0bc85605cad5d8c2e401e632dbd6190b638ad3
-  languageName: node
-  linkType: hard
-
 "@ant-design/icons@npm:^5.0.0, @ant-design/icons@npm:^5.0.1":
   version: 5.0.1
   resolution: "@ant-design/icons@npm:5.0.1"
@@ -519,13 +494,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/pro-layout@npm:7.10.3":
-  version: 7.10.3
-  resolution: "@ant-design/pro-layout@npm:7.10.3"
+"@ant-design/pro-layout@npm:7.12.1":
+  version: 7.12.1
+  resolution: "@ant-design/pro-layout@npm:7.12.1"
   dependencies:
     "@ant-design/icons": ^5.0.0
-    "@ant-design/pro-provider": ^2.7.0
-    "@ant-design/pro-utils": ^2.7.2
+    "@ant-design/pro-provider": ^2.8.1
+    "@ant-design/pro-utils": ^2.8.1
     "@babel/runtime": ^7.18.0
     "@umijs/route-utils": ^4.0.0
     "@umijs/use-params": ^1.0.9
@@ -541,35 +516,35 @@ __metadata:
     warning: ^4.0.3
   peerDependencies:
     antd: ">=4.23.0"
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: 2376c29dd12e7fe67a9bce2ab90b7f118c62f02ae98802ca2ecc7458f57b1c3ed9dcc11486ae36ea7b6d687703b1a63b9f27eeebd9646dbc682e4aae12355863
+    react: ">=17.0.0"
+    react-dom: ">=17.0.0"
+  checksum: 79bc54f7bc54292e4f4809df97207edede74f8d2d8eef94bb6ff84e282c2594efc73b95178d5f126e646de39a54bce470dd1ad1173d54fa3cad796a4d6339437
   languageName: node
   linkType: hard
 
-"@ant-design/pro-provider@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "@ant-design/pro-provider@npm:2.7.0"
+"@ant-design/pro-provider@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "@ant-design/pro-provider@npm:2.8.1"
   dependencies:
-    "@ant-design/cssinjs": ^1.5.6
+    "@ant-design/cssinjs": ^1.9.1
     "@babel/runtime": ^7.18.0
     "@ctrl/tinycolor": ^3.4.0
     rc-util: ^5.0.1
     swr: ^2.0.0
   peerDependencies:
     antd: ">=4.23.0"
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: b936ad19ff612003a54a8382d1de90682b1b934708679891e323ed39c2b53e19c465b06740e78d825bae291842e13d95f8ce3144728b8fae8ff0ccce88a33df5
+    react: ">=17.0.0"
+    react-dom: ">=17.0.0"
+  checksum: 3513ba138ad9e82413b7c1bb0f15a0b6a578805415cc92af33f16a8834f7af18d4c10c45fac38a23f9e4ae287bf4ec5c57c3c4e9157ce3d9470a28d8f793389b
   languageName: node
   linkType: hard
 
-"@ant-design/pro-utils@npm:^2.7.2":
-  version: 2.7.2
-  resolution: "@ant-design/pro-utils@npm:2.7.2"
+"@ant-design/pro-utils@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "@ant-design/pro-utils@npm:2.8.1"
   dependencies:
-    "@ant-design/icons": ^4.3.0
-    "@ant-design/pro-provider": ^2.7.0
+    "@ant-design/icons": ^5.0.0
+    "@ant-design/pro-provider": ^2.8.1
     "@babel/runtime": ^7.18.0
     classnames: ^2.2.6
     dayjs: ^1.11.4
@@ -578,9 +553,9 @@ __metadata:
     swr: ^2.0.0
   peerDependencies:
     antd: ">=4.23.0"
-    react: ">=16.9.0"
-    react-dom: ">=16.9.0"
-  checksum: e4a74abe1da5293b3700adc6d0a2ba8043330975a739e6d17c76967932080f4df9599e3a7e69e46e732aaaa3baf6a538185ea75d3bc6da39641c101d1ab2315b
+    react: ">=17.0.0"
+    react-dom: ">=17.0.0"
+  checksum: e862d59fced3c00358e5ce6239c3f6b3e1039897916164be2159eb814753ebe49dfb8bfb76799deb5d0337b1da97389558f166b9b4b773e91810dd33707187c9
   languageName: node
   linkType: hard
 
@@ -6781,12 +6756,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.11, @types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.11":
-  version: 18.0.11
-  resolution: "@types/react-dom@npm:18.0.11"
+"@types/react-dom@npm:18.2.0, @types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.11":
+  version: 18.2.0
+  resolution: "@types/react-dom@npm:18.2.0"
   dependencies:
     "@types/react": "*"
-  checksum: 579691e4d5ec09688087568037c35edf8cfb1ab3e07f6c60029280733ee7b5c06d66df6fcc90786702c93ac8cb13bc7ff16c79ddfc75d082938fbaa36e1cdbf4
+  checksum: 9212b3793707a763f10e2c608f6ccb5f729029da6cb84204f333634d3d7baafbc1b20b7faf7cf788a8fd385050a1fb579902031f9462473ef10607116f33f33c
   languageName: node
   linkType: hard
 
@@ -6820,14 +6795,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.38, @types/react@npm:>=16, @types/react@npm:^18.0.29":
-  version: 18.0.38
-  resolution: "@types/react@npm:18.0.38"
+"@types/react@npm:*, @types/react@npm:18.2.0, @types/react@npm:>=16, @types/react@npm:^18.0.29":
+  version: 18.2.0
+  resolution: "@types/react@npm:18.2.0"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 34481c79f4f7ea2aefbaa45281319dc183200230d932d968463eba1643bd3635073d0a17c5c613150a69e36ca18b811ecffafea6384fa3dff3b5203866339d69
+  checksum: db3d92b423150222a666329f7aa3023e3e942044700557b8a7d161530847e621aec9f56c9e7f71761b06dd164c8a7b17ad52355863efe80963dffa5537e8e5fd
   languageName: node
   linkType: hard
 
@@ -12294,8 +12269,8 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/node": ^18.15.9
     "@types/prettier": ^2.7.2
-    "@types/react": 18.0.38
-    "@types/react-dom": 18.0.11
+    "@types/react": 18.2.0
+    "@types/react-dom": 18.2.0
     "@types/react-router-dom": 5.3.3
     "@typescript-eslint/eslint-plugin": ^5.56.0
     "@typescript-eslint/parser": ^5.56.0
@@ -12355,8 +12330,8 @@ __metadata:
     "@types/jest": 29.5.0
     "@types/node": 18.16.0
     "@types/prettier": 2.7.2
-    "@types/react": 18.0.38
-    "@types/react-dom": 18.0.11
+    "@types/react": 18.2.0
+    "@types/react-dom": 18.2.0
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.59.1
     "@typescript-eslint/parser": 5.59.1
@@ -12396,7 +12371,7 @@ __metadata:
     "@anansi/webpack-config": ^15.0.10
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1
-    "@ant-design/pro-layout": 7.10.3
+    "@ant-design/pro-layout": 7.12.1
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.0
     "@rest-hooks/graphql": 0.4.5
@@ -12420,8 +12395,8 @@ __metadata:
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
-    "@types/react": 18.0.38
-    "@types/react-dom": 18.0.11
+    "@types/react": 18.2.0
+    "@types/react-dom": 18.2.0
     "@types/react-router": 5.1.20
     "@types/react-router-dom": 5.3.3
     "@types/react-test-renderer": 18.0.0
@@ -22993,8 +22968,8 @@ __metadata:
     "@lerna-lite/publish": ^2.0.0
     "@lerna-lite/version": ^2.0.0
     "@types/node": ^18.15.9
-    "@types/react": 18.0.38
-    "@types/react-dom": 18.0.11
+    "@types/react": 18.2.0
+    "@types/react-dom": 18.2.0
     "@typescript-eslint/eslint-plugin": 5.59.1
     "@typescript-eslint/parser": 5.59.1
     babel-loader: 9.1.2
