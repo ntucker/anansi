@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.5...@anansi/generator-js@12.0.0) (2023-04-25)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires node 18 or higher
+
+### 💅 Enhancement
+
+* meta-resolve is no longer async ([6bd09e0](https://github.com/ntucker/anansi/commit/6bd09e06411c01ed157fea3b5194e1fbe4749d60))
+
+### 📦 Package
+
+* Update `import-meta-resolve` to v3 ([53574d2](https://github.com/ntucker/anansi/commit/53574d264de68dbb8e2c96ad7ca509cce030ee31))
+* Update all non-major dependencies ([#1972](https://github.com/ntucker/anansi/issues/1972)) ([32c6aed](https://github.com/ntucker/anansi/commit/32c6aede199a138ad8ffb6f8b58c08e71c6cdc63))
+
 ### [11.2.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@11.2.4...@anansi/generator-js@11.2.5) (2023-04-19)
 
 ### 📦 Package
