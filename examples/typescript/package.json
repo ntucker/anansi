@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "11.1.16",
+  "version": "11.1.17",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -18,12 +18,12 @@
     "build:storybook": "storybook build"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^4.2.2",
+    "@anansi/babel-preset": "^4.2.3",
     "@anansi/browserslist-config": "^1.4.2",
     "@anansi/eslint-plugin": "workspace:^",
     "@anansi/jest-preset": "^0.10.9",
-    "@anansi/storybook": "^1.0.4",
-    "@anansi/webpack-config": "^15.0.11",
+    "@anansi/storybook": "^1.0.5",
+    "@anansi/webpack-config": "^15.0.12",
     "@babel/core": "^7.21.3",
     "@rest-hooks/test": "10.3.6",
     "@storybook/addon-essentials": "7.0.7",
