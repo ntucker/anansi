@@ -11,7 +11,6 @@ export class Post extends PlaceholderEntity {
 export const PostResource = createPlaceholderResource({
   path: '/posts/:id',
   schema: Post,
-  dataExpiryLength: 10000,
 });
 
 export class Comment extends PlaceholderEntity {
