@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.18](https://github.com/ntucker/anansi/compare/example-typescript@11.1.17...example-typescript@11.1.18) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/jest` to v29.5.1 ([#1998](https://github.com/ntucker/anansi/issues/1998)) ([f4166e2](https://github.com/ntucker/anansi/commit/f4166e21e9e166af3c6c14f3df1a6ddd2f272de3))
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+* Update `@types/react` to v18.2.4 ([#1990](https://github.com/ntucker/anansi/issues/1990)) ([8e1a68c](https://github.com/ntucker/anansi/commit/8e1a68c915e2296dcc3df17ce756bc43966e8834))
+* Update `core-js` to v3.30.2 ([#1995](https://github.com/ntucker/anansi/issues/1995)) ([8b3ba4c](https://github.com/ntucker/anansi/commit/8b3ba4cb0f5cb77bb294c7141a7e2d65ff4d86e2))
+* Update all non-major dependencies ([#1986](https://github.com/ntucker/anansi/issues/1986)) ([f3ab671](https://github.com/ntucker/anansi/commit/f3ab671946bd12df8094cc90db3778962be20169))
+* Update all non-major dependencies ([#1996](https://github.com/ntucker/anansi/issues/1996)) ([c2795a4](https://github.com/ntucker/anansi/commit/c2795a49e85df67207aa706553e3a90bbb00f31d))
+* Update storybook monorepo to v7.0.8 ([#1989](https://github.com/ntucker/anansi/issues/1989)) ([5191735](https://github.com/ntucker/anansi/commit/519173532bdf43bff1bf57fd341f1a46eaf90b6f))
+* Update storybook monorepo to v7.0.9 ([#1992](https://github.com/ntucker/anansi/issues/1992)) ([5758ac8](https://github.com/ntucker/anansi/commit/5758ac8edaf50b8d25cca2f5a579bc80d7c8b4d5))
+* Update webpack packages ([#1991](https://github.com/ntucker/anansi/issues/1991)) ([241c2ee](https://github.com/ntucker/anansi/commit/241c2ee0bd1fa86db588803c85741ca4d5955273))
+
 ### [11.1.17](https://github.com/ntucker/anansi/compare/example-typescript@11.1.16...example-typescript@11.1.17) (2023-04-29)
 
 ### 📦 Package

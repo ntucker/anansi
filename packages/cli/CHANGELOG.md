@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.0...@anansi/cli@3.0.1) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+
 ## [3.0.0](https://github.com/ntucker/anansi/compare/@anansi/cli@2.2.7...@anansi/cli@3.0.0) (2023-04-25)
 
 ### ⚠ 💥 BREAKING CHANGES

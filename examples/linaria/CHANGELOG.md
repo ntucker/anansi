@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.70](https://github.com/ntucker/anansi/compare/example-linaria@5.0.69...example-linaria@5.0.70) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+* Update `@types/react` to v18.2.4 ([#1990](https://github.com/ntucker/anansi/issues/1990)) ([8e1a68c](https://github.com/ntucker/anansi/commit/8e1a68c915e2296dcc3df17ce756bc43966e8834))
+* Update `core-js` to v3.30.2 ([#1995](https://github.com/ntucker/anansi/issues/1995)) ([8b3ba4c](https://github.com/ntucker/anansi/commit/8b3ba4cb0f5cb77bb294c7141a7e2d65ff4d86e2))
+* Update all non-major dependencies ([#1986](https://github.com/ntucker/anansi/issues/1986)) ([f3ab671](https://github.com/ntucker/anansi/commit/f3ab671946bd12df8094cc90db3778962be20169))
+* Update all non-major dependencies ([#1996](https://github.com/ntucker/anansi/issues/1996)) ([c2795a4](https://github.com/ntucker/anansi/commit/c2795a49e85df67207aa706553e3a90bbb00f31d))
+* Update webpack packages ([#1991](https://github.com/ntucker/anansi/issues/1991)) ([241c2ee](https://github.com/ntucker/anansi/commit/241c2ee0bd1fa86db588803c85741ca4d5955273))
+
 ### [5.0.69](https://github.com/ntucker/anansi/compare/example-linaria@5.0.68...example-linaria@5.0.69) (2023-04-29)
 
 ### 📦 Package

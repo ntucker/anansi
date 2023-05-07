@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.3...@anansi/babel-preset@4.2.4) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+
 ### [4.2.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.2...@anansi/babel-preset@4.2.3) (2023-04-29)
 
 ### 📦 Package

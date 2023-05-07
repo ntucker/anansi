@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.6](https://github.com/ntucker/anansi/compare/@anansi/storybook@1.0.5...@anansi/storybook@1.0.6) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+* Update storybook monorepo to v7.0.8 ([#1989](https://github.com/ntucker/anansi/issues/1989)) ([5191735](https://github.com/ntucker/anansi/commit/519173532bdf43bff1bf57fd341f1a46eaf90b6f))
+* Update storybook monorepo to v7.0.9 ([#1992](https://github.com/ntucker/anansi/issues/1992)) ([5758ac8](https://github.com/ntucker/anansi/commit/5758ac8edaf50b8d25cca2f5a579bc80d7c8b4d5))
+
 ### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/storybook@1.0.4...@anansi/storybook@1.0.5) (2023-04-29)
 
 ### 📦 Package

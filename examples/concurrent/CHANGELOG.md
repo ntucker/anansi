@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.38](https://github.com/ntucker/anansi/compare/example-react-18@4.2.37...example-react-18@4.2.38) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/jest` to v29.5.1 ([#1998](https://github.com/ntucker/anansi/issues/1998)) ([f4166e2](https://github.com/ntucker/anansi/commit/f4166e21e9e166af3c6c14f3df1a6ddd2f272de3))
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+* Update `@types/react` to v18.2.4 ([#1990](https://github.com/ntucker/anansi/issues/1990)) ([8e1a68c](https://github.com/ntucker/anansi/commit/8e1a68c915e2296dcc3df17ce756bc43966e8834))
+* Update `core-js` to v3.30.2 ([#1995](https://github.com/ntucker/anansi/issues/1995)) ([8b3ba4c](https://github.com/ntucker/anansi/commit/8b3ba4cb0f5cb77bb294c7141a7e2d65ff4d86e2))
+* Update all non-major dependencies ([#1986](https://github.com/ntucker/anansi/issues/1986)) ([f3ab671](https://github.com/ntucker/anansi/commit/f3ab671946bd12df8094cc90db3778962be20169))
+* Update all non-major dependencies ([#1996](https://github.com/ntucker/anansi/issues/1996)) ([c2795a4](https://github.com/ntucker/anansi/commit/c2795a49e85df67207aa706553e3a90bbb00f31d))
+* Update babel packages to v7.21.8 ([#1988](https://github.com/ntucker/anansi/issues/1988)) ([aeb0099](https://github.com/ntucker/anansi/commit/aeb00991d7cc772a7e8f22316b715d22a0a6a98b))
+* Update linting packages ([#1997](https://github.com/ntucker/anansi/issues/1997)) ([1d7ba48](https://github.com/ntucker/anansi/commit/1d7ba4854fd7160c91662fdee495ddb84f9483fd))
+* Update webpack packages ([#1991](https://github.com/ntucker/anansi/issues/1991)) ([241c2ee](https://github.com/ntucker/anansi/commit/241c2ee0bd1fa86db588803c85741ca4d5955273))
+* Update webpack packages ([#1993](https://github.com/ntucker/anansi/issues/1993)) ([bbb5a81](https://github.com/ntucker/anansi/commit/bbb5a81c5b100eefec8309334c3b2987fdf608db))
+
 ### [4.2.37](https://github.com/ntucker/anansi/compare/example-react-18@4.2.36...example-react-18@4.2.37) (2023-04-29)
 
 ### 📦 Package

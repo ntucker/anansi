@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.5.80](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.79...@pojo-router/core@0.5.80) (2023-05-07)
+
+### 📦 Package
+
+* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+
 ### [0.5.79](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.78...@pojo-router/core@0.5.79) (2023-03-28)
 
 **Note:** Version bump only for package @pojo-router/core
