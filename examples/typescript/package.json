@@ -74,7 +74,7 @@
     "@rest-hooks/graphql": "0.5.0",
     "@rest-hooks/react": "7.4.1",
     "@rest-hooks/rest": "6.6.2",
-    "@types/node": "18.16.3",
+    "@types/node": "20.1.0",
     "@types/react": "18.2.4",
     "@types/react-dom": "18.2.3",
     "antd": "5.4.6",
