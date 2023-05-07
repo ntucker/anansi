@@ -38,7 +38,7 @@ __metadata:
     "@babel/plugin-transform-typescript": ^7.21.3
     "@babel/preset-env": ^7.21.5
     "@babel/preset-react": ^7.18.6
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     babel-plugin-macros: ^3.1.0
     babel-plugin-module-resolver: ^5.0.0
     babel-plugin-react-require: ^3.1.3
@@ -88,7 +88,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/browserslist-config@workspace:packages/browserslist-config-anansi"
   dependencies:
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
   languageName: unknown
   linkType: soft
 
@@ -97,7 +97,7 @@ __metadata:
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
     "@anansi/generator-js": "workspace:^"
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     bin-version-check: ^5.0.0
     chalk: ^4.1.2
     commander: ^10.0.1
@@ -127,7 +127,7 @@ __metadata:
     "@rest-hooks/ssr": ^0.7.11
     "@types/compression": 1.7.2
     "@types/express": ^4.17.17
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     "@types/react-dom": ^18.0.11
     "@types/source-map-support": 0.5.6
@@ -186,7 +186,7 @@ __metadata:
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
     "@babel/eslint-parser": ^7.21.8
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@typescript-eslint/parser": ^5.59.1
     eslint-config-prettier: ^8.8.0
     eslint-import-resolver-typescript: ^3.5.5
@@ -222,7 +222,7 @@ __metadata:
     "@types/ejs": 3.1.2
     "@types/gulp-filter": 3.0.35
     "@types/mem-fs-editor": 7.0.3
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/pacote": 11.1.5
     "@types/yeoman-generator": 5.2.11
     chalk: ^4.1.2
@@ -250,7 +250,7 @@ __metadata:
   dependencies:
     "@anansi/ts-utils": "workspace:^"
     "@types/babel__core": ^7.20.0
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     babel-jest: ^29.5.0
     copyfiles: 2.4.1
     core-js: ^3.21.0
@@ -282,7 +282,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.0
     "@pojo-router/core": "workspace:^"
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     history: ^5.3.0
     nano-memoize: ^3.0.11
@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.0.9
     "@storybook/react": ^7.0.9
     "@storybook/types": ^7.0.9
-    "@types/node": ^16.18.25
+    "@types/node": ^20.1.0
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -327,7 +327,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/ts-utils@workspace:packages/ts-utils"
   dependencies:
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
   peerDependencies:
     typescript: ^3.0.0 || ^4.0.0 || ^5.0.0
   languageName: unknown
@@ -341,7 +341,7 @@ __metadata:
     "@linaria/webpack5-loader": 4.1.17
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.10
     "@svgr/webpack": ^7.0.0
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/webpack-bundle-analyzer": ^4.6.0
     "@vue/preload-webpack-plugin": ^2.0.0
     assert: ^2.0.0
@@ -4439,7 +4439,7 @@ __metadata:
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     history: 5.3.0
     path-to-regexp: 6.2.1
@@ -6642,10 +6642,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.16.3, @types/node@npm:^18.15.11, @types/node@npm:^18.15.9":
-  version: 18.16.3
-  resolution: "@types/node@npm:18.16.3"
-  checksum: 816b39d45b05ebdc6f362b630970df3f6d82f71d418a2555353522f4eeeb078fa201de5299f02c09a09faa975e43b2745fe19c263d44069f87ddf37d6c37b717
+"@types/node@npm:*, @types/node@npm:20.1.0, @types/node@npm:^20.0.0, @types/node@npm:^20.1.0":
+  version: 20.1.0
+  resolution: "@types/node@npm:20.1.0"
+  checksum: c6d9afa9aa78b4b4348c69ece94975be70346b144c278f1395694a10ef919d7db300018101b6f9245e6bdd76674a5327d2d14829092f3d5295e858cff5f22a66
   languageName: node
   linkType: hard
 
@@ -6656,10 +6656,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.0.0, @types/node@npm:^16.18.25":
+"@types/node@npm:^16.0.0":
   version: 16.18.25
   resolution: "@types/node@npm:16.18.25"
   checksum: 181760ad6b54fcc498dfeb249e98bbf0be51d7c35e92e760e1a82004fa42b86e8c33a8f8dd7743b5ef872bda0753d9e6a5b8e3f0aed63e9eb79b4e65760c1fbe
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.15.11":
+  version: 18.16.3
+  resolution: "@types/node@npm:18.16.3"
+  checksum: 816b39d45b05ebdc6f362b630970df3f6d82f71d418a2555353522f4eeeb078fa201de5299f02c09a09faa975e43b2745fe19c263d44069f87ddf37d6c37b717
   languageName: node
   linkType: hard
 
@@ -12250,7 +12257,7 @@ __metadata:
     "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": ^8.21.3
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/prettier": ^2.7.2
     "@types/react": 18.2.4
     "@types/react-dom": 18.2.3
@@ -12311,7 +12318,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.37.0
     "@types/jest": 29.5.0
-    "@types/node": 18.16.3
+    "@types/node": 20.1.0
     "@types/prettier": 2.7.2
     "@types/react": 18.2.4
     "@types/react-dom": 18.2.3
@@ -12374,7 +12381,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.0
     "@types/lodash": 4.14.194
-    "@types/node": 18.16.3
+    "@types/node": 20.1.0
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
@@ -22942,7 +22949,7 @@ __metadata:
     "@lerna-lite/cli": 2.2.0
     "@lerna-lite/publish": ^2.0.0
     "@lerna-lite/version": ^2.0.0
-    "@types/node": ^18.15.9
+    "@types/node": ^20.0.0
     "@types/react": 18.2.4
     "@types/react-dom": 18.2.3
     "@typescript-eslint/eslint-plugin": 5.59.1

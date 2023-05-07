@@ -19,6 +19,6 @@
     "node": ">=8.9.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^20.0.0"
   }
 }

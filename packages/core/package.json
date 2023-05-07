@@ -71,7 +71,7 @@
     "@rest-hooks/redux": "^6.3.5",
     "@types/compression": "1.7.2",
     "@types/express": "^4.17.17",
-    "@types/node": "^18.15.9",
+    "@types/node": "^20.0.0",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
     "@types/source-map-support": "0.5.6",

@@ -34,7 +34,7 @@
     "node": ">=14"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^20.0.0"
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",

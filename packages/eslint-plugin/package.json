@@ -39,7 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^20.0.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",

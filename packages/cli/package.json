@@ -51,7 +51,7 @@
     "npm": ">= 6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^20.0.0"
   },
   "dependencies": {
     "@anansi/generator-js": "workspace:^",
