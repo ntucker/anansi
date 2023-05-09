@@ -137,7 +137,7 @@ __metadata:
     chalk: ^4.1.2
     compression: ^1.7.4
     cross-fetch: ^3.1.5
-    enhanced-resolve: ^5.13.0
+    enhanced-resolve: ^5.14.0
     express: ^4.18.2
     fs-require: ^1.6.0
     history: ^5.3.0
@@ -11513,13 +11513,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.12.0, enhanced-resolve@npm:^5.13.0, enhanced-resolve@npm:^5.3.1, enhanced-resolve@npm:^5.7.0":
-  version: 5.13.0
-  resolution: "enhanced-resolve@npm:5.13.0"
+"enhanced-resolve@npm:^5.12.0, enhanced-resolve@npm:^5.13.0, enhanced-resolve@npm:^5.14.0, enhanced-resolve@npm:^5.3.1, enhanced-resolve@npm:^5.7.0":
+  version: 5.14.0
+  resolution: "enhanced-resolve@npm:5.14.0"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 76d6844c4393d76beed5b3ce6cf5a98dee3ad5c84a9887f49ccde1224e3b7af201dfbd5a57ebf2b49f623b74883df262d50ff480d3cc02fc2881fc58b84e1bbe
+  checksum: fff1aaebbf376371e5df4502e111967f6247c37611ad3550e4e7fca657f6dcb29ef7ffe88bf14e5010b78997f1ddd984a8db97af87ee0a5477771398fd326f5b
   languageName: node
   linkType: hard
 
