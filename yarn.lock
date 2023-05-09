@@ -234,11 +234,11 @@ __metadata:
     gulp-prettier: ^4.0.0
     import-meta-resolve: ^3.0.0
     mem-fs: ^3.0.0
-    mem-fs-editor: ^10.0.1
+    mem-fs-editor: ^10.0.2
     pacote: ^15.1.3
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.16.1
+    yeoman-environment: 3.16.2
     yeoman-generator: ^5.8.0
     yeoman-test: 7.4.0
   languageName: unknown
@@ -17410,9 +17410,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^10.0.1":
-  version: 10.0.1
-  resolution: "mem-fs-editor@npm:10.0.1"
+"mem-fs-editor@npm:^10.0.2":
+  version: 10.0.2
+  resolution: "mem-fs-editor@npm:10.0.2"
   dependencies:
     "@types/ejs": ^3.1.2
     binaryextensions: ^4.16.0
@@ -17427,7 +17427,7 @@ __metadata:
     normalize-path: ^3.0.0
     textextensions: ^5.13.0
     vinyl: ^3.0.0
-  checksum: b941bc4b82507b013592a8b4b60ee9640cf6ce8f832c3c72d64e2d2ca6a44954fc1237701763c7e56fdf5508230f5ddc097630f7052fc6f3346d045e400c60b2
+  checksum: 27e4c24184c869d294bed701040ba9cb06da5e26714b87cf71bb96fccbd22b0c03d6ac68f0cb4afb1e1965005b53d1ecbc8bf848b55cd1739a54e82543311137
   languageName: node
   linkType: hard
 
@@ -26758,9 +26758,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.16.1, yeoman-environment@npm:^3.5.1":
-  version: 3.16.1
-  resolution: "yeoman-environment@npm:3.16.1"
+"yeoman-environment@npm:3.16.2, yeoman-environment@npm:^3.5.1":
+  version: 3.16.2
+  resolution: "yeoman-environment@npm:3.16.2"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -26800,7 +26800,7 @@ __metadata:
     untildify: ^4.0.0
   bin:
     yoe: cli/index.js
-  checksum: 13c9878599731a38c085e8e98cd0805b69168e57720feae82e6dafd0b18feed94b8d7bb59d8f655f113636fdcd9ed5952c9c99c6eb5cd15b1b384b7416f482a2
+  checksum: e45d8970b707959e4c27e3b37a1c387f2b22103911659d013ff6674c5be5dd413da29b64d66e717c6b7feba0c8550fbb4b4204e68f0a85121b16bd4c7267534c
   languageName: node
   linkType: hard
 
