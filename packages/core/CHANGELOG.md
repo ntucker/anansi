@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.32](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.31...@anansi/core@0.16.32) (2023-05-09)
+
+### 📦 Package
+
+* Update `enhanced-resolve` to ^5.14.0 ([#2004](https://github.com/ntucker/anansi/issues/2004)) ([324b0a3](https://github.com/ntucker/anansi/commit/324b0a3e62b3b985b13bf055feac43e309e1bbae))
+
 ### [0.16.31](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.30...@anansi/core@0.16.31) (2023-05-07)
 
 ### 📦 Package

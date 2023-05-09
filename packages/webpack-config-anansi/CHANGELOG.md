@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.14](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.13...@anansi/webpack-config@15.0.14) (2023-05-09)
+
+### 📦 Package
+
+* Update `@svgr/webpack` to v8 ([#2002](https://github.com/ntucker/anansi/issues/2002)) ([fd86c82](https://github.com/ntucker/anansi/commit/fd86c82518bbd7ee98af38c09093f73eee1df937))
+* Update all non-major dependencies ([#1999](https://github.com/ntucker/anansi/issues/1999)) ([59f73d4](https://github.com/ntucker/anansi/commit/59f73d40167f94cc1c323238a5245d4bb52a68b7))
+
 ### [15.0.13](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.12...@anansi/webpack-config@15.0.13) (2023-05-07)
 
 ### 📦 Package

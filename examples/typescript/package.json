@@ -1,6 +1,6 @@
 {
   "name": "example-typescript",
-  "version": "11.1.18",
+  "version": "11.1.19",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -22,8 +22,8 @@
     "@anansi/browserslist-config": "^1.4.3",
     "@anansi/eslint-plugin": "workspace:^",
     "@anansi/jest-preset": "^0.10.10",
-    "@anansi/storybook": "^1.0.6",
-    "@anansi/webpack-config": "^15.0.13",
+    "@anansi/storybook": "^1.0.7",
+    "@anansi/webpack-config": "^15.0.14",
     "@babel/core": "^7.21.3",
     "@rest-hooks/test": "10.3.7",
     "@storybook/addon-essentials": "7.0.10",
