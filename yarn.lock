@@ -238,7 +238,7 @@ __metadata:
     pacote: ^15.1.3
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
-    yeoman-environment: 3.15.1
+    yeoman-environment: 3.16.1
     yeoman-generator: ^5.8.0
     yeoman-test: 7.4.0
   languageName: unknown
@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.0.9
     "@storybook/react": ^7.0.9
     "@storybook/types": ^7.0.9
-    "@types/node": ^20.1.0
+    "@types/node": ^20.1.1
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -380,7 +380,7 @@ __metadata:
     ramda: ^0.29.0
     react-dev-utils: ^12.0.1
     react-error-overlay: 6.0.9
-    readable-stream: ^4.3.0
+    readable-stream: ^4.4.0
     sass-loader: ^13.2.2
     sass-resources-loader: ^2.2.5
     semver: ^7.5.0
@@ -4555,22 +4555,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.8.2, @rest-hooks/endpoint@npm:^3.7.4, @rest-hooks/endpoint@npm:^3.8.0, @rest-hooks/endpoint@npm:^3.8.2":
-  version: 3.8.2
-  resolution: "@rest-hooks/endpoint@npm:3.8.2"
+"@rest-hooks/endpoint@npm:3.8.3, @rest-hooks/endpoint@npm:^3.7.4, @rest-hooks/endpoint@npm:^3.8.3":
+  version: 3.8.3
+  resolution: "@rest-hooks/endpoint@npm:3.8.3"
   dependencies:
     "@babel/runtime": ^7.17.0
-  checksum: 075c295a5985b256af4c4009219f8503f31c14e512d562726f715ac923093e0e6c7fc3e0ebc8d82f909ae75e7cfba5d59dae937c35bd1c62ee4d28feda56953f
+  checksum: 7894fd8906d88c9f3da4994b7fd6065b9798d8e55f89291b0821ea846eda686ea189d62112dba6ea4a2a8f89f348a8c47fb937d1ec9b64f8b457930f104357a8
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@rest-hooks/graphql@npm:0.5.0"
+"@rest-hooks/graphql@npm:0.5.1":
+  version: 0.5.1
+  resolution: "@rest-hooks/graphql@npm:0.5.1"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/endpoint": ^3.8.0
-  checksum: 0289b56951386958c1e6d15f10942bfdb55f9e12660196da297027b7ff10b65e4ad9c92f585a54e3ebd34264edec6836fa94d045d8c4f1931986c1927c8ab538
+    "@rest-hooks/endpoint": ^3.8.3
+  checksum: 172f6e6bfd6f3e898b05533a4837cfcf58141adf626b3623749fab6a123971ad6961ccdb7dfae99c30d627970c068bfd3369972c35e7b511e8ca841edaa9d08b
   languageName: node
   linkType: hard
 
@@ -4654,14 +4654,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.6.2":
-  version: 6.6.2
-  resolution: "@rest-hooks/rest@npm:6.6.2"
+"@rest-hooks/rest@npm:6.6.3":
+  version: 6.6.3
+  resolution: "@rest-hooks/rest@npm:6.6.3"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/endpoint": ^3.8.2
+    "@rest-hooks/endpoint": ^3.8.3
     path-to-regexp: ^6.2.1
-  checksum: 6d2a3a2086216a6ae3ea7317cb996ecd89710e13e78a2d60e7846b088ec3b2b016f97d41246a0a1e07fba933715c5a5fa51f291b29dff51132688ecc8984b2fd
+  checksum: a78a1fdf8a91f223a9b3df74ab29cf3493361dac3b1ac61b34023763deebc979e815e3b38efc9d1936c48cf6d9df5e612a8bac19b3808cd6accf9372550d2133
   languageName: node
   linkType: hard
 
@@ -6642,10 +6642,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.1.0, @types/node@npm:^20.0.0, @types/node@npm:^20.1.0":
-  version: 20.1.0
-  resolution: "@types/node@npm:20.1.0"
-  checksum: c6d9afa9aa78b4b4348c69ece94975be70346b144c278f1395694a10ef919d7db300018101b6f9245e6bdd76674a5327d2d14829092f3d5295e858cff5f22a66
+"@types/node@npm:*, @types/node@npm:20.1.1, @types/node@npm:^20.0.0, @types/node@npm:^20.1.1":
+  version: 20.1.1
+  resolution: "@types/node@npm:20.1.1"
+  checksum: 47961ee23f873c14c3f6045422ff3059f3bfb10231ef3080a7a72d7215cc8c2623fa8cedb7b246305962fa9c1e0c9e381e04b12eb3e9ec5d076025c6231ac8da
   languageName: node
   linkType: hard
 
@@ -6657,16 +6657,16 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^16.0.0":
-  version: 16.18.25
-  resolution: "@types/node@npm:16.18.25"
-  checksum: 181760ad6b54fcc498dfeb249e98bbf0be51d7c35e92e760e1a82004fa42b86e8c33a8f8dd7743b5ef872bda0753d9e6a5b8e3f0aed63e9eb79b4e65760c1fbe
+  version: 16.18.27
+  resolution: "@types/node@npm:16.18.27"
+  checksum: 23a89da6c648fcf0033e1618c9585c5aaba7bd536b4473591d92f63b993f7aa7bf00e72b0af4438a096ab9856a02040a2877fbe00bd7e223b361f78642d0be77
   languageName: node
   linkType: hard
 
 "@types/node@npm:^18.15.11":
-  version: 18.16.3
-  resolution: "@types/node@npm:18.16.3"
-  checksum: 816b39d45b05ebdc6f362b630970df3f6d82f71d418a2555353522f4eeeb078fa201de5299f02c09a09faa975e43b2745fe19c263d44069f87ddf37d6c37b717
+  version: 18.16.6
+  resolution: "@types/node@npm:18.16.6"
+  checksum: 99417418952c0b1a6ff5dd40ccf01c2cd18db6a1c54bfaaff29c700c877e2e541aa31ea33090592f3817adb2b8c0946b86c7fb57049131e7c08252d70075f09b
   languageName: node
   linkType: hard
 
@@ -12298,18 +12298,18 @@ __metadata:
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
     "@linaria/shaker": 4.2.11
-    "@rest-hooks/endpoint": 3.8.2
+    "@rest-hooks/endpoint": 3.8.3
     "@rest-hooks/hooks": 3.1.14
     "@rest-hooks/img": 0.8.12
     "@rest-hooks/react": 7.4.1
     "@rest-hooks/redux": 6.3.6
-    "@rest-hooks/rest": 6.6.2
+    "@rest-hooks/rest": 6.6.3
     "@rest-hooks/test": 10.3.7
     "@types/babel__core": 7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": 8.37.0
     "@types/jest": 29.5.1
-    "@types/node": 20.1.0
+    "@types/node": 20.1.1
     "@types/prettier": 2.7.2
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
@@ -12355,9 +12355,9 @@ __metadata:
     "@ant-design/pro-layout": 7.12.3
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.21.5
-    "@rest-hooks/graphql": 0.5.0
+    "@rest-hooks/graphql": 0.5.1
     "@rest-hooks/react": 7.4.1
-    "@rest-hooks/rest": 6.6.2
+    "@rest-hooks/rest": 6.6.3
     "@rest-hooks/test": 10.3.7
     "@storybook/addon-essentials": 7.0.9
     "@storybook/addon-links": 7.0.9
@@ -12372,7 +12372,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.1
     "@types/lodash": 4.14.194
-    "@types/node": 20.1.0
+    "@types/node": 20.1.1
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
@@ -22272,15 +22272,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^4.1.0, readable-stream@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "readable-stream@npm:4.3.0"
+"readable-stream@npm:^4.1.0, readable-stream@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "readable-stream@npm:4.4.0"
   dependencies:
     abort-controller: ^3.0.0
     buffer: ^6.0.3
     events: ^3.3.0
     process: ^0.11.10
-  checksum: 5f8d5fc1eb0c6eb47771ad4537881126d6280666e1f10ba1e2262a670a0352c36f59e6a04d17c9a6f7c888218984836dc67f55e95a77de8bfdf06fb75f00f670
+  checksum: cc1630c2de134aee92646e77b1770019633000c408fd48609babf2caa53f00ca794928023aa9ad3d435a1044cec87d2ce7e2b7389dd1caf948b65c175edb7f52
   languageName: node
   linkType: hard
 
@@ -26758,9 +26758,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:3.15.1, yeoman-environment@npm:^3.5.1":
-  version: 3.15.1
-  resolution: "yeoman-environment@npm:3.15.1"
+"yeoman-environment@npm:3.16.1, yeoman-environment@npm:^3.5.1":
+  version: 3.16.1
+  resolution: "yeoman-environment@npm:3.16.1"
   dependencies:
     "@npmcli/arborist": ^4.0.4
     are-we-there-yet: ^2.0.0
@@ -26798,12 +26798,9 @@ __metadata:
     text-table: ^0.2.0
     textextensions: ^5.12.0
     untildify: ^4.0.0
-  peerDependencies:
-    mem-fs: ^1.2.0 || ^2.0.0
-    mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: 7ea7bb0a210f2e0702f54420916075cda329ee2b71243fb911af9bcfc1e59a934daef1027dd9e95a410f5dae1eeb1fcdb85f4c697a0429477a3a50d2e48d0d58
+  checksum: 13c9878599731a38c085e8e98cd0805b69168e57720feae82e6dafd0b18feed94b8d7bb59d8f655f113636fdcd9ed5952c9c99c6eb5cd15b1b384b7416f482a2
   languageName: node
   linkType: hard
 
