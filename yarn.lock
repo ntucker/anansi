@@ -41,7 +41,7 @@ __metadata:
     "@types/node": ^20.0.0
     babel-plugin-macros: ^3.1.0
     babel-plugin-module-resolver: ^5.0.0
-    babel-plugin-react-require: ^3.1.3
+    babel-plugin-react-require: ^4.0.0
     babel-plugin-root-import: ^6.6.0
     babel-plugin-transform-import-meta: ^2.2.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
@@ -8400,10 +8400,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-require@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "babel-plugin-react-require@npm:3.1.3"
-  checksum: fcc36fa88b3f78e7fc90e3a49536a95f2af12528c997ef994e006ccc2b8311c2a96155cb9e946191d3a1d48ccdde47442bf9956dd00c1db571f8a97301c4450f
+"babel-plugin-react-require@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "babel-plugin-react-require@npm:4.0.0"
+  checksum: c010d7890ead82d5bc8aabb98371535129a2ae209e6293f65f75a26693c0c45e79b290e4a47c3a81a5adac5f9ef6e4a1112485600af92819842c7d062ee09161
   languageName: node
   linkType: hard
 
