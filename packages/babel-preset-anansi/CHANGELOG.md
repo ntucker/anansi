@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.4...@anansi/babel-preset@4.2.5) (2023-05-17)
+
+### 📦 Package
+
+* Update `babel-plugin-react-require` to v4 ([#2008](https://github.com/ntucker/anansi/issues/2008)) ([08453f2](https://github.com/ntucker/anansi/commit/08453f285ffbdb7d0f05b48c2a23c0f81a805632))
+
 ### [4.2.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.3...@anansi/babel-preset@4.2.4) (2023-05-07)
 
 ### 📦 Package
