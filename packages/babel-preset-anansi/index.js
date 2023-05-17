@@ -255,7 +255,7 @@ function buildPreset(api, options = {}) {
   };
   preset.plugins = preset.plugins.filter(v => v);
   if (options.reactRequire && !hasJsxRuntime) {
-    preset.plugins.unshift(require('babel-plugin-react-require').default);
+    preset.plugins.unshift(require('babel-plugin-react-require'));
   }
   // import.meta.url doesn't work in commonjs
   if (modules !== false && supportsModules === false) {
