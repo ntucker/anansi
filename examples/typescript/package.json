@@ -62,7 +62,7 @@
     "serve": "14.2.0",
     "storybook": "7.0.12",
     "typescript": "^5.0.2",
-    "webpack": "5.82.1",
+    "webpack": "5.83.1",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   },
