@@ -52,14 +52,14 @@
   ],
   "devDependencies": {
     "@types/ejs": "3.1.2",
-    "@types/gulp-filter": "3.0.35",
+    "@types/gulp-filter": "3.0.36",
     "@types/mem-fs-editor": "7.0.3",
     "@types/node": "^20.0.0",
     "@types/pacote": "11.1.5",
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "3.16.2",
+    "yeoman-environment": "3.17.0",
     "yeoman-test": "7.4.0"
   },
   "engines": {
