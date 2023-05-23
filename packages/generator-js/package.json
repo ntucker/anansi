@@ -59,7 +59,7 @@
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "3.18.2",
+    "yeoman-environment": "3.18.3",
     "yeoman-test": "7.4.0"
   },
   "engines": {
@@ -79,7 +79,7 @@
     "mem-fs-editor": "^10.0.2",
     "pacote": "^15.2.0",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^5.8.0"
+    "yeoman-generator": "^5.9.0"
   },
   "jest": {
     "testEnvironment": "node"
