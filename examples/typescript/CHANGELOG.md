@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.22](https://github.com/ntucker/anansi/compare/example-typescript@11.1.21...example-typescript@11.1.22) (2023-05-24)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2015](https://github.com/ntucker/anansi/issues/2015)) ([09b9c59](https://github.com/ntucker/anansi/commit/09b9c5937717fce3809314931040da6b2e8ad6b6))
+* Update all non-major dependencies ([#2022](https://github.com/ntucker/anansi/issues/2022)) ([3273223](https://github.com/ntucker/anansi/commit/3273223232a25bd0e0aa0dc4a616232fe7093a72))
+* Update storybook monorepo to v7.0.15 ([#2017](https://github.com/ntucker/anansi/issues/2017)) ([69eb82a](https://github.com/ntucker/anansi/commit/69eb82a62a152d2e16517ab6d4029bd0841aed75))
+* Update storybook monorepo to v7.0.17 ([#2020](https://github.com/ntucker/anansi/issues/2020)) ([88d1a19](https://github.com/ntucker/anansi/commit/88d1a19a66ee8bf385d4f30c687dcc50f138a734))
+* Update webpack packages ([#2021](https://github.com/ntucker/anansi/issues/2021)) ([4d31089](https://github.com/ntucker/anansi/commit/4d3108915f91f9a89f5ab72ab64d3da09f3ce9cc))
+
 ### [11.1.21](https://github.com/ntucker/anansi/compare/example-typescript@11.1.20...example-typescript@11.1.21) (2023-05-19)
 
 ### 📦 Package

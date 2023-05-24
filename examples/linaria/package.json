@@ -1,6 +1,6 @@
 {
   "name": "example-linaria",
-  "version": "5.0.73",
+  "version": "5.0.74",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -18,8 +18,8 @@
   "devDependencies": {
     "@anansi/babel-preset": "^4.2.5",
     "@anansi/browserslist-config": "^1.4.3",
-    "@anansi/eslint-plugin": "^0.16.12",
-    "@anansi/webpack-config": "^15.0.16",
+    "@anansi/eslint-plugin": "^0.16.13",
+    "@anansi/webpack-config": "^15.0.17",
     "@babel/core": "^7.21.3",
     "@types/babel__core": "^7.20.0",
     "@types/classnames": "2.3.1",
