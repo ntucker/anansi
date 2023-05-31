@@ -59,7 +59,7 @@
     "@types/yeoman-generator": "5.2.11",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "3.18.4",
+    "yeoman-environment": "3.19.3",
     "yeoman-test": "7.4.0"
   },
   "engines": {
