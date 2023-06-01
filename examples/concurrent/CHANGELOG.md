@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.44](https://github.com/ntucker/anansi/compare/example-react-18@4.2.43...example-react-18@4.2.44) (2023-06-01)
+
+### 📦 Package
+
+* Update `webpack` to v5.85.0 ([#2032](https://github.com/ntucker/anansi/issues/2032)) ([e25aeaf](https://github.com/ntucker/anansi/commit/e25aeaf908c91f26d92727a74ad96ab9465a1519))
+* Update all non-major dependencies ([#2031](https://github.com/ntucker/anansi/issues/2031)) ([b6e507a](https://github.com/ntucker/anansi/commit/b6e507a0764608cda88aeeb07e9e373221a4f1ef))
+* Update linting packages to v5.59.8 ([#2033](https://github.com/ntucker/anansi/issues/2033)) ([98aed9a](https://github.com/ntucker/anansi/commit/98aed9a48d789f96e5296c09fd037fd4b711cc9f))
+
 ### [4.2.43](https://github.com/ntucker/anansi/compare/example-react-18@4.2.42...example-react-18@4.2.43) (2023-05-27)
 
 ### 📦 Package
