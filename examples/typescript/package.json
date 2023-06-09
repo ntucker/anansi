@@ -70,7 +70,7 @@
     "@ant-design/cssinjs": "^1.7.1",
     "@ant-design/icons": "^5.0.1",
     "@ant-design/pro-layout": "7.12.3",
-    "@babel/runtime": "7.22.3",
+    "@babel/runtime": "7.22.5",
     "@rest-hooks/graphql": "0.5.1",
     "@rest-hooks/react": "7.4.1",
     "@rest-hooks/rest": "6.6.3",
