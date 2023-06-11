@@ -6770,13 +6770,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:8.40.0, @types/eslint@npm:^8.21.3":
-  version: 8.40.0
-  resolution: "@types/eslint@npm:8.40.0"
+"@types/eslint@npm:*, @types/eslint@npm:8.40.1, @types/eslint@npm:^8.21.3":
+  version: 8.40.1
+  resolution: "@types/eslint@npm:8.40.1"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: bab41d7f590182e743853cdd5bf5359cbc4240df986223457c8a5f5674743a3fe2a8626704b65bf9121dfa0ce0a0efd760da8339cc329018f229d4d2d6ee1c43
+  checksum: c210e4741f11d9fda0e06f4444a43f64af79ea72d60cd11ec4acc232374b34cbb49634286f949783d55d8a66b44fa0da041b6a90cfe37fcdf7f796b81776318b
   languageName: node
   linkType: hard
 
@@ -12796,7 +12796,7 @@ __metadata:
     "@rest-hooks/test": 10.3.7
     "@types/babel__core": 7.20.1
     "@types/classnames": 2.3.1
-    "@types/eslint": 8.40.0
+    "@types/eslint": 8.40.1
     "@types/jest": 29.5.1
     "@types/node": 20.3.0
     "@types/prettier": 2.7.3
