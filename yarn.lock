@@ -259,7 +259,7 @@ __metadata:
     jest-pnp-resolver: ^1.2.3
     mitt: ^3.0.0
     node-fetch: ^3.3.1
-    semver: ^7.5.1
+    semver: ^7.5.2
     ts-jest: ^29.1.0
     whatwg-fetch: ^3.0.0
   peerDependencies:
@@ -285,7 +285,7 @@ __metadata:
     "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     history: ^5.3.0
-    nano-memoize: ^3.0.11
+    nano-memoize: ^3.0.12
     react: ^18.2.0
   peerDependencies:
     "@types/react": ^18.0.0
@@ -383,7 +383,7 @@ __metadata:
     readable-stream: ^4.4.0
     sass-loader: ^13.3.2
     sass-resources-loader: ^2.2.5
-    semver: ^7.5.1
+    semver: ^7.5.2
     stream-browserify: ^3.0.0
     stream-http: ^3.2.0
     string_decoder: ^1.3.0
@@ -18936,10 +18936,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^3.0.11":
-  version: 3.0.11
-  resolution: "nano-memoize@npm:3.0.11"
-  checksum: be0a91ee7e06feacb394e84ed4e5dcc71560d53deeb3c11fbebf9c8d906a6d6afdf7dcbfe94c3fc18848daa3550a31b6de6f27df063c6ca039bf781bb9484db9
+"nano-memoize@npm:^3.0.12":
+  version: 3.0.12
+  resolution: "nano-memoize@npm:3.0.12"
+  checksum: 28dbeb29e0010a30ad7b6002fc17888a97a6230b495883ec847486672f38db2c43799aa5adb20d8cc6f0904395a12fff59994b45eb7451741875cc3f8bb4fecd
   languageName: node
   linkType: hard
 
@@ -23768,14 +23768,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.x, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.1.3, semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.1":
-  version: 7.5.1
-  resolution: "semver@npm:7.5.1"
+"semver@npm:7.x, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.1.3, semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.1, semver@npm:^7.5.2":
+  version: 7.5.2
+  resolution: "semver@npm:7.5.2"
   dependencies:
     lru-cache: ^6.0.0
   bin:
     semver: bin/semver.js
-  checksum: d16dbedad53c65b086f79524b9ef766bf38670b2395bdad5c957f824dcc566b624988013564f4812bcace3f9d405355c3635e2007396a39d1bffc71cfec4a2fc
+  checksum: 3fdf5d1e6f170fe8bcc41669e31787649af91af7f54f05c71d0865bb7aa27e8b92f68b3e6b582483e2c1c648008bc84249d2cd86301771fe5cbf7621d1fe5375
   languageName: node
   linkType: hard
 
