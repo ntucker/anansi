@@ -211,7 +211,7 @@ function getManifestPathFromWebpackconfig(
   const manifestFilename: string =
     (
       webpackConfig?.plugins?.find(plugin => {
-        return plugin.constructor.name === 'StatsWriterPlugin';
+        return plugin?.constructor.name === 'StatsWriterPlugin';
       }) as any
     )?.opts?.filename ?? 'manifest.json';
 
