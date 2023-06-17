@@ -285,7 +285,7 @@ __metadata:
     "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     history: ^5.3.0
-    nano-memoize: ^3.0.12
+    nano-memoize: ^3.0.13
     react: ^18.2.0
   peerDependencies:
     "@types/react": ^18.0.0
@@ -10546,12 +10546,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:6.0.0":
-  version: 6.0.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.0.0"
+"conventional-changelog-conventionalcommits@npm:6.1.0":
+  version: 6.1.0
+  resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
   dependencies:
     compare-func: ^2.0.0
-  checksum: 40b9c731bc3d2e1c9d0c66c793768afa6d99826de24c458e527f1e189641d916b0dc5a195f10f4a5e974bf64b2919a5966b9818003ba0a32f723dfa292ad13cd
+  checksum: 4383a35cdf72f5964e194a1146e7f78276e301f73bd993b71627bb93586b6470d411b9613507ceb37e0fed0b023199c95e941541fa47172b4e6a7916fc3a53ff
   languageName: node
   linkType: hard
 
@@ -18936,10 +18936,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^3.0.12":
-  version: 3.0.12
-  resolution: "nano-memoize@npm:3.0.12"
-  checksum: 28dbeb29e0010a30ad7b6002fc17888a97a6230b495883ec847486672f38db2c43799aa5adb20d8cc6f0904395a12fff59994b45eb7451741875cc3f8bb4fecd
+"nano-memoize@npm:^3.0.13":
+  version: 3.0.13
+  resolution: "nano-memoize@npm:3.0.13"
+  checksum: ecc55a0d6d424aea28478c6244b2b43ada04940092044097471e176f876041381f2160d5f6610fe59ba39d850ea7c98b6324cd21c1061e7bb769a7f779749fb2
   languageName: node
   linkType: hard
 
@@ -23452,7 +23452,7 @@ __metadata:
     babel-plugin-module-resolver: 5.0.0
     babel-plugin-root-import: 6.6.0
     conventional-changelog-anansi: 0.2.0
-    conventional-changelog-conventionalcommits: 6.0.0
+    conventional-changelog-conventionalcommits: 6.1.0
     eslint: 8.43.0
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-import: 2.27.5
