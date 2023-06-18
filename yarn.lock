@@ -92,7 +92,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@^3.0.6, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@^3.0.7, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -115,7 +115,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.16.36, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.16.37, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -181,7 +181,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@^0.16.16, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.16.17, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -244,7 +244,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@^0.10.12, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@^0.10.13, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -276,7 +276,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@^0.7.35, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@^0.7.36, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -296,7 +296,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@^1.0.12, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@^1.0.13, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -333,7 +333,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@^15.0.22, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@^15.0.23, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -12745,8 +12745,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.2.8
     "@anansi/browserslist-config": ^1.4.3
-    "@anansi/eslint-plugin": ^0.16.16
-    "@anansi/webpack-config": ^15.0.22
+    "@anansi/eslint-plugin": ^0.16.17
+    "@anansi/webpack-config": ^15.0.23
     "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.22.5
     "@babel/runtime": 7.22.5
@@ -12793,12 +12793,12 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.2.8
     "@anansi/browserslist-config": ^1.4.3
-    "@anansi/cli": ^3.0.6
-    "@anansi/core": ^0.16.36
-    "@anansi/eslint-plugin": ^0.16.16
-    "@anansi/jest-preset": ^0.10.12
-    "@anansi/router": ^0.7.35
-    "@anansi/webpack-config": ^15.0.22
+    "@anansi/cli": ^3.0.7
+    "@anansi/core": ^0.16.37
+    "@anansi/eslint-plugin": ^0.16.17
+    "@anansi/jest-preset": ^0.10.13
+    "@anansi/router": ^0.7.36
+    "@anansi/webpack-config": ^15.0.23
     "@ant-design/cssinjs": 1.10.1
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.5
@@ -12855,9 +12855,9 @@ __metadata:
     "@anansi/babel-preset": ^4.2.8
     "@anansi/browserslist-config": ^1.4.3
     "@anansi/eslint-plugin": "workspace:^"
-    "@anansi/jest-preset": ^0.10.12
-    "@anansi/storybook": ^1.0.12
-    "@anansi/webpack-config": ^15.0.22
+    "@anansi/jest-preset": ^0.10.13
+    "@anansi/storybook": ^1.0.13
+    "@anansi/webpack-config": ^15.0.23
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1
     "@ant-design/pro-layout": 7.12.3

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.7](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.6...@anansi/cli@3.0.7) (2023-06-18)
+
+### 📦 Package
+
+* Update `commander` to v11 ([#2051](https://github.com/ntucker/anansi/issues/2051)) ([72c2907](https://github.com/ntucker/anansi/commit/72c2907beeaa9f25c197d47ae71b973c5066508e))
+
 ### [3.0.6](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.5...@anansi/cli@3.0.6) (2023-06-01)
 
 **Note:** Version bump only for package @anansi/cli

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.23](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.22...@anansi/webpack-config@15.0.23) (2023-06-18)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2047](https://github.com/ntucker/anansi/issues/2047)) ([f60424e](https://github.com/ntucker/anansi/commit/f60424e5082d255b4f064d53a9ac4ebfddb1be2a))
+* Update all non-major dependencies ([#2053](https://github.com/ntucker/anansi/issues/2053)) ([2fa2d4f](https://github.com/ntucker/anansi/commit/2fa2d4f26925f45f8b035e98cb082491a0f11f7d))
+* Update webpack packages ([#2048](https://github.com/ntucker/anansi/issues/2048)) ([a24c9f6](https://github.com/ntucker/anansi/commit/a24c9f6043d803705abf3da05b0775e91ffeb24a))
+
 ### [15.0.22](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.21...@anansi/webpack-config@15.0.22) (2023-06-11)
 
 ### 📦 Package
