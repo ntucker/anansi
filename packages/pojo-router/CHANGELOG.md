@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.80...@pojo-router/core@0.6.0) (2023-06-29)
+
+### 🚀 Features
+
+* Add useLocationSearch() ([7a291a9](https://github.com/ntucker/anansi/commit/7a291a9cd29e2a8167e4124b413845cab0ecc7c9))
+
 ### [0.5.80](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.79...@pojo-router/core@0.5.80) (2023-05-07)
 
 ### 📦 Package
