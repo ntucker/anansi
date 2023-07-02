@@ -6,6 +6,7 @@ export interface Route<ResolveWith, Match = any> {
   resolveData?: (
     resolveWith: ResolveWith,
     match: Match & Route<ResolveWith, Match>,
+    searchParams: URLSearchParams,
   ) => Promise<void>;
 }
 

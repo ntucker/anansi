@@ -4,6 +4,7 @@ import type { ResolveProps, ServerProps } from './types.js';
 
 type NeededProps<RouteWith> = {
   matchedRoutes: Route<RouteWith>[];
+  searchParams: URLSearchParams;
 } & ResolveProps;
 
 export default function prefetchSpout<F extends string>(field: F) {
@@ -25,7 +26,13 @@ export default function prefetchSpout<F extends string>(field: F) {
         const toFetch: Promise<unknown>[] = [];
         nextProps.matchedRoutes.forEach(route => {
           if (typeof route.resolveData === 'function') {
-            toFetch.push(route.resolveData(nextProps[field], route));
+            toFetch.push(
+              route.resolveData(
+                nextProps[field],
+                route,
+                nextProps.searchParams,
+              ),
+            );
           }
         });
         await Promise.all(toFetch);

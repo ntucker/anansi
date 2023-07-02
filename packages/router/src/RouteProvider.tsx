@@ -20,11 +20,11 @@ function RouteProvider<ResolveWith>({
   onChange,
 }: Props<ResolveWith>) {
   const preloadMatch = useCallback(
-    (match: Route<ResolveWith>) => {
+    (match: Route<ResolveWith>, search: URLSearchParams) => {
       // load component source
       if (match.component) match.component?.preload?.();
       // load component data
-      if (match.resolveData) match.resolveData(resolveWith, match);
+      if (match.resolveData) match.resolveData(resolveWith, match, search);
     },
     [resolveWith],
   );
@@ -35,7 +35,10 @@ function RouteProvider<ResolveWith>({
       // fetch as transition/render
       const matches = router.getMatchedRoutes(update.location.pathname);
       if (matches.length) {
-        matches.forEach(match => preloadMatch(match));
+        const search = new URLSearchParams(
+          update.location?.search?.substring?.(1),
+        );
+        matches.forEach(match => preloadMatch(match, search));
       }
 
       // transition begins

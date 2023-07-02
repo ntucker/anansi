@@ -12,6 +12,7 @@ export default function routerSpout<ResolveWith>(options: {
   Record<string, unknown>,
   {
     matchedRoutes: Route<ResolveWith>[];
+    searchParams: URLSearchParams;
   } & {
     router: RouteController<Route<ResolveWith, any>>;
   }
@@ -31,6 +32,8 @@ export default function routerSpout<ResolveWith>(options: {
 
   return next => async props => {
     const url = props.req.url || '';
+    const parts = url.split('?', 2);
+    const searchParams = new URLSearchParams(parts.length < 2 ? '' : parts[1]);
     const router = options.createRouter(
       createMemoryHistory({ initialEntries: [url] }),
     );
@@ -40,6 +43,7 @@ export default function routerSpout<ResolveWith>(options: {
       ...props,
       matchedRoutes,
       router,
+      searchParams,
     });
 
     const Router = createRouteComponent(router);
@@ -50,6 +54,7 @@ export default function routerSpout<ResolveWith>(options: {
       // TODO: figure out how to only inject in next and not have to also put here
       matchedRoutes,
       router,
+      searchParams,
     };
   };
 }
