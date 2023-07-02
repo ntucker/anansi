@@ -6,9 +6,9 @@ export function useLocation() {
   return useContext(LocationContext);
 }
 
-export function useLocationSearch<K extends string | undefined = undefined>(
+export function useLocationSearch<K extends string = ''>(
   key?: K,
-): (K extends string ? string : URLSearchParams) | null {
+): (K extends '' ? URLSearchParams : string) | null {
   const location = useLocation();
   const search = new URLSearchParams(location?.search?.substring?.(1));
   if (key) return search.get(key) as any;
