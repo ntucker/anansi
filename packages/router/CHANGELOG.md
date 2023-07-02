@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.37...@anansi/router@0.8.0) (2023-07-02)
+
+### 🚀 Features
+
+* Add searchParams as third arg to resolveData ([dfe6a56](https://github.com/ntucker/anansi/commit/dfe6a5636de4c0f5c24c35f62de7170b8e1033c5))
+
 ### [0.7.37](https://github.com/ntucker/anansi/compare/@anansi/router@0.7.36...@anansi/router@0.7.37) (2023-06-29)
 
 **Note:** Version bump only for package @anansi/router
