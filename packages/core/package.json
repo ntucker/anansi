@@ -87,7 +87,7 @@
     "@rest-hooks/ssr": "^0.7.11",
     "chalk": "^4.1.2",
     "compression": "^1.7.4",
-    "cross-fetch": "^3.1.6",
+    "cross-fetch": "^3.1.8",
     "enhanced-resolve": "^5.15.0",
     "express": "^4.18.2",
     "fs-require": "^1.6.0",
