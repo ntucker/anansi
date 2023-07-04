@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.17.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.1...@anansi/core@0.17.2) (2023-07-04)
+
+### 📦 Package
+
+* Update `cross-fetch` to v4 ([#2069](https://github.com/ntucker/anansi/issues/2069)) ([73a92b3](https://github.com/ntucker/anansi/commit/73a92b3468a9f3f55199e38f0001c916e62f3979))
+* Update all non-major dependencies ([#2066](https://github.com/ntucker/anansi/issues/2066)) ([1bf7605](https://github.com/ntucker/anansi/commit/1bf7605e9976aeae7a1a908254df1e63d5da399b))
+
 ### [0.17.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.0...@anansi/core@0.17.1) (2023-07-02)
 
 **Note:** Version bump only for package @anansi/core
