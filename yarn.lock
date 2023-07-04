@@ -136,7 +136,7 @@ __metadata:
     "@types/webpack-node-externals": ^3
     chalk: ^4.1.2
     compression: ^1.7.4
-    cross-fetch: ^3.1.8
+    cross-fetch: ^4.0.0
     enhanced-resolve: ^5.15.0
     express: ^4.18.2
     fs-require: ^1.6.0
@@ -254,7 +254,7 @@ __metadata:
     babel-jest: ^29.5.0
     copyfiles: 2.4.1
     core-js: ^3.21.0
-    cross-fetch: ^3.1.8
+    cross-fetch: ^4.0.0
     identity-obj-proxy: ^3.0.0
     jest-pnp-resolver: ^1.2.3
     mitt: ^3.0.0
@@ -10932,12 +10932,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-fetch@npm:^3.1.8":
-  version: 3.1.8
-  resolution: "cross-fetch@npm:3.1.8"
+"cross-fetch@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "cross-fetch@npm:4.0.0"
   dependencies:
     node-fetch: ^2.6.12
-  checksum: 78f993fa099eaaa041122ab037fe9503ecbbcb9daef234d1d2e0b9230a983f64d645d088c464e21a247b825a08dc444a6e7064adfa93536d3a9454b4745b3632
+  checksum: ecca4f37ffa0e8283e7a8a590926b66713a7ef7892757aa36c2d20ffa27b0ac5c60dcf453119c809abe5923fc0bae3702a4d896bfb406ef1077b0d0018213e24
   languageName: node
   linkType: hard
 
