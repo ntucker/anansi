@@ -130,7 +130,7 @@ __metadata:
     "@ant-design/cssinjs": ^1.7.1
     "@babel/runtime": ^7.17.0
     "@rest-hooks/react": ^7.2.9
-    "@rest-hooks/redux": ^6.3.5
+    "@rest-hooks/redux": ^7.0.0
     "@rest-hooks/ssr": ^0.7.11
     "@types/compression": 1.7.2
     "@types/express": ^4.17.17
@@ -162,7 +162,7 @@ __metadata:
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1
     "@rest-hooks/react": ^6.0.0 || ^7.0.0
-    "@rest-hooks/redux": ^6.0.0
+    "@rest-hooks/redux": ^6.0.0 || ^7.0.0
     "@types/react": ^17.0.40 || ^18.0.0
     "@types/react-dom": ^17.0.40 || ^18.0.0
     react: ^18.0.0
@@ -3228,6 +3228,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@data-client/core@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@data-client/core@npm:0.2.0"
+  dependencies:
+    "@babel/runtime": ^7.17.0
+    "@data-client/normalizr": ^0.2.0
+    flux-standard-action: ^2.1.1
+  checksum: feda7a5708b502525c6435623dcabfa2ac486d8340c75342ba6b3d300eab10a34a2ca831098e7c7d5b4d74b616c8281b7ce1732870b4ece8d3da3dd54a274475
+  languageName: node
+  linkType: hard
+
 "@data-client/endpoint@npm:^0.1.0":
   version: 0.1.0
   resolution: "@data-client/endpoint@npm:0.1.0"
@@ -3269,6 +3280,15 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.0
   checksum: eef026297a15a39466f0938d3adacd7b914e7036fcb8a7f0f373287ca79632ecff646e26091d44f6961be77b983eeac1a0785eed058874428a999bbefb385a1c
+  languageName: node
+  linkType: hard
+
+"@data-client/normalizr@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@data-client/normalizr@npm:0.2.0"
+  dependencies:
+    "@babel/runtime": ^7.17.0
+  checksum: 568c08fb251df389d0d6400047898254cc81dab1250c7a08d6f79847b2ef812637956be9b8d8cab0c1401d69b6c321336bbf6ab888a837d792ce10947b6fdab8
   languageName: node
   linkType: hard
 
@@ -5109,17 +5129,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/core@npm:^4.4.2":
-  version: 4.4.2
-  resolution: "@rest-hooks/core@npm:4.4.2"
-  dependencies:
-    "@babel/runtime": ^7.17.0
-    "@rest-hooks/normalizr": ^11.0.1
-    flux-standard-action: ^2.1.1
-  checksum: eeb8717d059b3168e2b5833f414bb77ed85b31d400551407a80749a0e590ff3ef0a713477d79c072a430ac8bada5770be360d02195769f5b5f6759c2be8d7589
-  languageName: node
-  linkType: hard
-
 "@rest-hooks/endpoint@npm:3.8.5, @rest-hooks/endpoint@npm:^3.7.4":
   version: 3.8.5
   resolution: "@rest-hooks/endpoint@npm:3.8.5"
@@ -5164,15 +5173,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/normalizr@npm:^11.0.1":
-  version: 11.0.1
-  resolution: "@rest-hooks/normalizr@npm:11.0.1"
-  dependencies:
-    "@babel/runtime": ^7.17.0
-  checksum: b3980ae78cd5f3048757a6b088955b5f2ca52b8d116af1b37cbfc0e423528064d9539c84f9abafecffc06a3b51a7dbfa220b4106eee9eb801b49a9b4ab9d7130
-  languageName: node
-  linkType: hard
-
 "@rest-hooks/react@npm:7.4.3, @rest-hooks/react@npm:^7.2.9":
   version: 7.4.3
   resolution: "@rest-hooks/react@npm:7.4.3"
@@ -5182,21 +5182,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/redux@npm:6.3.7, @rest-hooks/redux@npm:^6.3.5":
-  version: 6.3.7
-  resolution: "@rest-hooks/redux@npm:6.3.7"
+"@rest-hooks/redux@npm:7.0.0, @rest-hooks/redux@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@rest-hooks/redux@npm:7.0.0"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@rest-hooks/core": ^4.4.2
+    "@data-client/core": ^0.2.0
   peerDependencies:
-    "@rest-hooks/react": ^0.1.0 || ^0.2.0 || ^6.0.0 || ^7.0.0
+    "@rest-hooks/react": ^7.0.0 || ^8.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0
     redux: ^4.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 1f3377dba68a47d102a4a7d4c22aae745dbecd0defc15899611a99c45c15c97271a4c9aae5e20629d54535c7a32432feed3d10dc33197c9522049744980ca4bc
+  checksum: bc2da7f5e793c60cc6344082863400f155e185a347064ef289169dda26be0e6ab5a15805f1ea6d1324c14b113be71447456adca40c346abf6f77778fdd92acec
   languageName: node
   linkType: hard
 
@@ -12901,7 +12901,7 @@ __metadata:
     "@rest-hooks/hooks": 3.1.15
     "@rest-hooks/img": 0.8.12
     "@rest-hooks/react": 7.4.3
-    "@rest-hooks/redux": 6.3.7
+    "@rest-hooks/redux": 7.0.0
     "@rest-hooks/rest": 6.7.2
     "@rest-hooks/test": 10.3.7
     "@types/babel__core": 7.20.1
