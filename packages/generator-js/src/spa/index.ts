@@ -59,18 +59,18 @@ export default class extends InstallPeersMixin(BetterGenerator) {
       this.addDevDependencies([
         '@types/react',
         '@types/react-dom',
-        '@rest-hooks/test',
+        '@data-client/test',
         '@types/react-test-renderer',
         'react-test-renderer',
         'react-refresh',
       ]),
       await this.addDependencies([
         '@anansi/router',
-        '@rest-hooks/react',
-        '@rest-hooks/rest',
+        '@data-client/react',
+        '@data-client/rest',
         'react',
         'react-dom',
-        '@rest-hooks/img',
+        '@data-client/img',
         'history',
       ]),
     ]);

@@ -1,5 +1,5 @@
-import { CacheProvider } from '@rest-hooks/react';
-import { FixtureEndpoint, mockInitialState } from '@rest-hooks/test';
+import { CacheProvider } from '@data-client/react';
+import { FixtureEndpoint, mockInitialState } from '@data-client/test';
 import React, { Suspense } from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';

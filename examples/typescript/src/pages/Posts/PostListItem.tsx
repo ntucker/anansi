@@ -1,5 +1,5 @@
 import { EditOutlined } from '@ant-design/icons';
-import { useSuspense } from '@rest-hooks/react';
+import { useSuspense } from '@data-client/react';
 import { List, Avatar } from 'antd';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';

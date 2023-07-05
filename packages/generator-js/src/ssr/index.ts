@@ -22,7 +22,7 @@ export default class extends InstallPeersMixin(BetterGenerator) {
       this.addDependencies([
         '@anansi/cli',
         '@anansi/core',
-        '@rest-hooks/redux',
+        '@data-client/redux',
         'redux',
       ]),
     ]);

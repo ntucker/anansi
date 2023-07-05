@@ -1,5 +1,5 @@
 import { type StoryObj } from '@storybook/react';
-import { MockResolver } from '@rest-hooks/test';
+import { MockResolver } from '@data-client/test';
 import { ExchangeRatesFixtures } from 'api/ExchangeRates';
 
 import Price from './AssetPrice';

@@ -1,4 +1,4 @@
-import { CacheProvider } from '@rest-hooks/react';
+import { CacheProvider } from '@data-client/react';
 import ReactDOM from 'react-dom/client';
 import { Router, RouteChildrenProps } from 'react-router-dom';
 

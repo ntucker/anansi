@@ -1,4 +1,4 @@
-import { useController, AsyncBoundary } from '@rest-hooks/react';
+import { useController, AsyncBoundary } from '@data-client/react';
 import {
   floodSpouts,
   documentSpout,

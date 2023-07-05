@@ -1,6 +1,6 @@
 import { lazy, Route } from '@anansi/router';
-import { getImage } from '@rest-hooks/img';
-import { Controller } from '@rest-hooks/react';
+import { getImage } from '@data-client/img';
+import { Controller } from '@data-client/react';
 
 import {
   CommentResource,
@@ -89,6 +89,7 @@ export const routes: Route<Controller>[] = [
     component: lazyPage('UserDetail'),
     resolveData: async (controller: Controller, match: { id: string }) => {
       if (match) {
+        // this lets us use the getters defined in User based on `id`
         const fakeUser = User.fromJS({
           id: Number.parseInt(match.id, 10),
         });

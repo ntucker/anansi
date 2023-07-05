@@ -1,1 +1,1 @@
-export { CacheProvider } from '@rest-hooks/react';
+export { CacheProvider } from '@data-client/react';

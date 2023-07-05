@@ -1,4 +1,4 @@
-import { useLive } from '@rest-hooks/react';
+import { useLive } from '@data-client/react';
 import { getExchangeRates } from 'api/ExchangeRates';
 
 export interface Props {
@@ -11,7 +11,7 @@ export default function AssetPrice({ symbol }: Props) {
   const { data: price } = useLive(getExchangeRates, {
     currency: 'USD',
   });
-  const displayPrice = formatPrice.format(1 / Number.parseFloat(price.rates[symbol]));
+  const displayPrice = formatPrice.format(1 / price.rates[symbol]);
   return (
     <span>
       {symbol} {displayPrice}

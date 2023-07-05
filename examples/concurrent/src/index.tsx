@@ -6,7 +6,7 @@ import {
   JSONSpout,
   appSpout,
 } from '@anansi/core';
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 
 import app from 'app';
 

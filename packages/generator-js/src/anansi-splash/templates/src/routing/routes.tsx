@@ -1,6 +1,6 @@
-import { Controller } from '@rest-hooks/react';
+import { Controller } from '@data-client/react';
 import { lazy, Route } from '@anansi/router';
-import { getImage } from '@rest-hooks/img';
+import { getImage } from '@data-client/img';
 import { getExchangeRates } from 'api/ExchangeRates';
 
 const lazyPage = (pageName: string) =>

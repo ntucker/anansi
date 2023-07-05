@@ -1,4 +1,4 @@
-import { CacheProvider, AsyncBoundary } from '@rest-hooks/react';
+import { CacheProvider, AsyncBoundary } from '@data-client/react';
 
 export const decorators = [
   (Story: React.FC) => (

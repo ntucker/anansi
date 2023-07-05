@@ -1,5 +1,5 @@
 import { PageHeader } from '@ant-design/pro-layout';
-import { useController, useSuspense } from '@rest-hooks/react';
+import { useController, useSuspense } from '@data-client/react';
 import { RouteChildrenProps } from 'react-router-dom';
 
 import { PostResource } from 'data/resources';

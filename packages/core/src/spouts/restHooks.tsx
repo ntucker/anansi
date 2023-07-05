@@ -1,4 +1,4 @@
-import { type Manager } from '@rest-hooks/react';
+import { type Manager } from '@data-client/react';
 
 import type { ClientSpout } from './types.js';
 

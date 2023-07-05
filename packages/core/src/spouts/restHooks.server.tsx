@@ -1,4 +1,4 @@
-import { type Controller, type Manager, type State } from '@rest-hooks/react';
+import { type Controller, type Manager, type State } from '@data-client/react';
 import type { Store } from 'redux';
 
 import type { ServerSpout } from './types.js';
@@ -14,9 +14,9 @@ export default function restHooksSpout(
 > {
   return next => async props => {
     const managers = options?.getManagers?.() ?? [
-      new (await import('@rest-hooks/react')).NetworkManager(),
+      new (await import('@data-client/react')).NetworkManager(),
     ];
-    const { createPersistedStore } = await import('@rest-hooks/ssr');
+    const { createPersistedStore } = await import('@data-client/ssr');
     const [ServerCacheProvider, useReadyCacheState, controller, store] =
       createPersistedStore(managers);
 

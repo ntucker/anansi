@@ -1,6 +1,6 @@
-import { Controller } from '@rest-hooks/core';
+import { Controller } from '@data-client/core';
 import { lazy, Route } from '@anansi/router';
-import { getImage } from '@rest-hooks/img';
+import { getImage } from '@data-client/img';
 
 const lazyPage = (pageName: string) =>
   lazy(

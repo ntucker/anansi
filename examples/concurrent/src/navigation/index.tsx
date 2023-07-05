@@ -1,5 +1,5 @@
 import { MatchedRoute } from '@anansi/router';
-import { AsyncBoundary } from '@rest-hooks/react';
+import { AsyncBoundary } from '@data-client/react';
 import { memo } from 'react';
 
 import Nav from './Nav';

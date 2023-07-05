@@ -1,4 +1,4 @@
-import { Entity } from '@rest-hooks/rest';
+import { Entity } from '@data-client/rest';
 
 abstract class StaticEntity extends Entity {
   static a: string;

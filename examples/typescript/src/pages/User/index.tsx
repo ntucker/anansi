@@ -1,4 +1,4 @@
-import { useSuspense } from '@rest-hooks/react';
+import { useSuspense } from '@data-client/react';
 import { Typography } from 'antd';
 import { RouteChildrenProps } from 'react-router-dom';
 

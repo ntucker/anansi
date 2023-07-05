@@ -1,5 +1,5 @@
-import { useController } from '@rest-hooks/react';
-import { schema } from '@rest-hooks/rest';
+import { useController } from '@data-client/react';
+import { schema } from '@data-client/rest';
 import React, {
   createContext,
   memo,

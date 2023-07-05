@@ -1,5 +1,5 @@
 import { InfoCircleOutlined, IssuesCloseOutlined } from '@ant-design/icons';
-import { RestGenerics } from '@rest-hooks/rest';
+import { RestGenerics } from '@data-client/rest';
 import React from 'react';
 
 import { GithubEndpoint, GithubEntity, createGithubResource } from './Base';

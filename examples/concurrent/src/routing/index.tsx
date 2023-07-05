@@ -16,7 +16,7 @@ export function createRouter(history: History) {
 
 /*
 import { Route, RouteProvider } from '@anansi/router';
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 import { useContext, useMemo } from 'react';
 import { demoContext } from '../app/demo';
 

@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { mockInitialState } from '@rest-hooks/test';
+import { mockInitialState } from '@data-client/test';
 import { ExchangeRatesFixtures } from 'api/ExchangeRates';
 
 import RootProvider from '../RootProvider';

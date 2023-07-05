@@ -1,4 +1,4 @@
-import { AsyncBoundary, CacheProvider } from '@rest-hooks/react';
+import { AsyncBoundary, CacheProvider } from '@data-client/react';
 import type { ReactNode } from 'react';
 
 import { DemoProvider } from './demo';

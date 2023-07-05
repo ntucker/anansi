@@ -1,5 +1,5 @@
 import { MemoryRouter } from 'react-router-dom';
-import { AsyncBoundary, CacheProvider, NetworkManager } from '@rest-hooks/react';
+import { AsyncBoundary, CacheProvider, NetworkManager } from '@data-client/react';
 import 'style/main.scss';
 
 

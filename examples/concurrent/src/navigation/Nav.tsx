@@ -7,7 +7,7 @@ import {
   ControlOutlined,
   StopOutlined,
 } from '@ant-design/icons';
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 import { Menu, Layout, Switch, MenuProps } from 'antd';
 import { memo, useContext } from 'react';
 

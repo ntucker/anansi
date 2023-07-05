@@ -1,5 +1,5 @@
-import { Img } from '@rest-hooks/img';
-import { useSuspense } from '@rest-hooks/react';
+import { Img } from '@data-client/img';
+import { useSuspense } from '@data-client/react';
 import { Card, Avatar } from 'antd';
 
 import { CommentResource, Comment } from 'resources/Discuss';

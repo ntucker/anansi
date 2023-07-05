@@ -23,7 +23,7 @@ This script uses two entry points for client/server.
 <details open><summary>index.server.tsx</summary>
 
 ```tsx
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 import {
   laySpouts,
   documentSpout,
@@ -58,7 +58,7 @@ export default laySpouts(spouts);
 <details open><summary>index.tsx</summary>
 
 ```tsx
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 import {
   floodSpouts,
   documentSpout,

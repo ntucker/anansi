@@ -8,7 +8,7 @@ import {
   appSpout,
   antdSpout,
 } from '@anansi/core/server';
-import { useController } from '@rest-hooks/react';
+import { useController } from '@data-client/react';
 
 import app from 'app';
 

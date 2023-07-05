@@ -1,5 +1,5 @@
-import { Img } from '@rest-hooks/img';
-import { AsyncBoundary, useSuspense } from '@rest-hooks/react';
+import { Img } from '@data-client/img';
+import { AsyncBoundary, useSuspense } from '@data-client/react';
 import { Card, Avatar } from 'antd';
 
 import PostList from 'pages/Posts';
