@@ -63,7 +63,7 @@
     "cross-fetch": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-pnp-resolver": "^1.2.3",
-    "mitt": "^3.0.0",
+    "mitt": "^3.0.1",
     "node-fetch": "^3.3.1",
     "semver": "^7.5.3",
     "ts-jest": "^29.1.1",

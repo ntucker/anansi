@@ -264,7 +264,7 @@ __metadata:
     cross-fetch: ^4.0.0
     identity-obj-proxy: ^3.0.0
     jest-pnp-resolver: ^1.2.3
-    mitt: ^3.0.0
+    mitt: ^3.0.1
     node-fetch: ^3.3.1
     semver: ^7.5.3
     ts-jest: ^29.1.1
@@ -460,9 +460,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.11.0, @ant-design/cssinjs@npm:^1.10.1, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
-  version: 1.11.0
-  resolution: "@ant-design/cssinjs@npm:1.11.0"
+"@ant-design/cssinjs@npm:1.11.1, @ant-design/cssinjs@npm:^1.10.1, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
+  version: 1.11.1
+  resolution: "@ant-design/cssinjs@npm:1.11.1"
   dependencies:
     "@babel/runtime": ^7.11.1
     "@emotion/hash": ^0.8.0
@@ -474,7 +474,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: fb2f76953543f86458f8fc5beddb8fb208f15e7873e8774ae5f87691c83b8d0e886e88bb2887774401df1fdb3a00e8d9f507199883e0918389468d0153414d81
+  checksum: ce51faf9ceb7658117e8e3b71144c171bce1bf8b1a0458e5f76af472af7fd124560a226a606ca80dc74ec52ab0f5cb98c82dcd825a82ef5953014a1104400b4f
   languageName: node
   linkType: hard
 
@@ -3246,13 +3246,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@data-client/graphql@npm:0.1.0"
+"@data-client/graphql@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@data-client/graphql@npm:0.2.0"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.1.0
-  checksum: 7bba9c2ee8885268eae7484f315da6dee5331fbd91c81f00d49fc636ff2557f92c750c0773fb8ae079fe0e1afa1f8db8ee59a3a58a983cb861c0d9b854c4eba4
+    "@data-client/endpoint": ^0.2.0
+  checksum: 680117a9be511739484af419948895327c31d2023fd93e65f46590dd6d8d5708752d8aa5cf05e73e8f7b24f968c7446a5001238ed392e2c5727b52f261190a97
   languageName: node
   linkType: hard
 
@@ -5145,12 +5145,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/graphql@npm:0.5.3":
-  version: 0.5.3
-  resolution: "@rest-hooks/graphql@npm:0.5.3"
+"@rest-hooks/graphql@npm:0.6.0":
+  version: 0.6.0
+  resolution: "@rest-hooks/graphql@npm:0.6.0"
   dependencies:
-    "@data-client/graphql": ^0.1.0
-  checksum: ff2a2b649617b0648415ce166f440534c90c79ddfae11c2fb95b794fee92b22226a2e4e4d378f699f8c91852312dc11523a752100909781495eb3e05c20ed7ea
+    "@data-client/graphql": ^0.2.0
+  checksum: e431ace7c7f45f01b990c4d0b7d82537228483947ff7d5ab391f8f4ccdefa0cf49c67cacf7226b63b68c8b02ae9c0da5e888486829f07b951c1a5eb732a8eaf2
   languageName: node
   linkType: hard
 
@@ -12897,7 +12897,7 @@ __metadata:
     "@anansi/jest-preset": ^0.10.15
     "@anansi/router": ^0.8.1
     "@anansi/webpack-config": ^15.0.25
-    "@ant-design/cssinjs": 1.11.0
+    "@ant-design/cssinjs": 1.11.1
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.6
     "@babel/runtime": 7.22.6
@@ -12961,7 +12961,7 @@ __metadata:
     "@ant-design/pro-layout": 7.12.3
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.22.6
-    "@rest-hooks/graphql": 0.5.3
+    "@rest-hooks/graphql": 0.6.0
     "@rest-hooks/react": 8.0.0
     "@rest-hooks/rest": 7.0.0
     "@rest-hooks/test": 10.3.7
@@ -18872,10 +18872,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mitt@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "mitt@npm:3.0.0"
-  checksum: f7be5049d27d18b1dbe9408452d66376fa60ae4a79fe9319869d1b90ae8cbaedadc7e9dab30b32d781411256d468be5538996bb7368941c09009ef6bbfa6bfc7
+"mitt@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mitt@npm:3.0.1"
+  checksum: b55a489ac9c2949ab166b7f060601d3b6d893a852515ae9eca4e11df01c013876df777ea109317622b5c1c60e8aae252558e33c8c94e14124db38f64a39614b1
   languageName: node
   linkType: hard
 
