@@ -3237,6 +3237,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@data-client/endpoint@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@data-client/endpoint@npm:0.2.0"
+  dependencies:
+    "@babel/runtime": ^7.17.0
+  checksum: 2de4d69bc29ea7eb24ce9948a0f5c7ae5ec9549054be7f373a5cedaece538e17911c25ca911e59fe071f0ac54aa00a5793481267a78aa43eca98b2eea8992c8a
+  languageName: node
+  linkType: hard
+
 "@data-client/graphql@npm:^0.1.0":
   version: 0.1.0
   resolution: "@data-client/graphql@npm:0.1.0"
@@ -5118,7 +5127,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/endpoint@npm:3.8.5, @rest-hooks/endpoint@npm:^3.7.4":
+"@rest-hooks/endpoint@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@rest-hooks/endpoint@npm:4.0.0"
+  dependencies:
+    "@data-client/endpoint": ^0.2.0
+  checksum: 5a07ee9266256b9ceca58e2097579dcd494347f487e3dba5de5d45155bfdad616ed049bed0fbae27606fbc3f569afe76d6db6f827a49404a189015a953db8c92
+  languageName: node
+  linkType: hard
+
+"@rest-hooks/endpoint@npm:^3.7.4":
   version: 3.8.5
   resolution: "@rest-hooks/endpoint@npm:3.8.5"
   dependencies:
@@ -12886,7 +12904,7 @@ __metadata:
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
     "@linaria/shaker": 4.2.11
-    "@rest-hooks/endpoint": 3.8.5
+    "@rest-hooks/endpoint": 4.0.0
     "@rest-hooks/hooks": 3.1.15
     "@rest-hooks/img": 0.8.12
     "@rest-hooks/react": 8.0.0
