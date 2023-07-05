@@ -60,7 +60,7 @@
     "@linaria/core": "4.2.10",
     "@linaria/react": "4.3.8",
     "@linaria/shaker": "4.2.11",
-    "@rest-hooks/endpoint": "3.8.5",
+    "@rest-hooks/endpoint": "4.0.0",
     "@rest-hooks/hooks": "3.1.15",
     "@rest-hooks/img": "0.8.12",
     "@rest-hooks/react": "8.0.0",
