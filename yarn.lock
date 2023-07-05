@@ -3310,14 +3310,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@data-client/rest@npm:0.1.0"
+"@data-client/rest@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@data-client/rest@npm:0.2.0"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.1.0
+    "@data-client/endpoint": ^0.2.0
     path-to-regexp: ^6.2.1
-  checksum: 4cf68384c0fa07ed81fa29814a7e9e38ef9a212f3a22ae7e3e1efacec49e33096c3a078a7249133266cb1cbf98b3fe0b8c9901ae518b5ef41688bd6b4b4eeda0
+  checksum: dc58a6a57ecd3c3a2153b15cffce76a3329bd8edabd378f31adacbcfe9204ed1c841ddacb7f7d53f6b845b47ca2a371b26ee434d064b05f114c9fe0a9b8570de
   languageName: node
   linkType: hard
 
@@ -5207,12 +5207,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rest-hooks/rest@npm:6.7.2":
-  version: 6.7.2
-  resolution: "@rest-hooks/rest@npm:6.7.2"
+"@rest-hooks/rest@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@rest-hooks/rest@npm:7.0.0"
   dependencies:
-    "@data-client/rest": ^0.1.0
-  checksum: 917512f46e937747a2b70f5bd1bfb8b0cefe1f6ab0fe24b435930e1156eedd3c832721c6cbef0382e63a9952a684cbb4a1908e3d2e1ceef1530da016cd70286b
+    "@data-client/rest": ^0.2.0
+  checksum: 2a99df6dde0580fa9947833b5b06a0d14cba4b5b9eb8f277b95a1c2e049ed148b7c503eebf946c286e2cfe6630295aca132726a69964a34c565fb00e8b031d0f
   languageName: node
   linkType: hard
 
@@ -12909,7 +12909,7 @@ __metadata:
     "@rest-hooks/img": 0.8.12
     "@rest-hooks/react": 8.0.0
     "@rest-hooks/redux": 7.0.0
-    "@rest-hooks/rest": 6.7.2
+    "@rest-hooks/rest": 7.0.0
     "@rest-hooks/test": 10.3.7
     "@types/babel__core": 7.20.1
     "@types/classnames": 2.3.1
@@ -12963,7 +12963,7 @@ __metadata:
     "@babel/runtime": 7.22.6
     "@rest-hooks/graphql": 0.5.3
     "@rest-hooks/react": 8.0.0
-    "@rest-hooks/rest": 6.7.2
+    "@rest-hooks/rest": 7.0.0
     "@rest-hooks/test": 10.3.7
     "@storybook/addon-essentials": 7.0.25
     "@storybook/addon-links": 7.0.25
