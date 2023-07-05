@@ -58,7 +58,7 @@
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
     "@types/babel__core": "^7.20.1",
-    "babel-jest": "^29.5.0",
+    "babel-jest": "^29.6.0",
     "core-js": "^3.21.0",
     "cross-fetch": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
@@ -66,7 +66,7 @@
     "mitt": "^3.0.0",
     "node-fetch": "^3.3.1",
     "semver": "^7.5.3",
-    "ts-jest": "^29.1.0",
+    "ts-jest": "^29.1.1",
     "whatwg-fetch": "^3.0.0"
   },
   "peerDependencies": {
