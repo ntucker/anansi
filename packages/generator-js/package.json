@@ -73,7 +73,7 @@
     "ejs": "^3.1.9",
     "execa": "^7.1.1",
     "gulp-filter": "^7.0.0",
-    "gulp-prettier": "^4.0.0",
+    "gulp-prettier": "^5.0.0",
     "import-meta-resolve": "^3.0.0",
     "mem-fs": "^3.0.0",
     "mem-fs-editor": "^10.0.2",
