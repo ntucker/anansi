@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.2...@anansi/core@0.18.0) (2023-07-06)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* This library now depends on @data-client, rather than
+@rest-hooks. Version 0.1.0 is fully compatible with @rest-hooks/react@7
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+* Support 0.4 of data-client ([68e3452](https://github.com/ntucker/anansi/commit/68e34520e727d7948a26b2dec73918f2738ae372))
+
+### 📦 Package
+
+* Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
+* Update `@rest-hooks/redux` to v7 ([#2075](https://github.com/ntucker/anansi/issues/2075)) ([2393660](https://github.com/ntucker/anansi/commit/2393660b45c5a2f3b97f5455cdd397114d1aa652))
+
 ### [0.17.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.1...@anansi/core@0.17.2) (2023-07-04)
 
 ### 📦 Package

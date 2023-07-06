@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.53](https://github.com/ntucker/anansi/compare/example-react-18@4.2.52...example-react-18@4.2.53) (2023-07-06)
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+
+### 📦 Package
+
+* Update `@rest-hooks/endpoint` to v4 ([#2076](https://github.com/ntucker/anansi/issues/2076)) ([f9761bb](https://github.com/ntucker/anansi/commit/f9761bb6288ea5cf283bdad12e4c55fb669f20b2))
+* Update `@rest-hooks/endpoint` to v4.0.1 ([#2080](https://github.com/ntucker/anansi/issues/2080)) ([15d06d7](https://github.com/ntucker/anansi/commit/15d06d71cbe5b14d96af9902807197ad79a7e181))
+* Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
+* Update `@rest-hooks/redux` to v7 ([#2075](https://github.com/ntucker/anansi/issues/2075)) ([2393660](https://github.com/ntucker/anansi/commit/2393660b45c5a2f3b97f5455cdd397114d1aa652))
+* Update `@rest-hooks/rest` to v7 ([#2077](https://github.com/ntucker/anansi/issues/2077)) ([c1d66d3](https://github.com/ntucker/anansi/commit/c1d66d3d7f4a1d7645c244cf281316aa23c51c79))
+* Update all non-major dependencies ([#2079](https://github.com/ntucker/anansi/issues/2079)) ([8c3e824](https://github.com/ntucker/anansi/commit/8c3e824cdd26a002da6152827db982365118ed20))
+* Update babel packages ([#2081](https://github.com/ntucker/anansi/issues/2081)) ([f279266](https://github.com/ntucker/anansi/commit/f279266dfcb73ceaafb63c7978f794d3a16be41c))
+* Update JS test packages ([#2072](https://github.com/ntucker/anansi/issues/2072)) ([ea239d9](https://github.com/ntucker/anansi/commit/ea239d9fc9c9fcf2a34916592456fe789a22ebc3))
+* Update JS test packages to ^29.6.1 ([#2084](https://github.com/ntucker/anansi/issues/2084)) ([8e07d96](https://github.com/ntucker/anansi/commit/8e07d96df3d3d6a29d8f894235c79653967d2b8d))
+* Update linting packages ([#2071](https://github.com/ntucker/anansi/issues/2071)) ([f62f2ec](https://github.com/ntucker/anansi/commit/f62f2ecb64598acd9989364d38b4c81f1766d137))
+
 ### [4.2.52](https://github.com/ntucker/anansi/compare/example-react-18@4.2.51...example-react-18@4.2.52) (2023-07-04)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.6...@anansi/generator-js@12.0.7) (2023-07-06)
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+
 ### [12.0.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.5...@anansi/generator-js@12.0.6) (2023-06-01)
 
 ### 📦 Package

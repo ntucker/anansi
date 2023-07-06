@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.31](https://github.com/ntucker/anansi/compare/example-typescript@11.1.30...example-typescript@11.1.31) (2023-07-06)
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+
+### 📦 Package
+
+* Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
+* Update `@rest-hooks/rest` to v7 ([#2077](https://github.com/ntucker/anansi/issues/2077)) ([c1d66d3](https://github.com/ntucker/anansi/commit/c1d66d3d7f4a1d7645c244cf281316aa23c51c79))
+* Update all non-major dependencies ([#2079](https://github.com/ntucker/anansi/issues/2079)) ([8c3e824](https://github.com/ntucker/anansi/commit/8c3e824cdd26a002da6152827db982365118ed20))
+* Update babel packages ([#2081](https://github.com/ntucker/anansi/issues/2081)) ([f279266](https://github.com/ntucker/anansi/commit/f279266dfcb73ceaafb63c7978f794d3a16be41c))
+* Update JS test packages ([#2072](https://github.com/ntucker/anansi/issues/2072)) ([ea239d9](https://github.com/ntucker/anansi/commit/ea239d9fc9c9fcf2a34916592456fe789a22ebc3))
+* Update JS test packages to ^29.6.1 ([#2084](https://github.com/ntucker/anansi/issues/2084)) ([8e07d96](https://github.com/ntucker/anansi/commit/8e07d96df3d3d6a29d8f894235c79653967d2b8d))
+* Update storybook monorepo to v7.0.26 ([#2078](https://github.com/ntucker/anansi/issues/2078)) ([ef8c033](https://github.com/ntucker/anansi/commit/ef8c033f91461530549d6fdc83d55e7e9c634275))
+
 ### [11.1.30](https://github.com/ntucker/anansi/compare/example-typescript@11.1.29...example-typescript@11.1.30) (2023-07-04)
 
 ### 📦 Package

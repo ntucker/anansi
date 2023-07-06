@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@1.0.15...@anansi/storybook@2.0.0) (2023-07-06)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* This library now depends on @data-client, rather than
+@rest-hooks. Version 0.1.0 is fully compatible with @rest-hooks/react@7
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+* Support 0.4 of data-client ([68e3452](https://github.com/ntucker/anansi/commit/68e34520e727d7948a26b2dec73918f2738ae372))
+
+### 📦 Package
+
+* Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
+* Update storybook monorepo to v7.0.26 ([#2078](https://github.com/ntucker/anansi/issues/2078)) ([ef8c033](https://github.com/ntucker/anansi/commit/ef8c033f91461530549d6fdc83d55e7e9c634275))
+
 ### [1.0.15](https://github.com/ntucker/anansi/compare/@anansi/storybook@1.0.14...@anansi/storybook@1.0.15) (2023-07-04)
 
 ### 📦 Package
