@@ -29,6 +29,11 @@
       "rangeStrategy": "replace"
     },
     {
+      "matchPackageNames": ["prettier", "gulp-prettier", "eslint-plugin-prettier"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "prettier"
+    },
+    {
       "extends": ["monorepo:react"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupName": "react"
