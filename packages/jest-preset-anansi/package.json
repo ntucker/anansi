@@ -65,7 +65,7 @@
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.1",
     "node-fetch": "^3.3.1",
-    "semver": "^7.5.3",
+    "semver": "^7.5.4",
     "ts-jest": "^29.1.1",
     "whatwg-fetch": "^3.0.0"
   },
