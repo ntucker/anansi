@@ -11,13 +11,12 @@ import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 
 import App from './App';
 
-
 ReactDOM.createRoot(document.body).render(
   <ErrorLoggerContext.Provider value={e => console.error('error logged', e)}>
     <ErrorBoundary>
       <CacheProvider>
         <Router history={history}>
-            <App />
+          <App />
         </Router>
       </CacheProvider>
     </ErrorBoundary>

@@ -24,25 +24,29 @@ export const font = css`
   :global() {
     @font-face {
       font-family: 'FaricyNew';
-      src: url('./faricy/FaricyNew-Rg.woff') format('woff'),
+      src:
+        url('./faricy/FaricyNew-Rg.woff') format('woff'),
         url('./faricy/FaricyNew-Rg.otf') format('opentype');
       font-weight: normal;
     }
     @font-face {
       font-family: 'FaricyNew';
-      src: url('./faricy/FaricyNew-Lt.woff') format('woff'),
+      src:
+        url('./faricy/FaricyNew-Lt.woff') format('woff'),
         url('./faricy/FaricyNew-Lt.otf') format('opentype');
       font-weight: 300;
     }
     @font-face {
       font-family: 'FaricyNew';
-      src: url('./faricy/FaricyNew-Md.woff') format('woff'),
+      src:
+        url('./faricy/FaricyNew-Md.woff') format('woff'),
         url('./faricy/FaricyNew-Md.otf') format('opentype');
       font-weight: 700;
     }
     @font-face {
       font-family: 'FaricyNew';
-      src: url('./faricy/FaricyNew-Bd.woff') format('woff'),
+      src:
+        url('./faricy/FaricyNew-Bd.woff') format('woff'),
         url('./faricy/FaricyNew-Bd.otf') format('opentype');
       font-weight: 800;
     }

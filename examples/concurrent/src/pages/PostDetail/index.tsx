@@ -1,10 +1,10 @@
 import { Link } from '@anansi/router';
 import { EditOutlined, SaveOutlined, LoadingOutlined } from '@ant-design/icons';
-import { css } from '@linaria/core';
-import { styled } from '@linaria/react';
 import { useLoading } from '@data-client/hooks';
 import { Img } from '@data-client/img';
 import { useSuspense, useController, AsyncBoundary } from '@data-client/react';
+import { css } from '@linaria/core';
+import { styled } from '@linaria/react';
 import { Button, Input, Breadcrumb, Form } from 'antd';
 import { Card, Avatar } from 'antd';
 import { lazy, useCallback, useState } from 'react';
