@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.10](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.9...@anansi/cli@3.0.10) (2023-07-11)
+
+### 📦 Package
+
+* Update prettier (major) ([#2085](https://github.com/ntucker/anansi/issues/2085)) ([cb88722](https://github.com/ntucker/anansi/commit/cb887226e2084d045010db441c980a09eecd4bad))
+
 ### [3.0.9](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.8...@anansi/cli@3.0.9) (2023-07-06)
 
 **Note:** Version bump only for package @anansi/cli

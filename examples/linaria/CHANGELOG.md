@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.84](https://github.com/ntucker/anansi/compare/example-linaria@5.0.83...example-linaria@5.0.84) (2023-07-11)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2087](https://github.com/ntucker/anansi/issues/2087)) ([ef41e71](https://github.com/ntucker/anansi/commit/ef41e71d0dbbb98dedb6aecf04a7e25af2651215))
+* Update linting packages to v6 ([#2074](https://github.com/ntucker/anansi/issues/2074)) ([d9a88cb](https://github.com/ntucker/anansi/commit/d9a88cb82b6df4f051e46408e78cf293b98b2c90))
+* Update prettier (major) ([#2085](https://github.com/ntucker/anansi/issues/2085)) ([cb88722](https://github.com/ntucker/anansi/commit/cb887226e2084d045010db441c980a09eecd4bad))
+
 ### [5.0.83](https://github.com/ntucker/anansi/compare/example-linaria@5.0.82...example-linaria@5.0.83) (2023-07-06)
 
 ### 📦 Package
