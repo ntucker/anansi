@@ -111,7 +111,7 @@
     "svgo-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.9",
     "timers-browserify": "^2.0.12",
-    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "tty-browserify": "^0.0.1",
     "url": "^0.11.1",
     "util": "^0.12.5",
