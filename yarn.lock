@@ -345,7 +345,7 @@ __metadata:
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
     "@babel/runtime": ^7.17.2
-    "@linaria/webpack5-loader": 4.1.17
+    "@linaria/webpack5-loader": 4.5.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.10
     "@svgr/webpack": ^8.0.1
     "@types/node": ^20.0.0
@@ -4186,9 +4186,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:^4.4.5":
-  version: 4.4.5
-  resolution: "@linaria/babel-preset@npm:4.4.5"
+"@linaria/babel-preset@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/babel-preset@npm:4.5.0"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/generator": ^7.20.4
@@ -4196,59 +4196,59 @@ __metadata:
     "@babel/template": ^7.18.10
     "@babel/traverse": ^7.20.1
     "@babel/types": ^7.20.2
-    "@linaria/core": ^4.2.10
-    "@linaria/logger": ^4.0.0
-    "@linaria/shaker": ^4.2.11
-    "@linaria/tags": ^4.3.5
-    "@linaria/utils": ^4.3.4
+    "@linaria/core": ^4.5.0
+    "@linaria/logger": ^4.5.0
+    "@linaria/shaker": ^4.5.0
+    "@linaria/tags": ^4.5.0
+    "@linaria/utils": ^4.5.0
     cosmiconfig: ^8.0.0
-    find-up: ^5.0.0
     source-map: ^0.7.3
     stylis: ^3.5.4
-  checksum: 8dce78ec962a045872971f3f4a1ba091aa6dd00d8638fd0d4a98ab09733b05e9f4bdeca51ec1937d2e9cc325c9be3b73a78f801ffded48bafc0c7adf372c830a
+  checksum: f3f2a6a923d78973a08bdac47515479883cc366e843b055866bc1d4334796322d21190b154788c8c66455bd50f9de80c6be615b48cd06b41533adb46aa5fc7c9
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:4.2.10, @linaria/core@npm:^4.2.10":
-  version: 4.2.10
-  resolution: "@linaria/core@npm:4.2.10"
+"@linaria/core@npm:4.5.0, @linaria/core@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/core@npm:4.5.0"
   dependencies:
-    "@linaria/logger": ^4.0.0
-    "@linaria/tags": ^4.3.5
-    "@linaria/utils": ^4.3.4
-  checksum: a30378a43f09daa16cb16bc374cce7c830e279dfdb7ebd6430c176db40ab11f8dd4fdb7245cf98ef7cc82160a58006d426d77d193efb6dec3ac889fe6943cf80
+    "@linaria/logger": ^4.5.0
+    "@linaria/tags": ^4.5.0
+    "@linaria/utils": ^4.5.0
+  checksum: 998083cc3d41bdcb292643d7b7b6ddfd98a74236e3b5228438793d462ba3b0b6f5ca4d842175acd88417e89c6c92a98236f3b37c30710031c37bc0c08f24c72b
   languageName: node
   linkType: hard
 
-"@linaria/logger@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@linaria/logger@npm:4.0.0"
+"@linaria/logger@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/logger@npm:4.5.0"
   dependencies:
     debug: ^4.1.1
     picocolors: ^1.0.0
-  checksum: 261b955d5cb53a3eaf8b9c7890b761ba72bd16d6f81096659f31a75c84b4df3004d4a5598a2261b2d810828eb84e7e8067f38b58492544db42dc4ee56726f2d1
+  checksum: 8a01717e4935244c44d0952442811a8c4fa57aade9b99ab811d30ecbef5261859839af9f0c78645b6549d40c97eef79754cd12a8436f54e4c2139635c60cab91
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:4.3.8":
-  version: 4.3.8
-  resolution: "@linaria/react@npm:4.3.8"
+"@linaria/react@npm:4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/react@npm:4.5.0"
   dependencies:
     "@emotion/is-prop-valid": ^1.2.0
-    "@linaria/core": ^4.2.10
-    "@linaria/tags": ^4.3.5
-    "@linaria/utils": ^4.3.4
+    "@linaria/core": ^4.5.0
+    "@linaria/tags": ^4.5.0
+    "@linaria/utils": ^4.5.0
+    minimatch: ^9.0.3
     react-html-attributes: ^1.4.6
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: 91f185d26a15f82e80f10743030c05b75d75b82f58eebb6ad619944e4d7df2e57af0c35a751169bfcb725ebca8afd41206e5bb6262676e6158c34845d1947c91
+  checksum: b3c62dca4b865e832ff3d517dd5fafe392d6fa58134b100b8af2fd701358cb88feeefe60b10206d3783644b61aeea78b1e6f9dd2286284fd5aeca17100c2d5cf
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:4.2.11, @linaria/shaker@npm:^4.2.11":
-  version: 4.2.11
-  resolution: "@linaria/shaker@npm:4.2.11"
+"@linaria/shaker@npm:4.5.0, @linaria/shaker@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/shaker@npm:4.5.0"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/generator": ^7.20.4
@@ -4256,28 +4256,28 @@ __metadata:
     "@babel/plugin-transform-runtime": ^7.19.6
     "@babel/plugin-transform-template-literals": ^7.18.9
     "@babel/preset-env": ^7.20.2
-    "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.3.4
+    "@linaria/logger": ^4.5.0
+    "@linaria/utils": ^4.5.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.10.3
-  checksum: 2cada6b3d31804110775dfeddb3afef4d586ee5bc4266a5ab784022bcb62a429e1b290678e030e7661ccc59524c27bfcb737ffd7fe0a6e86f3af061a097bca81
+  checksum: a9cf1ca4c924670ea26aa897ceff6807d925cee8be2336e3b875aaeccf68c43ffab8865faf3a53021e2557df74664dbfce078ee79983d888cc9489a6db5f8e98
   languageName: node
   linkType: hard
 
-"@linaria/tags@npm:^4.3.5":
-  version: 4.3.5
-  resolution: "@linaria/tags@npm:4.3.5"
+"@linaria/tags@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/tags@npm:4.5.0"
   dependencies:
     "@babel/generator": ^7.20.4
-    "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.3.4
-  checksum: 0ae79c1fb3aaeb49b18234ea94d9ba2f497824d34c91f47f3e6b024409c744fff5e53ddd464d93a092348728483175e1d19dbc3e018640c738d956201c580366
+    "@linaria/logger": ^4.5.0
+    "@linaria/utils": ^4.5.0
+  checksum: 42a9d03d0fa9a68b182283d768d3fa53a32a33f972a1c83620e39a1df3cbef41892291ba032b56160b01810221b2c746fd8825135af24066cffeab1b3f1fe66c
   languageName: node
   linkType: hard
 
-"@linaria/utils@npm:^4.3.4":
-  version: 4.3.4
-  resolution: "@linaria/utils@npm:4.3.4"
+"@linaria/utils@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/utils@npm:4.5.0"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/plugin-proposal-export-namespace-from": ^7.18.9
@@ -4285,23 +4285,24 @@ __metadata:
     "@babel/plugin-transform-modules-commonjs": ^7.19.6
     "@babel/traverse": ^7.20.1
     "@babel/types": ^7.20.2
-    "@linaria/logger": ^4.0.0
+    "@linaria/logger": ^4.5.0
     babel-merge: ^3.0.0
-  checksum: a1f95942929712ef3ed89fb296e6fe4a20288db86a7d54b7b4ab659a5cae30b092275c0e6e560f32ce02e45908471e0b8fabbf4a2c69f0a10b2313d13b1baa4e
+    find-up: ^5.0.0
+  checksum: 15b1ea1160894de51cee8d0f8481d36638b6013710689ffbd7503d5fca3101d749f3b5f872297eb6927352e383d9746ebdd437c4ce70b2444681ffdd8b343859
   languageName: node
   linkType: hard
 
-"@linaria/webpack5-loader@npm:4.1.17":
-  version: 4.1.17
-  resolution: "@linaria/webpack5-loader@npm:4.1.17"
+"@linaria/webpack5-loader@npm:4.5.0":
+  version: 4.5.0
+  resolution: "@linaria/webpack5-loader@npm:4.5.0"
   dependencies:
-    "@linaria/babel-preset": ^4.4.5
-    "@linaria/logger": ^4.0.0
+    "@linaria/babel-preset": ^4.5.0
+    "@linaria/logger": ^4.5.0
     enhanced-resolve: ^5.3.1
     mkdirp: ^0.5.1
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 61752bda1b457a23357013dd3fbc4fe4c21cb15540a7003c5598338c4aca9194396d5117d35e57c69c78317e2c6349fd123022afed09fb5c23957e4c2c75bd53
+  checksum: 4e3aff1401861b0a958ecd57461b26a00fcf5fbaa552d46d6622c27680d2ec5c72ff048185157054ddfc39fd679f6d6e69b7681c093415d09854b040b3ec77ed
   languageName: node
   linkType: hard
 
@@ -12800,9 +12801,9 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.22.5
     "@babel/runtime": 7.22.6
-    "@linaria/core": 4.2.10
-    "@linaria/react": 4.3.8
-    "@linaria/shaker": 4.2.11
+    "@linaria/core": 4.5.0
+    "@linaria/react": 4.5.0
+    "@linaria/shaker": 4.5.0
     "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1
     "@types/eslint": ^8.21.3
@@ -12860,9 +12861,9 @@ __metadata:
     "@data-client/redux": 0.1.3
     "@data-client/rest": 0.2.0
     "@data-client/test": 0.1.3
-    "@linaria/core": 4.2.10
-    "@linaria/react": 4.3.8
-    "@linaria/shaker": 4.2.11
+    "@linaria/core": 4.5.0
+    "@linaria/react": 4.5.0
+    "@linaria/shaker": 4.5.0
     "@types/babel__core": 7.20.1
     "@types/classnames": 2.3.1
     "@types/eslint": 8.40.2
@@ -18714,7 +18715,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.0, minimatch@npm:^9.0.1, minimatch@npm:^9.0.2":
+"minimatch@npm:^9.0.0, minimatch@npm:^9.0.1, minimatch@npm:^9.0.2, minimatch@npm:^9.0.3":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
   dependencies:
