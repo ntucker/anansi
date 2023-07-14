@@ -1,6 +1,6 @@
 {
   "name": "example-linaria",
-  "version": "5.0.84",
+  "version": "5.0.85",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode=development",
@@ -16,10 +16,10 @@
     "test:type": "tsc --noEmit"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^4.2.10",
+    "@anansi/babel-preset": "^4.2.11",
     "@anansi/browserslist-config": "^1.4.3",
-    "@anansi/eslint-plugin": "^0.16.21",
-    "@anansi/webpack-config": "^15.0.27",
+    "@anansi/eslint-plugin": "^0.16.22",
+    "@anansi/webpack-config": "^15.0.28",
     "@babel/core": "^7.21.3",
     "@types/babel__core": "^7.20.0",
     "@types/classnames": "2.3.1",

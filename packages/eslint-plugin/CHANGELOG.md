@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.22](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.21...@anansi/eslint-plugin@0.16.22) (2023-07-14)
+
+### 📦 Package
+
+* Update babel packages to v7.22.9 ([#2089](https://github.com/ntucker/anansi/issues/2089)) ([5871101](https://github.com/ntucker/anansi/commit/5871101b30445e71657ddc201c72bd76388fad15))
+
 ### [0.16.21](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.20...@anansi/eslint-plugin@0.16.21) (2023-07-11)
 
 ### 📦 Package

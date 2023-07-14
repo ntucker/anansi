@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.8...@anansi/generator-js@12.0.9) (2023-07-14)
+
+### 💅 Enhancement
+
+* Trailing commas all is now default in prettier ([090d6a8](https://github.com/ntucker/anansi/commit/090d6a8ee94e3adf752a593a6c1a5e9fcea80ffb))
+
 ### [12.0.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.7...@anansi/generator-js@12.0.8) (2023-07-11)
 
 ### 📦 Package
