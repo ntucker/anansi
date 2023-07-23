@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.10](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.9...@anansi/generator-js@12.0.10) (2023-07-23)
+
+### 📦 Package
+
+* Update `gulp-filter` to v8 ([#2097](https://github.com/ntucker/anansi/issues/2097)) ([3564f38](https://github.com/ntucker/anansi/commit/3564f38bd810526fdc4bb81cc2dfae89b3061992))
+
 ### [12.0.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.8...@anansi/generator-js@12.0.9) (2023-07-14)
 
 ### 💅 Enhancement
