@@ -237,7 +237,7 @@ __metadata:
     core-js: ^3.21.0
     ejs: ^3.1.9
     execa: ^7.1.1
-    gulp-filter: ^7.0.0
+    gulp-filter: ^8.0.0
     gulp-prettier: ^5.0.0
     import-meta-resolve: ^3.0.0
     mem-fs: ^3.0.0
@@ -8265,20 +8265,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arr-diff@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "arr-diff@npm:4.0.0"
-  checksum: ea7c8834842ad3869297f7915689bef3494fd5b102ac678c13ffccab672d3d1f35802b79e90c4cfec2f424af3392e44112d1ccf65da34562ed75e049597276a0
-  languageName: node
-  linkType: hard
-
-"arr-union@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "arr-union@npm:3.1.0"
-  checksum: b5b0408c6eb7591143c394f3be082fee690ddd21f0fdde0a0a01106799e847f67fcae1b7e56b0a0c173290e29c6aca9562e82b300708a268bc8f88f3d6613cb9
-  languageName: node
-  linkType: hard
-
 "array-differ@npm:^3.0.0":
   version: 3.0.0
   resolution: "array-differ@npm:3.0.0"
@@ -8456,13 +8442,6 @@ __metadata:
     object-is: ^1.0.1
     util: ^0.12.0
   checksum: bb91f181a86d10588ee16c5e09c280f9811373974c29974cbe401987ea34e966699d7989a812b0e19377b511ea0bc627f5905647ce569311824848ede382cae8
-  languageName: node
-  linkType: hard
-
-"assign-symbols@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "assign-symbols@npm:1.0.0"
-  checksum: c0eb895911d05b6b2d245154f70461c5e42c107457972e5ebba38d48967870dee53bcdf6c7047990586daa80fab8dab3cc6300800fbd47b454247fdedd859a2c
   languageName: node
   linkType: hard
 
@@ -12927,16 +12906,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extend-shallow@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "extend-shallow@npm:3.0.2"
-  dependencies:
-    assign-symbols: ^1.0.0
-    is-extendable: ^1.0.1
-  checksum: a920b0cd5838a9995ace31dfd11ab5e79bf6e295aa566910ce53dff19f4b1c0fda2ef21f26b28586c7a2450ca2b42d97bd8c0f5cec9351a819222bf861e02461
-  languageName: node
-  linkType: hard
-
 "extend@npm:^3.0.0":
   version: 3.0.2
   resolution: "extend@npm:3.0.2"
@@ -14374,20 +14343,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-filter@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "gulp-filter@npm:7.0.0"
+"gulp-filter@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "gulp-filter@npm:8.0.0"
   dependencies:
-    multimatch: ^5.0.0
-    plugin-error: ^1.0.1
+    multimatch: ^6.0.0
+    plugin-error: ^2.0.1
     streamfilter: ^3.0.0
-    to-absolute-glob: ^2.0.2
+    to-absolute-glob: ^3.0.0
   peerDependencies:
     gulp: ">=4"
   peerDependenciesMeta:
     gulp:
       optional: true
-  checksum: e9f8657cea5ed42538282331b7ac08206cb2d6bae9a019c557072fe685db3f05d8a1a5850417d686e59cb3acfbef642c6fac58e189f4e00eb82ff8162dd4fd37
+  checksum: 00928df3e5d76cf20204ff69adbc51a823905d2c42c17478e443d73ef720f06b399684c9a9d7499fc28bded5ef2fe1a75f611c400e742e4dc00d93e019ddc730
   languageName: node
   linkType: hard
 
@@ -15442,7 +15411,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-extendable@npm:^1.0.0, is-extendable@npm:^1.0.1":
+"is-extendable@npm:^1.0.0":
   version: 1.0.1
   resolution: "is-extendable@npm:1.0.1"
   dependencies:
@@ -20519,19 +20488,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plugin-error@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "plugin-error@npm:1.0.1"
-  dependencies:
-    ansi-colors: ^1.0.1
-    arr-diff: ^4.0.0
-    arr-union: ^3.1.0
-    extend-shallow: ^3.0.2
-  checksum: 5cacd34372b909f07125829c2876707f4add64dcdf0dd8bd23d7ceac70eeb961c038a9707a998cc498bf8d478cc81f8d85b82584313926fe61a8fa294f79f3e4
-  languageName: node
-  linkType: hard
-
-"plugin-error@npm:^2.0.0":
+"plugin-error@npm:^2.0.0, plugin-error@npm:^2.0.1":
   version: 2.0.1
   resolution: "plugin-error@npm:2.0.1"
   dependencies:
@@ -25311,13 +25268,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"to-absolute-glob@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "to-absolute-glob@npm:2.0.2"
+"to-absolute-glob@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "to-absolute-glob@npm:3.0.0"
   dependencies:
     is-absolute: ^1.0.0
     is-negated-glob: ^1.0.0
-  checksum: 0a8bef172909e43d711bfd33792643f2eec35b9109bde927dabfd231e6ad643b7a657f306c93c6e7b89f71d3de74ac94060fe9637bca8c37b036523993664323
+  checksum: 5a6e439fcfff4c3280912d458a329e0912bbfd7580946edd961589be6a2b80204c1119b8e83f4e426ed41579b1300c0537df6f0db260b0794b68431aed98fc46
   languageName: node
   linkType: hard
 
