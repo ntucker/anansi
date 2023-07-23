@@ -41,7 +41,7 @@
     "@storybook/preset-react-webpack": "^7.1.0",
     "@storybook/react": "^7.1.0",
     "@storybook/types": "^7.1.0",
-    "@types/node": "^20.4.2"
+    "@types/node": "^20.4.4"
   },
   "peerDependencies": {
     "@anansi/babel-preset": "^3.0.0 || ^4.0.0",
