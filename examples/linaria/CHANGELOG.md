@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.87](https://github.com/ntucker/anansi/compare/example-linaria@5.0.86...example-linaria@5.0.87) (2023-07-26)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2101](https://github.com/ntucker/anansi/issues/2101)) ([e95a1f2](https://github.com/ntucker/anansi/commit/e95a1f2606d58f73f3d712500042869514ca91fa))
+* Update webpack packages ([#2099](https://github.com/ntucker/anansi/issues/2099)) ([c5f8b83](https://github.com/ntucker/anansi/commit/c5f8b83e7a53ab5007af1c7bfc2a964495d977ed))
+
 ### [5.0.86](https://github.com/ntucker/anansi/compare/example-linaria@5.0.85...example-linaria@5.0.86) (2023-07-23)
 
 ### 📦 Package
