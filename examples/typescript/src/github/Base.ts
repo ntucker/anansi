@@ -115,7 +115,7 @@ export function createGithubResource<O extends ResourceGenerics>(
 
 export interface GithubResource<
   O extends ResourceGenerics = { path: string; schema: Schema },
-> extends Omit<Resource<O>, 'getList'> {
+> extends Omit<Resource<O>, 'getList' | 'getNextPage'> {
   getList: GetEndpoint<
     Omit<O, 'schema' | 'body' | 'path'> & {
       readonly path: ShortenPath<O['path']>;
