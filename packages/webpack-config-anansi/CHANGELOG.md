@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.0.31](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.30...@anansi/webpack-config@15.0.31) (2023-07-29)
+
+### 🐛 Bug Fix
+
+* Revert linaria to working version ([#2106](https://github.com/ntucker/anansi/issues/2106)) ([7d2054d](https://github.com/ntucker/anansi/commit/7d2054d9357d6c471815effe2fb18d98eeca3ef5))
+
 ### [15.0.30](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.29...@anansi/webpack-config@15.0.30) (2023-07-26)
 
 ### 📦 Package

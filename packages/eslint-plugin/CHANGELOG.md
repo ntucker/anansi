@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.16.25](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.24...@anansi/eslint-plugin@0.16.25) (2023-07-29)
+
+### 📦 Package
+
+* Update `eslint-config-prettier` to ^8.9.0 ([#2103](https://github.com/ntucker/anansi/issues/2103)) ([4f590d5](https://github.com/ntucker/anansi/commit/4f590d503c2d9c42f44e595944579529ef33591f))
+
 ### [0.16.24](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.23...@anansi/eslint-plugin@0.16.24) (2023-07-26)
 
 ### 📦 Package
