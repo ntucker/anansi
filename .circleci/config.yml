@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+orbs:
+  cypress: cypress-io/cypress@3
 jobs:
   build:
     docker: &docker
@@ -68,6 +70,13 @@ jobs:
           at: ~/
       - run: yarn workspaces foreach -v --include 'example-*' run build
 
+  start_dev:
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn devtest:ci
+
   build_server:
     docker: *docker
     steps:
@@ -96,6 +105,9 @@ workflows:
           requires:
             - build
       - build_production:
+          requires:
+            - build
+      - start_dev:
           requires:
             - build
       - build_server:
