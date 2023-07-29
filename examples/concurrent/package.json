@@ -15,6 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"Error: no test specified\"",
     "test:type": "tsc --noEmit",
+    "devtest:validate": "exit 0",
+    "devtest:ci": "yarn g:devtest start http://localhost:8080 devtest:validate",
     "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {
