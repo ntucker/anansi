@@ -31,7 +31,7 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.22.9",
+    "@babel/eslint-parser": "^7.22.10",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint-config-prettier": "^8.10.0",
     "eslint-import-resolver-typescript": "^3.5.5",
