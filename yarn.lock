@@ -372,7 +372,7 @@ __metadata:
     html-loader: ^4.2.0
     html-webpack-plugin: ^5.5.3
     https-browserify: ^1.0.0
-    is-wsl: ^2.2.0
+    is-wsl: ^3.0.0
     mini-css-extract-plugin: ^2.7.6
     mkdirp: ^3.0.1
     os-browserify: ^0.3.0
@@ -16032,6 +16032,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-docker@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "is-docker@npm:3.0.0"
+  bin:
+    is-docker: cli.js
+  checksum: b698118f04feb7eaf3338922bd79cba064ea54a1c3db6ec8c0c8d8ee7613e7e5854d802d3ef646812a8a3ace81182a085dfa0a71cc68b06f3fa794b9783b3c90
+  languageName: node
+  linkType: hard
+
 "is-extendable@npm:^1.0.0":
   version: 1.0.1
   resolution: "is-extendable@npm:1.0.1"
@@ -16522,6 +16531,15 @@ __metadata:
   dependencies:
     is-docker: ^2.0.0
   checksum: 20849846ae414997d290b75e16868e5261e86ff5047f104027026fd61d8b5a9b0b3ade16239f35e1a067b3c7cc02f70183cb661010ed16f4b6c7c93dad1b19d8
+  languageName: node
+  linkType: hard
+
+"is-wsl@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "is-wsl@npm:3.0.0"
+  dependencies:
+    is-docker: ^3.0.0
+  checksum: 196bff0750529789860dd3750e4788fa3fde4d2626af6e64258f903850dde16c7706a8aa83e2f06535cae660d29018c8388e2788cd7fd90b2557fee245d7d5c4
   languageName: node
   linkType: hard
 
