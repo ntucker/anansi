@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.13](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.12...@anansi/babel-preset@4.2.13) (2023-08-09)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2114](https://github.com/ntucker/anansi/issues/2114)) ([f5d463a](https://github.com/ntucker/anansi/commit/f5d463af325e63fbd49fcf0d0d84893cfd34db66))
+* Update babel packages ([#2115](https://github.com/ntucker/anansi/issues/2115)) ([6070a83](https://github.com/ntucker/anansi/commit/6070a83916e91bb7449d26c2bbfa79536089d5bb))
+
 ### [4.2.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.11...@anansi/babel-preset@4.2.12) (2023-07-26)
 
 ### 📦 Package

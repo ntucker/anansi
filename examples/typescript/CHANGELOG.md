@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.37](https://github.com/ntucker/anansi/compare/example-typescript@11.1.36...example-typescript@11.1.37) (2023-08-09)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2109](https://github.com/ntucker/anansi/issues/2109)) ([cd18a59](https://github.com/ntucker/anansi/commit/cd18a594ad02528a61889f1885dec0e8864bdc70))
+* Update all non-major dependencies ([#2114](https://github.com/ntucker/anansi/issues/2114)) ([f5d463a](https://github.com/ntucker/anansi/commit/f5d463af325e63fbd49fcf0d0d84893cfd34db66))
+* Update babel packages ([#2115](https://github.com/ntucker/anansi/issues/2115)) ([6070a83](https://github.com/ntucker/anansi/commit/6070a83916e91bb7449d26c2bbfa79536089d5bb))
+* Update storybook monorepo to v7.2.0 ([#2110](https://github.com/ntucker/anansi/issues/2110)) ([0b4095c](https://github.com/ntucker/anansi/commit/0b4095c7e30c2a883863408ca2d612db2e9c29b7))
+* Update storybook monorepo to v7.2.1 ([#2112](https://github.com/ntucker/anansi/issues/2112)) ([541e497](https://github.com/ntucker/anansi/commit/541e497def6e2be23b612ac5a091cc5a5237e7c9))
+* Update storybook monorepo to v7.2.2 ([#2116](https://github.com/ntucker/anansi/issues/2116)) ([4dbfb22](https://github.com/ntucker/anansi/commit/4dbfb228efdd9b82c0f1e715a557318b120f176c))
+
 ### [11.1.36](https://github.com/ntucker/anansi/compare/example-typescript@11.1.35...example-typescript@11.1.36) (2023-07-29)
 
 ### 📦 Package
