@@ -60,7 +60,7 @@
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-react-require": "^4.0.1",
     "babel-plugin-root-import": "^6.6.0",
-    "babel-plugin-transform-import-meta": "^2.2.0",
+    "babel-plugin-transform-import-meta": "^2.2.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js-compat": "^3.23.5",
     "glob-to-regexp": "^0.4.1",
