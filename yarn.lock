@@ -312,7 +312,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.2.3
     "@storybook/react": ^7.2.3
     "@storybook/types": ^7.2.3
-    "@types/node": ^20.4.9
+    "@types/node": ^20.4.10
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -2933,12 +2933,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.2.3, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.2, @data-client/endpoint@npm:^0.2.3":
-  version: 0.2.3
-  resolution: "@data-client/endpoint@npm:0.2.3"
+"@data-client/endpoint@npm:0.2.4, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.2, @data-client/endpoint@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "@data-client/endpoint@npm:0.2.4"
   dependencies:
     "@babel/runtime": ^7.17.0
-  checksum: 53616c2d63a9b6afb31a1b760e8f6ac408d0be45dd8f12e5cf0bb9ecf8441875940f79d4e731aeceb906a57c752961ba564e3f1b536d616cf5c721041f2e73dd
+  checksum: e8ec88169cf88b0d9c48dcd876d93954279d47605158be2640e43edb97e14f033cd510dd68463b374c1214169ba2d6a21a4c9333ed17f7b4ee3d6797a672038c
   languageName: node
   linkType: hard
 
@@ -3032,14 +3032,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@data-client/rest@npm:0.6.0"
+"@data-client/rest@npm:0.7.0":
+  version: 0.7.0
+  resolution: "@data-client/rest@npm:0.7.0"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.2.3
+    "@data-client/endpoint": ^0.2.4
     path-to-regexp: ^6.2.1
-  checksum: 5b2cf19d86e878a58e80a1fd8341d8dff573eafefb8898bd32d0d2c3339ddff624082d73fbc503d103d63b2e2029ad66e8b12b57b3fa190c6033a941865265fa
+  checksum: 7f855a5fb734bb46cb44e116a87a1a2b74d459562ebae9b93d69d195e5e32c9d0ff0fda03df14fa286b614fcbc3cd2a1f64d3152cc38c0c6c7079eeb1b94d83e
   languageName: node
   linkType: hard
 
@@ -7421,10 +7421,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.4.9, @types/node@npm:^20.0.0, @types/node@npm:^20.4.9":
-  version: 20.4.9
-  resolution: "@types/node@npm:20.4.9"
-  checksum: 504e3da96274f3865c1251830f4750bb0a8f6ef6f8648902cd3bba33370c5f219235471bfbf55cce726b25c8eacfcc8e2aad0ec3b13e27ea6708b00d4a9a46c8
+"@types/node@npm:*, @types/node@npm:20.4.10, @types/node@npm:^20.0.0, @types/node@npm:^20.4.10":
+  version: 20.4.10
+  resolution: "@types/node@npm:20.4.10"
+  checksum: 02a1ca415d9cc91144c4250383aa0ef1e48241bd36067ed7d1b239d8bacc2a11139dd90e223e11ac289345eeae624cc5dcf73359e684bd2e5a6c31bdfbab4811
   languageName: node
   linkType: hard
 
@@ -7443,9 +7443,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^18.15.11":
-  version: 18.17.4
-  resolution: "@types/node@npm:18.17.4"
-  checksum: d4c458202d82c999f38d85ca9ae8a2d3e521645c7f1b908cd6a0303d0e13c7d5eb3f888c41f584ba029ecf802d0a0005b7816c149400371a3c035abc4bd9a4c5
+  version: 18.17.5
+  resolution: "@types/node@npm:18.17.5"
+  checksum: b8c658a99234b99425243c324b641ed7b9ceb6bee6b06421fdc9bb7c58f9a5552e353225cc549e6982462ac384abe1985022ed76e2e4728797f59b21f659ca2b
   languageName: node
   linkType: hard
 
@@ -13261,12 +13261,12 @@ __metadata:
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.10
     "@babel/runtime": 7.22.10
-    "@data-client/endpoint": 0.2.3
+    "@data-client/endpoint": 0.2.4
     "@data-client/hooks": 0.1.1
     "@data-client/img": 0.2.0
     "@data-client/react": 0.3.0
     "@data-client/redux": 0.2.0
-    "@data-client/rest": 0.6.0
+    "@data-client/rest": 0.7.0
     "@data-client/test": 0.3.0
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
@@ -13275,7 +13275,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.44.2
     "@types/jest": 29.5.3
-    "@types/node": 20.4.9
+    "@types/node": 20.4.10
     "@types/prettier": 2.7.3
     "@types/react": 18.2.20
     "@types/react-dom": 18.2.7
@@ -13323,7 +13323,7 @@ __metadata:
     "@babel/runtime": 7.22.10
     "@data-client/graphql": 0.2.1
     "@data-client/react": 0.3.0
-    "@data-client/rest": 0.6.0
+    "@data-client/rest": 0.7.0
     "@data-client/test": 0.3.0
     "@storybook/addon-essentials": 7.2.3
     "@storybook/addon-links": 7.2.3
@@ -13338,7 +13338,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.3
     "@types/lodash": 4.14.197
-    "@types/node": 20.4.9
+    "@types/node": 20.4.10
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
