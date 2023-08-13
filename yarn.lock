@@ -129,7 +129,7 @@ __metadata:
     "@anansi/router": "workspace:^"
     "@ant-design/cssinjs": ^1.7.1
     "@babel/runtime": ^7.17.0
-    "@data-client/react": ^0.3.0
+    "@data-client/react": ^0.4.0
     "@data-client/redux": ^0.2.0
     "@data-client/ssr": ^0.2.0
     "@types/compression": 1.7.2
@@ -2922,14 +2922,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/core@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@data-client/core@npm:0.3.0"
+"@data-client/core@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@data-client/core@npm:0.4.0"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@data-client/normalizr": ^0.2.2
     flux-standard-action: ^2.1.1
-  checksum: 05424d980d9ad9f175d976a9469f00f999e9ca075b8f2cbbae8243cd6e1ff8988a57946fab7367601c98cdf266b4c9ff600fd23388c936f2b862ddc9dc860252
+  checksum: dee966adb10927abd277736aa8ec14879b45656157f1e745303caaa8e7da39e6b23b1acd3fc897701d04ce44bacbdc4977f8c6e13e80f38818c9329db8801f20
   languageName: node
   linkType: hard
 
@@ -2994,12 +2994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.3.0, @data-client/react@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@data-client/react@npm:0.3.0"
+"@data-client/react@npm:0.4.0, @data-client/react@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@data-client/react@npm:0.4.0"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/core": ^0.3.0
+    "@data-client/core": ^0.4.0
     "@data-client/use-enhanced-reducer": ^0.1.0
   peerDependencies:
     "@react-navigation/native": ^6.0.0
@@ -3010,25 +3010,25 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 59d52fe44252db8f390bc978b8a09b37a5d5cbea05437633d0736c740a10dfbb7423eb1a30884a7382fb05c0a2b991b6d4d528b53e6aa78ff3588dcd259770fa
+  checksum: 302b816905e5475fe85ac59b56a1e836d9b0eaa89b1ecf296f513967199e02951e94c77afea5d0b9ccf40971a106d645742bba2ee125ae93067a7db5c2d64927
   languageName: node
   linkType: hard
 
-"@data-client/redux@npm:0.2.0, @data-client/redux@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@data-client/redux@npm:0.2.0"
+"@data-client/redux@npm:0.2.1, @data-client/redux@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "@data-client/redux@npm:0.2.1"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/core": ^0.3.0
+    "@data-client/core": ^0.4.0
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0
     redux: ^4.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: ecbdd5c6987757e22c75fbaed7170692a7bb5528367d56c4ec7cce4b9d2273036f76e2985e98f3d8adfbe9e92db274d1746ef484c37430c037d259fc970de7ca
+  checksum: 1c2c3bee50dc05a8263849ad9d631d220e271456bb8311c27bc7fd1692cc3366a202f45647248922c1f82fd52537fd0ebdcc27b2863a0810e78cf3d215ebd379
   languageName: node
   linkType: hard
 
@@ -13264,8 +13264,8 @@ __metadata:
     "@data-client/endpoint": 0.2.4
     "@data-client/hooks": 0.1.1
     "@data-client/img": 0.2.0
-    "@data-client/react": 0.3.0
-    "@data-client/redux": 0.2.0
+    "@data-client/react": 0.4.0
+    "@data-client/redux": 0.2.1
     "@data-client/rest": 0.7.0
     "@data-client/test": 0.3.0
     "@linaria/core": 4.2.10
@@ -13322,7 +13322,7 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.22.10
     "@data-client/graphql": 0.2.1
-    "@data-client/react": 0.3.0
+    "@data-client/react": 0.4.0
     "@data-client/rest": 0.7.0
     "@data-client/test": 0.3.0
     "@storybook/addon-essentials": 7.2.3
