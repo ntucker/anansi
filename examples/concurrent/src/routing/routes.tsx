@@ -37,7 +37,7 @@ export const routes: Route<Controller>[] = [
         ),
     ),
     resolveData: async (controller: Controller) => {
-      await controller.fetch(UserResource.getList);
+      await controller.fetchIfStale(UserResource.getList);
     },
   },
   { name: 'Home', component: lazyPage('Home') },
@@ -50,11 +50,10 @@ export const routes: Route<Controller>[] = [
       await Promise.allSettled(
         posts.map((post: Post) =>
           Promise.allSettled([
-            controller.fetch(
-              UserResource.get,
-              post.userId ? { id: post.userId } : (null as any),
-            ),
-            controller.fetch(getImage, {
+            post.userId
+              ? controller.fetchIfStale(UserResource.get, { id: post.userId })
+              : Promise.resolve(),
+            controller.fetchIfStale(getImage, {
               src: User.fromJS({ id: post.userId }).profileImage,
             }),
           ]),
@@ -68,16 +67,15 @@ export const routes: Route<Controller>[] = [
     resolveData: async (controller: Controller, match: { id: string }) => {
       if (match) {
         // don't block on comments but start fetching
-        controller.fetch(CommentResource.getList, { postId: match.id });
-        const post = await controller.fetch(PostResource.get, {
+        controller.fetchIfStale(CommentResource.getList, { postId: match.id });
+        const post = await controller.fetchIfStale(PostResource.get, {
           id: match.id,
         });
         await Promise.allSettled([
-          controller.fetch(
-            UserResource.get,
-            post.userId ? { id: post.userId } : (null as any),
-          ),
-          controller.fetch(getImage, {
+          post.userId
+            ? controller.fetchIfStale(UserResource.get, { id: post.userId })
+            : Promise.resolve(),
+          controller.fetchIfStale(getImage, {
             src: User.fromJS({ id: post.userId }).profileImage,
           }),
         ]);
@@ -94,16 +92,16 @@ export const routes: Route<Controller>[] = [
           id: Number.parseInt(match.id, 10),
         });
         // don't block on posts but start fetching
-        controller.fetch(PostResource.getList, { userId: match.id });
+        controller.fetchIfStale(PostResource.getList, { userId: match.id });
         await Promise.allSettled([
-          controller.fetch(UserResource.get, match),
-          controller.fetch(getImage, {
+          controller.fetchIfStale(UserResource.get, match),
+          controller.fetchIfStale(getImage, {
             src: fakeUser.profileImage,
           }),
-          controller.fetch(getImage, {
+          controller.fetchIfStale(getImage, {
             src: fakeUser.coverImage,
           }),
-          controller.fetch(getImage, {
+          controller.fetchIfStale(getImage, {
             src: fakeUser.coverImageFallback,
           }),
         ]);
