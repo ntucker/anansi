@@ -20,9 +20,8 @@ export const frameworkOptions = async (
   _: never,
   options: Options,
 ): Promise<StorybookConfig['framework']> => {
-  const config = await options.presets.apply<StorybookConfig['framework']>(
-    'framework',
-  );
+  const config =
+    await options.presets.apply<StorybookConfig['framework']>('framework');
 
   if (typeof config === 'string') {
     return {
@@ -50,9 +49,8 @@ export const core: PresetProperty<'core', StorybookConfig> = async (
   config,
   options,
 ) => {
-  const framework = await options.presets.apply<StorybookConfig['framework']>(
-    'framework',
-  );
+  const framework =
+    await options.presets.apply<StorybookConfig['framework']>('framework');
 
   return {
     ...config,
