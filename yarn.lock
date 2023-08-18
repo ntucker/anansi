@@ -2933,22 +2933,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.2.5, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.2, @data-client/endpoint@npm:^0.2.5":
-  version: 0.2.5
-  resolution: "@data-client/endpoint@npm:0.2.5"
+"@data-client/endpoint@npm:0.2.6, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.6":
+  version: 0.2.6
+  resolution: "@data-client/endpoint@npm:0.2.6"
   dependencies:
     "@babel/runtime": ^7.17.0
-  checksum: 8f16fab6325c9d891f9cbf8a636a9ca0d842cb117fbb14a14ffba185f8be1e3c073905bcf7a6f6837693d23ed0278bf1970113f324d790f9edbd56623f3d42d0
+  checksum: caf350094126463832ce28767c5509af728b117f2c251d49d8985daef4c138580a6e9e68630e99654bb155b6c86852bed752ded6e2facac8f2c4a9a56922ad9f
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.2.1":
-  version: 0.2.1
-  resolution: "@data-client/graphql@npm:0.2.1"
+"@data-client/graphql@npm:0.2.2":
+  version: 0.2.2
+  resolution: "@data-client/graphql@npm:0.2.2"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.2.2
-  checksum: 6d516053288408e11e4552176103cea599ed36cb5dd8a6fd85f8b28f64286518b7653247ff2b52a421e4f61b1eee0b2326113f0b66292e9950b4ebb81801eeaf
+    "@data-client/endpoint": ^0.2.6
+  checksum: e7993b9b1080d85344b0919e73308d67a155612d4174294063e7e6cef2bda76dae020199584c09ae0c525af135d0a22466a3aa70a963421259598212536e26bd
   languageName: node
   linkType: hard
 
@@ -3032,14 +3032,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.7.1":
-  version: 0.7.1
-  resolution: "@data-client/rest@npm:0.7.1"
+"@data-client/rest@npm:0.7.3":
+  version: 0.7.3
+  resolution: "@data-client/rest@npm:0.7.3"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.2.5
+    "@data-client/endpoint": ^0.2.6
     path-to-regexp: ^6.2.1
-  checksum: 6397888e0391405230a251e4b5ea98ad67bd397f81c384dd10c292cd20e9a861dd3c4f80a607d3135a75f15835fbc091e35cbca2a736505379c76b4cb55d364c
+  checksum: 777a2a887d3117bed0d1d4e40cca0d669a3bdda740c072e6d7639240e900c91bd1b8cbcf6d3b1586f5ba6de88010d365cac6126fe9db5cb41af6b9c413f9e6b9
   languageName: node
   linkType: hard
 
@@ -8673,9 +8673,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.8.3":
-  version: 5.8.3
-  resolution: "antd@npm:5.8.3"
+"antd@npm:5.8.4":
+  version: 5.8.4
+  resolution: "antd@npm:5.8.4"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.16.0
@@ -8705,7 +8705,7 @@ __metadata:
     rc-menu: ~9.10.0
     rc-motion: ^2.7.3
     rc-notification: ~5.0.4
-    rc-pagination: ~3.5.0
+    rc-pagination: ~3.6.0
     rc-picker: ~3.13.0
     rc-progress: ~3.4.1
     rc-rate: ~2.12.0
@@ -8728,7 +8728,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 1a4683535413452413c728f9f588e75d5af6066366cda9fde51b883308a3e85632a0f0d61f608d8a34b033fed964d2d5fc07e9745202d36d89892caebb2656ad
+  checksum: 595c12a2324ca604520ea65e0d583a5368659dda725bec5ffc685bc5fcfa3fe0a063d988da55c16e0a07d424df5765272d8f3d82b70b9feedc40aede349d1867
   languageName: node
   linkType: hard
 
@@ -13388,12 +13388,12 @@ __metadata:
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.10
     "@babel/runtime": 7.22.10
-    "@data-client/endpoint": 0.2.5
+    "@data-client/endpoint": 0.2.6
     "@data-client/hooks": 0.1.1
     "@data-client/img": 0.2.0
     "@data-client/react": 0.4.1
     "@data-client/redux": 0.2.1
-    "@data-client/rest": 0.7.1
+    "@data-client/rest": 0.7.3
     "@data-client/test": 0.3.0
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
@@ -13409,7 +13409,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 6.4.0
     "@typescript-eslint/parser": 6.4.0
-    antd: 5.8.3
+    antd: 5.8.4
     classnames: 2.3.2
     core-js: 3.32.0
     eslint: 8.47.0
@@ -13448,9 +13448,9 @@ __metadata:
     "@ant-design/pro-layout": 7.12.3
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.22.10
-    "@data-client/graphql": 0.2.1
+    "@data-client/graphql": 0.2.2
     "@data-client/react": 0.4.1
-    "@data-client/rest": 0.7.1
+    "@data-client/rest": 0.7.3
     "@data-client/test": 0.3.0
     "@storybook/addon-essentials": 7.3.1
     "@storybook/addon-links": 7.3.1
@@ -13476,7 +13476,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
-    antd: 5.8.3
+    antd: 5.8.4
     classnames: 2.3.2
     core-js: 3.32.0
     eslint: ^8.36.0
@@ -22853,9 +22853,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-pagination@npm:~3.5.0":
-  version: 3.5.0
-  resolution: "rc-pagination@npm:3.5.0"
+"rc-pagination@npm:~3.6.0":
+  version: 3.6.1
+  resolution: "rc-pagination@npm:3.6.1"
   dependencies:
     "@babel/runtime": ^7.10.1
     classnames: ^2.2.1
@@ -22863,7 +22863,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 27ac05cdaf331ba571eb19fdaf79a2e3b6cb3575fce5f011f0de5abbe88db21a4292ef5323abab3a829ff6cda396444c664f88bd55226fa477f473282a8a868e
+  checksum: 12389a94bf60048cd3d8e95c638170646b7405aa30f748b96baee8df7e24d00b9d5b3c75195e3ea7589d08b771f2661d48f2fe7784624e4bdf6b22c290ffef85
   languageName: node
   linkType: hard
 
