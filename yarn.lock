@@ -131,7 +131,7 @@ __metadata:
     "@babel/runtime": ^7.17.0
     "@data-client/react": ^0.4.0
     "@data-client/redux": ^0.2.0
-    "@data-client/ssr": ^0.2.0
+    "@data-client/ssr": ^0.2.1
     "@types/compression": 1.7.2
     "@types/express": ^4.17.17
     "@types/node": ^20.0.0
@@ -2922,7 +2922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/core@npm:^0.4.0, @data-client/core@npm:^0.4.1":
+"@data-client/core@npm:^0.4.1":
   version: 0.4.1
   resolution: "@data-client/core@npm:0.4.1"
   dependencies:
@@ -2968,20 +2968,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/img@npm:0.2.0":
-  version: 0.2.0
-  resolution: "@data-client/img@npm:0.2.0"
+"@data-client/img@npm:0.2.1":
+  version: 0.2.1
+  resolution: "@data-client/img@npm:0.2.1"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@data-client/endpoint": ^0.2.0
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 97b0f938f32bb44b448af1e1d45027e0767b861a71863349955f5cbfcc874c44bbeb11ede230fccaabbc42e0783c1373f4d4cce7bee5127fbeb6fe5c52ea4373
+  checksum: 11e9812657619bd2c6812d4ed7614c0350413195edb5bd30fa0a614da035f2af56f0128e83dd0be35fc426b17a3791f9cf49309e4c8f0838f8cae64e3339ddb2
   languageName: node
   linkType: hard
 
@@ -3014,12 +3014,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/redux@npm:0.2.1, @data-client/redux@npm:^0.2.0":
-  version: 0.2.1
-  resolution: "@data-client/redux@npm:0.2.1"
+"@data-client/redux@npm:0.2.2, @data-client/redux@npm:^0.2.0":
+  version: 0.2.2
+  resolution: "@data-client/redux@npm:0.2.2"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/core": ^0.4.0
+    "@data-client/core": ^0.4.1
   peerDependencies:
     "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
@@ -3028,7 +3028,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 1c2c3bee50dc05a8263849ad9d631d220e271456bb8311c27bc7fd1692cc3366a202f45647248922c1f82fd52537fd0ebdcc27b2863a0810e78cf3d215ebd379
+  checksum: 84b6f313922d61888ecd8f0a3ab246f4b1aaa54841add32ecdae8552859ee84d2b54e2e81e6e58ddaa96d8414dc03917e7addf7d1aeb79db5bd7bbd7c26dfd99
   languageName: node
   linkType: hard
 
@@ -3043,13 +3043,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/ssr@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@data-client/ssr@npm:0.2.0"
+"@data-client/ssr@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@data-client/ssr@npm:0.2.1"
   dependencies:
     "@babel/runtime": ^7.17.0
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0
     "@data-client/redux": ^0.1.0 || ^0.2.0 || ^0.3.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     next: ">=12.0.0"
@@ -3060,20 +3060,20 @@ __metadata:
       optional: true
     next:
       optional: true
-  checksum: 5b35d0b682cad8476e7c3b9bf1d19971d4edace59c6cbfcad98cf861aa13dfc30401a2aacd160837e00ddc6019b263150fd723037cb26ea576ee65b02f2828cd
+  checksum: 6fdd245807c241bca99bad7352c3eda4ee018547183212c440d74e19444346126493719c111013454b3c736dfd3a45632a6bc4db059a72c553c980b2c2a2c8d1
   languageName: node
   linkType: hard
 
-"@data-client/test@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@data-client/test@npm:0.3.0"
+"@data-client/test@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@data-client/test@npm:0.3.1"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@testing-library/react": ^14.0.0
     "@testing-library/react-native": ^12.0.1
     react-error-boundary: ^4.0.0
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0
     "@testing-library/react-hooks": ^8.0.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0
     "@types/react-dom": "*"
@@ -3097,7 +3097,7 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 0f7db50dffb539937da145fc4c50ca961bae2e8f0c51dbe994442e68bddc9c331504c57bd019cae60106ff738dd3337be39e21f50c237524a734bd5dc8a63698
+  checksum: c9bd1bf2ff9f9cfa4ece3974034ebf4a7787895fb7b0fd19b9fa25d3facd64b15157c1e6f869c8927fc932007b4a2aa863887579235c6af97f4569066f1168e3
   languageName: node
   linkType: hard
 
@@ -13511,11 +13511,11 @@ __metadata:
     "@babel/runtime": 7.22.10
     "@data-client/endpoint": 0.2.6
     "@data-client/hooks": 0.1.1
-    "@data-client/img": 0.2.0
+    "@data-client/img": 0.2.1
     "@data-client/react": 0.4.1
-    "@data-client/redux": 0.2.1
+    "@data-client/redux": 0.2.2
     "@data-client/rest": 0.7.4
-    "@data-client/test": 0.3.0
+    "@data-client/test": 0.3.1
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
     "@linaria/shaker": 4.2.11
@@ -13572,7 +13572,7 @@ __metadata:
     "@data-client/graphql": 0.2.2
     "@data-client/react": 0.4.1
     "@data-client/rest": 0.7.4
-    "@data-client/test": 0.3.0
+    "@data-client/test": 0.3.1
     "@storybook/addon-essentials": 7.3.2
     "@storybook/addon-links": 7.3.2
     "@storybook/addon-mdx-gfm": 7.3.2
