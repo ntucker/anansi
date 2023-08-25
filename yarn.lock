@@ -242,7 +242,7 @@ __metadata:
     import-meta-resolve: ^3.0.0
     mem-fs: ^3.0.0
     mem-fs-editor: ^10.0.2
-    pacote: ^17.0.2
+    pacote: ^17.0.3
     shelobsay: ^2.0.0
     yeoman-assert: 3.1.1
     yeoman-environment: 3.19.3
@@ -312,7 +312,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.3.2
     "@storybook/react": ^7.3.2
     "@storybook/types": ^7.3.2
-    "@types/node": ^20.5.3
+    "@types/node": ^20.5.6
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -2922,14 +2922,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/core@npm:^0.4.1, @data-client/core@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "@data-client/core@npm:0.4.2"
+"@data-client/core@npm:^0.4.1, @data-client/core@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "@data-client/core@npm:0.4.3"
   dependencies:
     "@babel/runtime": ^7.17.0
     "@data-client/normalizr": ^0.2.2
     flux-standard-action: ^2.1.1
-  checksum: 80e530846a00a9d8523a8119195c6e5d3cdc7be8131a8761d3b00f0ae98d6d1970083f2b2943e012815de45ca212e09c896aae413bc9f9871f670aa490a9a3eb
+  checksum: 09f66eff14858c01349a54861e1510e013e68e1541d63b723849c5795f82f25004baf35f2bb5447d228aa08cf4331caafd8da1e24c9b023d3ffc3fa72c18e1ce
   languageName: node
   linkType: hard
 
@@ -2994,12 +2994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.4.2, @data-client/react@npm:^0.4.0":
-  version: 0.4.2
-  resolution: "@data-client/react@npm:0.4.2"
+"@data-client/react@npm:0.4.3, @data-client/react@npm:^0.4.0":
+  version: 0.4.3
+  resolution: "@data-client/react@npm:0.4.3"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/core": ^0.4.2
+    "@data-client/core": ^0.4.3
     "@data-client/use-enhanced-reducer": ^0.1.0
   peerDependencies:
     "@react-navigation/native": ^6.0.0
@@ -3010,7 +3010,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: ec32fe91dd442534a9dea993c667188beda9f0ba67dc41ac0f0adfecbdf4bbc6248d832770f2721d805ec0cec45419898c77e274f5510d6776afae56274ab03c
+  checksum: 8266ae4b76f0d9f6c534b8968677840c817af38a135f8f88d5099f4cb97880988aa0e74b8eaae9293e6bf745201d2a924ea487507028728a2a1e22e3e781da58
   languageName: node
   linkType: hard
 
@@ -7624,10 +7624,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.5.3, @types/node@npm:^20.0.0, @types/node@npm:^20.5.3":
-  version: 20.5.3
-  resolution: "@types/node@npm:20.5.3"
-  checksum: fe67a0fd7402218bdf91523a2b1c2e41d619f7294b1a471e0a778b8bc7bb3fcf291aed12041bcbe9622d50a3d1295a9adea0e7e19bb9386a246bf66071404721
+"@types/node@npm:*, @types/node@npm:20.5.6, @types/node@npm:^20.0.0, @types/node@npm:^20.5.6":
+  version: 20.5.6
+  resolution: "@types/node@npm:20.5.6"
+  checksum: d2ce44f1cfa3fd00fe7426f7cf9a46d680cd57802b874ed5618e7d9101a9c6b8de37f08c0e7185ee06fb363ad492549c3ea69665c7e8e31c7813210ed8e89005
   languageName: node
   linkType: hard
 
@@ -7639,16 +7639,16 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^16.0.0":
-  version: 16.18.43
-  resolution: "@types/node@npm:16.18.43"
-  checksum: a3ae424834818d1aa53d05e9de954b4559aaa9c02294e654403d9bd2a2b1db608c328755970071369a0c85159a6f2969502e1b9c7e1f29d2629ca677c33c8bdb
+  version: 16.18.46
+  resolution: "@types/node@npm:16.18.46"
+  checksum: 1aed3fe9693f2098b8dac8c76c809c1925a456da00dd6f06c1ccb55c62ccfbbe7ec43ccfd12001f9cb4ff84e138292ae53456435dfecd5c4bb1324394c3e09c7
   languageName: node
   linkType: hard
 
 "@types/node@npm:^18.15.11":
-  version: 18.17.8
-  resolution: "@types/node@npm:18.17.8"
-  checksum: ebb71526368c9c58f03e2c2408bfda4aa686c13d84226e2c9b48d9c4aee244fb82e672aaf4aa8ccb6e4993b4274d5f4b2b3d52d0a2e57ab187ae653903376411
+  version: 18.17.11
+  resolution: "@types/node@npm:18.17.11"
+  checksum: c31d9f4a6f7c5c413b6548ded0fab046571832718361c5cda325960f32d6b386dd0a7fa9228911111fee54c180d09df82a622efdabdbef89fa9e1923891892bc
   languageName: node
   linkType: hard
 
@@ -13511,7 +13511,7 @@ __metadata:
     "@data-client/endpoint": 0.2.7
     "@data-client/hooks": 0.1.1
     "@data-client/img": 0.2.1
-    "@data-client/react": 0.4.2
+    "@data-client/react": 0.4.3
     "@data-client/redux": 0.2.2
     "@data-client/rest": 0.7.5
     "@data-client/test": 0.3.1
@@ -13522,7 +13522,7 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.44.2
     "@types/jest": 29.5.4
-    "@types/node": 20.5.3
+    "@types/node": 20.5.6
     "@types/prettier": 2.7.3
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
@@ -13546,7 +13546,7 @@ __metadata:
     react-refresh: 0.14.0
     react-test-renderer: 18.2.0
     redux: ^4.2.1
-    typescript: 5.1.6
+    typescript: 5.2.2
     webpack: 5.88.2
     webpack-cli: 5.1.4
     webpack-dev-server: 4.15.1
@@ -13569,7 +13569,7 @@ __metadata:
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.22.11
     "@data-client/graphql": 0.2.2
-    "@data-client/react": 0.4.2
+    "@data-client/react": 0.4.3
     "@data-client/rest": 0.7.5
     "@data-client/test": 0.3.1
     "@storybook/addon-essentials": 7.3.2
@@ -13585,7 +13585,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.4
     "@types/lodash": 4.14.197
-    "@types/node": 20.5.3
+    "@types/node": 20.5.6
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
@@ -20222,6 +20222,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"npm-packlist@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "npm-packlist@npm:8.0.0"
+  dependencies:
+    ignore-walk: ^6.0.0
+  checksum: 7b6ac15710a1d6d8b7fca2db4cdbb87641eb8398ea70efde288538e7713a66a21c43ead7635affcf00bfd46b6643e18b03078449986e25b0753078c05b37cbcc
+  languageName: node
+  linkType: hard
+
 "npm-pick-manifest@npm:^6.0.0, npm-pick-manifest@npm:^6.1.0, npm-pick-manifest@npm:^6.1.1":
   version: 6.1.1
   resolution: "npm-pick-manifest@npm:6.1.1"
@@ -21066,9 +21075,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "pacote@npm:17.0.2"
+"pacote@npm:^17.0.3":
+  version: 17.0.3
+  resolution: "pacote@npm:17.0.3"
   dependencies:
     "@npmcli/git": ^5.0.0
     "@npmcli/installed-package-contents": ^2.0.1
@@ -21078,7 +21087,7 @@ __metadata:
     fs-minipass: ^3.0.0
     minipass: ^7.0.2
     npm-package-arg: ^11.0.0
-    npm-packlist: ^7.0.0
+    npm-packlist: ^8.0.0
     npm-pick-manifest: ^9.0.0
     npm-registry-fetch: ^16.0.0
     proc-log: ^3.0.0
@@ -21090,7 +21099,7 @@ __metadata:
     tar: ^6.1.11
   bin:
     pacote: lib/bin.js
-  checksum: bf3efdb550696fea7f0d56d924686b3557c77ba6906283d8dafdf466e05feeb106dffe9cefe685e9bb35b0f54ead501b0c24cbb117b4cc91bea6476f2e859e3f
+  checksum: f1a82ee48ff53c69dfa710ee79b5cc344e6fcc413fdc3d8e134d1dc1587b8970ebfad1ca6b5f5f1fdbd7f2d0dd521aa11f214f3b1261f02a3b55bf83b5efa8b9
   languageName: node
   linkType: hard
 
@@ -24529,7 +24538,7 @@ __metadata:
     react-dom: 18.2.0
     rimraf: ^5.0.0
     start-server-and-test: ^2.0.0
-    typescript: 5.1.6
+    typescript: 5.2.2
     webpack: 5.88.2
     webpack-cli: 5.1.4
     webpack-dev-server: 4.15.1
@@ -26959,23 +26968,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.1.6, typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2":
-  version: 5.1.6
-  resolution: "typescript@npm:5.1.6"
+"typescript@npm:5.2.2, typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2f2c35096035fe1f5facd1e38922ccb8558996331405eb00a5111cc948b2e733163cc22fab5db46992aba7dd520fff637f2c1df4996ff0e134e77d3249a7350
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.1.6#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
-  version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
+"typescript@patch:typescript@5.2.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
   languageName: node
   linkType: hard
 
