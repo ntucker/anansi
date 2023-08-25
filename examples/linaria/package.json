@@ -48,13 +48,13 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.22.5",
-    "@babel/runtime": "7.22.10",
+    "@babel/plugin-transform-modules-commonjs": "7.22.11",
+    "@babel/runtime": "7.22.11",
     "@linaria/core": "4.2.10",
     "@linaria/react": "4.3.8",
     "@linaria/shaker": "4.2.11",
     "classnames": "2.3.2",
-    "core-js": "3.32.0",
+    "core-js": "3.32.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "redbox-react": "1.6.0"
