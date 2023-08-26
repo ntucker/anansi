@@ -2933,22 +2933,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.2.7, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.6, @data-client/endpoint@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "@data-client/endpoint@npm:0.2.7"
+"@data-client/endpoint@npm:0.2.8, @data-client/endpoint@npm:^0.2.0, @data-client/endpoint@npm:^0.2.8":
+  version: 0.2.8
+  resolution: "@data-client/endpoint@npm:0.2.8"
   dependencies:
     "@babel/runtime": ^7.17.0
-  checksum: 6171a746def05d4d2b8583dc5a41ccf8b8ce52eef57c778339ef5d5fe61193926371b7ce2548124fec64f8701c35cada6ac2cd6348c3a4058f8da5328d326dbe
+  checksum: 9b23a5e66b55b58704dcf410557ad9262cee75d55714a54396e0aebbe05547a0137fb03deae3a3221d4e09f290b21b36955ecbf3a874728842e06773ac57f6a1
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.2.2":
-  version: 0.2.2
-  resolution: "@data-client/graphql@npm:0.2.2"
+"@data-client/graphql@npm:0.2.3":
+  version: 0.2.3
+  resolution: "@data-client/graphql@npm:0.2.3"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.2.6
-  checksum: e7993b9b1080d85344b0919e73308d67a155612d4174294063e7e6cef2bda76dae020199584c09ae0c525af135d0a22466a3aa70a963421259598212536e26bd
+    "@data-client/endpoint": ^0.2.8
+  checksum: 1c9f2302e7f403ae103d5299811cd0f143805d6d5f41368c278148f938caddec618fb342b4ab6c5d47763438f8982f07ca7c24a70ad2075e82bf8b3ef22ba34c
   languageName: node
   linkType: hard
 
@@ -3032,14 +3032,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.7.5":
-  version: 0.7.5
-  resolution: "@data-client/rest@npm:0.7.5"
+"@data-client/rest@npm:0.7.6":
+  version: 0.7.6
+  resolution: "@data-client/rest@npm:0.7.6"
   dependencies:
     "@babel/runtime": ^7.17.0
-    "@data-client/endpoint": ^0.2.7
+    "@data-client/endpoint": ^0.2.8
     path-to-regexp: ^6.2.1
-  checksum: ab7e8b80e6dc646694e039f713ccb8ff207d91052cde296a7a2cf5c96949025e45b29e3593a1263defa01d4cb4e1dedec8f2ab1c31aaba38cbdd7bab44e6d36e
+  checksum: b16910aed2ecbc886388d43cdb0e5169fdf182fd01283174b079ef1283812c2d70654c016794a2f7905cd7c4aa46aaf2f042c68fa8475b5e287afe690a6925a8
   languageName: node
   linkType: hard
 
@@ -13508,12 +13508,12 @@ __metadata:
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.11
     "@babel/runtime": 7.22.11
-    "@data-client/endpoint": 0.2.7
+    "@data-client/endpoint": 0.2.8
     "@data-client/hooks": 0.1.1
     "@data-client/img": 0.2.1
     "@data-client/react": 0.4.3
     "@data-client/redux": 0.2.2
-    "@data-client/rest": 0.7.5
+    "@data-client/rest": 0.7.6
     "@data-client/test": 0.3.1
     "@linaria/core": 4.2.10
     "@linaria/react": 4.3.8
@@ -13568,9 +13568,9 @@ __metadata:
     "@ant-design/pro-layout": 7.12.3
     "@babel/core": ^7.21.3
     "@babel/runtime": 7.22.11
-    "@data-client/graphql": 0.2.2
+    "@data-client/graphql": 0.2.3
     "@data-client/react": 0.4.3
-    "@data-client/rest": 0.7.5
+    "@data-client/rest": 0.7.6
     "@data-client/test": 0.3.1
     "@storybook/addon-essentials": 7.3.2
     "@storybook/addon-links": 7.3.2
