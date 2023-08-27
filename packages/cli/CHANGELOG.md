@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.14](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.13...@anansi/cli@3.0.14) (2023-08-27)
+
+### 💅 Enhancement
+
+* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+
+### 📦 Package
+
+* Update `execa` to v8 ([#2133](https://github.com/ntucker/anansi/issues/2133)) ([338108c](https://github.com/ntucker/anansi/commit/338108cda8f9edd8b5260178d5b43efa7018ddd5))
+
 ### [3.0.13](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.12...@anansi/cli@3.0.13) (2023-07-29)
 
 ### 📦 Package

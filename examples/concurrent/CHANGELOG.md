@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.2.60](https://github.com/ntucker/anansi/compare/example-react-18@4.2.59...example-react-18@4.2.60) (2023-08-27)
+
+### 💅 Enhancement
+
+* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+
+### 📦 Package
+
+* Update `@ant-design/cssinjs` to v1.17.0 ([#2147](https://github.com/ntucker/anansi/issues/2147)) ([1f108a6](https://github.com/ntucker/anansi/commit/1f108a635008847e788133a7957c9cc136cc7fae))
+* Update all non-major dependencies ([#2120](https://github.com/ntucker/anansi/issues/2120)) ([5bcc4e2](https://github.com/ntucker/anansi/commit/5bcc4e23986445998ed1ceeca95254ed3b20af1a))
+* Update all non-major dependencies ([#2122](https://github.com/ntucker/anansi/issues/2122)) ([312f4c5](https://github.com/ntucker/anansi/commit/312f4c51aec4c6e2915c7929120e939d356b2a68))
+* Update all non-major dependencies ([#2123](https://github.com/ntucker/anansi/issues/2123)) ([a56c15f](https://github.com/ntucker/anansi/commit/a56c15fd0fbd8a3b4fb9ac03793393579ee606c4))
+* Update all non-major dependencies ([#2124](https://github.com/ntucker/anansi/issues/2124)) ([4e88719](https://github.com/ntucker/anansi/commit/4e88719ae80e76867e16846c1162e111d7c3a85c))
+* Update all non-major dependencies ([#2130](https://github.com/ntucker/anansi/issues/2130)) ([c66a5a2](https://github.com/ntucker/anansi/commit/c66a5a25f0fd925786359ed0c496bde014693032))
+* Update all non-major dependencies ([#2136](https://github.com/ntucker/anansi/issues/2136)) ([c3be51d](https://github.com/ntucker/anansi/commit/c3be51d1ee193dae8080fabb7a8824fd585318bf))
+* Update all non-major dependencies ([#2137](https://github.com/ntucker/anansi/issues/2137)) ([dd2b0f6](https://github.com/ntucker/anansi/commit/dd2b0f6f93cf6de0b9d43e29ede85a392c884f5f))
+* Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
+* Update all non-major dependencies ([#2143](https://github.com/ntucker/anansi/issues/2143)) ([3f812be](https://github.com/ntucker/anansi/commit/3f812be22f4c5fcc0ae7b469d48132699e60f94b))
+* Update all non-major dependencies ([#2145](https://github.com/ntucker/anansi/issues/2145)) ([1ca4f84](https://github.com/ntucker/anansi/commit/1ca4f84f843aa38b3af9eebedeed4c4f57d09e5e))
+* Update babel packages ([#2142](https://github.com/ntucker/anansi/issues/2142)) ([df547a0](https://github.com/ntucker/anansi/commit/df547a046e0ebbca4e93e796d30ba2a669f1d657))
+* Update JS test packages ([#2141](https://github.com/ntucker/anansi/issues/2141)) ([953506d](https://github.com/ntucker/anansi/commit/953506d591852e9e5e7bf26166c8df7c4cf97778))
+* Update linting packages ([#2128](https://github.com/ntucker/anansi/issues/2128)) ([b2106c7](https://github.com/ntucker/anansi/commit/b2106c73c503671f87b1fbda74d5a811277dbd51))
+* Update linting packages ([#2138](https://github.com/ntucker/anansi/issues/2138)) ([182dcb5](https://github.com/ntucker/anansi/commit/182dcb54756497ac18c07fddf88a4bb2ebdba20b))
+* Update linting packages ([#2144](https://github.com/ntucker/anansi/issues/2144)) ([ad24eaf](https://github.com/ntucker/anansi/commit/ad24eaff525d7dc66074c7539be64c50dd633b95))
+
+### 📝 Documentation
+
+* Remove overfetching in concurrent routes ([73ec823](https://github.com/ntucker/anansi/commit/73ec8237041e74c6b5ba3f64aaf43e6bf6d58d0f))
+
 ### [4.2.59](https://github.com/ntucker/anansi/compare/example-react-18@4.2.58...example-react-18@4.2.59) (2023-08-09)
 
 ### 📦 Package

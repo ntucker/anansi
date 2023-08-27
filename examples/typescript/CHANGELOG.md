@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [11.1.38](https://github.com/ntucker/anansi/compare/example-typescript@11.1.37...example-typescript@11.1.38) (2023-08-27)
+
+### 💅 Enhancement
+
+* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2120](https://github.com/ntucker/anansi/issues/2120)) ([5bcc4e2](https://github.com/ntucker/anansi/commit/5bcc4e23986445998ed1ceeca95254ed3b20af1a))
+* Update all non-major dependencies ([#2122](https://github.com/ntucker/anansi/issues/2122)) ([312f4c5](https://github.com/ntucker/anansi/commit/312f4c51aec4c6e2915c7929120e939d356b2a68))
+* Update all non-major dependencies ([#2123](https://github.com/ntucker/anansi/issues/2123)) ([a56c15f](https://github.com/ntucker/anansi/commit/a56c15fd0fbd8a3b4fb9ac03793393579ee606c4))
+* Update all non-major dependencies ([#2124](https://github.com/ntucker/anansi/issues/2124)) ([4e88719](https://github.com/ntucker/anansi/commit/4e88719ae80e76867e16846c1162e111d7c3a85c))
+* Update all non-major dependencies ([#2130](https://github.com/ntucker/anansi/issues/2130)) ([c66a5a2](https://github.com/ntucker/anansi/commit/c66a5a25f0fd925786359ed0c496bde014693032))
+* Update all non-major dependencies ([#2136](https://github.com/ntucker/anansi/issues/2136)) ([c3be51d](https://github.com/ntucker/anansi/commit/c3be51d1ee193dae8080fabb7a8824fd585318bf))
+* Update all non-major dependencies ([#2137](https://github.com/ntucker/anansi/issues/2137)) ([dd2b0f6](https://github.com/ntucker/anansi/commit/dd2b0f6f93cf6de0b9d43e29ede85a392c884f5f))
+* Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
+* Update all non-major dependencies ([#2143](https://github.com/ntucker/anansi/issues/2143)) ([3f812be](https://github.com/ntucker/anansi/commit/3f812be22f4c5fcc0ae7b469d48132699e60f94b))
+* Update all non-major dependencies ([#2145](https://github.com/ntucker/anansi/issues/2145)) ([1ca4f84](https://github.com/ntucker/anansi/commit/1ca4f84f843aa38b3af9eebedeed4c4f57d09e5e))
+* Update babel packages ([#2142](https://github.com/ntucker/anansi/issues/2142)) ([df547a0](https://github.com/ntucker/anansi/commit/df547a046e0ebbca4e93e796d30ba2a669f1d657))
+* Update JS test packages ([#2141](https://github.com/ntucker/anansi/issues/2141)) ([953506d](https://github.com/ntucker/anansi/commit/953506d591852e9e5e7bf26166c8df7c4cf97778))
+* Update storybook monorepo to v7.2.3 ([#2121](https://github.com/ntucker/anansi/issues/2121)) ([a7b830e](https://github.com/ntucker/anansi/commit/a7b830e1626ed7b8d8e858a637060c84afbdf267))
+* Update storybook monorepo to v7.3.0 ([#2126](https://github.com/ntucker/anansi/issues/2126)) ([ce9fc48](https://github.com/ntucker/anansi/commit/ce9fc48efd6da4ba6deb4a887f05209701fa964d))
+* Update storybook monorepo to v7.3.1 ([#2127](https://github.com/ntucker/anansi/issues/2127)) ([aed624f](https://github.com/ntucker/anansi/commit/aed624fbebc7547d3f8004890739c3eac8c15bc0))
+* Update storybook monorepo to v7.3.2 ([#2132](https://github.com/ntucker/anansi/issues/2132)) ([f8c2978](https://github.com/ntucker/anansi/commit/f8c2978103c4c90f4ad96079b2a18daf5acdfd94))
+
 ### [11.1.37](https://github.com/ntucker/anansi/compare/example-typescript@11.1.36...example-typescript@11.1.37) (2023-08-09)
 
 ### 📦 Package

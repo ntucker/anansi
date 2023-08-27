@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.1...@anansi/core@0.18.2) (2023-08-27)
+
+### 💅 Enhancement
+
+* Gracefull fallback if rest hooks initial data cannot be found ([e632027](https://github.com/ntucker/anansi/commit/e632027bcb4b25e0c090672e6e8136d4697dfd19))
+* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2120](https://github.com/ntucker/anansi/issues/2120)) ([5bcc4e2](https://github.com/ntucker/anansi/commit/5bcc4e23986445998ed1ceeca95254ed3b20af1a))
+* Update all non-major dependencies ([#2123](https://github.com/ntucker/anansi/issues/2123)) ([a56c15f](https://github.com/ntucker/anansi/commit/a56c15fd0fbd8a3b4fb9ac03793393579ee606c4))
+* Update all non-major dependencies ([#2137](https://github.com/ntucker/anansi/issues/2137)) ([dd2b0f6](https://github.com/ntucker/anansi/commit/dd2b0f6f93cf6de0b9d43e29ede85a392c884f5f))
+* Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
+
+### 📝 Documentation
+
+* Add serve() info to readme ([e8be161](https://github.com/ntucker/anansi/commit/e8be1614b8c425b15bbf793b0d5fd6803b1e07fc))
+
 ### [0.18.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.0...@anansi/core@0.18.1) (2023-08-09)
 
 ### 📦 Package

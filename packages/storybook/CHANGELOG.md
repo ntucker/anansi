@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.6](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.0.5...@anansi/storybook@2.0.6) (2023-08-27)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2122](https://github.com/ntucker/anansi/issues/2122)) ([312f4c5](https://github.com/ntucker/anansi/commit/312f4c51aec4c6e2915c7929120e939d356b2a68))
+* Update all non-major dependencies ([#2124](https://github.com/ntucker/anansi/issues/2124)) ([4e88719](https://github.com/ntucker/anansi/commit/4e88719ae80e76867e16846c1162e111d7c3a85c))
+* Update all non-major dependencies ([#2136](https://github.com/ntucker/anansi/issues/2136)) ([c3be51d](https://github.com/ntucker/anansi/commit/c3be51d1ee193dae8080fabb7a8824fd585318bf))
+* Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
+* Update all non-major dependencies ([#2143](https://github.com/ntucker/anansi/issues/2143)) ([3f812be](https://github.com/ntucker/anansi/commit/3f812be22f4c5fcc0ae7b469d48132699e60f94b))
+* Update linting packages ([#2128](https://github.com/ntucker/anansi/issues/2128)) ([b2106c7](https://github.com/ntucker/anansi/commit/b2106c73c503671f87b1fbda74d5a811277dbd51))
+* Update storybook monorepo to v7.2.3 ([#2121](https://github.com/ntucker/anansi/issues/2121)) ([a7b830e](https://github.com/ntucker/anansi/commit/a7b830e1626ed7b8d8e858a637060c84afbdf267))
+* Update storybook monorepo to v7.3.0 ([#2126](https://github.com/ntucker/anansi/issues/2126)) ([ce9fc48](https://github.com/ntucker/anansi/commit/ce9fc48efd6da4ba6deb4a887f05209701fa964d))
+* Update storybook monorepo to v7.3.1 ([#2127](https://github.com/ntucker/anansi/issues/2127)) ([aed624f](https://github.com/ntucker/anansi/commit/aed624fbebc7547d3f8004890739c3eac8c15bc0))
+* Update storybook monorepo to v7.3.2 ([#2132](https://github.com/ntucker/anansi/issues/2132)) ([f8c2978](https://github.com/ntucker/anansi/commit/f8c2978103c4c90f4ad96079b2a18daf5acdfd94))
+
 ### [2.0.5](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.0.4...@anansi/storybook@2.0.5) (2023-08-09)
 
 ### 📦 Package

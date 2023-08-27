@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/router@0.8.1...@anansi/router@0.9.0) (2023-08-27)
+
+### 🚀 Features
+
+* Add AsyncBoundary and className arg for ErrorBoundary ([66b96a7](https://github.com/ntucker/anansi/commit/66b96a75e7356e54c911dd400121887e25a93df6))
+
+### 💅 Enhancement
+
+* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+* Reset Error Boundary on navigation change ([59ee2b4](https://github.com/ntucker/anansi/commit/59ee2b4014fcdba971b6208f9f93ec491cf6c13b))
+
 ### [0.8.1](https://github.com/ntucker/anansi/compare/@anansi/router@0.8.0...@anansi/router@0.8.1) (2023-07-02)
 
 **Note:** Version bump only for package @anansi/router

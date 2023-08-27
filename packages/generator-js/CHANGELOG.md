@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.11...@anansi/generator-js@12.0.12) (2023-08-27)
+
+### 💅 Enhancement
+
+* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+* Update template to use modern coinbase api ([35a9e29](https://github.com/ntucker/anansi/commit/35a9e2909499a8eafa76d36741f618dea2fdd6d3))
+* Use router's AsyncBoundary so error gets reset on nav ([f519cee](https://github.com/ntucker/anansi/commit/f519cee6ec9e196e49cfd3f50f4b128a9c868220))
+
+### 📦 Package
+
+* Update `execa` to v8 ([#2133](https://github.com/ntucker/anansi/issues/2133)) ([338108c](https://github.com/ntucker/anansi/commit/338108cda8f9edd8b5260178d5b43efa7018ddd5))
+* Update `pacote` to v16 ([#2125](https://github.com/ntucker/anansi/issues/2125)) ([a639226](https://github.com/ntucker/anansi/commit/a6392267778a0ebd8e62efdb10d76b5e6200469b))
+* Update `pacote` to v17 ([#2131](https://github.com/ntucker/anansi/issues/2131)) ([55d2b0f](https://github.com/ntucker/anansi/commit/55d2b0f1238ea69a9a3f43a7164eaec624fdeac2))
+* Update all non-major dependencies ([#2136](https://github.com/ntucker/anansi/issues/2136)) ([c3be51d](https://github.com/ntucker/anansi/commit/c3be51d1ee193dae8080fabb7a8824fd585318bf))
+* Update all non-major dependencies ([#2143](https://github.com/ntucker/anansi/issues/2143)) ([3f812be](https://github.com/ntucker/anansi/commit/3f812be22f4c5fcc0ae7b469d48132699e60f94b))
+
 ### [12.0.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.0.10...@anansi/generator-js@12.0.11) (2023-07-29)
 
 ### 🐛 Bug Fix
