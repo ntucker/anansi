@@ -1,4 +1,5 @@
 import { type Manager } from '@data-client/react';
+import { initialState } from '@data-client/redux';
 
 import type { ClientSpout } from './types.js';
 
@@ -10,14 +11,15 @@ export default function restHooksSpout(
   return next => async props => {
     const nextProps = await next(props);
     const [data, { CacheProvider }] = await Promise.all([
-      props.getInitialData('resthooks'),
+      props.getInitialData('resthooks').catch(e => {
+        console.error('Rest Hooks initial data could not load:', e);
+        return initialState;
+      }),
       import('./restHooks.provider.js'),
     ]);
 
-    if (process.env.NODE_ENV !== 'production' && !data) {
+    if (!data) {
       console.error('Rest Hooks init data not found');
-    } else if (!data) {
-      console.info('Rest Hooks init missing');
     }
 
     return {
