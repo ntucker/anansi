@@ -460,9 +460,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.16.2, @ant-design/cssinjs@npm:^1.16.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
-  version: 1.16.2
-  resolution: "@ant-design/cssinjs@npm:1.16.2"
+"@ant-design/cssinjs@npm:1.17.0, @ant-design/cssinjs@npm:^1.16.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
+  version: 1.17.0
+  resolution: "@ant-design/cssinjs@npm:1.17.0"
   dependencies:
     "@babel/runtime": ^7.11.1
     "@emotion/hash": ^0.8.0
@@ -474,7 +474,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 2c3e4448f5f72bec5c0f9640518e45d879c972255b01fd2cc611ee510954d8244660dd9e02408d1fff23f8c37c3061468a31b9bd105211b0859c87ad8b739a6d
+  checksum: f724ba57cd3bd1a28916e6d298a9929f6de2b8e4adb2acd8a12fea59ac918254d4b02e6861d4f140c3e84199d4dafbf1f72b94419a9ba4a1ef197fb17cd2916f
   languageName: node
   linkType: hard
 
@@ -13504,7 +13504,7 @@ __metadata:
     "@anansi/jest-preset": ^0.10.19
     "@anansi/router": ^0.8.1
     "@anansi/webpack-config": ^15.0.31
-    "@ant-design/cssinjs": 1.16.2
+    "@ant-design/cssinjs": 1.17.0
     "@ant-design/icons": ^5.0.1
     "@babel/core": 7.22.11
     "@babel/runtime": 7.22.11

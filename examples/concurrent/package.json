@@ -56,7 +56,7 @@
   "dependencies": {
     "@anansi/core": "^0.18.1",
     "@anansi/router": "^0.8.1",
-    "@ant-design/cssinjs": "1.16.2",
+    "@ant-design/cssinjs": "1.17.0",
     "@ant-design/icons": "^5.0.1",
     "@babel/runtime": "7.22.11",
     "@data-client/endpoint": "0.2.8",
