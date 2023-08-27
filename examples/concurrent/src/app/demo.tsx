@@ -7,7 +7,6 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-
 import { PlaceholderEntity } from 'resources/PlaceholderBaseResource';
 
 export const demoContext = createContext({
@@ -26,7 +25,7 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState({ cache: true, concurrent: true });
   const set = useCallback(
     (v: { cache?: boolean; concurrent?: boolean }) => {
-      // super hack to disable cool rest hooks caching
+      // super hack to disable cool reactive data client caching
       if ('cache' in v) {
         if (v.cache) {
           (PlaceholderEntity as any).memo = function (...args: any) {

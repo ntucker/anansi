@@ -38,7 +38,7 @@
     "yeoman-generator",
     "yeoman",
     "typescript",
-    "rest-hooks",
+    "data-client",
     "webpack",
     "sdk",
     "scss",

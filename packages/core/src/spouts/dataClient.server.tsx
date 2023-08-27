@@ -3,7 +3,7 @@ import type { Store } from 'redux';
 
 import type { ServerSpout } from './types.js';
 
-export default function restHooksSpout(
+export default function dataClientSpout(
   options: {
     getManagers?: () => Manager[];
   } = {},
@@ -29,7 +29,7 @@ export default function restHooksSpout(
       ...nextProps,
       initData: {
         ...nextProps.initData,
-        resthooks: useReadyCacheState,
+        dataclient: useReadyCacheState,
       },
       app: <ServerCacheProvider>{nextProps.app}</ServerCacheProvider>,
       // TODO: figure out how to only inject in next and not have to also put here

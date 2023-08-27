@@ -32,7 +32,7 @@ export default class WebpackGenerator extends InstallPeersMixin(
       this.destinationPath('.storybook/main.js'),
       this.config.getAll(),
     );
-    // only use rest hooks by default for applications
+    // only use reactive data client by default for applications
     if (this.options.projectType === 'SPA') {
       this.fs.copyTpl(
         this.templatePath('.storybook/preview.tsx'),
