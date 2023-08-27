@@ -94,3 +94,24 @@ Anansi can quickly traverse spouts setup by a user.
 The server lays the spouts for anansi to travel in. Once delivered to the client, the spouts can be flooded (hydration).
 
 In both cases, we need the route and application data.
+
+
+## Scripts
+
+### serve(entry, options?)
+
+```ts
+import { serve } from '@anansi/core/scripts';
+
+serve('./dist-server/App.js');
+```
+
+#### serveAssets: boolean
+
+Serves static assets. This is typically useful when validating server builds locally; but you
+typically want to use a dedicated HTTP server for static assets in production.
+
+#### serveProxy: boolean
+
+Proxy requested based on webpack config devConfig. Useful for validating server builds locally.
+In production it is much more performant to use a separate reverse proxy.
