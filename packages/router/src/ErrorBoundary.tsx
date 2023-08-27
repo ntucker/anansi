@@ -6,7 +6,8 @@ import type { ErrorTypes } from './types.js';
 
 interface Props<E extends ErrorTypes> {
   children: ReactNode;
-  fallbackComponent: ComponentType<{ error: E }>;
+  fallbackComponent: ComponentType<{ error: E; className?: string }>;
+  className?: string;
 }
 interface State<E extends ErrorTypes> {
   error?: E;
@@ -21,15 +22,21 @@ export default class ErrorBoundary<E extends ErrorTypes> extends Component<
   private declare unsubscribe: () => void;
 
   static defaultProps = {
-    fallbackComponent: ({ error }: { error: ErrorTypes }) => {
+    fallbackComponent: ({
+      error,
+      className,
+    }: {
+      error: ErrorTypes;
+      className: string;
+    }) => {
       if (typeof error.status === 'string') {
         return (
-          <div>
+          <div className={className}>
             <b>{error.status}</b>: {(error.response as any)?.statusText}
           </div>
         );
       }
-      return <div>{error.message}</div>;
+      return <div className={className}>{error.message}</div>;
     },
   };
 
@@ -56,6 +63,11 @@ export default class ErrorBoundary<E extends ErrorTypes> extends Component<
     if (!this.state.error) {
       return this.props.children;
     }
-    return <this.props.fallbackComponent error={this.state.error} />;
+    return (
+      <this.props.fallbackComponent
+        error={this.state.error}
+        className={this.props.className}
+      />
+    );
   }
 }
