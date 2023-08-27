@@ -54,7 +54,7 @@ anansi add testing
 - [spa](./src/spa#readme)
   - [webpack](./src/webpack#readme)
   - [anansi-splash](./src/anansi-splash#readme)
-  - [Rest Hooks](https://resthooks.io)
+  - [Reactive Data Client](https://dataclient.io)
 
 ## Features
 
@@ -72,8 +72,8 @@ anansi add testing
 ### React SPA:
 
 - [x] Experimental React concurrent mode
-- [ ] routing
-- [x] rest-hooks
+- [x] routing
+- [x] data-client
 
 ### Library:
 

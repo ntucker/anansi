@@ -1,7 +1,7 @@
 import {
   laySpouts,
   documentSpout,
-  restHooksSpout,
+  dataClientSpout,
   prefetchSpout,
   routerSpout,
   JSONSpout,
@@ -9,7 +9,6 @@ import {
   antdSpout,
 } from '@anansi/core/server';
 import { useController } from '@data-client/react';
-
 import app from 'app';
 
 import { createRouter } from './routing';
@@ -28,7 +27,7 @@ const spouts = prefetchSpout('controller')(
   })(
     antdSpout()(
       JSONSpout()(
-        restHooksSpout()(
+        dataClientSpout()(
           routerSpout({ useResolveWith: useController, createRouter })(
             appSpout(app),
           ),

@@ -2,7 +2,7 @@ import { useController, AsyncBoundary } from '@data-client/react';
 import {
   floodSpouts,
   documentSpout,
-  restHooksSpout,
+  dataClientSpout,
   routerSpout,
   JSONSpout,
   appSpout,
@@ -19,7 +19,7 @@ const app = (
 
 const spouts = JSONSpout()(
   documentSpout({ title: 'anansi' })(
-    restHooksSpout()(
+    dataClientSpout()(
       routerSpout({
         useResolveWith: useController,
         createRouter,

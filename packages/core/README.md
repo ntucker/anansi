@@ -27,7 +27,7 @@ import { useController } from '@data-client/react';
 import {
   laySpouts,
   documentSpout,
-  restHooksSpout,
+  dataClientSpout,
   prefetchSpout,
   routerSpout,
   JSONSpout,
@@ -41,7 +41,7 @@ import { createRouter } from './routing';
 const spouts = prefetchSpout('controller')(
   documentSpout({ title: 'anansi' })(
     JSONSpout()(
-      restHooksSpout()(
+      dataClientSpout()(
         routerSpout({ useResolveWith: useController, createRouter })(
           appSpout(app),
         ),
@@ -62,7 +62,7 @@ import { useController } from '@data-client/react';
 import {
   floodSpouts,
   documentSpout,
-  restHooksSpout,
+  dataClientSpout,
   routerSpout,
   JSONSpout,
   appSpout,
@@ -76,7 +76,7 @@ const appSpout = () => Promise.resolve({ app });
 
 const spouts = documentSpout({ title: 'anansi' })(
   JSONSpout()(
-    restHooksSpout()(
+    dataClientSpout()(
       routerSpout({ useResolveWith: useController, createRouter })(
         appSpout(app),
       ),

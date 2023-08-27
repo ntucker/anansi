@@ -3,7 +3,7 @@ import { initialState } from '@data-client/redux';
 
 import type { ClientSpout } from './types.js';
 
-export default function restHooksSpout(
+export default function dataClientSpout(
   options: {
     getManagers?: () => Manager[];
   } = {},
@@ -11,15 +11,15 @@ export default function restHooksSpout(
   return next => async props => {
     const nextProps = await next(props);
     const [data, { CacheProvider }] = await Promise.all([
-      props.getInitialData('resthooks').catch(e => {
-        console.error('Rest Hooks initial data could not load:', e);
+      props.getInitialData('dataclient').catch(e => {
+        console.error('Data Client initial data could not load:', e);
         return initialState;
       }),
-      import('./restHooks.provider.js'),
+      import('./dataClient.provider.js'),
     ]);
 
     if (!data) {
-      console.error('Rest Hooks init data not found');
+      console.error('Data Client init data not found');
     }
 
     return {

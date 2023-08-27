@@ -1,10 +1,9 @@
 import { useLive } from '@data-client/react';
+import { IssueResource, Issue } from '@standard-endpoint/github/Issue';
 import { List, Avatar } from 'antd';
+import LinkPagination from 'navigation/LinkPagination';
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { IssueResource, Issue } from '@standard-endpoint/github/Issue';
-import LinkPagination from 'navigation/LinkPagination';
 
 type Props = Pick<Issue, 'repositoryUrl'> &
   (
@@ -18,7 +17,7 @@ type Props = Pick<Issue, 'repositoryUrl'> &
 
 export default function IssueList(props: Props) {
   const params = {
-    owner: 'coinbase',
+    owner: 'data-client',
     repo: 'rest-hooks',
     state: 'open' as const,
   };
