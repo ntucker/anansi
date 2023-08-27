@@ -1,3 +1,4 @@
+import { useLocation } from '@pojo-router/core';
 import React, { memo, Suspense } from 'react';
 
 import ErrorBoundary from './ErrorBoundary.js';
@@ -21,9 +22,14 @@ function AsyncBoundary({
   }>;
   className?: string;
 }): JSX.Element {
+  const location = useLocation();
   return (
     <Suspense fallback={fallback}>
-      <ErrorBoundary {...errorProps} fallbackComponent={errorComponent}>
+      <ErrorBoundary
+        key={location.pathname + location.search}
+        {...errorProps}
+        fallbackComponent={errorComponent}
+      >
         {children}
       </ErrorBoundary>
     </Suspense>
