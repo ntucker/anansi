@@ -1,6 +1,5 @@
 import { memo } from 'react';
-import { MatchedRoute } from '@anansi/router';
-import { AsyncBoundary } from '@data-client/react';
+import { MatchedRoute, AsyncBoundary } from '@anansi/router';
 
 <% if (style === 'linaria') { %>
 import 'style/main.css';
