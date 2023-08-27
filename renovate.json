@@ -5,26 +5,39 @@
   "commitMessageTopic": "`{{depName}}`",
   "dependencyDashboardApproval": true,
   "rangeStrategy": "auto",
-  "ignoreDeps": ["whatwg-fetch", "react-error-overlay", "@ant-design/pro-layout"],
+  "ignoreDeps": [
+    "whatwg-fetch",
+    "react-error-overlay",
+    "@ant-design/pro-layout",
+    "@linaria/babel-preset",
+    "@linaria/core",
+    "@linaria/react",
+    "@linaria/shaker",
+    "@linaria/tags",
+    "@linaria/utils",
+    "@linaria/webpack5-loader"
+  ],
+
   "timezone": "America/Chicago",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
-      "matchPaths": [
-        "packages/**"
-      ],
+      "matchPaths": ["packages/**"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump"
     },
     {
-      "matchPaths": [
-        "examples/**"
-      ],
+      "matchPaths": ["examples/**"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "rangeStrategy": "auto"
     },
     {
-      "matchPackageNames": ["@babel/runtime", "@babel/runtime-corejs3", "core-js", "core-js-compat"],
+      "matchPackageNames": [
+        "@babel/runtime",
+        "@babel/runtime-corejs3",
+        "core-js",
+        "core-js-compat"
+      ],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "replace"
     },
@@ -122,7 +135,11 @@
       ]
     },
     {
-      "matchPackageNames": ["prettier", "gulp-prettier", "eslint-plugin-prettier"],
+      "matchPackageNames": [
+        "prettier",
+        "gulp-prettier",
+        "eslint-plugin-prettier"
+      ],
       "matchUpdateTypes": ["major"],
       "groupName": "prettier"
     }
