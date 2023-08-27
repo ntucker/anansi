@@ -1,7 +1,7 @@
 import { Controller } from '@data-client/react';
 import { lazy, Route } from '@anansi/router';
 import { getImage } from '@data-client/img';
-import { getExchangeRates } from 'api/ExchangeRates';
+import { getTicker } from 'resources/Ticker';
 
 const lazyPage = (pageName: string) =>
   lazy(
@@ -20,9 +20,8 @@ export const routes: Route<Controller>[] = [
     name: 'Home',
     component: lazyPage('Home'),
     async resolveData(controller) {
-      await controller.fetch(getExchangeRates, {
-        currency: 'USD',
-      });
+      const product_id = `BTC-USD`
+      await controller.fetchIfStale(getTicker, { product_id });
     },
   },
 ];

@@ -1,22 +1,20 @@
 import { useLive } from '@data-client/react';
-import { getExchangeRates } from 'api/ExchangeRates';
-
-export interface Props {
-  symbol: string;
-}
+import { getTicker } from 'resources/Ticker';
 
 /** Shows the current trading price for a given asset */
 export default function AssetPrice({ symbol }: Props) {
-  // Learn more about Rest Hooks: https://resthooks.io/docs/getting-started/usage
-  const { data: price } = useLive(getExchangeRates, {
-    currency: 'USD',
-  });
-  const displayPrice = formatPrice.format(1 / price.rates[symbol]);
+  const product_id = `${symbol}-USD`
+  // Learn more about Reactive Data Client: https://dataclient.io/docs
+  const ticker = useLive(getTicker, { product_id });
+  const displayPrice = formatPrice.format(ticker.price);
   return (
     <span>
       {symbol} {displayPrice}
     </span>
   );
+}
+export interface Props {
+  symbol: string;
 }
 
 const formatPrice = new Intl.NumberFormat('en-US', {
