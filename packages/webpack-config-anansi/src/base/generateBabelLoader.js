@@ -14,9 +14,11 @@ export function generateBabelLoader({
   babelLoaderOptions,
   noHotReload,
 }) {
-  const react = require(require.resolve('react', {
-    paths: [rootPath],
-  }));
+  const react = require(
+    require.resolve('react', {
+      paths: [rootPath],
+    }),
+  );
   let hasReactRefresh;
   try {
     require('react-refresh/babel');
