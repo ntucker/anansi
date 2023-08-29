@@ -292,7 +292,7 @@ __metadata:
     "@types/node": ^20.0.0
     "@types/react": ^18.0.29
     history: ^5.3.0
-    nano-memoize: ^3.0.13
+    nano-memoize: ^3.0.14
     react: ^18.2.0
   peerDependencies:
     "@types/react": ^18.0.0
@@ -312,7 +312,7 @@ __metadata:
     "@storybook/preset-react-webpack": ^7.4.0
     "@storybook/react": ^7.4.0
     "@storybook/types": ^7.4.0
-    "@types/node": ^20.5.6
+    "@types/node": ^20.5.7
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0
@@ -406,7 +406,7 @@ __metadata:
     vm-browserify: ^1.1.2
     webpack-bundle-analyzer: ^4.9.0
     webpack-node-externals: ^3.0.0
-    webpack-remove-empty-scripts: ^1.0.3
+    webpack-remove-empty-scripts: ^1.0.4
     webpack-stats-plugin: ^1.1.3
     worker-loader: ^3.0.8
   peerDependencies:
@@ -7585,10 +7585,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.5.6, @types/node@npm:^20.0.0, @types/node@npm:^20.5.6":
-  version: 20.5.6
-  resolution: "@types/node@npm:20.5.6"
-  checksum: d2ce44f1cfa3fd00fe7426f7cf9a46d680cd57802b874ed5618e7d9101a9c6b8de37f08c0e7185ee06fb363ad492549c3ea69665c7e8e31c7813210ed8e89005
+"@types/node@npm:*, @types/node@npm:20.5.7, @types/node@npm:^20.0.0, @types/node@npm:^20.5.7":
+  version: 20.5.7
+  resolution: "@types/node@npm:20.5.7"
+  checksum: fc284c8e16ddc04569730d58e87eae349eb1c3dd9020cb79a1862d9d9add6f04e7367a236f3252db8db2572f90278e250f4cd43d27d264972b54394eaba1ed76
   languageName: node
   linkType: hard
 
@@ -7607,9 +7607,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^18.15.11":
-  version: 18.17.11
-  resolution: "@types/node@npm:18.17.11"
-  checksum: c31d9f4a6f7c5c413b6548ded0fab046571832718361c5cda325960f32d6b386dd0a7fa9228911111fee54c180d09df82a622efdabdbef89fa9e1923891892bc
+  version: 18.17.12
+  resolution: "@types/node@npm:18.17.12"
+  checksum: 79f8bcca3067a3c529f30e172df8d14f25ab9e4cd6a05ed897a924ab1dec774e8ea172ef5c4a67ffec433d423a0c81778f17db22606d574bc83871b60aab298e
   languageName: node
   linkType: hard
 
@@ -8746,9 +8746,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.8.4":
-  version: 5.8.4
-  resolution: "antd@npm:5.8.4"
+"antd@npm:5.8.5":
+  version: 5.8.5
+  resolution: "antd@npm:5.8.5"
   dependencies:
     "@ant-design/colors": ^7.0.0
     "@ant-design/cssinjs": ^1.16.0
@@ -8795,13 +8795,13 @@ __metadata:
     rc-tree: ~5.7.6
     rc-tree-select: ~5.11.0
     rc-upload: ~4.3.0
-    rc-util: ^5.32.0
+    rc-util: ^5.37.0
     scroll-into-view-if-needed: ^3.0.3
     throttle-debounce: ^5.0.0
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 595c12a2324ca604520ea65e0d583a5368659dda725bec5ffc685bc5fcfa3fe0a063d988da55c16e0a07d424df5765272d8f3d82b70b9feedc40aede349d1867
+  checksum: f3e6fc9b5dc1d889c3a0365c6022f06a524092c565ab755c7eb5725b76ce72fd34c637f20b4b5f6877f538ecb8185b7e963de2179c4fda6afcee0879a0ca59ab
   languageName: node
   linkType: hard
 
@@ -13493,14 +13493,14 @@ __metadata:
     "@types/classnames": 2.3.1
     "@types/eslint": 8.44.2
     "@types/jest": 29.5.4
-    "@types/node": 20.5.6
+    "@types/node": 20.5.7
     "@types/prettier": 2.7.3
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 6.5.0
     "@typescript-eslint/parser": 6.5.0
-    antd: 5.8.4
+    antd: 5.8.5
     classnames: 2.3.2
     core-js: 3.32.1
     eslint: 8.48.0
@@ -13556,7 +13556,7 @@ __metadata:
     "@types/eslint": ^8.21.3
     "@types/jest": 29.5.4
     "@types/lodash": 4.14.197
-    "@types/node": 20.5.6
+    "@types/node": 20.5.7
     "@types/parse-link-header": 2.0.1
     "@types/prettier": ^2.7.2
     "@types/prop-types": ^15.7.5
@@ -13567,7 +13567,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
-    antd: 5.8.4
+    antd: 5.8.5
     classnames: 2.3.2
     core-js: 3.32.1
     eslint: ^8.36.0
@@ -19755,10 +19755,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nano-memoize@npm:^3.0.13":
-  version: 3.0.13
-  resolution: "nano-memoize@npm:3.0.13"
-  checksum: ecc55a0d6d424aea28478c6244b2b43ada04940092044097471e176f876041381f2160d5f6610fe59ba39d850ea7c98b6324cd21c1061e7bb769a7f779749fb2
+"nano-memoize@npm:^3.0.14":
+  version: 3.0.14
+  resolution: "nano-memoize@npm:3.0.14"
+  checksum: 165c91041deaf197ae338e10489a9c028101bd0721a06686dcb12a8efabced22f70ca1d4ff24e6d78e52710f12f9fa5c991b4084dbdcd51819ce86f4b2a00f21
   languageName: node
   linkType: hard
 
@@ -23281,16 +23281,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-util@npm:^5.0.1, rc-util@npm:^5.0.6, rc-util@npm:^5.15.0, rc-util@npm:^5.16.0, rc-util@npm:^5.16.1, rc-util@npm:^5.17.0, rc-util@npm:^5.18.1, rc-util@npm:^5.19.2, rc-util@npm:^5.2.0, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0, rc-util@npm:^5.21.2, rc-util@npm:^5.22.5, rc-util@npm:^5.24.4, rc-util@npm:^5.25.2, rc-util@npm:^5.27.0, rc-util@npm:^5.27.1, rc-util@npm:^5.28.0, rc-util@npm:^5.30.0, rc-util@npm:^5.31.1, rc-util@npm:^5.32.0, rc-util@npm:^5.32.2, rc-util@npm:^5.33.0, rc-util@npm:^5.34.1, rc-util@npm:^5.35.0":
-  version: 5.35.0
-  resolution: "rc-util@npm:5.35.0"
+"rc-util@npm:^5.0.1, rc-util@npm:^5.0.6, rc-util@npm:^5.15.0, rc-util@npm:^5.16.0, rc-util@npm:^5.16.1, rc-util@npm:^5.17.0, rc-util@npm:^5.18.1, rc-util@npm:^5.19.2, rc-util@npm:^5.2.0, rc-util@npm:^5.20.1, rc-util@npm:^5.21.0, rc-util@npm:^5.21.2, rc-util@npm:^5.22.5, rc-util@npm:^5.24.4, rc-util@npm:^5.25.2, rc-util@npm:^5.27.0, rc-util@npm:^5.27.1, rc-util@npm:^5.28.0, rc-util@npm:^5.30.0, rc-util@npm:^5.31.1, rc-util@npm:^5.32.2, rc-util@npm:^5.33.0, rc-util@npm:^5.34.1, rc-util@npm:^5.35.0, rc-util@npm:^5.37.0":
+  version: 5.37.0
+  resolution: "rc-util@npm:5.37.0"
   dependencies:
     "@babel/runtime": ^7.18.3
     react-is: ^16.12.0
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 8e99225c7d964d0be7b011e1b945822673f83437098bee5871d45d49531ac3d08128ddcaf0c0b503aad26feeced15a455082de179dd8c546be0f0281d8e7c176
+  checksum: 0a72644f0924235044eb20bbc73081356c1fb98459f6cce0f4b75807c82cb71c050e5f36cf6d82f8a8a07b5955632e1198b8884cd96fe2d8d92f2289f9058a7e
   languageName: node
   linkType: hard
 
@@ -27872,14 +27872,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-remove-empty-scripts@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "webpack-remove-empty-scripts@npm:1.0.3"
+"webpack-remove-empty-scripts@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "webpack-remove-empty-scripts@npm:1.0.4"
   dependencies:
     ansis: 1.5.2
   peerDependencies:
     webpack: ">=5.32.0"
-  checksum: af7e2626608304037b8723f05b81690f280b50766fccc28e4a0bdbe29eb58b5aa95808449f26b67a92ba26f1d707a118820f5c2571cc340f3588a33751853b54
+  checksum: 82032989a15daad9e2850789572435ff3fd77f85e855e2a9397a84e54d71138bb94cb28c778b3a5881a721c91f5471507cac6f1519067041877c32e1870e44c6
   languageName: node
   linkType: hard
 
