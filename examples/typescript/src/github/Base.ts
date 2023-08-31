@@ -4,9 +4,6 @@ import {
   Schema,
   ShortenPath,
   schema,
-  Denormalize,
-} from '@data-client/rest';
-import {
   GetEndpoint,
   RestGenerics,
   RestEndpoint,
@@ -15,7 +12,7 @@ import {
   ResourceGenerics,
   ResourceOptions,
   PaginationFieldEndpoint,
-} from '@data-client/rest/next';
+} from '@data-client/rest';
 import { camelCase, snakeCase } from 'lodash';
 
 import { getAuth } from './Auth';
