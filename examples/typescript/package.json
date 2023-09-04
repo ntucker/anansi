@@ -70,7 +70,7 @@
     "@ant-design/cssinjs": "^1.7.1",
     "@ant-design/icons": "^5.0.1",
     "@ant-design/pro-layout": "7.12.3",
-    "@babel/runtime": "7.22.11",
+    "@babel/runtime": "7.22.15",
     "@data-client/graphql": "0.8.2",
     "@data-client/react": "0.8.1",
     "@data-client/rest": "0.8.2",
