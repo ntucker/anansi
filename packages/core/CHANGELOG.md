@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.3...@anansi/core@0.18.4) (2023-09-04)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2153](https://github.com/ntucker/anansi/issues/2153)) ([74d33b7](https://github.com/ntucker/anansi/commit/74d33b764cbd19c347bd41521e893aa735506091))
+* Update all non-major dependencies ([#2156](https://github.com/ntucker/anansi/issues/2156)) ([ed7c164](https://github.com/ntucker/anansi/commit/ed7c16463a1e01cc559064c9ea14cfe3150ebdb9))
+
 ### [0.18.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.2...@anansi/core@0.18.3) (2023-08-30)
 
 **Note:** Version bump only for package @anansi/core
