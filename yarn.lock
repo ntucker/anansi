@@ -131,7 +131,7 @@ __metadata:
     "@babel/runtime": ^7.17.0
     "@data-client/react": ^0.9.0
     "@data-client/redux": ^0.9.0
-    "@data-client/ssr": ^0.8.0
+    "@data-client/ssr": ^0.9.1
     "@types/compression": 1.7.3
     "@types/express": ^4.17.17
     "@types/node": ^20.0.0
@@ -3042,14 +3042,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/ssr@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@data-client/ssr@npm:0.8.0"
+"@data-client/ssr@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "@data-client/ssr@npm:0.9.1"
   dependencies:
     "@babel/runtime": ^7.17.0
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0
-    "@data-client/redux": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.5.0 || ^0.7.0 || ^0.8.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0
+    "@data-client/redux": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0
     "@types/react": ^16.8.4 || ^17.0.0 || ^18.0.0-0
     next: ">=12.0.0"
     react: ^16.8.4 || ^17.0.0 || ^18.0.0-0
@@ -3059,7 +3059,7 @@ __metadata:
       optional: true
     next:
       optional: true
-  checksum: 3d58dc45044d2eff272d68cd8a2566e52221baa144d76c62ab94c2f6d9c44d2062197d376b0ad73ee6d5a4c3b8481cb7c33cea264c0e69067e7f18741ad43869
+  checksum: 63d89de85d21e80f9c539c2fe6fcc7863cfa7d22235a98fa8dbb00d9fe552a874879a42a2c76818fd8184a9e5c3a7b2177bfdce8f814502235115dda95397595
   languageName: node
   linkType: hard
 
