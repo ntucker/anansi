@@ -122,7 +122,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@^0.18.4, @anansi/core@workspace:packages/core":
+"@anansi/core@^0.18.5, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -188,7 +188,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@^0.16.29, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@^0.16.30, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -303,7 +303,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@^2.0.8, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@^2.0.9, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -13442,7 +13442,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": ^4.2.15
     "@anansi/browserslist-config": ^1.4.3
-    "@anansi/eslint-plugin": ^0.16.29
+    "@anansi/eslint-plugin": ^0.16.30
     "@anansi/webpack-config": ^15.0.34
     "@babel/core": ^7.21.3
     "@babel/plugin-transform-modules-commonjs": 7.22.15
@@ -13491,8 +13491,8 @@ __metadata:
     "@anansi/babel-preset": ^4.2.15
     "@anansi/browserslist-config": ^1.4.3
     "@anansi/cli": ^3.0.15
-    "@anansi/core": ^0.18.4
-    "@anansi/eslint-plugin": ^0.16.29
+    "@anansi/core": ^0.18.5
+    "@anansi/eslint-plugin": ^0.16.30
     "@anansi/jest-preset": ^0.10.20
     "@anansi/router": ^0.9.1
     "@anansi/webpack-config": ^15.0.34
@@ -13553,7 +13553,7 @@ __metadata:
     "@anansi/browserslist-config": ^1.4.3
     "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": ^0.10.20
-    "@anansi/storybook": ^2.0.8
+    "@anansi/storybook": ^2.0.9
     "@anansi/webpack-config": ^15.0.34
     "@ant-design/cssinjs": ^1.7.1
     "@ant-design/icons": ^5.0.1
