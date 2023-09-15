@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.5...@anansi/core@0.18.6) (2023-09-15)
+
+### 📦 Package
+
+* Update `@data-client/ssr` to ^0.9.1 ([#2161](https://github.com/ntucker/anansi/issues/2161)) ([6505ed4](https://github.com/ntucker/anansi/commit/6505ed454e20b32e515fa879b9bb1369cd783ac8))
+* Update all non-major dependencies ([#2162](https://github.com/ntucker/anansi/issues/2162)) ([f122cae](https://github.com/ntucker/anansi/commit/f122caef403347caef4614352187cfb044f97a12))
+* Update all non-major dependencies ([#2169](https://github.com/ntucker/anansi/issues/2169)) ([619d85d](https://github.com/ntucker/anansi/commit/619d85da3e69e49487a2a72e9cbf8bdb194a9c47))
+
 ### [0.18.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.4...@anansi/core@0.18.5) (2023-09-05)
 
 ### 📦 Package
