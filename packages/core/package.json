@@ -75,7 +75,7 @@
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
     "@types/source-map-support": "0.5.7",
-    "@types/tmp": "0.2.3",
+    "@types/tmp": "0.2.4",
     "@types/webpack-hot-middleware": "2.25.6",
     "@types/webpack-node-externals": "^3",
     "react": "^18.2.0",
