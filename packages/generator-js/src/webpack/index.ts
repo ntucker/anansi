@@ -68,18 +68,6 @@ export default class WebpackGenerator extends InstallPeersMixin(
         'react-error-overlay': '6.0.9',
       },
     });
-    // TODO: remove once linaria master is fixed
-    this.packageJson.merge({
-      resolutions: {
-        '@linaria/babel-preset': '4.4.5',
-        '@linaria/core': '4.2.10',
-        '@linaria/webpack5-loader': '4.1.17',
-        '@linaria/react': '4.3.8',
-        '@linaria/shaker': '4.2.11',
-        '@linaria/utils': '4.3.4',
-        '@linaria/tags': '4.3.5',
-      },
-    });
   }
 
   async writingDependencies() {
