@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/example-react-18@4.2.64...example-react-18@5.0.0) (2023-09-23)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires @linaria/babel-preset peerDep as v5
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2172](https://github.com/ntucker/anansi/issues/2172)) ([6021d3e](https://github.com/ntucker/anansi/commit/6021d3e188d0ec5123cc212998d1339d36a20432))
+* Update all non-major dependencies ([#2175](https://github.com/ntucker/anansi/issues/2175)) ([8c6e708](https://github.com/ntucker/anansi/commit/8c6e7088c31cd73b5e7147fe2359d56746bcac65))
+* Update all non-major dependencies ([#2179](https://github.com/ntucker/anansi/issues/2179)) ([b83077f](https://github.com/ntucker/anansi/commit/b83077f3274b4dc5c4c993c0954d30a7ed8ed0ce))
+* Update babel packages to v7.22.20 ([#2171](https://github.com/ntucker/anansi/issues/2171)) ([83d2bc0](https://github.com/ntucker/anansi/commit/83d2bc0a7ced2625222c81be724a5d4c715fbd64))
+* Update linting packages ([#2178](https://github.com/ntucker/anansi/issues/2178)) ([ea57667](https://github.com/ntucker/anansi/commit/ea576672598a459b985452112f20920cbf1d2f95))
+* Update webpack packages ([#2177](https://github.com/ntucker/anansi/issues/2177)) ([2d1c9bd](https://github.com/ntucker/anansi/commit/2d1c9bddad67b909035279a8e6b9f6ee38609524))
+* Upgrade linaria to 5 ([bd1934e](https://github.com/ntucker/anansi/commit/bd1934e4a9d3823ed41a28c78969f2355e034ab2))
+
 ### [4.2.64](https://github.com/ntucker/anansi/compare/example-react-18@4.2.63...example-react-18@4.2.64) (2023-09-15)
 
 ### 📦 Package

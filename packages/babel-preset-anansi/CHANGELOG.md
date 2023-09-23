@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.16...@anansi/babel-preset@4.3.0) (2023-09-23)
+
+### 🚀 Features
+
+* Add linria detection for react refresh compat ([159280a](https://github.com/ntucker/anansi/commit/159280a9cecb946f63abd5e858207f8f53d5f0b1))
+
+### 📦 Package
+
+* Update babel packages to v7.22.20 ([#2171](https://github.com/ntucker/anansi/issues/2171)) ([83d2bc0](https://github.com/ntucker/anansi/commit/83d2bc0a7ced2625222c81be724a5d4c715fbd64))
+
 ### [4.2.16](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.2.15...@anansi/babel-preset@4.2.16) (2023-09-15)
 
 ### 📦 Package

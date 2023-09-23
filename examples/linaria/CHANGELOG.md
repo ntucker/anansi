@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ntucker/anansi/compare/example-linaria@5.0.94...example-linaria@6.0.0) (2023-09-23)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires @linaria/babel-preset peerDep as v5
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2172](https://github.com/ntucker/anansi/issues/2172)) ([6021d3e](https://github.com/ntucker/anansi/commit/6021d3e188d0ec5123cc212998d1339d36a20432))
+* Update webpack packages ([#2177](https://github.com/ntucker/anansi/issues/2177)) ([2d1c9bd](https://github.com/ntucker/anansi/commit/2d1c9bddad67b909035279a8e6b9f6ee38609524))
+* Upgrade linaria to 5 ([bd1934e](https://github.com/ntucker/anansi/commit/bd1934e4a9d3823ed41a28c78969f2355e034ab2))
+
 ### [5.0.94](https://github.com/ntucker/anansi/compare/example-linaria@5.0.93...example-linaria@5.0.94) (2023-09-15)
 
 ### 📦 Package
