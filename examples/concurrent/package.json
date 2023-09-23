@@ -68,7 +68,7 @@
     "@linaria/core": "5.0.1",
     "@linaria/react": "5.0.1",
     "@linaria/shaker": "5.0.1",
-    "@types/node": "20.6.3",
+    "@types/node": "20.6.4",
     "antd": "5.9.2",
     "classnames": "2.3.2",
     "core-js": "3.32.2",
