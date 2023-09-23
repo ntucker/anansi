@@ -52,7 +52,7 @@
   ],
   "devDependencies": {
     "@types/ejs": "3.1.2",
-    "@types/gulp-filter": "3.0.36",
+    "@types/gulp-filter": "3.0.37",
     "@types/mem-fs-editor": "7.0.3",
     "@types/node": "^20.0.0",
     "@types/pacote": "11.1.5",
