@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.2",
-    "@linaria/webpack5-loader": "4.1.17",
+    "@linaria/webpack5-loader": "5.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@svgr/webpack": "^8.1.0",
     "@types/webpack-bundle-analyzer": "^4.6.0",
@@ -125,7 +125,7 @@
   "peerDependencies": {
     "@babel/core": "^6 || ^7 || ^8",
     "@hot-loader/react-dom": "^16.0.0 || ^17.0.0",
-    "@linaria/babel-preset": "^4.0.0",
+    "@linaria/babel-preset": "^5.0.0",
     "@storybook/react": "^6.2.0 || ^7.0.0-rc.0",
     "@types/react": "^16.0.0 || ^17.0.0 || ^18.0.0",
     "node-sass": "^7.0.1 || ^8.0.0 || ^9.0.0",
