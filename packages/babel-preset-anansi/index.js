@@ -25,6 +25,7 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
+  const isLinaria = api.caller(caller => caller && caller.name === 'linaria');
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
   // (no caller info: https://github.com/babel/babel/issues/8930)
@@ -68,6 +69,7 @@ function buildPreset(api, options = {}) {
   const shouldHotReload =
     !babelNode &&
     !options.nodeTarget &&
+    !isLinaria &&
     callerCouldTargetWeb(callerTarget) &&
     process.env.NO_HOT_RELOAD !== 'true' &&
     process.env.NO_HOT_RELOAD !== true &&
