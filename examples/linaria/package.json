@@ -48,8 +48,8 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.22.15",
-    "@babel/runtime": "7.22.15",
+    "@babel/plugin-transform-modules-commonjs": "7.23.0",
+    "@babel/runtime": "7.23.1",
     "@linaria/core": "5.0.1",
     "@linaria/react": "5.0.1",
     "@linaria/shaker": "5.0.1",
