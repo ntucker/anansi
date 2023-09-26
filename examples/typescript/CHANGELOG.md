@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.0](https://github.com/ntucker/anansi/compare/example-typescript@11.1.43...example-typescript@11.2.0) (2023-09-26)
+
+### 🚀 Features
+
+* **pkg:** Update babel packages ([#2181](https://github.com/ntucker/anansi/issues/2181)) ([a4f2b81](https://github.com/ntucker/anansi/commit/a4f2b816998f5050b2a8e9d062536934cba1a64c))
+
+### 📦 Package
+
+* Update `react-router-dom` to v5.3.4 ([#2185](https://github.com/ntucker/anansi/issues/2185)) ([5cc0358](https://github.com/ntucker/anansi/commit/5cc03586dab25c44f95d40a261e4c3951cfcfebf))
+* Update all non-major dependencies ([#2183](https://github.com/ntucker/anansi/issues/2183)) ([1eeea98](https://github.com/ntucker/anansi/commit/1eeea989173a9009a3828ccc9d36af39be53ad86))
+* Update storybook monorepo to v7.4.5 ([#2182](https://github.com/ntucker/anansi/issues/2182)) ([552accb](https://github.com/ntucker/anansi/commit/552accb02469d14f6ee4b7ac87d1f693372799c3))
+
 ### [11.1.43](https://github.com/ntucker/anansi/compare/example-typescript@11.1.42...example-typescript@11.1.43) (2023-09-23)
 
 ### 📦 Package

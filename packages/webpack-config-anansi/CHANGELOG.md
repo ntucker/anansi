@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [16.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.0...@anansi/webpack-config@16.0.1) (2023-09-26)
+
+### 📦 Package
+
+* Update `@linaria/webpack5-loader` to v5.0.2 ([#2180](https://github.com/ntucker/anansi/issues/2180)) ([6cf099e](https://github.com/ntucker/anansi/commit/6cf099e53a4f7ca26b58bf9cf8325e83fb15c54b))
+* Update all non-major dependencies ([#2183](https://github.com/ntucker/anansi/issues/2183)) ([1eeea98](https://github.com/ntucker/anansi/commit/1eeea989173a9009a3828ccc9d36af39be53ad86))
+
 ## [16.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@15.0.35...@anansi/webpack-config@16.0.0) (2023-09-23)
 
 ### ⚠ 💥 BREAKING CHANGES
