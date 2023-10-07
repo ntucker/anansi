@@ -378,7 +378,7 @@ __metadata:
     os-browserify: ^0.3.0
     path: ^0.12.7
     path-browserify: ^1.0.1
-    postcss: ^8.4.30
+    postcss: ^8.4.31
     postcss-loader: ^7.3.3
     postcss-preset-env: ^9.1.4
     process: ^0.11.10
@@ -4003,9 +4003,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:5.0.2":
-  version: 5.0.2
-  resolution: "@linaria/react@npm:5.0.2"
+"@linaria/react@npm:5.0.3":
+  version: 5.0.3
+  resolution: "@linaria/react@npm:5.0.3"
   dependencies:
     "@emotion/is-prop-valid": ^1.2.0
     "@linaria/core": ^5.0.2
@@ -4016,7 +4016,7 @@ __metadata:
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: 6003330b83156f03d0929f3a9d7aff1412f6a0da5840b297bbea5357d7f7c03850c12196607bb2384cac77ed6413aea27638a54fa63b3b4b2b4fcee7a3979ceb
+  checksum: 7788b019162ecff4366d26c38a18ce1df9f762bea43149d14b1f023d270d6a5387af2e5715abe76dd6c642389615118b4b091e8b91e8e2d15a0e88bc22707058
   languageName: node
   linkType: hard
 
@@ -13504,7 +13504,7 @@ __metadata:
     "@babel/plugin-transform-modules-commonjs": 7.23.0
     "@babel/runtime": 7.23.1
     "@linaria/core": 5.0.2
-    "@linaria/react": 5.0.2
+    "@linaria/react": 5.0.3
     "@linaria/shaker": 5.0.2
     "@types/babel__core": ^7.20.0
     "@types/classnames": 2.3.1
@@ -13564,7 +13564,7 @@ __metadata:
     "@data-client/rest": 0.9.5
     "@data-client/test": 0.9.2
     "@linaria/core": 5.0.2
-    "@linaria/react": 5.0.2
+    "@linaria/react": 5.0.3
     "@linaria/shaker": 5.0.2
     "@types/babel__core": 7.20.2
     "@types/classnames": 2.3.1
@@ -22421,7 +22421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.21, postcss@npm:^8.4.24, postcss@npm:^8.4.30":
+"postcss@npm:^8.4.21, postcss@npm:^8.4.24, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -24773,15 +24773,15 @@ __metadata:
   linkType: hard
 
 "sass@npm:^1.56.1":
-  version: 1.68.0
-  resolution: "sass@npm:1.68.0"
+  version: 1.69.0
+  resolution: "sass@npm:1.69.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 65ccede83c96768beeb8dcaf67957b7c76b12ff1276bfd2849d7be151d46ba1400048a67717e6e5e4969bc75e87348e5530f5f272833f2e60a891c21a33d8ab0
+  checksum: eabea31ea3b1dd529c7eff345c8b6468afe6ab8011bd4f95caa2cffb8fb115cc055ea21de425be6197f7ed22516f5652eccb98d315d592ea152ada553f964b8a
   languageName: node
   linkType: hard
 
