@@ -49,12 +49,12 @@
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.23.0",
-    "@babel/runtime": "7.23.1",
+    "@babel/runtime": "7.23.2",
     "@linaria/core": "5.0.2",
     "@linaria/react": "5.0.3",
     "@linaria/shaker": "5.0.2",
     "classnames": "2.3.2",
-    "core-js": "3.32.2",
+    "core-js": "3.33.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "redbox-react": "1.6.0"
