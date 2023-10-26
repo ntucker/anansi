@@ -79,7 +79,7 @@
     "mem-fs-editor": "^10.0.3",
     "pacote": "^17.0.4",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^5.9.0"
+    "yeoman-generator": "^5.10.0"
   },
   "jest": {
     "testEnvironment": "node"
