@@ -247,7 +247,7 @@ __metadata:
     yeoman-assert: 3.1.1
     yeoman-environment: 4.0.0
     yeoman-generator: ^5.10.0
-    yeoman-test: 7.4.0
+    yeoman-test: 8.2.0
   languageName: unknown
   linkType: soft
 
@@ -5712,15 +5712,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/commons@npm:^1.7.0":
-  version: 1.8.2
-  resolution: "@sinonjs/commons@npm:1.8.2"
-  dependencies:
-    type-detect: 4.0.8
-  checksum: 67aa47d4a19e688da5c291286786635625356d6dc379d86f255c8425b9da3dfd26d07cfef82aad755ad51bd1a889bde07abd1e1592f9f5b3e29013045738e344
-  languageName: node
-  linkType: hard
-
 "@sinonjs/commons@npm:^2.0.0":
   version: 2.0.0
   resolution: "@sinonjs/commons@npm:2.0.0"
@@ -5730,41 +5721,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^10.0.2":
-  version: 10.0.2
-  resolution: "@sinonjs/fake-timers@npm:10.0.2"
+"@sinonjs/commons@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@sinonjs/commons@npm:3.0.0"
   dependencies:
-    "@sinonjs/commons": ^2.0.0
-  checksum: c62aa98e7cefda8dedc101ce227abc888dc46b8ff9706c5f0a8dfd9c3ada97d0a5611384738d9ba0b26b59f99c2ba24efece8e779bb08329e9e87358fa309824
+    type-detect: 4.0.8
+  checksum: b4b5b73d4df4560fb8c0c7b38c7ad4aeabedd362f3373859d804c988c725889cde33550e4bcc7cd316a30f5152a2d1d43db71b6d0c38f5feef71fd8d016763f8
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^7.0.4":
-  version: 7.1.2
-  resolution: "@sinonjs/fake-timers@npm:7.1.2"
+"@sinonjs/fake-timers@npm:^10.0.2, @sinonjs/fake-timers@npm:^10.3.0":
+  version: 10.3.0
+  resolution: "@sinonjs/fake-timers@npm:10.3.0"
   dependencies:
-    "@sinonjs/commons": ^1.7.0
-  checksum: c84773d7973edad5511a31d2cc75023447b5cf714a84de9bb50eda45dda88a0d3bd2c30bf6e6e936da50a048d5352e2151c694e13e59b97d187ba1f329e9a00c
+    "@sinonjs/commons": ^3.0.0
+  checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^9.1.2":
-  version: 9.1.2
-  resolution: "@sinonjs/fake-timers@npm:9.1.2"
-  dependencies:
-    "@sinonjs/commons": ^1.7.0
-  checksum: 7d3aef54e17c1073101cb64d953157c19d62a40e261a30923fa1ee337b049c5f29cc47b1f0c477880f42b5659848ba9ab897607ac8ea4acd5c30ddcfac57fca6
-  languageName: node
-  linkType: hard
-
-"@sinonjs/samsam@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@sinonjs/samsam@npm:7.0.1"
+"@sinonjs/samsam@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@sinonjs/samsam@npm:8.0.0"
   dependencies:
     "@sinonjs/commons": ^2.0.0
     lodash.get: ^4.4.2
     type-detect: ^4.0.8
-  checksum: 291efb158d54c67dee23ddabcb28873d22063449b692aaa3b2a4f1826d2f79d38695574063c92e9c17573cc805cd6acbf0ab0c66c9f3aed7afd0f12a2b905615
+  checksum: 95e40d0bb9f7288e27c379bee1b03c3dc51e7e78b9d5ea6aef66a690da7e81efc4715145b561b449cefc5361a171791e3ce30fb1a46ab247d4c0766024c60a60
   languageName: node
   linkType: hard
 
@@ -7493,7 +7475,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^8, @types/inquirer@npm:^8.2.5":
+"@types/inquirer@npm:^8":
   version: 8.2.5
   resolution: "@types/inquirer@npm:8.2.5"
   dependencies:
@@ -7604,7 +7586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mem-fs-editor@npm:*, @types/mem-fs-editor@npm:7.0.5, @types/mem-fs-editor@npm:^7.0.2":
+"@types/mem-fs-editor@npm:*, @types/mem-fs-editor@npm:7.0.5":
   version: 7.0.5
   resolution: "@types/mem-fs-editor@npm:7.0.5"
   dependencies:
@@ -8051,7 +8033,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-environment@npm:*, @types/yeoman-environment@npm:^2.10.8":
+"@types/yeoman-environment@npm:*":
   version: 2.10.8
   resolution: "@types/yeoman-environment@npm:2.10.8"
   dependencies:
@@ -8069,7 +8051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.2.13, @types/yeoman-generator@npm:^5.2.11":
+"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.2.13":
   version: 5.2.13
   resolution: "@types/yeoman-generator@npm:5.2.13"
   dependencies:
@@ -9284,17 +9266,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"asn1.js@npm:^4.0.0":
-  version: 4.10.1
-  resolution: "asn1.js@npm:4.10.1"
-  dependencies:
-    bn.js: ^4.0.0
-    inherits: ^2.0.1
-    minimalistic-assert: ^1.0.0
-  checksum: 9289a1a55401238755e3142511d7b8f6fc32f08c86ff68bd7100da8b6c186179dd6b14234fba2f7f6099afcd6758a816708485efe44bc5b2a6ec87d9ceeddbb5
-  languageName: node
-  linkType: hard
-
 "asn1.js@npm:^5.2.0":
   version: 5.4.1
   resolution: "asn1.js@npm:5.4.1"
@@ -10035,17 +10006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserify-rsa@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "browserify-rsa@npm:4.0.1"
-  dependencies:
-    bn.js: ^4.1.0
-    randombytes: ^2.0.1
-  checksum: e5d8406e65f8e9a2e038f6fa0cb30108269a1ab33c1563ddc78fb0fff1a43ea21d44bd3dcd01a783683f60dcbc4b58c63120a11f6d09939e3f84af378e6caef8
-  languageName: node
-  linkType: hard
-
-"browserify-rsa@npm:^4.1.0":
+"browserify-rsa@npm:^4.0.0, browserify-rsa@npm:^4.1.0":
   version: 4.1.0
   resolution: "browserify-rsa@npm:4.1.0"
   dependencies:
@@ -16263,7 +16224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.0.0, inquirer@npm:^8.2.0, inquirer@npm:^8.2.5":
+"inquirer@npm:^8.0.0, inquirer@npm:^8.2.0":
   version: 8.2.5
   resolution: "inquirer@npm:8.2.5"
   dependencies:
@@ -19078,7 +19039,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1, mem-fs-editor@npm:^9.7.0":
+"mem-fs-editor@npm:^8.1.2 || ^9.0.0, mem-fs-editor@npm:^9.0.0, mem-fs-editor@npm:^9.0.1":
   version: 9.7.0
   resolution: "mem-fs-editor@npm:9.7.0"
   dependencies:
@@ -20122,16 +20083,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nise@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "nise@npm:5.1.2"
+"nise@npm:^5.1.4":
+  version: 5.1.5
+  resolution: "nise@npm:5.1.5"
   dependencies:
     "@sinonjs/commons": ^2.0.0
-    "@sinonjs/fake-timers": ^7.0.4
+    "@sinonjs/fake-timers": ^10.0.2
     "@sinonjs/text-encoding": ^0.7.1
     just-extend: ^4.0.2
     path-to-regexp: ^1.7.0
-  checksum: 688c557333dcbc5b41f4f1f1b0ea32fb0f8b424541a8958140bc61074980362c954b2aeb027c282de26b9ddcb4b230656f68ac4206777499e405dd7e716ec1f8
+  checksum: c763dc62c5796cafa5c9268e14a5b34db6e6fa2f1dbc57a891fe5d7ea632a87868e22b5bb34965006f984630793ea11368351e94971163228d9e20b2e88edce8
   languageName: node
   linkType: hard
 
@@ -21415,21 +21376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-asn1@npm:^5.0.0":
-  version: 5.1.4
-  resolution: "parse-asn1@npm:5.1.4"
-  dependencies:
-    asn1.js: ^4.0.0
-    browserify-aes: ^1.0.0
-    create-hash: ^1.1.0
-    evp_bytestokey: ^1.0.0
-    pbkdf2: ^3.0.3
-    safe-buffer: ^5.1.1
-  checksum: a65ebd86b2bbd77f9e3f463a144084a15f81c272b51452f1c08ef64a9722a55d65a76cc37047b19eecd75b3f6a5da93dbc8ee76a8d19d1adb22f0dddaae9a43b
-  languageName: node
-  linkType: hard
-
-"parse-asn1@npm:^5.1.6":
+"parse-asn1@npm:^5.0.0, parse-asn1@npm:^5.1.6":
   version: 5.1.6
   resolution: "parse-asn1@npm:5.1.6"
   dependencies:
@@ -25429,17 +25376,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sinon@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "sinon@npm:14.0.2"
+"sinon@npm:^16.0.0":
+  version: 16.1.3
+  resolution: "sinon@npm:16.1.3"
   dependencies:
-    "@sinonjs/commons": ^2.0.0
-    "@sinonjs/fake-timers": ^9.1.2
-    "@sinonjs/samsam": ^7.0.1
-    diff: ^5.0.0
-    nise: ^5.1.2
+    "@sinonjs/commons": ^3.0.0
+    "@sinonjs/fake-timers": ^10.3.0
+    "@sinonjs/samsam": ^8.0.0
+    diff: ^5.1.0
+    nise: ^5.1.4
     supports-color: ^7.2.0
-  checksum: de7730cd7785a457e42f9a93e955780c870296036a13816e3c0c5648360afae82fdc748e36c854cf26fb8abd117855a7211aee49265c334fa61439aae17a1b72
+  checksum: 83e5ccd724efdb5d1471e41b2cfaf4a46d9fe2cc76c15a23dedfbd741f7d448e6aec3d34a8253a79bdf8ddcc5bd889c5277ae71879e4709c621cb41094fbcdab
   languageName: node
   linkType: hard
 
@@ -27169,10 +27116,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.2.0":
-  version: 4.3.1
-  resolution: "type-fest@npm:4.3.1"
-  checksum: 04e0f073dcc31c113c1b8856c089b388e7e9f4383a9ed72cc1466a89ec50d9d67678844eeec342b5a1ce71b21e817764d4f067aa148f6bcb5df9005ff3803382
+"type-fest@npm:^4.2.0, type-fest@npm:^4.3.1":
+  version: 4.6.0
+  resolution: "type-fest@npm:4.6.0"
+  checksum: e38f2b4b35e912bf60dbe7d4350653fb76b241a456e849fab85002ba08e938a26a7c44a330dd5620dd48ce57566be7c97e997064dc0d5066d5b6949b8c444430
   languageName: node
   linkType: hard
 
@@ -28984,24 +28931,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-test@npm:7.4.0":
-  version: 7.4.0
-  resolution: "yeoman-test@npm:7.4.0"
+"yeoman-test@npm:8.2.0":
+  version: 8.2.0
+  resolution: "yeoman-test@npm:8.2.0"
   dependencies:
-    "@types/inquirer": ^8.2.5
-    "@types/mem-fs-editor": ^7.0.2
-    "@types/yeoman-environment": ^2.10.8
-    "@types/yeoman-generator": ^5.2.11
-    inquirer: ^8.2.5
-    lodash: ^4.17.21
-    mem-fs-editor: ^9.7.0
-    sinon: ^14.0.2
+    "@yeoman/adapter": ^1.4.0
+    inquirer: ^9.2.2
+    lodash-es: ^4.17.21
+    mem-fs-editor: ^10.0.3
+    sinon: ^16.0.0
     temp-dir: ^3.0.0
+    type-fest: ^4.3.1
   peerDependencies:
-    mem-fs: ^2.2.1
-    yeoman-environment: ^3.13.0
-    yeoman-generator: "*"
-  checksum: 39fc79ba0e61823eb9d5e64ce63c65b0ad3e16e026606aab2fe760e63453f3ff0a245e4237866c65408b77b8755fe373f467561ce35cdb49e781511df5a6ab7e
+    "@yeoman/types": ^1.1.0
+    mem-fs: ^3.0.0
+    yeoman-environment: ^3.18.3
+    yeoman-generator: ^5.9.0 || >=6.0.0
+  peerDependenciesMeta:
+    yeoman-environment:
+      optional: true
+    yeoman-generator:
+      optional: true
+  checksum: 2d56a5f827b23aac840c39b2b8e92d9b82e85f2a505b0b6edc9bdbfea24b87b9d9422d3e01506de62df59a721935be94464d7172ac211e33842c8b21c47b6ba9
   languageName: node
   linkType: hard
 
