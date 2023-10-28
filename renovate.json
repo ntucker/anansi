@@ -84,7 +84,8 @@
         "mem-fs-editor",
         "yeoman-generator",
         "yeoman-environment",
-        "yeoman-test"
+        "yeoman-test",
+        "yo"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "yeoman",
