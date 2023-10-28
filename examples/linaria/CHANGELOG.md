@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.4](https://github.com/ntucker/anansi/compare/example-linaria@6.1.3...example-linaria@6.1.4) (2023-10-28)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2200](https://github.com/ntucker/anansi/issues/2200)) ([ad0ca8d](https://github.com/ntucker/anansi/commit/ad0ca8d65b4e90fc08d4e897093c1d5395690b7f))
+* Update all non-major dependencies ([#2203](https://github.com/ntucker/anansi/issues/2203)) ([04be8f5](https://github.com/ntucker/anansi/commit/04be8f582ff960c4b699ca3a3b673da1e33d048d))
+* Update Yarn to v4 ([#2202](https://github.com/ntucker/anansi/issues/2202)) ([a42b946](https://github.com/ntucker/anansi/commit/a42b946cc80cc9f4e5b2555ef3dae84d2b24d35c))
+
 ### [6.1.3](https://github.com/ntucker/anansi/compare/example-linaria@6.1.2...example-linaria@6.1.3) (2023-10-15)
 
 ### 📦 Package

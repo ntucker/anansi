@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.0.15...@anansi/storybook@2.1.0) (2023-10-28)
+
+### 🚀 Features
+
+* Support @anansi/webpack-config@16 ([c0830f6](https://github.com/ntucker/anansi/commit/c0830f6950c98837c31b188da8dce563601571a7))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2200](https://github.com/ntucker/anansi/issues/2200)) ([ad0ca8d](https://github.com/ntucker/anansi/commit/ad0ca8d65b4e90fc08d4e897093c1d5395690b7f))
+* Update all non-major dependencies ([#2203](https://github.com/ntucker/anansi/issues/2203)) ([04be8f5](https://github.com/ntucker/anansi/commit/04be8f582ff960c4b699ca3a3b673da1e33d048d))
+* Update storybook monorepo to v7.5.1 ([#2201](https://github.com/ntucker/anansi/issues/2201)) ([eaf3890](https://github.com/ntucker/anansi/commit/eaf3890f3610b8bceee016d6413ae037d11873e6))
+
 ### [2.0.15](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.0.14...@anansi/storybook@2.0.15) (2023-10-15)
 
 ### 📦 Package

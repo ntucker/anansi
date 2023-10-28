@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.2...@anansi/generator-js@12.1.3) (2023-10-28)
+
+### 💅 Enhancement
+
+* Setup yarn using corepack ([4ea34ea](https://github.com/ntucker/anansi/commit/4ea34eaf5005b163b8181f9e9415d2a3981056c0))
+* Support latest data-client schema ([16b1021](https://github.com/ntucker/anansi/commit/16b1021e9ea0c74fcf7e41a62bd75a2dc34fac54))
+
+### 📦 Package
+
+* Update `yeoman-environment` to v4 ([#2204](https://github.com/ntucker/anansi/issues/2204)) ([a462ee0](https://github.com/ntucker/anansi/commit/a462ee0c63eca8156ad61b0b9d6e86fa5618312f))
+* Update `yeoman-test` to v8 ([#2208](https://github.com/ntucker/anansi/issues/2208)) ([afad96d](https://github.com/ntucker/anansi/commit/afad96d00c2d9d0c1863c990206e6c0d26f51625))
+* Update all non-major dependencies ([#2200](https://github.com/ntucker/anansi/issues/2200)) ([ad0ca8d](https://github.com/ntucker/anansi/commit/ad0ca8d65b4e90fc08d4e897093c1d5395690b7f))
+* Update all non-major dependencies ([#2203](https://github.com/ntucker/anansi/issues/2203)) ([04be8f5](https://github.com/ntucker/anansi/commit/04be8f582ff960c4b699ca3a3b673da1e33d048d))
+* Update Yarn to v4 ([#2202](https://github.com/ntucker/anansi/issues/2202)) ([a42b946](https://github.com/ntucker/anansi/commit/a42b946cc80cc9f4e5b2555ef3dae84d2b24d35c))
+
 ### [12.1.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.1...@anansi/generator-js@12.1.2) (2023-09-28)
 
 ### 📦 Package
