@@ -1,12 +1,6 @@
 import { Entity, RestEndpoint } from '@data-client/rest';
 import type { FixtureEndpoint } from '@data-client/test';
 
-class FloatSerializer extends Number {
-  constructor(v: any) {
-    super(Number.parseFloat(v));
-  }
-}
-
 // Visit https://dataclient.io/rest to read more about these definitions
 export class Ticker extends Entity {
   product_id = '';
@@ -28,8 +22,8 @@ export class Ticker extends Entity {
   // convert price to a float and time to a Date
   // see https://dataclient.io/rest/api/Entity#schema
   static schema = {
-    price: FloatSerializer,
-    time: Date,
+    price: Number,
+    time: (iso: string) => new Date(iso),
   };
 
   // Use server timings to ensure zero race conditions
@@ -43,6 +37,7 @@ export class Ticker extends Entity {
   }
 }
 
+// Visit https://dataclient.io/rest/api/RestEndpoint to read more about these definitions
 export const getTicker = new RestEndpoint({
   urlPrefix: 'https://api.exchange.coinbase.com',
   path: '/products/:product_id/ticker',
@@ -51,6 +46,7 @@ export const getTicker = new RestEndpoint({
     value.product_id = product_id;
     return value;
   },
+  pollFrequency: 2000,
 });
 
 export let TickerFixtures: Record<string, FixtureEndpoint> = {};
