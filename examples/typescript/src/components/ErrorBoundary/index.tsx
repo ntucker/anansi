@@ -1,6 +1,6 @@
 import { Spin } from 'antd';
 import classNames from 'classnames';
-import { lazy, Suspense, Component } from 'react';
+import { Suspense, Component } from 'react';
 import type { ReactChild } from 'react';
 
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
@@ -12,13 +12,6 @@ import styles from './index.scss';
 function handleRefresh() {
   window.location.reload(true);
 }
-
-const RedBox = lazy(
-  () =>
-    import(
-      /* webpackChunkName: 'redbox' */ /* webpackPreload: true */ 'redbox-react'
-    ),
-);
 
 interface NetworkError extends Error {
   status: number;
