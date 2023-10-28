@@ -240,7 +240,7 @@ __metadata:
     gulp-filter: "npm:^8.0.0"
     gulp-prettier: "npm:^5.0.0"
     import-meta-resolve: "npm:^3.0.0"
-    mem-fs: "npm:^3.0.0"
+    mem-fs: "npm:^4.0.0"
     mem-fs-editor: "npm:^10.0.3"
     pacote: "npm:^17.0.4"
     shelobsay: "npm:^2.0.0"
@@ -7662,7 +7662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.8.9, @types/node@npm:^20.0.0, @types/node@npm:^20.8.9":
+"@types/node@npm:*, @types/node@npm:20.8.9, @types/node@npm:^20.0.0, @types/node@npm:^20.8.3, @types/node@npm:^20.8.9":
   version: 20.8.9
   resolution: "@types/node@npm:20.8.9"
   dependencies:
@@ -7966,13 +7966,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.4, @types/vinyl@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "@types/vinyl@npm:2.0.7"
+"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.4, @types/vinyl@npm:^2.0.7, @types/vinyl@npm:^2.0.8":
+  version: 2.0.9
+  resolution: "@types/vinyl@npm:2.0.9"
   dependencies:
     "@types/expect": "npm:^1.20.4"
     "@types/node": "npm:*"
-  checksum: 1b1cda7a6ab5d9da35eb514e121a09e46f5e72ff54cd3626ccec04742f92fd10eba589dc3934f4808e7be03d24c84029851b78cba431ac63fb37ecb732432f8f
+  checksum: 65b9a1f87912ced821c8afdb7aaf5d6613f04c73228314cb47a53a6a7747ec0dd66a3461c0d25529d9b132cc4c37a0e8d54c5cf9557b4f0364edc94059f4babf
   languageName: node
   linkType: hard
 
@@ -19102,6 +19102,18 @@ __metadata:
     vinyl: "npm:^3.0.0"
     vinyl-file: "npm:^5.0.0"
   checksum: 401f2b2a4f723d87630f53b5b9def052ce99077cfc87bfc286f8188fb9004acf7dadd4ce3bc13f49965c1f486fa2a24aaa3b419fd853bd28c78585f53753e915
+  languageName: node
+  linkType: hard
+
+"mem-fs@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "mem-fs@npm:4.0.0"
+  dependencies:
+    "@types/node": "npm:^20.8.3"
+    "@types/vinyl": "npm:^2.0.8"
+    vinyl: "npm:^3.0.0"
+    vinyl-file: "npm:^5.0.0"
+  checksum: bb28e4c0eda0036827a8df782c7e03a705177cbf3771b652abcc23640c4475b4181efc4a54531802e0578a13239688966d33f04cac728620a099ad9a2e96091d
   languageName: node
   linkType: hard
 
