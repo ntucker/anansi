@@ -78,7 +78,18 @@
       "groupSlug": "svg",
       "groupName": "svg processors"
     },
-
+    {
+      "matchPackageNames": [
+        "mem-fs",
+        "mem-fs-editor",
+        "yeoman-generator",
+        "yeoman-environment",
+        "yeoman-test"
+      ],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "yeoman",
+      "groupName": "yeoman"
+    },
     {
       "extends": ["monorepo:babel"],
       "matchUpdateTypes": ["major", "minor", "patch"],
