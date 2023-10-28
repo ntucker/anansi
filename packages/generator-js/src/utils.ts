@@ -92,7 +92,7 @@ export class BetterGenerator<
           await execa('which', ['yarn'], { shell: true });
 
           try {
-            await execa(`yarn`, ['set version berry'], {
+            await execa(`corepack`, ['use yarn@*'], {
               shell: true,
             });
             // eslint-disable-next-line no-empty
