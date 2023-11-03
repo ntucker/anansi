@@ -237,7 +237,7 @@ __metadata:
     core-js: "npm:^3.21.0"
     ejs: "npm:^3.1.9"
     execa: "npm:^8.0.1"
-    gulp-filter: "npm:^8.0.0"
+    gulp-filter: "npm:^9.0.0"
     gulp-prettier: "npm:^5.0.0"
     import-meta-resolve: "npm:^4.0.0"
     mem-fs: "npm:^3.0.0"
@@ -15398,11 +15398,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-filter@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "gulp-filter@npm:8.0.0"
+"gulp-filter@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "gulp-filter@npm:9.0.0"
   dependencies:
-    multimatch: "npm:^6.0.0"
+    multimatch: "npm:^7.0.0"
     plugin-error: "npm:^2.0.1"
     streamfilter: "npm:^3.0.0"
     to-absolute-glob: "npm:^3.0.0"
@@ -15411,7 +15411,7 @@ __metadata:
   peerDependenciesMeta:
     gulp:
       optional: true
-  checksum: c5ce3fdbeff25cf60872d5b61a1127e4d4b699f8212868a608a74b32a5e8ab6c3372ebed0946813392c13ce504f71ee6f66d67131c01f4ddd06ca7c28e6eb5b1
+  checksum: 735f3dc6740321a7b04045ee29dd678c84b542a84dd984a44e62584b62614c6d66eb06c452f83b0431be8eae2a4d201a406cd3cd47f2d90eb54e9c8164c4cc1f
   languageName: node
   linkType: hard
 
@@ -20031,6 +20031,17 @@ __metadata:
     array-union: "npm:^3.0.1"
     minimatch: "npm:^3.0.4"
   checksum: e303c3d83a66bdffbe6bb50b7be000dd299f1928a602323adc92daef3c1028ef1ee4cabf7d2ac458e32096c5dac2a263209835464348faf8a8332d076b58c35a
+  languageName: node
+  linkType: hard
+
+"multimatch@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "multimatch@npm:7.0.0"
+  dependencies:
+    array-differ: "npm:^4.0.0"
+    array-union: "npm:^3.0.1"
+    minimatch: "npm:^9.0.3"
+  checksum: ce5b6e8a8d114830dd621b128a4a5364792bab281d861e68c7d719d2c04e8f9a4a0a566b37cbbc0a3cbaa0a62eb50e869c9d43ab439a314186b113a34c91a9c7
   languageName: node
   linkType: hard
 
