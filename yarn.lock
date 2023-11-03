@@ -109,7 +109,7 @@ __metadata:
     chalk: "npm:^4.1.2"
     commander: "npm:^11.1.0"
     execa: "npm:^8.0.1"
-    import-meta-resolve: "npm:^3.1.1"
+    import-meta-resolve: "npm:^4.0.0"
     latest-version: "npm:^7.0.0"
     yo: "npm:^4.3.1"
   peerDependencies:
@@ -239,7 +239,7 @@ __metadata:
     execa: "npm:^8.0.1"
     gulp-filter: "npm:^8.0.0"
     gulp-prettier: "npm:^5.0.0"
-    import-meta-resolve: "npm:^3.1.1"
+    import-meta-resolve: "npm:^4.0.0"
     mem-fs: "npm:^3.0.0"
     mem-fs-editor: "npm:^10.0.3"
     pacote: "npm:^17.0.4"
@@ -16141,10 +16141,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-meta-resolve@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "import-meta-resolve@npm:3.1.1"
-  checksum: 75545f3f0f4f789f15b91a541b2d3e9d5b25fc9e8c60e8423cbdef4fff226f45520bd040219c63eee001878f075e82b52e436ca0d7d05e6c4fdc0348b7f251dd
+"import-meta-resolve@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "import-meta-resolve@npm:4.0.0"
+  checksum: 709375e01f8c3a87b7870991ca29c630d71bb7e22b7bb0f622613173d87b41b4043b4a983800e6d38ab3867496a46f82d30df0cbc2e55792c91c23193eea67a1
   languageName: node
   linkType: hard
 
