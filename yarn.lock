@@ -238,7 +238,7 @@ __metadata:
     ejs: "npm:^3.1.9"
     execa: "npm:^8.0.1"
     gulp-filter: "npm:^9.0.0"
-    gulp-prettier: "npm:^5.0.0"
+    gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.0.0"
     mem-fs: "npm:^3.0.0"
     mem-fs-editor: "npm:^10.0.3"
@@ -15427,14 +15427,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-prettier@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "gulp-prettier@npm:5.0.0"
+"gulp-prettier@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "gulp-prettier@npm:6.0.0"
   dependencies:
     plugin-error: "npm:^2.0.0"
     prettier: "npm:^3.0.0"
-    through2: "npm:^4.0.2"
-  checksum: b4f62c93be7f5b33f83be5c2ebaffa57fc455c1d36b1af24b1a2095445e6f7e3d5acca4424181bde3f7e48ae56ec46e7d755b3002aeb54d870f8976bd44ec503
+  checksum: 486f4e54ddd3dfa11a0d07d2c3f22723f9b0351eab8b5d2d4d0497be55c53c2803cdd015a87b940d910210c4f79c1793c6701233ef615f56ca3e63af7c1f996f
   languageName: node
   linkType: hard
 
@@ -26637,7 +26636,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"through2@npm:^4.0.0, through2@npm:^4.0.2":
+"through2@npm:^4.0.0":
   version: 4.0.2
   resolution: "through2@npm:4.0.2"
   dependencies:
