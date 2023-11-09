@@ -51,12 +51,12 @@
     "storybook"
   ],
   "devDependencies": {
-    "@types/ejs": "3.1.4",
-    "@types/gulp-filter": "3.0.38",
-    "@types/mem-fs-editor": "7.0.5",
+    "@types/ejs": "3.1.5",
+    "@types/gulp-filter": "3.0.39",
+    "@types/mem-fs-editor": "7.0.6",
     "@types/node": "^20.0.0",
-    "@types/pacote": "11.1.7",
-    "@types/yeoman-generator": "5.2.13",
+    "@types/pacote": "11.1.8",
+    "@types/yeoman-generator": "5.2.14",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
     "yeoman-environment": "4.0.0",

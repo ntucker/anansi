@@ -61,7 +61,7 @@
     "@linaria/webpack5-loader": "5.0.4",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@svgr/webpack": "^8.1.0",
-    "@types/webpack-bundle-analyzer": "^4.6.2",
+    "@types/webpack-bundle-analyzer": "^4.6.3",
     "@vue/preload-webpack-plugin": "^2.0.0",
     "assert": "^2.1.0",
     "autoprefixer": "^10.4.16",
