@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.9...@anansi/core@0.18.10) (2023-11-10)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2225](https://github.com/ntucker/anansi/issues/2225)) ([3b68fbb](https://github.com/ntucker/anansi/commit/3b68fbbdde94619b814f4f5931b5851931997882))
+
 ### [0.18.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.8...@anansi/core@0.18.9) (2023-10-28)
 
 ### 📦 Package

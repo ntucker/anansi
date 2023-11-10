@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.1](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.0...@anansi/cli@3.1.1) (2023-11-10)
+
+### 📦 Package
+
+* Update `import-meta-resolve` to v4 ([#2217](https://github.com/ntucker/anansi/issues/2217)) ([fdbf225](https://github.com/ntucker/anansi/commit/fdbf225853fe958eee20eb1d17a7965b81e9f089))
+* Update all non-major dependencies ([#2216](https://github.com/ntucker/anansi/issues/2216)) ([b7d76ee](https://github.com/ntucker/anansi/commit/b7d76eecb88caea2096bacc5b6c9a51822e6cc9f))
+
 ## [3.1.0](https://github.com/ntucker/anansi/compare/@anansi/cli@3.0.19...@anansi/cli@3.1.0) (2023-10-28)
 
 ### 🚀 Features

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.3...@anansi/generator-js@12.1.4) (2023-11-10)
+
+### 📦 Package
+
+* Update `gulp-filter` to v9 ([#2219](https://github.com/ntucker/anansi/issues/2219)) ([926a1d3](https://github.com/ntucker/anansi/commit/926a1d3b8c00a0ee6fceb3fc6d3cefcf43d9404d))
+* Update `gulp-prettier` to v6 ([#2220](https://github.com/ntucker/anansi/issues/2220)) ([df80275](https://github.com/ntucker/anansi/commit/df802754590931d49fb508f4b329d993800fe511))
+* Update `import-meta-resolve` to v4 ([#2217](https://github.com/ntucker/anansi/issues/2217)) ([fdbf225](https://github.com/ntucker/anansi/commit/fdbf225853fe958eee20eb1d17a7965b81e9f089))
+* Update all non-major dependencies ([#2216](https://github.com/ntucker/anansi/issues/2216)) ([b7d76ee](https://github.com/ntucker/anansi/commit/b7d76eecb88caea2096bacc5b6c9a51822e6cc9f))
+* Update all non-major dependencies ([#2225](https://github.com/ntucker/anansi/issues/2225)) ([3b68fbb](https://github.com/ntucker/anansi/commit/3b68fbbdde94619b814f4f5931b5851931997882))
+
 ### [12.1.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.2...@anansi/generator-js@12.1.3) (2023-10-28)
 
 ### 💅 Enhancement
