@@ -43,9 +43,9 @@ export default function makeNodeConfig(
     },
   ];
   config.output.path =
-    pkg?.publishConfig?.main ?? pkg?.main
-      ? rootPath
-      : path.join(rootPath, serverDir);
+    pkg?.publishConfig?.main ?? pkg?.main ?
+      rootPath
+    : path.join(rootPath, serverDir);
   config.output.filename = pkg?.publishConfig?.main ?? pkg?.main ?? '[name].js';
   config.output.chunkFilename = '[name].chunk.js';
 

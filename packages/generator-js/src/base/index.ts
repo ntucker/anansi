@@ -81,8 +81,9 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     const repository = `${this.config.get('githubDomain')}/${this.config.get(
       'githubOrg',
     )}/${this.config.get('appName')}`;
-    const namespace = this.config.get('npmNamespace')
-      ? `${this.config.get('npmNamespace')}/`
+    const namespace =
+      this.config.get('npmNamespace') ?
+        `${this.config.get('npmNamespace')}/`
       : '';
     const packageSettings = {
       name: `${namespace}${this.config.get('appName')}`,

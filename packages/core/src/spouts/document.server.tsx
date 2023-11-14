@@ -65,18 +65,16 @@ export default function DocumentSpout(options: {
     }[] = assetList
       .filter(asset => !asset.endsWith('.hot-update.js'))
       .map(asset =>
-        asset.endsWith('.css')
-          ? { href: asset, rel: 'stylesheet' }
-          : asset.endsWith('.js')
-          ? { href: asset, as: 'script' }
-          : { href: asset },
+        asset.endsWith('.css') ? { href: asset, rel: 'stylesheet' }
+        : asset.endsWith('.js') ? { href: asset, as: 'script' }
+        : { href: asset },
       );
 
     if (options.csPolicy) {
       const httpEquiv =
-        process.env.NODE_ENV === 'production'
-          ? 'Content-Security-Policy'
-          : 'Content-Security-Policy-Report-Only';
+        process.env.NODE_ENV === 'production' ?
+          'Content-Security-Policy'
+        : 'Content-Security-Policy-Report-Only';
 
       props.res.setHeader(
         httpEquiv,
@@ -103,8 +101,8 @@ export default function DocumentSpout(options: {
 }
 
 function childrenAssets(chunk: StatsChunkGroup) {
-  return chunk.children
-    ? Object.values(chunk.children).flatMap(preload =>
+  return chunk.children ?
+      Object.values(chunk.children).flatMap(preload =>
         preload.flatMap(c => c.assets ?? []),
       )
     : [];

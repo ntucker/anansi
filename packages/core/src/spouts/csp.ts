@@ -6,8 +6,9 @@ export interface Policy {
 export function buildPolicy(policyObj: Policy) {
   return Object.keys(policyObj)
     .map(key => {
-      const val = Array.isArray(policyObj[key])
-        ? [...new Set(policyObj[key]).values()].filter(v => v).join(' ')
+      const val =
+        Array.isArray(policyObj[key]) ?
+          [...new Set(policyObj[key]).values()].filter(v => v).join(' ')
         : policyObj[key];
 
       // move strict dynamic to the end of the policy if it exists to be backwards compatible with csp2

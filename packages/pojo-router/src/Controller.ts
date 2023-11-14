@@ -38,13 +38,13 @@ export default class RouteController<
     this.normalizedRouter = routes.map(route => {
       const pathOrPathName = route.name;
       const pathObjectOrString =
-        pathOrPathName in namedPaths
-          ? namedPaths[pathOrPathName]
-          : pathOrPathName;
+        pathOrPathName in namedPaths ?
+          namedPaths[pathOrPathName]
+        : pathOrPathName;
       const { path, ...options } =
-        typeof pathObjectOrString === 'string'
-          ? { path: pathObjectOrString as string }
-          : (pathObjectOrString as NamedPath);
+        typeof pathObjectOrString === 'string' ?
+          { path: pathObjectOrString as string }
+        : (pathObjectOrString as NamedPath);
       return {
         pathOrPathName,
         route,

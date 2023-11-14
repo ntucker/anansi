@@ -13,7 +13,7 @@ export const ControllerContext = createContext(
 );
 
 export const LocationContext = createContext(
-  'location' in globalThis
-    ? globalThis.location
-    : ({ pathname: '', search: '', hash: '' } as Location),
+  'location' in globalThis ?
+    globalThis.location
+  : ({ pathname: '', search: '', hash: '' } as Location),
 );
