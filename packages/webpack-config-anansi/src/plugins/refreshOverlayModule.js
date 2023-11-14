@@ -4,14 +4,14 @@ const {
   reportBuildError,
   dismissBuildError,
 } =
-  typeof window !== 'undefined'
-    ? require('react-error-overlay')
-    : {
-        dismissRuntimeErrors: () => {},
-        reportRuntimeError: () => {},
-        dismissBuildError: () => {},
-        reportBuildError: () => {},
-      };
+  typeof window !== 'undefined' ?
+    require('react-error-overlay')
+  : {
+      dismissRuntimeErrors: () => {},
+      reportRuntimeError: () => {},
+      dismissBuildError: () => {},
+      reportBuildError: () => {},
+    };
 
 module.exports = {
   clearRuntimeErrors: dismissRuntimeErrors,

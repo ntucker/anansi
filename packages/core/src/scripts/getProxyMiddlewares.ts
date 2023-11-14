@@ -18,12 +18,14 @@ export default function getProxyMiddlewares(
   const { createProxyMiddleware } = require('http-proxy-middleware');
 
   const proxy: ProxyConfigArray =
-    !Array.isArray(proxyConfig) && typeof proxyConfig === 'object'
-      ? Object.keys(proxyConfig).length &&
+    !Array.isArray(proxyConfig) && typeof proxyConfig === 'object' ?
+      (
+        Object.keys(proxyConfig).length &&
         Object.keys(proxyConfig)[0].startsWith('/')
-        ? Object.entries(proxyConfig).map(([path, v]) => ({ path, ...v }))
-        : [proxyConfig]
-      : proxyConfig;
+      ) ?
+        Object.entries(proxyConfig).map(([path, v]) => ({ path, ...v }))
+      : [proxyConfig]
+    : proxyConfig;
 
   const getProxyMiddleware = (
     proxyConfig: ProxyConfigArrayItem,
@@ -61,9 +63,9 @@ export default function getProxyMiddlewares(
     let proxyMiddleware: RequestHandler | undefined;
 
     let proxyConfig =
-      typeof proxyConfigOrCallback === 'function'
-        ? proxyConfigOrCallback()
-        : proxyConfigOrCallback;
+      typeof proxyConfigOrCallback === 'function' ?
+        proxyConfigOrCallback()
+      : proxyConfigOrCallback;
 
     proxyMiddleware = getProxyMiddleware(proxyConfig);
 
@@ -88,9 +90,9 @@ export default function getProxyMiddlewares(
       // bypassUrl from it otherwise bypassUrl would be null
       // TODO remove in the next major in favor `context` and `router` options
       const bypassUrl: ByPass | null =
-        typeof proxyConfig.bypass === 'function'
-          ? await proxyConfig.bypass(req, res, proxyConfig)
-          : null;
+        typeof proxyConfig.bypass === 'function' ?
+          await proxyConfig.bypass(req, res, proxyConfig)
+        : null;
 
       if (typeof bypassUrl === 'boolean') {
         // skip the proxy

@@ -51,9 +51,9 @@ export default function makeBaseConfig({
     },
     fallback: NODE_ALIAS,
     plugins:
-      tsconfigPathsOptions !== false
-        ? [new TsconfigPathsPlugin(tsconfigPathsOptions)]
-        : [],
+      tsconfigPathsOptions !== false ?
+        [new TsconfigPathsPlugin(tsconfigPathsOptions)]
+      : [],
   };
 
   const mainBabelLoader = generateBabelLoader({
@@ -112,22 +112,22 @@ export default function makeBaseConfig({
     plugins.push(
       new MiniCssExtractPlugin({
         filename:
-          (mode !== 'production') | nohash
-            ? '[name].css'
-            : '[name].[contenthash].css',
+          (mode !== 'production') | nohash ?
+            '[name].css'
+          : '[name].[contenthash].css',
         chunkFilename:
-          (mode !== 'production') | nohash
-            ? '[name].css'
-            : '[name].[contenthash].css',
+          (mode !== 'production') | nohash ?
+            '[name].css'
+          : '[name].[contenthash].css',
         ...cssExtractOptions,
       }),
     );
   }
 
   const assetModuleFilename =
-    nohash || mode !== 'production'
-      ? '[name].[ext][query]'
-      : '[contenthash].[ext][query]';
+    nohash || mode !== 'production' ?
+      '[name].[ext][query]'
+    : '[contenthash].[ext][query]';
   const config = {
     context: rootPath,
     entry: {
@@ -137,13 +137,13 @@ export default function makeBaseConfig({
       path: path.join(rootPath, buildDir),
       publicPath: WEBPACK_PUBLIC_HOST + WEBPACK_PUBLIC_PATH,
       filename:
-        nohash || mode !== 'production'
-          ? '[name].js'
-          : '[name]-[contenthash].js',
+        nohash || mode !== 'production' ?
+          '[name].js'
+        : '[name]-[contenthash].js',
       chunkFilename:
-        nohash || mode !== 'production'
-          ? '[name].chunk.js'
-          : '[name]-[contenthash].chunk.js',
+        nohash || mode !== 'production' ?
+          '[name].chunk.js'
+        : '[name]-[contenthash].chunk.js',
       assetModuleFilename,
       globalObject: "(typeof self !== 'undefined' ? self : this)",
       // this improves performance and makes this compatible across node 16 and 18 at the same time.
@@ -183,10 +183,9 @@ export default function makeBaseConfig({
                   loader: require.resolve('worker-loader'),
                   options: {
                     inline: 'fallback',
-                    filename: nohash
-                      ? '[name].js'
-                      : mode === 'production'
-                      ? '[name]-[contenthash].js'
+                    filename:
+                      nohash ? '[name].js'
+                      : mode === 'production' ? '[name]-[contenthash].js'
                       : '[name].js',
                   },
                 },
@@ -233,9 +232,9 @@ export default function makeBaseConfig({
                   loader: require.resolve('file-loader'),
                   options: {
                     name:
-                      nohash || mode !== 'production'
-                        ? '[name].[ext][query]'
-                        : '[md5:contenthash:base64:8].[ext][query]',
+                      nohash || mode !== 'production' ?
+                        '[name].[ext][query]'
+                      : '[md5:contenthash:base64:8].[ext][query]',
                   },
                 },
               ],

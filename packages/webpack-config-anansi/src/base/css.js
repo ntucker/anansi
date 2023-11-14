@@ -14,20 +14,20 @@ const getCSSLoaders = ({ mode, target, cssExtractOptions }) => {
     {
       loader: require.resolve('css-loader'),
       options:
-        mode === 'development'
-          ? {
-              sourceMap: true,
-              importLoaders: 1,
-              modules: {
-                mode: 'icss',
-              },
-            }
-          : {
-              importLoaders: 1,
-              modules: {
-                mode: 'icss',
-              },
+        mode === 'development' ?
+          {
+            sourceMap: true,
+            importLoaders: 1,
+            modules: {
+              mode: 'icss',
             },
+          }
+        : {
+            importLoaders: 1,
+            modules: {
+              mode: 'icss',
+            },
+          },
     },
     {
       loader: require.resolve('postcss-loader'),
@@ -39,9 +39,9 @@ const getCSSLoaders = ({ mode, target, cssExtractOptions }) => {
     },
   ];
 
-  return cssExtractOptions === false
-    ? loaders
-    : [miniCssExtractPluginLoader, ...loaders];
+  return cssExtractOptions === false ? loaders : (
+      [miniCssExtractPluginLoader, ...loaders]
+    );
 };
 
 const getSASSLoaders = ({ sassResources, sassOptions }) => {
@@ -85,9 +85,9 @@ export default function getStyleRules({
           ...loader.options,
           modules: {
             exportLocalsConvention: 'camelCase',
-            ...(process.env.NODE_ENV === 'testing'
-              ? { localIdentName: '[name]__[local]' }
-              : {}),
+            ...(process.env.NODE_ENV === 'testing' ?
+              { localIdentName: '[name]__[local]' }
+            : {}),
             ...cssModulesOptions,
           },
         },
@@ -109,9 +109,9 @@ export default function getStyleRules({
     }
   }
   const sassLoaders =
-    sassOptions === false || !foundSass
-      ? []
-      : getSASSLoaders({ sassResources, sassOptions });
+    sassOptions === false || !foundSass ?
+      []
+    : getSASSLoaders({ sassResources, sassOptions });
   const excludeCSSProcess = [libraryExclude];
 
   // global styles
