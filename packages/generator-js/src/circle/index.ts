@@ -1,11 +1,12 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export default class extends InstallPeersMixin(BetterGenerator) {
-  constructor(
-    args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
-  ) {
+import { BetterGenerator } from '../utils.js';
+
+export default class CircleGenerator<
+  O extends CircleOptions = CircleOptions,
+  F extends BaseFeatures = BaseFeatures,
+> extends BetterGenerator<O, F> {
+  constructor(args: string | string[], options: O, features: F) {
     super(args, options, features);
 
     this.option('circle-parallelism', {
@@ -37,3 +38,8 @@ ${badges}`,
     );
   }
 }
+
+type CircleOptions = BaseOptions & {
+  'circle-parallelism': number;
+  nodeImage?: string;
+};

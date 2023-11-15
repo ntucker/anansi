@@ -1,3 +1,6 @@
+import { PromptQuestions } from '@yeoman/types';
+import { BaseOptions, BaseFeatures } from 'yeoman-generator';
+
 import {
   DEFAULT_ASSET_PATH,
   DEFAULT_ROOT_PATH,
@@ -5,17 +8,20 @@ import {
 } from '../defaults.js';
 import { BetterGenerator } from '../utils.js';
 
-interface Options {
+export type ConfigureOptions = BaseOptions & {
   appName: string;
   githubDomain: string;
   'root-path': string;
   'build-path': string;
   'server-path': string;
   'npm-namespace': string;
-}
+};
 
-export default class extends BetterGenerator<Options> {
-  constructor(args: string | string[], options: Options, features: Options) {
+export default class ConfigureGenerator<
+  O extends ConfigureOptions = ConfigureOptions,
+  F extends BaseFeatures = BaseFeatures,
+> extends BetterGenerator<O, F> {
+  constructor(args: string | string[], options: O, features: F) {
     super(args, options, features);
 
     this.argument('appName', { type: String, required: true });
@@ -66,7 +72,7 @@ export default class extends BetterGenerator<Options> {
   }
 
   async prompting() {
-    const prompts = [
+    const props = await this.prompt([
       {
         type: 'list',
         name: 'projectType',
@@ -92,9 +98,7 @@ export default class extends BetterGenerator<Options> {
         default: this.config.get('githubOrg'),
         store: true,
       },
-    ] as const;
-
-    const props = await this.prompt(prompts);
+    ]);
 
     this.config.set('githubOrg', props.githubOrg);
     return props;

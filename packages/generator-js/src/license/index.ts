@@ -1,5 +1,5 @@
-'use strict';
-import Generator from 'yeoman-generator';
+import Generator, { Mixi } from 'yeoman-generator';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
 export const licenses = [
   { name: 'Apache 2.0', value: 'Apache-2.0' },
@@ -24,20 +24,25 @@ export default class GeneratorLicense extends Generator {
     options: Record<string, unknown>,
     features: Record<string, unknown>,
   ) {
+    // fix broken logic in path combining in yeoman-generator
+    if (options.resolved?.startsWith('file://'))
+      options.resolved = options.resolved.substring(7);
+
     // this is actually improperly typed
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     super(args, options, features);
-    this.fs = (this.env as any).fs;
 
     this.option('name', {
       type: String,
       description: 'Name of the license owner',
+      default: this.git.name,
     });
 
     this.option('email', {
       type: String,
       description: 'Email of the license owner',
+      default: this.git.email,
     });
 
     this.option('website', {
@@ -84,8 +89,8 @@ export default class GeneratorLicense extends Generator {
   initializing() {
     this.gitc = {
       user: {
-        name: this.user.git.name(),
-        email: this.user.git.email(),
+        name: this.git.name,
+        email: this.git.email(),
       },
     };
   }

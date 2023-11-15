@@ -2,21 +2,20 @@ import chalk from 'chalk';
 import filter from 'gulp-filter';
 import prettier from 'gulp-prettier';
 import shelobsay from 'shelobsay';
+import { BaseFeatures } from 'yeoman-generator';
 
-import ConfigureGenerator from './ConfigureGenerator.js';
+import ConfigureGenerator, {
+  type ConfigureOptions,
+} from './ConfigureGenerator.js';
 import { resolvePath } from '../utils.js';
 
-export { ConfigureGenerator };
+export { ConfigureGenerator, ConfigureOptions };
 
-export default class extends ConfigureGenerator {
-  constructor(
-    args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
-  ) {
-    // this is actually improperly typed
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
+export default class AppGenerator<
+  O extends ConfigureOptions = ConfigureOptions,
+  F extends BaseFeatures = BaseFeatures,
+> extends ConfigureGenerator<O, F> {
+  constructor(args: string | string[], options: O, features: F) {
     super(args, options, features);
     const jsFilter = filter(
       [

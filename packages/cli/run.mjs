@@ -39,22 +39,19 @@ program
     }
     try {
       const cwd = options.dir || `./${projectName}`;
-      const yosub = execa(
-        'npx yo',
-        [
-          // get rid of 'file://' prefix
-          resolve('@anansi/generator-js', import.meta.url).substring(7),
-          projectName,
-        ],
-        {
-          stdio: ['pipe', process.stdout, process.stderr],
-          shell: true,
-          cwd,
-          env: {
-            PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
-          },
+      // get rid of 'file://' prefix
+      const generatorPath = resolve(
+        '@anansi/generator-js',
+        import.meta.url,
+      ).substring(7);
+      const yosub = execa('npx yo', [generatorPath, projectName], {
+        stdio: ['pipe', process.stdout, process.stderr],
+        shell: true,
+        cwd,
+        env: {
+          PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
         },
-      );
+      });
       // pipe with raw mode allows us to know when this exits with Ctrl+C (SIGINT)
       process.stdin.setRawMode(true);
       process.stdin.pipe(yosub.stdin, { end: false });

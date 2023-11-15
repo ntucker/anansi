@@ -1,10 +1,12 @@
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
+
 import { BetterGenerator } from '../utils.js';
 
 export default class TestingGenerator extends BetterGenerator {
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: BaseOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
     this.config.set('testing', true);

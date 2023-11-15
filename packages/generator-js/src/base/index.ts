@@ -1,7 +1,7 @@
-import { ConfigureGenerator } from '../app/index.js';
-import { InstallPeersMixin, resolvePath } from '../utils.js';
+import { ConfigureGenerator, type ConfigureOptions } from '../app/index.js';
+import { resolvePath } from '../utils.js';
 
-export default class extends InstallPeersMixin(ConfigureGenerator) {
+export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
   initializing() {
     super.initializing();
     // default until testing is set
@@ -144,3 +144,4 @@ export default class extends InstallPeersMixin(ConfigureGenerator) {
     await this.addDependencies(['@babel/runtime']);
   }
 }
+type AnansiOptions = ConfigureOptions & { projectType: string };

@@ -1,11 +1,23 @@
+import { BaseGenerator } from '@yeoman/types';
 import ejs from 'ejs';
 import { execa } from 'execa';
 import { resolve } from 'import-meta-resolve';
-import type { Editor } from 'mem-fs-editor';
+import type {
+  MemFsEditor,
+  MemFsEditorFile,
+  VinylMemFsEditorFile,
+} from 'mem-fs-editor';
+import path, {
+  dirname,
+  resolve as pathResolve,
+  join as pathJoin,
+} from 'node:path';
 import pacote from 'pacote';
-import Generator from 'yeoman-generator';
+import Generator, { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export interface FsEditor extends Editor {
+export interface FsEditor<
+  EditorFile extends MemFsEditorFile = VinylMemFsEditorFile,
+> extends MemFsEditor<EditorFile> {
   extendJSONTpl(
     from: string,
     to: string,
@@ -15,7 +27,7 @@ export interface FsEditor extends Editor {
   ): void;
   appendTpl(
     from: string,
-    to: string,
+    to: string | Buffer,
     context?: Record<string, any>,
     templateOptions?: Record<string, any>,
     appendOptions?: Record<string, any>,
@@ -28,18 +40,19 @@ export interface FsEditor extends Editor {
 }
 
 export class BetterGenerator<
-  T extends Generator.GeneratorOptions = Generator.GeneratorOptions,
-> extends Generator<T> {
-  fs!: FsEditor;
+  O extends BaseOptions = BaseOptions,
+  F extends BaseFeatures = BaseFeatures,
+> extends Generator<O, F> {
+  declare fs: FsEditor;
 
-  constructor(args: string | string[], options: T, features: T) {
-    // this is actually improperly typed
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
+  constructor(args: string | string[], options: O, features: F) {
+    // fix broken logic in path combining in yeoman-generator
+    if (options.resolved?.startsWith('file://'))
+      options.resolved = options.resolved.substring(7);
     super(args, options, features);
 
-    // types need updating
-    this.fs = (this.env as any).fs;
+    // environment will let us work from correct directory when copying files
+    //this.fs = this.env.sharedFs as any;
     this.fs.extendJSONTpl = (
       from: string,
       to: string,
@@ -48,7 +61,7 @@ export class BetterGenerator<
       ...extendArgs: any[]
     ) => {
       const input: string = ejs.render(
-        this.fs.read(from),
+        this.fs.read(from) ?? '',
         context || this.config.getAll(),
         templateOptions,
       ) as any;
@@ -61,7 +74,7 @@ export class BetterGenerator<
       templateOptions?: Record<string, any>,
     ) => {
       const input: string = ejs.render(
-        this.fs.read(from),
+        this.fs.read(from) ?? '',
         context || this.config.getAll(),
         templateOptions,
       ) as any;
@@ -70,7 +83,7 @@ export class BetterGenerator<
 
     this.fs.appendTpl = (from, to, context, templateOptions, appendOptions) => {
       const input = ejs.render(
-        this.fs.read(from),
+        this.fs.read(from) ?? '',
         context || this.config.getAll(),
         templateOptions,
       );
@@ -105,31 +118,51 @@ export class BetterGenerator<
       return name;
     };
   }
+
+  async addPeers(
+    pkgName: string,
+    exclude: string[] = [],
+    deptype: 'dependencies' | 'devDependencies' = 'dependencies',
+  ) {
+    const manifest = await pacote.manifest(pkgName);
+    if (!manifest) {
+      return undefined;
+    }
+    const peers = Object.fromEntries(
+      Object.entries(manifest?.peerDependencies ?? {}).filter(
+        ([pkg, version]) => !exclude.includes(pkg),
+      ),
+    );
+    const funcKey = `add${capitalize(deptype)}` as const;
+    await this[funcKey](peers);
+  }
 }
 
-export function InstallPeersMixin<
-  Class extends new (...args: any[]) => Generator,
->(Cls: Class) {
-  return class extends Cls {
-    async addPeers(
-      pkgName: string,
-      exclude: string[] = [],
-      deptype: 'dependencies' | 'devDependencies' = 'dependencies',
-    ) {
-      const manifest = await pacote.manifest(pkgName);
-      if (!manifest) {
-        return undefined;
-      }
-      const peers = Object.fromEntries(
-        Object.entries(manifest?.peerDependencies ?? {}).filter(
-          ([pkg, version]) => !exclude.includes(pkg),
-        ),
-      );
-      const funcKey = `add${capitalize(deptype)}` as const;
-      await this[funcKey](peers);
-    }
-  };
-}
+// export function InstallPeersMixin<
+//   Class extends new (
+//     ...args: any[]
+//   ) => BaseGenerator & { addDependencies: any; addDevDependencies: any },
+// >(Cls: Class) {
+//   return class extends Cls {
+//     async addPeers(
+//       pkgName: string,
+//       exclude: string[] = [],
+//       deptype: 'dependencies' | 'devDependencies' = 'dependencies',
+//     ) {
+//       const manifest = await pacote.manifest(pkgName);
+//       if (!manifest) {
+//         return undefined;
+//       }
+//       const peers = Object.fromEntries(
+//         Object.entries(manifest?.peerDependencies ?? {}).filter(
+//           ([pkg, version]) => !exclude.includes(pkg),
+//         ),
+//       );
+//       const funcKey = `add${capitalize(deptype)}` as const;
+//       await this[funcKey](peers);
+//     }
+//   };
+// }
 
 const capitalize = <T extends string>(s: T): Capitalize<T> => {
   return (s.charAt(0).toUpperCase() + s.slice(1)) as any;

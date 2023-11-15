@@ -228,10 +228,10 @@ __metadata:
     "@babel/runtime": "npm:^7.17.0"
     "@types/ejs": "npm:3.1.5"
     "@types/gulp-filter": "npm:3.0.39"
-    "@types/mem-fs-editor": "npm:7.0.6"
+    "@types/inquirer": "npm:^9.0.6"
     "@types/node": "npm:^20.0.0"
     "@types/pacote": "npm:11.1.8"
-    "@types/yeoman-generator": "npm:5.2.14"
+    "@yeoman/types": "npm:^1.1.1"
     chalk: "npm:^4.1.2"
     copyfiles: "npm:2.4.1"
     core-js: "npm:^3.21.0"
@@ -7131,7 +7131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/debug@npm:*, @types/debug@npm:^4.0.0":
+"@types/debug@npm:^4.0.0":
   version: 4.1.7
   resolution: "@types/debug@npm:4.1.7"
   dependencies:
@@ -7147,13 +7147,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/diff@npm:*":
-  version: 5.0.0
-  resolution: "@types/diff@npm:5.0.0"
-  checksum: d148a87f0440fcecd64efef4891c5a5b26c335ddcb12b19ef5593042b8d18cc96f31c1fa93d59d0673a742fe87f1c9b6d82c5e5c76b2d9c2cbd8ddfbd5d8bfb4
-  languageName: node
-  linkType: hard
-
 "@types/doctrine@npm:^0.0.3":
   version: 0.0.3
   resolution: "@types/doctrine@npm:0.0.3"
@@ -7161,7 +7154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ejs@npm:*, @types/ejs@npm:3.1.5, @types/ejs@npm:^3.1.1, @types/ejs@npm:^3.1.2, @types/ejs@npm:^3.1.3":
+"@types/ejs@npm:3.1.5, @types/ejs@npm:^3.1.1, @types/ejs@npm:^3.1.2, @types/ejs@npm:^3.1.3":
   version: 3.1.5
   resolution: "@types/ejs@npm:3.1.5"
   checksum: 13d994cf0323d7e0ad33b9384914ccd3b4cd8bf282eced3649b1621b66ee7c784ac2d120a9d7b1f43d6f873518248fb8c3221b06a649b847860b9c2389a0b0ed
@@ -7321,15 +7314,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^8":
-  version: 8.2.5
-  resolution: "@types/inquirer@npm:8.2.5"
-  dependencies:
-    "@types/through": "npm:*"
-  checksum: a2d80487cee41f552cc49d9ca32d84cd9fc19a157dcd6484519925f7205de7ae9b51fae1fb10ec425b960396b734908521cb515a839172509313d8db6e105c6b
-  languageName: node
-  linkType: hard
-
 "@types/inquirer@npm:^9.0.3":
   version: 9.0.6
   resolution: "@types/inquirer@npm:9.0.6"
@@ -7337,6 +7321,16 @@ __metadata:
     "@types/through": "npm:*"
     rxjs: "npm:^7.2.0"
   checksum: b19237abf78e01cc326cadc24feb161a51d582ea5977d8d2bb20ccfa9fc4ac00fd724202fcbb9b74c7d1425a4a33ec8cb616257edad4f660433f310d9bcbc7d4
+  languageName: node
+  linkType: hard
+
+"@types/inquirer@npm:^9.0.6":
+  version: 9.0.7
+  resolution: "@types/inquirer@npm:9.0.7"
+  dependencies:
+    "@types/through": "npm:*"
+    rxjs: "npm:^7.2.0"
+  checksum: b7138af41226c0457b99ff9b179da4a82078bc1674762e812d3cc3e3276936d7326b9fa6b98212b8eb055b2b6aaebe3c20359eebe176a6ca71061f4e08ce3a0f
   languageName: node
   linkType: hard
 
@@ -7441,30 +7435,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mem-fs-editor@npm:*, @types/mem-fs-editor@npm:7.0.6":
-  version: 7.0.6
-  resolution: "@types/mem-fs-editor@npm:7.0.6"
-  dependencies:
-    "@types/ejs": "npm:*"
-    "@types/json-schema": "npm:*"
-    "@types/mem-fs": "npm:*"
-    "@types/node": "npm:*"
-    "@types/vinyl": "npm:*"
-    globby: "npm:^11.1.0"
-  checksum: 852c6b6cde94bd4da7715abf30fd1f65919e5b06acad5c90a223c210843187f2cc5cbc0991fa7460e6ea9c31ff744318c385feb99cee77aa76157974ecb303cf
-  languageName: node
-  linkType: hard
-
-"@types/mem-fs@npm:*":
-  version: 1.1.2
-  resolution: "@types/mem-fs@npm:1.1.2"
-  dependencies:
-    "@types/node": "npm:*"
-    "@types/vinyl": "npm:*"
-  checksum: 3d11294b88215000cb14e3dda4318048292476ed39590ebc648e129ac9e9115189d4159f150ee7154705bae518126b17389d20bd7b8d6fbeea89f08bd114a1d9
-  languageName: node
-  linkType: hard
-
 "@types/mime-types@npm:^2.1.0":
   version: 2.1.1
   resolution: "@types/mime-types@npm:2.1.1"
@@ -7533,7 +7503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.18.28, @types/node@npm:^16.18.31":
+"@types/node@npm:^16.18.26, @types/node@npm:^16.18.28, @types/node@npm:^16.18.31":
   version: 16.18.61
   resolution: "@types/node@npm:16.18.61"
   checksum: 219423dbb29ee1a84feb3e2e7b985eccd05e00dfc6efa18b5e2e1713be1df3578ca9f9c51354d66bd8d0d4ab8f0e1959e7de1ef7d03869ff27ed5ba885c6a8cd
@@ -7777,13 +7747,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/text-table@npm:*":
-  version: 0.2.1
-  resolution: "@types/text-table@npm:0.2.1"
-  checksum: d47d6eadda958c00ff021a25e5bd83f0b5ce6f6cdf4fa3773bc19dedc51bb74a057aab4dca3e1dc642b2895b0573c3e0b9994b929c1ca87fa082674327c89d13
-  languageName: node
-  linkType: hard
-
 "@types/through@npm:*":
   version: 0.0.30
   resolution: "@types/through@npm:0.0.30"
@@ -7878,39 +7841,6 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "npm:*"
   checksum: eb46d2c0dc7b3e1ccbf5a06ac217dc761ec8b9817c1fe6a15474476f86e90abc29c693f33221c28b0f20fa5f3028f44a0b1f040fc9f91f0124b9a88a7d2462a7
-  languageName: node
-  linkType: hard
-
-"@types/yeoman-environment@npm:*":
-  version: 2.10.8
-  resolution: "@types/yeoman-environment@npm:2.10.8"
-  dependencies:
-    "@types/diff": "npm:*"
-    "@types/inquirer": "npm:^8"
-    "@types/mem-fs": "npm:*"
-    "@types/text-table": "npm:*"
-    "@types/vinyl": "npm:*"
-    "@types/yeoman-generator": "npm:*"
-    chalk: "npm:^4.1.0"
-    commander: "npm:^9.0.0"
-    execa: "npm:^5.0.0"
-    rxjs: "npm:^6.4.0"
-  checksum: e5cd58047263b9be2bee7a6dcc2941919fc9dfea9f990cd6b1c15e0cd6ea6442495d733887ca7884bac07883c7a55a9488484da63c0ba83c71ad210fb75bafdb
-  languageName: node
-  linkType: hard
-
-"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.2.14":
-  version: 5.2.14
-  resolution: "@types/yeoman-generator@npm:5.2.14"
-  dependencies:
-    "@types/debug": "npm:*"
-    "@types/ejs": "npm:*"
-    "@types/inquirer": "npm:^8"
-    "@types/mem-fs-editor": "npm:*"
-    "@types/node": "npm:*"
-    "@types/yeoman-environment": "npm:*"
-    rxjs: "npm:^6.4.0"
-  checksum: a239322245b251487ef9b0b4ef0c5d6a3afc8d92e0a2f1d42015cabaa053c427d5a1547b196449f671507b9998b081c760e240c3c8c6970cf61f4e3cb63195fd
   languageName: node
   linkType: hard
 
@@ -8353,6 +8283,26 @@ __metadata:
     minimatch: "npm:^9.0.0"
     readable-stream: "npm:^4.3.0"
   checksum: 195c08afbcd4a4813da8fefdfc211ade09f7143cc000d8416caf7eed77a8f880416bd78bed609610cf856e8e8b2740c33993c7f888dec5c9b6e470c6a0edaf8f
+  languageName: node
+  linkType: hard
+
+"@yeoman/types@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "@yeoman/types@npm:1.1.2"
+  dependencies:
+    "@types/node": "npm:^16.18.26"
+  peerDependencies:
+    "@types/inquirer": ^9.0.3
+    mem-fs: ^3.0.0
+    mem-fs-editor: ^10.0.2
+  peerDependenciesMeta:
+    inquirer:
+      optional: true
+    mem-fs:
+      optional: true
+    mem-fs-editor:
+      optional: true
+  checksum: 7e5acc183706d10d6c549030408827ec18394007fba7116754f1d83b45c066f6f2f5b89427904781a30ed85fd6dd1cb4835cc1efe256a636e93d7beb36c89675
   languageName: node
   linkType: hard
 
@@ -10816,7 +10766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.0.0, commander@npm:^9.4.0":
+"commander@npm:^9.4.0":
   version: 9.5.0
   resolution: "commander@npm:9.5.0"
   checksum: 5f7784fbda2aaec39e89eb46f06a999e00224b3763dc65976e05929ec486e174fe9aac2655f03ba6a5e83875bd173be5283dc19309b7c65954701c02025b3c1d
@@ -23884,15 +23834,6 @@ __metadata:
   version: 4.1.0
   resolution: "rx@npm:4.1.0"
   checksum: c2a2cf8cb350f38b5396f8ee6af1bc359c5ed5a409d710111a2da215bfb3fe77f75b5f0a0dd6fe6b57c5bdadf3b128ad1f8ad99de27da2c13ae9ba908a642cee
-  languageName: node
-  linkType: hard
-
-"rxjs@npm:^6.4.0":
-  version: 6.6.7
-  resolution: "rxjs@npm:6.6.7"
-  dependencies:
-    tslib: "npm:^1.9.0"
-  checksum: e556a13a9aa89395e5c9d825eabcfa325568d9c9990af720f3f29f04a888a3b854f25845c2b55875d875381abcae2d8100af9cacdc57576e7ed6be030a01d2fe
   languageName: node
   linkType: hard
 
