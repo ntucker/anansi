@@ -237,7 +237,7 @@ __metadata:
     core-js: "npm:^3.21.0"
     ejs: "npm:^3.1.9"
     execa: "npm:^8.0.1"
-    gulp-filter: "npm:^9.0.0"
+    gulp-filter: "npm:^9.0.1"
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.0.0"
     mem-fs: "npm:^3.0.0"
@@ -364,7 +364,7 @@ __metadata:
     crypto-browserify: "npm:^3.12.0"
     css-loader: "npm:^6.8.1"
     css-minimizer-webpack-plugin: "npm:^5.0.1"
-    domain-browser: "npm:^5.1.0"
+    domain-browser: "npm:^5.2.0"
     duplicate-package-checker-webpack-plugin: "npm:^3.0.0"
     events: "npm:^3.3.0"
     file-loader: "npm:^6.2.0"
@@ -12552,10 +12552,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domain-browser@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "domain-browser@npm:5.1.0"
-  checksum: 4715ca886b243595fa613074319d4218f20d3b5d66996a98184ed7d6ae338bc3b94aee2141bf4ed8da22029b3ac5458006377d51c01a2fab92d847ce0e86c705
+"domain-browser@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "domain-browser@npm:5.2.0"
+  checksum: 38223c6902a7422f304133d126f776a271e073c95c2ff4cbac0299532f49806de41fd3a85b5b7b2396ea0de1b5ecca4860b0eeacc81a7602d9d3f20fac03bbd7
   languageName: node
   linkType: hard
 
@@ -15379,12 +15379,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-filter@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "gulp-filter@npm:9.0.0"
+"gulp-filter@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "gulp-filter@npm:9.0.1"
   dependencies:
     multimatch: "npm:^7.0.0"
     plugin-error: "npm:^2.0.1"
+    slash: "npm:^5.1.0"
     streamfilter: "npm:^3.0.0"
     to-absolute-glob: "npm:^3.0.0"
   peerDependencies:
@@ -15392,7 +15393,7 @@ __metadata:
   peerDependenciesMeta:
     gulp:
       optional: true
-  checksum: 735f3dc6740321a7b04045ee29dd678c84b542a84dd984a44e62584b62614c6d66eb06c452f83b0431be8eae2a4d201a406cd3cd47f2d90eb54e9c8164c4cc1f
+  checksum: 68d6171fd8cb6c3ad35a17942d6cfe53f8fad99a4843456db08a347a7a8bcc6f6bd20bc9e65f8e67cb566ec689ce310fa39b92a48e0c0657817057749c3540b2
   languageName: node
   linkType: hard
 
