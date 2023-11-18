@@ -104,6 +104,17 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       homepage: `https://${repository}#readme`,
       keywords: ['anansi'],
       author: this.config.get('author'),
+      browserslist: ['extends @anansi/browserslist-config'],
+      prettier: {
+        printWidth: 80,
+        semi: true,
+        singleQuote: true,
+        arrowParens: 'avoid',
+      },
+      eslintConfig: {
+        extends: 'plugin:@anansi/typescript',
+        env: { node: true },
+      },
     };
     this.packageJson.merge(packageSettings);
 
