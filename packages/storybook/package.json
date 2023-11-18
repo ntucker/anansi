@@ -70,7 +70,7 @@
     "test:type": "yarn g:tsc",
     "dev": "run build:lib -w",
     "build": "run build:lib",
-    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV=node16 yarn g:babel --out-dir dist",
+    "build:lib": "BABEL_MODULES=cjs NODE_ENV=production BROWSERSLIST_ENV=node16 yarn g:babel --out-dir dist",
     "build:clean": "yarn g:clean",
     "prepack": "run build"
   }
