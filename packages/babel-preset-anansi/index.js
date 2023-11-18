@@ -33,14 +33,14 @@ function buildPreset(api, options = {}) {
   // webpack and jest sends on context about this specific build target
   const callerTarget = api.caller(caller => caller && caller.target);
   const nodeTarget =
-    callerTarget === 'node'
-      ? // default to current or use node config set
-        (babelTargets && babelTargets.node) || 'current'
-      : callerTarget === undefined
-      ? // infer based on babel target if caller doesn't send anything
-        babelTargets && babelTargets.node
-      : // if caller is not targetting node, we should ensure nodeTarget is not set
-        undefined;
+    callerTarget === 'node' ?
+      // default to current or use node config set
+      (babelTargets && babelTargets.node) || 'current'
+    : callerTarget === undefined ?
+      // infer based on babel target if caller doesn't send anything
+      babelTargets && babelTargets.node
+      // if caller is not targetting node, we should ensure nodeTarget is not set
+    : undefined;
   const hasJsxRuntime = Boolean(
     api.caller(
       caller => (!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime,
@@ -79,18 +79,14 @@ function buildPreset(api, options = {}) {
   const modules =
     // cli won't say what it supports; but we assume if they are calling without a tool they are
     // trying to make ESM
-    (options.nodeTarget || babelNode) && !babelCli
-      ? options.modules !== undefined
-        ? options.modules
-        : supportsModules
-        ? false
-        : 'auto'
-      : // if supportsModules is undefined or true then assume it can handle es modules.
-      options.modules !== undefined
-      ? options.modules
-      : supportsModules === false
-      ? 'auto'
-      : false;
+    (options.nodeTarget || babelNode) && !babelCli ?
+      options.modules !== undefined ? options.modules
+      : supportsModules ? false
+      : 'auto'
+      // if supportsModules is undefined or true then assume it can handle es modules.
+    : options.modules !== undefined ? options.modules
+    : supportsModules === false ? 'auto'
+    : false;
 
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
@@ -153,9 +149,9 @@ function buildPreset(api, options = {}) {
     }
     const { dir, base } = path.parse(options.tsConfigPath);
     const tsconfig =
-      base !== '.' && base !== '..'
-        ? readTsConfig(dir, base)
-        : readTsConfig(dir);
+      base !== '.' && base !== '..' ?
+        readTsConfig(dir, base)
+      : readTsConfig(dir);
     if (tsconfig.options.paths) {
       for (const k in tsconfig.options.paths) {
         const key = globToRegExp(k).toString().replace('.*', '(.*)');
@@ -165,9 +161,9 @@ function buildPreset(api, options = {}) {
       options.resolver.root = [path.resolve(tsconfig.options.baseUrl)];
       options.resolver.root = [
         ...(tsconfig.options.baseUrl ? [tsconfig.options.baseUrl] : []),
-        ...(tsconfig.options.rootDir
-          ? [tsconfig.options.rootDir]
-          : tsconfig.options.rootDirs || []),
+        ...(tsconfig.options.rootDir ?
+          [tsconfig.options.rootDir]
+        : tsconfig.options.rootDirs || []),
         ...options.resolver.root,
       ];
     }
@@ -193,9 +189,9 @@ function buildPreset(api, options = {}) {
   };
   options.resolver.root = [
     ...options.resolver.root,
-    ...(process.env.RESOLVER_ROOT
-      ? [process.env.RESOLVER_ROOT]
-      : options.resolverRoot || []),
+    ...(process.env.RESOLVER_ROOT ?
+      [process.env.RESOLVER_ROOT]
+    : options.resolverRoot || []),
   ];
 
   const preset = {
@@ -204,9 +200,9 @@ function buildPreset(api, options = {}) {
         require('@babel/preset-react').default,
         {
           development: env !== 'production',
-          ...(hasJsxRuntime
-            ? { runtime: 'automatic' }
-            : { runtime: 'classic', useSpread: true }),
+          ...(hasJsxRuntime ?
+            { runtime: 'automatic' }
+          : { runtime: 'classic', useSpread: true }),
         },
       ],
     ],
