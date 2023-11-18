@@ -1,6 +1,8 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export default class extends InstallPeersMixin(BetterGenerator) {
+import { BetterGenerator } from '../utils.js';
+
+export default class extends BetterGenerator {
   configuring() {
     this.packageJson.merge(
       this.fs.readJSONTpl(this.templatePath('package.json.tpl')),

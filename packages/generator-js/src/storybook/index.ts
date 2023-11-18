@@ -1,12 +1,12 @@
-import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export default class WebpackGenerator extends InstallPeersMixin(
-  BetterGenerator,
-) {
+import { BetterGenerator, resolvePath } from '../utils.js';
+
+export default class StorybookGenerator extends BetterGenerator<StorybookOptions> {
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: StorybookOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
     this.config.set('storybook', true);
@@ -63,3 +63,5 @@ export default class WebpackGenerator extends InstallPeersMixin(
     );
   }
 }
+
+type StorybookOptions = BaseOptions & { projectType: string };

@@ -1,16 +1,15 @@
 import { execa } from 'execa';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-import { BetterGenerator, InstallPeersMixin } from '../utils.js';
+import { BetterGenerator } from '../utils.js';
 
-export default class WebpackGenerator extends InstallPeersMixin(
-  BetterGenerator,
-) {
+export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
   props?: Record<string, any>;
 
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: WebpackOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
     this.config.set('webpack', true);
@@ -130,3 +129,5 @@ export default class WebpackGenerator extends InstallPeersMixin(
     }
   }
 }
+
+type WebpackOptions = BaseOptions;

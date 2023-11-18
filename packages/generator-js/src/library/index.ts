@@ -1,14 +1,16 @@
-import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
+
+import { BetterGenerator, resolvePath } from '../utils.js';
 
 const DEFAULT_LIB_PATH = 'lib';
 
-export default class extends InstallPeersMixin(BetterGenerator) {
+export default class extends BetterGenerator<LibraryOptions, BaseFeatures> {
   props?: Record<string, any>;
 
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: LibraryOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
 
@@ -94,3 +96,5 @@ export default class extends InstallPeersMixin(BetterGenerator) {
     );
   }
 }
+
+type LibraryOptions = BaseOptions & { 'lib-path': string; features: string[] };

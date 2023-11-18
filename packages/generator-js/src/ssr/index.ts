@@ -1,12 +1,14 @@
-import { BetterGenerator, InstallPeersMixin } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export default class extends InstallPeersMixin(BetterGenerator) {
+import { BetterGenerator } from '../utils.js';
+
+export default class extends BetterGenerator {
   props?: Record<string, any>;
 
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: BaseOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
   }

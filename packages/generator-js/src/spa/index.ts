@@ -1,12 +1,14 @@
-import { BetterGenerator, InstallPeersMixin, resolvePath } from '../utils.js';
+import { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
-export default class extends InstallPeersMixin(BetterGenerator) {
+import { BetterGenerator, resolvePath } from '../utils.js';
+
+export default class extends BetterGenerator {
   props?: Record<string, any>;
 
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
-    features: Record<string, unknown>,
+    options: BaseOptions,
+    features: BaseFeatures,
   ) {
     super(args, options, features);
     this.config.set('badges', '');
@@ -18,7 +20,7 @@ export default class extends InstallPeersMixin(BetterGenerator) {
       await resolvePath('../webpack', import.meta.url),
       this.options,
     );
-    if (this.config.get('features').includes('SSR')) {
+    if (this.config.get('features')?.includes('SSR')) {
       this.composeWith(
         await resolvePath('../ssr', import.meta.url),
         this.options,
