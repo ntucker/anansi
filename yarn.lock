@@ -404,7 +404,7 @@ __metadata:
     url: "npm:^0.11.3"
     util: "npm:^0.12.5"
     vm-browserify: "npm:^1.1.2"
-    webpack-bundle-analyzer: "npm:^4.10.0"
+    webpack-bundle-analyzer: "npm:^4.10.1"
     webpack-node-externals: "npm:^3.0.0"
     webpack-remove-empty-scripts: "npm:^1.0.4"
     webpack-stats-plugin: "npm:^1.1.3"
@@ -26772,9 +26772,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^4.10.0":
-  version: 4.10.0
-  resolution: "webpack-bundle-analyzer@npm:4.10.0"
+"webpack-bundle-analyzer@npm:^4.10.1":
+  version: 4.10.1
+  resolution: "webpack-bundle-analyzer@npm:4.10.1"
   dependencies:
     "@discoveryjs/json-ext": "npm:0.5.7"
     acorn: "npm:^8.0.4"
@@ -26791,7 +26791,7 @@ __metadata:
     ws: "npm:^7.3.1"
   bin:
     webpack-bundle-analyzer: lib/bin/analyzer.js
-  checksum: f812a8d3c0198ce518baf742bff656526f3eae69fb7a64c7f0c9cff202f6fb3380cabf3baaae965b8d6ffbbb6fb802eacb373fca03a596a38b01b84cfb2e8329
+  checksum: 6a94c8f6aa03296fb2eb00d6ad3b27bd5c551590fd253772bc61debf3177414d42701014079d4f85c74ba1ca685ae9f0cb4063812b58c21f294d108e9908e5cd
   languageName: node
   linkType: hard
 
