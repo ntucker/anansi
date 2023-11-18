@@ -1,6 +1,6 @@
 import { type StoryObj } from '@storybook/react';
 import { MockResolver } from '@data-client/test';
-import { ExchangeRatesFixtures } from 'api/ExchangeRates';
+import { ExchangeRatesFixtures } from 'resources/ExchangeRates';
 
 import Price from './AssetPrice';
 
