@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.5...@anansi/generator-js@12.1.6) (2023-11-18)
+
+### 🐛 Bug Fix
+
+* Storybook resource imports ([4baba28](https://github.com/ntucker/anansi/commit/4baba28aca2f016af079b80f8a47fe169a248c4d))
+
 ### [12.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.4...@anansi/generator-js@12.1.5) (2023-11-18)
 
 ### 💅 Enhancement

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.3](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.2...@anansi/storybook@2.1.3) (2023-11-18)
+
+### 🐛 Bug Fix
+
+* Storybook package should be commonjs ([edeb950](https://github.com/ntucker/anansi/commit/edeb9501f40f6ca74b2ec84fcb3ba889dbba2e48))
+
 ### [2.1.2](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.1...@anansi/storybook@2.1.2) (2023-11-18)
 
 ### 📦 Package

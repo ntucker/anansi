@@ -1,6 +1,6 @@
 {
   "name": "example-react-18",
-  "version": "5.1.6",
+  "version": "5.1.7",
   "private": true,
   "scripts": {
     "start": "anansi serve --dev ./src/index.tsx",
@@ -20,9 +20,9 @@
     "postinstall": "rm -rf node_modules/.cache"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^4.4.2",
+    "@anansi/babel-preset": "^4.4.3",
     "@anansi/browserslist-config": "^1.4.3",
-    "@anansi/cli": "^3.1.2",
+    "@anansi/cli": "^3.1.3",
     "@anansi/eslint-plugin": "^0.16.37",
     "@anansi/jest-preset": "^0.10.23",
     "@anansi/webpack-config": "^16.0.7",
