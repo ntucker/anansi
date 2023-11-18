@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [16.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.6...@anansi/webpack-config@16.0.7) (2023-11-18)
+
+### 📦 Package
+
+* Update `domain-browser` to ^5.1.0 ([#2232](https://github.com/ntucker/anansi/issues/2232)) ([8e2c9cd](https://github.com/ntucker/anansi/commit/8e2c9cd52b047b9c53a7127e80edf57ad749a4ab))
+* Update `domain-browser` to v5 ([#2227](https://github.com/ntucker/anansi/issues/2227)) ([e527772](https://github.com/ntucker/anansi/commit/e5277722753f058ace1f09d43fc57d75458205b7))
+* Update `webpack-bundle-analyzer` to ^4.10.0 ([#2231](https://github.com/ntucker/anansi/issues/2231)) ([985d33d](https://github.com/ntucker/anansi/commit/985d33dfefe6c73f21721b14c0231081ecbb414f))
+* Update `webpack-bundle-analyzer` to ^4.10.1 ([#2238](https://github.com/ntucker/anansi/issues/2238)) ([4385904](https://github.com/ntucker/anansi/commit/4385904b4959cbc7fb81076a16ffc484d5629ac6))
+* Update all non-major dependencies ([#2235](https://github.com/ntucker/anansi/issues/2235)) ([be97ab1](https://github.com/ntucker/anansi/commit/be97ab1838ad7580b1e59032a88716c446016a50))
+* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+
 ### [16.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.5...@anansi/webpack-config@16.0.6) (2023-11-10)
 
 ### 📦 Package

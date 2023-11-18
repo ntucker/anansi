@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.6](https://github.com/ntucker/anansi/compare/example-react-18@5.1.5...example-react-18@5.1.6) (2023-11-18)
+
+### 📦 Package
+
+* Update `eslint` to v8.54.0 ([#2236](https://github.com/ntucker/anansi/issues/2236)) ([0297ee5](https://github.com/ntucker/anansi/commit/0297ee53f198032da18cea0396fd4d0287d4fddc))
+* Update all non-major dependencies ([#2226](https://github.com/ntucker/anansi/issues/2226)) ([86a8341](https://github.com/ntucker/anansi/commit/86a834161f016a6220752b8b42692baeb6f7b7aa))
+* Update all non-major dependencies ([#2237](https://github.com/ntucker/anansi/issues/2237)) ([6cc0a6c](https://github.com/ntucker/anansi/commit/6cc0a6c85b644aec6070ed2b3694b7a7dde506ce))
+* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+
 ### [5.1.5](https://github.com/ntucker/anansi/compare/example-react-18@5.1.4...example-react-18@5.1.5) (2023-11-10)
 
 ### 📦 Package

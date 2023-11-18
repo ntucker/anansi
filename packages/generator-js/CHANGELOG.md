@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.1.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.4...@anansi/generator-js@12.1.5) (2023-11-18)
+
+### 💅 Enhancement
+
+* Move some configurations into package.json ([df314c9](https://github.com/ntucker/anansi/commit/df314c963f4880c1918f8a33d926efdd33e489f6))
+
+### 🐛 Bug Fix
+
+* Storybook template import ([f877bb9](https://github.com/ntucker/anansi/commit/f877bb97c923abfbbc2f7cd70e03b0af6bbfa12b))
+
+### 📦 Package
+
+* Update `yeoman-environment` to v4.1.2 ([#2233](https://github.com/ntucker/anansi/issues/2233)) ([2555ba2](https://github.com/ntucker/anansi/commit/2555ba2be6c2ad18853f5cd32da80a5d2787ff6d))
+* Update `yeoman-environment` to v4.1.3 ([#2234](https://github.com/ntucker/anansi/issues/2234)) ([6411350](https://github.com/ntucker/anansi/commit/6411350a3564d705528767b67eae629227cca81d))
+* Update all non-major dependencies ([#2235](https://github.com/ntucker/anansi/issues/2235)) ([be97ab1](https://github.com/ntucker/anansi/commit/be97ab1838ad7580b1e59032a88716c446016a50))
+* Update all non-major dependencies ([#2237](https://github.com/ntucker/anansi/issues/2237)) ([6cc0a6c](https://github.com/ntucker/anansi/commit/6cc0a6c85b644aec6070ed2b3694b7a7dde506ce))
+* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+* Update yeoman (major) ([#2212](https://github.com/ntucker/anansi/issues/2212)) ([9c768f7](https://github.com/ntucker/anansi/commit/9c768f784ffa7c40cb6c5d82f282a23dc0bb6d86))
+
 ### [12.1.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.3...@anansi/generator-js@12.1.4) (2023-11-10)
 
 ### 📦 Package

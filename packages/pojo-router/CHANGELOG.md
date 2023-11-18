@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.2](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.1...@pojo-router/core@0.6.2) (2023-11-18)
+
+### 📦 Package
+
+* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.0...@pojo-router/core@0.6.1) (2023-07-02)
 
 ### 💅 Enhancement
