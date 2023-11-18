@@ -7,6 +7,7 @@ import { BaseFeatures } from 'yeoman-generator';
 import ConfigureGenerator, {
   type ConfigureOptions,
 } from './ConfigureGenerator.js';
+import installWithYarn from '../installWithYarn.js';
 import { resolvePath } from '../utils.js';
 
 export { ConfigureGenerator, ConfigureOptions };
@@ -16,7 +17,7 @@ export default class AppGenerator<
   F extends BaseFeatures = BaseFeatures,
 > extends ConfigureGenerator<O, F> {
   constructor(args: string | string[], options: O, features: F) {
-    super(args, options, features);
+    super(args, options, { ...features, customInstallTask: installWithYarn });
     const jsFilter = filter(
       [
         '**/*.js',

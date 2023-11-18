@@ -1,4 +1,3 @@
-import { BaseGenerator } from '@yeoman/types';
 import ejs from 'ejs';
 import { execa } from 'execa';
 import { resolve } from 'import-meta-resolve';
@@ -7,11 +6,6 @@ import type {
   MemFsEditorFile,
   VinylMemFsEditorFile,
 } from 'mem-fs-editor';
-import path, {
-  dirname,
-  resolve as pathResolve,
-  join as pathJoin,
-} from 'node:path';
 import pacote from 'pacote';
 import Generator, { BaseFeatures, BaseOptions } from 'yeoman-generator';
 
@@ -89,34 +83,6 @@ export class BetterGenerator<
       );
       (this.fs as any).append(to, input, appendOptions);
     };
-
-    // we're overriding a private member
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    const superDetectPackageManager = this.env.detectPackageManager;
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    this.env.detectPackageManager = async function () {
-      const name = await superDetectPackageManager.call(this);
-      // use yarn if installed.
-      // if someone installed yarn they probably mean to use it on any new projects.
-      if (!name) {
-        try {
-          await execa('which', ['yarn'], { shell: true });
-
-          try {
-            await execa(`corepack`, ['use yarn@*'], {
-              shell: true,
-            });
-            // eslint-disable-next-line no-empty
-          } catch (e) {}
-
-          return 'yarn';
-          // eslint-disable-next-line no-empty
-        } catch (e) {}
-      }
-      return name;
-    };
   }
 
   async addPeers(
@@ -137,32 +103,6 @@ export class BetterGenerator<
     await this[funcKey](peers);
   }
 }
-
-// export function InstallPeersMixin<
-//   Class extends new (
-//     ...args: any[]
-//   ) => BaseGenerator & { addDependencies: any; addDevDependencies: any },
-// >(Cls: Class) {
-//   return class extends Cls {
-//     async addPeers(
-//       pkgName: string,
-//       exclude: string[] = [],
-//       deptype: 'dependencies' | 'devDependencies' = 'dependencies',
-//     ) {
-//       const manifest = await pacote.manifest(pkgName);
-//       if (!manifest) {
-//         return undefined;
-//       }
-//       const peers = Object.fromEntries(
-//         Object.entries(manifest?.peerDependencies ?? {}).filter(
-//           ([pkg, version]) => !exclude.includes(pkg),
-//         ),
-//       );
-//       const funcKey = `add${capitalize(deptype)}` as const;
-//       await this[funcKey](peers);
-//     }
-//   };
-// }
 
 const capitalize = <T extends string>(s: T): Capitalize<T> => {
   return (s.charAt(0).toUpperCase() + s.slice(1)) as any;
