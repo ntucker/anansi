@@ -1,6 +1,6 @@
 import { type StoryObj } from '@storybook/react';
 import { MockResolver } from '@data-client/test';
-import { ExchangeRatesFixtures } from 'resources/ExchangeRates';
+import { TickerFixtures } from 'resources/Ticker';
 
 import Price from './AssetPrice';
 
@@ -13,7 +13,7 @@ export default {
       defaultValue: {
         symbol: 'BTC',
       },
-      options: Object.keys(ExchangeRatesFixtures.list.response.data.rates),
+      options: Object.keys(TickerFixtures.list.response.data.rates),
       control: {
         type: 'select',
       },
@@ -23,7 +23,7 @@ export default {
 
 export const BTCPrice: StoryObj<typeof Price> = {
   render: args => (
-    <MockResolver fixtures={[ExchangeRatesFixtures.list]}>
+    <MockResolver fixtures={[TickerFixtures.list]}>
       <Price {...args} />
     </MockResolver>
   ),
