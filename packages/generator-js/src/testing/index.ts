@@ -25,10 +25,6 @@ export default class TestingGenerator extends BetterGenerator {
       this.destinationPath('.gitignore'),
       this.fs.read(this.templatePath('.gitignore.tpl')),
     );
-    (this.fs as any).append(
-      this.destinationPath('.eslintignore'),
-      this.fs.read(this.templatePath('.eslintignore')),
-    );
 
     // new files
     this.fs.copyTpl(

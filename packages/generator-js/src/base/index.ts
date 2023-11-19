@@ -114,6 +114,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       eslintConfig: {
         extends: 'plugin:@anansi/typescript',
         env: { node: true },
+        ignorePatterns: [this.config.get('assetPath')],
       },
       stackblitz: { startCommand: 'yarn start' },
     };
