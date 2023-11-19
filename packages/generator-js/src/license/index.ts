@@ -36,13 +36,11 @@ export default class GeneratorLicense extends Generator {
     this.option('name', {
       type: String,
       description: 'Name of the license owner',
-      default: this.git.name,
     });
 
     this.option('email', {
       type: String,
       description: 'Email of the license owner',
-      default: this.git.email,
     });
 
     this.option('website', {
@@ -86,11 +84,11 @@ export default class GeneratorLicense extends Generator {
     });
   }
 
-  initializing() {
+  async initializing() {
     this.gitc = {
       user: {
-        name: this.git.name,
-        email: this.git.email(),
+        name: await this.git.name(),
+        email: await this.git.email(),
       },
     };
   }
