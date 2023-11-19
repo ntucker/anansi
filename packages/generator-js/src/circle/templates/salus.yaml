@@ -1,8 +1,0 @@
-scanner_configs:
-  YarnAudit:
-    exclude_groups:
-    - devDependencies         # dev only dependencies
-enforced_scanners:
-  - RepoNotEmpty
-  - NPMAudit
-  - PatternSearch
