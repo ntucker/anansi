@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [16.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.7...@anansi/webpack-config@16.0.8) (2023-11-19)
+
+### 📦 Package
+
+* Update `svgo` to ^3.0.4 ([#2239](https://github.com/ntucker/anansi/issues/2239)) ([1a075fd](https://github.com/ntucker/anansi/commit/1a075fdb1c74f4fb0bab276c137a1cf79c1f33ef))
+
 ### [16.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.6...@anansi/webpack-config@16.0.7) (2023-11-18)
 
 ### 📦 Package

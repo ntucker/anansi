@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.6...@anansi/generator-js@12.2.0) (2023-11-19)
+
+### 🚀 Features
+
+* Remove salus from circleci ([21f5e80](https://github.com/ntucker/anansi/commit/21f5e809084225a4dfeceeeae244d1b26c2e39ec))
+
+### 💅 Enhancement
+
+* Integrate stackblitz config to package.json ([4f8fd58](https://github.com/ntucker/anansi/commit/4f8fd58f4b0c6d9b82c28835c5ee7def4082e987))
+* Move eslintignore into package.json ([b633854](https://github.com/ntucker/anansi/commit/b633854e1bb07929d1340f1bbaf0b4cab920641c))
+
+### 🐛 Bug Fix
+
+* Import path in test template ([9a3b581](https://github.com/ntucker/anansi/commit/9a3b5814e24bfb78e3cffcee673ee4625b7b74ee))
+* License correctly infers name and email ([87fb70a](https://github.com/ntucker/anansi/commit/87fb70a44181c3753cfc3a6bde0cf03b08792607))
+* RootProvider template ([79c695b](https://github.com/ntucker/anansi/commit/79c695b17917055d99216c8810e38dd972c2a052))
+* Ts path for resources ([06c021d](https://github.com/ntucker/anansi/commit/06c021d7f3c48ca94844da2c767c53e8c6e3a4f6))
+
 ### [12.1.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.1.5...@anansi/generator-js@12.1.6) (2023-11-18)
 
 ### 🐛 Bug Fix
