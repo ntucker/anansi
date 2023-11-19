@@ -1,4 +1,0 @@
-{
-  "startCommand": "yarn start",
-  "env": { "NODE_ENV": "development", "WEBPACK_CACHE": "memory" }
-}

@@ -115,6 +115,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
         extends: 'plugin:@anansi/typescript',
         env: { node: true },
       },
+      stackblitz: { startCommand: 'yarn start' },
     };
     this.packageJson.merge(packageSettings);
 
