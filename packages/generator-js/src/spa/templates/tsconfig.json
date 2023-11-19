@@ -4,7 +4,7 @@
     "skipLibCheck": true,
     "types": ["@anansi/webpack-config/types"<% if (features.includes('testing')) {%>, "jest"<% } %>],
     "paths": {
-      "api/*": ["api/*"]
+      "resources/*": ["resources/*"]
     },
     "noEmit": true
   }
