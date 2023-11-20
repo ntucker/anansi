@@ -74,7 +74,7 @@
     "@data-client/graphql": "0.9.4",
     "@data-client/react": "0.9.7",
     "@data-client/rest": "0.9.8",
-    "@types/node": "20.9.1",
+    "@types/node": "20.9.2",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "antd": "5.11.2",
