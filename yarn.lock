@@ -41,8 +41,8 @@ __metadata:
     "@babel/plugin-transform-object-assign": "npm:^7.23.3"
     "@babel/plugin-transform-react-constant-elements": "npm:^7.23.3"
     "@babel/plugin-transform-react-inline-elements": "npm:^7.23.3"
-    "@babel/plugin-transform-runtime": "npm:^7.23.3"
-    "@babel/plugin-transform-typescript": "npm:^7.23.3"
+    "@babel/plugin-transform-runtime": "npm:^7.23.4"
+    "@babel/plugin-transform-typescript": "npm:^7.23.4"
     "@babel/preset-env": "npm:^7.23.3"
     "@babel/preset-react": "npm:^7.23.3"
     "@types/node": "npm:^20.0.0"
@@ -592,9 +592,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:7.23.0":
-  version: 7.23.0
-  resolution: "@babel/cli@npm:7.23.0"
+"@babel/cli@npm:7.23.4":
+  version: 7.23.4
+  resolution: "@babel/cli@npm:7.23.4"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.17"
     "@nicolo-ribaudo/chokidar-2": "npm:2.1.8-no-fsevents.3"
@@ -615,7 +615,7 @@ __metadata:
   bin:
     babel: ./bin/babel.js
     babel-external-helpers: ./bin/babel-external-helpers.js
-  checksum: 80ebb68216adab239ea2eb73e1dc1eb3a70ee8e1afad2ae8f2b7518119ebd247f776bd7d4ab2cb73c2cf0253e202b6af00e4a5fec79c2733084963901bde3903
+  checksum: f71bc378f62dd19983adc8dae4ee33cd44ac7d8ea3224709f787f290e0c3a4b8a36dad76d672b3479de2b9f524e55b4bb12a2296154c73134ba111114a15779c
   languageName: node
   linkType: hard
 
@@ -1983,9 +1983,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:^7.22.15, @babel/plugin-transform-runtime@npm:^7.23.3":
-  version: 7.23.3
-  resolution: "@babel/plugin-transform-runtime@npm:7.23.3"
+"@babel/plugin-transform-runtime@npm:^7.22.15, @babel/plugin-transform-runtime@npm:^7.23.4":
+  version: 7.23.4
+  resolution: "@babel/plugin-transform-runtime@npm:7.23.4"
   dependencies:
     "@babel/helper-module-imports": "npm:^7.22.15"
     "@babel/helper-plugin-utils": "npm:^7.22.5"
@@ -1995,7 +1995,7 @@ __metadata:
     semver: "npm:^6.3.1"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 111fc412cc3968402183086879e1625ad4b869309f2e5aa33498a71ba700d3196c151d506977b5b535e8ff2c42c0731d59bfbfcb158ecddeeb3c49d5d4a58c0a
+  checksum: 6ac29012550cdd10b65ec43fef0c7f43904ec458c43d597f627d8f52807413e57ea94e3986dbace576d734e67c2d09be5e43e77c72567d18f8c4ac5e19844625
   languageName: node
   linkType: hard
 
@@ -2055,9 +2055,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.21.0, @babel/plugin-transform-typescript@npm:^7.23.3":
-  version: 7.23.3
-  resolution: "@babel/plugin-transform-typescript@npm:7.23.3"
+"@babel/plugin-transform-typescript@npm:^7.21.0, @babel/plugin-transform-typescript@npm:^7.23.4":
+  version: 7.23.4
+  resolution: "@babel/plugin-transform-typescript@npm:7.23.4"
   dependencies:
     "@babel/helper-annotate-as-pure": "npm:^7.22.5"
     "@babel/helper-create-class-features-plugin": "npm:^7.22.15"
@@ -2065,7 +2065,7 @@ __metadata:
     "@babel/plugin-syntax-typescript": "npm:^7.23.3"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: a3c738efcf491ceb1eee646f57c44990ee0c80465527b88fcfa0b7602688c4ff8c165a4c5b62caf05d968b095212018fd30a02879c12d37c657081f57b31fb26
+  checksum: 657294f8e0d59fc2b765a230cd1635a575c2dee33aba45e8fc0fbe6ef86ffae007f8c9ca41665ac9629f49a922caf844d14b9a7990dddd2f64aee969d6fb14a4
   languageName: node
   linkType: hard
 
@@ -2283,12 +2283,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.23.2, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
-  version: 7.23.2
-  resolution: "@babel/runtime@npm:7.23.2"
+"@babel/runtime@npm:7.23.4, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+  version: 7.23.4
+  resolution: "@babel/runtime@npm:7.23.4"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: 271fcfad8574269d9967b8a1c03f2e1eab108a52ad7c96ed136eee0b11f46156f1186637bd5e79a4207163db9a00413cd70a6428e137b982d0ee8ab85eb9f438
+  checksum: db2bf183cd0119599b903ca51ca0aeea8e0ab478a16be1aae10dd90473ed614159d3e5adfdd8f8f3d840402428ce0d90b5c01aae95da9e45a2dd83e02d85ca27
   languageName: node
   linkType: hard
 
@@ -11097,10 +11097,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.33.2, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
-  version: 3.33.2
-  resolution: "core-js@npm:3.33.2"
-  checksum: d6a56ad3e134846c805ce936788dd58cb51e861f173ed1f830979735d7865ea6f6a5a437076c36c8d8b842ba0384d052998f160774a8da7712f0f51df60167fe
+"core-js@npm:3.33.3, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
+  version: 3.33.3
+  resolution: "core-js@npm:3.33.3"
+  checksum: 08abdc9470c8228b9d09f61e62ab312738681202c4c34e9638889125b304b235f34c4fe22e9d41c20906ac0fcc807dca57c5ff7d6b90021bf64e8fe23461d9ab
   languageName: node
   linkType: hard
 
@@ -13181,7 +13181,7 @@ __metadata:
     "@anansi/webpack-config": "npm:^16.0.8"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.23.3"
-    "@babel/runtime": "npm:7.23.2"
+    "@babel/runtime": "npm:7.23.4"
     "@linaria/core": "npm:5.0.2"
     "@linaria/react": "npm:5.0.3"
     "@linaria/shaker": "npm:5.0.3"
@@ -13197,7 +13197,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^6.0.0"
     babel-loader: "npm:9.1.3"
     classnames: "npm:2.3.2"
-    core-js: "npm:3.33.2"
+    core-js: "npm:3.33.3"
     eslint: "npm:^8.36.0"
     eslint-plugin-babel: "npm:^5.3.1"
     eslint-plugin-import: "npm:^2.27.5"
@@ -13233,7 +13233,7 @@ __metadata:
     "@ant-design/cssinjs": "npm:1.17.2"
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.23.3"
-    "@babel/runtime": "npm:7.23.2"
+    "@babel/runtime": "npm:7.23.4"
     "@data-client/endpoint": "npm:0.9.8"
     "@data-client/hooks": "npm:0.1.6"
     "@data-client/img": "npm:0.9.4"
@@ -13257,7 +13257,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:6.11.0"
     antd: "npm:5.11.2"
     classnames: "npm:2.3.2"
-    core-js: "npm:3.33.2"
+    core-js: "npm:3.33.3"
     eslint: "npm:8.54.0"
     eslint-plugin-babel: "npm:^5.3.1"
     eslint-plugin-import: "npm:2.29.0"
@@ -13293,7 +13293,7 @@ __metadata:
     "@ant-design/icons": "npm:^5.0.1"
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
-    "@babel/runtime": "npm:7.23.2"
+    "@babel/runtime": "npm:7.23.4"
     "@data-client/graphql": "npm:0.9.4"
     "@data-client/react": "npm:0.9.7"
     "@data-client/rest": "npm:0.9.8"
@@ -13324,7 +13324,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^6.0.0"
     antd: "npm:5.11.2"
     classnames: "npm:2.3.2"
-    core-js: "npm:3.33.2"
+    core-js: "npm:3.33.3"
     eslint: "npm:^8.36.0"
     eslint-plugin-babel: "npm:^5.3.1"
     eslint-plugin-import: "npm:^2.27.5"
@@ -23688,7 +23688,7 @@ __metadata:
     "@anansi/babel-preset": "workspace:*"
     "@anansi/browserslist-config": "workspace:*"
     "@anansi/eslint-plugin": "workspace:*"
-    "@babel/cli": "npm:7.23.0"
+    "@babel/cli": "npm:7.23.4"
     "@babel/core": "npm:7.23.3"
     "@commitlint/cli": "npm:17.7.1"
     "@commitlint/config-conventional": "npm:17.7.0"
