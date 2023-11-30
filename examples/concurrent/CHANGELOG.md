@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.10](https://github.com/ntucker/anansi/compare/example-react-18@5.1.9...example-react-18@5.1.10) (2023-11-30)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2245](https://github.com/ntucker/anansi/issues/2245)) ([d1413a1](https://github.com/ntucker/anansi/commit/d1413a106fb9b5864b1ee8d173c7a6406f5cbe5d))
+* Update babel packages to v7.23.5 ([#2242](https://github.com/ntucker/anansi/issues/2242)) ([3dd3906](https://github.com/ntucker/anansi/commit/3dd39065fb58d385e74304be907be5939927dc91))
+* Update linting packages ([#2244](https://github.com/ntucker/anansi/issues/2244)) ([b29b893](https://github.com/ntucker/anansi/commit/b29b893d59f5a9a0a414669553bf689a3cf44587))
+
 ### [5.1.9](https://github.com/ntucker/anansi/compare/example-react-18@5.1.8...example-react-18@5.1.9) (2023-11-20)
 
 ### 📦 Package
