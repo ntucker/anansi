@@ -77,7 +77,7 @@
     "@types/node": "20.10.3",
     "@types/react": "18.2.41",
     "@types/react-dom": "18.2.17",
-    "antd": "5.11.5",
+    "antd": "5.12.0",
     "classnames": "2.3.2",
     "core-js": "3.33.3",
     "history": "^5.3.0",
