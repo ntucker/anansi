@@ -1,5 +1,9 @@
-import { type Controller, type Manager, type State } from '@data-client/react';
-import type { Store } from 'redux';
+import {
+  type Controller,
+  type Manager,
+  type State,
+  type Store,
+} from '@data-client/react';
 
 import type { ServerSpout } from './types.js';
 
