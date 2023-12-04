@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.1.11](https://github.com/ntucker/anansi/compare/example-react-18@5.1.10...example-react-18@5.1.11) (2023-12-04)
+
+### 📦 Package
+
+* Update `antd` to v5.12.0 ([#2252](https://github.com/ntucker/anansi/issues/2252)) ([935e6c6](https://github.com/ntucker/anansi/commit/935e6c61a2b61e5efa158a90a5c60320a9d8fcd6))
+* Update `redux` to v5 ([#2246](https://github.com/ntucker/anansi/issues/2246)) ([00086cb](https://github.com/ntucker/anansi/commit/00086cbf7590ca8426b9fe20aae315576f67863c))
+* Update all non-major dependencies ([#2250](https://github.com/ntucker/anansi/issues/2250)) ([a5b1a05](https://github.com/ntucker/anansi/commit/a5b1a0564f8ff7640a5fd34d04d6134557164838))
+* Update linting packages ([#2248](https://github.com/ntucker/anansi/issues/2248)) ([9038bcf](https://github.com/ntucker/anansi/commit/9038bcf433ad0f4e2ad6a9b81ddb1ed3d1d78a2a))
+
 ### [5.1.10](https://github.com/ntucker/anansi/compare/example-react-18@5.1.9...example-react-18@5.1.10) (2023-11-30)
 
 ### 📦 Package

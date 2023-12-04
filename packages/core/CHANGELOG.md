@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.11...@anansi/core@0.18.12) (2023-12-04)
+
+### 📦 Package
+
+* Update `redux` to v5 ([#2246](https://github.com/ntucker/anansi/issues/2246)) ([00086cb](https://github.com/ntucker/anansi/commit/00086cbf7590ca8426b9fe20aae315576f67863c))
+
 ### [0.18.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.10...@anansi/core@0.18.11) (2023-11-18)
 
 ### 📦 Package
