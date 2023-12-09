@@ -5,7 +5,7 @@ const options = {
   buildDir: 'dist/',
   sassResources: [`${__dirname}/src/style/export.scss`],
   fontPreload: 'prefetch',
-  linariaOptions: false,
+  inJSOptions: false,
   svgrOptions: {
     replaceAttrValues: { '#f00': 'currentColor', red: 'currentColor' },
   },
