@@ -131,7 +131,7 @@ export default function getStyleRules({
       },
       // css-in-js like linaria do not use css-modules
       {
-        test: /\.linaria\.css$/i,
+        test: /\.wyw-in-js\.css$/i,
         include: [absoluteBasePath, libraryInclude],
         exclude: excludeCSSProcess,
         use: cssLoaders,
@@ -140,7 +140,7 @@ export default function getStyleRules({
       {
         test: /\.css$/i,
         include: [absoluteBasePath, /\.storybook/, libraryInclude],
-        exclude: [...excludeCSSProcess, /\.linaria\.css$/i],
+        exclude: [...excludeCSSProcess, /\.wyw-in-js\.css$/i],
         use: cssModuleLoaders,
       },
       // global styles

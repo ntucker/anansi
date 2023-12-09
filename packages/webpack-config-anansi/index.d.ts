@@ -1,5 +1,4 @@
 import type { TransformOptions } from '@babel/core';
-import { PluginOptions } from '@linaria/babel-preset';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
 import type { Options as SassOptions } from 'sass-loader';
@@ -30,7 +29,8 @@ export interface Options {
   svgrOptions?:
     | { svgoConfig?: OptimizeOptions; [key: string]: unknown }
     | false;
-  linariaOptions?: PluginOptions | false;
+  // TODO: get proper types https://github.com/Anber/wyw-in-js/issues/28
+  inJSOptions?: any | false;
   cssExtractOptions?: MiniCssExtractPluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
   globalStyleDir?: string | false;

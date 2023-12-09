@@ -490,10 +490,10 @@ SVGR enables importing SVG as a file or a component. This option allows further 
 
 [Configuration options](https://react-svgr.com/docs/options/)
 
-### linariaOptions
+### inJSOptions
 
-Can configure how [linaria](https://github.com/callstack/linaria) operates. Set to `false` to disable linaria altogether. Note that
-linaria has its own config files it can use, and it is recommended to use those instead.
+Can configure how [wyw-in-js](https://wyw-in-js.dev/) operates, and thus control things like [linaria](https://github.com/callstack/linaria). Set to `false` to disable wyw-in-js altogether. Note that
+wyw-in-js has its own [config files](https://wyw-in-js.dev/configuration) it can use, and it is recommended to use those instead.
 
 [Configuring Linaria](https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#options)
 
@@ -624,15 +624,16 @@ export default function MyComponent() {
 
 ### Working with Linaria
 
-When testing modules that use Linaria, it's important to add the linaria babel preset to the babel config.
+When testing modules that use Linaria, it's important to add the wyw-in-js babel preset to the babel config. This is
+because webpack is not run, and thus will not properly process the embeds.
 
-1. Install linaria: `yarn add --dev @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker`
-3. Add `@linaria` to babel presets.
+1. Install linaria: `yarn add --dev @linaria/core @linaria/react @wyw-in-js/babel-preset`
+3. Add `@wyw-in-js` to babel presets.
 ```js
 module.exports = {
   presets: [
     ['@anansi', { typing: 'typescript' }],
-    '@linaria',
+    '@wyw-in-js',
   ],
 };
 ```
