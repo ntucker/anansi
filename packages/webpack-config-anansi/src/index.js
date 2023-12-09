@@ -63,9 +63,9 @@ export function makeConfig(options) {
         'Undefined is not a valid option for svgrOptions. To disable use `false`',
       );
     }
-    if ('linariaOptions' in options && options.linariaOptions === undefined) {
+    if ('inJSOptions' in options && options.inJSOptions === undefined) {
       throw new Error(
-        'Undefined is not a valid option for linariaOptions. To disable use `false`',
+        'Undefined is not a valid option for inJSOptions. To disable use `false`',
       );
     }
     if (

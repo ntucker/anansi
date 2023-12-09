@@ -49,7 +49,7 @@ export default function makeDevConfig(
   const watchIgnorePaths = [
     /(hot-update\.[^.]|\.map|s?css\.d\.ts)$/,
     path.join(rootPath, '.cache'),
-    /node_modules\/\.cache(?!\/(\.linaria-(cache|development|production)\/))/,
+    /node_modules\/\.cache(?!\/(\.wyw-in-js-(cache|development|production)\/))/,
   ];
   config.plugins = [
     new webpack.WatchIgnorePlugin({ paths: watchIgnorePaths }),

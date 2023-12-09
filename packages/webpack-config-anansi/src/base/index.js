@@ -8,7 +8,6 @@ import { generateBabelLoader } from './generateBabelLoader';
 import { NODE_ALIAS } from './node-polyfill';
 import { version } from '../../package.json';
 
-const findCacheDir = require('find-cache-dir');
 export { default as getStyleRules } from './css';
 export { ROOT_PATH };
 
@@ -23,7 +22,7 @@ export default function makeBaseConfig({
   manifestFilename,
   babelLoader: babelLoaderOptions,
   extraJsLoaders,
-  linariaOptions,
+  inJSOptions,
   tsconfigPathsOptions,
   svgoOptions,
   svgrOptions,
@@ -42,8 +41,7 @@ export default function makeBaseConfig({
   }
   const resolve = {
     modules,
-    // TODO: remove '.js', '.json', '.wasm' once '...' is well supported in plugins like linaria
-    extensions: ['.ts', '.tsx', '.mts', '.cts', '.js', '.json', '.wasm', '...'],
+    extensions: ['.ts', '.tsx', '.mts', '.cts', '...'],
     extensionAlias: {
       '.js': ['.js', '.ts', '.tsx', '.jsx'],
       '.mjs': ['.mjs', '.mts'],
@@ -63,32 +61,27 @@ export default function makeBaseConfig({
     mode,
     babelLoaderOptions,
   });
-  const linariaBabelOptions = {
+  const inJSBabelOptions = {
     ...mainBabelLoader.options,
   };
-  delete linariaBabelOptions.cacheDirectory;
-  delete linariaBabelOptions.cacheIdentifier;
-  delete linariaBabelOptions.cacheCompression;
+  delete inJSBabelOptions.cacheDirectory;
+  delete inJSBabelOptions.cacheIdentifier;
+  delete inJSBabelOptions.cacheCompression;
 
-  if (linariaOptions !== false) {
-    if (linariaOptions === undefined) {
-      linariaOptions = {
+  if (inJSOptions !== false) {
+    if (inJSOptions === undefined) {
+      inJSOptions = {
         sourceMap: mode !== 'production',
-        //cacheProvider: require.resolve('./linariaFileCache'), we don't need this since we don't use thread-loader anymore
-        // TODO: Remove when we stop supporting linaria betas
-        cacheDirectory: findCacheDir({
-          name: `.linaria-cache`,
-          cwd: process.cwd(),
-        }),
       };
     }
     extraJsLoaders = [
       {
-        loader: require.resolve('@linaria/webpack5-loader'),
+        loader: require.resolve('@wyw-in-js/webpack-loader'),
         options: {
-          resolveOptions: { ...resolve },
-          babelOptions: linariaBabelOptions,
-          ...linariaOptions,
+          // `resolveOptions` was dropped in https://github.com/callstack/linaria/pull/1001 as it uses webpack directly
+          //resolveOptions: { ...resolve },
+          babelOptions: inJSBabelOptions,
+          ...inJSOptions,
         },
       },
       ...extraJsLoaders,
@@ -201,8 +194,6 @@ export default function makeBaseConfig({
             },
             {
               test: /\.(t|j)sx?$/,
-              // TODO: Remove when we stop supporting linaria betas
-              exclude: /\.linaria-cache/,
               use: [mainBabelLoader, ...extraJsLoaders].filter(l => l),
             },
           ],
