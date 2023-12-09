@@ -12,7 +12,7 @@ const generateConfig = makeConfig({
     type: 'commonjs2',
   },
   // we have to explicitly disable linaria since we have it installed in the monorepo
-  linariaOptions: false,
+  inJSOptions: false,
 });
 
 module.exports = (env, argv) => {
