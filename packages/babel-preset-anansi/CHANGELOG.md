@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.4.5...@anansi/babel-preset@4.5.0) (2023-12-09)
+
+### 🚀 Features
+
+* Support linaria 6 ([aa81be9](https://github.com/ntucker/anansi/commit/aa81be9804f62a0636fd641e01e57427625bdb77))
+
 ### [4.4.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.4.4...@anansi/babel-preset@4.4.5) (2023-11-30)
 
 ### 📦 Package

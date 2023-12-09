@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.10...@anansi/webpack-config@17.0.0) (2023-12-09)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Drop support for linaria 5
+linariaOptions -> inJSOptions
+
+### 🚀 Features
+
+* Use wyw-in-js to support linaria 6 ([09e6fcc](https://github.com/ntucker/anansi/commit/09e6fcc90e7c887940353a5f264a8e33d65f5e47))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2256](https://github.com/ntucker/anansi/issues/2256)) ([2ae240d](https://github.com/ntucker/anansi/commit/2ae240df65372c9e03065fd53261e68873a6117e))
+
 ### [16.0.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@16.0.9...@anansi/webpack-config@16.0.10) (2023-12-04)
 
 ### 📦 Package
