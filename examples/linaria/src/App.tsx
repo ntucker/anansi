@@ -16,9 +16,9 @@ const media = {
   giant: '1170px',
 };
 
-const neato = css`
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-`;
+const neato = {
+  boxShadow: '10px 10px 5px 0px rgba(0, 0, 0, 0.75)',
+};
 
 export const font = css`
   :global() {
@@ -53,22 +53,25 @@ export const font = css`
   }
 `;
 
-const Container = styled.div`
-  border-radius: 4px;
-  border: thin #eee solid;
-  background-color: crimson;
-  padding: 16px;
-  ${neato}
-  @media (max-width ${media.tablet}) {
-    background-color: blueviolet;
-  }
-`;
-
 const Text = styled.p`
   font-family: FaricyNew, arial;
   font-size: 16px;
   color: white;
   font-weight: bold;
+`;
+
+const Container = styled.div`
+  border-radius: 4px;
+  border: thin #555 solid;
+  background-color: crimson;
+  padding: 16px;
+  ${neato}
+  ${Text} {
+    font-size: 28px;
+  }
+  @media (max-width: ${media.tablet}) {
+    background-color: blueviolet;
+  }
 `;
 
 const header = css`

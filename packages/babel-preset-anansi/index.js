@@ -25,7 +25,9 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
-  const isLinaria = api.caller(caller => caller && caller.name === 'linaria');
+  const isLinaria = api.caller(
+    caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
+  );
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
   // (no caller info: https://github.com/babel/babel/issues/8930)
@@ -208,8 +210,8 @@ function buildPreset(api, options = {}) {
     ],
     plugins: [
       (Object.keys(options.resolver.alias).length ||
-        Object.keys(options.resolver.root).length ||
-        Object.keys(options.resolver).length > 2) && [
+        options.resolver.root.length ||
+        Object.keys(options.resolver).length > 3) && [
         require('babel-plugin-module-resolver').default,
         options.resolver,
       ],

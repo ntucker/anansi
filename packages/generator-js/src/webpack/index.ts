@@ -80,12 +80,10 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
       await this.addDevDependencies(['serve']);
     }
     if (this?.props?.style === 'linaria') {
-      await this.addDevDependencies([
-        '@linaria/core',
-        '@linaria/react',
-        '@linaria/babel-preset',
-        '@linaria/shaker',
-      ]);
+      await this.addDevDependencies(['@linaria/core', '@linaria/react']);
+      if (this.config.get('features')?.includes?.('testing')) {
+        await this.addDevDependencies(['@wyw-in-js/babel-preset']);
+      }
     } else if (this?.props?.style === 'sass') {
       await this.addDevDependencies(['sass']);
     }

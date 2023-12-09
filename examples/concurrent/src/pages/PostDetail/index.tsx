@@ -76,28 +76,27 @@ function PostMain({ post, author }: { post: Post; author: User }) {
     },
     [post.id, fetch, edit],
   );
-  const content = edit ? (
-    <Meta
-      className={editMeta}
-      avatar={<Img component={Avatar} src={author?.profileImage} />}
-      title={
-        <Form.Item name="title">
-          <Input style={{ width: '100%' }} />
-        </Form.Item>
-      }
-      description={
-        <Form.Item name="body">
-          <TextArea rows={6} style={{ width: '100%' }} />
-        </Form.Item>
-      }
-    />
-  ) : (
-    <Meta
-      avatar={<Img component={Avatar} src={author?.profileImage} />}
-      title={post.title}
-      description={post.body}
-    />
-  );
+  const content =
+    edit ?
+      <Meta
+        className={editMeta}
+        avatar={<Img component={Avatar} src={author?.profileImage} />}
+        title={
+          <Form.Item name="title">
+            <Input style={{ width: '100%' }} />
+          </Form.Item>
+        }
+        description={
+          <Form.Item name="body">
+            <TextArea rows={6} style={{ width: '100%' }} />
+          </Form.Item>
+        }
+      />
+    : <Meta
+        avatar={<Img component={Avatar} src={author?.profileImage} />}
+        title={post.title}
+        description={post.body}
+      />;
   return (
     <Form onFinish={onFinish} initialValues={{ ...post }}>
       <Card
@@ -107,13 +106,10 @@ function PostMain({ post, author }: { post: Post; author: User }) {
             key={edit ? 'save' : 'edit'}
             shape="circle"
             icon={
-              loading ? (
-                <LoadingOutlined />
-              ) : edit ? (
+              loading ? <LoadingOutlined />
+              : edit ?
                 <SaveOutlined />
-              ) : (
-                <EditOutlined />
-              )
+              : <EditOutlined />
             }
             size="small"
             htmlType={edit ? 'submit' : 'button'}
