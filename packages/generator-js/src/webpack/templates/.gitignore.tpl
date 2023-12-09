@@ -1,3 +1,3 @@
-.linaria-cache/
+.wyw-in-js-cache/
 .cache
 *.pem

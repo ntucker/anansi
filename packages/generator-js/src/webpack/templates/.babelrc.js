@@ -1,3 +1,3 @@
 module.exports = {
-  presets: [['@anansi', { typing: 'typescript' }], '@linaria'],
+  presets: [['@anansi', { typing: 'typescript' }], '@wyw-in-js'],
 };
