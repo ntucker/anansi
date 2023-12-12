@@ -394,7 +394,7 @@ __metadata:
     stream-http: "npm:^3.2.0"
     string_decoder: "npm:^1.3.0"
     strip-ansi: "npm:^6.0.1"
-    svgo: "npm:^3.0.5"
+    svgo: "npm:^3.1.0"
     svgo-loader: "npm:^4.0.0"
     terser-webpack-plugin: "npm:^5.3.9"
     timers-browserify: "npm:^2.0.12"
@@ -24878,9 +24878,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo@npm:^3.0.0, svgo@npm:^3.0.2, svgo@npm:^3.0.5":
-  version: 3.0.5
-  resolution: "svgo@npm:3.0.5"
+"svgo@npm:^3.0.0, svgo@npm:^3.0.2, svgo@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "svgo@npm:3.1.0"
   dependencies:
     "@trysound/sax": "npm:0.2.0"
     commander: "npm:^7.2.0"
@@ -24891,7 +24891,7 @@ __metadata:
     picocolors: "npm:^1.0.0"
   bin:
     svgo: ./bin/svgo
-  checksum: 6644fe2d01622d4d9a20816f5f2a65f4ec218e428ddbc0027e57eef209733b9b967d5547ef4f87a4a11aa4ab03b58ab26a51dba3e06d142b149d4d5ae12ce9cc
+  checksum: b3f00b3319dee6ddc53f8b8ac5acef581860e1708c98b492169e096621edc1bdf46e3778099e3dffb5116bf0d4c074a686099843dbc020c73b3ccfae7b6a88f0
   languageName: node
   linkType: hard
 
