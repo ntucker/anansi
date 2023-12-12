@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.1](https://github.com/ntucker/anansi/compare/example-react-18@5.2.0...example-react-18@5.2.1) (2023-12-12)
+
+### 📦 Package
+
+* Update babel packages ([#2257](https://github.com/ntucker/anansi/issues/2257)) ([aff568f](https://github.com/ntucker/anansi/commit/aff568f04acb9919bbb43463f19050bd3ea4e7f9))
+* Update linting packages ([#2259](https://github.com/ntucker/anansi/issues/2259)) ([1e98154](https://github.com/ntucker/anansi/commit/1e9815430f41c729890ffb32ca5879cc7294c462))
+
 ## [5.2.0](https://github.com/ntucker/anansi/compare/example-react-18@5.1.11...example-react-18@5.2.0) (2023-12-09)
 
 ### 🚀 Features
