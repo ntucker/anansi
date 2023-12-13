@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.3.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.1...@anansi/generator-js@12.3.2) (2023-12-13)
+
+### 💅 Enhancement
+
+* Webpack template should explicitly disable sass to silence warning ([3b3a70d](https://github.com/ntucker/anansi/commit/3b3a70d24cd0cdc71fb8f68402eb5ffd969588f1))
+
+### 🐛 Bug Fix
+
+* Story template for splash ([546fe08](https://github.com/ntucker/anansi/commit/546fe0872b0cf4e2404f484af7b27631b2e71b1a))
+
 ### [12.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.0...@anansi/generator-js@12.3.1) (2023-12-13)
 
 ### 🐛 Bug Fix

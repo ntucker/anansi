@@ -99,7 +99,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.7, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.8, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -12933,7 +12933,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^4.5.1"
     "@anansi/browserslist-config": "npm:^1.4.3"
-    "@anansi/cli": "npm:^3.1.7"
+    "@anansi/cli": "npm:^3.1.8"
     "@anansi/core": "npm:^0.18.13"
     "@anansi/eslint-plugin": "npm:^0.16.40"
     "@anansi/jest-preset": "npm:^0.10.24"
