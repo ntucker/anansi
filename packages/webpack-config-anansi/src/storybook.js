@@ -98,7 +98,11 @@ export default function makeStorybookConfigGenerator(baseConfig) {
         ...envConfig.module,
         rules: [
           // js rules (worker and normal)
-          envConfig.module.rules[0],
+          {
+            test: envConfig.module.rules[0].test,
+            exclude: /storybook-stories.js/,
+            rules: [envConfig.module.rules[0]],
+          },
           // storybook node_module compiles
           libraryRule,
           // the rest of our rules
