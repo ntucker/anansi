@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.3.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.0...@anansi/generator-js@12.3.1) (2023-12-13)
+
+### 🐛 Bug Fix
+
+* Only use wyw-in-js babel when it's installed ([93df1c2](https://github.com/ntucker/anansi/commit/93df1c247ac879f6fc17e5981e13e11ee9275c59))
+
 ## [12.3.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.2.1...@anansi/generator-js@12.3.0) (2023-12-09)
 
 ### 🚀 Features

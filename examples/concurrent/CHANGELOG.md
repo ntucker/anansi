@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.2](https://github.com/ntucker/anansi/compare/example-react-18@5.2.1...example-react-18@5.2.2) (2023-12-13)
+
+### 🐛 Bug Fix
+
+* Storybook builds by not running full loader on storybook virtual files ([#2260](https://github.com/ntucker/anansi/issues/2260)) ([5a345a6](https://github.com/ntucker/anansi/commit/5a345a69f44f2f165adc749bae4d4ef50d8d8c26))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2261](https://github.com/ntucker/anansi/issues/2261)) ([5ddecc5](https://github.com/ntucker/anansi/commit/5ddecc5e8b43848287e11d7847daec2e7305a432))
+
 ### [5.2.1](https://github.com/ntucker/anansi/compare/example-react-18@5.2.0...example-react-18@5.2.1) (2023-12-12)
 
 ### 📦 Package
