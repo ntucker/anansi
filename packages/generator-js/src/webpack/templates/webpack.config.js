@@ -9,6 +9,8 @@ const options = {
   globalStyleDir: 'style',
   <% if (style === 'sass') { %>
   sassResources: [`${__dirname}/src/style/export.scss`],
+  <% } else { %>
+  sassOptions: false,
   <% } %>
 };
 
