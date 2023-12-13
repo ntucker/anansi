@@ -160,7 +160,7 @@ export default function makeBaseConfig({
         {
           test: /\.(t|j)sx?$/,
           include: [
-            new RegExp(basePath),
+            path.join(rootPath, basePath),
             path.join(rootPath, 'stories'),
             /\.storybook/,
             libraryInclude,
