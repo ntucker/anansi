@@ -456,7 +456,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.18.1, @ant-design/cssinjs@npm:^1.18.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
+"@ant-design/cssinjs@npm:1.18.1, @ant-design/cssinjs@npm:^1.18.1, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
   version: 1.18.1
   resolution: "@ant-design/cssinjs@npm:1.18.1"
   dependencies:
@@ -5305,9 +5305,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rc-component/tour@npm:~1.11.0":
-  version: 1.11.0
-  resolution: "@rc-component/tour@npm:1.11.0"
+"@rc-component/tour@npm:~1.11.1":
+  version: 1.11.1
+  resolution: "@rc-component/tour@npm:1.11.1"
   dependencies:
     "@babel/runtime": "npm:^7.18.0"
     "@rc-component/portal": "npm:^1.0.0-9"
@@ -5317,7 +5317,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: b437a083da4b8e6f7c57a31e971f94cbd774eb799c1f8d417ba541579be9239ec4d10a7b86e5e948df75ef30dc0a5c374784661ba2099707a81a47ae7db7155a
+  checksum: df1be3e609ae5e366fffd063c7d14bb9b37d137c65dca6e6f697ade62c21ac53d2b2f8aa54b1a8f041e24920732398d3da0c20e6d67c74cce96f2bb976350670
   languageName: node
   linkType: hard
 
@@ -7340,14 +7340,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.43, @types/react@npm:>=16, @types/react@npm:^18.0.29":
-  version: 18.2.43
-  resolution: "@types/react@npm:18.2.43"
+"@types/react@npm:*, @types/react@npm:18.2.45, @types/react@npm:>=16, @types/react@npm:^18.0.29":
+  version: 18.2.45
+  resolution: "@types/react@npm:18.2.45"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10477a50fbd3c0cc5b8a2ade679f442717f68fb27c8460b2aa1d3256cd18c48f742bbe5b9ee37a8c4c5f832ffa37b3a23c09fd96dd880a8e3182d8929c05e803
+  checksum: 4cc650c47ffb88baac29fb7a74e842e4af4a55f437086ef70250fdc75f0a5f2fcf8adc272d05ab2e00b1de6e14613296881271caee037dadf9130fdeb498c59e
   languageName: node
   linkType: hard
 
@@ -8444,19 +8444,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.12.1":
-  version: 5.12.1
-  resolution: "antd@npm:5.12.1"
+"antd@npm:5.12.2":
+  version: 5.12.2
+  resolution: "antd@npm:5.12.2"
   dependencies:
     "@ant-design/colors": "npm:^7.0.0"
-    "@ant-design/cssinjs": "npm:^1.18.0"
+    "@ant-design/cssinjs": "npm:^1.18.1"
     "@ant-design/icons": "npm:^5.2.6"
     "@ant-design/react-slick": "npm:~1.0.2"
     "@babel/runtime": "npm:^7.23.4"
     "@ctrl/tinycolor": "npm:^3.6.1"
     "@rc-component/color-picker": "npm:~1.4.1"
     "@rc-component/mutate-observer": "npm:^1.1.0"
-    "@rc-component/tour": "npm:~1.11.0"
+    "@rc-component/tour": "npm:~1.11.1"
     "@rc-component/trigger": "npm:^1.18.2"
     classnames: "npm:^2.3.2"
     copy-to-clipboard: "npm:^3.3.3"
@@ -8473,10 +8473,10 @@ __metadata:
     rc-input: "npm:~1.3.6"
     rc-input-number: "npm:~8.4.0"
     rc-mentions: "npm:~2.9.1"
-    rc-menu: "npm:~9.12.2"
+    rc-menu: "npm:~9.12.4"
     rc-motion: "npm:^2.9.0"
     rc-notification: "npm:~5.3.0"
-    rc-pagination: "npm:~4.0.1"
+    rc-pagination: "npm:~4.0.3"
     rc-picker: "npm:~3.14.6"
     rc-progress: "npm:~3.5.1"
     rc-rate: "npm:~2.12.0"
@@ -8499,7 +8499,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: c3dcbe54a1c6a57361bd6a0c1ce1f0c141cc8924b96c0fde197cc72a0963d7ed725958fe8a4810d1b2f4adb151ea1b625c971ba9befb978f34190288ed07701f
+  checksum: b889edddd66f42de4db36c2f655eac0ab422ace91f74d507648acbe36ceb52b97c1036a81b9e77c002743bf0f55a5014fa8794510d7b646c5232b06abf123b8c
   languageName: node
   linkType: hard
 
@@ -12899,7 +12899,7 @@ __metadata:
     "@types/eslint": "npm:^8.21.3"
     "@types/node": "npm:^20.0.0"
     "@types/prettier": "npm:^2.7.2"
-    "@types/react": "npm:18.2.43"
+    "@types/react": "npm:18.2.45"
     "@types/react-dom": "npm:18.2.17"
     "@types/react-router-dom": "npm:5.3.3"
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
@@ -12958,12 +12958,12 @@ __metadata:
     "@types/jest": "npm:29.5.4"
     "@types/node": "npm:20.10.4"
     "@types/prettier": "npm:2.7.3"
-    "@types/react": "npm:18.2.43"
+    "@types/react": "npm:18.2.45"
     "@types/react-dom": "npm:18.2.17"
     "@types/react-test-renderer": "npm:18.0.7"
     "@typescript-eslint/eslint-plugin": "npm:6.14.0"
     "@typescript-eslint/parser": "npm:6.14.0"
-    antd: "npm:5.12.1"
+    antd: "npm:5.12.2"
     classnames: "npm:2.3.2"
     core-js: "npm:3.34.0"
     eslint: "npm:8.55.0"
@@ -13023,14 +13023,14 @@ __metadata:
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prettier": "npm:^2.7.2"
     "@types/prop-types": "npm:^15.7.5"
-    "@types/react": "npm:18.2.43"
+    "@types/react": "npm:18.2.45"
     "@types/react-dom": "npm:18.2.17"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
     "@types/react-test-renderer": "npm:18.0.7"
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
     "@typescript-eslint/parser": "npm:^6.0.0"
-    antd: "npm:5.12.1"
+    antd: "npm:5.12.2"
     classnames: "npm:2.3.2"
     core-js: "npm:3.34.0"
     eslint: "npm:^8.36.0"
@@ -21962,9 +21962,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-menu@npm:~9.12.0, rc-menu@npm:~9.12.2":
-  version: 9.12.2
-  resolution: "rc-menu@npm:9.12.2"
+"rc-menu@npm:~9.12.0, rc-menu@npm:~9.12.4":
+  version: 9.12.4
+  resolution: "rc-menu@npm:9.12.4"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     "@rc-component/trigger": "npm:^1.17.0"
@@ -21975,7 +21975,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: e5d44eb09b625c0b218279ffb1628b5c002a4c73fddad71c84ffba6d3c6b9f47d7098d320de78e39468a3f0cc7701c1805600abd9c58b946b9b3880acef86309
+  checksum: 105525efd3a84c02c5a85199befa10ad22fcf80fc245c51ce9daa461bbfddc5065064b6e84b3b49da707a179d52fdbdd4a37c07b34456f9fa5a8a5762fcffdcb
   languageName: node
   linkType: hard
 
@@ -22023,9 +22023,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-pagination@npm:~4.0.1":
-  version: 4.0.1
-  resolution: "rc-pagination@npm:4.0.1"
+"rc-pagination@npm:~4.0.3":
+  version: 4.0.3
+  resolution: "rc-pagination@npm:4.0.3"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     classnames: "npm:^2.3.2"
@@ -22033,7 +22033,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 658f24823d21080fcb77af9710faaa918269a77961c91a39a8169b16d47046b3deb6f8586ba038e469c739b12194518b1358e658b4acbdb29d0125ec489c0984
+  checksum: 756c5968622eaf688e42c713f49372500ceff8ff103ea73fef468c23e703bee58ce3d04319b85e1731ea02dc0a351bc727b39afd7aea5d6d74e090be435cbc1b
   languageName: node
   linkType: hard
 
@@ -23398,7 +23398,7 @@ __metadata:
     "@lerna-lite/publish": "npm:^2.0.0"
     "@lerna-lite/version": "npm:^2.0.0"
     "@types/node": "npm:^20.0.0"
-    "@types/react": "npm:18.2.43"
+    "@types/react": "npm:18.2.45"
     "@types/react-dom": "npm:18.2.17"
     "@typescript-eslint/eslint-plugin": "npm:6.14.0"
     "@typescript-eslint/parser": "npm:6.14.0"
