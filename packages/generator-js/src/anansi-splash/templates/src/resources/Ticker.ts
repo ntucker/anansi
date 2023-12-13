@@ -54,14 +54,15 @@ export let TickerFixtures: Record<string, FixtureEndpoint> = {};
 // we don't want our mocks ending up in our production builds
 if (process.env.NODE_ENV !== 'production') {
   TickerFixtures = {
-    list: {
+    get: {
       endpoint: getTicker,
       args: [
         {
-          productId: 'BTC-USD',
+          product_id: 'BTC-USD',
         },
       ],
       response: {
+        product_id: 'BTC-USD',
         ask: '26035.14',
         bid: '26035.13',
         volume: '9948.18263564',

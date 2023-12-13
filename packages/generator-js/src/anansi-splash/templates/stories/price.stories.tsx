@@ -13,7 +13,7 @@ export default {
       defaultValue: {
         symbol: 'BTC',
       },
-      options: Object.keys(TickerFixtures.list.response.data.rates),
+      options: ['BTC'],
       control: {
         type: 'select',
       },
@@ -23,7 +23,7 @@ export default {
 
 export const BTCPrice: StoryObj<typeof Price> = {
   render: args => (
-    <MockResolver fixtures={[TickerFixtures.list]}>
+    <MockResolver fixtures={[TickerFixtures.get]}>
       <Price {...args} />
     </MockResolver>
   ),
