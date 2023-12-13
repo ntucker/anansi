@@ -115,9 +115,10 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
     );
 
     if (this?.props?.style === 'linaria') {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('.babelrc.js'),
         this.destinationPath('.babelrc.js'),
+        this.config.getAll(),
       );
       this.fs.appendTpl(
         this.templatePath('.gitignore.tpl'),
