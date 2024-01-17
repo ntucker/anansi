@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@17.0.5...@anansi/webpack-config@18.0.0) (2024-01-17)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* minimum supported Node.js version is `18.12.0`
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2284](https://github.com/ntucker/anansi/issues/2284)) ([6e04fe7](https://github.com/ntucker/anansi/commit/6e04fe7bb7d254f3526ad12bbde485784f0c0a3f))
+* Update webpack packages (major) ([#2279](https://github.com/ntucker/anansi/issues/2279)) ([441170a](https://github.com/ntucker/anansi/commit/441170ac34e9d9b72540f5f4cc0e8a233d7e4945))
+
 ### [17.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@17.0.4...@anansi/webpack-config@17.0.5) (2024-01-12)
 
 ### 📦 Package
