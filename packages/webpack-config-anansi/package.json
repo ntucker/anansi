@@ -52,7 +52,7 @@
     "directory": "packages/webpack-config-anansi"
   },
   "engines": {
-    "node": ">=14.15.0"
+    "node": ">=18.12.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0"
@@ -76,12 +76,12 @@
     "core-js": "^3.21.0",
     "crypto-browserify": "^3.12.0",
     "css-loader": "^6.9.0",
-    "css-minimizer-webpack-plugin": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^6.0.0",
     "domain-browser": "^5.7.0",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "events": "^3.3.0",
     "file-loader": "^6.2.0",
-    "html-loader": "^4.2.0",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
@@ -91,7 +91,7 @@
     "path": "^0.12.7",
     "path-browserify": "^1.0.1",
     "postcss": "^8.4.33",
-    "postcss-loader": "^7.3.4",
+    "postcss-loader": "^8.0.0",
     "postcss-preset-env": "^9.3.0",
     "process": "^0.11.10",
     "punycode": "^2.3.1",
@@ -100,7 +100,7 @@
     "react-dev-utils": "^12.0.1",
     "react-error-overlay": "6.0.9",
     "readable-stream": "^4.5.2",
-    "sass-loader": "^13.3.3",
+    "sass-loader": "^14.0.0",
     "sass-resources-loader": "^2.2.5",
     "semver": "^7.5.4",
     "stream-browserify": "^3.0.0",
