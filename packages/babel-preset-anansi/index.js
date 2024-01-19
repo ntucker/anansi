@@ -238,7 +238,6 @@ function buildPreset(api, options = {}) {
       //stage 1
       options.typing !== 'typescript' &&
         require('@babel/plugin-proposal-export-default-from').default,
-      require('@babel/plugin-proposal-export-namespace-from').default,
       // stage 2
       [
         require('@babel/plugin-proposal-record-and-tuple').default,
@@ -247,10 +246,6 @@ function buildPreset(api, options = {}) {
           syntaxType: 'hash',
         },
       ],
-      //stage 3
-      require('@babel/plugin-syntax-top-level-await').default,
-      // Get "Module parse failed: Unexpected token" when targetting newer browsers without this
-      require('@babel/plugin-proposal-optional-chaining').default,
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
@@ -354,15 +349,17 @@ function buildPreset(api, options = {}) {
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
     // this is included in preset-env, but must come before class-properties
-    require('@babel/plugin-proposal-class-static-block').default,
+    // TODO: See if this is still necessary
+    require('@babel/plugin-transform-class-static-block').default,
     // stage 3 but must come before flow
     [
-      require('@babel/plugin-proposal-class-properties').default,
+      require('@babel/plugin-transform-class-properties').default,
       classPropertiesOptions,
     ],
-    // stage 3, but must come after typescript, and after other class transforms
+    // this is included in preset-env, but must come after typescript, and after other class transforms
+    // TODO: See if this is still necessary
     [
-      require('@babel/plugin-proposal-private-methods').default,
+      require('@babel/plugin-transform-private-methods').default,
       { loose: options.loose },
     ],
   ];
