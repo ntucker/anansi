@@ -344,24 +344,21 @@ function buildPreset(api, options = {}) {
     decoratorsOptions.decoratorsBeforeExport = true;
   }
 
-  const classPropertiesOptions = { loose: options.loose };
   const classPlugins = [
     // stage 3, but must come before class-properties
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
-    // this is included in preset-env, but must come before class-properties
-    // TODO: See if this is still necessary
-    require('@babel/plugin-transform-class-static-block').default,
-    // stage 3 but must come before flow
-    [
-      require('@babel/plugin-transform-class-properties').default,
-      classPropertiesOptions,
-    ],
-    // this is included in preset-env, but must come after typescript, and after other class transforms
-    // TODO: See if this is still necessary
-    [
-      require('@babel/plugin-transform-private-methods').default,
-      { loose: options.loose },
-    ],
+    // // this is included in preset-env, but must come before class-properties
+    // require('@babel/plugin-transform-class-static-block').default,
+    // // stage 3 but must come before flow
+    // [
+    //   require('@babel/plugin-transform-class-properties').default,
+    //   classPropertiesOptions,
+    // ],
+    // // this is included in preset-env, but must come after typescript, and after other class transforms
+    // [
+    //   require('@babel/plugin-transform-private-methods').default,
+    //   { loose: options.loose },
+    // ],
   ];
   if (options.typing === 'typescript') {
     // using plugin so it can be placed before class transforms

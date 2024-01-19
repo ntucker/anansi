@@ -68,12 +68,9 @@ are included:
 ### Stage 4
 
 - [Module level await](https://github.com/tc39/proposal-top-level-await)
-- [Class static initialization blocks](https://github.com/tc39/proposal-class-static-block/blob/master/README.md)
-- [Private instance methods](https://github.com/tc39/proposal-private-methods#private-methods-and-fields)
 
 ### Stage 3
 
-- [Class properties](http://babeljs.io/docs/en/next/babel-plugin-proposal-class-properties)
 - [Decorators](https://github.com/tc39/proposal-decorators)
 
 ### Stage 2

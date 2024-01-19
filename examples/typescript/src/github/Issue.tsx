@@ -11,6 +11,7 @@ const stateToIcon: Record<string, React.ReactNode> = {
   open: <InfoCircleOutlined />,
 };
 
+@annotation
 export class Issue extends GithubEntity {
   readonly number: number = 0;
   readonly repositoryUrl: string = '';
@@ -51,8 +52,14 @@ export class Issue extends GithubEntity {
   };
 
   pk() {
-    return [this.repositoryUrl, this.number].join(',');
+    return this.#privateMethodTest();
   }
+
+  #privateMethodTest() {
+    return [this.repositoryUrl, this.number].join(this.#pkJoinStr);
+  }
+
+  #pkJoinStr = ',';
 }
 // since we don't use for types - setting generics is not essential
 class IssueEndpoint<O extends RestGenerics = any> extends GithubEndpoint<O> {
@@ -65,3 +72,7 @@ export const IssueResource = createGithubResource({
   Endpoint: IssueEndpoint,
 });
 export default IssueResource;
+
+function annotation(target: any) {
+  target.annotated = true;
+}
