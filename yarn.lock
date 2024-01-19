@@ -31,7 +31,6 @@ __metadata:
     "@babel/plugin-proposal-export-default-from": "npm:^7.23.3"
     "@babel/plugin-proposal-record-and-tuple": "npm:^7.23.3"
     "@babel/plugin-syntax-function-bind": "npm:^7.23.3"
-    "@babel/plugin-transform-flow-strip-types": "npm:^7.23.3"
     "@babel/plugin-transform-object-assign": "npm:^7.23.3"
     "@babel/plugin-transform-react-constant-elements": "npm:^7.23.3"
     "@babel/plugin-transform-react-inline-elements": "npm:^7.23.3"
