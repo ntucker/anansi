@@ -7,7 +7,6 @@ options:
   nodeTarget,
   modules,
   useESModules,
-  typing,
   useBuiltIns,
   corejs,
   minify,
@@ -53,7 +52,6 @@ function buildPreset(api, options = {}) {
 
   options = {
     minify: false,
-    typing: false,
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
@@ -235,9 +233,6 @@ function buildPreset(api, options = {}) {
             version: runtimeVersion,
           },
         ],
-      //stage 1
-      options.typing !== 'typescript' &&
-        require('@babel/plugin-proposal-export-default-from').default,
       // stage 2
       [
         require('@babel/plugin-proposal-record-and-tuple').default,
@@ -272,12 +267,6 @@ function buildPreset(api, options = {}) {
           require('@babel/plugin-transform-react-constant-elements').default,
           options.reactConstantElementsOptions,
         ]);
-      }
-      // for compile performance, don't include this if they are using typing language instead of proptypes
-      if (!options.typing) {
-        preset.plugins.unshift(
-          require('babel-plugin-transform-react-remove-prop-types').default,
-        );
       }
       break;
     case 'development':
@@ -360,39 +349,42 @@ function buildPreset(api, options = {}) {
     //   { loose: options.loose },
     // ],
   ];
-  if (options.typing === 'typescript') {
-    // using plugin so it can be placed before class transforms
-    const transformTypeScript =
-      require('@babel/plugin-transform-typescript').default;
-    const pluginOptions = isTSX => ({
-      isTSX,
-      allowDeclareFields: true,
-      allowNamespaces: true,
-      optimizeConstEnums: true,
-    });
-    preset.overrides = [
-      {
-        test: /\.(m|c)?ts$/,
-        plugins: [[transformTypeScript, pluginOptions(false)], ...classPlugins],
-      },
-      {
-        test: /\.(m|c)?tsx$/,
-        plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
-      },
-      {
-        test: /\.(m|c)?(js|jsx)$/,
-        plugins: classPlugins,
-      },
-    ];
-  } else {
-    if (options.typing === 'flow') {
-      // using the plugin so we can place after decorators and class properties
-      preset.plugins.unshift(
-        require('@babel/plugin-transform-flow-strip-types').default,
-      );
-    }
-    preset.plugins.unshift(...classPlugins);
+
+  // using plugin so it can be placed before class transforms
+  const transformTypeScript =
+    require('@babel/plugin-transform-typescript').default;
+  const pluginOptions = isTSX => ({
+    isTSX,
+    allowDeclareFields: true,
+    allowNamespaces: true,
+    optimizeConstEnums: true,
+  });
+  preset.overrides = [
+    {
+      test: /\.(m|c)?ts$/,
+      plugins: [[transformTypeScript, pluginOptions(false)], ...classPlugins],
+    },
+    {
+      test: /\.(m|c)?tsx$/,
+      plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
+    },
+    {
+      test: /\.(m|c)?(js|jsx)$/,
+      plugins: [
+        //stage 1
+        // this is included in the typescript plugin, but we want to provide for js too
+        require('@babel/plugin-proposal-export-default-from').default,
+        ...classPlugins,
+      ],
+    },
+  ];
+  if (env === 'production') {
+    // only add to js files as typescript won't use react prop types
+    preset.overrides[2].plugins.unshift(
+      require('babel-plugin-transform-react-remove-prop-types').default,
+    );
   }
+
   /*         end block        */
   return preset;
 }

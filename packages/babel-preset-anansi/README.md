@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/@anansi/babel-preset.svg?style=flat-square)](https://www.npmjs.com/package/@anansi/babel-preset)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Configurable production-ready babel preset for React projects.
+Configurable production-ready babel preset for React projects with TypeScript support.
 
 ### Why
 
@@ -60,6 +60,11 @@ Or configure [options](#options)
 
 In dev mode, if `react-refresh` is installed it will be enabled.
 
+## TypeScript
+
+TypeScript files (`.ts`, `.tsx`, `.mts`, `.cts`, etc) are supported by removing their typings to output
+javascript that node/browsers can understand.
+
 ## Future language support
 
 In addition to providing good production/development/testing transformations; some additional non-standard features
@@ -94,13 +99,6 @@ are included:
 - [Root import](https://github.com/entwicklerstube/babel-plugin-root-import#readme)
 
 ## Options
-
-### typing: 'flow' | 'typescript' | false = false
-
-Adds support for these typecheckers. These remove the typings so the output runs in the target environment.
-If false, no static typechecker will be supported.
-
-Supports TypeScript 3, 4, and 5
 
 ### nodeTarget : ?string = undefined
 
@@ -222,7 +220,7 @@ Specifies the tsconfig.json file location to automatically apply [tsconfig path 
 
 ```js
 module.exports = {
-  presets: [['@anansi', { typing: 'typescript', tsConfigPath: '.' }]],
+  presets: [['@anansi', { tsConfigPath: '.' }]],
 };
 ```
 
