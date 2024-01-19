@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [4.5.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.5.3...@anansi/babel-preset@4.5.4) (2024-01-19)
+
+### 📦 Package
+
+* Use updated babel packages for ECMA standards promotions ([#2286](https://github.com/ntucker/anansi/issues/2286)) ([f8662eb](https://github.com/ntucker/anansi/commit/f8662eb0b02973c8881b6fc3ecbbceb9ab1c40d6))
+
 ### [4.5.3](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.5.2...@anansi/babel-preset@4.5.3) (2024-01-12)
 
 ### 📦 Package
