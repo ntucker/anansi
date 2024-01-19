@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.3.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.3...@anansi/generator-js@12.3.4) (2024-01-19)
+
+### 💅 Enhancement
+
+* Update babel config for new babel version ([2f9d147](https://github.com/ntucker/anansi/commit/2f9d14798424f9504f0b3a0cc7b6b721aa5d07f7))
+
 ### [12.3.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.2...@anansi/generator-js@12.3.3) (2024-01-17)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.3...@anansi/browserslist-config@1.5.0) (2024-01-19)
+
+### 🚀 Features
+
+* Add node20, node22 BROWSERSLIST_ENV ([31e19a2](https://github.com/ntucker/anansi/commit/31e19a294023673f88ce88ec4435aaceb9fca95b))
+
 ### [1.4.3](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.2...@anansi/browserslist-config@1.4.3) (2023-05-07)
 
 ### 📦 Package

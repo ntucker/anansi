@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.5.4...@anansi/babel-preset@5.0.0) (2024-01-19)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Flow is no longer supported
+* Double check your class transforms in case your use-case is different than our tests.
+
+### 💅 Enhancement
+
+* Remove class transforms that are integrated into preset-env ([#2288](https://github.com/ntucker/anansi/issues/2288)) ([48f7751](https://github.com/ntucker/anansi/commit/48f7751c18eadee712ad1d3838ec95035d44a7a2))
+* Remove flow support, automatically enable TypeScript ([e4acc4f](https://github.com/ntucker/anansi/commit/e4acc4f3b88d7665744bf410e1d5f74e8e994e82))
+
 ### [4.5.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.5.3...@anansi/babel-preset@4.5.4) (2024-01-19)
 
 ### 📦 Package
