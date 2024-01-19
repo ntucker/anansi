@@ -632,7 +632,7 @@ because webpack is not run, and thus will not properly process the embeds.
 ```js
 module.exports = {
   presets: [
-    ['@anansi', { typing: 'typescript' }],
+    '@anansi',
     '@wyw-in-js',
   ],
 };

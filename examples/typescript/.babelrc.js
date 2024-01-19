@@ -1,5 +1,5 @@
 module.exports = {
-  presets: [['@anansi', { typing: 'typescript', loose: true }]],
+  presets: [['@anansi', { loose: true }]],
   assumptions: {
     noDocumentAll: true,
     noClassCalls: true,

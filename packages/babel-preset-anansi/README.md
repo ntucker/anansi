@@ -40,7 +40,7 @@ Or configure [options](#options)
 ```
 </details>
 
-<details><summary><b>Use TypeScript</b></summary>
+<details><summary><b>Make transforms 'loose'</b></summary>
 
 ```json
 {
@@ -48,7 +48,7 @@ Or configure [options](#options)
     [
       "@anansi",
       {
-        "typing": "typescript"
+        "loose": true
       }
     ]
   ]
