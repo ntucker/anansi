@@ -70,7 +70,7 @@ export const previewAnnotations: StorybookConfig['previewAnnotations'] = (
 ) => [...entry, require.resolve('./preview')];
 
 /*export const babel: StorybookConfig['babel'] = (config, options) => ({
-  presets: [['@anansi/babel-preset', { typing: 'typescript', loose: true }]],
+  presets: [['@anansi/babel-preset', { loose: true }]],
 });*/
 
 export const webpackFinal: StorybookConfig['webpackFinal'] = async (

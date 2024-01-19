@@ -7,7 +7,6 @@ module.exports = function (api) {
       [
         '@anansi',
         {
-          typing: 'typescript',
           loose: true,
           resolver: {
             resolvePath(sourcePath, currentFile, opts) {
