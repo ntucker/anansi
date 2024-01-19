@@ -39,4 +39,6 @@ module.exports = {
   node14: ['node 14'],
   node16: ['node 16'],
   node18: ['node 18'],
+  node20: ['node 20'],
+  node22: ['node 22'],
 };
