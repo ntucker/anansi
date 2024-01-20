@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack serve --mode=development",
     "start:prod": "serve ./dist",
-    "build": "BROWSERSLIST_ENV='2020' webpack --mode=production",
+    "build": "webpack --mode=production",
     "build:server": "webpack --mode=production --target=node",
     "build:clean": "rm -rf dist && rm -rf server_assets",
     "build:analyze": "webpack --mode=production --env analyze",

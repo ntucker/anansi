@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+version: 2.1
 jobs:
   build:
     docker: &docker
@@ -68,6 +68,16 @@ jobs:
           at: ~/
       - run: yarn workspaces foreach -Wv --include 'example-*' run build
 
+  build_matrix:
+    parameters:
+      browserslist-env:
+        type: string
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: BROWSERSLIST_ENV='<< parameters.browserslist-env >>' yarn workspace example-typescript run build
+
   start_dev:
     docker: *docker
     steps:
@@ -103,6 +113,12 @@ workflows:
           requires:
             - build
       - build_production:
+          requires:
+            - build
+      - build_matrix:
+          matrix:
+            parameters:
+              browserslist-env: ["2018", "2020", "2022"]
           requires:
             - build
       - start_dev:
