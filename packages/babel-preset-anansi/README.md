@@ -185,7 +185,7 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 
 ### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
 
-- `version`: "2021-12", "2018-09" or "legacy". defaults to 'legacy' if 'loose' is true, otherwise "2018-09"
+- `version`: "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-05"
 - `decoratorsBeforeExport`
 
 ### reactRequire: bool = true

@@ -9,6 +9,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * Flow is no longer supported
 * Double check your class transforms in case your use-case is different than our tests.
+* Decorators targets '2023-05' of the spec by default (from '2018-09' previously)
+  * See more https://babeljs.io/docs/babel-plugin-proposal-decorators#version
+  * If you want to continue targeting an older version, you will need to manually add `@babel/plugin-transform-class-properties`
+  * 'loose' no longer makes the default decorators spec 'legacy'
 
 ### 💅 Enhancement
 

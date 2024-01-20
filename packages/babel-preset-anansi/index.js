@@ -327,28 +327,35 @@ function buildPreset(api, options = {}) {
     throw new Error('decoratorsOptions must be an Object');
   }
   const decoratorsOptions = options.decoratorsOptions || {
-    version: options.loose ? 'legacy' : '2018-09',
+    version: '2023-05',
   };
-  if (decoratorsOptions.version !== 'legacy') {
+  if (decoratorsOptions.version === '2018-09') {
     decoratorsOptions.decoratorsBeforeExport = true;
   }
 
   const classPlugins = [
-    // stage 3, but must come before class-properties
+    // stage 3, but must come before class-properties when legacy is used (see block below)
     [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
-    // // this is included in preset-env, but must come before class-properties
-    // require('@babel/plugin-transform-class-static-block').default,
-    // // stage 3 but must come before flow
-    // [
-    //   require('@babel/plugin-transform-class-properties').default,
-    //   classPropertiesOptions,
-    // ],
-    // // this is included in preset-env, but must come after typescript, and after other class transforms
-    // [
-    //   require('@babel/plugin-transform-private-methods').default,
-    //   { loose: options.loose },
-    // ],
   ];
+
+  // compatibility (see: https://babeljs.io/docs/babel-plugin-proposal-decorators#note-compatibility-with-babelplugin-transform-class-properties)
+  if (decoratorsOptions.version === 'legacy') {
+    const classPropertiesOptions = { loose: options.loose };
+    classPlugins.push([
+      // this is included in preset-env, but must come before class-properties
+      require('@babel/plugin-transform-class-static-block').default,
+      // stage 3 but must come before flow
+      [
+        require('@babel/plugin-transform-class-properties').default,
+        classPropertiesOptions,
+      ],
+      // this is included in preset-env, but must come after typescript, and after other class transforms
+      [
+        require('@babel/plugin-transform-private-methods').default,
+        { loose: options.loose },
+      ],
+    ]);
+  }
 
   // using plugin so it can be placed before class transforms
   const transformTypeScript =
