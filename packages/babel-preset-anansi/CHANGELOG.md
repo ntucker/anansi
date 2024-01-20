@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.0...@anansi/babel-preset@5.0.1) (2024-01-20)
+
+### 💅 Enhancement
+
+* Fix 'Class fields are not enabled.' by using latest decorators standard ([a88776f](https://github.com/ntucker/anansi/commit/a88776f88411f975f3d26ecdd08d3d3c443e95ee))
+
 ## [5.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@4.5.4...@anansi/babel-preset@5.0.0) (2024-01-19)
 
 ### ⚠ 💥 BREAKING CHANGES
