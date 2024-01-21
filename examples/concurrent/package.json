@@ -1,6 +1,6 @@
 {
   "name": "example-react-18",
-  "version": "5.2.10",
+  "version": "5.2.11",
   "private": true,
   "scripts": {
     "start": "anansi serve --dev ./src/index.tsx",
@@ -54,7 +54,7 @@
     "webpack-dev-server": "4.15.1"
   },
   "dependencies": {
-    "@anansi/core": "^0.18.14",
+    "@anansi/core": "^0.18.15",
     "@anansi/router": "^0.9.3",
     "@ant-design/cssinjs": "1.18.2",
     "@ant-design/icons": "^5.0.1",
