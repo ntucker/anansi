@@ -305,7 +305,7 @@ __metadata:
     "@storybook/preset-react-webpack": "npm:^7.6.10"
     "@storybook/react": "npm:^7.6.10"
     "@storybook/types": "npm:^7.6.10"
-    "@types/node": "npm:^20.11.5"
+    "@types/node": "npm:^20.11.6"
   peerDependencies:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -7117,28 +7117,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.11.5, @types/node@npm:^20.0.0, @types/node@npm:^20.11.5, @types/node@npm:^20.8.3":
-  version: 20.11.5
-  resolution: "@types/node@npm:20.11.5"
+"@types/node@npm:*, @types/node@npm:20.11.6, @types/node@npm:^20.0.0, @types/node@npm:^20.11.6, @types/node@npm:^20.8.3":
+  version: 20.11.6
+  resolution: "@types/node@npm:20.11.6"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 6d18cec852f5cfbed3ec42b5c01c026e7a3f9da540d6e3d6738d4cee9979fb308cf27b6df7ba40a6553e7bc82e678f0ef53ba6e6ad52e5b86bd97b7783c2a42c
+  checksum: 922bc1e78076bb79fd168902c80321b54487181e3be3386e183fc535d102d91c8902da25148eaec841410fab7fb872fd4a93ec9ac9299cedf0ebcbf16b442aa1
   languageName: node
   linkType: hard
 
 "@types/node@npm:^16.18.26, @types/node@npm:^16.18.28, @types/node@npm:^16.18.31":
-  version: 16.18.71
-  resolution: "@types/node@npm:16.18.71"
-  checksum: e38197aa43bf282825594e2652236b63d3225c3fed70438143b0f59b8abadb04e197a1b9bbc0d98c65fddff1d22ee38565826499feca67c1b1b901f18c00a047
+  version: 16.18.75
+  resolution: "@types/node@npm:16.18.75"
+  checksum: 8407790ea7a4666e06435246bf4145ffe226cf9f9754b1e04e6d4acfcaa8c6d4cfba0a9c17ba2a06bd017949f24aebd66e0b11fc8b0cdd2d45d7f62c5eb4ccb2
   languageName: node
   linkType: hard
 
 "@types/node@npm:^18.0.0, @types/node@npm:^18.15.11, @types/node@npm:^18.18.5":
-  version: 18.19.8
-  resolution: "@types/node@npm:18.19.8"
+  version: 18.19.9
+  resolution: "@types/node@npm:18.19.9"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: bb50ba373053869da1ec43cbcd824626262b984467992e6b2119613fc02f4c0c5aae43550ee66316dd428178727fe51c749ca030b31615332ecbac4572edae4a
+  checksum: 7ca4b3f8eb176ef3351292636717649c0e2044109b91453477dbe0a25e4b8febe2bb965e183c24088c41f113256ed87662bfce7782a8ab9b1da19542ed247d00
   languageName: node
   linkType: hard
 
@@ -12894,7 +12894,7 @@ __metadata:
     "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:8.56.2"
     "@types/jest": "npm:29.5.4"
-    "@types/node": "npm:20.11.5"
+    "@types/node": "npm:20.11.6"
     "@types/prettier": "npm:2.7.3"
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
@@ -12957,7 +12957,7 @@ __metadata:
     "@types/eslint": "npm:^8.21.3"
     "@types/jest": "npm:29.5.4"
     "@types/lodash": "npm:4.14.202"
-    "@types/node": "npm:20.11.5"
+    "@types/node": "npm:20.11.6"
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prettier": "npm:^2.7.2"
     "@types/prop-types": "npm:^15.7.5"
