@@ -78,7 +78,7 @@
   },
   "dependencies": {
     "@lerna-lite/publish": "^2.0.0",
-    "@lerna-lite/version": "^2.0.0",
+    "@lerna-lite/version": "^3.0.0",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "react": "18.2.0",
