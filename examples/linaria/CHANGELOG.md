@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.10](https://github.com/ntucker/anansi/compare/example-linaria@6.2.9...example-linaria@6.2.10) (2024-01-26)
+
+### 📦 Package
+
+* Update `webpack` to v5.90.0 ([#2296](https://github.com/ntucker/anansi/issues/2296)) ([9e86ae9](https://github.com/ntucker/anansi/commit/9e86ae903e1cec7da377755774f999fb7544c146))
+* Update babel packages ([#2298](https://github.com/ntucker/anansi/issues/2298)) ([2dd88be](https://github.com/ntucker/anansi/commit/2dd88bec95c8e6661684c01beac24fefa76b3cc7))
+
 ### [6.2.9](https://github.com/ntucker/anansi/compare/example-linaria@6.2.8...example-linaria@6.2.9) (2024-01-20)
 
 **Note:** Version bump only for package example-linaria

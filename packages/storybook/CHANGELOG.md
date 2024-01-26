@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.15](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.14...@anansi/storybook@2.1.15) (2024-01-26)
+
+### 📦 Package
+
+* Update `@types/node` to v20.11.6 ([#2295](https://github.com/ntucker/anansi/issues/2295)) ([d0def86](https://github.com/ntucker/anansi/commit/d0def861252c3dd9449ec0338ec496baff3e8ddf))
+
 ### [2.1.14](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.13...@anansi/storybook@2.1.14) (2024-01-21)
 
 ### 📦 Package

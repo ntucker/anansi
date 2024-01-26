@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [18.0.3](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.2...@anansi/webpack-config@18.0.3) (2024-01-26)
+
+### 💅 Enhancement
+
+* Add types to wyw in js options ([247b61d](https://github.com/ntucker/anansi/commit/247b61d8814fe491c463d12695a5c9523d1ec2d7))
+
+### 📦 Package
+
+* Update `@wyw-in-js/webpack-loader` to v0.3.0 ([#2297](https://github.com/ntucker/anansi/issues/2297)) ([8989e6a](https://github.com/ntucker/anansi/commit/8989e6a300671c76bdfec3b6d64b22d92d7c8208))
+* Update all non-major dependencies ([57dbf3c](https://github.com/ntucker/anansi/commit/57dbf3c074596f4698233c6dcb02d45cb7dd3e2c))
+
 ### [18.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.1...@anansi/webpack-config@18.0.2) (2024-01-19)
 
 **Note:** Version bump only for package @anansi/webpack-config

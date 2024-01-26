@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.3](https://github.com/ntucker/anansi/compare/example-typescript@12.0.2...example-typescript@12.0.3) (2024-01-26)
+
+### 📦 Package
+
+* Update `@types/node` to v20.11.6 ([#2295](https://github.com/ntucker/anansi/issues/2295)) ([d0def86](https://github.com/ntucker/anansi/commit/d0def861252c3dd9449ec0338ec496baff3e8ddf))
+* Update `webpack` to v5.90.0 ([#2296](https://github.com/ntucker/anansi/issues/2296)) ([9e86ae9](https://github.com/ntucker/anansi/commit/9e86ae903e1cec7da377755774f999fb7544c146))
+* Update babel packages ([#2298](https://github.com/ntucker/anansi/issues/2298)) ([2dd88be](https://github.com/ntucker/anansi/commit/2dd88bec95c8e6661684c01beac24fefa76b3cc7))
+* Update JS test packages ([#2299](https://github.com/ntucker/anansi/issues/2299)) ([e253670](https://github.com/ntucker/anansi/commit/e2536703fc994022ace5fc2ada2f73e6ae435153))
+
 ### [12.0.2](https://github.com/ntucker/anansi/compare/example-typescript@12.0.1...example-typescript@12.0.2) (2024-01-21)
 
 ### 📦 Package
