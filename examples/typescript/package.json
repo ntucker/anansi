@@ -37,7 +37,7 @@
     "@types/babel__core": "^7.20.0",
     "@types/classnames": "2.3.1",
     "@types/eslint": "^8.21.3",
-    "@types/jest": "29.5.4",
+    "@types/jest": "29.5.11",
     "@types/lodash": "4.14.202",
     "@types/parse-link-header": "2.0.3",
     "@types/prettier": "^2.7.2",
