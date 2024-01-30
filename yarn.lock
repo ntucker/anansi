@@ -238,7 +238,7 @@ __metadata:
     pacote: "npm:^17.0.6"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:4.2.1"
+    yeoman-environment: "npm:4.3.0"
     yeoman-generator: "npm:^7.1.1"
     yeoman-test: "npm:8.2.0"
   languageName: unknown
@@ -27137,9 +27137,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:4.2.1, yeoman-environment@npm:^4.0.0":
-  version: 4.2.1
-  resolution: "yeoman-environment@npm:4.2.1"
+"yeoman-environment@npm:4.3.0, yeoman-environment@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "yeoman-environment@npm:4.3.0"
   dependencies:
     "@yeoman/adapter": "npm:^1.4.0"
     "@yeoman/conflicter": "npm:^2.0.0-alpha.2"
@@ -27167,7 +27167,7 @@ __metadata:
     mem-fs: ^4.0.0
   bin:
     yoe: bin/bin.cjs
-  checksum: 7a9377b413c14ed78a4e82ba40fc9c5c7e88b8a71f51ec55e072eeb11d15b29f33eef4086ae21c623c5bf83e25fb0e062212a8b6d9d86c3d9acad5e3011d74ca
+  checksum: f48fe31aef151b7880b2b9d82d0e1beceb9273e825025373810fcd5d3378ea0b5872aeb162c19a6f424d69737de27e4c8901bb329f4fad62d53dd5b99d0167c6
   languageName: node
   linkType: hard
 
