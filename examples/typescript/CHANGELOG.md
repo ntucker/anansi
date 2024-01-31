@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.4](https://github.com/ntucker/anansi/compare/example-typescript@12.0.3...example-typescript@12.0.4) (2024-01-31)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2307](https://github.com/ntucker/anansi/issues/2307)) ([4a74347](https://github.com/ntucker/anansi/commit/4a743477aabaabf7ff031c5cde20bd7508ee750d))
+* Update storybook monorepo to v7.6.11 ([#2305](https://github.com/ntucker/anansi/issues/2305)) ([150fc0f](https://github.com/ntucker/anansi/commit/150fc0f552653febd4168d02bc0e8ea18abdd0e7))
+
 ### [12.0.3](https://github.com/ntucker/anansi/compare/example-typescript@12.0.2...example-typescript@12.0.3) (2024-01-26)
 
 ### 📦 Package
