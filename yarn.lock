@@ -355,7 +355,7 @@ __metadata:
     constants-browserify: "npm:^1.0.0"
     core-js: "npm:^3.21.0"
     crypto-browserify: "npm:^3.12.0"
-    css-loader: "npm:^6.9.1"
+    css-loader: "npm:^6.10.0"
     css-minimizer-webpack-plugin: "npm:^6.0.0"
     domain-browser: "npm:^5.7.0"
     duplicate-package-checker-webpack-plugin: "npm:^3.0.0"
@@ -371,7 +371,7 @@ __metadata:
     path: "npm:^0.12.7"
     path-browserify: "npm:^1.0.1"
     postcss: "npm:^8.4.33"
-    postcss-loader: "npm:^8.0.0"
+    postcss-loader: "npm:^8.1.0"
     postcss-preset-env: "npm:^9.3.0"
     process: "npm:^0.11.10"
     punycode: "npm:^2.3.1"
@@ -380,7 +380,7 @@ __metadata:
     react-dev-utils: "npm:^12.0.1"
     react-error-overlay: "npm:6.0.9"
     readable-stream: "npm:^4.5.2"
-    sass-loader: "npm:^14.0.0"
+    sass-loader: "npm:^14.1.0"
     sass-resources-loader: "npm:^2.2.5"
     semver: "npm:^7.5.4"
     stream-browserify: "npm:^3.0.0"
@@ -10971,9 +10971,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.7.1, css-loader@npm:^6.9.1":
-  version: 6.9.1
-  resolution: "css-loader@npm:6.9.1"
+"css-loader@npm:^6.10.0, css-loader@npm:^6.7.1":
+  version: 6.10.0
+  resolution: "css-loader@npm:6.10.0"
   dependencies:
     icss-utils: "npm:^5.1.0"
     postcss: "npm:^8.4.33"
@@ -10984,8 +10984,14 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
     semver: "npm:^7.5.4"
   peerDependencies:
+    "@rspack/core": 0.x || 1.x
     webpack: ^5.0.0
-  checksum: 10c0/3dfff7d4372a1d8f2b1606a8376f2f5e484e59d7ffdc373ea3b04aa2b54ecd052aaf72c090a97148b0eb8a164cdc1f9dcb7a68686b2d5d190d69367c30f76132
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/acadd2a93f505bf8a8d1c6912a476ef953585f195412b6aa1f2581053bcce8563b833f2a6666c1e1521f4b35fb315176563495a38933becc89e3143cfa7dce45
   languageName: node
   linkType: hard
 
@@ -20753,17 +20759,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "postcss-loader@npm:8.0.0"
+"postcss-loader@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "postcss-loader@npm:8.1.0"
   dependencies:
     cosmiconfig: "npm:^9.0.0"
     jiti: "npm:^1.20.0"
     semver: "npm:^7.5.4"
   peerDependencies:
+    "@rspack/core": 0.x || 1.x
     postcss: ^7.0.0 || ^8.0.1
     webpack: ^5.0.0
-  checksum: 10c0/a31eedd2cac3a46b60527a2aee2369010f65dfc1dafb6ee00badfe6b662cefe00269b03adaa04be1524c566ea5b00f8716c150e79fe9b5c4fc8bb39a4e372be1
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/75f46f2728469a5dc410c21fdcabbf98236329a7763243ad0087d971fb9ee5a771e2f5c958b131698e22381b147927e2b4bee1a81c010ae137a147b45909adc7
   languageName: node
   linkType: hard
 
@@ -23430,24 +23442,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "sass-loader@npm:14.0.0"
+"sass-loader@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "sass-loader@npm:14.1.0"
   dependencies:
     neo-async: "npm:^2.6.2"
   peerDependencies:
+    "@rspack/core": 0.x || 1.x
     node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
     sass: ^1.3.0
     sass-embedded: "*"
     webpack: ^5.0.0
   peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
     node-sass:
       optional: true
     sass:
       optional: true
     sass-embedded:
       optional: true
-  checksum: 10c0/40729573560feb1a368c984198f655b287495470fa5b5a47f6bc6ab0c474c1bd973ccccbb855d3320a91020a64913e5f0d8905e224ea13e6766d9abbb5085a41
+    webpack:
+      optional: true
+  checksum: 10c0/c7f663ad1fa84e2564659ffba87b89d2ed84eae09a03f78918b3e4499787b78a57d9f157009dda350499b210d4b5c2e7b412692d9087166031c3826a2f176d23
   languageName: node
   linkType: hard
 
