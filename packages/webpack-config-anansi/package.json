@@ -85,7 +85,7 @@
     "html-webpack-plugin": "^5.6.0",
     "https-browserify": "^1.0.0",
     "is-wsl": "^2.2.0",
-    "mini-css-extract-plugin": "^2.7.7",
+    "mini-css-extract-plugin": "^2.8.0",
     "mkdirp": "^3.0.1",
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
