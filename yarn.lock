@@ -100,7 +100,7 @@ __metadata:
     "@types/node": "npm:^20.0.0"
     bin-version-check: "npm:^5.1.0"
     chalk: "npm:^4.1.2"
-    commander: "npm:^11.1.0"
+    commander: "npm:^12.0.0"
     execa: "npm:^8.0.1"
     import-meta-resolve: "npm:^4.0.0"
     latest-version: "npm:^7.0.0"
@@ -10346,6 +10346,13 @@ __metadata:
   version: 10.0.1
   resolution: "commander@npm:10.0.1"
   checksum: 10c0/53f33d8927758a911094adadda4b2cbac111a5b377d8706700587650fd8f45b0bbe336de4b5c3fe47fd61f420a3d9bd452b6e0e6e5600a7e74d7bf0174f6efe3
+  languageName: node
+  linkType: hard
+
+"commander@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "commander@npm:12.0.0"
+  checksum: 10c0/e51cac1d1d0aa1f76581981d2256a9249497e08f5a370bf63b0dfc7e76a647fc8cbc3ddd507928f2bdca6c514c83834e87e2687ace2fe2fc7cc7e631bf80f83d
   languageName: node
   linkType: hard
 
