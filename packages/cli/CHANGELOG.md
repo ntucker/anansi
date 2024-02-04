@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.12](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.11...@anansi/cli@3.1.12) (2024-02-04)
+
+### 📦 Package
+
+* Update `commander` to v12 ([#2313](https://github.com/ntucker/anansi/issues/2313)) ([fcd1adc](https://github.com/ntucker/anansi/commit/fcd1adcb453bfb4c955134fcc5800b88ebeb53c8))
+
 ### [3.1.11](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.10...@anansi/cli@3.1.11) (2024-01-31)
 
 **Note:** Version bump only for package @anansi/cli

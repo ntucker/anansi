@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.14](https://github.com/ntucker/anansi/compare/example-react-18@5.2.13...example-react-18@5.2.14) (2024-02-04)
+
+### 📦 Package
+
+* Update `prettier` to v3.2.5 ([#2315](https://github.com/ntucker/anansi/issues/2315)) ([f350d8e](https://github.com/ntucker/anansi/commit/f350d8e2ba2089dff878f4693bbda3fc0f2a4b05))
+* Update all non-major dependencies ([#2314](https://github.com/ntucker/anansi/issues/2314)) ([8e2c428](https://github.com/ntucker/anansi/commit/8e2c428a15f8f54e9c456796aaf58eaa0ad17f99))
+* Update webpack packages ([#2312](https://github.com/ntucker/anansi/issues/2312)) ([337de18](https://github.com/ntucker/anansi/commit/337de18fc7c7b7cc10ade4d40b9e1c904771881f))
+
 ### [5.2.13](https://github.com/ntucker/anansi/compare/example-react-18@5.2.12...example-react-18@5.2.13) (2024-01-31)
 
 ### 📦 Package
