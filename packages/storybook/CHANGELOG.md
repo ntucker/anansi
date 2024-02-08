@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.18](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.17...@anansi/storybook@2.1.18) (2024-02-08)
+
+### 💅 Enhancement
+
+* Support recent versions of webpack/babel configs ([3501fb2](https://github.com/ntucker/anansi/commit/3501fb2875e47980d3761d4da28b23e2b2882583))
+
+### 🐛 Bug Fix
+
+* types in storybook config ([758b47a](https://github.com/ntucker/anansi/commit/758b47aff8c8c9b3d35e8e957e4025a59873e190))
+
+### 📦 Package
+
+* Update storybook monorepo to v7.6.13 ([c8328ae](https://github.com/ntucker/anansi/commit/c8328ae6f91e11a45f4ec4ab5a8fc0aab787e566))
+
 ### [2.1.17](https://github.com/ntucker/anansi/compare/@anansi/storybook@2.1.16...@anansi/storybook@2.1.17) (2024-02-04)
 
 ### 📦 Package

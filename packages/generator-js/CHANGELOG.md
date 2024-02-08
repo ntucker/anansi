@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.3.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.5...@anansi/generator-js@12.3.6) (2024-02-08)
+
+### 📦 Package
+
+* Get rid of unused yeoman-test which isn't updated ([8e004c3](https://github.com/ntucker/anansi/commit/8e004c39d242bd3a0b3cdd7b9e53db151a1aaabb))
+
 ### [12.3.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.4...@anansi/generator-js@12.3.5) (2024-01-31)
 
 ### 📦 Package
