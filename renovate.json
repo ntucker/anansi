@@ -62,7 +62,8 @@
         "svgo-loader",
         "svgo",
         "@svgr/plugin-svgo",
-        "@svgr/webpack"
+        "@svgr/webpack",
+        "@wyw-in-js/webpack"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "webpack",
