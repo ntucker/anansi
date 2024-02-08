@@ -1,4 +1,3 @@
-import { PromptQuestions } from '@yeoman/types';
 import { BaseOptions, BaseFeatures } from 'yeoman-generator';
 
 import {
