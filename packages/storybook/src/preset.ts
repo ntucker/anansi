@@ -25,7 +25,7 @@ export const frameworkOptions = async (
 
   if (typeof config === 'string') {
     return {
-      name: config,
+      name: config as any,
       options: defaultFrameworkOptions,
     };
   }
