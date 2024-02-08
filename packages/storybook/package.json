@@ -37,10 +37,10 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.17.0",
-    "@storybook/builder-webpack5": "^7.6.12",
-    "@storybook/preset-react-webpack": "^7.6.12",
-    "@storybook/react": "^7.6.12",
-    "@storybook/types": "^7.6.12",
+    "@storybook/builder-webpack5": "^7.6.13",
+    "@storybook/preset-react-webpack": "^7.6.13",
+    "@storybook/react": "^7.6.13",
+    "@storybook/types": "^7.6.13",
     "@types/node": "^20.11.16"
   },
   "peerDependencies": {
