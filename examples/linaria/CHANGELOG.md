@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.14](https://github.com/ntucker/anansi/compare/example-linaria@6.2.13...example-linaria@6.2.14) (2024-02-12)
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v5 ([#2322](https://github.com/ntucker/anansi/issues/2322)) ([a8e97da](https://github.com/ntucker/anansi/commit/a8e97da75b67abe977a02df4c6c8eb5dc4b57b0a))
+
 ### [6.2.13](https://github.com/ntucker/anansi/compare/example-linaria@6.2.12...example-linaria@6.2.13) (2024-02-08)
 
 ### 📦 Package
