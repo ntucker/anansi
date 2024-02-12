@@ -1,8 +1,8 @@
-import fs from 'fs';
-import path from 'path';
 import binVersionCheck from 'bin-version-check';
-import latestVersion from 'latest-version';
 import chalk from 'chalk';
+import fs from 'fs';
+import latestVersion from 'latest-version';
+import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
