@@ -28,7 +28,7 @@
     "directory": "packages/eslint-plugin"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^16.0.0 || >=18.0.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.23.10",
@@ -44,7 +44,7 @@
   "peerDependencies": {
     "@babel/core": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.11.0 || ^6.0.0 || ^7.0.0",
-    "eslint": "^7.0.0 || ^8.0.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^4.0.0 || ^5.0.0",
