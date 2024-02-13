@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.15](https://github.com/ntucker/anansi/compare/example-linaria@6.2.14...example-linaria@6.2.15) (2024-02-13)
+
+### 📦 Package
+
+* Update linting packages to v7 ([41cc3e2](https://github.com/ntucker/anansi/commit/41cc3e2a20fccadf4996eacafe1d5f7d27e3bc0d))
+
 ### [6.2.14](https://github.com/ntucker/anansi/compare/example-linaria@6.2.13...example-linaria@6.2.14) (2024-02-12)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.17](https://github.com/ntucker/anansi/compare/example-react-18@5.2.16...example-react-18@5.2.17) (2024-02-13)
+
+### 📦 Package
+
+* Update linting packages to v7 ([41cc3e2](https://github.com/ntucker/anansi/commit/41cc3e2a20fccadf4996eacafe1d5f7d27e3bc0d))
+
 ### [5.2.16](https://github.com/ntucker/anansi/compare/example-react-18@5.2.15...example-react-18@5.2.16) (2024-02-12)
 
 ### 📦 Package

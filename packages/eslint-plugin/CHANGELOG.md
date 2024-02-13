@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.48...@anansi/eslint-plugin@0.17.0) (2024-02-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Drop support for old typescript/eslint-plugin,
+typescript 3, webpack 3
+* Require Node 16 and eslint 8.56
+
+### 💅 Enhancement
+
+* Require Node 16 and eslint 8.56 ([b72b1ea](https://github.com/ntucker/anansi/commit/b72b1ea670bdfac2d33d215ec95cec9a67c4b979))
+
+### 📦 Package
+
+* Update linting packages to v7 ([41cc3e2](https://github.com/ntucker/anansi/commit/41cc3e2a20fccadf4996eacafe1d5f7d27e3bc0d))
+
+### enahnce
+
+* Drop support for old package versions ([2eabfaa](https://github.com/ntucker/anansi/commit/2eabfaa2dfc1ff97e3d4d01b4c8eb808b2e2b0e7))
+
 ### [0.16.48](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.16.47...@anansi/eslint-plugin@0.16.48) (2024-02-08)
 
 ### 📦 Package

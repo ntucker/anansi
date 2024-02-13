@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.0.8](https://github.com/ntucker/anansi/compare/example-typescript@12.0.7...example-typescript@12.0.8) (2024-02-13)
+
+### 📦 Package
+
+* Update linting packages to v7 ([41cc3e2](https://github.com/ntucker/anansi/commit/41cc3e2a20fccadf4996eacafe1d5f7d27e3bc0d))
+
 ### [12.0.7](https://github.com/ntucker/anansi/compare/example-typescript@12.0.6...example-typescript@12.0.7) (2024-02-12)
 
 ### 📦 Package

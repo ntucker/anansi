@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [18.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.7...@anansi/webpack-config@18.0.8) (2024-02-13)
+
+### 💅 Enhancement
+
+* Drop support for storybook rc (only final versions) ([7f8b68d](https://github.com/ntucker/anansi/commit/7f8b68d015260f836a2d6984ecc4095c3264a930))
+
+### 📦 Package
+
+* Make @wyw-in-js/webpack-loader match a range ^ ([b0d4e10](https://github.com/ntucker/anansi/commit/b0d4e10f53df3a377729a4a9bf66ce6bc716456d))
+
 ### [18.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.6...@anansi/webpack-config@18.0.7) (2024-02-12)
 
 ### 📦 Package
