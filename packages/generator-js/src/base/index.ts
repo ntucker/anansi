@@ -14,7 +14,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
         type: 'checkbox',
         name: 'features',
         message:
-          'What features would you like to include? (can be added after generation)',
+          'What features would you like to include? (can be added after generation)\n',
         choices: [
           { name: 'storybook', value: 'storybook' },
           { name: 'testing (Jest)', value: 'testing' },

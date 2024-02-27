@@ -91,5 +91,12 @@ export default class extends BetterGenerator {
       this.destinationPath('README.md'),
       this.config.getAll(),
     );
+
+    if (this.config.get('features')?.includes('SSR')) {
+      // We don't use RootProvider in SSR config
+      this.fs.delete(
+        this.destinationPath(this.config.get('rootPath'), 'RootProvider.tsx'),
+      );
+    }
   }
 }
