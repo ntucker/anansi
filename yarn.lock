@@ -233,7 +233,7 @@ __metadata:
     gulp-filter: "npm:^9.0.1"
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.0.0"
-    mem-fs: "npm:^4.0.0"
+    mem-fs: "npm:^4.1.0"
     mem-fs-editor: "npm:^11.0.0"
     pacote: "npm:^17.0.6"
     shelobsay: "npm:^2.0.0"
@@ -18038,15 +18038,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "mem-fs@npm:4.0.0"
+"mem-fs@npm:^4.0.0, mem-fs@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "mem-fs@npm:4.1.0"
   dependencies:
     "@types/node": "npm:^20.8.3"
     "@types/vinyl": "npm:^2.0.8"
     vinyl: "npm:^3.0.0"
     vinyl-file: "npm:^5.0.0"
-  checksum: 10c0/bb28e4c0eda0036827a8df782c7e03a705177cbf3771b652abcc23640c4475b4181efc4a54531802e0578a13239688966d33f04cac728620a099ad9a2e96091d
+  checksum: 10c0/acc525c83faacadca9fe188594ff66ff50eb61c3097de54607130eea772fd4835805a1bc82d01140fe82c5ca1402c84bf6cb53c390fa032cd02fee146126fd55
   languageName: node
   linkType: hard
 
