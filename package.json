@@ -44,7 +44,7 @@
     "@anansi/browserslist-config": "workspace:*",
     "@anansi/eslint-plugin": "workspace:*",
     "@babel/cli": "7.23.9",
-    "@babel/core": "7.23.9",
+    "@babel/core": "7.24.0",
     "@commitlint/cli": "18.6.0",
     "@commitlint/config-conventional": "18.6.0",
     "@lerna-lite/cli": "3.3.0",
