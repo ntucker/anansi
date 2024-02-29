@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.3.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.6...@anansi/generator-js@12.3.7) (2024-02-29)
+
+### 💅 Enhancement
+
+* Inform about adding features after the fact ([e44ca98](https://github.com/ntucker/anansi/commit/e44ca98799524695af50ade056fe2ba89512c9ce))
+* Remove extraneous RootProvider file when using SSR ([1aacf65](https://github.com/ntucker/anansi/commit/1aacf656373aa31a986115010eda59771788cdcb))
+
+### 📦 Package
+
+* Update `mem-fs` to ^4.1.0 ([#2330](https://github.com/ntucker/anansi/issues/2330)) ([298418f](https://github.com/ntucker/anansi/commit/298418f4f1f668455778cd6d28c541f7bbdb1eb8))
+
 ### [12.3.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.5...@anansi/generator-js@12.3.6) (2024-02-08)
 
 ### 📦 Package
