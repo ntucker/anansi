@@ -103,7 +103,7 @@ __metadata:
     commander: "npm:^12.0.0"
     execa: "npm:^8.0.1"
     import-meta-resolve: "npm:^4.0.0"
-    latest-version: "npm:^7.0.0"
+    latest-version: "npm:^9.0.0"
     yo: "npm:^5.0.0"
   peerDependencies:
     "@anansi/core": ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0
@@ -17138,6 +17138,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ky@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "ky@npm:1.2.1"
+  checksum: 10c0/3a06e3d9fb639da6309d34e82ecb51b232b8575fec114af23ef4aebf3aa2c5ea18a9398d28afe4889bf1ad10492ad36bac3be9c6f676370858f60890d14cc55a
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:^0.3.20":
   version: 0.3.22
   resolution: "language-subtag-registry@npm:0.3.22"
@@ -17178,6 +17185,15 @@ __metadata:
   dependencies:
     package-json: "npm:^8.1.0"
   checksum: 10c0/68045f5e419e005c12e595ae19687dd88317dd0108b83a8773197876622c7e9d164fe43aacca4f434b2cba105c92848b89277f658eabc5d50e81fb743bbcddb1
+  languageName: node
+  linkType: hard
+
+"latest-version@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "latest-version@npm:9.0.0"
+  dependencies:
+    package-json: "npm:^10.0.0"
+  checksum: 10c0/643cfda3a58dfb3af221a2950e433393d28a5adbe225d1cbbb358dbcbb04e9f8dce15b892f8ae3e3156f50693428dbd7ca13a69edfbdfcd94e62519480d7041e
   languageName: node
   linkType: hard
 
@@ -19952,6 +19968,18 @@ __metadata:
   version: 2.2.0
   resolution: "p-try@npm:2.2.0"
   checksum: 10c0/c36c19907734c904b16994e6535b02c36c2224d433e01a2f1ab777237f4d86e6289fd5fd464850491e940379d4606ed850c03e0f9ab600b0ebddb511312e177f
+  languageName: node
+  linkType: hard
+
+"package-json@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "package-json@npm:10.0.0"
+  dependencies:
+    ky: "npm:^1.2.0"
+    registry-auth-token: "npm:^5.0.2"
+    registry-url: "npm:^6.0.1"
+    semver: "npm:^7.6.0"
+  checksum: 10c0/54e30f6ddbe4fea9ae41d1d938ba033a5c5b1528c473b5155a69d673adcbb575b94f1ade6adaed1d0b2c1429649d7395edd71564d2a3b1dbff73d31675731e85
   languageName: node
   linkType: hard
 
