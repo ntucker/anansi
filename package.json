@@ -16,7 +16,7 @@
     "extends @anansi/browserslist-config"
   ],
   "scripts": {
-    "postinstall": "husky install && yarn workspace \"@anansi/webpack-config\" run build",
+    "postinstall": "husky && yarn workspace \"@anansi/webpack-config\" run build",
     "changelog": "run lerna version",
     "release": "yarn workspaces foreach -Wtiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -Wt --no-private run build",
