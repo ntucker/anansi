@@ -1,6 +1,6 @@
 {
   "name": "@anansi/webpack-config",
-  "version": "18.0.11",
+  "version": "18.0.12",
   "description": "Production ready webpack for React",
   "main": "lib/index.js",
   "types": "./index.d.ts",

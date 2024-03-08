@@ -1,6 +1,6 @@
 {
   "name": "@anansi/storybook",
-  "version": "2.1.22",
+  "version": "2.1.23",
   "description": "Storybook framework for anansi",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/storybook#readme",
   "repository": {

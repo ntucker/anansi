@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [18.0.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.11...@anansi/webpack-config@18.0.12) (2024-03-08)
+
+### 📦 Package
+
+* Update `postcss-preset-env` to ^9.5.0 ([#2342](https://github.com/ntucker/anansi/issues/2342)) ([1496ffd](https://github.com/ntucker/anansi/commit/1496ffd163ed3bfb87a986c92305ee11f8debb72))
+
 ### [18.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.10...@anansi/webpack-config@18.0.11) (2024-03-01)
 
 ### 📦 Package
