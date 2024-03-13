@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.3...@pojo-router/core@0.7.0) (2024-03-13)
+
+### 🚀 Features
+
+* Support storybook 8 ([abc091b](https://github.com/ntucker/anansi/commit/abc091b9806dfc07eb262a9ad3aa2095522b9a89))
+
 ### [0.6.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.2...@pojo-router/core@0.6.3) (2023-12-09)
 
 **Note:** Version bump only for package @pojo-router/core

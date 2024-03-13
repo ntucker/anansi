@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.12...@anansi/webpack-config@18.1.0) (2024-03-13)
+
+### 🚀 Features
+
+* Support storybook 8 ([abc091b](https://github.com/ntucker/anansi/commit/abc091b9806dfc07eb262a9ad3aa2095522b9a89))
+
 ### [18.0.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.11...@anansi/webpack-config@18.0.12) (2024-03-08)
 
 ### 📦 Package

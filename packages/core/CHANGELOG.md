@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.20](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.19...@anansi/core@0.18.20) (2024-03-13)
+
+### 📦 Package
+
+* Update webpack packages ([#2346](https://github.com/ntucker/anansi/issues/2346)) ([714919a](https://github.com/ntucker/anansi/commit/714919a0008319d37a5cf9c532ca7c97d42b4a04))
+
 ### [0.18.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.18...@anansi/core@0.18.19) (2024-03-01)
 
 ### 📦 Package

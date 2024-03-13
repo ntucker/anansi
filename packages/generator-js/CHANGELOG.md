@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.4.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.7...@anansi/generator-js@12.4.0) (2024-03-13)
+
+### 🚀 Features
+
+* Support storybook 8 ([abc091b](https://github.com/ntucker/anansi/commit/abc091b9806dfc07eb262a9ad3aa2095522b9a89))
+
+### 📦 Package
+
+* Update `yeoman-environment` to v4.4.0 ([#2347](https://github.com/ntucker/anansi/issues/2347)) ([08590fb](https://github.com/ntucker/anansi/commit/08590fb0a29c0a0143b15d518414a0b421000fcb))
+* Update all non-major dependencies ([#2345](https://github.com/ntucker/anansi/issues/2345)) ([cf6d7a2](https://github.com/ntucker/anansi/commit/cf6d7a20a3e8bb72c359aeb8acf78f1924a70410))
+
 ### [12.3.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.6...@anansi/generator-js@12.3.7) (2024-02-29)
 
 ### 💅 Enhancement
