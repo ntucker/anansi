@@ -6,26 +6,13 @@ import {
   NextFunction,
   ByPass,
   ProxyConfigArrayItem,
-  ProxyConfigMap,
 } from 'webpack-dev-server';
 
 // Essentially taken from https://github.com/webpack/webpack-dev-server/blob/b5e5b67398f97c7a2934e12ebe34fb03cc06c473/lib/Server.js#L2123
-export default function getProxyMiddlewares(
-  proxyConfig: ProxyConfigArrayItem | ProxyConfigMap | ProxyConfigArray,
-) {
+export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
   const middlewares: any[] = [];
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { createProxyMiddleware } = require('http-proxy-middleware');
-
-  const proxy: ProxyConfigArray =
-    !Array.isArray(proxyConfig) && typeof proxyConfig === 'object' ?
-      (
-        Object.keys(proxyConfig).length &&
-        Object.keys(proxyConfig)[0].startsWith('/')
-      ) ?
-        Object.entries(proxyConfig).map(([path, v]) => ({ path, ...v }))
-      : [proxyConfig]
-    : proxyConfig;
 
   const getProxyMiddleware = (
     proxyConfig: ProxyConfigArrayItem,
@@ -59,7 +46,7 @@ export default function getProxyMiddlewares(
    *   }
    * ]
    */
-  proxy.forEach(proxyConfigOrCallback => {
+  proxyConfig.forEach(proxyConfigOrCallback => {
     let proxyMiddleware: RequestHandler | undefined;
 
     let proxyConfig =
