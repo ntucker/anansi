@@ -1,14 +1,14 @@
 <% if (spa) { %>
-import RootProvider from '../src/RootProvider';
+import { CacheProvider, AsyncBoundary } from '@data-client/react';
 <% } %>
 import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 
 <% if (spa) { %>
 export const decorators = [
   (Story) => (
-    <RootProvider>
+    <% if (spa) { %><CacheProvider><AsyncBoundary><% } %>
       <Story/>
-    </RootProvider>
+      <% if (spa) { %></AsyncBoundary></CacheProvider><% } %>
   )
 ];
 <% } %>

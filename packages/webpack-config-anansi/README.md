@@ -117,52 +117,22 @@ module.exports = (env, argv) => {
 ```
 </details>
 
-### Storybook 6 (optional)
+### Storybook 8 (optional)
 
-<details open><summary><b>/.storybook/webpack.config.js</b></summary>
-
-```js
-const { makeStorybookConfigGenerator } = require('@anansi/webpack-config');
-const { options } = require('../webpack.config');
-
-module.exports = makeStorybookConfigGenerator(options);
+```bash
+npm install --dev storybook @storybook/react @anansi/storybook
 ```
-</details>
+
+Set [@anansi/storybook](https://www.npmjs.com/package/@anansi/storybook) as the framework
 
 <details open><summary><b>/.storybook/main.js</b></summary>
 
 ```js
 module.exports = {
-  core: {
-    builder: "webpack5",
-  },
-  reactOptions: {
-    fastRefresh: true,
+  framework: {
+    name: '@anansi/storybook'
   },
 };
-
-```
-</details>
-
-#### Working with webpack 5 and storybook
-
-Storybook currently has [some issues](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) due to being a hybrid of webpack 4 and 5. This is solved by adding some 'resolutions' to your `package.json`. This will
-only work with npm v7 and above, or yarn.
-
-<details open><summary><b>package.json</b></summary>
-
-```json
-{
-  "resolutions": {
-    "webpack": "^5.0.0",
-    "css-loader": "^5.0.0",
-    "dotenv-webpack": "^6.0.0",
-    "html-webpack-plugin": "^5.0.0",
-    "style-loader": "^3.0.0",
-    "terser-webpack-plugin": "^5.0.0",
-    "webpack-virtual-modules": "^0.4.2"
-  }
-}
 ```
 
 </details>

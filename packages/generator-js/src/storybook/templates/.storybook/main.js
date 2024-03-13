@@ -4,10 +4,7 @@ module.exports = {
     '@storybook/addon-essentials', '@storybook/addon-links'
   ],
   framework: {
-    name: '@anansi/storybook',
-    options: {
-      fastRefresh: true
-    }
+    name: '@anansi/storybook'
   },
   docs: {
     autodocs: true

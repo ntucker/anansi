@@ -32,6 +32,23 @@ Then generate your new project:
 anansi hatch my-app-name
 ```
 
+If you just used the @anansi/webpack-config without the rest of the framework:
+
+```bash
+npm install --dev storybook @storybook/react @anansi/storybook
+```
+
+Then set @anansi/storybook as the framework `.storybook/main.js`:
+
+```js
+module.exports = {
+  framework: {
+    name: '@anansi/storybook'
+  },
+};
+```
+
+
 ### Typescript
 
 `npx sb init` will select `.ts` starter stories if your `package.json` has typescript as a dependency. If starting a new project,

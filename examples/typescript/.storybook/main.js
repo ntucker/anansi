@@ -10,9 +10,6 @@ module.exports = {
   },
   framework: {
     name: wrapForPnP('@anansi/storybook'),
-    options: {
-      fastRefresh: true
-    }
   },
   docs: {
     autodocs: true
