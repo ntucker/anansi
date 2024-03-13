@@ -1,6 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { makeStorybookConfigGenerator } from '@anansi/webpack-config';
-import type { PresetProperty, Options } from '@storybook/types';
+import type {
+  PresetProperty,
+  PresetPropertyFn,
+  Options,
+} from '@storybook/types';
 import { dirname, join } from 'path';
 
 import type { FrameworkOptions, StorybookConfig } from './types.js';
@@ -12,7 +16,6 @@ export const addons: PresetProperty<'addons', StorybookConfig> = [];
 
 const defaultFrameworkOptions: FrameworkOptions = {
   legacyRootApi: false,
-  fastRefresh: true,
   strictMode: true,
 };
 
@@ -45,7 +48,7 @@ export const frameworkOptions = async (
   };
 };
 
-export const core: PresetProperty<'core', StorybookConfig> = async (
+export const core: PresetPropertyFn<'core', StorybookConfig> = async (
   config,
   options,
 ) => {
