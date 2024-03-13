@@ -47,7 +47,6 @@ export default class StorybookGenerator extends BetterGenerator<StorybookOptions
       'storybook',
       '@storybook/addon-essentials',
       '@storybook/addon-links',
-      '@storybook/addons',
       '@storybook/react',
       '@anansi/storybook',
     ]);
