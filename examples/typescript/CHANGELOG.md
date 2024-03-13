@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.1](https://github.com/ntucker/anansi/compare/example-typescript@13.0.0...example-typescript@13.0.1) (2024-03-13)
+
+### 🐛 Bug Fix
+
+* Generated storybook config ([86164fe](https://github.com/ntucker/anansi/commit/86164fe25d41f2d203dab3346a4f6db092766b5e))
+
 ## [13.0.0](https://github.com/ntucker/anansi/compare/example-typescript@12.0.12...example-typescript@13.0.0) (2024-03-13)
 
 ### ⚠ 💥 BREAKING CHANGES

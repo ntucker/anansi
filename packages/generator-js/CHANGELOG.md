@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.0...@anansi/generator-js@12.4.1) (2024-03-13)
+
+### 🐛 Bug Fix
+
+* Generated storybook config ([86164fe](https://github.com/ntucker/anansi/commit/86164fe25d41f2d203dab3346a4f6db092766b5e))
+
 ## [12.4.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.3.7...@anansi/generator-js@12.4.0) (2024-03-13)
 
 ### 🚀 Features
