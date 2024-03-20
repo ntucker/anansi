@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.0.2](https://github.com/ntucker/anansi/compare/example-typescript@13.0.1...example-typescript@13.0.2) (2024-03-20)
+
+### 📦 Package
+
+* Update `@types/prettier` to v3 ([#2352](https://github.com/ntucker/anansi/issues/2352)) ([fcb2280](https://github.com/ntucker/anansi/commit/fcb22805229982a28598382de98181b3a243a0b2))
+* Update all non-major dependencies ([#2354](https://github.com/ntucker/anansi/issues/2354)) ([2a13479](https://github.com/ntucker/anansi/commit/2a1347944b1594d92ef2cac5255a6d11c8549a81))
+* Update babel packages ([#2351](https://github.com/ntucker/anansi/issues/2351)) ([30d60ff](https://github.com/ntucker/anansi/commit/30d60ff314b9be3c5bd156936b2c3998cd0d5860))
+* Update storybook monorepo to v8.0.2 ([#2350](https://github.com/ntucker/anansi/issues/2350)) ([cfcc139](https://github.com/ntucker/anansi/commit/cfcc139ccfde486ccca3a6f78a173a5b91305844))
+
 ### [13.0.1](https://github.com/ntucker/anansi/compare/example-typescript@13.0.0...example-typescript@13.0.1) (2024-03-13)
 
 ### 🐛 Bug Fix

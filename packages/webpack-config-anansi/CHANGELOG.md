@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [18.1.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.1.0...@anansi/webpack-config@18.1.1) (2024-03-20)
+
+### 🐛 Bug Fix
+
+* Generated storybook config ([86164fe](https://github.com/ntucker/anansi/commit/86164fe25d41f2d203dab3346a4f6db092766b5e))
+
+### 📦 Package
+
+* Update webpack packages ([#2348](https://github.com/ntucker/anansi/issues/2348)) ([9b6569d](https://github.com/ntucker/anansi/commit/9b6569dd6f700de8f7d69872fcae5fb745e5503b))
+
 ## [18.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.0.12...@anansi/webpack-config@18.1.0) (2024-03-13)
 
 ### 🚀 Features
