@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.24.1",
-    "@babel/runtime": "7.24.1",
+    "@babel/runtime": "7.24.4",
     "@linaria/core": "6.1.0",
     "@linaria/react": "6.1.0",
     "classnames": "2.5.1",
