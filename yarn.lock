@@ -115,7 +115,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.18.23, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.18.24, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -295,7 +295,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@npm:^3.0.3, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@npm:^3.0.4, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -12257,7 +12257,7 @@ __metadata:
     "@anansi/babel-preset": "npm:^5.0.5"
     "@anansi/browserslist-config": "npm:^1.5.0"
     "@anansi/cli": "npm:^3.1.18"
-    "@anansi/core": "npm:^0.18.23"
+    "@anansi/core": "npm:^0.18.24"
     "@anansi/eslint-plugin": "npm:^0.17.6"
     "@anansi/jest-preset": "npm:^0.10.27"
     "@anansi/router": "npm:^0.9.5"
@@ -12318,7 +12318,7 @@ __metadata:
     "@anansi/browserslist-config": "npm:^1.5.0"
     "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": "npm:^0.10.27"
-    "@anansi/storybook": "npm:^3.0.3"
+    "@anansi/storybook": "npm:^3.0.4"
     "@anansi/webpack-config": "npm:^19.0.0"
     "@ant-design/cssinjs": "npm:^1.7.1"
     "@ant-design/icons": "npm:^5.0.1"
