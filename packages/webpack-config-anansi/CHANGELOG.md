@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.1.2...@anansi/webpack-config@19.0.0) (2024-04-08)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* The `cssModulesOptions.namedExport` option is `true` by default if you enable the `cssModulesOptions.esModule` option
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
+### 📦 Package
+
+* Update `css-loader` to v7 ([#2370](https://github.com/ntucker/anansi/issues/2370)) ([2e69dae](https://github.com/ntucker/anansi/commit/2e69dae1de96d58e69fa5388965918573a93de18))
+* Update webpack packages ([#2369](https://github.com/ntucker/anansi/issues/2369)) ([ec5d97e](https://github.com/ntucker/anansi/commit/ec5d97edaefbe5f729f97b13f0f8142b68cfd504))
+
 ### [18.1.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@18.1.1...@anansi/webpack-config@18.1.2) (2024-03-30)
 
 ### 📦 Package
