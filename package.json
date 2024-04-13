@@ -68,7 +68,7 @@
     "prettier": "3.2.5",
     "rimraf": "^5.0.0",
     "start-server-and-test": "^2.0.0",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "webpack": "5.91.0",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "5.0.4"
@@ -79,8 +79,8 @@
   "dependencies": {
     "@lerna-lite/publish": "^3.0.0",
     "@lerna-lite/version": "^3.0.0",
-    "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.24",
+    "@types/react": "18.2.78",
+    "@types/react-dom": "18.2.25",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
