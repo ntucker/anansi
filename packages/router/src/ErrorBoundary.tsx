@@ -29,14 +29,11 @@ export default class ErrorBoundary<E extends ErrorTypes> extends Component<
       error: ErrorTypes;
       className: string;
     }) => {
-      if (typeof error.status === 'string') {
-        return (
-          <div className={className}>
-            <b>{error.status}</b>: {(error.response as any)?.statusText}
-          </div>
-        );
-      }
-      return <div className={className}>{error.message}</div>;
+      return (
+        <pre role="alert" className={className}>
+          {error.message}
+        </pre>
+      );
     },
   };
 
@@ -51,7 +48,7 @@ export default class ErrorBoundary<E extends ErrorTypes> extends Component<
 
   componentDidMount() {
     this.unsubscribe = this.context.history.listen(() => {
-      if (this.state.error) this.setState({ error: undefined });
+      if (this.state.error) this.setState({});
     });
   }
 
