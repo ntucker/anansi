@@ -56,3 +56,10 @@ By default jest will automatically search for the appropriate babel configuratio
 In case this doesn't work you can specify a string for the babel configuration.
 
 Using 'babel.config.js' will automatically invoke the `rootMode: 'upward'` algorithm.
+
+### ANANSI_JEST_TYPECHECK = true
+
+If set to 'false', this disables type checking which can reduce memory usage quite a bit.
+
+This can be useful when running tests in multiple environments as the environment often doesn't
+impact typing, making re-checking types a waste of resources.

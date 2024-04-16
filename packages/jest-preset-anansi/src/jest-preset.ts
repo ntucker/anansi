@@ -7,6 +7,7 @@ const { pathsToModuleNameMapper } = require('ts-jest');
 
 const TSCONFIG = process.env.ANANSI_JEST_TSCONFIG ?? 'tsconfig.json';
 const BABELCONFIG = process.env.ANANSI_JEST_BABELCONFIG ?? true;
+const TYPECHECK = process.env.ANANSI_JEST_TYPECHECK ?? true;
 
 const { options } = readTsConfig('./', TSCONFIG);
 
@@ -44,6 +45,7 @@ module.exports = {
           babelConfig: babelConfig,
           tsconfig: `<rootDir>/${TSCONFIG}`,
           stringifyContentPathRegex: '\\.html$',
+          isolatedModules: TYPECHECK === 'false' ? true : false,
         },
       ],
       '^.+\\.(m|c)?jsx?$': [require.resolve('babel-jest'), babelConfig],
