@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.27...@anansi/jest-preset@0.11.0) (2024-04-16)
+
+### 🚀 Features
+
+* Add ANANSI_JEST_TYPECHECK option to jest ([4fed1c8](https://github.com/ntucker/anansi/commit/4fed1c889a084584e1e5e9d5f1e77dfe47531bd3))
+
 ### [0.10.27](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.10.26...@anansi/jest-preset@0.10.27) (2024-02-08)
 
 ### 📦 Package
