@@ -235,7 +235,7 @@ __metadata:
     import-meta-resolve: "npm:^4.0.0"
     mem-fs: "npm:^4.1.0"
     mem-fs-editor: "npm:^11.0.0"
-    pacote: "npm:^17.0.7"
+    pacote: "npm:^18.0.0"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
     yeoman-environment: "npm:4.4.0"
@@ -4225,6 +4225,20 @@ __metadata:
     node-gyp: "npm:^10.0.0"
     which: "npm:^4.0.0"
   checksum: 10c0/45159ef7d6b8d9e449e87ed401da69da60514f6e7752e268f29a96f17a543c4a8d4eea6fe2f74b07fd41095e48e0f9859ebec558065d2b01849b382b06fefe35
+  languageName: node
+  linkType: hard
+
+"@npmcli/run-script@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@npmcli/run-script@npm:8.0.0"
+  dependencies:
+    "@npmcli/node-gyp": "npm:^3.0.0"
+    "@npmcli/package-json": "npm:^5.0.0"
+    "@npmcli/promise-spawn": "npm:^7.0.0"
+    node-gyp: "npm:^10.0.0"
+    proc-log: "npm:^4.0.0"
+    which: "npm:^4.0.0"
+  checksum: 10c0/88f7a1ca45e09cd60e69e136a5b9a946ce4711f5a33d60749aaf2e58b9170cfd7a880645d84b754f26e4761df47175fe97dc0f00409658782c329a3ae1222421
   languageName: node
   linkType: hard
 
@@ -19376,7 +19390,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^17.0.0, pacote@npm:^17.0.4, pacote@npm:^17.0.6, pacote@npm:^17.0.7":
+"pacote@npm:^17.0.0, pacote@npm:^17.0.4, pacote@npm:^17.0.6":
   version: 17.0.7
   resolution: "pacote@npm:17.0.7"
   dependencies:
@@ -19401,6 +19415,34 @@ __metadata:
   bin:
     pacote: lib/bin.js
   checksum: 10c0/05730d3233918e4d89a4b9f8b436cddbe5081a4922c26c8af7d8f7db3adc79b211edd0e1ef2fd1c5b280811fd93a4486d76188fe75f3172a09d864f099d61066
+  languageName: node
+  linkType: hard
+
+"pacote@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "pacote@npm:18.0.0"
+  dependencies:
+    "@npmcli/git": "npm:^5.0.0"
+    "@npmcli/installed-package-contents": "npm:^2.0.1"
+    "@npmcli/promise-spawn": "npm:^7.0.0"
+    "@npmcli/run-script": "npm:^8.0.0"
+    cacache: "npm:^18.0.0"
+    fs-minipass: "npm:^3.0.0"
+    minipass: "npm:^7.0.2"
+    npm-package-arg: "npm:^11.0.0"
+    npm-packlist: "npm:^8.0.0"
+    npm-pick-manifest: "npm:^9.0.0"
+    npm-registry-fetch: "npm:^16.0.0"
+    proc-log: "npm:^4.0.0"
+    promise-retry: "npm:^2.0.1"
+    read-package-json: "npm:^7.0.0"
+    read-package-json-fast: "npm:^3.0.0"
+    sigstore: "npm:^2.2.0"
+    ssri: "npm:^10.0.0"
+    tar: "npm:^6.1.11"
+  bin:
+    pacote: lib/bin.js
+  checksum: 10c0/e8a4024321c50637446778796934bba62654d32c86f9d2fb2adec14363760b6ee4ca953e7dc3d71b010a488effdd76c7ef6e1c37d51657596318f7c9964d1e44
   languageName: node
   linkType: hard
 
