@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.3](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.2...@anansi/generator-js@12.4.3) (2024-04-17)
+
+### 📦 Package
+
+* Update `pacote` to v18 ([#2377](https://github.com/ntucker/anansi/issues/2377)) ([4e80f52](https://github.com/ntucker/anansi/commit/4e80f523fcf9f39b8578d48e6121d31477683c69))
+
 ### [12.4.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.1...@anansi/generator-js@12.4.2) (2024-04-16)
 
 ### 📦 Package
