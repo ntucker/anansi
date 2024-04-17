@@ -103,6 +103,7 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "@anansi/babel-preset",
+        "babel-plugin-module-resolver",
         "core-js",
         "core-js-compat"
       ],
