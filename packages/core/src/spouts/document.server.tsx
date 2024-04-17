@@ -17,6 +17,7 @@ type NeededNext = {
 export default function DocumentSpout(options: {
   head?: React.ReactNode;
   title: string;
+  lang?: string;
   rootId?: string;
   charSet?: string;
   csPolicy?: Policy;

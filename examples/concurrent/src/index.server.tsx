@@ -9,6 +9,7 @@ import {
   antdSpout,
 } from '@anansi/core/server';
 import { useController } from '@data-client/react';
+
 import app from 'app';
 
 import { createRouter } from './routing';
@@ -23,6 +24,7 @@ const csPolicy = {
 const spouts = prefetchSpout('controller')(
   documentSpout({
     title: 'anansi',
+    lang: 'en',
     csPolicy,
   })(
     antdSpout()(

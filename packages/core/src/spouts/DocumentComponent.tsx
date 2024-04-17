@@ -7,6 +7,7 @@ type Props = {
   title: string;
   rootId: string;
   charSet: string;
+  lang?: string;
 };
 
 export default function Document({
@@ -18,9 +19,10 @@ export default function Document({
   charSet,
   scripts,
   extraStyle,
+  lang,
 }: Props) {
   return (
-    <html>
+    <html lang={lang}>
       <head>
         <meta charSet={charSet} />
         {head}
