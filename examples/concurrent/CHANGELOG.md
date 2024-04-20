@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.2.30](https://github.com/ntucker/anansi/compare/example-react-18@5.2.29...example-react-18@5.2.30) (2024-04-20)
+
+### 💅 Enhancement
+
+* Add html lang prop to documentSpout ([53a9dca](https://github.com/ntucker/anansi/commit/53a9dca9752a3756dfaa36235f42f25c56f4495d))
+
+### 📦 Package
+
+* Update `@ant-design/cssinjs` to v1.20.0 ([#2384](https://github.com/ntucker/anansi/issues/2384)) ([35e1385](https://github.com/ntucker/anansi/commit/35e1385e0321c46057b331a32866971dd1584721))
+* Update linting packages ([#2385](https://github.com/ntucker/anansi/issues/2385)) ([77a656e](https://github.com/ntucker/anansi/commit/77a656eeb911689a221c1ea9052ed251c6b57d1c))
+
 ### [5.2.29](https://github.com/ntucker/anansi/compare/example-react-18@5.2.28...example-react-18@5.2.29) (2024-04-17)
 
 ### 📦 Package

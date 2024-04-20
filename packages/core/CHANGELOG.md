@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.18.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.24...@anansi/core@0.18.25) (2024-04-20)
+
+### 💅 Enhancement
+
+* Add html lang prop to documentSpout ([53a9dca](https://github.com/ntucker/anansi/commit/53a9dca9752a3756dfaa36235f42f25c56f4495d))
+
 ### [0.18.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.23...@anansi/core@0.18.24) (2024-04-08)
 
 ### 📦 Package

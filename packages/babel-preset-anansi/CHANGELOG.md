@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.6...@anansi/babel-preset@5.0.7) (2024-04-20)
+
+### 📦 Package
+
+* Update `babel-plugin-module-resolver` to v5.0.2 ([#2382](https://github.com/ntucker/anansi/issues/2382)) ([4a54ced](https://github.com/ntucker/anansi/commit/4a54ced29ee7c2cb13c77ef57c9572d7e317855d))
+
 ### [5.0.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.5...@anansi/babel-preset@5.0.6) (2024-04-17)
 
 ### 📦 Package
