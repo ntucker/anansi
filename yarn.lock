@@ -3940,21 +3940,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:6.1.0, @linaria/core@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@linaria/core@npm:6.1.0"
+"@linaria/core@npm:6.2.0, @linaria/core@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "@linaria/core@npm:6.2.0"
   dependencies:
-    "@wyw-in-js/processor-utils": "npm:^0.4.0"
-  checksum: 10c0/e4dbd49ff760821a29761b571875323a6d188150bf3e8ebeef2feb7aa84a7f8b4f9120cd5973591953d828cb531f1ea0618421901ed67139de71adb170657696
+    "@wyw-in-js/processor-utils": "npm:^0.5.3"
+  checksum: 10c0/4eb6083c0988f19aa3721e34bf14093dab8a0c6a784237ae4276a0b4e68bb82e91c594d7dd1d12173aaa2b38400a6bf5e0bd8b961a9ae05cdba854e2c566a134
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:6.2.0":
-  version: 6.2.0
-  resolution: "@linaria/react@npm:6.2.0"
+"@linaria/react@npm:6.2.1":
+  version: 6.2.1
+  resolution: "@linaria/react@npm:6.2.1"
   dependencies:
     "@emotion/is-prop-valid": "npm:^1.2.0"
-    "@linaria/core": "npm:^6.1.0"
+    "@linaria/core": "npm:^6.2.0"
     "@wyw-in-js/processor-utils": "npm:^0.5.3"
     "@wyw-in-js/shared": "npm:^0.5.3"
     minimatch: "npm:^9.0.3"
@@ -3963,7 +3963,7 @@ __metadata:
     ts-invariant: "npm:^0.10.3"
   peerDependencies:
     react: ">=16"
-  checksum: 10c0/11d8d432f20cd0fdc2fca4d01848be9242fa0ee8a39a20caacf738f5f6847db56b1f36b3feb59ddc23347bdaa1af132de9fb53ea8d91855b5ca78ce52b1acbcc
+  checksum: 10c0/102480195bc6e5f41cf3da4c7181640cf617256fcdd48847238cdc7def30536f132f29f35530bd261cbf5580a87981f5a6f7717e791b73cc309552141a10d256
   languageName: node
   linkType: hard
 
@@ -7158,27 +7158,6 @@ __metadata:
     "@babel/generator": "npm:^7.23.5"
     "@wyw-in-js/shared": "npm:0.5.3"
   checksum: 10c0/d9d12fe96a423551876b00cd715c61945a11770b448cb9363d435f1cd3506f7f57c068558ea8cb87eb78d39ff7cdb255ed055af540ee289f8b4e4798f12dd66d
-  languageName: node
-  linkType: hard
-
-"@wyw-in-js/processor-utils@npm:^0.4.0":
-  version: 0.4.1
-  resolution: "@wyw-in-js/processor-utils@npm:0.4.1"
-  dependencies:
-    "@babel/generator": "npm:^7.23.5"
-    "@wyw-in-js/shared": "npm:0.4.1"
-  checksum: 10c0/6f4695610ad634ed7cfc5130b75b9f8e3aa3a225417084bef07633d8a26c8e31f4f62ae96ab50e6430e24bda1a6020bfa8e7fc7f0b2b55dcc77379adddafd572
-  languageName: node
-  linkType: hard
-
-"@wyw-in-js/shared@npm:0.4.1":
-  version: 0.4.1
-  resolution: "@wyw-in-js/shared@npm:0.4.1"
-  dependencies:
-    debug: "npm:^4.3.4"
-    find-up: "npm:^5.0.0"
-    minimatch: "npm:^9.0.3"
-  checksum: 10c0/c166d527120ed18828efdba849d8ea38fbc4d266e29efd9283340512235c2752c9f7602145d18b79362aafffff4af275e6096958955a1af6ded269a8c1294df1
   languageName: node
   linkType: hard
 
@@ -12248,8 +12227,8 @@ __metadata:
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.24.1"
     "@babel/runtime": "npm:7.24.4"
-    "@linaria/core": "npm:6.1.0"
-    "@linaria/react": "npm:6.2.0"
+    "@linaria/core": "npm:6.2.0"
+    "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:^7.20.0"
     "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:^8.21.3"
@@ -12306,8 +12285,8 @@ __metadata:
     "@data-client/redux": "npm:0.11.0"
     "@data-client/rest": "npm:0.11.3"
     "@data-client/test": "npm:0.11.0"
-    "@linaria/core": "npm:6.1.0"
-    "@linaria/react": "npm:6.2.0"
+    "@linaria/core": "npm:6.2.0"
+    "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:7.20.5"
     "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:8.56.10"
