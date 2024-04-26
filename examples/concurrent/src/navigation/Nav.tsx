@@ -38,10 +38,10 @@ function getItem(
 
 function Nav({
   friends,
-  selectedFriend,
+  selectedFriend = false,
 }: {
   friends: User[];
-  selectedFriend: false | string;
+  selectedFriend?: false | string;
 }) {
   const contoller = useController();
   const route = useRoutes()[1] as any;
@@ -95,9 +95,6 @@ function Nav({
     </Sider>
   );
 }
-Nav.defaultProps = {
-  selectedFriend: false,
-};
 export default memo(Nav);
 
 function CacheSwitch() {

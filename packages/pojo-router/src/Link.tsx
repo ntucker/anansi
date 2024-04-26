@@ -13,11 +13,11 @@ type ComponentConstraint =
 
 export type LinkProps<C extends ComponentConstraint = 'a'> =
   React.ComponentProps<C> & {
-    component: C;
+    component?: C;
     name: string;
     props?: object;
     state?: any;
-    replace: boolean;
+    replace?: boolean;
     onClick?: React.MouseEventHandler<HTMLAnchorElement>;
     children: React.ReactNode;
   };
@@ -26,8 +26,8 @@ export default function Link<C extends ComponentConstraint = 'a'>({
   name,
   props,
   state,
-  replace,
-  component: Component,
+  replace = false,
+  component: Component = 'a' as any,
   onClick,
   ...rest
 }: LinkProps<C>) {
@@ -55,7 +55,3 @@ export default function Link<C extends ComponentConstraint = 'a'>({
 
   return <Component onClick={handleClick} href={pathname} {...(rest as any)} />;
 }
-Link.defaultProps = {
-  component: 'a',
-  replace: false,
-};
