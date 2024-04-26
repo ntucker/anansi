@@ -92,7 +92,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.20, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.21, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -181,7 +181,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^0.17.7, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@npm:^0.17.8, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -295,7 +295,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@npm:^3.0.5, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@npm:^3.0.6, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -332,7 +332,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@npm:^19.0.3, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@npm:^19.0.4, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -12222,8 +12222,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^5.0.7"
     "@anansi/browserslist-config": "npm:^1.5.0"
-    "@anansi/eslint-plugin": "npm:^0.17.7"
-    "@anansi/webpack-config": "npm:^19.0.3"
+    "@anansi/eslint-plugin": "npm:^0.17.8"
+    "@anansi/webpack-config": "npm:^19.0.4"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.24.1"
     "@babel/runtime": "npm:7.24.4"
@@ -12268,12 +12268,12 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^5.0.7"
     "@anansi/browserslist-config": "npm:^1.5.0"
-    "@anansi/cli": "npm:^3.1.20"
+    "@anansi/cli": "npm:^3.1.21"
     "@anansi/core": "npm:^0.18.25"
-    "@anansi/eslint-plugin": "npm:^0.17.7"
+    "@anansi/eslint-plugin": "npm:^0.17.8"
     "@anansi/jest-preset": "npm:^0.11.0"
     "@anansi/router": "npm:^0.9.5"
-    "@anansi/webpack-config": "npm:^19.0.3"
+    "@anansi/webpack-config": "npm:^19.0.4"
     "@ant-design/cssinjs": "npm:1.20.0"
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.24.4"
@@ -12330,8 +12330,8 @@ __metadata:
     "@anansi/browserslist-config": "npm:^1.5.0"
     "@anansi/eslint-plugin": "workspace:^"
     "@anansi/jest-preset": "npm:^0.11.0"
-    "@anansi/storybook": "npm:^3.0.5"
-    "@anansi/webpack-config": "npm:^19.0.3"
+    "@anansi/storybook": "npm:^3.0.6"
+    "@anansi/webpack-config": "npm:^19.0.4"
     "@ant-design/cssinjs": "npm:^1.7.1"
     "@ant-design/icons": "npm:^5.0.1"
     "@ant-design/pro-layout": "npm:7.12.3"
