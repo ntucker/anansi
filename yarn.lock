@@ -6574,12 +6574,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.25, @types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.11":
-  version: 18.2.25
-  resolution: "@types/react-dom@npm:18.2.25"
+"@types/react-dom@npm:18.3.0, @types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.11":
+  version: 18.3.0
+  resolution: "@types/react-dom@npm:18.3.0"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10c0/87604407eca6884c5b4d4657cb511dc5ba28ea1cfa5d0ce1fc2d659a7ad1b64ae85dcda60e3f010641f9a52a6a60dfcaa6be3b0d0de9d624475052a13dae01f4
+  checksum: 10c0/6c90d2ed72c5a0e440d2c75d99287e4b5df3e7b011838cdc03ae5cd518ab52164d86990e73246b9d812eaf02ec351d74e3b4f5bd325bf341e13bf980392fd53b
   languageName: node
   linkType: hard
 
@@ -6604,22 +6604,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-test-renderer@npm:18.0.7":
-  version: 18.0.7
-  resolution: "@types/react-test-renderer@npm:18.0.7"
+"@types/react-test-renderer@npm:18.3.0":
+  version: 18.3.0
+  resolution: "@types/react-test-renderer@npm:18.3.0"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10c0/45cbe963354acee2ab090979d856763c84f59ef7b63477d1fef5d0fd52760b69aa67bbd205fbd3bd36264620fce72c8e407735a9f2009c40ca50da59b0058c34
+  checksum: 10c0/3c9748be52e8e659e7adf91dea6939486463264e6f633bf21c4cb116de18af7bef0595568a1e588160420b2f65289473075dda1cb417c2875df8cf7a09f5d913
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.79, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0, @types/react@npm:^18.0.29":
-  version: 18.2.79
-  resolution: "@types/react@npm:18.2.79"
+"@types/react@npm:*, @types/react@npm:18.3.0, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0, @types/react@npm:^18.0.29":
+  version: 18.3.0
+  resolution: "@types/react@npm:18.3.0"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/c8a8a005d8830a48cc1ef93c3510c4935a2a03e5557dbecaa8f1038450cbfcb18eb206fa7fba7077d54b8da21faeb25577e897a333392770a7797f625b62c78a
+  checksum: 10c0/6405f805700daf096a507a191bc4f8814ebed49120f156926b0a5b7b6f41424214320cea3dbb6df85f476b220f0554ef7e587baa88f59375e64bdbab525f58aa
   languageName: node
   linkType: hard
 
@@ -12255,8 +12255,8 @@ __metadata:
     "@types/eslint": "npm:^8.21.3"
     "@types/node": "npm:^20.0.0"
     "@types/prettier": "npm:^3.0.0"
-    "@types/react": "npm:18.2.79"
-    "@types/react-dom": "npm:18.2.25"
+    "@types/react": "npm:18.3.0"
+    "@types/react-dom": "npm:18.3.0"
     "@types/react-router-dom": "npm:5.3.3"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
     "@typescript-eslint/parser": "npm:^7.0.0"
@@ -12314,9 +12314,9 @@ __metadata:
     "@types/jest": "npm:29.5.11"
     "@types/node": "npm:20.12.7"
     "@types/prettier": "npm:3.0.0"
-    "@types/react": "npm:18.2.79"
-    "@types/react-dom": "npm:18.2.25"
-    "@types/react-test-renderer": "npm:18.0.7"
+    "@types/react": "npm:18.3.0"
+    "@types/react-dom": "npm:18.3.0"
+    "@types/react-test-renderer": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:7.7.1"
     "@typescript-eslint/parser": "npm:7.7.1"
     antd: "npm:5.16.4"
@@ -12377,11 +12377,11 @@ __metadata:
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prettier": "npm:^3.0.0"
     "@types/prop-types": "npm:^15.7.5"
-    "@types/react": "npm:18.2.79"
-    "@types/react-dom": "npm:18.2.25"
+    "@types/react": "npm:18.3.0"
+    "@types/react-dom": "npm:18.3.0"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
-    "@types/react-test-renderer": "npm:18.0.7"
+    "@types/react-test-renderer": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
     "@typescript-eslint/parser": "npm:^7.0.0"
     antd: "npm:5.16.4"
@@ -22796,8 +22796,8 @@ __metadata:
     "@lerna-lite/publish": "npm:^3.0.0"
     "@lerna-lite/version": "npm:^3.0.0"
     "@types/node": "npm:^20.0.0"
-    "@types/react": "npm:18.2.79"
-    "@types/react-dom": "npm:18.2.25"
+    "@types/react": "npm:18.3.0"
+    "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:7.7.1"
     "@typescript-eslint/parser": "npm:7.7.1"
     babel-loader: "npm:9.1.3"
