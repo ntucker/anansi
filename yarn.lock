@@ -156,10 +156,10 @@ __metadata:
     "@ant-design/cssinjs": ^1.5.1
     "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^1.0.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0
     "@data-client/redux": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^1.0.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0
-    "@types/react": ^17.0.40 || ^18.0.0
-    "@types/react-dom": ^17.0.40 || ^18.0.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    "@types/react": ^17.0.40 || ^18.0.0 || ^19.0.0-0
+    "@types/react-dom": ^17.0.40 || ^18.0.0 || ^19.0.0-0
+    react: ^18.0.0 || ^19.0.0-0
+    react-dom: ^18.0.0 || ^19.0.0-0
     redux: ^4.0.0 || ^5.0.0
     webpack: ^5.60.0
   peerDependenciesMeta:
@@ -287,8 +287,8 @@ __metadata:
     nano-memoize: "npm:^3.0.16"
     react: "npm:^18.2.0"
   peerDependencies:
-    "@types/react": ^18.0.0
-    react: ^18.0.0
+    "@types/react": ^18.0.0 || ^19.0.0-0
+    react: ^18.0.0 || ^19.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true
@@ -309,10 +309,10 @@ __metadata:
     "@anansi/babel-preset": ^3.0.0 || ^4.0.0 || ^5.0.0
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^1.0.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0
-    "@types/react": ^17.0.40 || ^18.0.0
-    "@types/react-dom": ^17.0.40 || ^18.0.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    "@types/react": ^17.0.40 || ^18.0.0 || ^19.0.0-0
+    "@types/react-dom": ^17.0.40 || ^18.0.0 || ^19.0.0-0
+    react: ^18.0.0 || ^19.0.0-0
+    react-dom: ^18.0.0 || ^19.0.0-0
     webpack: "*"
   peerDependenciesMeta:
     "@types/react":
@@ -4624,8 +4624,8 @@ __metadata:
     path-to-regexp: "npm:6.2.2"
     react: "npm:^18.2.0"
   peerDependencies:
-    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0
-    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0 || ^19.0.0-0
   peerDependenciesMeta:
     "@types/react":
       optional: true

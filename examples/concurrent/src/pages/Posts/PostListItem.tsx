@@ -8,11 +8,11 @@ import { Post, UserResource } from 'resources/Discuss';
 export default function PostListItem({ post }: { post: Post }) {
   const author = useSuspense(
     UserResource.get,
-    post.userId
-      ? {
-          id: post.userId,
-        }
-      : null,
+    post.userId ?
+      {
+        id: post.userId,
+      }
+    : null,
   );
   const actions = [];
   actions.push(
