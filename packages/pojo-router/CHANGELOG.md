@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.7.1...@pojo-router/core@0.8.0) (2024-04-28)
+
+### 🚀 Features
+
+* React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
+
 ### [0.7.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.7.0...@pojo-router/core@0.7.1) (2024-04-08)
 
 ### 📦 Package

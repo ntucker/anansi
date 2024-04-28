@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.25...@anansi/core@0.19.0) (2024-04-28)
+
+### 🚀 Features
+
+* React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2394](https://github.com/ntucker/anansi/issues/2394)) ([19ca5c7](https://github.com/ntucker/anansi/commit/19ca5c7a78271a1badfa30ebbfd539a3499190a8))
+
 ### [0.18.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.24...@anansi/core@0.18.25) (2024-04-20)
 
 ### 💅 Enhancement

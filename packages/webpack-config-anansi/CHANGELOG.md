@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.4...@anansi/webpack-config@19.0.5) (2024-04-28)
+
+### 📦 Package
+
+* Update `@pmmmwh/react-refresh-webpack-plugin` to ^0.5.13 ([#2395](https://github.com/ntucker/anansi/issues/2395)) ([9036d88](https://github.com/ntucker/anansi/commit/9036d884405f4d3be5ebcfb2ecf85e39fe98d007))
+* Update all non-major dependencies ([#2397](https://github.com/ntucker/anansi/issues/2397)) ([a033f61](https://github.com/ntucker/anansi/commit/a033f615e449d1a5d759d23fee899490e94c4083))
+
 ### [19.0.4](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.3...@anansi/webpack-config@19.0.4) (2024-04-26)
 
 ### 📦 Package
