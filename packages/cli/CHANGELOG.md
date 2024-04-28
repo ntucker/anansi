@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.22](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.21...@anansi/cli@3.1.22) (2024-04-28)
+
+### 🐛 Bug Fix
+
+* peerDeps anansi compatbilitiy ([3f289ab](https://github.com/ntucker/anansi/commit/3f289abaf14342ae3f43173b63485b1771a8e341))
+
 ### [3.1.21](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.20...@anansi/cli@3.1.21) (2024-04-26)
 
 **Note:** Version bump only for package @anansi/cli

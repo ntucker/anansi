@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.1](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.0...@anansi/storybook@3.1.1) (2024-04-28)
+
+### 🐛 Bug Fix
+
+* peerDeps anansi compatbilitiy ([3f289ab](https://github.com/ntucker/anansi/commit/3f289abaf14342ae3f43173b63485b1771a8e341))
+
 ## [3.1.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.0.6...@anansi/storybook@3.1.0) (2024-04-28)
 
 ### 🚀 Features
