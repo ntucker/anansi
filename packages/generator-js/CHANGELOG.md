@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.5](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.4...@anansi/generator-js@12.4.5) (2024-04-30)
+
+### 📦 Package
+
+* Update `import-meta-resolve` to ^4.1.0 ([#2402](https://github.com/ntucker/anansi/issues/2402)) ([a4fbdc8](https://github.com/ntucker/anansi/commit/a4fbdc82f4a15b18122c1e277576f74b0a24cdab))
+
 ### [12.4.4](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.3...@anansi/generator-js@12.4.4) (2024-04-26)
 
 ### 📦 Package

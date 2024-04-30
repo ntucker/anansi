@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.0...@anansi/core@0.19.1) (2024-04-30)
+
+### 📦 Package
+
+* Update `http-proxy-middleware` to v3 ([#2364](https://github.com/ntucker/anansi/issues/2364)) ([a40a24a](https://github.com/ntucker/anansi/commit/a40a24a91d0c8ce4447b4d87cbcf5c289bc3db72))
+
 ## [0.19.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.25...@anansi/core@0.19.0) (2024-04-28)
 
 ### 🚀 Features
