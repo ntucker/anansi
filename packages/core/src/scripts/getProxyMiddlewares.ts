@@ -8,7 +8,8 @@ import {
   ProxyConfigArrayItem,
 } from 'webpack-dev-server';
 
-// Essentially taken from https://github.com/webpack/webpack-dev-server/blob/b5e5b67398f97c7a2934e12ebe34fb03cc06c473/lib/Server.js#L2123
+// Essentially taken from https://github.com/webpack/webpack-dev-server/blob/3096148746c906105c4424352f5b5ad1bff0fd4f/lib/Server.js#L2099
+// we just removed the 'bypass' deprecation warnings and converted to typescript
 export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
   const middlewares: any[] = [];
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -83,9 +84,8 @@ export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
 
       if (typeof bypassUrl === 'boolean') {
         // skip the proxy
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        req.url = null;
+        res.statusCode = 404;
+        req.url = '';
         next();
       } else if (typeof bypassUrl === 'string') {
         // byPass to that url
