@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.3.3](https://github.com/ntucker/anansi/compare/example-react-18@5.3.2...example-react-18@5.3.3) (2024-05-02)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2403](https://github.com/ntucker/anansi/issues/2403)) ([37aae7f](https://github.com/ntucker/anansi/commit/37aae7fd12d5c1b1aeecdfee39262656cb2dca43))
+
 ### [5.3.2](https://github.com/ntucker/anansi/compare/example-react-18@5.3.1...example-react-18@5.3.2) (2024-04-30)
 
 ### 📦 Package
