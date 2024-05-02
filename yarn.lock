@@ -98,7 +98,7 @@ __metadata:
   dependencies:
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^20.0.0"
-    bin-version-check: "npm:^6.0.0"
+    binary-version-check: "npm:^6.1.0"
     chalk: "npm:^4.1.2"
     commander: "npm:^12.0.0"
     execa: "npm:^8.0.1"
@@ -8478,17 +8478,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bin-version-check@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "bin-version-check@npm:6.0.0"
-  dependencies:
-    binary-version: "npm:^7.1.0"
-    semver: "npm:^7.6.0"
-    semver-truncate: "npm:^3.0.0"
-  checksum: 10c0/e8e485046f8505200656f365d3eaeac21a7e7663789577f7ee27d914d59386f138461cf5ce998e5587e1553a876f1510eab8858f363318ca58de0ae6fcd041e5
-  languageName: node
-  linkType: hard
-
 "bin-version@npm:^3.0.0":
   version: 3.1.0
   resolution: "bin-version@npm:3.1.0"
@@ -8503,6 +8492,17 @@ __metadata:
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
   checksum: 10c0/d73d8b897238a2d3ffa5f59c0241870043aa7471335e89ea5e1ff48edb7c2d0bb471517a3e4c5c3f4c043615caa2717b5f80a5e61e07503d51dc85cb848e665d
+  languageName: node
+  linkType: hard
+
+"binary-version-check@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "binary-version-check@npm:6.1.0"
+  dependencies:
+    binary-version: "npm:^7.1.0"
+    semver: "npm:^7.6.0"
+    semver-truncate: "npm:^3.0.0"
+  checksum: 10c0/6b235dce1966f007af32db99504d8b5e3de6d14ee3326e43058059b338fac021cee0d3d513cf1a972a20d4eaa04c6ddb52b74e9ff22b0f7562e04bebead89e86
   languageName: node
   linkType: hard
 

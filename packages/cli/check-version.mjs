@@ -1,4 +1,4 @@
-import binVersionCheck from 'bin-version-check';
+import binVersionCheck from 'binary-version-check';
 import chalk from 'chalk';
 import fs from 'fs';
 import latestVersion from 'latest-version';
