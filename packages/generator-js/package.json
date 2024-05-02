@@ -76,7 +76,7 @@
     "import-meta-resolve": "^4.1.0",
     "mem-fs": "^4.1.0",
     "mem-fs-editor": "^11.0.0",
-    "pacote": "^18.0.2",
+    "pacote": "^18.0.3",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^7.1.1"
   },
