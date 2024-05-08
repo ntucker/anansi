@@ -1,5 +1,4 @@
 import ejs from 'ejs';
-import { execa } from 'execa';
 import { resolve } from 'import-meta-resolve';
 import type {
   MemFsEditor,
