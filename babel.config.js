@@ -2,31 +2,26 @@ const { resolvePath } = require('babel-plugin-module-resolver');
 
 module.exports = function (api) {
   api.cache.using(() => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV);
+  const options = { loose: true };
+  if (process.env.NODE_ENV === 'test') {
+    options.resolver = {
+      resolvePath(sourcePath, currentFile, opts) {
+        if (
+          sourcePath.startsWith('.') &&
+          (sourcePath.endsWith('.js') || sourcePath.endsWith('.cjs'))
+        ) {
+          const removedExt = sourcePath.substring(
+            0,
+            sourcePath.lastIndexOf('.'),
+          );
+          return resolvePath(removedExt, currentFile, opts);
+        }
+      },
+      root: [],
+    };
+  }
   return {
-    presets: [
-      [
-        '@anansi',
-        {
-          loose: true,
-          resolver: {
-            resolvePath(sourcePath, currentFile, opts) {
-              if (
-                process.env.NODE_ENV === 'test' &&
-                sourcePath.startsWith('.') &&
-                (sourcePath.endsWith('.js') || sourcePath.endsWith('.cjs'))
-              ) {
-                const removedExt = sourcePath.substring(
-                  0,
-                  sourcePath.lastIndexOf('.'),
-                );
-                return resolvePath(removedExt, currentFile, opts);
-              }
-            },
-            root: [],
-          },
-        },
-      ],
-    ],
+    presets: [['@anansi', options]],
     assumptions: {
       noDocumentAll: true,
       noClassCalls: true,
@@ -35,6 +30,6 @@ module.exports = function (api) {
       pureGetters: true,
     },
     // allows us to load .babelrc in addition to this
-    babelrcRoots: ['packages/*'],
+    babelrcRoots: ['packages/*', 'examples/*'],
   };
 };
