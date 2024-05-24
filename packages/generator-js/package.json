@@ -75,10 +75,10 @@
     "gulp-prettier": "^6.0.0",
     "import-meta-resolve": "^4.1.0",
     "mem-fs": "^4.1.0",
-    "mem-fs-editor": "^11.0.0",
+    "mem-fs-editor": "^11.0.1",
     "pacote": "^18.0.6",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^7.1.1"
+    "yeoman-generator": "^7.2.0"
   },
   "jest": {
     "testEnvironment": "node"
