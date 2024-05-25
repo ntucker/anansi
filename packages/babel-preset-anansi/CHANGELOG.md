@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.8...@anansi/babel-preset@5.0.9) (2024-05-25)
+
+### 📦 Package
+
+* Update babel packages ([#2418](https://github.com/ntucker/anansi/issues/2418)) ([f613443](https://github.com/ntucker/anansi/commit/f613443f0e37cb7d40d70f40865baf43fcb394dd))
+
 ### [5.0.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.7...@anansi/babel-preset@5.0.8) (2024-04-30)
 
 ### 📦 Package

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.3.4](https://github.com/ntucker/anansi/compare/example-react-18@5.3.3...example-react-18@5.3.4) (2024-05-25)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2406](https://github.com/ntucker/anansi/issues/2406)) ([c8ae650](https://github.com/ntucker/anansi/commit/c8ae650a7d32d5e91d10c7c75e5018de96e01a10))
+* Update all non-major dependencies ([#2412](https://github.com/ntucker/anansi/issues/2412)) ([588575d](https://github.com/ntucker/anansi/commit/588575d46bff9413b3ffbf2fb9403d36dd2d1c99))
+* Update all non-major dependencies ([#2413](https://github.com/ntucker/anansi/issues/2413)) ([082aad1](https://github.com/ntucker/anansi/commit/082aad19ae056ca30444a0f2e8501b656ac3c3ac))
+* Update all non-major dependencies ([#2415](https://github.com/ntucker/anansi/issues/2415)) ([cd31e5a](https://github.com/ntucker/anansi/commit/cd31e5aab1364cd835d0f4f14a538fb0932a0b54))
+* Update all non-major dependencies ([#2417](https://github.com/ntucker/anansi/issues/2417)) ([3adf45c](https://github.com/ntucker/anansi/commit/3adf45c1efeb64075bd500cc45d8b82825843aa2))
+* Update all non-major dependencies ([#2424](https://github.com/ntucker/anansi/issues/2424)) ([b8889d0](https://github.com/ntucker/anansi/commit/b8889d0cdda835459554d73282457c264ddb2e24))
+* Update babel packages ([#2418](https://github.com/ntucker/anansi/issues/2418)) ([f613443](https://github.com/ntucker/anansi/commit/f613443f0e37cb7d40d70f40865baf43fcb394dd))
+* Update JS test packages ([#2422](https://github.com/ntucker/anansi/issues/2422)) ([9732521](https://github.com/ntucker/anansi/commit/9732521adc82a6d801aa0340ebef7f50af69f9fd))
+* Update linting packages ([#2421](https://github.com/ntucker/anansi/issues/2421)) ([614c24a](https://github.com/ntucker/anansi/commit/614c24a35813a70ec106aa057ceb4c06bcf6f025))
+
 ### [5.3.3](https://github.com/ntucker/anansi/compare/example-react-18@5.3.2...example-react-18@5.3.3) (2024-05-02)
 
 ### 📦 Package

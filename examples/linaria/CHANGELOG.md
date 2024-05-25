@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.30](https://github.com/ntucker/anansi/compare/example-linaria@6.2.29...example-linaria@6.2.30) (2024-05-25)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2413](https://github.com/ntucker/anansi/issues/2413)) ([082aad1](https://github.com/ntucker/anansi/commit/082aad19ae056ca30444a0f2e8501b656ac3c3ac))
+* Update all non-major dependencies ([#2424](https://github.com/ntucker/anansi/issues/2424)) ([b8889d0](https://github.com/ntucker/anansi/commit/b8889d0cdda835459554d73282457c264ddb2e24))
+* Update babel packages ([#2418](https://github.com/ntucker/anansi/issues/2418)) ([f613443](https://github.com/ntucker/anansi/commit/f613443f0e37cb7d40d70f40865baf43fcb394dd))
+
 ### [6.2.29](https://github.com/ntucker/anansi/compare/example-linaria@6.2.28...example-linaria@6.2.29) (2024-04-30)
 
 ### 📦 Package

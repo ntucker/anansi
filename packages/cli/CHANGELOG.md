@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.25](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.24...@anansi/cli@3.1.25) (2024-05-25)
+
+### 📦 Package
+
+* bin-version-check was renamed to binary-version-check ([d014e7b](https://github.com/ntucker/anansi/commit/d014e7b957ee16dbfe443640103d70919eed34c1))
+* Update `execa` to v9 ([#2410](https://github.com/ntucker/anansi/issues/2410)) ([64e2daa](https://github.com/ntucker/anansi/commit/64e2daa8a96cb0dc1c59f64bf1f32f785bc21e7e))
+* Update all non-major dependencies ([#2413](https://github.com/ntucker/anansi/issues/2413)) ([082aad1](https://github.com/ntucker/anansi/commit/082aad19ae056ca30444a0f2e8501b656ac3c3ac))
+* Update all non-major dependencies ([#2415](https://github.com/ntucker/anansi/issues/2415)) ([cd31e5a](https://github.com/ntucker/anansi/commit/cd31e5aab1364cd835d0f4f14a538fb0932a0b54))
+* Update all non-major dependencies ([#2424](https://github.com/ntucker/anansi/issues/2424)) ([b8889d0](https://github.com/ntucker/anansi/commit/b8889d0cdda835459554d73282457c264ddb2e24))
+
 ### [3.1.24](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.23...@anansi/cli@3.1.24) (2024-05-02)
 
 **Note:** Version bump only for package @anansi/cli

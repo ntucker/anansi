@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.5...@anansi/webpack-config@19.0.6) (2024-05-25)
+
+### 📦 Package
+
+* Update `css-minimizer-webpack-plugin` to v7 ([#2407](https://github.com/ntucker/anansi/issues/2407)) ([3d89732](https://github.com/ntucker/anansi/commit/3d8973285b0d1724c70b7151dbae533e0dc50485))
+* Update `svgo` to ^3.3.1 ([#2411](https://github.com/ntucker/anansi/issues/2411)) ([4a93a55](https://github.com/ntucker/anansi/commit/4a93a553dddba69ac96fd3eab4c3685e9875583a))
+* Update all non-major dependencies ([#2406](https://github.com/ntucker/anansi/issues/2406)) ([c8ae650](https://github.com/ntucker/anansi/commit/c8ae650a7d32d5e91d10c7c75e5018de96e01a10))
+* Update all non-major dependencies ([#2413](https://github.com/ntucker/anansi/issues/2413)) ([082aad1](https://github.com/ntucker/anansi/commit/082aad19ae056ca30444a0f2e8501b656ac3c3ac))
+* Update webpack packages ([#2408](https://github.com/ntucker/anansi/issues/2408)) ([60736b7](https://github.com/ntucker/anansi/commit/60736b7b2b13fd3d30a24c8a7f4365d525c6157b))
+* Update webpack packages ([#2414](https://github.com/ntucker/anansi/issues/2414)) ([0617de2](https://github.com/ntucker/anansi/commit/0617de2b0d2a491d60c766f27a02480df077f2a0))
+* Update webpack packages ([#2423](https://github.com/ntucker/anansi/issues/2423)) ([19a7672](https://github.com/ntucker/anansi/commit/19a7672d6fb74953dc62d4ed5c67678065061c3d))
+
 ### [19.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.4...@anansi/webpack-config@19.0.5) (2024-04-28)
 
 ### 📦 Package

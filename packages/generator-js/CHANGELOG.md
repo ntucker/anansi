@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.6...@anansi/generator-js@12.4.7) (2024-05-25)
+
+### 📦 Package
+
+* Update `execa` to v9 ([#2410](https://github.com/ntucker/anansi/issues/2410)) ([64e2daa](https://github.com/ntucker/anansi/commit/64e2daa8a96cb0dc1c59f64bf1f32f785bc21e7e))
+* Update all non-major dependencies ([#2406](https://github.com/ntucker/anansi/issues/2406)) ([c8ae650](https://github.com/ntucker/anansi/commit/c8ae650a7d32d5e91d10c7c75e5018de96e01a10))
+* Update all non-major dependencies ([#2412](https://github.com/ntucker/anansi/issues/2412)) ([588575d](https://github.com/ntucker/anansi/commit/588575d46bff9413b3ffbf2fb9403d36dd2d1c99))
+* Update all non-major dependencies ([#2413](https://github.com/ntucker/anansi/issues/2413)) ([082aad1](https://github.com/ntucker/anansi/commit/082aad19ae056ca30444a0f2e8501b656ac3c3ac))
+* Update all non-major dependencies ([#2415](https://github.com/ntucker/anansi/issues/2415)) ([cd31e5a](https://github.com/ntucker/anansi/commit/cd31e5aab1364cd835d0f4f14a538fb0932a0b54))
+* Update yeoman ([#2420](https://github.com/ntucker/anansi/issues/2420)) ([25caeab](https://github.com/ntucker/anansi/commit/25caeabb46d9c45d9864cd5fcd6d501130913023))
+
 ### [12.4.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.5...@anansi/generator-js@12.4.6) (2024-05-02)
 
 ### 📦 Package
