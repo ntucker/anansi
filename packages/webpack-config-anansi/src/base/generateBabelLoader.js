@@ -27,8 +27,9 @@ export function generateBabelLoader({
     hasReactRefresh = false;
   }
   const hasJsxRuntime =
-    react && !target?.includes?.('node') ?
-      semver.gte(react.version, '16.14.0')
+    react ?
+      (!target?.includes?.('node') && semver.gte(react.version, '16.14.0')) ||
+      semver.gte(react.version, '18.0.0')
     : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
   const filename = path.join(cwd, 'noop.js');
