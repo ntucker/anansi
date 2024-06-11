@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.7...@anansi/generator-js@12.4.8) (2024-06-11)
+
+### 📦 Package
+
+* Update `yeoman-environment` to v4.4.1 ([#2430](https://github.com/ntucker/anansi/issues/2430)) ([3bf9675](https://github.com/ntucker/anansi/commit/3bf9675a595f2c2d4e5d7265fa0a27024b213e28))
+* Update all non-major dependencies ([#2426](https://github.com/ntucker/anansi/issues/2426)) ([a540582](https://github.com/ntucker/anansi/commit/a5405824875967108874280103a51d14722f5502))
+
 ### [12.4.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.6...@anansi/generator-js@12.4.7) (2024-05-25)
 
 ### 📦 Package

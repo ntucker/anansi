@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.6...@anansi/webpack-config@19.0.7) (2024-06-11)
+
+### 💅 Enhancement
+
+* React 18+ has jsx runtime for ssr too ([9ac724c](https://github.com/ntucker/anansi/commit/9ac724cf88f4f54ab46e62ab4d38c307c014fb8c))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2426](https://github.com/ntucker/anansi/issues/2426)) ([a540582](https://github.com/ntucker/anansi/commit/a5405824875967108874280103a51d14722f5502))
+* Update webpack packages ([#2429](https://github.com/ntucker/anansi/issues/2429)) ([1287241](https://github.com/ntucker/anansi/commit/12872415c4275a06385fe68da1b2c0d444ce7299))
+
 ### [19.0.6](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.5...@anansi/webpack-config@19.0.6) (2024-05-25)
 
 ### 📦 Package

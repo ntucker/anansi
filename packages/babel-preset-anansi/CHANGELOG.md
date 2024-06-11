@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [5.0.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.9...@anansi/babel-preset@5.0.10) (2024-06-11)
+
+### 🐛 Bug Fix
+
+* Don't use jsx-dev runtime unless explicitly development env ([45b3868](https://github.com/ntucker/anansi/commit/45b3868a8e45c8372372e570b3c731126acdce41))
+
+### 📦 Package
+
+* Update babel packages to v7.24.7 ([#2427](https://github.com/ntucker/anansi/issues/2427)) ([5622afe](https://github.com/ntucker/anansi/commit/5622afeb8384a45124b15543a5c9e52c5166132e))
+
 ### [5.0.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.8...@anansi/babel-preset@5.0.9) (2024-05-25)
 
 ### 📦 Package
