@@ -193,13 +193,13 @@ function buildPreset(api, options = {}) {
       [process.env.RESOLVER_ROOT]
     : options.resolverRoot || []),
   ];
-
   const preset = {
     presets: [
       [
         require('@babel/preset-react').default,
         {
-          development: env !== 'production',
+          development:
+            env === 'development' || (env !== 'production' && !hasJsxRuntime),
           ...(hasJsxRuntime ?
             { runtime: 'automatic' }
           : { runtime: 'classic', useSpread: true }),
