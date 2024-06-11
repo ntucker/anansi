@@ -44,7 +44,9 @@ function buildPreset(api, options = {}) {
     : undefined;
   const hasJsxRuntime = Boolean(
     api.caller(
-      caller => (!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime,
+      caller =>
+        // default to true - only allow overrides of false
+        ((!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime) !== false,
     ),
   );
 
