@@ -388,7 +388,7 @@ function buildPreset(api, options = {}) {
 
   if (options.reactCompiler && env === 'production') {
     preset.plugins.unshift([
-      require('babel-plugin-react-compiler').default,
+      require('babel-plugin-react-compiler'),
       options.reactCompiler,
     ]);
   }
