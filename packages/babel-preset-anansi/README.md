@@ -203,6 +203,8 @@ Setting to false disables this optimization altogether. Note: this is only ever 
 
 ### hasJsxRuntime
 
+** Defaults to `true`. Set this to `false` explicitly to use with React <=16.13 **
+
 Use [new jsx transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
 Available in React >16.14.
 
