@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.5](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.4...@anansi/storybook@3.1.5) (2024-06-12)
+
+### 💅 Enhancement
+
+* React 19 compatibility via direct jsx transform usage ([dcf2ea1](https://github.com/ntucker/anansi/commit/dcf2ea1c71bcff6e66283185d5bc7b41de89c30d))
+
 ### [3.1.4](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.3...@anansi/storybook@3.1.4) (2024-06-11)
 
 ### 📦 Package

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.19.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.4...@anansi/core@0.19.5) (2024-06-12)
+
+**Note:** Version bump only for package @anansi/core
+
 ### [0.19.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.3...@anansi/core@0.19.4) (2024-06-11)
 
 ### 📦 Package

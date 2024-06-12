@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.10...@anansi/babel-preset@6.0.0) (2024-06-12)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* reactRequire no longer supported - use jsx transform
+instead
+* react-hot-reload (for old versions of React) no longer
+supported. use react-refresh
+* hasJsxRuntime defaults to true
+
+### 🚀 Features
+
+* Add reactCompiler option ([36f37de](https://github.com/ntucker/anansi/commit/36f37de31433bfac68ee8b42b7223e5f361c1418))
+
+### 💅 Enhancement
+
+* Match compatibility with any react-refresh version ([378cd74](https://github.com/ntucker/anansi/commit/378cd7447ef4cd7fbfa935482f49632ee1317221))
+* Remove react-hot-reload support ([3f1d797](https://github.com/ntucker/anansi/commit/3f1d79712cd2212cd99af29ea5c2639e84f2c80c))
+* Remove reactRequire option ([80f50c5](https://github.com/ntucker/anansi/commit/80f50c5b5763874fa9abe85f07222ceeb12c82fe))
+* Use react's jsx-runtime directly by default ([#2434](https://github.com/ntucker/anansi/issues/2434)) ([f44e0ec](https://github.com/ntucker/anansi/commit/f44e0ec8ab3bec12b33029589ad1ef032480f702))
+
+### 🐛 Bug Fix
+
+* Require statement ([702fb25](https://github.com/ntucker/anansi/commit/702fb259491f86c02bb46512e70ad2c4387fdea3))
+
 ### [5.0.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@5.0.9...@anansi/babel-preset@5.0.10) (2024-06-11)
 
 ### 🐛 Bug Fix

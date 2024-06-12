@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.7...@anansi/webpack-config@19.0.8) (2024-06-12)
+
+### 💅 Enhancement
+
+* Drop punycopy polyfill ([c88b88f](https://github.com/ntucker/anansi/commit/c88b88f1bdc92a19ba47d3d34111dd6a7020dd94))
+
 ### [19.0.7](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.6...@anansi/webpack-config@19.0.7) (2024-06-11)
 
 ### 💅 Enhancement
