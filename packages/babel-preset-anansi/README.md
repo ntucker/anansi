@@ -188,9 +188,20 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 - `version`: "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-05"
 - `decoratorsBeforeExport`
 
+### reactCompiler: {compilationMode?: "annotation"}
+
+Run the [React Compiler](https://react.dev/learn/react-compiler). This is still experimental - be sure to
+[check compatibility](https://react.dev/learn/react-compiler#checking-compatibility) before turning this on.
+
+By default does not run. Include empty object or a configuration to turn on.
+
+** Requires React 19+ **
+
+** This only runs in production **
+
 ### reactRequire: bool = true
 
-Automatically add react import if JSX is used.
+Automatically add react import if JSX is used. This is not necessary when using JSX transform from React 16.14+
 
 ### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
 
