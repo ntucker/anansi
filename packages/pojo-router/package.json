@@ -1,7 +1,7 @@
 {
   "name": "@pojo-router/core",
   "version": "0.8.0",
-  "description": "A react hooks library to associate metadata to a path",
+  "description": "A React hooks library to associate metadata to a path",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/pojo-router#readme",
   "repository": {
     "type": "git",
