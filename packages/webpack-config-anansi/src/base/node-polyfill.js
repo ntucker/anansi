@@ -13,7 +13,6 @@ export const NODE_ALIAS = {
   http: require.resolve('stream-http'),
   https: require.resolve('https-browserify'),
   os: require.resolve('os-browserify/browser.js'),
-  punycode: require.resolve('punycode/'),
   process: require.resolve('process/browser.js'),
   querystring: require.resolve('querystring-es3/'),
   _stream_duplex: require.resolve('readable-stream/lib/_stream_duplex.js'),

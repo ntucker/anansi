@@ -372,7 +372,6 @@ __metadata:
     postcss-loader: "npm:^8.1.1"
     postcss-preset-env: "npm:^9.5.14"
     process: "npm:^0.11.10"
-    punycode: "npm:^2.3.1"
     querystring-es3: "npm:^0.2.1"
     ramda: "npm:^0.30.1"
     react-dev-utils: "npm:^12.0.1"
@@ -21421,7 +21420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0, punycode@npm:^2.1.1, punycode@npm:^2.3.1":
+"punycode@npm:^2.1.0, punycode@npm:^2.1.1":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 10c0/14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
