@@ -192,10 +192,6 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 
 Automatically add react import if JSX is used.
 
-### hotReloader: boolean = false
-
-Using react-hot-reloader instead of react-refresh
-
 ### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
 
 Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).

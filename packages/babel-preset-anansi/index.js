@@ -58,7 +58,6 @@ function buildPreset(api, options = {}) {
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
     useBuiltIns: 'entry',
-    hotReloader: false,
     reactConstantElementsOptions: {},
     nodeTarget,
     resolver: { root: [], alias: {} },
@@ -274,11 +273,7 @@ function buildPreset(api, options = {}) {
     case 'development':
       if (!shouldHotReload) break;
       try {
-        if (options.hotReloader) {
-          preset.plugins.push(require('react-hot-loader/babel'));
-        } else {
-          preset.plugins.push(require('react-refresh/babel'));
-        }
+        preset.plugins.push(require('react-refresh/babel'));
       } catch (e) {}
       break;
   }
