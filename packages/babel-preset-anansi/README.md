@@ -199,10 +199,6 @@ By default does not run. Include empty object or a configuration to turn on.
 
 ** This only runs in production **
 
-### reactRequire: bool = true
-
-Automatically add react import if JSX is used. This is not necessary when using JSX transform from React 16.14+
-
 ### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
 
 Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).

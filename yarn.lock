@@ -42,7 +42,6 @@ __metadata:
     babel-plugin-macros: "npm:^3.1.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     babel-plugin-react-compiler: "npm:^0.0.0-experimental-938cd9a-20240601"
-    babel-plugin-react-require: "npm:^4.0.2"
     babel-plugin-root-import: "npm:^6.6.0"
     babel-plugin-transform-import-meta: "npm:^2.2.1"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
@@ -8612,13 +8611,6 @@ __metadata:
   version: 0.0.0
   resolution: "babel-plugin-react-compiler@npm:0.0.0"
   checksum: 10c0/b7db0bd49dfe28ea8945a72e90a21f1ab8a14e5ed6987a4f8780bbf15e68bb742aa0be45c019084390623a73c39c44dd57964cc71a01093f4f929c09eb5e5e50
-  languageName: node
-  linkType: hard
-
-"babel-plugin-react-require@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "babel-plugin-react-require@npm:4.0.2"
-  checksum: 10c0/b3d205f201cf0433ffab3f4d92f5701c577e52184463a42c388bff2bac39d97356f4aab7fd50cac4541d0829eda17cc9cd963076627cae09f691abbabf4dad1d
   languageName: node
   linkType: hard
 
