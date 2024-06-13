@@ -1,4 +1,4 @@
-import { CacheProvider } from '@data-client/react';
+import { DataProvider } from '@data-client/react';
 import { FixtureEndpoint, mockInitialState } from '@data-client/test';
 import React, { Suspense } from 'react';
 import { MemoryRouter } from 'react-router-dom';
@@ -52,11 +52,11 @@ const results = {
 
 it('renders', () => {
   const element = (
-    <CacheProvider initialState={mockInitialState(results.full)}>
+    <DataProvider initialState={mockInitialState(results.full)}>
       <MemoryRouter>
         <Suspense fallback="loading">{/*<PostList />*/}</Suspense>
       </MemoryRouter>
-    </CacheProvider>
+    </DataProvider>
   );
   const tree = renderer.create(element).toJSON();
   expect(tree).toMatchSnapshot();

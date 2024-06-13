@@ -10,7 +10,7 @@ export default function dataClientSpout(
 ): ClientSpout<{ getInitialData: (key: string) => Promise<any> }> {
   return next => async props => {
     const nextProps = await next(props);
-    const [data, { CacheProvider }] = await Promise.all([
+    const [data, { DataProvider }] = await Promise.all([
       props.getInitialData('dataclient').catch(e => {
         console.error('Data Client initial data could not load:', e);
         return initialState;
@@ -25,9 +25,9 @@ export default function dataClientSpout(
     return {
       ...nextProps,
       app: (
-        <CacheProvider initialState={data} managers={options?.getManagers?.()}>
+        <DataProvider initialState={data} managers={options?.getManagers?.()}>
           {nextProps.app}
-        </CacheProvider>
+        </DataProvider>
       ),
     };
   };

@@ -1,11 +1,11 @@
-import { CacheProvider, AsyncBoundary } from '@data-client/react';
+import { DataProvider, AsyncBoundary } from '@data-client/react';
 
 export const decorators = [
   (Story: React.FC) => (
-    <CacheProvider>
+    <DataProvider>
       <AsyncBoundary>
         <Story />
       </AsyncBoundary>
-    </CacheProvider>
+    </DataProvider>
   ),
 ];

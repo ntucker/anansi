@@ -1,4 +1,4 @@
-import { CacheProvider, useController, AsyncBoundary, ProviderProps } from '@data-client/react';
+import { DataProvider, useController, AsyncBoundary, ProviderProps } from '@data-client/react';
 import { RouteProvider } from '@anansi/router';
 import type { ReactNode } from 'react';
 import { createBrowserHistory } from 'history';
@@ -7,11 +7,11 @@ import { createRouter } from './routing';
 
 export default function RootProvider({ children, ...rest }: RootProps) {
   return (
-    <CacheProvider {...rest}>
+    <DataProvider {...rest}>
       <Router>
         <AsyncBoundary>{children}</AsyncBoundary>
       </Router>
-    </CacheProvider>
+    </DataProvider>
   );
 }
 

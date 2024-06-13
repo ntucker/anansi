@@ -21,7 +21,7 @@ export default function dataClientSpout(
       new (await import('@data-client/react')).NetworkManager(),
     ];
     const { createPersistedStore } = await import('@data-client/ssr');
-    const [ServerCacheProvider, useReadyCacheState, controller, store] =
+    const [ServerDataProvider, useReadyCacheState, controller, store] =
       createPersistedStore(managers);
 
     const nextProps = await next({
@@ -35,7 +35,7 @@ export default function dataClientSpout(
         ...nextProps.initData,
         dataclient: useReadyCacheState,
       },
-      app: <ServerCacheProvider>{nextProps.app}</ServerCacheProvider>,
+      app: <ServerDataProvider>{nextProps.app}</ServerDataProvider>,
       // TODO: figure out how to only inject in next and not have to also put here
       controller,
       store,

@@ -1,1 +1,1 @@
-export { CacheProvider } from '@data-client/react';
+export { DataProvider } from '@data-client/react';

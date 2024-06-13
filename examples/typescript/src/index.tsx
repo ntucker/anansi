@@ -1,4 +1,4 @@
-import { CacheProvider } from '@data-client/react';
+import { DataProvider } from '@data-client/react';
 import ReactDOM from 'react-dom/client';
 import { Router, RouteChildrenProps } from 'react-router-dom';
 
@@ -14,11 +14,11 @@ import App from './App';
 ReactDOM.createRoot(document.body).render(
   <ErrorLoggerContext.Provider value={e => console.error('error logged', e)}>
     <ErrorBoundary>
-      <CacheProvider>
+      <DataProvider>
         <Router history={history}>
           <App />
         </Router>
-      </CacheProvider>
+      </DataProvider>
     </ErrorBoundary>
   </ErrorLoggerContext.Provider>,
 );
