@@ -186,9 +186,7 @@ export default async function serve(
       });
   }
 
-  let manifest = await import(manifestPath, {
-    assert: { type: 'json' },
-  });
+  let manifest = await import(manifestPath, { with: { type: 'json' } });
   // handle inconsistent import conditions
   if ('default' in manifest) {
     manifest = manifest.default;

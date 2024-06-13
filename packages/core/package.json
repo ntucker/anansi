@@ -134,7 +134,7 @@
     }
   },
   "engines": {
-    "node": "^12.17 || ^13.7 || >=14"
+    "node": ">=22"
   },
   "scripts": {
     "pretest": "yarn g:lint .",
