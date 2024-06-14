@@ -83,6 +83,6 @@ Given a path, this returns all the metadata for routes that match.
 
 Get current location
 
-## useController()
+## useRouter()
 
-Return the [Controller](#controller) that can be used for computations
+Return the [RouteController](#controller) that can be used for computations

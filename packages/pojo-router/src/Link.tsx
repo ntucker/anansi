@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useController } from './hooks.js';
+import { useRouter } from './hooks.js';
 
 type ComponentConstraint =
   | keyof JSX.IntrinsicElements
@@ -31,7 +31,7 @@ export default function Link<C extends ComponentConstraint = 'a'>({
   onClick,
   ...rest
 }: LinkProps<C>) {
-  const controller = useController();
+  const controller = useRouter();
   const pathname = controller.buildPath(name, props);
   const shouldHandle =
     !Object.prototype.hasOwnProperty.call(rest, 'target') ||
