@@ -70,7 +70,7 @@
     "@ant-design/pro-layout": "7.12.3",
     "@babel/runtime": "7.24.7",
     "@data-client/graphql": "0.12.7",
-    "@data-client/react": "0.12.13",
+    "@data-client/react": "0.12.15",
     "@data-client/rest": "0.12.8",
     "@types/node": "20.14.2",
     "@types/react": "18.3.3",

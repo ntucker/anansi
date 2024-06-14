@@ -20,7 +20,7 @@ export default function dataClientSpout(
     const managers = options?.getManagers?.() ?? [
       new (await import('@data-client/react')).NetworkManager(),
     ];
-    const { createPersistedStore } = await import('@data-client/ssr');
+    const { createPersistedStore } = await import('@data-client/react/ssr');
     const [ServerDataProvider, useReadyCacheState, controller, store] =
       createPersistedStore(managers);
 

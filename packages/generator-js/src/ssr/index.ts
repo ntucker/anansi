@@ -20,14 +20,7 @@ export default class extends BetterGenerator {
   }
 
   async writingDependencies() {
-    await Promise.all([
-      this.addDependencies([
-        '@anansi/cli',
-        '@anansi/core',
-        '@data-client/redux',
-        'redux',
-      ]),
-    ]);
+    await Promise.all([this.addDependencies(['@anansi/cli', '@anansi/core'])]);
   }
 
   writing() {

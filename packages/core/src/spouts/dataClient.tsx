@@ -1,5 +1,5 @@
 import { type Manager } from '@data-client/react';
-import { initialState } from '@data-client/redux';
+import { initialState } from '@data-client/react/redux';
 
 import type { ClientSpout } from './types.js';
 
