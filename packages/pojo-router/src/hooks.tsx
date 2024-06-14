@@ -15,12 +15,12 @@ export function useLocationSearch<K extends string = ''>(
   return search as any;
 }
 
-export function useController() {
+export function useRouter() {
   return useContext(ControllerContext);
 }
 
 export function useRoutes<Route>(): Route[] {
-  const controller = useController();
+  const controller = useRouter();
   const location = useLocation();
 
   return useMemo(

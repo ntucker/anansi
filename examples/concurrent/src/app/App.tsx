@@ -1,10 +1,9 @@
-import { memo } from 'react';
-import { Layout, Spin } from 'antd';
-import { MatchedRoute, useController } from '@anansi/router';
-import { styled } from '@linaria/react';
-import 'antd/dist/reset.css';
-
+import { MatchedRoute, useRouter } from '@anansi/router';
 import { AsyncBoundary } from '@data-client/react';
+import { styled } from '@linaria/react';
+import { Layout, Spin } from 'antd';
+import { memo } from 'react';
+import 'antd/dist/reset.css';
 
 import Nav from 'navigation';
 
@@ -19,7 +18,7 @@ const Wrapper = styled(Layout)`
 `;
 
 const App = () => {
-  const router = useController();
+  const router = useRouter();
   return (
     <Wrapper className="ant-layout-has-sider">
       <Nav />
