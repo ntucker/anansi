@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.6](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.5...@anansi/storybook@3.1.6) (2024-06-14)
+
+### 💅 Enhancement
+
+* Use DataProvider ([bc3b933](https://github.com/ntucker/anansi/commit/bc3b9333259afe3c438457279dc8565b3134ea0c))
+
+### 📦 Package
+
+* Update storybook monorepo to v8.1.9 ([#2437](https://github.com/ntucker/anansi/issues/2437)) ([b64d8ab](https://github.com/ntucker/anansi/commit/b64d8ab7be41b385be56857b5fdfe2baece5a446))
+
 ### [3.1.5](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.4...@anansi/storybook@3.1.5) (2024-06-12)
 
 ### 💅 Enhancement

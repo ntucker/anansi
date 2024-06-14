@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.8.1...@pojo-router/core@0.9.0) (2024-06-14)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* useController renamed to useRouter
+
+### 🚀 Features
+
+* useController -> useRouter ([#2439](https://github.com/ntucker/anansi/issues/2439)) ([5f2f631](https://github.com/ntucker/anansi/commit/5f2f63173fc15ce4d38e868716db3f45cb56a66e))
+
 ### [0.8.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.8.0...@pojo-router/core@0.8.1) (2024-06-12)
 
 ### 💅 Enhancement

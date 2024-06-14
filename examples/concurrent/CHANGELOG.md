@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ntucker/anansi/compare/example-react-18@5.3.6...example-react-18@6.0.0) (2024-06-14)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* useController renamed to useRouter
+
+### 🚀 Features
+
+* useController -> useRouter ([#2439](https://github.com/ntucker/anansi/issues/2439)) ([5f2f631](https://github.com/ntucker/anansi/commit/5f2f63173fc15ce4d38e868716db3f45cb56a66e))
+
+### 💅 Enhancement
+
+* Use DataProvider ([bc3b933](https://github.com/ntucker/anansi/commit/bc3b9333259afe3c438457279dc8565b3134ea0c))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2436](https://github.com/ntucker/anansi/issues/2436)) ([6aa393f](https://github.com/ntucker/anansi/commit/6aa393f6b4c4bbed9d874a876409bcb71e4f9b79))
+* Update all non-major dependencies ([#2438](https://github.com/ntucker/anansi/issues/2438)) ([9b047e3](https://github.com/ntucker/anansi/commit/9b047e35adbf203919de534140377c5f43460285))
+
 ### [5.3.6](https://github.com/ntucker/anansi/compare/example-react-18@5.3.5...example-react-18@5.3.6) (2024-06-12)
 
 **Note:** Version bump only for package example-react-18

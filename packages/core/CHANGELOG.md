@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.5...@anansi/core@0.20.0) (2024-06-14)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Require node >=22
+
+### 🚀 Features
+
+* Support node 22 ([ec290ea](https://github.com/ntucker/anansi/commit/ec290eaa29a039ad51b776deea60afd482a0a046))
+
+### 💅 Enhancement
+
+* Use DataProvider ([bc3b933](https://github.com/ntucker/anansi/commit/bc3b9333259afe3c438457279dc8565b3134ea0c))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2436](https://github.com/ntucker/anansi/issues/2436)) ([6aa393f](https://github.com/ntucker/anansi/commit/6aa393f6b4c4bbed9d874a876409bcb71e4f9b79))
+* Update all non-major dependencies ([#2438](https://github.com/ntucker/anansi/issues/2438)) ([9b047e3](https://github.com/ntucker/anansi/commit/9b047e35adbf203919de534140377c5f43460285))
+
 ### [0.19.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.4...@anansi/core@0.19.5) (2024-06-12)
 
 **Note:** Version bump only for package @anansi/core

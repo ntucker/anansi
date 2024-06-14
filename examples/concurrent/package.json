@@ -1,6 +1,6 @@
 {
   "name": "example-react-18",
-  "version": "5.3.6",
+  "version": "6.0.0",
   "private": true,
   "scripts": {
     "start": "anansi serve --dev ./src/index.tsx",
@@ -22,10 +22,10 @@
   "devDependencies": {
     "@anansi/babel-preset": "^6.0.0",
     "@anansi/browserslist-config": "^1.5.0",
-    "@anansi/cli": "^3.1.27",
+    "@anansi/cli": "^3.1.28",
     "@anansi/eslint-plugin": "^0.17.11",
     "@anansi/jest-preset": "^0.11.2",
-    "@anansi/webpack-config": "^19.0.8",
+    "@anansi/webpack-config": "^19.0.9",
     "@babel/core": "7.24.7",
     "@data-client/test": "0.12.13",
     "@types/babel__core": "7.20.5",
@@ -54,8 +54,8 @@
     "webpack-dev-server": "5.0.4"
   },
   "dependencies": {
-    "@anansi/core": "^0.19.5",
-    "@anansi/router": "^0.10.1",
+    "@anansi/core": "^0.20.0",
+    "@anansi/router": "^0.10.2",
     "@ant-design/cssinjs": "1.20.0",
     "@ant-design/icons": "^5.0.1",
     "@babel/runtime": "7.24.7",

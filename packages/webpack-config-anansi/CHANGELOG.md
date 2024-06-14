@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.9](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.8...@anansi/webpack-config@19.0.9) (2024-06-14)
+
+### 💅 Enhancement
+
+* Support any react-refresh version ([b34da24](https://github.com/ntucker/anansi/commit/b34da247915200cbb9e61993257e1fc82bf116ea))
+
 ### [19.0.8](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.7...@anansi/webpack-config@19.0.8) (2024-06-12)
 
 ### 💅 Enhancement
