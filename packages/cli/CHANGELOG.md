@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.29](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.28...@anansi/cli@3.1.29) (2024-06-15)
+
+### 📦 Package
+
+* Widen peerdeps range ([f8e9ef6](https://github.com/ntucker/anansi/commit/f8e9ef6500edf5ec0154d2c3d00800629b857e0d))
+
 ### [3.1.28](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.27...@anansi/cli@3.1.28) (2024-06-14)
 
 **Note:** Version bump only for package @anansi/cli
