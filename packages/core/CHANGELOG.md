@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.0...@anansi/core@0.20.1) (2024-06-18)
+
+### 📦 Package
+
+* Update `@data-client/react` to ^0.12.15 || ^0.13.0 ([#2442](https://github.com/ntucker/anansi/issues/2442)) ([94b37f1](https://github.com/ntucker/anansi/commit/94b37f1b7d1e99bf1f69ba7df749ec98045bb34e))
+* Update all non-major dependencies ([#2440](https://github.com/ntucker/anansi/issues/2440)) ([c9bac84](https://github.com/ntucker/anansi/commit/c9bac84ec665045744dea79b7a4abedadacc3c4f))
+
 ## [0.20.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.5...@anansi/core@0.20.0) (2024-06-14)
 
 ### ⚠ 💥 BREAKING CHANGES
