@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [19.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.10...@anansi/webpack-config@19.0.11) (2024-07-13)
+
+### 📦 Package
+
+* Update linting packages ([#2460](https://github.com/ntucker/anansi/issues/2460)) ([9b34ad4](https://github.com/ntucker/anansi/commit/9b34ad41abd7e1e90029aa38cee8b835918f229c))
+
 ### [19.0.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.9...@anansi/webpack-config@19.0.10) (2024-07-13)
 
 ### 📦 Package

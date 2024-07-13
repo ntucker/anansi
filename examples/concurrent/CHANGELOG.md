@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.4](https://github.com/ntucker/anansi/compare/example-react-18@6.0.3...example-react-18@6.0.4) (2024-07-13)
+
+### 📦 Package
+
+* Update all non-major dependencies to v0.14.0 ([#2459](https://github.com/ntucker/anansi/issues/2459)) ([afa623e](https://github.com/ntucker/anansi/commit/afa623effd1c9cd2e0eba7ca05eb074b5f422495))
+* Update linting packages ([#2460](https://github.com/ntucker/anansi/issues/2460)) ([9b34ad4](https://github.com/ntucker/anansi/commit/9b34ad41abd7e1e90029aa38cee8b835918f229c))
+
 ### [6.0.3](https://github.com/ntucker/anansi/compare/example-react-18@6.0.2...example-react-18@6.0.3) (2024-07-13)
 
 ### 📦 Package
