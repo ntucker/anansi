@@ -228,7 +228,7 @@ __metadata:
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
     yeoman-environment: "npm:4.4.1"
-    yeoman-generator: "npm:^7.3.1"
+    yeoman-generator: "npm:^7.3.2"
   languageName: unknown
   linkType: soft
 
@@ -25845,9 +25845,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^7.3.1":
-  version: 7.3.1
-  resolution: "yeoman-generator@npm:7.3.1"
+"yeoman-generator@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "yeoman-generator@npm:7.3.2"
   dependencies:
     "@types/lodash-es": "npm:^4.17.9"
     "@types/node": "npm:^18.18.5"
@@ -25873,7 +25873,7 @@ __metadata:
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: 10c0/643a2815f68a1b09db456db0cd62c80c2aff48d86326ffce51c75bba099859a58695392109974f16c71da741afd61b1d6b575d53f16f97eae2123db5eb6e8178
+  checksum: 10c0/34018bbd3b6cf232ad6ece07c8c7781035da8e4242732d611baedd3f11d0316a19e7cd28c30e8088666d199ff33429d6f900901dc7e8deaed468c25cd91ba8cb
   languageName: node
   linkType: hard
 
