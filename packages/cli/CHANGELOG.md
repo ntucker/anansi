@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.31](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.30...@anansi/cli@3.1.31) (2024-07-13)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2451](https://github.com/ntucker/anansi/issues/2451)) ([ea19d93](https://github.com/ntucker/anansi/commit/ea19d93b5976c831b92f8589eec22977c51d135e))
+
 ### [3.1.30](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.29...@anansi/cli@3.1.30) (2024-06-18)
 
 **Note:** Version bump only for package @anansi/cli
