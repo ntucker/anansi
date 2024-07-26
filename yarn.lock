@@ -174,7 +174,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
-    "@babel/eslint-parser": "npm:^7.24.8"
+    "@babel/eslint-parser": "npm:^7.25.0"
     "@types/node": "npm:^20.0.0"
     "@typescript-eslint/parser": "npm:^7.17.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -624,9 +624,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.24.8":
-  version: 7.24.8
-  resolution: "@babel/eslint-parser@npm:7.24.8"
+"@babel/eslint-parser@npm:^7.25.0":
+  version: 7.25.0
+  resolution: "@babel/eslint-parser@npm:7.25.0"
   dependencies:
     "@nicolo-ribaudo/eslint-scope-5-internals": "npm:5.1.1-v1"
     eslint-visitor-keys: "npm:^2.1.0"
@@ -634,7 +634,7 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.11.0
     eslint: ^7.5.0 || ^8.0.0 || ^9.0.0
-  checksum: 10c0/fb9a164768ffc941057ac587c1cb059450854a608b55865dfc430a1ac0222115039a5932e5b2559ac887335e5eee5f4e6bc5aca049c94f198a388f2ce0732aa5
+  checksum: 10c0/a8c6b78c26e0596ef53ceddb3d00cfe45b93c879adada3ee5203e3960110a528015e8b36769b299ce8fd640060b54e622faabc00424850978b4693e190482428
   languageName: node
   linkType: hard
 
