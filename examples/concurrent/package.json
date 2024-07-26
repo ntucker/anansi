@@ -58,7 +58,7 @@
     "@anansi/router": "^0.10.2",
     "@ant-design/cssinjs": "1.21.0",
     "@ant-design/icons": "^5.0.1",
-    "@babel/runtime": "7.24.8",
+    "@babel/runtime": "7.25.0",
     "@data-client/endpoint": "0.14.4",
     "@data-client/hooks": "0.2.0",
     "@data-client/img": "0.14.0",
