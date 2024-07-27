@@ -1,7 +1,7 @@
 import path from 'path';
-import variables from 'variables.scss';
+import * as variables from 'variables.scss';
 import 'code.scss';
-import sillyStyle from 'silly.module.scss';
+import * as sillyStyle from 'silly.module.scss';
 
 import { IssueResource } from '@standard-endpoint/github/Issue';
 import StaticBlock from '@standard-endpoint/github/StaticBlock';
@@ -11,8 +11,8 @@ import AngleDownUrl, {
 } from './angle-down-solid.svg';
 import animated from './animated-overlay.gif';
 import { ReactComponent as Copy } from './Copy.svg';
-import style from './index.scss';
-import plain from './plain.css';
+import * as style from './index.scss';
+import * as plain from './plain.css';
 import restHooks from './rest_hooks_logo_and_text.svg';
 import myHtml from './test.html';
 

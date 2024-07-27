@@ -7,7 +7,7 @@ import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { history } from 'navigation';
 
 import { ReactComponent as BigAlertIcon } from './big-alert.svg';
-import styles from './index.scss';
+import * as styles from './index.scss';
 
 function handleRefresh() {
   window.location.reload(true);
