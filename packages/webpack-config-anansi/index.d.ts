@@ -3,14 +3,20 @@ import type { LoaderOptions as WYWOptions } from '@wyw-in-js/webpack-loader';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
 import type { Options as SassOptions } from 'sass-loader';
-import type { OptimizeOptions } from 'svgo';
+import type { optimize } from 'svgo';
 import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type {
   Configuration,
   RuleSetUseItem,
   RuleSetConditionAbsolute,
+  optimize,
 } from 'webpack';
 import type { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+
+type OptimizeOptions =
+  typeof optimize extends (input: any, config: infer O) => any ?
+    Exclude<O, undefined>
+  : never;
 
 export interface Options {
   rootPath?: string;

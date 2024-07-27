@@ -1,7 +1,7 @@
 import path from 'path';
+import * as sillyStyle from 'silly.module.scss';
 import * as variables from 'variables.scss';
 import 'code.scss';
-import * as sillyStyle from 'silly.module.scss';
 
 import { IssueResource } from '@standard-endpoint/github/Issue';
 import StaticBlock from '@standard-endpoint/github/StaticBlock';
