@@ -187,7 +187,7 @@ yarn add --dev react-refresh
       ```
 
       ```js
-      import styles from './myfile.scss';
+      import * as styles from './myfile.scss';
 
       export default function MyComponent() {
         return <div className={styles.button}>Hello world</div>;
@@ -569,7 +569,7 @@ This makes all imports of supported formats typed correctly, including svgs, med
 e.g.,
 
 ```tsx
-import plain from './plain.css';
+import * as plain from './plain.css';
 import angleDownUrl, {
   ReactComponent as AngleDown,
 } from './angle-down-solid.svg';

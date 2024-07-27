@@ -33,7 +33,7 @@ const home = css`
   }
 `;
 <% } else { %>
-import styles from './App.scss';
+import * as styles from './App.scss';
 const home = styles.home
 <% } %>
 
