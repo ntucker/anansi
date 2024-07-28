@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.4.13](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.12...@anansi/generator-js@12.4.13) (2024-07-28)
+
+### 🐛 Bug Fix
+
+* Import css-modules as named ([acb279c](https://github.com/ntucker/anansi/commit/acb279cd976f147e914044262416b263819f91f4))
+
+### 📦 Package
+
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+
 ### [12.4.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.11...@anansi/generator-js@12.4.12) (2024-07-13)
 
 ### 📦 Package

@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.0](https://github.com/ntucker/anansi/compare/example-typescript@13.0.20...example-typescript@13.1.0) (2024-07-28)
+
+### 🚀 Features
+
+* Support sass-embedded ([8752212](https://github.com/ntucker/anansi/commit/8752212340dd639c6186ffd59d5c2ca048026054))
+
+### 💅 Enhancement
+
+* Ensure we use legacy sass options to keep compatibility ([488f092](https://github.com/ntucker/anansi/commit/488f0928c1962e1eb2ec2a9b26ae26940351c753))
+
+### 🐛 Bug Fix
+
+* Import css-modules as named ([acb279c](https://github.com/ntucker/anansi/commit/acb279cd976f147e914044262416b263819f91f4))
+
+### 📦 Package
+
+* Remove @types/classnames in favor of package types ([1e42398](https://github.com/ntucker/anansi/commit/1e4239864ed24e5b3d58a2fbaa32eb52b57d848d))
+* Remove @types/svgo in favor of package types ([48cb8e6](https://github.com/ntucker/anansi/commit/48cb8e663ab4af50976dd1f278d02351088b449e))
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update all non-major dependencies ([#2462](https://github.com/ntucker/anansi/issues/2462)) ([3856d0f](https://github.com/ntucker/anansi/commit/3856d0f3ac35de3167a3f3bb6260ce06721507aa))
+* Update all non-major dependencies ([#2464](https://github.com/ntucker/anansi/issues/2464)) ([3e4fca6](https://github.com/ntucker/anansi/commit/3e4fca6898608e671af6fd44d2bb9174970a7eab))
+* Update all non-major dependencies ([#2473](https://github.com/ntucker/anansi/issues/2473)) ([d70eb5b](https://github.com/ntucker/anansi/commit/d70eb5bf67a54c5a58ae6c059873a7e05c79ffdb))
+* Update babel packages to ^7.25.0 ([#2469](https://github.com/ntucker/anansi/issues/2469)) ([281473a](https://github.com/ntucker/anansi/commit/281473ac5d9976a22776887f1c4f6d3c58d008dd))
+* Update storybook monorepo to v8.2.5 ([#2463](https://github.com/ntucker/anansi/issues/2463)) ([1a0cb82](https://github.com/ntucker/anansi/commit/1a0cb8246fdd7f53cc6bc0a84e2de401f29edd72))
+* Update storybook monorepo to v8.2.6 ([#2474](https://github.com/ntucker/anansi/issues/2474)) ([c2688c1](https://github.com/ntucker/anansi/commit/c2688c19c330fd87d735f1f10d6a6f053399223f))
+
 ### [13.0.20](https://github.com/ntucker/anansi/compare/example-typescript@13.0.19...example-typescript@13.0.20) (2024-07-13)
 
 ### 📦 Package

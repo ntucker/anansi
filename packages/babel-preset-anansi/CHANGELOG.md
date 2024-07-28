@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.1...@anansi/babel-preset@6.0.2) (2024-07-28)
+
+### 💅 Enhancement
+
+* Support .ctsx extensions ([5342972](https://github.com/ntucker/anansi/commit/5342972a4db551872fd7fa2de980c407dbb64a9e))
+
+### 📦 Package
+
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update babel packages to ^7.25.0 ([#2469](https://github.com/ntucker/anansi/issues/2469)) ([281473a](https://github.com/ntucker/anansi/commit/281473ac5d9976a22776887f1c4f6d3c58d008dd))
+
 ### [6.0.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.0...@anansi/babel-preset@6.0.1) (2024-07-13)
 
 ### 📦 Package

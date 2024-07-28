@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.11...@anansi/webpack-config@19.1.0) (2024-07-28)
+
+### 🚀 Features
+
+* Support sass-embedded ([8752212](https://github.com/ntucker/anansi/commit/8752212340dd639c6186ffd59d5c2ca048026054))
+
+### 💅 Enhancement
+
+* Ensure we use legacy sass options to keep compatibility ([488f092](https://github.com/ntucker/anansi/commit/488f0928c1962e1eb2ec2a9b26ae26940351c753))
+
+### 🐛 Bug Fix
+
+* Import css-modules as named ([acb279c](https://github.com/ntucker/anansi/commit/acb279cd976f147e914044262416b263819f91f4))
+
+### 📦 Package
+
+* Remove @types/svgo in favor of package types ([48cb8e6](https://github.com/ntucker/anansi/commit/48cb8e663ab4af50976dd1f278d02351088b449e))
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update `@wyw-in-js/webpack-loader` to ^0.5.4 ([#2468](https://github.com/ntucker/anansi/issues/2468)) ([ad683d4](https://github.com/ntucker/anansi/commit/ad683d4725f4c171795e5f1963f9c345e97ba1b4))
+* Update `sass-loader` to v16 ([1de63aa](https://github.com/ntucker/anansi/commit/1de63aa2cf7833741a9196036faeb6e65c6bebda))
+* Update all non-major dependencies ([#2462](https://github.com/ntucker/anansi/issues/2462)) ([3856d0f](https://github.com/ntucker/anansi/commit/3856d0f3ac35de3167a3f3bb6260ce06721507aa))
+* Update all non-major dependencies ([#2473](https://github.com/ntucker/anansi/issues/2473)) ([d70eb5b](https://github.com/ntucker/anansi/commit/d70eb5bf67a54c5a58ae6c059873a7e05c79ffdb))
+* Update webpack packages ([#2471](https://github.com/ntucker/anansi/issues/2471)) ([a12a3b9](https://github.com/ntucker/anansi/commit/a12a3b9bfe3199d33fcbc8342a5dc059aeec7a42))
+
+### 📝 Documentation
+
+* Recommend sass-embedded instead of node-sass ([fbfcd03](https://github.com/ntucker/anansi/commit/fbfcd039db07aea39ce13256e46504031e07acfe))
+
 ### [19.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.10...@anansi/webpack-config@19.0.11) (2024-07-13)
 
 ### 📦 Package

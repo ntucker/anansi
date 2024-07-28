@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.5](https://github.com/ntucker/anansi/compare/example-react-18@6.0.4...example-react-18@6.0.5) (2024-07-28)
+
+### 📦 Package
+
+* Remove @types/classnames in favor of package types ([1e42398](https://github.com/ntucker/anansi/commit/1e4239864ed24e5b3d58a2fbaa32eb52b57d848d))
+* Remove @types/svgo in favor of package types ([48cb8e6](https://github.com/ntucker/anansi/commit/48cb8e663ab4af50976dd1f278d02351088b449e))
+* Update `@babel/core` to v7.24.9 ([#2466](https://github.com/ntucker/anansi/issues/2466)) ([d940aca](https://github.com/ntucker/anansi/commit/d940aca345ea6eb5024eb691bdac221cb8266ec1))
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update all non-major dependencies ([#2462](https://github.com/ntucker/anansi/issues/2462)) ([3856d0f](https://github.com/ntucker/anansi/commit/3856d0f3ac35de3167a3f3bb6260ce06721507aa))
+* Update all non-major dependencies ([#2464](https://github.com/ntucker/anansi/issues/2464)) ([3e4fca6](https://github.com/ntucker/anansi/commit/3e4fca6898608e671af6fd44d2bb9174970a7eab))
+* Update all non-major dependencies ([#2473](https://github.com/ntucker/anansi/issues/2473)) ([d70eb5b](https://github.com/ntucker/anansi/commit/d70eb5bf67a54c5a58ae6c059873a7e05c79ffdb))
+* Update babel packages to ^7.25.0 ([#2469](https://github.com/ntucker/anansi/issues/2469)) ([281473a](https://github.com/ntucker/anansi/commit/281473ac5d9976a22776887f1c4f6d3c58d008dd))
+* Update linting packages ([#2465](https://github.com/ntucker/anansi/issues/2465)) ([30dec14](https://github.com/ntucker/anansi/commit/30dec147c1f52d5b85cebeb3832d0581dbe4a95f))
+* Update linting packages to v7.16.1 ([#2461](https://github.com/ntucker/anansi/issues/2461)) ([7e8c6bd](https://github.com/ntucker/anansi/commit/7e8c6bd92ff8cfe553dd1e39e34867353a9d0255))
+
 ### [6.0.4](https://github.com/ntucker/anansi/compare/example-react-18@6.0.3...example-react-18@6.0.4) (2024-07-13)
 
 ### 📦 Package

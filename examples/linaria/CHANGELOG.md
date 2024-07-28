@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.37](https://github.com/ntucker/anansi/compare/example-linaria@6.2.36...example-linaria@6.2.37) (2024-07-28)
+
+### 📦 Package
+
+* Remove @types/classnames in favor of package types ([1e42398](https://github.com/ntucker/anansi/commit/1e4239864ed24e5b3d58a2fbaa32eb52b57d848d))
+* Remove @types/svgo in favor of package types ([48cb8e6](https://github.com/ntucker/anansi/commit/48cb8e663ab4af50976dd1f278d02351088b449e))
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update babel packages to ^7.25.0 ([#2469](https://github.com/ntucker/anansi/issues/2469)) ([281473a](https://github.com/ntucker/anansi/commit/281473ac5d9976a22776887f1c4f6d3c58d008dd))
+
 ### [6.2.36](https://github.com/ntucker/anansi/compare/example-linaria@6.2.35...example-linaria@6.2.36) (2024-07-13)
 
 **Note:** Version bump only for package example-linaria

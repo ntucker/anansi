@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.2...@anansi/core@0.20.3) (2024-07-28)
+
+### 📦 Package
+
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update webpack packages ([#2471](https://github.com/ntucker/anansi/issues/2471)) ([a12a3b9](https://github.com/ntucker/anansi/commit/a12a3b9bfe3199d33fcbc8342a5dc059aeec7a42))
+
 ### [0.20.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.1...@anansi/core@0.20.2) (2024-07-13)
 
 ### 📦 Package

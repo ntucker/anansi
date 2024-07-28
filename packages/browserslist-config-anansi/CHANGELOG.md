@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.5.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.5.0...@anansi/browserslist-config@1.5.1) (2024-07-28)
+
+### 📦 Package
+
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+
 ## [1.5.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.4.3...@anansi/browserslist-config@1.5.0) (2024-01-19)
 
 ### 🚀 Features

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.5](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.4...@anansi/jest-preset@0.11.5) (2024-07-28)
+
+### 💅 Enhancement
+
+* Move css-module mocking to not depend on external library ([6fefa9e](https://github.com/ntucker/anansi/commit/6fefa9ea566d3973d2e3921d9aaa6de6b6c25f1c))
+
+### 🐛 Bug Fix
+
+* import * as styles for css modules ([3cd0a1d](https://github.com/ntucker/anansi/commit/3cd0a1dc857d16b22984fef79f2ee036fed19a25))
+
+### 📦 Package
+
+* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+* Update `ts-jest` to ^29.2.3 ([#2467](https://github.com/ntucker/anansi/issues/2467)) ([4329686](https://github.com/ntucker/anansi/commit/43296866114194a75961f5eeca77b8965789c611))
+* Update all non-major dependencies ([#2462](https://github.com/ntucker/anansi/issues/2462)) ([3856d0f](https://github.com/ntucker/anansi/commit/3856d0f3ac35de3167a3f3bb6260ce06721507aa))
+
 ### [0.11.4](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.3...@anansi/jest-preset@0.11.4) (2024-07-13)
 
 ### 📦 Package
