@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@anansi/core": "^0.20.2",
-    "@types/node": "^20.0.0"
+    "@types/node": "^22.0.0"
   },
   "dependencies": {
     "@anansi/generator-js": "workspace:^",
