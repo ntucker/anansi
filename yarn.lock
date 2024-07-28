@@ -5788,15 +5788,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/classnames@npm:2.3.1":
-  version: 2.3.1
-  resolution: "@types/classnames@npm:2.3.1"
-  dependencies:
-    classnames: "npm:*"
-  checksum: 10c0/6b71e5220aa3f04dbe1eba910f7755b880a2c6e3ba0ebf71fe73db99d58628022de06340a029c97db093e31d7981bc695b6c2ce65b2a58492d245e2cbe44a47d
-  languageName: node
-  linkType: hard
-
 "@types/color-name@npm:^1.1.1":
   version: 1.1.1
   resolution: "@types/color-name@npm:1.1.1"
@@ -9047,7 +9038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:*, classnames@npm:2.5.1, classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1, classnames@npm:^2.3.2, classnames@npm:^2.5.1":
+"classnames@npm:2.5.1, classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.3, classnames@npm:^2.2.5, classnames@npm:^2.2.6, classnames@npm:^2.3.1, classnames@npm:^2.3.2, classnames@npm:^2.5.1":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
   checksum: 10c0/afff4f77e62cea2d79c39962980bf316bacb0d7c49e13a21adaadb9221e1c6b9d3cdb829d8bb1b23c406f4e740507f37e1dcf506f7e3b7113d17c5bab787aa69
@@ -11957,7 +11948,6 @@ __metadata:
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:^7.20.0"
-    "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:^8.21.3"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:18.3.3"
@@ -12013,7 +12003,6 @@ __metadata:
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:7.20.5"
-    "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:8.56.11"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:22.0.0"
@@ -12071,7 +12060,6 @@ __metadata:
     "@storybook/preview-api": "npm:8.2.6"
     "@storybook/react": "npm:8.2.6"
     "@types/babel__core": "npm:^7.20.0"
-    "@types/classnames": "npm:2.3.1"
     "@types/eslint": "npm:^8.21.3"
     "@types/jest": "npm:29.5.12"
     "@types/lodash": "npm:4.17.7"
