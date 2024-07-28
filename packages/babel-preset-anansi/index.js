@@ -175,6 +175,7 @@ function buildPreset(api, options = {}) {
     '.mts',
     '.mtsx',
     '.cts',
+    '.ctsx',
     '.js',
     '.jsx',
     '.es',
