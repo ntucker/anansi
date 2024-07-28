@@ -73,7 +73,7 @@ module.exports = {
     moduleNameMapper: {
       '\\.(apng|png|jpg|gif|ico|webp|avif|cur|ani|otf|eot|woff2|woff|ttf|pdf|mp4|webm|wav|mp3|m4a|aac|oga)$':
         require.resolve('./mocks/fileMock.js'),
-      '\\.(css|scss)$': require.resolve('identity-obj-proxy'),
+      '\\.(css|scss)$': require.resolve('./mocks/cssMock.js'),
       '\\.(svg)$': require.resolve('./mocks/svgrMock.js'),
       ...pathsToModuleNameMapper(options.paths || [], {
         prefix: `<rootDir>/${options.baseUrl}/`,
