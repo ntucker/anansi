@@ -525,7 +525,7 @@ Used to customize [terser](https://github.com/webpack-contrib/terser-webpack-plu
 
 Otherwise, these [configure the sass-loader](https://github.com/webpack-contrib/sass-loader#options)
 
-For instance, using node-sass can be done like so:
+For instance, using sass-embedded can be done like so:
 
 <details><summary><b>/webpack.config.js</b></summary>
 
@@ -535,7 +535,7 @@ const { makeConfig } = require('@anansi/webpack-config');
 // See #options below
 const options = {
   sassOptions: {
-    implementation: require("sass"),
+    implementation: require("sass-embedded"),
   }
 };
 
