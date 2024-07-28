@@ -61,7 +61,6 @@
     "babel-jest": "^29.7.0",
     "core-js": "^3.21.0",
     "cross-fetch": "^4.0.0",
-    "identity-obj-proxy": "^3.0.0",
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.1",
     "node-fetch": "^3.3.2",
