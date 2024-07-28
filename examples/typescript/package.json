@@ -38,7 +38,6 @@
     "@types/jest": "29.5.12",
     "@types/lodash": "4.17.7",
     "@types/parse-link-header": "2.0.3",
-    "@types/prettier": "^3.0.0",
     "@types/prop-types": "^15.7.5",
     "@types/react-router": "5.1.20",
     "@types/react-router-dom": "5.3.3",
