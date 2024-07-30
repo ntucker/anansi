@@ -440,6 +440,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ant-design/cssinjs-utils@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@ant-design/cssinjs-utils@npm:1.0.3"
+  dependencies:
+    "@ant-design/cssinjs": "npm:^1.21.0"
+    "@babel/runtime": "npm:^7.23.2"
+    rc-util: "npm:^5.38.0"
+  peerDependencies:
+    react: ">=16.9.0"
+    react-dom: ">=16.9.0"
+  checksum: 10c0/928909125ec88c631577d1ecfdad652e8c1ca948a474605feda0dcd83127d1c401b1c0ec29847062b02f0f6f55d6ff6e22bb82a7c89550c10b21c0192d2065df
+  languageName: node
+  linkType: hard
+
 "@ant-design/cssinjs@npm:1.21.0, @ant-design/cssinjs@npm:^1.21.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
   version: 1.21.0
   resolution: "@ant-design/cssinjs@npm:1.21.0"
@@ -465,7 +479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^5.0.0, @ant-design/icons@npm:^5.0.1, @ant-design/icons@npm:^5.3.7":
+"@ant-design/icons@npm:^5.0.0, @ant-design/icons@npm:^5.0.1, @ant-design/icons@npm:^5.4.0":
   version: 5.4.0
   resolution: "@ant-design/icons@npm:5.4.0"
   dependencies:
@@ -2994,9 +3008,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.14.6, @data-client/react@npm:^0.14.0":
-  version: 0.14.6
-  resolution: "@data-client/react@npm:0.14.6"
+"@data-client/react@npm:0.14.7, @data-client/react@npm:^0.14.0":
+  version: 0.14.7
+  resolution: "@data-client/react@npm:0.14.7"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
     "@data-client/core": "npm:^0.14.6"
@@ -3010,7 +3024,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/cc73e503c35e6eec49745ee06a3a6e512f186ad4d8693e63ea219d0e8571a14342a046cd55087d9cef98bb84a08b98cc0631eff5010ec0d6b14cf0139aa9a81e
+  checksum: 10c0/727a5a17c5b4d33463b1795a49289913009f5e842e792b2ebeaa3487d489bca7c08786eb7b6d1708ec3e54a502951b3f5492fc1552802181f73bc39328d2c27f
   languageName: node
   linkType: hard
 
@@ -7503,13 +7517,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.19.3":
-  version: 5.19.3
-  resolution: "antd@npm:5.19.3"
+"antd@npm:5.19.4":
+  version: 5.19.4
+  resolution: "antd@npm:5.19.4"
   dependencies:
     "@ant-design/colors": "npm:^7.1.0"
     "@ant-design/cssinjs": "npm:^1.21.0"
-    "@ant-design/icons": "npm:^5.3.7"
+    "@ant-design/cssinjs-utils": "npm:^1.0.3"
+    "@ant-design/icons": "npm:^5.4.0"
     "@ant-design/react-slick": "npm:~1.1.2"
     "@babel/runtime": "npm:^7.24.8"
     "@ctrl/tinycolor": "npm:^3.6.1"
@@ -7558,7 +7573,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/023ca3597ec55de359736d0d5e31dcbbc7ecc9183b631677ae551c26c964bf1f2bf3aa4dac734562d1ba7e6128aac35261eaa35a1d468fab6dbb401a37f99bba
+  checksum: 10c0/19ba9111a04c7eaa4cb984524c5c9e3b7ac5152a9bab7a25d377473fdd29d49340f68b0b0336355d84038dca920c0391423566508e160389b7d4414f8a2a660f
   languageName: node
   linkType: hard
 
@@ -10399,15 +10414,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:4.3.5, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:~4.3.4":
-  version: 4.3.5
-  resolution: "debug@npm:4.3.5"
+"debug@npm:4, debug@npm:4.3.6, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:~4.3.4":
+  version: 4.3.6
+  resolution: "debug@npm:4.3.6"
   dependencies:
     ms: "npm:2.1.2"
   peerDependenciesMeta:
     supports-color:
       optional: true
-  checksum: 10c0/082c375a2bdc4f4469c99f325ff458adad62a3fc2c482d59923c260cb08152f34e2659f72b3767db8bb2f21ca81a60a42d1019605a412132d7b9f59363a005cc
+  checksum: 10c0/3293416bff072389c101697d4611c402a6bacd1900ac20c0492f61a9cdd6b3b29750fc7f5e299f8058469ef60ff8fb79b86395a30374fbd2490113c1c7112285
   languageName: node
   linkType: hard
 
@@ -11997,7 +12012,7 @@ __metadata:
     "@data-client/endpoint": "npm:0.14.6"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.14.0"
-    "@data-client/react": "npm:0.14.6"
+    "@data-client/react": "npm:0.14.7"
     "@data-client/rest": "npm:0.14.6"
     "@data-client/test": "npm:0.14.0"
     "@linaria/core": "npm:6.2.0"
@@ -12011,7 +12026,7 @@ __metadata:
     "@types/react-test-renderer": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:7.18.0"
     "@typescript-eslint/parser": "npm:7.18.0"
-    antd: "npm:5.19.3"
+    antd: "npm:5.19.4"
     classnames: "npm:2.5.1"
     core-js: "npm:3.37.1"
     eslint: "npm:8.57.0"
@@ -12050,7 +12065,7 @@ __metadata:
     "@babel/core": "npm:^7.21.3"
     "@babel/runtime": "npm:7.25.0"
     "@data-client/graphql": "npm:0.14.6"
-    "@data-client/react": "npm:0.14.6"
+    "@data-client/react": "npm:0.14.7"
     "@data-client/rest": "npm:0.14.6"
     "@data-client/test": "npm:0.14.0"
     "@storybook/addon-essentials": "npm:8.2.6"
@@ -12073,7 +12088,7 @@ __metadata:
     "@types/react-test-renderer": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
     "@typescript-eslint/parser": "npm:^7.0.0"
-    antd: "npm:5.19.3"
+    antd: "npm:5.19.4"
     classnames: "npm:2.5.1"
     core-js: "npm:3.37.1"
     eslint: "npm:^8.36.0"
@@ -14202,12 +14217,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:9.1.3":
-  version: 9.1.3
-  resolution: "husky@npm:9.1.3"
+"husky@npm:9.1.4":
+  version: 9.1.4
+  resolution: "husky@npm:9.1.4"
   bin:
     husky: bin.js
-  checksum: 10c0/3fb8657ff97f529dab0b9a0afa6b818ec604f60c39abc13e8e3f4263ea30a3aa6fff7a1b625b8a53700899ce0ea2f5f656981c46b8f1837cfd84ddb6da883fb2
+  checksum: 10c0/f5185003bef9ad9ec3f40e821963e4c12409b993fdcab89e3d660bed7d8c9d8bfd399f05222e27e0ead6589601fb1bb08d1a589c51751a4ab0547ead3429b8de
   languageName: node
   linkType: hard
 
@@ -22350,7 +22365,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.1"
     eslint-plugin-react: "npm:7.35.0"
     eslint-plugin-react-hooks: "npm:4.6.2"
-    husky: "npm:9.1.3"
+    husky: "npm:9.1.4"
     jest: "npm:^29.5.0"
     lint-staged: "npm:15.2.7"
     prettier: "npm:3.3.3"
@@ -23493,13 +23508,13 @@ __metadata:
   linkType: hard
 
 "start-server-and-test@npm:^2.0.0":
-  version: 2.0.4
-  resolution: "start-server-and-test@npm:2.0.4"
+  version: 2.0.5
+  resolution: "start-server-and-test@npm:2.0.5"
   dependencies:
     arg: "npm:^5.0.2"
     bluebird: "npm:3.7.2"
     check-more-types: "npm:2.24.0"
-    debug: "npm:4.3.5"
+    debug: "npm:4.3.6"
     execa: "npm:5.1.1"
     lazy-ass: "npm:1.6.0"
     ps-tree: "npm:1.2.0"
@@ -23508,7 +23523,7 @@ __metadata:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 10c0/d52dda98fb392d9b161d2921e8d289e5bc90b61d0161a8638f9cf25f411b60635dd26444e0b7be25cf595c3248907d834d94b1fcb063b7ad09532471ce97aceb
+  checksum: 10c0/50b40e0b14ad545c7f0f147f883b74ade14cfcbd01db8d5e039bf638794607986c568c616c935ca03f6f94bfe927510978145c31c70fd7a027e054abd594f107
   languageName: node
   linkType: hard
 
