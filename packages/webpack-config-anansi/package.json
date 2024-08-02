@@ -62,7 +62,7 @@
     "@babel/runtime": "^7.17.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@svgr/webpack": "^8.1.0",
-    "@types/sass-loader": "^8.0.8",
+    "@types/sass-loader": "^8.0.9",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@vue/preload-webpack-plugin": "^2.0.0",
     "@wyw-in-js/webpack-loader": "^0.5.4",
