@@ -49,9 +49,6 @@ scanner_configs:
       - advisory_id: 1005151
         changed_by: ntucker
         notes: depen
-      - advisory_id: 1004946
-        changed_by: ntucker
-        notes: ansi-regex transitive dep of node-sass
       - advisory_id: 1004967
         changed_by: ntucker
         notes: abc

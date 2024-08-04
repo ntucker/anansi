@@ -55,7 +55,7 @@
         "@anansi/webpack-config",
         "@pmmmwh/react-refresh-webpack-plugin",
         "sass",
-        "node-sass",
+        "sass-embedded",
         "sass-resources-loader",
         "postcss",
         "postcss-preset-env",

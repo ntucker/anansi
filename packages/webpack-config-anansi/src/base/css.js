@@ -99,15 +99,12 @@ export default function getStyleRules({
   let foundSass = sassOptions?.implementation;
   try {
     if (!foundSass)
-      foundSass =
-        require.resolve('sass') ||
-        require.resolve('node-sass') ||
-        require.resolve('sass-embedded');
+      foundSass = require.resolve('sass') || require.resolve('sass-embedded');
   } catch (e) {
     foundSass = sassOptions?.implementation;
     if (sassOptions !== false) {
       console.warn(
-        '`sass`, `node-sass` or `sass-embedded` packages not found. SASS cannot be used.',
+        '`sass` or `sass-embedded` packages not found. SASS cannot be used.',
       );
     }
   }

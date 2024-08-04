@@ -128,7 +128,6 @@
     "@hot-loader/react-dom": "^16.0.0 || ^17.0.0",
     "@storybook/react": "^6.2.0 || ^7.0.0 || ^8.0.0",
     "@types/react": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "node-sass": "^7.0.1 || ^8.0.0 || ^9.0.0",
     "react": "*",
     "react-refresh": "*",
     "sass": "^1.3.0",
@@ -149,9 +148,6 @@
       "optional": true
     },
     "@types/react": {
-      "optional": true
-    },
-    "node-sass": {
       "optional": true
     },
     "react": {
