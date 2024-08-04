@@ -73,7 +73,7 @@ export default function makeDevConfig(
       'Access-Control-Allow-Methods': '*',
       'Access-Control-Allow-Headers': '*',
     },
-    allowedHosts: ['localhost', '127.0.0.1'],
+    allowedHosts: ['localhost', '127.0.0.1', '.csb.app'],
     server,
     devMiddleware: {
       publicPath: config.output.publicPath,
