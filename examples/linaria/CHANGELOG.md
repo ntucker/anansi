@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.38](https://github.com/ntucker/anansi/compare/example-linaria@6.2.37...example-linaria@6.2.38) (2024-08-05)
+
+### 📦 Package
+
+* Update `core-js` to v3.38.0 ([#2488](https://github.com/ntucker/anansi/issues/2488)) ([d9ce791](https://github.com/ntucker/anansi/commit/d9ce791f94e4a9f8ba1b643e3a95ad1aec23384b))
+* Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
+
 ### [6.2.37](https://github.com/ntucker/anansi/compare/example-linaria@6.2.36...example-linaria@6.2.37) (2024-07-28)
 
 ### 📦 Package

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [20.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.1.0...@anansi/webpack-config@20.0.0) (2024-08-05)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* node-sass is no longer supported. use sass or
+sass-embedded
+
+### 🚀 Features
+
+* Drop support for node-sass pkg for sass ([efd5cf6](https://github.com/ntucker/anansi/commit/efd5cf6e0cf6cd3219dbaafde30b6618c83c4535))
+
+### 💅 Enhancement
+
+* Dev server automatically works with codesandbox ([029c83c](https://github.com/ntucker/anansi/commit/029c83cfeee128a742f0c2304893002e807eecc5))
+
+### 📦 Package
+
+* Update `postcss-preset-env` to v10 ([#2483](https://github.com/ntucker/anansi/issues/2483)) ([b4a86ff](https://github.com/ntucker/anansi/commit/b4a86ff233613d6d5269748c617d273dae9d3fe4))
+* Update all non-major dependencies ([#2481](https://github.com/ntucker/anansi/issues/2481)) ([cebdfd5](https://github.com/ntucker/anansi/commit/cebdfd5777e218435707d4422ae3ea26735bd4a1))
+* Update all non-major dependencies ([#2485](https://github.com/ntucker/anansi/issues/2485)) ([6e4d443](https://github.com/ntucker/anansi/commit/6e4d443ec0aad82cbd0118d2040ed489ac829f39))
+
 ## [19.1.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@19.0.11...@anansi/webpack-config@19.1.0) (2024-07-28)
 
 ### 🚀 Features

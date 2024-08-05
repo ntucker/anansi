@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [13.1.1](https://github.com/ntucker/anansi/compare/example-typescript@13.1.0...example-typescript@13.1.1) (2024-08-05)
+
+### 📦 Package
+
+* Update `core-js` to v3.38.0 ([#2488](https://github.com/ntucker/anansi/issues/2488)) ([d9ce791](https://github.com/ntucker/anansi/commit/d9ce791f94e4a9f8ba1b643e3a95ad1aec23384b))
+* Update all non-major dependencies ([#2479](https://github.com/ntucker/anansi/issues/2479)) ([e38223e](https://github.com/ntucker/anansi/commit/e38223ee0a42a39d1d4f5fecd69e8d1a9a73ad90))
+* Update all non-major dependencies ([#2481](https://github.com/ntucker/anansi/issues/2481)) ([cebdfd5](https://github.com/ntucker/anansi/commit/cebdfd5777e218435707d4422ae3ea26735bd4a1))
+* Update all non-major dependencies ([#2485](https://github.com/ntucker/anansi/issues/2485)) ([6e4d443](https://github.com/ntucker/anansi/commit/6e4d443ec0aad82cbd0118d2040ed489ac829f39))
+* Update storybook monorepo to v8.2.7 ([#2486](https://github.com/ntucker/anansi/issues/2486)) ([ab41084](https://github.com/ntucker/anansi/commit/ab41084e64cb8deb80b8e86fe4ef0d6ade312f7f))
+* Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
+
 ## [13.1.0](https://github.com/ntucker/anansi/compare/example-typescript@13.0.20...example-typescript@13.1.0) (2024-07-28)
 
 ### 🚀 Features

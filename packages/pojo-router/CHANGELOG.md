@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.2](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.1...@pojo-router/core@0.9.2) (2024-08-05)
+
+### 📦 Package
+
+* Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
+
 ### [0.9.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.0...@pojo-router/core@0.9.1) (2024-07-28)
 
 ### 📦 Package

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.17.15](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.14...@anansi/eslint-plugin@0.17.15) (2024-08-05)
+
+### 📦 Package
+
+* Update linting packages ([#2478](https://github.com/ntucker/anansi/issues/2478)) ([856c077](https://github.com/ntucker/anansi/commit/856c077457efb04cf50ef60b6cd96b76fbadff12))
+* Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
+
 ### [0.17.14](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.13...@anansi/eslint-plugin@0.17.14) (2024-07-28)
 
 ### 📦 Package
