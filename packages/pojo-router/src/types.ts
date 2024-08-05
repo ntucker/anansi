@@ -9,7 +9,7 @@ import type {
 
 // styled-components uses this to have theme defined.
 // https://styled-components.com/docs/api#create-a-declarations-file
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface DefaultRoutePojo {}
 
 export type AnyIfEmpty<T extends object> = keyof T extends never ? any : T;
