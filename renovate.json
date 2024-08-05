@@ -127,20 +127,29 @@
     },
     {
       "extends": ["packages:linters"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "groupSlug": "linters",
-      "groupName": "linting packages"
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupSlug": "validation",
+      "groupName": "validation packages"
     },
     {
-      "groupSlug": "linters",
-      "groupName": "linting packages",
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupSlug": "validation",
+      "groupName": "validation packages",
+      "matchUpdateTypes": ["minor", "patch"],
       "matchPackageNames": [
         "@anansi/eslint-plugin",
         "prettier",
         "eslint-plugin-prettier",
+        "@typescript-eslint/parser",
         "@typescript-eslint/eslint-plugin"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "@typescript-eslint/parser",
+        "@typescript-eslint/eslint-plugin"
+      ],
+      "matchUpdateTypes": ["major"],
+      "groupSlug": "typescript-eslint"
     },
     {
       "matchPackageNames": [
