@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.17.16](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.15...@anansi/eslint-plugin@0.17.16) (2024-08-24)
+
+### 🐛 Bug Fix
+
+* Compatibility across typescript-eslint 7 and 8 ([6123197](https://github.com/ntucker/anansi/commit/61231979a144dc465589a1da9f04b588d1e471c8))
+
+### 📦 Package
+
+* Update validation packages to v8.2.0 ([#2489](https://github.com/ntucker/anansi/issues/2489)) ([ec49f12](https://github.com/ntucker/anansi/commit/ec49f12f24c8ccfdfb6e8e5a16405d981b349f4f))
+
 ### [0.17.15](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.14...@anansi/eslint-plugin@0.17.15) (2024-08-05)
 
 ### 📦 Package
