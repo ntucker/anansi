@@ -36,10 +36,12 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-import-resolver-webpack": "^0.13.8",
-    "eslint-plugin-jsx-a11y": "^6.9.0"
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "semver": "^7.6.3"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "@types/semver": "^7"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
