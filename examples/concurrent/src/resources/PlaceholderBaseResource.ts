@@ -1,4 +1,4 @@
-import { Denormalize, Entity, Schema } from '@data-client/rest';
+import { Entity } from '@data-client/rest';
 import {
   RestEndpoint,
   createResource,
@@ -8,12 +8,8 @@ import {
 } from '@data-client/rest';
 
 export abstract class PlaceholderEntity extends Entity {
-  readonly id: number = 0;
-
   // all Resources of `jsonplaceholder` use an id for the primary key
-  pk() {
-    return `${this.id}`;
-  }
+  readonly id: number = 0;
 }
 
 /** Common patterns in the https://jsonplaceholder.typicode.com API */
