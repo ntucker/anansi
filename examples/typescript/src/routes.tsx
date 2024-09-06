@@ -6,7 +6,7 @@ import {
   RouteChildrenProps,
 } from 'react-router-dom';
 
-import lazyPage from 'components/lazyPage';
+import lazyPage from '@/components/lazyPage';
 
 const Routes = ({ location }: RouteChildrenProps) => (
   <Switch location={location} key={location.pathname}>

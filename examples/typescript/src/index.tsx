@@ -1,13 +1,11 @@
 import { DataProvider } from '@data-client/react';
 import ReactDOM from 'react-dom/client';
-import { Router, RouteChildrenProps } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
-import { history } from 'navigation';
-
-import 'style/main.scss';
-
-import ErrorBoundary from 'components/ErrorBoundary';
-import ErrorLoggerContext from 'lib/ErrorLoggerContext';
+import ErrorBoundary from '@/components/ErrorBoundary';
+import ErrorLoggerContext from '@/lib/ErrorLoggerContext';
+import { history } from '@/navigation';
+import '@/style/main.scss';
 
 import App from './App';
 

@@ -3,7 +3,7 @@ import { RouteProvider } from '@anansi/router';
 import type { ReactNode } from 'react';
 import { createBrowserHistory } from 'history';
 
-import { createRouter } from './routing';
+import { createRouter } from '@/routing';
 
 export default function RootProvider({ children, ...rest }: RootProps) {
   return (

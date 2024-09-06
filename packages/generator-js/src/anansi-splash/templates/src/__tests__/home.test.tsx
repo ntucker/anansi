@@ -1,9 +1,10 @@
 import renderer from 'react-test-renderer';
 import { mockInitialState } from '@data-client/test';
-import { ExchangeRatesFixtures } from 'resources/ExchangeRates';
+
+import { ExchangeRatesFixtures } from '@/resources/ExchangeRates';
+import Home from '@/pages/Home';
 
 import RootProvider from '../RootProvider';
-import Home from '../pages/Home';
 
 it('renders correctly', () => {
   const tree = renderer

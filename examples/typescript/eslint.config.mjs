@@ -6,7 +6,9 @@ export default [
   {
     settings: {
       'import/resolver': {
-        typescript: { project: path.resolve(import.meta.dirname, './tsconfig.json') },
+        typescript: {
+          project: path.resolve(import.meta.dirname, './tsconfig.json'),
+        },
       },
     },
   },

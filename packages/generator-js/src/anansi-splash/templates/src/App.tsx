@@ -4,9 +4,9 @@ import { AsyncBoundary } from '@data-client/react';
 
 <% if (style === 'linaria') { %>
 import { css } from '@linaria/core';
-import 'style/main.css';
+import '@/style/main.css';
 <% } else { %>
-import 'style/main.scss';
+import '@/style/main.scss';
 <% } %>
 
 

@@ -3,7 +3,7 @@
     "outDir": "./<%= typeof libPath !== 'undefined' ? libPath : assetPath %>",
     "baseUrl": "./<%= rootPath %>",
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "lib": ["dom", "esnext"],
     "jsx": "react-jsx",
     "declaration": true,

@@ -1,6 +1,7 @@
 import { type StoryObj } from '@storybook/react';
 import { MockResolver } from '@data-client/test';
-import { TickerFixtures } from 'resources/Ticker';
+
+import { TickerFixtures } from '@/resources/Ticker';
 
 import Price from './AssetPrice';
 

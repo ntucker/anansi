@@ -104,6 +104,10 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
       this.destinationPath('webpack.config.js'),
       this.config.getAll(),
     );
+    this.fs.extendJSONTpl(
+      this.templatePath('tsconfig.json'),
+      this.destinationPath('tsconfig.json'),
+    );
     this.fs.appendTpl(
       this.templatePath('README.md'),
       this.destinationPath('README.md'),

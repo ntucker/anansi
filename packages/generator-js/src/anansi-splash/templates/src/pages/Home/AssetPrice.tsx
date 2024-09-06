@@ -1,5 +1,6 @@
 import { useLive } from '@data-client/react';
-import { getTicker } from 'resources/Ticker';
+
+import { getTicker } from '@/resources/Ticker';
 
 /** Shows the current trading price for a given asset */
 export default function AssetPrice({ symbol }: Props) {
