@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.5.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.14...@anansi/generator-js@12.5.0) (2024-09-06)
+
+### 🚀 Features
+
+* Use eslint flat configs ([a591147](https://github.com/ntucker/anansi/commit/a59114793844e0f66d1cdde4828bd7e0a3239c78))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2503](https://github.com/ntucker/anansi/issues/2503)) ([ff5ee61](https://github.com/ntucker/anansi/commit/ff5ee61910630bbd56e5ff932364579cd9b40999))
+
 ### [12.4.14](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.4.13...@anansi/generator-js@12.4.14) (2024-08-24)
 
 ### 📦 Package

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.2](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.1...@anansi/webpack-config@20.0.2) (2024-09-06)
+
+### 💅 Enhancement
+
+* Robustness when loading webpack config for jest ([3cbb080](https://github.com/ntucker/anansi/commit/3cbb080b274689b800f8985d4a24eafe41b9bb8a))
+
+### 📦 Package
+
+* Update webpack packages ([#2506](https://github.com/ntucker/anansi/issues/2506)) ([739238b](https://github.com/ntucker/anansi/commit/739238bf66667c773e9fdd6d429eebeecd1c8ca5))
+
 ### [20.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.0...@anansi/webpack-config@20.0.1) (2024-08-24)
 
 ### 📦 Package

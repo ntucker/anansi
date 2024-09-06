@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.7...@anansi/jest-preset@0.11.8) (2024-09-06)
+
+### 💅 Enhancement
+
+* Support latest eslint ([58c84cd](https://github.com/ntucker/anansi/commit/58c84cd0e1d0f960411cc358261f51855dd7975d))
+
 ### [0.11.7](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.6...@anansi/jest-preset@0.11.7) (2024-08-24)
 
 ### 📦 Package

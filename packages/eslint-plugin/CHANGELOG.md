@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.16...@anansi/eslint-plugin@0.18.0) (2024-09-06)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires eslint 9
+
+### 🚀 Features
+
+* Eslint 9 and flat configs ([15cf25e](https://github.com/ntucker/anansi/commit/15cf25e92f68bd7ddab5f389c161e554f2b06ead))
+
+### 📦 Package
+
+* Update `eslint` to v9 ([d12b168](https://github.com/ntucker/anansi/commit/d12b1686f9a6026f0c67f86622e3dc652155549e))
+* Update validation packages ([#2504](https://github.com/ntucker/anansi/issues/2504)) ([9c0f3ba](https://github.com/ntucker/anansi/commit/9c0f3baa0cba9536ba230c6ccae5b55f51151ac5))
+* Update validation packages ([#2510](https://github.com/ntucker/anansi/issues/2510)) ([d933513](https://github.com/ntucker/anansi/commit/d9335131359324baad9fe294b12ab6ccfb4b295c))
+
 ### [0.17.16](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.17.15...@anansi/eslint-plugin@0.17.16) (2024-08-24)
 
 ### 🐛 Bug Fix

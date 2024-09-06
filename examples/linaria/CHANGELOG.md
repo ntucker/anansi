@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/ntucker/anansi/compare/example-linaria@6.2.39...example-linaria@7.0.0) (2024-09-06)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires eslint 9
+
+### 🚀 Features
+
+* Eslint 9 and flat configs ([15cf25e](https://github.com/ntucker/anansi/commit/15cf25e92f68bd7ddab5f389c161e554f2b06ead))
+
+### 📦 Package
+
+* Update `@types/eslint` to v9 ([#2509](https://github.com/ntucker/anansi/issues/2509)) ([06a3651](https://github.com/ntucker/anansi/commit/06a36516cacf82f5135f63ba15ce2e0df5041ec1))
+* Update `eslint` to v9 ([d12b168](https://github.com/ntucker/anansi/commit/d12b1686f9a6026f0c67f86622e3dc652155549e))
+* Update all non-major dependencies ([#2503](https://github.com/ntucker/anansi/issues/2503)) ([ff5ee61](https://github.com/ntucker/anansi/commit/ff5ee61910630bbd56e5ff932364579cd9b40999))
+* Update babel packages to v7.25.6 ([#2507](https://github.com/ntucker/anansi/issues/2507)) ([f5d1093](https://github.com/ntucker/anansi/commit/f5d1093b3300c6ee92258db831584f444d77a4d6))
+
 ### [6.2.39](https://github.com/ntucker/anansi/compare/example-linaria@6.2.38...example-linaria@6.2.39) (2024-08-24)
 
 ### 📦 Package
