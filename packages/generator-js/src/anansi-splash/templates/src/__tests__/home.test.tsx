@@ -8,7 +8,7 @@ import Home from '@/pages/Home';
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <DataProvider initialState={mockInitialState([TickerFixtures.list])}>
+      <DataProvider initialState={mockInitialState([TickerFixtures.get])}>
         <AsyncBoundary>
           <Home />
         </AsyncBoundary>
