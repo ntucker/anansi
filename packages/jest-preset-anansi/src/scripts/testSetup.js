@@ -1,3 +1,5 @@
+/* global jest */
+
 // node env
 if (typeof window === 'undefined') {
   require('cross-fetch/polyfill');
@@ -5,7 +7,7 @@ if (typeof window === 'undefined') {
 } else if (typeof document === 'undefined') {
   import('node-fetch').then(({ default: fetch }) => {
     // @ts-ignore
-    // eslint-disable-next-line no-undef
+
     globalThis.fetch = fetch;
   });
   // dom env
