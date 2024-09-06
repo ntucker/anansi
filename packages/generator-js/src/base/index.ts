@@ -148,6 +148,8 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       '@anansi/eslint-plugin',
       '@anansi/browserslist-config',
       'typescript',
+      // for eslint
+      'globals',
     ]);
     await this.addDependencies(['@babel/runtime']);
   }
