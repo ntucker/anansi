@@ -1,9 +1,6 @@
-const semver = require('semver');
-let tsEslintPkg;
-try {
-  tsEslintPkg = require('@typescript-eslint/eslint-plugin/package.json');
-  // eslint-disable-next-line no-empty
-} catch (e) {}
+import tsParser from '@typescript-eslint/parser';
+
+import baseConfig from './base.js';
 
 let rules = {
   'react/prop-types': 'off',
@@ -35,66 +32,18 @@ let rules = {
     },
   ],
 };
-
-if (!semver.gte(tsEslintPkg.version, '8.0.0')) {
-  rules['@typescript-eslint/ban-types'] = [
-    'error',
-    {
-      extendDefaults: false,
-      types: {
-        String: {
-          message: 'Use string instead',
-          fixWith: 'string',
-        },
-        Boolean: {
-          message: 'Use boolean instead',
-          fixWith: 'boolean',
-        },
-        Number: {
-          message: 'Use number instead',
-          fixWith: 'number',
-        },
-        Symbol: {
-          message: 'Use symbol instead',
-          fixWith: 'symbol',
-        },
-
-        Function: {
-          message: [
-            'The `Function` type accepts any function-like value.',
-            'It provides no type safety when calling the function, which can be a common source of bugs.',
-            'It also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.',
-            'If you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
-          ].join('\n'),
-          fixWith: '((...args: any) => any)',
-        },
-
-        // object typing
-        Object: {
-          message: [
-            'The `Object` type actually means "any non-nullish value", so it is marginally better than `unknown`.',
-            '- If you want a type meaning "any object", you probably want `Record<string, unknown>` instead.',
-            '- If you want a type meaning "any value", you probably want `unknown` instead.',
-          ].join('\n'),
-          fixWith: 'object',
-        },
+export default [
+  ...baseConfig,
+  {
+    files: ['**/*.?(m|c)ts?(x)'],
+    languageOptions: {
+      parser: tsParser,
+    },
+    settings: {
+      'import/resolver': {
+        typescript: {},
       },
     },
-  ];
-}
-
-module.exports = {
-  extends: ['./base.js'],
-  overrides: [
-    {
-      files: ['**/*.?(m|c)ts?(x)'],
-      parser: '@typescript-eslint/parser',
-      settings: {
-        'import/resolver': {
-          typescript: {},
-        },
-      },
-      rules,
-    },
-  ],
-};
+    rules,
+  },
+];
