@@ -1,7 +1,7 @@
 <% if (spa) { %>
 import { DataProvider, AsyncBoundary } from '@data-client/react';
 <% } %>
-import 'style/main.<% if (style !== 'linaria') { %>s<% } %>css';
+import '@/style/main.<% if (style !== 'linaria') { %>s<% } %>css';
 
 <% if (spa) { %>
 export const decorators = [
