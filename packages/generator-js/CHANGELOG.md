@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.2](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.1...@anansi/generator-js@12.6.2) (2024-09-06)
+
+### 💅 Enhancement
+
+* Use more linaria in splash init ([b101af0](https://github.com/ntucker/anansi/commit/b101af08f22308dd62610513229158b961ad3009))
+
+### 🐛 Bug Fix
+
+* Home test for splash ([603806e](https://github.com/ntucker/anansi/commit/603806ed0beef4804807746a453d1f85988beee1))
+
 ### [12.6.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.0...@anansi/generator-js@12.6.1) (2024-09-06)
 
 ### 🐛 Bug Fix

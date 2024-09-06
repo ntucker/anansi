@@ -89,7 +89,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.38, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.39, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
@@ -170,7 +170,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^1.0.1, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@npm:^1.0.2, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -11902,7 +11902,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.0.5"
     "@anansi/browserslist-config": "npm:^1.5.1"
-    "@anansi/eslint-plugin": "npm:^1.0.1"
+    "@anansi/eslint-plugin": "npm:^1.0.2"
     "@anansi/webpack-config": "npm:^20.0.2"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.24.8"
@@ -11939,9 +11939,9 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.0.5"
     "@anansi/browserslist-config": "npm:^1.5.1"
-    "@anansi/cli": "npm:^3.1.38"
+    "@anansi/cli": "npm:^3.1.39"
     "@anansi/core": "npm:^0.20.5"
-    "@anansi/eslint-plugin": "npm:^1.0.1"
+    "@anansi/eslint-plugin": "npm:^1.0.2"
     "@anansi/jest-preset": "npm:^0.11.8"
     "@anansi/router": "npm:^0.10.4"
     "@anansi/webpack-config": "npm:^20.0.2"

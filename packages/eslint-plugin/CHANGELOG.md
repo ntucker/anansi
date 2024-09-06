@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.1...@anansi/eslint-plugin@1.0.2) (2024-09-06)
+
+### 🐛 Bug Fix
+
+* Disable react-hooks plugin til its compatible ([714fdcd](https://github.com/ntucker/anansi/commit/714fdcd2e2ab460b6610e5e02591065f770100d5))
+
 ### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.0...@anansi/eslint-plugin@1.0.1) (2024-09-06)
 
 ### 💅 Enhancement
