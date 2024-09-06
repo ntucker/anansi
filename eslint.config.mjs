@@ -8,7 +8,7 @@ export default [
     ignores: [
       'lib*/*',
       'dist*/*',
-      'generators*/*',
+      'generators/*',
       'packages/generator-js/**/templates',
       'packages/jest-preset-anansi/**/templates',
     ],
