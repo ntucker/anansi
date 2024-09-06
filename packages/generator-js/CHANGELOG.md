@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.1](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.0...@anansi/generator-js@12.6.1) (2024-09-06)
+
+### 🐛 Bug Fix
+
+* Generated eslint config uses globals ([9aac011](https://github.com/ntucker/anansi/commit/9aac0113f54c795a49ec6e938e69f88869e8e52c))
+* Tests still work in SSR packages ([e69e29e](https://github.com/ntucker/anansi/commit/e69e29ec24b55041a3c99c2b9f00623b286dec3d))
+
 ## [12.6.0](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.5.0...@anansi/generator-js@12.6.0) (2024-09-06)
 
 ### 🚀 Features

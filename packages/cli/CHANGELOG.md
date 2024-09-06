@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.38](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.37...@anansi/cli@3.1.38) (2024-09-06)
+
+### 📝 Documentation
+
+* No longer recommend installing yarn ([aa25c0b](https://github.com/ntucker/anansi/commit/aa25c0bd1bd144cad02e4a6d0069c118b721f64f))
+
 ### [3.1.37](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.36...@anansi/cli@3.1.37) (2024-09-06)
 
 **Note:** Version bump only for package @anansi/cli
