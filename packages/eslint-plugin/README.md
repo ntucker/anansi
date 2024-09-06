@@ -6,9 +6,7 @@
 
 ## Installation
 
-[Eslint has decided it is necessary for users to install all plugins manually](https://github.com/eslint/rfcs/pull/5)
-
-`yarn add --dev @anansi/eslint-plugin eslint-plugin-prettier eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks`
+`yarn add --dev @anansi/eslint-plugin`
 
 ## Usage
 
@@ -16,40 +14,50 @@
 
 Be sure to configure the project option properly - especially if you have a monorepo.
 
-**`.eslintrc.js`**
+**`eslint.config.js`**
 
 ```js
-module.exports = {
-  extends: 'plugin:@anansi/typescript',
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['tsconfig.json'],
+import anansiPlugin from '@anansi/eslint-plugin';
+
+export default [
+  anansiPlugin.configs.typescript,
+  {
+    languageOptions: {
+      tsconfigRootDir: import.meta.dirname,
+      project: ['tsconfig.json'],
+    }
   }
-}
+];
 ```
 
 ### TypeScript monorepo
 
-**`.eslintrc.js`**
+**`eslint.config.js`**
 
 ```js
-module.exports = {
-  extends: 'plugin:@anansi/typescript',
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['packages/*/tsconfig.json'],
+import anansiPlugin from '@anansi/eslint-plugin';
+
+export default [
+  anansiPlugin.configs.typescript,
+  {
+    languageOptions: {
+      tsconfigRootDir: import.meta.dirname,
+      project: ['packages/*/tsconfig.json'],
+    }
   }
-}
+];
 ```
 
 ### Just JavaScript
 
-**`.eslintrc.js`**
+**`eslint.config.js`**
 
 ```js
-{
-  extends: 'plugin:@anansi/javascript'
-}
+import anansiPlugin from '@anansi/eslint-plugin';
+
+export default [
+  anansiPlugin.configs.javascript,
+];
 ```
 
 ## Style guidelines

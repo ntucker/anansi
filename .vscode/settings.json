@@ -24,5 +24,31 @@
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
+  },
+  "files.exclude": {
+    "**/.yarn": true,
+    "**/.tsbuildinfo": true,
+    "website/.docusaurus": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/.yarnrc.yml": true,
+    "**/build": true,
+    "**/CHANGELOG.md": true,
+    ".changeset": true,
+    "**/package-lock.json": true,
+    "packages/*/ts*": true,
+    "**/lib": true,
+    "**/dist": true,
+    "**/dist-server": true,
+    "packages/generator-js/generators": true,
+    "packages/**/index.d.ts": true,
+    "packages/*/lib": true,
+    "packages/*/legacy": true,
+    "yarn.lock": true,
+    "**/versioned_docs": true,
+    "**/*_versioned_docs": true,
+    "**/v8.log": true,
+    "website/src/components/Playground/editor-types": true
   }
 }
