@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.0](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.13...@anansi/storybook@3.2.0) (2024-09-06)
+
+### 🚀 Features
+
+* Expand anansi package support ([f7bed00](https://github.com/ntucker/anansi/commit/f7bed003b5691ca6ee07ff99bfd5ccc0361a5c9a))
+
 ### [3.1.13](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.1.12...@anansi/storybook@3.1.13) (2024-09-06)
 
 ### 📦 Package

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.0...@anansi/eslint-plugin@1.0.1) (2024-09-06)
+
+### 💅 Enhancement
+
+* Group @/ prefix imports with other internals ([c54d646](https://github.com/ntucker/anansi/commit/c54d64611e64959494251439c6a12dffe4b0ad01))
+
+### 🐛 Bug Fix
+
+* Add missing file to npm pkg ([513884f](https://github.com/ntucker/anansi/commit/513884f4da18f42695c139254c1e433750f84a41))
+
 ## [1.0.0](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@0.18.0...@anansi/eslint-plugin@1.0.0) (2024-09-06)
 
 **Note:** Version bump only for package @anansi/eslint-plugin
