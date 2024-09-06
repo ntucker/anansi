@@ -38,7 +38,7 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 Next install Anansi's CLI
 
 ```bash
-npm install -g @anansi/cli yarn
+npm install -g @anansi/cli
 ```
 
 Then generate your new project:
