@@ -113,7 +113,7 @@ export default function makeProdConfig(
   if (nohash) {
     config.optimization.chunkIds = 'named';
   }
-  if (!env.readable) {
+  if (!env?.readable) {
     config.optimization.minimizer = [
       new TerserPlugin({
         terserOptions: {

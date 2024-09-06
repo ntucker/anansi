@@ -124,7 +124,7 @@ export default function makeBaseConfig({
   const config = {
     context: rootPath,
     entry: {
-      [env.name || 'App']: [env.entrypath || `./${basePath}`],
+      [env?.name || 'App']: [env?.entrypath || `./${basePath}`],
     },
     output: {
       path: path.join(rootPath, buildDir),
@@ -264,7 +264,7 @@ export default function makeBaseConfig({
       excludeAssets: [/\.map/],
     },
   };
-  if (env.name) config.name = env.name;
+  if (env?.name) config.name = env.name;
 
   if (
     process.env.WEBPACK_NO_CACHE === true ||
