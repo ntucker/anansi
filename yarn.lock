@@ -5853,17 +5853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:8.56.12, @types/eslint@npm:^8.21.3":
-  version: 8.56.12
-  resolution: "@types/eslint@npm:8.56.12"
-  dependencies:
-    "@types/estree": "npm:*"
-    "@types/json-schema": "npm:*"
-  checksum: 10c0/e4ca426abe9d55f82b69a3250bec78b6d340ad1e567f91c97ecc59d3b2d6a1d8494955ac62ad0ea14b97519db580611c02be8277cbea370bdfb0f96aa2910504
-  languageName: node
-  linkType: hard
-
-"@types/eslint@npm:^9":
+"@types/eslint@npm:9.6.1, @types/eslint@npm:^9, @types/eslint@npm:^9.0.0":
   version: 9.6.1
   resolution: "@types/eslint@npm:9.6.1"
   dependencies:
@@ -11920,7 +11910,7 @@ __metadata:
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:^7.20.0"
-    "@types/eslint": "npm:^8.21.3"
+    "@types/eslint": "npm:^9.0.0"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -11968,7 +11958,7 @@ __metadata:
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:7.20.5"
-    "@types/eslint": "npm:8.56.12"
+    "@types/eslint": "npm:9.6.1"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:22.5.3"
     "@types/react": "npm:18.3.5"
@@ -12018,7 +12008,7 @@ __metadata:
     "@storybook/preview-api": "npm:8.2.9"
     "@storybook/react": "npm:8.2.9"
     "@types/babel__core": "npm:^7.20.0"
-    "@types/eslint": "npm:^8.21.3"
+    "@types/eslint": "npm:^9.0.0"
     "@types/jest": "npm:29.5.12"
     "@types/lodash": "npm:4.17.7"
     "@types/node": "npm:22.5.3"

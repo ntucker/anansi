@@ -29,7 +29,7 @@
     "@babel/core": "7.25.2",
     "@data-client/test": "0.14.10",
     "@types/babel__core": "7.20.5",
-    "@types/eslint": "8.56.12",
+    "@types/eslint": "9.6.1",
     "@types/jest": "29.5.12",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
