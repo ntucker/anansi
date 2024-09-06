@@ -91,7 +91,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       version: '0.0.1',
       description: `${this.config.get('appName')} - An Anansi project`,
       scripts: {
-        lint: `eslint ${this.config.get('rootPath')} --ext .ts,.tsx`,
+        lint: `eslint ${this.config.get('rootPath')} --ext .ts,.tsx --quiet`,
         format: 'npm run lint --fix',
         'test:type': 'tsc',
       },
@@ -112,11 +112,6 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
         singleQuote: true,
         arrowParens: 'avoid',
       },
-      eslintConfig: {
-        extends: 'plugin:@anansi/typescript',
-        env: { node: true },
-        ignorePatterns: [this.config.get('assetPath')],
-      },
       stackblitz: { startCommand: 'yarn start' },
     };
     this.packageJson.merge(packageSettings);
@@ -127,6 +122,10 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       this.config.getAll(),
       {},
       { globOptions: { dot: true } },
+    );
+    this.fs.copyTpl(
+      this.templatePath('eslint.config.mjs'),
+      this.destinationPath('eslint.config.mjs'),
     );
     // set .gitignore to proper location
     this.fs.move(
