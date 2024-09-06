@@ -91,7 +91,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       version: '0.0.1',
       description: `${this.config.get('appName')} - An Anansi project`,
       scripts: {
-        lint: `eslint ${this.config.get('rootPath')} --ext .ts,.tsx --quiet`,
+        lint: `eslint ${this.config.get('rootPath')} --quiet`,
         format: 'npm run lint --fix',
         'test:type': 'tsc',
       },
@@ -123,10 +123,6 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       {},
       { globOptions: { dot: true } },
     );
-    this.fs.copyTpl(
-      this.templatePath('eslint.config.mjs'),
-      this.destinationPath('eslint.config.mjs'),
-    );
     // set .gitignore to proper location
     this.fs.move(
       this.destinationPath('.gitignore.tpl'),
@@ -152,7 +148,6 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       '@anansi/eslint-plugin',
       '@anansi/browserslist-config',
       'typescript',
-      '@typescript-eslint/parser',
     ]);
     await this.addDependencies(['@babel/runtime']);
   }

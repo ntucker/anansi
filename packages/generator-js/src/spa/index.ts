@@ -45,6 +45,7 @@ export default class extends BetterGenerator {
     this.fs.copyTpl(
       this.templatePath('eslint.config.mjs'),
       this.destinationPath('eslint.config.mjs'),
+      this.config.getAll(),
     );
     this.fs.extendJSONTpl(
       this.templatePath('.vscode/launch.json'),

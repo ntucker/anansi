@@ -88,7 +88,7 @@
     "test": "yarn g:test",
     "test:type": "yarn g:tsc",
     "build": "run build:lib && run copyfiles",
-    "build:lib": "BROWSERSLIST_ENV=node14 yarn g:babel --out-dir generators --ignore \"**/templates/**/*\",\"**/templates/*\",\"**/yeoman-types/*\"",
+    "build:lib": "BROWSERSLIST_ENV=node18 yarn g:babel --out-dir generators --ignore \"**/templates/**/*\",\"**/templates/*\",\"**/yeoman-types/*\"",
     "build:clean": "yarn g:rimraf generators",
     "copyfiles": "copyfiles -u 1 \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" generators",
     "prepack": "run build:clean && run build"
