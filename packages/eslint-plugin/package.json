@@ -17,7 +17,8 @@
   "files": [
     "index.js",
     "base.js",
-    "typescript.js"
+    "typescript.js",
+    "isInstalled.cjs"
   ],
   "type": "module",
   "author": "Nathaniel Tucker",
