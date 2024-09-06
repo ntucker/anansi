@@ -36,7 +36,7 @@
     "g:clean": "cd $INIT_CWD && rimraf lib dist ts3.4 legacy *.tsbuildinfo",
     "g:tsc": "cd $INIT_CWD && tsc",
     "g:test": "cd $INIT_CWD && jest",
-    "g:lint": "cd $INIT_CWD && eslint --ext .ts,.tsx",
+    "g:lint": "cd $INIT_CWD && eslint",
     "g:devtest": "cd $INIT_CWD && WAIT_ON_TIMEOUT=40000 start-server-and-test"
   },
   "devDependencies": {
