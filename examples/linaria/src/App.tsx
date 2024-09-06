@@ -1,10 +1,9 @@
 import { css } from '@linaria/core';
 import { styled } from '@linaria/react';
-import { memo } from 'react';
-
 import Media from 'Media';
 import MenuItem from 'MenuItem';
 import NestedTest from 'NestedTest';
+import { memo } from 'react';
 
 import AngleDownUrl from './angle-down-solid.svg';
 

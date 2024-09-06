@@ -1,5 +1,0 @@
-lib*/*
-dist*/*
-generators*/*
-packages/generator-js/**/templates
-packages/jest-preset-anansi/**/templates
