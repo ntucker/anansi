@@ -31,6 +31,7 @@ let rules = {
       'ts-check': false,
     },
   ],
+  '@typescript-eslint/no-empty-object-type': 'off',
 };
 export default [
   ...baseConfig,
