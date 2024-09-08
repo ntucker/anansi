@@ -130,7 +130,7 @@ const config = [
   jsOnlyRules,
   generalRules,
   {
-    files: ['**/*.(server|node).?(m|c)(t|j)s?(x)'],
+    files: ['**/*.(server|node).?(m|c)jss?(x)'],
     languageOptions: {
       globals: {
         ...globals.node,
@@ -139,8 +139,8 @@ const config = [
   },
   {
     files: [
-      '**/__tests__/**/*.?(m|c)(j|t)s?(x)',
-      '**/*.test?(.*).?(m|c)(j|t)s?(x)',
+      '**/__tests__/**/*.?(m|c)js?(x)',
+      '**/*.(test|spec)?(.*).?(m|c)js?(x)',
     ],
     languageOptions: {
       globals: {
