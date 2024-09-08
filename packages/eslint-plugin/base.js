@@ -138,7 +138,10 @@ const config = [
     },
   },
   {
-    files: ['**/__tests__/**', '**/*.test.*'],
+    files: [
+      '**/__tests__/**/*.?(m|c)(j|t)s?(x)',
+      '**/*.test?(.*).?(m|c)(j|t)s?(x)',
+    ],
     languageOptions: {
       globals: {
         ...globals.jest,
