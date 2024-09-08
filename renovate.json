@@ -8,7 +8,8 @@
   "ignoreDeps": [
     "whatwg-fetch",
     "react-error-overlay",
-    "@ant-design/pro-layout"
+    "@ant-design/pro-layout",
+    "eslint-plugin-react-hooks"
   ],
 
   "timezone": "America/Chicago",
