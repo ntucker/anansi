@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.5](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.4...@anansi/eslint-plugin@1.0.5) (2024-09-08)
+
+### 🐛 Bug Fix
+
+* Matching test files for jest globals ([e41a978](https://github.com/ntucker/anansi/commit/e41a9786a2f36dd1b0486053022ca9ad5a65c2d3))
+
 ### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.3...@anansi/eslint-plugin@1.0.4) (2024-09-08)
 
 ### 🐛 Bug Fix
