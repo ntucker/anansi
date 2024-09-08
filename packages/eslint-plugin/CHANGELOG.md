@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.4](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.3...@anansi/eslint-plugin@1.0.4) (2024-09-08)
+
+### 🐛 Bug Fix
+
+* Only match js files ([ab9867e](https://github.com/ntucker/anansi/commit/ab9867e2972b13b275803ef05cfe1364eba8d5d8))
+
 ### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.2...@anansi/eslint-plugin@1.0.3) (2024-09-08)
 
 ### 💅 Enhancement

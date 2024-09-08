@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.4](https://github.com/ntucker/anansi/compare/example-linaria@8.0.3...example-linaria@8.0.4) (2024-09-08)
+
+**Note:** Version bump only for package example-linaria
+
 ### [8.0.3](https://github.com/ntucker/anansi/compare/example-linaria@8.0.2...example-linaria@8.0.3) (2024-09-08)
 
 **Note:** Version bump only for package example-linaria
