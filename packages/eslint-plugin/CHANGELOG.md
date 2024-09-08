@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.3](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.2...@anansi/eslint-plugin@1.0.3) (2024-09-08)
+
+### 💅 Enhancement
+
+* Enable react-hooks linter rules using rc ([689af7f](https://github.com/ntucker/anansi/commit/689af7f5404fb391191cf1119b4692ab5f52a5f8))
+
+### 🐛 Bug Fix
+
+* Allow ts non-null type {} ([4b22d62](https://github.com/ntucker/anansi/commit/4b22d620675b645ca0a0812191127f3ff2cc8e59))
+
+### 📦 Package
+
+* Update validation packages to ^9.10.0 ([#2511](https://github.com/ntucker/anansi/issues/2511)) ([6637c25](https://github.com/ntucker/anansi/commit/6637c255d469309bd5d4d9c73ee96378a92149d3))
+
 ### [1.0.2](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.1...@anansi/eslint-plugin@1.0.2) (2024-09-06)
 
 ### 🐛 Bug Fix
