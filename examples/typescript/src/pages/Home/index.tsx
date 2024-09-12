@@ -20,6 +20,8 @@ import myHtml from './test.html';
 // @ts-ignore
 const worker = new Worker(new URL('./echo.js', import.meta.url));
 
+const empty = null;
+
 export default function Home() {
   worker.postMessage({ message: 'rendered' });
   return (
@@ -36,7 +38,7 @@ export default function Home() {
       </h3>
       <p className={plain.mountainTop}>
         Ok again <img src={animated} /> {path.join('/hi/bob', 'test.txt')}{' '}
-        {null ?? IssueResource.get.path} {StaticBlock.a}
+        {empty ?? IssueResource.get.path} {StaticBlock.a}
       </p>
       <p className={sillyStyle.silly}>$text-color: {variables.textColor}</p>
       <p>
