@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.9.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.2...@pojo-router/core@0.9.3) (2024-09-13)
+
+### 📦 Package
+
+* Switch path-to-regexp to ^ ([07b45d8](https://github.com/ntucker/anansi/commit/07b45d805f04b863c3472c783cd1966aef058594))
+* Update `path-to-regexp` to v6.3.0 [SECURITY] ([#2514](https://github.com/ntucker/anansi/issues/2514)) ([fdafb65](https://github.com/ntucker/anansi/commit/fdafb65e4cea107b525f7d741a19406dbf4c4e6e))
+
 ### [0.9.2](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.1...@pojo-router/core@0.9.2) (2024-08-05)
 
 ### 📦 Package
