@@ -4,16 +4,16 @@ import type { MatchFunction, PathFunction } from 'path-to-regexp';
 
 import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types.js';
 
-type Props<
+export interface ControllerProps<
   Route extends { name: string } = {
     name: string;
   },
-> = {
+> {
   history: History;
   namedPaths: Record<string, string | NamedPath>;
   routes: readonly Route[];
   notFound: AnyIfEmpty<DefaultRoutePojo>;
-};
+}
 
 export default class RouteController<
   Route extends { name: string } = { name: string },
@@ -32,7 +32,12 @@ export default class RouteController<
   declare readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
   declare readonly pathBuilders: Record<string, PathFunction>;
 
-  constructor({ history, namedPaths, routes, notFound }: Props<Route>) {
+  constructor({
+    history,
+    namedPaths,
+    routes,
+    notFound,
+  }: ControllerProps<Route>) {
     this.history = history;
     this.notFound = notFound;
     this.normalizedRouter = routes.map(route => {

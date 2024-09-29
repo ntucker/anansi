@@ -1,7 +1,13 @@
 // TODO: Mock useTransition() to support earlier versions of react, just without v18 features
 import { PojoRouter, RouteController } from '@pojo-router/core';
 import type { Update } from 'history';
-import React, { memo, useCallback, useTransition } from 'react';
+import React, {
+  memo,
+  useCallback,
+  useEffect,
+  useRef,
+  useTransition,
+} from 'react';
 
 import { IsLoadingContext } from './IsLoadingContext.js';
 import type { Route } from './types.js';
@@ -29,6 +35,7 @@ function RouteProvider<ResolveWith>({
     [resolveWith],
   );
 
+  const shouldScroll = useRef(false);
   const [isPending, startTransition] = useTransition();
   const transitionPathname = useCallback(
     (update: Update, callback: () => void) => {
@@ -40,12 +47,20 @@ function RouteProvider<ResolveWith>({
         );
         matches.forEach(match => preloadMatch(match, search));
       }
+      shouldScroll.current = ['PUSH', 'REPLACE'].includes(update.action);
 
       // transition begins
       startTransition(onChange ? () => onChange(update, callback) : callback);
     },
     [preloadMatch, router, onChange],
   );
+
+  useEffect(() => {
+    if (!isPending && shouldScroll.current && typeof window !== 'undefined') {
+      // TODO: handle hash links
+      window.scrollTo(0, 0);
+    }
+  }, [isPending]);
 
   return (
     <PojoRouter router={router} onChange={transitionPathname}>
