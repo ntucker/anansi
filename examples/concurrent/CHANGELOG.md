@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.9](https://github.com/ntucker/anansi/compare/example-react-18@8.0.8...example-react-18@8.0.9) (2024-09-29)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2538](https://github.com/ntucker/anansi/issues/2538)) ([86476cf](https://github.com/ntucker/anansi/commit/86476cf59e97c057add7da5b04b36406a0b48321))
+
+### 📝 Documentation
+
+* **demo:** Update concurrent to import from @/ ([8250fc9](https://github.com/ntucker/anansi/commit/8250fc91f1133eabb1f4a7a54adf58da881836c4))
+* **demo:** Use Router import ([03dd95b](https://github.com/ntucker/anansi/commit/03dd95b1bf15954403cfb94f7c570f7d0fded7e1))
+
 ### [8.0.8](https://github.com/ntucker/anansi/compare/example-react-18@8.0.7...example-react-18@8.0.8) (2024-09-25)
 
 ### 📦 Package

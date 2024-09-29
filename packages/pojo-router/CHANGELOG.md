@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.3...@pojo-router/core@0.10.0) (2024-09-29)
+
+### 🚀 Features
+
+* Add Router export (identical to RouteController) ([3f1a11f](https://github.com/ntucker/anansi/commit/3f1a11fdd3718f44942d88fbc17d87e467f35444))
+
+### 💅 Enhancement
+
+* Scroll to top after push/replace navigation ([1d7964e](https://github.com/ntucker/anansi/commit/1d7964e8e0281ed14469bbe8508fe5154bfd37e5))
+
 ### [0.9.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.2...@pojo-router/core@0.9.3) (2024-09-13)
 
 ### 📦 Package

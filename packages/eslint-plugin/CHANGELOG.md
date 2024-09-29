@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.8](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.7...@anansi/eslint-plugin@1.0.8) (2024-09-29)
+
+### 📦 Package
+
+* Update `eslint-plugin-react` to ^7.37.0 ([#2536](https://github.com/ntucker/anansi/issues/2536)) ([d459a1c](https://github.com/ntucker/anansi/commit/d459a1c162397a49c1bb1e5cc0f8032c528842ae))
+
 ### [1.0.7](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.6...@anansi/eslint-plugin@1.0.7) (2024-09-25)
 
 ### 📦 Package
