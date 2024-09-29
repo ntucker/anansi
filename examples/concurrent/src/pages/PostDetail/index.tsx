@@ -9,7 +9,7 @@ import { Button, Input, Breadcrumb, Form } from 'antd';
 import { Card, Avatar } from 'antd';
 import { lazy, useCallback, useState } from 'react';
 
-import { PostResource, UserResource, Post, User } from 'resources/Discuss';
+import { PostResource, UserResource, Post, User } from '@/resources/Discuss';
 
 export type Props = { id: string };
 const { Meta } = Card;
@@ -32,10 +32,7 @@ const CommentList = lazy(
 
 export default function PostDetail({ id }: Props) {
   const post = useSuspense(PostResource.get, { id });
-  const author = useSuspense(
-    UserResource.get,
-    post.userId ? { id: post.userId } : null,
-  );
+  const author = useSuspense(UserResource.get, { id: post.userId });
 
   return (
     <>

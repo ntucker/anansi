@@ -8,7 +8,7 @@ import {
   UserResource,
   User,
   Post,
-} from 'resources/Discuss';
+} from '@/resources/Discuss';
 
 const lazyPage = (pageName: string) =>
   lazy(
@@ -33,7 +33,7 @@ export const routes: Route<Controller>[] = [
     component: lazy(
       () =>
         import(
-          /* webpackChunkName: 'FriendNav', webpackPreload: true */ `navigation/FriendsNav`
+          /* webpackChunkName: 'FriendNav', webpackPreload: true */ `@/navigation/FriendsNav`
         ),
     ),
     resolveData: async (controller: Controller) => {
@@ -50,9 +50,9 @@ export const routes: Route<Controller>[] = [
       await Promise.allSettled(
         posts.map((post: Post) =>
           Promise.allSettled([
-            post.userId
-              ? controller.fetchIfStale(UserResource.get, { id: post.userId })
-              : Promise.resolve(),
+            post.userId ?
+              controller.fetchIfStale(UserResource.get, { id: post.userId })
+            : Promise.resolve(),
             controller.fetchIfStale(getImage, {
               src: User.fromJS({ id: post.userId }).profileImage,
             }),
@@ -72,9 +72,9 @@ export const routes: Route<Controller>[] = [
           id: match.id,
         });
         await Promise.allSettled([
-          post.userId
-            ? controller.fetchIfStale(UserResource.get, { id: post.userId })
-            : Promise.resolve(),
+          post.userId ?
+            controller.fetchIfStale(UserResource.get, { id: post.userId })
+          : Promise.resolve(),
           controller.fetchIfStale(getImage, {
             src: User.fromJS({ id: post.userId }).profileImage,
           }),

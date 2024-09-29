@@ -2,7 +2,7 @@ import { Img } from '@data-client/img';
 import { useSuspense } from '@data-client/react';
 import { Card, Avatar } from 'antd';
 
-import { CommentResource, Comment } from 'resources/Discuss';
+import { CommentResource, Comment } from '@/resources/Discuss';
 const { Meta } = Card;
 
 type Props = { postId: string };

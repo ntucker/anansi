@@ -5,7 +5,7 @@ import { Layout, Spin } from 'antd';
 import { memo } from 'react';
 import 'antd/dist/reset.css';
 
-import Nav from 'navigation';
+import Nav from '@/navigation';
 
 const Content = styled(Layout.Content)`
   margin: 0;

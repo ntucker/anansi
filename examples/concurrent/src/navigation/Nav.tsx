@@ -11,8 +11,8 @@ import { useController } from '@data-client/react';
 import { Menu, Layout, Switch, MenuProps } from 'antd';
 import { memo, useContext } from 'react';
 
-import { demoContext } from 'app/demo';
-import { User } from 'resources/Discuss';
+import { demoContext } from '@/app/demo';
+import { User } from '@/resources/Discuss';
 
 import PageLoading from './PageLoading';
 

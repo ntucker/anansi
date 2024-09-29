@@ -2,11 +2,11 @@ import { useSuspense } from '@data-client/react';
 import { List } from 'antd';
 import { memo } from 'react';
 
-import { PostResource, Post } from 'resources/Discuss';
+import { PostResource, Post } from '@/resources/Discuss';
 
 import PostListItem from './PostListItem';
 
-function PostList({ userId }: { userId?: string }) {
+function PostList({ userId }: { userId?: string | number }) {
   const posts = useSuspense(PostResource.getList, userId ? { userId } : {});
   return (
     <List

@@ -2,8 +2,8 @@ import { Img } from '@data-client/img';
 import { AsyncBoundary, useSuspense } from '@data-client/react';
 import { Card, Avatar } from 'antd';
 
-import PostList from 'pages/Posts';
-import { UserResource } from 'resources/Discuss';
+import PostList from '@/pages/Posts';
+import { UserResource } from '@/resources/Discuss';
 
 export type Props = { id: string };
 const { Meta } = Card;

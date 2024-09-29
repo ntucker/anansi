@@ -4,9 +4,9 @@ import {
 } from './PlaceholderBaseResource';
 
 export class Post extends PlaceholderEntity {
-  readonly userId: number | undefined = undefined;
-  readonly title: string = '';
-  readonly body: string = '';
+  userId = 1;
+  title = '';
+  body = '';
 }
 export const PostResource = createPlaceholderResource({
   path: '/posts/:id',
@@ -14,10 +14,10 @@ export const PostResource = createPlaceholderResource({
 });
 
 export class Comment extends PlaceholderEntity {
-  readonly postId: number = 0;
-  readonly name: string = '';
-  readonly email: string = '';
-  readonly body: string = '';
+  postId = 0;
+  name = '';
+  email = '';
+  body = '';
 
   get profileImage() {
     return `https://i.pravatar.cc/256?img=${(this.id + 15) % 70}`;
@@ -29,28 +29,28 @@ export const CommentResource = createPlaceholderResource({
 });
 
 export class Address {
-  readonly street: string = '';
-  readonly suite: string = '';
-  readonly city: string = '';
-  readonly zipcode: string = '';
-  readonly geo: {
+  street = '';
+  suite = '';
+  city = '';
+  zipcode = '';
+  geo: {
     readonly lat: string;
     readonly lng: string;
   } | null = null;
 }
 export class Company {
-  readonly name: string = '';
-  readonly catchPhrase: string = '';
-  readonly bs: string = '';
+  name = '';
+  catchPhrase = '';
+  bs = '';
 }
 export class User extends PlaceholderEntity {
-  readonly name: string = '';
-  readonly username: string = '';
-  readonly email: string = '';
-  readonly phone: string = '';
-  readonly website: string = '';
-  readonly address: Address = new Address();
-  readonly company: Company = new Company();
+  name = '';
+  username = '';
+  email = '';
+  phone = '';
+  website = '';
+  address: Address = new Address();
+  company: Company = new Company();
 
   static schema = {
     //address: Address,

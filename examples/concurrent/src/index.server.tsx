@@ -10,7 +10,7 @@ import {
 } from '@anansi/core/server';
 import { useController } from '@data-client/react';
 
-import app from 'app';
+import app from '@/app';
 
 import { createRouter } from './routing';
 

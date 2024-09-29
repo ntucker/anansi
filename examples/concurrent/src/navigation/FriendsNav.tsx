@@ -2,7 +2,7 @@ import { useRoutes } from '@anansi/router';
 import { useSuspense } from '@data-client/react';
 import { memo } from 'react';
 
-import { UserResource } from 'resources/Discuss';
+import { UserResource } from '@/resources/Discuss';
 
 import Nav from './Nav';
 

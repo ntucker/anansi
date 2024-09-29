@@ -8,7 +8,7 @@ import React, {
   useState,
 } from 'react';
 
-import { PlaceholderEntity } from 'resources/PlaceholderBaseResource';
+import { PlaceholderEntity } from '@/resources/PlaceholderBaseResource';
 
 export const demoContext = createContext({
   cache: true,

@@ -3,7 +3,7 @@ import { Img } from '@data-client/img';
 import { useSuspense } from '@data-client/react';
 import { List, Avatar } from 'antd';
 
-import { Post, UserResource } from 'resources/Discuss';
+import { Post, UserResource } from '@/resources/Discuss';
 
 export default function PostListItem({ post }: { post: Post }) {
   const author = useSuspense(
