@@ -2,6 +2,7 @@ export * from './types.js';
 export { default as PojoRouter } from './PojoRouter.js';
 export {
   default as RouteController,
+  default as Router,
   type ControllerProps,
 } from './Controller.js';
 export * from './hooks.js';
