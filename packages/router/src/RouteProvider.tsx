@@ -49,8 +49,15 @@ function RouteProvider<ResolveWith>({
       }
       shouldScroll.current = ['PUSH', 'REPLACE'].includes(update.action);
 
-      // transition begins
-      startTransition(onChange ? () => onChange(update, callback) : callback);
+      // don't transition on 'back' as this should already be ready
+      if (shouldScroll.current) {
+        // transition begins
+        startTransition(onChange ? () => onChange(update, callback) : callback);
+      } else {
+        if (onChange) {
+          onChange(update, callback);
+        } else callback();
+      }
     },
     [preloadMatch, router, onChange],
   );
