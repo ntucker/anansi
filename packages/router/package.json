@@ -1,6 +1,6 @@
 {
   "name": "@anansi/router",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "description": "React 18+ optimized router",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {

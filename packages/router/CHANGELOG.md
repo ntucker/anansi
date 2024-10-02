@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.7](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.6...@anansi/router@0.10.7) (2024-10-02)
+
+### 💅 Enhancement
+
+* Do not transition on 'POP' routing ([1a0b6b6](https://github.com/ntucker/anansi/commit/1a0b6b635a10c152981e4ef5c9ac0b5c8fb51498))
+
 ### [0.10.6](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.5...@anansi/router@0.10.6) (2024-09-29)
 
 ### 💅 Enhancement

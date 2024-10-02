@@ -89,11 +89,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.43, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.44, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/core": "npm:^0.20.7"
+    "@anansi/core": "npm:^0.20.8"
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^22.0.0"
     binary-version-check: "npm:^6.1.0"
@@ -113,7 +113,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.20.7, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.20.8, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -273,7 +273,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@npm:^0.10.6, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@npm:^0.10.7, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -11844,11 +11844,11 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.0.6"
     "@anansi/browserslist-config": "npm:^1.5.1"
-    "@anansi/cli": "npm:^3.1.43"
-    "@anansi/core": "npm:^0.20.7"
+    "@anansi/cli": "npm:^3.1.44"
+    "@anansi/core": "npm:^0.20.8"
     "@anansi/eslint-plugin": "npm:^1.0.9"
     "@anansi/jest-preset": "npm:^0.11.8"
-    "@anansi/router": "npm:^0.10.6"
+    "@anansi/router": "npm:^0.10.7"
     "@anansi/webpack-config": "npm:^20.0.4"
     "@ant-design/cssinjs": "npm:1.21.1"
     "@ant-design/icons": "npm:^5.0.1"
