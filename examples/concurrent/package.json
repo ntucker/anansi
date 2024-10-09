@@ -39,7 +39,7 @@
     "prettier": "3.3.3",
     "react-refresh": "0.14.2",
     "react-test-renderer": "18.3.1",
-    "typescript": "5.6.2",
+    "typescript": "5.6.3",
     "webpack": "5.95.0",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "5.1.0"
@@ -57,7 +57,7 @@
     "@data-client/rest": "0.14.13",
     "@linaria/core": "6.2.0",
     "@linaria/react": "6.2.1",
-    "@types/node": "22.7.4",
+    "@types/node": "22.7.5",
     "antd": "5.21.2",
     "classnames": "2.5.1",
     "core-js": "3.38.1",
