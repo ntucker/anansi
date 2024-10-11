@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.12](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.11...@anansi/eslint-plugin@1.0.12) (2024-10-11)
+
+### 📦 Package
+
+* Update eslint-plugin-react-hooks to 5 final ([24e3cd8](https://github.com/ntucker/anansi/commit/24e3cd8632a7e3e9f2fb28ec545860e9cd110091))
+
 ### [1.0.11](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.10...@anansi/eslint-plugin@1.0.11) (2024-10-11)
 
 ### 📦 Package

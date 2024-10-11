@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.14](https://github.com/ntucker/anansi/compare/example-react-18@8.0.13...example-react-18@8.0.14) (2024-10-11)
+
+**Note:** Version bump only for package example-react-18
+
 ### [8.0.13](https://github.com/ntucker/anansi/compare/example-react-18@8.0.12...example-react-18@8.0.13) (2024-10-11)
 
 ### 📦 Package
