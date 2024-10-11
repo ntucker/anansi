@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.11](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.10...@anansi/eslint-plugin@1.0.11) (2024-10-11)
+
+### 📦 Package
+
+* Update `@babel/eslint-parser` to ^7.25.8 ([#2549](https://github.com/ntucker/anansi/issues/2549)) ([ac7cd0b](https://github.com/ntucker/anansi/commit/ac7cd0b1d7610d358c77d948be0b16b4c65af23e))
+
 ### [1.0.10](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.9...@anansi/eslint-plugin@1.0.10) (2024-10-09)
 
 ### 📦 Package
