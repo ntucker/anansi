@@ -232,13 +232,13 @@ __metadata:
     gulp-filter: "npm:^9.0.1"
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.1.0"
-    mem-fs: "npm:^4.1.0"
-    mem-fs-editor: "npm:^11.1.1"
+    mem-fs: "npm:^4.1.1"
+    mem-fs-editor: "npm:^11.1.3"
     pacote: "npm:^18.0.6"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:4.4.2"
-    yeoman-generator: "npm:^7.3.2"
+    yeoman-environment: "npm:4.4.3"
+    yeoman-generator: "npm:^7.3.3"
   languageName: unknown
   linkType: soft
 
@@ -6020,7 +6020,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.7.6, @types/node@npm:^22.0.0, @types/node@npm:^22.7.6":
+"@types/node@npm:*, @types/node@npm:22.7.6, @types/node@npm:>=18, @types/node@npm:>=18.18.5, @types/node@npm:^22.0.0, @types/node@npm:^22.7.6":
   version: 22.7.6
   resolution: "@types/node@npm:22.7.6"
   dependencies:
@@ -6033,24 +6033,6 @@ __metadata:
   version: 16.18.114
   resolution: "@types/node@npm:16.18.114"
   checksum: 10c0/38391d08cd795857a664c8c26e0c722d386255e5d19770faec9a9b475c27b5502aee8ba5b159052c840a6bff715ac27e7329ba4df360e56cf0354137024f1f1d
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^18.18.5":
-  version: 18.19.56
-  resolution: "@types/node@npm:18.19.56"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 10c0/4cc4a6e9051d2d4458bfef4cbaee3c5f920dd318f6e940a5e0c378b1b2ec5e716d0973a406270cc51096a682069524d8a5aeee02046d4430addf56f41af47375
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20.8.3":
-  version: 20.16.12
-  resolution: "@types/node@npm:20.16.12"
-  dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/f6a3c90c6745881d47f8dae7eb39d0dd6df9a4060c8f1ab7004690f60b9b183d862c9c6b380b9e8d5a17dd670ac7b19d6318f24c170897c85a9729f9804f47cf
   languageName: node
   linkType: hard
 
@@ -14958,10 +14940,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbinaryfile@npm:5.0.2, isbinaryfile@npm:^5.0.0":
-  version: 5.0.2
-  resolution: "isbinaryfile@npm:5.0.2"
-  checksum: 10c0/9696f20cf995e375ba8bfdba3ff7d1c0435346f6fc5dd9c049a55514c56e9f49342bbf8c240dc9f56e104bd3a69176c0421922bcb34d72b3c943f4117ade3f53
+"isbinaryfile@npm:5.0.3, isbinaryfile@npm:^5.0.0":
+  version: 5.0.3
+  resolution: "isbinaryfile@npm:5.0.3"
+  checksum: 10c0/b27ff6f4018f8189e810e78cc20c2bee0d301e359e763182ea3b5b1abfc41afa3e0f85c2d32c0d5c9f2dd5c777793998e782678a4b37c78ba084de22f4e64f0e
   languageName: node
   linkType: hard
 
@@ -16788,18 +16770,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^11.0.0, mem-fs-editor@npm:^11.0.1, mem-fs-editor@npm:^11.1.1":
-  version: 11.1.1
-  resolution: "mem-fs-editor@npm:11.1.1"
+"mem-fs-editor@npm:^11.0.0, mem-fs-editor@npm:^11.0.1, mem-fs-editor@npm:^11.1.3":
+  version: 11.1.3
+  resolution: "mem-fs-editor@npm:11.1.3"
   dependencies:
     "@types/ejs": "npm:^3.1.4"
-    "@types/node": "npm:^18.18.5"
+    "@types/node": "npm:>=18"
     binaryextensions: "npm:^6.11.0"
     commondir: "npm:^1.0.1"
     deep-extend: "npm:^0.6.0"
     ejs: "npm:^3.1.10"
     globby: "npm:^14.0.2"
-    isbinaryfile: "npm:5.0.2"
+    isbinaryfile: "npm:5.0.3"
     minimatch: "npm:^9.0.3"
     multimatch: "npm:^7.0.0"
     normalize-path: "npm:^3.0.0"
@@ -16807,19 +16789,19 @@ __metadata:
     vinyl: "npm:^3.0.0"
   peerDependencies:
     mem-fs: ^4.0.0
-  checksum: 10c0/eed8a6611b59a25fdb2ffedc185e440980d98d9dbc5dfb12521fbba5d5a55e3d9207de959d18283b18b8c56987074484f7b75ebbb3e7edb2be6b19852f2b7eb9
+  checksum: 10c0/1ce467fd81800ca1cd4e8cccadc4cdc7656941a29049bf65d3916cfa817830980518887149eda8c44100d0bd3b2725bd26399523007f82ba890778ecb8277280
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^4.0.0, mem-fs@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "mem-fs@npm:4.1.0"
+"mem-fs@npm:^4.0.0, mem-fs@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "mem-fs@npm:4.1.1"
   dependencies:
-    "@types/node": "npm:^20.8.3"
+    "@types/node": "npm:>=18"
     "@types/vinyl": "npm:^2.0.8"
     vinyl: "npm:^3.0.0"
     vinyl-file: "npm:^5.0.0"
-  checksum: 10c0/acc525c83faacadca9fe188594ff66ff50eb61c3097de54607130eea772fd4835805a1bc82d01140fe82c5ca1402c84bf6cb53c390fa032cd02fee146126fd55
+  checksum: 10c0/5c80a09b9c529d035e523eefa7e4b90c494de6c3ac554a4ccdc6a5de6aca02299ed85a54214f09c2d299a6377b7c08ceece6dc08e707e78cc714a02dcd7e2e1a
   languageName: node
   linkType: hard
 
@@ -24589,13 +24571,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~5.26.4":
-  version: 5.26.5
-  resolution: "undici-types@npm:5.26.5"
-  checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
-  languageName: node
-  linkType: hard
-
 "undici-types@npm:~6.19.2":
   version: 6.19.6
   resolution: "undici-types@npm:6.19.6"
@@ -26035,9 +26010,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:4.4.2, yeoman-environment@npm:^4.0.0":
-  version: 4.4.2
-  resolution: "yeoman-environment@npm:4.4.2"
+"yeoman-environment@npm:4.4.3, yeoman-environment@npm:^4.0.0":
+  version: 4.4.3
+  resolution: "yeoman-environment@npm:4.4.3"
   dependencies:
     "@yeoman/adapter": "npm:^1.4.0"
     "@yeoman/conflicter": "npm:^2.0.0-alpha.2"
@@ -26065,16 +26040,16 @@ __metadata:
     mem-fs: ^4.0.0
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/b6ef63d40b1eca887772dc62be4730afef4c6794e2142d45fa45ca4f45122d24cb5cfd8326017e6e0c6e800221d651797db79d6064223f4b10134bf4b39548a0
+  checksum: 10c0/61bdc49707f60d4b9a0f6a73c3bf08ac03a43a752c61d9707c12dcef3f27d089777207fe4c2408a9a2b7833e4e51baa6086098c8b0f3d8b0f8de23ddd2b5a99f
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^7.3.2":
-  version: 7.3.2
-  resolution: "yeoman-generator@npm:7.3.2"
+"yeoman-generator@npm:^7.3.3":
+  version: 7.3.3
+  resolution: "yeoman-generator@npm:7.3.3"
   dependencies:
     "@types/lodash-es": "npm:^4.17.9"
-    "@types/node": "npm:^18.18.5"
+    "@types/node": "npm:>=18.18.5"
     "@yeoman/namespace": "npm:^1.0.0"
     chalk: "npm:^5.3.0"
     debug: "npm:^4.1.1"
@@ -26093,11 +26068,7 @@ __metadata:
   peerDependencies:
     "@yeoman/types": ^1.1.1
     mem-fs: ^4.0.0
-    yeoman-environment: ^4.0.0
-  peerDependenciesMeta:
-    yeoman-environment:
-      optional: true
-  checksum: 10c0/34018bbd3b6cf232ad6ece07c8c7781035da8e4242732d611baedd3f11d0316a19e7cd28c30e8088666d199ff33429d6f900901dc7e8deaed468c25cd91ba8cb
+  checksum: 10c0/8adfb64211a3bb80589f3c881d6b06a1cb8fa25220d5c4ee99bf3edb4c46c426ba242befae7164c65f367d04cce2a6ad1e4b29c4da6c0e2d21044e100eb39cf9
   languageName: node
   linkType: hard
 
