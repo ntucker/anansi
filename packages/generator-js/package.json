@@ -60,7 +60,7 @@
     "yeoman-environment": "4.4.3"
   },
   "engines": {
-    "node": ">=18.0.0",
+    "node": "^18.17.0 || >=20.5.0",
     "npm": ">= 6.0.0"
   },
   "dependencies": {
