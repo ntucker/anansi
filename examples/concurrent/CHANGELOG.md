@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.16](https://github.com/ntucker/anansi/compare/example-react-18@8.0.15...example-react-18@8.0.16) (2024-10-22)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2562](https://github.com/ntucker/anansi/issues/2562)) ([59b19b9](https://github.com/ntucker/anansi/commit/59b19b98e03fb21a1d2a00acb19c69d3fbc728f1))
+* Update babel packages to v7.25.9 ([#2561](https://github.com/ntucker/anansi/issues/2561)) ([147231a](https://github.com/ntucker/anansi/commit/147231a28dac15b30c86b92039d883cd189f60f3))
+* Update validation packages ([#2559](https://github.com/ntucker/anansi/issues/2559)) ([4002d35](https://github.com/ntucker/anansi/commit/4002d35c9f7943d04c005e217b7a861b19d5bf33))
+
 ### [8.0.15](https://github.com/ntucker/anansi/compare/example-react-18@8.0.14...example-react-18@8.0.15) (2024-10-18)
 
 ### 📦 Package
