@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.25.8",
-    "@babel/eslint-plugin": "^7.25.7",
+    "@babel/eslint-plugin": "^7.25.9",
     "@eslint/js": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
