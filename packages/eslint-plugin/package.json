@@ -33,7 +33,7 @@
     "node": "^18.18.0 || >=20.0.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.25.8",
+    "@babel/eslint-parser": "^7.25.9",
     "@babel/eslint-plugin": "^7.25.9",
     "@eslint/js": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
