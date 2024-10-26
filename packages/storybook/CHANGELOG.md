@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.10](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.9...@anansi/storybook@3.2.10) (2024-10-26)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2567](https://github.com/ntucker/anansi/issues/2567)) ([f3319a0](https://github.com/ntucker/anansi/commit/f3319a0b5d1d2496bbf4f512a959f237c16b2b25))
+
 ### [3.2.9](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.8...@anansi/storybook@3.2.9) (2024-10-22)
 
 ### 📦 Package
