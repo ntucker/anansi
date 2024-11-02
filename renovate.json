@@ -11,17 +11,16 @@
     "@ant-design/pro-layout",
     "eslint-plugin-react-hooks"
   ],
-
   "timezone": "America/Chicago",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
-      "matchPaths": ["packages/**"],
+      "matchFileNames": ["packages/**"],
       "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump"
     },
     {
-      "matchPaths": ["examples/**"],
+      "matchFileNames": ["examples/**"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "rangeStrategy": "auto"
     },
@@ -41,15 +40,15 @@
       "groupName": "react"
     },
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/webpack",
-        "https://github.com/webpack-contrib",
-        "https://github.com/callstack/linaria",
-        "https://github.com/Anber/wyw-in-js"
-      ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupSlug": "webpack",
-      "groupName": "webpack packages"
+      "groupName": "webpack packages",
+      "matchSourceUrls": [
+        "https://github.com/webpack{/,}**",
+        "https://github.com/webpack-contrib{/,}**",
+        "https://github.com/callstack/linaria{/,}**",
+        "https://github.com/Anber/wyw-in-js{/,}**"
+      ]
     },
     {
       "matchPackageNames": [
