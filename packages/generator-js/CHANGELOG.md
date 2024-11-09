@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.6...@anansi/generator-js@12.6.7) (2024-11-09)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2573](https://github.com/ntucker/anansi/issues/2573)) ([38c2abe](https://github.com/ntucker/anansi/commit/38c2abeb84e1d411dc3f15586d52873914957587))
+
 ### [12.6.6](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.5...@anansi/generator-js@12.6.6) (2024-10-18)
 
 ### 💅 Enhancement
