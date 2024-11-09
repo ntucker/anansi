@@ -9698,10 +9698,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.38.1, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
-  version: 3.38.1
-  resolution: "core-js@npm:3.38.1"
-  checksum: 10c0/7df063b6f13a54e46515817ac3e235c6c598a4d3de65cd188a061fc250642be313b895fb9fb2f36e1e31890a1bb4ef61d82666a340413f540b7ce3c65689739b
+"core-js@npm:3.39.0, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
+  version: 3.39.0
+  resolution: "core-js@npm:3.39.0"
+  checksum: 10c0/f7602069b6afb2e3298eec612a5c1e0c3e6a458930fbfc7a4c5f9ac03426507f49ce395eecdd2d9bae9024f820e44582b67ffe16f2272395af26964f174eeb6b
   languageName: node
   linkType: hard
 
@@ -11842,7 +11842,7 @@ __metadata:
     "@types/react-router-dom": "npm:5.3.3"
     babel-loader: "npm:9.2.1"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.38.1"
+    core-js: "npm:3.39.0"
     eslint: "npm:^9.0.0"
     prettier: "npm:^3.0.0"
     react: "npm:^18.2.0"
@@ -11891,7 +11891,7 @@ __metadata:
     "@types/react-test-renderer": "npm:18.3.0"
     antd: "npm:5.21.6"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.38.1"
+    core-js: "npm:3.39.0"
     eslint: "npm:9.13.0"
     history: "npm:5.3.0"
     jest: "npm:29.7.0"
@@ -11946,7 +11946,7 @@ __metadata:
     "@types/react-test-renderer": "npm:18.3.0"
     antd: "npm:5.21.6"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.38.1"
+    core-js: "npm:3.39.0"
     eslint: "npm:^9.0.0"
     history: "npm:^5.3.0"
     jest: "npm:29.7.0"
