@@ -84,7 +84,7 @@
     "@anansi/router": "workspace:^",
     "@babel/runtime": "^7.17.0",
     "chalk": "^4.1.2",
-    "compression": "^1.7.4",
+    "compression": "^1.7.5",
     "cross-fetch": "^4.0.0",
     "enhanced-resolve": "^5.17.1",
     "express": "^4.21.1",
