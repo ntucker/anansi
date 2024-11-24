@@ -1,79 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="main"
->
-  <h3>
-    Hello 
-    <img
-      src="SvgrURL"
-      style={
-        {
-          "width": "1em",
-        }
-      }
-    />
-     
-    <div
-      style={
-        {
-          "width": "1em",
-        }
-      }
-    >
-      [Mocked SVG]
-    </div>
-    World 
-    <a
-      href="https://true.io"
-    >
-      True IO
-    </a>
-    <span
-      style={
-        {
-          "display": "inline-block",
-          "height": "10px",
-          "width": "10px",
-        }
-      }
-    >
-      <div>
+<DocumentFragment>
+  <div
+    class="main"
+  >
+    <h3>
+      Hello 
+      <img
+        src="SvgrURL"
+        style="width: 1em;"
+      />
+       
+      <div
+        style="width: 1em;"
+      >
         [Mocked SVG]
       </div>
-    </span>
-  </h3>
-  <p
-    className="mountainTop"
-  >
-    Ok again 
-    <img
-      src="FileURL"
-    />
-     
-    /hi/bob/test.txt
-     
-    /repos/:owner/:repo/issues/:number
-     
-    /2/
-  </p>
-  <p
-    className="silly"
-  >
-    $text-color: 
-    textColor
-  </p>
-  <p>
-    <img
-      src="SvgrURL"
-    />
-  </p>
-  <code>
-    &lt;html&gt;
+      World 
+      <a
+        href="https://true.io"
+      >
+        True IO
+      </a>
+      <span
+        style="width: 10px; height: 10px; display: inline-block;"
+      >
+        <div>
+          [Mocked SVG]
+        </div>
+      </span>
+    </h3>
+    <p
+      class="mountainTop"
+    >
+      Ok again 
+      <img
+        src="FileURL"
+      />
+       /hi/bob/test.txt /repos/:owner/:repo/issues/:number /2/
+    </p>
+    <p
+      class="silly"
+    >
+      $text-color: textColor
+    </p>
+    <p>
+      <img
+        src="SvgrURL"
+      />
+    </p>
+    <code>
+      &lt;html&gt;
   &lt;body&gt;&lt;h1&gt;My HTML Works&lt;/h1&gt;&lt;/body&gt;
 &lt;/html&gt;
 
-  </code>
-</div>
+    </code>
+  </div>
+</DocumentFragment>
 `;

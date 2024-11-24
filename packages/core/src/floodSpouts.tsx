@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import { hydrateRoot } from 'react-dom/client';
 
 export default async function floodSpouts(
