@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.11](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.10...@anansi/webpack-config@20.0.11) (2024-11-24)
+
+### 📦 Package
+
+* Support any react types version ([889ccb9](https://github.com/ntucker/anansi/commit/889ccb987d3b6e03d38f9ec5a7541c8219dba0e5))
+* Update all non-major dependencies ([#2580](https://github.com/ntucker/anansi/issues/2580)) ([3011a9b](https://github.com/ntucker/anansi/commit/3011a9b681d44b77f6b5caa9ad361ff443d3daee))
+* Update webpack packages ([#2575](https://github.com/ntucker/anansi/issues/2575)) ([34ba039](https://github.com/ntucker/anansi/commit/34ba039b4313b9d5b5f0b58f0450ea38532f31b1))
+* Update webpack packages ([#2576](https://github.com/ntucker/anansi/issues/2576)) ([adba526](https://github.com/ntucker/anansi/commit/adba526bf714a2f53f623dae7c7fa502ec974db2))
+* Update webpack packages ([#2582](https://github.com/ntucker/anansi/issues/2582)) ([9a451e8](https://github.com/ntucker/anansi/commit/9a451e8b80be9d98f5da5a433a5c0072821cc579))
+
 ### [20.0.10](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.9...@anansi/webpack-config@20.0.10) (2024-11-09)
 
 ### 📦 Package

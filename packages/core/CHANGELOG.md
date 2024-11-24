@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.10...@anansi/core@0.20.11) (2024-11-24)
+
+### 📦 Package
+
+* Match any types/react ([3ea2b96](https://github.com/ntucker/anansi/commit/3ea2b96e1c702de9200481b1b57eccc67c6b8622))
+
 ### [0.20.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.9...@anansi/core@0.20.10) (2024-11-09)
 
 ### 📦 Package
