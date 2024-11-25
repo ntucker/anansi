@@ -2847,22 +2847,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.14.16, @data-client/endpoint@npm:^0.14.12, @data-client/endpoint@npm:^0.14.16":
-  version: 0.14.16
-  resolution: "@data-client/endpoint@npm:0.14.16"
+"@data-client/endpoint@npm:0.14.17, @data-client/endpoint@npm:^0.14.12, @data-client/endpoint@npm:^0.14.17":
+  version: 0.14.17
+  resolution: "@data-client/endpoint@npm:0.14.17"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
-  checksum: 10c0/0628d254b0e4abe524b10cc9f62f3626ffdf71810685b3fe4e23e6af71a0d368a2df15a96a907c19c0167f14883fbd0a9a08dfd04bae6061b1f0c37971b0522f
+  checksum: 10c0/e9c665adf28032a664193b5da02d1ab2f2f515fc67a08c6e8d3c6863097f46b3a2d7d889a9b0e368b835747f46f06b1be967c96518941b3b350ed88ff547af9b
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.14.16":
-  version: 0.14.16
-  resolution: "@data-client/graphql@npm:0.14.16"
+"@data-client/graphql@npm:0.14.17":
+  version: 0.14.17
+  resolution: "@data-client/graphql@npm:0.14.17"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
-    "@data-client/endpoint": "npm:^0.14.16"
-  checksum: 10c0/50766d759801a85ab8efdbd2efcdd4dfa47cfa2893bcf166374b8f6c05461679ecea4300d5ee7999a375f08f17fd8d046fe87470bb0131978a5015025a34eefa
+    "@data-client/endpoint": "npm:^0.14.17"
+  checksum: 10c0/b89b944edff7d352bc75424290e37df0d067ad3a543813666091195eba58666c1ad5406fda2fec27e8a55f7906e0bf0108aabd6ec19b542e0f18df9821ad6f81
   languageName: node
   linkType: hard
 
@@ -2917,15 +2917,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.14.16, @data-client/react@npm:^0.14.0":
-  version: 0.14.16
-  resolution: "@data-client/react@npm:0.14.16"
+"@data-client/react@npm:0.14.17, @data-client/react@npm:^0.14.0":
+  version: 0.14.17
+  resolution: "@data-client/react@npm:0.14.17"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
     "@data-client/core": "npm:^0.14.16"
-    "@data-client/use-enhanced-reducer": "npm:^0.1.10"
+    "@data-client/use-enhanced-reducer": "npm:^0.1.11"
   peerDependencies:
-    "@react-navigation/native": ^6.0.0
+    "@react-navigation/native": ^6.0.0 || ^7.0.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
     react: ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
   peerDependenciesMeta:
@@ -2933,24 +2933,24 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/0f2478c8b9261d030692afb47c9195ed0740f2e94369855fda7d53ff4d73b30c09f5ce893188c5b902a481ae79be367bb14e2e8fab98c8c54d7176dad1235886
+  checksum: 10c0/5fea2a045d165b4f0911cdcdaf9e85731e28635263d1c94fca46072ca996492bb0476e9b794f9b47c474a935ccce5b26af78b636a6c2d41ca7b0baa7ee1cc8f2
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.14.16":
-  version: 0.14.16
-  resolution: "@data-client/rest@npm:0.14.16"
+"@data-client/rest@npm:0.14.17":
+  version: 0.14.17
+  resolution: "@data-client/rest@npm:0.14.17"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
-    "@data-client/endpoint": "npm:^0.14.16"
+    "@data-client/endpoint": "npm:^0.14.17"
     path-to-regexp: "npm:^6.3.0"
-  checksum: 10c0/65ee33a565dc90baedb0ace5c6b0b097a54e57097fc40e240bd03f95c6d4eaa9882bd877b52210b789ad0c3ef38df6ef8ae37ab99c5689cdb7d3918bff16c7c2
+  checksum: 10c0/fdaeda204eafad54ed02f77753798e40fbb77874a7173f5cd87a04333ac2dc0cdfee1db24b4df4dc8e5c74567e1735ab5daa15aeadc7f24d40150dcbcd15a9ff
   languageName: node
   linkType: hard
 
-"@data-client/test@npm:0.14.16":
-  version: 0.14.16
-  resolution: "@data-client/test@npm:0.14.16"
+"@data-client/test@npm:0.14.17":
+  version: 0.14.17
+  resolution: "@data-client/test@npm:0.14.17"
   dependencies:
     "@babel/runtime": "npm:^7.17.0"
     "@testing-library/dom": "npm:^10.1.0"
@@ -2981,20 +2981,20 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 10c0/f07eb72858990ecbaf7ab7d0f11c2ac61cabf84fc7411f1f0016c4d034af537356b6af136c9e2530635518416f7bf70b8c506889b05c6be84267843585c7082e
+  checksum: 10c0/01ad98b420a15edca3f3fed8baefb9113d00406e84cb5d2aa07b1988c08623058ef9920550a680467727f6bacdf7a93620971b6ee0270805ec8136211dc60684
   languageName: node
   linkType: hard
 
-"@data-client/use-enhanced-reducer@npm:^0.1.10":
-  version: 0.1.10
-  resolution: "@data-client/use-enhanced-reducer@npm:0.1.10"
+"@data-client/use-enhanced-reducer@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "@data-client/use-enhanced-reducer@npm:0.1.11"
   peerDependencies:
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
     react: ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/669d52d52291f5e4013c0d46957be195b2619c5e78f14b2746df6bf19956691ed3e3a1bbeb1bf68a338a24626009fd5339e1eba764593c00c1c0fbd9ff3da056
+  checksum: 10c0/bd75b639beed779d7213ab947c9b26146fb620ea9808e59015cd120ede7d197b9ff4f6349d9f496ca4e6d79237ea7755ed42fb9e3c71eb5aed2f76446cd73c81
   languageName: node
   linkType: hard
 
@@ -11897,12 +11897,12 @@ __metadata:
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.26.0"
     "@babel/runtime": "npm:7.26.0"
-    "@data-client/endpoint": "npm:0.14.16"
+    "@data-client/endpoint": "npm:0.14.17"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.14.15"
-    "@data-client/react": "npm:0.14.16"
-    "@data-client/rest": "npm:0.14.16"
-    "@data-client/test": "npm:0.14.16"
+    "@data-client/react": "npm:0.14.17"
+    "@data-client/rest": "npm:0.14.17"
+    "@data-client/test": "npm:0.14.17"
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:7.20.5"
@@ -11945,10 +11945,10 @@ __metadata:
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
     "@babel/runtime": "npm:7.26.0"
-    "@data-client/graphql": "npm:0.14.16"
-    "@data-client/react": "npm:0.14.16"
-    "@data-client/rest": "npm:0.14.16"
-    "@data-client/test": "npm:0.14.16"
+    "@data-client/graphql": "npm:0.14.17"
+    "@data-client/react": "npm:0.14.17"
+    "@data-client/rest": "npm:0.14.17"
+    "@data-client/test": "npm:0.14.17"
     "@storybook/addon-essentials": "npm:8.4.5"
     "@storybook/addon-links": "npm:8.4.5"
     "@storybook/addon-mdx-gfm": "npm:8.4.5"
