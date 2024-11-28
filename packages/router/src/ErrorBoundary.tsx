@@ -19,7 +19,7 @@ export default class ErrorBoundary<E extends ErrorTypes> extends Component<
   Props<E>,
   State<E>
 > {
-  private declare unsubscribe: () => void;
+  declare private unsubscribe: () => void;
 
   static defaultProps = {
     fallbackComponent: ({

@@ -21,7 +21,7 @@ export default class RouteController<
   // cache for match lookups. Reset if routes ever change.
   // could make this LRU if it takes up too much space.
   private cachedMatches: Record<string, any> = {};
-  private declare normalizedRouter: {
+  declare private normalizedRouter: {
     pathOrPathName: string;
     route: any;
     matcher: MatchFunction<object>;

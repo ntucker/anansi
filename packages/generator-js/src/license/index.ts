@@ -1,5 +1,4 @@
-import Generator, { Mixi } from 'yeoman-generator';
-import { BaseFeatures, BaseOptions } from 'yeoman-generator';
+import Generator from 'yeoman-generator';
 
 export const licenses = [
   { name: 'Apache 2.0', value: 'Apache-2.0' },
@@ -16,8 +15,8 @@ export const licenses = [
 ];
 
 export default class GeneratorLicense extends Generator {
-  private declare gitc: Record<string, any>;
-  private declare props: Record<string, any>;
+  declare private gitc: Record<string, any>;
+  declare private props: Record<string, any>;
 
   constructor(
     args: string | string[],
