@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.17](https://github.com/ntucker/anansi/compare/example-typescript@15.1.16...example-typescript@15.1.17) (2024-11-30)
+
+### 📦 Package
+
+* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+* Update all non-major dependencies to v0.14.17 ([#2587](https://github.com/ntucker/anansi/issues/2587)) ([4aab2b5](https://github.com/ntucker/anansi/commit/4aab2b50e5240b4c8d97e78b91f02428f55feaf0))
+* Update storybook monorepo to v8.4.5 ([#2586](https://github.com/ntucker/anansi/issues/2586)) ([7f75795](https://github.com/ntucker/anansi/commit/7f75795d9739d7ea992bc5ce6a0ad756ef855d98))
+* Update storybook monorepo to v8.4.6 ([#2592](https://github.com/ntucker/anansi/issues/2592)) ([3d9ab69](https://github.com/ntucker/anansi/commit/3d9ab6983505e076133a89f23e0b861757a69f72))
+
 ### [15.1.16](https://github.com/ntucker/anansi/compare/example-typescript@15.1.15...example-typescript@15.1.16) (2024-11-24)
 
 ### 📦 Package

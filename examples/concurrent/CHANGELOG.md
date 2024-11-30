@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.20](https://github.com/ntucker/anansi/compare/example-react-18@8.0.19...example-react-18@8.0.20) (2024-11-30)
+
+### 📦 Package
+
+* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+* Update all non-major dependencies to v0.14.17 ([#2587](https://github.com/ntucker/anansi/issues/2587)) ([4aab2b5](https://github.com/ntucker/anansi/commit/4aab2b50e5240b4c8d97e78b91f02428f55feaf0))
+* Update validation packages ([#2590](https://github.com/ntucker/anansi/issues/2590)) ([791909e](https://github.com/ntucker/anansi/commit/791909e075e564a47a1ee9def958ae5344774bb9))
+* Update validation packages to ^9.16.0 ([#2591](https://github.com/ntucker/anansi/issues/2591)) ([fc49e38](https://github.com/ntucker/anansi/commit/fc49e38561110a72fc2b4ca24a601ff603252184))
+
 ### [8.0.19](https://github.com/ntucker/anansi/compare/example-react-18@8.0.18...example-react-18@8.0.19) (2024-11-24)
 
 ### 📦 Package

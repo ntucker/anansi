@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.7...@anansi/generator-js@12.6.8) (2024-11-30)
+
+### 📦 Package
+
+* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+* Update `pacote` to v21 ([#2589](https://github.com/ntucker/anansi/issues/2589)) ([9fb2f66](https://github.com/ntucker/anansi/commit/9fb2f6698d13bb8f9b6bf7c9e08fa8e7532d1cc3))
+* Update validation packages ([#2590](https://github.com/ntucker/anansi/issues/2590)) ([791909e](https://github.com/ntucker/anansi/commit/791909e075e564a47a1ee9def958ae5344774bb9))
+
 ### [12.6.7](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.6...@anansi/generator-js@12.6.7) (2024-11-09)
 
 ### 📦 Package

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.9](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.8...@anansi/router@0.10.9) (2024-11-30)
+
+### 📦 Package
+
+* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+* Update validation packages ([#2590](https://github.com/ntucker/anansi/issues/2590)) ([791909e](https://github.com/ntucker/anansi/commit/791909e075e564a47a1ee9def958ae5344774bb9))
+
 ### [0.10.8](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.7...@anansi/router@0.10.8) (2024-11-24)
 
 ### 📦 Package

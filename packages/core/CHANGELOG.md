@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.11...@anansi/core@0.20.12) (2024-11-30)
+
+### 📦 Package
+
+* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+
 ### [0.20.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.10...@anansi/core@0.20.11) (2024-11-24)
 
 ### 📦 Package
