@@ -63,8 +63,6 @@ export default class extends BetterGenerator {
         '@types/react',
         '@types/react-dom',
         '@data-client/test',
-        '@types/react-test-renderer',
-        'react-test-renderer',
         'react-refresh',
       ]),
       await this.addDependencies([

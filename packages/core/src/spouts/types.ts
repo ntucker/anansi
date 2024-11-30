@@ -2,6 +2,7 @@ import { Route, RouteController } from '@anansi/router';
 import { Request, Response } from 'express';
 import { History } from 'history';
 import { IncomingMessage, ServerResponse } from 'http';
+import type { JSX } from 'react';
 import type { StatsCompilation } from 'webpack';
 
 /* Variables from the rendering call */

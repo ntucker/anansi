@@ -1,3 +1,5 @@
+import type { JSX } from 'react';
+
 import { ServerProps } from './types.js';
 
 const appSpout =

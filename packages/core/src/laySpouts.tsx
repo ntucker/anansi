@@ -1,4 +1,5 @@
 import crypto from 'crypto';
+import type { JSX } from 'react';
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
 import type { Render } from './scripts/types.js';

@@ -1,5 +1,5 @@
 import { useLocation } from '@pojo-router/core';
-import React, { memo, Suspense } from 'react';
+import React, { memo, Suspense, type JSX } from 'react';
 
 import ErrorBoundary from './ErrorBoundary.js';
 import type { ErrorTypes } from './types.js';

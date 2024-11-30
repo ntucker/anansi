@@ -40,8 +40,8 @@ export default class TestingGenerator extends BetterGenerator {
         '@anansi/jest-preset',
         'jest',
         '@types/jest',
-        '@types/react-test-renderer',
-        'react-test-renderer',
+        '@testing-library/react',
+        '@testing-library/dom',
         'jest-environment-jsdom',
       ]),
     ]);

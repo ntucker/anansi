@@ -1,8 +1,8 @@
 import { DataProvider } from '@data-client/react';
 import { FixtureEndpoint, mockInitialState } from '@data-client/test';
+import { render } from '@testing-library/react';
 import React, { Suspense } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import renderer from 'react-test-renderer';
 
 import { PostResource, UserResource } from '../../../data/resources';
 import PostList from '../index';
@@ -58,6 +58,7 @@ it('renders', () => {
       </MemoryRouter>
     </DataProvider>
   );
-  const tree = renderer.create(element).toJSON();
-  expect(tree).toMatchSnapshot();
+  const { asFragment } = render(element);
+
+  expect(asFragment()).toMatchSnapshot();
 });
