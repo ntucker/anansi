@@ -36,7 +36,7 @@
     "eslint": "9.16.0",
     "jest": "29.7.0",
     "prettier": "3.4.1",
-    "react-refresh": "0.14.2",
+    "react-refresh": "0.16.0",
     "typescript": "5.7.2",
     "webpack": "5.96.1",
     "webpack-cli": "5.1.4",
@@ -60,8 +60,8 @@
     "classnames": "2.5.1",
     "core-js": "3.39.0",
     "history": "5.3.0",
-    "react": "19.0.0-rc.1",
-    "react-dom": "19.0.0-rc.1"
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
