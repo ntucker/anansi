@@ -30,7 +30,7 @@
     "@data-client/test": "0.14.17",
     "@types/babel__core": "7.20.5",
     "@types/eslint": "9.6.1",
-    "@types/jest": "29.5.12",
+    "@types/jest": "29.5.14",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0",
     "eslint": "9.16.0",
