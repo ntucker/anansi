@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.19](https://github.com/ntucker/anansi/compare/example-linaria@8.0.18...example-linaria@8.0.19) (2024-12-06)
+
+### 📦 Package
+
+* Update `@types/react-dom` to v19 ([#2598](https://github.com/ntucker/anansi/issues/2598)) ([45283f9](https://github.com/ntucker/anansi/commit/45283f9e506d9e70a99951422d530ffb2437a93c))
+* Update `@types/react` to v19 ([#2597](https://github.com/ntucker/anansi/issues/2597)) ([d0c26b5](https://github.com/ntucker/anansi/commit/d0c26b5d07fc5c1e55bd3720cfd4b12e0de98747))
+* Update babel packages ([#2594](https://github.com/ntucker/anansi/issues/2594)) ([dcaa66b](https://github.com/ntucker/anansi/commit/dcaa66bac333e901021fdb173e2656d4babcf246))
+* Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
+* Update webpack packages ([#2599](https://github.com/ntucker/anansi/issues/2599)) ([eb24b29](https://github.com/ntucker/anansi/commit/eb24b299311b05b7a581ad849dc26ca47a3895cd))
+
 ### [8.0.18](https://github.com/ntucker/anansi/compare/example-linaria@8.0.17...example-linaria@8.0.18) (2024-11-30)
 
 ### 📦 Package

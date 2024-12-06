@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.10](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.9...@anansi/router@0.10.10) (2024-12-06)
+
+### 📦 Package
+
+* Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
+
 ### [0.10.9](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.8...@anansi/router@0.10.9) (2024-11-30)
 
 ### 📦 Package
