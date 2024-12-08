@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.52](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.51...@anansi/cli@3.1.52) (2024-12-08)
+
+### 📦 Package
+
+* Update `execa` to ^9.5.2 ([#2604](https://github.com/ntucker/anansi/issues/2604)) ([e26a505](https://github.com/ntucker/anansi/commit/e26a50598f881eeee6dd55d7a9107a34abe9fa1e))
+
 ### [3.1.51](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.50...@anansi/cli@3.1.51) (2024-12-06)
 
 **Note:** Version bump only for package @anansi/cli

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.13](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.12...@anansi/webpack-config@20.0.13) (2024-12-08)
+
+### 🐛 Bug Fix
+
+* Compatibility with newer sass ([57599c3](https://github.com/ntucker/anansi/commit/57599c3d8d9e21e7e7f7ae7e03eb7ef082953a03))
+* Server builds should embed library includes ([8d444a8](https://github.com/ntucker/anansi/commit/8d444a8be8cbfd683f8ffb76d14a65f209de3f5d))
+
 ### [20.0.12](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.11...@anansi/webpack-config@20.0.12) (2024-12-06)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.9](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.8...@anansi/generator-js@12.6.9) (2024-12-08)
+
+### 📦 Package
+
+* Update `execa` to ^9.5.2 ([#2604](https://github.com/ntucker/anansi/issues/2604)) ([e26a505](https://github.com/ntucker/anansi/commit/e26a50598f881eeee6dd55d7a9107a34abe9fa1e))
+
 ### [12.6.8](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.7...@anansi/generator-js@12.6.8) (2024-11-30)
 
 ### 📦 Package
