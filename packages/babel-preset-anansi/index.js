@@ -277,7 +277,12 @@ function buildPreset(api, options = {}) {
   }
 
   let envOptions = {};
-  if (babelNode || env === 'test' || explicitNodeTarget) {
+  if (
+    babelNode ||
+    env === 'test' ||
+    explicitNodeTarget ||
+    callerTarget === 'node'
+  ) {
     envOptions = {
       targets: {
         node: options.nodeTarget || 'current',
