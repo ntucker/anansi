@@ -48,7 +48,7 @@ const getSASSLoaders = ({ sassResources, sassOptions }) => {
   const loaders = [
     {
       loader: require.resolve('sass-loader'),
-      options: { api: 'legacy', sassOptions },
+      options: { sassOptions },
     },
   ];
   if (sassResources) {
