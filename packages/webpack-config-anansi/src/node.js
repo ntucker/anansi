@@ -4,7 +4,7 @@ import { StatsWriterPlugin } from 'webpack-stats-plugin';
 
 export default function makeNodeConfig(
   baseConfig,
-  { rootPath, serverDir, pkg, library },
+  { rootPath, serverDir, pkg, library, libraryInclude },
 ) {
   const config = { ...baseConfig };
   config.target = 'node';
@@ -25,6 +25,7 @@ export default function makeNodeConfig(
   const externalsFunc = nodeExternals({
     allowlist: [
       /@babel\/runtime/,
+      libraryInclude,
       ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
     ],
     additionalModuleDirs: ['../../node_modules'],
