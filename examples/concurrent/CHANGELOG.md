@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.23](https://github.com/ntucker/anansi/compare/example-react-18@8.0.22...example-react-18@8.0.23) (2024-12-12)
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v5.2.0 ([#2608](https://github.com/ntucker/anansi/issues/2608)) ([b1f3ebf](https://github.com/ntucker/anansi/commit/b1f3ebfa15585216817d0842f570b4454b523976))
+* Update all non-major dependencies ([#2607](https://github.com/ntucker/anansi/issues/2607)) ([e4ca745](https://github.com/ntucker/anansi/commit/e4ca745ff10985f6c952339c0ad38f058e08856e))
+
 ### [8.0.22](https://github.com/ntucker/anansi/compare/example-react-18@8.0.21...example-react-18@8.0.22) (2024-12-08)
 
 **Note:** Version bump only for package example-react-18

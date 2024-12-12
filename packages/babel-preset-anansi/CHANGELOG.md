@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.0.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.11...@anansi/babel-preset@6.0.12) (2024-12-12)
+
+### 🐛 Bug Fix
+
+* Improve server-side compilation with nextjs ([72ac5da](https://github.com/ntucker/anansi/commit/72ac5da518c6b981416173c2cbec389d12265904))
+
 ### [6.0.11](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.10...@anansi/babel-preset@6.0.11) (2024-12-08)
 
 ### 💅 Enhancement
