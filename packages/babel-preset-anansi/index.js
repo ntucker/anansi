@@ -288,7 +288,7 @@ function buildPreset(api, options = {}) {
         node: options.nodeTarget || 'current',
       },
       // maximum compatibility since we don't care about bundle size
-      useBuiltIns: 'usage',
+      useBuiltIns: 'entry',
     };
   } else {
     envOptions = {
