@@ -145,7 +145,7 @@ __metadata:
     source-map-support: "npm:^0.5.21"
     tmp: "npm:^0.2.3"
     unionfs: "npm:^4.5.4"
-    webpack-dev-server: "npm:^5.1.0"
+    webpack-dev-server: "npm:^5.2.0"
     whatwg-fetch: "npm:^3.6.2"
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1
@@ -11934,7 +11934,7 @@ __metadata:
     typescript: "npm:5.7.2"
     webpack: "npm:5.97.1"
     webpack-cli: "npm:5.1.4"
-    webpack-dev-server: "npm:5.1.0"
+    webpack-dev-server: "npm:5.2.0"
   languageName: unknown
   linkType: soft
 
@@ -12129,7 +12129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.19.2, express@npm:^4.21.2":
+"express@npm:^4.21.2":
   version: 4.21.2
   resolution: "express@npm:4.21.2"
   dependencies:
@@ -13744,7 +13744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-entities@npm:^2.1.0, html-entities@npm:^2.4.0":
+"html-entities@npm:^2.1.0":
   version: 2.4.0
   resolution: "html-entities@npm:2.4.0"
   checksum: 10c0/42bbd5d91f451625d7e35aaed41c8cd110054c0d0970764cb58df467b3f27f20199e8cf7b4aebc8d4eeaf17a27c0d1fb165f2852db85de200995d0f009c9011d
@@ -13915,9 +13915,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http-proxy-middleware@npm:^2.0.3":
-  version: 2.0.6
-  resolution: "http-proxy-middleware@npm:2.0.6"
+"http-proxy-middleware@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "http-proxy-middleware@npm:2.0.7"
   dependencies:
     "@types/http-proxy": "npm:^1.17.8"
     http-proxy: "npm:^1.18.1"
@@ -13929,7 +13929,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/express":
       optional: true
-  checksum: 10c0/25a0e550dd1900ee5048a692e0e9b2b6339d06d487a705d90c47e359e9c6561d648cd7862d001d090e651c9efffa1b6e5160fcf1f299b5fa4935f76e9754eb11
+  checksum: 10c0/8d00a61eb215b83826460b07489d8bb095368ec16e02a9d63e228dcf7524e7c20d61561e5476de1391aecd4ec32ea093279cdc972115b311f8e0a95a24c9e47e
   languageName: node
   linkType: hard
 
@@ -22335,7 +22335,7 @@ __metadata:
     typescript: "npm:5.7.2"
     webpack: "npm:5.97.1"
     webpack-cli: "npm:5.1.4"
-    webpack-dev-server: "npm:5.1.0"
+    webpack-dev-server: "npm:5.2.0"
   languageName: unknown
   linkType: soft
 
@@ -25716,9 +25716,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:5.1.0, webpack-dev-server@npm:^5.0.0, webpack-dev-server@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "webpack-dev-server@npm:5.1.0"
+"webpack-dev-server@npm:5.2.0, webpack-dev-server@npm:^5.0.0, webpack-dev-server@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "webpack-dev-server@npm:5.2.0"
   dependencies:
     "@types/bonjour": "npm:^3.5.13"
     "@types/connect-history-api-fallback": "npm:^1.5.4"
@@ -25733,10 +25733,9 @@ __metadata:
     colorette: "npm:^2.0.10"
     compression: "npm:^1.7.4"
     connect-history-api-fallback: "npm:^2.0.0"
-    express: "npm:^4.19.2"
+    express: "npm:^4.21.2"
     graceful-fs: "npm:^4.2.6"
-    html-entities: "npm:^2.4.0"
-    http-proxy-middleware: "npm:^2.0.3"
+    http-proxy-middleware: "npm:^2.0.7"
     ipaddr.js: "npm:^2.1.0"
     launch-editor: "npm:^2.6.1"
     open: "npm:^10.0.3"
@@ -25757,7 +25756,7 @@ __metadata:
       optional: true
   bin:
     webpack-dev-server: bin/webpack-dev-server.js
-  checksum: 10c0/303c72b743d649dec706aedaeea2f0e924e3fb4432aa5a1e43f807e7c6052817027ccf33f88adb566fa7ebf89f6aed551ce2c2d76b5ccaaaefade83fde7f7a38
+  checksum: 10c0/afb2e51945ac54ef3039e11e377241e1cb97a8d3f526f39f13c3fa924c530fb6063200c2c3ae4e33e6bcc110d4abed777c09ce18e2d261012853d81f3c5820ab
   languageName: node
   linkType: hard
 

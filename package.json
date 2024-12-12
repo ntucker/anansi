@@ -65,7 +65,7 @@
     "typescript": "5.7.2",
     "webpack": "5.97.1",
     "webpack-cli": "5.1.4",
-    "webpack-dev-server": "5.1.0"
+    "webpack-dev-server": "5.2.0"
   },
   "resolutions": {
     "@types/react": "npm:types-react@19.0.0-rc.1",
