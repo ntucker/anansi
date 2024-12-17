@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.54](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.53...@anansi/cli@3.1.54) (2024-12-17)
+
+### 📦 Package
+
+* Update yeoman ([#2609](https://github.com/ntucker/anansi/issues/2609)) ([af6bafd](https://github.com/ntucker/anansi/commit/af6bafda0c9a6d875349991b4b81de5f90738211))
+
 ### [3.1.53](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.52...@anansi/cli@3.1.53) (2024-12-12)
 
 **Note:** Version bump only for package @anansi/cli
