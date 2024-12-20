@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.22](https://github.com/ntucker/anansi/compare/example-typescript@15.1.21...example-typescript@15.1.22) (2024-12-20)
+
+### 📦 Package
+
+* Update `webpack-cli` to v6 ([#2613](https://github.com/ntucker/anansi/issues/2613)) ([a088abe](https://github.com/ntucker/anansi/commit/a088abe490c6dbce14651e5ee999c242887cf514))
+* Update all non-major dependencies ([#2614](https://github.com/ntucker/anansi/issues/2614)) ([22fe059](https://github.com/ntucker/anansi/commit/22fe059354dd141827cee6d28c82b576daa79681))
+
 ### [15.1.21](https://github.com/ntucker/anansi/compare/example-typescript@15.1.20...example-typescript@15.1.21) (2024-12-17)
 
 **Note:** Version bump only for package example-typescript
