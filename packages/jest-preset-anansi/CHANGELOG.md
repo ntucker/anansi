@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.9](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.8...@anansi/jest-preset@0.11.9) (2024-12-25)
+
+### 📦 Package
+
+* Add missing @babel/runtime dep for pnp ([8326289](https://github.com/ntucker/anansi/commit/8326289314023660212a0fc2c25b9d0cd111459e))
+
 ### [0.11.8](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.7...@anansi/jest-preset@0.11.8) (2024-09-06)
 
 ### 💅 Enhancement

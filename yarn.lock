@@ -89,11 +89,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.54, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.55, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/core": "npm:^0.20.14"
+    "@anansi/core": "npm:^0.20.15"
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^22.0.0"
     binary-version-check: "npm:^6.1.0"
@@ -113,7 +113,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.20.14, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.20.15, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -170,7 +170,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^1.0.22, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@npm:^1.0.23, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -243,7 +243,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@npm:^0.11.8, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@npm:^0.11.9, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -11828,7 +11828,7 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.0.12"
     "@anansi/browserslist-config": "npm:^1.5.1"
-    "@anansi/eslint-plugin": "npm:^1.0.22"
+    "@anansi/eslint-plugin": "npm:^1.0.23"
     "@anansi/webpack-config": "npm:^20.0.15"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.26.3"
@@ -11865,10 +11865,10 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.0.12"
     "@anansi/browserslist-config": "npm:^1.5.1"
-    "@anansi/cli": "npm:^3.1.54"
-    "@anansi/core": "npm:^0.20.14"
-    "@anansi/eslint-plugin": "npm:^1.0.22"
-    "@anansi/jest-preset": "npm:^0.11.8"
+    "@anansi/cli": "npm:^3.1.55"
+    "@anansi/core": "npm:^0.20.15"
+    "@anansi/eslint-plugin": "npm:^1.0.23"
+    "@anansi/jest-preset": "npm:^0.11.9"
     "@anansi/router": "npm:^0.10.10"
     "@anansi/webpack-config": "npm:^20.0.15"
     "@ant-design/cssinjs": "npm:1.22.1"
@@ -11913,7 +11913,7 @@ __metadata:
     "@anansi/babel-preset": "npm:^6.0.12"
     "@anansi/browserslist-config": "npm:^1.5.1"
     "@anansi/eslint-plugin": "workspace:^"
-    "@anansi/jest-preset": "npm:^0.11.8"
+    "@anansi/jest-preset": "npm:^0.11.9"
     "@anansi/storybook": "npm:^3.2.18"
     "@anansi/webpack-config": "npm:^20.0.15"
     "@ant-design/cssinjs": "npm:^1.7.1"

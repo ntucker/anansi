@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.1.55](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.54...@anansi/cli@3.1.55) (2024-12-25)
+
+**Note:** Version bump only for package @anansi/cli
+
 ### [3.1.54](https://github.com/ntucker/anansi/compare/@anansi/cli@3.1.53...@anansi/cli@3.1.54) (2024-12-17)
 
 ### 📦 Package
