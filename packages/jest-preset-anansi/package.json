@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
+    "@babel/runtime": "^7.26.0",
     "@types/babel__core": "^7.20.5",
     "babel-jest": "^29.7.0",
     "core-js": "^3.21.0",
