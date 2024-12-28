@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"Error: no test specified\"",
-    "build:lib": "BROWSERSLIST_ENV=node14 yarn g:babel --out-dir lib",
+    "build:lib": "BROWSERSLIST_ENV=node18 yarn g:babel --out-dir lib",
     "build": "run build:lib",
     "dev": "run build:lib -w",
     "build:clean": "yarn g:rimraf lib",
