@@ -15,7 +15,7 @@ export default function antdSpout(): ServerSpout<
 > {
   return next => async props => {
     const { createCache, extractStyle, StyleProvider } = await import(
-      '@ant-design/cssinjs'
+      /* webpackIgnore: true */ '@ant-design/cssinjs'
     );
     const cache = createCache();
 

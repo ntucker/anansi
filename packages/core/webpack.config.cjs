@@ -34,16 +34,11 @@ module.exports = (env, argv) => {
       },
     },
   };
-  const ext = nodeExternals({
-    allowlist: [/@babel\/runtime/],
-    additionalModuleDirs: ['../../node_modules'],
-  });
   config.externals = [
-    function ({ context, request, contextInfo, getResolve }, callback) {
-      if (request === '@ant-design/cssinjs') {
-        callback(null, 'import ' + request);
-      } else ext({ context, request, contextInfo, getResolve }, callback);
-    },
+    nodeExternals({
+      allowlist: [/@babel\/runtime/],
+      additionalModuleDirs: ['../../node_modules'],
+    }),
   ];
   return config;
 };

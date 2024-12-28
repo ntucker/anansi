@@ -68,15 +68,17 @@
     "webpack-dev-server": "5.2.0"
   },
   "resolutions": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0",
-    "normalize-url": "^6"
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "normalize-url": "^6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "dependencies": {
     "@lerna-lite/publish": "^3.0.0",
     "@lerna-lite/version": "^3.0.0",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
