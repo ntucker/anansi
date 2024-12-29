@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.15...@anansi/core@0.20.16) (2024-12-29)
+
+### 💅 Enhancement
+
+* Build to min node version supported ([85e1e24](https://github.com/ntucker/anansi/commit/85e1e24cedabfa2e297ad5f6f58acd7b147f6b53))
+
+### 🐛 Bug Fix
+
+* Preserve dynamic @ant-design/cssinjs so module is optional ([45e17af](https://github.com/ntucker/anansi/commit/45e17af19361ba6afc07479ebd0eac7429c5f3a6))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2617](https://github.com/ntucker/anansi/issues/2617)) ([102b68c](https://github.com/ntucker/anansi/commit/102b68cd1b7e6760100e4db24df2b3a713ca5bbb))
+
 ### [0.20.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.14...@anansi/core@0.20.15) (2024-12-25)
 
 ### 📦 Package

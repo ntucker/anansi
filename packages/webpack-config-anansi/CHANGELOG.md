@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.16](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.15...@anansi/webpack-config@20.0.16) (2024-12-29)
+
+### 💅 Enhancement
+
+* Build to min node version supported ([85e1e24](https://github.com/ntucker/anansi/commit/85e1e24cedabfa2e297ad5f6f58acd7b147f6b53))
+
+### 📦 Package
+
+* Update `postcss-preset-env` to ^10.1.3 ([#2618](https://github.com/ntucker/anansi/issues/2618)) ([d17ef88](https://github.com/ntucker/anansi/commit/d17ef8861515d1d894011e96a3b8779ae7c7dc1f))
+
 ### [20.0.15](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.14...@anansi/webpack-config@20.0.15) (2024-12-20)
 
 ### 📦 Package

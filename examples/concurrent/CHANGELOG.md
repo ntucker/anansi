@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.27](https://github.com/ntucker/anansi/compare/example-react-18@8.0.26...example-react-18@8.0.27) (2024-12-29)
+
+### 🐛 Bug Fix
+
+* Preserve dynamic @ant-design/cssinjs so module is optional ([45e17af](https://github.com/ntucker/anansi/commit/45e17af19361ba6afc07479ebd0eac7429c5f3a6))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2617](https://github.com/ntucker/anansi/issues/2617)) ([102b68c](https://github.com/ntucker/anansi/commit/102b68cd1b7e6760100e4db24df2b3a713ca5bbb))
+
 ### [8.0.26](https://github.com/ntucker/anansi/compare/example-react-18@8.0.25...example-react-18@8.0.26) (2024-12-25)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.25](https://github.com/ntucker/anansi/compare/example-linaria@8.0.24...example-linaria@8.0.25) (2024-12-29)
+
+### 🐛 Bug Fix
+
+* Preserve dynamic @ant-design/cssinjs so module is optional ([45e17af](https://github.com/ntucker/anansi/commit/45e17af19361ba6afc07479ebd0eac7429c5f3a6))
+
 ### [8.0.24](https://github.com/ntucker/anansi/compare/example-linaria@8.0.23...example-linaria@8.0.24) (2024-12-25)
 
 **Note:** Version bump only for package example-linaria
