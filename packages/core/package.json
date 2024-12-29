@@ -85,7 +85,7 @@
     "@babel/runtime": "^7.17.0",
     "chalk": "^4.1.2",
     "compression": "^1.7.5",
-    "cross-fetch": "^4.0.0",
+    "cross-fetch": "^4.1.0",
     "enhanced-resolve": "^5.18.0",
     "express": "^4.21.2",
     "fs-require": "^1.6.0",
