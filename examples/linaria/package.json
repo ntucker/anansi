@@ -44,7 +44,7 @@
     "@linaria/core": "6.2.0",
     "@linaria/react": "6.2.1",
     "classnames": "2.5.1",
-    "core-js": "3.39.0",
+    "core-js": "3.40.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
