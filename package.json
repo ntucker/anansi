@@ -47,7 +47,7 @@
     "@babel/core": "7.26.0",
     "@commitlint/cli": "19.6.1",
     "@commitlint/config-conventional": "19.6.0",
-    "@lerna-lite/cli": "3.10.1",
+    "@lerna-lite/cli": "3.11.0",
     "@types/node": "^22.0.0",
     "babel-loader": "9.2.1",
     "babel-plugin-module-resolver": "5.0.2",
