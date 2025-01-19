@@ -29,4 +29,15 @@ export default [
       },
     },
   },
+  {
+    files: [
+      'packages/**/*.test.{js,jsx,ts,tsx}',
+      'packages/**/__tests__/**/*.{js,jsx,ts,tsx}',
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+  },
 ];

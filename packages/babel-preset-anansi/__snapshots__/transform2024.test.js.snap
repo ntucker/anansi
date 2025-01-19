@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Babel Transform 2024 browsers should maintain class properties 1`] = `
+"class MyClass {
+  myProp = 42;
+}"
+`;
+
+exports[`Babel Transform 2024 browsers should maintain class statics 1`] = `
+"class StaticEntity extends Entity {
+  static urlRoot = '/2/';
+  static {
+    this.a = this.urlRoot;
+  }
+}"
+`;

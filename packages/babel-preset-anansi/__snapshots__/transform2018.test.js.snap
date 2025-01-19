@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildPreset - Babel Transform should apply class properties transform when not loose 1`] = `
+"import _defineProperty from "@babel/runtime/helpers/defineProperty";
+class MyClass {
+  constructor() {
+    _defineProperty(this, "myProp", 42);
+  }
+}"
+`;
+
+exports[`buildPreset - Babel Transform should not apply class properties transform when loose 1`] = `
+"class MyClass {
+  constructor() {
+    this.myProp = 42;
+  }
+}"
+`;
+
+exports[`buildPreset - Babel Transform should transform JSX in development 1`] = `
+"import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+const element = /*#__PURE__*/_jsxDEV("div", {
+  children: "Hello World"
+}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 1,
+  columnNumber: 17
+}, this);"
+`;
+
+exports[`buildPreset - Babel Transform should transform JSX in production 1`] = `
+"import { jsx as _jsx } from "react/jsx-runtime";
+const element = /*#__PURE__*/_jsx("div", {
+  children: "Hello World"
+});"
+`;
+
+exports[`buildPreset - Babel Transform should transform TypeScript to JavaScript 1`] = `"const x = 42;"`;
+
+exports[`buildPreset - Babel Transform should transform class statics 1`] = `
+"var _StaticEntity;
+class StaticEntity extends Entity {}
+_StaticEntity = StaticEntity;
+StaticEntity.urlRoot = '/2/';
+_StaticEntity.a = _StaticEntity.urlRoot;"
+`;

@@ -26,6 +26,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
+    "@anansi/browserslist-config": "workspace:*"
     "@anansi/ts-utils": "workspace:^"
     "@babel/plugin-proposal-decorators": "npm:^7.25.9"
     "@babel/plugin-proposal-export-default-from": "npm:^7.25.9"
