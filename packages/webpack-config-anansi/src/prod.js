@@ -93,7 +93,7 @@ export default function makeProdConfig(
           chunks: 'all',
         },
         polyfill: {
-          test: /[\\/]node_modules[\\/](core-js|@babel\/runtime|regenerator-runtime|ric-shim|babel-runtime)[\\/].*/,
+          test: /[\\/]node_modules[\\/](core-js|core-js-pure|@babel\/runtime|@babel\/runtime-corejs3|regenerator-runtime|ric-shim|babel-runtime)[\\/].*/,
           name: 'polyfill',
           chunks: 'all',
         },
