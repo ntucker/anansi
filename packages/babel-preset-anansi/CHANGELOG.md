@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.12...@anansi/babel-preset@6.1.0) (2025-01-25)
+
+### 🚀 Features
+
+* Add polyfillMethod option and support modern polyfills like Object.hasOwn ([04b277b](https://github.com/ntucker/anansi/commit/04b277bc2baf861fb44734b67db3bc77a32e7278))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
+* Update babel packages ([#2620](https://github.com/ntucker/anansi/issues/2620)) ([36ef8c6](https://github.com/ntucker/anansi/commit/36ef8c6f7b7a71ec9a44b5716172cbd9257c95dc))
+* Update babel packages to v7.26.7 ([#2638](https://github.com/ntucker/anansi/issues/2638)) ([8a3a4ae](https://github.com/ntucker/anansi/commit/8a3a4ae0ab4f3bae0bddbf5f2161ed9087ab67ee))
+
 ### [6.0.12](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.11...@anansi/babel-preset@6.0.12) (2024-12-12)
 
 ### 🐛 Bug Fix

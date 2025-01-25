@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.5.1...@anansi/browserslist-config@1.6.0) (2025-01-25)
+
+### 🚀 Features
+
+* Add 2023-2025 presets ([b5771b4](https://github.com/ntucker/anansi/commit/b5771b4d91db5a3c32238ee6c8192a2d197b611b))
+
 ### [1.5.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.5.0...@anansi/browserslist-config@1.5.1) (2024-07-28)
 
 ### 📦 Package

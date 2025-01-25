@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.25](https://github.com/ntucker/anansi/compare/example-typescript@15.1.24...example-typescript@15.1.25) (2025-01-25)
+
+### 💅 Enhancement
+
+* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
+* Update all non-major dependencies ([#2631](https://github.com/ntucker/anansi/issues/2631)) ([94ba581](https://github.com/ntucker/anansi/commit/94ba581467bbbecc9af217779ef08703dd182e68))
+* Update all non-major dependencies ([#2633](https://github.com/ntucker/anansi/issues/2633)) ([ddd0c24](https://github.com/ntucker/anansi/commit/ddd0c24393577acadd70b12e896caf87b27d9b77))
+* Update all non-major dependencies ([#2636](https://github.com/ntucker/anansi/issues/2636)) ([77936e6](https://github.com/ntucker/anansi/commit/77936e6208dfb60b614a625dfd131d560edcc47d))
+* Update all non-major dependencies ([#2640](https://github.com/ntucker/anansi/issues/2640)) ([e88c606](https://github.com/ntucker/anansi/commit/e88c606b48758c44997aa5e670e008a1eba85238))
+* Update babel packages ([#2620](https://github.com/ntucker/anansi/issues/2620)) ([36ef8c6](https://github.com/ntucker/anansi/commit/36ef8c6f7b7a71ec9a44b5716172cbd9257c95dc))
+* Update babel packages to v7.26.7 ([#2638](https://github.com/ntucker/anansi/issues/2638)) ([8a3a4ae](https://github.com/ntucker/anansi/commit/8a3a4ae0ab4f3bae0bddbf5f2161ed9087ab67ee))
+* Update storybook monorepo to v8.5.1 ([#2637](https://github.com/ntucker/anansi/issues/2637)) ([35d9a3a](https://github.com/ntucker/anansi/commit/35d9a3a882addfb384c95005c12a421668457090))
+
 ### [15.1.24](https://github.com/ntucker/anansi/compare/example-typescript@15.1.23...example-typescript@15.1.24) (2024-12-29)
 
 ### 🐛 Bug Fix

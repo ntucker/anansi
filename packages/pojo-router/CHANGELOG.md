@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.4](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.3...@pojo-router/core@0.10.4) (2025-01-25)
+
+### 💅 Enhancement
+
+* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+
 ### [0.10.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.2...@pojo-router/core@0.10.3) (2024-12-06)
 
 ### 📦 Package

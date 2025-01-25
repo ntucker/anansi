@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.17](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.16...@anansi/core@0.20.17) (2025-01-25)
+
+### 💅 Enhancement
+
+* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
+* Update all non-major dependencies ([#2631](https://github.com/ntucker/anansi/issues/2631)) ([94ba581](https://github.com/ntucker/anansi/commit/94ba581467bbbecc9af217779ef08703dd182e68))
+* Update all non-major dependencies ([#2633](https://github.com/ntucker/anansi/issues/2633)) ([ddd0c24](https://github.com/ntucker/anansi/commit/ddd0c24393577acadd70b12e896caf87b27d9b77))
+* Update all non-major dependencies ([#2640](https://github.com/ntucker/anansi/issues/2640)) ([e88c606](https://github.com/ntucker/anansi/commit/e88c606b48758c44997aa5e670e008a1eba85238))
+
 ### [0.20.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.15...@anansi/core@0.20.16) (2024-12-29)
 
 ### 💅 Enhancement

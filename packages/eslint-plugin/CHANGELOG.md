@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.24](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.23...@anansi/eslint-plugin@1.0.24) (2025-01-25)
+
+### 📦 Package
+
+* Update `eslint-config-prettier` to v10 ([#2627](https://github.com/ntucker/anansi/issues/2627)) ([29b8f45](https://github.com/ntucker/anansi/commit/29b8f45ebe3c885652c3c5a64e93cc9dcba75cff))
+* Update `eslint-plugin-prettier` to ^5.2.2 ([#2634](https://github.com/ntucker/anansi/issues/2634)) ([2166caa](https://github.com/ntucker/anansi/commit/2166caa8aa7220deb99c4df8b7041f09cd51b48c))
+* Update `eslint-plugin-react` to ^7.37.4 ([#2626](https://github.com/ntucker/anansi/issues/2626)) ([a6cb3eb](https://github.com/ntucker/anansi/commit/a6cb3ebc46a3249b4e206cc699d5818aec4dd9fb))
+* Update validation packages ([#2621](https://github.com/ntucker/anansi/issues/2621)) ([57846b9](https://github.com/ntucker/anansi/commit/57846b96cbc00d81cda3401e1d99a64ce44c6575))
+* Update validation packages ([#2639](https://github.com/ntucker/anansi/issues/2639)) ([a613e28](https://github.com/ntucker/anansi/commit/a613e28ed46a03762d71e4f4907e0a77dcbd2ffb))
+* Update validation packages to ^8.20.0 ([#2628](https://github.com/ntucker/anansi/issues/2628)) ([fa48445](https://github.com/ntucker/anansi/commit/fa48445464685ef2d48612318f2d313ad57e7d2b))
+
 ### [1.0.23](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.22...@anansi/eslint-plugin@1.0.23) (2024-12-25)
 
 ### 🐛 Bug Fix

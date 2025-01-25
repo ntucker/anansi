@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.17](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.16...@anansi/webpack-config@20.0.17) (2025-01-25)
+
+### 💅 Enhancement
+
+* Use set babel caller.library when building libraries ([767d356](https://github.com/ntucker/anansi/commit/767d356e270207d30e563435042ac3a4abbd1445))
+
+### 📦 Package
+
+* Update `postcss` to ^8.5.0 ([#2629](https://github.com/ntucker/anansi/issues/2629)) ([c7c227f](https://github.com/ntucker/anansi/commit/c7c227fc18d157696b7a8df867fb783fe6c89615))
+* Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
+* Update webpack packages ([#2632](https://github.com/ntucker/anansi/issues/2632)) ([62f2e7a](https://github.com/ntucker/anansi/commit/62f2e7a646ee1bd816b363704209bc0c5e09772f))
+
 ### [20.0.16](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.15...@anansi/webpack-config@20.0.16) (2024-12-29)
 
 ### 💅 Enhancement

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.11](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.10...@anansi/jest-preset@0.11.11) (2025-01-25)
+
+### 💅 Enhancement
+
+* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+
 ### [0.11.10](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.9...@anansi/jest-preset@0.11.10) (2024-12-29)
 
 ### 📦 Package
