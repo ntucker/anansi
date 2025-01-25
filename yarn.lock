@@ -126,7 +126,7 @@ __metadata:
   dependencies:
     "@anansi/router": "workspace:^"
     "@ant-design/cssinjs": "npm:^1.7.1"
-    "@babel/runtime": "npm:^7.17.0"
+    "@babel/runtime-corejs3": "npm:^7.26.7"
     "@data-client/react": "npm:^0.14.0"
     "@types/compression": "npm:1.7.5"
     "@types/express": "npm:^4.17.17"
@@ -139,6 +139,7 @@ __metadata:
     "@types/webpack-node-externals": "npm:^3"
     chalk: "npm:^4.1.2"
     compression: "npm:^1.7.5"
+    core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
     enhanced-resolve: "npm:^5.18.0"
     express: "npm:^4.21.2"
@@ -225,7 +226,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/generator-js@workspace:packages/generator-js"
   dependencies:
-    "@babel/runtime": "npm:^7.17.0"
+    "@babel/runtime-corejs3": "npm:^7.26.0"
     "@types/ejs": "npm:3.1.5"
     "@types/gulp-filter": "npm:3.0.39"
     "@types/inquirer": "npm:^9.0.7"
@@ -234,7 +235,7 @@ __metadata:
     "@yeoman/types": "npm:^1.5.0"
     chalk: "npm:^4.1.2"
     copyfiles: "npm:2.4.1"
-    core-js: "npm:^3.21.0"
+    core-js-pure: "npm:^3.40.0"
     ejs: "npm:^3.1.10"
     execa: "npm:^9.5.2"
     gulp-filter: "npm:^9.0.1"
@@ -255,12 +256,12 @@ __metadata:
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
     "@anansi/ts-utils": "workspace:^"
-    "@babel/runtime": "npm:^7.26.0"
+    "@babel/runtime-corejs3": "npm:^7.26.0"
     "@types/babel__core": "npm:^7.20.5"
     "@types/node": "npm:^22.0.0"
     babel-jest: "npm:^29.7.0"
     copyfiles: "npm:2.4.1"
-    core-js: "npm:^3.21.0"
+    core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
     jest-pnp-resolver: "npm:^1.2.3"
     mitt: "npm:^3.0.1"
@@ -286,10 +287,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
-    "@babel/runtime": "npm:^7.17.0"
+    "@babel/runtime-corejs3": "npm:^7.26.0"
     "@pojo-router/core": "workspace:^"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:types-react@19.0.0-rc.1"
+    core-js-pure: "npm:^3.40.0"
     history: "npm:^5.3.0"
     nano-memoize: "npm:^3.0.16"
     react: "npm:19.0.0"
@@ -306,12 +308,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
-    "@babel/runtime": "npm:^7.17.0"
+    "@babel/runtime-corejs3": "npm:^7.26.0"
     "@storybook/builder-webpack5": "npm:^8.5.1"
     "@storybook/preset-react-webpack": "npm:^8.5.1"
     "@storybook/react": "npm:^8.5.1"
     "@storybook/types": "npm:^8.5.1"
     "@types/node": "npm:^22.10.10"
+    core-js-pure: "npm:^3.40.0"
   peerDependencies:
     "@anansi/babel-preset": "*"
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
@@ -2088,7 +2091,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
+"@babel/runtime-corejs3@npm:7.26.7, @babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
   version: 7.26.7
   resolution: "@babel/runtime-corejs3@npm:7.26.7"
   dependencies:
@@ -2098,7 +2101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.26.7, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.6, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.24.4, @babel/runtime@npm:^7.24.7, @babel/runtime@npm:^7.24.8, @babel/runtime@npm:^7.25.7, @babel/runtime@npm:^7.26.0, @babel/runtime@npm:^7.26.7, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.6, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.24.4, @babel/runtime@npm:^7.24.7, @babel/runtime@npm:^7.24.8, @babel/runtime@npm:^7.25.7, @babel/runtime@npm:^7.26.0, @babel/runtime@npm:^7.26.7, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
   version: 7.26.7
   resolution: "@babel/runtime@npm:7.26.7"
   dependencies:
@@ -4721,9 +4724,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pojo-router/core@workspace:packages/pojo-router"
   dependencies:
-    "@babel/runtime": "npm:^7.17.0"
+    "@babel/runtime-corejs3": "npm:^7.26.0"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:types-react@19.0.0-rc.1"
+    core-js-pure: "npm:^3.40.0"
     history: "npm:5.3.0"
     path-to-regexp: "npm:^6.3.0"
     react: "npm:19.0.0"
@@ -9787,7 +9791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.40.0, core-js@npm:^3.21.0, core-js@npm:^3.6.5":
+"core-js@npm:3.40.0, core-js@npm:^3.6.5":
   version: 3.40.0
   resolution: "core-js@npm:3.40.0"
   checksum: 10c0/db7946ada881e845d8b157061945b1187618fa45cf162f392a151e8a497962aed2da688c982eaa1d444c864be97a70f8be4d73385294b515d224dd164d19f1d4
@@ -11931,7 +11935,7 @@ __metadata:
     "@anansi/webpack-config": "npm:^20.0.16"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.26.3"
-    "@babel/runtime": "npm:7.26.7"
+    "@babel/runtime-corejs3": "npm:7.26.7"
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:^7.20.0"
@@ -11973,7 +11977,7 @@ __metadata:
     "@ant-design/cssinjs": "npm:1.23.0"
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.26.7"
-    "@babel/runtime": "npm:7.26.7"
+    "@babel/runtime-corejs3": "npm:7.26.7"
     "@data-client/endpoint": "npm:0.14.17"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.14.15"
@@ -12019,7 +12023,7 @@ __metadata:
     "@ant-design/icons": "npm:^5.0.1"
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
-    "@babel/runtime": "npm:7.26.7"
+    "@babel/runtime-corejs3": "npm:7.26.7"
     "@data-client/graphql": "npm:0.14.17"
     "@data-client/react": "npm:0.14.18"
     "@data-client/rest": "npm:0.14.18"

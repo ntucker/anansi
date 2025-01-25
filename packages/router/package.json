@@ -44,8 +44,9 @@
     "react": "19.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.17.0",
+    "@babel/runtime-corejs3": "^7.26.0",
     "@pojo-router/core": "workspace:^",
+    "core-js-pure": "^3.40.0",
     "history": "^5.3.0",
     "nano-memoize": "^3.0.16"
   },

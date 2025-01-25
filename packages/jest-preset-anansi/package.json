@@ -57,10 +57,10 @@
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
-    "@babel/runtime": "^7.26.0",
+    "@babel/runtime-corejs3": "^7.26.0",
     "@types/babel__core": "^7.20.5",
     "babel-jest": "^29.7.0",
-    "core-js": "^3.21.0",
+    "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.1",
