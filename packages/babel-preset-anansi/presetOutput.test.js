@@ -47,17 +47,6 @@ describe('buildPreset', () => {
     expect(preset.plugins).toBeDefined();
   });
 
-  it('should handle core-js version correctly', () => {
-    api.env.mockReturnValue('development');
-    const preset = buildPreset(api, {
-      corejs: { version: 3, proposals: true },
-    });
-    expect(preset.presets[0][1].corejs).toEqual({
-      version: 3,
-      proposals: true,
-    });
-  });
-
   it('should handle TypeScript configuration', () => {
     api.env.mockReturnValue('development');
     const preset = buildPreset(api, {

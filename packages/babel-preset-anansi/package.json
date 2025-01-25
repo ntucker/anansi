@@ -36,7 +36,9 @@
   },
   "devDependencies": {
     "@anansi/browserslist-config": "workspace:*",
-    "@types/node": "^22.0.0"
+    "@babel/runtime": "^7.26.7",
+    "@babel/runtime-corejs3": "^7.26.7",
+    "@types/node": "^22.10.10"
   },
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
@@ -53,11 +55,12 @@
     "@babel/preset-react": "^7.26.3",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-module-resolver": "^5.0.2",
-    "babel-plugin-react-compiler": "^0.0.0",
+    "babel-plugin-polyfill-corejs3": "^0.11.1",
+    "babel-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",
     "babel-plugin-root-import": "^6.6.0",
     "babel-plugin-transform-import-meta": "^2.3.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "core-js-compat": "^3.23.5",
+    "core-js-compat": "^3.40.0",
     "glob-to-regexp": "^0.4.1",
     "path": "^0.12.7"
   },
@@ -68,6 +71,7 @@
     "@babel/runtime-corejs3": "^7.10.0",
     "babel-minify": "^0.5.1",
     "core-js": "*",
+    "core-js-pure": "*",
     "lodash": "*",
     "ramda": "*",
     "react-refresh": "*",
@@ -87,6 +91,9 @@
       "optional": true
     },
     "core-js": {
+      "optional": true
+    },
+    "core-js-pure": {
       "optional": true
     },
     "lodash": {

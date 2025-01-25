@@ -27,8 +27,10 @@
     {
       "matchPackageNames": [
         "@babel/runtime",
+        "@babel/runtime-corejs2",
         "@babel/runtime-corejs3",
         "core-js",
+        "core-js-pure",
         "core-js-compat"
       ],
       "matchDepTypes": ["dependencies"],
