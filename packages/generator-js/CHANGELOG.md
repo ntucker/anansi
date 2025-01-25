@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [12.6.12](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.11...@anansi/generator-js@12.6.12) (2025-01-25)
+
+### 💅 Enhancement
+
+* Update polyfill packages used ([5c40fd0](https://github.com/ntucker/anansi/commit/5c40fd079a6547944827de80f215cc3effb9a3fa))
+
 ### [12.6.11](https://github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.10...@anansi/generator-js@12.6.11) (2025-01-25)
 
 ### 💅 Enhancement
