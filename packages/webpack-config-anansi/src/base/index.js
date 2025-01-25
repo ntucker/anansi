@@ -31,6 +31,7 @@ export default function makeBaseConfig({
   argv,
   env,
   cssExtractOptions,
+  library,
 }) {
   const WEBPACK_PUBLIC_HOST = process.env.WEBPACK_PUBLIC_HOST || '';
   const WEBPACK_PUBLIC_PATH = process.env.WEBPACK_PUBLIC_PATH || '/';
@@ -60,6 +61,7 @@ export default function makeBaseConfig({
     target: argv?.target,
     mode,
     babelLoaderOptions,
+    library,
   });
   const inJSBabelOptions = {
     ...mainBabelLoader.options,

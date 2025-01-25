@@ -13,6 +13,7 @@ export function generateBabelLoader({
   mode,
   babelLoaderOptions,
   noHotReload,
+  library,
 }) {
   const react = require(
     require.resolve('react', {
@@ -71,6 +72,9 @@ export function generateBabelLoader({
     if (noHotReload) {
       babelLoader.options.caller.noHotReload = true;
     }
+  }
+  if (library) {
+    babelLoader.options.caller.library = true;
   }
   return babelLoader;
 }
