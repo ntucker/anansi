@@ -151,7 +151,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       // for eslint
       'globals',
     ]);
-    await this.addDependencies(['@babel/runtime']);
+    await this.addDependencies(['@babel/runtime-corejs3']);
   }
 }
 type AnansiOptions = ConfigureOptions & { projectType: string };

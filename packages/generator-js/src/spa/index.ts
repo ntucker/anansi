@@ -73,6 +73,7 @@ export default class extends BetterGenerator {
         'react-dom',
         '@data-client/img',
         'history',
+        'core-js',
       ]),
     ]);
   }

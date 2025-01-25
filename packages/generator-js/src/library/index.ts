@@ -65,6 +65,7 @@ export default class extends BetterGenerator<LibraryOptions, BaseFeatures> {
       '@zerollup/ts-transform-paths',
       'rimraf',
     ]);
+    await this.addDependencies(['core-js-pure']);
     if (this.config.get('features').includes('storybook')) {
       await this.addDevDependencies([
         '@types/react',
