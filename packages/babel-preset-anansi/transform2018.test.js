@@ -1,4 +1,5 @@
 const babel = require('@babel/core');
+const { library } = require('webpack');
 
 const buildPreset = require('./index');
 
@@ -90,6 +91,76 @@ describe('buildPreset - Babel Transform', () => {
     const transformedCode = transformCode(code, {
       hasJsxRuntime: true,
       loose: true,
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should transform Object.hasOwn() with usage-pure', () => {
+    api.env.mockReturnValue('development');
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      polyfillMethod: 'usage-pure',
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should transform Object.hasOwn() with name==@babel/runtime', () => {
+    api.env.mockReturnValue('development');
+    api.caller.mockImplementation(cb => cb({ name: '@babel/cli' }));
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should transform Object.hasOwn() with caller.library', () => {
+    api.env.mockReturnValue('development');
+    api.caller.mockImplementation(cb => cb({ library: true }));
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should import Object.hasOwn() polyfill with usage-global', () => {
+    api.env.mockReturnValue('development');
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      polyfillMethod: 'usage-global',
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should select polyfill entries with entry-global', () => {
+    api.env.mockReturnValue('development');
+    const code = `import 'core-js';class MyClass { declare myThing; myProp: number = 42; }`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      polyfillMethod: 'entry-global',
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should not transform entry polyfill import when polyfillMethod: `false`', () => {
+    api.env.mockReturnValue('development');
+    const code = `import 'core-js';class MyClass { declare myThing; myProp: number = 42; }`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      polyfillMethod: false,
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should not polyfill when polyfillMethod: `false`', () => {
+    api.env.mockReturnValue('development');
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      polyfillMethod: false,
     });
     expect(transformedCode).toMatchSnapshot();
   });

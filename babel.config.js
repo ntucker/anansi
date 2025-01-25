@@ -2,7 +2,7 @@ const { resolvePath } = require('babel-plugin-module-resolver');
 
 module.exports = function (api) {
   api.cache.using(
-    () => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV + '3',
+    () => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV + '5',
   );
   const options = { loose: true, hasJsxRuntime: true };
   if (process.env.NODE_ENV === 'test') {

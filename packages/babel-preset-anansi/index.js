@@ -7,12 +7,13 @@ options:
   nodeTarget,
   modules,
   useESModules,
+  polyfillMethod,
+  corejsVersion,
   useBuiltIns,
   corejs,
   minify,
   loose,
   tsConfigPath,
-  corejs
 */
 function buildPreset(api, options = {}) {
   api.assertVersion(7);
@@ -27,6 +28,7 @@ function buildPreset(api, options = {}) {
   const isLinaria = api.caller(
     caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
   );
+  const library = api.caller(caller => caller && caller.library);
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
   // (no caller info: https://github.com/babel/babel/issues/8930)
@@ -57,11 +59,9 @@ function buildPreset(api, options = {}) {
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
-    useBuiltIns: 'entry',
     reactConstantElementsOptions: {},
     nodeTarget,
     resolver: { root: [], alias: {} },
-    runtimePkg: '@babel/runtime',
     ...options,
   };
   if (process.env.BABEL_MODULES) {
@@ -91,51 +91,58 @@ function buildPreset(api, options = {}) {
 
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
-
-  if (!options.corejs) {
-    try {
-      const corejsVersion = require('core-js/package.json').version;
-      if (corejsVersion) {
-        options.corejs = { version: corejsVersion, proposals: true };
-      }
-    } catch (e) {
-      options.corejs = { version: 3, proposals: true };
-    }
-  }
-
-  let runtimeCoreJS = false;
-  let runtimePkg = '@babel/runtime';
-  try {
-    if (options.runtimePkg === '@babel/runtime')
-      require.resolve(`${options.runtimePkg}/package.json`);
-  } catch (e) {
-    // if we can't find default of @babel/runtime, fallback to something else
-    options.runtimePkg = `@babel/runtime-corejs3`;
-  }
-  if (
-    options.corejs &&
-    options.corejs.version &&
-    options.runtimePkg !== '@babel/runtime'
-  ) {
-    runtimeCoreJS = Math.floor(parseFloat(options.corejs.version));
-    runtimePkg = `@babel/runtime-corejs${runtimeCoreJS}`;
-  }
+  let corejsVersion = undefined;
+  let corejsVersionPure = undefined;
 
   try {
-    // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
-    absoluteRuntimePath = path.dirname(
-      require.resolve(`${runtimePkg}/package.json`),
+    corejsVersion = require('core-js/package.json')
+      .version.split('.')
+      .slice(0, 2)
+      .join('.');
+  } catch (e) {}
+  try {
+    corejsVersionPure = require('core-js-pure/package.json')
+      .version.split('.')
+      .slice(0, 2)
+      .join('.');
+  } catch (e) {}
+
+  // 'auto' polyfillMethod (represented by undefined)
+  // figure out what polyfillMethod we should use
+  if (options.polyfillMethod === undefined) {
+    options.polyfillMethod = getPolyfillMethodAuto(
+      options,
+      babelCli || library,
+      corejsVersion,
+      corejsVersionPure,
     );
-    runtimeVersion = require(`${runtimePkg}/package.json`).version;
-  } catch (e) {
-    runtimePkg = '@babel/runtime';
-    runtimeCoreJS = false;
+  }
+
+  let runtimePkg =
+    options.polyfillMethod === 'usage-pure' ?
+      '@babel/runtime-corejs3'
+    : '@babel/runtime';
+
+  if (
+    // we don't care about bundle size, so maximum compatibility is no runtime transform (runtimeVersion is undefined)
+    !(babelNode || env === 'test')
+  ) {
+    // select possible runtime transform
     try {
+      // TODO: investigate if using this is useful in @babel/plugin-transform-runtime
       absoluteRuntimePath = path.dirname(
         require.resolve(`${runtimePkg}/package.json`),
       );
       runtimeVersion = require(`${runtimePkg}/package.json`).version;
-    } catch (e) {}
+    } catch (e) {
+      runtimePkg = '@babel/runtime';
+      try {
+        absoluteRuntimePath = path.dirname(
+          require.resolve(`${runtimePkg}/package.json`),
+        );
+        runtimeVersion = require(`${runtimePkg}/package.json`).version;
+      } catch (e) {}
+    }
   }
 
   if (process.env.TS_CONFIG_PATH) {
@@ -195,6 +202,14 @@ function buildPreset(api, options = {}) {
       [process.env.RESOLVER_ROOT]
     : options.resolverRoot || []),
   ];
+  const envOptions = getEnvOptions(
+    babelNode,
+    env,
+    explicitNodeTarget,
+    callerTarget,
+    options,
+    modules,
+  );
   const preset = {
     presets: [
       [
@@ -229,12 +244,22 @@ function buildPreset(api, options = {}) {
         runtimeVersion && [
           require('@babel/plugin-transform-runtime').default,
           {
-            corejs: runtimeCoreJS,
             helpers: true,
-            regenerator: true,
             version: runtimeVersion,
           },
         ],
+      options.polyfillMethod !== false && [
+        require('babel-plugin-polyfill-corejs3').default,
+        {
+          method: options.polyfillMethod,
+          targets: envOptions.targets,
+          version:
+            options.polyfillMethod === 'usage-pure' ?
+              corejsVersionPure
+            : corejsVersion,
+        },
+      ],
+
       // stage 2
       [
         require('@babel/plugin-proposal-record-and-tuple').default,
@@ -276,39 +301,8 @@ function buildPreset(api, options = {}) {
       break;
   }
 
-  let envOptions = {};
-  if (
-    babelNode ||
-    env === 'test' ||
-    explicitNodeTarget ||
-    callerTarget === 'node'
-  ) {
-    envOptions = {
-      targets: {
-        node: options.nodeTarget || 'current',
-      },
-      // maximum compatibility since we don't care about bundle size
-      useBuiltIns: 'entry',
-    };
-  } else {
-    envOptions = {
-      targets: options.targets,
-      useBuiltIns: options.useBuiltIns,
-    };
-  }
-  preset.presets.unshift([
-    require('@babel/preset-env').default,
-    {
-      bugfixes: true,
-      modules,
-      shippedProposals: true,
-      corejs: options.corejs,
-      loose: options.loose,
-      // Exclude transforms that make all code slower
-      exclude: ['transform-typeof-symbol'],
-      ...envOptions,
-    },
-  ]);
+  preset.presets.unshift([require('@babel/preset-env').default, envOptions]);
+
   if (options.minify && env === 'production') {
     try {
       preset.presets.unshift(require('babel-minify'));
@@ -404,6 +398,76 @@ function buildPreset(api, options = {}) {
 }
 
 module.exports = buildPreset;
+
+function getEnvOptions(
+  babelNode,
+  env,
+  explicitNodeTarget,
+  callerTarget,
+  options,
+  modules,
+) {
+  let envOptions = {};
+  if (
+    babelNode ||
+    env === 'test' ||
+    explicitNodeTarget ||
+    callerTarget === 'node'
+  ) {
+    envOptions = {
+      targets: {
+        node: options.nodeTarget || 'current',
+      },
+    };
+  } else {
+    envOptions = {
+      targets: options.targets,
+    };
+  }
+  envOptions = {
+    bugfixes: true,
+    modules,
+    shippedProposals: true,
+    loose: options.loose,
+    // Exclude transforms that make all code slower
+    exclude: ['transform-typeof-symbol'],
+    ...envOptions,
+  };
+  return envOptions;
+}
+
+function getPolyfillMethodAuto(
+  options,
+  babelCli,
+  corejsVersion,
+  corejsVersionPure,
+) {
+  // support legacy option
+  if (options.useBuiltIns !== undefined) {
+    return {
+      usage: 'usage-global',
+      entry: 'entry-global',
+      [false]: false,
+    }[options.useBuiltIns];
+  } else {
+    if (corejsVersion !== undefined && !babelCli) {
+      try {
+        require.resolve('@babel/runtime/package.json');
+        return 'usage-global';
+      } catch (e) {
+        return 'entry-global';
+      }
+    } else if (corejsVersionPure !== undefined) {
+      try {
+        require.resolve('@babel/runtime-corejs3/package.json');
+        return 'usage-pure';
+      } catch (e) {
+        return false;
+      }
+    }
+  }
+  return false;
+}
 
 function callerCouldTargetWeb(target) {
   // without a target set, we don't explicitly know what its attempting

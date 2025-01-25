@@ -100,7 +100,24 @@ are included:
 
 ## Options
 
-### nodeTarget : ?string = undefined
+Options to the preset. These are configured like so
+
+```json
+{
+  "presets": [
+    [
+      "@anansi",
+      {
+        "optionName": "optionValue"
+      }
+    ]
+  ]
+}
+```
+
+### Target Environment
+
+#### nodeTarget : ?string = undefined
 
 > Deprecated: Prefer using [top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` instead
 
@@ -115,7 +132,7 @@ Will run to target node instead of browsers. Specify a [valid node string](https
 
 If unset, will automatically target current node version when webpack is targetting node.
 
-### targets : ?object = undefined
+#### targets : ?object = undefined
 
 > Deprecated: Prefer using [top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` instead
 
@@ -129,18 +146,88 @@ Use a [browserslist config](https://github.com/browserslist/browserslist#package
 
 Feel free to use the [anansi browserlist config](/packages/browserslist-config-anansi).
 
-### modules: "amd" | "umd" | "systemjs" | "commonjs" | "cjs" | "auto" | false = false
+#### modules: "amd" | "umd" | "systemjs" | "commonjs" | "cjs" | "auto" | false = false
 
 Enable transformation of ES module syntax to another module type.
 
 By default this tries to infer if ESModules is supported and if so, keep ESM. If this detection isn't
 working correct, feel free to explicitly set.
 
-### BABEL_MODULES
+#### BABEL_MODULES
 
 This will override or set `modules` option from above.
 
-### useESModules: boolean = !(env === 'test' || options.nodeTarget)
+### Polyfills
+
+#### polyfillMethod
+
+‘usage-global’ | ‘entry-global’ | ‘usage-pure’ | false | undefined
+
+This determines how to handle polyfills.
+
+[plugin reference](https://github.com/babel/babel-polyfills/blob/main/docs/migration.md)
+
+##### undefined
+
+This is the default - it will automatically determine a reasonable default based on other factors.
+
+'usage-pure' when detecting 'library build' (@babel/cli or caller.library is true)
+
+Otherwise, if 'core-js' and '@babel/runtime' package are found, 'usage-global'.
+
+If just 'core-js' is found, 'usage-entry'
+
+Otherwise `false`.
+
+##### usage-entry
+
+Transforms core-js import into only the polyfills needed for the target environment. This can be best when
+a good code-splitting strategy for polyfills is in the place.
+
+Turns
+
+```js
+import 'core-js'
+```
+
+into
+
+```js
+import 'core-js/es/object/has-own'
+// whatever else is needed for target env
+```
+
+Like [useBuiltins: entry](https://babeljs.io/docs/babel-preset-env#usebuiltins-entry) for babel-preset-env.
+
+##### usage-global
+
+Only imports polyfills as-needed both based on target environment and usage.
+
+```js
+import 'core-js/es/object/has-own'
+Object.hasOwn({ a: 1 }, 'a')
+```
+
+Like [useBuiltins: usage](https://babeljs.io/docs/babel-preset-env#usebuiltins-usage) for babel-preset-env.
+
+##### usage-pure
+
+This doesn't pollute the global scope. This is recommended when bundling libraries.
+
+```js
+import _Object$hasOwn from "core-js-pure/stable/object/has-own.js"
+_Object$hasOwn({ a: 1 }, 'a')
+```
+
+##### false
+
+Do not perform any transforms related to core-js or polyfills.
+
+#### corejsVersion
+
+Specifies the core-js version to target. Without specified will use the version found by importing.
+
+#### useESModules: boolean = !(env === 'test' || options.nodeTarget)
 
 This uses the es6 module version of [@babel/runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules).
 "This allows for smaller builds in module systems like webpack, since it doesn't need to preserve commonjs semantics."
@@ -149,7 +236,7 @@ By default, tries to infer whether this can be used.
 
 Set this to false for maximum compatibility.
 
-### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
+#### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
 
 This option configures how @anansi/babel-preset handles polyfills. Both `usage` and `entry` will
 only include polyfills needed for the target.
@@ -160,35 +247,37 @@ adding your own import of core-js. You can even import pieces selectively.
 `usage` will add imports everywhere a file is used, which can make it harder to split polyfills if they
 are not needed.
 
-### [corejs](https://babeljs.io/docs/en/babel-preset-env#corejs): { version: 3, proposals: true }
+#### [corejs](https://babeljs.io/docs/en/babel-preset-env#corejs): { version: 3, proposals: true }
 
 Which core-js version to use when useBuiltIns is not false
 
-### runtimePkg = "@babel/runtime"
+#### runtimePkg = "@babel/runtime"
 
 Can be `@babel/runtime-corejs3` or `@babel/runtime-corejs2`. Using the corejs version will
 add imports to the 'pure' form of core-js, which doesn't change global objects. This will however
 result in heavily increased bundle sizes, so it's generally preferred to stay with the default.
 
-### minify: bool = false
+### Additional Transforms
+
+#### minify: bool = false
 
 Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
 
 Be sure to install babel-minify as it is listed as an optional peerdependency here.
 
-### loose: bool = false
+#### loose: bool = false
 
 - class properties
 - private methods
 - all things in preset-env
 - legacy decorators
 
-### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
+#### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
 
 - `version`: "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-05"
 - `decoratorsBeforeExport`
 
-### reactCompiler: {compilationMode?: "annotation"}
+#### reactCompiler: {compilationMode?: "annotation"}
 
 Run the [React Compiler](https://react.dev/learn/react-compiler). This is still experimental - be sure to
 [check compatibility](https://react.dev/learn/react-compiler#checking-compatibility) before turning this on.
@@ -199,12 +288,12 @@ By default does not run. Include empty object or a configuration to turn on.
 
 ** This only runs in production **
 
-### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
+#### reactConstantElementsOptions: { allowMutablePropsOnTags?: string[] } | false
 
 Configures the options for [react-constant-elements](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements).
 Setting to false disables this optimization altogether. Note: this is only ever used in production mode
 
-### hasJsxRuntime
+#### hasJsxRuntime
 
 ** Defaults to `true`. Set this to `false` explicitly to use with React <=16.13 **
 
@@ -217,7 +306,7 @@ Available in React >16.14.
 
 > Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
 
-### tsConfigPath
+#### tsConfigPath
 
 Specifies the tsconfig.json file location to automatically apply [tsconfig path mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping).
 
@@ -233,7 +322,7 @@ module.exports = {
 
 Merges with [module resolver](#module-resolver-options) options
 
-#### TS_CONFIG_PATH
+##### TS_CONFIG_PATH
 
 Overrides `tsConfigPath`.
 
@@ -241,9 +330,9 @@ Overrides `tsConfigPath`.
 export TS_CONFIG_PATH = './tsconfig.json'
 ```
 
-## module-resolver options
+### module-resolver options
 
-### resolverRoot
+#### resolverRoot
 
 Sets the root [root](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md#root).
 
@@ -251,7 +340,7 @@ Sets the root [root](https://github.com/tleunen/babel-plugin-module-resolver/blo
 root = ['./src'];
 ```
 
-#### RESOLVER_ROOT
+##### RESOLVER_ROOT
 
 Overrides `resolverRoot`.
 
@@ -259,7 +348,7 @@ Overrides `resolverRoot`.
 export RESOLVER_ROOT = './src'
 ```
 
-### resolverAlias
+#### resolverAlias
 
 JSON representation of the [alias](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md#alias) object option.
 
@@ -270,7 +359,7 @@ JSON representation of the [alias](https://github.com/tleunen/babel-plugin-modul
 }
 ```
 
-#### RESOLVER_ALIAS
+##### RESOLVER_ALIAS
 
 If `RESOLVER_ALIAS` env is set, it will override this setting. Be sure to JSON encode.
 
@@ -278,14 +367,14 @@ If `RESOLVER_ALIAS` env is set, it will override this setting. Be sure to JSON e
 export RESOLVER_ALIAS = '{"underscore":"lodash","^@namespace/foo-(.+)":"packages/\\\\1"}'
 ```
 
-### resolver
+#### resolver
 
 Full control of [module-resolver options](https://github.com/tleunen/babel-plugin-module-resolver/blob/HEAD/DOCS.md).
 Sets as default, so `resolverRoot` and `resolverAlias` will override `root` and `alias` respectively.
 
-## root-import options
+### root-import options
 
-### rootPathSuffix: string = './src'
+#### rootPathSuffix: string = './src'
 
 Enables importing from project root with `~/my/path` rather than using relative paths. Override
 this if your project root is in another directory.
@@ -301,20 +390,14 @@ When using with typescript, be sure to add to tsconfig.json:
 }
 ```
 
-### rootPathPrefix: string = '~/'
+#### rootPathPrefix: string = '~/'
 
 Configures what prefix is used to trigger root imports.
 
-### rootPathRoot: undefined
+#### rootPathRoot: undefined
 
 [Controls the root.](https://www.npmjs.com/package/babel-plugin-root-import#custom-root)
 No value (undefined) means use current working directory.
 
 Sending `__dirname` from a `.babelrc.js` can be useful to ensure consistency no matter
 where babel starts running from.
-
-### Polyfills
-
-Usage of features that require polyfills is automatically detected and included in many cases. However,
-some features (`Intl`, `requestIdleCallback` and `fetch`) are not. We recommend using
-[@anansi/polyfill](https://www.npmjs.com/package/@anansi/polyfill) to cover those cases.
