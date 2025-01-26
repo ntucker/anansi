@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.0...@anansi/babel-preset@6.1.1) (2025-01-26)
+
+### 💅 Enhancement
+
+* Add rollup to 'library' detection ([2b3e21a](https://github.com/ntucker/anansi/commit/2b3e21a89403f4d42c95b4aae3da147bdf72945b))
+
 ## [6.1.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.0.12...@anansi/babel-preset@6.1.0) (2025-01-25)
 
 ### 🚀 Features
