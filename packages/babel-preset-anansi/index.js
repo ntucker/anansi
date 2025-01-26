@@ -28,9 +28,11 @@ function buildPreset(api, options = {}) {
   const isLinaria = api.caller(
     caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
   );
-  const library =
-    api.caller(caller => caller && caller.library) ||
-    api.caller(caller => caller && caller.name === 'rollup-plugin-babel');
+  let library = api.caller(caller => caller && caller.library);
+  if (library === undefined)
+    library = api.caller(
+      caller => caller && caller.name === 'rollup-plugin-babel',
+    );
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
   // (no caller info: https://github.com/babel/babel/issues/8930)
@@ -68,6 +70,12 @@ function buildPreset(api, options = {}) {
   };
   if (process.env.BABEL_MODULES) {
     options.modules = process.env.BABEL_MODULES;
+  }
+  if (api.caller(caller => caller && caller.polyfillMethod)) {
+    options.polyfillMethod = api.caller(caller => caller.polyfillMethod);
+  }
+  if (process.env.BABEL_POLYFILL_METHOD) {
+    options.polyfillMethod = process.env.BABEL_POLYFILL_METHOD;
   }
   const shouldHotReload =
     !babelNode &&
