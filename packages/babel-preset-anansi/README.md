@@ -171,7 +171,7 @@ This determines how to handle polyfills.
 
 This is the default - it will automatically determine a reasonable default based on other factors.
 
-'usage-pure' when detecting 'library build' (@babel/cli or caller.library is true)
+'usage-pure' when detecting 'library build' (@babel/cli, rollup or caller.library is true)
 
 Otherwise, if 'core-js' and '@babel/runtime' package are found, 'usage-global'.
 

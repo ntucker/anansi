@@ -28,7 +28,9 @@ function buildPreset(api, options = {}) {
   const isLinaria = api.caller(
     caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
   );
-  const library = api.caller(caller => caller && caller.library);
+  const library =
+    api.caller(caller => caller && caller.library) ||
+    api.caller(caller => caller && caller.name === 'rollup-plugin-babel');
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
   // (no caller info: https://github.com/babel/babel/issues/8930)

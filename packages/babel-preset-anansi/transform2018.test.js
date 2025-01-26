@@ -115,6 +115,22 @@ describe('buildPreset - Babel Transform', () => {
     expect(transformedCode).toMatchSnapshot();
   });
 
+  it('should transform Object.hasOwn() with name==rollup-plugin-babel', () => {
+    api.env.mockReturnValue('development');
+    api.caller.mockImplementation(cb =>
+      cb({
+        name: 'rollup-plugin-babel',
+        supportsStaticESM: true,
+        supportsDynamicImport: true,
+      }),
+    );
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+    });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
   it('should transform Object.hasOwn() with caller.library', () => {
     api.env.mockReturnValue('development');
     api.caller.mockImplementation(cb => cb({ library: true }));
