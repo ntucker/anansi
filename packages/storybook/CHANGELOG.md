@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.22](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.21...@anansi/storybook@3.2.22) (2025-01-26)
+
+**Note:** Version bump only for package @anansi/storybook
+
 ### [3.2.21](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.20...@anansi/storybook@3.2.21) (2025-01-26)
 
 **Note:** Version bump only for package @anansi/storybook

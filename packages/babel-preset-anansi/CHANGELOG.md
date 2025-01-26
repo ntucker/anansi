@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.2](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.1...@anansi/babel-preset@6.1.2) (2025-01-26)
+
+### 💅 Enhancement
+
+* BABEL_POLYFILL_METHOD and caller.polyfillMethod ([d697923](https://github.com/ntucker/anansi/commit/d697923f511197b09230fa0f41b6d5e28338d6b2))
+
 ### [6.1.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.0...@anansi/babel-preset@6.1.1) (2025-01-26)
 
 ### 💅 Enhancement
