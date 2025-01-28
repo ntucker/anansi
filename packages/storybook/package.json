@@ -37,10 +37,10 @@
   ],
   "dependencies": {
     "@babel/runtime-corejs3": "^7.26.0",
-    "@storybook/builder-webpack5": "^8.5.1",
-    "@storybook/preset-react-webpack": "^8.5.1",
-    "@storybook/react": "^8.5.1",
-    "@storybook/types": "^8.5.1",
+    "@storybook/builder-webpack5": "^8.5.2",
+    "@storybook/preset-react-webpack": "^8.5.2",
+    "@storybook/react": "^8.5.2",
+    "@storybook/types": "^8.5.2",
     "@types/node": "^22.10.10",
     "core-js-pure": "^3.40.0"
   },
