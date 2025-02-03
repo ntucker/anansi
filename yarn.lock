@@ -202,7 +202,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^5.0.0"
     globals: "npm:^15.14.0"
     prettier: "npm:^3.3.3"
-    semver: "npm:^7.6.3"
+    semver: "npm:^7.7.0"
     typescript: "npm:^5.5.4"
     typescript-eslint: "npm:^8.21.0"
     webpack: "npm:^5.94.0"
@@ -266,7 +266,7 @@ __metadata:
     jest-pnp-resolver: "npm:^1.2.3"
     mitt: "npm:^3.0.1"
     node-fetch: "npm:^3.3.2"
-    semver: "npm:^7.6.3"
+    semver: "npm:^7.7.0"
     ts-jest: "npm:^29.2.5"
     whatwg-fetch: "npm:^3.0.0"
   peerDependencies:
@@ -313,7 +313,7 @@ __metadata:
     "@storybook/preset-react-webpack": "npm:^8.5.3"
     "@storybook/react": "npm:^8.5.3"
     "@storybook/types": "npm:^8.5.3"
-    "@types/node": "npm:^22.10.10"
+    "@types/node": "npm:^22.13.0"
     core-js-pure: "npm:^3.40.0"
   peerDependencies:
     "@anansi/babel-preset": "*"
@@ -392,7 +392,7 @@ __metadata:
     sass-embedded: "npm:^1.77.8"
     sass-loader: "npm:^16.0.4"
     sass-resources-loader: "npm:^2.2.5"
-    semver: "npm:^7.6.3"
+    semver: "npm:^7.7.0"
     stream-browserify: "npm:^3.0.0"
     stream-http: "npm:^3.2.0"
     string_decoder: "npm:^1.3.0"
@@ -473,7 +473,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:1.23.0, @ant-design/cssinjs@npm:^1.21.0, @ant-design/cssinjs@npm:^1.22.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
+"@ant-design/cssinjs@npm:1.23.0, @ant-design/cssinjs@npm:^1.21.0, @ant-design/cssinjs@npm:^1.23.0, @ant-design/cssinjs@npm:^1.7.1, @ant-design/cssinjs@npm:^1.9.1":
   version: 1.23.0
   resolution: "@ant-design/cssinjs@npm:1.23.0"
   dependencies:
@@ -507,7 +507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^5.0.0, @ant-design/icons@npm:^5.0.1, @ant-design/icons@npm:^5.5.2":
+"@ant-design/icons@npm:^5.0.0, @ant-design/icons@npm:^5.0.1, @ant-design/icons@npm:^5.6.0":
   version: 5.6.0
   resolution: "@ant-design/icons@npm:5.6.0"
   dependencies:
@@ -6123,10 +6123,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:*, @types/lodash@npm:4.17.14":
-  version: 4.17.14
-  resolution: "@types/lodash@npm:4.17.14"
-  checksum: 10c0/343c6f722e0b39969036a885ad5aad6578479ead83987128c9b994e6b7f2fb9808244d802d4d332396bb09096f720a6c7060de16a492f5460e06a44560360322
+"@types/lodash@npm:*, @types/lodash@npm:4.17.15":
+  version: 4.17.15
+  resolution: "@types/lodash@npm:4.17.15"
+  checksum: 10c0/2eb2dc6d231f5fb4603d176c08c8d7af688f574d09af47466a179cd7812d9f64144ba74bb32ca014570ffdc544eedc51b7a5657212bad083b6eecbd72223f9bb
   languageName: node
   linkType: hard
 
@@ -6195,12 +6195,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.10.10, @types/node@npm:>=18, @types/node@npm:>=18.18.5, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10":
-  version: 22.10.10
-  resolution: "@types/node@npm:22.10.10"
+"@types/node@npm:*, @types/node@npm:22.13.0, @types/node@npm:>=18, @types/node@npm:>=18.18.5, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10, @types/node@npm:^22.13.0":
+  version: 22.13.0
+  resolution: "@types/node@npm:22.13.0"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/3425772d4513cd5dbdd87c00acda088113c03a97445f84f6a89744c60a66990b56c9d3a7213d09d57b6b944ae8ff45f985565e0c1846726112588e33a22dd12b
+  checksum: 10c0/9cf6358b2863ae7bf9588ca1cc3d87f6a6289c3880e95a046a188760666870e2c12502df8b0a473bec8aa8ffee85e025d60382a6104b10f197120793235b2c22
   languageName: node
   linkType: hard
 
@@ -7424,15 +7424,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.23.2":
-  version: 5.23.2
-  resolution: "antd@npm:5.23.2"
+"antd@npm:5.23.3":
+  version: 5.23.3
+  resolution: "antd@npm:5.23.3"
   dependencies:
     "@ant-design/colors": "npm:^7.2.0"
-    "@ant-design/cssinjs": "npm:^1.22.0"
+    "@ant-design/cssinjs": "npm:^1.23.0"
     "@ant-design/cssinjs-utils": "npm:^1.1.3"
     "@ant-design/fast-color": "npm:^2.0.6"
-    "@ant-design/icons": "npm:^5.5.2"
+    "@ant-design/icons": "npm:^5.6.0"
     "@ant-design/react-slick": "npm:~1.1.2"
     "@babel/runtime": "npm:^7.26.0"
     "@rc-component/color-picker": "npm:~2.0.1"
@@ -7480,7 +7480,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/c74ecb9b6624aa5c3fa15dc5980532342c1c7c875ba77d1a7f64497a706559ff7e9d56c403f90afc1baf1a51e15b3a6743eea7b638631f85e737b564aa7a0c86
+  checksum: 10c0/2db76441c8fdf9ba90dd5ed9ab00f5ac169fadc4fcb93994982e87bb112019c4db29ccb096add78f32f8f166320b0af3571e0453a64bca57fd29516c3d2ce40c
   languageName: node
   linkType: hard
 
@@ -11923,10 +11923,10 @@ __metadata:
     "@types/babel__core": "npm:7.20.5"
     "@types/eslint": "npm:9.6.1"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.10.10"
+    "@types/node": "npm:22.13.0"
     "@types/react": "npm:19.0.8"
     "@types/react-dom": "npm:19.0.3"
-    antd: "npm:5.23.2"
+    antd: "npm:5.23.3"
     classnames: "npm:2.5.1"
     core-js: "npm:3.40.0"
     eslint: "npm:9.19.0"
@@ -11973,15 +11973,15 @@ __metadata:
     "@types/babel__core": "npm:^7.20.0"
     "@types/eslint": "npm:^9.0.0"
     "@types/jest": "npm:29.5.14"
-    "@types/lodash": "npm:4.17.14"
-    "@types/node": "npm:22.10.10"
+    "@types/lodash": "npm:4.17.15"
+    "@types/node": "npm:22.13.0"
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prop-types": "npm:^15.7.5"
     "@types/react": "npm:19.0.8"
     "@types/react-dom": "npm:19.0.3"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
-    antd: "npm:5.23.2"
+    antd: "npm:5.23.3"
     classnames: "npm:2.5.1"
     core-js: "npm:3.40.0"
     eslint: "npm:^9.0.0"
@@ -16164,9 +16164,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:15.4.2":
-  version: 15.4.2
-  resolution: "lint-staged@npm:15.4.2"
+"lint-staged@npm:15.4.3":
+  version: 15.4.3
+  resolution: "lint-staged@npm:15.4.3"
   dependencies:
     chalk: "npm:^5.4.1"
     commander: "npm:^13.1.0"
@@ -16180,7 +16180,7 @@ __metadata:
     yaml: "npm:^2.7.0"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/08dd28149241788f7ca628a64c9c1817a9dfbe19517ba0317fdf96a1109f6d624948864edfeaf2936561bb49c65aeb32d5ddc75fb15afa2b6527024ef01a546b
+  checksum: 10c0/c1f71f2273bcbd992af929620f5acc6b9f6899da4b395e780e0b3ab33a0d725c239eb961873067c8c842e057c585c71dd4d44c0dc8b25539d3c2e97a3bdd6f30
   languageName: node
   linkType: hard
 
@@ -22163,7 +22163,7 @@ __metadata:
     globals: "npm:^15.9.0"
     husky: "npm:9.1.7"
     jest: "npm:^29.5.0"
-    lint-staged: "npm:15.4.2"
+    lint-staged: "npm:15.4.3"
     prettier: "npm:3.4.2"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
@@ -22677,12 +22677,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.6.3":
-  version: 7.6.3
-  resolution: "semver@npm:7.6.3"
+"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.6.3, semver@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "semver@npm:7.7.0"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/88f33e148b210c153873cb08cfe1e281d518aaa9a666d4d148add6560db5cd3c582f3a08ccb91f38d5f379ead256da9931234ed122057f40bb5766e65e58adaf
+  checksum: 10c0/bcd1c03209b4be7d8ca86c976a0410beba7d4ec1d49d846a4be154b958db1ff5eaee50760c1d4f4070b19dee3236b8672d3e09642c53ea23740398bba2538a2d
   languageName: node
   linkType: hard
 
