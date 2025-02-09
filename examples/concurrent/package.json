@@ -26,7 +26,7 @@
     "@anansi/eslint-plugin": "^1.0.24",
     "@anansi/jest-preset": "^0.11.11",
     "@anansi/webpack-config": "^20.0.17",
-    "@babel/core": "7.26.7",
+    "@babel/core": "7.26.8",
     "@data-client/test": "0.14.17",
     "@types/babel__core": "7.20.5",
     "@types/eslint": "9.6.1",
