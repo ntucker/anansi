@@ -84,7 +84,7 @@
     "@anansi/router": "workspace:^",
     "@babel/runtime-corejs3": "^7.26.7",
     "chalk": "^4.1.2",
-    "compression": "^1.7.5",
+    "compression": "^1.8.0",
     "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
     "enhanced-resolve": "^5.18.1",
