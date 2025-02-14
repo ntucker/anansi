@@ -1,5 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Babel Transform 2024 browsers should compile react memoizations 1`] = `
+"var _NoFriends, _MessageButton;
+import { c as _c } from "react/compiler-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+function FriendList(t0) {
+  const $ = _c(9);
+  const {
+    friends
+  } = t0;
+  const onlineCount = useFriendOnlineCount();
+  if (friends.length === 0) {
+    let t1;
+    if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+      t1 = _NoFriends || (_NoFriends = /*#__PURE__*/_jsx(NoFriends, {}));
+      $[0] = t1;
+    } else {
+      t1 = $[0];
+    }
+    return t1;
+  }
+  let t1;
+  if ($[1] !== onlineCount) {
+    t1 = /*#__PURE__*/_jsxs("span", {
+      children: [onlineCount, " online"]
+    });
+    $[1] = onlineCount;
+    $[2] = t1;
+  } else {
+    t1 = $[2];
+  }
+  let t2;
+  if ($[3] !== friends) {
+    t2 = friends.map(_temp);
+    $[3] = friends;
+    $[4] = t2;
+  } else {
+    t2 = $[4];
+  }
+  let t3;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = _MessageButton || (_MessageButton = /*#__PURE__*/_jsx(MessageButton, {}));
+    $[5] = t3;
+  } else {
+    t3 = $[5];
+  }
+  let t4;
+  if ($[6] !== t1 || $[7] !== t2) {
+    t4 = /*#__PURE__*/_jsxs("div", {
+      children: [t1, t2, t3]
+    });
+    $[6] = t1;
+    $[7] = t2;
+    $[8] = t4;
+  } else {
+    t4 = $[8];
+  }
+  return t4;
+}
+function _temp(friend) {
+  return /*#__PURE__*/_jsx(FriendListCard, {
+    friend: friend
+  }, friend.id);
+}
+export {};"
+`;
+
 exports[`Babel Transform 2024 browsers should maintain class properties 1`] = `
 "class MyClass {
   myProp = 42;

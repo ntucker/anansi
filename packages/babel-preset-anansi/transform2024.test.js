@@ -14,7 +14,6 @@ describe('Babel Transform 2024 browsers', () => {
       targets: jest.fn(() => getTargets()),
     };
     process.env.BROWSERSLIST_ENV = '2024';
-    process.env.NODE_ENV = 'development';
   });
 
   const transformCode = (
@@ -32,7 +31,9 @@ describe('Babel Transform 2024 browsers', () => {
   };
 
   it('should maintain class properties', () => {
-    api.targets.mockReturnValue('development');
+    api.env.mockReturnValue('development');
+    process.env.NODE_ENV = 'development';
+
     const code = `class MyClass { declare myThing; myProp: number = 42; }`;
     const transformedCode = transformCode(code, {
       hasJsxRuntime: true,
@@ -42,7 +43,9 @@ describe('Babel Transform 2024 browsers', () => {
   });
 
   it('should maintain class statics', () => {
-    api.targets.mockReturnValue('development');
+    api.env.mockReturnValue('development');
+    process.env.NODE_ENV = 'development';
+
     const code = `
     abstract class StaticEntity extends Entity {
       declare static a: string;
@@ -57,6 +60,35 @@ describe('Babel Transform 2024 browsers', () => {
       hasJsxRuntime: true,
       loose: false,
     });
+    expect(transformedCode).toMatchSnapshot();
+  });
+
+  it('should compile react memoizations', () => {
+    api.env.mockReturnValue('production');
+    process.env.NODE_ENV = 'production';
+    const code = `
+function FriendList({ friends }) {
+  const onlineCount = useFriendOnlineCount();
+  if (friends.length === 0) {
+    return <NoFriends />;
+  }
+  return (
+    <div>
+      <span>{onlineCount} online</span>
+      {friends.map((friend) => (
+        <FriendListCard key={friend.id} friend={friend} />
+      ))}
+      <MessageButton />
+    </div>
+  );
+}
+    `;
+    const transformedCode = transformCode(code, {
+      hasJsxRuntime: true,
+      loose: false,
+      reactCompiler: {},
+    });
+    expect(transformedCode).toContain('from "react/compiler-runtime"');
     expect(transformedCode).toMatchSnapshot();
   });
 });
