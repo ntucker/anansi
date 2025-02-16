@@ -453,7 +453,7 @@ function getEnvOptions(
 
 function getPolyfillMethodAuto(
   options,
-  babelCli,
+  isLibrary,
   corejsVersion,
   corejsVersionPure,
 ) {
@@ -465,7 +465,24 @@ function getPolyfillMethodAuto(
       [false]: false,
     }[options.useBuiltIns];
   } else {
-    if (corejsVersion !== undefined && !babelCli) {
+    if (corejsVersion !== undefined && !isLibrary) {
+      if (corejsVersionPure !== undefined) {
+        const cwd = process.cwd();
+        try {
+          const pkg = require(`${cwd}/package.json`);
+          // when explicitly marked as dep, make pure a priority
+          if (
+            ('core-js-pure' in pkg.dependencies &&
+              !('core-js' in pkg.dependencies)) ||
+            ('core-js-pure' in pkg.peerDependencies &&
+              !('core-js' in pkg.peerDependencies)) ||
+            ('core-js-pure' in pkg.devDependencies &&
+              !('core-js' in pkg.devDependencies))
+          ) {
+            return 'usage-pure';
+          }
+        } catch (e) {}
+      }
       try {
         require.resolve('@babel/runtime/package.json');
         return 'usage-global';

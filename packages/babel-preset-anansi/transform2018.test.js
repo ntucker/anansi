@@ -1,5 +1,4 @@
 const babel = require('@babel/core');
-const { library } = require('webpack');
 
 const buildPreset = require('./index');
 
@@ -191,6 +190,22 @@ describe('buildPreset - Babel Transform', () => {
     expect(transformedCode).toContain('@babel/runtime-corejs3');
     api.caller.mockImplementation(cb => cb({ name: 'rollup-plugin-babel' }));
     transformedCode = transformCode(code, { loose: false });
+    expect(transformedCode).toContain('core-js-pure');
+    expect(transformedCode).toContain('@babel/runtime-corejs3');
+  });
+
+  it('should prefer pure core-js when it is explicitly listed in pkg deps', () => {
+    api.env.mockReturnValue('development');
+    process.env.NODE_ENV = 'development';
+    api.caller.mockImplementation(cb => cb({ name: 'webpack' }));
+    jest.mock(`${process.cwd()}/package.json`, () => ({
+      dependencies: {
+        '@babel/runtime-corejs3': '^7.26.0',
+        'core-js-pure': '^3.40.0',
+      },
+    }));
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    let transformedCode = transformCode(code, { loose: false });
     expect(transformedCode).toContain('core-js-pure');
     expect(transformedCode).toContain('@babel/runtime-corejs3');
   });
