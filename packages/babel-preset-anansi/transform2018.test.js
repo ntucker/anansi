@@ -180,4 +180,18 @@ describe('buildPreset - Babel Transform', () => {
     });
     expect(transformedCode).toMatchSnapshot();
   });
+
+  it('should use core-js-pure by default when caller is rollup', () => {
+    api.env.mockReturnValue('development');
+    process.env.NODE_ENV = 'development';
+    api.caller.mockImplementation(cb => cb({ name: '@rollup/plugin-babel' }));
+    const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
+    let transformedCode = transformCode(code, { loose: false });
+    expect(transformedCode).toContain('core-js-pure');
+    expect(transformedCode).toContain('@babel/runtime-corejs3');
+    api.caller.mockImplementation(cb => cb({ name: 'rollup-plugin-babel' }));
+    transformedCode = transformCode(code, { loose: false });
+    expect(transformedCode).toContain('core-js-pure');
+    expect(transformedCode).toContain('@babel/runtime-corejs3');
+  });
 });

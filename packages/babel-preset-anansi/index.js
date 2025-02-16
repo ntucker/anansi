@@ -30,8 +30,13 @@ function buildPreset(api, options = {}) {
   );
   let library = api.caller(caller => caller && caller.library);
   if (library === undefined)
-    library = api.caller(
-      caller => caller && caller.name === 'rollup-plugin-babel',
+    library = api.caller(caller =>
+      (
+        caller &&
+        ['rollup-plugin-babel', '@rollup/plugin-babel'].includes(caller.name)
+      ) ?
+        true
+      : false,
     );
   // babel cli will have no caller information, so in this case we should be aware and
   // possibly default to different options
