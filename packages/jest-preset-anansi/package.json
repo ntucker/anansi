@@ -21,6 +21,7 @@
   "main": "lib/jest-preset.js",
   "keywords": [
     "jest",
+    "testing",
     "webpack",
     "anansi",
     "svg",

@@ -33,7 +33,9 @@
   "types": "dist/index.d.ts",
   "keywords": [
     "storybook",
-    "react"
+    "react",
+    "mock",
+    "fixtures"
   ],
   "dependencies": {
     "@babel/runtime-corejs3": "^7.26.0",

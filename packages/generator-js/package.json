@@ -1,7 +1,7 @@
 {
   "name": "@anansi/generator-js",
   "version": "12.6.13",
-  "description": "Fast React Web Apps",
+  "description": "Generate Fast React Web Apps",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/generator-js#readme",
   "repository": {
     "type": "git",
@@ -48,7 +48,9 @@
     "sdk",
     "scss",
     "css modules",
-    "storybook"
+    "storybook",
+    "suspense",
+    "concurrent"
   ],
   "devDependencies": {
     "@types/ejs": "3.1.5",

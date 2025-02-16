@@ -1,7 +1,7 @@
 {
   "name": "@anansi/router",
   "version": "0.10.11",
-  "description": "React 18+ optimized router",
+  "description": "React concurrent optimized router",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {
     "type": "git",
@@ -36,7 +36,9 @@
     "routing",
     "history",
     "react",
-    "browser"
+    "browser",
+    "concurrent",
+    "suspense"
   ],
   "devDependencies": {
     "@types/node": "^22.0.0",

@@ -44,7 +44,8 @@
     "routing",
     "history",
     "react",
-    "browser"
+    "browser",
+    "concurrent"
   ],
   "devDependencies": {
     "@types/node": "^22.0.0",
