@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.34](https://github.com/ntucker/anansi/compare/example-react-18@8.0.33...example-react-18@8.0.34) (2025-02-16)
+
+### 📦 Package
+
+* Update babel packages to v7.26.9 ([#2659](https://github.com/ntucker/anansi/issues/2659)) ([990ec2e](https://github.com/ntucker/anansi/commit/990ec2ef3aa908e2d1394bc288f97a34be9b3b35))
+
 ### [8.0.33](https://github.com/ntucker/anansi/compare/example-react-18@8.0.32...example-react-18@8.0.33) (2025-02-14)
 
 ### 📦 Package

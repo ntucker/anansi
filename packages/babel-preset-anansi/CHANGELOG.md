@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.4...@anansi/babel-preset@6.1.5) (2025-02-16)
+
+### 💅 Enhancement
+
+* Prefer core-js-pure when it is explicitly found in deps ([f275de6](https://github.com/ntucker/anansi/commit/f275de60c2391a30be237317da4585a6aaa124d5))
+* Use core-js-pure by default when caller is rollup ([51ea4d4](https://github.com/ntucker/anansi/commit/51ea4d48a0815613f76c1f9835f8169d09589d76))
+
+### 📦 Package
+
+* Update babel packages to v7.26.9 ([#2659](https://github.com/ntucker/anansi/issues/2659)) ([990ec2e](https://github.com/ntucker/anansi/commit/990ec2ef3aa908e2d1394bc288f97a34be9b3b35))
+
 ### [6.1.4](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.3...@anansi/babel-preset@6.1.4) (2025-02-14)
 
 ### 📦 Package

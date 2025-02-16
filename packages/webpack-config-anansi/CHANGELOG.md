@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.20](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.19...@anansi/webpack-config@20.0.20) (2025-02-16)
+
+### 📦 Package
+
+* Update `sass-loader` to ^16.0.5 ([#2660](https://github.com/ntucker/anansi/issues/2660)) ([12baa21](https://github.com/ntucker/anansi/commit/12baa21d7efcf3614e8865148a31adac3ae93ac8))
+
 ### [20.0.19](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.18...@anansi/webpack-config@20.0.19) (2025-02-14)
 
 ### 📦 Package

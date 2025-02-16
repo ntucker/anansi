@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.2.25](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.24...@anansi/storybook@3.2.25) (2025-02-16)
+
+### 💅 Enhancement
+
+* Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
+
+### 📦 Package
+
+* Update storybook monorepo to v8.5.6 ([#2661](https://github.com/ntucker/anansi/issues/2661)) ([35fcefc](https://github.com/ntucker/anansi/commit/35fcefc0cac23944019de50c73308037f1ab0cf7))
+
 ### [3.2.24](https://github.com/ntucker/anansi/compare/@anansi/storybook@3.2.23...@anansi/storybook@3.2.24) (2025-02-14)
 
 ### 📦 Package

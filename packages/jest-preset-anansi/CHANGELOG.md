@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.13](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.12...@anansi/jest-preset@0.11.13) (2025-02-16)
+
+### 💅 Enhancement
+
+* Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
+
 ### [0.11.12](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.11...@anansi/jest-preset@0.11.12) (2025-02-09)
 
 ### 📦 Package

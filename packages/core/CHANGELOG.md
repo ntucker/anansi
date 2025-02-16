@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.20](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.19...@anansi/core@0.20.20) (2025-02-16)
+
+### 💅 Enhancement
+
+* Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
+
 ### [0.20.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.18...@anansi/core@0.20.19) (2025-02-14)
 
 ### 📦 Package
