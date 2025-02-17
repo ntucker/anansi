@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.5...@anansi/babel-preset@6.1.6) (2025-02-17)
+
+### 💅 Enhancement
+
+* runtime imports should use es modules when possible ([1b695de](https://github.com/ntucker/anansi/commit/1b695de5a7aeabce9f5ba3f36c96573adaef41ac))
+
+### 🐛 Bug Fix
+
+* caller.polyfillMethod as 'false' should work ([ce1417a](https://github.com/ntucker/anansi/commit/ce1417adde4e39f559aba3db0b807faf8e5c8d1d))
+
+### 📦 Package
+
+* Update react-compiler to 20250216 ([a00fbbc](https://github.com/ntucker/anansi/commit/a00fbbcfa018c420172d017f2288b5efbc2cdccf))
+
 ### [6.1.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.4...@anansi/babel-preset@6.1.5) (2025-02-16)
 
 ### 💅 Enhancement
