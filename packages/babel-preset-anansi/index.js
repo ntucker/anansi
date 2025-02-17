@@ -76,10 +76,10 @@ function buildPreset(api, options = {}) {
   if (process.env.BABEL_MODULES) {
     options.modules = process.env.BABEL_MODULES;
   }
-  if (api.caller(caller => caller && caller.polyfillMethod)) {
+  if (api.caller(caller => caller && caller.polyfillMethod) !== undefined) {
     options.polyfillMethod = api.caller(caller => caller.polyfillMethod);
   }
-  if (process.env.BABEL_POLYFILL_METHOD) {
+  if (process.env.BABEL_POLYFILL_METHOD !== undefined) {
     options.polyfillMethod = process.env.BABEL_POLYFILL_METHOD;
   }
   const shouldHotReload =
