@@ -69,8 +69,8 @@
     "webpack-dev-server": "5.2.0"
   },
   "resolutions": {
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
     "normalize-url": "^6",
     "react": "19.0.0",
     "react-dom": "19.0.0"
@@ -78,8 +78,8 @@
   "dependencies": {
     "@lerna-lite/publish": "^3.0.0",
     "@lerna-lite/version": "^3.0.0",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
