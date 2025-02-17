@@ -403,7 +403,7 @@ console.log(_Object$hasOwn({
 `;
 
 exports[`buildPreset - Babel Transform should transform Object.hasOwn() with name==rollup-plugin-babel 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import _Object$hasOwn from "core-js-pure/stable/object/has-own.js";
 class MyClass {
   constructor() {
