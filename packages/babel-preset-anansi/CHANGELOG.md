@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.6...@anansi/babel-preset@6.1.7) (2025-02-17)
+
+### 💅 Enhancement
+
+* Match runtime esmodules with output modules ([1dd7170](https://github.com/ntucker/anansi/commit/1dd717095178cb28be77184d5fd4d399527f4eef))
+
 ### [6.1.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.5...@anansi/babel-preset@6.1.6) (2025-02-17)
 
 ### 💅 Enhancement
