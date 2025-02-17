@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`buildPreset - Babel Transform should apply class properties transform when not loose 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 class MyClass {
   constructor() {
     _defineProperty(this, "myProp", 42);
@@ -10,7 +10,7 @@ class MyClass {
 `;
 
 exports[`buildPreset - Babel Transform should import Object.hasOwn() polyfill with usage-global 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import "core-js/modules/es.object.has-own.js";
 class MyClass {
   constructor() {
@@ -31,7 +31,7 @@ exports[`buildPreset - Babel Transform should not apply class properties transfo
 `;
 
 exports[`buildPreset - Babel Transform should not polyfill when polyfillMethod: \`false\` 1`] = `
-"import _defineProperty from "@babel/runtime/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
 class MyClass {
   constructor() {
     _defineProperty(this, "myProp", 42);
@@ -43,7 +43,7 @@ console.log(Object.hasOwn({
 `;
 
 exports[`buildPreset - Babel Transform should not transform entry polyfill import when polyfillMethod: \`false\` 1`] = `
-"import _defineProperty from "@babel/runtime/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
 import 'core-js';
 class MyClass {
   constructor() {
@@ -53,7 +53,7 @@ class MyClass {
 `;
 
 exports[`buildPreset - Babel Transform should select polyfill entries with entry-global 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import "core-js/modules/es.symbol.description.js";
 import "core-js/modules/es.symbol.async-iterator.js";
 import "core-js/modules/es.symbol.match.js";
@@ -377,7 +377,7 @@ const element = /*#__PURE__*/_jsx("div", {
 `;
 
 exports[`buildPreset - Babel Transform should transform Object.hasOwn() with caller.library 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import _Object$hasOwn from "core-js-pure/stable/object/has-own.js";
 class MyClass {
   constructor() {
@@ -390,7 +390,7 @@ console.log(_Object$hasOwn({
 `;
 
 exports[`buildPreset - Babel Transform should transform Object.hasOwn() with name==@babel/runtime 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import _Object$hasOwn from "core-js-pure/stable/object/has-own.js";
 class MyClass {
   constructor() {
@@ -416,7 +416,7 @@ console.log(_Object$hasOwn({
 `;
 
 exports[`buildPreset - Babel Transform should transform Object.hasOwn() with usage-pure 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
 import _Object$hasOwn from "core-js-pure/stable/object/has-own.js";
 class MyClass {
   constructor() {
