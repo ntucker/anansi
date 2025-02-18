@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.7...@anansi/babel-preset@6.1.8) (2025-02-18)
+
+### 💅 Enhancement
+
+* Do not use esm runtime when targetting node ([0f43e2f](https://github.com/ntucker/anansi/commit/0f43e2f3c34cbe84ee61be651d6b515a2014b7e2))
+
 ### [6.1.7](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.6...@anansi/babel-preset@6.1.7) (2025-02-17)
 
 ### 💅 Enhancement
