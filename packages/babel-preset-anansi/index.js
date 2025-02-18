@@ -261,7 +261,7 @@ function buildPreset(api, options = {}) {
           {
             helpers: true,
             version: runtimeVersion,
-            useESModules: modules === false,
+            useESModules: !options.nodeTarget && modules === false,
           },
         ],
       options.polyfillMethod !== false && [
