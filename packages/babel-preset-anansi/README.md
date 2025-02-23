@@ -159,6 +159,15 @@ This will override or set `modules` option from above.
 
 ### Polyfills
 
+By default we try to conform to these design pricinpals:
+
+- Libraries prefer to not introduce side-effects
+  - Commonjs bundles should require polyfills instead of bundling to:
+    - reduce file-size, parse time, and improve JIT opportunities
+  - UMD bundles cannot import, therefore should bundle polyfills
+- Applications prefer side-effect versions for simplicity
+- Infer intent by detecting which runtime and polyfill package is explicitly installed in the CWD
+
 #### polyfillMethod
 
 ‘usage-global’ | ‘entry-global’ | ‘usage-pure’ | false | undefined
