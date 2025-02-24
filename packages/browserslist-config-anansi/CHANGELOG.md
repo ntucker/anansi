@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.6.0...@anansi/browserslist-config@1.7.0) (2025-02-24)
+
+### 🚀 Features
+
+* Add hermes browserslist entries ([4b24c42](https://github.com/ntucker/anansi/commit/4b24c4236e75b77ba37509af1ec580418b6ebbec))
+
 ## [1.6.0](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.5.1...@anansi/browserslist-config@1.6.0) (2025-01-25)
 
 ### 🚀 Features
