@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.1.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.9...@anansi/babel-preset@6.1.10) (2025-02-25)
+
+**Note:** Version bump only for package @anansi/babel-preset
+
 ### [6.1.9](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.8...@anansi/babel-preset@6.1.9) (2025-02-24)
 
 ### 📝 Documentation
