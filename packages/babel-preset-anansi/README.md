@@ -182,13 +182,13 @@ This is the default - it will automatically determine a reasonable default based
 
 'usage-pure' when detecting 'library build' (@babel/cli, rollup or caller.library is true)
 
-Otherwise, if 'core-js' and '@babel/runtime' package are found, 'usage-global'.
+Otherwise, if 'core-js' and '@babel/runtime' package are found, 'entry-global'.
 
 If just 'core-js' is found, 'usage-entry'
 
 Otherwise `false`.
 
-##### usage-entry
+##### entry-global
 
 Transforms core-js import into only the polyfills needed for the target environment. This can be best when
 a good code-splitting strategy for polyfills is in the place.
