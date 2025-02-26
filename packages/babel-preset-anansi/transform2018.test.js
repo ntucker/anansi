@@ -219,4 +219,44 @@ describe('buildPreset - Babel Transform', () => {
     expect(transformedCode).toContain('core-js-pure');
     expect(transformedCode).toContain('@babel/runtime-corejs3');
   });
+
+  it('should inject Promise polyfill', () => {
+    const code = `Promise.resolve()`;
+    const transformedCode = transformCode(code);
+    expect(transformedCode).toContain('core-js');
+  });
+
+  it('should inject WeakMap polyfill', () => {
+    const code = `const mymap = new WeakMap();`;
+    const transformedCode = transformCode(code);
+    expect(transformedCode).toContain('core-js');
+  });
+
+  it('should not inject Promise polyfill with newer polyfillTargets, but still transform code', () => {
+    const code = `Promise.resolve();const a = null ?? 0;`;
+    const transformedCode = transformCode(code, {
+      polyfillTargets: 'safari>15.3',
+    });
+    console.log(transformedCode);
+    expect(transformedCode).not.toContain('core-js');
+    expect(transformedCode).not.toContain('??');
+  });
+
+  it('should not inject WeakMap polyfill with newer polyfillTargets, but still transform code', () => {
+    const code = `const mymap = new WeakMap();const a = null ?? 0;`;
+    const transformedCode = transformCode(code, {
+      polyfillTargets: 'safari>15.3',
+    });
+    expect(transformedCode).not.toContain('core-js');
+    expect(transformedCode).not.toContain('??');
+  });
+
+  it('should detect POLYFILL_TARGETS env', () => {
+    process.env.POLYFILL_TARGETS = 'safari>15.3';
+    const code = `const mymap = new WeakMap();const a = null ?? 0;`;
+    const transformedCode = transformCode(code);
+    expect(transformedCode).not.toContain('core-js');
+    expect(transformedCode).not.toContain('??');
+    process.env.POLYFILL_TARGETS = '';
+  });
 });

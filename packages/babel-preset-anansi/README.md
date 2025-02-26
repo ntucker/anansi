@@ -266,6 +266,31 @@ Can be `@babel/runtime-corejs3` or `@babel/runtime-corejs2`. Using the corejs ve
 add imports to the 'pure' form of core-js, which doesn't change global objects. This will however
 result in heavily increased bundle sizes, so it's generally preferred to stay with the default.
 
+#### polyfillTargets
+
+> POLYFILL_TARGETS env will override this option
+
+Allows for different [output targets](https://babeljs.io/docs/options#targets) determining which polyfills to include than what
+code transforms are applied.
+
+This is sometimes useful when bundling library JS that must work in many environments, but one
+expects the consumer of the library to handle legacy polyfills themselves.
+
+Safari 15.4 came with Object.hasOwn(). Therefore this would disable inclusion of the Object.hasOwn polyfill (among others).
+
+```json
+{
+  "presets": [
+    [
+      "@anansi",
+      {
+        "polyfillTargets": "safari>15.3"
+      }
+    ]
+  ]
+}
+```
+
 ### Additional Transforms
 
 #### minify: bool = false

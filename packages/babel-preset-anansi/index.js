@@ -134,9 +134,10 @@ function buildPreset(api, options = {}) {
   }
 
   let runtimePkg =
-    options.polyfillMethod === 'usage-pure' ?
+    options.runtimePkg ||
+    (options.polyfillMethod === 'usage-pure' ?
       '@babel/runtime-corejs3'
-    : '@babel/runtime';
+    : '@babel/runtime');
 
   if (
     // we don't care about bundle size, so maximum compatibility is no runtime transform (runtimeVersion is undefined)
@@ -225,6 +226,10 @@ function buildPreset(api, options = {}) {
     options,
     modules,
   );
+  const polyfillTargets =
+    process.env.POLYFILL_TARGETS ||
+    options.polyfillTargets ||
+    envOptions.targets;
   const preset = {
     presets: [
       [
@@ -260,6 +265,7 @@ function buildPreset(api, options = {}) {
           require('@babel/plugin-transform-runtime').default,
           {
             helpers: true,
+            moduleName: options.runtimePkg && runtimePkg,
             version: runtimeVersion,
             useESModules: !options.nodeTarget && modules === false,
           },
@@ -268,7 +274,7 @@ function buildPreset(api, options = {}) {
         require('babel-plugin-polyfill-corejs3').default,
         {
           method: options.polyfillMethod,
-          targets: envOptions.targets,
+          targets: polyfillTargets,
           version:
             options.polyfillMethod === 'usage-pure' ?
               corejsVersionPure
