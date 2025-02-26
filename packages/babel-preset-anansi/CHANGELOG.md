@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.10...@anansi/babel-preset@6.2.0) (2025-02-26)
+
+### 🚀 Features
+
+* Add polyfillTargets babel config option and POLYFILL_TARGETS env ([d5aa124](https://github.com/ntucker/anansi/commit/d5aa1248deebf6ff98d4503422319420d8a81676))
+
+### 📦 Package
+
+* Bump react compiler ([07d1574](https://github.com/ntucker/anansi/commit/07d157411decad35e5e4786320118ceeebbd525f))
+
+### 📝 Documentation
+
+* Fix babel polyfillMethod name ([52dd440](https://github.com/ntucker/anansi/commit/52dd4403c7cdf99d12d556a212c80adbe00a1698))
+
 ### [6.1.10](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.9...@anansi/babel-preset@6.1.10) (2025-02-25)
 
 **Note:** Version bump only for package @anansi/babel-preset

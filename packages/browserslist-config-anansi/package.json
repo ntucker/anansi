@@ -1,6 +1,6 @@
 {
   "name": "@anansi/browserslist-config",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "Support modern browsers",
   "main": "index.js",
   "keywords": [

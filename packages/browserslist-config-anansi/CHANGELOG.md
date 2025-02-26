@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.7.2](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.7.1...@anansi/browserslist-config@1.7.2) (2025-02-26)
+
+### 🐛 Bug Fix
+
+* Revert erroneous date-based browserslists (2018, 2020, etc) ([3e6184b](https://github.com/ntucker/anansi/commit/3e6184b87f44ec66bfc984620371b0895bbc5ba0))
+
 ### [1.7.1](https://github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.7.0...@anansi/browserslist-config@1.7.1) (2025-02-25)
 
 ### 💅 Enhancement
