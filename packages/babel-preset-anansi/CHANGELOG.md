@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.1](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.0...@anansi/babel-preset@6.2.1) (2025-02-26)
+
+### 💅 Enhancement
+
+* Always exclude Array.push and unshift polyfills ([745f1f7](https://github.com/ntucker/anansi/commit/745f1f72a729fda85d7408f81ee815dd8be2afdf))
+
 ## [6.2.0](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.1.10...@anansi/babel-preset@6.2.0) (2025-02-26)
 
 ### 🚀 Features

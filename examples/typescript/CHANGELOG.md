@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.38](https://github.com/ntucker/anansi/compare/example-typescript@15.1.37...example-typescript@15.1.38) (2025-02-26)
+
+**Note:** Version bump only for package example-typescript
+
 ### [15.1.37](https://github.com/ntucker/anansi/compare/example-typescript@15.1.36...example-typescript@15.1.37) (2025-02-26)
 
 ### 📦 Package
