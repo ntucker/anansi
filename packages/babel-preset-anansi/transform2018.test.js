@@ -237,7 +237,6 @@ describe('buildPreset - Babel Transform', () => {
     const transformedCode = transformCode(code, {
       polyfillTargets: 'safari>15.3',
     });
-    console.log(transformedCode);
     expect(transformedCode).not.toContain('core-js');
     expect(transformedCode).not.toContain('??');
   });

@@ -45,7 +45,7 @@ __metadata:
     babel-plugin-macros: "npm:^3.1.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     babel-plugin-polyfill-corejs3: "npm:^0.11.1"
-    babel-plugin-react-compiler: "npm:19.0.0-beta-21e868a-20250216"
+    babel-plugin-react-compiler: "npm:19.0.0-beta-e1e972c-20250221"
     babel-plugin-root-import: "npm:^6.6.0"
     babel-plugin-transform-import-meta: "npm:^2.3.2"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
@@ -8029,12 +8029,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-compiler@npm:19.0.0-beta-21e868a-20250216":
-  version: 19.0.0-beta-21e868a-20250216
-  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-21e868a-20250216"
+"babel-plugin-react-compiler@npm:19.0.0-beta-e1e972c-20250221":
+  version: 19.0.0-beta-e1e972c-20250221
+  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-e1e972c-20250221"
   dependencies:
     "@babel/types": "npm:^7.19.0"
-  checksum: 10c0/0c974ec45c8fe4521f70a479e01cc4a59a2ee2c025eab21c8492e45d07fbe789a69bea92bacbfe0c0503fa255e681ec905c6422f464aa0b72ab85a0ef6ad537b
+  checksum: 10c0/9a05a92fc27445c81b3d817258edde563e97975b765476178df29eafb99f3d62c9e1674e0e6bbec13fb0709c29bc464d99a83bd971b4b20f37c929e5866ebb5b
   languageName: node
   linkType: hard
 
