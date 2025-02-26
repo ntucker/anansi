@@ -275,6 +275,7 @@ function buildPreset(api, options = {}) {
         {
           method: options.polyfillMethod,
           targets: polyfillTargets,
+          exclude: ['es.array.push', 'es.array.unshift'],
           version:
             options.polyfillMethod === 'usage-pure' ?
               corejsVersionPure

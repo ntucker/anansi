@@ -66,4 +66,23 @@ describe('buildPreset - Babel Transform', () => {
     expect(transformedCode).not.toContain('core-js');
     process.env.POLYFILL_TARGETS = '';
   });
+
+  it('should not inject Array.push', () => {
+    const code = `((...args: Parameters<typeof lookup>) => {
+      const entity = lookup(...args);
+      dependencies.push({ path: args, entity });
+      return entity;
+    })
+    `;
+    const transformedCode = transformCode(code);
+    expect(transformedCode).not.toContain('core-js');
+    process.env.POLYFILL_TARGETS = '';
+  });
+
+  it('should not inject Array.push2', () => {
+    const code = `const a=[]; a.push(1);`;
+    const transformedCode = transformCode(code);
+    expect(transformedCode).not.toContain('core-js');
+    process.env.POLYFILL_TARGETS = '';
+  });
 });
