@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [20.0.23](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.22...@anansi/webpack-config@20.0.23) (2025-02-27)
+
+### 📦 Package
+
+* Update `terser-webpack-plugin` to ^5.3.12 ([#2675](https://github.com/ntucker/anansi/issues/2675)) ([0a93268](https://github.com/ntucker/anansi/commit/0a93268221c4b3889dbcbb1294d07bf24878c738))
+
 ### [20.0.22](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.21...@anansi/webpack-config@20.0.22) (2025-02-24)
 
 ### 📦 Package
