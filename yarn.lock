@@ -2833,36 +2833,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/core@npm:^0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/core@npm:0.14.19"
+"@data-client/core@npm:^0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/core@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/normalizr": "npm:^0.14.19"
-    core-js-pure: "npm:^3.40.0"
+    "@babel/runtime": "npm:^7.20.0"
+    "@data-client/normalizr": "npm:^0.14.21"
     flux-standard-action: "npm:^2.1.1"
-  checksum: 10c0/0bcfb19c6d2999d0bfb39cd0bb15ffa9803c8dce5d76ddde41e2eaee585c6519aeaf4ad808e8b8565f00c526de340d5a65878900ad3fee9f3fe02f6d34fac59f
+  checksum: 10c0/326eaae5788055873489be40111a1c318f42c86b12c8cb50357ebe3b28761b7229453336e09d099906549049238aa8e400dfdea6ffb3d9731b512aa9e7ec6082
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.14.19, @data-client/endpoint@npm:^0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/endpoint@npm:0.14.19"
+"@data-client/endpoint@npm:0.14.21, @data-client/endpoint@npm:^0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/endpoint@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    core-js-pure: "npm:^3.40.0"
-  checksum: 10c0/f3e76582417dc3937ea8f6e0d7cac3444d3aed8f8fdf5265a1a6dd29d290ecaf1accd97f31a5a0ba09f344420671f2c1fa2f80b150a33852a1636ea3976af603
+    "@babel/runtime": "npm:^7.20.0"
+  checksum: 10c0/54a30f5fabdf357fad557f8d93d076575dacf7cbf51319b1fdda9c3d51586428aab268f0085330043eec37deb0e5c02330c5fd38bed3a84cfa79d6764dbe1834
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/graphql@npm:0.14.19"
+"@data-client/graphql@npm:0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/graphql@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/endpoint": "npm:^0.14.19"
-    core-js-pure: "npm:^3.40.0"
-  checksum: 10c0/c00e7a6cb33656242b899256f8dac68465e6f759d6aac08dfabea422f7335d2197e777f494f760ed7b7fccc4248576dc575fbcc28d6fedb7a22c018205f2f91f
+    "@babel/runtime": "npm:^7.20.0"
+    "@data-client/endpoint": "npm:^0.14.21"
+  checksum: 10c0/5c6fb81a11d5fa8b30490efe46a62a713c1fecb09098cdb024d48b2eb408e5f69a8625dc331794de6af8491fc2ac3734b7bc1e2b9ab31a0d9258ed79d0268424
   languageName: node
   linkType: hard
 
@@ -2882,13 +2879,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/img@npm:0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/img@npm:0.14.19"
+"@data-client/img@npm:0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/img@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/endpoint": "npm:^0.14.19"
-    core-js-pure: "npm:^3.40.0"
+    "@babel/runtime": "npm:^7.20.0"
+    "@data-client/endpoint": "npm:^0.14.21"
   peerDependencies:
     "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^19.0.0
@@ -2896,7 +2892,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/b33ea1912341b4c24889cef88fcebdf8d5eeea56c91de86444373ccae2705861234b0dab046b2ffa2593655652b26805e37a2de2c11e480190dd3a7c3b90c6f2
+  checksum: 10c0/0233cada3572513856159ba6bf446567bbb44ba75b24ba86e03251490c9ecd8d06f43477abeb9083cfa7a42ca70bc70c4bbc6ec36a825e1dc12da5913440516c
   languageName: node
   linkType: hard
 
@@ -2909,24 +2905,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/normalizr@npm:^0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/normalizr@npm:0.14.19"
+"@data-client/normalizr@npm:^0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/normalizr@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    core-js-pure: "npm:^3.40.0"
-  checksum: 10c0/18f4d7d16000a50c290b12238a529a9ac5868e47da98640ae4bea8dea724fdbbdafb75abc3cb9c6ce66e029ee29bb6f98151bbf129ac55576924a43760ca8544
+    "@babel/runtime": "npm:^7.20.0"
+  checksum: 10c0/2e92fdbf9212e31f9e3c1ef3affb58fdeb0c6f4e33d3d2df99e636752bd3ac9d2262d975a72a910f22bdfe2c657191f10de0741830a08f5ec27c2a64064d52d8
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.14.19, @data-client/react@npm:^0.14.0":
-  version: 0.14.19
-  resolution: "@data-client/react@npm:0.14.19"
+"@data-client/react@npm:0.14.21, @data-client/react@npm:^0.14.0":
+  version: 0.14.21
+  resolution: "@data-client/react@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/core": "npm:^0.14.19"
-    "@data-client/use-enhanced-reducer": "npm:^0.1.12"
-    core-js-pure: "npm:^3.40.0"
+    "@babel/runtime": "npm:^7.20.0"
+    "@data-client/core": "npm:^0.14.21"
+    "@data-client/use-enhanced-reducer": "npm:^0.1.14"
   peerDependencies:
     "@react-navigation/native": ^6.0.0 || ^7.0.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
@@ -2936,31 +2930,29 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/ad4dde6817efa78e7b2862760d18d8766af5e0b89f5001bf954665d6972ab474bdc613747f200416c9d0159659e9b20a6df7791d4c571de3e5fcd283f718851d
+  checksum: 10c0/98770d928f9f3acbbfca3a3218aea2b120a36881649e5ec481fd964388836c4bd7e80d556bbfc7d211f498858a403f4993d83ac97b92f459bd78aea3d7c906c0
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/rest@npm:0.14.19"
+"@data-client/rest@npm:0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/rest@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/endpoint": "npm:^0.14.19"
-    core-js-pure: "npm:^3.40.0"
+    "@babel/runtime": "npm:^7.20.0"
+    "@data-client/endpoint": "npm:^0.14.21"
     path-to-regexp: "npm:^6.3.0"
-  checksum: 10c0/522e742049ecff0d6c7f0ca0547dd54b3185d6258d13e384bf9a569d2256a2e1e990f01e2e4dcd411a6327e4b7e90b6d3eaada37d60f0755d1d798895b35d62a
+  checksum: 10c0/237b9b196821ba1bb12cd9c876fb1052ef4b69d52522cefed114f81e0b3dd09e4ad3bc879102c7d573f4b72b32ff891c29f1587a734f9869f475223ee470cbee
   languageName: node
   linkType: hard
 
-"@data-client/test@npm:0.14.19":
-  version: 0.14.19
-  resolution: "@data-client/test@npm:0.14.19"
+"@data-client/test@npm:0.14.21":
+  version: 0.14.21
+  resolution: "@data-client/test@npm:0.14.21"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.0"
+    "@babel/runtime": "npm:^7.20.0"
     "@testing-library/dom": "npm:^10.1.0"
     "@testing-library/react": "npm:^16.0.0"
     "@testing-library/react-native": "npm:^13.0.0"
-    core-js-pure: "npm:^3.40.0"
   peerDependencies:
     "@data-client/react": ^0.12.15 || ^0.13.0 || ^0.14.0
     "@testing-library/react-hooks": ^8.0.0
@@ -2986,23 +2978,22 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 10c0/1346bff4fe851f1406c8cde18820b1b56fba7edce47b33b7897332ffeae366feb66776c685eb19f1ee579df0fa52b119f3e54ccf9a8aa859a7c3fd030917440a
+  checksum: 10c0/e7eb6089cbb0590ff5b696f3968f147009d055bf0218beb5413cde08c30f3e8216ed26b04a9b742d113199911950464fb54d68d3f120562940749a653526f906
   languageName: node
   linkType: hard
 
-"@data-client/use-enhanced-reducer@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@data-client/use-enhanced-reducer@npm:0.1.12"
+"@data-client/use-enhanced-reducer@npm:^0.1.14":
+  version: 0.1.14
+  resolution: "@data-client/use-enhanced-reducer@npm:0.1.14"
   dependencies:
-    "@babel/runtime-corejs3": "npm:^7.26.7"
-    core-js-pure: "npm:^3.40.0"
+    "@babel/runtime": "npm:^7.20.0"
   peerDependencies:
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
     react: ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/6023bbbdc752921cd408056331e4bf334fe03de4288625e396c63eb87bd4e62d1c1a90001cfecadd9152df7bb7230394615019e70ccd10c0541d20f1c9d74c28
+  checksum: 10c0/948ed0d25fa1d27f809c57608444c0480f9676ab0d83c0816e8f56626be58cc6f6490c48bdc0e63ea0b4fcb3839ff9e93c2208c9e959b7f200f7381d38a91f29
   languageName: node
   linkType: hard
 
@@ -11941,12 +11932,12 @@ __metadata:
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.26.9"
     "@babel/runtime-corejs3": "npm:7.26.9"
-    "@data-client/endpoint": "npm:0.14.19"
+    "@data-client/endpoint": "npm:0.14.21"
     "@data-client/hooks": "npm:0.2.0"
-    "@data-client/img": "npm:0.14.19"
-    "@data-client/react": "npm:0.14.19"
-    "@data-client/rest": "npm:0.14.19"
-    "@data-client/test": "npm:0.14.19"
+    "@data-client/img": "npm:0.14.21"
+    "@data-client/react": "npm:0.14.21"
+    "@data-client/rest": "npm:0.14.21"
+    "@data-client/test": "npm:0.14.21"
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
     "@types/babel__core": "npm:7.20.5"
@@ -11987,10 +11978,10 @@ __metadata:
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
     "@babel/runtime-corejs3": "npm:7.26.9"
-    "@data-client/graphql": "npm:0.14.19"
-    "@data-client/react": "npm:0.14.19"
-    "@data-client/rest": "npm:0.14.19"
-    "@data-client/test": "npm:0.14.19"
+    "@data-client/graphql": "npm:0.14.21"
+    "@data-client/react": "npm:0.14.21"
+    "@data-client/rest": "npm:0.14.21"
+    "@data-client/test": "npm:0.14.21"
     "@storybook/addon-essentials": "npm:8.6.0"
     "@storybook/addon-links": "npm:8.6.0"
     "@storybook/addon-mdx-gfm": "npm:8.6.0"
