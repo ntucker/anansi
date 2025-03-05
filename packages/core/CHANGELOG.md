@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.21...@anansi/core@0.20.22) (2025-03-05)
+
+### 🐛 Bug Fix
+
+* Devserver SSR proxy handling for new webpack configs ([132157b](https://github.com/ntucker/anansi/commit/132157b75d2876ff7111f9bbd843ba959727bb6f))
+* Proxy in production ([caa94b8](https://github.com/ntucker/anansi/commit/caa94b88dd91651089b7ee1826fcd78828dbd4ec))
+
 ### [0.20.21](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.20...@anansi/core@0.20.21) (2025-02-17)
 
 ### 📦 Package
