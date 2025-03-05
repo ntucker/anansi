@@ -1,10 +1,10 @@
+import { Filter, legacyCreateProxyMiddleware } from 'http-proxy-middleware';
 import {
   RequestHandler,
   ProxyConfigArray,
   Response,
   Request,
   NextFunction,
-  ByPass,
   ProxyConfigArrayItem,
 } from 'webpack-dev-server';
 
@@ -12,8 +12,6 @@ import {
 // we just removed the 'bypass' deprecation warnings and converted to typescript
 export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
   const middlewares: any[] = [];
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { createProxyMiddleware } = require('http-proxy-middleware');
 
   const getProxyMiddleware = (
     proxyConfig: ProxyConfigArrayItem,
@@ -21,13 +19,13 @@ export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
     // It is possible to use the `bypass` method without a `target` or `router`.
     // However, the proxy middleware has no use in this case, and will fail to instantiate.
     if (proxyConfig.target) {
-      const context = proxyConfig.context || proxyConfig.path;
+      const context: Filter = proxyConfig.context || (proxyConfig.path as any);
 
-      return createProxyMiddleware(/** @type {string} */ context, proxyConfig);
+      return legacyCreateProxyMiddleware(context, proxyConfig);
     }
 
     if (proxyConfig.router) {
-      return createProxyMiddleware(proxyConfig);
+      return legacyCreateProxyMiddleware(proxyConfig);
     }
   };
 
@@ -69,29 +67,19 @@ export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
 
         if (newProxyConfig !== proxyConfig) {
           proxyConfig = newProxyConfig;
+
+          const socket = req.socket != null ? req.socket : req.connection;
+          const server = socket != null ? (socket as any).server : null;
+
+          if (server) {
+            server.removeAllListeners('close');
+          }
+
           proxyMiddleware = getProxyMiddleware(proxyConfig);
         }
       }
 
-      // - Check if we have a bypass function defined
-      // - In case the bypass function is defined we'll retrieve the
-      // bypassUrl from it otherwise bypassUrl would be null
-      // TODO remove in the next major in favor `context` and `router` options
-      const bypassUrl: ByPass | null =
-        typeof proxyConfig.bypass === 'function' ?
-          await proxyConfig.bypass(req, res, proxyConfig)
-        : null;
-
-      if (typeof bypassUrl === 'boolean') {
-        // skip the proxy
-        res.statusCode = 404;
-        req.url = '';
-        next();
-      } else if (typeof bypassUrl === 'string') {
-        // byPass to that url
-        req.url = bypassUrl;
-        next();
-      } else if (proxyMiddleware) {
+      if (proxyMiddleware) {
         return proxyMiddleware(req, res, next);
       } else {
         next();
@@ -102,6 +90,7 @@ export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
       name: 'http-proxy-middleware',
       middleware: handler,
     });
+
     // Also forward error requests to the proxy so it can handle them.
     middlewares.push({
       name: 'http-proxy-middleware-error-handler',
