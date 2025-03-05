@@ -195,7 +195,9 @@ export default async function startDevServer(
 
         const otherRoutes = [
           process.env.WEBPACK_PUBLIC_PATH,
-          ...Object.keys(webpackConfigs[0].devServer?.proxy ?? {}),
+          ...(webpackConfigs[0].devServer?.proxy
+            ?.filter(proxy => typeof proxy === 'object')
+            ?.flatMap(proxy => proxy.context) ?? []),
         ];
         // serve SSR for non-WEBPACK_PUBLIC_PATH
         devServer.app?.get(
