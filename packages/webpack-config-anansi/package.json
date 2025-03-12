@@ -68,7 +68,7 @@
     "@wyw-in-js/webpack-loader": "^0.5.5",
     "assert": "^2.1.0",
     "autoprefixer": "^10.4.21",
-    "babel-loader": "^9.2.1",
+    "babel-loader": "^10.0.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "circular-dependency-plugin": "^5.2.2",
