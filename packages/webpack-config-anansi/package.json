@@ -67,7 +67,7 @@
     "@vue/preload-webpack-plugin": "^2.0.0",
     "@wyw-in-js/webpack-loader": "^0.5.5",
     "assert": "^2.1.0",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "babel-loader": "^9.2.1",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
