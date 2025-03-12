@@ -2844,22 +2844,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.14.21, @data-client/endpoint@npm:^0.14.21":
-  version: 0.14.21
-  resolution: "@data-client/endpoint@npm:0.14.21"
+"@data-client/endpoint@npm:0.14.25, @data-client/endpoint@npm:^0.14.21, @data-client/endpoint@npm:^0.14.25":
+  version: 0.14.25
+  resolution: "@data-client/endpoint@npm:0.14.25"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-  checksum: 10c0/54a30f5fabdf357fad557f8d93d076575dacf7cbf51319b1fdda9c3d51586428aab268f0085330043eec37deb0e5c02330c5fd38bed3a84cfa79d6764dbe1834
+  checksum: 10c0/eed25deec83f600811ad1de98435c8b6fc3196ad1bc8f3222770ce216f12c633b9d6a97c7bb13ae83ecae2237af69942af7bf0ddfc4ca3693d04031c3834ddc2
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.14.21":
-  version: 0.14.21
-  resolution: "@data-client/graphql@npm:0.14.21"
+"@data-client/graphql@npm:0.14.25":
+  version: 0.14.25
+  resolution: "@data-client/graphql@npm:0.14.25"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.14.21"
-  checksum: 10c0/5c6fb81a11d5fa8b30490efe46a62a713c1fecb09098cdb024d48b2eb408e5f69a8625dc331794de6af8491fc2ac3734b7bc1e2b9ab31a0d9258ed79d0268424
+    "@data-client/endpoint": "npm:^0.14.25"
+  checksum: 10c0/aed8f29a66ee7eeb229835f9a0b1ab718e1906f23c6482dc9ac58ac7ea0cd1b92c80ccfce7a9c09fe910440daef9fb9a992f7b715fa29e0f194f86144673f8bb
   languageName: node
   linkType: hard
 
@@ -2914,9 +2914,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.14.24, @data-client/react@npm:^0.14.0":
-  version: 0.14.24
-  resolution: "@data-client/react@npm:0.14.24"
+"@data-client/react@npm:0.14.25, @data-client/react@npm:^0.14.0":
+  version: 0.14.25
+  resolution: "@data-client/react@npm:0.14.25"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@data-client/core": "npm:^0.14.24"
@@ -2930,18 +2930,18 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/0fba1cf6eba42785eb799fba66ae48b16b3299fc0192becd0fd044f1fa95fc0a0a429d19e232985cd84a44e437609f814b3e1ec9aa37c5e9ab9013f650b5c0cd
+  checksum: 10c0/0db5c51f19cd82474d4bba1829d165718b5243f2cd103577571ab3051bc532e5404e8043f1b6b97dabec6392863812964aaae49c104859d745539071c70e94ce
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.14.22":
-  version: 0.14.22
-  resolution: "@data-client/rest@npm:0.14.22"
+"@data-client/rest@npm:0.14.25":
+  version: 0.14.25
+  resolution: "@data-client/rest@npm:0.14.25"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.14.21"
+    "@data-client/endpoint": "npm:^0.14.25"
     path-to-regexp: "npm:^6.3.0"
-  checksum: 10c0/b74db80784285d637e4b8d7a205cf412a91100eab528f984fe55efa86b7a7b3530577da593bbe8aecc3738c0787af7fc6691664fe83ce249f6a0253a275c2e14
+  checksum: 10c0/2e0c1982822aff9deed0284600e9b4e7f42582e019f4c5154774d44d24b504ac35323bdf54e26cdf629709a8d295f2331f5bf086c78b6ecfca059c6ed1f9d957
   languageName: node
   linkType: hard
 
@@ -11761,11 +11761,11 @@ __metadata:
     "@ant-design/icons": "npm:^5.0.1"
     "@babel/core": "npm:7.26.10"
     "@babel/runtime-corejs3": "npm:7.26.10"
-    "@data-client/endpoint": "npm:0.14.21"
+    "@data-client/endpoint": "npm:0.14.25"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.14.21"
-    "@data-client/react": "npm:0.14.24"
-    "@data-client/rest": "npm:0.14.22"
+    "@data-client/react": "npm:0.14.25"
+    "@data-client/rest": "npm:0.14.25"
     "@data-client/test": "npm:0.14.22"
     "@linaria/core": "npm:6.2.0"
     "@linaria/react": "npm:6.2.1"
@@ -11807,9 +11807,9 @@ __metadata:
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
     "@babel/runtime-corejs3": "npm:7.26.10"
-    "@data-client/graphql": "npm:0.14.21"
-    "@data-client/react": "npm:0.14.24"
-    "@data-client/rest": "npm:0.14.22"
+    "@data-client/graphql": "npm:0.14.25"
+    "@data-client/react": "npm:0.14.25"
+    "@data-client/rest": "npm:0.14.25"
     "@data-client/test": "npm:0.14.22"
     "@storybook/addon-essentials": "npm:8.6.4"
     "@storybook/addon-links": "npm:8.6.4"
@@ -16010,9 +16010,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:15.4.3":
-  version: 15.4.3
-  resolution: "lint-staged@npm:15.4.3"
+"lint-staged@npm:15.5.0":
+  version: 15.5.0
+  resolution: "lint-staged@npm:15.5.0"
   dependencies:
     chalk: "npm:^5.4.1"
     commander: "npm:^13.1.0"
@@ -16026,7 +16026,7 @@ __metadata:
     yaml: "npm:^2.7.0"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/c1f71f2273bcbd992af929620f5acc6b9f6899da4b395e780e0b3ab33a0d725c239eb961873067c8c842e057c585c71dd4d44c0dc8b25539d3c2e97a3bdd6f30
+  checksum: 10c0/393b24d85d705a36e6556dc9d9b710594163be60f7789a2ca71bbf8f31debc10f7fde9cd0e868466ac2b7c154661983602decd7abbb6c685b21007bc70dbbdd6
   languageName: node
   linkType: hard
 
@@ -22014,7 +22014,7 @@ __metadata:
     globals: "npm:^16.0.0"
     husky: "npm:9.1.7"
     jest: "npm:^29.5.0"
-    lint-staged: "npm:15.4.3"
+    lint-staged: "npm:15.5.0"
     prettier: "npm:3.5.3"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
