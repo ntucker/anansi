@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.32](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.31...@anansi/eslint-plugin@1.0.32) (2025-03-12)
+
+### 📦 Package
+
+* Update `@babel/eslint-parser` to ^7.26.10 ([#2689](https://github.com/ntucker/anansi/issues/2689)) ([a3400fc](https://github.com/ntucker/anansi/commit/a3400fc5b39195d6c253b39a3f94a1edf179bddd))
+* Update `eslint-import-resolver-typescript` to ^3.8.5 ([#2692](https://github.com/ntucker/anansi/issues/2692)) ([d0e7790](https://github.com/ntucker/anansi/commit/d0e7790222f1452bae8d1865c0702c73eaeed9e1))
+* Update `globals` to v16 ([#2693](https://github.com/ntucker/anansi/issues/2693)) ([e4432df](https://github.com/ntucker/anansi/commit/e4432dfd269836a0d4953b993d655416c97f841e))
+* Update babel packages ([#2688](https://github.com/ntucker/anansi/issues/2688)) ([5e57d54](https://github.com/ntucker/anansi/commit/5e57d5411de4def9276f6c3ea08acc9ace9b0c12))
+* Update validation packages ([#2686](https://github.com/ntucker/anansi/issues/2686)) ([1987301](https://github.com/ntucker/anansi/commit/1987301692ceda97657918c01ebb6ebaddafafdd))
+
 ### [1.0.31](https://github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.30...@anansi/eslint-plugin@1.0.31) (2025-03-05)
 
 ### 📦 Package

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.23...@anansi/webpack-config@21.0.0) (2025-03-12)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* webpack >= 5.61.0
+
+### 📦 Package
+
+* Update `babel-loader` to v10 ([#2677](https://github.com/ntucker/anansi/issues/2677)) ([3a20264](https://github.com/ntucker/anansi/commit/3a2026497c6ec8e71a3046c4d3c6a4616ef150be))
+* Update all non-major dependencies ([#2691](https://github.com/ntucker/anansi/issues/2691)) ([33e5276](https://github.com/ntucker/anansi/commit/33e52766936f71739cd9d037d362b971c4764160))
+* Update webpack packages ([#2687](https://github.com/ntucker/anansi/issues/2687)) ([e10c1cf](https://github.com/ntucker/anansi/commit/e10c1cf66916778008e513ce88dd8a1f59f047f7))
+
 ### [20.0.23](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.22...@anansi/webpack-config@20.0.23) (2025-02-27)
 
 ### 📦 Package

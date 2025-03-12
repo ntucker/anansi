@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.41](https://github.com/ntucker/anansi/compare/example-typescript@15.1.40...example-typescript@15.1.41) (2025-03-12)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2691](https://github.com/ntucker/anansi/issues/2691)) ([33e5276](https://github.com/ntucker/anansi/commit/33e52766936f71739cd9d037d362b971c4764160))
+* Update babel packages ([#2688](https://github.com/ntucker/anansi/issues/2688)) ([5e57d54](https://github.com/ntucker/anansi/commit/5e57d5411de4def9276f6c3ea08acc9ace9b0c12))
+* Update storybook monorepo to v8.6.4 ([#2685](https://github.com/ntucker/anansi/issues/2685)) ([c6fc49b](https://github.com/ntucker/anansi/commit/c6fc49b4e5d414cc008d4da2f9e844e81c9447c4))
+
 ### [15.1.40](https://github.com/ntucker/anansi/compare/example-typescript@15.1.39...example-typescript@15.1.40) (2025-03-05)
 
 ### 📦 Package
