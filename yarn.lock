@@ -45,7 +45,7 @@ __metadata:
     babel-plugin-macros: "npm:^3.1.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     babel-plugin-polyfill-corejs3: "npm:^0.11.1"
-    babel-plugin-react-compiler: "npm:19.0.0-beta-e1e972c-20250221"
+    babel-plugin-react-compiler: "npm:19.0.0-beta-3229e95-20250315"
     babel-plugin-root-import: "npm:^6.6.0"
     babel-plugin-transform-import-meta: "npm:^2.3.2"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
@@ -2121,7 +2121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.0.0, @babel/types@npm:^7.18.9, @babel/types@npm:^7.19.0, @babel/types@npm:^7.20.7, @babel/types@npm:^7.21.3, @babel/types@npm:^7.23.5, @babel/types@npm:^7.25.9, @babel/types@npm:^7.26.10, @babel/types@npm:^7.26.9, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4":
+"@babel/types@npm:^7.0.0, @babel/types@npm:^7.18.9, @babel/types@npm:^7.20.7, @babel/types@npm:^7.21.3, @babel/types@npm:^7.23.5, @babel/types@npm:^7.25.9, @babel/types@npm:^7.26.0, @babel/types@npm:^7.26.10, @babel/types@npm:^7.26.9, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4":
   version: 7.26.10
   resolution: "@babel/types@npm:7.26.10"
   dependencies:
@@ -7989,12 +7989,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-compiler@npm:19.0.0-beta-e1e972c-20250221":
-  version: 19.0.0-beta-e1e972c-20250221
-  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-e1e972c-20250221"
+"babel-plugin-react-compiler@npm:19.0.0-beta-3229e95-20250315":
+  version: 19.0.0-beta-3229e95-20250315
+  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-3229e95-20250315"
   dependencies:
-    "@babel/types": "npm:^7.19.0"
-  checksum: 10c0/9a05a92fc27445c81b3d817258edde563e97975b765476178df29eafb99f3d62c9e1674e0e6bbec13fb0709c29bc464d99a83bd971b4b20f37c929e5866ebb5b
+    "@babel/types": "npm:^7.26.0"
+  checksum: 10c0/0f958aa5647b218d5ed3ecf7f97eb79eefd887722edce77d30abcc1db61acd2709a1c04446bae7c85722aba1928670b59b123d42f04b274cc6eca83448e75d1b
   languageName: node
   linkType: hard
 
