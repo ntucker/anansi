@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [21.0.1](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.0...@anansi/webpack-config@21.0.1) (2025-03-17)
+
+### 📦 Package
+
+* Update webpack packages ([#2695](https://github.com/ntucker/anansi/issues/2695)) ([f0929b7](https://github.com/ntucker/anansi/commit/f0929b7854c7204472f6569ce4b0b4bccf27e691))
+
 ## [21.0.0](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@20.0.23...@anansi/webpack-config@21.0.0) (2025-03-12)
 
 ### ⚠ 💥 BREAKING CHANGES
