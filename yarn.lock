@@ -193,7 +193,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.26.1"
     eslint: "npm:^9.9.1"
     eslint-config-prettier: "npm:^10.1.1"
-    eslint-import-resolver-typescript: "npm:^4.1.0"
+    eslint-import-resolver-typescript: "npm:^4.1.1"
     eslint-import-resolver-webpack: "npm:^0.13.10"
     eslint-plugin-import: "npm:^2.31.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
@@ -11441,9 +11441,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "eslint-import-resolver-typescript@npm:4.1.0"
+"eslint-import-resolver-typescript@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "eslint-import-resolver-typescript@npm:4.1.1"
   dependencies:
     debug: "npm:^4.4.0"
     get-tsconfig: "npm:^4.10.0"
@@ -11460,7 +11460,7 @@ __metadata:
       optional: true
     eslint-plugin-import-x:
       optional: true
-  checksum: 10c0/fd3a650d24903355b8d98c21bd3fc9fada305bcaf6c0a6be0a352c1d4f456d9f7fd8733ba8b246302408ef2b57d95b47887335401e3e9a835fddaa461f3a92be
+  checksum: 10c0/7d5f58c017547cef6be171e459266a045eb0de94d30d1f8e5ca20fd9b49042dadc4d28dbd0547500f29e4637a3429f975b521155b7bede067b9d2514537c6140
   languageName: node
   linkType: hard
 
