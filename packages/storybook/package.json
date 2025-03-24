@@ -43,7 +43,7 @@
     "@storybook/preset-react-webpack": "^8.6.8",
     "@storybook/react": "^8.6.8",
     "@storybook/types": "^8.6.8",
-    "@types/node": "^22.13.10",
+    "@types/node": "^22.13.12",
     "core-js-pure": "^3.40.0"
   },
   "peerDependencies": {
