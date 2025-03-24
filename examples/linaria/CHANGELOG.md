@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [9.0.2](https://github.com/ntucker/anansi/compare/example-linaria@9.0.1...example-linaria@9.0.2) (2025-03-24)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2706](https://github.com/ntucker/anansi/issues/2706)) ([a8b58cc](https://github.com/ntucker/anansi/commit/a8b58cc1b16a4f95091fb09980da0296b39f0e1c))
+
 ### [9.0.1](https://github.com/ntucker/anansi/compare/example-linaria@9.0.0...example-linaria@9.0.1) (2025-03-17)
 
 ### 📦 Package

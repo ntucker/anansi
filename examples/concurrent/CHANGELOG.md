@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [8.0.47](https://github.com/ntucker/anansi/compare/example-react-18@8.0.46...example-react-18@8.0.47) (2025-03-24)
+
+### 📦 Package
+
+* Update `@ant-design/icons` to v6 ([#2707](https://github.com/ntucker/anansi/issues/2707)) ([2e39824](https://github.com/ntucker/anansi/commit/2e39824e22775567dc4b7cbdedb12d731049dd60))
+* Update all non-major dependencies ([#2706](https://github.com/ntucker/anansi/issues/2706)) ([a8b58cc](https://github.com/ntucker/anansi/commit/a8b58cc1b16a4f95091fb09980da0296b39f0e1c))
+* Update validation packages ([#2703](https://github.com/ntucker/anansi/issues/2703)) ([31d2ba6](https://github.com/ntucker/anansi/commit/31d2ba6e285f7f9b45ab715f614773530dba8e70))
+
 ### [8.0.46](https://github.com/ntucker/anansi/compare/example-react-18@8.0.45...example-react-18@8.0.46) (2025-03-17)
 
 ### 📦 Package
