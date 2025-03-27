@@ -313,7 +313,7 @@ __metadata:
     "@storybook/preset-react-webpack": "npm:^8.6.8"
     "@storybook/react": "npm:^8.6.8"
     "@storybook/types": "npm:^8.6.8"
-    "@types/node": "npm:^22.13.12"
+    "@types/node": "npm:^22.13.14"
     core-js-pure: "npm:^3.40.0"
   peerDependencies:
     "@anansi/babel-preset": "*"
@@ -6159,12 +6159,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.13.12, @types/node@npm:>=18, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10, @types/node@npm:^22.13.12":
-  version: 22.13.12
-  resolution: "@types/node@npm:22.13.12"
+"@types/node@npm:*, @types/node@npm:22.13.14, @types/node@npm:>=18, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10, @types/node@npm:^22.13.14":
+  version: 22.13.14
+  resolution: "@types/node@npm:22.13.14"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/c360ee830faf6e5de0a77459c06f5320d166d8d981547bb0e2d921057e3b71ce44bc8c0ede25ee69c7575445d424121c158bc2a059da3c80f0275a1ca4ab4a00
+  checksum: 10c0/fa2ab5b8277bfbcc86c42e46a3ea9871b0d559894cc9d955685d17178c9499f0b1bf03d1d1ea8d92ef2dda818988f4035acb8abf9dc15423a998fa56173ab804
   languageName: node
   linkType: hard
 
@@ -6338,9 +6338,9 @@ __metadata:
   linkType: hard
 
 "@types/semver@npm:^7, @types/semver@npm:^7.3.4":
-  version: 7.5.8
-  resolution: "@types/semver@npm:7.5.8"
-  checksum: 10c0/8663ff927234d1c5fcc04b33062cb2b9fcfbe0f5f351ed26c4d1e1581657deebd506b41ff7fdf89e787e3d33ce05854bc01686379b89e9c49b564c4cfa988efa
+  version: 7.7.0
+  resolution: "@types/semver@npm:7.7.0"
+  checksum: 10c0/6b5f65f647474338abbd6ee91a6bbab434662ddb8fe39464edcbcfc96484d388baad9eb506dff217b6fc1727a88894930eb1f308617161ac0f376fe06be4e1ee
   languageName: node
   linkType: hard
 
@@ -7467,9 +7467,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.24.4":
-  version: 5.24.4
-  resolution: "antd@npm:5.24.4"
+"antd@npm:5.24.5":
+  version: 5.24.5
+  resolution: "antd@npm:5.24.5"
   dependencies:
     "@ant-design/colors": "npm:^7.2.0"
     "@ant-design/cssinjs": "npm:^1.23.0"
@@ -7493,7 +7493,7 @@ __metadata:
     rc-drawer: "npm:~7.2.0"
     rc-dropdown: "npm:~4.2.1"
     rc-field-form: "npm:~2.7.0"
-    rc-image: "npm:~7.11.0"
+    rc-image: "npm:~7.11.1"
     rc-input: "npm:~1.7.3"
     rc-input-number: "npm:~9.4.0"
     rc-mentions: "npm:~2.19.1"
@@ -7523,7 +7523,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/ce8597467ae5c9beb850a292337aa652636467d6c5dadf4d8602b82366c4bcbf05d9880c185f5013b8ce189e4a9671ba7a5472db75345189a2179353ce4b9190
+  checksum: 10c0/63697f4e15ee40f7e3c8f2666c493855fb9dc0b2369a6430abbef23fbdd4570568ce5ca95aebc345fd374126b007faf6ec92221661a7ee4378830e5cd2d9ea54
   languageName: node
   linkType: hard
 
@@ -11948,10 +11948,10 @@ __metadata:
     "@types/babel__core": "npm:7.20.5"
     "@types/eslint": "npm:9.6.1"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.13.12"
+    "@types/node": "npm:22.13.14"
     "@types/react": "npm:19.0.12"
     "@types/react-dom": "npm:19.0.4"
-    antd: "npm:5.24.4"
+    antd: "npm:5.24.5"
     classnames: "npm:2.5.1"
     core-js: "npm:3.41.0"
     eslint: "npm:9.23.0"
@@ -11999,14 +11999,14 @@ __metadata:
     "@types/eslint": "npm:^9.0.0"
     "@types/jest": "npm:29.5.14"
     "@types/lodash": "npm:4.17.16"
-    "@types/node": "npm:22.13.12"
+    "@types/node": "npm:22.13.14"
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prop-types": "npm:^15.7.5"
     "@types/react": "npm:19.0.12"
     "@types/react-dom": "npm:19.0.4"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
-    antd: "npm:5.24.4"
+    antd: "npm:5.24.5"
     classnames: "npm:2.5.1"
     core-js: "npm:3.41.0"
     eslint: "npm:^9.0.0"
@@ -20783,9 +20783,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-image@npm:~7.11.0":
-  version: 7.11.0
-  resolution: "rc-image@npm:7.11.0"
+"rc-image@npm:~7.11.1":
+  version: 7.11.1
+  resolution: "rc-image@npm:7.11.1"
   dependencies:
     "@babel/runtime": "npm:^7.11.2"
     "@rc-component/portal": "npm:^1.0.2"
@@ -20796,7 +20796,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/e0350bdfa531bbf4cdc23bb834fe46fee78f10739ef740ae3b880ea4e529674edb60074defcdb651d9b4aab305f0b971b08dd8739cf6409bb28dadcefca20808
+  checksum: 10c0/61db982d618c3d31e99bd1be8e7b49f53feff7170a67483aa97770e686cc7e9ab4dea787f345e0f7ea5704d42f390aeaf99ffb3d7684a2b838b1f4738306eff0
   languageName: node
   linkType: hard
 
