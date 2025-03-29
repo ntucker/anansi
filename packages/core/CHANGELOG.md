@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.20.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.23...@anansi/core@0.20.24) (2025-03-29)
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v5.2.1 ([#2713](https://github.com/ntucker/anansi/issues/2713)) ([fda0f8d](https://github.com/ntucker/anansi/commit/fda0f8dd5eab652815eee8a4ca76d48c0d7fe6d6))
+* Update react ([#2716](https://github.com/ntucker/anansi/issues/2716)) ([2bd2caf](https://github.com/ntucker/anansi/commit/2bd2cafb3054f9f226c4a963d49ae19355c9c67c))
+
 ### [0.20.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.22...@anansi/core@0.20.23) (2025-03-24)
 
 ### 📦 Package
