@@ -72,16 +72,16 @@
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "normalize-url": "^6",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "dependencies": {
     "@lerna-lite/publish": "^3.0.0",
     "@lerna-lite/version": "^3.0.0",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "packageManager": "yarn@4.8.0"
 }
