@@ -131,8 +131,8 @@ __metadata:
     "@types/compression": "npm:1.7.5"
     "@types/express": "npm:^4.17.17"
     "@types/node": "npm:^22.0.0"
-    "@types/react": "npm:19.0.12"
-    "@types/react-dom": "npm:19.0.4"
+    "@types/react": "npm:19.1.0"
+    "@types/react-dom": "npm:19.1.1"
     "@types/source-map-support": "npm:0.5.10"
     "@types/tmp": "npm:0.2.6"
     "@types/webpack-hot-middleware": "npm:2.25.9"
@@ -313,7 +313,7 @@ __metadata:
     "@storybook/preset-react-webpack": "npm:^8.6.10"
     "@storybook/react": "npm:^8.6.10"
     "@storybook/types": "npm:^8.6.10"
-    "@types/node": "npm:^22.13.14"
+    "@types/node": "npm:^22.14.0"
     core-js-pure: "npm:^3.40.0"
   peerDependencies:
     "@anansi/babel-preset": "*"
@@ -6167,12 +6167,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.13.14, @types/node@npm:>=18, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10, @types/node@npm:^22.13.14":
-  version: 22.13.14
-  resolution: "@types/node@npm:22.13.14"
+"@types/node@npm:*, @types/node@npm:22.14.0, @types/node@npm:>=18, @types/node@npm:^22.0.0, @types/node@npm:^22.10.10, @types/node@npm:^22.14.0":
+  version: 22.14.0
+  resolution: "@types/node@npm:22.14.0"
   dependencies:
-    undici-types: "npm:~6.20.0"
-  checksum: 10c0/fa2ab5b8277bfbcc86c42e46a3ea9871b0d559894cc9d955685d17178c9499f0b1bf03d1d1ea8d92ef2dda818988f4035acb8abf9dc15423a998fa56173ab804
+    undici-types: "npm:~6.21.0"
+  checksum: 10c0/9d79f3fa1af9c2c869514f419c4a4905b34c10e12915582fd1784868ac4e74c6d306cf5eb47ef889b6750ab85a31be96618227b86739c4a3e0b1c15063f384c6
   languageName: node
   linkType: hard
 
@@ -6271,12 +6271,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.0.4":
-  version: 19.0.4
-  resolution: "@types/react-dom@npm:19.0.4"
+"@types/react-dom@npm:19.1.1":
+  version: 19.1.1
+  resolution: "@types/react-dom@npm:19.1.1"
   peerDependencies:
     "@types/react": ^19.0.0
-  checksum: 10c0/4e71853919b94df9e746a4bd73f8180e9ae13016333ce9c543dcba9f4f4c8fe6e28b038ca6ee61c24e291af8e03ca3bc5ded17c46dee938fcb32d71186fda7a3
+  checksum: 10c0/83833af502f501a372b370fdeb7cf933dfc8780903fe0e0d6e6a76b4ea3adbe5316159a62a0388d8afdd409afd76a40959e2ce82fbb788f57d32c786a63601ee
   languageName: node
   linkType: hard
 
@@ -6301,12 +6301,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.0.12":
-  version: 19.0.12
-  resolution: "@types/react@npm:19.0.12"
+"@types/react@npm:19.1.0":
+  version: 19.1.0
+  resolution: "@types/react@npm:19.1.0"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/c814b6af5c0fbcf5c65d031b1c9bf98c5b857e015254d95811f2851b27b869c3d31c6f35dab127dc6921a3dbda0b0622c6323d493a14b31b231a6a58c41c5e84
+  checksum: 10c0/632fd20ee176e55801a61c5f854141b043571a3e363ef106b047b766a813a12735cbb37abb3d61d126346979f530f2ed269a60c8ef3cdee54e5e9fe4174e5dad
   languageName: node
   linkType: hard
 
@@ -7513,9 +7513,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:5.24.5":
-  version: 5.24.5
-  resolution: "antd@npm:5.24.5"
+"antd@npm:5.24.6":
+  version: 5.24.6
+  resolution: "antd@npm:5.24.6"
   dependencies:
     "@ant-design/colors": "npm:^7.2.0"
     "@ant-design/cssinjs": "npm:^1.23.0"
@@ -7569,7 +7569,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/63697f4e15ee40f7e3c8f2666c493855fb9dc0b2369a6430abbef23fbdd4570568ce5ca95aebc345fd374126b007faf6ec92221661a7ee4378830e5cd2d9ea54
+  checksum: 10c0/c8ce1f0b03b5b5b4ae2fde991ac7b70c45705585eb43685b165b203e98b82ff3fc1b1ca96eb217cb421895580c4d45f9c6e06629cc3dab49a65d792e1f1299d5
   languageName: node
   linkType: hard
 
@@ -11944,8 +11944,8 @@ __metadata:
     "@types/babel__core": "npm:^7.20.0"
     "@types/eslint": "npm:^9.0.0"
     "@types/node": "npm:^22.0.0"
-    "@types/react": "npm:19.0.12"
-    "@types/react-dom": "npm:19.0.4"
+    "@types/react": "npm:19.1.0"
+    "@types/react-dom": "npm:19.1.1"
     "@types/react-router-dom": "npm:5.3.3"
     babel-loader: "npm:10.0.0"
     classnames: "npm:2.5.1"
@@ -11992,10 +11992,10 @@ __metadata:
     "@types/babel__core": "npm:7.20.5"
     "@types/eslint": "npm:9.6.1"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.13.14"
-    "@types/react": "npm:19.0.12"
-    "@types/react-dom": "npm:19.0.4"
-    antd: "npm:5.24.5"
+    "@types/node": "npm:22.14.0"
+    "@types/react": "npm:19.1.0"
+    "@types/react-dom": "npm:19.1.1"
+    antd: "npm:5.24.6"
     classnames: "npm:2.5.1"
     core-js: "npm:3.41.0"
     eslint: "npm:9.23.0"
@@ -12005,7 +12005,7 @@ __metadata:
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     react-refresh: "npm:0.17.0"
-    typescript: "npm:5.8.2"
+    typescript: "npm:5.8.3"
     webpack: "npm:5.98.0"
     webpack-cli: "npm:6.0.1"
     webpack-dev-server: "npm:5.2.1"
@@ -12043,14 +12043,14 @@ __metadata:
     "@types/eslint": "npm:^9.0.0"
     "@types/jest": "npm:29.5.14"
     "@types/lodash": "npm:4.17.16"
-    "@types/node": "npm:22.13.14"
+    "@types/node": "npm:22.14.0"
     "@types/parse-link-header": "npm:2.0.3"
     "@types/prop-types": "npm:^15.7.5"
-    "@types/react": "npm:19.0.12"
-    "@types/react-dom": "npm:19.0.4"
+    "@types/react": "npm:19.1.0"
+    "@types/react-dom": "npm:19.1.1"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
-    antd: "npm:5.24.5"
+    antd: "npm:5.24.6"
     classnames: "npm:2.5.1"
     core-js: "npm:3.41.0"
     eslint: "npm:^9.0.0"
@@ -22223,8 +22223,8 @@ __metadata:
     "@lerna-lite/publish": "npm:^3.0.0"
     "@lerna-lite/version": "npm:^3.0.0"
     "@types/node": "npm:^22.0.0"
-    "@types/react": "npm:19.0.12"
-    "@types/react-dom": "npm:19.0.4"
+    "@types/react": "npm:19.1.0"
+    "@types/react-dom": "npm:19.1.1"
     babel-loader: "npm:10.0.0"
     babel-plugin-module-resolver: "npm:5.0.2"
     babel-plugin-root-import: "npm:6.6.0"
@@ -22240,7 +22240,7 @@ __metadata:
     react-dom: "npm:19.1.0"
     rimraf: "npm:^6.0.0"
     start-server-and-test: "npm:^2.0.0"
-    typescript: "npm:5.8.2"
+    typescript: "npm:5.8.3"
     webpack: "npm:5.98.0"
     webpack-cli: "npm:6.0.1"
     webpack-dev-server: "npm:5.2.1"
@@ -24798,23 +24798,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.8.2, typescript@npm:^5.0.2, typescript@npm:^5.5.4":
-  version: 5.8.2
-  resolution: "typescript@npm:5.8.2"
+"typescript@npm:5.8.3, typescript@npm:^5.0.2, typescript@npm:^5.5.4":
+  version: 5.8.3
+  resolution: "typescript@npm:5.8.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/5c4f6fbf1c6389b6928fe7b8fcd5dc73bb2d58cd4e3883f1d774ed5bd83b151cbac6b7ecf11723de56d4676daeba8713894b1e9af56174f2f9780ae7848ec3c6
+  checksum: 10c0/5f8bb01196e542e64d44db3d16ee0e4063ce4f3e3966df6005f2588e86d91c03e1fb131c2581baf0fb65ee79669eea6e161cd448178986587e9f6844446dbb48
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.0.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.4#optional!builtin<compat/typescript>":
-  version: 5.8.2
-  resolution: "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"
+"typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.0.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.4#optional!builtin<compat/typescript>":
+  version: 5.8.3
+  resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/5448a08e595cc558ab321e49d4cac64fb43d1fa106584f6ff9a8d8e592111b373a995a1d5c7f3046211c8a37201eb6d0f1566f15cdb7a62a5e3be01d087848e2
+  checksum: 10c0/39117e346ff8ebd87ae1510b3a77d5d92dae5a89bde588c747d25da5c146603a99c8ee588c7ef80faaf123d89ed46f6dbd918d534d641083177d5fac38b8a1cb
   languageName: node
   linkType: hard
 
@@ -24846,10 +24846,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.20.0":
-  version: 6.20.0
-  resolution: "undici-types@npm:6.20.0"
-  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
   languageName: node
   linkType: hard
 
