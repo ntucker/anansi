@@ -59,7 +59,7 @@
     "globals": "^16.0.0",
     "husky": "9.1.7",
     "jest": "^29.5.0",
-    "lint-staged": "15.5.0",
+    "lint-staged": "15.5.1",
     "prettier": "3.5.3",
     "rimraf": "^6.0.0",
     "start-server-and-test": "^2.0.0",
@@ -69,8 +69,8 @@
     "webpack-dev-server": "5.2.1"
   },
   "resolutions": {
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
     "normalize-url": "^6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -78,8 +78,8 @@
   "dependencies": {
     "@lerna-lite/publish": "^3.0.0",
     "@lerna-lite/version": "^3.0.0",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
