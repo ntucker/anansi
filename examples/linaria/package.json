@@ -34,7 +34,7 @@
     "prettier": "^3.0.0",
     "react-refresh": "0.17.0",
     "serve": "14.2.4",
-    "webpack": "5.99.5",
+    "webpack": "5.99.6",
     "webpack-cli": "^6.0.0",
     "webpack-dev-server": "^5.0.0"
   },
