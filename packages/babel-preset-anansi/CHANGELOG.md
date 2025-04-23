@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [6.2.6](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.5...@anansi/babel-preset@6.2.6) (2025-04-23)
+
+### 📦 Package
+
+* React compiler to rc 1 ([0407ccb](https://github.com/ntucker/anansi/commit/0407ccbf0c1930104363cd348c977d7cffa067b9))
+
 ### [6.2.5](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.4...@anansi/babel-preset@6.2.5) (2025-03-29)
 
 ### 📦 Package
