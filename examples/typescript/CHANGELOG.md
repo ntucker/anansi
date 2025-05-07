@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [15.1.48](https://github.com/ntucker/anansi/compare/example-typescript@15.1.47...example-typescript@15.1.48) (2025-05-07)
+
+### 📦 Package
+
+* Update `webpack` to v5.99.8 ([#2743](https://github.com/ntucker/anansi/issues/2743)) ([926d931](https://github.com/ntucker/anansi/commit/926d93190373720e5d4587a62e867cec0867f769))
+* Update all non-major dependencies ([#2744](https://github.com/ntucker/anansi/issues/2744)) ([ef0e8ad](https://github.com/ntucker/anansi/commit/ef0e8ad2280ab6bad23efeef74c9f2c6e3496ec4))
+
 ### [15.1.47](https://github.com/ntucker/anansi/compare/example-typescript@15.1.46...example-typescript@15.1.47) (2025-05-01)
 
 ### 📦 Package
