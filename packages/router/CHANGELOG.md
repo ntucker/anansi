@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.10.14 (2025-05-15)</small>
+
+**Note:** Version bump only for package @anansi/router
+
 ### [0.10.13](https://github.com/ntucker/anansi/compare/@anansi/router@0.10.12...@anansi/router@0.10.13) (2025-03-29)
 
 ### 📦 Package

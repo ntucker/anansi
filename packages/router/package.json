@@ -1,6 +1,6 @@
 {
   "name": "@anansi/router",
-  "version": "0.10.13",
+  "version": "0.10.14",
   "description": "React concurrent optimized router",
   "homepage": "https://github.com/ntucker/anansi/tree/master/packages/router#readme",
   "repository": {

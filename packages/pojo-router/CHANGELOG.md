@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.10.7 (2025-05-15)</small>
+
+* fix: Export for ControllerProps ([bdd6fcf](https://github.com/ntucker/anansi/commit/bdd6fcf))
+
 ### [0.10.6](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.5...@pojo-router/core@0.10.6) (2025-03-29)
 
 ### 📦 Package

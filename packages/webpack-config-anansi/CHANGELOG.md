@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>21.0.6 (2025-05-15)</small>
+
+* fix: React-refresh webpack plugin ([51558e1](https://github.com/ntucker/anansi/commit/51558e1))
+
 ### [21.0.5](https://github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.4...@anansi/webpack-config@21.0.5) (2025-05-14)
 
 ### 📦 Package

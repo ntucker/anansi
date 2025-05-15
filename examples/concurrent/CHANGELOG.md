@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>8.0.55 (2025-05-15)</small>
+
+**Note:** Version bump only for package example-react-18
+
 ## <small>8.0.54 (2025-05-15)</small>
 
 **Note:** Version bump only for package example-react-18

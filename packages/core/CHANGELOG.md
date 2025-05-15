@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.20.30 (2025-05-15)</small>
+
+* enhance: Add key to ant css-in-js script ([63c770c](https://github.com/ntucker/anansi/commit/63c770c))
+
 ### [0.20.29](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.28...@anansi/core@0.20.29) (2025-05-14)
 
 ### 📦 Package
