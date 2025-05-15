@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>6.2.9 (2025-05-15)</small>
+
+* pkg: Update `babel-plugin-react-compiler` to ~19.1.0-rc.2 (#2750) ([8d4b486](https://github.com/ntucker/anansi/commit/8d4b486)), closes [#2750](https://github.com/ntucker/anansi/issues/2750)
+
 ### [6.2.8](https://github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.7...@anansi/babel-preset@6.2.8) (2025-05-07)
 
 ### 📦 Package
