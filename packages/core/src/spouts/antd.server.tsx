@@ -34,7 +34,7 @@ export default function antdSpout(): ServerSpout<
     };
     // unfortunately we have to inject this after the entire content has streamed in or it doesn't correctly populate
     // see: https://github.com/ant-design/cssinjs/issues/79
-    scripts.push(<AntdSheets />);
+    scripts.push(<AntdSheets key="antd-sheets" />);
 
     return {
       ...nextProps,
