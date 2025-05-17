@@ -20,7 +20,7 @@ import { getAuth } from './Auth';
 const HOST = 'https://api.github.com';
 
 export class GithubEntity extends Entity {
-  readonly id: number = -1;
+  id = -1;
 }
 
 export const GithubGqlEndpoint = new GQLEndpoint(

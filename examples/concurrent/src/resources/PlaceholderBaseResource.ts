@@ -13,7 +13,7 @@ export abstract class PlaceholderEntity extends Entity {
 }
 
 /** Common patterns in the https://jsonplaceholder.typicode.com API */
-export function createPlaceholderResource<O extends ResourceGenerics = any>({
+export function placeholderResource<O extends ResourceGenerics = any>({
   path,
   schema,
   Endpoint = RestEndpoint,

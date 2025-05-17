@@ -10,7 +10,7 @@ abstract class StaticEntity extends Entity {
 }
 
 export default class MyEntity extends StaticEntity {
-  readonly id: string = '';
+  id = '';
 
   static urlRoot = '/rootof/static/';
 

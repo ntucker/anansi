@@ -9,7 +9,7 @@ import {
 
 export abstract class PlaceholderEntity extends Entity {
   // all Resources of `jsonplaceholder` use an id for the primary key
-  readonly id: number = 0;
+  id = 0;
 }
 
 /** Common patterns in the https://jsonplaceholder.typicode.com API */
