@@ -105,7 +105,7 @@ __metadata:
     "@types/node": "npm:^22.0.0"
     binary-version-check: "npm:^6.1.0"
     chalk: "npm:^4.1.2"
-    commander: "npm:^12.1.0"
+    commander: "npm:^13.1.0"
     execa: "npm:^9.5.3"
     import-meta-resolve: "npm:^4.1.0"
     latest-version: "npm:^9.0.0"
