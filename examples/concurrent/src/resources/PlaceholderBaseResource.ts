@@ -1,7 +1,7 @@
 import { Entity } from '@data-client/rest';
 import {
   RestEndpoint,
-  createResource,
+  resource,
   ResourceGenerics,
   ResourceOptions,
   Resource,
@@ -18,7 +18,7 @@ export function createPlaceholderResource<O extends ResourceGenerics = any>({
   schema,
   Endpoint = RestEndpoint,
 }: Readonly<O> & ResourceOptions): Resource<O> {
-  const base = createResource({
+  const base = resource({
     path,
     schema,
     Endpoint,

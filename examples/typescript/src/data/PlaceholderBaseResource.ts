@@ -1,7 +1,7 @@
 import { Entity } from '@data-client/rest';
 import {
   RestEndpoint,
-  createResource,
+  resource,
   ResourceGenerics,
   ResourceOptions,
   Resource,
@@ -13,12 +13,12 @@ export abstract class PlaceholderEntity extends Entity {
 }
 
 /** Common patterns in the https://jsonplaceholder.typicode.com API */
-export function createPlaceholderResource<O extends ResourceGenerics = any>({
+export function placeholderResource<O extends ResourceGenerics = any>({
   path,
   schema,
   Endpoint = RestEndpoint,
 }: Readonly<O> & ResourceOptions): Resource<O> {
-  const base = createResource({
+  const base = resource({
     path,
     schema,
     Endpoint,

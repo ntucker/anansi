@@ -8,7 +8,7 @@ import {
   RestGenerics,
   RestEndpoint,
   Resource,
-  createResource,
+  resource,
   ResourceGenerics,
   ResourceOptions,
   PaginationFieldEndpoint,
@@ -76,15 +76,15 @@ export class GithubEndpoint<
     return results;
   }
 
-  process(value: any, ...args: any) {
+  process(value: any, ..._args: any) {
     return deeplyApplyKeyTransform(value, camelCase);
   }
 }
 
-export function createGithubResource<O extends ResourceGenerics>(
+export function githubResource<O extends ResourceGenerics>(
   options: Readonly<O> & ResourceOptions,
 ): GithubResource<O> {
-  const baseResource = createResource({ Endpoint: GithubEndpoint, ...options });
+  const baseResource = resource({ Endpoint: GithubEndpoint, ...options });
 
   const getList: GetEndpoint<
     Omit<O, 'schema' | 'body' | 'path'> & {

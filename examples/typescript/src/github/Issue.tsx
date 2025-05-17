@@ -2,7 +2,7 @@ import { InfoCircleOutlined, IssuesCloseOutlined } from '@ant-design/icons';
 import { RestGenerics } from '@data-client/rest';
 import React from 'react';
 
-import { GithubEndpoint, GithubEntity, createGithubResource } from './Base';
+import { GithubEndpoint, GithubEntity, githubResource } from './Base';
 import { Label } from './Label';
 import { User } from './User';
 
@@ -66,7 +66,7 @@ class IssueEndpoint<O extends RestGenerics = any> extends GithubEndpoint<O> {
   pollFrequency = 60000;
 }
 
-export const IssueResource = createGithubResource({
+export const IssueResource = githubResource({
   path: '/repos/:owner/:repo/issues/:number',
   schema: Issue,
   Endpoint: IssueEndpoint,

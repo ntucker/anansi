@@ -1,4 +1,4 @@
-import { createGithubResource, GithubEntity } from './Base';
+import { githubResource, GithubEntity } from './Base';
 
 export class User extends GithubEntity {
   readonly nodeId: string = '';
@@ -45,7 +45,7 @@ export class User extends GithubEntity {
     return this.login;
   }
 }
-export const UserResource = createGithubResource({
+export const UserResource = githubResource({
   path: '/users/:login',
   schema: User,
 }).extend('current', {
