@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.19](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.18...@anansi/jest-preset@0.11.19) (2025-05-27)
+
+### 📦 Package
+
+* Update `ts-jest` to ^29.3.4 ([#2760](/github.com/ntucker/anansi/issues/2760)) ([df0b18b](/github.com/ntucker/anansi/commit/df0b18b2264f10147107e169bdef07591dd68d5e))
+
 ### [0.11.18](https://github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.17...@anansi/jest-preset@0.11.18) (2025-05-14)
 
 ### 📦 Package

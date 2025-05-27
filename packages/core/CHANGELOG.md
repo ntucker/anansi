@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.31](/github.com/ntucker/anansi/compare/@anansi/core@0.20.30...@anansi/core@0.20.31) (2025-05-27)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2757](/github.com/ntucker/anansi/issues/2757)) ([99f3dd9](/github.com/ntucker/anansi/commit/99f3dd9b39b87052e28fef5fb6f3f1be21368365))
+
 ## <small>0.20.30 (2025-05-15)</small>
 
 * enhance: Add key to ant css-in-js script ([63c770c](https://github.com/ntucker/anansi/commit/63c770c))
