@@ -69,7 +69,7 @@
     "webpack-dev-server": "5.2.1"
   },
   "resolutions": {
-    "@types/react": "19.1.4",
+    "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
     "normalize-url": "^6",
     "react": "19.1.0",
@@ -78,7 +78,7 @@
   "dependencies": {
     "@lerna-lite/publish": "^4.0.0",
     "@lerna-lite/version": "^4.0.0",
-    "@types/react": "19.1.4",
+    "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
     "react": "19.1.0",
     "react-dom": "19.1.0"
