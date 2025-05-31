@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.53](https://github.com/ntucker/anansi/compare/example-typescript@15.1.52...example-typescript@15.1.53) (2025-05-31)
+
+### 📦 Package
+
+* Update babel packages to v7.27.4 ([#2764](https://github.com/ntucker/anansi/issues/2764)) ([c1e0498](https://github.com/ntucker/anansi/commit/c1e04982e8599a283671d09a866fd2e536a5cd9e))
+
 ## [15.1.52](https://github.com/ntucker/anansi/compare/example-typescript@15.1.51...example-typescript@15.1.52) (2025-05-27)
 
 ### 📦 Package
