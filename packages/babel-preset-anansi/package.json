@@ -58,7 +58,7 @@
     "babel-plugin-polyfill-corejs3": "^0.12.0",
     "babel-plugin-react-compiler": "~19.1.0-rc.2",
     "babel-plugin-root-import": "^6.6.0",
-    "babel-plugin-transform-import-meta": "^2.3.2",
+    "babel-plugin-transform-import-meta": "^2.3.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js-compat": "^3.40.0",
     "glob-to-regexp": "^0.4.1",
