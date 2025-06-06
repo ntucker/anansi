@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.27.1",
-    "@babel/runtime-corejs3": "7.27.4",
+    "@babel/runtime-corejs3": "7.27.6",
     "@linaria/core": "6.3.0",
     "@linaria/react": "6.3.0",
     "classnames": "2.5.1",

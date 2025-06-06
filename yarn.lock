@@ -2107,19 +2107,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:7.27.4, @babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
-  version: 7.27.4
-  resolution: "@babel/runtime-corejs3@npm:7.27.4"
+"@babel/runtime-corejs3@npm:7.27.6, @babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
+  version: 7.27.6
+  resolution: "@babel/runtime-corejs3@npm:7.27.6"
   dependencies:
     core-js-pure: "npm:^3.30.2"
-  checksum: 10c0/77c3f71e00d6c4caee76bdbc5063984c80353529ee638cab447e55140b97403bff9fb992e0d9de62982821db7f848bcd53ed1f386cfffee8be2e2316b4aef566
+  checksum: 10c0/0ec7725824fdc3dd1e9580c1887ea60088d1cc3ec2fcfad9ccf54909262786b70e74f4b90513718d18f062a918b45add94c4dc243186f1423ed03cacf9935863
   languageName: node
   linkType: hard
 
 "@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.6, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.24.4, @babel/runtime@npm:^7.24.7, @babel/runtime@npm:^7.24.8, @babel/runtime@npm:^7.25.7, @babel/runtime@npm:^7.26.0, @babel/runtime@npm:^7.26.7, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
-  version: 7.27.4
-  resolution: "@babel/runtime@npm:7.27.4"
-  checksum: 10c0/ca99e964179c31615e1352e058cc9024df7111c829631c90eec84caba6703cc32acc81503771847c306b3c70b815609fe82dde8682936debe295b0b283b2dc6e
+  version: 7.27.6
+  resolution: "@babel/runtime@npm:7.27.6"
+  checksum: 10c0/89726be83f356f511dcdb74d3ea4d873a5f0cf0017d4530cb53aa27380c01ca102d573eff8b8b77815e624b1f8c24e7f0311834ad4fb632c90a770fda00bd4c8
   languageName: node
   linkType: hard
 
@@ -12141,7 +12141,7 @@ __metadata:
     "@anansi/webpack-config": "npm:^21.0.7"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.27.1"
-    "@babel/runtime-corejs3": "npm:7.27.4"
+    "@babel/runtime-corejs3": "npm:7.27.6"
     "@linaria/core": "npm:6.3.0"
     "@linaria/react": "npm:6.3.0"
     "@types/babel__core": "npm:^7.20.0"
@@ -12183,7 +12183,7 @@ __metadata:
     "@ant-design/cssinjs": "npm:1.23.0"
     "@ant-design/icons": "npm:^6.0.0"
     "@babel/core": "npm:7.27.4"
-    "@babel/runtime-corejs3": "npm:7.27.4"
+    "@babel/runtime-corejs3": "npm:7.27.6"
     "@data-client/endpoint": "npm:0.14.26"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.14.21"
@@ -12229,7 +12229,7 @@ __metadata:
     "@ant-design/icons": "npm:^6.0.0"
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
-    "@babel/runtime-corejs3": "npm:7.27.4"
+    "@babel/runtime-corejs3": "npm:7.27.6"
     "@data-client/graphql": "npm:0.14.25"
     "@data-client/react": "npm:0.14.25"
     "@data-client/rest": "npm:0.14.25"
