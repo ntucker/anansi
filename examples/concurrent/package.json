@@ -55,7 +55,7 @@
     "@data-client/rest": "0.14.25",
     "@linaria/core": "6.3.0",
     "@linaria/react": "6.3.0",
-    "@types/node": "22.15.30",
+    "@types/node": "24.0.0",
     "antd": "5.25.4",
     "classnames": "2.5.1",
     "core-js": "3.42.0",

@@ -53,7 +53,7 @@
     "@babel/core": "^7.25.2",
     "@types/babel__core": "^7",
     "@types/eslint": "^9",
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.0.0",
     "@types/semver": "^7",
     "eslint": "^9.9.1",
     "prettier": "^3.3.3",
