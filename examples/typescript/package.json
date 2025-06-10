@@ -63,7 +63,7 @@
     "@data-client/graphql": "0.14.25",
     "@data-client/react": "0.14.25",
     "@data-client/rest": "0.14.25",
-    "@types/node": "22.15.30",
+    "@types/node": "24.0.0",
     "@types/react": "19.1.6",
     "@types/react-dom": "19.1.6",
     "antd": "5.25.4",
