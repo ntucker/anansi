@@ -60,7 +60,7 @@
     "@anansi/ts-utils": "workspace:^",
     "@babel/runtime-corejs3": "^7.26.0",
     "@types/babel__core": "^7.20.5",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^30.0.0",
     "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
     "jest-pnp-resolver": "^1.2.3",
@@ -73,7 +73,7 @@
   "peerDependencies": {
     "@babel/core": "^7.0.0",
     "@types/babel__core": "^7.0.0",
-    "jest": "^28.0.0 || ^29.0.0",
+    "jest": "^28.0.0 || ^29.0.0 || ^30.0.0",
     "react": "*",
     "typescript": "^4.3.0 || ^5.0.0"
   },
