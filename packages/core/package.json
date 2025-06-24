@@ -68,10 +68,10 @@
   "devDependencies": {
     "@ant-design/cssinjs": "^1.7.1",
     "@data-client/react": "^0.14.0",
-    "@types/compression": "1.8.0",
+    "@types/compression": "1.8.1",
     "@types/express": "^4.17.17",
     "@types/node": "^24.0.0",
-    "@types/react": "19.1.6",
+    "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@types/source-map-support": "0.5.10",
     "@types/tmp": "0.2.6",
