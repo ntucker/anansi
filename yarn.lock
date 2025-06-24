@@ -10058,12 +10058,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-anansi@npm:0.3.0":
-  version: 0.3.0
-  resolution: "conventional-changelog-anansi@npm:0.3.0"
+"conventional-changelog-anansi@npm:0.3.1":
+  version: 0.3.1
+  resolution: "conventional-changelog-anansi@npm:0.3.1"
   dependencies:
     compare-func: "npm:^2.0.0"
-  checksum: 10c0/d99b14ee3a3addf0cd2054eddd6fcd95eb1905e9ddd28aa6f46a692bbe9279c9d8109750366d2cf92acefe56a50ec9fe2dc5207d1aa5004731daf4254c38cefb
+  checksum: 10c0/885418503224675749d1b76c669151d7eee3250c99d2ae8b18a2b006140005d0c886bf6d610ed5795453ca8bed98a0700f4fadce649a44db784315013e047b7e
   languageName: node
   linkType: hard
 
@@ -22772,7 +22772,7 @@ __metadata:
     babel-loader: "npm:10.0.0"
     babel-plugin-module-resolver: "npm:5.0.2"
     babel-plugin-root-import: "npm:6.6.0"
-    conventional-changelog-anansi: "npm:0.3.0"
+    conventional-changelog-anansi: "npm:0.3.1"
     conventional-changelog-conventionalcommits: "npm:6.1.0"
     eslint: "npm:9.29.0"
     globals: "npm:^16.0.0"
