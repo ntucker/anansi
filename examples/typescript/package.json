@@ -68,7 +68,7 @@
     "@types/react-dom": "19.1.6",
     "antd": "5.25.4",
     "classnames": "2.5.1",
-    "core-js": "3.42.0",
+    "core-js": "3.43.0",
     "history": "^5.3.0",
     "lodash": "4.17.21",
     "parse-link-header": "2.0.0",
