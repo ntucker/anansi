@@ -34,7 +34,7 @@
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "eslint": "9.29.0",
-    "jest": "30.0.2",
+    "jest": "30.0.3",
     "prettier": "3.6.1",
     "react-refresh": "0.17.0",
     "typescript": "5.8.3",
