@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.0.8](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.7...@anansi/webpack-config@21.0.8) (2025-06-26)
+
+### 📦 Package
+
+* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+* Update all non-major dependencies ([#2781](/github.com/ntucker/anansi/issues/2781)) ([e492840](/github.com/ntucker/anansi/commit/e49284052f7b3dc2c0ed6d03031be70e19b9a977))
+* Update webpack packages ([#2754](/github.com/ntucker/anansi/issues/2754)) ([c0316b5](/github.com/ntucker/anansi/commit/c0316b549f31a4da8e9371f01ee37322145edc8c))
+
 ## [21.0.7](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.6...@anansi/webpack-config@21.0.7) (2025-05-27)
 
 ### 📦 Package

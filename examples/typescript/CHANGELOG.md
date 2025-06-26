@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.54](https://github.com/ntucker/anansi/compare/example-typescript@15.1.53...example-typescript@15.1.54) (2025-06-26)
+
+### 📦 Package
+
+* Update `@types/jest` to v30 ([#2779](https://github.com/ntucker/anansi/issues/2779)) ([e5117ff](https://github.com/ntucker/anansi/commit/e5117ffb5427af00cd86ea7bed82e5019d6f7955))
+* Update `@types/node` to v24 ([#2773](https://github.com/ntucker/anansi/issues/2773)) ([a3b5913](https://github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+* Update `core-js` to v3.43.0 ([#2780](https://github.com/ntucker/anansi/issues/2780)) ([02d8f25](https://github.com/ntucker/anansi/commit/02d8f2578bf6b612bd8787afe7f03e6102eb5f99))
+* Update `jest` to v30.0.3 ([#2783](https://github.com/ntucker/anansi/issues/2783)) ([89b2d63](https://github.com/ntucker/anansi/commit/89b2d634f3f37467ea169264c57bf55de6a75d87))
+* Update all non-major dependencies ([#2769](https://github.com/ntucker/anansi/issues/2769)) ([0bfb274](https://github.com/ntucker/anansi/commit/0bfb2740995a6a9a6da341d335c9a36c32be2bc1))
+* Update all non-major dependencies ([#2781](https://github.com/ntucker/anansi/issues/2781)) ([e492840](https://github.com/ntucker/anansi/commit/e49284052f7b3dc2c0ed6d03031be70e19b9a977))
+* Update babel packages to v7.27.6 ([#2767](https://github.com/ntucker/anansi/issues/2767)) ([5ad7baf](https://github.com/ntucker/anansi/commit/5ad7baf381dcca9e48b01e78a3952b17169518db))
+* Update JS test packages ([#2777](https://github.com/ntucker/anansi/issues/2777)) ([c0b4e02](https://github.com/ntucker/anansi/commit/c0b4e028a84a52dac5bcbce0b5051932c76be592))
+* Update JS test packages to v30 ([#2771](https://github.com/ntucker/anansi/issues/2771)) ([a646f0f](https://github.com/ntucker/anansi/commit/a646f0fa98d13c562b73c77f8bc380a75e0bee22))
+* Update webpack packages ([#2754](https://github.com/ntucker/anansi/issues/2754)) ([c0316b5](https://github.com/ntucker/anansi/commit/c0316b549f31a4da8e9371f01ee37322145edc8c))
+
 ## [15.1.53](https://github.com/ntucker/anansi/compare/example-typescript@15.1.52...example-typescript@15.1.53) (2025-05-31)
 
 ### 📦 Package

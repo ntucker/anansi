@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.8](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.7...@anansi/ts-utils@0.3.8) (2025-06-26)
+
+### 📦 Package
+
+* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+
 ### [0.3.7](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.6...@anansi/ts-utils@0.3.7) (2024-07-28)
 
 ### 📦 Package

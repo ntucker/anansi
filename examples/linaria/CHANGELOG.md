@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.13](https://github.com/ntucker/anansi/compare/example-linaria@9.0.12...example-linaria@9.0.13) (2025-06-26)
+
+### 📦 Package
+
+* Update `@types/node` to v24 ([#2773](https://github.com/ntucker/anansi/issues/2773)) ([a3b5913](https://github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+* Update `core-js` to v3.43.0 ([#2780](https://github.com/ntucker/anansi/issues/2780)) ([02d8f25](https://github.com/ntucker/anansi/commit/02d8f2578bf6b612bd8787afe7f03e6102eb5f99))
+* Update all non-major dependencies ([#2769](https://github.com/ntucker/anansi/issues/2769)) ([0bfb274](https://github.com/ntucker/anansi/commit/0bfb2740995a6a9a6da341d335c9a36c32be2bc1))
+* Update all non-major dependencies ([#2781](https://github.com/ntucker/anansi/issues/2781)) ([e492840](https://github.com/ntucker/anansi/commit/e49284052f7b3dc2c0ed6d03031be70e19b9a977))
+* Update babel packages to v7.27.6 ([#2767](https://github.com/ntucker/anansi/issues/2767)) ([5ad7baf](https://github.com/ntucker/anansi/commit/5ad7baf381dcca9e48b01e78a3952b17169518db))
+* Update webpack packages ([#2754](https://github.com/ntucker/anansi/issues/2754)) ([c0316b5](https://github.com/ntucker/anansi/commit/c0316b549f31a4da8e9371f01ee37322145edc8c))
+
 ## [9.0.12](https://github.com/ntucker/anansi/compare/example-linaria@9.0.11...example-linaria@9.0.12) (2025-05-31)
 
 ### 📦 Package

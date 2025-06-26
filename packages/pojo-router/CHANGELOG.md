@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.8](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.7...@pojo-router/core@0.10.8) (2025-06-26)
+
+### 📦 Package
+
+* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+
 ## <small>0.10.7 (2025-05-15)</small>
 
 * fix: Export for ControllerProps ([bdd6fcf](https://github.com/ntucker/anansi/commit/bdd6fcf))

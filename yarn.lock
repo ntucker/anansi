@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@npm:^6.2.11, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
+"@anansi/babel-preset@npm:^6.2.12, @anansi/babel-preset@workspace:*, @anansi/babel-preset@workspace:packages/babel-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/babel-preset@workspace:packages/babel-preset-anansi"
   dependencies:
@@ -88,7 +88,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/browserslist-config@npm:^1.7.2, @anansi/browserslist-config@workspace:*, @anansi/browserslist-config@workspace:packages/browserslist-config-anansi":
+"@anansi/browserslist-config@npm:^1.7.3, @anansi/browserslist-config@workspace:*, @anansi/browserslist-config@workspace:packages/browserslist-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/browserslist-config@workspace:packages/browserslist-config-anansi"
   dependencies:
@@ -96,11 +96,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.73, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.74, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/core": "npm:^0.20.31"
+    "@anansi/core": "npm:^0.20.32"
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^24.0.0"
     binary-version-check: "npm:^6.1.0"
@@ -120,7 +120,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.20.31, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.20.32, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -178,7 +178,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/eslint-plugin@npm:^1.0.42, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
+"@anansi/eslint-plugin@npm:^1.0.43, @anansi/eslint-plugin@workspace:*, @anansi/eslint-plugin@workspace:^, @anansi/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@anansi/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -251,7 +251,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/jest-preset@npm:^0.11.19, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
+"@anansi/jest-preset@npm:^0.11.20, @anansi/jest-preset@workspace:packages/jest-preset-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/jest-preset@workspace:packages/jest-preset-anansi"
   dependencies:
@@ -283,7 +283,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@npm:^0.10.14, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@npm:^0.10.15, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -304,7 +304,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@npm:^3.2.47, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@npm:^3.2.48, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -342,7 +342,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/webpack-config@npm:^21.0.7, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
+"@anansi/webpack-config@npm:^21.0.8, @anansi/webpack-config@workspace:packages/webpack-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/webpack-config@workspace:packages/webpack-config-anansi"
   dependencies:
@@ -12379,10 +12379,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-linaria@workspace:examples/linaria"
   dependencies:
-    "@anansi/babel-preset": "npm:^6.2.11"
-    "@anansi/browserslist-config": "npm:^1.7.2"
-    "@anansi/eslint-plugin": "npm:^1.0.42"
-    "@anansi/webpack-config": "npm:^21.0.7"
+    "@anansi/babel-preset": "npm:^6.2.12"
+    "@anansi/browserslist-config": "npm:^1.7.3"
+    "@anansi/eslint-plugin": "npm:^1.0.43"
+    "@anansi/webpack-config": "npm:^21.0.8"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.27.1"
     "@babel/runtime-corejs3": "npm:7.27.6"
@@ -12416,14 +12416,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-react-18@workspace:examples/concurrent"
   dependencies:
-    "@anansi/babel-preset": "npm:^6.2.11"
-    "@anansi/browserslist-config": "npm:^1.7.2"
-    "@anansi/cli": "npm:^3.1.73"
-    "@anansi/core": "npm:^0.20.31"
-    "@anansi/eslint-plugin": "npm:^1.0.42"
-    "@anansi/jest-preset": "npm:^0.11.19"
-    "@anansi/router": "npm:^0.10.14"
-    "@anansi/webpack-config": "npm:^21.0.7"
+    "@anansi/babel-preset": "npm:^6.2.12"
+    "@anansi/browserslist-config": "npm:^1.7.3"
+    "@anansi/cli": "npm:^3.1.74"
+    "@anansi/core": "npm:^0.20.32"
+    "@anansi/eslint-plugin": "npm:^1.0.43"
+    "@anansi/jest-preset": "npm:^0.11.20"
+    "@anansi/router": "npm:^0.10.15"
+    "@anansi/webpack-config": "npm:^21.0.8"
     "@ant-design/cssinjs": "npm:1.23.0"
     "@ant-design/icons": "npm:^6.0.0"
     "@babel/core": "npm:7.27.4"
@@ -12463,12 +12463,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-typescript@workspace:examples/typescript"
   dependencies:
-    "@anansi/babel-preset": "npm:^6.2.11"
-    "@anansi/browserslist-config": "npm:^1.7.2"
+    "@anansi/babel-preset": "npm:^6.2.12"
+    "@anansi/browserslist-config": "npm:^1.7.3"
     "@anansi/eslint-plugin": "workspace:^"
-    "@anansi/jest-preset": "npm:^0.11.19"
-    "@anansi/storybook": "npm:^3.2.47"
-    "@anansi/webpack-config": "npm:^21.0.7"
+    "@anansi/jest-preset": "npm:^0.11.20"
+    "@anansi/storybook": "npm:^3.2.48"
+    "@anansi/webpack-config": "npm:^21.0.8"
     "@ant-design/cssinjs": "npm:^1.7.1"
     "@ant-design/icons": "npm:^6.0.0"
     "@ant-design/pro-layout": "npm:7.12.3"
