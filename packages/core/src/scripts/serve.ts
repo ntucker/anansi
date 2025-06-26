@@ -19,7 +19,9 @@ import { getWebpackConfig } from './getWebpackConfig.js';
 import { Render } from './types.js';
 
 // run directly from node
-if ('main' in import.meta) {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+if (import.meta.main) {
   const entrypoint = process.argv[2];
 
   if (!entrypoint) {
