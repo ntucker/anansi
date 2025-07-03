@@ -74,7 +74,7 @@
     "normalize-url": "^6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "@conventional-changelog/git-client": "2.3.0"
+    "@conventional-changelog/git-client": "2.5.1"
   },
   "dependencies": {
     "@lerna-lite/publish": "^4.0.0",
