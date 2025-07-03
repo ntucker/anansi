@@ -60,7 +60,7 @@
     "@anansi/ts-utils": "workspace:^",
     "@babel/runtime-corejs3": "^7.26.0",
     "@types/babel__core": "^7.20.5",
-    "babel-jest": "^30.0.2",
+    "babel-jest": "^30.0.4",
     "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
     "jest-pnp-resolver": "^1.2.3",
