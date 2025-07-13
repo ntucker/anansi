@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.0.9](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.8...@anansi/webpack-config@21.0.9) (2025-07-13)
+
+### 💅 Enhancement
+
+* Support React 19 prod profiling build ([e3b6155](/github.com/ntucker/anansi/commit/e3b6155314326ca16bbe0d1375117db511783bfc))
+
 ## [21.0.8](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.7...@anansi/webpack-config@21.0.8) (2025-06-26)
 
 ### 📦 Package
