@@ -176,6 +176,7 @@ export default function makeProdConfig(
     config.resolve.alias = {
       ...config?.resolve?.alias,
       'react-dom$': 'react-dom/profiling',
+      'react-dom/client$': 'react-dom/profiling',
       'scheduler/tracing': 'scheduler/tracing-profiling',
     };
   }
