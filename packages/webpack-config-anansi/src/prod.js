@@ -2,6 +2,7 @@ import PreloadWebpackPlugin from '@vue/preload-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import semver from 'semver';
 import TerserPlugin from 'terser-webpack-plugin';
 import webpack from 'webpack';
 //import CrittersPlugin from 'critters-webpack-plugin';
@@ -31,6 +32,7 @@ export default function makeProdConfig(
   },
 ) {
   const config = { ...baseConfig };
+  const reactVersion = getReactVersion(rootPath);
 
   config.mode = 'production';
   config.bail = true; // this helps automatic build tools not waste time
@@ -173,10 +175,13 @@ export default function makeProdConfig(
   config.module.rules = [...config.module.rules, styleRules];
 
   if (env?.profile) {
+    let reactClient = 'react-dom/client$';
+    if (reactVersion && semver.lt(reactVersion, '19.0.0')) {
+      reactClient = 'react-dom$';
+    }
     config.resolve.alias = {
       ...config?.resolve?.alias,
-      'react-dom$': 'react-dom/profiling',
-      'react-dom/client$': 'react-dom/profiling',
+      [reactClient]: 'react-dom/profiling',
       'scheduler/tracing': 'scheduler/tracing-profiling',
     };
   }
@@ -189,4 +194,13 @@ function as(entry) {
   if (/\.(svg|apng|png|jpg|gif|ico|webp|avif|cur|ani)$/.test(entry))
     return 'image';
   return 'script';
+}
+
+function getReactVersion(rootPath) {
+  const react = require(
+    require.resolve('react', {
+      paths: [rootPath],
+    }),
+  );
+  return react ? react.version : null;
 }
