@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.0.10](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.9...@anansi/webpack-config@21.0.10) (2025-07-15)
+
+### 🐛 Bug Fix
+
+* Fix profiling build react version support ([9b8b62b](/github.com/ntucker/anansi/commit/9b8b62b1ae1053105b3912c29962cc635209ddc4))
+
 ## [21.0.9](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.8...@anansi/webpack-config@21.0.9) (2025-07-13)
 
 ### 💅 Enhancement

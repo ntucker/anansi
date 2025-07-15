@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.61](https://github.com/ntucker/anansi/compare/example-react-18@8.0.60...example-react-18@8.0.61) (2025-07-15)
+
+### 🐛 Bug Fix
+
+* Fix profiling build react version support ([9b8b62b](https://github.com/ntucker/anansi/commit/9b8b62b1ae1053105b3912c29962cc635209ddc4))
+
 ## [8.0.60](https://github.com/ntucker/anansi/compare/example-react-18@8.0.59...example-react-18@8.0.60) (2025-07-13)
 
 ### 📦 Package
