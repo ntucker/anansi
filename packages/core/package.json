@@ -77,8 +77,8 @@
     "@types/tmp": "0.2.6",
     "@types/webpack-hot-middleware": "2.25.9",
     "@types/webpack-node-externals": "^3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "dependencies": {
     "@anansi/router": "workspace:^",
