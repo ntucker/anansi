@@ -59,7 +59,7 @@
     "@ant-design/cssinjs": "^1.7.1",
     "@ant-design/icons": "^6.0.0",
     "@ant-design/pro-layout": "7.12.3",
-    "@babel/runtime-corejs3": "7.28.0",
+    "@babel/runtime-corejs3": "7.28.2",
     "@data-client/graphql": "0.14.25",
     "@data-client/react": "0.14.25",
     "@data-client/rest": "0.14.25",
