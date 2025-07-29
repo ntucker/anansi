@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.59](https://github.com/ntucker/anansi/compare/example-typescript@15.1.58...example-typescript@15.1.59) (2025-07-29)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2801](https://github.com/ntucker/anansi/issues/2801)) ([28e1365](https://github.com/ntucker/anansi/commit/28e1365cbecb2b4c992079a6e40984aaa437f881))
+* Update babel packages to v7.28.2 ([#2802](https://github.com/ntucker/anansi/issues/2802)) ([7901aae](https://github.com/ntucker/anansi/commit/7901aae8cb5ba9622348d106bc7eaa2e6282d3fa))
+* Update react to v19.1.1 ([#2799](https://github.com/ntucker/anansi/issues/2799)) ([524c78c](https://github.com/ntucker/anansi/commit/524c78c3032c3feef9b7fbdf1fae2dbe16350ef1))
+
 ## [15.1.58](https://github.com/ntucker/anansi/compare/example-typescript@15.1.57...example-typescript@15.1.58) (2025-07-22)
 
 ### 📦 Package
