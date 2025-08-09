@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.26.0",
-    "@types/inquirer": "^9.0.8",
+    "@types/inquirer": "^9.0.9",
     "@yeoman/types": "^1.6.0",
     "chalk": "^4.1.2",
     "core-js-pure": "^3.40.0",
