@@ -55,7 +55,7 @@
     "babel-plugin-root-import": "6.6.0",
     "conventional-changelog-anansi": "0.3.1",
     "conventional-changelog-conventionalcommits": "6.1.0",
-    "eslint": "9.33.0",
+    "eslint": "9.34.0",
     "globals": "^16.0.0",
     "husky": "9.1.7",
     "jest": "^30.0.0",
