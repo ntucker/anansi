@@ -132,7 +132,9 @@ describe('buildPreset - Babel Transform', () => {
 
   it('should transform Object.hasOwn() with caller.library', () => {
     api.env.mockReturnValue('development');
-    api.caller.mockImplementation(cb => cb({ library: true }));
+    api.caller.mockImplementation(cb =>
+      cb({ name: '@babel/cli', library: true }),
+    );
     const code = `class MyClass { declare myThing; myProp: number = 42; }console.log(Object.hasOwn({ a: 1 }, 'a') ? 'yes' : 'no');`;
     const transformedCode = transformCode(code, {
       hasJsxRuntime: true,
