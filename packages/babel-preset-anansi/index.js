@@ -93,16 +93,12 @@ function buildPreset(api, options = {}) {
     !['commonjs', 'cjs'].includes(options.modules);
 
   const modules =
-    // cli won't say what it supports; but we assume if they are calling without a tool they are
-    // trying to make ESM
-    (options.nodeTarget || babelNode) && !babelCli ?
-      options.modules !== undefined ? options.modules
-      : supportsModules ? false
-      : 'auto'
-      // if supportsModules is undefined or true then assume it can handle es modules.
-    : options.modules !== undefined ? options.modules
-    : supportsModules === false ? 'auto'
-    : false;
+    options.modules !== undefined ? options.modules
+      // cli won't say what it supports; but we assume if they are calling without a tool they are
+      // trying to make ESM (false = preserve modules)
+    : babelCli ? false
+    : supportsModules ? false
+    : 'auto';
 
   let absoluteRuntimePath = undefined;
   let runtimeVersion = undefined;
