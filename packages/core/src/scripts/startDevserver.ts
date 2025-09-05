@@ -97,7 +97,11 @@ export default async function startDevServer(
   ] as const;
 
   // initialize the webpack compiler
-  const compiler: MultiCompiler = webpack(webpackConfigs);
+  const compiler = webpack(webpackConfigs);
+  if (!compiler) {
+    log.error('Failed to initialize the webpack compiler');
+    process.exit(-1);
+  }
 
   sourceMapSupport.install({ hookRequire: true });
 
