@@ -261,7 +261,8 @@ function buildPreset(api, options = {}) {
         },
       ],
       absoluteRuntimePath &&
-        runtimeVersion && [
+        runtimeVersion &&
+        !isLinaria && [
           require('@babel/plugin-transform-runtime').default,
           {
             helpers: true,
@@ -270,18 +271,19 @@ function buildPreset(api, options = {}) {
             useESModules: !options.nodeTarget && modules === false,
           },
         ],
-      options.polyfillMethod !== false && [
-        require('babel-plugin-polyfill-corejs3').default,
-        {
-          method: options.polyfillMethod,
-          targets: polyfillTargets,
-          exclude: ['es.array.push', 'es.array.unshift'],
-          version:
-            options.polyfillMethod === 'usage-pure' ?
-              corejsVersionPure
-            : corejsVersion,
-        },
-      ],
+      options.polyfillMethod !== false &&
+        !isLinaria && [
+          require('babel-plugin-polyfill-corejs3').default,
+          {
+            method: options.polyfillMethod,
+            targets: polyfillTargets,
+            exclude: ['es.array.push', 'es.array.unshift'],
+            version:
+              options.polyfillMethod === 'usage-pure' ?
+                corejsVersionPure
+              : corejsVersion,
+          },
+        ],
 
       // stage 2
       [
@@ -326,7 +328,7 @@ function buildPreset(api, options = {}) {
 
   preset.presets.unshift([require('@babel/preset-env').default, envOptions]);
 
-  if (options.minify && env === 'production') {
+  if (options.minify && env === 'production' && !isLinaria) {
     try {
       preset.presets.unshift(require('babel-minify'));
     } catch (e) {
@@ -409,7 +411,7 @@ function buildPreset(api, options = {}) {
     );
   }
 
-  if (options.reactCompiler && env === 'production') {
+  if (options.reactCompiler && env === 'production' && !isLinaria) {
     preset.plugins.unshift([
       require('babel-plugin-react-compiler'),
       options.reactCompiler,
