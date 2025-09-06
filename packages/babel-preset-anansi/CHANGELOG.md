@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.14](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.13...@anansi/babel-preset@6.2.14) (2025-09-06)
+
+### 💅 Enhancement
+
+* Skip unnecessary transforms when running through linaria ([212d2c1](/github.com/ntucker/anansi/commit/212d2c14385f183cbc9260f3e91fcfc1ecc7ee34))
+
+### 📦 Package
+
+* Update `babel-plugin-react-compiler` to ~19.1.0-rc.3 ([#2820](/github.com/ntucker/anansi/issues/2820)) ([c3f443a](/github.com/ntucker/anansi/commit/c3f443af392566808f98e4acd349bf64fea25dd8))
+* Update babel packages ([#2812](/github.com/ntucker/anansi/issues/2812)) ([6719444](/github.com/ntucker/anansi/commit/6719444d8c2613f603a9086bf278336045fce240))
+* Update JS test packages to ^30.1.2 ([#2821](/github.com/ntucker/anansi/issues/2821)) ([b96ebf4](/github.com/ntucker/anansi/commit/b96ebf483bf85c854b84124eba55ae1c6ee65722))
+
 ## [6.2.13](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.12...@anansi/babel-preset@6.2.13) (2025-07-03)
 
 ### 📦 Package

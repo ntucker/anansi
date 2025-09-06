@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.65](https://github.com/ntucker/anansi/compare/example-react-18@8.0.64...example-react-18@8.0.65) (2025-09-06)
+
+### 📦 Package
+
+* Update `jest` to v30.1.3 ([#2826](https://github.com/ntucker/anansi/issues/2826)) ([be0a101](https://github.com/ntucker/anansi/commit/be0a101400cf07fd094839d46401b91ee226860b))
+* Update all non-major dependencies ([#2818](https://github.com/ntucker/anansi/issues/2818)) ([87a61ad](https://github.com/ntucker/anansi/commit/87a61ad457c044a3a4c9b10a3cd123f8bab891ef))
+* Update all non-major dependencies ([#2823](https://github.com/ntucker/anansi/issues/2823)) ([d6c0da5](https://github.com/ntucker/anansi/commit/d6c0da5558e123c34bdd51b54521d67951f19593))
+* Update all non-major dependencies ([#2832](https://github.com/ntucker/anansi/issues/2832)) ([3f908e9](https://github.com/ntucker/anansi/commit/3f908e9dd526cf501762b2a751e9a7ef66b02fb9))
+* Update babel packages ([#2812](https://github.com/ntucker/anansi/issues/2812)) ([6719444](https://github.com/ntucker/anansi/commit/6719444d8c2613f603a9086bf278336045fce240))
+* Update JS test packages to ^30.1.2 ([#2821](https://github.com/ntucker/anansi/issues/2821)) ([b96ebf4](https://github.com/ntucker/anansi/commit/b96ebf483bf85c854b84124eba55ae1c6ee65722))
+* Update validation packages ([#2817](https://github.com/ntucker/anansi/issues/2817)) ([bfe6486](https://github.com/ntucker/anansi/commit/bfe6486823c924f0cd5564ec860576309ba7c31d))
+* Update validation packages ([#2827](https://github.com/ntucker/anansi/issues/2827)) ([cf9351f](https://github.com/ntucker/anansi/commit/cf9351f3082ef7d75a4c2c0102cbff403cc0e823))
+* Update webpack packages ([#2784](https://github.com/ntucker/anansi/issues/2784)) ([5c69dd9](https://github.com/ntucker/anansi/commit/5c69dd9a0a3ef4862d3e1d1400b0f718ea528002))
+
 ## [8.0.64](https://github.com/ntucker/anansi/compare/example-react-18@8.0.63...example-react-18@8.0.64) (2025-08-09)
 
 ### 📦 Package
