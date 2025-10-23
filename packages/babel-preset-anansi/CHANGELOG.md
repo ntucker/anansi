@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.15](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.14...@anansi/babel-preset@6.2.15) (2025-10-23)
+
+### 💅 Enhancement
+
+* Compatibility with nextjs 16 turbopack ([c4b92cb](/github.com/ntucker/anansi/commit/c4b92cbefe5d87cfc205fbe03a1b50d9f1281eea))
+
 ## [6.2.14](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.13...@anansi/babel-preset@6.2.14) (2025-09-06)
 
 ### 💅 Enhancement
