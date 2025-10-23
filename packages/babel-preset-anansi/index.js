@@ -22,6 +22,17 @@ function buildPreset(api, options = {}) {
   const supportsModules = api.caller(
     caller => caller && caller.supportsStaticESM,
   );
+
+  // Next.js 16 detection and server/client mode detection
+  const isNextJsTurbopack = api.caller(
+    caller => caller && caller.name === 'next-babel-turbo-loader',
+  );
+  // In Next.js 16, isServer can be true, false, or undefined
+  // Only enable hot reload when isServer is explicitly false (client build)
+  const isClientBuild = api.caller(
+    caller => caller && caller.isServer === false,
+  );
+
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
@@ -82,11 +93,16 @@ function buildPreset(api, options = {}) {
   if (process.env.BABEL_POLYFILL_METHOD !== undefined) {
     options.polyfillMethod = process.env.BABEL_POLYFILL_METHOD;
   }
+  // For Next.js 16, we need to explicitly check isServer to avoid adding
+  // react-refresh to server builds (which causes $RefreshReg$ errors)
   const shouldHotReload =
     !babelNode &&
     !options.nodeTarget &&
     !isLinaria &&
+    // Skip hot reload for Next.js server builds
+    (!isNextJsTurbopack || isClientBuild) &&
     callerCouldTargetWeb(callerTarget) &&
+    // For Next.js, rely on env === 'development' instead of isDev caller field
     process.env.NO_HOT_RELOAD !== 'true' &&
     process.env.NO_HOT_RELOAD !== true &&
     api.caller(caller => !caller || !caller.noHotReload) &&
