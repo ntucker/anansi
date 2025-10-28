@@ -317,6 +317,10 @@ function buildPreset(api, options = {}) {
 
   switch (env) {
     case 'production':
+      // don't optimize for linaria
+      if (isLinaria) {
+        break;
+      }
       if (!hasJsxRuntime) {
         // new jsx runtime obsoletes this optimization
         preset.plugins.unshift(
@@ -416,7 +420,7 @@ function buildPreset(api, options = {}) {
       ],
     },
   ];
-  if (env === 'production') {
+  if (env === 'production' && !isLinaria) {
     // only add to js files as typescript won't use react prop types
     preset.overrides[2].plugins.unshift(
       require('babel-plugin-transform-react-remove-prop-types').default,

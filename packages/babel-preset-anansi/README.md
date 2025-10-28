@@ -313,7 +313,7 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 
 #### reactCompiler: {compilationMode?: "annotation"}
 
-Run the [React Compiler](https://react.dev/learn/react-compiler). This is still experimental - be sure to
+Run the [React Compiler](https://react.dev/learn/react-compiler). Be sure to
 [check compatibility](https://react.dev/learn/react-compiler#checking-compatibility) before turning this on.
 
 By default does not run. Include empty object or a configuration to turn on.
