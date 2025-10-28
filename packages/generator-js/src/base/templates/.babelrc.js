@@ -1,3 +1,3 @@
 module.exports = {
-  presets: ['@anansi'],
+  presets: ['@anansi', { reactCompiler: {} }],
 };

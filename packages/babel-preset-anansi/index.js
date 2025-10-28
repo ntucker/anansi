@@ -430,7 +430,7 @@ function buildPreset(api, options = {}) {
   if (options.reactCompiler && env === 'production' && !isLinaria) {
     preset.plugins.unshift([
       require('babel-plugin-react-compiler'),
-      options.reactCompiler,
+      typeof options.reactCompiler === 'object' ? options.reactCompiler : {},
     ]);
   }
 
