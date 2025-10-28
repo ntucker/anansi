@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.6.26](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.25...@anansi/generator-js@12.6.26) (2025-10-28)
+
+### 💅 Enhancement
+
+* Enable react compiler for new projects ([bfac692](/github.com/ntucker/anansi/commit/bfac6921226b3edcc1a2f7b742f92310fd323dd2))
+
 ## [12.6.25](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.24...@anansi/generator-js@12.6.25) (2025-10-02)
 
 ### 📦 Package
