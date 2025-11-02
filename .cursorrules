@@ -1,0 +1,15 @@
+# Anansi Project Rules
+
+## Package Manager
+- Use `yarn` for all package management tasks (install, add, remove, etc.)
+- This is a Yarn workspaces monorepo
+
+## Project Structure
+- Monorepo with packages in `packages/*` and examples in `examples/*`
+- Use workspace protocols (`workspace:*`) for internal dependencies
+
+## Code Style
+- TypeScript is used throughout
+- Follow existing ESLint configuration
+- Use Prettier for formatting
+
