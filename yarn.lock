@@ -356,6 +356,7 @@ __metadata:
     "@wyw-in-js/webpack-loader": "npm:^0.7.0"
     assert: "npm:^2.1.0"
     autoprefixer: "npm:^10.4.21"
+    babel-jest: "npm:^30.0.0"
     babel-loader: "npm:^10.0.0"
     browserify-zlib: "npm:^0.2.0"
     buffer: "npm:^6.0.3"
@@ -375,6 +376,7 @@ __metadata:
     html-webpack-plugin: "npm:^5.6.4"
     https-browserify: "npm:^1.0.0"
     is-wsl: "npm:^2.2.0"
+    jest: "npm:^30.0.0"
     mini-css-extract-plugin: "npm:^2.9.4"
     mkdirp: "npm:^3.0.1"
     os-browserify: "npm:^0.3.0"
@@ -386,8 +388,10 @@ __metadata:
     process: "npm:^0.11.10"
     querystring-es3: "npm:^0.2.1"
     ramda: "npm:^0.32.0"
+    react: "npm:*"
     react-dev-utils: "npm:^12.0.1"
     react-error-overlay: "npm:6.0.9"
+    react-refresh: "npm:*"
     readable-stream: "npm:^4.7.0"
     sass-embedded: "npm:^1.77.8"
     sass-loader: "npm:^16.0.5"
@@ -8902,7 +8906,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:30.2.0, babel-jest@npm:^30.2.0":
+"babel-jest@npm:30.2.0, babel-jest@npm:^30.0.0, babel-jest@npm:^30.2.0":
   version: 30.2.0
   resolution: "babel-jest@npm:30.2.0"
   dependencies:
@@ -22729,7 +22733,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:0.18.0, react-refresh@npm:^0.18.0":
+"react-refresh@npm:*, react-refresh@npm:0.18.0, react-refresh@npm:^0.18.0":
   version: 0.18.0
   resolution: "react-refresh@npm:0.18.0"
   checksum: 10c0/34a262f7fd803433a534f50deb27a148112a81adcae440c7d1cbae7ef14d21ea8f2b3d783e858cb7698968183b77755a38b4d4b5b1d79b4f4689c2f6d358fff2
