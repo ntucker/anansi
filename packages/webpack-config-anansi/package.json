@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:ci": "echo \"Error: no test specified\"",
+    "test": "jest",
+    "test:ci": "jest --ci --coverage",
     "build:lib": "BROWSERSLIST_ENV=node18 yarn g:babel --out-dir lib",
     "build": "run build:lib",
     "dev": "run build:lib -w",
@@ -56,6 +56,10 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "babel-jest": "^30.0.0",
+    "jest": "^30.0.0",
+    "react": "*",
+    "react-refresh": "*",
     "sass-embedded": "^1.77.8"
   },
   "dependencies": {

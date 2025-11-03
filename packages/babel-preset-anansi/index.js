@@ -16,6 +16,18 @@ options:
   tsConfigPath,
 */
 function buildPreset(api, options = {}) {
+  // TODO: Remove this debug logging after confirming multi-pass behavior
+  api.caller(caller => {
+    if (caller && (caller.name === 'wyw-in-js' || caller.name === 'linaria')) {
+      console.log('=== LINARIA Babel Call ===');
+      console.log('Full caller object:', JSON.stringify(caller, null, 2));
+      console.log('isLinaria: true');
+      console.log('All properties:', Object.keys(caller).join(', '));
+      console.log('=========================\n');
+    }
+    return false;
+  });
+
   api.assertVersion(7);
   const env = api.env();
   const babelTargets = typeof api.targets === 'function' ? api.targets() : {};
@@ -39,6 +51,17 @@ function buildPreset(api, options = {}) {
   const isLinaria = api.caller(
     caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
   );
+  // Linaria passes a flag for the “evaluation” phase.
+  // In 4.x–6.x this is typically on the caller object
+  // (name + something like `evaluate: true` / stage info).
+  const isLinariaEvalPass =
+    isLinaria &&
+    api.caller(
+      caller =>
+        caller.evaluate === true ||
+        caller.stage === '2-eval' ||
+        caller.action === 'eval',
+    );
   let library = api.caller(caller => caller && caller.library);
   if (library === undefined)
     library = api.caller(caller =>
