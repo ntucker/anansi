@@ -1,12 +1,12 @@
 import { MemoryRouter } from 'react-router-dom';
 import 'style/main.scss';
 
-
 export const decorators = [
-  (Story) => (
+  Story => (
     <MemoryRouter initialEntries={['/']}>
-        <Story/>
+      <Story />
     </MemoryRouter>
-  )
+  ),
 ];
 
+export const tags = ['autodocs'];
