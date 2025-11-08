@@ -1,5 +1,7 @@
 import { makeStorybookConfigGenerator } from '@anansi/webpack-config';
-import { dirname, join } from 'path';
+import { createRequire } from 'node:module';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type {
   PresetProperty,
   PresetPropertyFn,
@@ -8,8 +10,17 @@ import type {
 
 import type { FrameworkOptions, StorybookConfig } from './types.js';
 
-const wrapForPnP = (input: string) =>
-  dirname(require.resolve(join(input, 'package.json')));
+type WebpackFinalResult = Awaited<
+  ReturnType<NonNullable<StorybookConfig['webpackFinal']>>
+>;
+
+const require = createRequire(import.meta.url);
+
+const resolvePackageDir = (input: string) =>
+  dirname(fileURLToPath(import.meta.resolve(`${input}/package.json`)));
+
+const resolveModuleEntry = (input: string) =>
+  fileURLToPath(import.meta.resolve(input));
 
 export const addons: PresetProperty<'addons', StorybookConfig> = [];
 
@@ -33,7 +44,7 @@ export const frameworkOptions = async (
   }
   if (typeof config === 'undefined') {
     return {
-      name: wrapForPnP('@anansi/storybook') as '@anansi/storybook',
+      name: resolvePackageDir('@anansi/storybook') as '@anansi/storybook',
       options: defaultFrameworkOptions,
     };
   }
@@ -57,19 +68,17 @@ export const core: PresetPropertyFn<'core', StorybookConfig> = async (
   return {
     ...config,
     builder: {
-      name: wrapForPnP(
-        '@storybook/builder-webpack5',
-      ) as '@storybook/builder-webpack5',
+      name: '@storybook/builder-webpack5',
       options:
         typeof framework === 'string' ? {} : framework.options.builder || {},
     },
-    renderer: wrapForPnP('@storybook/react'),
+    renderer: '@storybook/react',
   };
 };
 
 export const previewAnnotations: StorybookConfig['previewAnnotations'] = (
   entry = [],
-) => [...entry, require.resolve('./preview')];
+) => [...entry, require.resolve('./preview.js')];
 
 /*export const babel: StorybookConfig['babel'] = (config, options) => ({
   presets: [['@anansi/babel-preset', { loose: true }]],
@@ -83,12 +92,12 @@ export const webpackFinal: StorybookConfig['webpackFinal'] = async (
 
   storybookConfig.resolve.alias = {
     ...storybookConfig.resolve?.alias,
-    '@storybook/react': wrapForPnP('@storybook/react'),
+    '@storybook/react': resolveModuleEntry('@storybook/react'),
   };
 
   const projectConfig = require(join(options.configDir, '../webpack.config'));
   return makeStorybookConfigGenerator(projectConfig)({
     config: storybookConfig,
     mode: process.env.NODE_ENV,
-  });
+  }) as WebpackFinalResult;
 };

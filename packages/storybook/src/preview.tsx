@@ -1,11 +1,16 @@
 import { DataProvider, AsyncBoundary } from '@data-client/react';
+import type { Preview } from '@storybook/react';
 
-export const decorators = [
-  (Story: React.FC) => (
-    <DataProvider>
-      <AsyncBoundary>
-        <Story />
-      </AsyncBoundary>
-    </DataProvider>
-  ),
-];
+const preview: Preview = {
+  decorators: [
+    Story => (
+      <DataProvider>
+        <AsyncBoundary>
+          <Story />
+        </AsyncBoundary>
+      </DataProvider>
+    ),
+  ],
+};
+
+export default preview;
