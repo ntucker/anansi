@@ -69,6 +69,7 @@
     "webpack-dev-server": "5.2.2"
   },
   "resolutions": {
+    "storybook": "9.1.16",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
     "normalize-url": "^6",

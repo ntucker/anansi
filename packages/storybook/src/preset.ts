@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import { makeStorybookConfigGenerator } from '@anansi/webpack-config';
+import { dirname, join } from 'path';
 import type {
   PresetProperty,
   PresetPropertyFn,
   Options,
-} from '@storybook/types';
-import { dirname, join } from 'path';
+} from 'storybook/internal/types';
 
 import type { FrameworkOptions, StorybookConfig } from './types.js';
 

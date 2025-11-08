@@ -1,17 +1,21 @@
 const { dirname, join } = require('path');
 
-const wrapForPnP = (input) => dirname(require.resolve(join(input, 'package.json')));
+const wrapForPnP = input =>
+  dirname(require.resolve(join(input, 'package.json')));
 
 module.exports = {
   stories: ['../**/*.stories.tsx'],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-mdx-gfm'],
+  addons: [getAbsolutePath("@storybook/addon-docs"), getAbsolutePath("@storybook/addon-links")],
+
   typescript: {
-    reactDocgen: 'react-docgen-typescript'
+    reactDocgen: 'react-docgen-typescript',
   },
+
   framework: {
     name: wrapForPnP('@anansi/storybook'),
-  },
-  docs: {
-    autodocs: true
   }
 };
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, "package.json")));
+}
