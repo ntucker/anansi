@@ -56,6 +56,7 @@ const getSASSLoaders = ({ sassResources, sassOptions }) => {
       loader: require.resolve('sass-resources-loader'),
       options: {
         resources: sassResources,
+        hoistUseStatements: true,
       },
     });
   }
@@ -100,7 +101,7 @@ export default function getStyleRules({
   try {
     if (!foundSass)
       foundSass = require.resolve('sass') || require.resolve('sass-embedded');
-  } catch (e) {
+  } catch {
     foundSass = sassOptions?.implementation;
     if (sassOptions !== false) {
       console.warn(

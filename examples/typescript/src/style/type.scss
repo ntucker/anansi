@@ -4,10 +4,6 @@ body {
 
 a {
   text-decoration: none;
-  color: $link-color;
-  &:hover {
-    color: $link-hover-color;
-  }
 }
 
 h1, h2, h3, h4, h5 {

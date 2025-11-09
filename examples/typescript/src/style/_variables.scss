@@ -1,5 +1,7 @@
-$text-color: darken(#f00, 15%);
-$body-color: darken(#fff, 5%);
+@use 'sass:color';
 
-$link-color: darken(#aef, 40%);
-$link-hover-color: lighten($link-color, 10%);
+$text-color: color.adjust(#f00, $lightness: -15%);
+$body-color: color.adjust(#fff, $lightness: -5%);
+
+$link-color: color.adjust(#aef, $lightness: -40%);
+$link-hover-color: color.adjust($link-color, $lightness: 10%);

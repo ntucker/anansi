@@ -1,10 +1,17 @@
+@use './fonts';
+@use './type';
+@use './nav';
+@use './layout';
 @import 'antd/dist/reset.css';
-@import 'fonts.scss';
-@import 'type.scss';
-@import 'nav.scss';
-@import 'layout.scss';
 
 body {
   background: $body-color;
   color: $text-color;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
 }
