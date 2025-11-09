@@ -24,6 +24,7 @@ const empty = null;
 
 export default function Home() {
   worker.postMessage({ message: 'rendered' });
+
   return (
     <div className={style.main}>
       <h3>
