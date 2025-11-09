@@ -316,9 +316,9 @@ __metadata:
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
     "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@storybook/builder-webpack5": "npm:^10.0.0"
-    "@storybook/preset-react-webpack": "npm:^10.0.0"
-    "@storybook/react": "npm:^10.0.0"
+    "@storybook/builder-webpack5": "npm:^10.0.6"
+    "@storybook/preset-react-webpack": "npm:^10.0.6"
+    "@storybook/react": "npm:^10.0.6"
     "@types/node": "npm:^24.7.2"
     core-js-pure: "npm:^3.40.0"
     react: "npm:^19.0.0"
@@ -5916,7 +5916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-webpack5@npm:^10.0.0":
+"@storybook/builder-webpack5@npm:^10.0.6":
   version: 10.0.6
   resolution: "@storybook/builder-webpack5@npm:10.0.6"
   dependencies:
@@ -5996,7 +5996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preset-react-webpack@npm:^10.0.0":
+"@storybook/preset-react-webpack@npm:^10.0.6":
   version: 10.0.6
   resolution: "@storybook/preset-react-webpack@npm:10.0.6"
   dependencies:
@@ -6049,7 +6049,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:10.0.6, @storybook/react@npm:^10.0.0":
+"@storybook/react@npm:10.0.6, @storybook/react@npm:^10.0.6":
   version: 10.0.6
   resolution: "@storybook/react@npm:10.0.6"
   dependencies:
