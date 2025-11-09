@@ -41,7 +41,6 @@ __metadata:
     "@types/memory-fs": "npm:^0"
     "@types/node": "npm:^24.0.0"
     "@types/react": "npm:^19"
-    "@wyw-in-js/webpack-loader": "npm:^0.7.0"
     babel-plugin-macros: "npm:^3.1.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     babel-plugin-polyfill-corejs3: "npm:^0.13.0"
@@ -14669,13 +14668,13 @@ __metadata:
   linkType: hard
 
 "happy-dom@npm:^15.11.0":
-  version: 15.11.4
-  resolution: "happy-dom@npm:15.11.4"
+  version: 15.11.7
+  resolution: "happy-dom@npm:15.11.7"
   dependencies:
     entities: "npm:^4.5.0"
     webidl-conversions: "npm:^7.0.0"
     whatwg-mimetype: "npm:^3.0.0"
-  checksum: 10c0/8c19f2d672131f5225db8ba3a5fc32cca7f1e800f3596a4e8a6de755fc5809f026cf1738e2df716969cc5cf1797d1101e4bed74e9b8b061e1b81db6098040aad
+  checksum: 10c0/22b08cac20192b08edf2e9c857ceeda8333a3301c4b5965a9550787b00db60d6d107c726390bd45a35305cd12ab086abd656bf957a408be0fcdc9fcd389f1973
   languageName: node
   linkType: hard
 

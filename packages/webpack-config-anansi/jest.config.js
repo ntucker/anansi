@@ -13,6 +13,8 @@ module.exports = {
   transform: {
     '^.+\\.js$': ['babel-jest', { rootMode: 'upward' }],
   },
-  transformIgnorePatterns: ['/node_modules/(?!(@anansi|@babel|ramda)/)'],
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@anansi|@babel|@wyw-in-js|happy-dom|ramda)/)',
+  ],
   setupFilesAfterEnv: [],
 };
