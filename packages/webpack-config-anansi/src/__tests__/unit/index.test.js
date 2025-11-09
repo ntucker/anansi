@@ -3,6 +3,20 @@ const path = require('path');
 const { makeConfig } = require('../../index');
 
 describe('makeConfig', () => {
+  const reactFastRefreshLog = 'React fast refresh detected and enabled';
+  let consoleInfoSpy;
+
+  beforeAll(() => {
+    consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation(() => {});
+  });
+
+  afterAll(() => {
+    consoleInfoSpy.mockRestore();
+  });
+
+  beforeEach(() => {
+    consoleInfoSpy.mockClear();
+  });
   const testRoot = path.join(__dirname, '../../..');
 
   // Default options that disable tsconfigPaths to avoid requiring tsconfig.json in tests
@@ -80,6 +94,19 @@ describe('makeConfig', () => {
       expect(config.devServer.compress).toBe(true);
     });
 
+    it('logs react fast refresh enablement in web builds', () => {
+      const configFn = makeConfig(defaultTestOptions);
+      configFn({}, { mode: 'development', target: 'web' });
+
+      expect(
+        consoleInfoSpy.mock.calls.some(
+          ([message]) =>
+            typeof message === 'string' &&
+            message.includes(reactFastRefreshLog),
+        ),
+      ).toBe(true);
+    });
+
     it('should include devServer when not targeting node', () => {
       const configFn = makeConfig(defaultTestOptions);
       const config = configFn({}, { mode: 'development', target: 'web' });
@@ -96,6 +123,19 @@ describe('makeConfig', () => {
         plugin => plugin.constructor.name === 'HtmlWebpackPlugin',
       );
       expect(hasHtmlPlugin).toBe(false);
+    });
+
+    it('does not log react fast refresh when targeting node', () => {
+      const configFn = makeConfig(defaultTestOptions);
+      configFn({}, { mode: 'development', target: 'node' });
+
+      expect(
+        consoleInfoSpy.mock.calls.some(
+          ([message]) =>
+            typeof message === 'string' &&
+            message.includes(reactFastRefreshLog),
+        ),
+      ).toBe(false);
     });
   });
 

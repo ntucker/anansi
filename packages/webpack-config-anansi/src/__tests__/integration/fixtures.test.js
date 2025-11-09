@@ -7,6 +7,27 @@ const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
 const rm = promisify(fs.rm);
 
+const REACT_FAST_REFRESH_LOG = 'React fast refresh detected and enabled';
+
+function captureConsole() {
+  const infoMessages = [];
+  const warnMessages = [];
+  const infoSpy = jest.spyOn(console, 'info').mockImplementation(message => {
+    infoMessages.push(message);
+  });
+  const warnSpy = jest.spyOn(console, 'warn').mockImplementation(message => {
+    warnMessages.push(message);
+  });
+  return {
+    infoMessages,
+    warnMessages,
+    restore: () => {
+      infoSpy.mockRestore();
+      warnSpy.mockRestore();
+    },
+  };
+}
+
 // All tests run from src/__tests__
 // From src/__tests__/integration, we need to go up to src/__fixtures__
 const FIXTURES_DIR = path.join(__dirname, '../../__fixtures__');
@@ -119,47 +140,66 @@ describe('Integration tests with fixtures', () => {
       it(
         'should build successfully in production mode',
         async () => {
-          const webpackConfigPath = path.join(fixturePath, 'webpack.config.js');
-          // Use require.resolve to find the webpack config relative to src
-          const resolvedPath = require.resolve(webpackConfigPath);
-          const webpackConfig = require(resolvedPath);
+          const consoleCapture = captureConsole();
+          try {
+            const webpackConfigPath = path.join(
+              fixturePath,
+              'webpack.config.js',
+            );
+            // Use require.resolve to find the webpack config relative to src
+            const resolvedPath = require.resolve(webpackConfigPath);
+            const webpackConfig = require(resolvedPath);
 
-          // Override output path to a test-specific location
-          const testOutputPath = path.join(fixturePath, 'test-dist-production');
-          const config = webpackConfig(
-            {},
-            { mode: 'production', target: 'web' },
-          );
-          config.output.path = testOutputPath;
-          // Ensure chunkFormat is set for webpack 5
-          if (!config.output.chunkFormat) {
-            config.output.chunkFormat = 'array-push';
+            // Override output path to a test-specific location
+            const testOutputPath = path.join(
+              fixturePath,
+              'test-dist-production',
+            );
+            const config = webpackConfig(
+              {},
+              { mode: 'production', target: 'web' },
+            );
+            config.output.path = testOutputPath;
+            // Ensure chunkFormat is set for webpack 5
+            if (!config.output.chunkFormat) {
+              config.output.chunkFormat = 'array-push';
+            }
+
+            const stats = await runWebpack(config);
+
+            expect(stats).toBeDefined();
+            expect(stats.hasErrors()).toBe(false);
+
+            // Check that output directory exists
+            const outputExists = await stat(testOutputPath)
+              .then(() => true)
+              .catch(() => false);
+            expect(outputExists).toBe(true);
+
+            // Check for main bundle files
+            const files = await readdir(testOutputPath);
+            expect(files.length).toBeGreaterThan(0);
+
+            // Check for entry point (might be hashed)
+            const hasEntry = files.some(file => {
+              // Entry could be App.js, main.js, or similar depending on config
+              return /\.js$/.test(file) && !file.includes('.chunk');
+            });
+            expect(hasEntry).toBe(true);
+
+            // Cleanup
+            fs.rmSync(testOutputPath, { recursive: true, force: true });
+
+            expect(
+              consoleCapture.infoMessages.some(
+                message =>
+                  typeof message === 'string' &&
+                  message.includes(REACT_FAST_REFRESH_LOG),
+              ),
+            ).toBe(false);
+          } finally {
+            consoleCapture.restore();
           }
-
-          const stats = await runWebpack(config);
-
-          expect(stats).toBeDefined();
-          expect(stats.hasErrors()).toBe(false);
-
-          // Check that output directory exists
-          const outputExists = await stat(testOutputPath)
-            .then(() => true)
-            .catch(() => false);
-          expect(outputExists).toBe(true);
-
-          // Check for main bundle files
-          const files = await readdir(testOutputPath);
-          expect(files.length).toBeGreaterThan(0);
-
-          // Check for entry point (might be hashed)
-          const hasEntry = files.some(file => {
-            // Entry could be App.js, main.js, or similar depending on config
-            return /\.js$/.test(file) && !file.includes('.chunk');
-          });
-          expect(hasEntry).toBe(true);
-
-          // Cleanup
-          fs.rmSync(testOutputPath, { recursive: true, force: true });
         },
         TIMEOUT,
       );
@@ -167,37 +207,53 @@ describe('Integration tests with fixtures', () => {
       it(
         'should build successfully in development mode',
         async () => {
-          const webpackConfigPath = path.join(fixturePath, 'webpack.config.js');
-          const resolvedPath = require.resolve(webpackConfigPath);
-          const webpackConfig = require(resolvedPath);
+          const consoleCapture = captureConsole();
+          try {
+            const webpackConfigPath = path.join(
+              fixturePath,
+              'webpack.config.js',
+            );
+            const resolvedPath = require.resolve(webpackConfigPath);
+            const webpackConfig = require(resolvedPath);
 
-          const testOutputPath = path.join(
-            fixturePath,
-            'test-dist-development',
-          );
-          const config = webpackConfig(
-            {},
-            { mode: 'development', target: 'web' },
-          );
-          config.output.path = testOutputPath;
-          // Ensure chunkFormat is set for webpack 5
-          if (!config.output.chunkFormat) {
-            config.output.chunkFormat = 'array-push';
+            const testOutputPath = path.join(
+              fixturePath,
+              'test-dist-development',
+            );
+            const config = webpackConfig(
+              {},
+              { mode: 'development', target: 'web' },
+            );
+            config.output.path = testOutputPath;
+            // Ensure chunkFormat is set for webpack 5
+            if (!config.output.chunkFormat) {
+              config.output.chunkFormat = 'array-push';
+            }
+
+            const stats = await runWebpack(config);
+
+            expect(stats).toBeDefined();
+            expect(stats.hasErrors()).toBe(false);
+
+            // Check that output directory exists
+            const outputExists = await stat(testOutputPath)
+              .then(() => true)
+              .catch(() => false);
+            expect(outputExists).toBe(true);
+
+            // Cleanup
+            fs.rmSync(testOutputPath, { recursive: true, force: true });
+
+            expect(
+              consoleCapture.infoMessages.some(
+                message =>
+                  typeof message === 'string' &&
+                  message.includes(REACT_FAST_REFRESH_LOG),
+              ),
+            ).toBe(true);
+          } finally {
+            consoleCapture.restore();
           }
-
-          const stats = await runWebpack(config);
-
-          expect(stats).toBeDefined();
-          expect(stats.hasErrors()).toBe(false);
-
-          // Check that output directory exists
-          const outputExists = await stat(testOutputPath)
-            .then(() => true)
-            .catch(() => false);
-          expect(outputExists).toBe(true);
-
-          // Cleanup
-          fs.rmSync(testOutputPath, { recursive: true, force: true });
         },
         TIMEOUT,
       );

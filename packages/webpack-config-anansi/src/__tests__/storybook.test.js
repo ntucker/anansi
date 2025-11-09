@@ -5,6 +5,25 @@ import makeStorybookConfigGenerator, {
   findLibraryRule,
 } from '../storybook.js';
 
+const REACT_FAST_REFRESH_LOG = 'React fast refresh detected and enabled';
+let consoleInfoSpy;
+let consoleWarnSpy;
+
+beforeAll(() => {
+  consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation(() => {});
+  consoleWarnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
+});
+
+afterAll(() => {
+  consoleInfoSpy.mockRestore();
+  consoleWarnSpy.mockRestore();
+});
+
+beforeEach(() => {
+  consoleInfoSpy.mockClear();
+  consoleWarnSpy.mockClear();
+});
+
 class StorybookHtmlPlugin {}
 class ProvidePlugin {}
 class StorybookRetainedPlugin {}
@@ -260,6 +279,14 @@ describe('makeStorybookConfigGenerator integration', () => {
     if (envConfig.cache && typeof envConfig.cache === 'object') {
       expect(result.cache.version).toBe(`${envConfig.cache.version}storybook`);
     }
+
+    expect(
+      consoleInfoSpy.mock.calls.some(
+        ([message]) =>
+          typeof message === 'string' &&
+          message.includes(REACT_FAST_REFRESH_LOG),
+      ),
+    ).toBe(true);
   });
 
   it('merges configuration for Storybook 9 style outputs', () => {
@@ -328,5 +355,13 @@ describe('makeStorybookConfigGenerator integration', () => {
     if (envConfig.cache && typeof envConfig.cache === 'object') {
       expect(result.cache.version).toBe(`${envConfig.cache.version}storybook`);
     }
+
+    expect(
+      consoleInfoSpy.mock.calls.some(
+        ([message]) =>
+          typeof message === 'string' &&
+          message.includes(REACT_FAST_REFRESH_LOG),
+      ),
+    ).toBe(false);
   });
 });
