@@ -1,6 +1,5 @@
-import globals from 'globals';
-
 import anansiPlugin from '@anansi/eslint-plugin';
+import globals from 'globals';
 
 export default [
   ...anansiPlugin.configs.typescript,

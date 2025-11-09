@@ -59,7 +59,8 @@
     "@types/pacote": "11.1.8",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "4.4.3"
+    "yeoman-environment": "4.4.3",
+    "yeoman-test": "8.3.0"
   },
   "engines": {
     "node": "^18.17.0 || >=20.5.0",
@@ -82,12 +83,9 @@
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^7.5.1"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "scripts": {
     "pretest": "yarn g:lint .",
-    "test": "yarn g:test",
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules\" yarn g:test",
     "test:type": "yarn g:tsc",
     "build": "run build:lib && run copyfiles",
     "build:lib": "BROWSERSLIST_ENV=node18 yarn g:babel --out-dir generators --ignore \"**/templates/**/*\",\"**/templates/*\",\"**/yeoman-types/*\"",
