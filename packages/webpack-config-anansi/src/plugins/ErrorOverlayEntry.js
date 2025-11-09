@@ -1,4 +1,4 @@
-/* global __react_refresh_socket__, __resourceQuery */
+/* global __react_refresh_socket__ */
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
  *
@@ -8,7 +8,7 @@
 
 // This is adapted to hook create-react-app directly into react-refresh's existing socket connections
 
-var runWithPatchedUrl = require('@pmmmwh/react-refresh-webpack-plugin/client/utils/patchUrl');
+var runWithRetry = require('@pmmmwh/react-refresh-webpack-plugin/client/utils/retry');
 var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 var launchEditorEndpoint = require('react-dev-utils/launchEditorEndpoint');
 var ErrorOverlay = require('react-error-overlay');
@@ -285,47 +285,28 @@ function tryApplyUpdates(onHotUpdateSuccess) {
 }
 
 if (process.env.NODE_ENV !== 'production' && typeof window !== 'undefined') {
-  runWithPatchedUrl(function setupOverlay() {
-    // Only register if no other overlay have been registered
-    if (!window.__reactRefreshOverlayInjected && __react_refresh_socket__) {
-      // Registers handlers for compile errors with retry -
-      // This is to prevent mismatching injection order causing errors to be thrown
-      runWithRetry(function initSocket() {
-        __react_refresh_socket__.init(compileMessageHandler, __resourceQuery);
-      }, 3);
-      // Registers handlers for runtime errors
-      /*handleError(function handleError(error) {
-        hasRuntimeErrors = true;
-        __react_refresh_error_overlay__.handleRuntimeError(error);
-      });
-      handleUnhandledRejection(function handleUnhandledPromiseRejection(error) {
-        hasRuntimeErrors = true;
-        __react_refresh_error_overlay__.handleRuntimeError(error);
-      });*/
+  // Only register if no other overlay have been registered
+  if (!window.__reactRefreshOverlayInjected && __react_refresh_socket__) {
+    // Registers handlers for compile errors with retry -
+    // This is to prevent mismatching injection order causing errors to be thrown
+    runWithRetry(
+      function initSocket() {
+        __react_refresh_socket__.init(compileMessageHandler);
+      },
+      3,
+      'Failed to set up the socket connection.',
+    );
+    // Registers handlers for runtime errors
+    /*handleError(function handleError(error) {
+      hasRuntimeErrors = true;
+      __react_refresh_error_overlay__.handleRuntimeError(error);
+    });
+    handleUnhandledRejection(function handleUnhandledPromiseRejection(error) {
+      hasRuntimeErrors = true;
+      __react_refresh_error_overlay__.handleRuntimeError(error);
+    });*/
 
-      // Mark overlay as injected to prevent double-injection
-      window.__reactRefreshOverlayInjected = true;
-    }
-  });
-}
-function runWithRetry(callback, maxRetries) {
-  function executeWithRetryAndTimeout(currentCount) {
-    try {
-      if (currentCount > maxRetries - 1) {
-        console.warn('[React Refresh] Failed set up the socket connection.');
-        return;
-      }
-
-      callback();
-    } catch (err) {
-      setTimeout(
-        function () {
-          executeWithRetryAndTimeout(currentCount + 1);
-        },
-        Math.pow(10, currentCount),
-      );
-    }
+    // Mark overlay as injected to prevent double-injection
+    window.__reactRefreshOverlayInjected = true;
   }
-
-  executeWithRetryAndTimeout(0);
 }

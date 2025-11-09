@@ -62,7 +62,7 @@ export default function makeDevConfig(
   let server = 'http';
   try {
     server = getHttpsConfig(rootPath);
-  } catch (e) {
+  } catch {
     console.warn(chalk.yellow('Falling back to http'));
   }
   config.devServer = {
@@ -125,9 +125,6 @@ export default function makeDevConfig(
             entry: require.resolve('./plugins/ErrorOverlayEntry'),
             // registers error handlers
             module: require.resolve('./plugins/refreshOverlayModule'),
-            sockHost: config.devServer.client.webSocketURL.hostname,
-            sockPath: config.devServer.client.webSocketURL.pathname,
-            sockPort: config.devServer.client.webSocketURL.port,
           },
         }),
         new ErrorOverlayPlugin(),
@@ -137,7 +134,7 @@ export default function makeDevConfig(
         .getLogger('anansi')
         .info('React fast refresh detected and enabled');
       // eslint-disable-next-line no-empty
-    } catch (e) {}
+    } catch {}
   }
 
   if (!config.experiments) {
