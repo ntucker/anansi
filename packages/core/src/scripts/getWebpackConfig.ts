@@ -1,5 +1,5 @@
 import { default as enhanced } from 'enhanced-resolve';
-import webpack from 'webpack';
+import type { Configuration } from 'webpack';
 
 const resolve = enhanced.create.sync({
   modules: ['.'],
@@ -9,7 +9,7 @@ const resolve = enhanced.create.sync({
 });
 
 export async function getWebpackConfig(): Promise<
-  (env: any, argv: any) => webpack.Configuration
+  (env: any, argv: any) => Configuration
 > {
   const configPath = resolve({}, process.cwd(), 'webpack.config');
   if (!configPath) {

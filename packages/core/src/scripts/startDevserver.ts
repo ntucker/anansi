@@ -7,14 +7,14 @@ Object.hasOwn =
 import type { NextFunction } from 'express';
 import diskFs from 'fs';
 import { createFsRequire } from 'fs-require';
-import { Server, IncomingMessage, ServerResponse } from 'http';
+import { IncomingMessage, ServerResponse } from 'http';
 import { createFsFromVolume, Volume } from 'memfs';
 import path from 'path';
 import sourceMapSupport from 'source-map-support';
 import tmp from 'tmp';
 import { ufs } from 'unionfs';
 import { promisify } from 'util';
-import webpack, { MultiCompiler } from 'webpack';
+import webpack, { type Configuration, type MultiConfiguration } from 'webpack';
 import logging from 'webpack/lib/logging/runtime.js';
 import WebpackDevServer from 'webpack-dev-server';
 
@@ -54,8 +54,6 @@ export default async function startDevServer(
 
   const fsRequire = createFsRequire(ufs);
   const readFile = promisify(ufs.readFile);
-  let server: Server | undefined;
-
   // Generate a temporary file so we can hot reload from the root of the application
   function hotEntry(entryPath: string) {
     // eslint-disable-next-line
@@ -76,7 +74,7 @@ export default async function startDevServer(
     return generatedEntrypoint;
   }
 
-  const webpackConfigs = [
+  const webpackConfigs: Configuration[] = [
     webpackConfig(
       {
         ...env,
@@ -94,10 +92,10 @@ export default async function startDevServer(
       },
       { mode: 'development', target: 'node' },
     ),
-  ] as const;
+  ];
 
   // initialize the webpack compiler
-  const compiler = webpack(webpackConfigs);
+  const compiler = webpack(webpackConfigs as unknown as MultiConfiguration);
   if (!compiler) {
     log.error('Failed to initialize the webpack compiler');
     process.exit(-1);
