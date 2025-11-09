@@ -13,3 +13,8 @@
 - Follow existing ESLint configuration
 - Use Prettier for formatting
 
+## Build Artifacts
+- For packages that compile source from `src/` to `lib/` or `dist/`, make edits in the corresponding `src/` files only.
+- When investigating usages in `lib/` or `dist/`, replicate changes in the matching `src/` location, then rebuild to regenerate `lib/` or `dist/`.
+- `packages/generator-js` compiles to `generators/` rather than `lib/` or `dist/`
+
