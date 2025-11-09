@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.0](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.12...@anansi/webpack-config@21.1.0) (2025-11-09)
+
+### 🚀 Features
+
+* Storybook 9 compatibility ([#2851](/github.com/ntucker/anansi/issues/2851)) ([a1daa39](/github.com/ntucker/anansi/commit/a1daa394e453eec8b07695d4eac88c648c169596))
+* Support storybook 10 ([#2853](/github.com/ntucker/anansi/issues/2853)) ([a3179e9](/github.com/ntucker/anansi/commit/a3179e90c46afa459779634cae5d4a65fb399540))
+
+### 🐛 Bug Fix
+
+* Modern sass compatibility ([72fd5f6](/github.com/ntucker/anansi/commit/72fd5f6ea98e928c403fa07a3ea38ebd44353568))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2858](/github.com/ntucker/anansi/issues/2858)) ([ea62701](/github.com/ntucker/anansi/commit/ea6270186daa1634ef55e2cbd158879bcfc6bbdd))
+* Update webpack packages ([#2828](/github.com/ntucker/anansi/issues/2828)) ([fdbc282](/github.com/ntucker/anansi/commit/fdbc282e43b40afa2c85a650571e9ace4e99ba65))
+* Upgrade @pmmmwh/react-refresh-webpack-plugin@^0.6.1 ([#2854](/github.com/ntucker/anansi/issues/2854)) ([68c5b66](/github.com/ntucker/anansi/commit/68c5b660f48bcc0e89357e58919aab9890094148))
+
 ## [21.0.12](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.11...@anansi/webpack-config@21.0.12) (2025-10-14)
 
 ### 📦 Package

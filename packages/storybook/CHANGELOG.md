@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](/github.com/ntucker/anansi/compare/@anansi/storybook@3.2.57...@anansi/storybook@4.0.0) (2025-11-09)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* node 20 required
+
+### 🚀 Features
+
+* Storybook 9 compatibility ([#2852](/github.com/ntucker/anansi/issues/2852)) ([4136a6f](/github.com/ntucker/anansi/commit/4136a6f07ae43e88ad876f8363c83607c6cdeca5))
+* Support storybook 10 ([#2853](/github.com/ntucker/anansi/issues/2853)) ([a3179e9](/github.com/ntucker/anansi/commit/a3179e90c46afa459779634cae5d4a65fb399540))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2858](/github.com/ntucker/anansi/issues/2858)) ([ea62701](/github.com/ntucker/anansi/commit/ea6270186daa1634ef55e2cbd158879bcfc6bbdd))
+* Update storybook monorepo to ^10.0.6 ([#2857](/github.com/ntucker/anansi/issues/2857)) ([e74395e](/github.com/ntucker/anansi/commit/e74395e979dbab5c5eb5378857c0d28195940e8e))
+
 ## [3.2.57](/github.com/ntucker/anansi/compare/@anansi/storybook@3.2.56...@anansi/storybook@3.2.57) (2025-10-28)
 
 **Note:** Version bump only for package @anansi/storybook

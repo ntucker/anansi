@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.0](https://github.com/ntucker/anansi/compare/example-typescript@15.1.65...example-typescript@16.0.0) (2025-11-09)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* node 20 required
+
+### 🚀 Features
+
+* Storybook 9 compatibility ([#2852](https://github.com/ntucker/anansi/issues/2852)) ([4136a6f](https://github.com/ntucker/anansi/commit/4136a6f07ae43e88ad876f8363c83607c6cdeca5))
+* Support storybook 10 ([#2853](https://github.com/ntucker/anansi/issues/2853)) ([a3179e9](https://github.com/ntucker/anansi/commit/a3179e90c46afa459779634cae5d4a65fb399540))
+
+### 🐛 Bug Fix
+
+* Modern sass compatibility ([72fd5f6](https://github.com/ntucker/anansi/commit/72fd5f6ea98e928c403fa07a3ea38ebd44353568))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2858](https://github.com/ntucker/anansi/issues/2858)) ([ea62701](https://github.com/ntucker/anansi/commit/ea6270186daa1634ef55e2cbd158879bcfc6bbdd))
+* Update webpack packages ([#2828](https://github.com/ntucker/anansi/issues/2828)) ([fdbc282](https://github.com/ntucker/anansi/commit/fdbc282e43b40afa2c85a650571e9ace4e99ba65))
+* Upgrade @pmmmwh/react-refresh-webpack-plugin@^0.6.1 ([#2854](https://github.com/ntucker/anansi/issues/2854)) ([68c5b66](https://github.com/ntucker/anansi/commit/68c5b660f48bcc0e89357e58919aab9890094148))
+
 ## [15.1.65](https://github.com/ntucker/anansi/compare/example-typescript@15.1.64...example-typescript@15.1.65) (2025-10-28)
 
 **Note:** Version bump only for package example-typescript
