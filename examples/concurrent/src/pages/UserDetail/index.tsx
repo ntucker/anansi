@@ -12,7 +12,14 @@ export default function UserDetail({ id }: Props) {
   const user = useSuspense(UserResource.get, { id });
   return (
     <>
-      <Card cover={<Img src={user.coverImage} />}>
+      <Card
+        cover={
+          <Img
+            src={user.coverImage}
+            style={{ width: '100%', aspectRatio: '4 / 1', objectFit: 'cover' }}
+          />
+        }
+      >
         <Meta
           avatar={<Img component={Avatar} src={user.profileImage} size={64} />}
           title={user.name}

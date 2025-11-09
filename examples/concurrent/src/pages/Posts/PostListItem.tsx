@@ -42,7 +42,7 @@ export default function PostListItem({ post }: { post: Post }) {
             </a>{' '}
             by{' '}
             <Link name="UserDetail" props={{ id: post.userId }}>
-              {`${author.name}`}
+              {`${author?.name}`}
             </Link>
           </>
         }
