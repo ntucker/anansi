@@ -85,119 +85,269 @@ async function runAppGenerator({ appName, prompts, options = {} }) {
     .withPrompts(promptAnswers);
 }
 
+const SPA_COMMON_FILES = [
+  'package.json',
+  'tsconfig.json',
+  '.gitignore',
+  '.yarnrc.yml',
+  'src/pages/Home/index.tsx',
+];
+
+const SPA_SCENARIOS = [
+  {
+    name: 'with testing and continuous integration',
+    appName: 'spa-testing-ci',
+    prompts: {
+      projectType: 'SPA',
+      githubOrg: 'demo-inc',
+      features: ['SSR', 'testing', 'CI'],
+    },
+    options: {
+      'npm-namespace': '@demo',
+      'root-path': 'src',
+      'build-path': 'dist',
+      'server-path': 'server',
+    },
+    expectations: {
+      files: [
+        ...SPA_COMMON_FILES,
+        '.circleci/config.yml',
+        '.github/workflows/bundle_size.yml',
+        'jest.config.js',
+        'src/__tests__/simple.test.ts',
+      ],
+      absentFiles: ['.gitignore.tpl', '.yarnrc.yml.tpl', '.storybook/main.js'],
+      packageChecks(pkg, scenario) {
+        expect(pkg.name).toBe(`@demo/${scenario.appName}`);
+        expect(pkg.repository).toEqual({
+          type: 'git',
+          url: `git+ssh://git@github.com/${scenario.prompts.githubOrg}/${scenario.appName}.git`,
+        });
+        expect(pkg.homepage).toBe(
+          `https://github.com/${scenario.prompts.githubOrg}/${scenario.appName}#readme`,
+        );
+        expect(pkg.scripts.lint).toBe('eslint src --quiet');
+        expect(pkg.devDependencies).toMatchObject({
+          '@anansi/babel-preset': expect.any(String),
+          '@anansi/eslint-plugin': expect.any(String),
+          '@anansi/jest-preset': expect.any(String),
+          '@testing-library/react': expect.any(String),
+          jest: expect.any(String),
+        });
+      },
+      extraChecks(cwd) {
+        const jestConfig = fs.readFileSync(
+          path.join(cwd, 'jest.config.js'),
+          'utf8',
+        );
+        expect(jestConfig).toContain('@anansi/jest-preset');
+        withinDirectory(cwd, () => {
+          assert.fileContent('src/__tests__/simple.test.ts', 'describe(');
+        });
+      },
+    },
+  },
+  {
+    name: 'without optional features',
+    appName: 'spa-minimal',
+    prompts: {
+      projectType: 'SPA',
+      githubOrg: 'demo-inc',
+      features: [],
+    },
+    options: {},
+    expectations: {
+      files: [...SPA_COMMON_FILES],
+      absentFiles: [
+        '.gitignore.tpl',
+        '.yarnrc.yml.tpl',
+        '.circleci/config.yml',
+        '.github/workflows/bundle_size.yml',
+        'jest.config.js',
+        'src/__tests__/simple.test.ts',
+        '.storybook/main.js',
+        'src/index.stories.tsx',
+      ],
+      packageChecks(pkg, scenario) {
+        expect(pkg.name).toBe(scenario.appName);
+        expect(pkg.devDependencies ?? {}).not.toHaveProperty(
+          '@anansi/jest-preset',
+        );
+        expect(pkg.devDependencies ?? {}).not.toHaveProperty(
+          '@testing-library/react',
+        );
+      },
+    },
+  },
+  {
+    name: 'with storybook but no testing',
+    appName: 'spa-storybook',
+    prompts: {
+      projectType: 'SPA',
+      githubOrg: 'demo-inc',
+      features: ['SSR', 'storybook'],
+    },
+    options: {},
+    expectations: {
+      files: [
+        ...SPA_COMMON_FILES,
+        '.storybook/main.js',
+        '.storybook/preview.tsx',
+        'src/index.stories.tsx',
+      ],
+      absentFiles: [
+        '.gitignore.tpl',
+        '.yarnrc.yml.tpl',
+        '.circleci/config.yml',
+        '.github/workflows/bundle_size.yml',
+        'jest.config.js',
+        'src/__tests__/simple.test.ts',
+      ],
+      packageChecks(pkg, scenario) {
+        expect(pkg.name).toBe(scenario.appName);
+        expect(pkg.devDependencies).toMatchObject({
+          storybook: expect.any(String),
+          '@storybook/react': expect.any(String),
+          '@storybook/addon-essentials': expect.any(String),
+        });
+        expect(pkg.devDependencies ?? {}).not.toHaveProperty(
+          '@anansi/jest-preset',
+        );
+      },
+    },
+  },
+];
+
+const LIBRARY_SCENARIOS = [
+  {
+    name: 'with testing and storybook',
+    appName: 'lib-testing-storybook',
+    prompts: {
+      projectType: 'library',
+      githubOrg: 'demo-inc',
+      features: ['testing', 'storybook'],
+    },
+    options: {
+      'lib-path': 'lib',
+    },
+    expectations: {
+      files: [
+        'package.json',
+        'tsconfig.json',
+        'README.md',
+        'src/index.ts',
+        'jest.config.js',
+        'src/__tests__/simple.test.ts',
+        '.storybook/main.js',
+        'src/index.stories.tsx',
+      ],
+      absentFiles: [
+        '.circleci/config.yml',
+        '.github/workflows/bundle_size.yml',
+        '.storybook/preview.tsx',
+      ],
+      packageChecks(pkg, scenario) {
+        expect(pkg.name).toBe(scenario.appName);
+        expect(pkg.peerDependencies).toMatchObject({
+          react: '^18.0.0',
+          'react-dom': '^18.0.0',
+        });
+        expect(pkg.devDependencies).toMatchObject({
+          '@anansi/jest-preset': expect.any(String),
+          '@testing-library/react': expect.any(String),
+          storybook: expect.any(String),
+        });
+      },
+    },
+  },
+  {
+    name: 'without testing or storybook',
+    appName: 'lib-minimal',
+    prompts: {
+      projectType: 'library',
+      githubOrg: 'demo-inc',
+      features: [],
+    },
+    options: {},
+    expectations: {
+      files: ['package.json', 'tsconfig.json', 'README.md', 'src/index.ts'],
+      absentFiles: [
+        'jest.config.js',
+        'src/__tests__/simple.test.ts',
+        '.storybook/main.js',
+        'src/index.stories.tsx',
+        '.circleci/config.yml',
+        '.github/workflows/bundle_size.yml',
+      ],
+      packageChecks(pkg, scenario) {
+        expect(pkg.name).toBe(scenario.appName);
+        expect(Object.keys(pkg.peerDependencies ?? {})).toHaveLength(0);
+        expect(pkg.devDependencies ?? {}).not.toHaveProperty(
+          '@anansi/jest-preset',
+        );
+        expect(pkg.devDependencies ?? {}).not.toHaveProperty('storybook');
+      },
+    },
+  },
+];
+
+function runScenarioTests(scenarios) {
+  describe.each(scenarios.map(scenario => [scenario.name, scenario]))(
+    '%s',
+    (_scenarioName, scenario) => {
+      let result;
+
+      beforeAll(async () => {
+        result = await runAppGenerator({
+          appName: scenario.appName,
+          prompts: {
+            githubOrg: 'demo-inc',
+            ...scenario.prompts,
+          },
+          options: scenario.options,
+        });
+      });
+
+      afterAll(async () => {
+        if (result?.cleanup) {
+          await result.cleanup();
+        }
+      });
+
+      it('generates the expected file structure', () => {
+        withinDirectory(result.cwd, () => {
+          if (scenario.expectations.files?.length) {
+            assert.file(scenario.expectations.files);
+          }
+          if (scenario.expectations.absentFiles?.length) {
+            assert.noFile(scenario.expectations.absentFiles);
+          }
+        });
+      });
+
+      it('applies the correct package configuration', () => {
+        if (!scenario.expectations.packageChecks) return;
+        const pkg = JSON.parse(
+          fs.readFileSync(path.join(result.cwd, 'package.json'), 'utf8'),
+        );
+        scenario.expectations.packageChecks(pkg, scenario);
+      });
+
+      if (scenario.expectations.extraChecks) {
+        it('passes scenario-specific validations', () => {
+          scenario.expectations.extraChecks(result.cwd);
+        });
+      }
+    },
+  );
+}
+
 describe('App generator', () => {
-  describe('SPA project', () => {
-    let result;
-
-    beforeAll(async () => {
-      result = await runAppGenerator({
-        appName: 'demo-app',
-        prompts: {
-          projectType: 'SPA',
-          githubOrg: 'demo-inc',
-          features: ['SSR', 'testing', 'CI'],
-        },
-        options: {
-          'npm-namespace': '@demo',
-          'root-path': 'src',
-          'build-path': 'dist',
-          'server-path': 'server',
-        },
-      });
-    });
-
-    it('creates core project files and directories', () => {
-      withinDirectory(result.cwd, () => {
-        assert.file([
-          'package.json',
-          'tsconfig.json',
-          '.gitignore',
-          '.yarnrc.yml',
-          '.circleci/config.yml',
-          '.github/workflows/bundle_size.yml',
-          'src/pages/Home/index.tsx',
-          'src/__tests__/simple.test.ts',
-        ]);
-        assert.noFile(['.gitignore.tpl', '.yarnrc.yml.tpl']);
-      });
-    });
-
-    it('fills template placeholders based on prompts and options', () => {
-      const packageJsonPath = path.join(result.cwd, 'package.json');
-      const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-
-      expect(pkg.name).toBe('@demo/demo-app');
-      expect(pkg.repository).toEqual({
-        type: 'git',
-        url: 'git+ssh://git@github.com/demo-inc/demo-app.git',
-      });
-      expect(pkg.homepage).toBe('https://github.com/demo-inc/demo-app#readme');
-      expect(pkg.scripts.lint).toBe('eslint src --quiet');
-      expect(pkg.devDependencies).toMatchObject({
-        '@anansi/babel-preset': expect.any(String),
-        '@anansi/eslint-plugin': expect.any(String),
-        '@anansi/jest-preset': expect.any(String),
-        jest: expect.any(String),
-        typescript: expect.any(String),
-      });
-    });
-
-    it('enables generator-specific testing configuration', () => {
-      const jestConfig = fs.readFileSync(
-        path.join(result.cwd, 'jest.config.js'),
-        'utf8',
-      );
-
-      expect(jestConfig).toContain('@anansi/jest-preset');
-
-      withinDirectory(result.cwd, () => {
-        assert.fileContent('src/__tests__/simple.test.ts', 'describe(');
-      });
-    });
+  describe('SPA project scenarios', () => {
+    runScenarioTests(SPA_SCENARIOS);
   });
 
-  describe('Library project with Storybook', () => {
-    let result;
-
-    beforeAll(async () => {
-      result = await runAppGenerator({
-        appName: 'demo-lib',
-        prompts: {
-          projectType: 'library',
-          githubOrg: 'demo-inc',
-          features: ['testing', 'storybook'],
-        },
-        options: {
-          'lib-path': 'lib',
-        },
-      });
-    });
-
-    it('scaffolds library-focused sources and omits spa-only files', () => {
-      withinDirectory(result.cwd, () => {
-        assert.file(['src/index.ts', 'README.md']);
-        assert.noFile(['src/pages/Home/index.tsx', '.circleci/config.yml']);
-      });
-    });
-
-    it('adds storybook peer dependency expectations', () => {
-      const pkg = JSON.parse(
-        fs.readFileSync(path.join(result.cwd, 'package.json'), 'utf8'),
-      );
-
-      expect(pkg.peerDependencies).toMatchObject({
-        react: '^18.0.0',
-        'react-dom': '^18.0.0',
-      });
-      expect(pkg.devDependencies).toMatchObject({
-        '@types/react': expect.any(String),
-        '@types/react-dom': expect.any(String),
-        react: expect.any(String),
-        'react-dom': expect.any(String),
-      });
-      expect(pkg.scripts).toMatchObject({
-        'build:lib': expect.stringContaining('babel'),
-      });
-    });
+  describe('Library project scenarios', () => {
+    runScenarioTests(LIBRARY_SCENARIOS);
   });
 });
