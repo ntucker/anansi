@@ -19,6 +19,12 @@
     "devtest:ci": "yarn g:devtest start http://localhost:8080 devtest:validate",
     "postinstall": "rm -rf node_modules/.cache"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "stackBlitz": {
+    "startCommand": "yarn start"
+  },
   "devDependencies": {
     "@anansi/babel-preset": "^6.2.17",
     "@anansi/browserslist-config": "^1.7.3",
