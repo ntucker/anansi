@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.6.28](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.27...@anansi/generator-js@12.6.28) (2025-11-15)
+
+### 🐛 Bug Fix
+
+* Fix default babel config syntax ([e98ce28](/github.com/ntucker/anansi/commit/e98ce28e7d8d0f8802d7769b1211c42ced616677))
+
+### 📦 Package
+
+* Update `yeoman-test` to v11.1.0 ([#2861](/github.com/ntucker/anansi/issues/2861)) ([a7f15df](/github.com/ntucker/anansi/commit/a7f15df732d3fb4b80ab01f2fc3e4a103f7b41fd))
+* Update `yeoman-test` to v11.1.1 ([#2867](/github.com/ntucker/anansi/issues/2867)) ([0f5ea38](/github.com/ntucker/anansi/commit/0f5ea387c00edf62fde29c9e92b0db4099c5bf05))
+* Update all non-major dependencies ([#2866](/github.com/ntucker/anansi/issues/2866)) ([930d19a](/github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
+
 ## [12.6.27](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.26...@anansi/generator-js@12.6.27) (2025-11-09)
 
 ### 📦 Package

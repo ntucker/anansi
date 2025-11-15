@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.40](/github.com/ntucker/anansi/compare/@anansi/core@0.20.39...@anansi/core@0.20.40) (2025-11-15)
+
+### 🐛 Bug Fix
+
+* Properly handle fallbacks to node_modules in multiple directories ([#2864](/github.com/ntucker/anansi/issues/2864)) ([136bcb5](/github.com/ntucker/anansi/commit/136bcb5a2a3a895931200f16eeccd7c3b071b11b))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2866](/github.com/ntucker/anansi/issues/2866)) ([930d19a](/github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
+
 ## [0.20.39](/github.com/ntucker/anansi/compare/@anansi/core@0.20.38...@anansi/core@0.20.39) (2025-11-09)
 
 ### 🐛 Bug Fix

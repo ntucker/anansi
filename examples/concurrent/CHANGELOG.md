@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.71](https://github.com/ntucker/anansi/compare/example-react-18@8.0.70...example-react-18@8.0.71) (2025-11-15)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2866](https://github.com/ntucker/anansi/issues/2866)) ([930d19a](https://github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
+
+### 📝 Documentation
+
+* **demo:** Specify demo node engine ([3f87a44](https://github.com/ntucker/anansi/commit/3f87a4461466abc0fc12a6655e84b88b7c935740))
+
 ## [8.0.70](https://github.com/ntucker/anansi/compare/example-react-18@8.0.69...example-react-18@8.0.70) (2025-11-09)
 
 ### 📦 Package

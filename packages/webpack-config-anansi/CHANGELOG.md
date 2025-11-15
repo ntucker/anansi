@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.1](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.0...@anansi/webpack-config@21.1.1) (2025-11-15)
+
+### 📦 Package
+
+* Update `svgo` to v4 ([#2860](/github.com/ntucker/anansi/issues/2860)) ([0112d1c](/github.com/ntucker/anansi/commit/0112d1c561110005fcf5ee340269dee8fc2e39b8))
+* Update all non-major dependencies ([#2866](/github.com/ntucker/anansi/issues/2866)) ([930d19a](/github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
+
 ## [21.1.0](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.0.12...@anansi/webpack-config@21.1.0) (2025-11-09)
 
 ### 🚀 Features
