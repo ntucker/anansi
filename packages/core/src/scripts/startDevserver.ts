@@ -6,7 +6,6 @@ Object.hasOwn =
   };
 import type { NextFunction } from 'express';
 import diskFs from 'fs';
-import { createFsRequire } from 'fs-require';
 import { IncomingMessage, ServerResponse } from 'http';
 import { createFsFromVolume, Volume } from 'memfs';
 import path from 'path';
@@ -19,6 +18,7 @@ import logging from 'webpack/lib/logging/runtime.js';
 import WebpackDevServer from 'webpack-dev-server';
 
 import 'cross-fetch/dist/node-polyfill.js';
+import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
 import { BoundRender } from './types.js';
 
@@ -52,7 +52,8 @@ export default async function startDevServer(
   const fs = createFsFromVolume(volume);
   ufs.use(diskFs).use(fs as any);
 
-  const fsRequire = createFsRequire(ufs);
+  const fsRequire = createHybridRequire(ufs);
+
   const readFile = promisify(ufs.readFile);
   // Generate a temporary file so we can hot reload from the root of the application
   function hotEntry(entryPath: string) {
