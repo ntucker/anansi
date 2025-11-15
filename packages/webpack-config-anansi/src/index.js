@@ -16,7 +16,7 @@ export { default as makeStorybookConfigGenerator } from './storybook';
 export function makeConfig(options) {
   return (env, argv) => {
     if (argv?.mode && !process.env.NODE_ENV) process.env.NODE_ENV = argv?.mode;
-    // eslint-disable-next-line no-param-reassign
+
     options = {
       rootPath: ROOT_PATH,
       basePath: 'src',
@@ -90,14 +90,14 @@ export function makeConfig(options) {
       );
     }
     // defaults
+    // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
+    // and are disabled by default, so we don't need to override them.
     options.svgoOptions = {
       plugins: [
         {
           name: 'preset-default',
           params: {
             overrides: {
-              removeTitle: false,
-              removeViewBox: false,
               convertShapeToPath: false,
             },
           },
