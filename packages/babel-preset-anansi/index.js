@@ -126,12 +126,14 @@ function buildPreset(api, options = {}) {
       .version.split('.')
       .slice(0, 2)
       .join('.');
+    // eslint-disable-next-line no-empty
   } catch (e) {}
   try {
     corejsVersionPure = require('core-js-pure/package.json')
       .version.split('.')
       .slice(0, 2)
       .join('.');
+    // eslint-disable-next-line no-empty
   } catch (e) {}
 
   // 'auto' polyfillMethod (represented by undefined)
@@ -169,6 +171,7 @@ function buildPreset(api, options = {}) {
           require.resolve(`${runtimePkg}/package.json`),
         );
         runtimeVersion = require(`${runtimePkg}/package.json`).version;
+        // eslint-disable-next-line no-empty
       } catch (e) {}
     }
   }
@@ -338,6 +341,7 @@ function buildPreset(api, options = {}) {
       if (!shouldHotReload) break;
       try {
         preset.plugins.push(require('react-refresh/babel'));
+        // eslint-disable-next-line no-empty
       } catch (e) {}
       break;
   }
@@ -507,6 +511,7 @@ function getPolyfillMethodAuto(
           ) {
             return 'usage-pure';
           }
+          // eslint-disable-next-line no-empty
         } catch (e) {}
       }
       try {
