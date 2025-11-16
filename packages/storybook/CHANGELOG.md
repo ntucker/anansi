@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.1...@anansi/storybook@4.0.2) (2025-11-16)
+
+### 💅 Enhancement
+
+* Support more versions ([6cda65f](/github.com/ntucker/anansi/commit/6cda65f84f226404cba2572ff263cda5362d41c2))
+
 ## [4.0.1](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.0...@anansi/storybook@4.0.1) (2025-11-15)
 
 ### 📦 Package
