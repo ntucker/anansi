@@ -67,7 +67,7 @@
   ],
   "devDependencies": {
     "@ant-design/cssinjs": "^1.7.1",
-    "@data-client/react": "^0.14.0",
+    "@data-client/react": "^0.15.0-beta-20251022142546-a457d1596871fb28f1a91f2531cc259db4d55a9c",
     "@types/compression": "1.8.1",
     "@types/express": "^4.17.17",
     "@types/node": "^24.0.0",
