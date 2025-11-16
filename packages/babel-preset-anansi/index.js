@@ -240,6 +240,7 @@ function buildPreset(api, options = {}) {
     callerTarget,
     options,
     modules,
+    isLinaria,
   );
   const polyfillTargets =
     process.env.POLYFILL_TARGETS ||
@@ -304,7 +305,7 @@ function buildPreset(api, options = {}) {
       [
         require('@babel/plugin-proposal-record-and-tuple').default,
         {
-          importPolyfill: true,
+          importPolyfill: !isLinaria,
           syntaxType: 'hash',
         },
       ],
@@ -338,7 +339,7 @@ function buildPreset(api, options = {}) {
       }
       break;
     case 'development':
-      if (!shouldHotReload) break;
+      if (!shouldHotReload || isLinaria) break;
       try {
         preset.plugins.push(require('react-refresh/babel'));
         // eslint-disable-next-line no-empty
@@ -417,8 +418,8 @@ function buildPreset(api, options = {}) {
     {
       test: /\.(m|c)?(js|jsx)$/,
       plugins: [
-        //stage 1
-        // this is included in the typescript plugin, but we want to provide for js too
+        // stage 1
+        // typescript currently doesn't support this, so we're only supporting it for js files
         require('@babel/plugin-proposal-export-default-from').default,
         ...classPlugins,
       ],
@@ -451,8 +452,28 @@ function getEnvOptions(
   callerTarget,
   options,
   modules,
+  isLinaria,
 ) {
   let envOptions = {};
+  // For Linaria builds, keep transforms minimal and preserve modules.
+  // Linaria runs evaluation in Node, so target current Node and avoid extra transforms.
+  if (isLinaria) {
+    envOptions = {
+      targets: {
+        node: options.nodeTarget || 'current',
+      },
+      bugfixes: false,
+      modules: false,
+      shippedProposals: true,
+      // modern versions this already defaults to false, but just ensure we don't do any polyfills
+      useBuiltIns: false,
+      // don't do fancy stuff just for 'correctness'. loose means less transforms.
+      loose: true,
+      // Keep same slow transform exclusion
+      exclude: ['transform-typeof-symbol'],
+    };
+    return envOptions;
+  }
   if (
     babelNode ||
     env === 'test' ||

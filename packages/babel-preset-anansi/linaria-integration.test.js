@@ -833,6 +833,56 @@ describe('Linaria Integration with Webpack Loader', () => {
   });
 
   describe('Integration with other features', () => {
+    it('should handle modern JavaScript syntax with basic Linaria usage', async () => {
+      const code = `
+        import { styled } from '@linaria/react';
+        // decorators (2023-05)
+        function sealed(value, context) { return value; }
+        function initOne(value, context) {
+          if (context.kind === 'field') return initial => (initial ?? 1);
+        }
+        // export default from 'mod'; - only supported in js files, not ts files
+        export * as ns from 'mod';
+        @sealed
+        class Foo {
+          @initOne y;
+          #x = 1;                   // private field
+          static #count = 0;        // private static field
+          static { this.#count ||= 1; }  // class static block + logical assignment
+          inc() {
+            this.#x++;
+            return #x in this;      // private-in
+          }
+        }
+        const big = 1_000_000n;                 // numeric separator + BigInt
+        const rec = #{ a: 1, b: 2 };            // Record
+        const tup = #[1, 2, 3];                 // Tuple
+        const len = tup?.length ?? 0;           // optional chaining + nullish coalescing
+        let aNull = null; aNull ??= 42;         // logical nullish assignment
+        let flag = 0; flag ||= 1;               // logical OR assignment
+        const { a, ...rest } = { a: 1, b: 2 };  // object rest/spread
+        try { throw new Error(); } catch {}      // optional catch binding
+        const here = import.meta.url;            // import.meta
+        const load = import('mod');              // dynamic import
+        const Styled = styled.div\`
+          color: red;
+          &[data-here] { content: 'ok'; }
+        \`;
+        const Component = () => <Styled data-here={here}>{new Foo().inc() ? 'ok' : 'no'}</Styled>; // JSX
+      `;
+      const result = await compileWithWebpack(code);
+      expect(result.output).toBeDefined();
+      // Linaria should be present/processed
+      expect(result.output).toContain('@linaria/react');
+      // JSX runtime present (dev or prod)
+      expect(
+        result.output.includes('react/jsx-runtime') ||
+          result.output.includes('react/jsx-dev-runtime'),
+      ).toBe(true);
+      // A few syntax artifacts should make it through transformed output without causing errors
+      expect(result.stats.hasErrors()).toBe(false);
+    });
+
     it('should work with JSX transform', async () => {
       const code = `
         import { styled } from '@linaria/react';
