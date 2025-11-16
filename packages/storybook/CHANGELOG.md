@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.2...@anansi/storybook@4.0.3) (2025-11-16)
+
+### 📦 Package
+
+* Support even beta versions of data-client 0.15 ([861c940](/github.com/ntucker/anansi/commit/861c94069ab1827ae47ce0f6be46f6bbddc53ca7))
+
 ## [4.0.2](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.1...@anansi/storybook@4.0.2) (2025-11-16)
 
 ### 💅 Enhancement

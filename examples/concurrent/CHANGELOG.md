@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.73](https://github.com/ntucker/anansi/compare/example-react-18@8.0.72...example-react-18@8.0.73) (2025-11-16)
+
+### 📦 Package
+
+* Upgrade data-client ([004fe88](https://github.com/ntucker/anansi/commit/004fe884c7f39da7b661091edb03714f0fe3c1bc))
+
+### 📝 Documentation
+
+* **demo:** Use react compiler ([bef3185](https://github.com/ntucker/anansi/commit/bef318501d080664a16c4b78f5a892baa41274b0))
+
 ## [8.0.72](https://github.com/ntucker/anansi/compare/example-react-18@8.0.71...example-react-18@8.0.72) (2025-11-16)
 
 **Note:** Version bump only for package example-react-18

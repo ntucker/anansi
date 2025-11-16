@@ -1,6 +1,6 @@
 {
   "name": "@anansi/babel-preset",
-  "version": "6.2.18",
+  "version": "6.2.19",
   "description": "Production ready babel (with TypeScript!)",
   "main": "index.js",
   "scripts": {

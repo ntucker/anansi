@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.19](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.18...@anansi/babel-preset@6.2.19) (2025-11-16)
+
+### 💅 Enhancement
+
+* Remove more extraneous transforms for linaria pass ([0406664](/github.com/ntucker/anansi/commit/040666467d96749652ead57faeb6ce04140becd8))
+
 ## [6.2.18](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.17...@anansi/babel-preset@6.2.18) (2025-11-15)
 
 **Note:** Version bump only for package @anansi/babel-preset

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.42](/github.com/ntucker/anansi/compare/@anansi/core@0.20.41...@anansi/core@0.20.42) (2025-11-16)
+
+### 📦 Package
+
+* Support even beta versions of data-client 0.15 ([861c940](/github.com/ntucker/anansi/commit/861c94069ab1827ae47ce0f6be46f6bbddc53ca7))
+* Upgrade data-client ([004fe88](/github.com/ntucker/anansi/commit/004fe884c7f39da7b661091edb03714f0fe3c1bc))
+
 ## [0.20.41](/github.com/ntucker/anansi/compare/@anansi/core@0.20.40...@anansi/core@0.20.41) (2025-11-16)
 
 ### 💅 Enhancement

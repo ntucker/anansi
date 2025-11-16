@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.27](https://github.com/ntucker/anansi/compare/example-linaria@9.0.26...example-linaria@9.0.27) (2025-11-16)
+
+### 📝 Documentation
+
+* **demo:** Use react compiler ([bef3185](https://github.com/ntucker/anansi/commit/bef318501d080664a16c4b78f5a892baa41274b0))
+
 ## [9.0.26](https://github.com/ntucker/anansi/compare/example-linaria@9.0.25...example-linaria@9.0.26) (2025-11-15)
 
 ### 📦 Package
