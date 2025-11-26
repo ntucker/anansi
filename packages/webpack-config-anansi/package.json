@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.26.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
     "@svgr/webpack": "^8.1.0",
     "@types/sass-loader": "^8.0.10",
     "@types/webpack-bundle-analyzer": "^4.7.0",
