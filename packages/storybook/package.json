@@ -58,9 +58,9 @@
   ],
   "dependencies": {
     "@babel/runtime-corejs3": "^7.26.0",
-    "@storybook/builder-webpack5": "^10.1.0",
-    "@storybook/preset-react-webpack": "^10.1.0",
-    "@storybook/react": "^10.1.0",
+    "@storybook/builder-webpack5": "^10.1.2",
+    "@storybook/preset-react-webpack": "^10.1.2",
+    "@storybook/react": "^10.1.2",
     "@types/node": "^24.10.1",
     "core-js-pure": "^3.40.0"
   },
