@@ -16,13 +16,11 @@ export const NODE_ALIAS = {
   process: require.resolve('process/browser.js'),
   querystring: require.resolve('querystring-es3/'),
   _stream_duplex: require.resolve('readable-stream/lib/_stream_duplex.js'),
-  _stream_passthrough: require.resolve(
-    'readable-stream/lib/_stream_passthrough.js',
-  ),
+  _stream_passthrough:
+    require.resolve('readable-stream/lib/_stream_passthrough.js'),
   _stream_readable: require.resolve('readable-stream/lib/_stream_readable.js'),
-  _stream_transform: require.resolve(
-    'readable-stream/lib/_stream_transform.js',
-  ),
+  _stream_transform:
+    require.resolve('readable-stream/lib/_stream_transform.js'),
   _stream_writable: require.resolve('readable-stream/lib/_stream_writable.js'),
   string_decoder: require.resolve('string_decoder/'),
   sys: require.resolve('util/util.js'),
