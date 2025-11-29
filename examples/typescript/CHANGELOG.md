@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.5](https://github.com/ntucker/anansi/compare/example-typescript@16.0.4...example-typescript@16.0.5) (2025-11-29)
+
+### 📦 Package
+
+* Update `@ant-design/cssinjs` to v2 ([#2886](https://github.com/ntucker/anansi/issues/2886)) ([91b6ad8](https://github.com/ntucker/anansi/commit/91b6ad84d42dccd1a4b689ec1cd710e0082cd746))
+* Update `antd` to v6 ([#2887](https://github.com/ntucker/anansi/issues/2887)) ([0d89143](https://github.com/ntucker/anansi/commit/0d89143ef93f19698e2db1187d696639ccb3eaf2))
+* Update storybook monorepo to v10.1.0 ([#2882](https://github.com/ntucker/anansi/issues/2882)) ([1b239aa](https://github.com/ntucker/anansi/commit/1b239aa7d1824b621b236a6814acdee5ab3c0fe6))
+* Update storybook monorepo to v10.1.2 ([#2885](https://github.com/ntucker/anansi/issues/2885)) ([c8f52d5](https://github.com/ntucker/anansi/commit/c8f52d5efa454d42269b1d445e2b63f41ae67fd4))
+* Update validation packages ([#2884](https://github.com/ntucker/anansi/issues/2884)) ([aa67942](https://github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
+
 ## [16.0.4](https://github.com/ntucker/anansi/compare/example-typescript@16.0.3...example-typescript@16.0.4) (2025-11-20)
 
 ### 📦 Package

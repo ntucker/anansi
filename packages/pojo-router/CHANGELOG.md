@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.11](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.10...@pojo-router/core@0.10.11) (2025-11-29)
+
+### 📦 Package
+
+* Update validation packages ([#2884](/github.com/ntucker/anansi/issues/2884)) ([aa67942](/github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
+
 ## [0.10.10](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.9...@pojo-router/core@0.10.10) (2025-10-02)
 
 ### 📦 Package

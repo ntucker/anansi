@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.44](/github.com/ntucker/anansi/compare/@anansi/core@0.20.43...@anansi/core@0.20.44) (2025-11-29)
+
+### 📦 Package
+
+* Update `@ant-design/cssinjs` to v2 ([#2886](/github.com/ntucker/anansi/issues/2886)) ([91b6ad8](/github.com/ntucker/anansi/commit/91b6ad84d42dccd1a4b689ec1cd710e0082cd746))
+
 ## [0.20.43](/github.com/ntucker/anansi/compare/@anansi/core@0.20.42...@anansi/core@0.20.43) (2025-11-20)
 
 ### 📦 Package

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.75](https://github.com/ntucker/anansi/compare/example-react-18@8.0.74...example-react-18@8.0.75) (2025-11-29)
+
+### 📦 Package
+
+* Update `@ant-design/cssinjs` to v2 ([#2886](https://github.com/ntucker/anansi/issues/2886)) ([91b6ad8](https://github.com/ntucker/anansi/commit/91b6ad84d42dccd1a4b689ec1cd710e0082cd746))
+* Update `antd` to v6 ([#2887](https://github.com/ntucker/anansi/issues/2887)) ([0d89143](https://github.com/ntucker/anansi/commit/0d89143ef93f19698e2db1187d696639ccb3eaf2))
+* Update validation packages ([#2884](https://github.com/ntucker/anansi/issues/2884)) ([aa67942](https://github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
+
 ## [8.0.74](https://github.com/ntucker/anansi/compare/example-react-18@8.0.73...example-react-18@8.0.74) (2025-11-20)
 
 ### 📦 Package

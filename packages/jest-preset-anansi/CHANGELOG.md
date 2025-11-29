@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.27](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.26...@anansi/jest-preset@0.11.27) (2025-11-29)
+
+### 📦 Package
+
+* Update validation packages ([#2884](/github.com/ntucker/anansi/issues/2884)) ([aa67942](/github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
+
 ## [0.11.26](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.25...@anansi/jest-preset@0.11.26) (2025-10-14)
 
 ### 📦 Package
