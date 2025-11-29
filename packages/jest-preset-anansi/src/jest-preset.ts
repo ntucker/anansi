@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import type * as _babel from '@babel/core';
 
 const { readTsConfig } = require('@anansi/ts-utils');
@@ -32,9 +31,8 @@ module.exports = {
   default: {
     setupFiles: [require.resolve('./scripts/testSetup.js')],
     transform: {
-      '^.+\\.worker.(m|c)?[t|j]s$': require.resolve(
-        './transformers/worker-loader',
-      ),
+      '^.+\\.worker.(m|c)?[t|j]s$':
+        require.resolve('./transformers/worker-loader'),
       '^.+\\.(m|c)?(tsx?|html)$': [
         require.resolve('ts-jest'),
         /**
