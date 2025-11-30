@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.0](/github.com/ntucker/anansi/compare/@anansi/core@0.20.44...@anansi/core@0.21.0) (2025-11-30)
+
+### 🚀 Features
+
+* Add navigatorSpout ([e847ab3](/github.com/ntucker/anansi/commit/e847ab3aa7cb31a495a7f9f64faf0b6dc60da353))
+* antd client spout ([d756ed2](/github.com/ntucker/anansi/commit/d756ed2568d9a216350224859ccb856b726ee3d4))
+
+### 💅 Enhancement
+
+* Preload lazy pages ([5ad047a](/github.com/ntucker/anansi/commit/5ad047ad46c39a748540852322fb82b10d411486))
+
 ## [0.20.44](/github.com/ntucker/anansi/compare/@anansi/core@0.20.43...@anansi/core@0.20.44) (2025-11-29)
 
 ### 📦 Package

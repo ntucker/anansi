@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.0](https://github.com/ntucker/anansi/compare/example-react-18@8.0.75...example-react-18@8.1.0) (2025-11-30)
+
+### 🚀 Features
+
+* Add navigatorSpout ([e847ab3](https://github.com/ntucker/anansi/commit/e847ab3aa7cb31a495a7f9f64faf0b6dc60da353))
+* antd client spout ([d756ed2](https://github.com/ntucker/anansi/commit/d756ed2568d9a216350224859ccb856b726ee3d4))
+
+### 📦 Package
+
+* Update `prettier` to v3.7.3 ([#2888](https://github.com/ntucker/anansi/issues/2888)) ([85be68e](https://github.com/ntucker/anansi/commit/85be68efba67e1ed21d830d4e434a0a76c706a8a))
+
 ## [8.0.75](https://github.com/ntucker/anansi/compare/example-react-18@8.0.74...example-react-18@8.0.75) (2025-11-29)
 
 ### 📦 Package

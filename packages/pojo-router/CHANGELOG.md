@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.12](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.11...@pojo-router/core@0.10.12) (2025-11-30)
+
+### 💅 Enhancement
+
+* Router robust against multi-module ([06afd76](/github.com/ntucker/anansi/commit/06afd764e4183d838af371713f683c2b163d951a))
+
 ## [0.10.11](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.10...@pojo-router/core@0.10.11) (2025-11-29)
 
 ### 📦 Package
