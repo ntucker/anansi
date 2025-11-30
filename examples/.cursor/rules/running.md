@@ -1,0 +1,19 @@
+## Running dev mode
+
+Start the development server from the `examples/concurrent` directory:
+
+```bash
+cd examples/concurrent && yarn start
+```
+
+Or from the repo root:
+
+```bash
+yarn workspace concurrent run start
+```
+
+## Dependencies on Packages
+
+This example depends on packages in `packages/*`. If you modify a package, rebuild it first before testing here.
+
+When doing this, don't use the cache via `WEBPACK_CACHE=none` env
