@@ -4,5 +4,8 @@ export { default as dataClientSpout } from './spouts/dataClient.js';
 export { default as routerSpout } from './spouts/router.js';
 export { default as JSONSpout } from './spouts/json.js';
 export { default as appSpout } from './spouts/app.js';
+export { default as navigatorSpout } from './spouts/navigator.js';
+export { useNavigator } from './spouts/navigator.context.js';
+export type { NavigatorProperties } from './spouts/navigator.context.js';
 export type { ServerProps } from './spouts/types.js';
 export type { ClientSpout as Spout } from './spouts/types.js';

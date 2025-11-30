@@ -5,6 +5,7 @@ import {
   routerSpout,
   JSONSpout,
   appSpout,
+  navigatorSpout,
 } from '@anansi/core';
 import { useController } from '@data-client/react';
 
@@ -14,11 +15,13 @@ import { createRouter } from './routing';
 
 const spouts = documentSpout({ title: 'anansi' })(
   JSONSpout()(
-    dataClientSpout()(
-      routerSpout({
-        useResolveWith: useController,
-        createRouter,
-      })(appSpout(app)),
+    navigatorSpout()(
+      dataClientSpout()(
+        routerSpout({
+          useResolveWith: useController,
+          createRouter,
+        })(appSpout(app)),
+      ),
     ),
   ),
 );
