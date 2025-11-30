@@ -25,6 +25,10 @@ export default function prefetchSpout<F extends string>(field: F) {
       try {
         const toFetch: Promise<unknown>[] = [];
         nextProps.matchedRoutes.forEach(route => {
+          // Preload lazy component so it's ready for SSR render
+          if (typeof route.component?.preload === 'function') {
+            toFetch.push(route.component.preload());
+          }
           if (typeof route.resolveData === 'function') {
             toFetch.push(
               route.resolveData(
