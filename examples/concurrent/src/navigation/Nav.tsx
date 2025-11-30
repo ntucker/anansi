@@ -20,20 +20,22 @@ const { Sider } = Layout;
 
 const openKeys = ['users'];
 
+type MenuItem = NonNullable<MenuProps['items']>[number];
+
 function getItem(
   label: React.ReactNode,
   key: React.Key,
   icon?: React.ReactNode,
-  children?: MenuProps['items'],
+  children?: MenuItem[],
   type?: 'group',
-) {
+): MenuItem {
   return {
     key,
     icon,
-    children,
     label,
     type,
-  };
+    ...(children && { children }),
+  } as MenuItem;
 }
 
 function Nav({
@@ -60,7 +62,7 @@ function Nav({
           </Link>
         ),
         key: friend.pk(),
-      })),
+      })) as MenuItem[],
     ),
 
     getItem(

@@ -5,6 +5,7 @@ export { default as routerSpout } from './spouts/router.js';
 export { default as JSONSpout } from './spouts/json.js';
 export { default as appSpout } from './spouts/app.js';
 export { default as navigatorSpout } from './spouts/navigator.js';
+export { default as antdSpout } from './spouts/antd.js';
 export { useNavigator } from './spouts/navigator.context.js';
 export type { NavigatorProperties } from './spouts/navigator.context.js';
 export type { ServerProps } from './spouts/types.js';

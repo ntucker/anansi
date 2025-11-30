@@ -18,11 +18,6 @@ export default function antdSpout(): ServerSpout<
       /* webpackIgnore: true */ '@ant-design/cssinjs'
     );
     const cache = createCache();
-
-    const nextProps = await next(props);
-
-    const scripts: React.ReactNode[] = nextProps.scripts ?? [];
-
     const AntdSheets = (): JSX.Element => {
       return (
         <script
@@ -32,6 +27,11 @@ export default function antdSpout(): ServerSpout<
         />
       );
     };
+
+    const nextProps = await next(props);
+
+    const scripts: React.ReactNode[] = nextProps.scripts ?? [];
+
     // unfortunately we have to inject this after the entire content has streamed in or it doesn't correctly populate
     // see: https://github.com/ant-design/cssinjs/issues/79
     scripts.push(<AntdSheets key="antd-sheets" />);
