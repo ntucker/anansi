@@ -125,7 +125,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.21.0, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.21.0, @anansi/core@npm:^0.21.1, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -12488,7 +12488,7 @@ __metadata:
     "@anansi/babel-preset": "npm:^6.2.19"
     "@anansi/browserslist-config": "npm:^1.7.3"
     "@anansi/cli": "npm:^3.1.89"
-    "@anansi/core": "npm:^0.21.0"
+    "@anansi/core": "npm:^0.21.1"
     "@anansi/eslint-plugin": "npm:^1.0.58"
     "@anansi/jest-preset": "npm:^0.11.27"
     "@anansi/router": "npm:^0.10.19"

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.1](/github.com/ntucker/anansi/compare/@anansi/core@0.21.0...@anansi/core@0.21.1) (2025-12-01)
+
+### 💅 Enhancement
+
+* More gracefully handle all error cases to not crash and instead return error codes to client ([3efe938](/github.com/ntucker/anansi/commit/3efe9388ac7df29a4b6559617e385cce10434bfa))
+
 ## [0.21.0](/github.com/ntucker/anansi/compare/@anansi/core@0.20.44...@anansi/core@0.21.0) (2025-11-30)
 
 ### 🚀 Features
