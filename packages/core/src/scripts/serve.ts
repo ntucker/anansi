@@ -10,12 +10,12 @@ import diskFs from 'fs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import ora from 'ora';
 import path from 'path';
-import { promisify } from 'util';
 import webpack from 'webpack';
 
 import 'cross-fetch/dist/node-polyfill.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
+import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { Render } from './types.js';
 
 // run directly from node
@@ -45,7 +45,6 @@ export default async function serve(
     webpackConfig({}, { mode: 'production' }),
   );
 
-  const readFile = promisify(diskFs.readFile);
   let server: Server | undefined;
 
   function handleErrors<
@@ -57,12 +56,25 @@ export default async function serve(
     return async function (
       req: Request | IncomingMessage,
       res: Response | ServerResponse,
-      next: NextFunction,
+      _next: NextFunction,
     ) {
       try {
         return await fn(req, res);
-      } catch (x) {
-        next(x);
+      } catch (error: unknown) {
+        console.error('SSR rendering error:', error);
+
+        // Return error response with status from error if available
+        const expressRes = res as express.Response;
+        if (!expressRes.headersSent) {
+          const statusCode = getErrorStatus(error);
+          expressRes.status(statusCode);
+          expressRes.setHeader('Content-Type', 'text/html');
+          expressRes.send(
+            renderErrorPage(error, req.url ?? '/', statusCode, {
+              showStack: process.env.NODE_ENV !== 'production',
+            }),
+          );
+        }
       }
     };
   }
@@ -104,7 +116,7 @@ export default async function serve(
           ) {
             try {
               res.sendFile(assetPath);
-            } catch (e) {
+            } catch (_e) {
               return next();
             }
           } else {

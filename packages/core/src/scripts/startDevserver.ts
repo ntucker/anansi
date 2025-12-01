@@ -20,6 +20,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import 'cross-fetch/dist/node-polyfill.js';
 import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
+import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { BoundRender } from './types.js';
 
 // run directly from node
@@ -117,12 +118,27 @@ export default async function startDevServer(
     return async function (
       req: Request | IncomingMessage,
       res: Response | ServerResponse,
-      next: NextFunction,
+      _next: NextFunction,
     ) {
       try {
         return await fn(req, res);
-      } catch (x) {
-        next(x);
+      } catch (error: unknown) {
+        log.error('SSR rendering error:', error);
+
+        // Return error response with status from error if available
+        const expressRes = res as any;
+        if (!expressRes.headersSent) {
+          const statusCode = getErrorStatus(error);
+          expressRes.status(statusCode);
+          expressRes.setHeader('Content-Type', 'text/html');
+          expressRes.send(
+            renderErrorPage(error, req.url ?? '/', statusCode, {
+              showStack: true,
+              badge: 'DEV MODE',
+              hint: 'The dev server is still running. Fix the error and retry, or check the console for more details.',
+            }),
+          );
+        }
       }
     };
   }

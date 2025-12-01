@@ -2,6 +2,7 @@ import crypto from 'crypto';
 import type { JSX } from 'react';
 import { renderToPipeableStream as reactRender } from 'react-dom/server';
 
+import { getErrorStatus } from './scripts/ssrErrorHandler.js';
 import type { Render } from './scripts/types.js';
 import type { ServerProps } from './spouts/types.js';
 
@@ -21,25 +22,28 @@ export default function laySpouts(
       const { app } = await spouts({ clientManifest, req, res, nonce });
 
       let didError = false;
+      let lastError: unknown;
       const { pipe, abort } = reactRender(app, {
         nonce,
         //bootstrapScripts: assets.filter(asset => asset.endsWith('.js')),
         onShellReady() {
           //managers.forEach(manager => manager.cleanup());
           // If something errored before we started streaming, we set the error code appropriately.
-          res.statusCode = didError ? 500 : 200;
+          res.statusCode = didError ? getErrorStatus(lastError) : 200;
           res.setHeader('Content-type', 'text/html');
           pipe(res);
         },
-        onShellError() {
+        onShellError(e: unknown) {
           didError = true;
-          res.statusCode = 500;
+          lastError = e;
+          res.statusCode = getErrorStatus(e);
           pipe(res);
         },
-        onError(e: any) {
+        onError(e: unknown) {
           didError = true;
+          lastError = e;
           console.error(e);
-          res.statusCode = 500;
+          res.statusCode = getErrorStatus(e);
           //pipe(res); Removing this avoids, "React currently only supports piping to one writable stream."
           if (onError) onError(e);
         },
