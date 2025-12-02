@@ -1,4 +1,7 @@
-# Package Development Workflow
+---
+description: Package Development Workflow
+alwaysApply: false
+---
 
 When modifying files in `packages/*`:
 

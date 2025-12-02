@@ -1,4 +1,6 @@
-# Anansi Project Rules
+---
+alwaysApply: true
+---
 
 ## Package Manager
 - Use `yarn` for all package management tasks (install, add, remove, etc.)

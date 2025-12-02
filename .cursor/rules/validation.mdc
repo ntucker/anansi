@@ -1,4 +1,7 @@
-# Validation Strategies for `packages/*`
+---
+description: Validation Strategies for `packages/*`
+alwaysApply: false
+---
 
 Run all commands from `/home/ntucker/src/anansi` using Yarn (`yarn@4.10.3`). Prefer workspace-specific scripts so validation stays scoped to the package you are touching.
 

@@ -1,3 +1,6 @@
+---
+alwaysApply: true
+---
 ## Running dev mode
 
 Start the development server from the `examples/concurrent` directory:
