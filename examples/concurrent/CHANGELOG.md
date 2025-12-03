@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.2](https://github.com/ntucker/anansi/compare/example-react-18@8.1.1...example-react-18@8.1.2) (2025-12-03)
+
+### 📦 Package
+
+* Update `core-js` to v3.47.0 ([#2894](https://github.com/ntucker/anansi/issues/2894)) ([a8d26ce](https://github.com/ntucker/anansi/commit/a8d26ce8ce8d2297a8635a3cbdd0626416d0cfef))
+* Update all non-major dependencies ([#2889](https://github.com/ntucker/anansi/issues/2889)) ([9251533](https://github.com/ntucker/anansi/commit/9251533500612c62e99a8b012399ff0dd55c9ca3))
+
 ## [8.1.1](https://github.com/ntucker/anansi/compare/example-react-18@8.1.0...example-react-18@8.1.1) (2025-12-01)
 
 **Note:** Version bump only for package example-react-18
