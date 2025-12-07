@@ -42,7 +42,6 @@
         "import": "./lib/index.server.js"
       },
       "types": "./lib/index.d.ts",
-      "require": "./dist/client.js",
       "default": "./lib/index.js"
     },
     "./server": {

@@ -27,12 +27,6 @@ module.exports = (env, argv) => {
         type: 'commonjs2',
       },
     },
-    client: {
-      import: './src/index.js',
-      library: {
-        type: 'commonjs2',
-      },
-    },
   };
   config.externals = [
     nodeExternals({
