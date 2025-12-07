@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.7](https://github.com/ntucker/anansi/compare/example-typescript@16.0.6...example-typescript@16.0.7) (2025-12-07)
+
+### 📦 Package
+
+* Update react to v19.2.1 ([#2897](https://github.com/ntucker/anansi/issues/2897)) ([7a85622](https://github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
+* Update storybook monorepo to v10.1.4 ([#2896](https://github.com/ntucker/anansi/issues/2896)) ([68e99e0](https://github.com/ntucker/anansi/commit/68e99e09b9e63d71742e76b8eca13fa8499c94ea))
+* Update validation packages ([#2898](https://github.com/ntucker/anansi/issues/2898)) ([1d66fe7](https://github.com/ntucker/anansi/commit/1d66fe7f966fa57c364e5dfb6f8bba8c4dfc9c61))
+
 ## [16.0.6](https://github.com/ntucker/anansi/compare/example-typescript@16.0.5...example-typescript@16.0.6) (2025-12-03)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.31](https://github.com/ntucker/anansi/compare/example-linaria@9.0.30...example-linaria@9.0.31) (2025-12-07)
+
+### 📦 Package
+
+* Update react to v19.2.1 ([#2897](https://github.com/ntucker/anansi/issues/2897)) ([7a85622](https://github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
+
 ## [9.0.30](https://github.com/ntucker/anansi/compare/example-linaria@9.0.29...example-linaria@9.0.30) (2025-12-03)
 
 ### 📦 Package

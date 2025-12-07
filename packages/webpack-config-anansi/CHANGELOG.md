@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.4](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.3...@anansi/webpack-config@21.1.4) (2025-12-07)
+
+### 📦 Package
+
+* Update webpack packages ([#2899](/github.com/ntucker/anansi/issues/2899)) ([57ae468](/github.com/ntucker/anansi/commit/57ae468f1dcb7ace0a7e7668c24aa574a725d01f))
+* Yarn warnings about transitive deps ([6dc69af](/github.com/ntucker/anansi/commit/6dc69af79814340e7a286787238e16bcae274d12))
+
 ## [21.1.3](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.2...@anansi/webpack-config@21.1.3) (2025-11-29)
 
 ### 📦 Package

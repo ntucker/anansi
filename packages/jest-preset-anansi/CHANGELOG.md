@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.29](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.28...@anansi/jest-preset@0.11.29) (2025-12-07)
+
+### 📦 Package
+
+* Yarn warnings about transitive deps ([6dc69af](/github.com/ntucker/anansi/commit/6dc69af79814340e7a286787238e16bcae274d12))
+
 ## [0.11.28](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.27...@anansi/jest-preset@0.11.28) (2025-12-03)
 
 ### 📦 Package

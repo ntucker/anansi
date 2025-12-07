@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.3](/github.com/ntucker/anansi/compare/@anansi/core@0.21.2...@anansi/core@0.21.3) (2025-12-07)
+
+### 💅 Enhancement
+
+* ESM-only for non-node ([f6fb13b](/github.com/ntucker/anansi/commit/f6fb13b6486f4efe19fa0086cdfdbf01422018e2))
+
+### 📦 Package
+
+* Update react to v19.2.1 ([#2897](/github.com/ntucker/anansi/issues/2897)) ([7a85622](/github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
+
 ## [0.21.2](/github.com/ntucker/anansi/compare/@anansi/core@0.21.1...@anansi/core@0.21.2) (2025-12-03)
 
 ### 📦 Package

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.9](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.8...@anansi/ts-utils@0.3.9) (2025-12-07)
+
+### 📦 Package
+
+* Yarn warnings about transitive deps ([6dc69af](/github.com/ntucker/anansi/commit/6dc69af79814340e7a286787238e16bcae274d12))
+
 ## [0.3.8](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.7...@anansi/ts-utils@0.3.8) (2025-06-26)
 
 ### 📦 Package

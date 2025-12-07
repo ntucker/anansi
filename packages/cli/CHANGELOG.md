@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.91](/github.com/ntucker/anansi/compare/@anansi/cli@3.1.90...@anansi/cli@3.1.91) (2025-12-07)
+
+### 📦 Package
+
+* Support 0.21 of @anansi/core ([e7cb8df](/github.com/ntucker/anansi/commit/e7cb8df4ddd43134bc91050217aa732f8615492e))
+
 ## [3.1.90](/github.com/ntucker/anansi/compare/@anansi/cli@3.1.89...@anansi/cli@3.1.90) (2025-12-03)
 
 ### 📦 Package
