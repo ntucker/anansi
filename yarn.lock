@@ -153,8 +153,8 @@ __metadata:
     http-proxy-middleware: "npm:^3.0.5"
     memfs: "npm:^3.5.3"
     ora: "npm:^6.3.1"
-    react: "npm:19.2.1"
-    react-dom: "npm:19.2.1"
+    react: "npm:19.2.2"
+    react-dom: "npm:19.2.2"
     source-map-support: "npm:^0.5.21"
     tmp: "npm:^0.2.5"
     unionfs: "npm:^4.6.0"
@@ -303,7 +303,7 @@ __metadata:
     core-js-pure: "npm:^3.40.0"
     history: "npm:^5.3.0"
     nano-memoize: "npm:^3.0.16"
-    react: "npm:19.2.1"
+    react: "npm:19.2.2"
   peerDependencies:
     "@types/react": "*"
     react: ^18.0.0 || ^19.0.0-0
@@ -5300,7 +5300,7 @@ __metadata:
     core-js-pure: "npm:^3.40.0"
     history: "npm:5.3.0"
     path-to-regexp: "npm:^6.3.0"
-    react: "npm:19.2.1"
+    react: "npm:19.2.2"
   peerDependencies:
     "@types/react": "*"
     react: ^16.8.2 || ^17.0.0 || ^18.0.0 || ^19.0.0-0
@@ -12476,8 +12476,8 @@ __metadata:
     core-js: "npm:3.47.0"
     eslint: "npm:^9.0.0"
     prettier: "npm:^3.0.0"
-    react: "npm:19.2.1"
-    react-dom: "npm:19.2.1"
+    react: "npm:19.2.2"
+    react-dom: "npm:19.2.2"
     react-refresh: "npm:0.18.0"
     serve: "npm:14.2.5"
     webpack: "npm:5.103.0"
@@ -12526,8 +12526,8 @@ __metadata:
     history: "npm:5.3.0"
     jest: "npm:30.2.0"
     prettier: "npm:3.7.4"
-    react: "npm:19.2.1"
-    react-dom: "npm:19.2.1"
+    react: "npm:19.2.2"
+    react-dom: "npm:19.2.2"
     react-refresh: "npm:0.18.0"
     typescript: "npm:5.9.3"
     webpack: "npm:5.103.0"
@@ -12581,8 +12581,8 @@ __metadata:
     lodash: "npm:4.17.21"
     parse-link-header: "npm:2.0.0"
     prettier: "npm:^3.0.0"
-    react: "npm:19.2.1"
-    react-dom: "npm:19.2.1"
+    react: "npm:19.2.2"
+    react-dom: "npm:19.2.2"
     react-refresh: "npm:0.18.0"
     react-router-dom: "npm:5.3.4"
     sass-embedded: "npm:^1.77.8"
@@ -20016,14 +20016,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.2.1":
-  version: 19.2.1
-  resolution: "react-dom@npm:19.2.1"
+"react-dom@npm:19.2.2":
+  version: 19.2.2
+  resolution: "react-dom@npm:19.2.2"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.1
-  checksum: 10c0/e56b6b3d72314df580ca800b70a69a21c6372703c8f45d9b5451ca6519faefb2496d76ffa9c5adb94136d2bbf2fd303d0dfc208a2cd77ede3132877471af9470
+    react: ^19.2.2
+  checksum: 10c0/392c0ab526b5eba3938c2ed435c6daaed055ebc367398b3bfe424fa5c1667be843c012a44edbeb35187794e441bfed3ba8206e4a060d8b4641f3eac9bda23cd1
   languageName: node
   linkType: hard
 
@@ -20129,10 +20129,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.2.1":
-  version: 19.2.1
-  resolution: "react@npm:19.2.1"
-  checksum: 10c0/2b5eaf407abb3db84090434c20d6c5a8e447ab7abcd8fe9eaf1ddc299babcf31284ee9db7ea5671d21c85ac5298bd632fa1a7da1ed78d5b368a537f5e1cd5d62
+"react@npm:19.2.2":
+  version: 19.2.2
+  resolution: "react@npm:19.2.2"
+  checksum: 10c0/cf64766e3c7d885aadbf4372c28ecc81627dc33155bd1fdf4a150b2590c859bab38e2eb0ad5a1956d0a3c38e5b1d4b6e4c6598da5d8f640dc237f892a6a66546
   languageName: node
   linkType: hard
 
@@ -20737,8 +20737,8 @@ __metadata:
     jest: "npm:^30.0.0"
     lint-staged: "npm:16.2.7"
     prettier: "npm:3.7.4"
-    react: "npm:19.2.1"
-    react-dom: "npm:19.2.1"
+    react: "npm:19.2.2"
+    react-dom: "npm:19.2.2"
     rimraf: "npm:^6.0.0"
     start-server-and-test: "npm:^2.0.0"
     typescript: "npm:5.9.3"
