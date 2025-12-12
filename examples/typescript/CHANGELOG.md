@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.8](https://github.com/ntucker/anansi/compare/example-typescript@16.0.7...example-typescript@16.0.8) (2025-12-12)
+
+### 📦 Package
+
+* Update `eslint-plugin-storybook` to v10.1.7 ([#2907](https://github.com/ntucker/anansi/issues/2907)) ([2cf3c85](https://github.com/ntucker/anansi/commit/2cf3c850fc1e730146d1e7101d67bd355088ce93))
+* Update all non-major dependencies ([#2905](https://github.com/ntucker/anansi/issues/2905)) ([37da53b](https://github.com/ntucker/anansi/commit/37da53b07ae6b72e1dc183b0a02703afc4eefa05))
+* Update react to v19.2.2 ([#2904](https://github.com/ntucker/anansi/issues/2904)) ([bd60070](https://github.com/ntucker/anansi/commit/bd6007031129a628ecef29a8850a06ca88015663))
+* Update react to v19.2.3 ([#2906](https://github.com/ntucker/anansi/issues/2906)) ([d8ca016](https://github.com/ntucker/anansi/commit/d8ca01691c059e1add5791dfd9bf04785406c5d0))
+* Update storybook monorepo to v10.1.6 ([#2901](https://github.com/ntucker/anansi/issues/2901)) ([a4af72f](https://github.com/ntucker/anansi/commit/a4af72f6143d42db201d489b68e98a0b1abc7fc8))
+* Update storybook monorepo to v10.1.7 ([#2903](https://github.com/ntucker/anansi/issues/2903)) ([31df244](https://github.com/ntucker/anansi/commit/31df244de230b52579448f050f629e4228e33427))
+* Update validation packages ([#2900](https://github.com/ntucker/anansi/issues/2900)) ([e5f9fdc](https://github.com/ntucker/anansi/commit/e5f9fdcd04ba6378a22f17c8b007bb7c5eea8c6b))
+
 ## [16.0.7](https://github.com/ntucker/anansi/compare/example-typescript@16.0.6...example-typescript@16.0.7) (2025-12-07)
 
 ### 📦 Package
