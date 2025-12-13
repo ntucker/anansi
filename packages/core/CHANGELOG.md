@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.5](/github.com/ntucker/anansi/compare/@anansi/core@0.21.4...@anansi/core@0.21.5) (2025-12-13)
+
+### 🐛 Bug Fix
+
+* Do not require @ant-design/cssinjs ([15c11ae](/github.com/ntucker/anansi/commit/15c11aec7ac7191092685410cda257f11e451b70))
+
 ## [0.21.4](/github.com/ntucker/anansi/compare/@anansi/core@0.21.3...@anansi/core@0.21.4) (2025-12-12)
 
 ### 📦 Package
