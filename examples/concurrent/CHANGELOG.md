@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/ntucker/anansi/compare/example-react-18@8.1.5...example-react-18@9.0.0) (2025-12-14)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* // Client
+import {antdSpout} from '@anansi/core/antd';
+
+// Server
+import {antdSpout} from '@anansi/core/antd/server';
+
+* Move antd spouts to own path '@anansi/core/antd' ([11b7b6b](https://github.com/ntucker/anansi/commit/11b7b6bd19046911e2ebe694f4ba8920860ea253))
+
 ## [8.1.5](https://github.com/ntucker/anansi/compare/example-react-18@8.1.4...example-react-18@8.1.5) (2025-12-13)
 
 ### 📦 Package

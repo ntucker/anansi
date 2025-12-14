@@ -101,11 +101,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/cli@npm:^3.1.93, @anansi/cli@workspace:packages/cli":
+"@anansi/cli@npm:^3.1.94, @anansi/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@anansi/cli@workspace:packages/cli"
   dependencies:
-    "@anansi/core": "npm:^0.21.5"
+    "@anansi/core": "npm:^0.22.0"
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^24.0.0"
     binary-version-check: "npm:^6.1.0"
@@ -125,7 +125,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.21.5, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:^0.22.0, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -12534,8 +12534,8 @@ __metadata:
   dependencies:
     "@anansi/babel-preset": "npm:^6.2.20"
     "@anansi/browserslist-config": "npm:^1.7.3"
-    "@anansi/cli": "npm:^3.1.93"
-    "@anansi/core": "npm:^0.21.5"
+    "@anansi/cli": "npm:^3.1.94"
+    "@anansi/core": "npm:^0.22.0"
     "@anansi/eslint-plugin": "npm:^1.0.61"
     "@anansi/jest-preset": "npm:^0.11.29"
     "@anansi/router": "npm:^0.10.21"

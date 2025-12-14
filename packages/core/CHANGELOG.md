@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.0](/github.com/ntucker/anansi/compare/@anansi/core@0.21.5...@anansi/core@0.22.0) (2025-12-14)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* // Client
+import {antdSpout} from '@anansi/core/antd';
+
+// Server
+import {antdSpout} from '@anansi/core/antd/server';
+
+* Move antd spouts to own path '@anansi/core/antd' ([11b7b6b](/github.com/ntucker/anansi/commit/11b7b6bd19046911e2ebe694f4ba8920860ea253))
+
 ## [0.21.5](/github.com/ntucker/anansi/compare/@anansi/core@0.21.4...@anansi/core@0.21.5) (2025-12-13)
 
 ### 🐛 Bug Fix
