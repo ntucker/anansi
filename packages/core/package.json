@@ -53,6 +53,18 @@
       "types": "./lib/scripts/index.d.ts",
       "default": "./lib/scripts/index.js"
     },
+    "./antd": {
+      "node": {
+        "types": "./lib/spouts/antd.server.d.ts",
+        "import": "./lib/spouts/antd.server.js"
+      },
+      "types": "./lib/spouts/antd.d.ts",
+      "default": "./lib/spouts/antd.js"
+    },
+    "./antd/server": {
+      "types": "./lib/spouts/antd.server.d.ts",
+      "default": "./lib/spouts/antd.server.js"
+    },
     "./package.json": "./package.json"
   },
   "keywords": [

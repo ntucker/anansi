@@ -1,7 +1,6 @@
 export { default as laySpouts } from './laySpouts.js';
 export { default as documentSpout } from './spouts/document.server.js';
 export { default as dataClientSpout } from './spouts/dataClient.server.js';
-export { default as antdSpout } from './spouts/antd.server.js';
 export { default as routerSpout } from './spouts/router.server.js';
 export { default as prefetchSpout } from './spouts/prefetch.server.js';
 export { default as JSONSpout } from './spouts/json.server.js';

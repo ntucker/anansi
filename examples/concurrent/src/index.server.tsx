@@ -1,3 +1,4 @@
+import { antdSpout } from '@anansi/core/antd/server';
 import {
   laySpouts,
   documentSpout,
@@ -6,7 +7,6 @@ import {
   routerSpout,
   JSONSpout,
   appSpout,
-  antdSpout,
   navigatorSpout,
 } from '@anansi/core/server';
 import { useController } from '@data-client/react';

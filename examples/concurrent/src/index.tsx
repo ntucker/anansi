@@ -6,8 +6,8 @@ import {
   JSONSpout,
   appSpout,
   navigatorSpout,
-  antdSpout,
 } from '@anansi/core';
+import { antdSpout } from '@anansi/core/antd';
 import { useController } from '@data-client/react';
 
 import app from '@/app';

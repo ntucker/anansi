@@ -8,7 +8,7 @@ type NeededNext = {
   extraStyle?: React.ReactNode[];
 };
 
-export default function antdSpout(): ServerSpout<
+export function antdSpout(): ServerSpout<
   Record<string, unknown>,
   Record<string, unknown>,
   NeededNext

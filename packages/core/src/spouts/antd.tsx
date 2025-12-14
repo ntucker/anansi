@@ -1,10 +1,9 @@
+import { createCache, StyleProvider } from '@ant-design/cssinjs';
+
 import type { ClientSpout } from './types.js';
 
-export default function antdSpout(): ClientSpout {
+export function antdSpout(): ClientSpout {
   return next => async props => {
-    const { createCache, StyleProvider } = await import(
-      /* webpackIgnore: true */ '@ant-design/cssinjs'
-    );
     const cache = createCache();
 
     const nextProps = await next(props);
