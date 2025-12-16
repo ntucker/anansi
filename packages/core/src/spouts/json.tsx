@@ -32,5 +32,12 @@ function getDataFromEl(el: HTMLScriptElement, key: string) {
       `#${key} is completely empty. This could be due to CSP issues.`,
     );
   }
-  return el?.text ? JSON.parse(el?.text) : undefined;
+  if (!el?.text) return undefined;
+  try {
+    return JSON.parse(el.text);
+  } catch (error) {
+    console.error(`Failed to parse JSON for #${key}:`, error);
+    console.error('Text content:', el.text);
+    return undefined;
+  }
 }

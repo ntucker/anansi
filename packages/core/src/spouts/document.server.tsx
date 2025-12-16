@@ -3,7 +3,7 @@ import { Request } from 'express';
 import React from 'react';
 import { StatsChunkGroup } from 'webpack';
 
-import { buildPolicy, joinNonce, Policy } from './csp.js';
+import { buildPolicy, joinNonce, type CSPolicy } from './csp.js';
 import Document from './DocumentComponent.js';
 import type { ServerSpout } from './types.js';
 
@@ -14,13 +14,15 @@ type NeededNext = {
   extraStyle?: React.ReactNode[];
 };
 
+export { type CSPolicy };
+
 export default function DocumentSpout(options: {
   head?: React.ReactNode;
   title: string;
   lang?: string;
   rootId?: string;
   charSet?: string;
-  csPolicy?: Policy;
+  csPolicy?: CSPolicy;
 }): ServerSpout<Record<string, unknown>, Record<string, unknown>, NeededNext> {
   return next => async props => {
     const nextProps = await next(props);

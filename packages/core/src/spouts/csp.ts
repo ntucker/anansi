@@ -1,9 +1,9 @@
-export interface Policy {
+export interface CSPolicy {
   [directive: string]: string | string[];
 }
 
 // TODO: memoize this
-export function buildPolicy(policyObj: Policy) {
+export function buildPolicy(policyObj: CSPolicy) {
   return Object.keys(policyObj)
     .map(key => {
       const val =
@@ -25,7 +25,7 @@ export function buildPolicy(policyObj: Policy) {
     .join('; ');
 }
 
-export function joinNonce(policyObj: Policy, nonce?: string | undefined) {
+export function joinNonce(policyObj: CSPolicy, nonce?: string | undefined) {
   if (!nonce) return policyObj;
   const policy = {
     ...policyObj,
