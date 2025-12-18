@@ -12258,15 +12258,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.1.9":
-  version: 10.1.9
-  resolution: "eslint-plugin-storybook@npm:10.1.9"
+"eslint-plugin-storybook@npm:10.1.10":
+  version: 10.1.10
+  resolution: "eslint-plugin-storybook@npm:10.1.10"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.8.1"
   peerDependencies:
     eslint: ">=8"
-    storybook: ^10.1.9
-  checksum: 10c0/9acea59ea3efbf20086b9610d81aa4515f3db00a0ec585668009ed7138716424185a7c369d1d4c3654729ab34fcd78cba16c20619c774521a1e69bd3f8edf7e7
+    storybook: ^10.1.10
+  checksum: 10c0/7c891a849481e68fec354752f00c69b94c689c6b382671c48fb539cb086a626273be668b0fb7ceceb170a4b0f5dcb38a57d6cd093f349c1ff6f5ba2565fae765
   languageName: node
   linkType: hard
 
@@ -12619,7 +12619,7 @@ __metadata:
     classnames: "npm:2.5.1"
     core-js: "npm:3.47.0"
     eslint: "npm:^9.0.0"
-    eslint-plugin-storybook: "npm:10.1.9"
+    eslint-plugin-storybook: "npm:10.1.10"
     history: "npm:^5.3.0"
     jest: "npm:30.2.0"
     jest-environment-jsdom: "npm:30.2.0"
