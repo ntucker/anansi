@@ -56,7 +56,7 @@
     "./antd": {
       "node": {
         "types": "./lib/spouts/antd.server.d.ts",
-        "import": "./lib/spouts/antd.server.js"
+        "default": "./lib/spouts/antd.server.js"
       },
       "types": "./lib/spouts/antd.d.ts",
       "default": "./lib/spouts/antd.js"
