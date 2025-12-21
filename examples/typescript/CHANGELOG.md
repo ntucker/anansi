@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.10](https://github.com/ntucker/anansi/compare/example-typescript@16.0.9...example-typescript@16.0.10) (2025-12-21)
+
+### 📦 Package
+
+* Update `eslint-plugin-storybook` to v10.1.10 ([#2917](https://github.com/ntucker/anansi/issues/2917)) ([db3ef2b](https://github.com/ntucker/anansi/commit/db3ef2bd3a60fc8a2e384593ed949845173e14f8))
+* Update all non-major dependencies ([#2913](https://github.com/ntucker/anansi/issues/2913)) ([4b45293](https://github.com/ntucker/anansi/commit/4b45293087c85e14e3e97db352c737b9dd4951af))
+* Update storybook monorepo to v10.1.10 ([#2916](https://github.com/ntucker/anansi/issues/2916)) ([1bf999f](https://github.com/ntucker/anansi/commit/1bf999f56d47be3f9fda66a50030315e12006aa5))
+* Update storybook monorepo to v10.1.9 ([#2910](https://github.com/ntucker/anansi/issues/2910)) ([18dbca8](https://github.com/ntucker/anansi/commit/18dbca89f89ae96a206f9eac3d774d76dd791408))
+* Update validation packages ([#2911](https://github.com/ntucker/anansi/issues/2911)) ([d949b71](https://github.com/ntucker/anansi/commit/d949b71bfa51fd046d09b5684ec6bf179baf28d2))
+* Update webpack packages ([#2915](https://github.com/ntucker/anansi/issues/2915)) ([4f78aa8](https://github.com/ntucker/anansi/commit/4f78aa83cf313671a2a15762e7d2de79dbc58775))
+* Update webpack packages ([#2918](https://github.com/ntucker/anansi/issues/2918)) ([c274bc5](https://github.com/ntucker/anansi/commit/c274bc5bd0c7ad856f2fa00a6677c3055d01cd25))
+
 ## [16.0.9](https://github.com/ntucker/anansi/compare/example-typescript@16.0.8...example-typescript@16.0.9) (2025-12-13)
 
 ### 📦 Package

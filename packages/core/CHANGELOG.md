@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](/github.com/ntucker/anansi/compare/@anansi/core@0.22.0...@anansi/core@0.22.1) (2025-12-21)
+
+### 💅 Enhancement
+
+* Robust handling of json loading ([96abe1d](/github.com/ntucker/anansi/commit/96abe1d341c375031baff1394cc4a445e19b5711))
+
+### 🐛 Bug Fix
+
+* Antd server spout import ([14fa728](/github.com/ntucker/anansi/commit/14fa728a90b9765e37b58161a125d2191f79f1ba))
+
 ## [0.22.0](/github.com/ntucker/anansi/compare/@anansi/core@0.21.5...@anansi/core@0.22.0) (2025-12-14)
 
 ### ⚠ 💥 BREAKING CHANGES
