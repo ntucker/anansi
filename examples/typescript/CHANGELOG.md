@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.11](https://github.com/ntucker/anansi/compare/example-typescript@16.0.10...example-typescript@16.0.11) (2025-12-31)
+
+### 📦 Package
+
+* Update storybook monorepo to v10.1.11 ([#2919](https://github.com/ntucker/anansi/issues/2919)) ([d348699](https://github.com/ntucker/anansi/commit/d348699f3bde21a71a24f746a549ab45861610c9))
+* Update validation packages ([#2921](https://github.com/ntucker/anansi/issues/2921)) ([56307b9](https://github.com/ntucker/anansi/commit/56307b92422aa97d01861d76520ca1d6a2ab9cad))
+
 ## [16.0.10](https://github.com/ntucker/anansi/compare/example-typescript@16.0.9...example-typescript@16.0.10) (2025-12-21)
 
 ### 📦 Package
