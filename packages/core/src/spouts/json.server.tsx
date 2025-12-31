@@ -7,6 +7,17 @@ type NeededNext = {
   scripts?: React.ReactNode[];
 };
 
+/** Serialize data for safe embedding in <script type="application/json"> tags.
+ * - Escapes < to prevent </script> injection
+ * - Escapes U+2028/U+2029 line separators for older browser compatibility
+ */
+export function serializeForScriptTag(data: unknown): string {
+  return JSON.stringify(data)
+    .replace(/</g, '\\u003c')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+}
+
 export default function JSONSpout({
   id = 'anansi-json',
 }: { id?: string } = {}): ServerSpout<
@@ -24,7 +35,7 @@ export default function JSONSpout({
       const Script = () => {
         const data: any = useData();
         try {
-          const encoded = JSON.stringify(data);
+          const encoded = serializeForScriptTag(data);
           return (
             <script
               id={globalId}
