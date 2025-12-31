@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.2](/github.com/ntucker/anansi/compare/@anansi/core@0.22.1...@anansi/core@0.22.2) (2025-12-31)
+
+### 🐛 Bug Fix
+
+* Prevent json serailization breaking out of script tag ([ea5ea35](/github.com/ntucker/anansi/commit/ea5ea35f08ffb14a1893456fb5087187e0e29545))
+
 ## [0.22.1](/github.com/ntucker/anansi/compare/@anansi/core@0.22.0...@anansi/core@0.22.1) (2025-12-21)
 
 ### 💅 Enhancement
