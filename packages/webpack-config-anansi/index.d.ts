@@ -25,6 +25,15 @@ export interface Options {
   nohash?: boolean;
   argv?: any[];
   env?: any;
+  /** Use to compile for libraries rather than web applications */
+  library?: Configuration['output']['library'] | boolean;
+  /** Pass package.json object for automatic configuration based on package settings */
+  pkg?: {
+    main?: string;
+    type?: string;
+    publishConfig?: { main?: string };
+    [key: string]: unknown;
+  };
   htmlOptions?: HtmlWebpackPlugin.Options | false;
   svgoOptions?: OptimizeOptions | false;
   svgrOptions?:
@@ -36,9 +45,11 @@ export interface Options {
   globalStyleDir?: string | false;
   sassOptions?: SassOptions | false;
   sassResources?: string[];
-  cssModuleOptions?: any;
+  cssModulesOptions?: any;
   fontPreload?: 'preload' | 'prefetch';
   bundleAnalyzerOptions?: BundleAnalyzerPlugin.Options;
+  /** Customize terser options for production builds */
+  terserOptions?: any;
   babelLoader?: TransformOptions & {
     cacheDirectory?: string;
     cacheIdentifier?: any;

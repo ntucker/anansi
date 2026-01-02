@@ -53,4 +53,5 @@ module.exports = {
   node20: ['node 20'],
   node22: ['node 22'],
   node24: ['node 24'],
+  node26: ['node 26'],
 };

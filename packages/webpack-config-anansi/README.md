@@ -308,6 +308,18 @@ changes.
 
 `webpack --mode=production --env nohash`
 
+### name
+
+Override the entry name (defaults to 'App').
+
+`webpack --env name=MyApp`
+
+### entrypath
+
+Override the entry file path (defaults to `./${basePath}`).
+
+`webpack --env entrypath=./src/main.tsx`
+
 ## ENV customization
 
 Environmental variable control is sometimes useful in CI pipelines
@@ -343,6 +355,14 @@ Setting to 'true' will disable all hot reloading functionality (only enabled by 
 
 Sets [webpack cache type](https://webpack.js.org/configuration/cache/).
 
+### WEBPACK_NO_CACHE
+
+Setting to 'true' will disable webpack caching entirely. Equivalent to `WEBPACK_CACHE=none`.
+
+### WEBPACK_ANALYZE
+
+Setting to 'true' will enable bundle analysis, equivalent to `--env analyze`.
+
 ## Options
 
 Pass these to makeConfig.
@@ -358,6 +378,21 @@ const myConfig = makeConfig({
   library: {
     type: 'commonjs2',
   },
+});
+```
+
+### pkg
+
+Pass your `package.json` object to enable automatic configuration based on package settings.
+When targeting node (`--target=node`), this configures the output path and filename based on `pkg.main` or `pkg.publishConfig.main`.
+Also used to determine the module type when `library.type` is not specified.
+
+```js
+const pkg = require('./package.json');
+
+const myConfig = makeConfig({
+  pkg,
+  library: true,
 });
 ```
 
@@ -435,7 +470,12 @@ Output directory for production server builds. Used when using `--target=node` c
 
 ### mode: argv?.mode || process.env.NODE_ENV
 
-Override the [mode](https://www.google.com/search?q=webpack+mode&oq=webpack+mode&aqs=chrome..69i57j69i60l3j0l2.1349j0j7&sourceid=chrome&ie=UTF-8)
+Override the [mode](https://webpack.js.org/configuration/mode/)
+
+### nohash
+
+When true, removes content hashes from output filenames. This is useful for diffing bundle sizes
+as it keeps filenames stable across builds. Can also be set via `--env nohash` CLI argument.
 
 ### htmlOptions
 
@@ -473,13 +513,13 @@ Can configure how [MiniCssExtractPlugin](https://github.com/webpack-contrib/mini
 
 [Configuration options](https://github.com/webpack-contrib/mini-css-extract-plugin#options)
 
-### tsconfigPathOptions
+### tsconfigPathsOptions
 
 Enabled by default. Uses any module resolution specifications like aliases in `tsconfig`.
 
 Set to `false` to disable; or set to object to configure the options.
 
-[Configuring tsconfig path options](https://github.com/dividab/tsconfig-paths-webpack-plugin#options)
+[Configuring tsconfig paths options](https://github.com/dividab/tsconfig-paths-webpack-plugin#options)
 
 ### fontPreload = 'preload' | 'prefetch'
 
@@ -505,9 +545,9 @@ Override any babel loader specific [options](https://github.com/babel/babel-load
 
 Any extra loaders to use on JavaScript/TypeScript files.
 
-### cssModuleOptions
+### cssModulesOptions
 
-Customize css module [options](https://github.com/webpack-contrib/css-loader#object).
+Customize css modules [options](https://github.com/webpack-contrib/css-loader#object).
 
 ### globalStyleDir = 'style'
 
