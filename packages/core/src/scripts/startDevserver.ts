@@ -20,6 +20,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import 'cross-fetch/dist/node-polyfill.js';
 import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
+import { extractProxyRoutes } from './proxyUtils.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { BoundRender } from './types.js';
 
@@ -216,9 +217,7 @@ export default async function startDevServer(
 
         const otherRoutes = [
           process.env.WEBPACK_PUBLIC_PATH,
-          ...(webpackConfigs[0].devServer?.proxy
-            ?.filter(proxy => typeof proxy === 'object')
-            ?.flatMap(proxy => proxy.context) ?? []),
+          ...extractProxyRoutes(webpackConfigs[0].devServer?.proxy),
         ];
         // serve SSR for non-WEBPACK_PUBLIC_PATH
         devServer.app?.get(
