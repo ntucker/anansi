@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.3](/github.com/ntucker/anansi/compare/@anansi/core@0.22.2...@anansi/core@0.22.3) (2026-01-02)
+
+### 💅 Enhancement
+
+* Improve webpack proxy handling ([0413bc6](/github.com/ntucker/anansi/commit/0413bc6ff3ea9eb107d4ca5259c21e1b7efef29c))
+
+### 📝 Documentation
+
+* Update readme ([b42d500](/github.com/ntucker/anansi/commit/b42d50069157979ac2c21fce92c4750f3219461a))
+
 ## [0.22.2](/github.com/ntucker/anansi/compare/@anansi/core@0.22.1...@anansi/core@0.22.2) (2025-12-31)
 
 ### 🐛 Bug Fix
