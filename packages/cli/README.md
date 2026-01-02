@@ -25,12 +25,12 @@ Like Ubuntu did for Linux; Anansi focuses on bringing together many powerful too
 
 ## Installation
 
-<details><summary><b><a href="https://nodejs.org/">node.js</a> >=10 and <a href="https://www.npmjs.com/">npm</a> >=6 are required.</b></summary>
+<details><summary><b><a href="https://nodejs.org/">node.js</a> ^18.17.0 or >=20.5.0 and <a href="https://www.npmjs.com/">npm</a> >=6 are required.</b></summary>
 
 Use [nvm](https://github.com/nvm-sh/nvm) to install these if you don't already.
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 </details>
 
@@ -48,38 +48,93 @@ anansi hatch my-app-name
 
 This creates a `my-app-name` directory in your current directory and sets up the project there.
 
-## Updates
+## Commands
+
+### hatch
+
+Creates a new Anansi project.
+
+```
+Usage: anansi hatch [options] <projectName>
+
+Aliases: init
+
+Arguments:
+  projectName              Package name for the project
+
+Options:
+  -d, --dir <directory>    What directory to add to. (Creates new directory by default)
+```
+
+The interactive wizard will prompt you to choose:
+- **Project type**: Website (SPA) or NPM package (library)
+- **GitHub org/username**: For repository configuration
+
+```bash
+anansi hatch my-app-name
+```
+
+### add
+
+Adds features to an existing project.
+
+```
+Usage: anansi add <features...>
+
+Arguments:
+  features    One or more of: testing | storybook | circle | github-actions
+```
 
 Features can be incrementally adopted by running sub-generators from an existing project directory.
 
-### E.g., Adding Testing
-
-```shell
+```bash
 cd my-app-name
 anansi add testing
+anansi add storybook circle
 ```
 
-## Running SSR
+Available features:
+- `testing` - Jest testing setup
+- `storybook` - Storybook component documentation
+- `circle` - CircleCI configuration
+- `github-actions` - GitHub Actions workflow
 
-```bash
+### serve
+
+Runs server for SSR (Server-Side Rendering) projects. Requires `@anansi/core` to be installed.
+
+```
 Usage: anansi serve [options] <entrypath>
 
-runs server for SSR projects
-
 Arguments:
-  entrypath          Path to entrypoint
+  entrypath              Path to entrypoint
 
 Options:
-  --pubPath <path>   Where to serve assets from
-  -d, --dev          Run devserver rather than using previously compiled output
-  -a, --serveAssets  [non-dev] also serves client assets
-  -p, --serveProxy   [non-dev] uses webpack proxy config
-  -h, --help         display help for command
+  --pubPath <path>       Where to serve assets from
+  -d, --dev              Run devserver rather than using previously compiled output
+  -a, --serveAssets      [non-dev] also serves client assets
+  -p, --serveProxy       [non-dev] uses webpack proxy config
 ```
+
+**Development mode:**
+
+```bash
+anansi serve --dev ./src/index.tsx
+```
+
+**Production mode (using pre-compiled output):**
+
+```bash
+anansi serve ./dist-server/App.js
+```
+
+**Example package.json scripts:**
 
 ```json
 {
-  "start": "anansi serve --dev ./src/index.tsx",
-  "start:server": "anansi serve ./dist-server/App.js",
+  "scripts": {
+    "start": "anansi serve --dev ./src/index.tsx",
+    "start:server": "anansi serve ./dist-server/App.js"
+  }
 }
 ```
