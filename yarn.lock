@@ -125,7 +125,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/core@npm:^0.22.3, @anansi/core@workspace:packages/core":
+"@anansi/core@npm:0.22.3, @anansi/core@npm:^0.22.3, @anansi/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anansi/core@workspace:packages/core"
   dependencies:
@@ -292,7 +292,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/router@npm:^0.10.21, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
+"@anansi/router@npm:0.10.21, @anansi/router@workspace:^, @anansi/router@workspace:packages/router":
   version: 0.0.0-use.local
   resolution: "@anansi/router@workspace:packages/router"
   dependencies:
@@ -567,6 +567,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ant-design/icons@npm:6.1.0, @ant-design/icons@npm:^6.0.0, @ant-design/icons@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@ant-design/icons@npm:6.1.0"
+  dependencies:
+    "@ant-design/colors": "npm:^8.0.0"
+    "@ant-design/icons-svg": "npm:^4.4.0"
+    "@rc-component/util": "npm:^1.3.0"
+    clsx: "npm:^2.1.1"
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 10c0/d2fc94a348e18fcc37507dd7febbd179770dea9e8dbedecb362a4d9d0c1a503ed628f2973067b14dc8882d3c25b7c9c979753dea18faef5d20b7d2021d468315
+  languageName: node
+  linkType: hard
+
 "@ant-design/icons@npm:^5.0.0":
   version: 5.6.1
   resolution: "@ant-design/icons@npm:5.6.1"
@@ -580,21 +595,6 @@ __metadata:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
   checksum: 10c0/7a9d9fd388c5c66d92818fd0eb794a54ef0b0dc3d75f15ac24c7cfde21c5c836c220cf35423768fd1faa28d55443a6917bf4260469c1485be83f799daa351976
-  languageName: node
-  linkType: hard
-
-"@ant-design/icons@npm:^6.0.0, @ant-design/icons@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@ant-design/icons@npm:6.1.0"
-  dependencies:
-    "@ant-design/colors": "npm:^8.0.0"
-    "@ant-design/icons-svg": "npm:^4.4.0"
-    "@rc-component/util": "npm:^1.3.0"
-    clsx: "npm:^2.1.1"
-  peerDependencies:
-    react: ">=16.0.0"
-    react-dom: ">=16.0.0"
-  checksum: 10c0/d2fc94a348e18fcc37507dd7febbd179770dea9e8dbedecb362a4d9d0c1a503ed628f2973067b14dc8882d3c25b7c9c979753dea18faef5d20b7d2021d468315
   languageName: node
   linkType: hard
 
@@ -3096,7 +3096,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.15.2, @data-client/endpoint@npm:^0.15.1-beta-20251110013913-ef632c49a03da67187b6097fe8154893cd930d30, @data-client/endpoint@npm:^0.15.2":
+"@data-client/endpoint@npm:0.15.2, @data-client/endpoint@npm:^0.15.0, @data-client/endpoint@npm:^0.15.2":
   version: 0.15.2
   resolution: "@data-client/endpoint@npm:0.15.2"
   dependencies:
@@ -3131,20 +3131,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/img@npm:0.15.1-beta-20251110151417-8913a49d898f6c7d69e1964d68f19daf68565bef":
-  version: 0.15.1-beta-20251110151417-8913a49d898f6c7d69e1964d68f19daf68565bef
-  resolution: "@data-client/img@npm:0.15.1-beta-20251110151417-8913a49d898f6c7d69e1964d68f19daf68565bef"
+"@data-client/img@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@data-client/img@npm:0.15.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.15.1-beta-20251110013913-ef632c49a03da67187b6097fe8154893cd930d30"
+    "@data-client/endpoint": "npm:^0.15.0"
   peerDependencies:
-    "@data-client/react": 0.15.0-beta-20251022142546-a457d1596871fb28f1a91f2531cc259db4d55a9c
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^19.0.0
     react: ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/b85e28d09e09908eb1857383d92aa7ad61a75546bdfd263f996e72874e11f96738e446f7e041af04ef064d575e78fca3f74e64024aab8a766c12c929d12f6630
+  checksum: 10c0/dcdaeb1dc589026a99cac740887160dc9dcda48c5f2c5ad6ffdf43e22a0ba4dddf9de8220c37d962e0343c0210ca104ec2e7393cfc44c7f611e63a1e28e2c0a7
   languageName: node
   linkType: hard
 
@@ -12519,18 +12519,18 @@ __metadata:
     "@anansi/babel-preset": "npm:^6.2.21"
     "@anansi/browserslist-config": "npm:^1.7.4"
     "@anansi/cli": "npm:^3.1.98"
-    "@anansi/core": "npm:^0.22.3"
+    "@anansi/core": "npm:0.22.3"
     "@anansi/eslint-plugin": "npm:^1.0.63"
     "@anansi/jest-preset": "npm:^0.11.29"
-    "@anansi/router": "npm:^0.10.21"
+    "@anansi/router": "npm:0.10.21"
     "@anansi/webpack-config": "npm:^21.1.8"
     "@ant-design/cssinjs": "npm:2.0.2"
-    "@ant-design/icons": "npm:^6.0.0"
+    "@ant-design/icons": "npm:6.1.0"
     "@babel/core": "npm:7.28.5"
     "@babel/runtime-corejs3": "npm:7.28.4"
     "@data-client/endpoint": "npm:0.15.2"
     "@data-client/hooks": "npm:0.2.0"
-    "@data-client/img": "npm:0.15.1-beta-20251110151417-8913a49d898f6c7d69e1964d68f19daf68565bef"
+    "@data-client/img": "npm:0.15.0"
     "@data-client/react": "npm:0.15.3"
     "@data-client/rest": "npm:0.15.2"
     "@data-client/test": "npm:0.15.3"
