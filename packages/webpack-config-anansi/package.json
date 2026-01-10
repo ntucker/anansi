@@ -72,7 +72,7 @@
     "@types/sass-loader": "^8.0.10",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@vue/preload-webpack-plugin": "^2.0.0",
-    "@wyw-in-js/webpack-loader": "^0.8.1",
+    "@wyw-in-js/webpack-loader": "^1.0.2",
     "assert": "^2.1.0",
     "autoprefixer": "^10.4.23",
     "babel-loader": "^10.0.0",

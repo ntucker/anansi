@@ -374,7 +374,7 @@ __metadata:
     "@types/sass-loader": "npm:^8.0.10"
     "@types/webpack-bundle-analyzer": "npm:^4.7.0"
     "@vue/preload-webpack-plugin": "npm:^2.0.0"
-    "@wyw-in-js/webpack-loader": "npm:^0.8.1"
+    "@wyw-in-js/webpack-loader": "npm:^1.0.2"
     assert: "npm:^2.1.0"
     autoprefixer: "npm:^10.4.23"
     babel-jest: "npm:^30.0.0"
@@ -6629,6 +6629,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/debug@npm:^4.1.9":
+  version: 4.1.12
+  resolution: "@types/debug@npm:4.1.12"
+  dependencies:
+    "@types/ms": "npm:*"
+  checksum: 10c0/5dcd465edbb5a7f226e9a5efd1f399c6172407ef5840686b73e3608ce135eeca54ae8037dcd9f16bdb2768ac74925b820a8b9ecc588a58ca09eca6acabe33e2f
+  languageName: node
+  linkType: hard
+
 "@types/deep-eql@npm:*":
   version: 4.0.2
   resolution: "@types/deep-eql@npm:4.0.2"
@@ -6903,6 +6912,13 @@ __metadata:
   version: 5.1.2
   resolution: "@types/minimatch@npm:5.1.2"
   checksum: 10c0/83cf1c11748891b714e129de0585af4c55dd4c2cafb1f1d5233d79246e5e1e19d1b5ad9e8db449667b3ffa2b6c80125c429dbee1054e9efb45758dbc4e118562
+  languageName: node
+  linkType: hard
+
+"@types/ms@npm:*":
+  version: 2.1.0
+  resolution: "@types/ms@npm:2.1.0"
+  checksum: 10c0/5ce692ffe1549e1b827d99ef8ff71187457e0eb44adbae38fdf7b9a74bae8d20642ee963c14516db1d35fa2652e65f47680fdf679dcbde52bbfadd021f497225
   languageName: node
   linkType: hard
 
@@ -7314,12 +7330,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ws@npm:^8.5.10":
-  version: 8.5.10
-  resolution: "@types/ws@npm:8.5.10"
+"@types/ws@npm:^8.18.1, @types/ws@npm:^8.5.10":
+  version: 8.18.1
+  resolution: "@types/ws@npm:8.18.1"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 10c0/e9af279b984c4a04ab53295a40aa95c3e9685f04888df5c6920860d1dd073fcc57c7bd33578a04b285b2c655a0b52258d34bee0a20569dca8defb8393e1e5d29
+  checksum: 10c0/61aff1129143fcc4312f083bc9e9e168aa3026b7dd6e70796276dcfb2c8211c4292603f9c4864fae702f2ed86e4abd4d38aa421831c2fd7f856c931a481afbab
   languageName: node
   linkType: hard
 
@@ -7873,13 +7889,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/processor-utils@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@wyw-in-js/processor-utils@npm:0.8.1"
+"@wyw-in-js/processor-utils@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@wyw-in-js/processor-utils@npm:1.0.2"
   dependencies:
     "@babel/generator": "npm:^7.23.5"
-    "@wyw-in-js/shared": "npm:0.8.1"
-  checksum: 10c0/40e89fbc6a714f121b54b0201f5ad49409cda1ea522237c4554e50bb378a10f051275f631ce8db534f840173d842835e8db87c332b796f5764983bd89006907b
+    "@wyw-in-js/shared": "npm:1.0.2"
+  checksum: 10c0/b96681fc5c0feb0a02ac6e29a4cddb7acbcf1f6dc46e19016c814901b5bf6224a58ae2d856961fe64fcc0869852c7447b33bc6e2808c89d58d18e7ff24ad2d7c
   languageName: node
   linkType: hard
 
@@ -7904,20 +7920,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/shared@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@wyw-in-js/shared@npm:0.8.1"
+"@wyw-in-js/shared@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@wyw-in-js/shared@npm:1.0.2"
   dependencies:
+    "@types/debug": "npm:^4.1.9"
     debug: "npm:^4.3.4"
     find-up: "npm:^5.0.0"
     minimatch: "npm:^9.0.3"
-  checksum: 10c0/3539fc6179517a0ee33984c68dbc155d824aedd789f321825fd3bb4c67414459c45553690185c968695d4e23628b87bd79031ed935072e4da4f499dea62949e4
+  checksum: 10c0/0d6e4ac5e10558b795fd3c4714c6429eeccde7c59d5e865ddd42d4a297b3acd13046c24706d102ae32a8aea80725b65d22ba35a0f5b0893f969d56c70431bd97
   languageName: node
   linkType: hard
 
-"@wyw-in-js/transform@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@wyw-in-js/transform@npm:0.8.1"
+"@wyw-in-js/transform@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@wyw-in-js/transform@npm:1.0.2"
   dependencies:
     "@babel/core": "npm:^7.23.5"
     "@babel/generator": "npm:^7.23.5"
@@ -7926,27 +7943,26 @@ __metadata:
     "@babel/template": "npm:^7.22.15"
     "@babel/traverse": "npm:^7.23.5"
     "@babel/types": "npm:^7.23.5"
-    "@wyw-in-js/processor-utils": "npm:0.8.1"
-    "@wyw-in-js/shared": "npm:0.8.1"
-    babel-merge: "npm:^3.0.0"
+    "@wyw-in-js/processor-utils": "npm:1.0.2"
+    "@wyw-in-js/shared": "npm:1.0.2"
     cosmiconfig: "npm:^8.0.0"
-    happy-dom: "npm:^20.0.10"
+    happy-dom: "npm:^20.1.0"
     source-map: "npm:^0.7.4"
     stylis: "npm:^4.3.0"
     ts-invariant: "npm:^0.10.3"
-  checksum: 10c0/8d35bbaeb57164e7002f072e182a0495cc8380d689e7f43c038d19c9fe2d2b78f2b4fe22bde9137c227eccc80e74516f80fb492be93de14065a1c3eea801b95d
+  checksum: 10c0/ca6f94fe4bd778207aa0dc9b5baefa8733af3c94b6ffafd95e9aa6982fff9cc2d6f16909e0d025ce76beb054d5485dee82534061251e340b58f78ae8dcc77dbb
   languageName: node
   linkType: hard
 
-"@wyw-in-js/webpack-loader@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "@wyw-in-js/webpack-loader@npm:0.8.1"
+"@wyw-in-js/webpack-loader@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@wyw-in-js/webpack-loader@npm:1.0.2"
   dependencies:
-    "@wyw-in-js/shared": "npm:0.8.1"
-    "@wyw-in-js/transform": "npm:0.8.1"
+    "@wyw-in-js/shared": "npm:1.0.2"
+    "@wyw-in-js/transform": "npm:1.0.2"
   peerDependencies:
     webpack: ^5.76.0
-  checksum: 10c0/24545fb223b9249b51784f35af40049158bfff79abf8c8a4100ae5ca19c969e13565d4a7c8500a59d031a5fe847020731b90c554115c5f037b6cb53bdbbcd3d4
+  checksum: 10c0/a308450ef20f096aec749727b1524340dc361d07bc268cce9dae13570d92a640ad7be4d291ddb89269d9150815ef86df2061e02224c4f20ea91641ef0d1944dd
   languageName: node
   linkType: hard
 
@@ -8803,18 +8819,6 @@ __metadata:
     "@babel/core": ^7.12.0
     webpack: ">=5.61.0"
   checksum: 10c0/882dfacde3ee24b432ad57e468832cd0821e2a410f6c5b75ff945f069a8956592b28c6c357df5bb03db73d2741ec3db5febb106ac0bb3591c3d4288f2cf4df0e
-  languageName: node
-  linkType: hard
-
-"babel-merge@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "babel-merge@npm:3.0.0"
-  dependencies:
-    deepmerge: "npm:^2.2.1"
-    object.omit: "npm:^3.0.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-  checksum: 10c0/8337358ba69553305ba0ee6ddfdeb79b58d37012d5c99953d87e608eb22299a565501a854e451c2daa8f7b2310d1a52c66ed92f17e18a9858153e9fd9f3090e5
   languageName: node
   linkType: hard
 
@@ -11068,13 +11072,6 @@ __metadata:
   version: 7.1.0
   resolution: "deepmerge-ts@npm:7.1.0"
   checksum: 10c0/50e98ca9995e721b2d85b8984a175322369f56fd68b1d915873816e672105d2a22b3be42acc7832954a0ea07c2b0762ecca40eb7886369af33cce8f799baf39e
-  languageName: node
-  linkType: hard
-
-"deepmerge@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "deepmerge@npm:2.2.1"
-  checksum: 10c0/4379288cabd817587cee92a095ea65d18317b45e48010a2e0d87982b5f432239a144f9c8ebd4ab090cc21f0cb47e51ebfe32921f329b3b3084a2711d5d63e450
   languageName: node
   linkType: hard
 
@@ -13913,14 +13910,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^20.0.10":
-  version: 20.0.10
-  resolution: "happy-dom@npm:20.0.10"
+"happy-dom@npm:^20.1.0":
+  version: 20.1.0
+  resolution: "happy-dom@npm:20.1.0"
   dependencies:
     "@types/node": "npm:^20.0.0"
     "@types/whatwg-mimetype": "npm:^3.0.2"
+    "@types/ws": "npm:^8.18.1"
     whatwg-mimetype: "npm:^3.0.0"
-  checksum: 10c0/3e05425f3db943885b1d2235d968c8aab08bd32cb0d21bc1c8006db604445f5f6c1364d19b3763395fd748193dc00efd40695e6711ab15e3b9578791c5ce4207
+    ws: "npm:^8.18.3"
+  checksum: 10c0/a55b5fe6de845124644bc51184c8e761e75936de50ba5f4093ff844802d2b13f700c71a5e8236cb78c2b23c1368125b98f38e3c99e472b6d6becec7ddb720c58
   languageName: node
   linkType: hard
 
@@ -14832,15 +14831,6 @@ __metadata:
   bin:
     is-docker: cli.js
   checksum: 10c0/d2c4f8e6d3e34df75a5defd44991b6068afad4835bb783b902fa12d13ebdb8f41b2a199dcb0b5ed2cb78bfee9e4c0bbdb69c2d9646f4106464674d3e697a5856
-  languageName: node
-  linkType: hard
-
-"is-extendable@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "is-extendable@npm:1.0.1"
-  dependencies:
-    is-plain-object: "npm:^2.0.4"
-  checksum: 10c0/1d6678a5be1563db6ecb121331c819c38059703f0179f52aa80c242c223ee9c6b66470286636c0e63d7163e4d905c0a7d82a096e0b5eaeabb51b9f8d0af0d73f
   languageName: node
   linkType: hard
 
@@ -17836,15 +17826,6 @@ __metadata:
     define-properties: "npm:^1.2.1"
     es-abstract: "npm:^1.23.2"
   checksum: 10c0/60d0455c85c736fbfeda0217d1a77525956f76f7b2495edeca9e9bbf8168a45783199e77b894d30638837c654d0cc410e0e02cbfcf445bc8de71c3da1ede6a9c
-  languageName: node
-  linkType: hard
-
-"object.omit@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "object.omit@npm:3.0.0"
-  dependencies:
-    is-extendable: "npm:^1.0.0"
-  checksum: 10c0/8e16a3087580b67ca7532539930dc5cf2eb1b12112cfdfc539412db8d2e5d5ba541ea9ffc9df936fc84cf362832806b8a4091d064610728614193eee8f26c473
   languageName: node
   linkType: hard
 
@@ -24356,9 +24337,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.18.0":
-  version: 8.18.0
-  resolution: "ws@npm:8.18.0"
+"ws@npm:^8.18.0, ws@npm:^8.18.3":
+  version: 8.19.0
+  resolution: "ws@npm:8.19.0"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ">=5.0.2"
@@ -24367,7 +24348,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 10c0/25eb33aff17edcb90721ed6b0eb250976328533ad3cd1a28a274bd263682e7296a6591ff1436d6cbc50fa67463158b062f9d1122013b361cec99a05f84680e06
+  checksum: 10c0/4741d9b9bc3f9c791880882414f96e36b8b254e34d4b503279d6400d9a4b87a033834856dbdd94ee4b637944df17ea8afc4bce0ff4a1560d2166be8855da5b04
   languageName: node
   linkType: hard
 
