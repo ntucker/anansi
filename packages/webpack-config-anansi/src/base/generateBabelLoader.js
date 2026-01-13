@@ -34,6 +34,24 @@ export function generateBabelLoader({
     : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
   const filename = path.join(cwd, 'noop.js');
+  // Environment variables that affect babel output (see babel-preset-anansi)
+  const envVars = [
+    process.env.NODE_ENV,
+    process.env.BROWSERSLIST_ENV,
+    process.env.BABEL_ENV,
+    process.env.BABEL_MODULES,
+    process.env.BABEL_POLYFILL_METHOD,
+    process.env.NO_HOT_RELOAD,
+    process.env.TS_CONFIG_PATH,
+    process.env.RESOLVER_ALIAS,
+    process.env.RESOLVER_ROOT,
+    process.env.ROOT_PATH_ROOT,
+    process.env.ROOT_PATH_SUFFIX,
+    process.env.ROOT_PATH_PREFIX,
+    process.env.POLYFILL_TARGETS,
+    // avoid collisions while being minimal and performant
+  ].join('\0');
+
   const cacheIdentifier =
     JSON.stringify({
       version,
@@ -44,7 +62,7 @@ export function generateBabelLoader({
       hasJsxRuntime,
       babelCoreVersion,
       babelLoaderVersion,
-      env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
+      envVars,
     }) +
     JSON.stringify(
       babel.loadPartialConfig({

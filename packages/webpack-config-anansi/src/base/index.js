@@ -149,11 +149,22 @@ export default function makeBaseConfig({
       buildDependencies: {
         config: [__filename], // you may omit this when your CLI automatically adds it
       },
+      // Environment variables that affect webpack output
       version: JSON.stringify({
         version,
         target: argv?.target,
         mode,
-        env: [process.env.NODE_ENV, process.env.BROWSERSLIST_ENV].join(','),
+        envVars: [
+          process.env.NODE_ENV,
+          process.env.BROWSERSLIST_ENV,
+          process.env.BABEL_ENV,
+          WEBPACK_PUBLIC_HOST,
+          WEBPACK_PUBLIC_PATH,
+          process.env.WEBPACK_ANALYZE,
+          process.env.DEBUG,
+          process.env.NODE_DEBUG,
+          // avoid collisions while being minimal and performant
+        ].join('\0'),
       }),
     },
     plugins: plugins,
