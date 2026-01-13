@@ -246,7 +246,7 @@ __metadata:
     gulp-filter: "npm:^9.0.1"
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.2.0"
-    mem-fs: "npm:^4.1.2"
+    mem-fs: "npm:^4.1.3"
     mem-fs-editor: "npm:^11.1.4"
     pacote: "npm:^21.0.4"
     shelobsay: "npm:^2.0.0"
@@ -7383,13 +7383,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.7, @types/vinyl@npm:^2.0.8":
-  version: 2.0.10
-  resolution: "@types/vinyl@npm:2.0.10"
+"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.12, @types/vinyl@npm:^2.0.7":
+  version: 2.0.12
+  resolution: "@types/vinyl@npm:2.0.12"
   dependencies:
     "@types/expect": "npm:^1.20.4"
     "@types/node": "npm:*"
-  checksum: 10c0/526fa41e0555f655b60157057aca14e356ff38266c8e5f8992dedf4445f118af2b98623bf879922f602f7aeab785f5a82bb7bd892ec6e1b2a09722f871664479
+  checksum: 10c0/101c72c44f3eb9cd049c80d2ea65376b1c2fd72ba7da21aef04674670659cf6ed5b21b5041f40cc34a64463046a30ed4657a576ce59f4fbc7c347615211fe5e1
   languageName: node
   linkType: hard
 
@@ -16960,15 +16960,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "mem-fs@npm:4.1.2"
+"mem-fs@npm:^4.1.2, mem-fs@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "mem-fs@npm:4.1.3"
   dependencies:
     "@types/node": "npm:>=18"
-    "@types/vinyl": "npm:^2.0.8"
+    "@types/vinyl": "npm:^2.0.12"
     vinyl: "npm:^3.0.0"
     vinyl-file: "npm:^5.0.0"
-  checksum: 10c0/4e6ed371304389fef07a04770128833e6e47c98d9f8a8e2a2e918be9fa08305c9005eb9f4137b5b088a5ab392f4a6b1829106012f94f730a339a1a01a638f346
+  checksum: 10c0/51fe9d30fcf76cb9242798e1785efaadca2b08bc828c2c646c393f65eb42266c9a5f9aaac28ed8a4f423e056eb8a9c125db86bbdc47c1d2d86e7f3dfc7233933
   languageName: node
   linkType: hard
 
