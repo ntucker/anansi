@@ -39,8 +39,8 @@
     "webpack-dev-server": "^5.0.0"
   },
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.27.1",
-    "@babel/runtime-corejs3": "7.28.4",
+    "@babel/plugin-transform-modules-commonjs": "7.28.6",
+    "@babel/runtime-corejs3": "7.28.6",
     "@linaria/core": "6.3.0",
     "@linaria/react": "6.3.0",
     "classnames": "2.5.1",
