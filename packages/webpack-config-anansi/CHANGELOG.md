@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.11](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.10...@anansi/webpack-config@21.1.11) (2026-01-17)
+
+### 💅 Enhancement
+
+* Include all ENV configs in cache busting ([27bdaaf](/github.com/ntucker/anansi/commit/27bdaafbfae9659eb4fbc85599e0667fc98ae0f6))
+
+### 📦 Package
+
+* Update all non-major dependencies ([#2941](/github.com/ntucker/anansi/issues/2941)) ([32fda56](/github.com/ntucker/anansi/commit/32fda56ef1c0dbe0e62c8367f17f301a685117cd))
+* Update webpack packages ([#2940](/github.com/ntucker/anansi/issues/2940)) ([a102c17](/github.com/ntucker/anansi/commit/a102c17d696157e4045169828b6289c03a696e47))
+
 ## [21.1.10](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.9...@anansi/webpack-config@21.1.10) (2026-01-13)
 
 ### 📦 Package
