@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.12](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.11...@anansi/webpack-config@21.1.12) (2026-01-23)
+
+### 📦 Package
+
+* Update webpack packages ([#2949](/github.com/ntucker/anansi/issues/2949)) ([ba869c4](/github.com/ntucker/anansi/commit/ba869c4a9957929cc5281ec002b6dc2639cc3d91))
+
 ## [21.1.11](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.10...@anansi/webpack-config@21.1.11) (2026-01-17)
 
 ### 💅 Enhancement

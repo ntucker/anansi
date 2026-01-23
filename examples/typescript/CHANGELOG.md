@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.16](https://github.com/ntucker/anansi/compare/example-typescript@16.0.15...example-typescript@16.0.16) (2026-01-23)
+
+### 📦 Package
+
+* Update `core-js` to v3.48.0 ([#2950](https://github.com/ntucker/anansi/issues/2950)) ([cbbfffe](https://github.com/ntucker/anansi/commit/cbbfffea7b98ddc6ddd42f9fb4dcf935f348193c))
+* Update `lodash` to v4.17.23 [SECURITY] ([#2945](https://github.com/ntucker/anansi/issues/2945)) ([b1f1ec1](https://github.com/ntucker/anansi/commit/b1f1ec136a1bcc6c4e9b255586d0e4ab5fa8e164))
+* Update all non-major dependencies ([#2952](https://github.com/ntucker/anansi/issues/2952)) ([5cc4c4b](https://github.com/ntucker/anansi/commit/5cc4c4b9046606c04dc12a68892275b4defa2bc1))
+* Update all non-major dependencies to v0.15.4 ([#2942](https://github.com/ntucker/anansi/issues/2942)) ([a30c46d](https://github.com/ntucker/anansi/commit/a30c46dc80a6eba4583d222e396bd397e30bedd9))
+* Update storybook monorepo to v10.2.0 ([#2953](https://github.com/ntucker/anansi/issues/2953)) ([5e33093](https://github.com/ntucker/anansi/commit/5e330937eacce6b9d81e8d6b66c5d857cf21a413))
+* Update validation packages ([#2948](https://github.com/ntucker/anansi/issues/2948)) ([2cb3fc1](https://github.com/ntucker/anansi/commit/2cb3fc150b5a432f66e45c0cfd8986851bf87fde))
+
 ## [16.0.15](https://github.com/ntucker/anansi/compare/example-typescript@16.0.14...example-typescript@16.0.15) (2026-01-17)
 
 ### 📦 Package
