@@ -374,7 +374,7 @@ __metadata:
     "@types/sass-loader": "npm:^8.0.10"
     "@types/webpack-bundle-analyzer": "npm:^4.7.0"
     "@vue/preload-webpack-plugin": "npm:^2.0.0"
-    "@wyw-in-js/webpack-loader": "npm:^1.0.5"
+    "@wyw-in-js/webpack-loader": "npm:^1.0.6"
     assert: "npm:^2.1.0"
     autoprefixer: "npm:^10.4.23"
     babel-jest: "npm:^30.0.0"
@@ -8058,9 +8058,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/transform@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@wyw-in-js/transform@npm:1.0.5"
+"@wyw-in-js/transform@npm:1.0.6":
+  version: 1.0.6
+  resolution: "@wyw-in-js/transform@npm:1.0.6"
   dependencies:
     "@babel/core": "npm:^7.23.5"
     "@babel/generator": "npm:^7.23.5"
@@ -8077,19 +8077,19 @@ __metadata:
     source-map: "npm:^0.7.4"
     stylis: "npm:^4.3.0"
     ts-invariant: "npm:^0.10.3"
-  checksum: 10c0/4155a5f32c3c00892fc50c1b8ee1d1ac52830c342b8c1c8e1e8c6567dd3fdbcd0c5f941899d4e5ebcc07d2c6fb7b6f04c99216e9cf5cbe7a466c662a1a113b3b
+  checksum: 10c0/6650e2cb67867fcc6a7543083f39de927b6af86f07e4b0c584ea5bc9aa941bc08f95d10e00fa5600cb90b73fa8c6410de0c9775c0b787f2f27efbddf3cb3961b
   languageName: node
   linkType: hard
 
-"@wyw-in-js/webpack-loader@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "@wyw-in-js/webpack-loader@npm:1.0.5"
+"@wyw-in-js/webpack-loader@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@wyw-in-js/webpack-loader@npm:1.0.6"
   dependencies:
     "@wyw-in-js/shared": "npm:1.0.4"
-    "@wyw-in-js/transform": "npm:1.0.5"
+    "@wyw-in-js/transform": "npm:1.0.6"
   peerDependencies:
     webpack: ^5.76.0
-  checksum: 10c0/e98eea342d315bd1a05c456492cca860ebc22546a726d85bcc112030726486420b0bccec276b75533eceb67baa296b06a35c11ae80ebac366d14287643947ab3
+  checksum: 10c0/5a80d446508befbe16301132c9fdd80bb19eeabed93a5c5ee88c79f12b6ca2fdba431ff8808232a3dfa640dfab1f7160330c102cd59a9e80e6f4e33b33aa16f8
   languageName: node
   linkType: hard
 
