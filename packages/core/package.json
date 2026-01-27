@@ -88,8 +88,8 @@
     "@types/tmp": "0.2.6",
     "@types/webpack-hot-middleware": "2.25.12",
     "@types/webpack-node-externals": "^3",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "dependencies": {
     "@anansi/router": "workspace:^",
