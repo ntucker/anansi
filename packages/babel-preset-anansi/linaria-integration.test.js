@@ -73,6 +73,9 @@ describe('Linaria Integration with Webpack Loader', () => {
             {
               hasJsxRuntime: true,
               loose: true,
+              // Disable polyfills for Linaria builds - polyfills should only be added
+              // by the main application build, not the Linaria CSS extraction pass
+              polyfillMethod: false,
               ...options,
             },
           ],
