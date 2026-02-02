@@ -107,7 +107,8 @@
         "@anansi/babel-preset",
         "babel-plugin-module-resolver",
         "core-js",
-        "core-js-compat"
+        "core-js-compat",
+        "babel-plugin-polyfill-corejs3"
       ],
       "groupSlug": "babel",
       "groupName": "babel packages"
