@@ -16551,9 +16551,9 @@ __metadata:
   linkType: hard
 
 "locutus@npm:^2.0.11":
-  version: 2.0.15
-  resolution: "locutus@npm:2.0.15"
-  checksum: 10c0/3713af1cd8d52403a3926ad1fa5ea9680d773309b11d0a924166fc462bdacbc98528959017eff702643b6bbb618edb23ac1e86bc34120530fae4bcb84765cb14
+  version: 2.0.39
+  resolution: "locutus@npm:2.0.39"
+  checksum: 10c0/96fa50951d50817777441bc761a07a2a583a3ac47ed8a5e23897b83c2979a968a68d9764887714288dcb730f700476308a0fe66fbe7ef85c9e2de43e7b713a32
   languageName: node
   linkType: hard
 
