@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.13](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.12...@anansi/webpack-config@21.1.13) (2026-02-13)
+
+### 📦 Package
+
+* Update `@wyw-in-js/webpack-loader` to ^1.0.6 ([#2956](/github.com/ntucker/anansi/issues/2956)) ([0df6f59](/github.com/ntucker/anansi/commit/0df6f599af0f3b1f12b028c3c474a6d24a7b4e06))
+* Update all non-major dependencies ([#2959](/github.com/ntucker/anansi/issues/2959)) ([3c30092](/github.com/ntucker/anansi/commit/3c3009250189ee4f6ff6536fe388016b30076f3c))
+* Update all non-major dependencies ([#2972](/github.com/ntucker/anansi/issues/2972)) ([e5d8b15](/github.com/ntucker/anansi/commit/e5d8b15ab5f4504487b59c3c87bd3302ae3c9869))
+* Update webpack packages ([#2968](/github.com/ntucker/anansi/issues/2968)) ([9eea8f7](/github.com/ntucker/anansi/commit/9eea8f7fa92b5d9453152b55b1f25271db7172f5))
+
 ## [21.1.12](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.11...@anansi/webpack-config@21.1.12) (2026-01-23)
 
 ### 📦 Package

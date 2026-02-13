@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.9](https://github.com/ntucker/anansi/compare/example-react-18@9.0.8...example-react-18@9.0.9) (2026-02-13)
+
+### 📦 Package
+
+* Update `webpack` to v5.105.2 ([#2975](https://github.com/ntucker/anansi/issues/2975)) ([fe59828](https://github.com/ntucker/anansi/commit/fe59828a602a4250832faa7f24c4e26cde37db8b))
+* Update all non-major dependencies ([#2959](https://github.com/ntucker/anansi/issues/2959)) ([3c30092](https://github.com/ntucker/anansi/commit/3c3009250189ee4f6ff6536fe388016b30076f3c))
+* Update all non-major dependencies ([#2972](https://github.com/ntucker/anansi/issues/2972)) ([e5d8b15](https://github.com/ntucker/anansi/commit/e5d8b15ab5f4504487b59c3c87bd3302ae3c9869))
+* Update babel packages to v7.29.0 ([#2961](https://github.com/ntucker/anansi/issues/2961)) ([1fa6dc8](https://github.com/ntucker/anansi/commit/1fa6dc84de94c25bbbfc2494b6dd0735c622eee2))
+* Update react to v19.2.4 ([#2957](https://github.com/ntucker/anansi/issues/2957)) ([0923388](https://github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
+* Update webpack packages ([#2968](https://github.com/ntucker/anansi/issues/2968)) ([9eea8f7](https://github.com/ntucker/anansi/commit/9eea8f7fa92b5d9453152b55b1f25271db7172f5))
+
 ## [9.0.8](https://github.com/ntucker/anansi/compare/example-react-18@9.0.7...example-react-18@9.0.8) (2026-01-23)
 
 ### 📦 Package

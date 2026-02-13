@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.17](https://github.com/ntucker/anansi/compare/example-typescript@16.0.16...example-typescript@16.0.17) (2026-02-13)
+
+### 📦 Package
+
+* Update `eslint-plugin-storybook` to v10.2.3 ([#2962](https://github.com/ntucker/anansi/issues/2962)) ([c6cf27e](https://github.com/ntucker/anansi/commit/c6cf27ebd044e0d7fc861fb32b7195c54bfbe349))
+* Update `webpack` to v5.105.2 ([#2975](https://github.com/ntucker/anansi/issues/2975)) ([fe59828](https://github.com/ntucker/anansi/commit/fe59828a602a4250832faa7f24c4e26cde37db8b))
+* Update all non-major dependencies ([#2959](https://github.com/ntucker/anansi/issues/2959)) ([3c30092](https://github.com/ntucker/anansi/commit/3c3009250189ee4f6ff6536fe388016b30076f3c))
+* Update all non-major dependencies ([#2972](https://github.com/ntucker/anansi/issues/2972)) ([e5d8b15](https://github.com/ntucker/anansi/commit/e5d8b15ab5f4504487b59c3c87bd3302ae3c9869))
+* Update babel packages to v7.29.0 ([#2961](https://github.com/ntucker/anansi/issues/2961)) ([1fa6dc8](https://github.com/ntucker/anansi/commit/1fa6dc84de94c25bbbfc2494b6dd0735c622eee2))
+* Update react to v19.2.4 ([#2957](https://github.com/ntucker/anansi/issues/2957)) ([0923388](https://github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
+* Update storybook monorepo to v10.2.3 ([#2960](https://github.com/ntucker/anansi/issues/2960)) ([6baf2d2](https://github.com/ntucker/anansi/commit/6baf2d28a1bc0b467061f1c8c98cd23655a73325))
+* Update storybook monorepo to v10.2.4 ([#2964](https://github.com/ntucker/anansi/issues/2964)) ([7b80446](https://github.com/ntucker/anansi/commit/7b80446c2cc5be4a1be41f62f853bf9b828d2189))
+* Update storybook monorepo to v10.2.7 ([#2967](https://github.com/ntucker/anansi/issues/2967)) ([60492f9](https://github.com/ntucker/anansi/commit/60492f91dcd433d862dc5fa68d4b63c0d5475af2))
+* Update storybook monorepo to v10.2.8 ([#2969](https://github.com/ntucker/anansi/issues/2969)) ([91a63d1](https://github.com/ntucker/anansi/commit/91a63d1106fe4bcea036ea6f2294f1e4e400cbc5))
+* Update validation packages ([#2971](https://github.com/ntucker/anansi/issues/2971)) ([b08193f](https://github.com/ntucker/anansi/commit/b08193ff5e4213a8593928366264379a352ecbac))
+* Update webpack packages ([#2968](https://github.com/ntucker/anansi/issues/2968)) ([9eea8f7](https://github.com/ntucker/anansi/commit/9eea8f7fa92b5d9453152b55b1f25271db7172f5))
+
 ## [16.0.16](https://github.com/ntucker/anansi/compare/example-typescript@16.0.15...example-typescript@16.0.16) (2026-01-23)
 
 ### 📦 Package
