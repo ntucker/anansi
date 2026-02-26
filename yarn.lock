@@ -12731,7 +12731,7 @@ __metadata:
     react-router-dom: "npm:5.3.4"
     sass-embedded: "npm:^1.77.8"
     serve: "npm:14.2.5"
-    storybook: "npm:10.2.8"
+    storybook: "npm:10.2.10"
     typescript: "npm:^5.0.2"
     webpack: "npm:5.105.2"
     webpack-cli: "npm:^6.0.0"
