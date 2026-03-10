@@ -69,7 +69,7 @@
     "webpack-dev-server": "5.2.3"
   },
   "resolutions": {
-    "storybook": "10.2.16",
+    "storybook": "10.2.17",
     "@storybook/builder-webpack5/webpack": "5.105.4",
     "@storybook/preset-react-webpack/webpack": "5.105.4",
     "@types/react": "19.2.14",
