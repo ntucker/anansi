@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.24](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.23...@anansi/babel-preset@6.2.24) (2026-03-11)
+
+### 📦 Package
+
+* Update `babel-plugin-polyfill-corejs3` to ^0.14.1 ([#2993](/github.com/ntucker/anansi/issues/2993)) ([5d19e09](/github.com/ntucker/anansi/commit/5d19e09e90c1a894d42582655de130bee6d33826))
+
 ## [6.2.23](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.22...@anansi/babel-preset@6.2.23) (2026-02-13)
 
 ### 📦 Package
