@@ -248,7 +248,7 @@ __metadata:
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^4.1.4"
     mem-fs-editor: "npm:^11.1.4"
-    pacote: "npm:^21.4.0"
+    pacote: "npm:^21.5.0"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
     yeoman-environment: "npm:5.1.3"
@@ -378,7 +378,7 @@ __metadata:
     assert: "npm:^2.1.0"
     autoprefixer: "npm:^10.4.27"
     babel-jest: "npm:^30.0.0"
-    babel-loader: "npm:^10.1.0"
+    babel-loader: "npm:^10.1.1"
     browserify-zlib: "npm:^0.2.0"
     buffer: "npm:^6.0.3"
     circular-dependency-plugin: "npm:^5.2.2"
@@ -8914,9 +8914,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:10.1.0, babel-loader@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "babel-loader@npm:10.1.0"
+"babel-loader@npm:10.1.1, babel-loader@npm:^10.1.1":
+  version: 10.1.1
+  resolution: "babel-loader@npm:10.1.1"
   dependencies:
     find-up: "npm:^5.0.0"
   peerDependencies:
@@ -8928,7 +8928,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 10c0/62296ca9a1e248bed0e93269b4bf095c66eabf9c297e4367bea96ecd0b2f9cf5b4559bb9f0980ffeb3df800bbab799fa8ceec95884e846ae51cbbeaa05bfcddf
+  checksum: 10c0/09a14b66aadfc98b4fde123bcdf6e5481fb0a8a0daad1e225ea27656fd006a426d6446d34763b6af94f7a7333c52c9bead9ebefb42ad5b09a27bad65b6dac8f7
   languageName: node
   linkType: hard
 
@@ -12634,7 +12634,7 @@ __metadata:
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
     "@types/react-router-dom": "npm:5.3.3"
-    babel-loader: "npm:10.1.0"
+    babel-loader: "npm:10.1.1"
     classnames: "npm:2.5.1"
     core-js: "npm:3.48.0"
     eslint: "npm:^9.0.0"
@@ -16463,9 +16463,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:16.3.2":
-  version: 16.3.2
-  resolution: "lint-staged@npm:16.3.2"
+"lint-staged@npm:16.3.3":
+  version: 16.3.3
+  resolution: "lint-staged@npm:16.3.3"
   dependencies:
     commander: "npm:^14.0.3"
     listr2: "npm:^9.0.5"
@@ -16475,7 +16475,7 @@ __metadata:
     yaml: "npm:^2.8.2"
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 10c0/4cbaa85904a912215660ac3c69400b71beabe3fe7e82969cd32c726dbfb04b0f651d0660906215f955c1446ac6b520319e1c7a03c707353a5f038c3d0441a8c3
+  checksum: 10c0/e404007ca608f2adc8acb1f358a55bc2e613dce7c71dea5ee7a4d1c2da2eaa145f6cffb05eca0db2769586e7cddd58b22ec44934cc62147772d74154aa66f5bd
   languageName: node
   linkType: hard
 
@@ -18419,9 +18419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^21.0.0, pacote@npm:^21.0.2, pacote@npm:^21.2.0, pacote@npm:^21.4.0":
-  version: 21.4.0
-  resolution: "pacote@npm:21.4.0"
+"pacote@npm:^21.0.0, pacote@npm:^21.0.2, pacote@npm:^21.2.0, pacote@npm:^21.5.0":
+  version: 21.5.0
+  resolution: "pacote@npm:21.5.0"
   dependencies:
     "@gar/promise-retry": "npm:^1.0.0"
     "@npmcli/git": "npm:^7.0.0"
@@ -18442,7 +18442,7 @@ __metadata:
     tar: "npm:^7.4.3"
   bin:
     pacote: bin/index.js
-  checksum: 10c0/e6519ef2abef9d1c30113e91e0483998851316dc18a0c8883d471cb5315ee6bf97a8503d01a8ba63cad525b06ae09bc3b305134ada52524ca34a44105a32c642
+  checksum: 10c0/f91ee9c3645300b52eebdce461d4e1d8a9311e9ddf7f55f87532cd3df0282379613b0a9703f97d81c9efaae382f08fcf29e359d7f47f0e9c9670cfb7fc472954
   languageName: node
   linkType: hard
 
@@ -20860,7 +20860,7 @@ __metadata:
     "@types/node": "npm:^24.0.0"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
-    babel-loader: "npm:10.1.0"
+    babel-loader: "npm:10.1.1"
     babel-plugin-module-resolver: "npm:5.0.2"
     babel-plugin-root-import: "npm:6.6.0"
     conventional-changelog-anansi: "npm:0.3.1"
@@ -20869,7 +20869,7 @@ __metadata:
     globals: "npm:^17.0.0"
     husky: "npm:9.1.7"
     jest: "npm:^30.0.0"
-    lint-staged: "npm:16.3.2"
+    lint-staged: "npm:16.3.3"
     prettier: "npm:3.8.1"
     react: "npm:19.2.4"
     react-dom: "npm:19.2.4"
