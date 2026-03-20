@@ -34,7 +34,7 @@ __metadata:
     "@babel/plugin-transform-react-inline-elements": "npm:^7.27.1"
     "@babel/plugin-transform-runtime": "npm:^7.29.0"
     "@babel/plugin-transform-typescript": "npm:^7.28.6"
-    "@babel/preset-env": "npm:^7.29.0"
+    "@babel/preset-env": "npm:^7.29.2"
     "@babel/preset-react": "npm:^7.28.5"
     "@babel/runtime": "npm:^7.26.7"
     "@babel/runtime-corejs3": "npm:^7.26.7"
@@ -42,8 +42,8 @@ __metadata:
     "@types/node": "npm:^24.0.0"
     "@types/react": "npm:^19"
     babel-plugin-macros: "npm:^3.1.0"
-    babel-plugin-module-resolver: "npm:^5.0.2"
-    babel-plugin-polyfill-corejs3: "npm:^0.14.1"
+    babel-plugin-module-resolver: "npm:^5.0.3"
+    babel-plugin-polyfill-corejs3: "npm:^0.14.2"
     babel-plugin-react-compiler: "npm:1.0.0"
     babel-plugin-root-import: "npm:^6.6.0"
     babel-plugin-transform-import-meta: "npm:^2.3.3"
@@ -860,9 +860,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-define-polyfill-provider@npm:^0.6.5, @babel/helper-define-polyfill-provider@npm:^0.6.6, @babel/helper-define-polyfill-provider@npm:^0.6.7":
-  version: 0.6.7
-  resolution: "@babel/helper-define-polyfill-provider@npm:0.6.7"
+"@babel/helper-define-polyfill-provider@npm:^0.6.5, @babel/helper-define-polyfill-provider@npm:^0.6.6, @babel/helper-define-polyfill-provider@npm:^0.6.8":
+  version: 0.6.8
+  resolution: "@babel/helper-define-polyfill-provider@npm:0.6.8"
   dependencies:
     "@babel/helper-compilation-targets": "npm:^7.28.6"
     "@babel/helper-plugin-utils": "npm:^7.28.6"
@@ -871,7 +871,7 @@ __metadata:
     resolve: "npm:^1.22.11"
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
-  checksum: 10c0/1c812c59051998910b7b88fc6c314b628998cf0df02a460e5c141c2cde6fb6e6bb41a97b1ad3c038ccda5517fbe14bc1b4cca21f7333225b11c416a1169055f3
+  checksum: 10c0/306a169f2cb285f368578219ef18ea9702860d3d02d64334f8d45ea38648be0b9e1edad8c8f732fa34bb4206ccbb9883c395570fd57ab7bbcf293bc5964c5b3a
   languageName: node
   linkType: hard
 
@@ -2084,9 +2084,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.20.2, @babel/preset-env@npm:^7.29.0":
-  version: 7.29.0
-  resolution: "@babel/preset-env@npm:7.29.0"
+"@babel/preset-env@npm:^7.20.2, @babel/preset-env@npm:^7.29.2":
+  version: 7.29.2
+  resolution: "@babel/preset-env@npm:7.29.2"
   dependencies:
     "@babel/compat-data": "npm:^7.29.0"
     "@babel/helper-compilation-targets": "npm:^7.28.6"
@@ -2160,7 +2160,7 @@ __metadata:
     semver: "npm:^6.3.1"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 10c0/08737e333a538703ba20e9e93b5bfbc01abbb9d3b2519b5b62ad05d3b6b92d79445b1dac91229b8cfcfb0b681b22b7c6fa88d7c1cc15df1690a23b21287f55b6
+  checksum: 10c0/d49cb005f2dbc3f2293ab6d80ee8f1380e6215af5518fe26b087c8961c1ea8ebaa554dfce589abe1fbebac25ad7c2515d943dec3859ea2d4981a3f8f4711c580
   languageName: node
   linkType: hard
 
@@ -2208,19 +2208,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:7.29.0, @babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
-  version: 7.29.0
-  resolution: "@babel/runtime-corejs3@npm:7.29.0"
+"@babel/runtime-corejs3@npm:7.29.2, @babel/runtime-corejs3@npm:^7.26.0, @babel/runtime-corejs3@npm:^7.26.7":
+  version: 7.29.2
+  resolution: "@babel/runtime-corejs3@npm:7.29.2"
   dependencies:
     core-js-pure: "npm:^3.48.0"
-  checksum: 10c0/7f1197fa3a50836a6ce1ca3b51df69b65421f790d3f877f2cba8e6c3c238e358da9eafa083fd100cc7a2c4c57db7e27c6bf36b8ea8dd4caa29bfa363adbbaa81
+  checksum: 10c0/24a9de8b592cf67fbe62c36c002a0da8c0456079a0543646a40e2b1b0838e7712f5ff49e9551624395ccd67a409c63e7c638b23e3bebbfdf54e373b1c707ebff
   languageName: node
   linkType: hard
 
 "@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.1, @babel/runtime@npm:^7.11.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.24.4, @babel/runtime@npm:^7.24.7, @babel/runtime@npm:^7.24.8, @babel/runtime@npm:^7.26.7, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
-  version: 7.28.6
-  resolution: "@babel/runtime@npm:7.28.6"
-  checksum: 10c0/358cf2429992ac1c466df1a21c1601d595c46930a13c1d4662fde908d44ee78ec3c183aaff513ecb01ef8c55c3624afe0309eeeb34715672dbfadb7feedb2c0d
+  version: 7.29.2
+  resolution: "@babel/runtime@npm:7.29.2"
+  checksum: 10c0/30b80a0140d16467792e1bbeb06f655b0dab70407da38dfac7fedae9c859f9ae9d846ef14ad77bd3814c064295fe9b1bc551f1541ea14646ae9f22b71a8bc17a
   languageName: node
   linkType: hard
 
@@ -8965,16 +8965,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-module-resolver@npm:5.0.2, babel-plugin-module-resolver@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "babel-plugin-module-resolver@npm:5.0.2"
+"babel-plugin-module-resolver@npm:5.0.3, babel-plugin-module-resolver@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "babel-plugin-module-resolver@npm:5.0.3"
   dependencies:
     find-babel-config: "npm:^2.1.1"
     glob: "npm:^9.3.3"
     pkg-up: "npm:^3.1.0"
     reselect: "npm:^4.1.7"
     resolve: "npm:^1.22.8"
-  checksum: 10c0/ccbb9e673c4219f68937349267521becb72be292cf30bf70b861c3e709d24fbfa589da0bf6c100a0def799d38199299171cb6eac3fb00b1ea740373e2c1fe54c
+  checksum: 10c0/aa8940ae1eaa7dadbf63b12387ed63ab34a19bf6614ac76e16e4d44af80ae36c4741d307a91f864320c0ad33037b34466854bb9d8de6c1e73936b1af1b6d36a6
   languageName: node
   linkType: hard
 
@@ -9003,15 +9003,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-polyfill-corejs3@npm:^0.14.0, babel-plugin-polyfill-corejs3@npm:^0.14.1":
-  version: 0.14.1
-  resolution: "babel-plugin-polyfill-corejs3@npm:0.14.1"
+"babel-plugin-polyfill-corejs3@npm:^0.14.0, babel-plugin-polyfill-corejs3@npm:^0.14.2":
+  version: 0.14.2
+  resolution: "babel-plugin-polyfill-corejs3@npm:0.14.2"
   dependencies:
-    "@babel/helper-define-polyfill-provider": "npm:^0.6.7"
+    "@babel/helper-define-polyfill-provider": "npm:^0.6.8"
     core-js-compat: "npm:^3.48.0"
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
-  checksum: 10c0/c1fa84e5febbdc785b8ed396fe70581e3358e7c50f58c62999e9ce75c6a71d0848d62691cb07b4e58a23eec77c84091df58ac5354126ca244e15f5fd47362497
+  checksum: 10c0/32f70442f142d0f5607f4b57c121c573b106e09da8659c0f03108a85bf1d09ba5bdc89595a82b34ff76c19f1faf3d1c831b56166f03babf69c024f36da77c3bf
   languageName: node
   linkType: hard
 
@@ -10579,10 +10579,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.48.0":
-  version: 3.48.0
-  resolution: "core-js@npm:3.48.0"
-  checksum: 10c0/6c3115900dd7cce9fab74c07cb262b3517fc250d02e8fd2ff34f80bda5f43a28482a909dbc4491dc6e1ddd9807f57a7df4c3eeecd1f202b7d9c8bfe25f9d680c
+"core-js@npm:3.49.0":
+  version: 3.49.0
+  resolution: "core-js@npm:3.49.0"
+  checksum: 10c0/2e42edb47eda38fd5368380131623c8aa5d4a6b42164125b17744bdc08fa5ebbbdd06b4b4aa6ca3663470a560b0f2fba48e18f142dfe264b0039df85bc625694
   languageName: node
   linkType: hard
 
@@ -12625,7 +12625,7 @@ __metadata:
     "@anansi/webpack-config": "npm:^21.1.15"
     "@babel/core": "npm:^7.21.3"
     "@babel/plugin-transform-modules-commonjs": "npm:7.28.6"
-    "@babel/runtime-corejs3": "npm:7.29.0"
+    "@babel/runtime-corejs3": "npm:7.29.2"
     "@linaria/core": "npm:6.3.0"
     "@linaria/react": "npm:6.3.0"
     "@types/babel__core": "npm:^7.20.0"
@@ -12636,7 +12636,7 @@ __metadata:
     "@types/react-router-dom": "npm:5.3.3"
     babel-loader: "npm:10.1.1"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.48.0"
+    core-js: "npm:3.49.0"
     eslint: "npm:^9.0.0"
     prettier: "npm:^3.0.0"
     react: "npm:19.2.4"
@@ -12667,7 +12667,7 @@ __metadata:
     "@ant-design/cssinjs": "npm:2.1.2"
     "@ant-design/icons": "npm:6.1.0"
     "@babel/core": "npm:7.29.0"
-    "@babel/runtime-corejs3": "npm:7.29.0"
+    "@babel/runtime-corejs3": "npm:7.29.2"
     "@data-client/endpoint": "npm:0.15.7"
     "@data-client/hooks": "npm:0.2.0"
     "@data-client/img": "npm:0.15.0"
@@ -12684,7 +12684,7 @@ __metadata:
     "@types/react-dom": "npm:19.2.3"
     antd: "npm:6.3.2"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.48.0"
+    core-js: "npm:3.49.0"
     eslint: "npm:9.39.4"
     history: "npm:5.3.0"
     jest: "npm:30.3.0"
@@ -12713,7 +12713,7 @@ __metadata:
     "@ant-design/icons": "npm:^6.0.0"
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
-    "@babel/runtime-corejs3": "npm:7.29.0"
+    "@babel/runtime-corejs3": "npm:7.29.2"
     "@data-client/graphql": "npm:0.15.7"
     "@data-client/react": "npm:0.15.7"
     "@data-client/rest": "npm:0.15.7"
@@ -12735,7 +12735,7 @@ __metadata:
     "@types/react-router-dom": "npm:5.3.3"
     antd: "npm:6.3.2"
     classnames: "npm:2.5.1"
-    core-js: "npm:3.48.0"
+    core-js: "npm:3.49.0"
     eslint: "npm:^9.0.0"
     eslint-plugin-storybook: "npm:10.2.17"
     history: "npm:^5.3.0"
@@ -20861,7 +20861,7 @@ __metadata:
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
     babel-loader: "npm:10.1.1"
-    babel-plugin-module-resolver: "npm:5.0.2"
+    babel-plugin-module-resolver: "npm:5.0.3"
     babel-plugin-root-import: "npm:6.6.0"
     conventional-changelog-anansi: "npm:0.3.1"
     conventional-changelog-conventionalcommits: "npm:6.1.0"
