@@ -51,7 +51,7 @@
     "@lerna-lite/cli": "4.11.2",
     "@types/node": "^24.0.0",
     "babel-loader": "10.1.1",
-    "babel-plugin-module-resolver": "5.0.2",
+    "babel-plugin-module-resolver": "5.0.3",
     "babel-plugin-root-import": "6.6.0",
     "conventional-changelog-anansi": "0.3.1",
     "conventional-changelog-conventionalcommits": "6.1.0",
