@@ -57,7 +57,6 @@ export default class StorybookGenerator extends BetterGenerator<StorybookOptions
       this.templatePath('src/**'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
   }

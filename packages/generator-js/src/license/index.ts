@@ -1,4 +1,4 @@
-import Generator from 'yeoman-generator';
+import Generator, { type BaseOptions } from 'yeoman-generator';
 
 export const licenses = [
   { name: 'Apache 2.0', value: 'Apache-2.0' },
@@ -14,22 +14,34 @@ export const licenses = [
   { name: 'No License (Copyrighted)', value: 'UNLICENSED' },
 ];
 
-export default class GeneratorLicense extends Generator {
+type LicenseOptions = BaseOptions & {
+  name: string;
+  email: string;
+  website: string;
+  year: string;
+  licensePrompt: string;
+  defaultLicense: string;
+  license: string;
+  output: string;
+  publish: boolean;
+};
+
+export default class GeneratorLicense extends Generator<
+  Record<string, any>,
+  LicenseOptions
+> {
   declare private gitc: Record<string, any>;
   declare private props: Record<string, any>;
 
   constructor(
     args: string | string[],
-    options: Record<string, unknown>,
+    options: LicenseOptions,
     features: Record<string, unknown>,
   ) {
-    // fix broken logic in path combining in yeoman-generator
     if (options.resolved?.startsWith('file://'))
       options.resolved = options.resolved.substring(7);
 
-    // this is actually improperly typed
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
+    // @ts-expect-error dynamic options
     super(args, options, features);
 
     this.option('name', {
@@ -93,27 +105,9 @@ export default class GeneratorLicense extends Generator {
   }
 
   prompting() {
-    const prompts = [
-      /*{
-        name: 'name',
-        message: "What's your name:",
-        default: this.options.name || this.gitc.user.name,
-        when: this.options.name === undefined,
-      },
+    const prompts: any[] = [
       {
-        name: 'email',
-        message: 'Your email (optional):',
-        default: this.options.email || this.gitc.user.email,
-        when: this.options.email === undefined,
-      },
-      {
-        name: 'website',
-        message: 'Your website (optional):',
-        default: this.options.website,
-        when: this.options.website === undefined,
-      },*/
-      {
-        type: 'list',
+        type: 'select' as const,
         name: 'license',
         message: this.options.licensePrompt,
         default: this.options.defaultLicense,

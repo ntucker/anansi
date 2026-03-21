@@ -28,7 +28,6 @@ export default class extends BetterGenerator {
       this.templatePath('src/**'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
     this.fs.delete(this.destinationPath('index.ejs'));

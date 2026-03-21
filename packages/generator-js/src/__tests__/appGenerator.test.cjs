@@ -45,7 +45,7 @@ async function ensureGeneratorBuilt() {
         cwd: REPO_ROOT,
         env: {
           ...process.env,
-          NODE_ENV: process.env.NODE_ENV ?? 'test',
+          NODE_ENV: 'production',
         },
       },
     ).then(() => undefined);

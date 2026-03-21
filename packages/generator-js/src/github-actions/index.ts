@@ -12,7 +12,6 @@ export default class extends BetterGenerator {
       this.templatePath('dot-github/**'),
       this.destinationPath('.github'),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
   }

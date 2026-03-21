@@ -26,7 +26,7 @@ export default class extends BetterGenerator {
         this.options,
       );
     }
-    if (this.options.branded) {
+    if ((this.options as any).branded) {
       this.composeWith(
         await resolvePath('../anansi-splash', import.meta.url),
         this.options,
@@ -83,7 +83,6 @@ export default class extends BetterGenerator {
       this.templatePath('src/**'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
     this.fs.copyTpl(

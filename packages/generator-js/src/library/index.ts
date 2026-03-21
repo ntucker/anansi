@@ -53,8 +53,8 @@ export default class extends BetterGenerator<LibraryOptions, BaseFeatures> {
       this.destinationPath('tsconfig.json'),
     );
     this.fs.appendTpl(
-      this.templatePath('.gitignore.tpl'),
       this.destinationPath('.gitignore'),
+      this.fs.read(this.templatePath('.gitignore.tpl')),
       this.config.getAll(),
     );
   }
@@ -87,7 +87,6 @@ export default class extends BetterGenerator<LibraryOptions, BaseFeatures> {
       this.templatePath('src/**'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
     this.fs.copyTpl(

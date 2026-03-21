@@ -31,34 +31,27 @@ export default class AppGenerator<
       { restore: true },
     );
 
-    // this is actually improperly typed
-    this.queueTransformStream([
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+    this.queueTransformStream(
+      {},
       jsFilter,
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       prettier({
         printWidth: 80,
         semi: true,
         singleQuote: true,
         trailingComma: 'all',
       }),
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       jsFilter.restore,
-    ]);
+    );
   }
 
   async prompting() {
     this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
     const props = await super.prompting();
-    this.composeWith(await resolvePath('../base', import.meta.url), {
+    this.composeWith(await resolvePath('../base', import.meta.url), this.args, {
       ...this.options,
-      arguments: this.args,
       branded: true,
       projectType: props.projectType,
-    });
+    } as any);
     return props;
   }
 }

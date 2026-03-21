@@ -73,7 +73,7 @@ export default class ConfigureGenerator<
   async prompting() {
     const props = await this.prompt([
       {
-        type: 'list',
+        type: 'select',
         name: 'projectType',
         message: 'Would type of project are you starting?',
         default: 'SPA',

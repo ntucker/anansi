@@ -33,7 +33,6 @@ ${badges}`,
         circleParallelism: this.options['circle-parallelism'],
         ...this.config.getAll(),
       },
-      {},
       { globOptions: { dot: true } },
     );
   }
