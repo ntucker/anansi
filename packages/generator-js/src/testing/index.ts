@@ -52,7 +52,6 @@ export default class TestingGenerator extends BetterGenerator {
       this.templatePath('src/**'),
       this.destinationPath(this.config.get('rootPath')),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
   }

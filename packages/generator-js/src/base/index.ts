@@ -8,8 +8,8 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
     this.config.set('testing', false);
   }
 
-  async prompting() {
-    const prompts = [
+  async prompting(): Promise<any> {
+    const prompts: any[] = [
       {
         type: 'checkbox',
         name: 'features',
@@ -23,7 +23,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
         default: ['SSR', 'testing', 'CI'] as string[],
         store: true,
       },
-    ] as const;
+    ];
     if (this.options.projectType === 'SPA') {
       prompts[0].choices.unshift({
         name: 'Server Side Rendering',
@@ -77,7 +77,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
     this.composeWith(await resolvePath('../license', import.meta.url), {
       ...this.options,
       defaultLicense: 'BSD',
-    });
+    } as any);
 
     const repository = `${this.config.get('githubDomain')}/${this.config.get(
       'githubOrg',
@@ -104,7 +104,7 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       },
       homepage: `https://${repository}#readme`,
       keywords: ['anansi'],
-      author: this.config.get('author'),
+      author: this.config.get('author') as string,
       browserslist: ['extends @anansi/browserslist-config'],
       prettier: {
         printWidth: 80,
@@ -120,7 +120,6 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       this.templatePath('**'),
       this.destinationRoot(),
       this.config.getAll(),
-      {},
       { globOptions: { dot: true } },
     );
     // set .gitignore to proper location

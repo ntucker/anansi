@@ -18,13 +18,6 @@ export interface FsEditor<
     templateOptions?: Record<string, any>,
     ...extendArgs: any[]
   ): void;
-  appendTpl(
-    from: string,
-    to: string | Buffer,
-    context?: Record<string, any>,
-    templateOptions?: Record<string, any>,
-    appendOptions?: Record<string, any>,
-  ): void;
   readJSONTpl(
     from: string,
     context?: Record<string, any>,
@@ -35,7 +28,7 @@ export interface FsEditor<
 export class BetterGenerator<
   O extends BaseOptions = BaseOptions,
   F extends BaseFeatures = BaseFeatures,
-> extends Generator<O, F> {
+> extends Generator<Record<string, any>, O, F> {
   declare fs: FsEditor;
 
   constructor(args: string | string[], options: O, features: F) {
@@ -73,15 +66,6 @@ export class BetterGenerator<
       ) as any;
       return JSON.parse(input);
     };
-
-    this.fs.appendTpl = (from, to, context, templateOptions, appendOptions) => {
-      const input = ejs.render(
-        this.fs.read(from) ?? '',
-        context || this.config.getAll(),
-        templateOptions,
-      );
-      (this.fs as any).append(to, input, appendOptions);
-    };
   }
 
   async addPeers(
@@ -95,7 +79,7 @@ export class BetterGenerator<
     }
     const peers = Object.fromEntries(
       Object.entries(manifest?.peerDependencies ?? {}).filter(
-        ([pkg, version]) => !exclude.includes(pkg),
+        ([pkg, _version]) => !exclude.includes(pkg),
       ),
     );
     const funcKey = `add${capitalize(deptype)}` as const;

@@ -16,10 +16,9 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
   }
 
   async prompting() {
-    const prompts = [
-      // TODO: actually do something with this
+    const prompts: any[] = [
       {
-        type: 'list',
+        type: 'select' as const,
         name: 'style',
         message:
           'SCSS with CSS modules and Linaria can both be used for styling.\nWhich would you like in the generated example?',
@@ -52,7 +51,7 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
         shell: true,
       });
       this.config.set('devssl', /*true*/ false); //TODO: figure out how to make this actually work
-    } catch (e) {
+    } catch {
       this.config.set('devssl', false);
     }
   }
@@ -95,7 +94,6 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
         this.templatePath('src/style/**'),
         this.destinationPath(this.config.get('rootPath'), 'style'),
         this.config.getAll(),
-        {},
         { globOptions: { dot: true } },
       );
     }
@@ -109,8 +107,8 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
       this.destinationPath('tsconfig.json'),
     );
     this.fs.appendTpl(
-      this.templatePath('README.md'),
       this.destinationPath('README.md'),
+      this.fs.read(this.templatePath('README.md')),
       this.config.getAll(),
     );
     this.fs.copy(
@@ -125,8 +123,8 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
         this.config.getAll(),
       );
       this.fs.appendTpl(
-        this.templatePath('.gitignore.tpl'),
         this.destinationPath('.gitignore'),
+        this.fs.read(this.templatePath('.gitignore.tpl')),
         this.config.getAll(),
       );
     }
