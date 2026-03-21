@@ -42,7 +42,7 @@
       "groupName": "react"
     },
     {
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupSlug": "webpack",
       "groupName": "webpack packages",
       "matchSourceUrls": [
@@ -67,9 +67,15 @@
         "@svgr/webpack",
         "@wyw-in-js/webpack-loader"
       ],
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupSlug": "webpack",
       "groupName": "webpack packages"
+    },
+    {
+      "matchPackageNames": ["@linaria/**", "@wyw-in-js/**"],
+      "matchUpdateTypes": ["major"],
+      "groupSlug": "linaria",
+      "groupName": "linaria packages"
     },
     {
       "matchPackageNames": [
