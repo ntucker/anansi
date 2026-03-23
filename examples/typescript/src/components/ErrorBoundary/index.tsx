@@ -1,16 +1,15 @@
 import { Spin } from 'antd';
 import classNames from 'classnames';
-import { Suspense, Component } from 'react';
-import type { ReactChild } from 'react';
-
 import ErrorLoggerContext from 'lib/ErrorLoggerContext';
 import { history } from 'navigation';
+import { Suspense, Component } from 'react';
+import type { ContextType, ReactNode } from 'react';
 
 import { ReactComponent as BigAlertIcon } from './big-alert.svg';
 import * as styles from './index.scss';
 
 function handleRefresh() {
-  window.location.reload(true);
+  window.location.reload();
 }
 
 interface NetworkError extends Error {
@@ -18,7 +17,7 @@ interface NetworkError extends Error {
 }
 
 interface Props {
-  children: ReactChild;
+  children: ReactNode;
 }
 interface State {
   error: Error | NetworkError | null;
@@ -27,6 +26,7 @@ interface State {
 
 export default class ErrorBoundary extends Component<Props, State> {
   private cb?: ReturnType<typeof history.listen>;
+  declare context: ContextType<typeof ErrorLoggerContext>;
 
   static contextType = ErrorLoggerContext;
   static getDerivedStateFromError(error: Error | null) {
@@ -35,9 +35,9 @@ export default class ErrorBoundary extends Component<Props, State> {
 
   state: State = { error: null, errorInfo: null };
 
-  componentDidCatch(error: Error | null, errorInfo: object) {
+  componentDidCatch(error: Error, errorInfo: object) {
     this.setState({ errorInfo });
-    this.context(error, {
+    this.context?.(error, {
       errorInfo,
     });
   }

@@ -20,7 +20,7 @@ const userList = gql.query(
 );
 
 export default function GQL() {
-  const { users } = useSuspense(userList);
+  const { users } = useSuspense(userList, null);
   return (
     <div>
       {users.map(user => (

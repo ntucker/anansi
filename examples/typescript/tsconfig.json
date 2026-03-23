@@ -44,7 +44,14 @@
 
     "paths": {
       "@standard-endpoint/github/*": ["./src/github/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "lib/*": ["./src/lib/*"],
+      "navigation": ["./src/navigation"],
+      "navigation/*": ["./src/navigation/*"],
+      "data/*": ["./src/data/*"],
+      "silly.module.scss": ["./src/style/silly.module.scss"],
+      "variables.scss": ["./src/style/variables.scss"],
+      "code.scss": ["./src/style/code.scss"]
     } /* Explicit path aliases avoid the deprecated baseUrl option. */,
     //"rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
 
@@ -55,6 +62,7 @@
     ] /* Type declaration files to be included in compilation. */,
     "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "skipLibCheck": true /* Third-party declarations lag behind the TS 6 upgrade; focus validation on app sources. */,
     //"preserveSymlinks": false,              /* Do not resolve the real path of symlinks. */
 
     /* Source Map Options */

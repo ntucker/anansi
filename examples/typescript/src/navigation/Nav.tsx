@@ -2,6 +2,8 @@ import { Menu, MenuProps } from 'antd';
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
+type MenuItem = NonNullable<MenuProps['items']>[number];
+
 function Nav() {
   return (
     <Menu
@@ -29,12 +31,6 @@ function getItem(
   icon?: React.ReactNode,
   children?: MenuProps['items'],
   type?: 'group',
-) {
-  return {
-    key,
-    icon,
-    children,
-    label,
-    type,
-  };
+): MenuItem {
+  return { key, icon, children: children ?? [], label, type } as MenuItem;
 }

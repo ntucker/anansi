@@ -41,7 +41,6 @@ export default class GeneratorLicense extends Generator<
     if (options.resolved?.startsWith('file://'))
       options.resolved = options.resolved.substring(7);
 
-    // @ts-expect-error dynamic options
     super(args, options, features);
 
     this.option('name', {
