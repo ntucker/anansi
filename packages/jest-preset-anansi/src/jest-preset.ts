@@ -9,6 +9,11 @@ const BABELCONFIG = process.env.ANANSI_JEST_BABELCONFIG ?? true;
 const TYPECHECK = process.env.ANANSI_JEST_TYPECHECK ?? true;
 
 const { options } = readTsConfig('./', TSCONFIG);
+const moduleNameMapper = pathsToModuleNameMapper(options.paths || {}, {
+  prefix:
+    options.pathsBasePath ??
+    (options.baseUrl ? `<rootDir>/${options.baseUrl}/` : '<rootDir>/'),
+});
 
 let react;
 try {
@@ -73,9 +78,7 @@ module.exports = {
         require.resolve('./mocks/fileMock.js'),
       '\\.(css|scss)$': require.resolve('./mocks/cssMock.js'),
       '\\.(svg)$': require.resolve('./mocks/svgrMock.js'),
-      ...pathsToModuleNameMapper(options.paths || [], {
-        prefix: `<rootDir>/${options.baseUrl}/`,
-      }),
+      ...moduleNameMapper,
     },
   },
 };

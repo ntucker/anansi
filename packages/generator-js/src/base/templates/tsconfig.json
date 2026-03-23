@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "outDir": "./<%= typeof libPath !== 'undefined' ? libPath : assetPath %>",
-    "baseUrl": "./<%= rootPath %>",
     "target": "esnext",
     "module": "nodenext",
     "lib": ["dom", "esnext"],
@@ -9,6 +8,9 @@
     "declaration": true,
     "strict": true,
     "moduleResolution": "nodenext",
+    "paths": {
+      "@/*": ["./<%= rootPath %>/*"]
+    },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
