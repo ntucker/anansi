@@ -1,6 +1,6 @@
 import { makeStorybookConfigGenerator } from '@anansi/webpack-config';
 import { createRequire } from 'node:module';
-import { dirname, join } from 'node:path';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type {
   PresetProperty,
@@ -15,9 +15,6 @@ type WebpackFinalResult = Awaited<
 >;
 
 const require = createRequire(import.meta.url);
-
-const resolvePackageDir = (input: string) =>
-  dirname(fileURLToPath(import.meta.resolve(`${input}/package.json`)));
 
 const resolveModuleEntry = (input: string) =>
   fileURLToPath(import.meta.resolve(input));
@@ -44,7 +41,7 @@ export const frameworkOptions = async (
   }
   if (typeof config === 'undefined') {
     return {
-      name: resolvePackageDir('@anansi/storybook') as '@anansi/storybook',
+      name: '@anansi/storybook',
       options: defaultFrameworkOptions,
     };
   }

@@ -1,9 +1,3 @@
-import { dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const resolvePackageDir = (specifier: string) =>
-  dirname(fileURLToPath(import.meta.resolve(`${specifier}/package.json`)));
-
 const config = {
   stories: ['../**/*.stories.tsx'],
   addons: ['@storybook/addon-docs'],
@@ -11,7 +5,7 @@ const config = {
     reactDocgen: 'react-docgen-typescript',
   },
   framework: {
-    name: resolvePackageDir('@anansi/storybook'),
+    name: '@anansi/storybook',
   },
 };
 
