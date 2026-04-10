@@ -45,8 +45,8 @@
     "@linaria/react": "6.3.0",
     "classnames": "2.5.1",
     "core-js": "3.49.0",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
