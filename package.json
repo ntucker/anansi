@@ -75,8 +75,8 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "normalize-url": "^6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "@conventional-changelog/git-client": "2.7.0"
   },
   "dependencies": {
@@ -84,8 +84,8 @@
     "@lerna-lite/version": "^4.0.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
   },
   "packageManager": "yarn@4.13.0"
 }
