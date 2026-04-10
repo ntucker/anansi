@@ -250,7 +250,7 @@ __metadata:
     pacote: "npm:^21.5.0"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:6.0.0"
+    yeoman-environment: "npm:6.0.1"
     yeoman-generator: "npm:^8.1.2"
     yeoman-test: "npm:11.3.1"
   languageName: unknown
@@ -13645,9 +13645,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^16.1.1":
-  version: 16.1.1
-  resolution: "globby@npm:16.1.1"
+"globby@npm:^16.2.0":
+  version: 16.2.0
+  resolution: "globby@npm:16.2.0"
   dependencies:
     "@sindresorhus/merge-streams": "npm:^4.0.0"
     fast-glob: "npm:^3.3.3"
@@ -13655,7 +13655,7 @@ __metadata:
     is-path-inside: "npm:^4.0.0"
     slash: "npm:^5.1.0"
     unicorn-magic: "npm:^0.4.0"
-  checksum: 10c0/2fbed8e5c59639a98b9b9c700afe5bcedf14742b43c25950cfd34a032db0cce4b440d8436beb4a936d211744e0b7330646f086b95cd8054251162c5d83001600
+  checksum: 10c0/fc0675e01dc1da5095f30dccc46a3047fc38d45ca08c21c1aa871bd79d38682f507d84a159be168019db5fffaa09c5663c3679c29190a2d4f999dc91d7ff6406
   languageName: node
   linkType: hard
 
@@ -16221,7 +16221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:^4.17.23":
+"lodash-es@npm:^4.17.23, lodash-es@npm:^4.18.1":
   version: 4.18.1
   resolution: "lodash-es@npm:4.18.1"
   checksum: 10c0/35d4dcf87ef07f8d090f409447575800108057e360b445f590d0d25d09e3d1e33a163d2fc100d4d072b0f901d5e2fc533cd7c4bfd8eeb38a06abec693823c8b8
@@ -16588,7 +16588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^4.1.2, mem-fs@npm:^4.1.4":
+"mem-fs@npm:^4.1.4":
   version: 4.1.4
   resolution: "mem-fs@npm:4.1.4"
   dependencies:
@@ -24027,9 +24027,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:6.0.0":
-  version: 6.0.0
-  resolution: "yeoman-environment@npm:6.0.0"
+"yeoman-environment@npm:6.0.1":
+  version: 6.0.1
+  resolution: "yeoman-environment@npm:6.0.1"
   dependencies:
     "@yeoman/adapter": "npm:^4.0.2"
     "@yeoman/conflicter": "npm:^4.0.1"
@@ -24042,12 +24042,12 @@ __metadata:
     debug: "npm:^4.4.3"
     execa: "npm:^9.6.1"
     fly-import: "npm:^1.0.0"
-    globby: "npm:^16.1.1"
+    globby: "npm:^16.2.0"
     grouped-queue: "npm:^2.1.0"
     locate-path: "npm:^8.0.0"
-    lodash-es: "npm:^4.17.23"
-    mem-fs: "npm:^4.1.2"
-    mem-fs-editor: "npm:^12.0.2"
+    lodash-es: "npm:^4.18.1"
+    mem-fs: "npm:^4.1.4"
+    mem-fs-editor: "npm:^12.0.3"
     semver: "npm:^7.7.4"
     slash: "npm:^5.1.0"
     untildify: "npm:^6.0.0"
@@ -24058,7 +24058,7 @@ __metadata:
     mem-fs: ^4.1.4
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/2ce841657e669de2248c9649d43b6f70d227aae8a0900779db16167fb1de06f15537ec3572de5d9827ad598eb3d5a99f1f003335bb35607ca67aba8639633c7b
+  checksum: 10c0/83ca87a7461fd80a448d980434e78f46f488df9f22490d10d0e6fd96a01367c7819f71c1d089fd22976e4f5075e8d633049873d36951c828e2fc4c30908feef3
   languageName: node
   linkType: hard
 
