@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.10](/github.com/ntucker/anansi/compare/@anansi/core@0.22.9...@anansi/core@0.22.10) (2026-04-10)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#3017](/github.com/ntucker/anansi/issues/3017)) ([88e783e](/github.com/ntucker/anansi/commit/88e783e831fa3205b90396de1c9f4d5ea68a2813))
+* Update react to v19.2.5 ([#3034](/github.com/ntucker/anansi/issues/3034)) ([c162d4f](/github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
+
 ## [0.22.9](/github.com/ntucker/anansi/compare/@anansi/core@0.22.8...@anansi/core@0.22.9) (2026-03-20)
 
 ### 📦 Package

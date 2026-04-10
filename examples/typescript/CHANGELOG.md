@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.21](https://github.com/ntucker/anansi/compare/example-typescript@16.0.20...example-typescript@16.0.21) (2026-04-10)
+
+### 📦 Package
+
+* Update `lodash` to v4.18.1 [SECURITY] ([#3018](https://github.com/ntucker/anansi/issues/3018)) ([c006458](https://github.com/ntucker/anansi/commit/c0064581f9b753da7fe42c034deaee19b974e794))
+* Update `webpack-cli` to v7 ([#3008](https://github.com/ntucker/anansi/issues/3008)) ([f1a8240](https://github.com/ntucker/anansi/commit/f1a8240435172b3b6d679b94db08f382990c6c5e))
+* Update all non-major dependencies ([#3017](https://github.com/ntucker/anansi/issues/3017)) ([88e783e](https://github.com/ntucker/anansi/commit/88e783e831fa3205b90396de1c9f4d5ea68a2813))
+* Update all non-major dependencies ([#3028](https://github.com/ntucker/anansi/issues/3028)) ([64cb17b](https://github.com/ntucker/anansi/commit/64cb17b8ed78aef0c9e177ee5f27fdb7acdb834c))
+* Update react to v19.2.5 ([#3034](https://github.com/ntucker/anansi/issues/3034)) ([c162d4f](https://github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
+* Update storybook monorepo to v10.3.4 ([#3021](https://github.com/ntucker/anansi/issues/3021)) ([35d63c4](https://github.com/ntucker/anansi/commit/35d63c476b2cf8ec09608bad070c847274ee11b4))
+* Update storybook monorepo to v10.3.5 ([#3032](https://github.com/ntucker/anansi/issues/3032)) ([5d7ad8b](https://github.com/ntucker/anansi/commit/5d7ad8b20b6711eb05acf7662385b30ffecc1f47))
+* Update validation packages ([#3009](https://github.com/ntucker/anansi/issues/3009)) ([37a6fc0](https://github.com/ntucker/anansi/commit/37a6fc03d050cf1ed678502fed05542e7219ef7a))
+* Update validation packages ([#3022](https://github.com/ntucker/anansi/issues/3022)) ([e6fafc2](https://github.com/ntucker/anansi/commit/e6fafc24208e38f98216fcdba4ee039e1e7d21eb))
+* Update validation packages ([#3030](https://github.com/ntucker/anansi/issues/3030)) ([12fe380](https://github.com/ntucker/anansi/commit/12fe380b253ba2bee15c9d7d4dd2b3ad3c151b5e))
+* Update webpack packages ([#3031](https://github.com/ntucker/anansi/issues/3031)) ([aed4bc5](https://github.com/ntucker/anansi/commit/aed4bc523a1a10fd42123667264f09c8259430d2))
+
 ## [16.0.20](https://github.com/ntucker/anansi/compare/example-typescript@16.0.19...example-typescript@16.0.20) (2026-03-20)
 
 ### 📦 Package

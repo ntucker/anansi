@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.45](https://github.com/ntucker/anansi/compare/example-linaria@9.0.44...example-linaria@9.0.45) (2026-04-10)
+
+### 📦 Package
+
+* Update `webpack-cli` to v7 ([#3008](https://github.com/ntucker/anansi/issues/3008)) ([f1a8240](https://github.com/ntucker/anansi/commit/f1a8240435172b3b6d679b94db08f382990c6c5e))
+* Update react to v19.2.5 ([#3034](https://github.com/ntucker/anansi/issues/3034)) ([c162d4f](https://github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
+* Update webpack packages ([#3031](https://github.com/ntucker/anansi/issues/3031)) ([aed4bc5](https://github.com/ntucker/anansi/commit/aed4bc523a1a10fd42123667264f09c8259430d2))
+
 ## [9.0.44](https://github.com/ntucker/anansi/compare/example-linaria@9.0.43...example-linaria@9.0.44) (2026-03-20)
 
 ### 📦 Package

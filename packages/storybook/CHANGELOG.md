@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.21](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.20...@anansi/storybook@4.0.21) (2026-04-10)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#3017](/github.com/ntucker/anansi/issues/3017)) ([88e783e](/github.com/ntucker/anansi/commit/88e783e831fa3205b90396de1c9f4d5ea68a2813))
+* Update all non-major dependencies ([#3028](/github.com/ntucker/anansi/issues/3028)) ([64cb17b](/github.com/ntucker/anansi/commit/64cb17b8ed78aef0c9e177ee5f27fdb7acdb834c))
+* Update storybook monorepo to v10.3.4 ([#3021](/github.com/ntucker/anansi/issues/3021)) ([35d63c4](/github.com/ntucker/anansi/commit/35d63c476b2cf8ec09608bad070c847274ee11b4))
+* Update storybook monorepo to v10.3.5 ([#3032](/github.com/ntucker/anansi/issues/3032)) ([5d7ad8b](/github.com/ntucker/anansi/commit/5d7ad8b20b6711eb05acf7662385b30ffecc1f47))
+
 ## [4.0.20](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.19...@anansi/storybook@4.0.20) (2026-03-20)
 
 ### 📦 Package

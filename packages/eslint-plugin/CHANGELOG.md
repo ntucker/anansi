@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.72](/github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.71...@anansi/eslint-plugin@1.0.72) (2026-04-10)
+
+### 📦 Package
+
+* Update `eslint-import-resolver-webpack` to ^0.13.11 ([#3024](/github.com/ntucker/anansi/issues/3024)) ([856c843](/github.com/ntucker/anansi/commit/856c843e71c793debb459c5087fe8a3c040b5f2b))
+* Update validation packages ([#3009](/github.com/ntucker/anansi/issues/3009)) ([37a6fc0](/github.com/ntucker/anansi/commit/37a6fc03d050cf1ed678502fed05542e7219ef7a))
+* Update validation packages ([#3022](/github.com/ntucker/anansi/issues/3022)) ([e6fafc2](/github.com/ntucker/anansi/commit/e6fafc24208e38f98216fcdba4ee039e1e7d21eb))
+* Update validation packages ([#3030](/github.com/ntucker/anansi/issues/3030)) ([12fe380](/github.com/ntucker/anansi/commit/12fe380b253ba2bee15c9d7d4dd2b3ad3c151b5e))
+
 ## [1.0.71](/github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.70...@anansi/eslint-plugin@1.0.71) (2026-03-20)
 
 ### 📦 Package
