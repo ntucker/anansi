@@ -23,7 +23,8 @@
   ],
   "files": [
     "run.mjs",
-    "check-version.mjs"
+    "check-version.mjs",
+    "postinstall.mjs"
   ],
   "bin": {
     "anansi": "./run.mjs"
@@ -61,8 +62,7 @@
     "commander": "^12.1.0",
     "execa": "^9.6.1",
     "import-meta-resolve": "^4.2.0",
-    "latest-version": "^9.0.0",
-    "yo": "^7.0.0"
+    "latest-version": "^9.0.0"
   },
   "peerDependencies": {
     "@anansi/core": "*"
@@ -76,6 +76,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
+    "postinstall": "node postinstall.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"Error: no test specified\"",
     "pretest": "yarn g:lint ."
