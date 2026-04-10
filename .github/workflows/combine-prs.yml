@@ -36,7 +36,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const pulls = await github.paginate('GET /repos/:owner/:repo/pulls', {
+            const pulls = await github.paginate('GET /repos/{owner}/{repo}/pulls', {
               owner: context.repo.owner,
               repo: context.repo.repo
             });
@@ -129,7 +129,7 @@ jobs:
           script: |
             const prString = process.env.PRS_STRING;
             const body = 'This PR was created by the Combine PRs action by combining the following PRs:\n' + prString;
-            await github.pulls.create({
+            await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: 'Combined PR',
