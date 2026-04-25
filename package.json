@@ -87,5 +87,5 @@
     "react": "19.2.5",
     "react-dom": "19.2.5"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.14.1"
 }
