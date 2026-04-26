@@ -246,7 +246,7 @@ __metadata:
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^4.1.4"
-    mem-fs-editor: "npm:^12.0.3"
+    mem-fs-editor: "npm:^12.0.4"
     pacote: "npm:^21.5.0"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
@@ -11461,14 +11461,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ejs@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "ejs@npm:4.0.1"
-  dependencies:
-    jake: "npm:^10.9.1"
+"ejs@npm:^5.0.1":
+  version: 5.0.2
+  resolution: "ejs@npm:5.0.2"
   bin:
     ejs: bin/cli.js
-  checksum: 10c0/e937a011c5776e6a4775d79317caa9d5b4c64331d62214ff82de97de555ed338bc435d4fa54798ccc0a6e8a2e9096395cbeb79940ab2c3b29f11213ea79b48d6
+  checksum: 10c0/6377ba83487e9e818dd77ab92d67a5f6c0d093689fa500aa0654305f4c19af13a30a606cc6286b8dfef1cf8aae89a71130af16aca5b72dc500a4a44ac3aa13bf
   languageName: node
   linkType: hard
 
@@ -15250,7 +15248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jake@npm:^10.8.5, jake@npm:^10.9.1":
+"jake@npm:^10.8.5":
   version: 10.9.4
   resolution: "jake@npm:10.9.4"
   dependencies:
@@ -16560,9 +16558,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^12.0.2, mem-fs-editor@npm:^12.0.3":
-  version: 12.0.3
-  resolution: "mem-fs-editor@npm:12.0.3"
+"mem-fs-editor@npm:^12.0.2, mem-fs-editor@npm:^12.0.3, mem-fs-editor@npm:^12.0.4":
+  version: 12.0.4
+  resolution: "mem-fs-editor@npm:12.0.4"
   dependencies:
     "@types/ejs": "npm:^3.1.5"
     "@types/picomatch": "npm:^4.0.2"
@@ -16570,7 +16568,7 @@ __metadata:
     commondir: "npm:^1.0.1"
     debug: "npm:^4.4.3"
     deep-extend: "npm:^0.6.0"
-    ejs: "npm:^4.0.1"
+    ejs: "npm:^5.0.1"
     isbinaryfile: "npm:5.0.7"
     minimatch: "npm:^10.2.4"
     multimatch: "npm:^8.0.0"
@@ -16584,7 +16582,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/c1d838fef4f9d3b7a4a180a3bdf579b944ef8f93aa8ca93530560715704c9d9adf0caa8f104afc4573100683ded80238b98f16e399b632c4e8a070e334633525
+  checksum: 10c0/4ed2b03ec511744834afd462cc3ffbcd6abe3c8a1bfe46330a4ebdf8e7b12cfbbc87e36e5f6244626d007b1ea32e5f7c3e748772ab3c88b87271f5bca5a079c7
   languageName: node
   linkType: hard
 
