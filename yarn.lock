@@ -131,7 +131,7 @@ __metadata:
     "@anansi/router": "workspace:^"
     "@ant-design/cssinjs": "npm:^2.0.0"
     "@babel/runtime-corejs3": "npm:^7.26.0"
-    "@data-client/react": "npm:^0.16.0"
+    "@data-client/react": "npm:^0.18.0"
     "@types/compression": "npm:1.8.1"
     "@types/express": "npm:^4.17.17"
     "@types/node": "npm:^24.0.0"
@@ -161,7 +161,7 @@ __metadata:
     whatwg-fetch: "npm:^3.6.2"
   peerDependencies:
     "@ant-design/cssinjs": ^1.5.1 || ^2.0.0
-    "@data-client/react": ^0.12.15 || ^0.13.0 || ^0.14.0 || ^0.15.0-0 || ^0.16.0
+    "@data-client/react": ^0.12.15 || ^0.13.0 || ^0.14.0 || ^0.15.0-0 || ^0.16.0 || ^0.18.0
     "@types/react": "*"
     "@types/react-dom": "*"
     react: ^18.0.0 || ^19.0.0
@@ -204,7 +204,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.5.5"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.0.0"
-    globals: "npm:^17.5.0"
+    globals: "npm:^17.6.0"
     prettier: "npm:^3.3.3"
     semver: "npm:^7.7.4"
     typescript: "npm:^5.5.4"
@@ -236,7 +236,7 @@ __metadata:
     "@types/inquirer": "npm:^9.0.9"
     "@types/node": "npm:^24.0.0"
     "@types/pacote": "npm:11.1.8"
-    "@yeoman/types": "npm:^1.10.3"
+    "@yeoman/types": "npm:^1.11.1"
     chalk: "npm:^4.1.2"
     copyfiles: "npm:2.4.1"
     core-js-pure: "npm:^3.40.0"
@@ -329,7 +329,7 @@ __metadata:
   peerDependencies:
     "@anansi/babel-preset": "*"
     "@anansi/webpack-config": ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^1.0.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0-0 || ^0.16.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^1.0.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0-0 || ^0.16.0 || ^0.18.0
     "@types/react": "*"
     "@types/react-dom": "*"
     react: ^18.0.0 || ^19.0.0-0
@@ -484,7 +484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/colors@npm:^8.0.0, @ant-design/colors@npm:^8.0.1":
+"@ant-design/colors@npm:^8.0.1":
   version: 8.0.1
   resolution: "@ant-design/colors@npm:8.0.1"
   dependencies:
@@ -559,25 +559,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons-svg@npm:^4.4.0":
+"@ant-design/icons-svg@npm:^4.4.0, @ant-design/icons-svg@npm:^4.4.2":
   version: 4.4.2
   resolution: "@ant-design/icons-svg@npm:4.4.2"
   checksum: 10c0/d08f051824599850efcd691a67b0ee602ee886f23fe04e77890b083a0343cde72560317e3909fd029f999df00aef7b57142c863326fff7293251d9162828079b
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:6.1.1, @ant-design/icons@npm:^6.0.0, @ant-design/icons@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "@ant-design/icons@npm:6.1.1"
+"@ant-design/icons@npm:6.2.2, @ant-design/icons@npm:^6.0.0, @ant-design/icons@npm:^6.1.1":
+  version: 6.2.2
+  resolution: "@ant-design/icons@npm:6.2.2"
   dependencies:
-    "@ant-design/colors": "npm:^8.0.0"
-    "@ant-design/icons-svg": "npm:^4.4.0"
-    "@rc-component/util": "npm:^1.3.0"
+    "@ant-design/colors": "npm:^8.0.1"
+    "@ant-design/icons-svg": "npm:^4.4.2"
+    "@rc-component/util": "npm:^1.10.1"
     clsx: "npm:^2.1.1"
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 10c0/1df4dfdce6f29572e7b0104c37db7134efa29ad71d07ae6038cdad0db6a12c0e836c2d34ec2ec515038b67630c9fc1d0551de7c67634344240c3b53f51748fad
+  checksum: 10c0/90224591995ce91ef638218ac9829f5ba129f8aa2f6fc293af0b79b9343c25b6a9e056e6aef519b6f790fbaf2a69e03af50b9169b1011955ef8efcdaf4a0ba1c
   languageName: node
   linkType: hard
 
@@ -3084,33 +3084,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/core@npm:^0.16.7":
-  version: 0.16.7
-  resolution: "@data-client/core@npm:0.16.7"
+"@data-client/core@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/core@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/normalizr": "npm:^0.16.6"
+    "@data-client/normalizr": "npm:^0.18.0"
     flux-standard-action: "npm:^2.1.1"
-  checksum: 10c0/8bc2a3ccf8a787bc417e5bd62d13442bb57fd41e75d1c4dfb7c6ef6a3e382836dd5a1f5026b7f6066a9958d4990c390415396d2d0f129f0cde42cd346d248535
+  checksum: 10c0/229770bd0c8444c240228f1ee13eafaef2739aaf12763d1cfd6bb5c922efb737233c1ec6f61b29c99234e2cc00654303077a456b47a044c3b26079326fa7dd7b
   languageName: node
   linkType: hard
 
-"@data-client/endpoint@npm:0.16.6, @data-client/endpoint@npm:^0.16.0, @data-client/endpoint@npm:^0.16.3, @data-client/endpoint@npm:^0.16.6":
-  version: 0.16.6
-  resolution: "@data-client/endpoint@npm:0.16.6"
+"@data-client/endpoint@npm:0.18.0, @data-client/endpoint@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/endpoint@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-  checksum: 10c0/ca4844644751a48501706711d0ac24723f16ea66fb022f78f9876568255e12ccbb89e5ee52dfa5dd85f4eed486e4e7cec901bff65a9d649ddc7be194d9a58fac
+  checksum: 10c0/3b946b81e5a7c7f1c69988ead394e2ada6f156419b8fd49cf52c18a6dbd7ceb157499ebf1b610102ded5b5e2b6e7ada260974b9cc932d612cff2a9bb36f7e900
   languageName: node
   linkType: hard
 
-"@data-client/graphql@npm:0.16.3":
-  version: 0.16.3
-  resolution: "@data-client/graphql@npm:0.16.3"
+"@data-client/graphql@npm:0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/graphql@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.16.3"
-  checksum: 10c0/6f34d4ab4b05477a2e9af4da7923bc68cee9ba0c46f6dc3b1a51b2ea94aa3895030c0d995397e66f38155921fac7b3d28dffff93e13d9fa2769b2809109bdaa3
+    "@data-client/endpoint": "npm:^0.18.0"
+  checksum: 10c0/aa87517f587a73fe6c2ecd8da887f93ed7a82b1a2476e6a905746bcb266408285eeba43a8f881554e199c7771ff3be99665c22dae223ac01de22d03b6feb73dd
   languageName: node
   linkType: hard
 
@@ -3130,20 +3130,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/img@npm:0.16.0":
-  version: 0.16.0
-  resolution: "@data-client/img@npm:0.16.0"
+"@data-client/img@npm:0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/img@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.16.0"
+    "@data-client/endpoint": "npm:^0.18.0"
   peerDependencies:
-    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0
+    "@data-client/react": ^0.1.0 || ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^19.0.0
     react: ^16.14.0 || ^17.0.0 || ^18.0.0-0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/149da265f064401501273e01735178ac2f2e26c641dd83d87338df7c076da7e824f77086736adb58770ce8d1fba0c05bea283f18c706ded6f70f2bf782a2f9bc
+  checksum: 10c0/36007095f9fcb3584ff4139073fd8767583dd8e58b6df89bbb8647906d28a667842fcaee7dd5182fed0329e2dad790e0c58eda7a05c8640c4d2a0dca381b6b42
   languageName: node
   linkType: hard
 
@@ -3156,21 +3156,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@data-client/normalizr@npm:^0.16.6":
-  version: 0.16.6
-  resolution: "@data-client/normalizr@npm:0.16.6"
+"@data-client/normalizr@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/normalizr@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-  checksum: 10c0/e4b183046518e35a96af78cbdd5d4b2b1b07e308c627842aa45e6465c8cab4feb30a633f87413a3f652aafb2b819d2857167e29ad1a283177cc3117aa318b397
+  checksum: 10c0/ec3b575cb582cdb7a2027dd6470fdd6ce34e529f15f5eeb27e97c895dcb415a98096b6c2e98b2ffbc5e4123808f46fb4dcfe23827052970d7056d58cc47e6ff4
   languageName: node
   linkType: hard
 
-"@data-client/react@npm:0.16.7, @data-client/react@npm:^0.16.0":
-  version: 0.16.7
-  resolution: "@data-client/react@npm:0.16.7"
+"@data-client/react@npm:0.18.0, @data-client/react@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/react@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/core": "npm:^0.16.7"
+    "@data-client/core": "npm:^0.18.0"
     "@data-client/use-enhanced-reducer": "npm:^0.1.14"
   peerDependencies:
     "@react-navigation/native": ^6.0.0 || ^7.0.0
@@ -3181,30 +3181,30 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/9061b3b30079dc0c5cdd4d6e2de380496e045682f18a41766325bb9ce717936d50e79200e7f513dcba94d525e212303e5d54028e1c9cab77c9f5101138f2e299
+  checksum: 10c0/7b4b32f1611aeaff3bee8b8a8cb3fed6cb7a8753ae25d21546c5ecd3b69106c3e81e4f9c711ce1ccf258ede1677e583d17724059b76b297fb0e71f4240998b22
   languageName: node
   linkType: hard
 
-"@data-client/rest@npm:0.17.0":
-  version: 0.17.0
-  resolution: "@data-client/rest@npm:0.17.0"
+"@data-client/rest@npm:0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/rest@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@data-client/endpoint": "npm:^0.16.6"
+    "@data-client/endpoint": "npm:^0.18.0"
     path-to-regexp: "npm:^8.1.0"
-  checksum: 10c0/2e2114b7b66d6ce3f921a8829d226ea38fc045a06f2f0151668a04fda83398057e5e6fdc9b9a4e4155b3445cc3df720285bd7bb10abb7d287eedbc646d4c90cd
+  checksum: 10c0/58ce471c63a2ef308a2e1f94ef718c6ea3c76a650cb6e183adede1ecedaf1b895973cdfd978dd4d2ce9da4de61c919569cd263f842ddb82bdc56a811d7228811
   languageName: node
   linkType: hard
 
-"@data-client/test@npm:0.16.0":
-  version: 0.16.0
-  resolution: "@data-client/test@npm:0.16.0"
+"@data-client/test@npm:0.18.0":
+  version: 0.18.0
+  resolution: "@data-client/test@npm:0.18.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@testing-library/dom": "npm:^10.1.0"
     "@testing-library/react": "npm:^16.0.0"
   peerDependencies:
-    "@data-client/react": ^0.12.15 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0
+    "@data-client/react": ^0.12.15 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0
     "@testing-library/react-hooks": ^8.0.0
     "@testing-library/react-native": ^13.0.0
     "@types/react": ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-0 || ^19.0.0
@@ -3231,7 +3231,7 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: 10c0/205fdee6a873bafc72682456fa2d28dc0621c05d531bd7cb9ae4e100f8b29c61788f6c640b767b238262a6d9b4e6daf5f06191562a1392eaa5c2414a9192f556
+  checksum: 10c0/d9a09defa94e8713956210f5a5f267cbde7e1bbba7c150eb7a53f8f498c4198b12458ad7a146695f5cf1423c3e12bb990402ea87331a71c8e6b74bfd6bdd2177
   languageName: node
   linkType: hard
 
@@ -5562,9 +5562,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rc-component/form@npm:~1.8.0":
-  version: 1.8.0
-  resolution: "@rc-component/form@npm:1.8.0"
+"@rc-component/form@npm:~1.8.1":
+  version: 1.8.1
+  resolution: "@rc-component/form@npm:1.8.1"
   dependencies:
     "@rc-component/async-validator": "npm:^5.1.0"
     "@rc-component/util": "npm:^1.6.2"
@@ -5572,7 +5572,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/e327322c149fb1e758118f75239ecb2ad93eaa6951c9b2537e6039b8a0a65f36cc67edba1b3646b8380b8212a461c103f3f650055fb831e227f8fb288c0c2a61
+  checksum: 10c0/7598468ac1e972ba5bb0482389c6905eace88de0203125a0a1b519b9481c3b343e8638250311be2a94cd925b5cab3a99b9b2881c18a4ccc6f77feb94c0066979
   languageName: node
   linkType: hard
 
@@ -8074,9 +8074,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/types@npm:^1.10.3":
-  version: 1.10.3
-  resolution: "@yeoman/types@npm:1.10.3"
+"@yeoman/types@npm:^1.10.3, @yeoman/types@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "@yeoman/types@npm:1.11.1"
   peerDependencies:
     "@types/node": ">=16.18.26"
     "@yeoman/adapter": ^1.6.0 || ^2.0.0-beta.0 || ^3.0.0 || ^4.0.0
@@ -8086,7 +8086,7 @@ __metadata:
       optional: true
     mem-fs:
       optional: true
-  checksum: 10c0/b24185e12b03293f9807390964200c959cabbb71bba3bc97d6877d367791ffaac947463e488e561311136616d73accc340509524c02482d840616c53801d83b4
+  checksum: 10c0/b497a47144a9127a77922e471694d3f832c7705ee22442e7b943fe204d8209fc94733c7dad08ca344fad25345b928d27b601323f4d07f223a7161775b4963317
   languageName: node
   linkType: hard
 
@@ -8391,9 +8391,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:6.3.6":
-  version: 6.3.6
-  resolution: "antd@npm:6.3.6"
+"antd@npm:6.3.7":
+  version: 6.3.7
+  resolution: "antd@npm:6.3.7"
   dependencies:
     "@ant-design/colors": "npm:^8.0.1"
     "@ant-design/cssinjs": "npm:^2.1.2"
@@ -8409,7 +8409,7 @@ __metadata:
     "@rc-component/dialog": "npm:~1.8.4"
     "@rc-component/drawer": "npm:~1.4.2"
     "@rc-component/dropdown": "npm:~1.0.2"
-    "@rc-component/form": "npm:~1.8.0"
+    "@rc-component/form": "npm:~1.8.1"
     "@rc-component/image": "npm:~1.9.0"
     "@rc-component/input": "npm:~1.1.2"
     "@rc-component/input-number": "npm:~1.6.2"
@@ -8446,7 +8446,7 @@ __metadata:
   peerDependencies:
     react: ">=18.0.0"
     react-dom: ">=18.0.0"
-  checksum: 10c0/ca8bce6059fc4a6a023cc8fe930d0d1f0da3417e28cef29d589aa26aa158c1d0da16d64f3fd03a0bd522e871b768a9746f9ed8d38342239a633ca621599e2cfa
+  checksum: 10c0/f07fff4da4e5e0c8e01560369ddbfee4aba0593b56dff8847a1cd69937c1c94e39496ac4a3aebf5771894d3cf046ffa3d09436a33b8f23a9385ef22e3d5bbbba
   languageName: node
   linkType: hard
 
@@ -12454,15 +12454,15 @@ __metadata:
     "@anansi/router": "npm:^0.10.23"
     "@anansi/webpack-config": "npm:^21.1.17"
     "@ant-design/cssinjs": "npm:2.1.2"
-    "@ant-design/icons": "npm:6.1.1"
+    "@ant-design/icons": "npm:6.2.2"
     "@babel/core": "npm:7.29.0"
     "@babel/runtime-corejs3": "npm:7.29.2"
-    "@data-client/endpoint": "npm:0.16.6"
+    "@data-client/endpoint": "npm:0.18.0"
     "@data-client/hooks": "npm:0.2.0"
-    "@data-client/img": "npm:0.16.0"
-    "@data-client/react": "npm:0.16.7"
-    "@data-client/rest": "npm:0.17.0"
-    "@data-client/test": "npm:0.16.0"
+    "@data-client/img": "npm:0.18.0"
+    "@data-client/react": "npm:0.18.0"
+    "@data-client/rest": "npm:0.18.0"
+    "@data-client/test": "npm:0.18.0"
     "@linaria/core": "npm:6.3.0"
     "@linaria/react": "npm:6.3.0"
     "@types/babel__core": "npm:7.20.5"
@@ -12471,7 +12471,7 @@ __metadata:
     "@types/node": "npm:24.12.2"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
-    antd: "npm:6.3.6"
+    antd: "npm:6.3.7"
     classnames: "npm:2.5.1"
     core-js: "npm:3.49.0"
     eslint: "npm:9.39.4"
@@ -12503,10 +12503,10 @@ __metadata:
     "@ant-design/pro-layout": "npm:7.12.3"
     "@babel/core": "npm:^7.21.3"
     "@babel/runtime-corejs3": "npm:7.29.2"
-    "@data-client/graphql": "npm:0.16.3"
-    "@data-client/react": "npm:0.16.7"
-    "@data-client/rest": "npm:0.17.0"
-    "@data-client/test": "npm:0.16.0"
+    "@data-client/graphql": "npm:0.18.0"
+    "@data-client/react": "npm:0.18.0"
+    "@data-client/rest": "npm:0.18.0"
+    "@data-client/test": "npm:0.18.0"
     "@storybook/addon-docs": "npm:10.3.5"
     "@storybook/react": "npm:10.3.5"
     "@testing-library/dom": "npm:^10.4.0"
@@ -12522,7 +12522,7 @@ __metadata:
     "@types/react-dom": "npm:19.2.3"
     "@types/react-router": "npm:5.1.20"
     "@types/react-router-dom": "npm:5.3.3"
-    antd: "npm:6.3.6"
+    antd: "npm:6.3.7"
     classnames: "npm:2.5.1"
     core-js: "npm:3.49.0"
     eslint: "npm:^9.0.0"
@@ -13612,10 +13612,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^17.0.0, globals@npm:^17.5.0":
-  version: 17.5.0
-  resolution: "globals@npm:17.5.0"
-  checksum: 10c0/92828102ed2f5637907725f0478038bed02fc83e9fc89300bb753639ba7c022b6c02576fc772117302b431b204591db1f2fa909d26f3f0a9852cc856a941df3f
+"globals@npm:^17.0.0, globals@npm:^17.6.0":
+  version: 17.6.0
+  resolution: "globals@npm:17.6.0"
+  checksum: 10c0/cf94fb4329cc5c68cf81018fd68324f413181ee169f0235b0b33b82bc93fe7825a21beea951f83a80e8e4bbdad9c0c80515a145b5fd4b5cb52f2a80db899a93f
   languageName: node
   linkType: hard
 
