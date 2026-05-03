@@ -16,7 +16,7 @@ export default class AppGenerator<
   O extends ConfigureOptions = ConfigureOptions,
   F extends BaseFeatures = BaseFeatures,
 > extends ConfigureGenerator<O, F> {
-  constructor(args: string | string[], options: O, features: F) {
+  constructor(args: string[] | undefined, options: O, features: F) {
     super(args, options, { ...features, customInstallTask: installWithYarn });
     const jsFilter = filter(
       [

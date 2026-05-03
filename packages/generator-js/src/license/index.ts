@@ -34,14 +34,13 @@ export default class GeneratorLicense extends Generator<
   declare private props: Record<string, any>;
 
   constructor(
-    args: string | string[],
+    args: string[] | undefined,
     options: LicenseOptions,
     features: Record<string, unknown>,
   ) {
     if (options.resolved?.startsWith('file://'))
       options.resolved = options.resolved.substring(7);
 
-    // @ts-expect-error dynamic options
     super(args, options, features);
 
     this.option('name', {

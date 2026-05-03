@@ -4,7 +4,7 @@ import { BetterGenerator, resolvePath } from '../utils.js';
 
 export default class StorybookGenerator extends BetterGenerator<StorybookOptions> {
   constructor(
-    args: string | string[],
+    args: string[] | undefined,
     options: StorybookOptions,
     features: BaseFeatures,
   ) {

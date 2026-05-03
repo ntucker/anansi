@@ -20,7 +20,7 @@ export default class ConfigureGenerator<
   O extends ConfigureOptions = ConfigureOptions,
   F extends BaseFeatures = BaseFeatures,
 > extends BetterGenerator<O, F> {
-  constructor(args: string | string[], options: O, features: F) {
+  constructor(args: string[] | undefined, options: O, features: F) {
     super(args, options, features);
 
     this.argument('appName', { type: String, required: true });

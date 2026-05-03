@@ -6,7 +6,7 @@ export default class extends BetterGenerator {
   props?: Record<string, any>;
 
   constructor(
-    args: string | string[],
+    args: string[] | undefined,
     options: BaseOptions,
     features: BaseFeatures,
   ) {

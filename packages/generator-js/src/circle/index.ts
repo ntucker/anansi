@@ -6,7 +6,7 @@ export default class CircleGenerator<
   O extends CircleOptions = CircleOptions,
   F extends BaseFeatures = BaseFeatures,
 > extends BetterGenerator<O, F> {
-  constructor(args: string | string[], options: O, features: F) {
+  constructor(args: string[] | undefined, options: O, features: F) {
     super(args, options, features);
 
     this.option('circle-parallelism', {

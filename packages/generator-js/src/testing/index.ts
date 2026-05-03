@@ -4,7 +4,7 @@ import { BetterGenerator } from '../utils.js';
 
 export default class TestingGenerator extends BetterGenerator {
   constructor(
-    args: string | string[],
+    args: string[] | undefined,
     options: BaseOptions,
     features: BaseFeatures,
   ) {

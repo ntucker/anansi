@@ -31,7 +31,7 @@ export class BetterGenerator<
 > extends Generator<Record<string, any>, O, F> {
   declare fs: FsEditor;
 
-  constructor(args: string | string[], options: O, features: F) {
+  constructor(args: string[] | undefined, options: O, features: F) {
     // fix broken logic in path combining in yeoman-generator
     if (options.resolved?.startsWith('file://'))
       options.resolved = options.resolved.substring(7);

@@ -7,7 +7,7 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
   props?: Record<string, any>;
 
   constructor(
-    args: string | string[],
+    args: string[] | undefined,
     options: WebpackOptions,
     features: BaseFeatures,
   ) {
