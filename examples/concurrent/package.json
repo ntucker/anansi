@@ -43,7 +43,7 @@
     "jest": "30.3.0",
     "prettier": "3.8.3",
     "react-refresh": "0.18.0",
-    "typescript": "5.9.3",
+    "typescript": "6.0.3",
     "webpack": "5.106.2",
     "webpack-cli": "7.0.2",
     "webpack-dev-server": "5.2.3"

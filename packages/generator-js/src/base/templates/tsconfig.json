@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "outDir": "./<%= typeof libPath !== 'undefined' ? libPath : assetPath %>",
-    "baseUrl": "./<%= rootPath %>",
     "target": "esnext",
     "module": "nodenext",
     "lib": ["dom", "esnext"],
