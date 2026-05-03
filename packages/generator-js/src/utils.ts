@@ -35,7 +35,7 @@ export class BetterGenerator<
     // fix broken logic in path combining in yeoman-generator
     if (options.resolved?.startsWith('file://'))
       options.resolved = options.resolved.substring(7);
-    super(args, options, features);
+    super(typeof args === 'string' ? [args] : args, options, features);
 
     // environment will let us work from correct directory when copying files
     //this.fs = this.env.sharedFs as any;
