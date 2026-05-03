@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.22](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.21...@anansi/storybook@4.0.22) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update all non-major dependencies ([#3044](/github.com/ntucker/anansi/issues/3044)) ([6c91d50](/github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
+* Update storybook monorepo to v10.3.6 ([#3047](/github.com/ntucker/anansi/issues/3047)) ([c710429](/github.com/ntucker/anansi/commit/c710429e0a487a314e8c4c156a137184849bd4d0))
+
 ## [4.0.21](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.20...@anansi/storybook@4.0.21) (2026-04-10)
 
 ### 📦 Package

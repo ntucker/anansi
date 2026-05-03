@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.10](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.9...@anansi/ts-utils@0.3.10) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+
 ## [0.3.9](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.8...@anansi/ts-utils@0.3.9) (2025-12-07)
 
 ### 📦 Package

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.46](https://github.com/ntucker/anansi/compare/example-linaria@9.0.45...example-linaria@9.0.46) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](https://github.com/ntucker/anansi/issues/3010)) ([4658545](https://github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update webpack packages ([#3039](https://github.com/ntucker/anansi/issues/3039)) ([2495cbd](https://github.com/ntucker/anansi/commit/2495cbdb30114e61d2dc3e9fc364004c32a1c4a3))
+
 ## [9.0.45](https://github.com/ntucker/anansi/compare/example-linaria@9.0.44...example-linaria@9.0.45) (2026-04-10)
 
 ### 📦 Package

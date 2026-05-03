@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.14](https://github.com/ntucker/anansi/compare/example-react-18@9.0.13...example-react-18@9.0.14) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](https://github.com/ntucker/anansi/issues/3010)) ([4658545](https://github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update all non-major dependencies ([#3041](https://github.com/ntucker/anansi/issues/3041)) ([d6ad394](https://github.com/ntucker/anansi/commit/d6ad3948fb9bcb56017202897a839ddd42486e8c))
+* Update all non-major dependencies ([#3044](https://github.com/ntucker/anansi/issues/3044)) ([6c91d50](https://github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
+* Update validation packages ([#3040](https://github.com/ntucker/anansi/issues/3040)) ([f38a983](https://github.com/ntucker/anansi/commit/f38a983f7e2b2dc037e46174aecb80b010a9dfe3))
+* Update webpack packages ([#3039](https://github.com/ntucker/anansi/issues/3039)) ([2495cbd](https://github.com/ntucker/anansi/commit/2495cbdb30114e61d2dc3e9fc364004c32a1c4a3))
+
 ## [9.0.13](https://github.com/ntucker/anansi/compare/example-react-18@9.0.12...example-react-18@9.0.13) (2026-04-10)
 
 ### 📦 Package

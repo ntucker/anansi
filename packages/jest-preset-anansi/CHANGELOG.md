@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.33](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.32...@anansi/jest-preset@0.11.33) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+
 ## [0.11.32](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.31...@anansi/jest-preset@0.11.32) (2026-04-10)
 
 ### 📦 Package

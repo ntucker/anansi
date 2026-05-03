@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.1.18](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.17...@anansi/webpack-config@21.1.18) (2026-05-03)
+
+### 📦 Package
+
+* Update `postcss` to ^8.5.10 ([#3042](/github.com/ntucker/anansi/issues/3042)) ([3a9da2e](/github.com/ntucker/anansi/commit/3a9da2eee5b1f384c76a8d576a762ba192e12eae))
+* Update `postcss` to ^8.5.13 ([#3049](/github.com/ntucker/anansi/issues/3049)) ([039f63b](/github.com/ntucker/anansi/commit/039f63b2c5d1b41d2daf151663f9d9c592343ea5))
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update all non-major dependencies ([#3041](/github.com/ntucker/anansi/issues/3041)) ([d6ad394](/github.com/ntucker/anansi/commit/d6ad3948fb9bcb56017202897a839ddd42486e8c))
+* Update webpack packages ([#3039](/github.com/ntucker/anansi/issues/3039)) ([2495cbd](/github.com/ntucker/anansi/commit/2495cbdb30114e61d2dc3e9fc364004c32a1c4a3))
+
 ## [21.1.17](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.16...@anansi/webpack-config@21.1.17) (2026-04-10)
 
 ### 📦 Package

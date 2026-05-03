@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.73](/github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.72...@anansi/eslint-plugin@1.0.73) (2026-05-03)
+
+### 📦 Package
+
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update all non-major dependencies ([#3041](/github.com/ntucker/anansi/issues/3041)) ([d6ad394](/github.com/ntucker/anansi/commit/d6ad3948fb9bcb56017202897a839ddd42486e8c))
+* Update all non-major dependencies ([#3044](/github.com/ntucker/anansi/issues/3044)) ([6c91d50](/github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
+* Update validation packages ([#3040](/github.com/ntucker/anansi/issues/3040)) ([f38a983](/github.com/ntucker/anansi/commit/f38a983f7e2b2dc037e46174aecb80b010a9dfe3))
+* Update validation packages ([#3045](/github.com/ntucker/anansi/issues/3045)) ([8ce8fba](/github.com/ntucker/anansi/commit/8ce8fbad8c2f2b90f25bf8595b50bc3ccbd814d1))
+
 ## [1.0.72](/github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.71...@anansi/eslint-plugin@1.0.72) (2026-04-10)
 
 ### 📦 Package

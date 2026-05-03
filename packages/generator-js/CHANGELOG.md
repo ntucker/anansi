@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.6.37](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.36...@anansi/generator-js@12.6.37) (2026-05-03)
+
+### 📦 Package
+
+* Update `mem-fs-editor` to ^12.0.4 ([#3043](/github.com/ntucker/anansi/issues/3043)) ([181a0f2](/github.com/ntucker/anansi/commit/181a0f272668dd31da06ee4ab83cd53b6f954043))
+* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+* Update all non-major dependencies ([#3044](/github.com/ntucker/anansi/issues/3044)) ([6c91d50](/github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
+* Update yeoman ([#3046](/github.com/ntucker/anansi/issues/3046)) ([1045958](/github.com/ntucker/anansi/commit/1045958f3769961ca5ffbea32b84d341e28a6451))
+
 ## [12.6.36](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.35...@anansi/generator-js@12.6.36) (2026-04-10)
 
 ### 📦 Package
