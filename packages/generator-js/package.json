@@ -59,8 +59,8 @@
     "@types/pacote": "11.1.8",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "6.0.1",
-    "yeoman-test": "11.3.1"
+    "yeoman-environment": "6.1.0",
+    "yeoman-test": "11.4.2"
   },
   "engines": {
     "node": "^18.17.0 || >=20.5.0",
@@ -81,7 +81,7 @@
     "mem-fs-editor": "^12.0.4",
     "pacote": "^21.5.0",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^8.1.2"
+    "yeoman-generator": "^8.2.2"
   },
   "scripts": {
     "pretest": "yarn g:lint .",
