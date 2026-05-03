@@ -250,9 +250,9 @@ __metadata:
     pacote: "npm:^21.5.0"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:6.0.1"
-    yeoman-generator: "npm:^8.1.2"
-    yeoman-test: "npm:11.3.1"
+    yeoman-environment: "npm:6.1.0"
+    yeoman-generator: "npm:^8.2.2"
+    yeoman-test: "npm:11.4.2"
   languageName: unknown
   linkType: soft
 
@@ -6125,6 +6125,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@simple-git/args-pathspec@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@simple-git/args-pathspec@npm:1.0.3"
+  checksum: 10c0/91bfc99daa956df28e4efd683cd799f60c6d169fce6adf71a9efa80a6b5938fed4b03e55fa929cfd51aed64f3ada5c1e4edad45a3872dbd94d11924b3258b5bc
+  languageName: node
+  linkType: hard
+
+"@simple-git/argv-parser@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "@simple-git/argv-parser@npm:1.1.1"
+  dependencies:
+    "@simple-git/args-pathspec": "npm:^1.0.3"
+  checksum: 10c0/2c21166f1bb7c4373e7b4e52bd0c7f333e58ea0ff5ac0b6c2d305835f4a2bcad1ef4bcce3cff63312ac55655ea7be3aba4c7c0c41e3ebcb8bee343f65bb92f5e
+  languageName: node
+  linkType: hard
+
 "@simple-libs/child-process-utils@npm:^1.0.0":
   version: 1.0.1
   resolution: "@simple-libs/child-process-utils@npm:1.0.1"
@@ -6721,7 +6737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/debug@npm:^4.1.12":
+"@types/debug@npm:^4.1.13":
   version: 4.1.13
   resolution: "@types/debug@npm:4.1.13"
   dependencies:
@@ -8032,18 +8048,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/conflicter@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@yeoman/conflicter@npm:4.0.1"
+"@yeoman/conflicter@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@yeoman/conflicter@npm:4.1.0"
   dependencies:
-    "@yeoman/transform": "npm:^2.1.0"
+    "@yeoman/transform": "npm:^2.1.1"
     binary-extensions: "npm:^3.1.0"
     cli-table: "npm:^0.3.11"
     dateformat: "npm:^5.0.3"
-    diff: "npm:^8.0.3"
+    diff: "npm:^9.0.0"
     isbinaryfile: "npm:^5.0.4"
-    mem-fs-editor: "npm:^12.0.2"
-    minimatch: "npm:^10.2.4"
+    mem-fs-editor: "npm:^12.0.4"
+    minimatch: "npm:^10.2.5"
     p-transform: "npm:^5.0.1"
     pretty-bytes: "npm:^7.1.0"
     slash: "npm:^5.1.0"
@@ -8052,29 +8068,29 @@ __metadata:
     "@types/node": ">=20.14.8"
     "@yeoman/types": ^1.0.0
     mem-fs: ^4.0.0
-  checksum: 10c0/26d978008d3e35da3ea5570c900a3c404c28edfee7d69e00552a233289f068b09cc9d2d60bf759e6c08399dd6d0b57a4f4c9c0ca9493b99e76c002d299a77216
+  checksum: 10c0/8ce7d93d57fe0d55dc46d66ff454eb00525f36a82a96902d1b63514c25fbf81d1b18fcaa242ae89f67963efc831f4ea7d63b0846741e16d2f629a80277b16f8c
   languageName: node
   linkType: hard
 
-"@yeoman/namespace@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@yeoman/namespace@npm:1.0.1"
-  checksum: 10c0/8ef7b19c9c2e5c358d6fa3dcb43c4af534b0483458cf6cdee539cdcb1e32ceb2a6cb8786cee4f648376dc716d89fc21ece64233c97467c110dc47e5c45a4d84f
-  languageName: node
-  linkType: hard
-
-"@yeoman/transform@npm:^2.1.0":
+"@yeoman/namespace@npm:^2.1.0":
   version: 2.1.0
-  resolution: "@yeoman/transform@npm:2.1.0"
+  resolution: "@yeoman/namespace@npm:2.1.0"
+  checksum: 10c0/f933a203d7803b3e1c36a3a641a207ea02106bd19a43a860cec1c0c8b7dcc6ace41a0e6fd359fc9ce74e75c7ad3263da2f6be95a6c827ca531e8b5e801870f3d
+  languageName: node
+  linkType: hard
+
+"@yeoman/transform@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@yeoman/transform@npm:2.1.1"
   dependencies:
-    minimatch: "npm:^9.0.0"
+    minimatch: "npm:^9.0.9"
   peerDependencies:
     "@types/node": ">=18.19.44"
-  checksum: 10c0/80a29da489fbed43f94a0ed5df80ec319b56d4b7e654ec56066815e951181c626dffb60f04b5cba8348f731ccb3cc6580d4f6b8e029b8cb1007161886ea5b2a5
+  checksum: 10c0/7819dad8d95225d161def14616d24116d1468c602e662de37a02190d8edec671e64a69b218912ce49b8ce809f990b6ef97d002501dccd11a8041ea3f1205c209
   languageName: node
   linkType: hard
 
-"@yeoman/types@npm:^1.10.3, @yeoman/types@npm:^1.11.1":
+"@yeoman/types@npm:^1.11.0, @yeoman/types@npm:^1.11.1":
   version: 1.11.1
   resolution: "@yeoman/types@npm:1.11.1"
   peerDependencies:
@@ -9233,12 +9249,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"brace-expansion@npm:^5.0.2":
-  version: 5.0.4
-  resolution: "brace-expansion@npm:5.0.4"
+"brace-expansion@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "brace-expansion@npm:5.0.5"
   dependencies:
     balanced-match: "npm:^4.0.2"
-  checksum: 10c0/359cbcfa80b2eb914ca1f3440e92313fbfe7919ee6b274c35db55bec555aded69dac5ee78f102cec90c35f98c20fa43d10936d0cd9978158823c249257e1643a
+  checksum: 10c0/4d238e14ed4f5cc9c07285550a41cef23121ca08ba99fa9eb5b55b580dcb6bf868b8210aa10526bdc9f8dc97f33ca2a7259039c4cc131a93042beddb424c48e3
   languageName: node
   linkType: hard
 
@@ -11218,10 +11234,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "diff@npm:8.0.3"
-  checksum: 10c0/d29321c70d3545fdcb56c5fdd76028c3f04c012462779e062303d4c3c531af80d2c360c26b871e6e2b9a971d2422d47e1779a859106c4cac4b5d2d143df70e20
+"diff@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "diff@npm:9.0.0"
+  checksum: 10c0/a971cc88f66071a33bd3942db2f51b57d484e9856265ae45cf44fb28ab2fde91f132d9c26d8be0fb6082d2be94d29e1295c1adb251b7461935d6a2dd304cd161
   languageName: node
   linkType: hard
 
@@ -16219,7 +16235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:^4.17.23, lodash-es@npm:^4.18.1":
+"lodash-es@npm:^4.18.1":
   version: 4.18.1
   resolution: "lodash-es@npm:4.18.1"
   checksum: 10c0/35d4dcf87ef07f8d090f409447575800108057e360b445f590d0d25d09e3d1e33a163d2fc100d4d072b0f901d5e2fc533cd7c4bfd8eeb38a06abec693823c8b8
@@ -16558,7 +16574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^12.0.2, mem-fs-editor@npm:^12.0.3, mem-fs-editor@npm:^12.0.4":
+"mem-fs-editor@npm:^12.0.3, mem-fs-editor@npm:^12.0.4":
   version: 12.0.4
   resolution: "mem-fs-editor@npm:12.0.4"
   dependencies:
@@ -16811,12 +16827,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.0.3, minimatch@npm:^10.1.1, minimatch@npm:^10.2.2, minimatch@npm:^10.2.4":
-  version: 10.2.4
-  resolution: "minimatch@npm:10.2.4"
+"minimatch@npm:^10.0.3, minimatch@npm:^10.1.1, minimatch@npm:^10.2.2, minimatch@npm:^10.2.4, minimatch@npm:^10.2.5":
+  version: 10.2.5
+  resolution: "minimatch@npm:10.2.5"
   dependencies:
-    brace-expansion: "npm:^5.0.2"
-  checksum: 10c0/35f3dfb7b99b51efd46afd378486889f590e7efb10e0f6a10ba6800428cf65c9a8dedb74427d0570b318d749b543dc4e85f06d46d2858bc8cac7e1eb49a95945
+    brace-expansion: "npm:^5.0.5"
+  checksum: 10c0/6bb058bd6324104b9ec2f763476a35386d05079c1f5fe4fbf1f324a25237cd4534d6813ecd71f48208f4e635c1221899bef94c3c89f7df55698fe373aaae20fd
   languageName: node
   linkType: hard
 
@@ -16838,7 +16854,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.0, minimatch@npm:^9.0.3, minimatch@npm:^9.0.4, minimatch@npm:^9.0.5":
+"minimatch@npm:^9.0.3, minimatch@npm:^9.0.4, minimatch@npm:^9.0.5, minimatch@npm:^9.0.9":
   version: 9.0.9
   resolution: "minimatch@npm:9.0.9"
   dependencies:
@@ -21153,14 +21169,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git@npm:^3.32.3":
-  version: 3.33.0
-  resolution: "simple-git@npm:3.33.0"
+"simple-git@npm:^3.36.0":
+  version: 3.36.0
+  resolution: "simple-git@npm:3.36.0"
   dependencies:
     "@kwsites/file-exists": "npm:^1.1.1"
     "@kwsites/promise-deferred": "npm:^1.1.1"
+    "@simple-git/args-pathspec": "npm:^1.0.3"
+    "@simple-git/argv-parser": "npm:^1.1.0"
     debug: "npm:^4.4.0"
-  checksum: 10c0/463e91f3ee04b7fc445284c64502a4ee3d607f626f18c8bcc036815a30fe178d2216976e683c6368edd7b3093801d6e534deeb8e700a4863a76ef23f881a0712
+  checksum: 10c0/4c22e57107535168f354e5abbbf6e618a7b39d76491ca225c70588520fbe86891f3b9a5c4f8a3fc0137e669aad2f0e11f6c6e677bfec07169cd18f29bf23cb77
   languageName: node
   linkType: hard
 
@@ -22605,12 +22623,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^5.2.0, type-fest@npm:^5.4.4":
-  version: 5.4.4
-  resolution: "type-fest@npm:5.4.4"
+"type-fest@npm:^5.2.0, type-fest@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "type-fest@npm:5.6.0"
   dependencies:
     tagged-tag: "npm:^1.0.0"
-  checksum: 10c0/bf9c6d7df5383fd720aac71da8ce8690ff1c554459d19cf3c72d61eac98255dba57abe20c628f91f4116f66211791462fdafa90b2be2d7405a5a4c295e4d849d
+  checksum: 10c0/5468a8ffda7f3904e6f7bbd8069eb8b6dd4bd9156e206df7a01d09a73e28cd1afedf74ead9d0fc12841c8c90074194859feca240511c50800962fde1bd9ddcbc
   languageName: node
   linkType: hard
 
@@ -24024,15 +24042,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:6.0.1":
-  version: 6.0.1
-  resolution: "yeoman-environment@npm:6.0.1"
+"yeoman-environment@npm:6.1.0":
+  version: 6.1.0
+  resolution: "yeoman-environment@npm:6.1.0"
   dependencies:
     "@yeoman/adapter": "npm:^4.0.2"
-    "@yeoman/conflicter": "npm:^4.0.1"
-    "@yeoman/namespace": "npm:^1.0.1"
-    "@yeoman/transform": "npm:^2.1.0"
-    "@yeoman/types": "npm:^1.10.3"
+    "@yeoman/conflicter": "npm:^4.1.0"
+    "@yeoman/namespace": "npm:^2.1.0"
+    "@yeoman/transform": "npm:^2.1.1"
+    "@yeoman/types": "npm:^1.11.0"
     arrify: "npm:^3.0.0"
     chalk: "npm:^5.6.2"
     commander: "npm:^14.0.3"
@@ -24044,7 +24062,7 @@ __metadata:
     locate-path: "npm:^8.0.0"
     lodash-es: "npm:^4.18.1"
     mem-fs: "npm:^4.1.4"
-    mem-fs-editor: "npm:^12.0.3"
+    mem-fs-editor: "npm:^12.0.4"
     semver: "npm:^7.7.4"
     slash: "npm:^5.1.0"
     untildify: "npm:^6.0.0"
@@ -24055,30 +24073,30 @@ __metadata:
     mem-fs: ^4.1.4
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/83ca87a7461fd80a448d980434e78f46f488df9f22490d10d0e6fd96a01367c7819f71c1d089fd22976e4f5075e8d633049873d36951c828e2fc4c30908feef3
+  checksum: 10c0/fdd5b7651dcd1a26d0f3e23de4de0f2d1984870ec0844afc6c3d68b9ece2fb53242fe061db7ab2de960759b21122d5e1d0d6866f642b485f52efb0297bcfc53c
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^8.1.2":
-  version: 8.1.2
-  resolution: "yeoman-generator@npm:8.1.2"
+"yeoman-generator@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "yeoman-generator@npm:8.2.2"
   dependencies:
-    "@types/debug": "npm:^4.1.12"
+    "@types/debug": "npm:^4.1.13"
     "@types/lodash-es": "npm:^4.17.12"
-    "@yeoman/namespace": "npm:^1.0.1"
+    "@yeoman/namespace": "npm:^2.1.0"
     chalk: "npm:^5.6.2"
     debug: "npm:^4.4.3"
     execa: "npm:^9.6.1"
     latest-version: "npm:^9.0.0"
-    lodash-es: "npm:^4.17.23"
-    mem-fs-editor: "npm:^12.0.2"
+    lodash-es: "npm:^4.18.1"
+    mem-fs-editor: "npm:^12.0.4"
     minimist: "npm:^1.2.8"
     read-package-up: "npm:^12.0.0"
     semver: "npm:^7.7.4"
-    simple-git: "npm:^3.32.3"
+    simple-git: "npm:^3.36.0"
     sort-keys: "npm:^6.0.0"
     text-table: "npm:^0.2.0"
-    type-fest: "npm:^5.4.4"
+    type-fest: "npm:^5.6.0"
   peerDependencies:
     "@types/node": ">=20.19.35"
     "@yeoman/types": ^1.1.1
@@ -24086,18 +24104,18 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/c5eec1629fbcfedbe8e96e2262ede5846e2e494b85695abb8a15c7bad243ea6b5319aecff85d286c7ffe422f60d4536c4c2ebbeb230184d9418b68014a8d918c
+  checksum: 10c0/2f93c7434af51f7af0aeb32a5d5f26e7747b034f577d9455c94689a18b4d1687f73b03a7ad71379624f3ad9916bb70320ed2a4549e918f7a89a42359cb5e3dbc
   languageName: node
   linkType: hard
 
-"yeoman-test@npm:11.3.1":
-  version: 11.3.1
-  resolution: "yeoman-test@npm:11.3.1"
+"yeoman-test@npm:11.4.2":
+  version: 11.4.2
+  resolution: "yeoman-test@npm:11.4.2"
   dependencies:
-    lodash-es: "npm:^4.17.23"
-    mem-fs-editor: "npm:^12.0.2"
+    lodash-es: "npm:^4.18.1"
+    mem-fs-editor: "npm:^12.0.3"
     signal-exit: "npm:^4.1.0"
-    type-fest: "npm:^5.4.4"
+    type-fest: "npm:^5.6.0"
   peerDependencies:
     "@yeoman/adapter": ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.1
     "@yeoman/types": ^1.5.0
@@ -24113,7 +24131,7 @@ __metadata:
       optional: true
     yeoman-generator:
       optional: true
-  checksum: 10c0/7c67af18e7371dad2d446d11c5d330a90b2d6f131191dea6d7122f7b170ed52abe31c60d46abb3c1d88c03c4eb182bf8ecbe6839bbddd28fab9723964cb884d7
+  checksum: 10c0/481f95be73a145fbf8a11597c9073c8b16f31ee1fd3ac0949424a88732ea0a52bb3b052f6fdaca8dee79c84d6ed6208a1116a4aebf4fe022f9d5a8af93b70994
   languageName: node
   linkType: hard
 
