@@ -74,7 +74,8 @@ module.exports = {
       '\\.(css|scss)$': require.resolve('./mocks/cssMock.js'),
       '\\.(svg)$': require.resolve('./mocks/svgrMock.js'),
       ...pathsToModuleNameMapper(options.paths || [], {
-        prefix: `<rootDir>/${options.baseUrl}/`,
+        prefix:
+          options.baseUrl ? `<rootDir>/${options.baseUrl}/` : `<rootDir>/`,
       }),
     },
   },
