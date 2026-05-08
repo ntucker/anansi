@@ -8,7 +8,7 @@
  * 1. Preeval phase - initial code transformation
  * 2. Eval/collect phase - CSS extraction and final transformation
  *
- * In Linaria 6.x, the caller name is 'wyw-in-js' (earlier versions used 'linaria').
+ * In Linaria 6.x+, the caller name is 'wyw-in-js' (earlier versions used 'linaria').
  * Our preset detects this and disables incompatible plugins.
  */
 
