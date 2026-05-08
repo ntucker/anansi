@@ -252,7 +252,7 @@ __metadata:
     yeoman-assert: "npm:3.1.1"
     yeoman-environment: "npm:6.1.0"
     yeoman-generator: "npm:^8.2.2"
-    yeoman-test: "npm:11.4.2"
+    yeoman-test: "npm:11.5.2"
   languageName: unknown
   linkType: soft
 
@@ -24113,9 +24113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-test@npm:11.4.2":
-  version: 11.4.2
-  resolution: "yeoman-test@npm:11.4.2"
+"yeoman-test@npm:11.5.2":
+  version: 11.5.2
+  resolution: "yeoman-test@npm:11.5.2"
   dependencies:
     lodash-es: "npm:^4.18.1"
     mem-fs-editor: "npm:^12.0.3"
@@ -24136,7 +24136,7 @@ __metadata:
       optional: true
     yeoman-generator:
       optional: true
-  checksum: 10c0/481f95be73a145fbf8a11597c9073c8b16f31ee1fd3ac0949424a88732ea0a52bb3b052f6fdaca8dee79c84d6ed6208a1116a4aebf4fe022f9d5a8af93b70994
+  checksum: 10c0/65a4f4facfa4dfe7d283d2b93612eb1dddaae9718f910ce32f3dffb0ec411395b06ccc1f2d71eb994055abe334263ff1d68caba0311aad7488c9a5d3a7b11819
   languageName: node
   linkType: hard
 
