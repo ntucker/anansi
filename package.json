@@ -72,7 +72,7 @@
     "storybook": "10.4.2",
     "@storybook/builder-webpack5/webpack": "5.107.2",
     "@storybook/preset-react-webpack/webpack": "5.107.2",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "normalize-url": "^6",
     "react": "19.2.7",
@@ -82,7 +82,7 @@
   "dependencies": {
     "@lerna-lite/publish": "^4.0.0",
     "@lerna-lite/version": "^4.0.0",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "react": "19.2.7",
     "react-dom": "19.2.7"
