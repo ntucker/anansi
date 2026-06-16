@@ -51,6 +51,9 @@
     "url": "git+ssh://git@github.com:ntucker/anansi.git",
     "directory": "packages/webpack-config-anansi"
   },
+  "bugs": {
+    "url": "https://github.com/ntucker/anansi/issues"
+  },
   "engines": {
     "node": "^18.20.0 || ^20.10.0 || >=22.0.0"
   },

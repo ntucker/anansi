@@ -25,6 +25,9 @@
     "url": "git+ssh://git@github.com:ntucker/anansi.git",
     "directory": "packages/ts-utils"
   },
+  "bugs": {
+    "url": "https://github.com/ntucker/anansi/issues"
+  },
   "engines": {
     "node": ">=10.13.0"
   },
