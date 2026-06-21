@@ -96,7 +96,7 @@
   },
   "dependencies": {
     "@anansi/router": "workspace:^",
-    "@babel/runtime-corejs3": "^7.26.0",
+    "@babel/runtime-corejs3": "^8.0.0",
     "chalk": "^4.1.2",
     "compression": "^1.8.1",
     "core-js-pure": "^3.40.0",

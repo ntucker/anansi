@@ -22,7 +22,7 @@
     "@anansi/browserslist-config": "^1.7.5",
     "@anansi/eslint-plugin": "^1.0.74",
     "@anansi/webpack-config": "^21.1.19",
-    "@babel/core": "^7.21.3",
+    "@babel/core": "^8.0.0",
     "@types/babel__core": "^7.20.0",
     "@types/eslint": "^9.0.0",
     "@types/node": "^24.0.0",
@@ -39,8 +39,8 @@
     "webpack-dev-server": "^5.0.0"
   },
   "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "7.29.7",
-    "@babel/runtime-corejs3": "7.29.7",
+    "@babel/plugin-transform-modules-commonjs": "8.0.1",
+    "@babel/runtime-corejs3": "8.0.0",
     "@linaria/core": "7.0.0",
     "@linaria/react": "7.0.1",
     "classnames": "2.5.1",
