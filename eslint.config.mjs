@@ -1,5 +1,6 @@
-import anansiPlugin from '@anansi/eslint-plugin';
 import globals from 'globals';
+
+import anansiPlugin from '@anansi/eslint-plugin';
 
 export default [
   ...anansiPlugin.configs.typescript,
@@ -16,6 +17,7 @@ export default [
     files: [
       'packages/eslint-plugin/*',
       'packages/webpack-config-anansi/**',
+      'packages/rspack-config-anansi/**',
       'packages/jest-preset-anansi/**',
       'packages/generator-js/**',
       'packages/cli/**',

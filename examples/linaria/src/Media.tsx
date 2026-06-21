@@ -1,5 +1,4 @@
 import { styled } from '@linaria/react';
-
 import constants from 'myconstants';
 
 const SvgContainer = styled.div`
