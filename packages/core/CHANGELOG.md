@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.12](/github.com/ntucker/anansi/compare/@anansi/core@0.22.11...@anansi/core@0.22.12) (2026-06-21)
+
+### 📦 Package
+
+* Update all non-major dependencies ([#3077](/github.com/ntucker/anansi/issues/3077)) ([2022d8e](/github.com/ntucker/anansi/commit/2022d8eb66c9cd001ae34a0534cc7ddf7af2b071))
+* Update react to v19.2.7 ([#3074](/github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](/github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
+* Update webpack packages ([#3069](/github.com/ntucker/anansi/issues/3069)) ([7a6fc9e](/github.com/ntucker/anansi/commit/7a6fc9e8c190c023717a098196fc4904951835da))
+* Update webpack packages ([#3081](/github.com/ntucker/anansi/issues/3081)) ([cb79e56](/github.com/ntucker/anansi/commit/cb79e569d833ebbe8f9f3d85bbc257e389444dec))
+* Update webpack packages to ^5.22.2 ([#3076](/github.com/ntucker/anansi/issues/3076)) ([c13f8d8](/github.com/ntucker/anansi/commit/c13f8d8c91239a9a9d1ce6173eee6186876b457d))
+
 ## [0.22.11](/github.com/ntucker/anansi/compare/@anansi/core@0.22.10...@anansi/core@0.22.11) (2026-05-03)
 
 ### 📦 Package

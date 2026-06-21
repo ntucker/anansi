@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.5](/github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.7.4...@anansi/browserslist-config@1.7.5) (2026-06-21)
+
+**Note:** Version bump only for package @anansi/browserslist-config
+
 ## [1.7.4](/github.com/ntucker/anansi/compare/@anansi/browserslist-config@1.7.3...@anansi/browserslist-config@1.7.4) (2026-01-02)
 
 ### 📝 Documentation

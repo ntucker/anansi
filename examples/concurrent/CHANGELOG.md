@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.15](https://github.com/ntucker/anansi/compare/example-react-18@9.0.14...example-react-18@9.0.15) (2026-06-21)
+
+### 📦 Package
+
+* Update `webpack-dev-server` to v5.2.4 [SECURITY] ([#3060](https://github.com/ntucker/anansi/issues/3060)) ([178a2db](https://github.com/ntucker/anansi/commit/178a2db02087919a377a21a20e17cb5fcfa98899))
+* Update all non-major dependencies ([#3077](https://github.com/ntucker/anansi/issues/3077)) ([2022d8e](https://github.com/ntucker/anansi/commit/2022d8eb66c9cd001ae34a0534cc7ddf7af2b071))
+* Update babel packages to v7.29.7 ([#3065](https://github.com/ntucker/anansi/issues/3065)) ([9097c07](https://github.com/ntucker/anansi/commit/9097c07f4c8edf60a00f9a31c9fa54b4d0497bad))
+* Update JS test packages ([#3073](https://github.com/ntucker/anansi/issues/3073)) ([6215dc4](https://github.com/ntucker/anansi/commit/6215dc4f73d68885e2aab5c764b6719de9d4dd04))
+* Update JS test packages to v30.4.1 ([#3054](https://github.com/ntucker/anansi/issues/3054)) ([b326067](https://github.com/ntucker/anansi/commit/b32606720e5312234959644d5e5d682b9aaa29dd))
+* Update linaria packages to v7 ([#3051](https://github.com/ntucker/anansi/issues/3051)) ([5749642](https://github.com/ntucker/anansi/commit/574964219352c7cac01eb947f7ff6aef6f9f8b6d))
+* Update react to v19.2.7 ([#3074](https://github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](https://github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
+* Update webpack packages ([#3069](https://github.com/ntucker/anansi/issues/3069)) ([7a6fc9e](https://github.com/ntucker/anansi/commit/7a6fc9e8c190c023717a098196fc4904951835da))
+* Update webpack packages ([#3081](https://github.com/ntucker/anansi/issues/3081)) ([cb79e56](https://github.com/ntucker/anansi/commit/cb79e569d833ebbe8f9f3d85bbc257e389444dec))
+
 ## [9.0.14](https://github.com/ntucker/anansi/compare/example-react-18@9.0.13...example-react-18@9.0.14) (2026-05-03)
 
 ### 📦 Package
