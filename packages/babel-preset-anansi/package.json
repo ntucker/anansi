@@ -31,6 +31,9 @@
     "url": "git+ssh://git@github.com:ntucker/anansi.git",
     "directory": "packages/babel-preset-anansi"
   },
+  "bugs": {
+    "url": "https://github.com/ntucker/anansi/issues"
+  },
   "engines": {
     "node": ">=14"
   },
