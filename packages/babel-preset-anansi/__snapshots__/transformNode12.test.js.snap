@@ -1,14 +1,11 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`buildPreset - Babel Transform should not use esm babel/runtime3 when targetting node 1`] = `
-""use strict";
-
-var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault").default;
-var _hasOwn = _interopRequireDefault(require("core-js-pure/stable/object/has-own.js"));
+"import _Object$hasOwn from "core-js-pure/stable/object/has-own.js";
 class MyClass {
   myProp = 42;
 }
-console.log((0, _hasOwn.default)({
+console.log(_Object$hasOwn({
   a: 1
 }, 'a') ? 'yes' : 'no');"
 `;

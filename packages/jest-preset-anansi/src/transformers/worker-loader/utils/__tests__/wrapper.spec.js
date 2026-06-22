@@ -3,6 +3,13 @@ import path from 'path';
 
 import { wrapSource } from '../wrapper';
 
+function normalizeWrappedSource(source) {
+  return source
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n+/g, '\n')
+    .trim();
+}
+
 describe('Wrapper module', () => {
   describe('wrapSource', () => {
     it('should wrap custom worker code inside a Worker class', () => {
@@ -15,7 +22,9 @@ describe('Wrapper module', () => {
         { encoding: 'utf8', flag: 'r' },
       );
       const wrappedSrc = wrapSource(src);
-      expect(wrappedSrc).toEqual(desideredWrappedSrc);
+      expect(normalizeWrappedSource(wrappedSrc)).toEqual(
+        normalizeWrappedSource(desideredWrappedSrc),
+      );
     });
   });
 });

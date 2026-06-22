@@ -217,15 +217,50 @@ describe('makeConfig', () => {
   });
 
   describe('module rules', () => {
+    function getBabelLoader(config) {
+      const queue = [...config.module.rules];
+
+      while (queue.length) {
+        const rule = queue.shift();
+        if (!rule) continue;
+
+        const uses = Array.isArray(rule.use) ? rule.use : [rule.use];
+        const loader = uses.find(
+          use => use && use.loader && use.loader.includes('babel-loader'),
+        );
+        if (loader) return loader;
+
+        if (Array.isArray(rule.oneOf)) {
+          queue.push(...rule.oneOf);
+        }
+      }
+
+      return undefined;
+    }
+
     it('should have babel loader for TS/JS files', () => {
       const configFn = makeConfig(defaultTestOptions);
       const config = configFn({}, { mode: 'development' });
 
-      const tsRule = config.module.rules.find(
-        rule => rule.test && rule.test.toString().includes('(t|j)sx'),
-      );
-      expect(tsRule).toBeDefined();
-      expect(tsRule.use || tsRule.oneOf).toBeDefined();
+      const babelLoader = getBabelLoader(config);
+      expect(babelLoader).toBeDefined();
+      expect(babelLoader.options).toBeDefined();
+    });
+
+    it('should pass node caller target to Babel for node builds', () => {
+      const configFn = makeConfig(defaultTestOptions);
+      const config = configFn({}, { mode: 'development', target: 'node' });
+
+      const babelLoader = getBabelLoader(config);
+      expect(babelLoader.options.caller.target).toBe('node');
+    });
+
+    it('should not set node caller target for web builds', () => {
+      const configFn = makeConfig(defaultTestOptions);
+      const config = configFn({}, { mode: 'development', target: 'web' });
+
+      const babelLoader = getBabelLoader(config);
+      expect(babelLoader.options.caller.target).toBeUndefined();
     });
 
     it('should have svg loader with SVGR for JS/TS files', () => {

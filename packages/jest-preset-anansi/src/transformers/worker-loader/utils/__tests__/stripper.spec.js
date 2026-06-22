@@ -13,7 +13,7 @@ describe('Stripper module', () => {
       const strippedResult = stripImports(src);
       expect(strippedResult.code).toContain("workerHandler('data')");
       expect(strippedResult.imports[0]).toBe(
-        "import workerHandler from './handlers'",
+        "import workerHandler from './handlers';",
       );
     });
   });

@@ -20,7 +20,7 @@
     "postinstall": "rm -rf node_modules/.cache"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "^22.18.0 || >=24.11.0"
   },
   "stackBlitz": {
     "startCommand": "yarn start"
@@ -34,7 +34,6 @@
     "@anansi/webpack-config": "^21.1.19",
     "@babel/core": "8.0.1",
     "@data-client/test": "0.18.0",
-    "@types/babel__core": "7.20.5",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
     "@types/react": "19.2.17",

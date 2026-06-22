@@ -17,13 +17,15 @@
     "devtest:validate": "exit 0",
     "devtest:ci": "yarn g:devtest start http://localhost:8080 devtest:validate"
   },
+  "engines": {
+    "node": "^22.18.0 || >=24.11.0"
+  },
   "devDependencies": {
     "@anansi/babel-preset": "^6.2.27",
     "@anansi/browserslist-config": "^1.7.5",
     "@anansi/eslint-plugin": "^1.0.74",
     "@anansi/webpack-config": "^21.1.19",
     "@babel/core": "^8.0.0",
-    "@types/babel__core": "^7.20.0",
     "@types/eslint": "^9.0.0",
     "@types/node": "^24.0.0",
     "@types/react": "19.2.17",

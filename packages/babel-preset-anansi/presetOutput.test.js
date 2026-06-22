@@ -14,9 +14,9 @@ describe('buildPreset', () => {
     };
   });
 
-  it('should assert Babel version 7', () => {
+  it('should assert supported Babel versions', () => {
     buildPreset(api);
-    expect(api.assertVersion).toHaveBeenCalledWith(7);
+    expect(api.assertVersion).toHaveBeenCalledWith('^7.12.0 || ^8.0.0-0');
   });
 
   it('should set default options', () => {
@@ -24,6 +24,23 @@ describe('buildPreset', () => {
     const preset = buildPreset(api);
     expect(preset.presets).toBeDefined();
     expect(preset.plugins).toBeDefined();
+  });
+
+  it('should enable curated assumptions when loose is true', () => {
+    api.env.mockReturnValue('development');
+    const preset = buildPreset(api, { loose: true });
+    expect(preset.assumptions).toEqual({
+      mutableTemplateObject: true,
+      noClassCalls: true,
+      noDocumentAll: true,
+      objectRestNoSymbols: true,
+      privateFieldsAsProperties: true,
+      pureGetters: true,
+      setClassMethods: true,
+      setComputedProperties: true,
+      setPublicClassFields: true,
+      setSpreadProperties: true,
+    });
   });
 
   it('should configure preset for production environment', () => {

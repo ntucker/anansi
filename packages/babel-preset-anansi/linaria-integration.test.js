@@ -839,7 +839,7 @@ describe('Linaria Integration with Webpack Loader', () => {
     it('should handle modern JavaScript syntax with basic Linaria usage', async () => {
       const code = `
         import { styled } from '@linaria/react';
-        // decorators (2023-05)
+        // decorators (2023-11)
         function sealed(value, context) { return value; }
         function initOne(value, context) {
           if (context.kind === 'field') return initial => (initial ?? 1);
@@ -858,9 +858,8 @@ describe('Linaria Integration with Webpack Loader', () => {
           }
         }
         const big = 1_000_000n;                 // numeric separator + BigInt
-        const rec = #{ a: 1, b: 2 };            // Record
-        const tup = #[1, 2, 3];                 // Tuple
-        const len = tup?.length ?? 0;           // optional chaining + nullish coalescing
+        const values = [1, 2, 3];
+        const len = values?.length ?? 0;        // optional chaining + nullish coalescing
         let aNull = null; aNull ??= 42;         // logical nullish assignment
         let flag = 0; flag ||= 1;               // logical OR assignment
         const { a, ...rest } = { a: 1, b: 2 };  // object rest/spread

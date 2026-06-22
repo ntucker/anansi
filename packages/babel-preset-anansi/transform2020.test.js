@@ -1,14 +1,17 @@
-const babel = require('@babel/core');
-
 const buildPreset = require('./index');
 
 describe('buildPreset - Babel Transform', () => {
   let api;
+  let babel;
+  let getTargets;
+
+  beforeAll(async () => {
+    babel = await import('@babel/core');
+    ({ default: getTargets } =
+      await import('@babel/helper-compilation-targets'));
+  });
 
   beforeEach(() => {
-    const {
-      default: getTargets,
-    } = require('@babel/helper-compilation-targets');
     api = {
       assertVersion: jest.fn(),
       env: jest.fn(),
@@ -23,7 +26,6 @@ describe('buildPreset - Babel Transform', () => {
     code,
     options = {
       hasJsxRuntime: true,
-      loose: true,
     },
   ) => {
     const preset = buildPreset(api, options);

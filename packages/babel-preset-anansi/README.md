@@ -7,6 +7,8 @@
 
 Configurable production-ready babel preset for React projects with TypeScript support.
 
+This preset is Babel 8-first. Running Babel with it requires a modern Node.js runtime.
+
 ### Why
 
 - Up to date best practices
@@ -40,18 +42,18 @@ Or configure [options](#options)
 ```
 </details>
 
-<details><summary><b>Make transforms 'loose'</b></summary>
+<details><summary><b>Set assumptions</b></summary>
 
 ```json
 {
-  "presets": [
-    [
-      "@anansi",
-      {
-        "loose": true
-      }
-    ]
-  ]
+  "presets": ["@anansi"],
+  "assumptions": {
+    "noDocumentAll": true,
+    "noClassCalls": true,
+    "constantReexports": true,
+    "objectRestNoSymbols": true,
+    "pureGetters": true
+  }
 }
 ```
 </details>
@@ -77,12 +79,6 @@ are included:
 ### Stage 3
 
 - [Decorators](https://github.com/tc39/proposal-decorators)
-
-### Stage 2
-
-- [Records and Tuples](https://github.com/tc39/proposal-record-tuple)
-  - Be sure to add [@bloomberg/record-tuple-polyfill](https://www.npmjs.com/package/@bloomberg/record-tuple-polyfill)
-  - Warning: this doesn't work with TypeScript
 
 ### Stage 1
 
@@ -136,13 +132,10 @@ If unset, will automatically target current node version when webpack is targett
 
 > Deprecated: Prefer using [top-level](https://babel.dev/blog/2021/02/22/7.13.0#top-level-targets-option-12189httpsgithubcombabelbabelpull12189-rfchttpsgithubcombabelrfcspull2) `targets` instead
 
-Set to `{ "esmodules": true }` to produce extra optimal bundles for modern browsers that support
-ES modules. This will make use of `@babel/preset-modules` instead of `@babel/preset-env`, whose transforms
-are more compact and efficient.
-
-_NOT recommended for non-`{ "esmodules": true }`._ Can be used to override `@babel/preset-env` targets
-for non-testing environment.
-Use a [browserslist config](https://github.com/browserslist/browserslist#packagejson) instead.
+Use this to override `@babel/preset-env` targets for non-testing environments. In Babel 8,
+`@babel/preset-env` defaults to modern Browserslist targets rather than ES5, so prefer a
+[browserslist config](https://github.com/browserslist/browserslist#packagejson) or explicit top-level `targets`
+when you need stable output across environments.
 
 Feel free to use the [anansi browserlist config](/packages/browserslist-config-anansi).
 
@@ -184,7 +177,7 @@ This is the default - it will automatically determine a reasonable default based
 
 Otherwise, if 'core-js' and '@babel/runtime' package are found, 'entry-global'.
 
-If just 'core-js' is found, 'usage-entry'
+If just 'core-js' is found, 'entry-global'
 
 Otherwise `false`.
 
@@ -236,16 +229,9 @@ Do not perform any transforms related to core-js or polyfills.
 
 Specifies the core-js version to target. Without specified will use the version found by importing.
 
-#### useESModules: boolean = !(env === 'test' || options.nodeTarget)
-
-This uses the es6 module version of [@babel/runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime#useesmodules).
-"This allows for smaller builds in module systems like webpack, since it doesn't need to preserve commonjs semantics."
-
-By default, tries to infer whether this can be used.
-
-Set this to false for maximum compatibility.
-
 #### [useBuiltIns](https://babeljs.io/docs/en/babel-preset-env#usebuiltins): "usage" | "entry" | false = "entry"
+
+> Deprecated compatibility alias. Prefer `polyfillMethod`.
 
 This option configures how @anansi/babel-preset handles polyfills. Both `usage` and `entry` will
 only include polyfills needed for the target.
@@ -256,13 +242,9 @@ adding your own import of core-js. You can even import pieces selectively.
 `usage` will add imports everywhere a file is used, which can make it harder to split polyfills if they
 are not needed.
 
-#### [corejs](https://babeljs.io/docs/en/babel-preset-env#corejs): { version: 3, proposals: true }
-
-Which core-js version to use when useBuiltIns is not false
-
 #### runtimePkg = "@babel/runtime"
 
-Can be `@babel/runtime-corejs3` or `@babel/runtime-corejs2`. Using the corejs version will
+Can be `@babel/runtime-corejs3`. Using the corejs version will
 add imports to the 'pure' form of core-js, which doesn't change global objects. This will however
 result in heavily increased bundle sizes, so it's generally preferred to stay with the default.
 
@@ -301,14 +283,12 @@ Be sure to install babel-minify as it is listed as an optional peerdependency he
 
 #### loose: bool = false
 
-- class properties
-- private methods
-- all things in preset-env
-- legacy decorators
+Legacy compatibility option for class-features plugins and legacy decorators only. Babel 8 removed
+`loose` from `@babel/preset-env`, so prefer top-level `assumptions` for modern configurations.
 
 #### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
 
-- `version`: "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-05"
+- `version`: "2023-11", "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-11"
 - `decoratorsBeforeExport`
 
 #### reactCompiler: {compilationMode?: "annotation"}

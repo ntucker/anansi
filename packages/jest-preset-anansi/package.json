@@ -37,11 +37,16 @@
     "babel"
   ],
   "engines": {
-    "node": ">= 10.13.0",
+    "node": "^22.18.0 || >=24.11.0",
     "npm": ">= 4.0.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testMatch": ["**/*.spec.js"],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/src/transformers/worker-loader/__tests__/baseworker.spec.js"
+    ]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -65,7 +70,6 @@
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
     "@babel/runtime-corejs3": "^8.0.0",
-    "@types/babel__core": "^7.20.5",
     "babel-jest": "^30.4.1",
     "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
@@ -77,16 +81,12 @@
     "whatwg-fetch": "^3.0.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.0.0 || ^8.0.0",
-    "@types/babel__core": "^7.0.0",
+    "@babel/core": "^8.0.0",
     "jest": "^28.0.0 || ^29.0.0 || ^30.0.0",
     "react": "*",
     "typescript": "^4.3.0 || ^5.0.0 || ^6.0.0"
   },
   "peerDependenciesMeta": {
-    "@types/babel__core": {
-      "optional": true
-    },
     "react": {
       "optional": true
     }

@@ -1,14 +1,17 @@
-const babel = require('@babel/core');
-
 const buildPreset = require('./index');
 
 describe('buildPreset - Babel Transform', () => {
   let api;
+  let babel;
+  let getTargets;
+
+  beforeAll(async () => {
+    babel = await import('@babel/core');
+    ({ default: getTargets } =
+      await import('@babel/helper-compilation-targets'));
+  });
 
   beforeEach(() => {
-    const {
-      default: getTargets,
-    } = require('@babel/helper-compilation-targets');
     api = {
       assertVersion: jest.fn(),
       env: jest.fn(),
@@ -23,13 +26,14 @@ describe('buildPreset - Babel Transform', () => {
     code,
     options = {
       hasJsxRuntime: true,
-      loose: true,
     },
+    babelOptions = {},
   ) => {
     const preset = buildPreset(api, options);
     return babel.transformSync(code, {
       filename: 'file.tsx',
       presets: [preset],
+      ...babelOptions,
     }).code;
   };
 
@@ -55,27 +59,31 @@ describe('buildPreset - Babel Transform', () => {
     expect(transformedCode).toMatchSnapshot();
   });
 
-  it('should not apply class properties transform when loose', () => {
+  it('should use strict class fields transforms by default', () => {
     api.env.mockReturnValue('development');
     const code = `class MyClass { declare myThing; myProp: number = 42; }`;
     const transformedCode = transformCode(code, {
       hasJsxRuntime: true,
-      loose: true,
     });
     expect(transformedCode).toMatchSnapshot();
   });
 
-  it('should apply class properties transform when not loose', () => {
+  it('should allow top-level assumptions to opt into loose class fields transforms', () => {
     api.env.mockReturnValue('development');
     const code = `class MyClass { declare myThing; myProp: number = 42; }`;
-    const transformedCode = transformCode(code, {
-      hasJsxRuntime: true,
-      loose: false,
-    });
+    const transformedCode = transformCode(
+      code,
+      {
+        hasJsxRuntime: true,
+      },
+      {
+        assumptions: { setPublicClassFields: true },
+      },
+    );
     expect(transformedCode).toMatchSnapshot();
   });
 
-  it('should transform class statics', () => {
+  it('should transform class statics with Babel 8 defaults', () => {
     api.targets.mockReturnValue('development');
     const code = `
     abstract class StaticEntity extends Entity {
@@ -89,7 +97,6 @@ describe('buildPreset - Babel Transform', () => {
     `;
     const transformedCode = transformCode(code, {
       hasJsxRuntime: true,
-      loose: true,
     });
     expect(transformedCode).toMatchSnapshot();
   });

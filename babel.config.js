@@ -4,7 +4,7 @@ module.exports = function (api) {
   api.cache.using(
     () => process.env.NODE_ENV + process.env.BROWSERSLIST_ENV + '5',
   );
-  const options = { loose: true, hasJsxRuntime: true };
+  const options = { hasJsxRuntime: true };
   if (process.env.NODE_ENV === 'test') {
     options.resolver = {
       resolvePath(sourcePath, currentFile, opts) {
