@@ -1,10 +1,15 @@
-const babel = require('@babel/core');
-const { default: getTargets } = require('@babel/helper-compilation-targets');
-
 const buildPreset = require('./index');
 
 describe('Babel Transform 2024 browsers', () => {
   let api;
+  let babel;
+  let getTargets;
+
+  beforeAll(async () => {
+    babel = await import('@babel/core');
+    ({ default: getTargets } =
+      await import('@babel/helper-compilation-targets'));
+  });
 
   beforeEach(() => {
     api = {
@@ -20,7 +25,6 @@ describe('Babel Transform 2024 browsers', () => {
     code,
     options = {
       hasJsxRuntime: true,
-      loose: true,
     },
   ) => {
     const preset = buildPreset(api, options);

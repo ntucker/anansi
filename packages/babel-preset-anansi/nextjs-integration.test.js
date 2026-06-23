@@ -8,7 +8,6 @@
  * We do this because nextjs turbopack are so deeply integrated there's no feasible way to actually test it for real.
  */
 
-const babel = require('@babel/core');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -17,6 +16,11 @@ const buildPreset = require('./index');
 
 describe('Next.js Integration - react-refresh', () => {
   let tempDir;
+  let babel;
+
+  beforeAll(async () => {
+    babel = await import('@babel/core');
+  });
 
   beforeEach(() => {
     // Create a temporary directory for test files

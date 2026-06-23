@@ -20,7 +20,7 @@
     "postinstall": "rm -rf node_modules/.cache"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "^22.18.0 || >=24.11.0"
   },
   "stackBlitz": {
     "startCommand": "yarn start"
@@ -32,9 +32,8 @@
     "@anansi/eslint-plugin": "^1.0.74",
     "@anansi/jest-preset": "^0.11.34",
     "@anansi/webpack-config": "^21.1.19",
-    "@babel/core": "7.29.7",
+    "@babel/core": "8.0.1",
     "@data-client/test": "0.18.0",
-    "@types/babel__core": "7.20.5",
     "@types/eslint": "9.6.1",
     "@types/jest": "30.0.0",
     "@types/react": "19.2.17",
@@ -53,7 +52,7 @@
     "@anansi/router": "^0.10.24",
     "@ant-design/cssinjs": "2.1.2",
     "@ant-design/icons": "6.2.5",
-    "@babel/runtime-corejs3": "7.29.7",
+    "@babel/runtime-corejs3": "8.0.0",
     "@data-client/endpoint": "0.18.0",
     "@data-client/hooks": "0.2.0",
     "@data-client/img": "0.18.0",

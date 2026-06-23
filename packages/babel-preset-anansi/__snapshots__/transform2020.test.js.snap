@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`buildPreset - Babel Transform should select polyfill entries with entry-global 1`] = `
-"import _defineProperty from "@babel/runtime-corejs3/helpers/esm/defineProperty";
+"import _defineProperty from "@babel/runtime-corejs3/helpers/defineProperty";
 import "core-js/modules/es.symbol.async-dispose.js";
 import "core-js/modules/es.symbol.dispose.js";
 import "core-js/modules/es.error.cause.js";

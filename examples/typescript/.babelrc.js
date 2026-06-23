@@ -1,5 +1,5 @@
 module.exports = {
-  presets: [['@anansi', { loose: true, reactCompiler: {} }]],
+  presets: [['@anansi', { reactCompiler: {} }]],
   assumptions: {
     noDocumentAll: true,
     noClassCalls: true,

@@ -1,22 +1,40 @@
 var globToRegExp = require('glob-to-regexp');
+const { createRequire } = require('module');
 const path = require('path');
+
+const nativeRequire = createRequire(__filename);
+
+const LOOSE_ASSUMPTIONS = Object.freeze({
+  mutableTemplateObject: true,
+  noClassCalls: true,
+  noDocumentAll: true,
+  objectRestNoSymbols: true,
+  privateFieldsAsProperties: true,
+  pureGetters: true,
+  setClassMethods: true,
+  setComputedProperties: true,
+  setPublicClassFields: true,
+  setSpreadProperties: true,
+});
+
+function requireDefault(specifier) {
+  const loaded = nativeRequire(specifier);
+  return loaded?.default ?? loaded;
+}
 
 /*
 options:
   targets,
   nodeTarget,
   modules,
-  useESModules,
   polyfillMethod,
-  corejsVersion,
   useBuiltIns,
-  corejs,
   minify,
   loose,
   tsConfigPath,
 */
 function buildPreset(api, options = {}) {
-  api.assertVersion(7);
+  api.assertVersion('^7.12.0 || ^8.0.0-0');
   const env = api.env();
   const babelTargets = typeof api.targets === 'function' ? api.targets() : {};
   const supportsModules = api.caller(
@@ -247,9 +265,10 @@ function buildPreset(api, options = {}) {
     options.polyfillTargets ||
     envOptions.targets;
   const preset = {
+    ...(options.loose ? { assumptions: LOOSE_ASSUMPTIONS } : {}),
     presets: [
       [
-        require('@babel/preset-react').default,
+        requireDefault('@babel/preset-react'),
         {
           development:
             env === 'development' || (env !== 'production' && !hasJsxRuntime),
@@ -263,11 +282,11 @@ function buildPreset(api, options = {}) {
       (Object.keys(options.resolver.alias).length ||
         options.resolver.root.length ||
         Object.keys(options.resolver).length > 3) && [
-        require('babel-plugin-module-resolver').default,
+        requireDefault('babel-plugin-module-resolver'),
         options.resolver,
       ],
       [
-        require('babel-plugin-root-import').default,
+        requireDefault('babel-plugin-root-import'),
         {
           root: process.env.ROOT_PATH_ROOT || options.rootPathRoot,
           rootPathSuffix:
@@ -279,17 +298,15 @@ function buildPreset(api, options = {}) {
       absoluteRuntimePath &&
         runtimeVersion &&
         !isLinaria && [
-          require('@babel/plugin-transform-runtime').default,
+          requireDefault('@babel/plugin-transform-runtime'),
           {
-            helpers: true,
             moduleName: options.runtimePkg && runtimePkg,
             version: runtimeVersion,
-            useESModules: !options.nodeTarget && modules === false,
           },
         ],
       options.polyfillMethod !== false &&
         !isLinaria && [
-          require('babel-plugin-polyfill-corejs3').default,
+          requireDefault('babel-plugin-polyfill-corejs3'),
           {
             method: options.polyfillMethod,
             targets: polyfillTargets,
@@ -300,22 +317,13 @@ function buildPreset(api, options = {}) {
               : corejsVersion,
           },
         ],
-
-      // stage 2
-      [
-        require('@babel/plugin-proposal-record-and-tuple').default,
-        {
-          importPolyfill: !isLinaria,
-          syntaxType: 'hash',
-        },
-      ],
     ],
   };
   preset.plugins = preset.plugins.filter(v => v);
   // import.meta.url doesn't work in commonjs
   if (modules !== false && supportsModules === false) {
     preset.plugins.unshift(
-      require('babel-plugin-transform-import-meta').default,
+      requireDefault('babel-plugin-transform-import-meta'),
     );
   }
 
@@ -328,12 +336,12 @@ function buildPreset(api, options = {}) {
       if (!hasJsxRuntime) {
         // new jsx runtime obsoletes this optimization
         preset.plugins.unshift(
-          require('@babel/plugin-transform-react-inline-elements').default,
+          requireDefault('@babel/plugin-transform-react-inline-elements'),
         );
       }
       if (typeof options.reactConstantElementsOptions === 'object') {
         preset.plugins.unshift([
-          require('@babel/plugin-transform-react-constant-elements').default,
+          requireDefault('@babel/plugin-transform-react-constant-elements'),
           options.reactConstantElementsOptions,
         ]);
       }
@@ -347,7 +355,7 @@ function buildPreset(api, options = {}) {
       break;
   }
 
-  preset.presets.unshift([require('@babel/preset-env').default, envOptions]);
+  preset.presets.unshift([requireDefault('@babel/preset-env'), envOptions]);
 
   if (options.minify && env === 'production' && !isLinaria) {
     try {
@@ -367,7 +375,7 @@ function buildPreset(api, options = {}) {
     throw new Error('decoratorsOptions must be an Object');
   }
   const decoratorsOptions = options.decoratorsOptions || {
-    version: '2023-05',
+    version: '2023-11',
   };
   if (decoratorsOptions.version === '2018-09') {
     decoratorsOptions.decoratorsBeforeExport = true;
@@ -375,31 +383,33 @@ function buildPreset(api, options = {}) {
 
   const classPlugins = [
     // stage 3, but must come before class-properties when legacy is used (see block below)
-    [require('@babel/plugin-proposal-decorators').default, decoratorsOptions],
+    [requireDefault('@babel/plugin-proposal-decorators'), decoratorsOptions],
   ];
 
   // compatibility (see: https://babeljs.io/docs/babel-plugin-proposal-decorators#note-compatibility-with-babelplugin-transform-class-properties)
   if (decoratorsOptions.version === 'legacy') {
-    const classPropertiesOptions = { loose: options.loose };
+    const legacyClassFeatureOptions =
+      options.loose === undefined ? {} : { loose: options.loose };
+    // this is included in preset-env, but must come before class-properties
+    classPlugins.push(
+      requireDefault('@babel/plugin-transform-class-static-block'),
+    );
+    // stage 3 but must come before flow
     classPlugins.push([
-      // this is included in preset-env, but must come before class-properties
-      require('@babel/plugin-transform-class-static-block').default,
-      // stage 3 but must come before flow
-      [
-        require('@babel/plugin-transform-class-properties').default,
-        classPropertiesOptions,
-      ],
-      // this is included in preset-env, but must come after typescript, and after other class transforms
-      [
-        require('@babel/plugin-transform-private-methods').default,
-        { loose: options.loose },
-      ],
+      requireDefault('@babel/plugin-transform-class-properties'),
+      legacyClassFeatureOptions,
+    ]);
+    // this is included in preset-env, but must come after typescript, and after other class transforms
+    classPlugins.push([
+      requireDefault('@babel/plugin-transform-private-methods'),
+      legacyClassFeatureOptions,
     ]);
   }
 
   // using plugin so it can be placed before class transforms
-  const transformTypeScript =
-    require('@babel/plugin-transform-typescript').default;
+  const transformTypeScript = requireDefault(
+    '@babel/plugin-transform-typescript',
+  );
   const pluginOptions = isTSX => ({
     isTSX,
     allowDeclareFields: true,
@@ -420,7 +430,7 @@ function buildPreset(api, options = {}) {
       plugins: [
         // stage 1
         // typescript currently doesn't support this, so we're only supporting it for js files
-        require('@babel/plugin-proposal-export-default-from').default,
+        requireDefault('@babel/plugin-proposal-export-default-from'),
         ...classPlugins,
       ],
     },
@@ -428,13 +438,13 @@ function buildPreset(api, options = {}) {
   if (env === 'production' && !isLinaria) {
     // only add to js files as typescript won't use react prop types
     preset.overrides[2].plugins.unshift(
-      require('babel-plugin-transform-react-remove-prop-types').default,
+      requireDefault('babel-plugin-transform-react-remove-prop-types'),
     );
   }
 
   if (options.reactCompiler && env === 'production' && !isLinaria) {
     preset.plugins.unshift([
-      require('babel-plugin-react-compiler'),
+      requireDefault('babel-plugin-react-compiler'),
       typeof options.reactCompiler === 'object' ? options.reactCompiler : {},
     ]);
   }
@@ -462,13 +472,8 @@ function getEnvOptions(
       targets: {
         node: options.nodeTarget || 'current',
       },
-      bugfixes: false,
       modules: false,
       shippedProposals: true,
-      // modern versions this already defaults to false, but just ensure we don't do any polyfills
-      useBuiltIns: false,
-      // don't do fancy stuff just for 'correctness'. loose means less transforms.
-      loose: true,
       // Keep same slow transform exclusion
       exclude: ['transform-typeof-symbol'],
     };
@@ -491,10 +496,8 @@ function getEnvOptions(
     };
   }
   envOptions = {
-    bugfixes: true,
     modules,
     shippedProposals: true,
-    loose: options.loose,
     // Exclude transforms that make all code slower
     exclude: ['transform-typeof-symbol'],
     ...envOptions,

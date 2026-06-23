@@ -27,9 +27,10 @@ export function generateBabelLoader({
   } catch (e) {
     hasReactRefresh = false;
   }
+  const isNodeTarget = targetsNode(target);
   const hasJsxRuntime =
     react ?
-      (!target?.includes?.('node') && semver.gte(react.version, '16.14.0')) ||
+      (!isNodeTarget && semver.gte(react.version, '16.14.0')) ||
       semver.gte(react.version, '18.0.0')
     : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
@@ -65,7 +66,7 @@ export function generateBabelLoader({
       envVars,
     }) +
     JSON.stringify(
-      babel.loadPartialConfig({
+      babel.loadPartialConfigSync({
         filename,
         cwd,
         sourceFileName: filename,
@@ -87,6 +88,9 @@ export function generateBabelLoader({
       hasJsxRuntime,
       ...babelLoader.options.caller,
     };
+    if (isNodeTarget) {
+      babelLoader.options.caller.target = 'node';
+    }
     if (noHotReload) {
       babelLoader.options.caller.noHotReload = true;
     }
@@ -95,4 +99,19 @@ export function generateBabelLoader({
     babelLoader.options.caller.library = true;
   }
   return babelLoader;
+}
+
+function targetsNode(target) {
+  if (!target) return false;
+  if (Array.isArray(target)) {
+    return target.some(targetsNode);
+  }
+  if (typeof target !== 'string') {
+    return false;
+  }
+  return (
+    target.startsWith('node') ||
+    target === 'async-node' ||
+    target.startsWith('electron-')
+  );
 }
