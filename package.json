@@ -43,7 +43,7 @@
     "@anansi/babel-preset": "workspace:*",
     "@anansi/browserslist-config": "workspace:*",
     "@anansi/eslint-plugin": "workspace:*",
-    "@babel/cli": "8.0.1",
+    "@babel/cli": "8.0.4",
     "@babel/core": "8.0.1",
     "@babel/runtime-corejs3": "^8.0.0",
     "@commitlint/cli": "19.8.1",
