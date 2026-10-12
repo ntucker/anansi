@@ -361,7 +361,6 @@ __metadata:
     "@pmmmwh/react-refresh-webpack-plugin": "npm:^0.6.3"
     "@svgr/webpack": "npm:^8.1.0"
     "@types/node": "npm:^24.0.0"
-    "@types/sass-loader": "npm:^8.0.10"
     "@types/webpack-bundle-analyzer": "npm:^4.7.0"
     "@vue/preload-webpack-plugin": "npm:^2.0.0"
     "@wyw-in-js/webpack-loader": "npm:^1.1.0"
@@ -405,7 +404,7 @@ __metadata:
     react-refresh: "npm:*"
     readable-stream: "npm:^4.7.0"
     sass-embedded: "npm:^1.77.8"
-    sass-loader: "npm:^16.0.8"
+    sass-loader: "npm:^17.0.1"
     sass-resources-loader: "npm:^2.2.5"
     semver: "npm:^7.8.4"
     stream-browserify: "npm:^3.0.0"
@@ -434,7 +433,7 @@ __metadata:
     "@types/react": "*"
     react: "*"
     react-refresh: "*"
-    sass: ^1.3.0
+    sass: ^1.45.0
     sass-embedded: ^1.70.0
     svgo: ^3.0.0 || ^4.0.0
     webpack: ^5.61.0
@@ -8675,15 +8674,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-sass@npm:*":
-  version: 4.11.7
-  resolution: "@types/node-sass@npm:4.11.7"
-  dependencies:
-    "@types/node": "npm:*"
-  checksum: 10c0/126ae39c79dd3758101e0d459e9cdb3a92176c26d9df2057a4c471f2e2827cecd42fcb5dacebdf4b8b142b7cbd70acb082f79af043e2abdf90e02e73ef4ac831
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*, @types/node@npm:>=18, @types/node@npm:>=18.19.0, @types/node@npm:>=20.0.0":
   version: 25.9.3
   resolution: "@types/node@npm:25.9.3"
@@ -8852,18 +8842,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sass-loader@npm:^8.0.10":
-  version: 8.0.10
-  resolution: "@types/sass-loader@npm:8.0.10"
-  dependencies:
-    "@types/node": "npm:*"
-    "@types/node-sass": "npm:*"
-    "@types/webpack": "npm:^4"
-    sass: "npm:^1.45.0"
-  checksum: 10c0/f48910bce97ae65f8086e6978837d1c39c8708749a9e433799383d885a515628e8c28acb5653f38ec687c5b50031379f95b3d0ea2e30d86d0f8a01305976a326
-  languageName: node
-  linkType: hard
-
 "@types/semver@npm:^7, @types/semver@npm:^7.7.1":
   version: 7.7.1
   resolution: "@types/semver@npm:7.7.1"
@@ -8900,13 +8878,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/source-list-map@npm:*":
-  version: 0.1.6
-  resolution: "@types/source-list-map@npm:0.1.6"
-  checksum: 10c0/1e6d8d4a48535c51368c65bb2c44a1c9fd9afe2eeefefa32cbf06f9c191f7b20f638b3aa755100de0a750b0ba6a76140e912f1bee75705bc2b9a58b5a5185539
-  languageName: node
-  linkType: hard
-
 "@types/source-map-support@npm:0.5.10":
   version: 0.5.10
   resolution: "@types/source-map-support@npm:0.5.10"
@@ -8932,13 +8903,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/tapable@npm:^1":
-  version: 1.0.12
-  resolution: "@types/tapable@npm:1.0.12"
-  checksum: 10c0/d6a080f5839b323eb96dd5b65a6c3161c1297d8c2433eb52437912d1c3df54e38fce12ce7a57650f6453d96942298bd0935436e2501d09e407b7f41634483131
-  languageName: node
-  linkType: hard
-
 "@types/through@npm:*":
   version: 0.0.30
   resolution: "@types/through@npm:0.0.30"
@@ -8959,15 +8923,6 @@ __metadata:
   version: 4.0.2
   resolution: "@types/tough-cookie@npm:4.0.2"
   checksum: 10c0/38d01fc79a9a87166253b8c548bb401599424c57a818bea1b47a68be6dcd37fc3bff381f978354e00221f284937d5066bb92d58bf79952f9d21deb934e8ec9a7
-  languageName: node
-  linkType: hard
-
-"@types/uglify-js@npm:*":
-  version: 3.17.5
-  resolution: "@types/uglify-js@npm:3.17.5"
-  dependencies:
-    source-map: "npm:^0.6.1"
-  checksum: 10c0/e225d7da26a7a8b71e71f584ab2b4e14f9bd61e2ae4c72fa14d3d862ebfb8f3c1c24414048f23ea485e93618d3370e6c9d5e5af51b6a836d48ec453a26e419f4
   languageName: node
   linkType: hard
 
@@ -9010,31 +8965,6 @@ __metadata:
     "@types/node": "npm:*"
     webpack: "npm:^5"
   checksum: 10c0/07a324c0130fb5b49ae31010ecee2690330e9f397b13dd7e826f8b9adeb2be415c57261f5b39c20350aeb53c972d36cea38c6feed9414487c2bbdc3ae41429f4
-  languageName: node
-  linkType: hard
-
-"@types/webpack-sources@npm:*":
-  version: 3.2.3
-  resolution: "@types/webpack-sources@npm:3.2.3"
-  dependencies:
-    "@types/node": "npm:*"
-    "@types/source-list-map": "npm:*"
-    source-map: "npm:^0.7.3"
-  checksum: 10c0/74e9dfdd38bc345ce99442f3be5b5ad1efc7af5890304175c141717a7c0b38c152e6f7fe1d2875fc19aaa68964019ff4661678eba7fdeee8c3ad42dc6dbf6b62
-  languageName: node
-  linkType: hard
-
-"@types/webpack@npm:^4":
-  version: 4.41.38
-  resolution: "@types/webpack@npm:4.41.38"
-  dependencies:
-    "@types/node": "npm:*"
-    "@types/tapable": "npm:^1"
-    "@types/uglify-js": "npm:*"
-    "@types/webpack-sources": "npm:*"
-    anymatch: "npm:^3.0.0"
-    source-map: "npm:^0.6.0"
-  checksum: 10c0/5a0a7465d45a0e7701a8c863e88c6cba7660b37e4aeab851c71baf505dbab2e178be1cac82488c2e7d0ea11fb703ceddb53476daec3ec9a004e2fc1554233483
   languageName: node
   linkType: hard
 
@@ -10054,7 +9984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anymatch@npm:^3.0.0, anymatch@npm:^3.1.3, anymatch@npm:~3.1.2":
+"anymatch@npm:^3.1.3, anymatch@npm:~3.1.2":
   version: 3.1.3
   resolution: "anymatch@npm:3.1.3"
   dependencies:
@@ -22040,21 +21970,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^16.0.8":
-  version: 16.0.8
-  resolution: "sass-loader@npm:16.0.8"
-  dependencies:
-    neo-async: "npm:^2.6.2"
+"sass-loader@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "sass-loader@npm:17.0.1"
   peerDependencies:
     "@rspack/core": 0.x || ^1.0.0 || ^2.0.0-0
-    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
     sass: ^1.3.0
     sass-embedded: "*"
     webpack: ^5.0.0
   peerDependenciesMeta:
     "@rspack/core":
-      optional: true
-    node-sass:
       optional: true
     sass:
       optional: true
@@ -22062,7 +21987,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 10c0/c05886e6f1373eec23b05ea4d2dfc4317385dc3431ec665b611703ea60b4f9337f6547889c7b7f1c8e36d156caf1294e3d28292f104d6499076cf237f3c723bc
+  checksum: 10c0/a5211341426096acd7b96db6cba95935a86c3ba97a16c16d2f743f42c98ff79281f4f0f6e03fc336b77b22969eb8363379ffd52efe9bf87944cc21f1490c6595
   languageName: node
   linkType: hard
 
@@ -22078,7 +22003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.105.1, sass@npm:^1.45.0":
+"sass@npm:1.105.1":
   version: 1.105.1
   resolution: "sass@npm:1.105.1"
   dependencies:
