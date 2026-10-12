@@ -160,27 +160,26 @@ const guidePackages = {
 };
 const guideTopics = ['overview', ...Object.keys(guidePackages)];
 
+// looks in node_modules directly so packages whose exports hide package.json still resolve
 function resolveProjectPackage(name) {
-  let pkgPath;
-  try {
-    pkgPath = createRequire(path.join(process.cwd(), 'package.json')).resolve(
-      `${name}/package.json`,
-    );
-  } catch (error) {
-    if (error.code === 'MODULE_NOT_FOUND') return undefined;
-    throw error;
-  }
-  return {
-    dir: dirname(pkgPath),
-    version: JSON.parse(fs.readFileSync(pkgPath, 'utf8')).version,
-  };
+  const lookupPaths = createRequire(
+    path.join(process.cwd(), 'package.json'),
+  ).resolve.paths(name);
+  const dir = lookupPaths
+    .map(modulesDir => path.join(modulesDir, name))
+    .find(candidate => fs.existsSync(path.join(candidate, 'package.json')));
+  if (!dir) return undefined;
+  const { version } = JSON.parse(
+    fs.readFileSync(path.join(dir, 'package.json'), 'utf8'),
+  );
+  return { dir, version };
 }
 
 function renderOverview() {
   const topicLines = Object.entries(guidePackages).map(([topic, name]) => {
     const installed = resolveProjectPackage(name);
-    const version = installed ? '@' + installed.version : ' (not installed)';
-    return `- ${topic}: ${name}${version}`;
+    const status = installed ? `@${installed.version}` : ' (not installed)';
+    return `- ${topic}: ${name}${status}`;
   });
   return [
     fs.readFileSync(path.join(__dirname, 'guide.md'), 'utf8'),
