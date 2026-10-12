@@ -49,9 +49,10 @@ style, svg and worker imports typecheck.
 - `tsconfigPathsOptions` (on by default): tsconfig `paths` aliases such as
   `@/*` resolve in webpack.
 - `sassOptions`, `inJSOptions` (Linaria via wyw-in-js), `cssExtractOptions`,
-  `tsconfigPathsOptions`, `globalStyleDir` and (prod only) `htmlOptions` take
-  `false` to disable. Also: `svgrOptions`, `svgoOptions`, `terserOptions`,
-  `babelLoader`, `fontPreload`, `nohash`, `library`, `pkg`.
+  `tsconfigPathsOptions`, `globalStyleDir`, `svgoOptions` (also stops SVGR's
+  SVGO) and (prod only) `htmlOptions` take `false` to disable. Also:
+  `svgrOptions`, `terserOptions`, `babelLoader`, `fontPreload`, `nohash`,
+  `library`, `pkg`.
 
 ## CLI flags and env
 
