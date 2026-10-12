@@ -12,7 +12,8 @@ module.exports = {
           const config = {
             maxLength: 100,
             dependencyCommit: {
-              // Renovate: `pkg: …`; dependabot: `internal(pkg): …`
+              // `pkg` type (Renovate, manual dependency bumps) or scope
+              // (dependabot's `internal(pkg): …`) marks a dependency commit
               typeOrScope: 'pkg',
               maxLength: 200
             }
