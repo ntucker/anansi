@@ -92,26 +92,28 @@ export function makeConfig(options) {
     // defaults
     // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
     // and are disabled by default, so we don't need to override them.
-    options.svgoOptions = {
-      plugins: [
-        {
-          name: 'preset-default',
-          params: {
-            overrides: {
-              convertShapeToPath: false,
+    if (options.svgoOptions !== false) {
+      options.svgoOptions = {
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                convertShapeToPath: false,
+              },
             },
           },
-        },
-        'removeComments',
-        'removeDesc',
-        'removeUselessDefs',
-        'removeDoctype',
-        'removeMetadata',
-        'convertColors',
-        'prefixIds',
-      ],
-      ...options.svgoOptions,
-    };
+          'removeComments',
+          'removeDesc',
+          'removeUselessDefs',
+          'removeDoctype',
+          'removeMetadata',
+          'convertColors',
+          'prefixIds',
+        ],
+        ...options.svgoOptions,
+      };
+    }
 
     const baseConfig = makeBaseConfig(options);
 

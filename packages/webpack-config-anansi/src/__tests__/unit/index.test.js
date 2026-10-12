@@ -274,6 +274,30 @@ describe('makeConfig', () => {
       expect(svgRule.oneOf).toBeDefined();
     });
 
+    describe('svgoOptions', () => {
+      const getSvgoRule = config =>
+        config.module.rules.find(rule =>
+          rule.use?.some(use => use.loader?.includes('svgo-loader')),
+        );
+
+      it('should run svgo in production by default', () => {
+        const configFn = makeConfig(defaultTestOptions);
+        const config = configFn({}, { mode: 'production' });
+
+        expect(getSvgoRule(config)).toBeDefined();
+      });
+
+      it('should not run svgo when svgoOptions is false', () => {
+        const configFn = makeConfig({
+          ...defaultTestOptions,
+          svgoOptions: false,
+        });
+        const config = configFn({}, { mode: 'production' });
+
+        expect(getSvgoRule(config)).toBeUndefined();
+      });
+    });
+
     it('should have asset loaders for images', () => {
       const configFn = makeConfig(defaultTestOptions);
       const config = configFn({}, { mode: 'development' });
