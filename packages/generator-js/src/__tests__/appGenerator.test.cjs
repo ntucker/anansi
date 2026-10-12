@@ -339,10 +339,9 @@ describe('License generator', () => {
       .withPrompts({ license: 'MIT' })
       .onGenerator(generator => {
         // Simulate a machine with no git identity configured
-        generator._git = {
-          name: async () => undefined,
-          email: async () => undefined,
-        };
+        Object.defineProperty(generator, 'git', {
+          value: { name: async () => undefined, email: async () => undefined },
+        });
       });
     return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
   }
@@ -356,7 +355,7 @@ describe('License generator', () => {
     expect(license).toContain('Ada <ada@example.com> (https://ada.dev)');
   });
 
-  it('does not crash when git has no user configured', async () => {
+  it('omits the holder when git has no identity configured', async () => {
     const license = await readLicense({});
     expect(license).toMatch(/^Copyright \(c\) \d+ *$/m);
   });
