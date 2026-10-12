@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import BaseWorker from './lib/baseworker';
+import BaseWorker from '../lib/baseworker';
 
 class TestWorker extends BaseWorker {
   main(
