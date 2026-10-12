@@ -6,7 +6,6 @@
 // AGENTS.md needs nothing: CLAUDE.md imports it.
 //
 // Usage: node scripts/agent-rules.mjs [--check]
-import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -14,27 +13,37 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const check = process.argv.includes('--check');
 
-const lsFiles = glob =>
-  execFileSync(
-    'git',
-    [
-      'ls-files',
-      '--cached',
-      '--others',
-      '--exclude-standard',
-      '--',
-      `:(glob)${glob}`,
-    ],
-    { cwd: root, encoding: 'utf8' },
-  )
-    .split('\n')
-    .filter(file => file && fs.existsSync(path.join(root, file)));
+// Walks the tree instead of shelling out to `git ls-files` (Sonar flags PATH
+// lookups). Not `fs.globSync`: Node 22's skips dot folders like `.cursor`
+const SKIP = new Set(['node_modules', '.git', '.yarn']);
+const rulesDirs = [];
+(function walk(dir) {
+  for (const entry of fs.readdirSync(path.join(root, dir), {
+    withFileTypes: true,
+  })) {
+    if (!entry.isDirectory() || SKIP.has(entry.name)) continue;
+    const rel = dir ? `${dir}/${entry.name}` : entry.name;
+    if (/(^|\/)\.(cursor|claude)\/rules$/.test(rel)) rulesDirs.push(rel);
+    walk(rel);
+  }
+})('');
+/** files directly in every `<harness>/rules` folder with this extension */
+const lsFiles = (harness, ext) =>
+  rulesDirs
+    .filter(dir => dir.endsWith(`${harness}/rules`))
+    .flatMap(dir =>
+      fs
+        .readdirSync(path.join(root, dir), { withFileTypes: true })
+        .filter(entry => entry.isFile() && entry.name.endsWith(ext))
+        .map(entry => `${dir}/${entry.name}`),
+    )
+    .sort();
 
 const problems = [];
 /** @type {Map<string, string>} output path -> content */
 const outputs = new Map();
 
-for (const source of lsFiles('**/.cursor/rules/*.mdc')) {
+for (const source of lsFiles('.cursor', '.mdc')) {
   const text = fs.readFileSync(path.join(root, source), 'utf8');
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(text);
   if (!match) {
@@ -83,7 +92,7 @@ for (const source of lsFiles('**/.cursor/rules/*.mdc')) {
 }
 
 const changed = [];
-for (const file of lsFiles('**/.claude/rules/**')) {
+for (const file of lsFiles('.claude', '.md')) {
   if (outputs.has(file)) continue;
   changed.push(`${file} (no source rule)`);
   if (!check) fs.rmSync(path.join(root, file));
