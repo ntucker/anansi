@@ -1,11 +1,7 @@
 const { beforeAll, describe, expect, it } = require('@jest/globals');
-const { execFile } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
-const { promisify } = require('node:util');
 const assert = require('yeoman-assert');
-
-const execFileAsync = promisify(execFile);
 
 function findPackageRoot(start) {
   let dir = start;
@@ -30,28 +26,9 @@ function findPackageRoot(start) {
 }
 
 const PACKAGE_ROOT = findPackageRoot(process.cwd());
-const REPO_ROOT = path.resolve(PACKAGE_ROOT, '..', '..');
 const GENERATOR_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/app');
 
-let buildPromise;
 let helpersPromise;
-
-async function ensureGeneratorBuilt() {
-  if (!buildPromise) {
-    buildPromise = execFileAsync(
-      'yarn',
-      ['workspace', '@anansi/generator-js', 'build'],
-      {
-        cwd: REPO_ROOT,
-        env: {
-          ...process.env,
-          NODE_ENV: 'production',
-        },
-      },
-    ).then(() => undefined);
-  }
-  await buildPromise;
-}
 
 async function getYeomanTest() {
   helpersPromise ??= import('yeoman-test').then(module => module.default);
@@ -69,7 +46,6 @@ function withinDirectory(dir, assertions) {
 }
 
 async function runAppGenerator({ appName, prompts, options = {} }) {
-  await ensureGeneratorBuilt();
   const helpers = await getYeomanTest();
   const promptAnswers = { license: 'MIT', ...prompts };
   return helpers
@@ -349,5 +325,54 @@ describe('App generator', () => {
 
   describe('Library project scenarios', () => {
     runScenarioTests(LIBRARY_SCENARIOS);
+  });
+});
+
+describe('License generator', () => {
+  const LICENSE_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/license');
+
+  async function readLicense(options, gitUser = {}) {
+    const helpers = await getYeomanTest();
+    const result = await helpers
+      .run(LICENSE_ENTRY)
+      .withOptions(options)
+      .withPrompts({ license: 'MIT' })
+      .onGenerator(generator => {
+        // Stub git so the machine's own identity can't leak in; `git` is a
+        // getter-only accessor, so shadow it rather than assign
+        Object.defineProperty(generator, 'git', {
+          value: {
+            name: async () => gitUser.name,
+            email: async () => gitUser.email,
+          },
+        });
+      });
+    try {
+      return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
+    } finally {
+      result.cleanup();
+    }
+  }
+
+  it('writes the author from name, email and website', async () => {
+    const license = await readLicense({
+      name: 'Ada',
+      email: 'ada@example.com',
+      website: 'https://ada.dev',
+    });
+    expect(license).toContain('Ada <ada@example.com> (https://ada.dev)');
+  });
+
+  it('falls back to the git identity', async () => {
+    const license = await readLicense(
+      {},
+      { name: 'Grace', email: 'grace@example.com' },
+    );
+    expect(license).toContain('Grace <grace@example.com>');
+  });
+
+  it('omits the holder when git has no identity configured', async () => {
+    const license = await readLicense({});
+    expect(license).toMatch(/^Copyright \(c\) \d+ *$/m);
   });
 });

@@ -134,14 +134,15 @@ export default class GeneratorLicense extends Generator<
   configuring() {
     // License file
     const filename = this.props.license + '.txt';
-    let author = this.props.name.trim();
-    if (this.props.email) {
-      author += ' <' + this.props.email.trim() + '>';
-    }
-
-    if (this.props.website) {
-      author += ' (' + this.props.website.trim() + ')';
-    }
+    // name and email fall back to git config, which may be unset
+    const { name, email, website } = this.props;
+    const author = [
+      name?.trim(),
+      email && `<${email.trim()}>`,
+      website && `(${website.trim()})`,
+    ]
+      .filter(Boolean)
+      .join(' ');
 
     this.fs.copyTpl(
       this.templatePath(filename),

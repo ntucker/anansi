@@ -5,6 +5,7 @@ const config: Config = {
   testEnvironment: 'node',
   testTimeout: 120_000,
   rootDir: '.',
+  globalSetup: './jest.globalSetup.js',
   testPathIgnorePatterns: ['/generators/', '/templates/'],
 };
 
