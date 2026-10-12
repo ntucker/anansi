@@ -1,138 +1,91 @@
-import { extractProxyRoutes } from '../proxyUtils';
+import type { IncomingMessage } from 'http';
 
-describe('extractProxyRoutes', () => {
-  it('should return empty array for undefined proxy', () => {
-    expect(extractProxyRoutes(undefined)).toEqual([]);
+import { createProxyMatcher } from '../proxyUtils';
+
+const target = 'http://localhost:3000';
+const req = (url: string) => ({ url }) as IncomingMessage;
+
+function matched(
+  proxy: Parameters<typeof createProxyMatcher>[0],
+  urls: string[],
+) {
+  const isProxied = createProxyMatcher(proxy);
+  return urls.filter(url => isProxied(req(url)));
+}
+
+describe('createProxyMatcher', () => {
+  it('matches nothing without proxy entries', () => {
+    expect(matched(undefined, ['/', '/api'])).toEqual([]);
+    expect(matched([], ['/', '/api'])).toEqual([]);
   });
 
-  it('should return empty array for empty proxy array', () => {
-    expect(extractProxyRoutes([])).toEqual([]);
-  });
-
-  it('should extract context as array of strings', () => {
-    const proxy = [{ context: ['/api'], target: 'http://localhost:3000' }];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
-  });
-
-  it('should extract multiple contexts from array', () => {
+  it('matches string prefixes from context, path and pathFilter', () => {
     const proxy = [
-      { context: ['/api', '/graphql'], target: 'http://localhost:3000' },
+      { context: ['/api', '/graphql'], target },
+      { path: '/legacy', target },
+      { pathFilter: '/v2', target },
     ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api', '/graphql']);
+    expect(
+      matched(proxy, [
+        '/api/users?page=2',
+        '/graphql',
+        '/legacy/a',
+        '/v2/b',
+        '/home',
+      ]),
+    ).toEqual(['/api/users?page=2', '/graphql', '/legacy/a', '/v2/b']);
   });
 
-  it('should extract context as single string', () => {
-    const proxy = [{ context: '/api', target: 'http://localhost:3000' }];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
+  it('prefers context over path, skipping empty values like webpack-dev-server', () => {
+    expect(
+      matched(
+        [{ context: '/api', path: '/legacy', target }],
+        ['/api', '/legacy'],
+      ),
+    ).toEqual(['/api']);
+    expect(
+      matched([{ context: '', path: '/api', target }], ['/api', '/home']),
+    ).toEqual(['/api']);
   });
 
-  it('should extract path property (legacy format)', () => {
-    const proxy = [{ path: '/legacy', target: 'http://localhost:3000' }];
-    expect(extractProxyRoutes(proxy)).toEqual(['/legacy']);
+  it('matches globs, including braces, catch-alls and negations', () => {
+    expect(
+      matched(
+        [{ pathFilter: '/{api,v2}/**', target }],
+        ['/api/a', '/v2/b', '/apiary', '/home'],
+      ),
+    ).toEqual(['/api/a', '/v2/b']);
+    expect(matched([{ pathFilter: '/**', target }], ['/', '/a/b'])).toEqual([
+      '/',
+      '/a/b',
+    ]);
+    expect(
+      matched(
+        [{ pathFilter: ['/api/**', '!**/*.html'], target }],
+        ['/api/data.json', '/api/page.html'],
+      ),
+    ).toEqual(['/api/data.json']);
   });
 
-  it('should extract path as array', () => {
+  it('calls function path filters with the pathname and request', () => {
+    const pathFilter = jest.fn((pathname: string) =>
+      pathname.endsWith('.json'),
+    );
+    expect(
+      matched([{ pathFilter, target }], ['/a/data.json?x=1', '/a']),
+    ).toEqual(['/a/data.json?x=1']);
+    expect(pathFilter).toHaveBeenCalledWith(
+      '/a/data.json',
+      expect.objectContaining({ url: '/a/data.json?x=1' }),
+    );
+  });
+
+  it('ignores callback entries, entries without a filter and null', () => {
     const proxy = [
-      { path: ['/legacy', '/old-api'], target: 'http://localhost:3000' },
+      () => ({ context: '/dynamic', target }),
+      { target, router: {} },
+      null,
     ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/legacy', '/old-api']);
-  });
-
-  it('should prefer context over path', () => {
-    const proxy = [
-      { context: '/api', path: '/legacy', target: 'http://localhost:3000' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
-  });
-
-  it('should handle multiple proxy entries', () => {
-    const proxy = [
-      { context: ['/api'], target: 'http://localhost:3000' },
-      { context: '/ws', target: 'http://localhost:3001' },
-      { path: '/legacy', target: 'http://localhost:3002' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api', '/ws', '/legacy']);
-  });
-
-  it('should skip function entries', () => {
-    const proxy = [
-      { context: ['/api'], target: 'http://localhost:3000' },
-      () => ({ context: '/dynamic', target: 'http://localhost:3001' }),
-    ];
-    // Functions are filtered out since we can't statically analyze them
-    expect(extractProxyRoutes(proxy as any)).toEqual(['/api']);
-  });
-
-  it('should skip entries without context or path', () => {
-    const proxy = [
-      { context: ['/api'], target: 'http://localhost:3000' },
-      { target: 'http://localhost:3001', router: {} }, // router-based proxy without context
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
-  });
-
-  it('should handle null entries gracefully', () => {
-    const proxy = [
-      { context: ['/api'], target: 'http://localhost:3000' },
-      null as any,
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
-  });
-
-  it('should handle mixed context types across entries', () => {
-    const proxy = [
-      { context: ['/api', '/graphql'], target: 'http://localhost:3000' },
-      { context: '/ws', target: 'http://localhost:3001' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api', '/graphql', '/ws']);
-  });
-
-  it('should extract pathFilter as string or array of strings', () => {
-    const proxy = [
-      { pathFilter: '/v2', target: 'http://localhost:3000' },
-      { pathFilter: ['/v3', '/v4'], target: 'http://localhost:3001' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/v2', '/v3', '/v4']);
-  });
-
-  it('should skip function pathFilter', () => {
-    const proxy = [
-      { pathFilter: () => true, target: 'http://localhost:3000' },
-      { context: ['/api'], target: 'http://localhost:3001' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
-  });
-
-  it('should cut globs to their static prefix', () => {
-    const proxy = [{ pathFilter: '/api/**', target: 'http://localhost:3000' }];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api/']);
-  });
-
-  it('should skip negations and globs without a usable prefix', () => {
-    const proxy = [
-      {
-        pathFilter: ['**/*.json', '/{api,v2}/**', '/**', '!/api/*.html'],
-        target: 'http://localhost:3000',
-      },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual([]);
-  });
-
-  it('should regex-escape routes', () => {
-    const proxy = [
-      { context: ['/v1.0', '/a+b'], target: 'http://localhost:3000' },
-    ];
-    const routes = extractProxyRoutes(proxy);
-    expect(routes).toEqual(['/v1\\.0', '/a\\+b']);
-    const ssr = new RegExp(`^(?!${routes.join('|')})`);
-    expect(ssr.test('/v1.0/users')).toBe(false);
-    expect(ssr.test('/v1x0/users')).toBe(true);
-  });
-
-  it('should fall back past an empty context like webpack-dev-server', () => {
-    const proxy = [
-      { context: '', path: '/api', target: 'http://localhost:3000' },
-    ];
-    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
+    expect(matched(proxy as any, ['/dynamic', '/', '/api'])).toEqual([]);
   });
 });

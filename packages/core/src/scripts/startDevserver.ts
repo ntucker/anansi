@@ -20,7 +20,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import 'cross-fetch/dist/node-polyfill.js';
 import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
-import { extractProxyRoutes } from './proxyUtils.js';
+import { createProxyMatcher } from './proxyUtils.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { BoundRender } from './types.js';
 
@@ -215,13 +215,14 @@ export default async function startDevServer(
           throw new Error('webpack-dev-server is not defined');
         }
 
-        const otherRoutes = [
-          process.env.WEBPACK_PUBLIC_PATH,
-          ...extractProxyRoutes(webpackConfigs[0].devServer?.proxy),
-        ];
-        // serve SSR for non-WEBPACK_PUBLIC_PATH
+        const isProxied = createProxyMatcher(
+          webpackConfigs[0].devServer?.proxy,
+        );
+        const publicPath = process.env.WEBPACK_PUBLIC_PATH;
+        // serve SSR for non-WEBPACK_PUBLIC_PATH; proxied requests go on to the proxy
         devServer.app?.get(
-          new RegExp(`^(?!${otherRoutes.join('|')})`),
+          publicPath ? new RegExp(`^(?!${publicPath})`) : '/{*splat}',
+          (req, _res, next) => (isProxied(req) ? next('route') : next()),
           handleErrors(async function (req: any, res: any) {
             if (req.url.endsWith('favicon.ico')) {
               res.statusCode = 404;

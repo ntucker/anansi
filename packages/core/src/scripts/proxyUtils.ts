@@ -1,3 +1,5 @@
+import type { IncomingMessage } from 'http';
+import micromatch from 'micromatch';
 import type {
   ProxyConfigArray,
   ProxyConfigArrayItem,
@@ -8,44 +10,45 @@ export function getProxyPathFilter(item: ProxyConfigArrayItem) {
   return item.context || item.path || item.pathFilter;
 }
 
+type PathFilter = NonNullable<ReturnType<typeof getProxyPathFilter>>;
+
+/** Same semantics as http-proxy-middleware's (unexported) matchPathFilter */
+function matchesPathFilter(
+  filter: PathFilter,
+  pathname: string,
+  req: IncomingMessage,
+): boolean {
+  if (typeof filter === 'function') return Boolean(filter(pathname, req));
+  const patterns = Array.isArray(filter) ? filter : [filter];
+  if (patterns.some(pattern => micromatch.scan(pattern).isGlob)) {
+    return micromatch([pathname], patterns).length > 0;
+  }
+  return patterns.some(prefix => pathname.startsWith(prefix));
+}
+
 /**
- * Extracts regex-escaped route prefixes from webpack-dev-server proxy
- * configuration, for excluding proxied paths from SSR.
+ * Tests whether a request is handled by one of the webpack-dev-server proxy
+ * entries, so SSR can pass it through to the proxy.
  *
- * Globs are cut to their static prefix ('/api/**' -> '/api/'). Negations and
- * globs without a usable prefix ('**\/*.json', '/{api,v2}/**') are skipped,
- * since excluding '' or '/' would disable SSR for every path.
- *
- * Handles the webpack-dev-server proxy array format:
- * ```
- * proxy: [
- *   { context: ['/api'], target: 'http://localhost:3000' },
- *   { context: '/ws', target: 'http://localhost:3001' },
- *   { path: '/legacy', target: 'http://localhost:3002' },
- *   { pathFilter: '/v2', target: 'http://localhost:3003' },
- * ]
- * ```
+ * Entries without a path filter and callback entries are ignored: their
+ * filter isn't known up front.
  *
  * @see https://webpack.js.org/configuration/dev-server/#devserverproxy
  */
-export function extractProxyRoutes(
+export function createProxyMatcher(
   proxy: ProxyConfigArray | undefined,
-): string[] {
-  if (!proxy) return [];
-
-  return proxy
-    .filter(
-      (item): item is ProxyConfigArrayItem =>
-        typeof item === 'object' && item !== null,
+): (req: IncomingMessage) => boolean {
+  const filters = (proxy ?? [])
+    .map(item =>
+      typeof item === 'object' && item !== null ?
+        getProxyPathFilter(item)
+      : undefined,
     )
-    .flatMap(item => {
-      // string or array of strings (function filters can't be statically analyzed)
-      const filter = getProxyPathFilter(item);
-      if (Array.isArray(filter)) return filter;
-      if (typeof filter === 'string') return [filter];
-      return [];
-    })
-    .map(route => route.split(/[*?{[!(]/)[0])
-    .filter(prefix => prefix.length > 1)
-    .map(prefix => prefix.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    .filter((filter): filter is PathFilter => !!filter);
+  if (!filters.length) return () => false;
+
+  return req => {
+    const { pathname } = new URL(req.url ?? '/', 'http://localhost');
+    return filters.some(filter => matchesPathFilter(filter, pathname, req));
+  };
 }
