@@ -9,8 +9,12 @@ export function getProxyPathFilter(item: ProxyConfigArrayItem) {
 }
 
 /**
- * Extracts route prefixes from webpack-dev-server proxy configuration.
- * Globs are cut to their static prefix ('/api/**' -> '/api/').
+ * Extracts regex-escaped route prefixes from webpack-dev-server proxy
+ * configuration, for excluding proxied paths from SSR.
+ *
+ * Globs are cut to their static prefix ('/api/**' -> '/api/'). Negations and
+ * globs without a usable prefix ('**\/*.json', '/{api,v2}/**') are skipped,
+ * since excluding '' or '/' would disable SSR for every path.
  *
  * Handles the webpack-dev-server proxy array format:
  * ```
@@ -42,5 +46,6 @@ export function extractProxyRoutes(
       return [];
     })
     .map(route => route.split(/[*?{[!(]/)[0])
-    .filter(Boolean);
+    .filter(prefix => prefix.length > 1)
+    .map(prefix => prefix.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&'));
 }

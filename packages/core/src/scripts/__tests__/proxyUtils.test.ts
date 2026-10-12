@@ -104,11 +104,29 @@ describe('extractProxyRoutes', () => {
   });
 
   it('should cut globs to their static prefix', () => {
-    const proxy = [
-      { pathFilter: '/api/**', target: 'http://localhost:3000' },
-      { pathFilter: ['**/*.json'], target: 'http://localhost:3001' },
-    ];
+    const proxy = [{ pathFilter: '/api/**', target: 'http://localhost:3000' }];
     expect(extractProxyRoutes(proxy)).toEqual(['/api/']);
+  });
+
+  it('should skip negations and globs without a usable prefix', () => {
+    const proxy = [
+      {
+        pathFilter: ['**/*.json', '/{api,v2}/**', '/**', '!/api/*.html'],
+        target: 'http://localhost:3000',
+      },
+    ];
+    expect(extractProxyRoutes(proxy)).toEqual([]);
+  });
+
+  it('should regex-escape routes', () => {
+    const proxy = [
+      { context: ['/v1.0', '/a+b'], target: 'http://localhost:3000' },
+    ];
+    const routes = extractProxyRoutes(proxy);
+    expect(routes).toEqual(['/v1\\.0', '/a\\+b']);
+    const ssr = new RegExp(`^(?!${routes.join('|')})`);
+    expect(ssr.test('/v1.0/users')).toBe(false);
+    expect(ssr.test('/v1x0/users')).toBe(true);
   });
 
   it('should fall back past an empty context like webpack-dev-server', () => {
