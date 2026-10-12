@@ -1,4 +1,5 @@
 const path = require('path');
+const postcss = require('postcss');
 
 const { makeConfig } = require('../../index');
 
@@ -52,6 +53,26 @@ describe('makeConfig', () => {
       { mode: 'development' },
     );
     expect(findOneOfLoader(config, 'sass-loader')).toBeUndefined();
+  });
+
+  it('should vendor-prefix CSS through postcss-preset-env', async () => {
+    const previous = process.env.BROWSERSLIST;
+    process.env.BROWSERSLIST = 'safari 12';
+    try {
+      const config = makeConfig(defaultTestOptions)(
+        {},
+        { mode: 'development' },
+      );
+      const { plugins } = findOneOfLoader(config, 'postcss-loader').options
+        .postcssOptions;
+      const { css } = await postcss(plugins).process('a{user-select:none}', {
+        from: undefined,
+      });
+      expect(css).toContain('-webkit-user-select:none');
+    } finally {
+      if (previous === undefined) delete process.env.BROWSERSLIST;
+      else process.env.BROWSERSLIST = previous;
+    }
   });
 
   it('should create a config function', () => {
