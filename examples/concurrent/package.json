@@ -26,12 +26,12 @@
     "startCommand": "yarn start"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "^6.2.27",
-    "@anansi/browserslist-config": "^1.7.5",
-    "@anansi/cli": "^3.1.107",
-    "@anansi/eslint-plugin": "^1.0.74",
-    "@anansi/jest-preset": "^0.11.34",
-    "@anansi/webpack-config": "^21.1.19",
+    "@anansi/babel-preset": "workspace:^",
+    "@anansi/browserslist-config": "workspace:^",
+    "@anansi/cli": "workspace:^",
+    "@anansi/eslint-plugin": "workspace:^",
+    "@anansi/jest-preset": "workspace:^",
+    "@anansi/webpack-config": "workspace:^",
     "@babel/core": "8.0.1",
     "@data-client/test": "0.18.0",
     "@types/eslint": "9.6.1",
@@ -48,8 +48,8 @@
     "webpack-dev-server": "6.0.0"
   },
   "dependencies": {
-    "@anansi/core": "^0.22.12",
-    "@anansi/router": "^0.10.24",
+    "@anansi/core": "workspace:^",
+    "@anansi/router": "workspace:^",
     "@ant-design/cssinjs": "2.1.2",
     "@ant-design/icons": "6.2.5",
     "@babel/runtime-corejs3": "8.0.0",
