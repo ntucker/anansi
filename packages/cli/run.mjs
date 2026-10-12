@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import { execa } from 'execa';
 import fs from 'fs';
 import { resolve } from 'import-meta-resolve';
-import { createRequire } from 'module';
+import { createRequire } from 'node:module';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
