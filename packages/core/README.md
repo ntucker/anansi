@@ -295,6 +295,8 @@ Features:
 - Automatic SSR on all non-asset routes
 - Proxy support from webpack devServer config
 
+Custom `devServer.setupMiddlewares` run on Express 5, so wildcard routes need a name (`/{*splat}`, not `/*`). Proxy entries follow http-proxy-middleware 4: `bypass` is gone; use `pathFilter`, `router` and `pathRewrite`.
+
 ### serve-anansi
 
 Production server for pre-built applications.

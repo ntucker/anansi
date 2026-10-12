@@ -9,6 +9,7 @@ import type { ProxyConfigArray } from 'webpack-dev-server';
  *   { context: ['/api'], target: 'http://localhost:3000' },
  *   { context: '/ws', target: 'http://localhost:3001' },
  *   { path: '/legacy', target: 'http://localhost:3002' },
+ *   { pathFilter: '/v2', target: 'http://localhost:3003' },
  * ]
  * ```
  *
@@ -25,9 +26,9 @@ export function extractProxyRoutes(
         typeof item === 'object' && item !== null,
     )
     .flatMap(item => {
-      // webpack-dev-server proxy supports both 'context' and 'path' properties
-      // and each can be a string or an array of strings
-      const context = item.context ?? item.path;
+      // same precedence as webpack-dev-server; each can be a string or an array
+      // of strings (function filters can't be statically analyzed)
+      const context = item.context ?? item.path ?? item.pathFilter;
       if (Array.isArray(context)) return context as string[];
       if (typeof context === 'string') return [context];
       return [];

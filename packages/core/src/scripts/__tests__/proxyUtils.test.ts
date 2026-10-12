@@ -86,4 +86,20 @@ describe('extractProxyRoutes', () => {
     ];
     expect(extractProxyRoutes(proxy)).toEqual(['/api', '/graphql', '/ws']);
   });
+
+  it('should extract pathFilter as string or array of strings', () => {
+    const proxy = [
+      { pathFilter: '/v2', target: 'http://localhost:3000' },
+      { pathFilter: ['/v3', '/v4'], target: 'http://localhost:3001' },
+    ];
+    expect(extractProxyRoutes(proxy)).toEqual(['/v2', '/v3', '/v4']);
+  });
+
+  it('should skip function pathFilter', () => {
+    const proxy = [
+      { pathFilter: () => true, target: 'http://localhost:3000' },
+      { context: ['/api'], target: 'http://localhost:3001' },
+    ];
+    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
+  });
 });
