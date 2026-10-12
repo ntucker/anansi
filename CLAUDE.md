@@ -1,40 +1,6 @@
-# anansi
+@AGENTS.md
 
-Yarn 4 workspaces monorepo: published packages in `packages/*`, demo apps in `examples/*`.
-Conventions and per-package checks live in `.cursor/rules/general.mdc` and `.cursor/rules/validation.mdc`.
+## Claude Code
 
-## Environment
-
-- Node per `.nvmrc` (24; Jest's `require(ESM)` of Babel 8 needs 24.9+). CI uses `cimg/node:lts`.
-- Yarn comes from `.yarn/releases` via `yarnPath`. Don't `corepack enable` in cloud sessions: corepack downloads yarn from repo.yarnpkg.com, which egress may block.
-- Setup: `yarn install --mode=skip-build && yarn build:pkg`. Cloud sessions rooted in this repo run it via `.claude/hooks/session-start.sh`, which also installs a sibling `../data-client` checkout.
-- Sessions rooted elsewhere (e.g. a parent directory holding both checkouts) don't load this repo's hooks; run `CLAUDE_CODE_REMOTE=true .claude/hooks/session-start.sh` by hand.
-
-## Validation tiers
-
-Pick the cheapest tier that covers the change.
-
-1. **Packages**: `yarn lint`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the scoped commands in `validation.mdc`.
-2. **Apps (SPA/SSR)**: `examples/*` consume packages through workspaces (source, not packed builds), so they validate runtime behavior but not packaging. CI runs:
-   - `yarn workspaces foreach -Wv --include 'example-*' run build`
-   - `yarn workspaces foreach -Wv --include 'example-*' run build:server`
-   - `yarn devtest:ci` (starts dev servers and checks they respond)
-   - `yarn workspace example-typescript build:storybook`
-   - `BROWSERSLIST_ENV=2018 yarn workspace example-typescript run build` (also 2020, 2022)
-3. **Packaging, end to end**: [reactive/data-client](https://github.com/reactive/data-client) builds, tests, publishes and builds its website with anansi. `scripts/consumer-link.sh` packs every public package (`yarn pack` applies `publishConfig` and rewrites `workspace:` ranges, exactly what npm receives) and points the consumer's `resolutions` at the tarballs:
-
-   ```bash
-   scripts/consumer-link.sh link     # pack + install into ../data-client (rerun after each change)
-   scripts/consumer-link.sh status
-   scripts/consumer-link.sh unlink   # restore data-client's package.json and yarn.lock
-   ```
-
-   Pass another consumer path as the second argument. While linked, never commit the consumer's `package.json`/`yarn.lock`. Then in data-client (Node per its `.nvmrc`), mirror its CI:
-
-   ```bash
-   yarn build                                         # package builds (babel/rollup via @anansi/babel-preset)
-   yarn lint --quiet packages/*/src                   # @anansi/eslint-plugin
-   yarn run tsc --project tsconfig.test.json --noEmit
-   yarn test:ci                                       # @anansi/jest-preset
-   yarn workspace rdc-website build                   # docusaurus site
-   ```
+- Cloud sessions rooted in this repo run the setup through `.claude/hooks/session-start.sh`. The hook also installs a sibling `../data-client` checkout.
+- Sessions rooted elsewhere, such as a parent directory holding both checkouts, don't load this repo's hooks. Run `CLAUDE_CODE_REMOTE=true .claude/hooks/session-start.sh` by hand.
