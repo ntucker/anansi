@@ -20,7 +20,9 @@ export default [
       'packages/generator-js/**',
       'packages/cli/**',
       'packages/babel-preset-anansi/*',
+      'packages/browserslist-config-anansi/*',
       'babel.config.js',
+      'scripts/**',
     ],
     languageOptions: {
       globals: {

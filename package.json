@@ -10,7 +10,7 @@
     ]
   },
   "engines": {
-    "node": "^22.18.0 || >=24.11.0"
+    "node": ">=24.11.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
@@ -27,6 +27,7 @@
     "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -Wtv --no-private run build",
     "build:clean": "yarn workspaces foreach -Wpi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
+    "build:agent-rules": "node scripts/agent-rules.mjs",
     "prepack": "run build:pkg",
     "version": "yarn install && git add yarn.lock",
     "devtest:ci": "yarn workspaces foreach -Wv --include example-react-18 --include example-linaria run devtest:ci",
