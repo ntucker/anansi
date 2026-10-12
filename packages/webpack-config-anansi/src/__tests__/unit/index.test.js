@@ -407,6 +407,18 @@ describe('makeConfig', () => {
 
       expect(config.output.library).toBeDefined();
     });
+
+    it('should emit ESM for module libraries', () => {
+      const configFn = makeConfig({
+        ...defaultTestOptions,
+        library: { type: 'module' },
+      });
+      const config = configFn({}, { mode: 'production' });
+
+      expect(config.output.chunkFormat).toBe('module');
+      expect(config.output.module).toBe(true);
+      expect(config.experiments.outputModule).toBe(true);
+    });
   });
 
   describe('analyze mode', () => {
