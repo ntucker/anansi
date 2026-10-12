@@ -20,6 +20,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import 'cross-fetch/dist/node-polyfill.js';
 import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
+import { insertSsrMiddleware } from './insertSsrMiddleware.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { BoundRender } from './types.js';
 
@@ -233,26 +234,7 @@ export default async function startDevServer(
 
           await render(req, res);
         });
-        // SSR after webpack assets and proxies, so http-proxy-middleware decides
-        // which requests it takes
-        const ssrIndex =
-          middlewares.findLastIndex(
-            middleware =>
-              typeof middleware === 'object' &&
-              (middleware.name === 'webpack-dev-server-assets' ||
-                middleware.name?.startsWith('http-proxy-middleware')),
-          ) + 1;
-        middlewares.splice(ssrIndex, 0, {
-          name: 'anansi-ssr',
-          middleware: (req: any, res: any, next: NextFunction) => {
-            if (
-              (req.method !== 'GET' && req.method !== 'HEAD') ||
-              (publicPath && req.url.startsWith(publicPath))
-            )
-              return next();
-            return ssr(req, res, next);
-          },
-        });
+        insertSsrMiddleware(middlewares, ssr, publicPath);
 
         if (webpackConfigs[0].devServer?.setupMiddlewares) {
           return webpackConfigs[0].devServer.setupMiddlewares(

@@ -27,6 +27,7 @@ describe('getProxyMiddlewares', () => {
         { context: ['/api'], target },
         () => ({ path: '/fn', target }),
         { context: '/routed', router: () => target },
+        { context: '', pathFilter: '/v2/**', target },
         { context: '/no-target' },
       ]).map(({ middleware }) => middleware),
     );
@@ -46,6 +47,7 @@ describe('getProxyMiddlewares', () => {
     ['/api/users?page=2', 'upstream:/api/users?page=2'],
     ['/fn/a', 'upstream:/fn/a'],
     ['/routed/a', 'upstream:/routed/a'],
+    ['/v2/a', 'upstream:/v2/a'],
     ['/no-target/a', 'ssr:/no-target/a'],
     ['/other/path', 'ssr:/other/path'],
     ['/', 'ssr:/'],
