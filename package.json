@@ -77,7 +77,12 @@
     "normalize-url": "^6",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "@conventional-changelog/git-client": "2.7.0"
+    "@conventional-changelog/git-client": "2.7.0",
+    "@storybook/builder-webpack5/webpack-dev-middleware": "^7.4.6",
+    "serve/compression": "^1.8.2",
+    "sockjs/uuid": "^11.1.1",
+    "write-package/deepmerge-ts": "^8.0.2",
+    "@ant-design/pro-layout/path-to-regexp": "^8.4.0"
   },
   "dependencies": {
     "@lerna-lite/publish": "^4.0.0",
