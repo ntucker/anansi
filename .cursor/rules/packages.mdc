@@ -12,13 +12,13 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 
 | Package (folder) | Checks |
 |---|---|
-| `@anansi/babel-preset` (`babel-preset-anansi`) | `yarn workspace @anansi/babel-preset run test` (snapshots per browserslist target; `-u` only for intended output changes). It has no tsconfig, so `test:type` checks nothing |
+| `@anansi/babel-preset` (`babel-preset-anansi`) | `yarn workspace @anansi/babel-preset run test` (snapshots per browserslist target; `-u` only for intended output changes) |
 | `@anansi/browserslist-config` (`browserslist-config-anansi`) | No tests. `npx browserslist "extends @anansi/browserslist-config"`, plus `BROWSERSLIST_ENV=<env> yarn workspace example-typescript run build` for each env you changed |
 | `@anansi/cli` (`cli`) | `run pretest` (lint), `node packages/cli/run.mjs --help`; for `guide`, run `node ../../packages/cli/run.mjs guide <topic>` from `examples/concurrent` (it reads guides from the project's installed packages) |
 | `@anansi/core` (`core`) | `run test`, `run test:type`, `run build`; SSR changes also need `example-react-18` |
 | `@anansi/eslint-plugin` (`eslint-plugin`) | No tests. `yarn g:lint packages/eslint-plugin`, `yarn lint` (the root config uses this plugin), plus data-client's lint |
 | `@anansi/generator-js` (`generator-js`) | `run test`, `run test:type`, `run build` |
-| `@anansi/jest-preset` (`jest-preset-anansi`) | `run pretest` (its Jest suite), `run build`; `example-typescript`'s `test` exercises the preset |
+| `@anansi/jest-preset` (`jest-preset-anansi`) | `run test`, `run build`; `example-typescript`'s `test` exercises the preset |
 | `@pojo-router/core` (`pojo-router`) | No tests. `run test:type`, `run build`; no example uses it |
 | `@anansi/router` (`router`) | No tests. `run test:type`, `run build`, `example-react-18` |
 | `@anansi/storybook` (`storybook`) | No tests. `run test:type`, `run build`, `yarn workspace example-typescript build:storybook` |
@@ -27,11 +27,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 
 ## What CI misses
 
-CI's `test` job runs each workspace's `test:ci` and its `lint` job runs `eslint packages/*/src`. So CI never runs:
-
-- `@anansi/jest-preset`'s tests (they live in `pretest`).
-- Any `test:type`. Only the `tsc --build` references in the root `tsconfig.json` (`core`, `pojo-router`, `router`, `storybook`) are type-checked by `build:pkg`, plus `ts-utils` through its own `build`.
-- Lint for packages without `src/` (listed in `AGENTS.md`); lint them with `yarn g:lint packages/<folder>`.
+CI's `test` job runs each workspace's `test:ci`; its `lint` job runs `yarn lint` (all of `packages/`) and `yarn test:type` (every package's `test:type`). Package `pretest` scripts (`yarn g:lint .`) never run in CI; root `yarn lint` covers the same files. A package script outside `test:ci`, `test:type` and `build` is not checked by CI.
 
 ## Publish surface
 

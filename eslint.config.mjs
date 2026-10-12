@@ -5,9 +5,10 @@ export default [
   ...anansiPlugin.configs.typescript,
   {
     ignores: [
-      'lib*/*',
-      'dist*/*',
-      'generators/*',
+      'packages/*/lib/',
+      'packages/*/dist/',
+      'packages/*/coverage/',
+      'packages/generator-js/generators/',
       'packages/generator-js/**/templates',
       'packages/jest-preset-anansi/**/templates',
     ],
@@ -21,6 +22,7 @@ export default [
       'packages/cli/**',
       'packages/babel-preset-anansi/*',
       'packages/browserslist-config-anansi/*',
+      'packages/*/*.config.{js,cjs,mjs,ts}',
       'babel.config.js',
       'scripts/**',
     ],

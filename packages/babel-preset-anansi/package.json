@@ -6,7 +6,6 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules yarn g:test",
     "test:ci": "NODE_OPTIONS=--experimental-vm-modules yarn g:test",
-    "test:type": "yarn g:tsc",
     "build": "echo \"\""
   },
   "keywords": [

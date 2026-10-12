@@ -1,5 +1,3 @@
-/* eslint-env node */
-/* eslint-disable no-undef */
 // Use test-specific tsconfig that includes Jest types
 process.env.ANANSI_JEST_TSCONFIG = 'tsconfig.test.json';
 

@@ -47,14 +47,12 @@
       "**/*.spec.js"
     ],
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/src/transformers/worker-loader/__tests__/baseworker.spec.js"
+      "/node_modules/"
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:ci": "echo \"Error: no test specified\"",
-    "pretest": "yarn g:test ./src",
+    "test": "yarn g:test ./src",
+    "test:ci": "yarn g:test ./src --ci",
     "build:lib": "BROWSERSLIST_ENV=node10 yarn g:babel --out-dir ./lib --ignore '**/templates/**' --ignore '**/lib/**'",
     "copyfiles": "copyfiles -u 1 \"src/**/lib/**/*\" \"src/**/templates/**/*\" \"src/**/templates/**/.*\" \"src/**/templates/**/.**/*\" \"src/**/templates/.**/**/*\" \"src/**/templates/**/.**/.*\" lib",
     "build": "run build:lib && run copyfiles",

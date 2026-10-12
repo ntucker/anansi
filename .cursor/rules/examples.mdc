@@ -16,6 +16,6 @@ Private apps that exercise the packages the way a consumer would. Run them with 
 
 - `example-react-18` builds the client and server bundles in `build`; `start:server` serves `dist-server/App.js`. GitHub's lighthouse workflow scores it.
 - `yarn devtest:ci` starts only `example-react-18` and `example-linaria`.
-- `test:type` (`tsc --noEmit`) is the only type check examples get; CI doesn't run it.
+- `test:type` (`tsc --noEmit`) is the only type check examples get; CI doesn't run it, and all three examples currently fail it.
 - Dev server: `yarn workspace example-react-18 run start` (or `yarn start` in the folder).
 - After rebuilding a package, run the example with `WEBPACK_CACHE=none` so webpack's cache doesn't serve the previous build.
