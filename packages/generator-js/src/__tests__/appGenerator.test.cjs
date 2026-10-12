@@ -1,5 +1,6 @@
 const { beforeAll, describe, expect, it } = require('@jest/globals');
 const fs = require('node:fs');
+const os = require('node:os');
 const path = require('node:path');
 const assert = require('yeoman-assert');
 
@@ -325,5 +326,38 @@ describe('App generator', () => {
 
   describe('Library project scenarios', () => {
     runScenarioTests(LIBRARY_SCENARIOS);
+  });
+});
+
+describe('License generator', () => {
+  const LICENSE_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/license');
+
+  async function readLicense(options) {
+    const helpers = await getYeomanTest();
+    const result = await helpers
+      .run(LICENSE_ENTRY)
+      .withOptions(options)
+      .withPrompts({ license: 'MIT' });
+    return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
+  }
+
+  it('writes the author from name, email and website', async () => {
+    const license = await readLicense({
+      name: 'Ada',
+      email: 'ada@example.com',
+      website: 'https://ada.dev',
+    });
+    expect(license).toContain('Ada <ada@example.com> (https://ada.dev)');
+  });
+
+  it('does not crash when git has no user configured', async () => {
+    const home = process.env.HOME;
+    process.env.HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'no-git-'));
+    try {
+      const license = await readLicense({});
+      expect(license).toMatch(/^Copyright \(c\) \d+ *$/m);
+    } finally {
+      process.env.HOME = home;
+    }
   });
 });
