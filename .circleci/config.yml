@@ -84,9 +84,12 @@ jobs:
       - run:
           name: Build examples
           command: |
-            all=$(circleci tests glob 'examples/*/package.json')
-            [ -n "$all" ] || { echo "No examples found"; exit 1; }
-            for pkg in $(echo "$all" | circleci tests split); do
+            # Assignments so a failing glob or split fails the step; only the
+            # full list must be non-empty, a node may get no share
+            examples=$(circleci tests glob 'examples/*/package.json')
+            [ -n "$examples" ] || { echo "No examples found"; exit 1; }
+            mine=$(echo "$examples" | circleci tests split)
+            for pkg in $mine; do
               (cd "$(dirname "$pkg")" && yarn run build)
             done
 
