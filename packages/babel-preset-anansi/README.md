@@ -173,13 +173,15 @@ This determines how to handle polyfills.
 
 This is the default - it will automatically determine a reasonable default based on other factors.
 
-'usage-pure' when detecting 'library build' (@babel/cli, rollup or caller.library is true)
+For app builds with `core-js` installed:
 
-Otherwise, if 'core-js' and '@babel/runtime' package are found, 'entry-global'.
+1. 'usage-pure' if `core-js-pure` is installed and your package.json lists `core-js-pure` in `dependencies`,
+   `peerDependencies` or `devDependencies` without `core-js` in that same field
+2. Otherwise 'usage-global' if `@babel/runtime` is installed
+3. Otherwise 'entry-global'
 
-If just 'core-js' is found, 'entry-global'
-
-Otherwise `false`.
+For library builds (@babel/cli, rollup or caller.library is true), or when `core-js` is not installed:
+'usage-pure' if `core-js-pure` and `@babel/runtime-corejs3` are installed, otherwise `false`.
 
 ##### entry-global
 

@@ -525,13 +525,14 @@ function getPolyfillMethodAuto(
         try {
           const pkg = require(`${cwd}/package.json`);
           // when explicitly marked as dep, make pure a priority
+          // (per field: core-js in a different field doesn't count)
           if (
-            ('core-js-pure' in pkg.dependencies &&
-              !('core-js' in pkg.dependencies)) ||
-            ('core-js-pure' in pkg.peerDependencies &&
-              !('core-js' in pkg.peerDependencies)) ||
-            ('core-js-pure' in pkg.devDependencies &&
-              !('core-js' in pkg.devDependencies))
+            ['dependencies', 'peerDependencies', 'devDependencies'].some(
+              field => {
+                const deps = pkg[field] ?? {};
+                return 'core-js-pure' in deps && !('core-js' in deps);
+              },
+            )
           ) {
             return 'usage-pure';
           }
