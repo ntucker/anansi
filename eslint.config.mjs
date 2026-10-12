@@ -22,8 +22,7 @@ export default [
       'packages/cli/**',
       'packages/babel-preset-anansi/*',
       'packages/browserslist-config-anansi/*',
-      'packages/*/*.config.{js,cjs,mjs,ts}',
-      'babel.config.js',
+      '**/*.config.{js,cjs,mjs,ts}',
       'scripts/**',
     ],
     languageOptions: {

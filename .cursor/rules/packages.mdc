@@ -27,7 +27,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 
 ## What CI misses
 
-CI's `test` job runs each workspace's `test:ci`; its `lint` job runs `yarn lint` (all of `packages/`) and `yarn test:type` (every package's `test:type`). Package `pretest` scripts (`yarn g:lint .`) never run in CI; root `yarn lint` covers the same files. A package script outside `test:ci`, `test:type` and `build` is not checked by CI.
+CI's `test` job runs each workspace's `test:ci`; its `lint` job runs `yarn lint` and `yarn test:type`. No other package script (such as `pretest`) runs in CI.
 
 ## Publish surface
 
