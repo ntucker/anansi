@@ -1,4 +1,5 @@
 const path = require('path');
+const postcss = require('postcss');
 
 const { makeConfig } = require('../../index');
 
@@ -55,7 +56,7 @@ describe('makeConfig', () => {
   });
 
   it('should vendor-prefix CSS through postcss-preset-env', async () => {
-    const postcss = require('postcss');
+    const previous = process.env.BROWSERSLIST;
     process.env.BROWSERSLIST = 'safari 12';
     try {
       const config = makeConfig(defaultTestOptions)(
@@ -69,7 +70,8 @@ describe('makeConfig', () => {
       });
       expect(css).toContain('-webkit-user-select:none');
     } finally {
-      delete process.env.BROWSERSLIST;
+      if (previous === undefined) delete process.env.BROWSERSLIST;
+      else process.env.BROWSERSLIST = previous;
     }
   });
 
