@@ -489,14 +489,14 @@ for cheap static deploys to CDNs like S3+cloudfront.
 ### svgoOptions
 
 SVG files are optimized automatically to minimize size. [SVGO](https://github.com/svg/svgo) is used for this. Set this to specify specific options. Alternatively
-set to false to disable SVGO altogether. (Note: SVGs imported from JS/TS are optimized by SVGR in every mode; other SVGs only in production)
+set to false to disable SVGO altogether. (Note: SVGs imported from JS/TS are optimized by SVGR in every mode; other SVGs, and all SVGs when `svgrOptions` is `false`, only in production)
 
 [Configuration options](https://github.com/svg/svgo#configuration)
 
 
 ### svgrOptions
 
-SVGR enables importing SVG as a file or a component. This option allows further customizing how that is achieved. Set to `false` to disable SVGR; SVGs imported from JS/TS then only give their file URL.
+SVGR enables importing SVG as a file or a component. This option allows further customizing how that is achieved. Set to `false` to disable SVGR; SVGs imported from JS/TS then only give their file URL, so drop any `ReactComponent` imports (`media.d.ts` still types them).
 
 [Configuration options](https://react-svgr.com/docs/options/)
 

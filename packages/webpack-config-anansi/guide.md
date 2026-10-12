@@ -50,9 +50,10 @@ style, svg and worker imports typecheck.
   `@/*` resolve in webpack.
 - `sassOptions`, `inJSOptions` (Linaria via wyw-in-js), `cssExtractOptions`,
   `tsconfigPathsOptions`, `globalStyleDir`, `svgoOptions` (also stops SVGR's
-  SVGO), `svgrOptions` (JS/TS svg imports give only the file URL, no React
-  component) and (prod only) `htmlOptions` take `false` to disable. Also:
-  `terserOptions`, `babelLoader`, `fontPreload`, `nohash`, `library`, `pkg`.
+  SVGO), `svgrOptions` (JS/TS svg imports give only the file URL;
+  `ReactComponent` is still typed but undefined) and (prod only)
+  `htmlOptions` take `false` to disable. Also: `terserOptions`,
+  `babelLoader`, `fontPreload`, `nohash`, `library`, `pkg`.
 
 ## CLI flags and env
 

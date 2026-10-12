@@ -331,11 +331,14 @@ describe('makeConfig', () => {
       const config = configFn({}, { mode: 'production' });
 
       expect(getSvgrOptions(config)).toBeUndefined();
-      const jsSvgUse = config.module.rules
+      const jsSvgRule = config.module.rules
         .flatMap(rule => rule.oneOf ?? [])
-        .find(rule => rule.issuer?.toString().includes('sx')).use;
-      expect(jsSvgUse).toHaveLength(1);
-      expect(jsSvgUse[0].loader).toContain('file-loader');
+        .find(rule => rule.issuer?.test('icon.tsx'));
+      expect(jsSvgRule.use.map(use => use.loader)).toEqual([
+        expect.stringContaining('file-loader'),
+      ]);
+      // svgo-loader now also optimizes JS/TS imports
+      expect(getSvgoRule(config).issuer).toBeUndefined();
     });
 
     it('should have asset loaders for images', () => {
