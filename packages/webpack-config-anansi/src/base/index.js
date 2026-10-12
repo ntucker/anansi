@@ -228,7 +228,9 @@ export default function makeBaseConfig({
                 {
                   loader: require.resolve('@svgr/webpack'),
                   options: {
-                    svgoConfig: svgoOptions,
+                    ...(svgoOptions === false ?
+                      { svgo: false }
+                    : { svgoConfig: svgoOptions }),
                     ...svgrOptions,
                   },
                 },

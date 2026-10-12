@@ -296,6 +296,31 @@ describe('makeConfig', () => {
 
         expect(getSvgoRule(config)).toBeUndefined();
       });
+
+      const getSvgrOptions = config =>
+        config.module.rules
+          .flatMap(rule => rule.oneOf ?? [])
+          .flatMap(rule => rule.use ?? [])
+          .find(use => use.loader?.includes('@svgr'))?.options;
+
+      it('should pass merged svgoOptions to SVGR by default', () => {
+        const configFn = makeConfig(defaultTestOptions);
+        const options = getSvgrOptions(configFn({}, { mode: 'production' }));
+
+        expect(options.svgo).toBeUndefined();
+        expect(options.svgoConfig.plugins).toContain('prefixIds');
+      });
+
+      it('should disable SVGO in SVGR when svgoOptions is false', () => {
+        const configFn = makeConfig({
+          ...defaultTestOptions,
+          svgoOptions: false,
+        });
+        const options = getSvgrOptions(configFn({}, { mode: 'development' }));
+
+        expect(options.svgo).toBe(false);
+        expect(options).not.toHaveProperty('svgoConfig');
+      });
     });
 
     it('should have asset loaders for images', () => {
