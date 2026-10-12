@@ -22,6 +22,17 @@ describe('makeConfig', () => {
   // Default options that disable tsconfigPaths to avoid requiring tsconfig.json in tests
   const defaultTestOptions = { tsconfigPathsOptions: false };
 
+  const getSvgoRule = config =>
+    config.module.rules.find(rule =>
+      rule.use?.some(use => use.loader?.includes('svgo-loader')),
+    );
+
+  const getSvgrOptions = config =>
+    config.module.rules
+      .flatMap(rule => rule.oneOf ?? [])
+      .flatMap(rule => rule.use ?? [])
+      .find(use => use.loader?.includes('@svgr'))?.options;
+
   it('should create a config function', () => {
     const configFn = makeConfig(defaultTestOptions);
     expect(typeof configFn).toBe('function');
@@ -274,6 +285,44 @@ describe('makeConfig', () => {
       expect(svgRule.oneOf).toBeDefined();
     });
 
+    describe('svgoOptions', () => {
+      it('should run svgo in production by default', () => {
+        const configFn = makeConfig(defaultTestOptions);
+        const config = configFn({}, { mode: 'production' });
+
+        expect(getSvgoRule(config)).toBeDefined();
+      });
+
+      it('should not run svgo when svgoOptions is false', () => {
+        const configFn = makeConfig({
+          ...defaultTestOptions,
+          svgoOptions: false,
+        });
+        const config = configFn({}, { mode: 'production' });
+
+        expect(getSvgoRule(config)).toBeUndefined();
+      });
+
+      it('should pass merged svgoOptions to SVGR by default', () => {
+        const configFn = makeConfig(defaultTestOptions);
+        const options = getSvgrOptions(configFn({}, { mode: 'production' }));
+
+        expect(options.svgo).toBeUndefined();
+        expect(options.svgoConfig.plugins).toContain('prefixIds');
+      });
+
+      it('should disable SVGO in SVGR when svgoOptions is false', () => {
+        const configFn = makeConfig({
+          ...defaultTestOptions,
+          svgoOptions: false,
+        });
+        const options = getSvgrOptions(configFn({}, { mode: 'development' }));
+
+        expect(options.svgo).toBe(false);
+        expect(options).not.toHaveProperty('svgoConfig');
+      });
+    });
+
     it('should have asset loaders for images', () => {
       const configFn = makeConfig(defaultTestOptions);
       const config = configFn({}, { mode: 'development' });
@@ -437,39 +486,27 @@ describe('makeConfig', () => {
       expect(config.module.rules).toBeDefined();
 
       // Find the svgo-loader rule in production mode
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
+      const svgoRule = getSvgoRule(config);
+
+      expect(svgoRule).toBeDefined();
+      expect(svgoRule.use[0].options).toBeDefined();
+      const svgoOptions = svgoRule.use[0].options;
+
+      // Verify preset-default is configured
+      expect(svgoOptions.plugins).toBeDefined();
+      const presetPlugin = svgoOptions.plugins.find(
+        p => typeof p === 'object' && p.name === 'preset-default',
       );
+      expect(presetPlugin).toBeDefined();
 
-      if (svgoRule) {
-        expect(svgoRule.use[0].options).toBeDefined();
-        const svgoOptions = svgoRule.use[0].options;
-
-        // Verify preset-default is configured
-        expect(svgoOptions.plugins).toBeDefined();
-        const presetPlugin = svgoOptions.plugins.find(
-          p =>
-            (typeof p === 'object' && p.name === 'preset-default') ||
-            (typeof p === 'string' && p === 'preset-default'),
-        );
-        expect(presetPlugin).toBeDefined();
-
-        // Verify overrides are set correctly for v4 compatibility
-        // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
-        // and are disabled by default, so they're not in the overrides
-        if (typeof presetPlugin === 'object' && presetPlugin.params) {
-          expect(presetPlugin.params.overrides).toBeDefined();
-          // convertShapeToPath should still be in overrides
-          expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
-          // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
-          expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
-          expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
-        }
-      }
+      // Verify overrides are set correctly for v4 compatibility
+      // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
+      // and are disabled by default, so they're not in the overrides
+      // convertShapeToPath should still be in overrides
+      expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
+      // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
+      expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
+      expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
     });
 
     it('should preserve viewBox and title attributes (SVGO v4 default behavior)', async () => {
@@ -480,18 +517,9 @@ describe('makeConfig', () => {
       const config = configFn({}, { mode: 'production' });
 
       // Get the SVGO options from the config
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
-      );
+      const svgoRule = getSvgoRule(config);
 
-      if (!svgoRule) {
-        // SVGO loader might not be present if svgoOptions is false
-        return;
-      }
+      expect(svgoRule).toBeDefined();
 
       const svgoOptions = svgoRule.use[0].options;
 
@@ -536,24 +564,17 @@ describe('makeConfig', () => {
       });
       const config = configFn({}, { mode: 'production' });
 
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
+      const svgoRule = getSvgoRule(config);
+
+      expect(svgoRule).toBeDefined();
+      const svgoOptions = svgoRule.use[0].options;
+      const presetPlugin = svgoOptions.plugins.find(
+        p => typeof p === 'object' && p.name === 'preset-default',
       );
 
-      if (svgoRule) {
-        const svgoOptions = svgoRule.use[0].options;
-        const presetPlugin = svgoOptions.plugins.find(
-          p => typeof p === 'object' && p.name === 'preset-default',
-        );
-
-        expect(presetPlugin).toBeDefined();
-        expect(presetPlugin.params.overrides.removeTitle).toBe(true);
-        expect(presetPlugin.params.overrides.removeViewBox).toBe(false);
-      }
+      expect(presetPlugin).toBeDefined();
+      expect(presetPlugin.params.overrides.removeTitle).toBe(true);
+      expect(presetPlugin.params.overrides.removeViewBox).toBe(false);
     });
 
     it('should configure SVGR with SVGO options for JS/TS imports', () => {

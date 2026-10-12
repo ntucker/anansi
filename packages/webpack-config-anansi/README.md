@@ -488,8 +488,8 @@ for cheap static deploys to CDNs like S3+cloudfront.
 
 ### svgoOptions
 
-SVG files are optimized automatically in production builds to minimize size. [SVGO](https://github.com/svg/svgo) is used for this. Set this to specify specific options. Alternatively
-set to false to disable SVGO altogether. (Note: SVGO will never run in dev mode)
+SVG files are optimized automatically to minimize size. [SVGO](https://github.com/svg/svgo) is used for this. Set this to specify specific options. Alternatively
+set to false to disable SVGO altogether. (Note: SVGs imported from JS/TS are optimized by SVGR in every mode; other SVGs only in production)
 
 [Configuration options](https://github.com/svg/svgo#configuration)
 
