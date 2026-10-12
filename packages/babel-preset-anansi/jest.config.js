@@ -6,5 +6,4 @@ module.exports = {
   transform: {
     '^.+\\.jsx?$': ['babel-jest', { rootMode: 'upward' }],
   },
-  transformIgnorePatterns: ['/node_modules/(?!(@babel|@wyw-in-js|happy-dom)/)'],
 };
