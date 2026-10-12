@@ -524,15 +524,13 @@ function getPolyfillMethodAuto(
         const cwd = process.cwd();
         try {
           const pkg = require(`${cwd}/package.json`);
+          const deps = {
+            ...pkg.dependencies,
+            ...pkg.peerDependencies,
+            ...pkg.devDependencies,
+          };
           // when explicitly marked as dep, make pure a priority
-          if (
-            ['dependencies', 'peerDependencies', 'devDependencies'].some(
-              field => {
-                const deps = pkg[field] ?? {};
-                return 'core-js-pure' in deps && !('core-js' in deps);
-              },
-            )
-          ) {
+          if ('core-js-pure' in deps && !('core-js' in deps)) {
             return 'usage-pure';
           }
           // eslint-disable-next-line no-empty
