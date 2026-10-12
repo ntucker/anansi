@@ -84,7 +84,7 @@ export default class WebpackGenerator extends BetterGenerator<WebpackOptions> {
         await this.addDevDependencies(['@wyw-in-js/babel-preset']);
       }
     } else if (this?.props?.style === 'sass') {
-      await this.addDevDependencies(['sass']);
+      await this.addDevDependencies(['sass-embedded']);
     }
   }
 
