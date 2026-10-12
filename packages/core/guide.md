@@ -101,6 +101,10 @@ transitions with `useShowLoading()`. Use the router's `lazy`, not
 }
 ```
 
-The dev server compiles client and server in memory with hot reload and
-proxies per the webpack `devServer.proxy` config. In production, prefer a CDN
+The dev server (webpack-dev-server 6, Node >=22.15) compiles client and server
+in memory with hot reload and proxies per the webpack `devServer.proxy` config.
+Proxied requests are handled before SSR renders. Proxy entries follow
+http-proxy-middleware 4: route with `context`, `pathFilter` or `router`;
+`bypass` no longer exists. Custom `devServer.setupMiddlewares` run on Express 5,
+so wildcard routes need a name (`/{*splat}`, not `/*`). In production, prefer a CDN
 or reverse proxy over `-a` (serve assets) and `-p` (proxy).
