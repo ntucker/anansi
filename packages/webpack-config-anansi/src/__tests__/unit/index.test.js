@@ -495,23 +495,18 @@ describe('makeConfig', () => {
       // Verify preset-default is configured
       expect(svgoOptions.plugins).toBeDefined();
       const presetPlugin = svgoOptions.plugins.find(
-        p =>
-          (typeof p === 'object' && p.name === 'preset-default') ||
-          (typeof p === 'string' && p === 'preset-default'),
+        p => typeof p === 'object' && p.name === 'preset-default',
       );
       expect(presetPlugin).toBeDefined();
 
       // Verify overrides are set correctly for v4 compatibility
       // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
       // and are disabled by default, so they're not in the overrides
-      if (typeof presetPlugin === 'object' && presetPlugin.params) {
-        expect(presetPlugin.params.overrides).toBeDefined();
-        // convertShapeToPath should still be in overrides
-        expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
-        // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
-        expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
-        expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
-      }
+      // convertShapeToPath should still be in overrides
+      expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
+      // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
+      expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
+      expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
     });
 
     it('should preserve viewBox and title attributes (SVGO v4 default behavior)', async () => {
