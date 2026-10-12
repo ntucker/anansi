@@ -14,6 +14,9 @@
   "command": {
     "publish": {
       "preDistTag": "beta"
+    },
+    "version": {
+      "private": false
     }
   }
 }
