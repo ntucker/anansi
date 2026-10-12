@@ -14,10 +14,9 @@ interface PageProps extends RouteComponentProps {
 }
 function LinkPagination({ link, history }: PageProps) {
   const parsed = parseLink(link);
-  const curPage =
-    parsed && parsed.next ? Number(parsed.next.page) - 1
-    : parsed && parsed.prev ? Number(parsed.prev.page) + 1
-    : 1;
+  let curPage = 1;
+  if (parsed?.next) curPage = Number(parsed.next.page) - 1;
+  else if (parsed?.prev) curPage = Number(parsed.prev.page) + 1;
   let total, pageSize;
   if (!parsed) {
     total = 1;

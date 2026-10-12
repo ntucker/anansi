@@ -30,7 +30,7 @@ export default class ErrorBoundary extends Component<Props, State> {
 
   static contextType = ErrorLoggerContext;
   declare context: ContextType<typeof ErrorLoggerContext>;
-  static getDerivedStateFromError(error: Error | null) {
+  static getDerivedStateFromError(error: Error) {
     return { error };
   }
 
