@@ -49,6 +49,16 @@ anansi hatch my-app-name
 
 This creates a `my-app-name` directory in your current directory and sets up the project there.
 
+## AI agents
+
+Add this to your project's `AGENTS.md` (or `CLAUDE.md`) so coding agents learn anansi from the installed version:
+
+```md
+When using Anansi:
+- run `npx @anansi/cli guide` to learn it, then `npx @anansi/cli guide <topic>` for the area you're changing
+- extend the @anansi configs (webpack, babel, jest, eslint) instead of replacing them
+```
+
 ## Updates
 
 Features can be incrementally adopted by running sub-generators from an existing project directory.

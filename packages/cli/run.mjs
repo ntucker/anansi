@@ -149,4 +149,30 @@ program
     }
   });
 
+const guidesDir = path.join(__dirname, 'guides');
+const guideTopics = fs
+  .readdirSync(guidesDir)
+  .map(file => path.basename(file, '.md'));
+
+program
+  .command('guide')
+  .description('prints how to use anansi, written for AI agents')
+  .argument('[topics...]', `any of: ${guideTopics.join(' | ')}`, ['overview'])
+  .action(topics => {
+    const unknown = topics.filter(topic => !guideTopics.includes(topic));
+    if (unknown.length) {
+      console.error(
+        `Unknown guide topic: ${unknown.join(', ')}\nAvailable: ${guideTopics.join(', ')}`,
+      );
+      process.exit(1);
+    }
+    console.log(
+      topics
+        .map(topic =>
+          fs.readFileSync(path.join(guidesDir, `${topic}.md`), 'utf8'),
+        )
+        .join('\n'),
+    );
+  });
+
 program.parse(process.argv);
