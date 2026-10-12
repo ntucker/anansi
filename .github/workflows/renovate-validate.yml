@@ -4,9 +4,15 @@ on:
   pull_request:
     branches:
       - master
+    paths:
+      - renovate.json
+      - .github/workflows/renovate-validate.yml
   push:
     branches:
       - master
+    paths:
+      - renovate.json
+      - .github/workflows/renovate-validate.yml
 
 jobs:
   validate:
