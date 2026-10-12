@@ -1,0 +1,14 @@
+---
+paths:
+  - ".circleci/**"
+  - ".github/workflows/**"
+---
+<!-- Generated from .cursor/rules/ci-config.mdc by `yarn build:agent-rules`. Edit the source. -->
+
+
+# CI configuration
+
+- CircleCI (`.circleci/config.yml`) is the PR gate: `build` installs and runs `yarn build:pkg` once, then `lint`, `test`, example builds, the `BROWSERSLIST_ENV` matrix, `start_dev` and storybook run from its workspace. GitHub Actions only lint commit messages, comment bundle size and run lighthouse.
+- The commands in `AGENTS.md`'s validation tiers mirror these jobs; change both together.
+- Example workspace names are wired in several places: `--include 'example-*'` filters, root `devtest:ci`, `build_matrix`/`build_storybook` (`example-typescript`), `lighthouse.yml` (`example-react-18`) and `bundle_size.yml` (`build:sizecompare`). Renaming or adding an example means updating each.
+- `sudo corepack enable` in the `build` job is fine on CircleCI; don't copy it into sandboxed setup.

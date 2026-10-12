@@ -1,26 +1,26 @@
 # anansi
 
-Yarn 4 workspaces monorepo: published packages in `packages/*`, demo apps in `examples/*`.
-Conventions and per-package checks live in `.cursor/rules/general.mdc` and `.cursor/rules/validation.mdc`.
+Yarn 4 workspaces monorepo: published packages in `packages/*`, demo apps in `examples/*`. Its main consumer is [reactive/data-client](https://github.com/reactive/data-client), which builds, tests, lints, publishes and builds its website with these packages, so a change here can break it without failing anything in this repo.
 
 ## Environment
 
 - Node per `.nvmrc` (24; Jest's `require(ESM)` of Babel 8 needs 24.9+). CI uses `cimg/node:lts`.
 - Yarn comes from `.yarn/releases` via `yarnPath`. Don't `corepack enable` in sandboxed sessions: corepack downloads yarn from repo.yarnpkg.com, which egress may block.
-- Setup: `yarn install --mode=skip-build && yarn build:pkg`.
+- Setup: `yarn install --mode=skip-build && yarn build:pkg`. Most packages resolve to their built `lib/`/`dist/` even inside the workspace (`@anansi/webpack-config`'s `main`, `@anansi/core`'s `exports`), so rebuild a package after editing its `src/` before validating anything that uses it.
+- Edit `src/` only; `lib/`, `dist/` and `packages/generator-js/generators/` are build output.
 
 ## Validation tiers
 
-Pick the cheapest tier that covers the change.
+Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rules/` (mirrored to `.claude/rules/`) hold the per-package and per-directory commands.
 
-1. **Packages**: `yarn lint`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the scoped commands in `validation.mdc`.
-2. **Apps (SPA/SSR)**: `examples/*` consume packages through workspaces (source, not packed builds), so they validate runtime behavior but not packaging. CI runs:
+1. **Packages**: `yarn lint`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the package's own scripts.
+2. **Apps (SPA/SSR)**: `examples/*` consume packages through workspaces (the local checkout, not packed tarballs), so they validate runtime behavior but not packaging. CI runs:
    - `yarn workspaces foreach -Wv --include 'example-*' run build`
    - `yarn workspaces foreach -Wv --include 'example-*' run build:server`
    - `yarn devtest:ci` (starts dev servers and checks they respond)
    - `yarn workspace example-typescript build:storybook`
    - `BROWSERSLIST_ENV=2018 yarn workspace example-typescript run build` (also 2020, 2022)
-3. **Packaging, end to end**: [reactive/data-client](https://github.com/reactive/data-client) builds, tests, publishes and builds its website with anansi. `scripts/consumer-link.sh` packs every public package (`yarn pack` applies `publishConfig` and rewrites `workspace:` ranges, exactly what npm receives) and points the consumer's `resolutions` at the tarballs:
+3. **Packaging, end to end**: `scripts/consumer-link.sh` packs every public package (`yarn pack` applies `publishConfig` and rewrites `workspace:` ranges, exactly what npm receives) and points the consumer's `resolutions` at the tarballs:
 
    ```bash
    scripts/consumer-link.sh link     # pack + install into ../data-client (rerun after each change)
@@ -37,3 +37,12 @@ Pick the cheapest tier that covers the change.
    yarn test:ci                                       # @anansi/jest-preset
    yarn workspace rdc-website build                   # docusaurus site
    ```
+
+## Commits and releases
+
+- PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, `.versionrc`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `BREAKING CHANGE:` footer makes the release major.
+- Don't bump `version` fields or edit `CHANGELOG.md` in a PR; the release (`yarn changelog`, then `yarn release`) writes both.
+
+## Agent rules
+
+`.cursor/rules/*.mdc` is the source for both Cursor and Claude Code; `yarn build:agent-rules` generates `.claude/rules/*.md` from it (`globs` become `paths`). CI's `lint` job fails on drift.

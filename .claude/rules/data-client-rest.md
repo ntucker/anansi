@@ -1,10 +1,10 @@
 ---
-description: Modeling resources endpoints and schemas with @data-client/rest
-globs:
-  - '**/*.ts'
-  - '**/*.tsx'
-alwaysApply: false
+paths:
+  - "examples/**/*.ts"
+  - "examples/**/*.tsx"
 ---
+<!-- Generated from .cursor/rules/data-client-rest.mdc by `yarn build:agent-rules`. Edit the source. -->
+
 # Guide: Using `@data-client/rest` for Resource Modeling
 
 This project uses [@data-client/rest](https://dataclient.io/rest) to define, fetch, normalize, and update RESTful resources and entities in React/TypeScript apps with type safety and automatic cache management.  
@@ -138,7 +138,7 @@ const deleteTodo = id => ctrl.fetch(TodoResource.delete, { id });
 const getNextPage = (page) => ctrl.fetch(TodoResource.getList.getPage, { userId: 1, page })
 ```
 
-For more detailed usage, see @examples/.cursor/rules/react.mdc
+For more detailed usage, see the `data-client-react` rule
 
 ---
 

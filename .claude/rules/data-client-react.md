@@ -1,9 +1,9 @@
 ---
-description: Usage patterns for @data-client/react hooks and components
-globs:
-  - '**/*.tsx'
-alwaysApply: false
+paths:
+  - "examples/**/*.tsx"
 ---
+<!-- Generated from .cursor/rules/data-client-react.mdc by `yarn build:agent-rules`. Edit the source. -->
+
 ## Rendering
 
 ```ts
@@ -20,7 +20,7 @@ const todo = useCache(TodoResource.get, { id: 5 });
 const todo = useQuery(Todo, { id: 5 });
 ```
 
-For API definitions (like TodoResource), see @examples/.cursor/rules/rest.mdc
+For API definitions (like TodoResource), see the `data-client-rest` rule
 
 ## Mutations
 
@@ -109,7 +109,7 @@ const todosByUser = useQuery(groupTodoByUser);
 Custom [Managers](https://dataclient.io/docs/api/Manager) allow for global side effect handling.
 This is useful for webosckets, SSE, logging, etc.
 
-For more detailed usage, see @examples/.cursor/rules/manager.mdc
+For more detailed usage, see the `data-client-manager` rule
 
 ## Best Practices & Notes
 

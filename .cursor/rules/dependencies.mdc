@@ -1,0 +1,12 @@
+---
+description: Dependency upgrades and lockfile maintenance
+globs: **/package.json, yarn.lock, .yarnrc.yml, renovate.json, .github/dependabot.yml
+alwaysApply: false
+---
+
+# Dependencies
+
+- Install with `yarn install --mode=skip-build`, then `yarn build:pkg`. Plain `yarn install` runs every workspace's install scripts, and security scanners flag it. CI uses `yarn install --immutable`, so commit `yarn.lock` with any manifest change.
+- Root `resolutions` pin one React, `@types/react` and storybook/webpack copy for the whole tree. Bump a pinned package there as well as in the manifests that depend on it.
+- Renovate owns routine bumps (`pkg: ` titles, grouped as `renovate.json` sets). Hand-made upgrades use the same `pkg:` type; a major that changes what consumers must install also needs a `BREAKING CHANGE:` footer (Babel 8, #3084, is the model).
+- A major of anything a preset wraps (Babel, webpack, Jest, ESLint, TypeScript, React) is a packaging change for data-client: run the end-to-end tier in `AGENTS.md`.
