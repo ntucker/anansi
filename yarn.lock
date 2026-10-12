@@ -127,7 +127,6 @@ __metadata:
   dependencies:
     "@anansi/router": "workspace:^"
     "@ant-design/cssinjs": "npm:^2.0.0"
-    "@babel/plugin-transform-modules-commonjs": "npm:^8.0.1"
     "@babel/runtime-corejs3": "npm:^8.0.0"
     "@data-client/react": "npm:^0.18.0"
     "@types/compression": "npm:1.8.1"

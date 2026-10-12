@@ -82,7 +82,6 @@
   ],
   "devDependencies": {
     "@ant-design/cssinjs": "^2.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^8.0.1",
     "@data-client/react": "^0.18.0",
     "@types/compression": "1.8.1",
     "@types/express": "^5.0.6",
