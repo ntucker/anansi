@@ -120,6 +120,36 @@ describe('buildPreset', () => {
   });
 
   it.each([
+    [{ hasJsxRuntime: false }, {}, 'classic'],
+    [{}, { hasJsxRuntime: false }, 'classic'],
+    [{ hasJsxRuntime: true }, { hasJsxRuntime: false }, 'classic'],
+    [{ hasJsxRuntime: false }, { hasJsxRuntime: true }, 'automatic'],
+    [{}, {}, 'automatic'],
+  ])('caller %j with options %j => %s runtime', (caller, options, runtime) => {
+    api.env.mockReturnValue('development');
+    api.caller.mockImplementation(cb => cb(caller));
+    const reactOverride = buildPreset(api, options).overrides.find(
+      o => o.presets,
+    );
+    expect(reactOverride.presets[0][1].runtime).toBe(runtime);
+  });
+
+  it.each([
+    [{ developmentSourceSelf: true }, {}, true],
+    [{ developmentSourceSelf: true }, { developmentSourceSelf: false }, false],
+  ])(
+    'caller %j with options %j => developmentSourceSelf %s',
+    (caller, options, expected) => {
+      api.env.mockReturnValue('development');
+      api.caller.mockImplementation(cb => cb(caller));
+      const reactOverride = buildPreset(api, options).overrides.find(
+        o => o.presets,
+      );
+      expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(expected);
+    },
+  );
+
+  it.each([
     ['18.3.1', true],
     ['19.1.0', true],
     ['19.2.0', false],

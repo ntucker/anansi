@@ -81,13 +81,15 @@ function buildPreset(api, options = {}) {
       babelTargets && babelTargets.node
       // if caller is not targetting node, we should ensure nodeTarget is not set
     : undefined;
-  const hasJsxRuntime = Boolean(
-    api.caller(
-      caller =>
-        // default to true - only allow overrides of false
-        ((!!caller && caller.hasJsxRuntime) || options.hasJsxRuntime) !== false,
-    ),
-  );
+  // explicit option, then what the caller (webpack-config, jest-preset) detected
+  const hasJsxRuntime =
+    (options.hasJsxRuntime ?? api.caller(caller => caller?.hasJsxRuntime)) !==
+    false;
+  // React 19.2 dropped jsxDEV's source/self params, so Babel 8 stopped emitting them
+  const developmentSourceSelf =
+    options.developmentSourceSelf ??
+    api.caller(caller => caller?.developmentSourceSelf) ??
+    reactBefore192();
 
   const explicitNodeTarget = !!options.nodeTarget;
 
@@ -418,8 +420,7 @@ function buildPreset(api, options = {}) {
             development:
               env === 'development' || (env !== 'production' && !hasJsxRuntime),
             runtime: hasJsxRuntime ? 'automatic' : 'classic',
-            // React 19.2 dropped jsxDEV's source/self params, so Babel 8 stopped emitting them
-            developmentSourceSelf: reactBefore192(),
+            developmentSourceSelf,
           },
         ],
       ],

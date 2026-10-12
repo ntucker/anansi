@@ -313,6 +313,12 @@ Available in React >16.14.
 
 - With the new transform, you can use JSX without importing React.
 - Depending on your setup, its compiled output may slightly improve the bundle size.
+
+#### developmentSourceSelf: bool
+
+Adds `__source`/`__self` to development JSX. React 19.2 stopped using them, so this defaults to
+`true` only for React < 19.2. `@anansi/webpack-config` and `@anansi/jest-preset` detect the version for you;
+otherwise it is read from the `react` installed at the current directory.
 - It will enable future improvements that reduce the number of concepts you need to learn React.
 
 > Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
