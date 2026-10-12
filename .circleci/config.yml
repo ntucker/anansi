@@ -72,6 +72,7 @@ jobs:
           at: ~/
       - run: yarn run lint
       - run: yarn test:type
+      - run: yarn constraints
       - run: yarn build:agent-rules --check
 
   # Each parallel node builds its share of examples/*

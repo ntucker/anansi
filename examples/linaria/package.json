@@ -21,10 +21,10 @@
     "node": "^22.18.0 || >=24.11.0"
   },
   "devDependencies": {
-    "@anansi/babel-preset": "workspace:^",
-    "@anansi/browserslist-config": "workspace:^",
-    "@anansi/eslint-plugin": "workspace:^",
-    "@anansi/webpack-config": "workspace:^",
+    "@anansi/babel-preset": "^6.2.27",
+    "@anansi/browserslist-config": "^1.7.5",
+    "@anansi/eslint-plugin": "^1.0.74",
+    "@anansi/webpack-config": "^21.1.19",
     "@babel/core": "^8.0.0",
     "@types/eslint": "^9.0.0",
     "@types/node": "^24.0.0",
