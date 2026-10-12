@@ -5,7 +5,7 @@ import { DemoProvider } from './demo';
 
 type ComponentProps<T> =
   T extends React.ComponentType<infer P> | React.Component<infer P> ?
-    JSX.LibraryManagedAttributes<T, P>
+    React.JSX.LibraryManagedAttributes<T, P>
   : never;
 
 type Props = { children: ReactNode } & ComponentProps<typeof DataProvider>;

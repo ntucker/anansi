@@ -5,7 +5,7 @@ import { List, Button } from 'antd';
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-import { PostResource, Post } from 'data/resources';
+import { PostResource, Post } from '@/data/resources';
 
 import PostListItem from './PostListItem';
 

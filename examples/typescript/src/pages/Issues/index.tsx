@@ -1,7 +1,7 @@
 import { useLive } from '@data-client/react';
 import { IssueResource, Issue } from '@standard-endpoint/github/Issue';
 import { List, Avatar } from 'antd';
-import LinkPagination from 'navigation/LinkPagination';
+import LinkPagination from '@/navigation/LinkPagination';
 import React from 'react';
 import { Link } from 'react-router-dom';
 

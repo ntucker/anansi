@@ -4,7 +4,7 @@ import { List, Avatar } from 'antd';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Post, UserResource } from 'data/resources';
+import { Post, UserResource } from '@/data/resources';
 
 /** Displays one item in the list */
 export default function IssueListItem({ post }: { post: Post }) {

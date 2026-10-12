@@ -3,8 +3,8 @@ import { useController } from '@data-client/react';
 import { Typography } from 'antd';
 import { useHistory } from 'react-router-dom';
 
-import { PostResource } from 'data/resources';
-import itemRender from 'navigation/breadcrumbItemRenderer';
+import { PostResource } from '@/data/resources';
+import itemRender from '@/navigation/breadcrumbItemRenderer';
 
 import PostForm from './PostForm';
 

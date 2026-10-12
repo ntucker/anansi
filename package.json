@@ -22,7 +22,7 @@
     "build": "yarn workspaces foreach -Wt --no-private run build",
     "dev": "yarn workspaces foreach -Wpi --no-private run dev",
     "lint": "eslint --quiet packages",
-    "test:type": "yarn workspaces foreach -Wpv --no-private run test:type",
+    "test:type": "yarn workspaces foreach -Wpv run test:type",
     "format": "eslint --fix packages",
     "build:types": "tsc --build",
     "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -Wtv --no-private run build",

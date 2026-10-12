@@ -2,7 +2,7 @@ import { useSuspense } from '@data-client/react';
 import { Typography } from 'antd';
 import { RouteChildrenProps } from 'react-router-dom';
 
-import { UserResource, Address } from 'data/resources';
+import { UserResource, Address } from '@/data/resources';
 
 function capFirst(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
