@@ -1,7 +1,16 @@
-import type { ProxyConfigArray } from 'webpack-dev-server';
+import type {
+  ProxyConfigArray,
+  ProxyConfigArrayItem,
+} from 'webpack-dev-server';
+
+/** Path filter of a proxy entry, with the same precedence as webpack-dev-server */
+export function getProxyPathFilter(item: ProxyConfigArrayItem) {
+  return item.context || item.path || item.pathFilter;
+}
 
 /**
- * Extracts route patterns from webpack-dev-server proxy configuration.
+ * Extracts route prefixes from webpack-dev-server proxy configuration.
+ * Globs are cut to their static prefix ('/api/**' -> '/api/').
  *
  * Handles the webpack-dev-server proxy array format:
  * ```
@@ -22,15 +31,16 @@ export function extractProxyRoutes(
 
   return proxy
     .filter(
-      (item): item is Record<string, unknown> =>
+      (item): item is ProxyConfigArrayItem =>
         typeof item === 'object' && item !== null,
     )
     .flatMap(item => {
-      // same precedence as webpack-dev-server; each can be a string or an array
-      // of strings (function filters can't be statically analyzed)
-      const context = item.context ?? item.path ?? item.pathFilter;
-      if (Array.isArray(context)) return context as string[];
-      if (typeof context === 'string') return [context];
+      // string or array of strings (function filters can't be statically analyzed)
+      const filter = getProxyPathFilter(item);
+      if (Array.isArray(filter)) return filter;
+      if (typeof filter === 'string') return [filter];
       return [];
-    });
+    })
+    .map(route => route.split(/[*?{[!(]/)[0])
+    .filter(Boolean);
 }

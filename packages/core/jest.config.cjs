@@ -8,7 +8,7 @@ module.exports = {
   testEnvironment: 'node',
   // http-proxy-middleware and its deps are ESM-only
   transformIgnorePatterns: [
-    '/node_modules/(?!(@babel/runtime|http-proxy-middleware|httpxy|is-plain-obj)/)',
+    '/node_modules/(?!@babel/runtime|(http-proxy-middleware|httpxy|is-plain-obj)/)',
     '\\.pnp\\.[^\\/]+$',
   ],
   collectCoverageFrom: [

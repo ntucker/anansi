@@ -102,4 +102,19 @@ describe('extractProxyRoutes', () => {
     ];
     expect(extractProxyRoutes(proxy)).toEqual(['/api']);
   });
+
+  it('should cut globs to their static prefix', () => {
+    const proxy = [
+      { pathFilter: '/api/**', target: 'http://localhost:3000' },
+      { pathFilter: ['**/*.json'], target: 'http://localhost:3001' },
+    ];
+    expect(extractProxyRoutes(proxy)).toEqual(['/api/']);
+  });
+
+  it('should fall back past an empty context like webpack-dev-server', () => {
+    const proxy = [
+      { context: '', path: '/api', target: 'http://localhost:3000' },
+    ];
+    expect(extractProxyRoutes(proxy)).toEqual(['/api']);
+  });
 });

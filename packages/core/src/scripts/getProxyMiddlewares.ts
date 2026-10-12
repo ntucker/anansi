@@ -8,6 +8,8 @@ import {
   ProxyConfigArrayItem,
 } from 'webpack-dev-server';
 
+import { getProxyPathFilter } from './proxyUtils.js';
+
 // Essentially taken from https://github.com/webpack/webpack-dev-server/blob/v6.0.0/lib/Server.js
 // (proxy section), converted to typescript so serve-anansi applies the same proxy config
 export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
@@ -20,8 +22,7 @@ export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
     if (proxyConfig.target || proxyConfig.router) {
       return createProxyMiddleware({
         ...proxyConfig,
-        pathFilter:
-          proxyConfig.context || proxyConfig.path || proxyConfig.pathFilter,
+        pathFilter: getProxyPathFilter(proxyConfig),
       });
     }
   };
