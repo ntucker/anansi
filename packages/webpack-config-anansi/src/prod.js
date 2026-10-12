@@ -72,7 +72,7 @@ export default function makeProdConfig(
   if (svgoOptions !== false) {
     config.module.rules.push({
       test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-      // SVGR already runs SVGO on JS/TS imports
+      // unless disabled, SVGR (base/index.js) runs SVGO on JS/TS imports
       ...(svgrOptions !== false && { issuer: { not: [/\.(j|t)sx?$/] } }),
       enforce: 'pre',
       use: [

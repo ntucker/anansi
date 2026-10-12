@@ -290,7 +290,10 @@ describe('makeConfig', () => {
         const configFn = makeConfig(defaultTestOptions);
         const config = configFn({}, { mode: 'production' });
 
-        expect(getSvgoRule(config)).toBeDefined();
+        const svgoRule = getSvgoRule(config);
+        expect(svgoRule).toBeDefined();
+        // SVGR optimizes JS/TS imports, so svgo-loader skips them
+        expect(svgoRule.issuer.not[0].test('icon.tsx')).toBe(true);
       });
 
       it('should not run svgo when svgoOptions is false', () => {
@@ -323,7 +326,7 @@ describe('makeConfig', () => {
       });
     });
 
-    it('should drop SVGR but keep the file URL when svgrOptions is false', () => {
+    it('should drop SVGR, keep the file URL and svgo JS imports when svgrOptions is false', () => {
       const configFn = makeConfig({
         ...defaultTestOptions,
         svgrOptions: false,
@@ -337,7 +340,7 @@ describe('makeConfig', () => {
       expect(jsSvgRule.use.map(use => use.loader)).toEqual([
         expect.stringContaining('file-loader'),
       ]);
-      // svgo-loader now also optimizes JS/TS imports
+      // without SVGR, svgo-loader must cover JS/TS imports too
       expect(getSvgoRule(config).issuer).toBeUndefined();
     });
 
