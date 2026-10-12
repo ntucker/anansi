@@ -13,12 +13,12 @@ separately for `.d.ts` and type checking), and reads its caller to pick
 defaults:
 
 - Polyfills default from what's installed. Apps with `core-js` get
-  `usage-global` (`entry-global` without `@babel/runtime`). Library builds
-  (`@babel/cli`, `@rollup/plugin-babel`, or caller `library: true`) and apps
-  that depend on `core-js-pure` instead of `core-js` get `usage-pure`, which
-  never touches globals, when `core-js-pure` and `@babel/runtime-corejs3` are
-  installed. Otherwise no polyfills. Set `polyfillMethod` explicitly when it
-  matters.
+  `usage-global` (`entry-global` without `@babel/runtime`), or `usage-pure`
+  when package.json lists `core-js-pure` but not `core-js`. Library builds
+  (`@babel/cli`, `@rollup/plugin-babel`, or caller `library: true`) get
+  `usage-pure`, which never touches globals, when `core-js-pure` and
+  `@babel/runtime-corejs3` are installed. Otherwise no polyfills. Set
+  `polyfillMethod` explicitly when it matters.
 - webpack `--target=node` and jest target the current node.
 
 ## Options agents reach for

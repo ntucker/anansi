@@ -158,23 +158,41 @@ const guidePackages = {
   testing: '@anansi/jest-preset',
   lint: '@anansi/eslint-plugin',
 };
-const guideTopics = Object.keys(guidePackages);
+const guideTopics = ['overview', ...Object.keys(guidePackages)];
 
 function resolveProjectPackage(name) {
+  let pkgPath;
   try {
-    const pkgPath = createRequire(
-      path.join(process.cwd(), 'package.json'),
-    ).resolve(`${name}/package.json`);
-    return {
-      dir: dirname(pkgPath),
-      version: JSON.parse(fs.readFileSync(pkgPath, 'utf8')).version,
-    };
-  } catch {
-    return undefined;
+    pkgPath = createRequire(path.join(process.cwd(), 'package.json')).resolve(
+      `${name}/package.json`,
+    );
+  } catch (error) {
+    if (error.code === 'MODULE_NOT_FOUND') return undefined;
+    throw error;
   }
+  return {
+    dir: dirname(pkgPath),
+    version: JSON.parse(fs.readFileSync(pkgPath, 'utf8')).version,
+  };
 }
 
-function readTopicGuide(topic) {
+function renderOverview() {
+  const topicLines = Object.entries(guidePackages).map(([topic, name]) => {
+    const installed = resolveProjectPackage(name);
+    const version = installed ? '@' + installed.version : ' (not installed)';
+    return `- ${topic}: ${name}${version}`;
+  });
+  return [
+    fs.readFileSync(path.join(__dirname, 'guide.md'), 'utf8'),
+    '## Topics\n',
+    "Run `anansi guide <topic...>` for the area you're changing. Each guide comes",
+    'from the version installed in this project.\n',
+    ...topicLines,
+  ].join('\n');
+}
+
+function renderTopic(topic) {
+  if (topic === 'overview') return renderOverview();
   const name = guidePackages[topic];
   const installed = resolveProjectPackage(name);
   if (!installed) {
@@ -190,7 +208,7 @@ function readTopicGuide(topic) {
 program
   .command('guide')
   .description('prints how to use anansi, written for AI agents')
-  .argument('[topics...]', `any of: ${guideTopics.join(' | ')}`)
+  .argument('[topics...]', `any of: ${guideTopics.join(' | ')}`, ['overview'])
   .action(topics => {
     const unknown = topics.filter(topic => !guideTopics.includes(topic));
     if (unknown.length) {
@@ -199,24 +217,7 @@ program
       );
       process.exit(1);
     }
-    if (topics.length) {
-      console.log(topics.map(readTopicGuide).join('\n'));
-      return;
-    }
-    const topicList = guideTopics.map(topic => {
-      const name = guidePackages[topic];
-      const installed = resolveProjectPackage(name);
-      return `- ${topic}: ${name}${installed ? `@${installed.version}` : ' (not installed)'}`;
-    });
-    console.log(
-      `${fs.readFileSync(path.join(__dirname, 'guide.md'), 'utf8')}
-## Topics
-
-Run \`anansi guide <topic...>\` for the area you're changing. Each guide comes
-from the version installed in this project.
-
-${topicList.join('\n')}`,
-    );
+    console.log(topics.map(renderTopic).join('\n'));
   });
 
 program.parse(process.argv);
