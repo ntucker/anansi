@@ -488,30 +488,29 @@ describe('makeConfig', () => {
       // Find the svgo-loader rule in production mode
       const svgoRule = getSvgoRule(config);
 
-      if (svgoRule) {
-        expect(svgoRule.use[0].options).toBeDefined();
-        const svgoOptions = svgoRule.use[0].options;
+      expect(svgoRule).toBeDefined();
+      expect(svgoRule.use[0].options).toBeDefined();
+      const svgoOptions = svgoRule.use[0].options;
 
-        // Verify preset-default is configured
-        expect(svgoOptions.plugins).toBeDefined();
-        const presetPlugin = svgoOptions.plugins.find(
-          p =>
-            (typeof p === 'object' && p.name === 'preset-default') ||
-            (typeof p === 'string' && p === 'preset-default'),
-        );
-        expect(presetPlugin).toBeDefined();
+      // Verify preset-default is configured
+      expect(svgoOptions.plugins).toBeDefined();
+      const presetPlugin = svgoOptions.plugins.find(
+        p =>
+          (typeof p === 'object' && p.name === 'preset-default') ||
+          (typeof p === 'string' && p === 'preset-default'),
+      );
+      expect(presetPlugin).toBeDefined();
 
-        // Verify overrides are set correctly for v4 compatibility
-        // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
-        // and are disabled by default, so they're not in the overrides
-        if (typeof presetPlugin === 'object' && presetPlugin.params) {
-          expect(presetPlugin.params.overrides).toBeDefined();
-          // convertShapeToPath should still be in overrides
-          expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
-          // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
-          expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
-          expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
-        }
+      // Verify overrides are set correctly for v4 compatibility
+      // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
+      // and are disabled by default, so they're not in the overrides
+      if (typeof presetPlugin === 'object' && presetPlugin.params) {
+        expect(presetPlugin.params.overrides).toBeDefined();
+        // convertShapeToPath should still be in overrides
+        expect(presetPlugin.params.overrides.convertShapeToPath).toBe(false);
+        // removeTitle and removeViewBox are not in overrides (they're disabled by default in v4)
+        expect(presetPlugin.params.overrides.removeTitle).toBeUndefined();
+        expect(presetPlugin.params.overrides.removeViewBox).toBeUndefined();
       }
     });
 
@@ -525,10 +524,7 @@ describe('makeConfig', () => {
       // Get the SVGO options from the config
       const svgoRule = getSvgoRule(config);
 
-      if (!svgoRule) {
-        // SVGO loader might not be present if svgoOptions is false
-        return;
-      }
+      expect(svgoRule).toBeDefined();
 
       const svgoOptions = svgoRule.use[0].options;
 
@@ -575,16 +571,15 @@ describe('makeConfig', () => {
 
       const svgoRule = getSvgoRule(config);
 
-      if (svgoRule) {
-        const svgoOptions = svgoRule.use[0].options;
-        const presetPlugin = svgoOptions.plugins.find(
-          p => typeof p === 'object' && p.name === 'preset-default',
-        );
+      expect(svgoRule).toBeDefined();
+      const svgoOptions = svgoRule.use[0].options;
+      const presetPlugin = svgoOptions.plugins.find(
+        p => typeof p === 'object' && p.name === 'preset-default',
+      );
 
-        expect(presetPlugin).toBeDefined();
-        expect(presetPlugin.params.overrides.removeTitle).toBe(true);
-        expect(presetPlugin.params.overrides.removeViewBox).toBe(false);
-      }
+      expect(presetPlugin).toBeDefined();
+      expect(presetPlugin.params.overrides.removeTitle).toBe(true);
+      expect(presetPlugin.params.overrides.removeViewBox).toBe(false);
     });
 
     it('should configure SVGR with SVGO options for JS/TS imports', () => {
