@@ -6,7 +6,7 @@ import { UserResource } from '@/resources/Discuss';
 
 import Nav from './Nav';
 
-function FriendsNav(): JSX.Element {
+function FriendsNav(): React.JSX.Element {
   const route = useRoutes()[1] as any;
   const friends = useSuspense(UserResource.getList);
 

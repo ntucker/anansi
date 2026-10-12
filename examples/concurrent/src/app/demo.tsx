@@ -70,7 +70,7 @@ function DemoProviderOg({ children }: { children: React.ReactNode }) {
 
           (PlaceholderEntity as any).normalize = function (
             this,
-            ...args: [any, any, any, any, any, any]
+            ...args: [any, any, any, any]
           ) {
             return this.fromJS(
               schema.Object.prototype.normalize.apply(this, args) as any,

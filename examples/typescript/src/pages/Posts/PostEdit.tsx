@@ -2,8 +2,8 @@ import { PageHeader } from '@ant-design/pro-layout';
 import { useController, useSuspense } from '@data-client/react';
 import { RouteChildrenProps } from 'react-router-dom';
 
-import { PostResource } from 'data/resources';
-import itemRender from 'navigation/breadcrumbItemRenderer';
+import { PostResource } from '@/data/resources';
+import itemRender from '@/navigation/breadcrumbItemRenderer';
 
 import PostForm from './PostForm';
 
