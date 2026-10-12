@@ -15,7 +15,7 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
 
 1. **Packages**: `yarn lint`, `yarn test:type`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the package's own scripts.
 2. **Apps (SPA/SSR)**: `examples/*` consume packages through workspaces (the local checkout, not packed tarballs), so they validate runtime behavior but not packaging. CI runs:
-   - `yarn workspaces foreach -Wv --include 'example-*' run build`
+   - `yarn workspaces foreach -Wv --include 'example-*' run build` (CI spreads the examples across parallel nodes)
    - `yarn workspaces foreach -Wv --include 'example-*' run build:server`
    - `yarn devtest:ci` (starts dev servers and checks they respond)
    - `yarn workspace example-typescript build:storybook`

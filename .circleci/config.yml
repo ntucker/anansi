@@ -12,25 +12,32 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies (Yarn 4 keeps them in its global cache)
+      # Download and cache dependencies. The project cache (not Yarn's global
+      # one) drops unreferenced archives on install, so the fallback key
+      # stays bounded.
       - restore_cache:
           keys:
-            # exact match only: Yarn never prunes its global cache, so a
-            # fallback would grow with every lockfile change
-            - v7-dependencies-{{ checksum "yarn.lock" }}
+            - v8-dependencies-{{ checksum "yarn.lock" }}
+            - v8-dependencies-
 
-      # The image's yarn hands off to .yarn/releases via yarnPath. No
-      # dependency has install scripts; build:pkg does the workspaces' builds.
+      # The image's yarn hands off to .yarn/releases via yarnPath.
+      # skip-build skips every install script, as AGENTS.md's setup does;
+      # build:pkg builds the workspaces.
       - run:
           name: yarn install
+          environment:
+            YARN_ENABLE_GLOBAL_CACHE: "false"
           command: |
             yarn install --immutable --mode=skip-build
             yarn build:pkg
 
       - save_cache:
           paths:
-            - ~/.yarn/berry/cache
-          key: v7-dependencies-{{ checksum "yarn.lock" }}
+            - .yarn/cache
+          key: v8-dependencies-{{ checksum "yarn.lock" }}
+
+      # Later jobs only need node_modules
+      - run: rm -rf .yarn/cache
 
       - persist_to_workspace:
           root: ~/
@@ -77,7 +84,9 @@ jobs:
       - run:
           name: Build examples
           command: |
-            for pkg in $(circleci tests glob 'examples/*/package.json' | circleci tests split); do
+            pkgs=$(circleci tests glob 'examples/*/package.json' | circleci tests split)
+            [ -n "$pkgs" ] || { echo "No examples assigned to this node"; exit 1; }
+            for pkg in $pkgs; do
               (cd "$(dirname "$pkg")" && yarn run build)
             done
 
