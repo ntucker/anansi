@@ -66,7 +66,7 @@ In dev mode, if `react-refresh` is installed it will be enabled.
 
 TypeScript files (`.ts`, `.tsx`, `.mts`, `.cts`, etc) are supported by removing their typings to output
 javascript that node/browsers can understand.
-JSX is only parsed in `.tsx` files, so `.ts` files can use `<T>(x: T) => x` and `<T>value`.
+`.ts`, `.mts` and `.cts` files don't parse JSX, so they can use `<T>(x: T) => x` and `<T>value`.
 
 ## Future language support
 

@@ -85,6 +85,41 @@ describe('buildPreset', () => {
     ]);
   });
 
+  it('should reject the removed minify option', () => {
+    api.env.mockReturnValue('production');
+    expect(() => buildPreset(api, { minify: true })).toThrow(/minify/);
+  });
+
+  describe('developmentSourceSelf', () => {
+    function sourceSelfFor(reactVersion) {
+      const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'anansi-preset-'));
+      fs.mkdirSync(path.join(dir, 'node_modules/react'), { recursive: true });
+      fs.writeFileSync(
+        path.join(dir, 'node_modules/react/package.json'),
+        JSON.stringify({ name: 'react', version: reactVersion }),
+      );
+      jest.spyOn(process, 'cwd').mockReturnValue(dir);
+      try {
+        const reactOverride = buildPreset(api).overrides.find(o => o.presets);
+        return reactOverride.presets[0][1].developmentSourceSelf;
+      } finally {
+        fs.rmSync(dir, { recursive: true });
+      }
+    }
+
+    afterEach(() => jest.restoreAllMocks());
+
+    it.each([
+      ['18.3.1', true],
+      ['19.1.0', true],
+      ['19.2.0', false],
+      ['20.0.0', false],
+    ])('React %s => %s', (version, expected) => {
+      api.env.mockReturnValue('development');
+      expect(sourceSelfFor(version)).toBe(expected);
+    });
+  });
+
   describe('automatic polyfillMethod', () => {
     function polyfillMethodFor(pkg) {
       const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'anansi-preset-'));

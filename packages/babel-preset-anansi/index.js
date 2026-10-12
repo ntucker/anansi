@@ -345,6 +345,11 @@ function buildPreset(api, options = {}) {
   /*  block is at the end so they are unshifted to the start of plugins  */
   preset.plugins.unshift(require('babel-plugin-macros'));
 
+  if (options.minify) {
+    throw new Error(
+      '@anansi/babel-preset: minify was removed; minify with your bundler instead',
+    );
+  }
   if (
     typeof options.decoratorsOptions !== 'object' &&
     options.decoratorsOptions !== undefined
@@ -392,11 +397,15 @@ function buildPreset(api, options = {}) {
     {
       test: /\.(m|c)?(js|jsx)$/,
       plugins: [
+        // only js files, as typescript won't use react prop types
+        env === 'production' &&
+          !isLinaria &&
+          requireDefault('babel-plugin-transform-react-remove-prop-types'),
         // stage 1
         // typescript currently doesn't support this, so we're only supporting it for js files
         requireDefault('@babel/plugin-proposal-export-default-from'),
         ...classPlugins,
-      ],
+      ].filter(Boolean),
     },
     {
       // Babel 8's TypeScript plugin no longer turns off JSX parsing in .ts files, so
@@ -416,12 +425,6 @@ function buildPreset(api, options = {}) {
       ],
     },
   ];
-  if (env === 'production' && !isLinaria) {
-    // only add to js files as typescript won't use react prop types
-    preset.overrides[1].plugins.unshift(
-      requireDefault('babel-plugin-transform-react-remove-prop-types'),
-    );
-  }
 
   if (options.reactCompiler && env === 'production' && !isLinaria) {
     preset.plugins.unshift([
