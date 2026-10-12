@@ -23,24 +23,16 @@ describe('Linaria Integration with Webpack Loader', () => {
   let mfs;
 
   beforeEach(() => {
-    // Use a fixed tempDir path for deterministic test output
-    tempDir = path.join(os.tmpdir(), 'linaria-test-fixed');
-    if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir, { recursive: true });
-    }
+    // Unique per test so concurrent runs can't clobber each other's files;
+    // output stays deterministic because paths are relative to tempDir
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'linaria-test-'));
     mfs = new MemoryFS();
     process.env.NODE_ENV = 'development';
   });
 
   afterEach(() => {
     delete process.env.NODE_ENV;
-    // Clean up test files after each test
-    if (tempDir && fs.existsSync(tempDir)) {
-      const files = fs.readdirSync(tempDir);
-      for (const file of files) {
-        fs.rmSync(path.join(tempDir, file), { recursive: true, force: true });
-      }
-    }
+    fs.rmSync(tempDir, { recursive: true, force: true });
   });
 
   /**
