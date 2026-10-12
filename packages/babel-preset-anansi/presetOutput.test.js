@@ -154,6 +154,7 @@ describe('buildPreset', () => {
     ['18.3.1', true],
     ['19.1.0', true],
     ['19.2.0', false],
+    ['19.2.0-rc.1', false],
     ['20.0.0', false],
   ])('React %s => developmentSourceSelf %s', (version, expected) => {
     api.env.mockReturnValue('development');

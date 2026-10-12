@@ -34,7 +34,7 @@ export function generateBabelLoader({
       semver.gte(react.version, '18.0.0')
     : false;
   const developmentSourceSelf =
-    react ? semver.lt(react.version, '19.2.0') : false;
+    react ? semver.lt(semver.coerce(react.version), '19.2.0') : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
   const filename = path.join(cwd, 'noop.js');
   // Environment variables that affect babel output (see babel-preset-anansi)
