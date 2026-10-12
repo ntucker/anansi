@@ -104,8 +104,8 @@ transitions with `useShowLoading()`. Use the router's `lazy`, not
 The dev server (webpack-dev-server 6) compiles client and server in memory with
 hot reload and proxies per the webpack `devServer.proxy` config, ahead of SSR.
 Proxy entries follow http-proxy-middleware 4: scope each with `context` or
-`pathFilter` and give it a `target`, which `router` can override per request;
-`bypass` no longer exists. Custom `devServer.setupMiddlewares` run on Express 5,
+`pathFilter`, then set `target`, a `router` function that picks one per request,
+or both (`router` wins when it returns a target); `bypass` no longer exists. Custom `devServer.setupMiddlewares` run on Express 5,
 so wildcard routes need a name (`/{*splat}`, not `/*`).
 
 In production, prefer a CDN or reverse proxy over `-a` (serve assets) and `-p`
