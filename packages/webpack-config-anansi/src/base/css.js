@@ -1,8 +1,11 @@
-import autoprefixer from 'autoprefixer';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
-import cssPresetEnv from 'postcss-preset-env';
+import cssPresetEnvModule from 'postcss-preset-env';
 import { always } from 'ramda';
+
+// postcss-preset-env is ESM-only. Node's require(esm) returns its "module.exports"
+// export, but Jest returns the namespace, so unwrap `default` when present.
+const cssPresetEnv = cssPresetEnvModule.default ?? cssPresetEnvModule;
 
 const getCSSLoaders = ({ mode, target, cssExtractOptions }) => {
   const miniCssExtractPluginLoader = {
@@ -33,7 +36,7 @@ const getCSSLoaders = ({ mode, target, cssExtractOptions }) => {
       loader: require.resolve('postcss-loader'),
       options: {
         postcssOptions: {
-          plugins: [autoprefixer(), cssPresetEnv()],
+          plugins: [cssPresetEnv()], // includes autoprefixer
         },
       },
     },
