@@ -20,7 +20,7 @@ import WebpackDevServer from 'webpack-dev-server';
 import 'cross-fetch/dist/node-polyfill.js';
 import { createHybridRequire } from './createHybridRequire.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
-import { extractProxyRoutes } from './proxyUtils.js';
+import { insertSsrMiddleware } from './insertSsrMiddleware.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
 import { BoundRender } from './types.js';
 
@@ -215,32 +215,25 @@ export default async function startDevServer(
           throw new Error('webpack-dev-server is not defined');
         }
 
-        const otherRoutes = [
-          process.env.WEBPACK_PUBLIC_PATH,
-          ...extractProxyRoutes(webpackConfigs[0].devServer?.proxy),
-        ];
-        // serve SSR for non-WEBPACK_PUBLIC_PATH
-        devServer.app?.get(
-          new RegExp(`^(?!${otherRoutes.join('|')})`),
-          handleErrors(async function (req: any, res: any) {
-            if (req.url.endsWith('favicon.ico')) {
-              res.statusCode = 404;
-              res.setHeader('Content-type', 'text/html');
-              res.send('not found');
-              return;
+        const ssr = handleErrors(async function (req: any, res: any) {
+          if (req.url.endsWith('favicon.ico')) {
+            res.statusCode = 404;
+            res.setHeader('Content-type', 'text/html');
+            res.send('not found');
+            return;
+          }
+          res.socket.on('error', (error: unknown) => {
+            log.error('Fatal:', error);
+            if ((error as any).code === 'ECONNRESET') {
+              log.error(
+                'ECONNRESET is usually due to browser closing the connection',
+              );
             }
-            res.socket.on('error', (error: unknown) => {
-              log.error('Fatal:', error);
-              if ((error as any).code === 'ECONNRESET') {
-                log.error(
-                  'ECONNRESET is usually due to browser closing the connection',
-                );
-              }
-            });
+          });
 
-            await render(req, res);
-          }),
-        );
+          await render(req, res);
+        });
+        insertSsrMiddleware(middlewares, ssr, process.env.WEBPACK_PUBLIC_PATH);
 
         if (webpackConfigs[0].devServer?.setupMiddlewares) {
           return webpackConfigs[0].devServer.setupMiddlewares(
@@ -256,7 +249,7 @@ export default async function startDevServer(
   );
   const runServer = async () => {
     await devServer.start();
-    devServer.compiler.hooks.done.tap(
+    compiler.hooks.done.tap(
       'Anansi Server',
       (multiStats: webpack.MultiStats | webpack.Stats) => {
         if (!multiStats) {

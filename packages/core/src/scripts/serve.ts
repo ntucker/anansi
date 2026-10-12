@@ -158,7 +158,7 @@ export default async function serve(
     }
 
     wrappingApp.get(
-      '/*',
+      '/{*splat}',
       handleErrors(async function (req: any, res: any) {
         if (req.url.endsWith('favicon.ico')) {
           res.statusCode = 404;

@@ -46,6 +46,10 @@ function readEnvFile(file, type) {
   return fs.readFileSync(file);
 }
 
+// HTTP/1.1 over TLS on every webpack-dev-server version: 6.0.0 removed spdy,
+// and its http2 type crashes on the first request
+const TLS_SERVER_TYPE = 'https';
+
 // Get the https config
 // Return cert files if provided in env, otherwise just true or false
 export default function getHttpsConfig(rootPath) {
@@ -62,9 +66,9 @@ export default function getHttpsConfig(rootPath) {
 
     validateKeyAndCerts({ ...config, keyFile, crtFile });
     return {
-      type: 'spdy',
+      type: TLS_SERVER_TYPE,
       options: config,
     };
   }
-  return isHttps ? { type: 'spdy' } : 'http';
+  return isHttps ? { type: TLS_SERVER_TYPE } : 'http';
 }
