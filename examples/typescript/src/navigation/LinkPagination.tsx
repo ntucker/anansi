@@ -25,7 +25,7 @@ function LinkPagination({ link, history }: PageProps) {
     total = Number(parsed.last.page);
     pageSize = Number(parsed.last.per_page);
   } else {
-    pageSize = Number(parsed.first?.per_page);
+    pageSize = Number(parsed.first?.per_page ?? 50);
     total = curPage;
   }
   return (
