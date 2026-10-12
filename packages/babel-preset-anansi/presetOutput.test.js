@@ -136,6 +136,7 @@ describe('buildPreset', () => {
 
   it.each([
     [{ developmentSourceSelf: true }, {}, true],
+    [{ developmentSourceSelf: false }, {}, false],
     [{ developmentSourceSelf: true }, { developmentSourceSelf: false }, false],
   ])(
     'caller %j with options %j => developmentSourceSelf %s',
