@@ -37,7 +37,8 @@ defaults:
 - Imports: `tsConfigPath` applies tsconfig `paths`; `resolverRoot`,
   `resolverAlias` and `resolver` configure module-resolver; `~/` maps to
   `./src` (`rootPathSuffix`, `rootPathPrefix`).
-- `decoratorsOptions.version` defaults to `2023-11`.
+- `decoratorsOptions.version` is `2023-11` (default) or `legacy`; Babel 8
+  dropped the other proposal versions.
 
 ## Build scripts
 

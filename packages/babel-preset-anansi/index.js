@@ -29,7 +29,6 @@ options:
   modules,
   polyfillMethod,
   useBuiltIns,
-  minify,
   loose,
   tsConfigPath,
 */
@@ -93,7 +92,6 @@ function buildPreset(api, options = {}) {
   const explicitNodeTarget = !!options.nodeTarget;
 
   options = {
-    minify: false,
     rootPathSuffix: './src',
     rootPathPrefix: '~/',
     reactRequire: !hasJsxRuntime,
@@ -266,18 +264,7 @@ function buildPreset(api, options = {}) {
     envOptions.targets;
   const preset = {
     ...(options.loose ? { assumptions: LOOSE_ASSUMPTIONS } : {}),
-    presets: [
-      [
-        requireDefault('@babel/preset-react'),
-        {
-          development:
-            env === 'development' || (env !== 'production' && !hasJsxRuntime),
-          ...(hasJsxRuntime ?
-            { runtime: 'automatic' }
-          : { runtime: 'classic', useSpread: true }),
-        },
-      ],
-    ],
+    presets: [[requireDefault('@babel/preset-env'), envOptions]],
     plugins: [
       (Object.keys(options.resolver.alias).length ||
         options.resolver.root.length ||
@@ -355,16 +342,6 @@ function buildPreset(api, options = {}) {
       break;
   }
 
-  preset.presets.unshift([requireDefault('@babel/preset-env'), envOptions]);
-
-  if (options.minify && env === 'production' && !isLinaria) {
-    try {
-      preset.presets.unshift(require('babel-minify'));
-    } catch (e) {
-      console.log('Minify enabled, but babel-minify not installed.');
-    }
-  }
-
   /*  block is at the end so they are unshifted to the start of plugins  */
   preset.plugins.unshift(require('babel-plugin-macros'));
 
@@ -377,9 +354,6 @@ function buildPreset(api, options = {}) {
   const decoratorsOptions = options.decoratorsOptions || {
     version: '2023-11',
   };
-  if (decoratorsOptions.version === '2018-09') {
-    decoratorsOptions.decoratorsBeforeExport = true;
-  }
 
   const classPlugins = [
     // stage 3, but must come before class-properties when legacy is used (see block below)
@@ -387,43 +361,33 @@ function buildPreset(api, options = {}) {
   ];
 
   // compatibility (see: https://babeljs.io/docs/babel-plugin-proposal-decorators#note-compatibility-with-babelplugin-transform-class-properties)
+  // `loose` reaches these through LOOSE_ASSUMPTIONS; Babel 8 deprecates their own `loose` option
   if (decoratorsOptions.version === 'legacy') {
-    const legacyClassFeatureOptions =
-      options.loose === undefined ? {} : { loose: options.loose };
     // this is included in preset-env, but must come before class-properties
     classPlugins.push(
       requireDefault('@babel/plugin-transform-class-static-block'),
     );
     // stage 3 but must come before flow
-    classPlugins.push([
+    classPlugins.push(
       requireDefault('@babel/plugin-transform-class-properties'),
-      legacyClassFeatureOptions,
-    ]);
+    );
     // this is included in preset-env, but must come after typescript, and after other class transforms
-    classPlugins.push([
+    classPlugins.push(
       requireDefault('@babel/plugin-transform-private-methods'),
-      legacyClassFeatureOptions,
-    ]);
+    );
   }
 
-  // using plugin so it can be placed before class transforms
-  const transformTypeScript = requireDefault(
-    '@babel/plugin-transform-typescript',
-  );
-  const pluginOptions = isTSX => ({
-    isTSX,
-    allowDeclareFields: true,
-    allowNamespaces: true,
-    optimizeConstEnums: true,
-  });
   preset.overrides = [
     {
-      test: /\.(m|c)?ts$/,
-      plugins: [[transformTypeScript, pluginOptions(false)], ...classPlugins],
-    },
-    {
-      test: /\.(m|c)?tsx$/,
-      plugins: [[transformTypeScript, pluginOptions(true)], ...classPlugins],
+      // using plugin so it can be placed before class transforms
+      test: /\.(m|c)?tsx?$/,
+      plugins: [
+        [
+          requireDefault('@babel/plugin-transform-typescript'),
+          { optimizeConstEnums: true },
+        ],
+        ...classPlugins,
+      ],
     },
     {
       test: /\.(m|c)?(js|jsx)$/,
@@ -434,10 +398,27 @@ function buildPreset(api, options = {}) {
         ...classPlugins,
       ],
     },
+    {
+      // Babel 8's TypeScript plugin no longer turns off JSX parsing in .ts files, so
+      // `<T>(x: T) => x` and `<T>value` would parse as JSX there
+      exclude: /\.(m|c)?ts$/,
+      presets: [
+        [
+          requireDefault('@babel/preset-react'),
+          {
+            development:
+              env === 'development' || (env !== 'production' && !hasJsxRuntime),
+            runtime: hasJsxRuntime ? 'automatic' : 'classic',
+            // React 19.2 dropped jsxDEV's source/self params, so Babel 8 stopped emitting them
+            developmentSourceSelf: reactBefore192(),
+          },
+        ],
+      ],
+    },
   ];
   if (env === 'production' && !isLinaria) {
     // only add to js files as typescript won't use react prop types
-    preset.overrides[2].plugins.unshift(
+    preset.overrides[1].plugins.unshift(
       requireDefault('babel-plugin-transform-react-remove-prop-types'),
     );
   }
@@ -555,6 +536,19 @@ function getPolyfillMethodAuto(
     }
   }
   return false;
+}
+
+function reactBefore192() {
+  try {
+    const [major, minor] = nativeRequire(
+      nativeRequire.resolve('react/package.json', { paths: [process.cwd()] }),
+    )
+      .version.split('.')
+      .map(Number);
+    return major < 19 || (major === 19 && minor < 2);
+  } catch {
+    return false;
+  }
 }
 
 function callerCouldTargetWeb(target) {

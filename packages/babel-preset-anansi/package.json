@@ -79,7 +79,6 @@
     "@babel/core": "^8.0.0",
     "@babel/runtime": "^8.0.0",
     "@babel/runtime-corejs3": "^8.0.0",
-    "babel-minify": "^0.5.1",
     "core-js": "*",
     "core-js-pure": "*",
     "lodash": "*",
@@ -92,9 +91,6 @@
       "optional": true
     },
     "@babel/runtime-corejs3": {
-      "optional": true
-    },
-    "babel-minify": {
       "optional": true
     },
     "core-js": {

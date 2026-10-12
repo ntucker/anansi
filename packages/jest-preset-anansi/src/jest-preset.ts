@@ -17,7 +17,7 @@ try {
 } catch (e) {}
 const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
 
-const babelConfig: _babel.TransformOptions = {
+const babelConfig: _babel.InputOptions = {
   caller: { hasJsxRuntime, noHotReload: true, target: 'node' } as any,
 };
 if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
