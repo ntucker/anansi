@@ -10,7 +10,7 @@ const options = {
   basePath: 'src', // source root; also the root for bare imports
   buildDir: 'dist/', // prod client output (default generated_assets/)
   serverDir: 'dist-server/', // --target=node output (default server_assets/)
-  htmlOptions: { title: 'My App' }, // SPA: emit index.html (omit for SSR)
+  htmlOptions: { title: 'My App' }, // index.html; false to skip (SSR)
 };
 
 const generateConfig = makeConfig(options);
@@ -49,9 +49,11 @@ style, svg and worker imports typecheck.
   symlinked into `node_modules`; set both.
 - `tsconfigPathsOptions` (on by default): tsconfig `paths` aliases such as
   `@/*` resolve in webpack.
-- `inJSOptions` (Linaria via wyw-in-js), `svgrOptions`, `svgoOptions`,
+- `htmlOptions`, `sassOptions`, `inJSOptions` (Linaria via wyw-in-js),
+  `cssExtractOptions`, `tsconfigPathsOptions` and `globalStyleDir` take
+  `false` to disable. Also: `svgrOptions`, `svgoOptions`,
   `terserOptions`, `cssExtractOptions`, `babelLoader`, `fontPreload`,
-  `nohash`, `library`, `pkg`. Pass `false` to disable most features.
+  `nohash`, `library`, `pkg`.
 
 ## CLI flags and env
 

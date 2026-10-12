@@ -12,10 +12,13 @@ The preset is Babel 8-first, handles TypeScript by stripping types (run `tsc`
 separately for `.d.ts` and type checking), and reads its caller to pick
 defaults:
 
-- Library build (`@babel/cli`, `@rollup/plugin-babel`, or caller
-  `library: true`): polyfills default to `usage-pure`, which never touches
-  globals.
-- App build: `entry-global` when `core-js` is installed, else no polyfills.
+- Polyfills default from what's installed. Apps with `core-js` get
+  `usage-global` (`entry-global` without `@babel/runtime`). Library builds
+  (`@babel/cli`, `@rollup/plugin-babel`, or caller `library: true`) and apps
+  that depend on `core-js-pure` instead of `core-js` get `usage-pure`, which
+  never touches globals, when `core-js-pure` and `@babel/runtime-corejs3` are
+  installed. Otherwise no polyfills. Set `polyfillMethod` explicitly when it
+  matters.
 - webpack `--target=node` and jest target the current node.
 
 ## Options agents reach for
@@ -29,8 +32,9 @@ defaults:
 - Targets: use top-level `targets` or a browserslist config
   (`extends @anansi/browserslist-config`). `nodeTarget` and preset-level
   `targets` are deprecated.
-- `loose` only affects class features and legacy decorators; use top-level
-  `assumptions` for everything else.
+- `loose: true` turns on a broad set of top-level `assumptions` (spread,
+  rest, class fields, template objects and more). Prefer listing the
+  `assumptions` you want.
 - `reactCompiler: {}` enables React Compiler in production (React 19+).
 - `hasJsxRuntime` defaults to true; set false only for React <=16.13.
 - Imports: `tsConfigPath` applies tsconfig `paths`; `resolverRoot`,

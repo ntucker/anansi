@@ -31,8 +31,9 @@ Set these at the top of `jest.config.js` (jest presets can't take options):
 
 - `ANANSI_JEST_TSCONFIG` (default `tsconfig.json`): use a test tsconfig such as
   `tsconfig.test.json`.
-- `ANANSI_JEST_BABELCONFIG` (default `true`, auto-detect): a path such as
-  `babel.config.js` turns on `rootMode: 'upward'`, which monorepos usually need.
+- `ANANSI_JEST_BABELCONFIG` (default `true`, auto-detect): exactly
+  `babel.config.js` turns on `rootMode: 'upward'`, which monorepos usually
+  need; any other value is used as the babel `configFile`.
 - `ANANSI_JEST_TYPECHECK=false` skips type checking in jest to save memory;
   run `tsc --noEmit` separately so types are still checked once.
 
