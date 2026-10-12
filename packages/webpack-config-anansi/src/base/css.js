@@ -69,7 +69,7 @@ export default function getStyleRules({
   libraryInclude = always(false),
   libraryExclude = always(false),
   cssModulesOptions = {},
-  sassOptions = { outputStyle: 'expanded' },
+  sassOptions = {},
   sassResources,
   globalStyleDir,
   mode,
@@ -96,23 +96,24 @@ export default function getStyleRules({
     }
     return loader;
   });
-  // we don't need to find it if they specified the directory
-  let foundSass = sassOptions?.implementation;
-  try {
-    if (!foundSass)
-      foundSass = require.resolve('sass') || require.resolve('sass-embedded');
-  } catch {
-    foundSass = sassOptions?.implementation;
-    if (sassOptions !== false) {
-      console.warn(
-        '`sass` or `sass-embedded` packages not found. SASS cannot be used.',
-      );
-    }
+  // sass-loader picks the implementation; we only check one is installed
+  const sassEnabled =
+    sassOptions !== false &&
+    ['sass-embedded', 'sass'].some(name => {
+      try {
+        require.resolve(name);
+        return true;
+      } catch {
+        return false;
+      }
+    });
+  if (sassOptions !== false && !sassEnabled) {
+    console.warn(
+      '`sass` or `sass-embedded` packages not found. SASS cannot be used.',
+    );
   }
   const sassLoaders =
-    sassOptions === false || !foundSass ?
-      []
-    : getSASSLoaders({ sassResources, sassOptions });
+    sassEnabled ? getSASSLoaders({ sassResources, sassOptions }) : [];
   const excludeCSSProcess = [libraryExclude];
 
   // global styles

@@ -2,7 +2,7 @@ import type { TransformOptions } from '@babel/core';
 import type { LoaderOptions as WYWOptions } from '@wyw-in-js/webpack-loader';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
-import type { Options as SassOptions } from 'sass-loader';
+import type { LoaderOptions as SassLoaderOptions } from 'sass-loader';
 import type { Config as OptimizeOptions } from 'svgo';
 import type { Options as TsconfigPathsOptions } from 'tsconfig-paths-webpack-plugin/lib/options';
 import type {
@@ -43,7 +43,8 @@ export interface Options {
   cssExtractOptions?: MiniCssExtractPluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
   globalStyleDir?: string | false;
-  sassOptions?: SassOptions | false;
+  /** Passed to sass-loader's `sassOptions` (Sass compiler options) */
+  sassOptions?: SassLoaderOptions['sassOptions'] | false;
   sassResources?: string[];
   cssModulesOptions?: any;
   fontPreload?: 'preload' | 'prefetch';

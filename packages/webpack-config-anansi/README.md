@@ -20,10 +20,10 @@ or
 npm install --save-dev webpack webpack-cli webpack-dev-server react-refresh @anansi/webpack-config
 ```
 
-If using sass, be sure to install it as well
+If using sass, be sure to install it as well. `sass-embedded` compiles fastest; `sass` also works.
 
 ```bash
-yarn add --dev sass
+yarn add --dev sass-embedded
 ```
 
 ## Configuration
@@ -563,28 +563,11 @@ Used to customize [terser](https://github.com/webpack-contrib/terser-webpack-plu
 
 `false` disables sass altogether.
 
-Otherwise, these [configure the sass-loader](https://github.com/webpack-contrib/sass-loader#options)
+Otherwise, these are [Sass compiler options](https://sass-lang.com/documentation/js-api/interfaces/options/),
+passed as sass-loader's [sassOptions](https://github.com/webpack/sass-loader#sassoptions).
 
-For instance, using sass-embedded can be done like so:
-
-<details><summary><b>/webpack.config.js</b></summary>
-
-```javascript
-const { makeConfig } = require('@anansi/webpack-config');
-
-// See #options below
-const options = {
-  sassOptions: {
-    implementation: require("sass-embedded"),
-  }
-};
-
-module.exports = { options };
-
-module.exports = makeConfig(options);
-```
-
-</details>
+sass-loader uses `sass-embedded` when it is installed, otherwise `sass`, and reuses one long-running
+compiler across files.
 
 ### sassResources
 

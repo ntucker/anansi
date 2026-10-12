@@ -27,11 +27,32 @@ describe('makeConfig', () => {
       rule.use?.some(use => use.loader?.includes('svgo-loader')),
     );
 
-  const getSvgrOptions = config =>
+  const findOneOfLoader = (config, name) =>
     config.module.rules
       .flatMap(rule => rule.oneOf ?? [])
       .flatMap(rule => rule.use ?? [])
-      .find(use => use.loader?.includes('@svgr'))?.options;
+      .find(use => use.loader?.includes(name));
+
+  const getSvgrOptions = config => findOneOfLoader(config, '@svgr')?.options;
+
+  it('should pass sassOptions to sass-loader', () => {
+    const sassOptions = { style: 'expanded' };
+    const config = makeConfig({ ...defaultTestOptions, sassOptions })(
+      {},
+      { mode: 'development' },
+    );
+    expect(findOneOfLoader(config, 'sass-loader').options).toEqual({
+      sassOptions,
+    });
+  });
+
+  it('should skip sass-loader when sassOptions is false', () => {
+    const config = makeConfig({ ...defaultTestOptions, sassOptions: false })(
+      {},
+      { mode: 'development' },
+    );
+    expect(findOneOfLoader(config, 'sass-loader')).toBeUndefined();
+  });
 
   it('should create a config function', () => {
     const configFn = makeConfig(defaultTestOptions);
