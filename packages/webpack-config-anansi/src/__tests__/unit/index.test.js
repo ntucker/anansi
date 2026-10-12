@@ -33,6 +33,29 @@ describe('makeConfig', () => {
       .flatMap(rule => rule.use ?? [])
       .find(use => use.loader?.includes('@svgr'))?.options;
 
+  const getSassLoader = config =>
+    config.module.rules
+      .flatMap(rule => rule.oneOf ?? [])
+      .flatMap(rule => rule.use ?? [])
+      .find(use => use.loader?.includes('sass-loader'));
+
+  it('should pass sassOptions to sass-loader', () => {
+    const sassOptions = { style: 'expanded' };
+    const config = makeConfig({ ...defaultTestOptions, sassOptions })(
+      {},
+      { mode: 'development' },
+    );
+    expect(getSassLoader(config).options).toEqual({ sassOptions });
+  });
+
+  it('should skip sass-loader when sassOptions is false', () => {
+    const config = makeConfig({ ...defaultTestOptions, sassOptions: false })(
+      {},
+      { mode: 'development' },
+    );
+    expect(getSassLoader(config)).toBeUndefined();
+  });
+
   it('should create a config function', () => {
     const configFn = makeConfig(defaultTestOptions);
     expect(typeof configFn).toBe('function');

@@ -97,7 +97,7 @@ export default function getStyleRules({
     return loader;
   });
   // sass-loader picks the implementation; we only check one is installed
-  const foundSass =
+  const sassInstalled =
     sassOptions !== false &&
     ['sass-embedded', 'sass'].some(name => {
       try {
@@ -107,13 +107,13 @@ export default function getStyleRules({
         return false;
       }
     });
-  if (sassOptions !== false && !foundSass) {
+  if (sassOptions !== false && !sassInstalled) {
     console.warn(
       '`sass` or `sass-embedded` packages not found. SASS cannot be used.',
     );
   }
   const sassLoaders =
-    foundSass ? getSASSLoaders({ sassResources, sassOptions }) : [];
+    sassInstalled ? getSASSLoaders({ sassResources, sassOptions }) : [];
   const excludeCSSProcess = [libraryExclude];
 
   // global styles
