@@ -18,6 +18,8 @@ import {
   appSpout,
 } from '@anansi/core';
 
+import { createRouter } from './routing'; // see Routing below
+
 floodSpouts(
   documentSpout({ title: 'My App' })(
     JSONSpout()(
