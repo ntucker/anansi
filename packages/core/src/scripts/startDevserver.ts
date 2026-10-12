@@ -256,7 +256,7 @@ export default async function startDevServer(
   );
   const runServer = async () => {
     await devServer.start();
-    devServer.compiler.hooks.done.tap(
+    compiler.hooks.done.tap(
       'Anansi Server',
       (multiStats: webpack.MultiStats | webpack.Stats) => {
         if (!multiStats) {

@@ -44,8 +44,8 @@
     "react-refresh": "0.18.0",
     "typescript": "6.0.3",
     "webpack": "5.107.2",
-    "webpack-cli": "7.0.3",
-    "webpack-dev-server": "5.2.6"
+    "webpack-cli": "7.2.3",
+    "webpack-dev-server": "6.0.0"
   },
   "dependencies": {
     "@anansi/core": "^0.22.12",

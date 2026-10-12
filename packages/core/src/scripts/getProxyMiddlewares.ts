@@ -1,4 +1,4 @@
-import { Filter, legacyCreateProxyMiddleware } from 'http-proxy-middleware';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 import {
   RequestHandler,
   ProxyConfigArray,
@@ -8,24 +8,21 @@ import {
   ProxyConfigArrayItem,
 } from 'webpack-dev-server';
 
-// Essentially taken from https://github.com/webpack/webpack-dev-server/blob/3096148746c906105c4424352f5b5ad1bff0fd4f/lib/Server.js#L2099
-// we just removed the 'bypass' deprecation warnings and converted to typescript
+// Essentially taken from https://github.com/webpack/webpack-dev-server/blob/v6.0.0/lib/Server.js
+// (proxy section), converted to typescript so serve-anansi applies the same proxy config
 export default function getProxyMiddlewares(proxyConfig: ProxyConfigArray) {
   const middlewares: any[] = [];
 
   const getProxyMiddleware = (
     proxyConfig: ProxyConfigArrayItem,
   ): RequestHandler | undefined => {
-    // It is possible to use the `bypass` method without a `target` or `router`.
-    // However, the proxy middleware has no use in this case, and will fail to instantiate.
-    if (proxyConfig.target) {
-      const context: Filter = proxyConfig.context || (proxyConfig.path as any);
-
-      return legacyCreateProxyMiddleware(context, proxyConfig);
-    }
-
-    if (proxyConfig.router) {
-      return legacyCreateProxyMiddleware(proxyConfig);
+    // the proxy middleware fails to instantiate without a `target` or `router`
+    if (proxyConfig.target || proxyConfig.router) {
+      return createProxyMiddleware({
+        ...proxyConfig,
+        pathFilter:
+          proxyConfig.context || proxyConfig.path || proxyConfig.pathFilter,
+      });
     }
   };
 
