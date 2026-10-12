@@ -49,10 +49,6 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: yarn workspaces foreach -Wv run test:ci --passWithNoTests
-      # only run coverage if repo token is available (so third parties don't fail the build)
-      - run:
-          name: coverage
-          command: 'if [ "$COVERALLS_REPO_TOKEN" != "" ]; then yarn run test:coverage --coverageReporters=text-lcov | yarn run coveralls; fi'
 
   lint:
     docker: *docker
