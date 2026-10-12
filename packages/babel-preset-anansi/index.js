@@ -525,6 +525,7 @@ function getPolyfillMethodAuto(
         try {
           const pkg = require(`${cwd}/package.json`);
           // when explicitly marked as dep, make pure a priority
+          // (per field: core-js in a different field doesn't count)
           if (
             ['dependencies', 'peerDependencies', 'devDependencies'].some(
               field => {
