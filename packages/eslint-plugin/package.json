@@ -18,7 +18,8 @@
     "index.js",
     "base.js",
     "typescript.js",
-    "isInstalled.cjs"
+    "isInstalled.cjs",
+    "guide.md"
   ],
   "type": "module",
   "author": "Nathaniel Tucker",

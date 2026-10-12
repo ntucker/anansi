@@ -3,14 +3,7 @@
 ```js
 // babel.config.js (or .babelrc.js)
 module.exports = {
-  presets: [
-    [
-      '@anansi',
-      {
-        /* options */
-      },
-    ],
-  ],
+  presets: ['@anansi'], // or [['@anansi', { ...options }]]
   assumptions: { noDocumentAll: true, noClassCalls: true, pureGetters: true },
 };
 ```

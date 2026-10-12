@@ -23,7 +23,8 @@
     "dist",
     "server.d.ts",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "guide.md"
   ],
   "bin": {
     "serve-anansi": "./lib/scripts/serve.js",

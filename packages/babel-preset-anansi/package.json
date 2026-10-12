@@ -21,7 +21,8 @@
     "jsx transform"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "guide.md"
   ],
   "author": "Nathaniel Tucker",
   "license": "BSD-3-Clause",

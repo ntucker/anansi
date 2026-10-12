@@ -28,7 +28,7 @@
     "run.mjs",
     "check-version.mjs",
     "postinstall.mjs",
-    "guides"
+    "guide.md"
   ],
   "bin": {
     "anansi": "./run.mjs"

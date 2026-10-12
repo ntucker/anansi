@@ -51,13 +51,7 @@ This creates a `my-app-name` directory in your current directory and sets up the
 
 ## AI agents
 
-Add this to your project's `AGENTS.md` (or `CLAUDE.md`) so coding agents learn anansi from the installed version:
-
-```md
-When using Anansi:
-- run `npx @anansi/cli guide` to learn it, then `npx @anansi/cli guide <topic>` for the area you're changing
-- extend the @anansi configs (webpack, babel, jest, eslint) instead of replacing them
-```
+Coding agents can run `npx @anansi/cli guide` to learn anansi from the versions installed in your project. See [the AGENTS.md snippet](packages/cli/README.md#ai-agents).
 
 ## Updates
 

@@ -19,7 +19,8 @@
   },
   "files": [
     "jest-preset.js",
-    "lib"
+    "lib",
+    "guide.md"
   ],
   "main": "lib/jest-preset.js",
   "keywords": [

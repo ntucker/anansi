@@ -10,7 +10,7 @@ import globals from 'globals';
 export default [
   ...anansiPlugin.configs.typescript, // or .javascript for JS-only projects
   { languageOptions: { globals: { ...globals.browser } } },
-  { ignores: ['dist', 'lib'] },
+  { ignores: ['dist', 'lib', 'generated_assets', 'server_assets'] },
 ];
 ```
 
@@ -21,5 +21,3 @@ export default [
 - Prettier runs as the `prettier/prettier` lint rule, so formatting problems
   show up as lint errors. Fix them with `eslint --fix` (or prettier) rather
   than disabling the rule or adding stylistic rules that fight it.
-- Put every build output dir (`dist`, `lib`, `generated_assets`,
-  `server_assets`) in `ignores`.
