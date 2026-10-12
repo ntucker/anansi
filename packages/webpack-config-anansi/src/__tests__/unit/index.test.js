@@ -22,6 +22,17 @@ describe('makeConfig', () => {
   // Default options that disable tsconfigPaths to avoid requiring tsconfig.json in tests
   const defaultTestOptions = { tsconfigPathsOptions: false };
 
+  const getSvgoRule = config =>
+    config.module.rules.find(rule =>
+      rule.use?.some(use => use.loader?.includes('svgo-loader')),
+    );
+
+  const getSvgrOptions = config =>
+    config.module.rules
+      .flatMap(rule => rule.oneOf ?? [])
+      .flatMap(rule => rule.use ?? [])
+      .find(use => use.loader?.includes('@svgr'))?.options;
+
   it('should create a config function', () => {
     const configFn = makeConfig(defaultTestOptions);
     expect(typeof configFn).toBe('function');
@@ -275,11 +286,6 @@ describe('makeConfig', () => {
     });
 
     describe('svgoOptions', () => {
-      const getSvgoRule = config =>
-        config.module.rules.find(rule =>
-          rule.use?.some(use => use.loader?.includes('svgo-loader')),
-        );
-
       it('should run svgo in production by default', () => {
         const configFn = makeConfig(defaultTestOptions);
         const config = configFn({}, { mode: 'production' });
@@ -296,12 +302,6 @@ describe('makeConfig', () => {
 
         expect(getSvgoRule(config)).toBeUndefined();
       });
-
-      const getSvgrOptions = config =>
-        config.module.rules
-          .flatMap(rule => rule.oneOf ?? [])
-          .flatMap(rule => rule.use ?? [])
-          .find(use => use.loader?.includes('@svgr'))?.options;
 
       it('should pass merged svgoOptions to SVGR by default', () => {
         const configFn = makeConfig(defaultTestOptions);
@@ -486,13 +486,7 @@ describe('makeConfig', () => {
       expect(config.module.rules).toBeDefined();
 
       // Find the svgo-loader rule in production mode
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
-      );
+      const svgoRule = getSvgoRule(config);
 
       if (svgoRule) {
         expect(svgoRule.use[0].options).toBeDefined();
@@ -529,13 +523,7 @@ describe('makeConfig', () => {
       const config = configFn({}, { mode: 'production' });
 
       // Get the SVGO options from the config
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
-      );
+      const svgoRule = getSvgoRule(config);
 
       if (!svgoRule) {
         // SVGO loader might not be present if svgoOptions is false
@@ -585,13 +573,7 @@ describe('makeConfig', () => {
       });
       const config = configFn({}, { mode: 'production' });
 
-      const svgoRule = config.module.rules.find(
-        rule =>
-          rule.use &&
-          rule.use.some(
-            loader => loader.loader && loader.loader.includes('svgo-loader'),
-          ),
-      );
+      const svgoRule = getSvgoRule(config);
 
       if (svgoRule) {
         const svgoOptions = svgoRule.use[0].options;

@@ -228,6 +228,7 @@ export default function makeBaseConfig({
                 {
                   loader: require.resolve('@svgr/webpack'),
                   options: {
+                    // SVGR treats svgoConfig: false as unset and runs SVGO anyway
                     ...(svgoOptions === false ?
                       { svgo: false }
                     : { svgoConfig: svgoOptions }),
