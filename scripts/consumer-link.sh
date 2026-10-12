@@ -16,9 +16,15 @@
 set -euo pipefail
 
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CONSUMER_DIR="$(cd "${2:-${CONSUMER_DIR:-$ANANSI_DIR/../data-client}}" && pwd)"
+CONSUMER_ARG="${2:-${CONSUMER_DIR:-$ANANSI_DIR/../data-client}}"
 PACK_DIR="${PACK_DIR:-$ANANSI_DIR/node_modules/.cache/consumer-link/packs}"
-BACKUP_DIR="$CONSUMER_DIR/node_modules/.anansi-link"
+
+# Only the consumer subcommands need the consumer. Its pristine manifests are
+# kept in its git dir, which survives wiping node_modules and is never committed
+resolve_consumer() {
+  CONSUMER_DIR="$(cd "$CONSUMER_ARG" && pwd)"
+  BACKUP_DIR="$(git -C "$CONSUMER_DIR" rev-parse --absolute-git-dir)/anansi-link"
+}
 
 # Build caches (babel-loader, Rspack/webpack, Jest) key on package versions,
 # which packing leaves unchanged, so they'd keep serving the previous build
@@ -37,6 +43,7 @@ pack() {
 }
 
 link() {
+  resolve_consumer
   pack
   cd "$CONSUMER_DIR"
   if [[ ! -d "$BACKUP_DIR" ]]; then
@@ -67,6 +74,7 @@ link() {
 }
 
 unlink() {
+  resolve_consumer
   cd "$CONSUMER_DIR"
   if [[ ! -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is not linked."
@@ -79,6 +87,7 @@ unlink() {
 }
 
 status() {
+  resolve_consumer
   cd "$CONSUMER_DIR"
   if [[ -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is linked to:"
