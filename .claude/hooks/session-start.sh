@@ -38,7 +38,9 @@ if ! (cd "$ANANSI_DIR" && yarn --version >/dev/null 2>&1); then
 fi
 
 cd "$ANANSI_DIR"
-yarn install
+# build:pkg does everything the workspaces' install scripts would (husky and
+# yo pre-caching aside), so none need to run
+yarn install --mode=skip-build
 yarn build:pkg
 
 if [ -f "$ANANSI_DIR/../data-client/package.json" ]; then
