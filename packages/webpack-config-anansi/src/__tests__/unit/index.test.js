@@ -290,7 +290,10 @@ describe('makeConfig', () => {
         const configFn = makeConfig(defaultTestOptions);
         const config = configFn({}, { mode: 'production' });
 
-        expect(getSvgoRule(config)).toBeDefined();
+        const svgoRule = getSvgoRule(config);
+        expect(svgoRule).toBeDefined();
+        // SVGR optimizes JS/TS imports, so svgo-loader skips them
+        expect(svgoRule.issuer.not[0].test('icon.tsx')).toBe(true);
       });
 
       it('should not run svgo when svgoOptions is false', () => {
@@ -321,6 +324,24 @@ describe('makeConfig', () => {
         expect(options.svgo).toBe(false);
         expect(options).not.toHaveProperty('svgoConfig');
       });
+    });
+
+    it('should drop SVGR, keep the file URL and svgo JS imports when svgrOptions is false', () => {
+      const configFn = makeConfig({
+        ...defaultTestOptions,
+        svgrOptions: false,
+      });
+      const config = configFn({}, { mode: 'production' });
+
+      expect(getSvgrOptions(config)).toBeUndefined();
+      const jsSvgRule = config.module.rules
+        .flatMap(rule => rule.oneOf ?? [])
+        .find(rule => rule.issuer?.test('icon.tsx'));
+      expect(jsSvgRule.use.map(use => use.loader)).toEqual([
+        expect.stringContaining('file-loader'),
+      ]);
+      // without SVGR, svgo-loader must cover JS/TS imports too
+      expect(getSvgoRule(config).issuer).toBeUndefined();
     });
 
     it('should have asset loaders for images', () => {

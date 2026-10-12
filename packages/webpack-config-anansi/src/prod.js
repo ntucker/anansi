@@ -27,6 +27,7 @@ export default function makeProdConfig(
     globalStyleDir,
     fontPreload,
     svgoOptions,
+    svgrOptions,
     nohash,
     cssExtractOptions,
   },
@@ -71,9 +72,8 @@ export default function makeProdConfig(
   if (svgoOptions !== false) {
     config.module.rules.push({
       test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-      issuer: {
-        not: [/\.(j|t)sx?$/],
-      },
+      // unless disabled, SVGR (base/index.js) runs SVGO on JS/TS imports
+      ...(svgrOptions !== false && { issuer: { not: [/\.(j|t)sx?$/] } }),
       enforce: 'pre',
       use: [
         {
