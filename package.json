@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "postinstall": "husky && yarn workspace \"@anansi/webpack-config\" run build",
-    "changelog": "run lerna version",
+    "changelog": "run lerna version --no-private",
     "release": "yarn workspaces foreach -Wtiv --no-private npm publish --access public --tolerate-republish",
     "build": "yarn workspaces foreach -Wt --no-private run build",
     "dev": "yarn workspaces foreach -Wpi --no-private run dev",
