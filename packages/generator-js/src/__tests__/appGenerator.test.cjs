@@ -331,19 +331,27 @@ describe('App generator', () => {
 describe('License generator', () => {
   const LICENSE_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/license');
 
-  async function readLicense(options) {
+  async function readLicense(options, gitUser = {}) {
     const helpers = await getYeomanTest();
     const result = await helpers
       .run(LICENSE_ENTRY)
       .withOptions(options)
       .withPrompts({ license: 'MIT' })
       .onGenerator(generator => {
-        // Simulate a machine with no git identity configured
+        // Stub git so the machine's own identity can't leak in; `git` is a
+        // getter-only accessor, so shadow it rather than assign
         Object.defineProperty(generator, 'git', {
-          value: { name: async () => undefined, email: async () => undefined },
+          value: {
+            name: async () => gitUser.name,
+            email: async () => gitUser.email,
+          },
         });
       });
-    return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
+    try {
+      return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
+    } finally {
+      result.cleanup();
+    }
   }
 
   it('writes the author from name, email and website', async () => {
@@ -353,6 +361,14 @@ describe('License generator', () => {
       website: 'https://ada.dev',
     });
     expect(license).toContain('Ada <ada@example.com> (https://ada.dev)');
+  });
+
+  it('falls back to the git identity', async () => {
+    const license = await readLicense(
+      {},
+      { name: 'Grace', email: 'grace@example.com' },
+    );
+    expect(license).toContain('Grace <grace@example.com>');
   });
 
   it('omits the holder when git has no identity configured', async () => {
