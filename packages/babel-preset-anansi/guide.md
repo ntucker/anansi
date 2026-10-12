@@ -13,8 +13,9 @@ separately for `.d.ts` and type checking), and reads its caller to pick
 defaults:
 
 - `polyfillMethod` defaults from your `core-js`, `core-js-pure` and
-  `@babel/runtime` setup (rules: this package's README, `polyfillMethod`). Set it explicitly;
-  `usage-pure` never touches globals, so prefer it for libraries.
+  `@babel/runtime` setup; this package's README (`polyfillMethod`) has the
+  rules. Set it explicitly; `usage-pure` never touches globals, so prefer it
+  for libraries.
 - webpack `--target=node` and jest target the current node.
 
 ## Options agents reach for
