@@ -1,11 +1,7 @@
 const { beforeAll, describe, expect, it } = require('@jest/globals');
-const { execFile } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
-const { promisify } = require('node:util');
 const assert = require('yeoman-assert');
-
-const execFileAsync = promisify(execFile);
 
 function findPackageRoot(start) {
   let dir = start;
@@ -30,28 +26,9 @@ function findPackageRoot(start) {
 }
 
 const PACKAGE_ROOT = findPackageRoot(process.cwd());
-const REPO_ROOT = path.resolve(PACKAGE_ROOT, '..', '..');
 const GENERATOR_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/app');
 
-let buildPromise;
 let helpersPromise;
-
-async function ensureGeneratorBuilt() {
-  if (!buildPromise) {
-    buildPromise = execFileAsync(
-      'yarn',
-      ['workspace', '@anansi/generator-js', 'build'],
-      {
-        cwd: REPO_ROOT,
-        env: {
-          ...process.env,
-          NODE_ENV: 'production',
-        },
-      },
-    ).then(() => undefined);
-  }
-  await buildPromise;
-}
 
 async function getYeomanTest() {
   helpersPromise ??= import('yeoman-test').then(module => module.default);
@@ -69,7 +46,6 @@ function withinDirectory(dir, assertions) {
 }
 
 async function runAppGenerator({ appName, prompts, options = {} }) {
-  await ensureGeneratorBuilt();
   const helpers = await getYeomanTest();
   const promptAnswers = { license: 'MIT', ...prompts };
   return helpers

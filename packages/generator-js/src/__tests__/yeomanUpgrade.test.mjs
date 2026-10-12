@@ -1,26 +1,12 @@
+import { afterAll, beforeAll, describe, it } from '@jest/globals';
 import assert from 'node:assert/strict';
-import { execFile } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, it, before, after } from 'node:test';
 import { fileURLToPath } from 'node:url';
-import { promisify } from 'node:util';
 
-const execFileAsync = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PACKAGE_ROOT = path.resolve(__dirname, '..', '..');
-const REPO_ROOT = path.resolve(PACKAGE_ROOT, '..', '..');
 const GENERATOR_ENTRY = path.resolve(PACKAGE_ROOT, 'generators/app');
-
-let buildDone = false;
-async function ensureBuilt() {
-  if (buildDone) return;
-  await execFileAsync('yarn', ['workspace', '@anansi/generator-js', 'build'], {
-    cwd: REPO_ROOT,
-    env: { ...process.env, NODE_ENV: 'production' },
-  });
-  buildDone = true;
-}
 
 let helpers;
 async function getHelpers() {
@@ -32,7 +18,6 @@ async function getHelpers() {
 }
 
 async function runGenerator({ appName, prompts, options = {} }) {
-  await ensureBuilt();
   const h = await getHelpers();
   return h
     .run(GENERATOR_ENTRY)
@@ -78,10 +63,10 @@ function assertNoDeps(pkg, type, names) {
 function generatorSuite(name, config, fn) {
   describe(name, () => {
     let result;
-    before(async () => {
+    beforeAll(async () => {
       result = await runGenerator(config);
     });
-    after(async () => {
+    afterAll(async () => {
       if (result?.cleanup) await result.cleanup();
     });
     fn(() => result);

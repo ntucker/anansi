@@ -89,6 +89,7 @@
   "scripts": {
     "pretest": "yarn g:lint .",
     "test": "NODE_OPTIONS=\"--experimental-vm-modules\" yarn g:test",
+    "test:ci": "NODE_OPTIONS=\"--experimental-vm-modules\" yarn g:test --ci",
     "test:type": "yarn g:tsc",
     "build": "run build:lib && run copyfiles",
     "build:lib": "BROWSERSLIST_ENV=node18 yarn g:babel --out-dir generators --ignore \"**/templates/**/*\",\"**/templates/*\",\"**/yeoman-types/*\"",
