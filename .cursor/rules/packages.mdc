@@ -14,7 +14,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 |---|---|
 | `@anansi/babel-preset` (`babel-preset-anansi`) | `yarn workspace @anansi/babel-preset run test` (snapshots per browserslist target; `-u` only for intended output changes). It has no tsconfig, so `test:type` checks nothing |
 | `@anansi/browserslist-config` (`browserslist-config-anansi`) | No tests. `npx browserslist "extends @anansi/browserslist-config"`, plus `BROWSERSLIST_ENV=<env> yarn workspace example-typescript run build` for each env you changed |
-| `@anansi/cli` (`cli`) | `yarn g:lint packages/cli` (its own `pretest` fails to find the Babel config), `node packages/cli/run.mjs --help` |
+| `@anansi/cli` (`cli`) | `run pretest` (lint), `node packages/cli/run.mjs --help` |
 | `@anansi/core` (`core`) | `run test`, `run test:type`, `run build`; SSR changes also need `example-react-18` |
 | `@anansi/eslint-plugin` (`eslint-plugin`) | No tests. `yarn g:lint packages/eslint-plugin`, `yarn lint` (the root config uses this plugin), plus data-client's lint |
 | `@anansi/generator-js` (`generator-js`) | `run test`, `run test:type`, `run build` |
