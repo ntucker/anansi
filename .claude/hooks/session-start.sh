@@ -2,6 +2,10 @@
 # Cloud sessions: install and build anansi so tests, lint and
 # scripts/consumer-link.sh work immediately. Also installs a sibling
 # data-client checkout (anansi's main consumer) when one is present.
+#
+# Yarn comes from each repo's .yarn/releases via yarnPath (global yarn 1.x
+# delegates to it). Don't enable corepack: it downloads yarn from
+# repo.yarnpkg.com, which sandbox egress may block.
 set -euo pipefail
 
 if [[ "${CLAUDE_CODE_REMOTE:-}" != "true" ]]; then
@@ -9,46 +13,34 @@ if [[ "${CLAUDE_CODE_REMOTE:-}" != "true" ]]; then
 fi
 
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$ANANSI_DIR"
 
-# Jest's require(ESM) of Babel 8 needs Node 24.9+
-node_ok() {
-  node -e 'const [a,b]=process.versions.node.split(".").map(Number);process.exit(a>24||(a===24&&b>=9)?0:1)' 2>/dev/null
-}
-if ! node_ok; then
+# Jest's require(ESM) of Babel 8 needs Node 24.9+ (.nvmrc)
+if (( "$(node -p 'process.versions.node.split(".")[0]')" < "$(cat .nvmrc)" )); then
   export NVM_DIR="${NVM_DIR:-/opt/nvm}"
   # shellcheck disable=SC1091
   . "$NVM_DIR/nvm.sh"
-  nvm install 24 >/dev/null
-  NODE_BIN="$(dirname "$(nvm which 24)")"
-  export PATH="$NODE_BIN:$PATH"
+  # also puts that node first on this shell's PATH
+  nvm install >/dev/null
+  NODE_BIN="$(dirname "$(command -v node)")"
   if [[ -n "${CLAUDE_ENV_FILE:-}" ]]; then
     echo "export PATH=\"$NODE_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
   fi
 fi
 
-# Both repos vendor yarn via yarnPath. Global yarn 1.x delegates to it;
-# corepack would instead download yarn from repo.yarnpkg.com, which the
-# sandbox egress may block. Fall back to the vendored release directly.
-if ! (cd "$ANANSI_DIR" && yarn --version >/dev/null 2>&1); then
-  YARN_BIN="$HOME/.local/share/anansi-yarn-shim"
-  mkdir -p "$YARN_BIN"
-  # run whichever release the current repo vendors
-  printf '#!/bin/sh\nexec node "$(git rev-parse --show-toplevel)"/.yarn/releases/yarn-*.cjs "$@"\n' > "$YARN_BIN/yarn"
-  chmod +x "$YARN_BIN/yarn"
-  export PATH="$YARN_BIN:$PATH"
-  if [[ -n "${CLAUDE_ENV_FILE:-}" ]]; then
-    echo "export PATH=\"$YARN_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
-  fi
+# Its install scripts only prebuild packages; validation builds explicitly.
+# Independent of anansi's build, so it runs alongside it
+CONSUMER="$ANANSI_DIR/../data-client"
+consumer_install=
+if [[ -f "$CONSUMER/package.json" ]]; then
+  (cd "$CONSUMER" && yarn install --mode=skip-build) &
+  consumer_install=$!
 fi
 
-cd "$ANANSI_DIR"
 # build:pkg does everything the workspaces' install scripts would (husky and
 # yo pre-caching aside), so none need to run
 yarn install --mode=skip-build
 yarn build:pkg
-
-if [[ -f "$ANANSI_DIR/../data-client/package.json" ]]; then
-  cd "$ANANSI_DIR/../data-client"
-  # its install scripts only prebuild packages; validation builds explicitly
-  yarn install --mode=skip-build
+if [[ -n "$consumer_install" ]]; then
+  wait "$consumer_install"
 fi

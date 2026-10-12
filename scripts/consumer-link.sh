@@ -24,6 +24,7 @@ PACK_DIR="${PACK_DIR:-$ANANSI_DIR/node_modules/.cache/consumer-link/packs}"
 resolve_consumer() {
   CONSUMER_DIR="$(cd "$CONSUMER_ARG" && pwd)"
   BACKUP_DIR="$(git -C "$CONSUMER_DIR" rev-parse --absolute-git-dir)/anansi-link"
+  cd "$CONSUMER_DIR"
 }
 
 # Build caches (babel-loader, Rspack/webpack, Jest) key on package versions,
@@ -43,7 +44,6 @@ pack() {
 }
 
 link() {
-  resolve_consumer
   pack
   cd "$CONSUMER_DIR"
   if [[ ! -d "$BACKUP_DIR" ]]; then
@@ -74,8 +74,6 @@ link() {
 }
 
 unlink() {
-  resolve_consumer
-  cd "$CONSUMER_DIR"
   if [[ ! -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is not linked."
     return
@@ -87,8 +85,6 @@ unlink() {
 }
 
 status() {
-  resolve_consumer
-  cd "$CONSUMER_DIR"
   if [[ -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is linked to:"
     grep -o '"[^"]*": "file:[^"]*\.tgz"' package.json || true
@@ -98,7 +94,11 @@ status() {
 }
 
 case "${1:-}" in
-  pack | link | unlink | status) "$1" ;;
+  pack) pack ;;
+  link | unlink | status)
+    resolve_consumer
+    "$1"
+    ;;
   *)
     sed -n '2,/^set -euo/p' "$0" | sed '$d; s/^# \{0,1\}//'
     exit 1
