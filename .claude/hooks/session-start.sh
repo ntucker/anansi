@@ -45,5 +45,6 @@ yarn build:pkg
 
 if [ -f "$ANANSI_DIR/../data-client/package.json" ]; then
   cd "$ANANSI_DIR/../data-client"
-  yarn install
+  # its install scripts only prebuild packages; validation builds explicitly
+  yarn install --mode=skip-build
 fi

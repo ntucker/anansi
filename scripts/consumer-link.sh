@@ -59,8 +59,9 @@ link() {
     }
     fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");
   '
-  # tarball contents change on every repack; refresh their lockfile checksums
-  YARN_ENABLE_IMMUTABLE_INSTALLS=false YARN_CHECKSUM_BEHAVIOR=update yarn install
+  # tarball contents change on every repack; refresh their lockfile checksums.
+  # Skip install scripts: the consumer's only prebuild packages its own build redoes
+  YARN_ENABLE_IMMUTABLE_INSTALLS=false YARN_CHECKSUM_BEHAVIOR=update yarn install --mode=skip-build
   clear_caches
   echo "Linked. Do not commit $CONSUMER_DIR/{package.json,yarn.lock}; run '$0 unlink' when done."
 }
@@ -73,7 +74,7 @@ unlink() {
   fi
   cp "$BACKUP_DIR/package.json" "$BACKUP_DIR/yarn.lock" .
   rm -rf "$BACKUP_DIR"
-  YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
+  YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install --mode=skip-build
   clear_caches
 }
 
