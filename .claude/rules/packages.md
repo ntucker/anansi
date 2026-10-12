@@ -30,7 +30,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 
 CI's `test` job runs each workspace's `test:ci` and its `lint` job runs `eslint packages/*/src`. So CI never runs:
 
-- `@anansi/generator-js`'s tests (no `test:ci`) or `@anansi/jest-preset`'s (they live in `pretest`).
+- `@anansi/jest-preset`'s tests (they live in `pretest`).
 - Any `test:type`. Only the `tsc --build` references in the root `tsconfig.json` (`core`, `pojo-router`, `router`, `storybook`) are type-checked by `build:pkg`, plus `ts-utils` through its own `build`.
 - Lint for packages without `src/` (listed in `AGENTS.md`); lint them with `yarn g:lint packages/<folder>`.
 

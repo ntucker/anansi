@@ -41,8 +41,7 @@ style, svg and worker imports typecheck.
 
 ## Options worth knowing
 
-- `sassResources: [path]` injects variables/mixins into every sass file;
-  `sassOptions: false` disables sass.
+- `sassResources: [path]` injects variables/mixins into every sass file.
 - `globalStyleDir` (default `style`): files there are global CSS; every other
   `.css`/`.scss` is a CSS module (`import * as styles from './x.scss'`).
 - `libraryInclude` / `libraryExclude`: compile workspace packages that are
