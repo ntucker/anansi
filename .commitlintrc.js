@@ -12,16 +12,17 @@ module.exports = {
           const config = {
             maxLength: 100,
             dependencyCommit: {
-              type: /^(chore|fix)/,
-              scope: /^(peer-)?deps(-dev)?$/,
+              // `pkg` type (Renovate, manual dependency bumps) or scope
+              // (dependabot's `internal(pkg): …`) marks a dependency commit
+              typeOrScope: 'pkg',
               maxLength: 200
             }
           }
 
           const length = parsed.header.length
           const isDepsCommit =
-            config.dependencyCommit.type.test(parsed.type) &&
-            config.dependencyCommit.scope.test(parsed.scope)
+            parsed.type === config.dependencyCommit.typeOrScope ||
+            parsed.scope === config.dependencyCommit.typeOrScope
 
           if (length <= config.maxLength) {
             return [true]
