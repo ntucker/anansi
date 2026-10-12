@@ -7,6 +7,11 @@ const getHttpsConfig = require('../../getHttpsConfig').default;
 
 describe('getHttpsConfig', () => {
   const env = process.env;
+  // ignore any HTTPS/SSL_* set in the shell running the tests
+  const baseEnv = { ...env };
+  delete baseEnv.HTTPS;
+  delete baseEnv.SSL_CRT_FILE;
+  delete baseEnv.SSL_KEY_FILE;
   afterEach(() => {
     process.env = env;
   });
@@ -15,11 +20,11 @@ describe('getHttpsConfig', () => {
     [{}, 'http'],
     [{ HTTPS: 'true' }, { type: 'https' }],
   ])('%j -> %j', (vars, expected) => {
-    process.env = { ...env, ...vars };
+    process.env = { ...baseEnv, ...vars };
     expect(getHttpsConfig(__dirname)).toEqual(expected);
   });
 
-  it('serves https with the provided cert files', () => {
+  it('returns the provided cert files with the https type', () => {
     const { privateKey, publicKey } = crypto.generateKeyPairSync('rsa', {
       modulusLength: 2048,
     });
@@ -30,14 +35,18 @@ describe('getHttpsConfig', () => {
     fs.writeFileSync(path.join(dir, 'key.pem'), key);
     fs.writeFileSync(path.join(dir, 'cert.pem'), cert);
     process.env = {
-      ...env,
+      ...baseEnv,
       HTTPS: 'true',
       SSL_CRT_FILE: 'cert.pem',
       SSL_KEY_FILE: 'key.pem',
     };
-    const config = getHttpsConfig(dir);
-    expect(config.type).toBe('https');
-    expect(config.options.key.toString()).toBe(key);
-    expect(config.options.cert.toString()).toBe(cert);
+    try {
+      const config = getHttpsConfig(dir);
+      expect(config.type).toBe('https');
+      expect(config.options.key.toString()).toBe(key);
+      expect(config.options.cert.toString()).toBe(cert);
+    } finally {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
   });
 });
