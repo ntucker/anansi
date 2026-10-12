@@ -7,7 +7,7 @@ Conventions and per-package checks live in `.cursor/rules/general.mdc` and `.cur
 
 - Node 24.9+ (Jest's `require(ESM)` of Babel 8 fails on Node 22). CI uses `cimg/node:lts`.
 - Yarn comes from `.yarn/releases` via `yarnPath`. Don't `corepack enable` in cloud sessions: corepack downloads yarn from repo.yarnpkg.com, which egress may block.
-- Setup: `yarn install && yarn build:pkg`. Cloud sessions with this repo as their root run `.claude/hooks/session-start.sh`, which does this, and also runs `yarn install` in a sibling `../data-client` checkout when one exists.
+- Setup: `yarn install && yarn build:pkg`. Cloud sessions with this repo as their root run `.claude/hooks/session-start.sh`, which does this, and also runs `yarn install` in a sibling `../data-client` checkout when one exists. Sessions rooted elsewhere (e.g. a parent directory holding both checkouts) don't load this repo's hooks; run `CLAUDE_CODE_REMOTE=true .claude/hooks/session-start.sh` by hand.
 
 ## Validation tiers
 
