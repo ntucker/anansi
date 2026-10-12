@@ -2,10 +2,11 @@ import type { NextFunction, Request, Response } from 'express';
 import type { Middleware } from 'webpack-dev-server';
 
 /**
- * Adds SSR to webpack-dev-server's middleware list right after its proxy
+ * Splices SSR into webpack-dev-server's middleware list right after its proxy
  * entries (or its own /webpack-dev-server routes when there are none), so
- * http-proxy-middleware takes its requests first. Bundles (webpack-dev-middleware)
- * stay ahead of it; static files and history fallback come after.
+ * http-proxy-middleware takes its requests first. webpack-dev-middleware's
+ * first entry serves bundles ahead of it; everything later (wds's repeated
+ * dev-middleware, static files, history fallback) comes after.
  */
 export function insertSsrMiddleware(
   middlewares: Middleware[],
@@ -15,7 +16,7 @@ export function insertSsrMiddleware(
     next: NextFunction,
   ) => void | Promise<void>,
   publicPath?: string,
-): Middleware[] {
+): void {
   const anchor = middlewares.findLastIndex(
     middleware =>
       typeof middleware === 'object' &&
@@ -38,5 +39,4 @@ export function insertSsrMiddleware(
       return ssr(req, res, next);
     },
   });
-  return middlewares;
 }

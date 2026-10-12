@@ -27,6 +27,7 @@ describe('getProxyMiddlewares', () => {
         { context: ['/api'], target },
         () => ({ path: '/fn', target }),
         { context: '/routed', router: () => target },
+        // empty context falls through to pathFilter
         { context: '', pathFilter: '/v2/**', target },
         { context: '/no-target' },
       ]).map(({ middleware }) => middleware),

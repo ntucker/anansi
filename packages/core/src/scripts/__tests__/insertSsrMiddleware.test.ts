@@ -23,7 +23,8 @@ describe('insertSsrMiddleware', () => {
       entry('express-static'),
       entry('connect-history-api-fallback'),
     ];
-    expect(names(insertSsrMiddleware(middlewares, jest.fn()))).toEqual([
+    insertSsrMiddleware(middlewares, jest.fn());
+    expect(names(middlewares)).toEqual([
       'webpack-dev-middleware',
       'webpack-dev-server-assets',
       'http-proxy-middleware',
@@ -41,7 +42,8 @@ describe('insertSsrMiddleware', () => {
       entry('webpack-dev-server-assets'),
       entry('express-static'),
     ];
-    expect(names(insertSsrMiddleware(middlewares, jest.fn()))).toEqual([
+    insertSsrMiddleware(middlewares, jest.fn());
+    expect(names(middlewares)).toEqual([
       'webpack-dev-middleware',
       'webpack-dev-server-assets',
       'anansi-ssr',
@@ -63,11 +65,8 @@ describe('insertSsrMiddleware', () => {
   ])('%s %s renders SSR: %s', (method, url, rendered) => {
     const ssr = jest.fn();
     const next = jest.fn();
-    const middlewares = insertSsrMiddleware(
-      [entry('webpack-dev-server-assets')],
-      ssr,
-      '/assets/',
-    );
+    const middlewares = [entry('webpack-dev-server-assets')];
+    insertSsrMiddleware(middlewares, ssr, '/assets/');
     ssrEntry(middlewares).middleware({ method, url }, {}, next);
     expect(ssr).toHaveBeenCalledTimes(rendered ? 1 : 0);
     expect(next).toHaveBeenCalledTimes(rendered ? 0 : 1);
