@@ -12,10 +12,10 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24.x
+          cache: yarn
       - name: install and build
         run: |
-          sudo corepack enable
-          yarn install --immutable
+          yarn install --immutable --mode=skip-build
           yarn build:pkg
           yarn workspace example-react-18 run build
           yarn workspace example-react-18 run build:server
