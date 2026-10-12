@@ -18,7 +18,15 @@ set -euo pipefail
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CONSUMER_DIR="$(cd "${2:-${CONSUMER_DIR:-$ANANSI_DIR/../data-client}}" && pwd)"
 PACK_DIR="${PACK_DIR:-$ANANSI_DIR/node_modules/.cache/consumer-link/packs}"
-BACKUP_DIR="$CONSUMER_DIR/node_modules/.cache/anansi-link"
+BACKUP_DIR="$CONSUMER_DIR/node_modules/.anansi-link"
+
+# Build caches (babel-loader, Rspack/webpack, Jest) key on package versions,
+# which packing leaves unchanged, so they'd keep serving the previous build
+clear_caches() {
+  rm -rf "$CONSUMER_DIR"/node_modules/.cache "$CONSUMER_DIR"/*/node_modules/.cache \
+    "$CONSUMER_DIR"/*/*/node_modules/.cache
+  (cd "$CONSUMER_DIR" && yarn jest --clearCache >/dev/null 2>&1) || true
+}
 
 pack() {
   rm -rf "$PACK_DIR" && mkdir -p "$PACK_DIR"
@@ -53,6 +61,7 @@ link() {
   '
   # tarball contents change on every repack; refresh their lockfile checksums
   YARN_ENABLE_IMMUTABLE_INSTALLS=false YARN_CHECKSUM_BEHAVIOR=update yarn install
+  clear_caches
   echo "Linked. Do not commit $CONSUMER_DIR/{package.json,yarn.lock}; run '$0 unlink' when done."
 }
 
@@ -65,6 +74,7 @@ unlink() {
   cp "$BACKUP_DIR/package.json" "$BACKUP_DIR/yarn.lock" .
   rm -rf "$BACKUP_DIR"
   YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
+  clear_caches
 }
 
 status() {

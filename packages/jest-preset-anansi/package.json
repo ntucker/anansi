@@ -42,7 +42,9 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/*.spec.js"],
+    "testMatch": [
+      "**/*.spec.js"
+    ],
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/src/transformers/worker-loader/__tests__/baseworker.spec.js"
