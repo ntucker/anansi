@@ -6,8 +6,8 @@ Yarn 4 workspaces monorepo: published packages in `packages/*`, demo apps in `ex
 
 - Node per `.nvmrc` (24; Jest's `require(ESM)` of Babel 8 needs 24.9+). CI uses `cimg/node:lts`.
 - Yarn comes from `.yarn/releases` via `yarnPath`. Don't `corepack enable` in sandboxed sessions: corepack downloads yarn from repo.yarnpkg.com, which egress may block.
-- Setup: `yarn install --mode=skip-build && yarn build:pkg`. Most packages resolve to their built `lib/`/`dist/` even inside the workspace (`@anansi/webpack-config`'s `main`, `@anansi/core`'s `exports`), so rebuild a package after editing its `src/` before validating anything that uses it.
-- Edit `src/` only; `lib/`, `dist/` and `packages/generator-js/generators/` are build output.
+- Setup: `yarn install --mode=skip-build && yarn build:pkg`. Inside the workspace, packages with only `main` (`@anansi/webpack-config`) or an `exports` map (`@anansi/core`) resolve to their built `lib/`/`dist/`, so rebuild a package after editing its `src/` before validating anything that uses it. `@anansi/router` and `@pojo-router/core` point `module` at `src/`, so webpack builds them from source.
+- Edit `src/` where a package has one; `lib/`, `dist/` and `packages/generator-js/generators/` are build output. Packages without `src/` (`babel-preset-anansi`, `browserslist-config-anansi`, `cli`, `eslint-plugin`, `ts-utils`) are edited in place.
 
 ## Validation tiers
 
@@ -40,8 +40,8 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
 
 ## Commits and releases
 
-- PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, `.versionrc`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `BREAKING CHANGE:` footer makes the release major.
-- Don't bump `version` fields or edit `CHANGELOG.md` in a PR; the release (`yarn changelog`, then `yarn release`) writes both.
+- PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, preset `conventional-changelog-anansi`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `BREAKING CHANGE:` footer makes the release major.
+- Don't bump `version` fields or edit `CHANGELOG.md` in a PR; the release does: `yarn changelog` (lerna version) writes both, then `yarn release` publishes.
 
 ## Agent rules
 

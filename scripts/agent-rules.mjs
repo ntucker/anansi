@@ -14,7 +14,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const check = process.argv.includes('--check');
 
 // Walks the tree instead of shelling out to `git ls-files` (Sonar flags PATH
-// lookups). Not `fs.globSync`: Node 22's skips dot folders like `.cursor`
+// lookups). Not `fs.globSync`: on Node 22 it skips dot folders like `.cursor`
 const SKIP = new Set(['node_modules', '.git', '.yarn']);
 const rulesDirs = [];
 (function walk(dir) {
