@@ -297,11 +297,11 @@ function runScenarioTests(scenarios) {
           if (scenario.expectations.files?.length) {
             assert.file(scenario.expectations.files);
           }
-          if (scenario.expectations.absentFiles?.length) {
-            assert.noFile(scenario.expectations.absentFiles);
-          }
           // Claude Code reads AGENTS.md itself; a CLAUDE.md would shadow it
-          assert.noFile('CLAUDE.md');
+          assert.noFile([
+            ...(scenario.expectations.absentFiles ?? []),
+            'CLAUDE.md',
+          ]);
         });
       });
 
