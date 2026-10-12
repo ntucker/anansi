@@ -63,7 +63,6 @@ async function runAppGenerator({ appName, prompts, options = {} }) {
 
 const SPA_COMMON_FILES = [
   'AGENTS.md',
-  'CLAUDE.md',
   'package.json',
   'tsconfig.json',
   '.gitignore',
@@ -211,7 +210,6 @@ const LIBRARY_SCENARIOS = [
     expectations: {
       files: [
         'AGENTS.md',
-        'CLAUDE.md',
         'package.json',
         'tsconfig.json',
         'README.md',
