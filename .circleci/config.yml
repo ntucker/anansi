@@ -15,12 +15,12 @@ jobs:
       # Download and cache dependencies (Yarn 4 keeps them in its global cache)
       - restore_cache:
           keys:
+            # exact match only: Yarn never prunes its global cache, so a
+            # fallback would grow with every lockfile change
             - v7-dependencies-{{ checksum "yarn.lock" }}
-            # fallback to using the latest cache if no exact match is found
-            - v7-dependencies-
 
-      # The image's yarn hands off to .yarn/releases via yarnPath. build:pkg
-      # builds every package, so install skips their install scripts.
+      # The image's yarn hands off to .yarn/releases via yarnPath. No
+      # dependency has install scripts; build:pkg does the workspaces' builds.
       - run:
           name: yarn install
           command: |
@@ -67,7 +67,7 @@ jobs:
       - run: yarn test:type
       - run: yarn build:agent-rules --check
 
-  # Each parallel node builds its share of the example-* workspaces
+  # Each parallel node builds its share of examples/*
   build_production:
     docker: *docker
     parallelism: 3
@@ -77,9 +77,8 @@ jobs:
       - run:
           name: Build examples
           command: |
-            examples=$(yarn workspaces list --json | grep -o '"name":"example-[^"]*"' | cut -d'"' -f4 | circleci tests split)
-            for workspace in $examples; do
-              yarn workspace "$workspace" run build
+            for pkg in $(circleci tests glob 'examples/*/package.json' | circleci tests split); do
+              (cd "$(dirname "$pkg")" && yarn run build)
             done
 
   build_matrix:
