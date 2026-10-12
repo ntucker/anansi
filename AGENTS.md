@@ -13,7 +13,7 @@ Yarn 4 workspaces monorepo: published packages in `packages/*`, demo apps in `ex
 
 Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rules/` (mirrored to `.claude/rules/`) hold the per-package and per-directory commands.
 
-1. **Packages**: `yarn lint`, `yarn test:type`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the package's own scripts.
+1. **Packages**: `yarn lint`, `yarn test:type`, `yarn constraints`, `yarn workspaces foreach -Wv run test:ci --passWithNoTests`, or the package's own scripts.
 2. **Apps (SPA/SSR)**: `examples/*` consume packages through workspaces (the local checkout, not packed tarballs), so they validate runtime behavior but not packaging. CI runs:
    - `yarn workspaces foreach -Wv --include 'example-*' run build` (CI spreads the examples across parallel nodes)
    - `yarn workspaces foreach -Wv --include 'example-*' run build:server`

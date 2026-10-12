@@ -15,6 +15,8 @@ Private apps that exercise the packages the way a consumer would. Run them with 
 | `examples/linaria` | `example-linaria` | `@anansi/webpack-config` with linaria |
 | `examples/typescript` | `example-typescript` | SPA build, Jest via `@anansi/jest-preset`, `@anansi/storybook`, the `BROWSERSLIST_ENV` matrix, bundle-size comparison (`build:sizecompare`) |
 
+- `lerna version` skips examples: `lerna.json` sets `command.version.private: false` (`--no-private`).
+- Examples depend on `@anansi/*` with `^<version>`, never `workspace:` (StackBlitz demos, linked from READMEs and dataclient.io, install an example folder standalone with npm). `yarn.config.cjs` enforces it; CI runs `yarn constraints`, and the root `version` script runs `yarn constraints --fix` during `yarn changelog`.
 - `example-react-18` builds the client and server bundles in `build`; `start:server` serves `dist-server/App.js`. GitHub's lighthouse workflow scores it.
 - `yarn devtest:ci` starts only `example-react-18` and `example-linaria`.
 - `test:type` (`tsc --noEmit`) is the only type check examples get, and CI runs it through `yarn test:type`.
