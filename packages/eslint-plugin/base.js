@@ -85,8 +85,6 @@ const jsOnlyRules = {
     sourceType: 'module',
     // allowImportExportEverywhere: true,
     ecmaVersion: 2024,
-    // find the monorepo's babel.config.js when eslint runs from a package directory
-    parserOptions: { babelOptions: { rootMode: 'upward-optional' } },
     // ecmaFeatures: {
     //   jsx: true,
     //   experimentalObjectRestSpread: true,
