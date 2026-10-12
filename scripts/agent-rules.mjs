@@ -37,7 +37,7 @@ const lsFiles = (harness, ext) =>
         .filter(entry => entry.isFile() && entry.name.endsWith(ext))
         .map(entry => `${dir}/${entry.name}`),
     )
-    .sort();
+    .sort((a, b) => a.localeCompare(b));
 
 const problems = [];
 /** @type {Map<string, string>} output path -> content */
