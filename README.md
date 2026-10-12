@@ -49,6 +49,10 @@ anansi hatch my-app-name
 
 This creates a `my-app-name` directory in your current directory and sets up the project there.
 
+## AI agents
+
+Coding agents can run `npx @anansi/cli guide` to learn anansi from the versions installed in your project. See [the AGENTS.md snippet](packages/cli/README.md#ai-agents).
+
 ## Updates
 
 Features can be incrementally adopted by running sub-generators from an existing project directory.

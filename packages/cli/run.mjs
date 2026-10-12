@@ -3,6 +3,7 @@ import { Command } from 'commander';
 import { execa } from 'execa';
 import fs from 'fs';
 import { resolve } from 'import-meta-resolve';
+import { createRequire } from 'node:module';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -147,6 +148,83 @@ program
       }
       process.exit(2);
     }
+  });
+
+// each package ships a guide.md for its own version; read the project's copy
+const guidePackages = {
+  app: '@anansi/webpack-config',
+  ssr: '@anansi/core',
+  library: '@anansi/babel-preset',
+  testing: '@anansi/jest-preset',
+  lint: '@anansi/eslint-plugin',
+};
+const guideTopics = ['overview', ...Object.keys(guidePackages)];
+
+function resolveProjectPackage(name) {
+  const projectRequire = createRequire(
+    path.join(process.cwd(), 'package.json'),
+  );
+  let pkgPath;
+  try {
+    pkgPath = projectRequire.resolve(`${name}/package.json`);
+  } catch (error) {
+    if (error.code === 'MODULE_NOT_FOUND') return undefined;
+    if (error.code !== 'ERR_PACKAGE_PATH_NOT_EXPORTED') throw error;
+    // exports hides package.json; find it in node_modules instead
+    pkgPath = projectRequire.resolve
+      .paths(name)
+      .map(modulesDir => path.join(modulesDir, name, 'package.json'))
+      .find(candidate => fs.existsSync(candidate));
+    if (!pkgPath) return undefined;
+  }
+  return {
+    dir: dirname(pkgPath),
+    version: JSON.parse(fs.readFileSync(pkgPath, 'utf8')).version,
+  };
+}
+
+function renderOverview() {
+  const topicLines = Object.entries(guidePackages).map(([topic, name]) => {
+    const installed = resolveProjectPackage(name);
+    const status = installed ? `@${installed.version}` : ' (not installed)';
+    return `- ${topic}: ${name}${status}`;
+  });
+  return [
+    fs.readFileSync(path.join(__dirname, 'guide.md'), 'utf8'),
+    '## Topics\n',
+    "Run `anansi guide <topic...>` for the area you're changing. Each guide comes",
+    'from the version installed in this project.\n',
+    ...topicLines,
+  ].join('\n');
+}
+
+function renderTopic(topic) {
+  if (topic === 'overview') return renderOverview();
+  const name = guidePackages[topic];
+  const installed = resolveProjectPackage(name);
+  if (!installed) {
+    return `# ${topic}\n\n${name} isn't installed in this project. Install it, then rerun \`anansi guide ${topic}\`.\n`;
+  }
+  const guidePath = path.join(installed.dir, 'guide.md');
+  if (!fs.existsSync(guidePath)) {
+    return `# ${topic}\n\n${name}@${installed.version} predates guides; read ${path.join(installed.dir, 'README.md')}\n`;
+  }
+  return fs.readFileSync(guidePath, 'utf8');
+}
+
+program
+  .command('guide')
+  .description('prints how to use anansi, written for AI agents')
+  .argument('[topics...]', `any of: ${guideTopics.join(' | ')}`, ['overview'])
+  .action(topics => {
+    const unknown = topics.filter(topic => !guideTopics.includes(topic));
+    if (unknown.length) {
+      console.error(
+        `Unknown guide topic: ${unknown.join(', ')}\nAvailable: ${guideTopics.join(', ')}`,
+      );
+      process.exit(1);
+    }
+    console.log(topics.map(renderTopic).join('\n'));
   });
 
 program.parse(process.argv);

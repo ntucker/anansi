@@ -15,7 +15,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 |---|---|
 | `@anansi/babel-preset` (`babel-preset-anansi`) | `yarn workspace @anansi/babel-preset run test` (snapshots per browserslist target; `-u` only for intended output changes). It has no tsconfig, so `test:type` checks nothing |
 | `@anansi/browserslist-config` (`browserslist-config-anansi`) | No tests. `npx browserslist "extends @anansi/browserslist-config"`, plus `BROWSERSLIST_ENV=<env> yarn workspace example-typescript run build` for each env you changed |
-| `@anansi/cli` (`cli`) | `run pretest` (lint), `node packages/cli/run.mjs --help` |
+| `@anansi/cli` (`cli`) | `run pretest` (lint), `node packages/cli/run.mjs --help`; for `guide`, run `node ../../packages/cli/run.mjs guide <topic>` from `examples/concurrent` (it reads guides from the project's installed packages) |
 | `@anansi/core` (`core`) | `run test`, `run test:type`, `run build`; SSR changes also need `example-react-18` |
 | `@anansi/eslint-plugin` (`eslint-plugin`) | No tests. `yarn g:lint packages/eslint-plugin`, `yarn lint` (the root config uses this plugin), plus data-client's lint |
 | `@anansi/generator-js` (`generator-js`) | `run test`, `run test:type`, `run build` |
@@ -30,7 +30,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 
 CI's `test` job runs each workspace's `test:ci` and its `lint` job runs `eslint packages/*/src`. So CI never runs:
 
-- `@anansi/generator-js`'s tests (no `test:ci`) or `@anansi/jest-preset`'s (they live in `pretest`).
+- `@anansi/jest-preset`'s tests (they live in `pretest`).
 - Any `test:type`. Only the `tsc --build` references in the root `tsconfig.json` (`core`, `pojo-router`, `router`, `storybook`) are type-checked by `build:pkg`, plus `ts-utils` through its own `build`.
 - Lint for packages without `src/` (listed in `AGENTS.md`); lint them with `yarn g:lint packages/<folder>`.
 
@@ -38,4 +38,5 @@ CI's `test` job runs each workspace's `test:ci` and its `lint` job runs `eslint 
 
 - `publishConfig` replaces `main`/`module`/`types` at pack time, so the workspace and npm can resolve different files. Change entry points in both places, and check any packaging change with `scripts/consumer-link.sh`.
 - `@anansi/babel-preset`, `@anansi/webpack-config`, `@anansi/jest-preset`, `@anansi/eslint-plugin`, `@anansi/browserslist-config`, `@anansi/core`, `@anansi/router` and `@anansi/cli` are data-client dependencies; changes to their options, defaults or peer ranges need the end-to-end tier in `AGENTS.md`.
+- `guide.md` in `webpack-config-anansi`, `core`, `babel-preset-anansi`, `jest-preset-anansi` and `eslint-plugin` is published and printed by `anansi guide <topic>` (topic map in `packages/cli/run.mjs`). When a package's options, defaults or recommended setup change, update its `guide.md` in the same PR, checking claims against source rather than the README.
 - `@anansi/generator-js` templates (`src/*/templates/`) are what new projects start from. When a preset's options or required peers change, update the matching template (e.g. `src/base/templates/.babelrc.js`).

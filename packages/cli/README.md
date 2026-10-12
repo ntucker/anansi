@@ -138,3 +138,22 @@ anansi serve ./dist-server/App.js
   }
 }
 ```
+
+### guide
+
+Prints concise guidance on using anansi, written for AI coding agents. Each topic's guide ships inside the package it documents and is read from your project's installed copy, so it matches the version you use.
+
+```bash
+anansi guide            # overview, plus the topics and installed versions in this project
+anansi guide app ssr    # one or more topics; see `anansi guide --help`
+```
+
+## AI agents
+
+Add this to your project's `AGENTS.md` (or `CLAUDE.md`):
+
+```md
+When using Anansi:
+- run `npx @anansi/cli guide` to learn it, then `npx @anansi/cli guide <topic>` for the area you're changing
+- extend the @anansi configs (webpack, babel, jest, eslint) instead of replacing them
+```

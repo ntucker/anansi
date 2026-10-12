@@ -19,7 +19,8 @@
     "index.d.ts",
     "media.d.ts",
     "types.d.ts",
-    "package.json"
+    "package.json",
+    "guide.md"
   ],
   "keywords": [
     "webpack",

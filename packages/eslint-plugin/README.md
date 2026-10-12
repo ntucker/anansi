@@ -20,13 +20,15 @@ Be sure to configure the project option properly - especially if you have a mono
 import anansiPlugin from '@anansi/eslint-plugin';
 
 export default [
-  anansiPlugin.configs.typescript,
+  ...anansiPlugin.configs.typescript,
   {
     languageOptions: {
-      tsconfigRootDir: import.meta.dirname,
-      project: ['tsconfig.json'],
-    }
-  }
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+        project: ['tsconfig.json'],
+      },
+    },
+  },
 ];
 ```
 
@@ -38,13 +40,15 @@ export default [
 import anansiPlugin from '@anansi/eslint-plugin';
 
 export default [
-  anansiPlugin.configs.typescript,
+  ...anansiPlugin.configs.typescript,
   {
     languageOptions: {
-      tsconfigRootDir: import.meta.dirname,
-      project: ['packages/*/tsconfig.json'],
-    }
-  }
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+        project: ['packages/*/tsconfig.json'],
+      },
+    },
+  },
 ];
 ```
 
@@ -56,7 +60,7 @@ export default [
 import anansiPlugin from '@anansi/eslint-plugin';
 
 export default [
-  anansiPlugin.configs.javascript,
+  ...anansiPlugin.configs.javascript,
 ];
 ```
 

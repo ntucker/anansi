@@ -40,5 +40,5 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
 
 ## Commits and releases
 
-- PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, preset `conventional-changelog-anansi`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `BREAKING CHANGE:` footer makes the release major.
+- PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, preset `conventional-changelog-anansi`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `!` after the type (`pkg!:`) or a `BREAKING CHANGE:` footer makes the release major.
 - Don't bump `version` fields or edit `CHANGELOG.md` in a PR; the release does: `yarn changelog` (lerna version) writes both, then `yarn release` publishes.

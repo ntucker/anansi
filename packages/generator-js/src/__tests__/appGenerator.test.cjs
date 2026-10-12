@@ -62,6 +62,7 @@ async function runAppGenerator({ appName, prompts, options = {} }) {
 }
 
 const SPA_COMMON_FILES = [
+  'AGENTS.md',
   'package.json',
   'tsconfig.json',
   '.gitignore',
@@ -208,6 +209,7 @@ const LIBRARY_SCENARIOS = [
     },
     expectations: {
       files: [
+        'AGENTS.md',
         'package.json',
         'tsconfig.json',
         'README.md',
@@ -295,9 +297,11 @@ function runScenarioTests(scenarios) {
           if (scenario.expectations.files?.length) {
             assert.file(scenario.expectations.files);
           }
-          if (scenario.expectations.absentFiles?.length) {
-            assert.noFile(scenario.expectations.absentFiles);
-          }
+          // Claude Code reads AGENTS.md itself; a CLAUDE.md would shadow it
+          assert.noFile([
+            ...(scenario.expectations.absentFiles ?? []),
+            'CLAUDE.md',
+          ]);
         });
       });
 
