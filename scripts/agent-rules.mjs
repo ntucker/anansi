@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 // Mirrors the Cursor rules for Claude Code so both harnesses get the same
-// steering from one source: every `<dir>/.cursor/rules/<name>.mdc` becomes
-// `<dir>/.claude/rules/<name>.md` with its `globs` as Claude's `paths`. Same
-// depth, so relative links still resolve.
-// AGENTS.md needs nothing: CLAUDE.md imports it.
+// steering from one source: every `.cursor/rules/<name>.mdc` becomes
+// `.claude/rules/<name>.md` with its `globs` as Claude's `paths`.
 //
 // Usage: node scripts/agent-rules.mjs [--check]
 import fs from 'node:fs';
@@ -12,40 +10,24 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const check = process.argv.includes('--check');
+const SOURCE_DIR = '.cursor/rules';
+const OUTPUT_DIR = '.claude/rules';
 
-// Walks the tree instead of shelling out to `git ls-files` (Sonar flags PATH
-// lookups). Not `fs.globSync`: on Node 22 it skips dot folders like `.cursor`
-const SKIP = new Set(['node_modules', '.git', '.yarn']);
-const rulesDirs = [];
-(function walk(dir) {
-  for (const entry of fs.readdirSync(path.join(root, dir), {
-    withFileTypes: true,
-  })) {
-    if (!entry.isDirectory() || SKIP.has(entry.name)) continue;
-    const rel = dir ? `${dir}/${entry.name}` : entry.name;
-    if (/(^|\/)\.(cursor|claude)\/rules$/.test(rel)) rulesDirs.push(rel);
-    walk(rel);
-  }
-})('');
-/** files directly in every `<harness>/rules` folder with this extension */
-const lsFiles = (harness, ext) =>
-  rulesDirs
-    .filter(dir => dir.endsWith(`${harness}/rules`))
-    .flatMap(dir =>
-      fs
-        .readdirSync(path.join(root, dir), { withFileTypes: true })
-        .filter(entry => entry.isFile() && entry.name.endsWith(ext))
-        .map(entry => `${dir}/${entry.name}`),
-    )
-    .sort((a, b) => a.localeCompare(b));
+const list = (dir, ext) =>
+  fs.existsSync(path.join(root, dir)) ?
+    fs
+      .readdirSync(path.join(root, dir))
+      .filter(name => name.endsWith(ext))
+      .map(name => `${dir}/${name}`)
+  : [];
 
 const problems = [];
 /** @type {Map<string, string>} output path -> content */
 const outputs = new Map();
 
-for (const source of lsFiles('.cursor', '.mdc')) {
+for (const source of list(SOURCE_DIR, '.mdc')) {
   const text = fs.readFileSync(path.join(root, source), 'utf8');
-  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(text);
+  const match = /^---\n([\s\S]*?)\n---\n?/.exec(text);
   if (!match) {
     problems.push(`${source}: missing frontmatter`);
     continue;
@@ -53,22 +35,15 @@ for (const source of lsFiles('.cursor', '.mdc')) {
   // Cursor's own frontmatter: single-line `key: value`, `globs` comma-separated
   const meta = Object.fromEntries(
     match[1]
-      .split(/\r?\n/)
+      .split('\n')
       .map(line => /^(\w+):\s*(.*)$/.exec(line))
       .filter(Boolean)
       .map(([, key, value]) => [key, value.trim()]),
   );
-  // folder holding `.cursor` ('' at the root)
-  const base = source.replace(/(^|\/)\.cursor\/rules\/[^/]+$/, '');
-  // Claude resolves a nested rule's `paths` from its folder; accept globs
-  // written from either the repo root or that folder
   const globs = (meta.globs ?? '')
     .split(',')
     .map(glob => glob.trim())
-    .filter(Boolean)
-    .map(glob =>
-      base && glob.startsWith(`${base}/`) ? glob.slice(base.length + 1) : glob,
-    );
+    .filter(Boolean);
   const alwaysApply = meta.alwaysApply === 'true';
   if (!alwaysApply && !globs.length) {
     problems.push(
@@ -76,23 +51,18 @@ for (const source of lsFiles('.cursor', '.mdc')) {
     );
     continue;
   }
-  const output = path.posix.join(
-    base,
-    '.claude/rules',
-    path.posix.basename(source, '.mdc') + '.md',
-  );
   const frontmatter =
     alwaysApply ? '' : (
       `---\npaths:\n${globs.map(glob => `  - ${JSON.stringify(glob)}\n`).join('')}---\n`
     );
   outputs.set(
-    output,
+    `${OUTPUT_DIR}/${path.basename(source, '.mdc')}.md`,
     `${frontmatter}<!-- Generated from ${source} by \`yarn build:agent-rules\`. Edit the source. -->\n\n${text.slice(match[0].length)}`,
   );
 }
 
 const changed = [];
-for (const file of lsFiles('.claude', '.md')) {
+for (const file of list(OUTPUT_DIR, '.md')) {
   if (outputs.has(file)) continue;
   changed.push(`${file} (no source rule)`);
   if (!check) fs.rmSync(path.join(root, file));

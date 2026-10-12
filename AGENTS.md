@@ -42,7 +42,3 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
 
 - PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, preset `conventional-changelog-anansi`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `BREAKING CHANGE:` footer makes the release major.
 - Don't bump `version` fields or edit `CHANGELOG.md` in a PR; the release does: `yarn changelog` (lerna version) writes both, then `yarn release` publishes.
-
-## Agent rules
-
-`.cursor/rules/*.mdc` is the source for both Cursor and Claude Code; `yarn build:agent-rules` generates `.claude/rules/*.md` from it (`globs` become `paths`). CI's `lint` job fails on drift.

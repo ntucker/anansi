@@ -19,4 +19,4 @@ Private apps that exercise the packages the way a consumer would. Run them with 
 - `yarn devtest:ci` starts only `example-react-18` and `example-linaria`.
 - `test:type` (`tsc --noEmit`) is the only type check examples get; CI doesn't run it.
 - Dev server: `yarn workspace example-react-18 run start` (or `yarn start` in the folder).
-- Rebuild a package before checking it here, and run the example with `WEBPACK_CACHE=none` so webpack's cache doesn't serve the previous build.
+- After rebuilding a package, run the example with `WEBPACK_CACHE=none` so webpack's cache doesn't serve the previous build.
