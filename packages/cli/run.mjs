@@ -160,19 +160,27 @@ const guidePackages = {
 };
 const guideTopics = ['overview', ...Object.keys(guidePackages)];
 
-// looks in node_modules directly so packages whose exports hide package.json still resolve
 function resolveProjectPackage(name) {
-  const lookupPaths = createRequire(
+  const projectRequire = createRequire(
     path.join(process.cwd(), 'package.json'),
-  ).resolve.paths(name);
-  const dir = lookupPaths
-    .map(modulesDir => path.join(modulesDir, name))
-    .find(candidate => fs.existsSync(path.join(candidate, 'package.json')));
-  if (!dir) return undefined;
-  const { version } = JSON.parse(
-    fs.readFileSync(path.join(dir, 'package.json'), 'utf8'),
   );
-  return { dir, version };
+  let pkgPath;
+  try {
+    pkgPath = projectRequire.resolve(`${name}/package.json`);
+  } catch (error) {
+    if (error.code === 'MODULE_NOT_FOUND') return undefined;
+    if (error.code !== 'ERR_PACKAGE_PATH_NOT_EXPORTED') throw error;
+    // exports hides package.json; find it in node_modules instead
+    pkgPath = projectRequire.resolve
+      .paths(name)
+      .map(modulesDir => path.join(modulesDir, name, 'package.json'))
+      .find(candidate => fs.existsSync(candidate));
+    if (!pkgPath) return undefined;
+  }
+  return {
+    dir: dirname(pkgPath),
+    version: JSON.parse(fs.readFileSync(pkgPath, 'utf8')).version,
+  };
 }
 
 function renderOverview() {

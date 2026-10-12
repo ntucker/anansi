@@ -12,12 +12,14 @@ The preset is Babel 8-first, handles TypeScript by stripping types (run `tsc`
 separately for `.d.ts` and type checking), and reads its caller to pick
 defaults:
 
-- Polyfills default from what's installed. Apps with `core-js` get
-  `usage-global` (`entry-global` without `@babel/runtime`). Library builds
-  (`@babel/cli`, `@rollup/plugin-babel`, or caller `library: true`) and apps
-  using `core-js-pure` get `usage-pure`, which never touches globals, given
-  `@babel/runtime-corejs3`. Otherwise no polyfills. The rules have more edge
-  cases, so set `polyfillMethod` explicitly when it matters.
+- Default `polyfillMethod`, in order:
+  - App builds with `core-js` installed: `usage-pure` if package.json lists
+    `core-js-pure` but not `core-js`, else `usage-global`, or `entry-global`
+    without `@babel/runtime`.
+  - Library builds (`@babel/cli`, `@rollup/plugin-babel`, or caller
+    `library: true`) and apps without `core-js`: `usage-pure` (never touches
+    globals) when `core-js-pure` and `@babel/runtime-corejs3` are installed,
+    else no polyfills.
 - webpack `--target=node` and jest target the current node.
 
 ## Options agents reach for
