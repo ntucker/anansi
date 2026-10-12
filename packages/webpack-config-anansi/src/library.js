@@ -8,6 +8,8 @@ export default function makeLibraryConfig(baseConfig, { pkg, library }) {
   if (config.output.chunkFormat === 'commonjs2')
     config.output.chunkFormat = 'commonjs';
   else if (config.output.chunkFormat === 'module') {
+    config.output.module = true;
+    // webpack <5.111 also needs the experiment flag; later versions ignore it
     if (!config.experiments) {
       config.experiments = {};
     }
