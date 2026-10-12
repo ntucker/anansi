@@ -175,8 +175,8 @@ This is the default - it will automatically determine a reasonable default based
 
 For app builds with `core-js` installed:
 
-1. 'usage-pure' if `core-js-pure` is installed and your package.json lists `core-js-pure` but not `core-js`
-   (across `dependencies`, `peerDependencies` and `devDependencies`)
+1. 'usage-pure' if `core-js-pure` is installed and your package.json lists `core-js-pure` in `dependencies`,
+   `peerDependencies` or `devDependencies` without `core-js` in that same field
 2. Otherwise 'usage-global' if `@babel/runtime` is installed
 3. Otherwise 'entry-global'
 

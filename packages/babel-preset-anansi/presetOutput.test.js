@@ -108,13 +108,21 @@ describe('buildPreset', () => {
       ).toBe('usage-pure');
     });
 
-    it('should use usage-global when core-js is listed in any field', () => {
+    it('should use usage-global when core-js is listed in the same field', () => {
       expect(
         polyfillMethodFor({
-          dependencies: { 'core-js': '^3.0.0' },
-          devDependencies: { 'core-js-pure': '^3.0.0' },
+          dependencies: { 'core-js': '^3.0.0', 'core-js-pure': '^3.0.0' },
         }),
       ).toBe('usage-global');
+    });
+
+    it('should check each field separately', () => {
+      expect(
+        polyfillMethodFor({
+          dependencies: { 'core-js-pure': '^3.0.0' },
+          devDependencies: { 'core-js': '^3.0.0' },
+        }),
+      ).toBe('usage-pure');
     });
   });
 });
