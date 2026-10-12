@@ -4,7 +4,7 @@
 # data-client checkout (anansi's main consumer) when one is present.
 set -euo pipefail
 
-if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
+if [[ "${CLAUDE_CODE_REMOTE:-}" != "true" ]]; then
   exit 0
 fi
 
@@ -21,7 +21,9 @@ if ! node_ok; then
   nvm install 24 >/dev/null
   NODE_BIN="$(dirname "$(nvm which 24)")"
   export PATH="$NODE_BIN:$PATH"
-  [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"$NODE_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
+  if [[ -n "${CLAUDE_ENV_FILE:-}" ]]; then
+    echo "export PATH=\"$NODE_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
+  fi
 fi
 
 # Both repos vendor yarn via yarnPath. Global yarn 1.x delegates to it;
@@ -34,7 +36,9 @@ if ! (cd "$ANANSI_DIR" && yarn --version >/dev/null 2>&1); then
   printf '#!/bin/sh\nexec node "$(git rev-parse --show-toplevel)"/.yarn/releases/yarn-*.cjs "$@"\n' > "$YARN_BIN/yarn"
   chmod +x "$YARN_BIN/yarn"
   export PATH="$YARN_BIN:$PATH"
-  [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"$YARN_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
+  if [[ -n "${CLAUDE_ENV_FILE:-}" ]]; then
+    echo "export PATH=\"$YARN_BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
+  fi
 fi
 
 cd "$ANANSI_DIR"
@@ -43,7 +47,7 @@ cd "$ANANSI_DIR"
 yarn install --mode=skip-build
 yarn build:pkg
 
-if [ -f "$ANANSI_DIR/../data-client/package.json" ]; then
+if [[ -f "$ANANSI_DIR/../data-client/package.json" ]]; then
   cd "$ANANSI_DIR/../data-client"
   # its install scripts only prebuild packages; validation builds explicitly
   yarn install --mode=skip-build

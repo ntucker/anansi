@@ -39,7 +39,7 @@ pack() {
 link() {
   pack
   cd "$CONSUMER_DIR"
-  if [ ! -d "$BACKUP_DIR" ]; then
+  if [[ ! -d "$BACKUP_DIR" ]]; then
     mkdir -p "$BACKUP_DIR"
     cp package.json yarn.lock "$BACKUP_DIR/"
   fi
@@ -68,7 +68,7 @@ link() {
 
 unlink() {
   cd "$CONSUMER_DIR"
-  if [ ! -d "$BACKUP_DIR" ]; then
+  if [[ ! -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is not linked."
     return
   fi
@@ -80,7 +80,7 @@ unlink() {
 
 status() {
   cd "$CONSUMER_DIR"
-  if [ -d "$BACKUP_DIR" ]; then
+  if [[ -d "$BACKUP_DIR" ]]; then
     echo "$CONSUMER_DIR is linked to:"
     grep -o '"[^"]*": "file:[^"]*\.tgz"' package.json || true
   else
