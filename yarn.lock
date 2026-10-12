@@ -131,7 +131,6 @@ __metadata:
     "@data-client/react": "npm:^0.18.0"
     "@types/compression": "npm:1.8.1"
     "@types/express": "npm:^5.0.6"
-    "@types/micromatch": "npm:^4.0.9"
     "@types/node": "npm:^24.0.0"
     "@types/react": "npm:19.2.17"
     "@types/react-dom": "npm:19.2.3"
@@ -149,7 +148,6 @@ __metadata:
     history: "npm:^5.3.0"
     http-proxy-middleware: "npm:^4.1.1"
     memfs: "npm:^3.5.3"
-    micromatch: "npm:^4.0.8"
     ora: "npm:^6.3.1"
     react: "npm:19.2.7"
     react-dom: "npm:19.2.7"
@@ -8348,13 +8346,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/braces@npm:*":
-  version: 3.0.5
-  resolution: "@types/braces@npm:3.0.5"
-  checksum: 10c0/fff17426731376b452abf747e862f0116b80ccc68a2c8e6b56aff240048c26c983d61c456c6792dffe9df407d80c1a504bea21e8c1a56afaed1f311dfe75bc68
-  languageName: node
-  linkType: hard
-
 "@types/chai@npm:^5.2.2":
   version: 5.2.3
   resolution: "@types/chai@npm:5.2.3"
@@ -8680,15 +8671,6 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 10c0/7a364125c59e7b59cac7221bc6e864050e06df87b108fa954e2de04fe0bae781d1e453d4d1867b923d8c35d6c559d936a224dca7863289effa36a2e611de19df
-  languageName: node
-  linkType: hard
-
-"@types/micromatch@npm:^4.0.9":
-  version: 4.0.10
-  resolution: "@types/micromatch@npm:4.0.10"
-  dependencies:
-    "@types/braces": "npm:*"
-  checksum: 10c0/dc424e0f9ed1a4f22dbed5048ac698d089d4628dd8a41a056b2eb12782cfda85bf06fccc0be341ce9af7345858eb07a27757ca023664cfb8bde235212795d295
   languageName: node
   linkType: hard
 
