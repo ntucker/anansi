@@ -12,25 +12,25 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
+      # Download and cache dependencies (Yarn 4 keeps them in its global cache)
       - restore_cache:
           keys:
-            - v6-dependencies-{{ checksum "yarn.lock" }}
+            - v7-dependencies-{{ checksum "yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - v6-dependencies-
+            - v7-dependencies-
 
+      # The image's yarn hands off to .yarn/releases via yarnPath. build:pkg
+      # builds every package, so install skips their install scripts.
       - run:
           name: yarn install
           command: |
-            sudo corepack enable
-            yarn install --immutable
+            yarn install --immutable --mode=skip-build
             yarn build:pkg
 
       - save_cache:
           paths:
-            - .yarn/cache
-            - .yarn/install-state.gz
-          key: v6-dependencies-{{ checksum "yarn.lock" }}
+            - ~/.yarn/berry/cache
+          key: v7-dependencies-{{ checksum "yarn.lock" }}
 
       - persist_to_workspace:
           root: ~/
@@ -43,12 +43,20 @@ jobs:
       - checkout
       - run: docker run -t -v $(pwd):/home/repo coinbase/salus
 
+  # webpack-config's suite takes as long as all the others, so it gets its own job
   test:
     docker: *docker
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn workspaces foreach -Wv run test:ci --passWithNoTests
+      - run: yarn workspaces foreach -Wv --exclude @anansi/webpack-config run test:ci --passWithNoTests
+
+  test_webpack_config:
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn workspace @anansi/webpack-config run test:ci
 
   lint:
     docker: *docker
@@ -59,12 +67,20 @@ jobs:
       - run: yarn test:type
       - run: yarn build:agent-rules --check
 
+  # Each parallel node builds its share of the example-* workspaces
   build_production:
     docker: *docker
+    parallelism: 3
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn workspaces foreach -Wv --include 'example-*' run build
+      - run:
+          name: Build examples
+          command: |
+            examples=$(yarn workspaces list --json | grep -o '"name":"example-[^"]*"' | cut -d'"' -f4 | circleci tests split)
+            for workspace in $examples; do
+              yarn workspace "$workspace" run build
+            done
 
   build_matrix:
     parameters:
@@ -108,6 +124,9 @@ workflows:
           requires:
             - build
       - test:
+          requires:
+            - build
+      - test_webpack_config:
           requires:
             - build
       - build_production:

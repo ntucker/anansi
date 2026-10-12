@@ -25,7 +25,7 @@
     "test:type": "yarn workspaces foreach -Wpv run test:type",
     "format": "eslint --fix packages",
     "build:types": "tsc --build",
-    "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -Wtv --no-private run build",
+    "build:pkg": "run build:types && yarn workspace \"@anansi/webpack-config\" run build && yarn workspaces foreach -Wptv --no-private run build",
     "build:clean": "yarn workspaces foreach -Wpi --no-private run build:clean",
     "build:sizecompare": "yarn workspace example-typescript build:clean && yarn workspace example-typescript build --env nohash",
     "build:agent-rules": "node scripts/agent-rules.mjs",
