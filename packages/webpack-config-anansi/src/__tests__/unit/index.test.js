@@ -323,6 +323,21 @@ describe('makeConfig', () => {
       });
     });
 
+    it('should drop SVGR but keep the file URL when svgrOptions is false', () => {
+      const configFn = makeConfig({
+        ...defaultTestOptions,
+        svgrOptions: false,
+      });
+      const config = configFn({}, { mode: 'production' });
+
+      expect(getSvgrOptions(config)).toBeUndefined();
+      const jsSvgUse = config.module.rules
+        .flatMap(rule => rule.oneOf ?? [])
+        .find(rule => rule.issuer?.toString().includes('sx')).use;
+      expect(jsSvgUse).toHaveLength(1);
+      expect(jsSvgUse[0].loader).toContain('file-loader');
+    });
+
     it('should have asset loaders for images', () => {
       const configFn = makeConfig(defaultTestOptions);
       const config = configFn({}, { mode: 'development' });

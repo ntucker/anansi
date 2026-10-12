@@ -225,7 +225,7 @@ export default function makeBaseConfig({
             {
               issuer: /\.(j|t)sx?$/,
               use: [
-                {
+                svgrOptions !== false && {
                   loader: require.resolve('@svgr/webpack'),
                   options: {
                     // SVGR treats svgoConfig: false as unset and runs SVGO anyway
@@ -244,7 +244,7 @@ export default function makeBaseConfig({
                       : '[md5:contenthash:base64:8].[ext][query]',
                   },
                 },
-              ],
+              ].filter(l => l),
               type: 'javascript/auto',
             },
             // for non-js files always use file-loader

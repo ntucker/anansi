@@ -496,7 +496,7 @@ set to false to disable SVGO altogether. (Note: SVGs imported from JS/TS are opt
 
 ### svgrOptions
 
-SVGR enables importing SVG as a file or a component. This option allows further customizing how that is achieved.
+SVGR enables importing SVG as a file or a component. This option allows further customizing how that is achieved. Set to `false` to disable SVGR; SVGs imported from JS/TS then only give their file URL.
 
 [Configuration options](https://react-svgr.com/docs/options/)
 
