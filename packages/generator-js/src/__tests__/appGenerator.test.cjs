@@ -1,6 +1,5 @@
 const { beforeAll, describe, expect, it } = require('@jest/globals');
 const fs = require('node:fs');
-const os = require('node:os');
 const path = require('node:path');
 const assert = require('yeoman-assert');
 
@@ -337,7 +336,14 @@ describe('License generator', () => {
     const result = await helpers
       .run(LICENSE_ENTRY)
       .withOptions(options)
-      .withPrompts({ license: 'MIT' });
+      .withPrompts({ license: 'MIT' })
+      .onGenerator(generator => {
+        // Simulate a machine with no git identity configured
+        generator._git = {
+          name: async () => undefined,
+          email: async () => undefined,
+        };
+      });
     return fs.readFileSync(path.join(result.cwd, 'LICENSE'), 'utf8');
   }
 
@@ -351,13 +357,7 @@ describe('License generator', () => {
   });
 
   it('does not crash when git has no user configured', async () => {
-    const home = process.env.HOME;
-    process.env.HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'no-git-'));
-    try {
-      const license = await readLicense({});
-      expect(license).toMatch(/^Copyright \(c\) \d+ *$/m);
-    } finally {
-      process.env.HOME = home;
-    }
+    const license = await readLicense({});
+    expect(license).toMatch(/^Copyright \(c\) \d+ *$/m);
   });
 });
