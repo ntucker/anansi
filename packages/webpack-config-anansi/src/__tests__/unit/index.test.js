@@ -54,6 +54,25 @@ describe('makeConfig', () => {
     expect(findOneOfLoader(config, 'sass-loader')).toBeUndefined();
   });
 
+  it('should vendor-prefix CSS through postcss-preset-env', async () => {
+    const postcss = require('postcss');
+    process.env.BROWSERSLIST = 'safari 12';
+    try {
+      const config = makeConfig(defaultTestOptions)(
+        {},
+        { mode: 'development' },
+      );
+      const { plugins } = findOneOfLoader(config, 'postcss-loader').options
+        .postcssOptions;
+      const { css } = await postcss(plugins).process('a{user-select:none}', {
+        from: undefined,
+      });
+      expect(css).toContain('-webkit-user-select:none');
+    } finally {
+      delete process.env.BROWSERSLIST;
+    }
+  });
+
   it('should create a config function', () => {
     const configFn = makeConfig(defaultTestOptions);
     expect(typeof configFn).toBe('function');
