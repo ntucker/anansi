@@ -215,7 +215,6 @@ export default async function startDevServer(
           throw new Error('webpack-dev-server is not defined');
         }
 
-        const publicPath = process.env.WEBPACK_PUBLIC_PATH;
         const ssr = handleErrors(async function (req: any, res: any) {
           if (req.url.endsWith('favicon.ico')) {
             res.statusCode = 404;
@@ -234,7 +233,7 @@ export default async function startDevServer(
 
           await render(req, res);
         });
-        insertSsrMiddleware(middlewares, ssr, publicPath);
+        insertSsrMiddleware(middlewares, ssr, process.env.WEBPACK_PUBLIC_PATH);
 
         if (webpackConfigs[0].devServer?.setupMiddlewares) {
           return webpackConfigs[0].devServer.setupMiddlewares(

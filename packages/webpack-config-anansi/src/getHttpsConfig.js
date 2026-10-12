@@ -62,9 +62,10 @@ export default function getHttpsConfig(rootPath) {
 
     validateKeyAndCerts({ ...config, keyFile, crtFile });
     return {
-      type: 'spdy',
+      // webpack-dev-server 6 dropped spdy, and its http2 type crashes (6.0.0)
+      type: 'https',
       options: config,
     };
   }
-  return isHttps ? { type: 'spdy' } : 'http';
+  return isHttps ? { type: 'https' } : 'http';
 }

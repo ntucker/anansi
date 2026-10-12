@@ -6,8 +6,7 @@ process.env.ANANSI_JEST_BABELCONFIG = 'babel.config.js';
 module.exports = {
   preset: '@anansi/jest-preset',
   testEnvironment: 'node',
-  // overrides the preset's list (so @babel/runtime is repeated) to also
-  // compile http-proxy-middleware and its ESM-only deps
+  // preset's list plus http-proxy-middleware's ESM-only deps
   transformIgnorePatterns: [
     '/node_modules/(?!@babel/runtime|(http-proxy-middleware|httpxy|is-plain-obj)/)',
     '\\.pnp\\.[^\\/]+$',
