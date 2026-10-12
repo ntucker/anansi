@@ -32,6 +32,13 @@ export default [
     },
   },
   {
+    // package pretests lint from their own directory; use this repo's babel.config.js
+    files: ['**/*.?(m|c)js?(x)'],
+    languageOptions: {
+      parserOptions: { babelOptions: { root: import.meta.dirname } },
+    },
+  },
+  {
     files: [
       'packages/**/*.test.{js,jsx,ts,tsx}',
       'packages/**/__tests__/**/*.{js,jsx,ts,tsx}',
