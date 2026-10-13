@@ -232,7 +232,7 @@ describe('buildPreset', () => {
     };
 
     it.each(Object.keys(gated))(
-      'adds the gated plugins for other callers in %s',
+      'adds the gated plugins for the babel-loader caller in %s',
       env => {
         const plugins = pluginsFor('babel-loader', env);
         for (const name of gated[env]) expect(plugins).toContain(load(name));
