@@ -26,7 +26,7 @@ Like Ubuntu did for Linux; Anansi focuses on bringing together many powerful too
 
 ## Installation
 
-<details><summary><b><a href="https://nodejs.org/">node.js</a> ^22.18.0 or >=24.11.0 and <a href="https://www.npmjs.com/">npm</a> >=7 are required.</b></summary>
+<details><summary><b><a href="https://nodejs.org/">node.js</a> ^22.22.2, ^24.15.0 or >=26.0.0 and <a href="https://www.npmjs.com/">npm</a> >=7 are required.</b></summary>
 
 Use [nvm](https://github.com/nvm-sh/nvm) to install these if you don't already.
 

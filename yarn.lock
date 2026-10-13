@@ -238,7 +238,7 @@ __metadata:
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^6.0.0"
     mem-fs-editor: "npm:^12.1.0"
-    pacote: "npm:^21.5.1"
+    pacote: "npm:^22.0.0"
     prettier: "npm:^3.9.10"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
@@ -20633,7 +20633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pacote@npm:^21.0.0, pacote@npm:^21.0.2, pacote@npm:^21.5.0, pacote@npm:^21.5.1":
+"pacote@npm:^21.0.0, pacote@npm:^21.0.2, pacote@npm:^21.5.0":
   version: 21.5.1
   resolution: "pacote@npm:21.5.1"
   dependencies:
