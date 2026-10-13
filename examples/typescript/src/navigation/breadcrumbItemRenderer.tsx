@@ -1,9 +1,8 @@
 import type { BreadcrumbProps } from 'antd';
 import { Link } from 'react-router-dom';
 
-type Route = NonNullable<BreadcrumbProps['routes']> extends Array<infer T>
-  ? T
-  : never;
+type Route =
+  NonNullable<BreadcrumbProps['routes']> extends Array<infer T> ? T : never;
 export default function itemRender(
   route: Route,
   params: any,
@@ -11,9 +10,7 @@ export default function itemRender(
   paths: Array<string>,
 ) {
   const last = routes.indexOf(route) === routes.length - 1;
-  return last ? (
-    <span>{route.breadcrumbName}</span>
-  ) : (
-    <Link to={route.path}>{route.breadcrumbName}</Link>
-  );
+  return last ?
+      <span>{route.breadcrumbName}</span>
+    : <Link to={route.path}>{route.breadcrumbName}</Link>;
 }

@@ -37,8 +37,7 @@ export interface Options {
   htmlOptions?: HtmlWebpackPlugin.Options | false;
   svgoOptions?: OptimizeOptions | false;
   svgrOptions?:
-    | { svgoConfig?: OptimizeOptions; [key: string]: unknown }
-    | false;
+    { svgoConfig?: OptimizeOptions; [key: string]: unknown } | false;
   inJSOptions?: WYWOptions | false;
   cssExtractOptions?: MiniCssExtractPluginOptions | false;
   tsconfigPathsOptions?: TsconfigPathsOptions | false;
