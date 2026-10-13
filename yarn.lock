@@ -104,7 +104,7 @@ __metadata:
     "@types/node": "npm:^24.0.0"
     binary-version-check: "npm:^6.1.0"
     chalk: "npm:^4.1.2"
-    commander: "npm:^12.1.0"
+    commander: "npm:^15.0.0"
     execa: "npm:^10.1.0"
     import-meta-resolve: "npm:^4.2.0"
     latest-version: "npm:^9.0.0"
@@ -12656,13 +12656,6 @@ __metadata:
   version: 11.1.0
   resolution: "commander@npm:11.1.0"
   checksum: 10c0/13cc6ac875e48780250f723fb81c1c1178d35c5decb1abb1b628b3177af08a8554e76b2c0f29de72d69eef7c864d12613272a71fabef8047922bc622ab75a179
-  languageName: node
-  linkType: hard
-
-"commander@npm:^12.1.0":
-  version: 12.1.0
-  resolution: "commander@npm:12.1.0"
-  checksum: 10c0/6e1996680c083b3b897bfc1cfe1c58dfbcd9842fd43e1aaf8a795fbc237f65efcc860a3ef457b318e73f29a4f4a28f6403c3d653d021d960e4632dd45bde54a9
   languageName: node
   linkType: hard
 
