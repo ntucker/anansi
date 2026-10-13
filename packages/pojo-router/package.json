@@ -53,7 +53,7 @@
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "react": "19.2.7"
+    "react": "19.3.0"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^8.0.0",

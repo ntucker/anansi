@@ -34,7 +34,7 @@
     "babel-loader": "10.1.1",
     "eslint": "^9.0.0",
     "prettier": "^3.0.0",
-    "react-refresh": "0.18.0",
+    "react-refresh": "0.19.0",
     "serve": "14.2.6",
     "webpack": "5.111.1",
     "webpack-cli": "^7.2.3",
@@ -47,8 +47,8 @@
     "@linaria/react": "7.0.1",
     "classnames": "2.5.1",
     "core-js": "3.50.0",
-    "react": "19.2.7",
-    "react-dom": "19.2.7"
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "browserslist": [
     "extends @anansi/browserslist-config"
