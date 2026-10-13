@@ -45,13 +45,9 @@ export class GithubEndpoint<
   urlPrefix = HOST;
 
   async getRequestInit(body: any) {
-    let init: RequestInit;
-    if (body) {
-      init = await super.getRequestInit(
-        deeplyApplyKeyTransform(body, snakeCase),
-      );
-    }
-    init = await super.getRequestInit(body);
+    const init = await super.getRequestInit(
+      body ? deeplyApplyKeyTransform(body, snakeCase) : body,
+    );
     if (getAuth()) {
       init.mode = 'cors';
       init.headers = {

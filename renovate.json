@@ -9,8 +9,7 @@
   "ignoreDeps": [
     "whatwg-fetch",
     "react-error-overlay",
-    "@ant-design/pro-layout",
-    "eslint-plugin-react-hooks"
+    "@ant-design/pro-layout"
   ],
   "timezone": "America/Chicago",
   "postUpdateOptions": ["yarnDedupeHighest"],

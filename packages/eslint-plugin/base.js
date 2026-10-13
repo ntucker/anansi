@@ -7,9 +7,24 @@ import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
+import { createRequire } from 'node:module';
+import path from 'node:path';
 import tsPlugin from 'typescript-eslint';
 
 import isInstalled from './isInstalled.cjs';
+
+// eslint-plugin-react's version: 'detect' calls context.getFilename(), which
+// ESLint 10 removed, so resolve React from the project ourselves
+function reactVersion() {
+  try {
+    return createRequire(path.join(process.cwd(), 'noop.js'))(
+      'react/package.json',
+    ).version;
+  } catch {
+    // eslint-plugin-react's own fallback when React isn't installed
+    return '999.999.999';
+  }
+}
 
 const generalRules = {
   // TODO: instead of including TS stuff, just have the base, but then programatically order things
@@ -63,7 +78,7 @@ const generalRules = {
   },
   settings: {
     react: {
-      version: 'detect',
+      version: reactVersion(),
     },
     'import/parsers': {
       '@typescript-eslint/parser': [
