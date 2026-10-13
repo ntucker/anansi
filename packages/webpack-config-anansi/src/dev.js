@@ -1,13 +1,12 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
+import { styleText } from 'node:util';
 import webpack from 'webpack';
 import logging from 'webpack/lib/logging/runtime';
 
 import { getStyleRules } from './base';
 import getHttpsConfig from './getHttpsConfig';
 import ErrorOverlayPlugin from './plugins/ErrorOverlayPlugin';
-
-const chalk = require('react-dev-utils/chalk');
 
 export default function makeDevConfig(
   baseConfig,
@@ -63,7 +62,9 @@ export default function makeDevConfig(
   try {
     server = getHttpsConfig(rootPath);
   } catch {
-    console.warn(chalk.yellow('Falling back to http'));
+    console.warn(
+      styleText('yellow', 'Falling back to http', { stream: process.stderr }),
+    );
   }
   config.devServer = {
     hot: true,

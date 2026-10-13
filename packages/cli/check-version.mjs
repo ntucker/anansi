@@ -1,10 +1,10 @@
 import binVersionCheck from 'binary-version-check';
-import chalk from 'chalk';
 import fs from 'fs';
 import latestVersion from 'latest-version';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { styleText } from 'node:util';
 
 // TODO: Use this once stackblitz works with it
 //import pkg from './package.json' assert { type: 'json' };
@@ -22,9 +22,13 @@ export const verify = async () => {
     return result;
   } catch (error) {
     if (error.name === 'InvalidBinaryVersion') {
-      return `${chalk.red(
+      // printed with console.error
+      const stream = process.stderr;
+      return `${styleText(
+        'red',
         `Warning: ${pkg.name} is outdated. ${version} now available.`,
-      )}\n${chalk.cyan("Run 'npm update -g @anansi/cli' to update")}`;
+        { stream },
+      )}\n${styleText('cyan', "Run 'npm update -g @anansi/cli' to update", { stream })}`;
     }
 
     console.log(error);

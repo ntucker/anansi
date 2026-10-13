@@ -1,7 +1,7 @@
 import { passthrough } from '@yeoman/transform';
-import chalk from 'chalk';
 import { format, getFileInfo, type Options } from 'prettier';
 import shelobsay from 'shelobsay';
+import { styleText } from 'node:util';
 import { BaseFeatures } from 'yeoman-generator';
 
 import ConfigureGenerator, {
@@ -42,7 +42,9 @@ export default class AppGenerator<
   }
 
   async prompting() {
-    this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
+    // yeoman's logger writes to stderr
+    const anansi = styleText('red', 'Anansi', { stream: process.stderr });
+    this.log(shelobsay(`Creating a new ${anansi} project!`));
     const props = await super.prompting();
     // await so the base generator's writes queue before the Prettier pass runs
     await this.composeWith(
