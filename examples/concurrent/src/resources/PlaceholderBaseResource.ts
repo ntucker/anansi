@@ -34,12 +34,16 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     // This is sometimes needed when you don't control the server API itself
     // More here: https://dataclient.io/rest/guides/network-transform#case-of-the-missing-id
     partialUpdate: base.partialUpdate.extend({
-      process(value: any, ...args: any) {
+      async fetch(...args: any) {
+        // body only contains what we're changing, but we can find the id in params
+        const value = await base.partialUpdate.fetch.apply(this, args);
         return { ...value, id: args[0]?.id };
       },
     }),
     create: base.create.extend({
-      process(value: any, ...args: any) {
+      async fetch(...args: any) {
+        // body only contains what we're changing, but we can find the id in params
+        const value = await base.create.fetch.apply(this, args);
         return { ...value, id: args[args.length - 1]?.id };
       },
     }),

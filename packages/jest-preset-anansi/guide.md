@@ -51,3 +51,6 @@ ship. Keep 6.0 as `typescript` and add 7.0's `tsc` beside it:
   "@typescript/native": "npm:typescript@^7.0.2"
 }
 ```
+
+ts-jest then type checks on 6.0 while `tsc` checks on 7.0, and the two can
+disagree. Treat `tsc --noEmit` as the source of truth.

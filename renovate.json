@@ -37,6 +37,12 @@
       "rangeStrategy": "replace"
     },
     {
+      "description": "TypeScript 7 has no JS API, which our typescript peers need; drop once it ships one",
+      "matchDepTypes": ["peerDependencies"],
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    },
+    {
       "extends": ["monorepo:react"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupName": "react"
