@@ -65,7 +65,8 @@ export default class RouteController<
         route,
         matcher: matchPath(parsed, {
           ...options,
-          // `??` (not a spread default) so `decode: undefined` still gets safeDecode
+          // default to safeDecode (also for `decode: undefined`): v8's own decode
+          // throws on malformed escapes
           decode: options.decode ?? safeDecode,
         }),
         outboundPath: (data?: object) =>
