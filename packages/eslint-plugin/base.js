@@ -1,6 +1,6 @@
 import babelParser from '@babel/eslint-parser';
 import babelPlugin from '@babel/eslint-plugin';
-import { fixupPluginRules } from '@eslint/compat';
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
 import js from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
 import importPluginRaw from 'eslint-plugin-import';
@@ -18,10 +18,9 @@ import isInstalled from './isInstalled.cjs';
 // jsx-eslint/eslint-plugin-react#3979 ship
 const importPlugin = fixupPluginRules(importPluginRaw);
 const reactPlugin = fixupPluginRules(reactPluginRaw);
-const reactRecommended = {
-  ...reactPluginRaw.configs.flat.recommended,
-  plugins: { react: reactPlugin },
-};
+const [reactRecommended] = fixupConfigRules(
+  reactPluginRaw.configs.flat.recommended,
+);
 
 const generalRules = {
   // TODO: instead of including TS stuff, just have the base, but then programatically order things
