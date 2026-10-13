@@ -1,4 +1,4 @@
-import { css } from '@linaria/core';
+import { css, cx } from '@linaria/core';
 import { styled } from '@linaria/react';
 import Media from 'Media';
 import MenuItem from 'MenuItem';
@@ -19,7 +19,7 @@ const neato = {
   boxShadow: '10px 10px 5px 0px rgba(0, 0, 0, 0.75)',
 };
 
-export const font = css`
+const font = css`
   :global() {
     @font-face {
       font-family: 'FaricyNew';
@@ -83,7 +83,7 @@ const WrappedMedia = styled(Media)`
 
 const App = () => (
   <>
-    <h1 className={header}>Linaria Test</h1>
+    <h1 className={cx(font, header)}>Linaria Test</h1>
     <Container>
       <Text>hello world!</Text>
       <MenuItem>hi</MenuItem>
