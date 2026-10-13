@@ -53,6 +53,18 @@ describe('RouteController', () => {
       expect(createRouter().getMatchedRoutes('/files/%/b')).toEqual([
         { name: 'Files', path: ['%', 'b'] },
       ]);
+      expect(createRouter().getMatchedRoutes('/post/5?q=50%')).toEqual([
+        { name: 'Post', id: '5?q=50%' },
+      ]);
+      const catchAll = new RouteController({
+        history: {} as any,
+        namedPaths: { All: '{/*rest}' },
+        routes: [{ name: 'All' }],
+        notFound: {},
+      });
+      expect(catchAll.getMatchedRoutes('/%E0%A4%A/x')).toEqual([
+        { name: 'All', rest: ['%E0%A4%A', 'x'] },
+      ]);
     });
 
     it('respects a custom decode', () => {
@@ -64,6 +76,15 @@ describe('RouteController', () => {
       });
       expect(router.getMatchedRoutes('/post/a%20b')).toEqual([
         { name: 'Post', id: 'a%20b' },
+      ]);
+      const undefinedDecode = new RouteController({
+        history: {} as any,
+        namedPaths: { Post: { path: '/post/:id', decode: undefined } },
+        routes: [{ name: 'Post' }],
+        notFound: {},
+      });
+      expect(undefinedDecode.getMatchedRoutes('/post/%E0%A4%A')).toEqual([
+        { name: 'Post', id: '%E0%A4%A' },
       ]);
     });
   });
@@ -81,7 +102,7 @@ describe('RouteController', () => {
       expect(router.buildPath('/raw/:slug', { slug: 'x' })).toBe('/raw/x');
     });
 
-    it('stringifies numbers and skips null', () => {
+    it('stringifies numbers and skips null and empty arrays', () => {
       const router = createRouter();
       expect(router.buildPath('Post', { id: 5 })).toBe('/post/5');
       expect(router.pathBuilders.Post({ id: 5 })).toBe('/post/5');
@@ -112,7 +133,7 @@ describe('RouteController', () => {
   });
 });
 
-// type-only checks: compiled by tsc, never run
+// type-only checks: type-checked by the jest preset (tsconfig.test.json), never called
 export function typeAssertions(router: ReturnType<typeof createRouter>) {
   // @ts-expect-error unknown param
   router.buildPath('Post', { idd: 5 });

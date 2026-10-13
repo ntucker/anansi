@@ -63,7 +63,10 @@ export default class RouteController<
       return {
         pathOrPathName,
         route,
-        matcher: matchPath(parsed, { decode: safeDecode, ...options }),
+        matcher: matchPath(parsed, {
+          ...options,
+          decode: options.decode ?? safeDecode,
+        }),
         outboundPath: (data?: object) =>
           build(data ? stringifyParams(data) : undefined),
       };
