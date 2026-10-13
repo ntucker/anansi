@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { Command } from 'commander';
+import { Argument, Command } from 'commander';
 import { execa } from 'execa';
 import fs from 'fs';
 import { resolve } from 'import-meta-resolve';
@@ -19,8 +19,9 @@ const pkg = JSON.parse(
 );
 const { version } = pkg;
 
-// npm's package name rule, minus leading '-' so a name can't parse as a flag
-const npmName = /^(?:@[a-z0-9~][a-z0-9._~-]*\/)?[a-z0-9~][a-z0-9._~-]*$/i;
+// unscoped npm package name (lowercase, <= 214 chars), so it's safe as a
+// directory and can't parse as a flag
+const npmName = /^[a-z0-9~][a-z0-9._~-]{0,213}$/;
 
 const program = new Command();
 
@@ -36,15 +37,14 @@ program
     'What directory to add to. (Creates new directory by default)',
   )
   .action(async (projectName, options) => {
-    // projectName becomes a directory and a generator argument, so only accept
-    // npm package names: no path separators beyond the scope, no '..', no flags
+    // projectName becomes a directory and a generator argument
     if (!npmName.test(projectName)) {
       console.error(
-        `Invalid project name: ${JSON.stringify(projectName)}\nUse an npm package name, like my-app or @my-org/my-app`,
+        `Invalid project name: ${JSON.stringify(projectName)}\nUse a lowercase npm package name without a scope, like my-app`,
       );
       process.exit(2);
     }
-    const cwd = options.dir || projectName.split('/').pop();
+    const cwd = options.dir || projectName;
     if (!options.dir && !fs.existsSync(cwd)) {
       fs.mkdirSync(cwd);
     }
@@ -83,7 +83,10 @@ program
       }
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
-        await execa(editor, [cwd, readme], { stdio: 'inherit' });
+        // absolute paths, so a --dir like '-x' can't parse as an editor flag
+        await execa(editor, [path.resolve(cwd), path.resolve(readme)], {
+          stdio: 'inherit',
+        });
       }
     } catch (error) {
       // Don't display error for user-triggered exit (SIGINT)
@@ -95,9 +98,13 @@ program
 program
   .command('add')
   .description('adds features to existing project')
-  .argument(
-    '<features...>',
-    'one of `testing` | `storybook` | `circle` | `github-actions`',
+  .addArgument(
+    new Argument('<features...>', 'features to add').choices([
+      'testing',
+      'storybook',
+      'circle',
+      'github-actions',
+    ]),
   )
   .action(async features => {
     await verifyAndPrompt();
