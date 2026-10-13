@@ -39,3 +39,15 @@ Set these at the top of `jest.config.js` (jest presets can't take options):
 
 Linaria/wyw-in-js styles need `'@wyw-in-js'` in the babel presets for tests,
 because webpack doesn't run under jest.
+
+## TypeScript 7
+
+ts-jest and the tsconfig reader need TypeScript's JS API, which 7.0 doesn't
+ship. Keep 6.0 as `typescript` and add 7.0's `tsc` beside it:
+
+```json
+{
+  "typescript": "npm:@typescript/typescript6@^6.0.2",
+  "@typescript/native": "npm:typescript@^7.0.2"
+}
+```

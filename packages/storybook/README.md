@@ -52,7 +52,8 @@ module.exports = {
 ### Typescript
 
 `npx sb init` will select `.ts` starter stories if your `package.json` has typescript as a dependency. If starting a new project,
-run `npm init` and `npm install typescript --save-dev` before initializing storybook to get the typescript starter stories.
+run `npm init` and `npm install -D typescript@npm:@typescript/typescript6 @typescript/native@npm:typescript` before initializing storybook to get the typescript starter stories.
+`react-docgen-typescript` needs TypeScript's JS API, which TypeScript 7 lacks, so `typescript` stays on 6.0 while `tsc` runs 7.
 
 ---
 

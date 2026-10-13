@@ -166,6 +166,15 @@ generatorSuite(
       ]);
     });
 
+    it('keeps the TypeScript 6 API under typescript for tooling', () => {
+      const { devDependencies } = readPkg(getResult().cwd);
+      assert.match(
+        devDependencies.typescript,
+        /^npm:@typescript\/typescript6@/,
+      );
+      assert.match(devDependencies['@typescript/native'], /^npm:typescript@/);
+    });
+
     it('includes expected runtime dependencies', () => {
       assertHasDeps(readPkg(getResult().cwd), 'dependencies', [
         '@anansi/router',

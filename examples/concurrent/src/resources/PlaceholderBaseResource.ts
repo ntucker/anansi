@@ -26,15 +26,6 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     // hour expiry time since we want to keep our example mutations and the api itself never actually changes
     dataExpiryLength: 1000 * 60 * 60,
   });
-  const partialUpdate = base.partialUpdate.extend({
-    fetch: async function (...args: any) {
-      // body only contains what we're changing, but we can find the id in params
-      return {
-        ...(await base.partialUpdate.call(this, ...args)),
-        id: args?.[0]?.id,
-      } as any;
-    },
-  });
   return {
     ...base,
     // Endpoint overrides are to compensate for the jsonplaceholder API not returning
@@ -42,14 +33,14 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     //
     // This is sometimes needed when you don't control the server API itself
     // More here: https://dataclient.io/rest/guides/network-transform#case-of-the-missing-id
-    partialUpdate,
+    partialUpdate: base.partialUpdate.extend({
+      process(value: any, ...args: any) {
+        return { ...value, id: args[0]?.id };
+      },
+    }),
     create: base.create.extend({
-      fetch: async function (...args: any) {
-        // body only contains what we're changing, but we can find the id in params
-        return {
-          ...(await base.create.call(this, ...args)),
-          id: args?.[args.length - 1]?.id,
-        } as any;
+      process(value: any, ...args: any) {
+        return { ...value, id: args[args.length - 1]?.id };
       },
     }),
     // generics don't match up well
