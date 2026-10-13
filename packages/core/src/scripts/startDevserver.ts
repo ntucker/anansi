@@ -145,8 +145,7 @@ export default async function startDevServer(
   }
 
   let initRender:
-    | { args: Parameters<BoundRender>; resolve: () => void }[]
-    | undefined = [];
+    { args: Parameters<BoundRender>; resolve: () => void }[] | undefined = [];
   let render: BoundRender = (...args) =>
     new Promise(resolve => {
       initRender?.push({ args, resolve });

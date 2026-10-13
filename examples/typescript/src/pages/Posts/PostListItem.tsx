@@ -10,11 +10,11 @@ import { Post, UserResource } from '@/data/resources';
 export default function IssueListItem({ post }: { post: Post }) {
   const author = useSuspense(
     UserResource.get,
-    post.userId
-      ? {
-          id: post.userId,
-        }
-      : null,
+    post.userId ?
+      {
+        id: post.userId,
+      }
+    : null,
   );
   const actions = [];
   actions.push(
