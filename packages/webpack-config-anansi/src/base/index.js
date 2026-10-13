@@ -231,7 +231,7 @@ export default function makeBaseConfig({
                     // SVGR treats svgoConfig: false as unset and runs SVGO anyway
                     ...(svgoOptions === false ?
                       { svgo: false }
-                    : { svgoConfig: svgoOptions }),
+                    : { svgoConfig: toSvgo3Config(svgoOptions) }),
                     ...svgrOptions,
                   },
                 },
@@ -294,4 +294,29 @@ export default function makeBaseConfig({
     config.cache.type = 'filesystem';
   }
   return config;
+}
+
+// @svgr/plugin-svgo still runs SVGO 3, whose preset-default also strips
+// viewBox and <title>; keep both like SVGO 4 (svgo-loader) does
+function toSvgo3Config(config) {
+  if (!config.plugins) return config;
+  return {
+    ...config,
+    plugins: config.plugins.map(plugin => {
+      if (plugin !== 'preset-default' && plugin?.name !== 'preset-default')
+        return plugin;
+      const preset = typeof plugin === 'string' ? { name: plugin } : plugin;
+      return {
+        ...preset,
+        params: {
+          ...preset.params,
+          overrides: {
+            removeViewBox: false,
+            removeTitle: false,
+            ...preset.params?.overrides,
+          },
+        },
+      };
+    }),
+  };
 }

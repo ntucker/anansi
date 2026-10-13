@@ -354,6 +354,12 @@ describe('makeConfig', () => {
 
         expect(options.svgo).toBeUndefined();
         expect(options.svgoConfig.plugins).toContain('prefixIds');
+        // SVGR's SVGO 3 must keep viewBox and <title> like SVGO 4 does
+        expect(options.svgoConfig.plugins[0].params.overrides).toEqual({
+          convertShapeToPath: false,
+          removeViewBox: false,
+          removeTitle: false,
+        });
       });
 
       it('should disable SVGO in SVGR when svgoOptions is false', () => {
