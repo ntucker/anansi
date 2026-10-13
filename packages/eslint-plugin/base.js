@@ -1,15 +1,26 @@
 import babelParser from '@babel/eslint-parser';
 import babelPlugin from '@babel/eslint-plugin';
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
 import js from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
-import importPlugin from 'eslint-plugin-import';
+import importPluginRaw from 'eslint-plugin-import';
 import prettierPlugin from 'eslint-plugin-prettier';
-import reactPlugin from 'eslint-plugin-react';
+import reactPluginRaw from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import tsPlugin from 'typescript-eslint';
 
 import isInstalled from './isInstalled.cjs';
+
+// eslint-plugin-import 2.32 and eslint-plugin-react 7.37 call context and
+// SourceCode methods ESLint 10 removed; drop the shim once releases with
+// import-js/eslint-plugin-import's getTokenOrComment fix and
+// jsx-eslint/eslint-plugin-react#3979 ship
+const importPlugin = fixupPluginRules(importPluginRaw);
+const reactPlugin = fixupPluginRules(reactPluginRaw);
+const [reactRecommended] = fixupConfigRules(
+  reactPluginRaw.configs.flat.recommended,
+);
 
 const generalRules = {
   // TODO: instead of including TS stuff, just have the base, but then programatically order things
@@ -108,7 +119,7 @@ const config = [
     files: ['**/*.?(m|c)ts?(x)'],
   })),
   {
-    ...reactPlugin.configs.flat.recommended,
+    ...reactRecommended,
     files: ['**/*.?(m|c)ts?(x)'],
   },
   {
@@ -120,7 +131,7 @@ const config = [
     files: ['**/*.?(m|c)js?(x)'],
   },
   {
-    ...reactPlugin.configs.flat.recommended,
+    ...reactRecommended,
     files: ['**/*.?(m|c)js?(x)'],
   },
   {

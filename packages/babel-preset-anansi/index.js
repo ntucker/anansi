@@ -212,7 +212,9 @@ function buildPreset(api, options = {}) {
     try {
       readTsConfig = require('@anansi/ts-utils').readTsConfig;
     } catch (e) {
-      throw new Error('tsConfigPath set, but typescript module not found');
+      throw new Error('tsConfigPath set, but typescript module not found', {
+        cause: e,
+      });
     }
     const { dir, base } = path.parse(options.tsConfigPath);
     const tsconfig =
@@ -453,7 +455,7 @@ function getEnvOptions(
   modules,
   isLinaria,
 ) {
-  let envOptions = {};
+  let envOptions;
   // For Linaria builds, keep transforms minimal and preserve modules.
   // Linaria runs evaluation in Node, so target current Node and avoid extra transforms.
   if (isLinaria) {

@@ -16,7 +16,10 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
     // publicEncrypt will throw an error with an invalid cert
     encrypted = crypto.publicEncrypt(cert, Buffer.from('test'));
   } catch (err) {
-    throw new Error(`The certificate "${crtFile}" is invalid.\n${err.message}`);
+    throw new Error(
+      `The certificate "${crtFile}" is invalid.\n${err.message}`,
+      { cause: err },
+    );
   }
 
   try {
@@ -25,6 +28,7 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
   } catch (err) {
     throw new Error(
       `The certificate key "${keyFile}" is invalid.\n${err.message}`,
+      { cause: err },
     );
   }
 }

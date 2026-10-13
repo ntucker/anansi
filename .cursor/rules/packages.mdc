@@ -16,7 +16,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 | `@anansi/browserslist-config` (`browserslist-config-anansi`) | No tests. `npx browserslist "extends @anansi/browserslist-config"`, plus `BROWSERSLIST_ENV=<env> yarn workspace example-typescript run build` for each env you changed |
 | `@anansi/cli` (`cli`) | `run pretest` (lint), `node packages/cli/run.mjs --help`; for `guide`, run `node ../../packages/cli/run.mjs guide <topic>` from `examples/concurrent` (it reads guides from the project's installed packages) |
 | `@anansi/core` (`core`) | `run test`, `run test:type`, `run build`; SSR changes also need `example-react-18` |
-| `@anansi/eslint-plugin` (`eslint-plugin`) | No tests. `yarn g:lint packages/eslint-plugin`, `yarn lint` (the root config uses this plugin), plus data-client's lint |
+| `@anansi/eslint-plugin` (`eslint-plugin`) | `run test` (lints a fixture so rules report and fix on the installed ESLint), `yarn lint` (the root config uses this plugin), plus data-client's lint |
 | `@anansi/generator-js` (`generator-js`) | `run test`, `run test:type`, `run build` |
 | `@anansi/jest-preset` (`jest-preset-anansi`) | `run test`, `run build`; `example-typescript`'s `test` exercises the preset |
 | `@pojo-router/core` (`pojo-router`) | No tests. `run test:type`, `run build`; no example uses it |
