@@ -103,7 +103,7 @@ __metadata:
     "@anansi/generator-js": "workspace:^"
     "@types/node": "npm:^24.0.0"
     binary-version-check: "npm:^6.1.0"
-    chalk: "npm:^4.1.2"
+    chalk: "npm:^6.0.1"
     commander: "npm:^15.0.0"
     execa: "npm:^10.1.0"
     import-meta-resolve: "npm:^4.2.0"
@@ -135,7 +135,7 @@ __metadata:
     "@types/tmp": "npm:0.2.6"
     "@types/webpack-hot-middleware": "npm:2.25.12"
     "@types/webpack-node-externals": "npm:^3"
-    chalk: "npm:^4.1.2"
+    chalk: "npm:^6.0.1"
     compression: "npm:^1.8.2"
     core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
@@ -230,7 +230,7 @@ __metadata:
     "@types/pacote": "npm:11.1.8"
     "@yeoman/transform": "npm:^2.1.2"
     "@yeoman/types": "npm:^1.13.1"
-    chalk: "npm:^4.1.2"
+    chalk: "npm:^6.0.1"
     copyfiles: "npm:2.4.1"
     core-js-pure: "npm:^3.40.0"
     ejs: "npm:^7.0.1"
@@ -12248,7 +12248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^6.0.0":
+"chalk@npm:^6.0.0, chalk@npm:^6.0.1":
   version: 6.0.1
   resolution: "chalk@npm:6.0.1"
   checksum: 10c0/4c58238fa874f531b5201bf99ebd374742be31f8e306c7783d930856aec305f2dea3e07531a8805b2a7ba92807296e39ced52e9f673703e0264d96e83998a429
