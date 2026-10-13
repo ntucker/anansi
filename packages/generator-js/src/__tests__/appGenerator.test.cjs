@@ -305,6 +305,22 @@ function runScenarioTests(scenarios) {
         });
       });
 
+      it('formats generated sources with the project prettier config', async () => {
+        const { check } = await import('prettier');
+        const pkg = JSON.parse(
+          fs.readFileSync(path.join(result.cwd, 'package.json'), 'utf8'),
+        );
+        for (const file of ['package.json', 'tsconfig.json']) {
+          const filepath = path.join(result.cwd, file);
+          await expect(
+            check(fs.readFileSync(filepath, 'utf8'), {
+              ...pkg.prettier,
+              filepath,
+            }),
+          ).resolves.toBe(true);
+        }
+      });
+
       it('applies the correct package configuration', () => {
         if (!scenario.expectations.packageChecks) return;
         const pkg = JSON.parse(

@@ -225,22 +225,21 @@ __metadata:
   dependencies:
     "@babel/runtime-corejs3": "npm:^8.0.0"
     "@types/ejs": "npm:3.1.5"
-    "@types/gulp-filter": "npm:3.0.41"
     "@types/inquirer": "npm:^9.0.10"
     "@types/node": "npm:^24.0.0"
     "@types/pacote": "npm:11.1.8"
+    "@yeoman/transform": "npm:^2.1.1"
     "@yeoman/types": "npm:^1.13.1"
     chalk: "npm:^4.1.2"
     copyfiles: "npm:2.4.1"
     core-js-pure: "npm:^3.40.0"
     ejs: "npm:^3.1.10"
     execa: "npm:^9.6.1"
-    gulp-filter: "npm:^9.0.1"
-    gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^4.1.5"
     mem-fs-editor: "npm:^12.1.0"
     pacote: "npm:^21.5.1"
+    prettier: "npm:^3.9.10"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
     yeoman-environment: "npm:6.3.0"
@@ -8677,17 +8676,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gulp-filter@npm:3.0.41":
-  version: 3.0.41
-  resolution: "@types/gulp-filter@npm:3.0.41"
-  dependencies:
-    "@types/minimatch": "npm:<=5"
-    "@types/node": "npm:*"
-    "@types/vinyl": "npm:*"
-  checksum: 10c0/97a429175e5a0446afbcbd75355aaa4a6c3f05703756c002525e9443f7e8ec4dcd990809b193d85845c2614da7a373cce6ea4c6db35a05a6064892037f6e53ad
-  languageName: node
-  linkType: hard
-
 "@types/history@npm:^4.7.11":
   version: 4.7.11
   resolution: "@types/history@npm:4.7.11"
@@ -8825,7 +8813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/minimatch@npm:*, @types/minimatch@npm:<=5":
+"@types/minimatch@npm:*":
   version: 5.1.2
   resolution: "@types/minimatch@npm:5.1.2"
   checksum: 10c0/83cf1c11748891b714e129de0585af4c55dd4c2cafb1f1d5233d79246e5e1e19d1b5ad9e8db449667b3ffa2b6c80125c429dbee1054e9efb45758dbc4e118562
@@ -9101,7 +9089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.7":
+"@types/vinyl@npm:^2.0.7":
   version: 2.0.12
   resolution: "@types/vinyl@npm:2.0.12"
   dependencies:
@@ -10041,15 +10029,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-colors@npm:^1.0.1":
-  version: 1.1.0
-  resolution: "ansi-colors@npm:1.1.0"
-  dependencies:
-    ansi-wrap: "npm:^0.1.0"
-  checksum: 10c0/c5f3ae4710ed564ca173cd2cf3e85a3bf8dabb7b20688f84299caaf0a4af01e6b7825b32739336c9437492058d3b07d90ef42e3e6223fbba3dc9d52f63e29056
-  languageName: node
-  linkType: hard
-
 "ansi-escapes@npm:^4.3.2":
   version: 4.3.2
   resolution: "ansi-escapes@npm:4.3.2"
@@ -10121,13 +10100,6 @@ __metadata:
   version: 6.2.3
   resolution: "ansi-styles@npm:6.2.3"
   checksum: 10c0/23b8a4ce14e18fb854693b95351e286b771d23d8844057ed2e7d083cd3e708376c3323707ec6a24365f7d7eda3ca00327fe04092e29e551499ec4c8b7bfac868
-  languageName: node
-  linkType: hard
-
-"ansi-wrap@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "ansi-wrap@npm:0.1.0"
-  checksum: 10c0/1e0a53ae0d1a3fc5ceeb5d1868cb5b0a61543a1ff11f3efc51bab7923cc01fe8180db1f9250ce5003b425c53f568bcf3c2dea9d90b5c1cd0a1dae13f76c601dd
   languageName: node
   linkType: hard
 
@@ -15329,34 +15301,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-filter@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "gulp-filter@npm:9.0.1"
-  dependencies:
-    multimatch: "npm:^7.0.0"
-    plugin-error: "npm:^2.0.1"
-    slash: "npm:^5.1.0"
-    streamfilter: "npm:^3.0.0"
-    to-absolute-glob: "npm:^3.0.0"
-  peerDependencies:
-    gulp: ">=4"
-  peerDependenciesMeta:
-    gulp:
-      optional: true
-  checksum: 10c0/68d6171fd8cb6c3ad35a17942d6cfe53f8fad99a4843456db08a347a7a8bcc6f6bd20bc9e65f8e67cb566ec689ce310fa39b92a48e0c0657817057749c3540b2
-  languageName: node
-  linkType: hard
-
-"gulp-prettier@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "gulp-prettier@npm:6.0.0"
-  dependencies:
-    plugin-error: "npm:^2.0.0"
-    prettier: "npm:^3.0.0"
-  checksum: 10c0/486f4e54ddd3dfa11a0d07d2c3f22723f9b0351eab8b5d2d4d0497be55c53c2803cdd015a87b940d910210c4f79c1793c6701233ef615f56ca3e63af7c1f996f
-  languageName: node
-  linkType: hard
-
 "gzip-size@npm:^6.0.0":
   version: 6.0.0
   resolution: "gzip-size@npm:6.0.0"
@@ -16046,16 +15990,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-absolute@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-absolute@npm:1.0.0"
-  dependencies:
-    is-relative: "npm:^1.0.0"
-    is-windows: "npm:^1.0.1"
-  checksum: 10c0/422302ce879d4f3ca6848499b6f3ddcc8fd2dc9f3e9cad3f6bcedff58cdfbbbd7f4c28600fffa7c59a858f1b15c27fb6cfe1d5275e58a36d2bf098a44ef5abc4
-  languageName: node
-  linkType: hard
-
 "is-arguments@npm:^1.0.4":
   version: 1.1.1
   resolution: "is-arguments@npm:1.1.1"
@@ -16291,13 +16225,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-negated-glob@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-negated-glob@npm:1.0.0"
-  checksum: 10c0/f9d4fb2effd7a6d0e4770463e4cf708fbff2d5b660ab2043e5703e21e3234dfbe9974fdd8c08eb80f9898d5dd3d21b020e8d07fce387cd394a79991f01cd8d1c
-  languageName: node
-  linkType: hard
-
 "is-negative-zero@npm:^2.0.3":
   version: 2.0.3
   resolution: "is-negative-zero@npm:2.0.3"
@@ -16417,15 +16344,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-relative@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-relative@npm:1.0.0"
-  dependencies:
-    is-unc-path: "npm:^1.0.0"
-  checksum: 10c0/61157c4be8594dd25ac6f0ef29b1218c36667259ea26698367a4d9f39ff9018368bc365c490b3c79be92dfb1e389e43c4b865c95709e7b3bc72c5932f751fb60
-  languageName: node
-  linkType: hard
-
 "is-root@npm:^2.1.0":
   version: 2.1.0
   resolution: "is-root@npm:2.1.0"
@@ -16518,15 +16436,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-unc-path@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-unc-path@npm:1.0.0"
-  dependencies:
-    unc-path-regex: "npm:^0.1.2"
-  checksum: 10c0/ac1b78f9b748196e3be3d0e722cd4b0f98639247a130a8f2473a58b29baf63fdb1b1c5a12c830660c5ee6ef0279c5418ca8e346f98cbe1a29e433d7ae531d42e
-  languageName: node
-  linkType: hard
-
 "is-unicode-supported@npm:^1.1.0":
   version: 1.3.0
   resolution: "is-unicode-supported@npm:1.3.0"
@@ -16571,13 +16480,6 @@ __metadata:
     call-bound: "npm:^1.0.3"
     get-intrinsic: "npm:^1.2.6"
   checksum: 10c0/6491eba08acb8dc9532da23cb226b7d0192ede0b88f16199e592e4769db0a077119c1f5d2283d1e0d16d739115f70046e887e477eb0e66cd90e1bb29f28ba647
-  languageName: node
-  linkType: hard
-
-"is-windows@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "is-windows@npm:1.0.2"
-  checksum: 10c0/b32f418ab3385604a66f1b7a3ce39d25e8881dee0bd30816dc8344ef6ff9df473a732bcc1ec4e84fe99b2f229ae474f7133e8e93f9241686cfcf7eebe53ba7a5
   languageName: node
   linkType: hard
 
@@ -18473,17 +18375,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"multimatch@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "multimatch@npm:7.0.0"
-  dependencies:
-    array-differ: "npm:^4.0.0"
-    array-union: "npm:^3.0.1"
-    minimatch: "npm:^9.0.3"
-  checksum: 10c0/ce5b6e8a8d114830dd621b128a4a5364792bab281d861e68c7d719d2c04e8f9a4a0a566b37cbbc0a3cbaa0a62eb50e869c9d43ab439a314186b113a34c91a9c7
-  languageName: node
-  linkType: hard
-
 "multimatch@npm:^8.0.0":
   version: 8.0.0
   resolution: "multimatch@npm:8.0.0"
@@ -19886,15 +19777,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plugin-error@npm:^2.0.0, plugin-error@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "plugin-error@npm:2.0.1"
-  dependencies:
-    ansi-colors: "npm:^1.0.1"
-  checksum: 10c0/f4ad7de56dd72455f01257680733c51884c3d7f74fbc111483da72489d52fa86a52e45d64ef89b869efce78a5ae17737ff89738d9bd5508d6220968ccd02b308
-  languageName: node
-  linkType: hard
-
 "possible-typed-array-names@npm:^1.0.0":
   version: 1.0.0
   resolution: "possible-typed-array-names@npm:1.0.0"
@@ -20704,7 +20586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.10, prettier@npm:^3.0.0, prettier@npm:^3.3.3":
+"prettier@npm:3.9.10, prettier@npm:^3.0.0, prettier@npm:^3.3.3, prettier@npm:^3.9.10":
   version: 3.9.10
   resolution: "prettier@npm:3.9.10"
   bin:
@@ -21277,7 +21159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.0.6, readable-stream@npm:^3.4.0, readable-stream@npm:^3.5.0, readable-stream@npm:^3.6.0":
+"readable-stream@npm:^3.4.0, readable-stream@npm:^3.5.0, readable-stream@npm:^3.6.0":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
   dependencies:
@@ -22931,15 +22813,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"streamfilter@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "streamfilter@npm:3.0.0"
-  dependencies:
-    readable-stream: "npm:^3.0.6"
-  checksum: 10c0/6d85f2416e71196c492c670999ac1cbec121c8d80e280de36b371b731172727b7b16586ef7885fcebc52d17621ef07d331116187d0ea951a49fdde412fad7302
-  languageName: node
-  linkType: hard
-
 "streamx@npm:^2.12.5":
   version: 2.13.2
   resolution: "streamx@npm:2.13.2"
@@ -23673,16 +23546,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"to-absolute-glob@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "to-absolute-glob@npm:3.0.0"
-  dependencies:
-    is-absolute: "npm:^1.0.0"
-    is-negated-glob: "npm:^1.0.0"
-  checksum: 10c0/6923e65af8797102f2f24e208074630e131519ef112140b75d5981723083400d622b7eef424a45afc4ab774266e961c2df6dec23cc40c6e3f3357c6b561188bb
-  languageName: node
-  linkType: hard
-
 "to-buffer@npm:^1.2.0, to-buffer@npm:^1.2.1, to-buffer@npm:^1.2.2":
   version: 1.2.2
   resolution: "to-buffer@npm:1.2.2"
@@ -24062,13 +23925,6 @@ __metadata:
     has-symbols: "npm:^1.1.0"
     which-boxed-primitive: "npm:^1.1.1"
   checksum: 10c0/7dbd35ab02b0e05fe07136c72cb9355091242455473ec15057c11430129bab38b7b3624019b8778d02a881c13de44d63cd02d122ee782fb519e1de7775b5b982
-  languageName: node
-  linkType: hard
-
-"unc-path-regex@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "unc-path-regex@npm:0.1.2"
-  checksum: 10c0/bf9c781c4e2f38e6613ea17a51072e4b416840fbe6eeb244597ce9b028fac2fb6cfd3dde1f14111b02c245e665dc461aab8168ecc30b14364d02caa37f812996
   languageName: node
   linkType: hard
 

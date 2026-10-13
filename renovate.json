@@ -161,11 +161,7 @@
       "groupSlug": "typescript-eslint"
     },
     {
-      "matchPackageNames": [
-        "prettier",
-        "gulp-prettier",
-        "eslint-plugin-prettier"
-      ],
+      "matchPackageNames": ["prettier", "eslint-plugin-prettier"],
       "matchUpdateTypes": ["major"],
       "groupName": "prettier"
     },

@@ -1,6 +1,6 @@
+import { passthrough } from '@yeoman/transform';
 import chalk from 'chalk';
-import filter from 'gulp-filter';
-import prettier from 'gulp-prettier';
+import { format, type Options } from 'prettier';
 import shelobsay from 'shelobsay';
 import { BaseFeatures } from 'yeoman-generator';
 
@@ -12,46 +12,45 @@ import { resolvePath } from '../utils.js';
 
 export { ConfigureGenerator, ConfigureOptions };
 
+const FORMATTED_FILE = /\.(js|ts|tsx|json|html|scss|css)$/;
+
 export default class AppGenerator<
   O extends ConfigureOptions = ConfigureOptions,
   F extends BaseFeatures = BaseFeatures,
 > extends ConfigureGenerator<O, F> {
   constructor(args: string | string[], options: O, features: F) {
     super(args, options, { ...features, customInstallTask: installWithYarn });
-    const jsFilter = filter(
-      [
-        '**/*.js',
-        '**/*.ts',
-        '**/*.tsx',
-        '**/*.json',
-        '**/*.html',
-        '**/*.scss',
-        '**/*.css',
-      ],
-      { restore: true },
-    );
-
     this.queueTransformStream(
       {},
-      jsFilter,
-      prettier({
-        printWidth: 80,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'all',
+      passthrough(async file => {
+        if (!file.contents || !FORMATTED_FILE.test(file.path)) return;
+        file.contents = Buffer.from(
+          await format(file.contents.toString(), {
+            // the generated project's own config (written by base)
+            ...(
+              this.fs.readJSON(this.destinationPath('package.json')) as
+                { prettier?: Options } | undefined
+            )?.prettier,
+            filepath: file.path,
+          }),
+        );
       }),
-      jsFilter.restore,
     );
   }
 
   async prompting() {
     this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
     const props = await super.prompting();
-    this.composeWith(await resolvePath('../base', import.meta.url), this.args, {
-      ...this.options,
-      branded: true,
-      projectType: props.projectType,
-    } as any);
+    // await so the base generator's writes queue before the Prettier pass runs
+    await this.composeWith(
+      await resolvePath('../base', import.meta.url),
+      this.args,
+      {
+        ...this.options,
+        branded: true,
+        projectType: props.projectType,
+      } as any,
+    );
     return props;
   }
 }
