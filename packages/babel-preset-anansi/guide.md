@@ -34,10 +34,13 @@ defaults:
   `assumptions` you want.
 - `reactCompiler: {}` enables React Compiler in production (React 19+).
 - `hasJsxRuntime` defaults to true; set false only for React <=16.13.
+  `developmentSourceSelf` (dev `__source`/`__self`) defaults to true only for
+  React < 19.2.
 - Imports: `tsConfigPath` applies tsconfig `paths`; `resolverRoot`,
   `resolverAlias` and `resolver` configure module-resolver; `~/` maps to
   `./src` (`rootPathSuffix`, `rootPathPrefix`).
-- `decoratorsOptions.version` defaults to `2023-11`.
+- `decoratorsOptions.version` is `2023-11` (default) or `legacy`; Babel 8
+  dropped the other proposal versions.
 
 ## Build scripts
 

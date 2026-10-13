@@ -28,11 +28,9 @@ export function generateBabelLoader({
     hasReactRefresh = false;
   }
   const isNodeTarget = targetsNode(target);
-  const hasJsxRuntime =
-    react ?
-      (!isNodeTarget && semver.gte(react.version, '16.14.0')) ||
-      semver.gte(react.version, '18.0.0')
-    : false;
+  const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
+  const developmentSourceSelf =
+    react ? semver.lt(semver.coerce(react.version), '19.2.0') : false;
   const cwd = path.resolve(process.cwd(), babelRoot);
   const filename = path.join(cwd, 'noop.js');
   // Environment variables that affect babel output (see babel-preset-anansi)
@@ -61,6 +59,7 @@ export function generateBabelLoader({
       hasReactRefresh,
       noHotReload,
       hasJsxRuntime,
+      developmentSourceSelf,
       babelCoreVersion,
       babelLoaderVersion,
       envVars,
@@ -86,6 +85,7 @@ export function generateBabelLoader({
   if (react) {
     babelLoader.options.caller = {
       hasJsxRuntime,
+      developmentSourceSelf,
       ...babelLoader.options.caller,
     };
     if (isNodeTarget) {

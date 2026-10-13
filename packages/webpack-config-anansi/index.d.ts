@@ -1,4 +1,4 @@
-import type { TransformOptions } from '@babel/core';
+import type { InputOptions } from '@babel/core';
 import type { LoaderOptions as WYWOptions } from '@wyw-in-js/webpack-loader';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { PluginOptions as MiniCssExtractPluginOptions } from 'mini-css-extract-plugin';
@@ -26,7 +26,7 @@ export interface Options {
   argv?: any[];
   env?: any;
   /** Use to compile for libraries rather than web applications */
-  library?: Configuration['output']['library'] | boolean;
+  library?: NonNullable<Configuration['output']>['library'] | boolean;
   /** Pass package.json object for automatic configuration based on package settings */
   pkg?: {
     main?: string;
@@ -51,7 +51,7 @@ export interface Options {
   bundleAnalyzerOptions?: BundleAnalyzerPlugin.Options;
   /** Customize terser options for production builds */
   terserOptions?: any;
-  babelLoader?: TransformOptions & {
+  babelLoader?: InputOptions & {
     cacheDirectory?: string;
     cacheIdentifier?: any;
     cacheCompression?: boolean;

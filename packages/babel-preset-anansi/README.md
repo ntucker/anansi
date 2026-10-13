@@ -66,6 +66,7 @@ In dev mode, if `react-refresh` is installed it will be enabled.
 
 TypeScript files (`.ts`, `.tsx`, `.mts`, `.cts`, etc) are supported by removing their typings to output
 javascript that node/browsers can understand.
+`.ts`, `.mts` and `.cts` files don't parse JSX, so they can use `<T>(x: T) => x` and `<T>value`.
 
 ## Future language support
 
@@ -277,21 +278,15 @@ Safari 15.4 came with Object.hasOwn(). Therefore this would disable inclusion of
 
 ### Additional Transforms
 
-#### minify: bool = false
-
-Setting this to true will run the minifier [babel-minify](https://github.com/babel/babel-minify)
-
-Be sure to install babel-minify as it is listed as an optional peerdependency here.
-
 #### loose: bool = false
 
-Legacy compatibility option for class-features plugins and legacy decorators only. Babel 8 removed
-`loose` from `@babel/preset-env`, so prefer top-level `assumptions` for modern configurations.
+Sets a broad group of top-level [`assumptions`](https://babeljs.io/docs/assumptions)
+(class fields, spread, template objects and more). Babel 8 removed `loose` from `@babel/preset-env`
+and deprecates it in plugins, so prefer listing the `assumptions` you want.
 
 #### [decoratorsOptions](https://babeljs.io/docs/en/babel-plugin-proposal-decorators#options)
 
-- `version`: "2023-11", "2023-05", "2023-01", "2022-03", "2021-12", "2018-09" or "legacy". defaults to "2023-11"
-- `decoratorsBeforeExport`
+- `version`: "2023-11" or "legacy" (the only versions Babel 8 supports). defaults to "2023-11"
 
 #### reactCompiler: {compilationMode?: "annotation"}
 
@@ -321,6 +316,12 @@ Available in React >16.14.
 - It will enable future improvements that reduce the number of concepts you need to learn React.
 
 > Note: This is automatically set when using anansi webpack using the [caller config](https://babeljs.io/docs/en/options#caller)
+
+#### developmentSourceSelf: bool
+
+Adds `__source`/`__self` to development JSX. React 19.2 stopped using them, so this defaults to
+`true` only for React < 19.2. `@anansi/webpack-config` and `@anansi/jest-preset` detect the version for you;
+otherwise it is read from the `react` installed at the current directory.
 
 #### tsConfigPath
 

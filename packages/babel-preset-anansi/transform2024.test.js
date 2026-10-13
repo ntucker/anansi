@@ -26,13 +26,47 @@ describe('Babel Transform 2024 browsers', () => {
     options = {
       hasJsxRuntime: true,
     },
+    filename = 'file.tsx',
   ) => {
     const preset = buildPreset(api, options);
     return babel.transformSync(code, {
-      filename: 'file.tsx',
+      filename,
       presets: [preset],
     }).code;
   };
+
+  it.each(['file.ts', 'file.mts', 'file.cts'])(
+    'should parse angle-bracket generics and assertions in %s',
+    filename => {
+      api.env.mockReturnValue('production');
+      const code = `const id = <T>(x: T) => x; const n = <number>value;`;
+      expect(transformCode(code, undefined, filename)).toBe(
+        'const id = x => x;\nconst n = value;',
+      );
+    },
+  );
+
+  it('should compile JSX spread with the classic runtime', () => {
+    api.env.mockReturnValue('production');
+    const code = `const el = <div {...props} id="a" />;`;
+    expect(transformCode(code, { hasJsxRuntime: false })).toContain(
+      'React.createElement("div", {\n  ...props,',
+    );
+  });
+
+  it('should not warn about loose with legacy decorators', () => {
+    api.env.mockReturnValue('production');
+    const warn = jest.spyOn(console, 'warn').mockImplementation(() => {});
+    try {
+      transformCode(`@dec class A { #x = 1; y = 2; }`, {
+        loose: true,
+        decoratorsOptions: { version: 'legacy' },
+      });
+      expect(warn).not.toHaveBeenCalled();
+    } finally {
+      warn.mockRestore();
+    }
+  });
 
   it('should maintain class properties', () => {
     api.env.mockReturnValue('development');

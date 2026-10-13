@@ -16,9 +16,16 @@ try {
   // eslint-disable-next-line no-empty
 } catch (e) {}
 const hasJsxRuntime = react ? semver.gte(react.version, '16.14.0') : false;
+const developmentSourceSelf =
+  react ? semver.lt(semver.coerce(react.version), '19.2.0') : false;
 
-const babelConfig: _babel.TransformOptions = {
-  caller: { hasJsxRuntime, noHotReload: true, target: 'node' } as any,
+const babelConfig: _babel.InputOptions = {
+  caller: {
+    hasJsxRuntime,
+    developmentSourceSelf,
+    noHotReload: true,
+    target: 'node',
+  } as any,
 };
 if (typeof BABELCONFIG === 'string' && BABELCONFIG === 'babel.config.js') {
   babelConfig.rootMode = 'upward';

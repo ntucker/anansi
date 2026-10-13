@@ -85,22 +85,99 @@ describe('buildPreset', () => {
     ]);
   });
 
+  it('should reject the removed minify option', () => {
+    api.env.mockReturnValue('production');
+    expect(() => buildPreset(api, { minify: true })).toThrow(/minify/);
+  });
+
+  // builds the preset with cwd set to a temp project made of `files`
+  function buildInProject(files) {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'anansi-preset-'));
+    for (const [file, json] of Object.entries(files)) {
+      fs.mkdirSync(path.dirname(path.join(dir, file)), { recursive: true });
+      fs.writeFileSync(path.join(dir, file), JSON.stringify(json));
+    }
+    const cwd = jest.spyOn(process, 'cwd').mockReturnValue(dir);
+    try {
+      return buildPreset(api);
+    } finally {
+      cwd.mockRestore();
+      fs.rmSync(dir, { recursive: true });
+    }
+  }
+
+  it('should remove prop-types only from js files in production', () => {
+    const removePropTypes =
+      require('babel-plugin-transform-react-remove-prop-types').default;
+    api.env.mockReturnValue('production');
+    const [ts, js] = buildPreset(api).overrides;
+    expect(js.plugins).toContain(removePropTypes);
+    expect(ts.plugins).not.toContain(removePropTypes);
+    api.env.mockReturnValue('development');
+    expect(buildPreset(api).overrides[1].plugins).not.toContain(
+      removePropTypes,
+    );
+  });
+
+  it.each([
+    [{ hasJsxRuntime: false }, {}, 'classic'],
+    [{}, { hasJsxRuntime: false }, 'classic'],
+    [{ hasJsxRuntime: true }, { hasJsxRuntime: false }, 'classic'],
+    [{ hasJsxRuntime: false }, { hasJsxRuntime: true }, 'automatic'],
+    [{}, {}, 'automatic'],
+  ])('caller %j with options %j => %s runtime', (caller, options, runtime) => {
+    api.env.mockReturnValue('development');
+    api.caller.mockImplementation(cb => cb(caller));
+    const reactOverride = buildPreset(api, options).overrides.find(
+      o => o.presets,
+    );
+    expect(reactOverride.presets[0][1].runtime).toBe(runtime);
+  });
+
+  it.each([
+    [{ developmentSourceSelf: true }, {}, true],
+    [{ developmentSourceSelf: false }, {}, false],
+    [{ developmentSourceSelf: true }, { developmentSourceSelf: false }, false],
+  ])(
+    'caller %j with options %j => developmentSourceSelf %s',
+    (caller, options, expected) => {
+      api.env.mockReturnValue('development');
+      api.caller.mockImplementation(cb => cb(caller));
+      const reactOverride = buildPreset(api, options).overrides.find(
+        o => o.presets,
+      );
+      expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(expected);
+    },
+  );
+
+  it.each([
+    ['18.3.1', true],
+    ['19.1.0', true],
+    ['19.2.0', false],
+    ['19.2.0-rc.1', false],
+    ['20.0.0', false],
+  ])('React %s => developmentSourceSelf %s', (version, expected) => {
+    api.env.mockReturnValue('development');
+    const reactOverride = buildInProject({
+      'node_modules/react/package.json': { name: 'react', version },
+    }).overrides.find(o => o.presets);
+    expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(expected);
+  });
+
+  it('skips developmentSourceSelf in production', () => {
+    api.env.mockReturnValue('production');
+    api.caller.mockImplementation(cb => cb({ developmentSourceSelf: true }));
+    const reactOverride = buildPreset(api).overrides.find(o => o.presets);
+    expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(false);
+  });
+
   describe('automatic polyfillMethod', () => {
     function polyfillMethodFor(pkg) {
-      const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'anansi-preset-'));
-      fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify(pkg));
-      jest.spyOn(process, 'cwd').mockReturnValue(dir);
-      try {
-        const polyfillPlugin = buildPreset(api).plugins.find(
-          plugin => Array.isArray(plugin) && plugin[1]?.method,
-        );
-        return polyfillPlugin?.[1].method;
-      } finally {
-        fs.rmSync(dir, { recursive: true });
-      }
+      const polyfillPlugin = buildInProject({
+        'package.json': pkg,
+      }).plugins.find(plugin => Array.isArray(plugin) && plugin[1]?.method);
+      return polyfillPlugin?.[1].method;
     }
-
-    afterEach(() => jest.restoreAllMocks());
 
     it('should use usage-pure when core-js-pure is only a devDependency', () => {
       expect(
