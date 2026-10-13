@@ -7,7 +7,7 @@
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
-const { styleText } = require('util');
+const { styleText } = require('node:util');
 
 // Ensure the certificate and key provided are valid and if not
 // throw an easy to debug error

@@ -4,7 +4,7 @@ import latestVersion from 'latest-version';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { styleText } from 'util';
+import { styleText } from 'node:util';
 
 // TODO: Use this once stackblitz works with it
 //import pkg from './package.json' assert { type: 'json' };

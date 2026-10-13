@@ -1,6 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import { styleText } from 'util';
+import { styleText } from 'node:util';
 import webpack from 'webpack';
 import logging from 'webpack/lib/logging/runtime';
 

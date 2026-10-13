@@ -1,7 +1,7 @@
 import { passthrough } from '@yeoman/transform';
 import { format, getFileInfo, type Options } from 'prettier';
 import shelobsay from 'shelobsay';
-import { styleText } from 'util';
+import { styleText } from 'node:util';
 import { BaseFeatures } from 'yeoman-generator';
 
 import ConfigureGenerator, {
