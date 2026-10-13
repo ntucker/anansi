@@ -1,6 +1,6 @@
 import { passthrough } from '@yeoman/transform';
 import chalk from 'chalk';
-import { format, type Options } from 'prettier';
+import { format, getFileInfo, type Options } from 'prettier';
 import shelobsay from 'shelobsay';
 import { BaseFeatures } from 'yeoman-generator';
 
@@ -12,8 +12,6 @@ import { resolvePath } from '../utils.js';
 
 export { ConfigureGenerator, ConfigureOptions };
 
-const FORMATTED_FILE = /\.(m?js|ts|tsx|json|html|scss|css)$/;
-
 export default class AppGenerator<
   O extends ConfigureOptions = ConfigureOptions,
   F extends BaseFeatures = BaseFeatures,
@@ -23,7 +21,8 @@ export default class AppGenerator<
     this.queueTransformStream(
       {},
       passthrough(async file => {
-        if (!file.contents || !FORMATTED_FILE.test(file.path)) return;
+        if (!file.contents || !(await getFileInfo(file.path)).inferredParser)
+          return;
         file.contents = Buffer.from(
           await format(file.contents.toString(), {
             // the generated project's own config (written by base)
