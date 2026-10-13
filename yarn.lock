@@ -228,7 +228,7 @@ __metadata:
     "@types/inquirer": "npm:^9.0.10"
     "@types/node": "npm:^24.0.0"
     "@types/pacote": "npm:11.1.8"
-    "@yeoman/transform": "npm:^2.1.1"
+    "@yeoman/transform": "npm:^2.1.2"
     "@yeoman/types": "npm:^1.13.1"
     chalk: "npm:^4.1.2"
     copyfiles: "npm:2.4.1"
@@ -9806,14 +9806,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/transform@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@yeoman/transform@npm:2.1.1"
+"@yeoman/transform@npm:^2.1.1, @yeoman/transform@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@yeoman/transform@npm:2.1.2"
   dependencies:
     minimatch: "npm:^9.0.9"
   peerDependencies:
     "@types/node": ">=18.19.44"
-  checksum: 10c0/7819dad8d95225d161def14616d24116d1468c602e662de37a02190d8edec671e64a69b218912ce49b8ce809f990b6ef97d002501dccd11a8041ea3f1205c209
+  checksum: 10c0/4697d5677b9dcd6432adb6e5b2cf27a2e0cdb6d4d6956f4e564a7cef628dca8874a9be90002ea48d77023476f952592e23ab2ded3bd6203dafd9de3d9e212026
   languageName: node
   linkType: hard
 
