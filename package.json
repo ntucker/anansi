@@ -65,7 +65,7 @@
     "prettier": "3.9.10",
     "rimraf": "^6.0.0",
     "start-server-and-test": "^2.0.0",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "webpack": "5.111.1",
     "webpack-cli": "7.2.3",
     "webpack-dev-server": "6.0.0"
