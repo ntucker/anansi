@@ -77,7 +77,6 @@
     "@storybook/preset-react-webpack/webpack": "5.111.1",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "normalize-url": "^6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "@conventional-changelog/git-client": "2.7.0",
