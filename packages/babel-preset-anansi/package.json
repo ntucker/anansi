@@ -42,7 +42,7 @@
     "@babel/runtime": "^8.0.0",
     "@babel/runtime-corejs3": "^8.0.0",
     "@types/memory-fs": "^0",
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.0.0",
     "@types/react": "^19",
     "css-loader": "^7.1.2",
     "memory-fs": "^0.5.0",
