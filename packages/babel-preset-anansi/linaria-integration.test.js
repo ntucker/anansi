@@ -4,7 +4,7 @@
  * Builds Linaria code through webpack with babel-loader (using this preset) and
  * the actual @wyw-in-js/webpack-loader.
  *
- * WyW 1 (Linaria 6-7) also ran Babel itself with caller.name = 'wyw-in-js'
+ * WyW 1 (Linaria <8) also ran Babel itself with caller.name = 'wyw-in-js'
  * (earlier versions used 'linaria'), which the preset detects to disable
  * incompatible plugins. WyW 2 (Linaria 8+) evaluates with Oxc and no longer
  * calls Babel.
@@ -295,35 +295,52 @@ describe('Linaria Integration with Webpack Loader', () => {
     });
   };
 
+  // The webpack tests below never reach this: WyW 2 doesn't call Babel
   describe('WyW 1 caller detection', () => {
-    const transformWithCaller = async (code, callerName) => {
-      const babel = await import('@babel/core');
-      return babel.transformAsync(code, {
-        filename: path.join(tempDir, 'component.jsx'),
-        babelrc: false,
-        configFile: false,
-        presets: [[require.resolve('./index.js'), { hasJsxRuntime: true }]],
-        caller: { name: callerName },
-      });
+    const nativeRequire = require;
+    const plugin = name => {
+      const loaded = nativeRequire(name);
+      return loaded?.default ?? loaded;
     };
-    const code = `
-      export default function Component() {
-        return <div>Hello</div>;
-      }
-    `;
+    const pluginsFor = (callerName, env) =>
+      require('./index')(
+        {
+          assertVersion: jest.fn(),
+          env: jest.fn(() => env),
+          caller: jest.fn(cb => cb({ name: callerName })),
+          targets: jest.fn(),
+        },
+        { reactCompiler: true },
+      ).plugins.map(p => (Array.isArray(p) ? p[0] : p));
+    const gated = {
+      development: ['react-refresh/babel'],
+      production: [
+        'babel-plugin-react-compiler',
+        '@babel/plugin-transform-runtime',
+        'babel-plugin-polyfill-corejs3',
+      ],
+    };
 
-    it('adds react-refresh for other callers', async () => {
-      const { code: output } = await transformWithCaller(code, 'babel-loader');
-      expect(output).toContain('$RefreshReg$');
-    });
-
-    it.each(['wyw-in-js', 'linaria'])(
-      'skips react-refresh for the %s caller',
-      async callerName => {
-        const { code: output } = await transformWithCaller(code, callerName);
-        expect(output).not.toContain('$RefreshReg$');
+    it.each(Object.keys(gated))(
+      'adds the gated plugins for other callers in %s',
+      env => {
+        const plugins = pluginsFor('babel-loader', env);
+        for (const name of gated[env]) {
+          expect(plugins).toContain(plugin(name));
+        }
       },
     );
+
+    it.each(
+      ['wyw-in-js', 'linaria'].flatMap(caller =>
+        Object.keys(gated).map(env => [caller, env]),
+      ),
+    )('skips the gated plugins for the %s caller in %s', (caller, env) => {
+      const plugins = pluginsFor(caller, env);
+      for (const name of gated[env]) {
+        expect(plugins).not.toContain(plugin(name));
+      }
+    });
   });
 
   describe('Linaria detection with webpack loader', () => {
