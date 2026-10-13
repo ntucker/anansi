@@ -124,20 +124,21 @@ function stringifyParams(pathData: object): ParamData {
     // empty values count as missing: optional groups are omitted and required
     // params throw (as path-to-regexp v6 did) rather than building a path that
     // can't match
-    const value =
-      Array.isArray(v) ? v.filter(isPresent).map(String)
-      : isPresent(v) ? String(v)
-      : undefined;
-    if (value?.length) params[k] = value;
+    if (Array.isArray(v)) {
+      const segments = v.filter(isPresent).map(String);
+      if (segments.length) params[k] = segments;
+    } else if (isPresent(v)) {
+      params[k] = String(v);
+    }
   }
   return params;
 }
 
-// malformed escapes (e.g. `/post/%E0%A4%A`) keep their raw value instead of throwing
 function isPresent(v: unknown) {
   return v != null && v !== '';
 }
 
+// malformed escapes (e.g. `/post/%E0%A4%A`) keep their raw value instead of throwing
 function safeDecode(value: string): string {
   try {
     return decodeURIComponent(value);
