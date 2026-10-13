@@ -1,22 +1,30 @@
 import type { History } from 'history';
 import { match as matchPath, compile } from 'path-to-regexp';
-import type { MatchFunction, PathFunction } from 'path-to-regexp';
+import type { MatchFunction, ParamData, PathFunction } from 'path-to-regexp';
 
-import type { AnyIfEmpty, DefaultRoutePojo, NamedPath } from './types.js';
+import type {
+  AnyIfEmpty,
+  DefaultRoutePojo,
+  NamedPath,
+  NamedPaths,
+  RouteParams,
+} from './types.js';
 
 export interface ControllerProps<
   Route extends { name: string } = {
     name: string;
   },
+  Paths extends NamedPaths = any,
 > {
   history: History;
-  namedPaths: Record<string, string | NamedPath>;
+  namedPaths: Paths;
   routes: readonly Route[];
   notFound: AnyIfEmpty<DefaultRoutePojo>;
 }
 
 export default class RouteController<
   Route extends { name: string } = { name: string },
+  Paths extends NamedPaths = any,
 > {
   // cache for match lookups. Reset if routes ever change.
   // could make this LRU if it takes up too much space.
@@ -24,20 +32,20 @@ export default class RouteController<
   declare private normalizedRouter: {
     pathOrPathName: string;
     route: any;
-    matcher: MatchFunction<object>;
-    outboundPath: PathFunction<object>;
+    matcher: MatchFunction<ParamData>;
+    outboundPath: PathFunction<ParamData>;
   }[];
 
   declare readonly history: History;
   declare readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
-  declare readonly pathBuilders: Record<string, PathFunction>;
+  declare readonly pathBuilders: Record<string, PathFunction<ParamData>>;
 
   constructor({
     history,
     namedPaths,
     routes,
     notFound,
-  }: ControllerProps<Route>) {
+  }: ControllerProps<Route, Paths>) {
     this.history = history;
     this.notFound = notFound;
     this.normalizedRouter = routes.map(route => {
@@ -90,11 +98,26 @@ export default class RouteController<
     return matches;
   }
 
-  buildPath(pathOrPathName: string, pathData?: object): string {
+  buildPath<N extends string>(
+    pathOrPathName: N,
+    pathData?: RouteParams<Paths, N>,
+  ): string {
     if (
       !Object.prototype.hasOwnProperty.call(this.pathBuilders, pathOrPathName)
     )
       throw new Error(`Unknown route: ${pathOrPathName}`);
-    return this.pathBuilders[pathOrPathName](pathData);
+    return this.pathBuilders[pathOrPathName](
+      stringifyParams(pathData as object | undefined),
+    );
   }
+}
+
+// path-to-regexp only accepts strings, but ids are often numbers
+function stringifyParams(pathData: object = {}): ParamData {
+  const params: ParamData = {};
+  for (const [k, v] of Object.entries(pathData)) {
+    if (v !== undefined)
+      params[k] = Array.isArray(v) ? v.map(String) : String(v);
+  }
+  return params;
 }
