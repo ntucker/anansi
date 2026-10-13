@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { Argument, Command } from 'commander';
+import { Argument, Command, InvalidArgumentError } from 'commander';
 import { execa } from 'execa';
 import fs from 'fs';
 import { resolve } from 'import-meta-resolve';
@@ -20,6 +20,22 @@ const pkg = JSON.parse(
 );
 const { version } = pkg;
 
+// projectName becomes a directory and a generator argument, so it must be a
+// valid new npm name: no '/', '..', leading '-' or shell characters. The
+// library's warnings (uppercase, core module names, '~') also block new
+// packages, and it allows scopes, which the generator can't handle.
+function parseProjectName(name) {
+  const { errors = [], warnings = [] } = validateName(name);
+  const problems = [...errors, ...warnings];
+  if (name.startsWith('@')) problems.push('name cannot have a scope');
+  if (problems.length) {
+    throw new InvalidArgumentError(
+      `${problems.join('; ')}\nUse a lowercase npm package name without a scope, like my-app`,
+    );
+  }
+  return name;
+}
+
 const program = new Command();
 
 program.version(version);
@@ -31,27 +47,16 @@ program
   .argument(
     '<projectName>',
     'Package name for the project (lowercase, unscoped npm name like my-app)',
+    parseProjectName,
   )
   .option(
     '-d, --dir <directory>',
     'What directory to add to. (Creates new directory by default)',
   )
   .action(async (projectName, options) => {
-    // projectName becomes a directory and a generator argument; a valid
-    // unscoped npm name has no '/', '..', leading '-' or shell characters
-    const { errors = [], warnings = [] } = validateName(projectName);
-    const problems = [...errors, ...warnings];
-    if (projectName.startsWith('@')) problems.push('name cannot have a scope');
-    if (problems.length) {
-      console.error(
-        `Invalid project name ${JSON.stringify(projectName)}: ${problems.join('; ')}\nUse a lowercase npm package name without a scope, like my-app`,
-      );
-      process.exit(2);
-    }
-    const cwd = options.dir || projectName;
-    if (!options.dir && !fs.existsSync(cwd)) {
-      fs.mkdirSync(cwd);
-    }
+    // absolute, so a --dir like '-x' can't parse as an editor flag below
+    const cwd = path.resolve(options.dir || projectName);
+    if (!options.dir) fs.mkdirSync(cwd, { recursive: true });
     try {
       // get rid of 'file://' prefix
       const generatorPath = resolve(
@@ -70,7 +75,7 @@ program
       process.stdin.pipe(yosub.stdin, { end: false });
       await Promise.all([verifyAndPrompt(), yosub]);
 
-      const readme = path.resolve(cwd, 'README.md');
+      const readme = path.join(cwd, 'README.md');
       // if user exits early this is still exit code 0, so we need to validate
       // whether the setup completed before going on to the next step
       if (!fs.existsSync(readme)) {
@@ -87,8 +92,7 @@ program
       }
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
-        // absolute paths, so a --dir like '-x' can't parse as an editor flag
-        await execa(editor, [path.resolve(cwd), readme], { stdio: 'inherit' });
+        await execa(editor, [cwd, readme], { stdio: 'inherit' });
       }
     } catch (error) {
       // Don't display error for user-triggered exit (SIGINT)
