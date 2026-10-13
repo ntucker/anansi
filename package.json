@@ -77,8 +77,8 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "normalize-url": "^6",
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "@conventional-changelog/git-client": "2.7.0",
     "@storybook/builder-webpack5/webpack-dev-middleware": "^7.4.6",
     "serve/compression": "^1.8.2",
@@ -90,8 +90,8 @@
     "@lerna-lite/version": "^4.0.0",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "react": "19.2.7",
-    "react-dom": "19.2.7"
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "packageManager": "yarn@4.18.1"
 }
