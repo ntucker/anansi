@@ -1,6 +1,6 @@
 # Linting with @anansi/eslint-plugin
 
-Flat config only, on ESLint 10. The exported configs are arrays, so spread them:
+Flat config only, on ESLint 10 (or 9.35+). The exported configs are arrays, so spread them:
 
 ```js
 // eslint.config.mjs
