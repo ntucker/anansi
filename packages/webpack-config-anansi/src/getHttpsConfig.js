@@ -18,9 +18,7 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
   } catch (err) {
     throw new Error(
       `The certificate "${crtFile}" is invalid.\n${err.message}`,
-      {
-        cause: err,
-      },
+      { cause: err },
     );
   }
 
