@@ -202,4 +202,50 @@ describe('buildPreset', () => {
       ).toBe('usage-pure');
     });
   });
+
+  // WyW 1 (Linaria <8) runs Babel with these callers; WyW 2 no longer calls Babel
+  describe('WyW 1 caller', () => {
+    const pluginsFor = (callerName, env) => {
+      api.env.mockReturnValue(env);
+      api.caller.mockImplementation(cb => cb({ name: callerName }));
+      const preset = buildPreset(api, { reactCompiler: true });
+      return [
+        ...preset.plugins,
+        ...preset.overrides.flatMap(override => override.plugins),
+      ]
+        .filter(Boolean)
+        .map(plugin => (Array.isArray(plugin) ? plugin[0] : plugin));
+    };
+    const load = name => {
+      const loaded = require(name);
+      return loaded?.default ?? loaded;
+    };
+    const gated = {
+      development: ['react-refresh/babel'],
+      production: [
+        'babel-plugin-react-compiler',
+        '@babel/plugin-transform-react-constant-elements',
+        'babel-plugin-transform-react-remove-prop-types',
+        '@babel/plugin-transform-runtime',
+        'babel-plugin-polyfill-corejs3',
+      ],
+    };
+
+    it.each(Object.keys(gated))(
+      'adds the gated plugins otherwise in %s',
+      env => {
+        const plugins = pluginsFor('babel-loader', env);
+        for (const name of gated[env]) expect(plugins).toContain(load(name));
+      },
+    );
+
+    it.each(
+      ['wyw-in-js', 'linaria'].flatMap(caller =>
+        Object.keys(gated).map(env => [caller, env]),
+      ),
+    )('skips the gated plugins for the %s caller in %s', (caller, env) => {
+      const plugins = pluginsFor(caller, env);
+      for (const name of gated[env]) expect(plugins).not.toContain(load(name));
+    });
+  });
 });

@@ -7,7 +7,8 @@
  * WyW 1 (Linaria <8) also ran Babel itself with caller.name = 'wyw-in-js'
  * (earlier versions used 'linaria'), which the preset detects to disable
  * incompatible plugins. WyW 2 (Linaria 8+) evaluates with Oxc and no longer
- * calls Babel.
+ * calls Babel, so this file doesn't exercise that detection; presetOutput.test.js
+ * covers it.
  */
 
 const fs = require('fs');
@@ -294,54 +295,6 @@ describe('Linaria Integration with Webpack Loader', () => {
       });
     });
   };
-
-  // The webpack tests below never reach this: WyW 2 doesn't call Babel
-  describe('WyW 1 caller detection', () => {
-    const nativeRequire = require;
-    const plugin = name => {
-      const loaded = nativeRequire(name);
-      return loaded?.default ?? loaded;
-    };
-    const pluginsFor = (callerName, env) =>
-      require('./index')(
-        {
-          assertVersion: jest.fn(),
-          env: jest.fn(() => env),
-          caller: jest.fn(cb => cb({ name: callerName })),
-          targets: jest.fn(),
-        },
-        { reactCompiler: true },
-      ).plugins.map(p => (Array.isArray(p) ? p[0] : p));
-    const gated = {
-      development: ['react-refresh/babel'],
-      production: [
-        'babel-plugin-react-compiler',
-        '@babel/plugin-transform-runtime',
-        'babel-plugin-polyfill-corejs3',
-      ],
-    };
-
-    it.each(Object.keys(gated))(
-      'adds the gated plugins for other callers in %s',
-      env => {
-        const plugins = pluginsFor('babel-loader', env);
-        for (const name of gated[env]) {
-          expect(plugins).toContain(plugin(name));
-        }
-      },
-    );
-
-    it.each(
-      ['wyw-in-js', 'linaria'].flatMap(caller =>
-        Object.keys(gated).map(env => [caller, env]),
-      ),
-    )('skips the gated plugins for the %s caller in %s', (caller, env) => {
-      const plugins = pluginsFor(caller, env);
-      for (const name of gated[env]) {
-        expect(plugins).not.toContain(plugin(name));
-      }
-    });
-  });
 
   describe('Linaria detection with webpack loader', () => {
     it('should process styled components through webpack loader', async () => {
