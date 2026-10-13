@@ -301,10 +301,10 @@ export default function makeBaseConfig({
 function keepViewBoxAndTitle(config) {
   return {
     ...config,
-    plugins: config.plugins.map(plugin => {
-      if (plugin !== 'preset-default' && plugin?.name !== 'preset-default')
-        return plugin;
+    // SVGO 3 runs preset-default when plugins is unset
+    plugins: (config.plugins ?? ['preset-default']).map(plugin => {
       const preset = typeof plugin === 'string' ? { name: plugin } : plugin;
+      if (preset?.name !== 'preset-default') return plugin;
       return {
         ...preset,
         params: {
