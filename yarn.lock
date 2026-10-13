@@ -238,12 +238,12 @@ __metadata:
     gulp-filter: "npm:^9.0.1"
     gulp-prettier: "npm:^6.0.0"
     import-meta-resolve: "npm:^4.2.0"
-    mem-fs: "npm:^4.1.4"
-    mem-fs-editor: "npm:^12.0.4"
+    mem-fs: "npm:^4.1.5"
+    mem-fs-editor: "npm:^12.1.0"
     pacote: "npm:^21.5.1"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:6.1.0"
+    yeoman-environment: "npm:6.3.0"
     yeoman-generator: "npm:^10.0.1"
     yeoman-test: "npm:11.8.2"
   languageName: unknown
@@ -8852,7 +8852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=18, @types/node@npm:>=18.19.0, @types/node@npm:>=20.0.0":
+"@types/node@npm:*, @types/node@npm:>=18.19.0, @types/node@npm:>=20.0.0":
   version: 26.6.5
   resolution: "@types/node@npm:26.6.5"
   dependencies:
@@ -9104,7 +9104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.12, @types/vinyl@npm:^2.0.7":
+"@types/vinyl@npm:*, @types/vinyl@npm:^2.0.7":
   version: 2.0.12
   resolution: "@types/vinyl@npm:2.0.12"
   dependencies:
@@ -9832,7 +9832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/types@npm:^1.11.0, @yeoman/types@npm:^1.13.1":
+"@yeoman/types@npm:^1.11.1, @yeoman/types@npm:^1.13.1":
   version: 1.13.1
   resolution: "@yeoman/types@npm:1.13.1"
   peerDependencies:
@@ -17996,7 +17996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs-editor@npm:^12.0.3, mem-fs-editor@npm:^12.0.4, mem-fs-editor@npm:^12.0.9":
+"mem-fs-editor@npm:^12.0.3, mem-fs-editor@npm:^12.0.4, mem-fs-editor@npm:^12.0.9, mem-fs-editor@npm:^12.1.0":
   version: 12.1.0
   resolution: "mem-fs-editor@npm:12.1.0"
   dependencies:
@@ -18024,15 +18024,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem-fs@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "mem-fs@npm:4.1.4"
+"mem-fs@npm:^4.1.4, mem-fs@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "mem-fs@npm:4.1.5"
   dependencies:
-    "@types/node": "npm:>=18"
-    "@types/vinyl": "npm:^2.0.12"
     vinyl: "npm:^3.0.1"
     vinyl-file: "npm:^5.0.0"
-  checksum: 10c0/6de083c96bd6ac5d6ef0b3d411e438ab379afe481193960cb6410fbeeccf57696ed45117a0973eee75655b13743ba39b82695c6e8de9ed9363976f12f6669ec2
+  peerDependencies:
+    "@types/node": ">=18"
+    "@types/vinyl": ^2.0.12
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    "@types/vinyl":
+      optional: true
+  checksum: 10c0/b3cd90df032a9f05c442776e69f7eb30a11ea2608e001ec8e6162a907bc146a67c88f65bb8adf22a38cadb1f070229fb65779432676dc70ffdc33a3fcac292ae
   languageName: node
   linkType: hard
 
@@ -25393,15 +25399,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:6.1.0":
-  version: 6.1.0
-  resolution: "yeoman-environment@npm:6.1.0"
+"yeoman-environment@npm:6.3.0":
+  version: 6.3.0
+  resolution: "yeoman-environment@npm:6.3.0"
   dependencies:
     "@yeoman/adapter": "npm:^4.0.2"
     "@yeoman/conflicter": "npm:^4.1.0"
     "@yeoman/namespace": "npm:^2.1.0"
     "@yeoman/transform": "npm:^2.1.1"
-    "@yeoman/types": "npm:^1.11.0"
+    "@yeoman/types": "npm:^1.11.1"
     arrify: "npm:^3.0.0"
     chalk: "npm:^5.6.2"
     commander: "npm:^14.0.3"
@@ -25421,10 +25427,10 @@ __metadata:
   peerDependencies:
     "@yeoman/adapter": ^4.0.2
     "@yeoman/types": ^1.10.3
-    mem-fs: ^4.1.4
+    mem-fs: ^4.1.4 || ^6.0.0
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/fdd5b7651dcd1a26d0f3e23de4de0f2d1984870ec0844afc6c3d68b9ece2fb53242fe061db7ab2de960759b21122d5e1d0d6866f642b485f52efb0297bcfc53c
+  checksum: 10c0/29d614d65c2ec3a7fac681239288dadb06f857f36fe075fc11f509c6583ae61ffa5ed22bffa937826fb871d2bb4d9ef4c6fb79d8ec8084e8d735b26d73ecb2bd
   languageName: node
   linkType: hard
 
