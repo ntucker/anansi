@@ -505,6 +505,10 @@ SVGR enables importing SVG as a file or a component. This option allows further 
 Can configure how [wyw-in-js](https://wyw-in-js.dev/) operates, and thus control things like [linaria](https://github.com/callstack/linaria). Set to `false` to disable wyw-in-js altogether. Note that
 wyw-in-js has its own [config files](https://wyw-in-js.dev/configuration) it can use, and it is recommended to use those instead.
 
+This uses wyw-in-js 2, which evaluates styles with Oxc rather than your Babel config, and resolves imports through webpack's resolver
+(so `resolve.alias` and tsconfig `paths` work). Linaria 8+ lets it resolve static values without running the evaluator. See the
+[v2 migration guide](https://wyw-in-js.dev/migration/v2).
+
 [Configuring Linaria](https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#options)
 
 ### cssExtractOptions
@@ -618,7 +622,8 @@ export default function MyComponent() {
 ### Working with Linaria
 
 When testing modules that use Linaria, it's important to add the wyw-in-js babel preset to the babel config. This is
-because webpack is not run, and thus will not properly process the embeds.
+because webpack is not run, and thus will not properly process the embeds. In wyw-in-js 2 the preset is a deprecated compatibility
+wrapper: its inline options must be JSON-serializable, so put function options in a [wyw-in-js config file](https://wyw-in-js.dev/configuration).
 
 1. Install linaria: `yarn add --dev @linaria/core @linaria/react @wyw-in-js/babel-preset`
 3. Add `@wyw-in-js` to babel presets.

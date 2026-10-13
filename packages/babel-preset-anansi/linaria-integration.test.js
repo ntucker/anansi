@@ -1,15 +1,13 @@
 /**
  * Integration test for Linaria CSS-in-JS with babel preset
  *
- * This test validates that the babel preset correctly integrates with Linaria
- * by using the actual @wyw-in-js/webpack-loader to process Linaria code through webpack.
+ * Builds Linaria code through webpack with babel-loader (using this preset) and
+ * the actual @wyw-in-js/webpack-loader.
  *
- * The webpack loader calls Babel with caller.name = 'wyw-in-js' during its two-phase process:
- * 1. Preeval phase - initial code transformation
- * 2. Eval/collect phase - CSS extraction and final transformation
- *
- * In Linaria 6.x, the caller name is 'wyw-in-js' (earlier versions used 'linaria').
- * Our preset detects this and disables incompatible plugins.
+ * WyW 1 (Linaria 6-7) also ran Babel itself with caller.name = 'wyw-in-js'
+ * (earlier versions used 'linaria'), which the preset detects to disable
+ * incompatible plugins. WyW 2 (Linaria 8+) evaluates with Oxc and no longer
+ * calls Babel.
  */
 
 const fs = require('fs');
@@ -52,12 +50,6 @@ describe('Linaria Integration with Webpack Loader', () => {
       }
       fs.writeFileSync(filePath, code, 'utf8');
 
-      // Build babel options - when wyw-in-js loader processes code, it internally
-      // calls babel with caller.name = 'wyw-in-js'. The loader uses the babelOptions
-      // we provide here, and the preset will automatically detect the 'wyw-in-js' caller.
-      // Use the preset package name so webpack can resolve it properly
-      // Note: babel-loader runs first, then wyw-in-js loader. We need to ensure
-      // babel-loader doesn't add react-refresh since wyw-in-js will handle the final transform.
       const babelLoaderOptions = {
         presets: [
           [
@@ -78,20 +70,6 @@ describe('Linaria Integration with Webpack Loader', () => {
           name: 'babel-loader',
           noHotReload: true, // Disable react-refresh for Linaria builds
         },
-      };
-
-      // babelOptions for wyw-in-js loader should not include babel-loader specific options
-      const inJSBabelOptions = {
-        presets: [
-          [
-            '@anansi/babel-preset',
-            {
-              hasJsxRuntime: true,
-              loose: true,
-              ...options,
-            },
-          ],
-        ],
       };
 
       // Create a temporary file for webpack records to ensure deterministic build order
@@ -178,7 +156,6 @@ describe('Linaria Integration with Webpack Loader', () => {
                 {
                   loader: require.resolve('@wyw-in-js/webpack-loader'),
                   options: {
-                    babelOptions: inJSBabelOptions,
                     sourceMap: false,
                     classNameSlug: (hash, title, args) => {
                       // Create deterministic classname based on file path

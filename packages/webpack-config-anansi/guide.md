@@ -54,6 +54,9 @@ style, svg and worker imports typecheck.
   `ReactComponent` is still typed but undefined) and (prod only)
   `htmlOptions` take `false` to disable. Also: `terserOptions`,
   `babelLoader`, `fontPreload`, `nohash`, `library`, `pkg`.
+- Linaria runs on wyw-in-js 2: styles are evaluated with Oxc, not your Babel
+  config; imports resolve through webpack, so aliases and tsconfig `paths`
+  work. Linaria 8+ resolves static values without running the evaluator.
 
 ## CLI flags and env
 

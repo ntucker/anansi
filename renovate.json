@@ -55,7 +55,7 @@
         "https://github.com/webpack{/,}**",
         "https://github.com/webpack-contrib{/,}**",
         "https://github.com/callstack/linaria{/,}**",
-        "https://github.com/Anber/wyw-in-js{/,}**"
+        "https://github.com/wyw-in-js/wyw-in-js{/,}**"
       ]
     },
     {
