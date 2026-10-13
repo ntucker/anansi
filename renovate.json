@@ -4,6 +4,7 @@
   "commitMessagePrefix": "pkg: ",
   "commitMessageTopic": "`{{depName}}`",
   "dependencyDashboardApproval": true,
+  "minimumReleaseAge": "1 day",
   "rangeStrategy": "auto",
   "ignoreDeps": [
     "whatwg-fetch",
@@ -167,6 +168,16 @@
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "prettier"
+    },
+    {
+      "description": "First-party packages are preapproved in .yarnrc.yml, so skip the release age wait",
+      "matchPackageNames": [
+        "@anansi/**",
+        "@data-client/**",
+        "@pojo-router/**",
+        "conventional-changelog-anansi"
+      ],
+      "minimumReleaseAge": null
     }
   ]
 }
