@@ -1,6 +1,5 @@
 import { Entity } from '@data-client/rest';
 import {
-  RestEndpoint,
   resource,
   ResourceGenerics,
   ResourceOptions,
@@ -13,42 +12,43 @@ export abstract class PlaceholderEntity extends Entity {
 }
 
 /** Common patterns in the https://jsonplaceholder.typicode.com API */
-export function placeholderResource<O extends ResourceGenerics = any>({
-  path,
-  schema,
-  Endpoint = RestEndpoint,
-}: Readonly<O> & ResourceOptions): Resource<O> {
-  const base = resource({
-    path,
-    schema,
-    Endpoint,
+export function placeholderResource<O extends ResourceGenerics = any>(
+  options: Readonly<O> & ResourceOptions,
+): Resource<O> {
+  return resource({
+    ...options,
     urlPrefix: 'https://jsonplaceholder.typicode.com',
     // hour expiry time since we want to keep our example mutations and the api itself never actually changes
     dataExpiryLength: 1000 * 60 * 60,
-  });
-  return {
-    ...base,
+  } as O).extend({
     // Endpoint overrides are to compensate for the jsonplaceholder API not returning
     // the correct ID in certain cases
     //
     // This is sometimes needed when you don't control the server API itself
     // More here: https://dataclient.io/rest/guides/network-transform#case-of-the-missing-id
-    // (override fetch, not process: a custom process skips the html response check)
-    partialUpdate: base.partialUpdate.extend({
-      async fetch(...args: any) {
+    partialUpdate: {
+      process(response: any, ...args: any[]) {
         // body only contains what we're changing, but we can find the id in params
-        const value = await base.partialUpdate.fetch.apply(this, args);
-        return { ...value, id: args[0]?.id };
+        return {
+          ...response,
+          id: args?.[0]?.id,
+        };
       },
-    }),
-    create: base.create.extend({
-      async fetch(...args: any) {
-        const value = await base.create.fetch.apply(this, args);
-        // the api always responds with id 101, so every new item would collide;
-        // generate a unique id client-side instead
-        return { ...value, id: Date.now() };
+    },
+    getList: {
+      process(response: any) {
+        if (Array.isArray(response)) return response;
+        // for POST (push/unshift/create): the api always responds with id 101,
+        // so every new item would collide; generate a unique id client-side
+        return {
+          ...response,
+          id: randomId(),
+        };
       },
-    }),
-    // generics don't match up well
-  } as any;
+    },
+  }) as any;
+}
+
+function randomId() {
+  return Math.floor(Math.random() * 2 ** 31);
 }
