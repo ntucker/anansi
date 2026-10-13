@@ -6,7 +6,6 @@ Object.hasOwn =
   };
 import compress from 'compression';
 import express, { NextFunction } from 'express';
-import diskFs from 'fs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import ora from 'ora';
 import path from 'path';
@@ -95,34 +94,14 @@ export default async function serve(
 
     // ASSETS
     if (options.serveAssets) {
+      // mounted at the public path with the build output as root, so request
+      // paths can't escape it; misses fall through to SSR
       wrappingApp.use(
-        async (
-          req: Request | IncomingMessage,
-          res: any,
-          next: NextFunction,
-        ) => {
-          const filename =
-            req.url?.substring(
-              (process.env.WEBPACK_PUBLIC_PATH as string).length,
-            ) ?? '';
-          const assetPath = path.join(
-            clientManifest.outputPath ?? '',
-            filename,
-          );
-
-          if (
-            diskFs.existsSync(assetPath) &&
-            !diskFs.lstatSync(assetPath).isDirectory()
-          ) {
-            try {
-              res.sendFile(assetPath);
-            } catch (_e) {
-              return next();
-            }
-          } else {
-            next();
-          }
-        },
+        process.env.WEBPACK_PUBLIC_PATH || '/',
+        express.static(clientManifest.outputPath ?? '', {
+          index: false,
+          redirect: false,
+        }),
       );
     }
 
