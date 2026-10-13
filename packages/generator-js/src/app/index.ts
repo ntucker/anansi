@@ -1,6 +1,6 @@
+import { passthrough } from '@yeoman/transform';
 import chalk from 'chalk';
-import filter from 'gulp-filter';
-import prettier from 'gulp-prettier';
+import { format, resolveConfig } from 'prettier';
 import shelobsay from 'shelobsay';
 import { BaseFeatures } from 'yeoman-generator';
 
@@ -18,40 +18,39 @@ export default class AppGenerator<
 > extends ConfigureGenerator<O, F> {
   constructor(args: string | string[], options: O, features: F) {
     super(args, options, { ...features, customInstallTask: installWithYarn });
-    const jsFilter = filter(
-      [
-        '**/*.js',
-        '**/*.ts',
-        '**/*.tsx',
-        '**/*.json',
-        '**/*.html',
-        '**/*.scss',
-        '**/*.css',
-      ],
-      { restore: true },
-    );
-
     this.queueTransformStream(
       {},
-      jsFilter,
-      prettier({
-        printWidth: 80,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'all',
-      }),
-      jsFilter.restore,
+      passthrough(
+        async file => {
+          if (!file.contents) return;
+          file.contents = Buffer.from(
+            await format(file.contents.toString(), {
+              ...(await resolveConfig(file.path)),
+              printWidth: 80,
+              semi: true,
+              singleQuote: true,
+              trailingComma: 'all',
+              filepath: file.path,
+            }),
+          );
+        },
+        { pattern: '**/*.{js,ts,tsx,json,html,scss,css}' },
+      ),
     );
   }
 
   async prompting() {
     this.log(shelobsay(`Creating a new ${chalk.red('Anansi')} project!`));
     const props = await super.prompting();
-    this.composeWith(await resolvePath('../base', import.meta.url), this.args, {
-      ...this.options,
-      branded: true,
-      projectType: props.projectType,
-    } as any);
+    await this.composeWith(
+      await resolvePath('../base', import.meta.url),
+      this.args,
+      {
+        ...this.options,
+        branded: true,
+        projectType: props.projectType,
+      } as any,
+    );
     return props;
   }
 }

@@ -57,7 +57,6 @@
   ],
   "devDependencies": {
     "@types/ejs": "3.1.5",
-    "@types/gulp-filter": "3.0.41",
     "@types/node": "^24.0.0",
     "@types/pacote": "11.1.8",
     "copyfiles": "2.4.1",
@@ -72,17 +71,17 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^8.0.0",
     "@types/inquirer": "^9.0.10",
+    "@yeoman/transform": "^2.1.1",
     "@yeoman/types": "^1.13.1",
     "chalk": "^4.1.2",
     "core-js-pure": "^3.40.0",
     "ejs": "^3.1.10",
     "execa": "^9.6.1",
-    "gulp-filter": "^9.0.1",
-    "gulp-prettier": "^7.0.0",
     "import-meta-resolve": "^4.2.0",
     "mem-fs": "^4.1.5",
     "mem-fs-editor": "^12.1.0",
     "pacote": "^21.5.1",
+    "prettier": "^3.9.10",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^10.0.1"
   },
