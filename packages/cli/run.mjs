@@ -7,6 +7,7 @@ import { createRequire } from 'node:module';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import validateName from 'validate-npm-package-name';
 
 // TODO: Use this once stackblitz works with it
 //import pkg from './package.json' assert { type: 'json' };
@@ -18,10 +19,6 @@ const pkg = JSON.parse(
   fs.readFileSync(path.join(__dirname, './package.json'), 'utf8'),
 );
 const { version } = pkg;
-
-// unscoped npm package name (lowercase, <= 214 chars), so it's safe as a
-// directory and can't parse as a flag
-const npmName = /^[a-z0-9~][a-z0-9._~-]{0,213}$/;
 
 const program = new Command();
 
@@ -40,10 +37,14 @@ program
     'What directory to add to. (Creates new directory by default)',
   )
   .action(async (projectName, options) => {
-    // projectName becomes a directory and a generator argument
-    if (!npmName.test(projectName)) {
+    // projectName becomes a directory and a generator argument; a valid
+    // unscoped npm name has no '/', '..', leading '-' or shell characters
+    const { errors = [], warnings = [] } = validateName(projectName);
+    const problems = [...errors, ...warnings];
+    if (projectName.startsWith('@')) problems.push('name cannot have a scope');
+    if (problems.length) {
       console.error(
-        `Invalid project name: ${JSON.stringify(projectName)}\nUse a lowercase npm package name without a scope, like my-app`,
+        `Invalid project name ${JSON.stringify(projectName)}: ${problems.join('; ')}\nUse a lowercase npm package name without a scope, like my-app`,
       );
       process.exit(2);
     }
