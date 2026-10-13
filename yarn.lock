@@ -236,7 +236,7 @@ __metadata:
     ejs: "npm:^3.1.10"
     execa: "npm:^9.6.1"
     gulp-filter: "npm:^9.0.1"
-    gulp-prettier: "npm:^6.0.0"
+    gulp-prettier: "npm:^7.0.0"
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^4.1.5"
     mem-fs-editor: "npm:^12.1.0"
@@ -15347,13 +15347,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-prettier@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "gulp-prettier@npm:6.0.0"
+"gulp-prettier@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "gulp-prettier@npm:7.0.0"
   dependencies:
-    plugin-error: "npm:^2.0.0"
-    prettier: "npm:^3.0.0"
-  checksum: 10c0/486f4e54ddd3dfa11a0d07d2c3f22723f9b0351eab8b5d2d4d0497be55c53c2803cdd015a87b940d910210c4f79c1793c6701233ef615f56ca3e63af7c1f996f
+    plugin-error: "npm:^2.0.1"
+    prettier: "npm:^3.9.5"
+  checksum: 10c0/3c4a6a21d94c48a26fa816664b0bd26cdcda27f512354c23a5bab8fbc01cd12e5808e0b8c1faf5f5bcdd153cc793803bc8f77d06a4f3f03564f0132c49aaec01
   languageName: node
   linkType: hard
 
@@ -19886,7 +19886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plugin-error@npm:^2.0.0, plugin-error@npm:^2.0.1":
+"plugin-error@npm:^2.0.1":
   version: 2.0.1
   resolution: "plugin-error@npm:2.0.1"
   dependencies:
@@ -20704,7 +20704,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.10, prettier@npm:^3.0.0, prettier@npm:^3.3.3":
+"prettier@npm:3.9.10, prettier@npm:^3.0.0, prettier@npm:^3.3.3, prettier@npm:^3.9.5":
   version: 3.9.10
   resolution: "prettier@npm:3.9.10"
   bin:
