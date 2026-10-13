@@ -7,14 +7,15 @@ import tmp from 'tmp';
 
 import { assetMiddleware } from '../assetMiddleware';
 
-let root: string;
+const dir = tmp.dirSync({ unsafeCleanup: true });
+const root = dir.name;
 beforeAll(() => {
-  root = tmp.dirSync({ unsafeCleanup: true }).name;
   fs.mkdirSync(path.join(root, 'public/sub'), { recursive: true });
   fs.writeFileSync(path.join(root, 'secret.txt'), 'SECRET');
   fs.writeFileSync(path.join(root, 'public/main.js'), 'ASSET');
   fs.writeFileSync(path.join(root, 'public/sub/a.js'), 'SUB');
 });
+afterAll(() => dir.removeCallback());
 
 async function get(publicPath: string, urls: string[]) {
   const app = express();
