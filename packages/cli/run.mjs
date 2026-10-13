@@ -31,7 +31,10 @@ program
   .command('hatch')
   .alias('init')
   .description('creates a new anansi project')
-  .argument('<projectName>', 'Package name for the project')
+  .argument(
+    '<projectName>',
+    'Package name for the project (lowercase, unscoped npm name like my-app)',
+  )
   .option(
     '-d, --dir <directory>',
     'What directory to add to. (Creates new directory by default)',
