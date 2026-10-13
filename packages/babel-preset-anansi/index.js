@@ -34,6 +34,11 @@ options:
 */
 function buildPreset(api, options = {}) {
   api.assertVersion('^7.12.0 || ^8.0.0-0');
+  if (options.minify) {
+    throw new Error(
+      '@anansi/babel-preset: minify was removed; minify with your bundler instead',
+    );
+  }
   const env = api.env();
   const babelTargets = typeof api.targets === 'function' ? api.targets() : {};
   const supportsModules = api.caller(
@@ -94,12 +99,6 @@ function buildPreset(api, options = {}) {
     (options.developmentSourceSelf ??
       api.caller(caller => caller?.developmentSourceSelf) ??
       reactBefore192());
-
-  if (options.minify) {
-    throw new Error(
-      '@anansi/babel-preset: minify was removed; minify with your bundler instead',
-    );
-  }
 
   const explicitNodeTarget = !!options.nodeTarget;
 

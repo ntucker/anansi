@@ -164,6 +164,13 @@ describe('buildPreset', () => {
     expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(expected);
   });
 
+  it('skips developmentSourceSelf outside development', () => {
+    api.env.mockReturnValue('production');
+    api.caller.mockImplementation(cb => cb({ developmentSourceSelf: true }));
+    const reactOverride = buildPreset(api).overrides.find(o => o.presets);
+    expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(false);
+  });
+
   describe('automatic polyfillMethod', () => {
     function polyfillMethodFor(pkg) {
       const polyfillPlugin = buildInProject({
