@@ -317,7 +317,11 @@ function runScenarioTests(scenarios) {
         expect(files).toContain('tsconfig.json');
         for (const file of files) {
           const filepath = path.join(result.cwd, file);
-          if (!(await getFileInfo(filepath)).inferredParser) continue;
+          if (
+            !(await getFileInfo(filepath, { resolveConfig: false }))
+              .inferredParser
+          )
+            continue;
           await expect(
             check(fs.readFileSync(filepath, 'utf8'), {
               ...pkg.prettier,

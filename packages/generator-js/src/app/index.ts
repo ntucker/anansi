@@ -21,7 +21,11 @@ export default class AppGenerator<
     this.queueTransformStream(
       {},
       passthrough(async file => {
-        if (!file.contents || !(await getFileInfo(file.path)).inferredParser)
+        if (
+          !file.contents ||
+          !(await getFileInfo(file.path, { resolveConfig: false }))
+            .inferredParser
+        )
           return;
         file.contents = Buffer.from(
           await format(file.contents.toString(), {
