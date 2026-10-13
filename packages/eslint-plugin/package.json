@@ -4,8 +4,8 @@
   "description": "Sane community baseline for React and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "node --test",
-    "test:ci": "node --test"
+    "test": "node --test configs.test.js",
+    "test:ci": "node --test configs.test.js"
   },
   "keywords": [
     "eslint",
