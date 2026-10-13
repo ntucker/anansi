@@ -6,13 +6,13 @@ Object.hasOwn =
   };
 import compress from 'compression';
 import express, { NextFunction } from 'express';
-import diskFs from 'fs';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import ora from 'ora';
 import path from 'path';
 import webpack from 'webpack';
 
 import 'cross-fetch/dist/node-polyfill.js';
+import { assetMiddleware } from './assetMiddleware.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
@@ -95,35 +95,16 @@ export default async function serve(
 
     // ASSETS
     if (options.serveAssets) {
-      wrappingApp.use(
-        async (
-          req: Request | IncomingMessage,
-          res: any,
-          next: NextFunction,
-        ) => {
-          const filename =
-            req.url?.substring(
-              (process.env.WEBPACK_PUBLIC_PATH as string).length,
-            ) ?? '';
-          const assetPath = path.join(
-            clientManifest.outputPath ?? '',
-            filename,
-          );
-
-          if (
-            diskFs.existsSync(assetPath) &&
-            !diskFs.lstatSync(assetPath).isDirectory()
-          ) {
-            try {
-              res.sendFile(assetPath);
-            } catch (_e) {
-              return next();
-            }
-          } else {
-            next();
-          }
-        },
-      );
+      if (clientManifest.outputPath) {
+        wrappingApp.use(
+          assetMiddleware(
+            process.env.WEBPACK_PUBLIC_PATH || '/',
+            clientManifest.outputPath,
+          ),
+        );
+      } else {
+        loader.warn('Manifest has no outputPath; not serving assets');
+      }
     }
 
     // PROXIES
