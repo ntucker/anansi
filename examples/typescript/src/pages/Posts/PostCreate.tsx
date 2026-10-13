@@ -29,7 +29,7 @@ export default function PostCreate() {
       <PostForm
         initialValues={{ userId: 1 }}
         onSubmit={async (data: object) => {
-          const res = await controller.fetch(PostResource.create, data);
+          const res = await controller.fetch(PostResource.getList.push, data);
           history.push(`/post/${res.id}`);
         }}
       />
