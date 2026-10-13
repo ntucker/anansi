@@ -60,7 +60,7 @@ Usage: anansi hatch [options] <projectName>
 Aliases: init
 
 Arguments:
-  projectName              Package name for the project
+  projectName              Package name for the project (lowercase, unscoped npm name like my-app)
 
 Options:
   -d, --dir <directory>    What directory to add to. (Creates new directory by default)

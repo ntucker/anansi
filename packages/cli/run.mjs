@@ -66,7 +66,7 @@ program
       process.stdin.pipe(yosub.stdin, { end: false });
       await Promise.all([verifyAndPrompt(), yosub]);
 
-      const readme = path.join(cwd, 'README.md');
+      const readme = path.resolve(cwd, 'README.md');
       // if user exits early this is still exit code 0, so we need to validate
       // whether the setup completed before going on to the next step
       if (!fs.existsSync(readme)) {
@@ -84,9 +84,7 @@ program
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
         // absolute paths, so a --dir like '-x' can't parse as an editor flag
-        await execa(editor, [path.resolve(cwd), path.resolve(readme)], {
-          stdio: 'inherit',
-        });
+        await execa(editor, [path.resolve(cwd), readme], { stdio: 'inherit' });
       }
     } catch (error) {
       // Don't display error for user-triggered exit (SIGINT)
