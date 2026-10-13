@@ -105,7 +105,7 @@ __metadata:
     binary-version-check: "npm:^6.1.0"
     chalk: "npm:^4.1.2"
     commander: "npm:^12.1.0"
-    execa: "npm:^9.6.1"
+    execa: "npm:^10.1.0"
     import-meta-resolve: "npm:^4.2.0"
     latest-version: "npm:^9.0.0"
   peerDependencies:
@@ -234,7 +234,7 @@ __metadata:
     copyfiles: "npm:2.4.1"
     core-js-pure: "npm:^3.40.0"
     ejs: "npm:^3.1.10"
-    execa: "npm:^9.6.1"
+    execa: "npm:^10.1.0"
     import-meta-resolve: "npm:^4.2.0"
     mem-fs: "npm:^6.0.0"
     mem-fs-editor: "npm:^12.1.0"
@@ -15104,7 +15104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^10.0.1":
+"execa@npm:^10.0.1, execa@npm:^10.1.0":
   version: 10.1.0
   resolution: "execa@npm:10.1.0"
   dependencies:
