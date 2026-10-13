@@ -56,8 +56,8 @@ program
   .action(async (projectName, options) => {
     // absolute, so a --dir like '-x' can't parse as an editor flag below
     const cwd = path.resolve(options.dir || projectName);
-    if (!options.dir) fs.mkdirSync(cwd, { recursive: true });
     try {
+      if (!options.dir) fs.mkdirSync(cwd, { recursive: true });
       // get rid of 'file://' prefix
       const generatorPath = resolve(
         '@anansi/generator-js',
