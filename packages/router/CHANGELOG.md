@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/ntucker/anansi/compare/%40anansi%2Frouter%400.10.24...%40anansi%2Frouter%400.11.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires babel 8
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+
 ## [0.10.24](/github.com/ntucker/anansi/compare/@anansi/router@0.10.23...@anansi/router@0.10.24) (2026-06-21)
 
 ### 📦 Package

@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fgenerator-js%4012.6.38...%40anansi%2Fgenerator-js%4013.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/generator-js and @anansi/cli now require Node ^22.22.2 || ^24.15.0 || >=26.0.0, matching pacote 22.
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 💅 Enhancement
+
+* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+
+### 🐛 Bug Fix
+
+* Format every generated file Prettier supports ([#3162](https://github.com/ntucker/anansi/issues/3162)) ([c068736](https://github.com/ntucker/anansi/commit/c0687366e45b590048383438d4ebc6f6053cc0f7))
+* Format generated projects with Prettier again ([#3160](https://github.com/ntucker/anansi/issues/3160)) ([4f12011](https://github.com/ntucker/anansi/commit/4f12011a353dd66a12b3d193c1716fd63c8e9bda))
+
+### 📦 Package
+
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
+* Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update `@yeoman/transform` to ^2.1.2 ([#3163](https://github.com/ntucker/anansi/issues/3163)) ([bfaf186](https://github.com/ntucker/anansi/commit/bfaf186c25359ee493c25e700759ac5cb7c0ab40))
+* Update `ejs` to v7 ([#3179](https://github.com/ntucker/anansi/issues/3179)) ([975bb64](https://github.com/ntucker/anansi/commit/975bb648edc928b18f91b8aa3536e9b8c1c11ebc))
+* Update `execa` to v10 ([#3175](https://github.com/ntucker/anansi/issues/3175)) ([28ffe07](https://github.com/ntucker/anansi/commit/28ffe0792769858187ade9983dd9a218775c288f))
+* Update `pacote` to v22 ([#3176](https://github.com/ntucker/anansi/issues/3176)) ([4681b3a](https://github.com/ntucker/anansi/commit/4681b3ae4d52a06f9c64b58893096a365030e3da))
+* Update `sass-loader` to v17 ([#3086](https://github.com/ntucker/anansi/issues/3086)) ([ef585c6](https://github.com/ntucker/anansi/commit/ef585c68194e2e6f63c9d30f42936748934fb780))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update linaria packages (major) ([#3169](https://github.com/ntucker/anansi/issues/3169)) ([e57d0b2](https://github.com/ntucker/anansi/commit/e57d0b2cdcfd9fef1e0af73031747a623d7c42eb))
+* Update yeoman ([#3158](https://github.com/ntucker/anansi/issues/3158)) ([af1ddc2](https://github.com/ntucker/anansi/commit/af1ddc25accff5933e0101aa2c5ff6ce71407d2a))
+* Update yeoman ([#3171](https://github.com/ntucker/anansi/issues/3171)) ([7e82ca4](https://github.com/ntucker/anansi/commit/7e82ca49d555e8562ac9666e5b13539e9f5cd489))
+
 ## [12.6.38](/github.com/ntucker/anansi/compare/@anansi/generator-js@12.6.37...@anansi/generator-js@12.6.38) (2026-06-21)
 
 ### 📦 Package

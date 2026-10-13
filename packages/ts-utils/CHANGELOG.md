@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.12](https://github.com/ntucker/anansi/compare/%40anansi%2Fts-utils%400.3.11...%40anansi%2Fts-utils%400.3.12) (2026-10-13)
+
+### 💅 Enhancement
+
+* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+
 ## [0.3.11](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.10...@anansi/ts-utils@0.3.11) (2026-06-21)
 
 **Note:** Version bump only for package @anansi/ts-utils

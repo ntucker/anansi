@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fcore%400.22.12...%40anansi%2Fcore%400.23.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/core requires Node >=22.15 and webpack >=5.101.
+  Custom devServer.setupMiddlewares and proxy configs run on express 5 and
+  http-proxy-middleware 4: bare `*` routes need a named wildcard
+  (`/{*splat}`), and proxy `bypass` is removed (use pathFilter/router).
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
+* namedPaths use path-to-regexp v8 syntax.
+  - Optional params: `/users/:id?` -> `/users{/:id}`
+  - Repeating params: `/:path+` -> `/*path`, `/:path*` -> `{/*path}`
+  - Unnamed/regex groups removed: `/(.*)` -> `{/*rest}`, `/:id(\d+)` -> `/:id`
+  - Wildcard params match as string[]
+  - Matched params are decoded with decodeURIComponent and built paths
+    are encoded with encodeURIComponent
+  - NamedPath options follow v8 (strict -> trailing; start, endsWith,
+    prefixes removed)
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 📦 Package
+
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
+* Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update `ora` to v9 ([#3181](https://github.com/ntucker/anansi/issues/3181)) ([37fc876](https://github.com/ntucker/anansi/commit/37fc87643801be84fbf3be3d8d327958f94b186b))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+* Update validation packages ([#3090](https://github.com/ntucker/anansi/issues/3090)) ([2260f50](https://github.com/ntucker/anansi/commit/2260f50acf72b85c659488228fe7e6d56978b12a))
+* Update webpack packages ([#3096](https://github.com/ntucker/anansi/issues/3096)) ([67a80c5](https://github.com/ntucker/anansi/commit/67a80c5b40aa9270eaeb34f21ea06f51da26fafe))
+* Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
+* Upgrade webpack-dev-server to v6 ([#3138](https://github.com/ntucker/anansi/issues/3138)) ([1e37cd6](https://github.com/ntucker/anansi/commit/1e37cd6bb84e11c16eaf8cbb41b5a610f6180180))
+
 ## [0.22.12](/github.com/ntucker/anansi/compare/@anansi/core@0.22.11...@anansi/core@0.22.12) (2026-06-21)
 
 ### 📦 Package

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/ntucker/anansi/compare/%40pojo-router%2Fcore%400.10.17...%40pojo-router%2Fcore%400.11.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* namedPaths use path-to-regexp v8 syntax.
+  - Optional params: `/users/:id?` -> `/users{/:id}`
+  - Repeating params: `/:path+` -> `/*path`, `/:path*` -> `{/*path}`
+  - Unnamed/regex groups removed: `/(.*)` -> `{/*rest}`, `/:id(\d+)` -> `/:id`
+  - Wildcard params match as string[]
+  - Matched params are decoded with decodeURIComponent and built paths
+    are encoded with encodeURIComponent
+  - NamedPath options follow v8 (strict -> trailing; start, endsWith,
+    prefixes removed)
+* Requires babel 8
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+* Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
+
 ## [0.10.17](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.16...@pojo-router/core@0.10.17) (2026-06-21)
 
 ### 📦 Package

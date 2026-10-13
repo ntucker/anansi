@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fjest-preset%400.11.34...%40anansi%2Fjest-preset%400.12.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Remove the `minify` option and `babel-minify` peer; it
+  did not work with Babel 8 (or as a preset at all). Minify with your bundler.
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 💅 Enhancement
+
+* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+
+### 🐛 Bug Fix
+
+* Close Babel 8 migration gaps in @anansi/babel-preset ([#3149](https://github.com/ntucker/anansi/issues/3149)) ([afbc0d2](https://github.com/ntucker/anansi/commit/afbc0d20b589141fafd5b1eb2a6c49067a62b3b1))
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update JS test packages ([#3151](https://github.com/ntucker/anansi/issues/3151)) ([99a5372](https://github.com/ntucker/anansi/commit/99a53728b5329f184c6f1bfd1b6c897e326860ac))
+* Update linaria packages (major) ([#3169](https://github.com/ntucker/anansi/issues/3169)) ([e57d0b2](https://github.com/ntucker/anansi/commit/e57d0b2cdcfd9fef1e0af73031747a623d7c42eb))
+
 ## [0.11.34](/github.com/ntucker/anansi/compare/@anansi/jest-preset@0.11.33...@anansi/jest-preset@0.11.34) (2026-06-21)
 
 ### 📦 Package

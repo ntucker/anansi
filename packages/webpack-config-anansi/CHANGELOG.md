@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [22.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fwebpack-config%4021.1.19...%40anansi%2Fwebpack-config%4022.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/core requires Node >=22.15 and webpack >=5.101.
+  Custom devServer.setupMiddlewares and proxy configs run on express 5 and
+  http-proxy-middleware 4: bare `*` routes need a named wildcard
+  (`/{*splat}`), and proxy `bypass` is removed (use pathFilter/router).
+* @anansi/eslint-plugin requires eslint ^10.0.0
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
+* Remove the `minify` option and `babel-minify` peer; it
+  did not work with Babel 8 (or as a preset at all). Minify with your bundler.
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 🐛 Bug Fix
+
+* Close Babel 8 migration gaps in @anansi/babel-preset ([#3149](https://github.com/ntucker/anansi/issues/3149)) ([afbc0d2](https://github.com/ntucker/anansi/commit/afbc0d20b589141fafd5b1eb2a6c49067a62b3b1))
+* webpack-config honors `svgoOptions: false` ([#3137](https://github.com/ntucker/anansi/issues/3137)) ([3b7f43c](https://github.com/ntucker/anansi/commit/3b7f43cc813ba7be6000792a0ede1ad3fc5615dc))
+* webpack-config honors `svgrOptions: false` ([#3143](https://github.com/ntucker/anansi/issues/3143)) ([fce4ab6](https://github.com/ntucker/anansi/commit/fce4ab699a16ba54b5a28a51cdcbedba92f09c41))
+
+### 📦 Package
+
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
+* Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update `postcss-preset-env` to v11 ([#3085](https://github.com/ntucker/anansi/issues/3085)) ([873fe48](https://github.com/ntucker/anansi/commit/873fe4805625079e41cfdcf1a8adb9817f46ef48))
+* Update `sass-loader` to v17 ([#3086](https://github.com/ntucker/anansi/issues/3086)) ([ef585c6](https://github.com/ntucker/anansi/commit/ef585c68194e2e6f63c9d30f42936748934fb780))
+* Update `svgo-loader` to v5 ([#3161](https://github.com/ntucker/anansi/issues/3161)) ([b873507](https://github.com/ntucker/anansi/commit/b8735079ed9119f66d61319949a99d02d7e7c842))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update linaria packages (major) ([#3169](https://github.com/ntucker/anansi/issues/3169)) ([e57d0b2](https://github.com/ntucker/anansi/commit/e57d0b2cdcfd9fef1e0af73031747a623d7c42eb))
+* Update validation packages ([#3090](https://github.com/ntucker/anansi/issues/3090)) ([2260f50](https://github.com/ntucker/anansi/commit/2260f50acf72b85c659488228fe7e6d56978b12a))
+* Update webpack packages ([#3096](https://github.com/ntucker/anansi/issues/3096)) ([67a80c5](https://github.com/ntucker/anansi/commit/67a80c5b40aa9270eaeb34f21ea06f51da26fafe))
+* Upgrade ESLint to v10 ([#3184](https://github.com/ntucker/anansi/issues/3184)) ([f323d73](https://github.com/ntucker/anansi/commit/f323d73f5cf46ab65cffa219909fd3b264377fb0)), references [SourceCode#getTokenOrCommentBefore](https://github.com/SourceCode/issues/getTokenOrCommentBefore)
+* Upgrade webpack-dev-server to v6 ([#3138](https://github.com/ntucker/anansi/issues/3138)) ([1e37cd6](https://github.com/ntucker/anansi/commit/1e37cd6bb84e11c16eaf8cbb41b5a610f6180180))
+
+### 📝 Documentation
+
+* List svgoOptions among webpack-config options that accept false ([#3141](https://github.com/ntucker/anansi/issues/3141)) ([cb6d0e1](https://github.com/ntucker/anansi/commit/cb6d0e17facc0b13e7020cbf523fbd09f0912963))
+
 ## [21.1.19](/github.com/ntucker/anansi/compare/@anansi/webpack-config@21.1.18...@anansi/webpack-config@21.1.19) (2026-06-21)
 
 ### 📦 Package

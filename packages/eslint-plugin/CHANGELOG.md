@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Feslint-plugin%401.0.74...%40anansi%2Feslint-plugin%402.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/eslint-plugin requires eslint ^10.0.0
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 💅 Enhancement
+
+* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+
+### 🐛 Bug Fix
+
+* **eslint-plugin:** Stop apps nested under another Babel project from linting with its config ([#3142](https://github.com/ntucker/anansi/issues/3142)) ([565bb76](https://github.com/ntucker/anansi/commit/565bb76604972e0252b35c4f6e499d566832607f)), references [#3140](https://github.com/ntucker/anansi/issues/3140)
+* Find the monorepo Babel config when eslint runs from a package directory ([#3140](https://github.com/ntucker/anansi/issues/3140)) ([cb241b4](https://github.com/ntucker/anansi/commit/cb241b40fb8438007f5ff19ea2cd7506dff74441))
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update validation packages ([#3078](https://github.com/ntucker/anansi/issues/3078)) ([70a9b9b](https://github.com/ntucker/anansi/commit/70a9b9b6bbd7f846c8f2d4ef166dbbaeb225c04f))
+* Update validation packages ([#3090](https://github.com/ntucker/anansi/issues/3090)) ([2260f50](https://github.com/ntucker/anansi/commit/2260f50acf72b85c659488228fe7e6d56978b12a))
+* Upgrade ESLint to v10 ([#3184](https://github.com/ntucker/anansi/issues/3184)) ([f323d73](https://github.com/ntucker/anansi/commit/f323d73f5cf46ab65cffa219909fd3b264377fb0)), references [SourceCode#getTokenOrCommentBefore](https://github.com/SourceCode/issues/getTokenOrCommentBefore)
+
 ## [1.0.74](/github.com/ntucker/anansi/compare/@anansi/eslint-plugin@1.0.73...@anansi/eslint-plugin@1.0.74) (2026-06-21)
 
 ### 📦 Package

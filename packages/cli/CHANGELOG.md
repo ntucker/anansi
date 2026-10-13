@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fcli%403.1.107...%40anansi%2Fcli%404.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/generator-js and @anansi/cli now require Node ^22.22.2 || ^24.15.0 || >=26.0.0, matching pacote 22.
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 📦 Package
+
+* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
+* Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update `commander` to v15 ([#3178](https://github.com/ntucker/anansi/issues/3178)) ([b98a7d3](https://github.com/ntucker/anansi/commit/b98a7d30c37de4a2af499af140d03c9fbfbfa182))
+* Update `execa` to v10 ([#3175](https://github.com/ntucker/anansi/issues/3175)) ([28ffe07](https://github.com/ntucker/anansi/commit/28ffe0792769858187ade9983dd9a218775c288f))
+* Update `pacote` to v22 ([#3176](https://github.com/ntucker/anansi/issues/3176)) ([4681b3a](https://github.com/ntucker/anansi/commit/4681b3ae4d52a06f9c64b58893096a365030e3da))
+
 ## [3.1.107](/github.com/ntucker/anansi/compare/@anansi/cli@3.1.106...@anansi/cli@3.1.107) (2026-06-21)
 
 **Note:** Version bump only for package @anansi/cli

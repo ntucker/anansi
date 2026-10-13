@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fbabel-preset%406.2.27...%40anansi%2Fbabel-preset%407.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* @anansi/eslint-plugin requires eslint ^10.0.0
+* Remove the `minify` option and `babel-minify` peer; it
+  did not work with Babel 8 (or as a preset at all). Minify with your bundler.
+* Requires babel 8
+
+### 🚀 Features
+
+* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+
+### 🐛 Bug Fix
+
+* **babel-preset:** Detect core-js-pure when package.json lacks a deps field ([#3135](https://github.com/ntucker/anansi/issues/3135)) ([0c0edf7](https://github.com/ntucker/anansi/commit/0c0edf7ce5a6b1d6c4f28e472642c7b714396975))
+* Close Babel 8 migration gaps in @anansi/babel-preset ([#3149](https://github.com/ntucker/anansi/issues/3149)) ([afbc0d2](https://github.com/ntucker/anansi/commit/afbc0d20b589141fafd5b1eb2a6c49067a62b3b1))
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update `babel-plugin-transform-import-meta` to v3 ([#3093](https://github.com/ntucker/anansi/issues/3093)) ([7ad1b8f](https://github.com/ntucker/anansi/commit/7ad1b8f6175e925672dd00692e46f9bf18ce8d44))
+* Update babel packages ([#3150](https://github.com/ntucker/anansi/issues/3150)) ([f104690](https://github.com/ntucker/anansi/commit/f1046901e39bdc7d4a519d1e2f9f09d5bf599f71))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update linaria packages (major) ([#3169](https://github.com/ntucker/anansi/issues/3169)) ([e57d0b2](https://github.com/ntucker/anansi/commit/e57d0b2cdcfd9fef1e0af73031747a623d7c42eb))
+* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+* Update webpack packages ([#3096](https://github.com/ntucker/anansi/issues/3096)) ([67a80c5](https://github.com/ntucker/anansi/commit/67a80c5b40aa9270eaeb34f21ea06f51da26fafe))
+* Upgrade ESLint to v10 ([#3184](https://github.com/ntucker/anansi/issues/3184)) ([f323d73](https://github.com/ntucker/anansi/commit/f323d73f5cf46ab65cffa219909fd3b264377fb0)), references [SourceCode#getTokenOrCommentBefore](https://github.com/SourceCode/issues/getTokenOrCommentBefore)
+
 ## [6.2.27](/github.com/ntucker/anansi/compare/@anansi/babel-preset@6.2.26...@anansi/babel-preset@6.2.27) (2026-06-21)
 
 ### 📦 Package

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fstorybook%404.0.23...%40anansi%2Fstorybook%405.0.0) (2026-10-13)
+
+### ⚠ 💥 BREAKING CHANGES
+
+* Requires babel 8
+
+### 💅 Enhancement
+
+* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+
+### 🐛 Bug Fix
+
+* Allow @anansi/webpack-config 22 in @anansi/storybook peers ([#3190](https://github.com/ntucker/anansi/issues/3190)) ([47c689b](https://github.com/ntucker/anansi/commit/47c689bca9a46a34682baed82371c7e6536bb696))
+
+### 📦 Package
+
+* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+* Update storybook monorepo to v10.6.1 ([#3156](https://github.com/ntucker/anansi/issues/3156)) ([a48db24](https://github.com/ntucker/anansi/commit/a48db242857c24c94a75d62d7c2900df9f120cf9))
+
 ## [4.0.23](/github.com/ntucker/anansi/compare/@anansi/storybook@4.0.22...@anansi/storybook@4.0.23) (2026-06-21)
 
 ### 📦 Package
