@@ -77,6 +77,9 @@ describe('RouteController', () => {
       expect(router.getMatchedRoutes('/post/a%20b')).toEqual([
         { name: 'Post', id: 'a%20b' },
       ]);
+    });
+
+    it('falls back to the safe decode when decode is undefined', () => {
       const undefinedDecode = new RouteController({
         history: {} as any,
         namedPaths: { Post: { path: '/post/:id', decode: undefined } },
@@ -107,6 +110,7 @@ describe('RouteController', () => {
       expect(router.buildPath('Post', { id: 5 })).toBe('/post/5');
       expect(router.pathBuilders.Post({ id: 5 })).toBe('/post/5');
       expect(router.buildPath('Users', { id: null as any })).toBe('/users');
+      expect(router.buildPath('Users', { id: '' })).toBe('/users');
       expect(router.pathBuilders.Users(null as any)).toBe('/users');
       expect(
         new RouteController({

@@ -65,6 +65,7 @@ export default class RouteController<
         route,
         matcher: matchPath(parsed, {
           ...options,
+          // `??` so an explicit `decode: undefined` can't restore the throwing default
           decode: options.decode ?? safeDecode,
         }),
         outboundPath: (data?: object) =>
@@ -120,8 +121,8 @@ export default class RouteController<
 function stringifyParams(pathData: object): ParamData {
   const params: ParamData = {};
   for (const [k, v] of Object.entries(pathData)) {
-    // empty wildcards count as missing so optional groups are omitted
-    if (v == null || (Array.isArray(v) && !v.length)) continue;
+    // empty values count as missing so optional groups are omitted
+    if (v == null || v === '' || (Array.isArray(v) && !v.length)) continue;
     params[k] = Array.isArray(v) ? v.map(String) : String(v);
   }
   return params;
