@@ -8,18 +8,17 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import { createRequire } from 'node:module';
-import path from 'node:path';
 import tsPlugin from 'typescript-eslint';
 
 import isInstalled from './isInstalled.cjs';
 
 // eslint-plugin-react's version: 'detect' calls context.getFilename(), which
-// ESLint 10 removed, so resolve React from the project ourselves
+// ESLint 10 removed. Until a release with jsx-eslint/eslint-plugin-react#3979
+// ships, resolve React from the working directory (detect starts at each
+// linted file) and pass the version in.
 function reactVersion() {
   try {
-    return createRequire(path.join(process.cwd(), 'noop.js'))(
-      'react/package.json',
-    ).version;
+    return createRequire(`${process.cwd()}/`)('react/package.json').version;
   } catch {
     // eslint-plugin-react's own fallback when React isn't installed
     return '999.999.999';
