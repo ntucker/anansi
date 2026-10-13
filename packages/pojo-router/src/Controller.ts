@@ -4,10 +4,10 @@ import type { MatchFunction, ParamData, PathFunction } from 'path-to-regexp';
 
 import type {
   AnyIfEmpty,
+  BuildPathArgs,
   DefaultRoutePojo,
   NamedPath,
   NamedPaths,
-  RouteParams,
 } from './types.js';
 
 export interface ControllerProps<
@@ -58,13 +58,14 @@ export default class RouteController<
         typeof pathObjectOrString === 'string' ?
           { path: pathObjectOrString as string }
         : (pathObjectOrString as NamedPath);
-      const tokens = parse(path, options);
-      const build = compile(tokens, options);
+      const parsed = parse(path, options);
+      const build = compile(parsed, options);
       return {
         pathOrPathName,
         route,
-        matcher: matchPath(tokens, options),
-        outboundPath: (data?: object) => build(data && stringifyParams(data)),
+        matcher: matchPath(parsed, { decode: safeDecode, ...options }),
+        outboundPath: (data?: object) =>
+          build(data ? stringifyParams(data) : undefined),
       };
     });
 
@@ -102,7 +103,7 @@ export default class RouteController<
 
   buildPath<N extends string>(
     pathOrPathName: N,
-    pathData?: RouteParams<Paths, N>,
+    ...[pathData]: BuildPathArgs<Paths, N>
   ): string {
     if (
       !Object.prototype.hasOwnProperty.call(this.pathBuilders, pathOrPathName)
@@ -116,8 +117,18 @@ export default class RouteController<
 function stringifyParams(pathData: object): ParamData {
   const params: ParamData = {};
   for (const [k, v] of Object.entries(pathData)) {
-    if (v !== undefined)
-      params[k] = Array.isArray(v) ? v.map(String) : String(v);
+    // empty wildcards count as missing so optional groups are omitted
+    if (v == null || (Array.isArray(v) && !v.length)) continue;
+    params[k] = Array.isArray(v) ? v.map(String) : String(v);
   }
   return params;
+}
+
+// malformed escapes (e.g. `/post/%E0%A4%A`) keep their raw value instead of throwing
+function safeDecode(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
 }

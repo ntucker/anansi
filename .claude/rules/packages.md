@@ -20,7 +20,7 @@ Run from the repo root. Yarn 4 never runs `pre*` scripts on its own, so a `prete
 | `@anansi/eslint-plugin` (`eslint-plugin`) | `run test` (lints a fixture so rules report and fix on the installed ESLint), `yarn lint` (the root config uses this plugin), plus data-client's lint |
 | `@anansi/generator-js` (`generator-js`) | `run test`, `run test:type`, `run build` |
 | `@anansi/jest-preset` (`jest-preset-anansi`) | `run test`, `run build`; `example-typescript`'s `test` exercises the preset |
-| `@pojo-router/core` (`pojo-router`) | No tests. `run test:type`, `run build`; no example uses it |
+| `@pojo-router/core` (`pojo-router`) | `run test` (Controller matching/building; also type-checks `@ts-expect-error` assertions), `run test:type`, `run build`; `example-react-18` uses it through `@anansi/router` |
 | `@anansi/router` (`router`) | No tests. `run test:type`, `run build`, `example-react-18` |
 | `@anansi/storybook` (`storybook`) | No tests. `run test:type`, `run build`, `yarn workspace example-typescript build:storybook` |
 | `@anansi/ts-utils` (`ts-utils`) | `run build` |

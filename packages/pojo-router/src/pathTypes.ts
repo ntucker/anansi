@@ -1,4 +1,5 @@
-// Copied from @data-client/rest (packages/rest/src/pathTypes.ts); keep in sync.
+// Subset of @data-client/rest's packages/rest/src/pathTypes.ts (PathArgs and
+// its helpers); keep those in sync.
 
 // The non-`infer` pre-checks are matched without instantiating any types,
 // so plain keys (the common case) skip the inferring templates entirely.

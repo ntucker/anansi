@@ -37,7 +37,9 @@ export default function routerSpout<ResolveWith>(options: {
     const router = options.createRouter(
       createMemoryHistory({ initialEntries: [url] }),
     );
-    const matchedRoutes: Route<ResolveWith>[] = router.getMatchedRoutes(url);
+    const matchedRoutes: Route<ResolveWith>[] = router.getMatchedRoutes(
+      parts[0],
+    );
 
     const nextProps = await next({
       ...props,

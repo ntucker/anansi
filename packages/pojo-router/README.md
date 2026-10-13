@@ -50,8 +50,9 @@ Paths use [path-to-regexp v8](https://github.com/pillarjs/path-to-regexp) syntax
 
 `?`, `+` and `*` modifiers and inline regex (`/:id(\d+)`) are not supported;
 escape literal `{}()[]+?!:*` with a backslash (`'/a\\+b'` in JS). Matched
-params are decoded with `decodeURIComponent`, and `buildPath()` encodes with
-`encodeURIComponent`.
+params are decoded with `decodeURIComponent` (malformed escapes like `%E0%A4%A`
+stay raw instead of throwing; set `decode` to override), and `buildPath()`
+encodes with `encodeURIComponent`.
 
 `NamedPath` objects accept path-to-regexp's `ParseOptions`, `MatchOptions`
 (`end`, `trailing`, `sensitive`, `delimiter`, `decode`) and `CompileOptions`
@@ -71,9 +72,9 @@ class RouteController<Route, Paths extends NamedPaths> {
     constructor({ history, namedPaths, routes, notFound }: Props<Paths>);
 
     readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
-    readonly pathBuilders: Record<string, PathFunction>;
+    readonly pathBuilders: Record<string, PathFunction<object>>;
     getMatchedRoutes(pathToMatch: string): Route[];
-    buildPath<N extends string>(pathOrPathName: N, pathData?: RouteParams<Paths, N>): string;
+    buildPath<N extends string>(pathOrPathName: N, ...[pathData]: BuildPathArgs<Paths, N>): string;
 }
 ```
 
@@ -92,7 +93,8 @@ E.g. for a route like `/entity/:id`, `controller.buildPath('entity', { id: 123 }
 
 When `namedPaths` is declared `as const`, `pathData` is typed from the path (the same inference as
 [@data-client/rest](https://dataclient.io/rest/api/RestEndpoint#path)): `:id` takes `string | number`,
-`*path` takes `string[]`, and params inside `{}` are optional. `PathArgs<'/entity/:id'>` and
+`*path` takes `string[]`, params inside `{}` are optional, and `pathData` is required when the path
+has required params. `PathArgs<'/entity/:id'>` and
 `RouteParams<typeof namedPaths, 'entity'>` expose these types.
 
 ## Hooks

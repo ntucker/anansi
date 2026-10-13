@@ -34,3 +34,8 @@ type PathOf<Paths extends NamedPaths, Name extends string> =
 /** Params `buildPath()` takes for a route name (or a raw path) */
 export type RouteParams<Paths extends NamedPaths, Name extends string> =
   string extends PathOf<Paths, Name> ? any : PathArgs<PathOf<Paths, Name>>;
+
+/** `buildPath()` params: required when the path has required params */
+export type BuildPathArgs<Paths extends NamedPaths, Name extends string> =
+  {} extends RouteParams<Paths, Name> ? [pathData?: RouteParams<Paths, Name>]
+  : [pathData: RouteParams<Paths, Name>];
