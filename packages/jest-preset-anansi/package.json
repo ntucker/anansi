@@ -71,14 +71,14 @@
   "dependencies": {
     "@anansi/ts-utils": "workspace:^",
     "@babel/runtime-corejs3": "^8.0.0",
-    "babel-jest": "^30.4.1",
+    "babel-jest": "^30.5.2",
     "core-js-pure": "^3.40.0",
     "cross-fetch": "^4.1.0",
     "jest-pnp-resolver": "^1.2.3",
     "mitt": "^3.0.1",
     "node-fetch": "^3.3.2",
     "semver": "^7.8.4",
-    "ts-jest": "^29.4.11",
+    "ts-jest": "^29.4.14",
     "whatwg-fetch": "^3.0.0"
   },
   "peerDependencies": {
