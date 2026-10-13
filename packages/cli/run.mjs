@@ -19,6 +19,9 @@ const pkg = JSON.parse(
 );
 const { version } = pkg;
 
+// npm's package name rule, minus leading '-' so a name can't parse as a flag
+const npmName = /^(?:@[a-z0-9~][a-z0-9._~-]*\/)?[a-z0-9~][a-z0-9._~-]*$/i;
+
 const program = new Command();
 
 program.version(version);
@@ -33,21 +36,26 @@ program
     'What directory to add to. (Creates new directory by default)',
   )
   .action(async (projectName, options) => {
-    if (!options.dir) {
-      if (!fs.existsSync(projectName)) {
-        fs.mkdirSync(projectName);
-      }
+    // projectName becomes a directory and a generator argument, so only accept
+    // npm package names: no path separators beyond the scope, no '..', no flags
+    if (!npmName.test(projectName)) {
+      console.error(
+        `Invalid project name: ${JSON.stringify(projectName)}\nUse an npm package name, like my-app or @my-org/my-app`,
+      );
+      process.exit(2);
+    }
+    const cwd = options.dir || projectName.split('/').pop();
+    if (!options.dir && !fs.existsSync(cwd)) {
+      fs.mkdirSync(cwd);
     }
     try {
-      const cwd = options.dir || `./${projectName}`;
       // get rid of 'file://' prefix
       const generatorPath = resolve(
         '@anansi/generator-js',
         import.meta.url,
       ).substring(7);
-      const yosub = execa('npx yo', [generatorPath, projectName], {
+      const yosub = execa('npx', ['yo', generatorPath, projectName], {
         stdio: ['pipe', process.stdout, process.stderr],
-        shell: true,
         cwd,
         env: {
           PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
@@ -66,9 +74,7 @@ program
       }
       let editor = process.env.REACT_EDITOR || process.env.VISUAL || 'code';
       try {
-        await execa('which', [`"${editor}"`], {
-          shell: true,
-        });
+        await execa('which', [editor]);
       } catch (e) {
         console.error(
           'No visual editor found...skipping editor launch.\n(Set $VISUAL env variable to automatically launch editor upon new project setup)',
@@ -77,10 +83,7 @@ program
       }
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
-        await execa(`"${editor}"`, [cwd, readme], {
-          shell: true,
-          stdio: 'inherit',
-        });
+        await execa(editor, [cwd, readme], { stdio: 'inherit' });
       }
     } catch (error) {
       // Don't display error for user-triggered exit (SIGINT)
@@ -101,9 +104,8 @@ program
 
     for (const feature of features) {
       try {
-        await execa('npx yo', [`@anansi/js:${feature}`], {
+        await execa('npx', ['yo', `@anansi/js:${feature}`], {
           stdio: 'inherit',
-          shell: true,
           env: {
             PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
           },
