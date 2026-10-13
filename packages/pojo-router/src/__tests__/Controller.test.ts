@@ -111,6 +111,9 @@ describe('RouteController', () => {
       expect(router.pathBuilders.Post({ id: 5 })).toBe('/post/5');
       expect(router.buildPath('Users', { id: null as any })).toBe('/users');
       expect(router.buildPath('Users', { id: '' })).toBe('/users');
+      expect(router.buildPath('Files', { path: ['x', '', 'y'] })).toBe(
+        '/files/x/y',
+      );
       expect(router.pathBuilders.Users(null as any)).toBe('/users');
       expect(
         new RouteController({

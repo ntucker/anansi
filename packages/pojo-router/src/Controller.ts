@@ -65,7 +65,7 @@ export default class RouteController<
         route,
         matcher: matchPath(parsed, {
           ...options,
-          // undefined means safeDecode, not path-to-regexp's throwing decodeURIComponent
+          // `??` (not a spread default) so `decode: undefined` still gets safeDecode
           decode: options.decode ?? safeDecode,
         }),
         outboundPath: (data?: object) =>
@@ -122,14 +122,22 @@ function stringifyParams(pathData: object): ParamData {
   const params: ParamData = {};
   for (const [k, v] of Object.entries(pathData)) {
     // empty values count as missing: optional groups are omitted and required
-    // params throw (as in v6), rather than building a path that can't match
-    if (v == null || v === '' || (Array.isArray(v) && !v.length)) continue;
-    params[k] = Array.isArray(v) ? v.map(String) : String(v);
+    // params throw (as path-to-regexp v6 did) rather than building a path that
+    // can't match
+    const value =
+      Array.isArray(v) ? v.filter(isPresent).map(String)
+      : isPresent(v) ? String(v)
+      : undefined;
+    if (value?.length) params[k] = value;
   }
   return params;
 }
 
 // malformed escapes (e.g. `/post/%E0%A4%A`) keep their raw value instead of throwing
+function isPresent(v: unknown) {
+  return v != null && v !== '';
+}
+
 function safeDecode(value: string): string {
   try {
     return decodeURIComponent(value);
