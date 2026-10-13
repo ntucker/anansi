@@ -2,20 +2,19 @@ import express from 'express';
 import fs from 'fs';
 import http, { type Server } from 'http';
 import type { AddressInfo } from 'net';
-import os from 'os';
 import path from 'path';
+import tmp from 'tmp';
 
 import { assetMiddleware } from '../assetMiddleware';
 
 let root: string;
 beforeAll(() => {
-  root = fs.mkdtempSync(path.join(os.tmpdir(), 'anansi-assets-'));
+  root = tmp.dirSync({ unsafeCleanup: true }).name;
   fs.mkdirSync(path.join(root, 'public/sub'), { recursive: true });
   fs.writeFileSync(path.join(root, 'secret.txt'), 'SECRET');
   fs.writeFileSync(path.join(root, 'public/main.js'), 'ASSET');
   fs.writeFileSync(path.join(root, 'public/sub/a.js'), 'SUB');
 });
-afterAll(() => fs.rmSync(root, { recursive: true, force: true }));
 
 async function get(publicPath: string, urls: string[]) {
   const app = express();

@@ -5,8 +5,8 @@ import express from 'express';
  */
 export function assetMiddleware(publicPath: string, outputPath: string) {
   return express.Router().use(
-    // escaped so path-to-regexp treats characters like ( : * as literals
-    publicPath.replace(/[()[\]{}*+?!:\\]/g, '\\$&'),
+    // escape path-to-regexp v8 syntax so characters like ( : * stay literal
+    publicPath.replaceAll(/[()[\]{}*+?!:\\]/g, '\\$&'),
     express.static(outputPath, { index: false, redirect: false }),
   );
 }
