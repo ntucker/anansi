@@ -4,6 +4,7 @@
   "commitMessagePrefix": "pkg: ",
   "commitMessageTopic": "`{{depName}}`",
   "dependencyDashboardApproval": true,
+  "minimumReleaseAge": "1 day",
   "rangeStrategy": "auto",
   "ignoreDeps": [
     "whatwg-fetch",
