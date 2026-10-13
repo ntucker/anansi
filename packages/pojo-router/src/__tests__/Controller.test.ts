@@ -110,6 +110,7 @@ describe('RouteController', () => {
       expect(router.buildPath('Post', { id: 5 })).toBe('/post/5');
       expect(router.pathBuilders.Post({ id: 5 })).toBe('/post/5');
       expect(router.buildPath('Users', { id: null as any })).toBe('/users');
+      expect(router.buildPath('Users', { id: '' })).toBe('/users');
       expect(router.pathBuilders.Users(null as any)).toBe('/users');
       expect(
         new RouteController({
@@ -126,6 +127,9 @@ describe('RouteController', () => {
       expect(() => router.buildPath('Nope')).toThrow('Unknown route: Nope');
       // @ts-expect-error id is required
       expect(() => router.buildPath('Post')).toThrow('Missing parameters: id');
+      expect(() => router.buildPath('Post', { id: '' })).toThrow(
+        'Missing parameters: id',
+      );
     });
 
     it('accepts typed routers where untyped ones are expected', () => {

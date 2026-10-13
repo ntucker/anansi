@@ -121,8 +121,9 @@ export default class RouteController<
 function stringifyParams(pathData: object): ParamData {
   const params: ParamData = {};
   for (const [k, v] of Object.entries(pathData)) {
-    // empty wildcards count as missing so optional groups are omitted
-    if (v == null || (Array.isArray(v) && !v.length)) continue;
+    // empty values count as missing: optional groups are omitted and required
+    // params throw (as in v6), rather than building a path that can't match
+    if (v == null || v === '' || (Array.isArray(v) && !v.length)) continue;
     params[k] = Array.isArray(v) ? v.map(String) : String(v);
   }
   return params;

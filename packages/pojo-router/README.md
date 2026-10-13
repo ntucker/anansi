@@ -94,7 +94,7 @@ E.g. for a route like `/entity/:id`, `controller.buildPath('entity', { id: 123 }
 When `namedPaths` is declared `as const`, `pathData` is typed from the path (the same inference as
 [@data-client/rest](https://dataclient.io/rest/api/RestEndpoint#path)): `:id` takes `string | number`,
 `*path` takes `string[]`, params inside `{}` are optional, and `pathData` is required when the path
-has required params. `null`, `undefined` and empty-array values count as missing: optional groups are
+has required params. `null`, `undefined`, `''` and empty-array values count as missing: optional groups are
 omitted and missing required params throw. `PathArgs<'/entity/:id'>` and
 `RouteParams<typeof namedPaths, 'entity'>` expose these types.
 
