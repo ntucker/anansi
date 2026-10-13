@@ -295,6 +295,37 @@ describe('Linaria Integration with Webpack Loader', () => {
     });
   };
 
+  describe('WyW 1 caller detection', () => {
+    const transformWithCaller = async (code, callerName) => {
+      const babel = await import('@babel/core');
+      return babel.transformAsync(code, {
+        filename: path.join(tempDir, 'component.jsx'),
+        babelrc: false,
+        configFile: false,
+        presets: [[require.resolve('./index.js'), { hasJsxRuntime: true }]],
+        caller: { name: callerName },
+      });
+    };
+    const code = `
+      export default function Component() {
+        return <div>Hello</div>;
+      }
+    `;
+
+    it('adds react-refresh for other callers', async () => {
+      const { code: output } = await transformWithCaller(code, 'babel-loader');
+      expect(output).toContain('$RefreshReg$');
+    });
+
+    it.each(['wyw-in-js', 'linaria'])(
+      'skips react-refresh for the %s caller',
+      async callerName => {
+        const { code: output } = await transformWithCaller(code, callerName);
+        expect(output).not.toContain('$RefreshReg$');
+      },
+    );
+  });
+
   describe('Linaria detection with webpack loader', () => {
     it('should process styled components through webpack loader', async () => {
       const code = `

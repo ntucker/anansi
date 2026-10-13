@@ -622,8 +622,9 @@ export default function MyComponent() {
 ### Working with Linaria
 
 When testing modules that use Linaria, it's important to add the wyw-in-js babel preset to the babel config. This is
-because webpack is not run, and thus will not properly process the embeds. In wyw-in-js 2 the preset is a deprecated compatibility
-wrapper: its inline options must be JSON-serializable, so put function options in a [wyw-in-js config file](https://wyw-in-js.dev/configuration).
+because webpack is not run, and thus will not properly process the embeds. wyw-in-js 2 marks its babel preset as a deprecated
+compatibility wrapper, but it remains the way to run wyw-in-js under Jest. Its inline options must be JSON-serializable, so put function
+options in a [wyw-in-js config file](https://wyw-in-js.dev/configuration).
 
 1. Install linaria: `yarn add --dev @linaria/core @linaria/react @wyw-in-js/babel-preset`
 3. Add `@wyw-in-js` to babel presets.
