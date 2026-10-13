@@ -44,7 +44,9 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     create: base.create.extend({
       async fetch(...args: any) {
         const value = await base.create.fetch.apply(this, args);
-        return { ...value, id: args[args.length - 1]?.id };
+        // the api always responds with id 101, so every new item would collide;
+        // generate a unique id client-side instead
+        return { ...value, id: Date.now() };
       },
     }),
     // generics don't match up well
