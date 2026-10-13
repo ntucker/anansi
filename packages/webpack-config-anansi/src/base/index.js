@@ -63,28 +63,11 @@ export default function makeBaseConfig({
     babelLoaderOptions,
     library,
   });
-  const inJSBabelOptions = {
-    ...mainBabelLoader.options,
-  };
-  delete inJSBabelOptions.cacheDirectory;
-  delete inJSBabelOptions.cacheIdentifier;
-  delete inJSBabelOptions.cacheCompression;
-
   if (inJSOptions !== false) {
-    if (inJSOptions === undefined) {
-      inJSOptions = {
-        sourceMap: mode !== 'production',
-      };
-    }
     extraJsLoaders = [
       {
         loader: require.resolve('@wyw-in-js/webpack-loader'),
-        options: {
-          // `resolveOptions` was dropped in https://github.com/callstack/linaria/pull/1001 as it uses webpack directly
-          //resolveOptions: { ...resolve },
-          babelOptions: inJSBabelOptions,
-          ...inJSOptions,
-        },
+        options: inJSOptions ?? { sourceMap: mode !== 'production' },
       },
       ...extraJsLoaders,
     ];

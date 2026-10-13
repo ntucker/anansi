@@ -38,7 +38,10 @@ Set these at the top of `jest.config.js` (jest presets can't take options):
   run `tsc --noEmit` separately so types are still checked once.
 
 Linaria/wyw-in-js styles need `'@wyw-in-js'` in the babel presets for tests,
-because webpack doesn't run under jest.
+because webpack doesn't run under jest. In wyw-in-js 2 that preset is a
+deprecated wrapper (it logs a deprecation warning) but still works with Babel 8;
+its inline options must be JSON-serializable, so put functions in a wyw-in-js
+config file.
 
 ## TypeScript 7
 

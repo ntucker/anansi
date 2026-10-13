@@ -58,6 +58,7 @@ function buildPreset(api, options = {}) {
   const babelNode = api.caller(
     caller => caller && caller.name === '@babel/node',
   );
+  // WyW 1 (Linaria <8) evaluates styles through Babel; WyW 2 uses Oxc instead
   const isLinaria = api.caller(
     caller => caller && ['wyw-in-js', 'linaria'].includes(caller.name),
   );

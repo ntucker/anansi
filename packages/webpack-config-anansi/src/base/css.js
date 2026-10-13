@@ -169,13 +169,6 @@ export default function getStyleRules({
         exclude: [new RegExp(`^((?!(${globalStyleDir}/|node_modules/)).)*$`)],
         use: [...cssModuleLoaders, ...sassLoaders],
       },
-      // css-in-js like linaria do not use css-modules - 3beta.14 and below
-      {
-        test: /\.css$/i,
-        include: [/node_modules\/\.cache/],
-        exclude: [absoluteBasePath, libraryInclude],
-        use: cssLoaders,
-      },
       // package css
       {
         test: /\.css$/i,
