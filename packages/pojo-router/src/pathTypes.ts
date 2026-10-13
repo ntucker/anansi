@@ -70,7 +70,7 @@ type PathToken<K extends string> =
 type PathTokenSlow<K extends string> =
   K extends `${infer H}${PathDelimiter}${string}` ? PathToken<H> : K;
 
-export type KeysToArgs<Key extends string> = OptionalArgs<Key> &
+type KeysToArgs<Key extends string> = OptionalArgs<Key> &
   (RequiredPathKeys<Key> extends never ? unknown : RequiredArgs<Key>);
 
 /** Wide keys (`string`, template patterns) keep the original key-remapping

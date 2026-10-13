@@ -1,5 +1,5 @@
 import type { History } from 'history';
-import { match as matchPath, compile } from 'path-to-regexp';
+import { match as matchPath, compile, parse } from 'path-to-regexp';
 import type { MatchFunction, ParamData, PathFunction } from 'path-to-regexp';
 
 import type {
@@ -33,12 +33,12 @@ export default class RouteController<
     pathOrPathName: string;
     route: any;
     matcher: MatchFunction<ParamData>;
-    outboundPath: PathFunction<ParamData>;
+    outboundPath: PathFunction<object>;
   }[];
 
   declare readonly history: History;
   declare readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
-  declare readonly pathBuilders: Record<string, PathFunction<ParamData>>;
+  declare readonly pathBuilders: Record<string, PathFunction<object>>;
 
   constructor({
     history,
@@ -58,11 +58,13 @@ export default class RouteController<
         typeof pathObjectOrString === 'string' ?
           { path: pathObjectOrString as string }
         : (pathObjectOrString as NamedPath);
+      const tokens = parse(path, options);
+      const build = compile(tokens, options);
       return {
         pathOrPathName,
         route,
-        matcher: matchPath(path, options),
-        outboundPath: compile(path, options),
+        matcher: matchPath(tokens, options),
+        outboundPath: (data?: object) => build(data && stringifyParams(data)),
       };
     });
 
@@ -106,14 +108,12 @@ export default class RouteController<
       !Object.prototype.hasOwnProperty.call(this.pathBuilders, pathOrPathName)
     )
       throw new Error(`Unknown route: ${pathOrPathName}`);
-    return this.pathBuilders[pathOrPathName](
-      stringifyParams(pathData as object | undefined),
-    );
+    return this.pathBuilders[pathOrPathName](pathData as object | undefined);
   }
 }
 
 // path-to-regexp only accepts strings, but ids are often numbers
-function stringifyParams(pathData: object = {}): ParamData {
+function stringifyParams(pathData: object): ParamData {
   const params: ParamData = {};
   for (const [k, v] of Object.entries(pathData)) {
     if (v !== undefined)

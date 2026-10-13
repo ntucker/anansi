@@ -6,7 +6,7 @@ import type {
 
 import type { PathArgs } from './pathTypes.js';
 
-export type { PathArgs, PathKeys } from './pathTypes.js';
+export type { PathArgs } from './pathTypes.js';
 
 // We want to allow re-declaration of this by declaration merging,
 // but assume types if not defined
