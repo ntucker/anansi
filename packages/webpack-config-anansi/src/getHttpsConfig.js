@@ -7,7 +7,6 @@
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
-const { styleText } = require('node:util');
 
 // Ensure the certificate and key provided are valid and if not
 // throw an easy to debug error
@@ -17,9 +16,7 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
     // publicEncrypt will throw an error with an invalid cert
     encrypted = crypto.publicEncrypt(cert, Buffer.from('test'));
   } catch (err) {
-    throw new Error(
-      `The certificate "${styleText('yellow', crtFile)}" is invalid.\n${err.message}`,
-    );
+    throw new Error(`The certificate "${crtFile}" is invalid.\n${err.message}`);
   }
 
   try {
@@ -27,9 +24,7 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
     crypto.privateDecrypt(key, encrypted);
   } catch (err) {
     throw new Error(
-      `The certificate key "${styleText('yellow', keyFile)}" is invalid.\n${
-        err.message
-      }`,
+      `The certificate key "${keyFile}" is invalid.\n${err.message}`,
     );
   }
 }
@@ -38,10 +33,7 @@ function validateKeyAndCerts({ cert, key, keyFile, crtFile }) {
 function readEnvFile(file, type) {
   if (!fs.existsSync(file)) {
     throw new Error(
-      `You specified ${styleText(
-        'cyan',
-        type,
-      )} in your env, but the file "${styleText('yellow', file)}" can't be found.`,
+      `You specified ${type} in your env, but the file "${file}" can't be found.`,
     );
   }
   return fs.readFileSync(file);

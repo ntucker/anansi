@@ -42,9 +42,9 @@ export default class AppGenerator<
   }
 
   async prompting() {
-    this.log(
-      shelobsay(`Creating a new ${styleText('red', 'Anansi')} project!`),
-    );
+    // yeoman's logger writes to stderr
+    const anansi = styleText('red', 'Anansi', { stream: process.stderr });
+    this.log(shelobsay(`Creating a new ${anansi} project!`));
     const props = await super.prompting();
     // await so the base generator's writes queue before the Prettier pass runs
     await this.composeWith(
