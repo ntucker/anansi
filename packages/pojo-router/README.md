@@ -37,22 +37,44 @@ const Router = ({ children }) => (
 );
 ```
 
+## Paths
+
+Paths use [path-to-regexp v8](https://github.com/pillarjs/path-to-regexp) syntax:
+
+| Pattern | Matches | Params |
+|---|---|---|
+| `/post/:id` | `/post/5` | `{ id: '5' }` |
+| `/users{/:id}` | `/users`, `/users/5` | `{ id?: '5' }` |
+| `/files/*path` | `/files/a/b` | `{ path: ['a', 'b'] }` |
+| `{/*path}` | `/`, `/a/b` | `{ path?: ['a', 'b'] }` |
+
+`?`, `+` and `*` modifiers and inline regex (`/:id(\d+)`) are not supported;
+escape literal `{}()[]+?!:*` with a backslash (`'/a\\+b'` in JS). Matched
+params are decoded with `decodeURIComponent` (malformed escapes like `%E0%A4%A`
+stay raw instead of throwing; set `decode` to override), and `buildPath()`
+encodes with `encodeURIComponent`.
+
+`NamedPath` objects accept path-to-regexp's `ParseOptions`, `MatchOptions`
+(`end`, `trailing`, `sensitive`, `delimiter`, `decode`) and `CompileOptions`
+(`encode`).
+
 ## Controller
 
 ```ts
-type Props = {
-    namedPaths: Record<string, string | NamedPath>;
+type Props<Paths extends NamedPaths> = {
+    history: History;
+    namedPaths: Paths;
     routes: readonly Route[];
     notFound: AnyIfEmpty<DefaultRoutePojo>;
 };
 
-class RouteController {
-    constructor({ namedPaths, routes, notFound }: Props);
+class RouteController<Route, Paths extends NamedPaths> {
+    constructor({ history, namedPaths, routes, notFound }: Props<Paths>);
 
     readonly notFound: AnyIfEmpty<DefaultRoutePojo>;
-    readonly pathBuilders: Record<string, PathFunction>;
-    getMatchedRoutes(pathToMatch: string): any;
-    buildPath(pathOrPathName: string, pathData?: object): void;
+    readonly pathBuilders: Record<string, PathFunction<object>>;
+    getMatchedRoutes(pathToMatch: string): Route[];
+    buildPath<N extends string>(pathOrPathName: N, ...[pathData]: BuildPathArgs<Paths, N>): string;
 }
 ```
 
@@ -66,10 +88,15 @@ Gets all routes matching the passed path.
 
 ### buildPath(pathOrPathName, pathData)
 
-Given a named route (or route string if none is defined), this returns a function that will generate a matching string, including populating the dynamic variables.  E.g. for a route like `/entity/:id` an outbound routing function like `entityPath({ id: 123 })` will generate `/entity/123`.
+Given a named route (or route string if none is defined), this generates a matching path, populating the dynamic variables.
+E.g. for a route like `/entity/:id`, `controller.buildPath('entity', { id: 123 })` generates `/entity/123`.
 
-`controller.buildPath('entity', { id: 123 })`
-
+When `namedPaths` is declared `as const`, `pathData` is typed from the path (the same inference as
+[@data-client/rest](https://dataclient.io/rest/api/RestEndpoint#path)): `:id` takes `string | number`,
+`*path` takes `string[]`, params inside `{}` are optional, and `pathData` is required when the path
+has required params. `null`, `undefined`, `''` and empty-array values (and such entries inside a wildcard array) count as missing: optional groups are
+omitted and missing required params throw. `PathArgs<'/entity/:id'>` and
+`RouteParams<typeof namedPaths, 'entity'>` expose these types.
 
 ## Hooks
 

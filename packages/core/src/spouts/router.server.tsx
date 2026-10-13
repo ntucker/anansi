@@ -32,12 +32,15 @@ export default function routerSpout<ResolveWith>(options: {
 
   return next => async props => {
     const url = props.req.url || '';
-    const parts = url.split('?', 2);
-    const searchParams = new URLSearchParams(parts.length < 2 ? '' : parts[1]);
+    const queryStart = url.indexOf('?');
+    const pathname = queryStart < 0 ? url : url.slice(0, queryStart);
+    const search = queryStart < 0 ? '' : url.slice(queryStart + 1);
+    const searchParams = new URLSearchParams(search);
     const router = options.createRouter(
       createMemoryHistory({ initialEntries: [url] }),
     );
-    const matchedRoutes: Route<ResolveWith>[] = router.getMatchedRoutes(url);
+    const matchedRoutes: Route<ResolveWith>[] =
+      router.getMatchedRoutes(pathname);
 
     const nextProps = await next({
       ...props,

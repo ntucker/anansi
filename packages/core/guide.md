@@ -85,9 +85,13 @@ export const createRouter = (history: History) =>
   });
 ```
 
-`namedPaths` maps route names to path patterns; extra route fields and path
-params become component props. Render with `<MatchedRoute />`; show pending
-transitions with `useShowLoading()`. Use the router's `lazy`, not
+`namedPaths` maps route names to
+[path-to-regexp v8](https://github.com/pillarjs/path-to-regexp) patterns
+(`/post/:id`, optional `/users{/:id}`, wildcard `/*splat` or `{/*splat}`; no
+`?`/`+`/`*` modifiers or inline regex). Extra route fields and path params
+become component props; `router.buildPath(name, params)` is typed from
+`namedPaths` when declared `as const`. Render with `<MatchedRoute />`; show
+pending transitions with `useShowLoading()`. Use the router's `lazy`, not
 `React.lazy`, so code and data load in parallel.
 
 ## Scripts

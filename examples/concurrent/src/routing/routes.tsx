@@ -19,7 +19,7 @@ const lazyPage = (pageName: string) =>
   );
 
 export const namedPaths = {
-  FriendNav: '/(.*)',
+  FriendNav: '{/*rest}',
   Home: '/',
   SSRError: '/ssr-error',
   Posts: '/posts',
