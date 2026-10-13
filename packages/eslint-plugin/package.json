@@ -60,7 +60,7 @@
     "@types/semver": "^7",
     "eslint": "^9.9.1",
     "prettier": "^3.3.3",
-    "typescript": "^6.0.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
     "webpack": "^5.94.0"
   },
   "peerDependencies": {

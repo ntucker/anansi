@@ -146,10 +146,15 @@ export default class AnansiGenerator extends ConfigureGenerator<AnansiOptions> {
       '@anansi/babel-preset',
       '@anansi/eslint-plugin',
       '@anansi/browserslist-config',
-      'typescript',
       // for eslint
       'globals',
     ]);
+    // TypeScript 7 has no JS API yet, so typescript-eslint, ts-jest and
+    // react-docgen-typescript import 6.0 while `tsc` runs 7
+    await this.addDevDependencies({
+      typescript: 'npm:@typescript/typescript6@^6.0.2',
+      '@typescript/native': 'npm:typescript@^7.0.2',
+    });
     await this.addDependencies(['@babel/runtime-corejs3']);
   }
 }
