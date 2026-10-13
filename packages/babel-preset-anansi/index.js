@@ -85,11 +85,21 @@ function buildPreset(api, options = {}) {
   const hasJsxRuntime =
     (options.hasJsxRuntime ?? api.caller(caller => caller?.hasJsxRuntime)) !==
     false;
-  // React 19.2 dropped jsxDEV's source/self params, so Babel 8 stopped emitting them
+  const reactDevelopment =
+    env === 'development' || (env !== 'production' && !hasJsxRuntime);
+  // React 19.2 dropped jsxDEV's source/self params, so Babel 8 stopped emitting them.
+  // Only dev transforms use it, so skip resolving react otherwise
   const developmentSourceSelf =
-    options.developmentSourceSelf ??
-    api.caller(caller => caller?.developmentSourceSelf) ??
-    reactBefore192();
+    reactDevelopment &&
+    (options.developmentSourceSelf ??
+      api.caller(caller => caller?.developmentSourceSelf) ??
+      reactBefore192());
+
+  if (options.minify) {
+    throw new Error(
+      '@anansi/babel-preset: minify was removed; minify with your bundler instead',
+    );
+  }
 
   const explicitNodeTarget = !!options.nodeTarget;
 
@@ -347,11 +357,6 @@ function buildPreset(api, options = {}) {
   /*  block is at the end so they are unshifted to the start of plugins  */
   preset.plugins.unshift(require('babel-plugin-macros'));
 
-  if (options.minify) {
-    throw new Error(
-      '@anansi/babel-preset: minify was removed; minify with your bundler instead',
-    );
-  }
   if (
     typeof options.decoratorsOptions !== 'object' &&
     options.decoratorsOptions !== undefined
@@ -417,8 +422,7 @@ function buildPreset(api, options = {}) {
         [
           requireDefault('@babel/preset-react'),
           {
-            development:
-              env === 'development' || (env !== 'production' && !hasJsxRuntime),
+            development: reactDevelopment,
             runtime: hasJsxRuntime ? 'automatic' : 'classic',
             developmentSourceSelf,
           },
