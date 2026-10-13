@@ -42,11 +42,6 @@
       "allowedVersions": "<7"
     },
     {
-      "description": "lerna-lite 5 uses conventional-changelog-writer 9, which ignores conventional-changelog-anansi's handlebars templates and HTML-escapes CHANGELOGs; drop once the preset supports writer 9",
-      "matchPackageNames": ["@lerna-lite/**"],
-      "allowedVersions": "<5"
-    },
-    {
       "extends": ["monorepo:react"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "groupName": "react"
