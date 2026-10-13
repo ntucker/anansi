@@ -164,7 +164,7 @@ describe('buildPreset', () => {
     expect(reactOverride.presets[0][1].developmentSourceSelf).toBe(expected);
   });
 
-  it('skips developmentSourceSelf outside development', () => {
+  it('skips developmentSourceSelf in production', () => {
     api.env.mockReturnValue('production');
     api.caller.mockImplementation(cb => cb({ developmentSourceSelf: true }));
     const reactOverride = buildPreset(api).overrides.find(o => o.presets);
