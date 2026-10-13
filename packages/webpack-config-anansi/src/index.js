@@ -92,6 +92,7 @@ export function makeConfig(options) {
     // defaults
     // Note: In SVGO v4, removeTitle and removeViewBox are no longer part of preset-default
     // and are disabled by default, so we don't need to override them.
+    // (SVGR still runs SVGO 3, so base/index.js keeps them there.)
     if (options.svgoOptions !== false) {
       options.svgoOptions = {
         plugins: [

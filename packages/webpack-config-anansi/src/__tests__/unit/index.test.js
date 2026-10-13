@@ -354,6 +354,30 @@ describe('makeConfig', () => {
 
         expect(options.svgo).toBeUndefined();
         expect(options.svgoConfig.plugins).toContain('prefixIds');
+        // SVGR's SVGO 3 must keep viewBox and <title> like SVGO 4 does
+        const preset = options.svgoConfig.plugins.find(
+          plugin => plugin.name === 'preset-default',
+        );
+        expect(preset.params.overrides).toMatchObject({
+          removeViewBox: false,
+          removeTitle: false,
+        });
+      });
+
+      it('should keep viewBox in SVGR when svgoOptions sets no plugins', () => {
+        const configFn = makeConfig({
+          ...defaultTestOptions,
+          svgoOptions: { plugins: undefined },
+        });
+        const options = getSvgrOptions(configFn({}, { mode: 'development' }));
+
+        // SVGO 3 runs preset-default when plugins is unset
+        expect(options.svgoConfig.plugins).toEqual([
+          {
+            name: 'preset-default',
+            params: { overrides: { removeViewBox: false, removeTitle: false } },
+          },
+        ]);
       });
 
       it('should disable SVGO in SVGR when svgoOptions is false', () => {
