@@ -77,7 +77,7 @@
     "core-js-pure": "^3.40.0",
     "ejs": "^3.1.10",
     "execa": "^9.6.1",
-    "gulp-filter": "^9.0.1",
+    "gulp-filter": "^10.0.0",
     "gulp-prettier": "^6.0.0",
     "import-meta-resolve": "^4.2.0",
     "mem-fs": "^4.1.5",
