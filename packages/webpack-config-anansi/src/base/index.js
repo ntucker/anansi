@@ -231,7 +231,7 @@ export default function makeBaseConfig({
                     // SVGR treats svgoConfig: false as unset and runs SVGO anyway
                     ...(svgoOptions === false ?
                       { svgo: false }
-                    : { svgoConfig: toSvgo3Config(svgoOptions) }),
+                    : { svgoConfig: keepViewBoxAndTitle(svgoOptions) }),
                     ...svgrOptions,
                   },
                 },
@@ -298,8 +298,7 @@ export default function makeBaseConfig({
 
 // @svgr/plugin-svgo still runs SVGO 3, whose preset-default also strips
 // viewBox and <title>; keep both like SVGO 4 (svgo-loader) does
-function toSvgo3Config(config) {
-  if (!config.plugins) return config;
+function keepViewBoxAndTitle(config) {
   return {
     ...config,
     plugins: config.plugins.map(plugin => {
