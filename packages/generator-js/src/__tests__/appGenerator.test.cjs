@@ -310,7 +310,16 @@ function runScenarioTests(scenarios) {
         const pkg = JSON.parse(
           fs.readFileSync(path.join(result.cwd, 'package.json'), 'utf8'),
         );
-        for (const file of ['package.json', 'tsconfig.json']) {
+        // .yo-rc.json is written after the Prettier pass
+        const files = fs
+          .readdirSync(result.cwd, { recursive: true })
+          .filter(
+            file =>
+              /\.(m?js|ts|tsx|json|html|scss|css)$/.test(file) &&
+              file !== '.yo-rc.json',
+          );
+        expect(files).toContain('tsconfig.json');
+        for (const file of files) {
           const filepath = path.join(result.cwd, file);
           await expect(
             check(fs.readFileSync(filepath, 'utf8'), {

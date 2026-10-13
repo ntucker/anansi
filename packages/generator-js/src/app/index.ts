@@ -12,7 +12,7 @@ import { resolvePath } from '../utils.js';
 
 export { ConfigureGenerator, ConfigureOptions };
 
-const FORMATTED_FILE = /\.(js|ts|tsx|json|html|scss|css)$/;
+const FORMATTED_FILE = /\.(m?js|ts|tsx|json|html|scss|css)$/;
 
 export default class AppGenerator<
   O extends ConfigureOptions = ConfigureOptions,
