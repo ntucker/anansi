@@ -43,7 +43,6 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     }),
     create: base.create.extend({
       async fetch(...args: any) {
-        // the response lacks the id, but the body (last argument) has it
         const value = await base.create.fetch.apply(this, args);
         return { ...value, id: args[args.length - 1]?.id };
       },
