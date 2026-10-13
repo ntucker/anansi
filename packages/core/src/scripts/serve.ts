@@ -12,6 +12,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 import 'cross-fetch/dist/node-polyfill.js';
+import { assetMiddleware } from './assetMiddleware.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
 import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
@@ -94,15 +95,16 @@ export default async function serve(
 
     // ASSETS
     if (options.serveAssets) {
-      // mounted at the public path with the build output as root, so request
-      // paths can't escape it; misses fall through to SSR
-      wrappingApp.use(
-        process.env.WEBPACK_PUBLIC_PATH || '/',
-        express.static(clientManifest.outputPath ?? '', {
-          index: false,
-          redirect: false,
-        }),
-      );
+      if (clientManifest.outputPath) {
+        wrappingApp.use(
+          assetMiddleware(
+            process.env.WEBPACK_PUBLIC_PATH || '/',
+            clientManifest.outputPath,
+          ),
+        );
+      } else {
+        loader.warn('Manifest has no outputPath; not serving assets');
+      }
     }
 
     // PROXIES
