@@ -53,4 +53,5 @@ ship. Keep 6.0 as `typescript` and add 7.0's `tsc` beside it:
 ```
 
 ts-jest then type checks on 6.0 while `tsc` checks on 7.0, and the two can
-disagree. Treat `tsc --noEmit` as the source of truth.
+disagree. Treat `tsc --noEmit` as the source of truth; if only ts-jest
+fails, set `ANANSI_JEST_TYPECHECK=false` (see Env).

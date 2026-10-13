@@ -33,6 +33,7 @@ export function placeholderResource<O extends ResourceGenerics = any>({
     //
     // This is sometimes needed when you don't control the server API itself
     // More here: https://dataclient.io/rest/guides/network-transform#case-of-the-missing-id
+    // (override fetch, not process: a custom process skips the html response check)
     partialUpdate: base.partialUpdate.extend({
       async fetch(...args: any) {
         // body only contains what we're changing, but we can find the id in params
