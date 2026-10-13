@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { Command } from 'commander';
+import { Argument, Command, InvalidArgumentError } from 'commander';
 import { execa } from 'execa';
 import fs from 'fs';
 import { resolve } from 'import-meta-resolve';
@@ -7,6 +7,7 @@ import { createRequire } from 'node:module';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import validateName from 'validate-npm-package-name';
 
 // TODO: Use this once stackblitz works with it
 //import pkg from './package.json' assert { type: 'json' };
@@ -19,6 +20,22 @@ const pkg = JSON.parse(
 );
 const { version } = pkg;
 
+// projectName becomes a directory and a generator argument, so it must be a
+// valid new npm name: no '/', '..', leading '-' or shell characters. The
+// library's warnings (uppercase, core module names, '~') also block new
+// packages, and it allows scopes, which the generator can't handle.
+function parseProjectName(name) {
+  const { errors = [], warnings = [] } = validateName(name);
+  const problems = [...errors, ...warnings];
+  if (name.startsWith('@')) problems.push('name cannot have a scope');
+  if (problems.length) {
+    throw new InvalidArgumentError(
+      `${problems.join('; ')}\nUse a lowercase npm package name without a scope, like my-app`,
+    );
+  }
+  return name;
+}
+
 const program = new Command();
 
 program.version(version);
@@ -27,27 +44,27 @@ program
   .command('hatch')
   .alias('init')
   .description('creates a new anansi project')
-  .argument('<projectName>', 'Package name for the project')
+  .argument(
+    '<projectName>',
+    'Package name for the project (lowercase, unscoped npm name like my-app)',
+    parseProjectName,
+  )
   .option(
     '-d, --dir <directory>',
     'What directory to add to. (Creates new directory by default)',
   )
   .action(async (projectName, options) => {
-    if (!options.dir) {
-      if (!fs.existsSync(projectName)) {
-        fs.mkdirSync(projectName);
-      }
-    }
+    // absolute, so a --dir like '-x' can't parse as an editor flag below
+    const cwd = path.resolve(options.dir || projectName);
     try {
-      const cwd = options.dir || `./${projectName}`;
+      if (!options.dir) fs.mkdirSync(cwd, { recursive: true });
       // get rid of 'file://' prefix
       const generatorPath = resolve(
         '@anansi/generator-js',
         import.meta.url,
       ).substring(7);
-      const yosub = execa('npx yo', [generatorPath, projectName], {
+      const yosub = execa('npx', ['yo', generatorPath, projectName], {
         stdio: ['pipe', process.stdout, process.stderr],
-        shell: true,
         cwd,
         env: {
           PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
@@ -66,9 +83,7 @@ program
       }
       let editor = process.env.REACT_EDITOR || process.env.VISUAL || 'code';
       try {
-        await execa('which', [`"${editor}"`], {
-          shell: true,
-        });
+        await execa('which', [editor]);
       } catch (e) {
         console.error(
           'No visual editor found...skipping editor launch.\n(Set $VISUAL env variable to automatically launch editor upon new project setup)',
@@ -77,10 +92,7 @@ program
       }
       if (editor) {
         console.log('\nProject setup complete! Opening editor now...');
-        await execa(`"${editor}"`, [cwd, readme], {
-          shell: true,
-          stdio: 'inherit',
-        });
+        await execa(editor, [cwd, readme], { stdio: 'inherit' });
       }
     } catch (error) {
       // Don't display error for user-triggered exit (SIGINT)
@@ -92,18 +104,21 @@ program
 program
   .command('add')
   .description('adds features to existing project')
-  .argument(
-    '<features...>',
-    'one of `testing` | `storybook` | `circle` | `github-actions`',
+  .addArgument(
+    new Argument('<features...>', 'features to add').choices([
+      'testing',
+      'storybook',
+      'circle',
+      'github-actions',
+    ]),
   )
   .action(async features => {
     await verifyAndPrompt();
 
     for (const feature of features) {
       try {
-        await execa('npx yo', [`@anansi/js:${feature}`], {
+        await execa('npx', ['yo', `@anansi/js:${feature}`], {
           stdio: 'inherit',
-          shell: true,
           env: {
             PATH: `${process.env.PATH}:${__dirname}/node_modules/.bin`,
           },

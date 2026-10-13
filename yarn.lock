@@ -107,6 +107,7 @@ __metadata:
     execa: "npm:^10.1.0"
     import-meta-resolve: "npm:^4.2.0"
     latest-version: "npm:^9.0.0"
+    validate-npm-package-name: "npm:^8.0.0"
   peerDependencies:
     "@anansi/core": "*"
   peerDependenciesMeta:
