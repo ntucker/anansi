@@ -260,7 +260,7 @@ __metadata:
     core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
     jest: "npm:^30.2.0"
-    jest-util: "npm:^30.0.0"
+    jest-util: "npm:^29.0.0 || ^30.0.0"
     mitt: "npm:^3.0.1"
     node-fetch: "npm:^3.3.2"
     semver: "npm:^7.8.5"
@@ -17749,7 +17749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-util@npm:30.5.1, jest-util@npm:^30.0.0":
+"jest-util@npm:30.5.1, jest-util@npm:^29.0.0 || ^30.0.0":
   version: 30.5.1
   resolution: "jest-util@npm:30.5.1"
   dependencies:

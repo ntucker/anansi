@@ -79,13 +79,13 @@ export default function makeNodeConfig(
 // webpack-node-externals' matching, with the package list from Yarn PnP
 function pnpExternals(pnpApi, allowlist) {
   const packages = new Set(pnpApi.getAllLocators().map(({ name }) => name));
-  allowlist = [/^webpack\/container\/reference\//, ...allowlist];
+  const patterns = [/^webpack\/container\/reference\//, ...allowlist];
   return ({ request }, callback) => {
     const [first, second] = request.split('/');
     const name = first.startsWith('@') ? `${first}/${second}` : first;
     if (
       packages.has(name) &&
-      !allowlist.some(pattern =>
+      !patterns.some(pattern =>
         pattern instanceof RegExp ? pattern.test(request)
         : typeof pattern === 'function' ? pattern(request)
         : pattern == request,

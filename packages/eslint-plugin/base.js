@@ -8,14 +8,10 @@ import prettierPlugin from 'eslint-plugin-prettier';
 import reactPluginRaw from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
-import { createRequire } from 'module';
 import tsPlugin from 'typescript-eslint';
 
+import importResolver from './importResolver.cjs';
 import isInstalled from './isInstalled.cjs';
-
-// Resolvers by path, as eslint-plugin-import can't load our dependencies by
-// name under Yarn PnP
-const require = createRequire(import.meta.url);
 
 // eslint-plugin-import 2.32 and eslint-plugin-react 7.37 call context and
 // SourceCode methods ESLint 10 removed; drop the shim once releases with
@@ -168,7 +164,7 @@ const config = [
 ];
 if (isInstalled('webpack')) {
   jsOnlyRules.settings['import/resolver'] = {
-    [require.resolve('eslint-import-resolver-webpack')]: {},
+    [importResolver('webpack')]: {},
   };
 }
 export default config;
