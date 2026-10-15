@@ -38,7 +38,7 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
    yarn workspace rdc-website build                   # docusaurus site
    ```
 
-   `scripts/pnp-consumer.sh` packs the same way into a small Yarn PnP project (`scripts/pnp-consumer/`), loads every package and runs Jest, ESLint and browser and node-target webpack builds there. PnP only lets a package require what it declares, so it catches missing dependencies that hoisting hides. This repo can't run on PnP itself until TypeScript 7's tsc supports it, and CI doesn't run this, so run it (about 90s with `SKIP_BUILD=1`) when a change to a published package adds or moves a dependency, resolves a module by name (`require.resolve`, preset, plugin or loader names) or changes webpack externals.
+   `scripts/pnp-consumer.sh` packs the same way into a small Yarn PnP project (`scripts/pnp-consumer/`), loads every package and runs Jest, ESLint and browser and node-target webpack builds there. PnP only lets a package require what it declares, so it catches missing dependencies that hoisting hides. This repo can't run on PnP itself until TypeScript 7's tsc supports it, and CI doesn't run this, so run it when a change to a published package could break PnP resolution: it adds or moves a dependency, resolves a module by name (`require.resolve`, preset, plugin or loader names) or changes webpack externals, or you're unsure. `SKIP_BUILD=1` (about 90s) skips `yarn build:pkg`, so use it only when `lib/`/`dist/` are built from the current `src/`.
 
 ## Commits and releases
 
