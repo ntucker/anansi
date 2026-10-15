@@ -1,6 +1,7 @@
 import tsParser from '@typescript-eslint/parser';
 
 import baseConfig from './base.js';
+import resolverKey from './resolverKey.cjs';
 
 let rules = {
   'react/prop-types': 'off',
@@ -42,7 +43,7 @@ export default [
     },
     settings: {
       'import/resolver': {
-        typescript: {},
+        [resolverKey('typescript')]: {},
       },
     },
     rules,

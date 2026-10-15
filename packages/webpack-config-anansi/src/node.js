@@ -28,7 +28,11 @@ export default function makeNodeConfig(
       libraryInclude,
       ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
     ],
-    additionalModuleDirs: ['../../node_modules'],
+    // Yarn PnP has no node_modules to list, and bundles can only require
+    // their own dependencies there
+    ...(process.versions.pnp ?
+      { modulesFromFile: { fileName: path.join(rootPath, 'package.json') } }
+    : { additionalModuleDirs: ['../../node_modules'] }),
   });
   config.externals = [
     function ({ context, request, contextInfo, getResolve }, callback) {

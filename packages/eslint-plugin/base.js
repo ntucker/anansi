@@ -10,6 +10,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import tsPlugin from 'typescript-eslint';
 
+import resolverKey from './resolverKey.cjs';
 import isInstalled from './isInstalled.cjs';
 
 // eslint-plugin-import 2.32 and eslint-plugin-react 7.37 call context and
@@ -163,7 +164,7 @@ const config = [
 ];
 if (isInstalled('webpack')) {
   jsOnlyRules.settings['import/resolver'] = {
-    webpack: {},
+    [resolverKey('webpack')]: {},
   };
 }
 export default config;
