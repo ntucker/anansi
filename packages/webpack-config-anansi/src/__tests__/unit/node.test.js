@@ -5,6 +5,7 @@ const path = require('path');
 const makeNodeConfig = require('../../node').default;
 
 describe('makeNodeConfig externals under Yarn PnP', () => {
+  const { pnp } = process.versions;
   let rootPath;
   beforeEach(() => {
     process.versions.pnp = '3';
@@ -13,12 +14,13 @@ describe('makeNodeConfig externals under Yarn PnP', () => {
       path.join(rootPath, 'package.json'),
       JSON.stringify({
         dependencies: { react: '*', '@scope/pkg': '*' },
-        devDependencies: { '@babel/runtime': '*' },
+        devDependencies: { '@babel/runtime': '*', 'dev-only': '*' },
       }),
     );
   });
   afterEach(() => {
-    delete process.versions.pnp;
+    if (pnp === undefined) delete process.versions.pnp;
+    else process.versions.pnp = pnp;
     fs.rmSync(rootPath, { recursive: true });
   });
 
@@ -43,6 +45,7 @@ describe('makeNodeConfig externals under Yarn PnP', () => {
     ['react', 'commonjs react'],
     ['react/jsx-runtime', 'commonjs react/jsx-runtime'],
     ['@scope/pkg/sub', 'commonjs @scope/pkg/sub'],
+    ['dev-only', 'commonjs dev-only'],
     ['@babel/runtime/helpers/extends', undefined],
     ['./local', undefined],
     ['undeclared', undefined],
