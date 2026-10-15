@@ -1,4 +1,3 @@
-import module from 'module';
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import { StatsWriterPlugin } from 'webpack-stats-plugin';
@@ -23,20 +22,18 @@ export default function makeNodeConfig(
     __filename: true,
   };
   config.externalsPresets = { node: true };
-  const allowlist = [
-    /@babel\/runtime/,
-    libraryInclude,
-    ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
-  ];
-  // Yarn PnP has no node_modules to list, so ask its API for the package names
-  const pnpApi = module.findPnpApi?.(`${rootPath}/`);
-  const externalsFunc =
-    pnpApi ?
-      pnpExternals(pnpApi, allowlist)
-    : nodeExternals({
-        allowlist,
-        additionalModuleDirs: ['../../node_modules'],
-      });
+  const externalsFunc = nodeExternals({
+    allowlist: [
+      /@babel\/runtime/,
+      libraryInclude,
+      ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
+    ],
+    // Yarn PnP has no node_modules to list, and bundles can only require
+    // their own dependencies there
+    ...(process.versions.pnp ?
+      { modulesFromFile: { fileName: path.join(rootPath, 'package.json') } }
+    : { additionalModuleDirs: ['../../node_modules'] }),
+  });
   config.externals = [
     function ({ context, request, contextInfo, getResolve }, callback) {
       // svgr + linaria have issues with require('react')
@@ -74,27 +71,4 @@ export default function makeNodeConfig(
   );
 
   return config;
-}
-
-// webpack-node-externals' matching, with the package list from Yarn PnP
-function pnpExternals(pnpApi, allowlist) {
-  const packages = new Set(pnpApi.getAllLocators().map(({ name }) => name));
-  const patterns = [/^webpack\/container\/reference\//, ...allowlist];
-  return ({ request }, callback) => {
-    const [first, second] = request.split('/');
-    const name = first.startsWith('@') ? `${first}/${second}` : first;
-    if (
-      packages.has(name) &&
-      !patterns.some(pattern => matches(pattern, request))
-    ) {
-      return callback(null, `commonjs ${request}`);
-    }
-    callback();
-  };
-}
-
-function matches(pattern, request) {
-  if (pattern instanceof RegExp) return pattern.test(request);
-  if (typeof pattern === 'function') return pattern(request);
-  return pattern === request;
 }

@@ -1,30 +1,39 @@
-const nodeModule = require('module');
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
 
 const makeNodeConfig = require('../../node').default;
 
 describe('makeNodeConfig externals under Yarn PnP', () => {
-  const findPnpApi = nodeModule.findPnpApi;
+  let rootPath;
   beforeEach(() => {
-    nodeModule.findPnpApi = () => ({
-      getAllLocators: () => [
-        { name: 'react' },
-        { name: '@babel/runtime' },
-        { name: '@scope/pkg' },
-      ],
-    });
+    process.versions.pnp = '3';
+    rootPath = fs.mkdtempSync(path.join(os.tmpdir(), 'node-config-'));
+    fs.writeFileSync(
+      path.join(rootPath, 'package.json'),
+      JSON.stringify({
+        dependencies: { react: '*', '@scope/pkg': '*' },
+        devDependencies: { '@babel/runtime': '*' },
+      }),
+    );
   });
   afterEach(() => {
-    nodeModule.findPnpApi = findPnpApi;
+    delete process.versions.pnp;
+    fs.rmSync(rootPath, { recursive: true });
   });
 
   function external(request, options = {}) {
     const config = makeNodeConfig(
       { output: {}, plugins: [] },
-      { rootPath: '/project', serverDir: 'server', ...options },
+      { rootPath, serverDir: 'server', ...options },
     );
     let result;
     config.externals[0](
-      { request, contextInfo: { issuer: '/project/src/index.js' } },
+      {
+        context: rootPath,
+        request,
+        contextInfo: { issuer: path.join(rootPath, 'index.js') },
+      },
       (err, value) => (result = value),
     );
     return result;
@@ -36,7 +45,7 @@ describe('makeNodeConfig externals under Yarn PnP', () => {
     ['@scope/pkg/sub', 'commonjs @scope/pkg/sub'],
     ['@babel/runtime/helpers/extends', undefined],
     ['./local', undefined],
-    ['unknown', undefined],
+    ['undeclared', undefined],
     ['react/styles.css', undefined],
   ])('%s -> %s', (request, expected) => {
     expect(external(request)).toBe(expected);
