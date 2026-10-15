@@ -1,6 +1,6 @@
 // Jest's default resolver handles Yarn PnP, but its not-found errors there
 // lack `code`, which breaks code probing for optional modules
-module.exports = (request, options) => {
+module.exports = function resolver(request, options) {
   try {
     return options.defaultResolver(request, options);
   } catch (error) {
