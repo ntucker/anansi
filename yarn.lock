@@ -256,10 +256,11 @@ __metadata:
     "@types/node": "npm:^26.0.0"
     babel-jest: "npm:^30.5.2"
     copyfiles: "npm:2.4.1"
+    core-js: "npm:^3.40.0"
     core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
     jest: "npm:^30.2.0"
-    jest-pnp-resolver: "npm:^1.2.3"
+    jest-util: "npm:^30.0.0"
     mitt: "npm:^3.0.1"
     node-fetch: "npm:^3.3.2"
     semver: "npm:^7.8.5"
@@ -12871,7 +12872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.50.0":
+"core-js@npm:3.50.0, core-js@npm:^3.40.0":
   version: 3.50.0
   resolution: "core-js@npm:3.50.0"
   checksum: 10c0/1bfcfb1dbdf45b0b1428a9fdcb03697d1fc52c7e9bc336f804a86ff2c2705a301dca7d9d6636d09d49d60298183273b9321681baeaf330c78db5393bc73f3f6a
@@ -17626,18 +17627,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-pnp-resolver@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "jest-pnp-resolver@npm:1.2.3"
-  peerDependencies:
-    jest-resolve: "*"
-  peerDependenciesMeta:
-    jest-resolve:
-      optional: true
-  checksum: 10c0/86eec0c78449a2de733a6d3e316d49461af6a858070e113c97f75fb742a48c2396ea94150cbca44159ffd4a959f743a47a8b37a792ef6fdad2cf0a5cba973fac
-  languageName: node
-  linkType: hard
-
 "jest-regex-util@npm:30.5.0":
   version: 30.5.0
   resolution: "jest-regex-util@npm:30.5.0"
@@ -17760,7 +17749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-util@npm:30.5.1":
+"jest-util@npm:30.5.1, jest-util@npm:^30.0.0":
   version: 30.5.1
   resolution: "jest-util@npm:30.5.1"
   dependencies:

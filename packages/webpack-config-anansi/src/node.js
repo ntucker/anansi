@@ -1,3 +1,4 @@
+import module from 'module';
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import { StatsWriterPlugin } from 'webpack-stats-plugin';
@@ -22,14 +23,20 @@ export default function makeNodeConfig(
     __filename: true,
   };
   config.externalsPresets = { node: true };
-  const externalsFunc = nodeExternals({
-    allowlist: [
-      /@babel\/runtime/,
-      libraryInclude,
-      ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
-    ],
-    additionalModuleDirs: ['../../node_modules'],
-  });
+  const allowlist = [
+    /@babel\/runtime/,
+    libraryInclude,
+    ...(pkg || library ? [] : [/\.(svg|css)$/, /\.css!=!/]),
+  ];
+  // Yarn PnP has no node_modules to list, so ask its API for the package names
+  const pnpApi = module.findPnpApi?.(`${rootPath}/`);
+  const externalsFunc =
+    pnpApi ?
+      pnpExternals(pnpApi, allowlist)
+    : nodeExternals({
+        allowlist,
+        additionalModuleDirs: ['../../node_modules'],
+      });
   config.externals = [
     function ({ context, request, contextInfo, getResolve }, callback) {
       // svgr + linaria have issues with require('react')
@@ -67,4 +74,25 @@ export default function makeNodeConfig(
   );
 
   return config;
+}
+
+// webpack-node-externals' matching, with the package list from Yarn PnP
+function pnpExternals(pnpApi, allowlist) {
+  const packages = new Set(pnpApi.getAllLocators().map(({ name }) => name));
+  allowlist = [/^webpack\/container\/reference\//, ...allowlist];
+  return ({ request }, callback) => {
+    const [first, second] = request.split('/');
+    const name = first.startsWith('@') ? `${first}/${second}` : first;
+    if (
+      packages.has(name) &&
+      !allowlist.some(pattern =>
+        pattern instanceof RegExp ? pattern.test(request)
+        : typeof pattern === 'function' ? pattern(request)
+        : pattern == request,
+      )
+    ) {
+      return callback(null, `commonjs ${request}`);
+    }
+    callback();
+  };
 }

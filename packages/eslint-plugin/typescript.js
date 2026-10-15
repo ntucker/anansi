@@ -1,6 +1,11 @@
 import tsParser from '@typescript-eslint/parser';
+import { createRequire } from 'module';
 
 import baseConfig from './base.js';
+
+// Resolvers by path, as eslint-plugin-import can't load our dependencies by
+// name under Yarn PnP
+const require = createRequire(import.meta.url);
 
 let rules = {
   'react/prop-types': 'off',
@@ -42,7 +47,7 @@ export default [
     },
     settings: {
       'import/resolver': {
-        typescript: {},
+        [require.resolve('eslint-import-resolver-typescript')]: {},
       },
     },
     rules,
