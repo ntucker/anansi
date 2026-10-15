@@ -133,7 +133,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-          name: Skip PRs that only change examples, docs or other CI
+          name: Skip PRs that only change examples, Markdown, .github or agent rules
           command: |
             # master always runs; a failed fetch or diff runs the check rather than skip it
             if [ "$CIRCLE_BRANCH" != master ] &&
