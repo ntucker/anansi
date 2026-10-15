@@ -75,7 +75,7 @@
     "@yeoman/types": "^1.13.1",
     "core-js-pure": "^3.40.0",
     "ejs": "^7.0.1",
-    "execa": "^10.1.0",
+    "execa": "^10.1.1",
     "import-meta-resolve": "^4.2.0",
     "mem-fs": "^6.0.0",
     "mem-fs-editor": "^12.1.0",
