@@ -6,6 +6,7 @@ import path from 'node:path';
 import { test } from 'node:test';
 
 import plugin from './index.js';
+import resolverKey from './resolverKey.cjs';
 
 const source = `import path from 'path';
 import { useEffect } from 'react';
@@ -44,3 +45,23 @@ for (const [name, filePath] of [
     assert.ok(result.output.startsWith("import fs from 'fs';\nimport path"));
   });
 }
+
+test('consumer resolver settings merge into the plugin resolver', async () => {
+  const eslint = new ESLint({
+    overrideConfigFile: true,
+    overrideConfig: [
+      ...plugin.configs.typescript,
+      { settings: { 'import/resolver': { typescript: { project: 'x' } } } },
+    ],
+  });
+  const config = await eslint.calculateConfigForFile('fixture.tsx');
+  assert.deepEqual(config.settings['import/resolver'], {
+    typescript: { project: 'x' },
+  });
+});
+
+test('resolvers are passed by path under Yarn PnP', t => {
+  t.after(() => delete process.versions.pnp);
+  process.versions.pnp = '3';
+  assert.ok(path.isAbsolute(resolverKey('typescript')));
+});

@@ -1,11 +1,11 @@
-const module = require('module');
+const nodeModule = require('module');
 
 const makeNodeConfig = require('../../node').default;
 
 describe('makeNodeConfig externals under Yarn PnP', () => {
-  const findPnpApi = module.findPnpApi;
+  const findPnpApi = nodeModule.findPnpApi;
   beforeEach(() => {
-    module.findPnpApi = () => ({
+    nodeModule.findPnpApi = () => ({
       getAllLocators: () => [
         { name: 'react' },
         { name: '@babel/runtime' },
@@ -14,7 +14,7 @@ describe('makeNodeConfig externals under Yarn PnP', () => {
     });
   });
   afterEach(() => {
-    module.findPnpApi = findPnpApi;
+    nodeModule.findPnpApi = findPnpApi;
   });
 
   function external(request, options = {}) {

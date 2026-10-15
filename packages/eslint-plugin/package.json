@@ -18,7 +18,7 @@
     "index.js",
     "base.js",
     "typescript.js",
-    "importResolver.cjs",
+    "resolverKey.cjs",
     "isInstalled.cjs",
     "guide.md"
   ],
