@@ -13,6 +13,7 @@
 #           and install (rerun after each anansi change)
 #   unlink  restore the consumer's package.json and yarn.lock, then install
 #   status  show whether the consumer is linked, and to which tarballs
+# SKIP_BUILD=1 skips the initial `yarn build:pkg` when packages are built
 set -euo pipefail
 
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -38,12 +39,12 @@ clear_caches() {
 pack() {
   rm -rf "$PACK_DIR" && mkdir -p "$PACK_DIR"
   cd "$ANANSI_DIR"
-  [[ -n "${SKIP_BUILD:-}" ]] || yarn build:pkg
+  [[ "${SKIP_BUILD:-}" == 1 ]] || yarn build:pkg
   # %s is the package name with the scope's @ and / made filesystem safe.
   # prepack rebuilds packages; core, router and pojo-router build with
-  # webpack-config without declaring it, so pack it first, then the rest at once
+  # webpack-config without declaring it, so pack it first, then the rest in parallel
   yarn workspace @anansi/webpack-config pack --out "$PACK_DIR/%s.tgz"
-  yarn workspaces foreach -Wp --no-private --exclude @anansi/webpack-config \
+  yarn workspaces foreach -Wpt --no-private --exclude @anansi/webpack-config \
     pack --out "$PACK_DIR/%s.tgz"
 }
 

@@ -69,7 +69,8 @@ echo "--- eslint"
 yarn eslint --max-warnings=0 src 2>&1 | tee eslint.log
 if grep -q 'Resolve error' eslint.log; then exit 1; fi
 
-echo "--- webpack (node target)"
+echo "--- webpack"
+yarn webpack --mode=production
 yarn webpack --mode=production --target=node --env entrypath=index.server.tsx
 # dependencies stay external rather than bundled
 grep -q 'require("react-dom/server")' dist-server/*.js
