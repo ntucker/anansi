@@ -85,14 +85,16 @@ function pnpExternals(pnpApi, allowlist) {
     const name = first.startsWith('@') ? `${first}/${second}` : first;
     if (
       packages.has(name) &&
-      !patterns.some(pattern =>
-        pattern instanceof RegExp ? pattern.test(request)
-        : typeof pattern === 'function' ? pattern(request)
-        : pattern == request,
-      )
+      !patterns.some(pattern => matches(pattern, request))
     ) {
       return callback(null, `commonjs ${request}`);
     }
     callback();
   };
+}
+
+function matches(pattern, request) {
+  if (pattern instanceof RegExp) return pattern.test(request);
+  if (typeof pattern === 'function') return pattern(request);
+  return pattern === request;
 }
