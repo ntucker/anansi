@@ -1,7 +1,9 @@
 // Smoke test: plugin rules must report (and fix) without crashing on the
-// installed ESLint, since some plugins only call removed APIs when reporting
+// installed ESLint, since some plugins only call removed APIs when reporting.
+// Also checks how import resolvers are keyed.
 import { ESLint } from 'eslint';
 import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 import { test } from 'node:test';
 
@@ -46,22 +48,36 @@ for (const [name, filePath] of [
   });
 }
 
-test('consumer resolver settings merge into the plugin resolver', async () => {
-  const eslint = new ESLint({
-    overrideConfigFile: true,
-    overrideConfig: [
-      ...plugin.configs.typescript,
-      { settings: { 'import/resolver': { typescript: { project: 'x' } } } },
-    ],
-  });
-  const config = await eslint.calculateConfigForFile('fixture.tsx');
-  assert.deepEqual(config.settings['import/resolver'], {
-    typescript: { project: 'x' },
-  });
-});
+// under PnP the plugin's resolver is keyed by path, so these don't merge
+test(
+  'consumer resolver settings merge into the plugin resolver',
+  {
+    skip: !!process.versions.pnp,
+  },
+  async () => {
+    const eslint = new ESLint({
+      overrideConfigFile: true,
+      overrideConfig: [
+        ...plugin.configs.typescript,
+        { settings: { 'import/resolver': { typescript: { project: 'x' } } } },
+      ],
+    });
+    const config = await eslint.calculateConfigForFile('fixture.tsx');
+    assert.deepEqual(config.settings['import/resolver'], {
+      typescript: { project: 'x' },
+    });
+  },
+);
 
 test('resolvers are passed by path under Yarn PnP', t => {
-  t.after(() => delete process.versions.pnp);
+  const { pnp } = process.versions;
+  t.after(() => {
+    if (pnp === undefined) delete process.versions.pnp;
+    else process.versions.pnp = pnp;
+  });
   process.versions.pnp = '3';
-  assert.ok(path.isAbsolute(resolverKey('typescript')));
+  assert.equal(
+    resolverKey('typescript'),
+    createRequire(import.meta.url).resolve('eslint-import-resolver-typescript'),
+  );
 });
