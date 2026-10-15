@@ -135,11 +135,12 @@ jobs:
       - run:
           name: Skip PRs that only change examples, docs or other CI
           command: |
-            # master always runs; a failed fetch runs the check rather than skip it
+            # master always runs; a failed fetch or diff runs the check rather than skip it
             if [ "$CIRCLE_BRANCH" != master ] &&
               git fetch -q "https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git" master &&
-              [ -z "$(git diff --name-only FETCH_HEAD...HEAD -- . ':!examples' ':!*.md' \
-                ':!.github' ':!.cursor' ':!.claude')" ]; then
+              changed="$(git diff --name-only FETCH_HEAD...HEAD -- . ':!examples' ':!*.md' \
+                ':!.github' ':!.cursor' ':!.claude')" &&
+              [ -z "$changed" ]; then
               echo "No package changes"
               circleci-agent step halt
             fi
