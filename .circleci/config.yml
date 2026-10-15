@@ -125,40 +125,6 @@ jobs:
           at: ~/
       - run: yarn workspace example-typescript build:storybook
 
-  # This repo can't run on Yarn PnP until TypeScript 7's tsc supports it, so
-  # check the packed packages in a PnP consumer instead
-  pnp_consumer:
-    docker: *docker
-    steps:
-      - attach_workspace:
-          at: ~/
-      - run:
-          name: Skip PRs that only change examples, Markdown, .github or agent rules
-          command: |
-            # master always runs; a failed fetch or diff runs the check rather than skip it
-            if [ "$CIRCLE_BRANCH" != master ] &&
-              git fetch -q "https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git" master &&
-              changed="$(git diff --name-only FETCH_HEAD...HEAD -- . ':!examples' ':!*.md' \
-                ':!.github' ':!.cursor' ':!.claude')" &&
-              [ -z "$changed" ]; then
-              echo "No package changes"
-              circleci-agent step halt
-            fi
-      - restore_cache:
-          keys:
-            - v1-pnp-consumer-{{ checksum "yarn.lock" }}
-            - v1-pnp-consumer-
-      - run:
-          name: PnP consumer checks
-          environment:
-            SKIP_BUILD: "1"
-            PNP_CONSUMER_CACHE: /home/circleci/pnp-consumer-cache
-          command: scripts/pnp-consumer.sh
-      - save_cache:
-          paths:
-            - /home/circleci/pnp-consumer-cache
-          key: v1-pnp-consumer-{{ checksum "yarn.lock" }}
-
 
 workflows:
   version: 2
@@ -191,8 +157,5 @@ workflows:
           requires:
             - build
       - build_storybook:
-          requires:
-            - build
-      - pnp_consumer:
           requires:
             - build

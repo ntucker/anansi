@@ -7,9 +7,7 @@
 # dependencies that node_modules hoisting hides.
 #
 # Usage: scripts/pnp-consumer.sh
-#   SKIP_BUILD=1        packages are already built (prepack still rebuilds some)
-#   PNP_CONSUMER_CACHE  folder for the consumer's Yarn cache, so CI can keep it;
-#                       Yarn prunes archives the install no longer uses
+#   SKIP_BUILD=1  packages are already built (prepack still rebuilds some)
 set -euo pipefail
 
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -19,9 +17,6 @@ trap 'rm -rf "$WORK_DIR"' EXIT
 
 "$ANANSI_DIR/scripts/consumer-link.sh" pack
 
-if [[ -n "${PNP_CONSUMER_CACHE:-}" ]]; then
-  export YARN_ENABLE_GLOBAL_CACHE=false YARN_CACHE_FOLDER="$PNP_CONSUMER_CACHE"
-fi
 cp -R "$ANANSI_DIR/scripts/pnp-consumer/." "$WORK_DIR"
 cd "$WORK_DIR"
 echo "yarnPath: $(ls "$ANANSI_DIR"/.yarn/releases/yarn-*.cjs)" >> .yarnrc.yml
