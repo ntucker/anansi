@@ -38,6 +38,8 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
    yarn workspace rdc-website build                   # docusaurus site
    ```
 
+   `scripts/pnp-consumer.sh` packs the same way into a small Yarn PnP project (`scripts/pnp-consumer/`), loads every package and runs Jest, ESLint and a node-target webpack build there. PnP only lets a package require what it declares, so it catches missing dependencies that hoisting hides. This repo can't run on PnP itself until TypeScript 7's tsc supports it; CI runs this as `pnp_consumer`.
+
 ## Commits and releases
 
 - PRs are squash-merged; the title is the commit, and lerna turns commits into each package's version bump and CHANGELOG section (`lerna.json`, preset `conventional-changelog-anansi`). commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`. A `!` after the type (`pkg!:`) or a `BREAKING CHANGE:` footer makes the release major.

@@ -87,6 +87,8 @@ const generalRules = {
         '.mtsx',
       ],
     },
+    // Yarn PnP resolves packages into .yarn (cache and __virtual__)
+    'import/external-module-folders': ['node_modules', '.yarn'],
   },
 };
 

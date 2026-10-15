@@ -38,9 +38,13 @@ clear_caches() {
 pack() {
   rm -rf "$PACK_DIR" && mkdir -p "$PACK_DIR"
   cd "$ANANSI_DIR"
-  yarn build:pkg
-  # %s is the package name with the scope's @ and / made filesystem safe
-  yarn workspaces foreach -Wt --no-private pack --out "$PACK_DIR/%s.tgz"
+  [[ -n "${SKIP_BUILD:-}" ]] || yarn build:pkg
+  # %s is the package name with the scope's @ and / made filesystem safe.
+  # prepack rebuilds packages; core, router and pojo-router build with
+  # webpack-config without declaring it, so pack it first, then the rest at once
+  yarn workspace @anansi/webpack-config pack --out "$PACK_DIR/%s.tgz"
+  yarn workspaces foreach -Wp --no-private --exclude @anansi/webpack-config \
+    pack --out "$PACK_DIR/%s.tgz"
 }
 
 link() {
