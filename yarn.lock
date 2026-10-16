@@ -358,7 +358,7 @@ __metadata:
     "@types/node": "npm:^26.0.0"
     "@types/webpack-bundle-analyzer": "npm:^4.7.0"
     "@vue/preload-webpack-plugin": "npm:^2.0.0"
-    "@wyw-in-js/webpack-loader": "npm:^2.5.1"
+    "@wyw-in-js/webpack-loader": "npm:^2.6.0"
     assert: "npm:^2.1.0"
     babel-jest: "npm:^30.0.0"
     babel-loader: "npm:^10.1.1"
@@ -386,7 +386,7 @@ __metadata:
     os-browserify: "npm:^0.3.0"
     path: "npm:^0.12.7"
     path-browserify: "npm:^1.0.1"
-    postcss: "npm:^8.5.29"
+    postcss: "npm:^8.5.30"
     postcss-loader: "npm:^8.2.1"
     postcss-preset-env: "npm:^11.6.1"
     process: "npm:^0.11.10"
@@ -10531,12 +10531,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/processor-utils@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@wyw-in-js/processor-utils@npm:2.5.0"
+"@wyw-in-js/processor-utils@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@wyw-in-js/processor-utils@npm:2.6.0"
   dependencies:
-    "@wyw-in-js/shared": "npm:2.5.0"
-  checksum: 10c0/581028936172806906c45d23a527ea77db08fa6b2ca5c4d8941e4ddd185723e9f5b65325d61e9167082a325cc5709c81eaabad444c14ba6fea5c5361103076ac
+    "@wyw-in-js/shared": "npm:2.6.0"
+  checksum: 10c0/a756c0378055718f8b43c61cb8daf2254ece9da19465a34ad753d638dfaee2daeeb3cc110c7a10e8e31cc55451051bcd854ccbcafb58319c736ab1dc999ce903
   languageName: node
   linkType: hard
 
@@ -10551,25 +10551,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/shared@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@wyw-in-js/shared@npm:2.5.0"
+"@wyw-in-js/shared@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@wyw-in-js/shared@npm:2.6.0"
   dependencies:
     debug: "npm:^4.3.4"
     find-up: "npm:^5.0.0"
     minimatch: "npm:^9.0.3"
-  checksum: 10c0/eaf2f5282722c4d7af1722e14ea88d5fdd2e1733a4bbbd920919395d9ad9ef53770783d48c1f7ddc89e1b9e7896c682dc2d4fc92805069ba6b52da2deeca3a04
+  checksum: 10c0/862a6f4cac60f668d260628bcbfd424f4b81395f6acffc13b9f0ae199c2cf078b33fd979ab6a46048586811019619413f288aa3ab2718c5094808c19162813f4
   languageName: node
   linkType: hard
 
-"@wyw-in-js/transform@npm:2.5.1":
-  version: 2.5.1
-  resolution: "@wyw-in-js/transform@npm:2.5.1"
+"@wyw-in-js/transform@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@wyw-in-js/transform@npm:2.6.0"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.5"
     "@jridgewell/trace-mapping": "npm:^0.3.31"
-    "@wyw-in-js/processor-utils": "npm:2.5.0"
-    "@wyw-in-js/shared": "npm:2.5.0"
+    "@wyw-in-js/processor-utils": "npm:2.6.0"
+    "@wyw-in-js/shared": "npm:2.6.0"
     cosmiconfig: "npm:^8.0.0"
     happy-dom: "npm:^20.1.0"
     minimatch: "npm:^9.0.5"
@@ -10579,19 +10579,19 @@ __metadata:
     source-map: "npm:^0.7.4"
     stylis: "npm:^4.3.0"
     ts-invariant: "npm:^0.10.3"
-  checksum: 10c0/8ada901bb4219c82a53de824f7f9e015c943868e09783603937869dbdd53c1ddb869038a019a523ce6a1987de471e3c97cd8461a97c9d803e1b62974608f579c
+  checksum: 10c0/57484989e172b5de33f15727c4b1194a4f84e9d1af63116907a7d4faaa84dc4e8532fa377e7398d1a78310988823a4dad684f901709dba68dc1a8481cdbc354d
   languageName: node
   linkType: hard
 
-"@wyw-in-js/webpack-loader@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "@wyw-in-js/webpack-loader@npm:2.5.1"
+"@wyw-in-js/webpack-loader@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "@wyw-in-js/webpack-loader@npm:2.6.0"
   dependencies:
-    "@wyw-in-js/shared": "npm:2.5.0"
-    "@wyw-in-js/transform": "npm:2.5.1"
+    "@wyw-in-js/shared": "npm:2.6.0"
+    "@wyw-in-js/transform": "npm:2.6.0"
   peerDependencies:
     webpack: ^5.76.0
-  checksum: 10c0/1ea8fc9dfc409f6795c36ab0bc7b9cbfbb249ba0e082067ba8bca9d395cc065b4529a1f29fcea38fea9f37a417a571fd6ea838d5a281ba25c15d98bab09640f6
+  checksum: 10c0/8164a4b455254eb8fa25512f3028700154b03421f4fb491c75e27147695ec5195cb812b642c07d4944bcc590fd9d4a9f4509ee963ecd2bf6d531d0294f5327ba
   languageName: node
   linkType: hard
 
@@ -19075,7 +19075,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.19":
+"nanoid@npm:^3.3.20":
   version: 3.3.20
   resolution: "nanoid@npm:3.3.20"
   bin:
@@ -21477,14 +21477,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.40, postcss@npm:^8.5.29":
-  version: 8.5.29
-  resolution: "postcss@npm:8.5.29"
+"postcss@npm:^8.4.40, postcss@npm:^8.5.30":
+  version: 8.5.30
+  resolution: "postcss@npm:8.5.30"
   dependencies:
-    nanoid: "npm:^3.3.19"
+    nanoid: "npm:^3.3.20"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.2"
-  checksum: 10c0/5d0c45a511e8ede0fe124d04885877525e69e3c1476f0c8c22ed53f3945bace9ca5ef8578274bdfe916b1cd0301253a52c5dbd8695115fae805cee55465088fc
+  checksum: 10c0/219cdc50ba3f2b6d0f8b779c4939514cb9d9f53cc9eb92dae1a06f2d6eb910b2ce339a3ee93e7c893b89e50241509fd92c04f0639af1cdf41a1e13983a476029
   languageName: node
   linkType: hard
 
