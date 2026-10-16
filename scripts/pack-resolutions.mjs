@@ -4,14 +4,20 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { gunzipSync } from 'node:zlib';
 
-// a tarball's package/package.json, read in-process rather than spawning tar
+// Parses package/package.json out of a yarn pack tarball. Each ustar entry is
+// a 512-byte header (name at 0-100, octal size at 124-136), then its data
+// padded to 512 bytes; an empty name marks the end of the archive.
 function readManifest(tgz) {
   const tar = gunzipSync(fs.readFileSync(tgz));
-  for (let offset = 0; offset < tar.length;) {
+  for (let offset = 0; offset + 512 <= tar.length;) {
     const name = tar
       .toString('utf8', offset, offset + 100)
       .replace(/\0.*/s, '');
-    const size = parseInt(tar.toString('utf8', offset + 124, offset + 136), 8);
+    const size = Number.parseInt(
+      tar.toString('utf8', offset + 124, offset + 136),
+      8,
+    );
+    if (!name || !(size >= 0)) break;
     offset += 512;
     if (name === 'package/package.json') {
       return JSON.parse(tar.toString('utf8', offset, offset + size));
