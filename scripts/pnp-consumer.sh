@@ -21,20 +21,7 @@ cp -R "$ANANSI_DIR/scripts/pnp-consumer/." "$WORK_DIR"
 cd "$WORK_DIR"
 echo "yarnPath: $(ls "$ANANSI_DIR"/.yarn/releases/yarn-*.cjs)" >> .yarnrc.yml
 # every packed package, so each one's own dependencies get checked
-node -e '
-  const fs = require("fs"), path = require("path"), cp = require("child_process");
-  const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
-  pkg.resolutions = {};
-  for (const file of fs.readdirSync(process.env.PACK_DIR)) {
-    const tgz = path.join(process.env.PACK_DIR, file);
-    const { name } = JSON.parse(
-      cp.execFileSync("tar", ["-xOzf", tgz, "package/package.json"]),
-    );
-    pkg.resolutions[name] = `file:${tgz}`;
-    pkg.devDependencies[name] ??= "*";
-  }
-  fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");
-'
+node "$ANANSI_DIR/scripts/pack-resolutions.mjs" --add-dev
 YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install --mode=skip-build
 
 echo "--- load every package"

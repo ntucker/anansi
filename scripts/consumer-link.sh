@@ -57,20 +57,7 @@ link() {
   fi
   # always start from the pristine manifest so removed packages unlink too
   cp "$BACKUP_DIR/package.json" package.json
-  PACK_DIR="$PACK_DIR" node -e '
-    const fs = require("fs"), path = require("path"), cp = require("child_process");
-    const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
-    pkg.resolutions ??= {};
-    for (const file of fs.readdirSync(process.env.PACK_DIR)) {
-      const tgz = path.join(process.env.PACK_DIR, file);
-      const { name } = JSON.parse(
-        cp.execFileSync("tar", ["-xOzf", tgz, "package/package.json"]),
-      );
-      pkg.resolutions[name] = `file:${tgz}`;
-      console.log(`${name} -> ${tgz}`);
-    }
-    fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");
-  '
+  PACK_DIR="$PACK_DIR" node "$ANANSI_DIR/scripts/pack-resolutions.mjs"
   # tarball contents change on every repack; refresh their lockfile checksums.
   # Skip install scripts: the consumer's only prebuild packages its own build redoes
   YARN_ENABLE_IMMUTABLE_INSTALLS=false YARN_CHECKSUM_BEHAVIOR=update yarn install --mode=skip-build
