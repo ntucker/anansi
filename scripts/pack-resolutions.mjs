@@ -17,7 +17,10 @@ function readManifest(tgz) {
       tar.toString('utf8', offset + 124, offset + 136),
       8,
     );
-    if (!name || !(size >= 0)) break;
+    if (!name) break;
+    if (Number.isNaN(size) || size < 0) {
+      throw new Error(`${tgz}: bad tar header at byte ${offset}`);
+    }
     offset += 512;
     if (name === 'package/package.json') {
       return JSON.parse(tar.toString('utf8', offset, offset + size));
