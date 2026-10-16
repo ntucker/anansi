@@ -46,7 +46,7 @@ __metadata:
     babel-plugin-polyfill-corejs3: "npm:^1.0.0"
     babel-plugin-react-compiler: "npm:1.0.0"
     babel-plugin-root-import: "npm:^6.6.0"
-    babel-plugin-transform-import-meta: "npm:^3.0.0"
+    babel-plugin-transform-import-meta: "npm:^3.1.0"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
     core-js-compat: "npm:^3.40.0"
     css-loader: "npm:^7.1.2"
@@ -11494,15 +11494,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-transform-import-meta@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "babel-plugin-transform-import-meta@npm:3.0.0"
+"babel-plugin-transform-import-meta@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "babel-plugin-transform-import-meta@npm:3.1.0"
   dependencies:
     "@babel/template": "npm:^8.0.0"
     tslib: "npm:^2.8.1"
   peerDependencies:
     "@babel/core": ^8.0.1
-  checksum: 10c0/478e089c7589edf3ef527423e49a39a36beeb29223b43e000458e97f6e250875b6fdfdb7139ced2df1e2cf0d08773aa31dda068062687cb27f26e2f7914a3e77
+  checksum: 10c0/ecab6b8614ef6f72bc786b7b3c6f0f4c49e4391e8131cd2dc8c60cb9a76fb6b7aedc5c6cd2ba3b5e8894054224bcea7c1d5a99874b0f89f28ca46713989bc837
   languageName: node
   linkType: hard
 
