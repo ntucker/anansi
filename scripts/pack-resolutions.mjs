@@ -22,12 +22,14 @@ function readManifest(tgz) {
 }
 
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+const addDev = process.argv.includes('--add-dev');
 pkg.resolutions ??= {};
+if (addDev) pkg.devDependencies ??= {};
 for (const file of fs.readdirSync(process.env.PACK_DIR)) {
   const tgz = path.join(process.env.PACK_DIR, file);
   const { name } = readManifest(tgz);
   pkg.resolutions[name] = `file:${tgz}`;
-  if (process.argv.includes('--add-dev')) pkg.devDependencies[name] ??= '*';
+  if (addDev) pkg.devDependencies[name] ??= '*';
   console.log(`${name} -> ${tgz}`);
 }
 fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
