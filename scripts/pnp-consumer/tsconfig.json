@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "preserve",
+    "strict": true,
+    "noEmit": true,
+    "types": ["jest"]
+  },
+  "include": ["src"]
+}

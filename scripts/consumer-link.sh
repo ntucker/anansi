@@ -13,6 +13,7 @@
 #           and install (rerun after each anansi change)
 #   unlink  restore the consumer's package.json and yarn.lock, then install
 #   status  show whether the consumer is linked, and to which tarballs
+# SKIP_BUILD=1 skips the initial `yarn build:pkg` when packages are built
 set -euo pipefail
 
 ANANSI_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -38,9 +39,13 @@ clear_caches() {
 pack() {
   rm -rf "$PACK_DIR" && mkdir -p "$PACK_DIR"
   cd "$ANANSI_DIR"
-  yarn build:pkg
-  # %s is the package name with the scope's @ and / made filesystem safe
-  yarn workspaces foreach -Wt --no-private pack --out "$PACK_DIR/%s.tgz"
+  [[ "${SKIP_BUILD:-}" == 1 ]] || yarn build:pkg
+  # %s is the package name with the scope's @ and / made filesystem safe.
+  # prepack rebuilds packages; core, router and pojo-router build with
+  # webpack-config without declaring it, so pack it first, then the rest in parallel
+  yarn workspace @anansi/webpack-config pack --out "$PACK_DIR/%s.tgz"
+  yarn workspaces foreach -Wpt --no-private --exclude @anansi/webpack-config \
+    pack --out "$PACK_DIR/%s.tgz"
 }
 
 link() {
@@ -52,20 +57,7 @@ link() {
   fi
   # always start from the pristine manifest so removed packages unlink too
   cp "$BACKUP_DIR/package.json" package.json
-  PACK_DIR="$PACK_DIR" node -e '
-    const fs = require("fs"), path = require("path"), cp = require("child_process");
-    const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
-    pkg.resolutions ??= {};
-    for (const file of fs.readdirSync(process.env.PACK_DIR)) {
-      const tgz = path.join(process.env.PACK_DIR, file);
-      const { name } = JSON.parse(
-        cp.execFileSync("tar", ["-xOzf", tgz, "package/package.json"]),
-      );
-      pkg.resolutions[name] = `file:${tgz}`;
-      console.log(`${name} -> ${tgz}`);
-    }
-    fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");
-  '
+  PACK_DIR="$PACK_DIR" node "$ANANSI_DIR/scripts/pack-resolutions.mjs"
   # tarball contents change on every repack; refresh their lockfile checksums.
   # Skip install scripts: the consumer's only prebuild packages its own build redoes
   YARN_ENABLE_IMMUTABLE_INSTALLS=false YARN_CHECKSUM_BEHAVIOR=update yarn install --mode=skip-build
