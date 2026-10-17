@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [7.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fbabel-preset%406.2.27...%40anansi%2Fbabel-preset%407.0.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES

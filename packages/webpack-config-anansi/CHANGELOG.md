@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [22.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fwebpack-config%4021.1.19...%40anansi%2Fwebpack-config%4022.0.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES

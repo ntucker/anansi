@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [13.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fgenerator-js%4012.6.38...%40anansi%2Fgenerator-js%4013.0.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES

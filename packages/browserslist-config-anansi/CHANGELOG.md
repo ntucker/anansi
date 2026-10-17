@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [1.7.6](https://github.com/ntucker/anansi/compare/%40anansi%2Fbrowserslist-config%401.7.5...%40anansi%2Fbrowserslist-config%401.7.6) (2026-10-13)
 
 ### 📦 Package

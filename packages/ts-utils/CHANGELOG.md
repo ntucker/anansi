@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [0.3.12](https://github.com/ntucker/anansi/compare/%40anansi%2Fts-utils%400.3.11...%40anansi%2Fts-utils%400.3.12) (2026-10-13)
 
 ### 💅 Enhancement

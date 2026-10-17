@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [0.23.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fcore%400.22.12...%40anansi%2Fcore%400.23.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES

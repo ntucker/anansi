@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [0.12.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fjest-preset%400.11.34...%40anansi%2Fjest-preset%400.12.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
