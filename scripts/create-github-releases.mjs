@@ -58,8 +58,12 @@ function releaseExists(tag) {
       stdio: ['pipe', 'pipe', 'pipe'],
     });
     return true;
-  } catch {
-    return false;
+  } catch (error) {
+    const stderr = error.stderr ? error.stderr.toString() : '';
+    // `gh release view` prints this and exits 1 when the tag has no release.
+    // Any other failure (auth, network, 5xx) must fail the job.
+    if (stderr.includes('release not found')) return false;
+    throw error;
   }
 }
 
@@ -95,8 +99,24 @@ function createRelease(tag, name, body, latest) {
     return true;
   } catch (error) {
     console.error(`  ✗ Failed to create ${tag}:`, error.message);
-    return false;
+    throw error;
   }
+}
+
+/**
+ * Creating a release with --latest only affects a release that does not exist
+ * yet. Lerna left GitHub's Latest on whichever package it created last, so an
+ * already-published @anansi/core release has to be marked explicitly.
+ */
+function markLatest(tag) {
+  if (DRY_RUN) {
+    console.log(`  [dry-run] Would mark ${tag} as Latest`);
+    return;
+  }
+  console.log(`Marking ${tag} as Latest`);
+  execSync(`gh release edit "${tag}" --repo ${REPO} --latest`, {
+    stdio: 'inherit',
+  });
 }
 
 async function main() {
@@ -118,19 +138,18 @@ async function main() {
     if (pkg.private) continue;
 
     const tag = `${pkg.name}@${pkg.version}`;
+    const exists = releaseExists(tag);
 
-    if (releaseExists(tag)) {
+    if (exists) {
       skippedCount++;
-      continue;
-    }
-
-    const changelog = getChangelogForVersion(packageDir, pkg.version);
-
-    const body = changelog || `Release ${pkg.name}@${pkg.version}`;
-
-    if (createRelease(tag, tag, body, isLatest(pkg.name, pkg.version))) {
+    } else {
+      const changelog = getChangelogForVersion(packageDir, pkg.version);
+      const body = changelog || `Release ${pkg.name}@${pkg.version}`;
+      createRelease(tag, tag, body, isLatest(pkg.name, pkg.version));
       createdCount++;
     }
+
+    if (exists && isLatest(pkg.name, pkg.version)) markLatest(tag);
   }
 
   console.log(
