@@ -724,7 +724,7 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 * Update all non-major dependencies ([#1426](https://github.com/ntucker/anansi/issues/1426)) ([00372c1](https://github.com/ntucker/anansi/commit/00372c104ecd4a226de3a10f46d608016342f96f))
 
-## 0.3.0 (2022-02-21)
+## [0.3.0] (2022-02-21)
 
 ### 🚀 Features
 

@@ -1549,7 +1549,7 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 * Make start-anansi command executable in bash ([4ae313c](https://github.com/ntucker/anansi/commit/4ae313c7d2137df63e74e5a8064237189c04adc8))
 
-## 0.2.0 (2022-04-18)
+## [0.2.0] (2022-04-18)
 
 ### 🚀 Features
 

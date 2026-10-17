@@ -1183,7 +1183,7 @@
 
 **Note:** Version bump only for package @anansi/storybook
 
-## 0.2.0 (2023-03-18)
+## [0.2.0] (2023-03-18)
 
 ### 🚀 Features
 

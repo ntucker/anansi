@@ -1112,7 +1112,7 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 * Fix badge links ([05987d7](https://github.com/ntucker/anansi/commit/05987d76b981095ac632a991711fc569f2689fa5))
 
-## 0.2.0 (2021-05-14)
+## [0.2.0] (2021-05-14)
 
 ### 🚀 Features
 

@@ -120,7 +120,7 @@
 
 **Note:** Version bump only for package @anansi/ts-utils
 
-## 0.2.0 (2021-04-06)
+## [0.2.0] (2021-04-06)
 
 ### 🚀 Features
 

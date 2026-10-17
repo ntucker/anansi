@@ -1553,7 +1553,7 @@
 
 * Open default visual editor upon completion ([7173962](https://github.com/ntucker/anansi/commit/71739626a6bb791092875317d364ea22e771414c))
 
-## 0.2.0 (2021-05-02)
+## [0.2.0] (2021-05-02)
 
 ### 🚀 Features
 

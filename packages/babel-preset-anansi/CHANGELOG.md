@@ -1792,7 +1792,7 @@ supported. use react-refresh
 
 * docs: Add purpose to babel readme ([aa5e30d](https://github.com/ntucker/anansi/commit/aa5e30d))
 
-## 0.22.0 (2019-11-13)
+## [0.22.0] (2019-11-13)
 
 * internal: Configure changelog tags ([6d752d0](https://github.com/ntucker/anansi/commit/6d752d0))
 * feat: Use preset-modules when target is set to esmodules: true (#7) ([553ae53](https://github.com/ntucker/anansi/commit/553ae53)), closes [#7](https://github.com/ntucker/anansi/issues/7)

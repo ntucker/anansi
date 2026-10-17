@@ -2975,7 +2975,7 @@ now use --env. prefix: e.g., --env.analyze
 
 * Update author links in readme ([b2a6330](https://github.com/ntucker/anansi/commit/b2a6330c84de4cbd72b3b264b5dbd2b2e45af385))
 
-## 0.1.0 (2020-01-07)
+## [0.1.0] (2020-01-07)
 
 ### 🚀 Features
 
