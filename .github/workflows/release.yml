@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+# Queue every run instead of cancelling pending ones (red on the branch), so
+# each reads npm's `latest` after the other publishes and only one release
+# takes it (and GitHub's Latest). `queue` may be newer than actionlint's schema.
+concurrency:
+  group: ${{ github.workflow }}
+  queue: max
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install packages
+        run: yarn install --immutable --mode=skip-build && yarn build:pkg
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v2.1.2
+        with:
+          version-script: yarn changeset:version
+          publish-script: yarn changeset:publish
+          commit-message: "internal: Publish new version"
+          pr-title: "internal: Version packages"
+          create-github-releases: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # has-changesets is 'false' after the Version Packages PR is merged (no
+      # changeset files remain), which is the same run where publish executes.
+      # We can't use `published == 'true'` because the custom yarn publish
+      # command isn't detectable by changesets/action.
+      - name: Create GitHub Releases
+        if: steps.changesets.outputs.has-changesets == 'false'
+        run: node scripts/create-github-releases.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
