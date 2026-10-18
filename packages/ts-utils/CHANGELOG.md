@@ -1,14 +1,20 @@
 # Change Log
 
+## 0.3.13
+
+### Patch Changes
+
+- [#3205](https://github.com/ntucker/anansi/pull/3205) [`4f4d792`](https://github.com/ntucker/anansi/commit/4f4d7921c6b263f35f1dfb751381cc462c0c7918) - Add a README documenting `readTsConfig` and the TypeScript 7 alias setup.
+
 ## [0.3.12](https://github.com/ntucker/anansi/compare/%40anansi%2Fts-utils%400.3.11...%40anansi%2Fts-utils%400.3.12) (2026-10-13)
 
 ### 💅 Enhancement
 
-* Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
+- Run tsc on TypeScript 7, keep the 6.0 API for tooling ([#3168](https://github.com/ntucker/anansi/issues/3168)) ([0ddd6e7](https://github.com/ntucker/anansi/commit/0ddd6e77a071803addb3fc4e0bb007729e649f70))
 
 ### 📦 Package
 
-* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+- Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
 
 ## [0.3.11](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.10...@anansi/ts-utils@0.3.11) (2026-06-21)
 
@@ -18,31 +24,31 @@
 
 ### 📦 Package
 
-* Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
+- Update `typescript` to v6 ([#3010](/github.com/ntucker/anansi/issues/3010)) ([4658545](/github.com/ntucker/anansi/commit/465854593db82fbbccbbad8158e35dcd202bfc1b))
 
 ## [0.3.9](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.8...@anansi/ts-utils@0.3.9) (2025-12-07)
 
 ### 📦 Package
 
-* Yarn warnings about transitive deps ([6dc69af](/github.com/ntucker/anansi/commit/6dc69af79814340e7a286787238e16bcae274d12))
+- Yarn warnings about transitive deps ([6dc69af](/github.com/ntucker/anansi/commit/6dc69af79814340e7a286787238e16bcae274d12))
 
 ## [0.3.8](/github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.7...@anansi/ts-utils@0.3.8) (2025-06-26)
 
 ### 📦 Package
 
-* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+- Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
 
 ### [0.3.7](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.6...@anansi/ts-utils@0.3.7) (2024-07-28)
 
 ### 📦 Package
 
-* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+- Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
 
 ### [0.3.6](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.5...@anansi/ts-utils@0.3.6) (2023-05-07)
 
 ### 📦 Package
 
-* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+- Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
 
 ### [0.3.5](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.4...@anansi/ts-utils@0.3.5) (2023-03-28)
 
@@ -52,45 +58,45 @@
 
 ### 📦 Package
 
-* Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
+- Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
 
 ### [0.3.3](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.2...@anansi/ts-utils@0.3.3) (2023-03-24)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+- Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
 
 ### [0.3.2](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.1...@anansi/ts-utils@0.3.2) (2023-03-09)
 
 ### 📦 Package
 
-* Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
-* Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
+- Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
+- Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
 
 ### [0.3.1](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.3.0...@anansi/ts-utils@0.3.1) (2023-03-05)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
-* Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
+- Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
+- Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
 
 ## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.8...@anansi/ts-utils@0.3.0) (2023-02-28)
 
 ### 🚀 Features
 
-* Support TypeScript 5.0 ([0aab1f9](https://github.com/ntucker/anansi/commit/0aab1f9bc0d4af803217184f65f8f7642c4acd4c))
+- Support TypeScript 5.0 ([0aab1f9](https://github.com/ntucker/anansi/commit/0aab1f9bc0d4af803217184f65f8f7642c4acd4c))
 
 ### [0.2.8](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.7...@anansi/ts-utils@0.2.8) (2023-01-29)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
+- Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
 
 ### [0.2.7](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.6...@anansi/ts-utils@0.2.7) (2023-01-18)
 
 ### 📦 Package
 
-* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+- Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
 
 ### [0.2.6](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.5...@anansi/ts-utils@0.2.6) (2022-07-23)
 
@@ -100,13 +106,13 @@
 
 ### 📦 Package
 
-* Update `rimraf` to v3 ([#1414](https://github.com/ntucker/anansi/issues/1414)) ([7aab5ee](https://github.com/ntucker/anansi/commit/7aab5eecef0249e45158df7430102be081d5fcdf))
+- Update `rimraf` to v3 ([#1414](https://github.com/ntucker/anansi/issues/1414)) ([7aab5ee](https://github.com/ntucker/anansi/commit/7aab5eecef0249e45158df7430102be081d5fcdf))
 
 ### [0.2.4](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.3...@anansi/ts-utils@0.2.4) (2021-04-24)
 
 ### 🐛 Bug Fix
 
-* Peer dependency syntax ([6f094d8](https://github.com/ntucker/anansi/commit/6f094d82efaf3391b1f04b193ecfb16490752376))
+- Peer dependency syntax ([6f094d8](https://github.com/ntucker/anansi/commit/6f094d82efaf3391b1f04b193ecfb16490752376))
 
 ### [0.2.3](https://github.com/ntucker/anansi/compare/@anansi/ts-utils@0.2.2...@anansi/ts-utils@0.2.3) (2021-04-15)
 
@@ -124,4 +130,4 @@
 
 ### 🚀 Features
 
-* Add tsConfigPath to automatically apply tsconfig import paths ([1e7ff42](https://github.com/ntucker/anansi/commit/1e7ff42ac9696796fc8d193df690621d67c0bb8d))
+- Add tsConfigPath to automatically apply tsconfig import paths ([1e7ff42](https://github.com/ntucker/anansi/commit/1e7ff42ac9696796fc8d193df690621d67c0bb8d))
