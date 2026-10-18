@@ -1,10 +1,16 @@
 # Change Log
 
+## 0.11.1
+
+### Patch Changes
+
+- [#3202](https://github.com/ntucker/anansi/pull/3202) [`e5eebb2`](https://github.com/ntucker/anansi/commit/e5eebb215990c2445b91e6adcb3af60f07768aeb) - Update the `react` devDependency to 19.3.1. `@anansi/core` also updates `react-dom` ([#3199](https://github.com/ntucker/anansi/issues/3199)).
+
 ## [0.11.0](https://github.com/ntucker/anansi/compare/%40pojo-router%2Fcore%400.10.17...%40pojo-router%2Fcore%400.11.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* namedPaths use path-to-regexp v8 syntax.
+- namedPaths use path-to-regexp v8 syntax.
   - Optional params: `/users/:id?` -> `/users{/:id}`
   - Repeating params: `/:path+` -> `/*path`, `/:path*` -> `{/*path}`
   - Unnamed/regex groups removed: `/(.*)` -> `{/*rest}`, `/:id(\d+)` -> `/:id`
@@ -13,179 +19,179 @@
     are encoded with encodeURIComponent
   - NamedPath options follow v8 (strict -> trailing; start, endsWith,
     prefixes removed)
-* Requires babel 8
+- Requires babel 8
 
 ### 📦 Package
 
-* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
-* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
-* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
-* Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
+- Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+- Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+- Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+- Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
 
 ## [0.10.17](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.16...@pojo-router/core@0.10.17) (2026-06-21)
 
 ### 📦 Package
 
-* Update react to v19.2.7 ([#3074](/github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](/github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
+- Update react to v19.2.7 ([#3074](/github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](/github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
 
 ## [0.10.16](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.15...@pojo-router/core@0.10.16) (2026-04-10)
 
 ### 📦 Package
 
-* Update react to v19.2.5 ([#3034](/github.com/ntucker/anansi/issues/3034)) ([c162d4f](/github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
+- Update react to v19.2.5 ([#3034](/github.com/ntucker/anansi/issues/3034)) ([c162d4f](/github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
 
 ## [0.10.15](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.14...@pojo-router/core@0.10.15) (2026-02-13)
 
 ### 📦 Package
 
-* Update react to v19.2.4 ([#2957](/github.com/ntucker/anansi/issues/2957)) ([0923388](/github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
+- Update react to v19.2.4 ([#2957](/github.com/ntucker/anansi/issues/2957)) ([0923388](/github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
 
 ## [0.10.14](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.13...@pojo-router/core@0.10.14) (2025-12-12)
 
 ### 📦 Package
 
-* Update react to v19.2.2 ([#2904](/github.com/ntucker/anansi/issues/2904)) ([bd60070](/github.com/ntucker/anansi/commit/bd6007031129a628ecef29a8850a06ca88015663))
-* Update react to v19.2.3 ([#2906](/github.com/ntucker/anansi/issues/2906)) ([d8ca016](/github.com/ntucker/anansi/commit/d8ca01691c059e1add5791dfd9bf04785406c5d0))
+- Update react to v19.2.2 ([#2904](/github.com/ntucker/anansi/issues/2904)) ([bd60070](/github.com/ntucker/anansi/commit/bd6007031129a628ecef29a8850a06ca88015663))
+- Update react to v19.2.3 ([#2906](/github.com/ntucker/anansi/issues/2906)) ([d8ca016](/github.com/ntucker/anansi/commit/d8ca01691c059e1add5791dfd9bf04785406c5d0))
 
 ## [0.10.13](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.12...@pojo-router/core@0.10.13) (2025-12-07)
 
 ### 📦 Package
 
-* Update react to v19.2.1 ([#2897](/github.com/ntucker/anansi/issues/2897)) ([7a85622](/github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
+- Update react to v19.2.1 ([#2897](/github.com/ntucker/anansi/issues/2897)) ([7a85622](/github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
 
 ## [0.10.12](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.11...@pojo-router/core@0.10.12) (2025-11-30)
 
 ### 💅 Enhancement
 
-* Router robust against multi-module ([06afd76](/github.com/ntucker/anansi/commit/06afd764e4183d838af371713f683c2b163d951a))
+- Router robust against multi-module ([06afd76](/github.com/ntucker/anansi/commit/06afd764e4183d838af371713f683c2b163d951a))
 
 ## [0.10.11](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.10...@pojo-router/core@0.10.11) (2025-11-29)
 
 ### 📦 Package
 
-* Update validation packages ([#2884](/github.com/ntucker/anansi/issues/2884)) ([aa67942](/github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
+- Update validation packages ([#2884](/github.com/ntucker/anansi/issues/2884)) ([aa67942](/github.com/ntucker/anansi/commit/aa6794216a798016ad725412b7f82906886ac4c3))
 
 ## [0.10.10](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.9...@pojo-router/core@0.10.10) (2025-10-02)
 
 ### 📦 Package
 
-* Update react ([#2837](/github.com/ntucker/anansi/issues/2837)) ([0c42708](/github.com/ntucker/anansi/commit/0c4270835910f937b3b4b03348933434334b2347))
+- Update react ([#2837](/github.com/ntucker/anansi/issues/2837)) ([0c42708](/github.com/ntucker/anansi/commit/0c4270835910f937b3b4b03348933434334b2347))
 
 ## [0.10.9](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.8...@pojo-router/core@0.10.9) (2025-07-29)
 
 ### 📦 Package
 
-* Update react to v19.1.1 ([#2799](/github.com/ntucker/anansi/issues/2799)) ([524c78c](/github.com/ntucker/anansi/commit/524c78c3032c3feef9b7fbdf1fae2dbe16350ef1))
+- Update react to v19.1.1 ([#2799](/github.com/ntucker/anansi/issues/2799)) ([524c78c](/github.com/ntucker/anansi/commit/524c78c3032c3feef9b7fbdf1fae2dbe16350ef1))
 
 ## [0.10.8](/github.com/ntucker/anansi/compare/@pojo-router/core@0.10.7...@pojo-router/core@0.10.8) (2025-06-26)
 
 ### 📦 Package
 
-* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+- Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
 
 ## <small>0.10.7 (2025-05-15)</small>
 
-* fix: Export for ControllerProps ([bdd6fcf](https://github.com/ntucker/anansi/commit/bdd6fcf))
+- fix: Export for ControllerProps ([bdd6fcf](https://github.com/ntucker/anansi/commit/bdd6fcf))
 
 ### [0.10.6](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.5...@pojo-router/core@0.10.6) (2025-03-29)
 
 ### 📦 Package
 
-* Update react ([#2716](https://github.com/ntucker/anansi/issues/2716)) ([2bd2caf](https://github.com/ntucker/anansi/commit/2bd2cafb3054f9f226c4a963d49ae19355c9c67c))
+- Update react ([#2716](https://github.com/ntucker/anansi/issues/2716)) ([2bd2caf](https://github.com/ntucker/anansi/commit/2bd2cafb3054f9f226c4a963d49ae19355c9c67c))
 
 ### [0.10.5](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.4...@pojo-router/core@0.10.5) (2025-02-16)
 
 ### 💅 Enhancement
 
-* Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
+- Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
 
 ### [0.10.4](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.3...@pojo-router/core@0.10.4) (2025-01-25)
 
 ### 💅 Enhancement
 
-* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+- Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
 
 ### [0.10.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.2...@pojo-router/core@0.10.3) (2024-12-06)
 
 ### 📦 Package
 
-* Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
+- Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
 
 ### [0.10.2](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.1...@pojo-router/core@0.10.2) (2024-11-30)
 
 ### 📦 Package
 
-* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
-* Update validation packages ([#2590](https://github.com/ntucker/anansi/issues/2590)) ([791909e](https://github.com/ntucker/anansi/commit/791909e075e564a47a1ee9def958ae5344774bb9))
+- Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+- Update validation packages ([#2590](https://github.com/ntucker/anansi/issues/2590)) ([791909e](https://github.com/ntucker/anansi/commit/791909e075e564a47a1ee9def958ae5344774bb9))
 
 ### [0.10.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.10.0...@pojo-router/core@0.10.1) (2024-11-24)
 
 ### 📦 Package
 
-* Match any types/react ([3ea2b96](https://github.com/ntucker/anansi/commit/3ea2b96e1c702de9200481b1b57eccc67c6b8622))
+- Match any types/react ([3ea2b96](https://github.com/ntucker/anansi/commit/3ea2b96e1c702de9200481b1b57eccc67c6b8622))
 
 ## [0.10.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.3...@pojo-router/core@0.10.0) (2024-09-29)
 
 ### 🚀 Features
 
-* Add Router export (identical to RouteController) ([3f1a11f](https://github.com/ntucker/anansi/commit/3f1a11fdd3718f44942d88fbc17d87e467f35444))
+- Add Router export (identical to RouteController) ([3f1a11f](https://github.com/ntucker/anansi/commit/3f1a11fdd3718f44942d88fbc17d87e467f35444))
 
 ### 💅 Enhancement
 
-* Scroll to top after push/replace navigation ([1d7964e](https://github.com/ntucker/anansi/commit/1d7964e8e0281ed14469bbe8508fe5154bfd37e5))
+- Scroll to top after push/replace navigation ([1d7964e](https://github.com/ntucker/anansi/commit/1d7964e8e0281ed14469bbe8508fe5154bfd37e5))
 
 ### [0.9.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.2...@pojo-router/core@0.9.3) (2024-09-13)
 
 ### 📦 Package
 
-* Switch path-to-regexp to ^ ([07b45d8](https://github.com/ntucker/anansi/commit/07b45d805f04b863c3472c783cd1966aef058594))
-* Update `path-to-regexp` to v6.3.0 [SECURITY] ([#2514](https://github.com/ntucker/anansi/issues/2514)) ([fdafb65](https://github.com/ntucker/anansi/commit/fdafb65e4cea107b525f7d741a19406dbf4c4e6e))
+- Switch path-to-regexp to ^ ([07b45d8](https://github.com/ntucker/anansi/commit/07b45d805f04b863c3472c783cd1966aef058594))
+- Update `path-to-regexp` to v6.3.0 [SECURITY] ([#2514](https://github.com/ntucker/anansi/issues/2514)) ([fdafb65](https://github.com/ntucker/anansi/commit/fdafb65e4cea107b525f7d741a19406dbf4c4e6e))
 
 ### [0.9.2](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.1...@pojo-router/core@0.9.2) (2024-08-05)
 
 ### 📦 Package
 
-* Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
+- Update typescript-eslint monorepo to v8 (major) ([#2487](https://github.com/ntucker/anansi/issues/2487)) ([3cdc6bc](https://github.com/ntucker/anansi/commit/3cdc6bcb70f92e41e40f5f0fda4493ea07e3b81e))
 
 ### [0.9.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.9.0...@pojo-router/core@0.9.1) (2024-07-28)
 
 ### 📦 Package
 
-* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+- Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
 
 ## [0.9.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.8.1...@pojo-router/core@0.9.0) (2024-06-14)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* useController renamed to useRouter
+- useController renamed to useRouter
 
 ### 🚀 Features
 
-* useController -> useRouter ([#2439](https://github.com/ntucker/anansi/issues/2439)) ([5f2f631](https://github.com/ntucker/anansi/commit/5f2f63173fc15ce4d38e868716db3f45cb56a66e))
+- useController -> useRouter ([#2439](https://github.com/ntucker/anansi/issues/2439)) ([5f2f631](https://github.com/ntucker/anansi/commit/5f2f63173fc15ce4d38e868716db3f45cb56a66e))
 
 ### [0.8.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.8.0...@pojo-router/core@0.8.1) (2024-06-12)
 
 ### 💅 Enhancement
 
-* React 19 compatibility via direct jsx transform usage ([dcf2ea1](https://github.com/ntucker/anansi/commit/dcf2ea1c71bcff6e66283185d5bc7b41de89c30d))
+- React 19 compatibility via direct jsx transform usage ([dcf2ea1](https://github.com/ntucker/anansi/commit/dcf2ea1c71bcff6e66283185d5bc7b41de89c30d))
 
 ## [0.8.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.7.1...@pojo-router/core@0.8.0) (2024-04-28)
 
 ### 🚀 Features
 
-* React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
+- React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
 
 ### [0.7.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.7.0...@pojo-router/core@0.7.1) (2024-04-08)
 
 ### 📦 Package
 
-* Update `path-to-regexp` to v6.2.2 ([#2371](https://github.com/ntucker/anansi/issues/2371)) ([94cff3d](https://github.com/ntucker/anansi/commit/94cff3d4d35c749b1c1c63a54ef1a1cb49a28eb5))
+- Update `path-to-regexp` to v6.2.2 ([#2371](https://github.com/ntucker/anansi/issues/2371)) ([94cff3d](https://github.com/ntucker/anansi/commit/94cff3d4d35c749b1c1c63a54ef1a1cb49a28eb5))
 
 ## [0.7.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.3...@pojo-router/core@0.7.0) (2024-03-13)
 
 ### 🚀 Features
 
-* Support storybook 8 ([abc091b](https://github.com/ntucker/anansi/commit/abc091b9806dfc07eb262a9ad3aa2095522b9a89))
+- Support storybook 8 ([abc091b](https://github.com/ntucker/anansi/commit/abc091b9806dfc07eb262a9ad3aa2095522b9a89))
 
 ### [0.6.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.2...@pojo-router/core@0.6.3) (2023-12-09)
 
@@ -195,25 +201,25 @@
 
 ### 📦 Package
 
-* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+- Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
 
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.6.0...@pojo-router/core@0.6.1) (2023-07-02)
 
 ### 💅 Enhancement
 
-* Support loose types in useLocationSearch ([27f56d4](https://github.com/ntucker/anansi/commit/27f56d4a126245884914515a79d0eaf19127b6dc))
+- Support loose types in useLocationSearch ([27f56d4](https://github.com/ntucker/anansi/commit/27f56d4a126245884914515a79d0eaf19127b6dc))
 
 ## [0.6.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.80...@pojo-router/core@0.6.0) (2023-06-29)
 
 ### 🚀 Features
 
-* Add useLocationSearch() ([7a291a9](https://github.com/ntucker/anansi/commit/7a291a9cd29e2a8167e4124b413845cab0ecc7c9))
+- Add useLocationSearch() ([7a291a9](https://github.com/ntucker/anansi/commit/7a291a9cd29e2a8167e4124b413845cab0ecc7c9))
 
 ### [0.5.80](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.79...@pojo-router/core@0.5.80) (2023-05-07)
 
 ### 📦 Package
 
-* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+- Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
 
 ### [0.5.79](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.78...@pojo-router/core@0.5.79) (2023-03-28)
 
@@ -227,15 +233,15 @@
 
 ### 📦 Package
 
-* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
-* Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
+- Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+- Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
 
 ### [0.5.76](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.75...@pojo-router/core@0.5.76) (2023-03-24)
 
 ### 📦 Package
 
-* Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
-* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+- Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
+- Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
 
 ### [0.5.75](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.74...@pojo-router/core@0.5.75) (2023-03-21)
 
@@ -249,35 +255,35 @@
 
 ### 📦 Package
 
-* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+- Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
 
 ### [0.5.72](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.71...@pojo-router/core@0.5.72) (2023-03-15)
 
 ### 📦 Package
 
-* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+- Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
 
 ### [0.5.71](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.70...@pojo-router/core@0.5.71) (2023-03-13)
 
 ### 📦 Package
 
-* Update `webpack` to v5.76.1 ([#1876](https://github.com/ntucker/anansi/issues/1876)) ([16341ef](https://github.com/ntucker/anansi/commit/16341efd8bc5e3a5811d88dbf575cca77ef03cc4))
+- Update `webpack` to v5.76.1 ([#1876](https://github.com/ntucker/anansi/issues/1876)) ([16341ef](https://github.com/ntucker/anansi/commit/16341efd8bc5e3a5811d88dbf575cca77ef03cc4))
 
 ### [0.5.70](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.69...@pojo-router/core@0.5.70) (2023-03-09)
 
 ### 📦 Package
 
-* Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
-* Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
-* Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
-* Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
+- Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
+- Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
+- Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
+- Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
 
 ### [0.5.69](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.68...@pojo-router/core@0.5.69) (2023-03-05)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
-* Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
+- Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
+- Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
 
 ### [0.5.68](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.67...@pojo-router/core@0.5.68) (2023-02-28)
 
@@ -299,19 +305,19 @@
 
 ### 🐛 Bug Fix
 
-* Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
+- Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
 
 ### [0.5.63](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.62...@pojo-router/core@0.5.63) (2023-02-26)
 
 ### 💅 Enhancement
 
-* Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
-* Use fully qualified module names at import ([159a96e](https://github.com/ntucker/anansi/commit/159a96ea0bf57917325e842cd0584e3a8cfb83df))
+- Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
+- Use fully qualified module names at import ([159a96e](https://github.com/ntucker/anansi/commit/159a96ea0bf57917325e842cd0584e3a8cfb83df))
 
 ### 📦 Package
 
-* Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
-* Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
+- Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
+- Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
 
 ### [0.5.62](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.61...@pojo-router/core@0.5.62) (2023-02-14)
 
@@ -325,20 +331,20 @@
 
 ### 📦 Package
 
-* Update JS test packages to ^29.4.2 ([#1842](https://github.com/ntucker/anansi/issues/1842)) ([2a8c989](https://github.com/ntucker/anansi/commit/2a8c989127268c46524558f4c69714df20d6ca58))
+- Update JS test packages to ^29.4.2 ([#1842](https://github.com/ntucker/anansi/issues/1842)) ([2a8c989](https://github.com/ntucker/anansi/commit/2a8c989127268c46524558f4c69714df20d6ca58))
 
 ### [0.5.59](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.58...@pojo-router/core@0.5.59) (2023-01-30)
 
 ### 💅 Enhancement
 
-* lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
+- lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
 
 ### [0.5.58](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.57...@pojo-router/core@0.5.58) (2023-01-29)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
-* Update JS test packages ([#1827](https://github.com/ntucker/anansi/issues/1827)) ([b0eb13e](https://github.com/ntucker/anansi/commit/b0eb13efce78005fe179169d5e9e21d0e9d5bd57))
+- Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
+- Update JS test packages ([#1827](https://github.com/ntucker/anansi/issues/1827)) ([b0eb13e](https://github.com/ntucker/anansi/commit/b0eb13efce78005fe179169d5e9e21d0e9d5bd57))
 
 ### [0.5.57](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.56...@pojo-router/core@0.5.57) (2023-01-22)
 
@@ -348,8 +354,8 @@
 
 ### 📦 Package
 
-* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
-* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+- Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+- Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
 
 ### [0.5.55](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.54...@pojo-router/core@0.5.55) (2023-01-07)
 
@@ -359,13 +365,13 @@
 
 ### 📦 Package
 
-* Update `@babel/core` to v7.20.12 ([#1802](https://github.com/ntucker/anansi/issues/1802)) ([9074ddf](https://github.com/ntucker/anansi/commit/9074ddfad34ef219db99a29ed4941d4da56238c2))
+- Update `@babel/core` to v7.20.12 ([#1802](https://github.com/ntucker/anansi/issues/1802)) ([9074ddf](https://github.com/ntucker/anansi/commit/9074ddfad34ef219db99a29ed4941d4da56238c2))
 
 ### [0.5.53](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.52...@pojo-router/core@0.5.53) (2022-12-22)
 
 ### 📦 Package
 
-* Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
+- Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
 
 ### [0.5.52](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.51...@pojo-router/core@0.5.52) (2022-12-17)
 
@@ -375,23 +381,23 @@
 
 ### 📦 Package
 
-* Update webpack packages ([#1787](https://github.com/ntucker/anansi/issues/1787)) ([d297255](https://github.com/ntucker/anansi/commit/d29725594e94e3f30b7648c62715eb863534261f))
+- Update webpack packages ([#1787](https://github.com/ntucker/anansi/issues/1787)) ([d297255](https://github.com/ntucker/anansi/commit/d29725594e94e3f30b7648c62715eb863534261f))
 
 ### [0.5.50](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.49...@pojo-router/core@0.5.50) (2022-12-02)
 
 ### 💅 Enhancement
 
-* Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
+- Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
 
 ### [0.5.49](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.48...@pojo-router/core@0.5.49) (2022-12-02)
 
 ### 💅 Enhancement
 
-* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+- Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
 
 ### 📦 Package
 
-* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+- Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
 
 ### [0.5.48](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.47...@pojo-router/core@0.5.48) (2022-11-23)
 
@@ -401,7 +407,7 @@
 
 ### 📦 Package
 
-* Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
+- Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
 
 ### [0.5.46](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.45...@pojo-router/core@0.5.46) (2022-11-15)
 
@@ -411,20 +417,20 @@
 
 ### 📦 Package
 
-* Update JS test packages to ^29.3.1 ([#1748](https://github.com/ntucker/anansi/issues/1748)) ([e9ba003](https://github.com/ntucker/anansi/commit/e9ba0034b4aa8e52b02a7f4d7637b21b8755cb1a))
-* Update webpack packages ([#1747](https://github.com/ntucker/anansi/issues/1747)) ([666c74a](https://github.com/ntucker/anansi/commit/666c74a6b19920293e182526a42b7343dbf25c05))
+- Update JS test packages to ^29.3.1 ([#1748](https://github.com/ntucker/anansi/issues/1748)) ([e9ba003](https://github.com/ntucker/anansi/commit/e9ba0034b4aa8e52b02a7f4d7637b21b8755cb1a))
+- Update webpack packages ([#1747](https://github.com/ntucker/anansi/issues/1747)) ([666c74a](https://github.com/ntucker/anansi/commit/666c74a6b19920293e182526a42b7343dbf25c05))
 
 ### [0.5.44](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.43...@pojo-router/core@0.5.44) (2022-11-08)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
+- Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
 
 ### [0.5.43](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.42...@pojo-router/core@0.5.43) (2022-11-06)
 
 ### 📦 Package
 
-* Update babel packages ([#1736](https://github.com/ntucker/anansi/issues/1736)) ([2ec01f5](https://github.com/ntucker/anansi/commit/2ec01f585dc90f5d366e7d1626a3f8b1cf7b752c))
+- Update babel packages ([#1736](https://github.com/ntucker/anansi/issues/1736)) ([2ec01f5](https://github.com/ntucker/anansi/commit/2ec01f585dc90f5d366e7d1626a3f8b1cf7b752c))
 
 ### [0.5.42](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.41...@pojo-router/core@0.5.42) (2022-11-03)
 
@@ -438,25 +444,25 @@
 
 ### 📦 Package
 
-* Update JS test packages to ^29.2.2 ([#1721](https://github.com/ntucker/anansi/issues/1721)) ([9e90458](https://github.com/ntucker/anansi/commit/9e90458c041af252d170b77028628962fc7314a4))
+- Update JS test packages to ^29.2.2 ([#1721](https://github.com/ntucker/anansi/issues/1721)) ([9e90458](https://github.com/ntucker/anansi/commit/9e90458c041af252d170b77028628962fc7314a4))
 
 ### [0.5.39](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.38...@pojo-router/core@0.5.39) (2022-10-21)
 
 ### 📦 Package
 
-* Update babel packages to v7.19.6 ([#1715](https://github.com/ntucker/anansi/issues/1715)) ([6be2305](https://github.com/ntucker/anansi/commit/6be2305008f4fd7d16dddc2f6b90b88f88372394))
+- Update babel packages to v7.19.6 ([#1715](https://github.com/ntucker/anansi/issues/1715)) ([6be2305](https://github.com/ntucker/anansi/commit/6be2305008f4fd7d16dddc2f6b90b88f88372394))
 
 ### [0.5.38](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.37...@pojo-router/core@0.5.38) (2022-10-19)
 
 ### 📦 Package
 
-* Update JS test packages ([#1712](https://github.com/ntucker/anansi/issues/1712)) ([4713fca](https://github.com/ntucker/anansi/commit/4713fcad5477ca82daedce1b0f951b4df4e5ae0b))
+- Update JS test packages ([#1712](https://github.com/ntucker/anansi/issues/1712)) ([4713fca](https://github.com/ntucker/anansi/commit/4713fcad5477ca82daedce1b0f951b4df4e5ae0b))
 
 ### [0.5.37](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.36...@pojo-router/core@0.5.37) (2022-10-15)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.2.0 ([#1699](https://github.com/ntucker/anansi/issues/1699)) ([04b985a](https://github.com/ntucker/anansi/commit/04b985a6d58d808f942355e409c38cd63c381c4b))
+- Update JS test packages to ^29.2.0 ([#1699](https://github.com/ntucker/anansi/issues/1699)) ([04b985a](https://github.com/ntucker/anansi/commit/04b985a6d58d808f942355e409c38cd63c381c4b))
 
 ### [0.5.36](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.35...@pojo-router/core@0.5.36) (2022-10-10)
 
@@ -470,14 +476,14 @@
 
 ### 📦 Package
 
-* Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
+- Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
 
 ### [0.5.33](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.32...@pojo-router/core@0.5.33) (2022-09-29)
 
 ### 📦 Package
 
-* Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
-* Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
+- Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
+- Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
 
 ### [0.5.32](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.31...@pojo-router/core@0.5.32) (2022-09-25)
 
@@ -491,13 +497,13 @@
 
 ### 📦 Package
 
-* Update babel packages to v7.19.1 ([#1662](https://github.com/ntucker/anansi/issues/1662)) ([28c2a3f](https://github.com/ntucker/anansi/commit/28c2a3f10b72f3474092a8f2fa51318941336d5b))
+- Update babel packages to v7.19.1 ([#1662](https://github.com/ntucker/anansi/issues/1662)) ([28c2a3f](https://github.com/ntucker/anansi/commit/28c2a3f10b72f3474092a8f2fa51318941336d5b))
 
 ### [0.5.29](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.28...@pojo-router/core@0.5.29) (2022-09-14)
 
 ### 📦 Package
 
-* Update JS test packages ([#1652](https://github.com/ntucker/anansi/issues/1652)) ([14bffc4](https://github.com/ntucker/anansi/commit/14bffc43cc4dd455eead6b72853c4a9b56922e58))
+- Update JS test packages ([#1652](https://github.com/ntucker/anansi/issues/1652)) ([14bffc4](https://github.com/ntucker/anansi/commit/14bffc43cc4dd455eead6b72853c4a9b56922e58))
 
 ### [0.5.28](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.27...@pojo-router/core@0.5.28) (2022-09-08)
 
@@ -507,21 +513,21 @@
 
 ### 📦 Package
 
-* Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
-* Update JS test packages to ^29.0.2 ([#1640](https://github.com/ntucker/anansi/issues/1640)) ([102b01a](https://github.com/ntucker/anansi/commit/102b01a5c30b3df270e1b73062acaee2e9b1c774))
+- Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
+- Update JS test packages to ^29.0.2 ([#1640](https://github.com/ntucker/anansi/issues/1640)) ([102b01a](https://github.com/ntucker/anansi/commit/102b01a5c30b3df270e1b73062acaee2e9b1c774))
 
 ### [0.5.26](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.25...@pojo-router/core@0.5.26) (2022-08-31)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.0.1 ([#1634](https://github.com/ntucker/anansi/issues/1634)) ([8e91a00](https://github.com/ntucker/anansi/commit/8e91a00c968f677a6a1505ed4f7f7a15db288d81))
+- Update JS test packages to ^29.0.1 ([#1634](https://github.com/ntucker/anansi/issues/1634)) ([8e91a00](https://github.com/ntucker/anansi/commit/8e91a00c968f677a6a1505ed4f7f7a15db288d81))
 
 ### [0.5.25](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.24...@pojo-router/core@0.5.25) (2022-08-25)
 
 ### 📦 Package
 
-* Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
-* Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
+- Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
+- Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
 
 ### [0.5.24](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.23...@pojo-router/core@0.5.24) (2022-08-21)
 
@@ -531,7 +537,7 @@
 
 ### 📦 Package
 
-* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+- Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
 
 ### [0.5.22](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.21...@pojo-router/core@0.5.22) (2022-08-04)
 
@@ -541,7 +547,7 @@
 
 ### 📦 Package
 
-* Update babel packages to v7.18.10 ([#1603](https://github.com/ntucker/anansi/issues/1603)) ([bbaa15c](https://github.com/ntucker/anansi/commit/bbaa15c9e9c1e07479568acfb8e91a6ec4692833))
+- Update babel packages to v7.18.10 ([#1603](https://github.com/ntucker/anansi/issues/1603)) ([bbaa15c](https://github.com/ntucker/anansi/commit/bbaa15c9e9c1e07479568acfb8e91a6ec4692833))
 
 ### [0.5.20](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.19...@pojo-router/core@0.5.20) (2022-07-30)
 
@@ -563,13 +569,13 @@
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
+- Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
 
 ### [0.5.15](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.14...@pojo-router/core@0.5.15) (2022-07-16)
 
 ### 📦 Package
 
-* Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
+- Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
 
 ### [0.5.14](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.13...@pojo-router/core@0.5.14) (2022-07-08)
 
@@ -579,8 +585,8 @@
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
-* Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
+- Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
+- Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
 
 ### [0.5.12](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.11...@pojo-router/core@0.5.12) (2022-06-23)
 
@@ -590,19 +596,19 @@
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+- Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
 
 ### [0.5.10](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.9...@pojo-router/core@0.5.10) (2022-06-13)
 
 ### 📦 Package
 
-* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+- Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
 
 ### [0.5.9](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.8...@pojo-router/core@0.5.9) (2022-06-09)
 
 ### 📦 Package
 
-* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+- Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
 
 ### [0.5.8](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.7...@pojo-router/core@0.5.8) (2022-05-29)
 
@@ -624,7 +630,7 @@
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
+- Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
 
 ### [0.5.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.5.2...@pojo-router/core@0.5.3) (2022-05-24)
 
@@ -638,13 +644,13 @@
 
 ### 📦 Package
 
-* Update babel monorepo ([#1515](https://github.com/ntucker/anansi/issues/1515)) ([9d51b13](https://github.com/ntucker/anansi/commit/9d51b13218a67c17cfef56a1be88ac4af7933d03))
+- Update babel monorepo ([#1515](https://github.com/ntucker/anansi/issues/1515)) ([9d51b13](https://github.com/ntucker/anansi/commit/9d51b13218a67c17cfef56a1be88ac4af7933d03))
 
 ## [0.5.0](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.4.3...@pojo-router/core@0.5.0) (2022-05-18)
 
 ### 🚀 Features
 
-* Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
+- Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
 
 ### [0.4.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.4.2...@pojo-router/core@0.4.3) (2022-05-18)
 
@@ -654,9 +660,9 @@
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1494](https://github.com/ntucker/anansi/issues/1494)) ([d6cef4c](https://github.com/ntucker/anansi/commit/d6cef4ce2c190caddb5e4c7de654b5f1d32a4dd3))
-* Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
-* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+- Update all non-major dependencies ([#1494](https://github.com/ntucker/anansi/issues/1494)) ([d6cef4c](https://github.com/ntucker/anansi/commit/d6cef4ce2c190caddb5e4c7de654b5f1d32a4dd3))
+- Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
+- Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
 
 ### [0.4.1](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.4.0...@pojo-router/core@0.4.1) (2022-05-04)
 
@@ -666,17 +672,17 @@
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* Requires TypeScript 4.3 and Jest 28
+- Requires TypeScript 4.3 and Jest 28
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com>
 Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 ### 📦 Package
 
-* Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
-* Update jest monorepo to ^28.0.2 ([#1484](https://github.com/ntucker/anansi/issues/1484)) ([0792dbf](https://github.com/ntucker/anansi/commit/0792dbf9e9fe2c6b22eb5414ec2a7c7aaf1d9e48))
-* Update jest monorepo to ^28.0.3 ([#1486](https://github.com/ntucker/anansi/issues/1486)) ([a5b325a](https://github.com/ntucker/anansi/commit/a5b325af0166351f40c421d4a3a0bef59f6d1218))
-* Update jest monorepo to v28 (major) ([#1479](https://github.com/ntucker/anansi/issues/1479)) ([06338de](https://github.com/ntucker/anansi/commit/06338de8bf871945dac4b6b35155e49fd062bfdb))
+- Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
+- Update jest monorepo to ^28.0.2 ([#1484](https://github.com/ntucker/anansi/issues/1484)) ([0792dbf](https://github.com/ntucker/anansi/commit/0792dbf9e9fe2c6b22eb5414ec2a7c7aaf1d9e48))
+- Update jest monorepo to ^28.0.3 ([#1486](https://github.com/ntucker/anansi/issues/1486)) ([a5b325a](https://github.com/ntucker/anansi/commit/a5b325af0166351f40c421d4a3a0bef59f6d1218))
+- Update jest monorepo to v28 (major) ([#1479](https://github.com/ntucker/anansi/issues/1479)) ([06338de](https://github.com/ntucker/anansi/commit/06338de8bf871945dac4b6b35155e49fd062bfdb))
 
 ### [0.3.12](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.3.11...@pojo-router/core@0.3.12) (2022-04-22)
 
@@ -690,8 +696,8 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 ### 📦 Package
 
-* Update `@types/react` to v18 ([#1462](https://github.com/ntucker/anansi/issues/1462)) ([bce4fd0](https://github.com/ntucker/anansi/commit/bce4fd0df17a40e8358e6dd66a0c8d413b70e1e8))
-* Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
+- Update `@types/react` to v18 ([#1462](https://github.com/ntucker/anansi/issues/1462)) ([bce4fd0](https://github.com/ntucker/anansi/commit/bce4fd0df17a40e8358e6dd66a0c8d413b70e1e8))
+- Update babel monorepo to v7.17.9 ([#1459](https://github.com/ntucker/anansi/issues/1459)) ([57a3221](https://github.com/ntucker/anansi/commit/57a3221e07af845ff732c742af83abc5be3da19e))
 
 ### [0.3.9](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.3.8...@pojo-router/core@0.3.9) (2022-03-30)
 
@@ -705,27 +711,27 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 ### 📦 Package
 
-* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
-* Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
+- Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+- Update babel monorepo ([#1442](https://github.com/ntucker/anansi/issues/1442)) ([5939396](https://github.com/ntucker/anansi/commit/59393967c70815608c23daf1e5b2a5b7e000d1b7))
 
 ### [0.3.5](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.3.3...@pojo-router/core@0.3.5) (2022-03-09)
 
 ### 📦 Package
 
-* Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
+- Update `@babel/cli` to v7.17.6 ([#1429](https://github.com/ntucker/anansi/issues/1429)) ([3f210d8](https://github.com/ntucker/anansi/commit/3f210d8cdf73156f119833e1e723e9e35e9fdd7e))
 
 ### [0.3.3](https://github.com/ntucker/anansi/compare/@pojo-router/core@0.3.0...@pojo-router/core@0.3.3) (2022-02-28)
 
 ### 💅 Enhancement
 
-* Remove initialPath, get from history ([41225c7](https://github.com/ntucker/anansi/commit/41225c76bfa9b4371d29c4f43d2cd7a695736fb2))
+- Remove initialPath, get from history ([41225c7](https://github.com/ntucker/anansi/commit/41225c76bfa9b4371d29c4f43d2cd7a695736fb2))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1426](https://github.com/ntucker/anansi/issues/1426)) ([00372c1](https://github.com/ntucker/anansi/commit/00372c104ecd4a226de3a10f46d608016342f96f))
+- Update all non-major dependencies ([#1426](https://github.com/ntucker/anansi/issues/1426)) ([00372c1](https://github.com/ntucker/anansi/commit/00372c104ecd4a226de3a10f46d608016342f96f))
 
 ## [0.3.0] (2022-02-21)
 
 ### 🚀 Features
 
-* Add router and react-18 demo ([#1425](https://github.com/ntucker/anansi/issues/1425)) ([32e922c](https://github.com/ntucker/anansi/commit/32e922cb48d365128699f84adbcfa1a9d3c3f243))
+- Add router and react-18 demo ([#1425](https://github.com/ntucker/anansi/issues/1425)) ([32e922c](https://github.com/ntucker/anansi/commit/32e922cb48d365128699f84adbcfa1a9d3c3f243))
