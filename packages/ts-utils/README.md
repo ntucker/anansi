@@ -4,7 +4,7 @@ Helpers for reading TypeScript configuration with the TypeScript compiler API.
 
 ## Installation
 ```
-yarn add --dev @anansi/ts-utils typescript
+yarn add --dev @anansi/ts-utils typescript@^6
 ```
 
 Requires the `typescript` JS API (TypeScript 3–6).
