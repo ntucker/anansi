@@ -175,8 +175,7 @@
       "matchPackageNames": [
         "@anansi/**",
         "@data-client/**",
-        "@pojo-router/**",
-        "conventional-changelog-anansi"
+        "@pojo-router/**"
       ],
       "minimumReleaseAge": null
     }

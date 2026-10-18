@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [4.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fcli%403.1.107...%40anansi%2Fcli%404.0.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
@@ -1556,7 +1553,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * Open default visual editor upon completion ([7173962](https://github.com/ntucker/anansi/commit/71739626a6bb791092875317d364ea22e771414c))
 
-## 0.2.0 (2021-05-02)
+## [0.2.0] (2021-05-02)
 
 ### 🚀 Features
 

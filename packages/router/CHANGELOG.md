@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [0.11.0](https://github.com/ntucker/anansi/compare/%40anansi%2Frouter%400.10.24...%40anansi%2Frouter%400.11.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
@@ -770,7 +767,7 @@ Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 * Update all non-major dependencies ([#1426](https://github.com/ntucker/anansi/issues/1426)) ([00372c1](https://github.com/ntucker/anansi/commit/00372c104ecd4a226de3a10f46d608016342f96f))
 
-## 0.2.0 (2022-02-21)
+## [0.2.0] (2022-02-21)
 
 ### 🚀 Features
 

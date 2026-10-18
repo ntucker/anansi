@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [2.0.0](https://github.com/ntucker/anansi/compare/%40anansi%2Feslint-plugin%401.0.74...%40anansi%2Feslint-plugin%402.0.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
@@ -1658,7 +1655,7 @@ eslint import rules
 
 * Link to monorepo directories in npm repo listing ([b7dc1d5](https://github.com/ntucker/anansi/commit/b7dc1d5b1a6f3b163c9d155e3847c8d079f6b4cf))
 
-## 0.7.0 (2019-12-09)
+## [0.7.0] (2019-12-09)
 
 ### 🚀 Features
 
