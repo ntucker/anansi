@@ -5,9 +5,9 @@
  * and creates one if not. Gated in CI by `has-changesets == 'false'` so it only
  * runs after the Version Packages PR is merged and publish executes.
  */
-import { execSync } from 'child_process';
-import { readdirSync, readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { execSync } from 'node:child_process';
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 const REPO = 'ntucker/anansi';
 // GitHub's "Latest" release, which the repo page and /releases/latest show
@@ -17,12 +17,9 @@ const DRY_RUN = process.argv.includes('--dry-run');
 const TARGET = process.env.GITHUB_SHA ? ` --target ${process.env.GITHUB_SHA}` : '';
 
 function escapeRegExp(str) {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return str.replace(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 }
 
-/**
- * Extract changelog content for a specific version from CHANGELOG.md
- */
 function getChangelogForVersion(packageDir, version) {
   const changelogPath = join(packageDir, 'CHANGELOG.md');
   if (!existsSync(changelogPath)) return '';
@@ -32,16 +29,19 @@ function getChangelogForVersion(packageDir, version) {
 
   let capturing = false;
   const changelog = [];
+  const versionHeading = new RegExp(
+    String.raw`^## ${escapeRegExp(version)}\s*$`,
+  );
 
   for (const line of lines) {
-    if (line.match(new RegExp(`^## ${escapeRegExp(version)}\\s*$`))) {
+    if (versionHeading.test(line)) {
       capturing = true;
       continue;
     }
     // Stop at the next release heading. Changesets writes `## 1.2.3`.
     // Lerna wrote `## [0.23.0](...)`; a digit-only pattern would swallow
     // that history into the new release notes.
-    if (capturing && line.match(/^## \[?\d+\.\d+/)) {
+    if (capturing && /^## \[?\d+\.\d+/.test(line)) {
       break;
     }
     if (capturing) {
@@ -76,7 +76,7 @@ function isLatest(name, version) {
   return name === LATEST_PACKAGE && !version.includes('-');
 }
 
-function createRelease(tag, name, body, latest) {
+function createRelease(tag, body, latest) {
   if (DRY_RUN) {
     console.log(
       `  [dry-run] Would create release: ${tag}${latest ? ' (Latest)' : ''}`,
@@ -84,19 +84,18 @@ function createRelease(tag, name, body, latest) {
     console.log(
       `  Body preview: ${body.slice(0, 200)}${body.length > 200 ? '...' : ''}`,
     );
-    return true;
+    return;
   }
   console.log(`Creating release: ${tag}`);
   try {
     execSync(
-      `gh release create "${tag}" --repo ${REPO} --title "${name}" --notes-file - --latest=${latest}${TARGET}`,
+      `gh release create "${tag}" --repo ${REPO} --title "${tag}" --notes-file - --latest=${latest}${TARGET}`,
       {
         input: body,
         stdio: ['pipe', 'inherit', 'inherit'],
       },
     );
     console.log(`  ✓ Created ${tag}`);
-    return true;
   } catch (error) {
     console.error(`  ✗ Failed to create ${tag}:`, error.message);
     throw error;
@@ -139,17 +138,18 @@ async function main() {
 
     const tag = `${pkg.name}@${pkg.version}`;
     const exists = releaseExists(tag);
+    const latest = isLatest(pkg.name, pkg.version);
 
     if (exists) {
       skippedCount++;
     } else {
       const changelog = getChangelogForVersion(packageDir, pkg.version);
       const body = changelog || `Release ${pkg.name}@${pkg.version}`;
-      createRelease(tag, tag, body, isLatest(pkg.name, pkg.version));
+      createRelease(tag, body, latest);
       createdCount++;
     }
 
-    if (exists && isLatest(pkg.name, pkg.version)) markLatest(tag);
+    if (exists && latest) markLatest(tag);
   }
 
   console.log(
@@ -157,7 +157,9 @@ async function main() {
   );
 }
 
-main().catch(err => {
+try {
+  await main();
+} catch (err) {
   console.error(err);
   process.exit(1);
-});
+}
