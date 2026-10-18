@@ -1,15 +1,25 @@
 # Change Log
 
+## 0.23.1
+
+### Patch Changes
+
+- [#3202](https://github.com/ntucker/anansi/pull/3202) [`e5eebb2`](https://github.com/ntucker/anansi/commit/e5eebb215990c2445b91e6adcb3af60f07768aeb) - `anansi serve -a` serves build assets from the output directory only. Request paths such as `/../file` can no longer read files outside it ([#3193](https://github.com/ntucker/anansi/issues/3193)).
+
+- [#3202](https://github.com/ntucker/anansi/pull/3202) [`e5eebb2`](https://github.com/ntucker/anansi/commit/e5eebb215990c2445b91e6adcb3af60f07768aeb) - Update the `react` devDependency to 19.3.1. `@anansi/core` also updates `react-dom` ([#3199](https://github.com/ntucker/anansi/issues/3199)).
+- Updated dependencies [[`e5eebb2`](https://github.com/ntucker/anansi/commit/e5eebb215990c2445b91e6adcb3af60f07768aeb)]:
+  - @anansi/router@0.11.1
+
 ## [0.23.0](https://github.com/ntucker/anansi/compare/%40anansi%2Fcore%400.22.12...%40anansi%2Fcore%400.23.0) (2026-10-13)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* @anansi/core requires Node >=22.15 and webpack >=5.101.
+- @anansi/core requires Node >=22.15 and webpack >=5.101.
   Custom devServer.setupMiddlewares and proxy configs run on express 5 and
   http-proxy-middleware 4: bare `*` routes need a named wildcard
   (`/{*splat}`), and proxy `bypass` is removed (use pathFilter/router).
-* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
-* namedPaths use path-to-regexp v8 syntax.
+- Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131))
+- namedPaths use path-to-regexp v8 syntax.
   - Optional params: `/users/:id?` -> `/users{/:id}`
   - Repeating params: `/:path+` -> `/*path`, `/:path*` -> `{/*path}`
   - Unnamed/regex groups removed: `/(.*)` -> `{/*rest}`, `/:id(\d+)` -> `/:id`
@@ -18,425 +28,425 @@
     are encoded with encodeURIComponent
   - NamedPath options follow v8 (strict -> trailing; start, endsWith,
     prefixes removed)
-* Requires babel 8
+- Requires babel 8
 
 ### 🚀 Features
 
-* **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
+- **cli:** add `anansi guide` to teach agents how to use anansi ([#3132](https://github.com/ntucker/anansi/issues/3132)) ([cfaeb16](https://github.com/ntucker/anansi/commit/cfaeb160ddc285bd8190db8a37373e65c2fa69c0)), references [#3133](https://github.com/ntucker/anansi/issues/3133)
 
 ### 📦 Package
 
-* Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
-* Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
-* Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
-* Update `ora` to v9 ([#3181](https://github.com/ntucker/anansi/issues/3181)) ([37fc876](https://github.com/ntucker/anansi/commit/37fc87643801be84fbf3be3d8d327958f94b186b))
-* Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
-* Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
-* Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
-* Update validation packages ([#3090](https://github.com/ntucker/anansi/issues/3090)) ([2260f50](https://github.com/ntucker/anansi/commit/2260f50acf72b85c659488228fe7e6d56978b12a))
-* Update webpack packages ([#3096](https://github.com/ntucker/anansi/issues/3096)) ([67a80c5](https://github.com/ntucker/anansi/commit/67a80c5b40aa9270eaeb34f21ea06f51da26fafe))
-* Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
-* Upgrade webpack-dev-server to v6 ([#3138](https://github.com/ntucker/anansi/issues/3138)) ([1e37cd6](https://github.com/ntucker/anansi/commit/1e37cd6bb84e11c16eaf8cbb41b5a610f6180180))
+- Bump dependencies flagged by yarn npm audit ([#3131](https://github.com/ntucker/anansi/issues/3131)) ([2cd238f](https://github.com/ntucker/anansi/commit/2cd238f83f88cbbc198967f42adbbe9bae220e49))
+- Replace chalk with node:util styleText ([#3183](https://github.com/ntucker/anansi/issues/3183)) ([6a71fba](https://github.com/ntucker/anansi/commit/6a71fbaa7f5cf70b994b165129489c27fa91fdfb))
+- Update `@types/node` to v26 ([#3186](https://github.com/ntucker/anansi/issues/3186)) ([fcce541](https://github.com/ntucker/anansi/commit/fcce541585ccdd0eca385e9d4808342db721f9d9))
+- Update `ora` to v9 ([#3181](https://github.com/ntucker/anansi/issues/3181)) ([37fc876](https://github.com/ntucker/anansi/commit/37fc87643801be84fbf3be3d8d327958f94b186b))
+- Update all non-major dependencies ([#3152](https://github.com/ntucker/anansi/issues/3152)) ([8d1ab90](https://github.com/ntucker/anansi/commit/8d1ab906bbb7fa5095295dc03507fa8c28b51029))
+- Update babel packages (major) ([#3084](https://github.com/ntucker/anansi/issues/3084)) ([2aa8a8f](https://github.com/ntucker/anansi/commit/2aa8a8f50dfcc071ac38d7ad5a1095056e4c5ecb))
+- Update react ([#3155](https://github.com/ntucker/anansi/issues/3155)) ([9a088f8](https://github.com/ntucker/anansi/commit/9a088f8b592d309c99bc48fbc6ba8cb1bd622ba5))
+- Update validation packages ([#3090](https://github.com/ntucker/anansi/issues/3090)) ([2260f50](https://github.com/ntucker/anansi/commit/2260f50acf72b85c659488228fe7e6d56978b12a))
+- Update webpack packages ([#3096](https://github.com/ntucker/anansi/issues/3096)) ([67a80c5](https://github.com/ntucker/anansi/commit/67a80c5b40aa9270eaeb34f21ea06f51da26fafe))
+- Upgrade path-to-regexp to v8 in @pojo-router/core ([#3187](https://github.com/ntucker/anansi/issues/3187)) ([33b9601](https://github.com/ntucker/anansi/commit/33b9601472fcff8dd4887f12a7324d8de5aaef87))
+- Upgrade webpack-dev-server to v6 ([#3138](https://github.com/ntucker/anansi/issues/3138)) ([1e37cd6](https://github.com/ntucker/anansi/commit/1e37cd6bb84e11c16eaf8cbb41b5a610f6180180))
 
 ## [0.22.12](/github.com/ntucker/anansi/compare/@anansi/core@0.22.11...@anansi/core@0.22.12) (2026-06-21)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#3077](/github.com/ntucker/anansi/issues/3077)) ([2022d8e](/github.com/ntucker/anansi/commit/2022d8eb66c9cd001ae34a0534cc7ddf7af2b071))
-* Update react to v19.2.7 ([#3074](/github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](/github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
-* Update webpack packages ([#3069](/github.com/ntucker/anansi/issues/3069)) ([7a6fc9e](/github.com/ntucker/anansi/commit/7a6fc9e8c190c023717a098196fc4904951835da))
-* Update webpack packages ([#3081](/github.com/ntucker/anansi/issues/3081)) ([cb79e56](/github.com/ntucker/anansi/commit/cb79e569d833ebbe8f9f3d85bbc257e389444dec))
-* Update webpack packages to ^5.22.2 ([#3076](/github.com/ntucker/anansi/issues/3076)) ([c13f8d8](/github.com/ntucker/anansi/commit/c13f8d8c91239a9a9d1ce6173eee6186876b457d))
+- Update all non-major dependencies ([#3077](/github.com/ntucker/anansi/issues/3077)) ([2022d8e](/github.com/ntucker/anansi/commit/2022d8eb66c9cd001ae34a0534cc7ddf7af2b071))
+- Update react to v19.2.7 ([#3074](/github.com/ntucker/anansi/issues/3074)) ([7c4e3f6](/github.com/ntucker/anansi/commit/7c4e3f6b369b58bb5fae3730feb25b68c7b1a591))
+- Update webpack packages ([#3069](/github.com/ntucker/anansi/issues/3069)) ([7a6fc9e](/github.com/ntucker/anansi/commit/7a6fc9e8c190c023717a098196fc4904951835da))
+- Update webpack packages ([#3081](/github.com/ntucker/anansi/issues/3081)) ([cb79e56](/github.com/ntucker/anansi/commit/cb79e569d833ebbe8f9f3d85bbc257e389444dec))
+- Update webpack packages to ^5.22.2 ([#3076](/github.com/ntucker/anansi/issues/3076)) ([c13f8d8](/github.com/ntucker/anansi/commit/c13f8d8c91239a9a9d1ce6173eee6186876b457d))
 
 ## [0.22.11](/github.com/ntucker/anansi/compare/@anansi/core@0.22.10...@anansi/core@0.22.11) (2026-05-03)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#3044](/github.com/ntucker/anansi/issues/3044)) ([6c91d50](/github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
-* Update webpack packages ([#3039](/github.com/ntucker/anansi/issues/3039)) ([2495cbd](/github.com/ntucker/anansi/commit/2495cbdb30114e61d2dc3e9fc364004c32a1c4a3))
+- Update all non-major dependencies ([#3044](/github.com/ntucker/anansi/issues/3044)) ([6c91d50](/github.com/ntucker/anansi/commit/6c91d507d7403a33b3f3da3b22aefe41609752ff))
+- Update webpack packages ([#3039](/github.com/ntucker/anansi/issues/3039)) ([2495cbd](/github.com/ntucker/anansi/commit/2495cbdb30114e61d2dc3e9fc364004c32a1c4a3))
 
 ## [0.22.10](/github.com/ntucker/anansi/compare/@anansi/core@0.22.9...@anansi/core@0.22.10) (2026-04-10)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#3017](/github.com/ntucker/anansi/issues/3017)) ([88e783e](/github.com/ntucker/anansi/commit/88e783e831fa3205b90396de1c9f4d5ea68a2813))
-* Update react to v19.2.5 ([#3034](/github.com/ntucker/anansi/issues/3034)) ([c162d4f](/github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
+- Update all non-major dependencies ([#3017](/github.com/ntucker/anansi/issues/3017)) ([88e783e](/github.com/ntucker/anansi/commit/88e783e831fa3205b90396de1c9f4d5ea68a2813))
+- Update react to v19.2.5 ([#3034](/github.com/ntucker/anansi/issues/3034)) ([c162d4f](/github.com/ntucker/anansi/commit/c162d4f48a66d3001bd959e4421ae16b5d081f76))
 
 ## [0.22.9](/github.com/ntucker/anansi/compare/@anansi/core@0.22.8...@anansi/core@0.22.9) (2026-03-20)
 
 ### 📦 Package
 
-* Update `enhanced-resolve` to ^5.20.1 ([#3005](/github.com/ntucker/anansi/issues/3005)) ([3b665e0](/github.com/ntucker/anansi/commit/3b665e0fdcbb96b1596f895b01a73fbaeb392550))
+- Update `enhanced-resolve` to ^5.20.1 ([#3005](/github.com/ntucker/anansi/issues/3005)) ([3b665e0](/github.com/ntucker/anansi/commit/3b665e0fdcbb96b1596f895b01a73fbaeb392550))
 
 ## [0.22.8](/github.com/ntucker/anansi/compare/@anansi/core@0.22.7...@anansi/core@0.22.8) (2026-03-02)
 
 ### 📦 Package
 
-* Update webpack packages ([#2983](/github.com/ntucker/anansi/issues/2983)) ([6b515d5](/github.com/ntucker/anansi/commit/6b515d5f3ef1319485afb0494da62e2f50e6293f))
+- Update webpack packages ([#2983](/github.com/ntucker/anansi/issues/2983)) ([6b515d5](/github.com/ntucker/anansi/commit/6b515d5f3ef1319485afb0494da62e2f50e6293f))
 
 ## [0.22.7](/github.com/ntucker/anansi/compare/@anansi/core@0.22.6...@anansi/core@0.22.7) (2026-02-13)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2959](/github.com/ntucker/anansi/issues/2959)) ([3c30092](/github.com/ntucker/anansi/commit/3c3009250189ee4f6ff6536fe388016b30076f3c))
-* Update all non-major dependencies ([#2972](/github.com/ntucker/anansi/issues/2972)) ([e5d8b15](/github.com/ntucker/anansi/commit/e5d8b15ab5f4504487b59c3c87bd3302ae3c9869))
-* Update react to v19.2.4 ([#2957](/github.com/ntucker/anansi/issues/2957)) ([0923388](/github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
-* Update webpack packages ([#2968](/github.com/ntucker/anansi/issues/2968)) ([9eea8f7](/github.com/ntucker/anansi/commit/9eea8f7fa92b5d9453152b55b1f25271db7172f5))
+- Update all non-major dependencies ([#2959](/github.com/ntucker/anansi/issues/2959)) ([3c30092](/github.com/ntucker/anansi/commit/3c3009250189ee4f6ff6536fe388016b30076f3c))
+- Update all non-major dependencies ([#2972](/github.com/ntucker/anansi/issues/2972)) ([e5d8b15](/github.com/ntucker/anansi/commit/e5d8b15ab5f4504487b59c3c87bd3302ae3c9869))
+- Update react to v19.2.4 ([#2957](/github.com/ntucker/anansi/issues/2957)) ([0923388](/github.com/ntucker/anansi/commit/09233888b50c1ad49a8c6f5d3bd415cc125c4817))
+- Update webpack packages ([#2968](/github.com/ntucker/anansi/issues/2968)) ([9eea8f7](/github.com/ntucker/anansi/commit/9eea8f7fa92b5d9453152b55b1f25271db7172f5))
 
 ## [0.22.6](/github.com/ntucker/anansi/compare/@anansi/core@0.22.5...@anansi/core@0.22.6) (2026-01-23)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2952](/github.com/ntucker/anansi/issues/2952)) ([5cc4c4b](/github.com/ntucker/anansi/commit/5cc4c4b9046606c04dc12a68892275b4defa2bc1))
+- Update all non-major dependencies ([#2952](/github.com/ntucker/anansi/issues/2952)) ([5cc4c4b](/github.com/ntucker/anansi/commit/5cc4c4b9046606c04dc12a68892275b4defa2bc1))
 
 ## [0.22.5](/github.com/ntucker/anansi/compare/@anansi/core@0.22.4...@anansi/core@0.22.5) (2026-01-13)
 
 ### 📦 Package
 
-* Update webpack packages ([#2934](/github.com/ntucker/anansi/issues/2934)) ([2bad27a](/github.com/ntucker/anansi/commit/2bad27a4ab4831bf720a2abd48dff03be23c0fad))
+- Update webpack packages ([#2934](/github.com/ntucker/anansi/issues/2934)) ([2bad27a](/github.com/ntucker/anansi/commit/2bad27a4ab4831bf720a2abd48dff03be23c0fad))
 
 ## [0.22.4](/github.com/ntucker/anansi/compare/@anansi/core@0.22.3...@anansi/core@0.22.4) (2026-01-10)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2930](/github.com/ntucker/anansi/issues/2930)) ([6162e2b](/github.com/ntucker/anansi/commit/6162e2bfff24989e670d57e62ec93d6a1d42d839))
+- Update all non-major dependencies ([#2930](/github.com/ntucker/anansi/issues/2930)) ([6162e2b](/github.com/ntucker/anansi/commit/6162e2bfff24989e670d57e62ec93d6a1d42d839))
 
 ## [0.22.3](/github.com/ntucker/anansi/compare/@anansi/core@0.22.2...@anansi/core@0.22.3) (2026-01-02)
 
 ### 💅 Enhancement
 
-* Improve webpack proxy handling ([0413bc6](/github.com/ntucker/anansi/commit/0413bc6ff3ea9eb107d4ca5259c21e1b7efef29c))
+- Improve webpack proxy handling ([0413bc6](/github.com/ntucker/anansi/commit/0413bc6ff3ea9eb107d4ca5259c21e1b7efef29c))
 
 ### 📝 Documentation
 
-* Update readme ([b42d500](/github.com/ntucker/anansi/commit/b42d50069157979ac2c21fce92c4750f3219461a))
+- Update readme ([b42d500](/github.com/ntucker/anansi/commit/b42d50069157979ac2c21fce92c4750f3219461a))
 
 ## [0.22.2](/github.com/ntucker/anansi/compare/@anansi/core@0.22.1...@anansi/core@0.22.2) (2025-12-31)
 
 ### 🐛 Bug Fix
 
-* Prevent json serailization breaking out of script tag ([ea5ea35](/github.com/ntucker/anansi/commit/ea5ea35f08ffb14a1893456fb5087187e0e29545))
+- Prevent json serailization breaking out of script tag ([ea5ea35](/github.com/ntucker/anansi/commit/ea5ea35f08ffb14a1893456fb5087187e0e29545))
 
 ## [0.22.1](/github.com/ntucker/anansi/compare/@anansi/core@0.22.0...@anansi/core@0.22.1) (2025-12-21)
 
 ### 💅 Enhancement
 
-* Robust handling of json loading ([96abe1d](/github.com/ntucker/anansi/commit/96abe1d341c375031baff1394cc4a445e19b5711))
+- Robust handling of json loading ([96abe1d](/github.com/ntucker/anansi/commit/96abe1d341c375031baff1394cc4a445e19b5711))
 
 ### 🐛 Bug Fix
 
-* Antd server spout import ([14fa728](/github.com/ntucker/anansi/commit/14fa728a90b9765e37b58161a125d2191f79f1ba))
+- Antd server spout import ([14fa728](/github.com/ntucker/anansi/commit/14fa728a90b9765e37b58161a125d2191f79f1ba))
 
 ## [0.22.0](/github.com/ntucker/anansi/compare/@anansi/core@0.21.5...@anansi/core@0.22.0) (2025-12-14)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* // Client
-import {antdSpout} from '@anansi/core/antd';
+- // Client
+  import {antdSpout} from '@anansi/core/antd';
 
 // Server
 import {antdSpout} from '@anansi/core/antd/server';
 
-* Move antd spouts to own path '@anansi/core/antd' ([11b7b6b](/github.com/ntucker/anansi/commit/11b7b6bd19046911e2ebe694f4ba8920860ea253))
+- Move antd spouts to own path '@anansi/core/antd' ([11b7b6b](/github.com/ntucker/anansi/commit/11b7b6bd19046911e2ebe694f4ba8920860ea253))
 
 ## [0.21.5](/github.com/ntucker/anansi/compare/@anansi/core@0.21.4...@anansi/core@0.21.5) (2025-12-13)
 
 ### 🐛 Bug Fix
 
-* Do not require @ant-design/cssinjs ([15c11ae](/github.com/ntucker/anansi/commit/15c11aec7ac7191092685410cda257f11e451b70))
+- Do not require @ant-design/cssinjs ([15c11ae](/github.com/ntucker/anansi/commit/15c11aec7ac7191092685410cda257f11e451b70))
 
 ## [0.21.4](/github.com/ntucker/anansi/compare/@anansi/core@0.21.3...@anansi/core@0.21.4) (2025-12-12)
 
 ### 📦 Package
 
-* Update react to v19.2.2 ([#2904](/github.com/ntucker/anansi/issues/2904)) ([bd60070](/github.com/ntucker/anansi/commit/bd6007031129a628ecef29a8850a06ca88015663))
-* Update react to v19.2.3 ([#2906](/github.com/ntucker/anansi/issues/2906)) ([d8ca016](/github.com/ntucker/anansi/commit/d8ca01691c059e1add5791dfd9bf04785406c5d0))
-* Update webpack packages ([#2902](/github.com/ntucker/anansi/issues/2902)) ([5e324f5](/github.com/ntucker/anansi/commit/5e324f5e1a9a350bec85955053f2c4469c5e0a27))
+- Update react to v19.2.2 ([#2904](/github.com/ntucker/anansi/issues/2904)) ([bd60070](/github.com/ntucker/anansi/commit/bd6007031129a628ecef29a8850a06ca88015663))
+- Update react to v19.2.3 ([#2906](/github.com/ntucker/anansi/issues/2906)) ([d8ca016](/github.com/ntucker/anansi/commit/d8ca01691c059e1add5791dfd9bf04785406c5d0))
+- Update webpack packages ([#2902](/github.com/ntucker/anansi/issues/2902)) ([5e324f5](/github.com/ntucker/anansi/commit/5e324f5e1a9a350bec85955053f2c4469c5e0a27))
 
 ## [0.21.3](/github.com/ntucker/anansi/compare/@anansi/core@0.21.2...@anansi/core@0.21.3) (2025-12-07)
 
 ### 💅 Enhancement
 
-* ESM-only for non-node ([f6fb13b](/github.com/ntucker/anansi/commit/f6fb13b6486f4efe19fa0086cdfdbf01422018e2))
+- ESM-only for non-node ([f6fb13b](/github.com/ntucker/anansi/commit/f6fb13b6486f4efe19fa0086cdfdbf01422018e2))
 
 ### 📦 Package
 
-* Update react to v19.2.1 ([#2897](/github.com/ntucker/anansi/issues/2897)) ([7a85622](/github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
+- Update react to v19.2.1 ([#2897](/github.com/ntucker/anansi/issues/2897)) ([7a85622](/github.com/ntucker/anansi/commit/7a8562247df719f70bfe3772f27551b2fc30f2c1))
 
 ## [0.21.2](/github.com/ntucker/anansi/compare/@anansi/core@0.21.1...@anansi/core@0.21.2) (2025-12-03)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2889](/github.com/ntucker/anansi/issues/2889)) ([9251533](/github.com/ntucker/anansi/commit/9251533500612c62e99a8b012399ff0dd55c9ca3))
+- Update all non-major dependencies ([#2889](/github.com/ntucker/anansi/issues/2889)) ([9251533](/github.com/ntucker/anansi/commit/9251533500612c62e99a8b012399ff0dd55c9ca3))
 
 ## [0.21.1](/github.com/ntucker/anansi/compare/@anansi/core@0.21.0...@anansi/core@0.21.1) (2025-12-01)
 
 ### 💅 Enhancement
 
-* More gracefully handle all error cases to not crash and instead return error codes to client ([3efe938](/github.com/ntucker/anansi/commit/3efe9388ac7df29a4b6559617e385cce10434bfa))
+- More gracefully handle all error cases to not crash and instead return error codes to client ([3efe938](/github.com/ntucker/anansi/commit/3efe9388ac7df29a4b6559617e385cce10434bfa))
 
 ## [0.21.0](/github.com/ntucker/anansi/compare/@anansi/core@0.20.44...@anansi/core@0.21.0) (2025-11-30)
 
 ### 🚀 Features
 
-* Add navigatorSpout ([e847ab3](/github.com/ntucker/anansi/commit/e847ab3aa7cb31a495a7f9f64faf0b6dc60da353))
-* antd client spout ([d756ed2](/github.com/ntucker/anansi/commit/d756ed2568d9a216350224859ccb856b726ee3d4))
+- Add navigatorSpout ([e847ab3](/github.com/ntucker/anansi/commit/e847ab3aa7cb31a495a7f9f64faf0b6dc60da353))
+- antd client spout ([d756ed2](/github.com/ntucker/anansi/commit/d756ed2568d9a216350224859ccb856b726ee3d4))
 
 ### 💅 Enhancement
 
-* Preload lazy pages ([5ad047a](/github.com/ntucker/anansi/commit/5ad047ad46c39a748540852322fb82b10d411486))
+- Preload lazy pages ([5ad047a](/github.com/ntucker/anansi/commit/5ad047ad46c39a748540852322fb82b10d411486))
 
 ## [0.20.44](/github.com/ntucker/anansi/compare/@anansi/core@0.20.43...@anansi/core@0.20.44) (2025-11-29)
 
 ### 📦 Package
 
-* Update `@ant-design/cssinjs` to v2 ([#2886](/github.com/ntucker/anansi/issues/2886)) ([91b6ad8](/github.com/ntucker/anansi/commit/91b6ad84d42dccd1a4b689ec1cd710e0082cd746))
+- Update `@ant-design/cssinjs` to v2 ([#2886](/github.com/ntucker/anansi/issues/2886)) ([91b6ad8](/github.com/ntucker/anansi/commit/91b6ad84d42dccd1a4b689ec1cd710e0082cd746))
 
 ## [0.20.43](/github.com/ntucker/anansi/compare/@anansi/core@0.20.42...@anansi/core@0.20.43) (2025-11-20)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2874](/github.com/ntucker/anansi/issues/2874)) ([cb6a822](/github.com/ntucker/anansi/commit/cb6a8226a69cc70317e03e91b757238da54f850b))
+- Update all non-major dependencies ([#2874](/github.com/ntucker/anansi/issues/2874)) ([cb6a822](/github.com/ntucker/anansi/commit/cb6a8226a69cc70317e03e91b757238da54f850b))
 
 ## [0.20.42](/github.com/ntucker/anansi/compare/@anansi/core@0.20.41...@anansi/core@0.20.42) (2025-11-16)
 
 ### 📦 Package
 
-* Support even beta versions of data-client 0.15 ([861c940](/github.com/ntucker/anansi/commit/861c94069ab1827ae47ce0f6be46f6bbddc53ca7))
-* Upgrade data-client ([004fe88](/github.com/ntucker/anansi/commit/004fe884c7f39da7b661091edb03714f0fe3c1bc))
+- Support even beta versions of data-client 0.15 ([861c940](/github.com/ntucker/anansi/commit/861c94069ab1827ae47ce0f6be46f6bbddc53ca7))
+- Upgrade data-client ([004fe88](/github.com/ntucker/anansi/commit/004fe884c7f39da7b661091edb03714f0fe3c1bc))
 
 ## [0.20.41](/github.com/ntucker/anansi/compare/@anansi/core@0.20.40...@anansi/core@0.20.41) (2025-11-16)
 
 ### 💅 Enhancement
 
-* Support more versions ([6cda65f](/github.com/ntucker/anansi/commit/6cda65f84f226404cba2572ff263cda5362d41c2))
+- Support more versions ([6cda65f](/github.com/ntucker/anansi/commit/6cda65f84f226404cba2572ff263cda5362d41c2))
 
 ## [0.20.40](/github.com/ntucker/anansi/compare/@anansi/core@0.20.39...@anansi/core@0.20.40) (2025-11-15)
 
 ### 🐛 Bug Fix
 
-* Properly handle fallbacks to node_modules in multiple directories ([#2864](/github.com/ntucker/anansi/issues/2864)) ([136bcb5](/github.com/ntucker/anansi/commit/136bcb5a2a3a895931200f16eeccd7c3b071b11b))
+- Properly handle fallbacks to node_modules in multiple directories ([#2864](/github.com/ntucker/anansi/issues/2864)) ([136bcb5](/github.com/ntucker/anansi/commit/136bcb5a2a3a895931200f16eeccd7c3b071b11b))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2866](/github.com/ntucker/anansi/issues/2866)) ([930d19a](/github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
+- Update all non-major dependencies ([#2866](/github.com/ntucker/anansi/issues/2866)) ([930d19a](/github.com/ntucker/anansi/commit/930d19aa7ff8768fb2ba9f220543374435c25fbf))
 
 ## [0.20.39](/github.com/ntucker/anansi/compare/@anansi/core@0.20.38...@anansi/core@0.20.39) (2025-11-09)
 
 ### 🐛 Bug Fix
 
-* Update types ([7b36890](/github.com/ntucker/anansi/commit/7b3689004a45de9ac14091a130eae8177d4baed4))
+- Update types ([7b36890](/github.com/ntucker/anansi/commit/7b3689004a45de9ac14091a130eae8177d4baed4))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2858](/github.com/ntucker/anansi/issues/2858)) ([ea62701](/github.com/ntucker/anansi/commit/ea6270186daa1634ef55e2cbd158879bcfc6bbdd))
+- Update all non-major dependencies ([#2858](/github.com/ntucker/anansi/issues/2858)) ([ea62701](/github.com/ntucker/anansi/commit/ea6270186daa1634ef55e2cbd158879bcfc6bbdd))
 
 ## [0.20.38](/github.com/ntucker/anansi/compare/@anansi/core@0.20.37...@anansi/core@0.20.38) (2025-10-14)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2844](/github.com/ntucker/anansi/issues/2844)) ([389f248](/github.com/ntucker/anansi/commit/389f24899771ecd1b486c2fb8fc6452fe7e50777))
+- Update all non-major dependencies ([#2844](/github.com/ntucker/anansi/issues/2844)) ([389f248](/github.com/ntucker/anansi/commit/389f24899771ecd1b486c2fb8fc6452fe7e50777))
 
 ## [0.20.37](/github.com/ntucker/anansi/compare/@anansi/core@0.20.36...@anansi/core@0.20.37) (2025-10-02)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2838](/github.com/ntucker/anansi/issues/2838)) ([152611b](/github.com/ntucker/anansi/commit/152611bf67f9a22ae8e3370a3cfd105d56c6d4dd))
-* Update react ([#2837](/github.com/ntucker/anansi/issues/2837)) ([0c42708](/github.com/ntucker/anansi/commit/0c4270835910f937b3b4b03348933434334b2347))
+- Update all non-major dependencies ([#2838](/github.com/ntucker/anansi/issues/2838)) ([152611b](/github.com/ntucker/anansi/commit/152611bf67f9a22ae8e3370a3cfd105d56c6d4dd))
+- Update react ([#2837](/github.com/ntucker/anansi/issues/2837)) ([0c42708](/github.com/ntucker/anansi/commit/0c4270835910f937b3b4b03348933434334b2347))
 
 ## [0.20.36](/github.com/ntucker/anansi/compare/@anansi/core@0.20.35...@anansi/core@0.20.36) (2025-09-06)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2818](/github.com/ntucker/anansi/issues/2818)) ([87a61ad](/github.com/ntucker/anansi/commit/87a61ad457c044a3a4c9b10a3cd123f8bab891ef))
-* Update all non-major dependencies ([#2823](/github.com/ntucker/anansi/issues/2823)) ([d6c0da5](/github.com/ntucker/anansi/commit/d6c0da5558e123c34bdd51b54521d67951f19593))
-* Update webpack packages ([#2784](/github.com/ntucker/anansi/issues/2784)) ([5c69dd9](/github.com/ntucker/anansi/commit/5c69dd9a0a3ef4862d3e1d1400b0f718ea528002))
+- Update all non-major dependencies ([#2818](/github.com/ntucker/anansi/issues/2818)) ([87a61ad](/github.com/ntucker/anansi/commit/87a61ad457c044a3a4c9b10a3cd123f8bab891ef))
+- Update all non-major dependencies ([#2823](/github.com/ntucker/anansi/issues/2823)) ([d6c0da5](/github.com/ntucker/anansi/commit/d6c0da5558e123c34bdd51b54521d67951f19593))
+- Update webpack packages ([#2784](/github.com/ntucker/anansi/issues/2784)) ([5c69dd9](/github.com/ntucker/anansi/commit/5c69dd9a0a3ef4862d3e1d1400b0f718ea528002))
 
 ## [0.20.35](/github.com/ntucker/anansi/compare/@anansi/core@0.20.34...@anansi/core@0.20.35) (2025-08-09)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2807](/github.com/ntucker/anansi/issues/2807)) ([efa4f86](/github.com/ntucker/anansi/commit/efa4f86a4dd52ba1c8445a39ed7c4ef46d03fdb0))
+- Update all non-major dependencies ([#2807](/github.com/ntucker/anansi/issues/2807)) ([efa4f86](/github.com/ntucker/anansi/commit/efa4f86a4dd52ba1c8445a39ed7c4ef46d03fdb0))
 
 ## [0.20.34](/github.com/ntucker/anansi/compare/@anansi/core@0.20.33...@anansi/core@0.20.34) (2025-07-29)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2801](/github.com/ntucker/anansi/issues/2801)) ([28e1365](/github.com/ntucker/anansi/commit/28e1365cbecb2b4c992079a6e40984aaa437f881))
-* Update react to v19.1.1 ([#2799](/github.com/ntucker/anansi/issues/2799)) ([524c78c](/github.com/ntucker/anansi/commit/524c78c3032c3feef9b7fbdf1fae2dbe16350ef1))
+- Update all non-major dependencies ([#2801](/github.com/ntucker/anansi/issues/2801)) ([28e1365](/github.com/ntucker/anansi/commit/28e1365cbecb2b4c992079a6e40984aaa437f881))
+- Update react to v19.1.1 ([#2799](/github.com/ntucker/anansi/issues/2799)) ([524c78c](/github.com/ntucker/anansi/commit/524c78c3032c3feef9b7fbdf1fae2dbe16350ef1))
 
 ## [0.20.33](/github.com/ntucker/anansi/compare/@anansi/core@0.20.32...@anansi/core@0.20.33) (2025-07-22)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2794](/github.com/ntucker/anansi/issues/2794)) ([28668c3](/github.com/ntucker/anansi/commit/28668c3df24ef06a4c6211c0580db5dd0742892c))
+- Update all non-major dependencies ([#2794](/github.com/ntucker/anansi/issues/2794)) ([28668c3](/github.com/ntucker/anansi/commit/28668c3df24ef06a4c6211c0580db5dd0742892c))
 
 ## [0.20.32](/github.com/ntucker/anansi/compare/@anansi/core@0.20.31...@anansi/core@0.20.32) (2025-06-26)
 
 ### 🐛 Bug Fix
 
-* Serve cli when using node 24 ([1351a8f](/github.com/ntucker/anansi/commit/1351a8fe545df5d6d7778fede42e9bc71e378b96))
+- Serve cli when using node 24 ([1351a8f](/github.com/ntucker/anansi/commit/1351a8fe545df5d6d7778fede42e9bc71e378b96))
 
 ### 📦 Package
 
-* Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
-* Update all non-major dependencies ([#2769](/github.com/ntucker/anansi/issues/2769)) ([0bfb274](/github.com/ntucker/anansi/commit/0bfb2740995a6a9a6da341d335c9a36c32be2bc1))
-* Update all non-major dependencies ([#2781](/github.com/ntucker/anansi/issues/2781)) ([e492840](/github.com/ntucker/anansi/commit/e49284052f7b3dc2c0ed6d03031be70e19b9a977))
-* Update webpack packages ([#2754](/github.com/ntucker/anansi/issues/2754)) ([c0316b5](/github.com/ntucker/anansi/commit/c0316b549f31a4da8e9371f01ee37322145edc8c))
+- Update `@types/node` to v24 ([#2773](/github.com/ntucker/anansi/issues/2773)) ([a3b5913](/github.com/ntucker/anansi/commit/a3b5913f9aca95f41fbe31e9b2cfb41e2f4244aa))
+- Update all non-major dependencies ([#2769](/github.com/ntucker/anansi/issues/2769)) ([0bfb274](/github.com/ntucker/anansi/commit/0bfb2740995a6a9a6da341d335c9a36c32be2bc1))
+- Update all non-major dependencies ([#2781](/github.com/ntucker/anansi/issues/2781)) ([e492840](/github.com/ntucker/anansi/commit/e49284052f7b3dc2c0ed6d03031be70e19b9a977))
+- Update webpack packages ([#2754](/github.com/ntucker/anansi/issues/2754)) ([c0316b5](/github.com/ntucker/anansi/commit/c0316b549f31a4da8e9371f01ee37322145edc8c))
 
 ## [0.20.31](/github.com/ntucker/anansi/compare/@anansi/core@0.20.30...@anansi/core@0.20.31) (2025-05-27)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2757](/github.com/ntucker/anansi/issues/2757)) ([99f3dd9](/github.com/ntucker/anansi/commit/99f3dd9b39b87052e28fef5fb6f3f1be21368365))
+- Update all non-major dependencies ([#2757](/github.com/ntucker/anansi/issues/2757)) ([99f3dd9](/github.com/ntucker/anansi/commit/99f3dd9b39b87052e28fef5fb6f3f1be21368365))
 
 ## <small>0.20.30 (2025-05-15)</small>
 
-* enhance: Add key to ant css-in-js script ([63c770c](https://github.com/ntucker/anansi/commit/63c770c))
+- enhance: Add key to ant css-in-js script ([63c770c](https://github.com/ntucker/anansi/commit/63c770c))
 
 ### [0.20.29](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.28...@anansi/core@0.20.29) (2025-05-14)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2745](https://github.com/ntucker/anansi/issues/2745)) ([f8d770c](https://github.com/ntucker/anansi/commit/f8d770c91bfdd16e4769b728bcea70c7a25165dc))
+- Update all non-major dependencies ([#2745](https://github.com/ntucker/anansi/issues/2745)) ([f8d770c](https://github.com/ntucker/anansi/commit/f8d770c91bfdd16e4769b728bcea70c7a25165dc))
 
 ### [0.20.28](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.27...@anansi/core@0.20.28) (2025-05-07)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2744](https://github.com/ntucker/anansi/issues/2744)) ([ef0e8ad](https://github.com/ntucker/anansi/commit/ef0e8ad2280ab6bad23efeef74c9f2c6e3496ec4))
+- Update all non-major dependencies ([#2744](https://github.com/ntucker/anansi/issues/2744)) ([ef0e8ad](https://github.com/ntucker/anansi/commit/ef0e8ad2280ab6bad23efeef74c9f2c6e3496ec4))
 
 ### [0.20.27](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.26...@anansi/core@0.20.27) (2025-05-01)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2739](https://github.com/ntucker/anansi/issues/2739)) ([93622ae](https://github.com/ntucker/anansi/commit/93622aee60b7274762c2b88514457cb565098737))
+- Update all non-major dependencies ([#2739](https://github.com/ntucker/anansi/issues/2739)) ([93622ae](https://github.com/ntucker/anansi/commit/93622aee60b7274762c2b88514457cb565098737))
 
 ### [0.20.26](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.25...@anansi/core@0.20.26) (2025-04-23)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2734](https://github.com/ntucker/anansi/issues/2734)) ([fd18f03](https://github.com/ntucker/anansi/commit/fd18f03e117c5611743729adf0276a8d21d20eb8))
+- Update all non-major dependencies ([#2734](https://github.com/ntucker/anansi/issues/2734)) ([fd18f03](https://github.com/ntucker/anansi/commit/fd18f03e117c5611743729adf0276a8d21d20eb8))
 
 ### [0.20.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.24...@anansi/core@0.20.25) (2025-04-05)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2722](https://github.com/ntucker/anansi/issues/2722)) ([33ecee4](https://github.com/ntucker/anansi/commit/33ecee4dd5b76c3ea4030d6ba24b04a2e1024d05))
+- Update all non-major dependencies ([#2722](https://github.com/ntucker/anansi/issues/2722)) ([33ecee4](https://github.com/ntucker/anansi/commit/33ecee4dd5b76c3ea4030d6ba24b04a2e1024d05))
 
 ### [0.20.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.23...@anansi/core@0.20.24) (2025-03-29)
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to v5.2.1 ([#2713](https://github.com/ntucker/anansi/issues/2713)) ([fda0f8d](https://github.com/ntucker/anansi/commit/fda0f8dd5eab652815eee8a4ca76d48c0d7fe6d6))
-* Update react ([#2716](https://github.com/ntucker/anansi/issues/2716)) ([2bd2caf](https://github.com/ntucker/anansi/commit/2bd2cafb3054f9f226c4a963d49ae19355c9c67c))
+- Update `webpack-dev-server` to v5.2.1 ([#2713](https://github.com/ntucker/anansi/issues/2713)) ([fda0f8d](https://github.com/ntucker/anansi/commit/fda0f8dd5eab652815eee8a4ca76d48c0d7fe6d6))
+- Update react ([#2716](https://github.com/ntucker/anansi/issues/2716)) ([2bd2caf](https://github.com/ntucker/anansi/commit/2bd2cafb3054f9f226c4a963d49ae19355c9c67c))
 
 ### [0.20.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.22...@anansi/core@0.20.23) (2025-03-24)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2706](https://github.com/ntucker/anansi/issues/2706)) ([a8b58cc](https://github.com/ntucker/anansi/commit/a8b58cc1b16a4f95091fb09980da0296b39f0e1c))
+- Update all non-major dependencies ([#2706](https://github.com/ntucker/anansi/issues/2706)) ([a8b58cc](https://github.com/ntucker/anansi/commit/a8b58cc1b16a4f95091fb09980da0296b39f0e1c))
 
 ### [0.20.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.21...@anansi/core@0.20.22) (2025-03-05)
 
 ### 🐛 Bug Fix
 
-* Devserver SSR proxy handling for new webpack configs ([132157b](https://github.com/ntucker/anansi/commit/132157b75d2876ff7111f9bbd843ba959727bb6f))
-* Proxy in production ([caa94b8](https://github.com/ntucker/anansi/commit/caa94b88dd91651089b7ee1826fcd78828dbd4ec))
+- Devserver SSR proxy handling for new webpack configs ([132157b](https://github.com/ntucker/anansi/commit/132157b75d2876ff7111f9bbd843ba959727bb6f))
+- Proxy in production ([caa94b8](https://github.com/ntucker/anansi/commit/caa94b88dd91651089b7ee1826fcd78828dbd4ec))
 
 ### [0.20.21](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.20...@anansi/core@0.20.21) (2025-02-17)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2662](https://github.com/ntucker/anansi/issues/2662)) ([2552a4f](https://github.com/ntucker/anansi/commit/2552a4fc5571324933eff6865f0160545537692f))
+- Update all non-major dependencies ([#2662](https://github.com/ntucker/anansi/issues/2662)) ([2552a4f](https://github.com/ntucker/anansi/commit/2552a4fc5571324933eff6865f0160545537692f))
 
 ### [0.20.20](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.19...@anansi/core@0.20.20) (2025-02-16)
 
 ### 💅 Enhancement
 
-* Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
+- Update build with core-js-pure ([ad8d283](https://github.com/ntucker/anansi/commit/ad8d283bd4f64bac59f0b6595ac2a1d4d34ef256))
 
 ### [0.20.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.18...@anansi/core@0.20.19) (2025-02-14)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2655](https://github.com/ntucker/anansi/issues/2655)) ([4820b7a](https://github.com/ntucker/anansi/commit/4820b7a595db412985c390120064800e894c97ca))
+- Update all non-major dependencies ([#2655](https://github.com/ntucker/anansi/issues/2655)) ([4820b7a](https://github.com/ntucker/anansi/commit/4820b7a595db412985c390120064800e894c97ca))
 
 ### [0.20.18](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.17...@anansi/core@0.20.18) (2025-02-09)
 
 ### 📦 Package
 
-* Update `enhanced-resolve` to ^5.18.1 ([#2649](https://github.com/ntucker/anansi/issues/2649)) ([1f79583](https://github.com/ntucker/anansi/commit/1f79583ce1f5cf9731ad5653a535a465609c206c))
+- Update `enhanced-resolve` to ^5.18.1 ([#2649](https://github.com/ntucker/anansi/issues/2649)) ([1f79583](https://github.com/ntucker/anansi/commit/1f79583ce1f5cf9731ad5653a535a465609c206c))
 
 ### [0.20.17](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.16...@anansi/core@0.20.17) (2025-01-25)
 
 ### 💅 Enhancement
 
-* Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
+- Do not pollute with polyfills ([22c9bf8](https://github.com/ntucker/anansi/commit/22c9bf83d4058db360a21c2c7156903efe762788))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
-* Update all non-major dependencies ([#2631](https://github.com/ntucker/anansi/issues/2631)) ([94ba581](https://github.com/ntucker/anansi/commit/94ba581467bbbecc9af217779ef08703dd182e68))
-* Update all non-major dependencies ([#2633](https://github.com/ntucker/anansi/issues/2633)) ([ddd0c24](https://github.com/ntucker/anansi/commit/ddd0c24393577acadd70b12e896caf87b27d9b77))
-* Update all non-major dependencies ([#2640](https://github.com/ntucker/anansi/issues/2640)) ([e88c606](https://github.com/ntucker/anansi/commit/e88c606b48758c44997aa5e670e008a1eba85238))
+- Update all non-major dependencies ([#2623](https://github.com/ntucker/anansi/issues/2623)) ([9aab475](https://github.com/ntucker/anansi/commit/9aab4756e4a3f5b3737b147b6ea0d99c12bd2614))
+- Update all non-major dependencies ([#2631](https://github.com/ntucker/anansi/issues/2631)) ([94ba581](https://github.com/ntucker/anansi/commit/94ba581467bbbecc9af217779ef08703dd182e68))
+- Update all non-major dependencies ([#2633](https://github.com/ntucker/anansi/issues/2633)) ([ddd0c24](https://github.com/ntucker/anansi/commit/ddd0c24393577acadd70b12e896caf87b27d9b77))
+- Update all non-major dependencies ([#2640](https://github.com/ntucker/anansi/issues/2640)) ([e88c606](https://github.com/ntucker/anansi/commit/e88c606b48758c44997aa5e670e008a1eba85238))
 
 ### [0.20.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.15...@anansi/core@0.20.16) (2024-12-29)
 
 ### 💅 Enhancement
 
-* Build to min node version supported ([85e1e24](https://github.com/ntucker/anansi/commit/85e1e24cedabfa2e297ad5f6f58acd7b147f6b53))
+- Build to min node version supported ([85e1e24](https://github.com/ntucker/anansi/commit/85e1e24cedabfa2e297ad5f6f58acd7b147f6b53))
 
 ### 🐛 Bug Fix
 
-* Preserve dynamic @ant-design/cssinjs so module is optional ([45e17af](https://github.com/ntucker/anansi/commit/45e17af19361ba6afc07479ebd0eac7429c5f3a6))
+- Preserve dynamic @ant-design/cssinjs so module is optional ([45e17af](https://github.com/ntucker/anansi/commit/45e17af19361ba6afc07479ebd0eac7429c5f3a6))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2617](https://github.com/ntucker/anansi/issues/2617)) ([102b68c](https://github.com/ntucker/anansi/commit/102b68cd1b7e6760100e4db24df2b3a713ca5bbb))
+- Update all non-major dependencies ([#2617](https://github.com/ntucker/anansi/issues/2617)) ([102b68c](https://github.com/ntucker/anansi/commit/102b68cd1b7e6760100e4db24df2b3a713ca5bbb))
 
 ### [0.20.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.14...@anansi/core@0.20.15) (2024-12-25)
 
 ### 📦 Package
 
-* Update webpack packages ([#2616](https://github.com/ntucker/anansi/issues/2616)) ([29abacb](https://github.com/ntucker/anansi/commit/29abacbfaefb7ae1ea4e2dc09c51c818e3c48ef0))
+- Update webpack packages ([#2616](https://github.com/ntucker/anansi/issues/2616)) ([29abacb](https://github.com/ntucker/anansi/commit/29abacbfaefb7ae1ea4e2dc09c51c818e3c48ef0))
 
 ### [0.20.14](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.13...@anansi/core@0.20.14) (2024-12-12)
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to v5.2.0 ([#2608](https://github.com/ntucker/anansi/issues/2608)) ([b1f3ebf](https://github.com/ntucker/anansi/commit/b1f3ebfa15585216817d0842f570b4454b523976))
+- Update `webpack-dev-server` to v5.2.0 ([#2608](https://github.com/ntucker/anansi/issues/2608)) ([b1f3ebf](https://github.com/ntucker/anansi/commit/b1f3ebfa15585216817d0842f570b4454b523976))
 
 ### [0.20.13](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.12...@anansi/core@0.20.13) (2024-12-06)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2602](https://github.com/ntucker/anansi/issues/2602)) ([b3e4d4a](https://github.com/ntucker/anansi/commit/b3e4d4afd7c1ed2cfca787dafe3f59686ebde30d))
-* Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
+- Update all non-major dependencies ([#2602](https://github.com/ntucker/anansi/issues/2602)) ([b3e4d4a](https://github.com/ntucker/anansi/commit/b3e4d4afd7c1ed2cfca787dafe3f59686ebde30d))
+- Update react ([#2593](https://github.com/ntucker/anansi/issues/2593)) ([b9756c1](https://github.com/ntucker/anansi/commit/b9756c1aa7292a83fc7b8eb44baec910ef000b08))
 
 ### [0.20.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.11...@anansi/core@0.20.12) (2024-11-30)
 
 ### 📦 Package
 
-* Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
+- Switch to React 19 rc1 ([#2584](https://github.com/ntucker/anansi/issues/2584)) ([5644b35](https://github.com/ntucker/anansi/commit/5644b35a36c13097ca13d7ac9897e6810e87c84a))
 
 ### [0.20.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.10...@anansi/core@0.20.11) (2024-11-24)
 
 ### 📦 Package
 
-* Match any types/react ([3ea2b96](https://github.com/ntucker/anansi/commit/3ea2b96e1c702de9200481b1b57eccc67c6b8622))
+- Match any types/react ([3ea2b96](https://github.com/ntucker/anansi/commit/3ea2b96e1c702de9200481b1b57eccc67c6b8622))
 
 ### [0.20.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.9...@anansi/core@0.20.10) (2024-11-09)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2573](https://github.com/ntucker/anansi/issues/2573)) ([38c2abe](https://github.com/ntucker/anansi/commit/38c2abeb84e1d411dc3f15586d52873914957587))
+- Update all non-major dependencies ([#2573](https://github.com/ntucker/anansi/issues/2573)) ([38c2abe](https://github.com/ntucker/anansi/commit/38c2abeb84e1d411dc3f15586d52873914957587))
 
 ### [0.20.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.8...@anansi/core@0.20.9) (2024-10-09)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2543](https://github.com/ntucker/anansi/issues/2543)) ([e745ee0](https://github.com/ntucker/anansi/commit/e745ee09af907637b25e8c8cadeac76e7e140ee8))
+- Update all non-major dependencies ([#2543](https://github.com/ntucker/anansi/issues/2543)) ([e745ee0](https://github.com/ntucker/anansi/commit/e745ee09af907637b25e8c8cadeac76e7e140ee8))
 
 ### [0.20.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.7...@anansi/core@0.20.8) (2024-10-02)
 
@@ -450,15 +460,15 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2520](https://github.com/ntucker/anansi/issues/2520)) ([f0617fc](https://github.com/ntucker/anansi/commit/f0617fc1cae2c656fa6b171ad9e65afe1d3069b8))
+- Update all non-major dependencies ([#2520](https://github.com/ntucker/anansi/issues/2520)) ([f0617fc](https://github.com/ntucker/anansi/commit/f0617fc1cae2c656fa6b171ad9e65afe1d3069b8))
 
 ### [0.20.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.4...@anansi/core@0.20.5) (2024-09-06)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2503](https://github.com/ntucker/anansi/issues/2503)) ([ff5ee61](https://github.com/ntucker/anansi/commit/ff5ee61910630bbd56e5ff932364579cd9b40999))
-* Update all non-major dependencies ([#2505](https://github.com/ntucker/anansi/issues/2505)) ([13049f7](https://github.com/ntucker/anansi/commit/13049f748f209d801fd87b49667d9b8517be0cd8))
-* Update webpack packages ([#2506](https://github.com/ntucker/anansi/issues/2506)) ([739238b](https://github.com/ntucker/anansi/commit/739238bf66667c773e9fdd6d429eebeecd1c8ca5))
+- Update all non-major dependencies ([#2503](https://github.com/ntucker/anansi/issues/2503)) ([ff5ee61](https://github.com/ntucker/anansi/commit/ff5ee61910630bbd56e5ff932364579cd9b40999))
+- Update all non-major dependencies ([#2505](https://github.com/ntucker/anansi/issues/2505)) ([13049f7](https://github.com/ntucker/anansi/commit/13049f748f209d801fd87b49667d9b8517be0cd8))
+- Update webpack packages ([#2506](https://github.com/ntucker/anansi/issues/2506)) ([739238b](https://github.com/ntucker/anansi/commit/739238bf66667c773e9fdd6d429eebeecd1c8ca5))
 
 ### [0.20.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.3...@anansi/core@0.20.4) (2024-08-05)
 
@@ -468,40 +478,40 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
-* Update webpack packages ([#2471](https://github.com/ntucker/anansi/issues/2471)) ([a12a3b9](https://github.com/ntucker/anansi/commit/a12a3b9bfe3199d33fcbc8342a5dc059aeec7a42))
+- Update `@types/node` to v22 ([#2476](https://github.com/ntucker/anansi/issues/2476)) ([a52bfad](https://github.com/ntucker/anansi/commit/a52bfad6714d94e3b4ef327ac072fbcb386ee63a))
+- Update webpack packages ([#2471](https://github.com/ntucker/anansi/issues/2471)) ([a12a3b9](https://github.com/ntucker/anansi/commit/a12a3b9bfe3199d33fcbc8342a5dc059aeec7a42))
 
 ### [0.20.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.1...@anansi/core@0.20.2) (2024-07-13)
 
 ### 📦 Package
 
-* Update all non-major dependencies to v0.14.0 ([#2459](https://github.com/ntucker/anansi/issues/2459)) ([afa623e](https://github.com/ntucker/anansi/commit/afa623effd1c9cd2e0eba7ca05eb074b5f422495))
+- Update all non-major dependencies to v0.14.0 ([#2459](https://github.com/ntucker/anansi/issues/2459)) ([afa623e](https://github.com/ntucker/anansi/commit/afa623effd1c9cd2e0eba7ca05eb074b5f422495))
 
 ### [0.20.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.20.0...@anansi/core@0.20.1) (2024-06-18)
 
 ### 📦 Package
 
-* Update `@data-client/react` to ^0.12.15 || ^0.13.0 ([#2442](https://github.com/ntucker/anansi/issues/2442)) ([94b37f1](https://github.com/ntucker/anansi/commit/94b37f1b7d1e99bf1f69ba7df749ec98045bb34e))
-* Update all non-major dependencies ([#2440](https://github.com/ntucker/anansi/issues/2440)) ([c9bac84](https://github.com/ntucker/anansi/commit/c9bac84ec665045744dea79b7a4abedadacc3c4f))
+- Update `@data-client/react` to ^0.12.15 || ^0.13.0 ([#2442](https://github.com/ntucker/anansi/issues/2442)) ([94b37f1](https://github.com/ntucker/anansi/commit/94b37f1b7d1e99bf1f69ba7df749ec98045bb34e))
+- Update all non-major dependencies ([#2440](https://github.com/ntucker/anansi/issues/2440)) ([c9bac84](https://github.com/ntucker/anansi/commit/c9bac84ec665045744dea79b7a4abedadacc3c4f))
 
 ## [0.20.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.5...@anansi/core@0.20.0) (2024-06-14)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* Require node >=22
+- Require node >=22
 
 ### 🚀 Features
 
-* Support node 22 ([ec290ea](https://github.com/ntucker/anansi/commit/ec290eaa29a039ad51b776deea60afd482a0a046))
+- Support node 22 ([ec290ea](https://github.com/ntucker/anansi/commit/ec290eaa29a039ad51b776deea60afd482a0a046))
 
 ### 💅 Enhancement
 
-* Use DataProvider ([bc3b933](https://github.com/ntucker/anansi/commit/bc3b9333259afe3c438457279dc8565b3134ea0c))
+- Use DataProvider ([bc3b933](https://github.com/ntucker/anansi/commit/bc3b9333259afe3c438457279dc8565b3134ea0c))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2436](https://github.com/ntucker/anansi/issues/2436)) ([6aa393f](https://github.com/ntucker/anansi/commit/6aa393f6b4c4bbed9d874a876409bcb71e4f9b79))
-* Update all non-major dependencies ([#2438](https://github.com/ntucker/anansi/issues/2438)) ([9b047e3](https://github.com/ntucker/anansi/commit/9b047e35adbf203919de534140377c5f43460285))
+- Update all non-major dependencies ([#2436](https://github.com/ntucker/anansi/issues/2436)) ([6aa393f](https://github.com/ntucker/anansi/commit/6aa393f6b4c4bbed9d874a876409bcb71e4f9b79))
+- Update all non-major dependencies ([#2438](https://github.com/ntucker/anansi/issues/2438)) ([9b047e3](https://github.com/ntucker/anansi/commit/9b047e35adbf203919de534140377c5f43460285))
 
 ### [0.19.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.4...@anansi/core@0.19.5) (2024-06-12)
 
@@ -511,49 +521,49 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2426](https://github.com/ntucker/anansi/issues/2426)) ([a540582](https://github.com/ntucker/anansi/commit/a5405824875967108874280103a51d14722f5502))
-* Update webpack packages ([#2429](https://github.com/ntucker/anansi/issues/2429)) ([1287241](https://github.com/ntucker/anansi/commit/12872415c4275a06385fe68da1b2c0d444ce7299))
+- Update all non-major dependencies ([#2426](https://github.com/ntucker/anansi/issues/2426)) ([a540582](https://github.com/ntucker/anansi/commit/a5405824875967108874280103a51d14722f5502))
+- Update webpack packages ([#2429](https://github.com/ntucker/anansi/issues/2429)) ([1287241](https://github.com/ntucker/anansi/commit/12872415c4275a06385fe68da1b2c0d444ce7299))
 
 ### [0.19.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.2...@anansi/core@0.19.3) (2024-05-25)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2406](https://github.com/ntucker/anansi/issues/2406)) ([c8ae650](https://github.com/ntucker/anansi/commit/c8ae650a7d32d5e91d10c7c75e5018de96e01a10))
-* Update webpack packages ([#2408](https://github.com/ntucker/anansi/issues/2408)) ([60736b7](https://github.com/ntucker/anansi/commit/60736b7b2b13fd3d30a24c8a7f4365d525c6157b))
+- Update all non-major dependencies ([#2406](https://github.com/ntucker/anansi/issues/2406)) ([c8ae650](https://github.com/ntucker/anansi/commit/c8ae650a7d32d5e91d10c7c75e5018de96e01a10))
+- Update webpack packages ([#2408](https://github.com/ntucker/anansi/issues/2408)) ([60736b7](https://github.com/ntucker/anansi/commit/60736b7b2b13fd3d30a24c8a7f4365d525c6157b))
 
 ### [0.19.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.1...@anansi/core@0.19.2) (2024-05-02)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2403](https://github.com/ntucker/anansi/issues/2403)) ([37aae7f](https://github.com/ntucker/anansi/commit/37aae7fd12d5c1b1aeecdfee39262656cb2dca43))
+- Update all non-major dependencies ([#2403](https://github.com/ntucker/anansi/issues/2403)) ([37aae7f](https://github.com/ntucker/anansi/commit/37aae7fd12d5c1b1aeecdfee39262656cb2dca43))
 
 ### [0.19.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.19.0...@anansi/core@0.19.1) (2024-04-30)
 
 ### 📦 Package
 
-* Update `http-proxy-middleware` to v3 ([#2364](https://github.com/ntucker/anansi/issues/2364)) ([a40a24a](https://github.com/ntucker/anansi/commit/a40a24a91d0c8ce4447b4d87cbcf5c289bc3db72))
+- Update `http-proxy-middleware` to v3 ([#2364](https://github.com/ntucker/anansi/issues/2364)) ([a40a24a](https://github.com/ntucker/anansi/commit/a40a24a91d0c8ce4447b4d87cbcf5c289bc3db72))
 
 ## [0.19.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.25...@anansi/core@0.19.0) (2024-04-28)
 
 ### 🚀 Features
 
-* React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
+- React 19 compatibility ([#2398](https://github.com/ntucker/anansi/issues/2398)) ([68b2982](https://github.com/ntucker/anansi/commit/68b298260088202400512bdbd5b45637da5fabd5))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2394](https://github.com/ntucker/anansi/issues/2394)) ([19ca5c7](https://github.com/ntucker/anansi/commit/19ca5c7a78271a1badfa30ebbfd539a3499190a8))
+- Update all non-major dependencies ([#2394](https://github.com/ntucker/anansi/issues/2394)) ([19ca5c7](https://github.com/ntucker/anansi/commit/19ca5c7a78271a1badfa30ebbfd539a3499190a8))
 
 ### [0.18.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.24...@anansi/core@0.18.25) (2024-04-20)
 
 ### 💅 Enhancement
 
-* Add html lang prop to documentSpout ([53a9dca](https://github.com/ntucker/anansi/commit/53a9dca9752a3756dfaa36235f42f25c56f4495d))
+- Add html lang prop to documentSpout ([53a9dca](https://github.com/ntucker/anansi/commit/53a9dca9752a3756dfaa36235f42f25c56f4495d))
 
 ### [0.18.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.23...@anansi/core@0.18.24) (2024-04-08)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2373](https://github.com/ntucker/anansi/issues/2373)) ([6f5552e](https://github.com/ntucker/anansi/commit/6f5552e1961681844d0dcc688ebacd1395ab4990))
+- Update all non-major dependencies ([#2373](https://github.com/ntucker/anansi/issues/2373)) ([6f5552e](https://github.com/ntucker/anansi/commit/6f5552e1961681844d0dcc688ebacd1395ab4990))
 
 ### [0.18.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.22...@anansi/core@0.18.23) (2024-04-08)
 
@@ -563,123 +573,123 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2357](https://github.com/ntucker/anansi/issues/2357)) ([0f120a7](https://github.com/ntucker/anansi/commit/0f120a704e3c36e77e16f0ae08c1789663f870f4))
-* Update all non-major dependencies ([#2362](https://github.com/ntucker/anansi/issues/2362)) ([7d3892b](https://github.com/ntucker/anansi/commit/7d3892b2a561736e79b0e7263af70263d07fa724))
+- Update all non-major dependencies ([#2357](https://github.com/ntucker/anansi/issues/2357)) ([0f120a7](https://github.com/ntucker/anansi/commit/0f120a704e3c36e77e16f0ae08c1789663f870f4))
+- Update all non-major dependencies ([#2362](https://github.com/ntucker/anansi/issues/2362)) ([7d3892b](https://github.com/ntucker/anansi/commit/7d3892b2a561736e79b0e7263af70263d07fa724))
 
 ### [0.18.21](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.20...@anansi/core@0.18.21) (2024-03-20)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2354](https://github.com/ntucker/anansi/issues/2354)) ([2a13479](https://github.com/ntucker/anansi/commit/2a1347944b1594d92ef2cac5255a6d11c8549a81))
-* Update webpack packages ([#2348](https://github.com/ntucker/anansi/issues/2348)) ([9b6569d](https://github.com/ntucker/anansi/commit/9b6569dd6f700de8f7d69872fcae5fb745e5503b))
+- Update all non-major dependencies ([#2354](https://github.com/ntucker/anansi/issues/2354)) ([2a13479](https://github.com/ntucker/anansi/commit/2a1347944b1594d92ef2cac5255a6d11c8549a81))
+- Update webpack packages ([#2348](https://github.com/ntucker/anansi/issues/2348)) ([9b6569d](https://github.com/ntucker/anansi/commit/9b6569dd6f700de8f7d69872fcae5fb745e5503b))
 
 ### [0.18.20](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.19...@anansi/core@0.18.20) (2024-03-13)
 
 ### 📦 Package
 
-* Update webpack packages ([#2346](https://github.com/ntucker/anansi/issues/2346)) ([714919a](https://github.com/ntucker/anansi/commit/714919a0008319d37a5cf9c532ca7c97d42b4a04))
+- Update webpack packages ([#2346](https://github.com/ntucker/anansi/issues/2346)) ([714919a](https://github.com/ntucker/anansi/commit/714919a0008319d37a5cf9c532ca7c97d42b4a04))
 
 ### [0.18.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.18...@anansi/core@0.18.19) (2024-03-01)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2337](https://github.com/ntucker/anansi/issues/2337)) ([563fad8](https://github.com/ntucker/anansi/commit/563fad8d7c8d58af34b090b1b5fb587c962504c8))
+- Update all non-major dependencies ([#2337](https://github.com/ntucker/anansi/issues/2337)) ([563fad8](https://github.com/ntucker/anansi/commit/563fad8d7c8d58af34b090b1b5fb587c962504c8))
 
 ### [0.18.18](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.17...@anansi/core@0.18.18) (2024-02-29)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2333](https://github.com/ntucker/anansi/issues/2333)) ([fd7f4fe](https://github.com/ntucker/anansi/commit/fd7f4fe2b0d4a70050a3fd9feb006578aab730b6))
-* Update all non-major dependencies ([#2334](https://github.com/ntucker/anansi/issues/2334)) ([4093fa2](https://github.com/ntucker/anansi/commit/4093fa2256688835781a2e3b252e84d23fc4382e))
-* Update webpack packages ([#2332](https://github.com/ntucker/anansi/issues/2332)) ([3d45288](https://github.com/ntucker/anansi/commit/3d45288a2cd1c8176c6167d35d3b0d4e6c15fdb5))
+- Update all non-major dependencies ([#2333](https://github.com/ntucker/anansi/issues/2333)) ([fd7f4fe](https://github.com/ntucker/anansi/commit/fd7f4fe2b0d4a70050a3fd9feb006578aab730b6))
+- Update all non-major dependencies ([#2334](https://github.com/ntucker/anansi/issues/2334)) ([4093fa2](https://github.com/ntucker/anansi/commit/4093fa2256688835781a2e3b252e84d23fc4382e))
+- Update webpack packages ([#2332](https://github.com/ntucker/anansi/issues/2332)) ([3d45288](https://github.com/ntucker/anansi/commit/3d45288a2cd1c8176c6167d35d3b0d4e6c15fdb5))
 
 ### [0.18.17](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.16...@anansi/core@0.18.17) (2024-02-21)
 
 ### 📦 Package
 
-* Update webpack packages ([#2327](https://github.com/ntucker/anansi/issues/2327)) ([f8d09ce](https://github.com/ntucker/anansi/commit/f8d09ceafeb2b95572c155a40a7c51c28f3aafca))
+- Update webpack packages ([#2327](https://github.com/ntucker/anansi/issues/2327)) ([f8d09ce](https://github.com/ntucker/anansi/commit/f8d09ceafeb2b95572c155a40a7c51c28f3aafca))
 
 ### [0.18.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.15...@anansi/core@0.18.16) (2024-02-12)
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to v5 ([#2322](https://github.com/ntucker/anansi/issues/2322)) ([a8e97da](https://github.com/ntucker/anansi/commit/a8e97da75b67abe977a02df4c6c8eb5dc4b57b0a))
+- Update `webpack-dev-server` to v5 ([#2322](https://github.com/ntucker/anansi/issues/2322)) ([a8e97da](https://github.com/ntucker/anansi/commit/a8e97da75b67abe977a02df4c6c8eb5dc4b57b0a))
 
 ### [0.18.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.14...@anansi/core@0.18.15) (2024-01-21)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2293](https://github.com/ntucker/anansi/issues/2293)) ([55919d6](https://github.com/ntucker/anansi/commit/55919d636064761ccccee0c626009004b8022de7))
+- Update all non-major dependencies ([#2293](https://github.com/ntucker/anansi/issues/2293)) ([55919d6](https://github.com/ntucker/anansi/commit/55919d636064761ccccee0c626009004b8022de7))
 
 ### [0.18.14](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.13...@anansi/core@0.18.14) (2023-12-30)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2269](https://github.com/ntucker/anansi/issues/2269)) ([98a1174](https://github.com/ntucker/anansi/commit/98a11740da919b61ba6abed6a56cc52f8caae58d))
+- Update all non-major dependencies ([#2269](https://github.com/ntucker/anansi/issues/2269)) ([98a1174](https://github.com/ntucker/anansi/commit/98a11740da919b61ba6abed6a56cc52f8caae58d))
 
 ### [0.18.13](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.12...@anansi/core@0.18.13) (2023-12-09)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2253](https://github.com/ntucker/anansi/issues/2253)) ([bcf8a4b](https://github.com/ntucker/anansi/commit/bcf8a4b65ef87a1992303bb3cdb785436fbf599e))
+- Update all non-major dependencies ([#2253](https://github.com/ntucker/anansi/issues/2253)) ([bcf8a4b](https://github.com/ntucker/anansi/commit/bcf8a4b65ef87a1992303bb3cdb785436fbf599e))
 
 ### [0.18.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.11...@anansi/core@0.18.12) (2023-12-04)
 
 ### 📦 Package
 
-* Update `redux` to v5 ([#2246](https://github.com/ntucker/anansi/issues/2246)) ([00086cb](https://github.com/ntucker/anansi/commit/00086cbf7590ca8426b9fe20aae315576f67863c))
+- Update `redux` to v5 ([#2246](https://github.com/ntucker/anansi/issues/2246)) ([00086cb](https://github.com/ntucker/anansi/commit/00086cbf7590ca8426b9fe20aae315576f67863c))
 
 ### [0.18.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.10...@anansi/core@0.18.11) (2023-11-18)
 
 ### 📦 Package
 
-* Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
+- Update linting packages ([#2228](https://github.com/ntucker/anansi/issues/2228)) ([4782f92](https://github.com/ntucker/anansi/commit/4782f92a579ca1254ae7a0c422e3578790e5e415))
 
 ### [0.18.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.9...@anansi/core@0.18.10) (2023-11-10)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2225](https://github.com/ntucker/anansi/issues/2225)) ([3b68fbb](https://github.com/ntucker/anansi/commit/3b68fbbdde94619b814f4f5931b5851931997882))
+- Update all non-major dependencies ([#2225](https://github.com/ntucker/anansi/issues/2225)) ([3b68fbb](https://github.com/ntucker/anansi/commit/3b68fbbdde94619b814f4f5931b5851931997882))
 
 ### [0.18.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.8...@anansi/core@0.18.9) (2023-10-28)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2200](https://github.com/ntucker/anansi/issues/2200)) ([ad0ca8d](https://github.com/ntucker/anansi/commit/ad0ca8d65b4e90fc08d4e897093c1d5395690b7f))
+- Update all non-major dependencies ([#2200](https://github.com/ntucker/anansi/issues/2200)) ([ad0ca8d](https://github.com/ntucker/anansi/commit/ad0ca8d65b4e90fc08d4e897093c1d5395690b7f))
 
 ### [0.18.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.7...@anansi/core@0.18.8) (2023-09-26)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2183](https://github.com/ntucker/anansi/issues/2183)) ([1eeea98](https://github.com/ntucker/anansi/commit/1eeea989173a9009a3828ccc9d36af39be53ad86))
+- Update all non-major dependencies ([#2183](https://github.com/ntucker/anansi/issues/2183)) ([1eeea98](https://github.com/ntucker/anansi/commit/1eeea989173a9009a3828ccc9d36af39be53ad86))
 
 ### [0.18.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.6...@anansi/core@0.18.7) (2023-09-23)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2172](https://github.com/ntucker/anansi/issues/2172)) ([6021d3e](https://github.com/ntucker/anansi/commit/6021d3e188d0ec5123cc212998d1339d36a20432))
-* Update all non-major dependencies ([#2175](https://github.com/ntucker/anansi/issues/2175)) ([8c6e708](https://github.com/ntucker/anansi/commit/8c6e7088c31cd73b5e7147fe2359d56746bcac65))
+- Update all non-major dependencies ([#2172](https://github.com/ntucker/anansi/issues/2172)) ([6021d3e](https://github.com/ntucker/anansi/commit/6021d3e188d0ec5123cc212998d1339d36a20432))
+- Update all non-major dependencies ([#2175](https://github.com/ntucker/anansi/issues/2175)) ([8c6e708](https://github.com/ntucker/anansi/commit/8c6e7088c31cd73b5e7147fe2359d56746bcac65))
 
 ### [0.18.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.5...@anansi/core@0.18.6) (2023-09-15)
 
 ### 📦 Package
 
-* Update `@data-client/ssr` to ^0.9.1 ([#2161](https://github.com/ntucker/anansi/issues/2161)) ([6505ed4](https://github.com/ntucker/anansi/commit/6505ed454e20b32e515fa879b9bb1369cd783ac8))
-* Update all non-major dependencies ([#2162](https://github.com/ntucker/anansi/issues/2162)) ([f122cae](https://github.com/ntucker/anansi/commit/f122caef403347caef4614352187cfb044f97a12))
-* Update all non-major dependencies ([#2169](https://github.com/ntucker/anansi/issues/2169)) ([619d85d](https://github.com/ntucker/anansi/commit/619d85da3e69e49487a2a72e9cbf8bdb194a9c47))
+- Update `@data-client/ssr` to ^0.9.1 ([#2161](https://github.com/ntucker/anansi/issues/2161)) ([6505ed4](https://github.com/ntucker/anansi/commit/6505ed454e20b32e515fa879b9bb1369cd783ac8))
+- Update all non-major dependencies ([#2162](https://github.com/ntucker/anansi/issues/2162)) ([f122cae](https://github.com/ntucker/anansi/commit/f122caef403347caef4614352187cfb044f97a12))
+- Update all non-major dependencies ([#2169](https://github.com/ntucker/anansi/issues/2169)) ([619d85d](https://github.com/ntucker/anansi/commit/619d85da3e69e49487a2a72e9cbf8bdb194a9c47))
 
 ### [0.18.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.4...@anansi/core@0.18.5) (2023-09-05)
 
 ### 📦 Package
 
-* Update all non-major dependencies to v0.9.0 ([#2160](https://github.com/ntucker/anansi/issues/2160)) ([ada6dbb](https://github.com/ntucker/anansi/commit/ada6dbb686054e25df6c6f1568b2ed5bd947a302))
+- Update all non-major dependencies to v0.9.0 ([#2160](https://github.com/ntucker/anansi/issues/2160)) ([ada6dbb](https://github.com/ntucker/anansi/commit/ada6dbb686054e25df6c6f1568b2ed5bd947a302))
 
 ### [0.18.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.3...@anansi/core@0.18.4) (2023-09-04)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2153](https://github.com/ntucker/anansi/issues/2153)) ([74d33b7](https://github.com/ntucker/anansi/commit/74d33b764cbd19c347bd41521e893aa735506091))
-* Update all non-major dependencies ([#2156](https://github.com/ntucker/anansi/issues/2156)) ([ed7c164](https://github.com/ntucker/anansi/commit/ed7c16463a1e01cc559064c9ea14cfe3150ebdb9))
+- Update all non-major dependencies ([#2153](https://github.com/ntucker/anansi/issues/2153)) ([74d33b7](https://github.com/ntucker/anansi/commit/74d33b764cbd19c347bd41521e893aa735506091))
+- Update all non-major dependencies ([#2156](https://github.com/ntucker/anansi/issues/2156)) ([ed7c164](https://github.com/ntucker/anansi/commit/ed7c16463a1e01cc559064c9ea14cfe3150ebdb9))
 
 ### [0.18.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.2...@anansi/core@0.18.3) (2023-08-30)
 
@@ -689,49 +699,49 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 💅 Enhancement
 
-* Gracefull fallback if rest hooks initial data cannot be found ([e632027](https://github.com/ntucker/anansi/commit/e632027bcb4b25e0c090672e6e8136d4697dfd19))
-* Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
+- Gracefull fallback if rest hooks initial data cannot be found ([e632027](https://github.com/ntucker/anansi/commit/e632027bcb4b25e0c090672e6e8136d4697dfd19))
+- Rename based on Reactive Data Client usage ([#2146](https://github.com/ntucker/anansi/issues/2146)) ([43ce219](https://github.com/ntucker/anansi/commit/43ce21998642a6e9a64779b65f808d1aaaac0f29))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2120](https://github.com/ntucker/anansi/issues/2120)) ([5bcc4e2](https://github.com/ntucker/anansi/commit/5bcc4e23986445998ed1ceeca95254ed3b20af1a))
-* Update all non-major dependencies ([#2123](https://github.com/ntucker/anansi/issues/2123)) ([a56c15f](https://github.com/ntucker/anansi/commit/a56c15fd0fbd8a3b4fb9ac03793393579ee606c4))
-* Update all non-major dependencies ([#2137](https://github.com/ntucker/anansi/issues/2137)) ([dd2b0f6](https://github.com/ntucker/anansi/commit/dd2b0f6f93cf6de0b9d43e29ede85a392c884f5f))
-* Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
+- Update all non-major dependencies ([#2120](https://github.com/ntucker/anansi/issues/2120)) ([5bcc4e2](https://github.com/ntucker/anansi/commit/5bcc4e23986445998ed1ceeca95254ed3b20af1a))
+- Update all non-major dependencies ([#2123](https://github.com/ntucker/anansi/issues/2123)) ([a56c15f](https://github.com/ntucker/anansi/commit/a56c15fd0fbd8a3b4fb9ac03793393579ee606c4))
+- Update all non-major dependencies ([#2137](https://github.com/ntucker/anansi/issues/2137)) ([dd2b0f6](https://github.com/ntucker/anansi/commit/dd2b0f6f93cf6de0b9d43e29ede85a392c884f5f))
+- Update all non-major dependencies ([#2139](https://github.com/ntucker/anansi/issues/2139)) ([de44470](https://github.com/ntucker/anansi/commit/de444706629945dd0a0a25d44bdbc8ce2b3a2ab4))
 
 ### 📝 Documentation
 
-* Add serve() info to readme ([e8be161](https://github.com/ntucker/anansi/commit/e8be1614b8c425b15bbf793b0d5fd6803b1e07fc))
+- Add serve() info to readme ([e8be161](https://github.com/ntucker/anansi/commit/e8be1614b8c425b15bbf793b0d5fd6803b1e07fc))
 
 ### [0.18.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.18.0...@anansi/core@0.18.1) (2023-08-09)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2109](https://github.com/ntucker/anansi/issues/2109)) ([cd18a59](https://github.com/ntucker/anansi/commit/cd18a594ad02528a61889f1885dec0e8864bdc70))
+- Update all non-major dependencies ([#2109](https://github.com/ntucker/anansi/issues/2109)) ([cd18a59](https://github.com/ntucker/anansi/commit/cd18a594ad02528a61889f1885dec0e8864bdc70))
 
 ## [0.18.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.2...@anansi/core@0.18.0) (2023-07-06)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* This library now depends on @data-client, rather than
-@rest-hooks. Version 0.1.0 is fully compatible with @rest-hooks/react@7
+- This library now depends on @data-client, rather than
+  @rest-hooks. Version 0.1.0 is fully compatible with @rest-hooks/react@7
 
 ### 💅 Enhancement
 
-* Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
-* Support 0.4 of data-client ([68e3452](https://github.com/ntucker/anansi/commit/68e34520e727d7948a26b2dec73918f2738ae372))
+- Move from rest-hooks to data-client ([0d8f6b7](https://github.com/ntucker/anansi/commit/0d8f6b7ad78cd712b1fa4f2c16a0d64ace4be135))
+- Support 0.4 of data-client ([68e3452](https://github.com/ntucker/anansi/commit/68e34520e727d7948a26b2dec73918f2738ae372))
 
 ### 📦 Package
 
-* Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
-* Update `@rest-hooks/redux` to v7 ([#2075](https://github.com/ntucker/anansi/issues/2075)) ([2393660](https://github.com/ntucker/anansi/commit/2393660b45c5a2f3b97f5455cdd397114d1aa652))
+- Update `@rest-hooks/react` to v8 ([#2073](https://github.com/ntucker/anansi/issues/2073)) ([a2d47ac](https://github.com/ntucker/anansi/commit/a2d47ac99605b2751e447844942b0dcf3575cf58))
+- Update `@rest-hooks/redux` to v7 ([#2075](https://github.com/ntucker/anansi/issues/2075)) ([2393660](https://github.com/ntucker/anansi/commit/2393660b45c5a2f3b97f5455cdd397114d1aa652))
 
 ### [0.17.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.1...@anansi/core@0.17.2) (2023-07-04)
 
 ### 📦 Package
 
-* Update `cross-fetch` to v4 ([#2069](https://github.com/ntucker/anansi/issues/2069)) ([73a92b3](https://github.com/ntucker/anansi/commit/73a92b3468a9f3f55199e38f0001c916e62f3979))
-* Update all non-major dependencies ([#2066](https://github.com/ntucker/anansi/issues/2066)) ([1bf7605](https://github.com/ntucker/anansi/commit/1bf7605e9976aeae7a1a908254df1e63d5da399b))
+- Update `cross-fetch` to v4 ([#2069](https://github.com/ntucker/anansi/issues/2069)) ([73a92b3](https://github.com/ntucker/anansi/commit/73a92b3468a9f3f55199e38f0001c916e62f3979))
+- Update all non-major dependencies ([#2066](https://github.com/ntucker/anansi/issues/2066)) ([1bf7605](https://github.com/ntucker/anansi/commit/1bf7605e9976aeae7a1a908254df1e63d5da399b))
 
 ### [0.17.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.17.0...@anansi/core@0.17.1) (2023-07-02)
 
@@ -741,7 +751,7 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 🚀 Features
 
-* Add searchParams as third arg to resolveData ([dfe6a56](https://github.com/ntucker/anansi/commit/dfe6a5636de4c0f5c24c35f62de7170b8e1033c5))
+- Add searchParams as third arg to resolveData ([dfe6a56](https://github.com/ntucker/anansi/commit/dfe6a5636de4c0f5c24c35f62de7170b8e1033c5))
 
 ### [0.16.38](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.37...@anansi/core@0.16.38) (2023-06-29)
 
@@ -751,80 +761,80 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update webpack packages ([#2048](https://github.com/ntucker/anansi/issues/2048)) ([a24c9f6](https://github.com/ntucker/anansi/commit/a24c9f6043d803705abf3da05b0775e91ffeb24a))
+- Update webpack packages ([#2048](https://github.com/ntucker/anansi/issues/2048)) ([a24c9f6](https://github.com/ntucker/anansi/commit/a24c9f6043d803705abf3da05b0775e91ffeb24a))
 
 ### [0.16.36](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.35...@anansi/core@0.16.36) (2023-06-11)
 
 ### 📦 Package
 
-* Update webpack packages ([#2044](https://github.com/ntucker/anansi/issues/2044)) ([8451823](https://github.com/ntucker/anansi/commit/8451823c2cefd0045a2d435201f3acc593536b47))
+- Update webpack packages ([#2044](https://github.com/ntucker/anansi/issues/2044)) ([8451823](https://github.com/ntucker/anansi/commit/8451823c2cefd0045a2d435201f3acc593536b47))
 
 ### [0.16.35](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.34...@anansi/core@0.16.35) (2023-06-08)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2039](https://github.com/ntucker/anansi/issues/2039)) ([f917614](https://github.com/ntucker/anansi/commit/f9176144f4a9fb05a114c9624a33940a27f1dc91))
+- Update all non-major dependencies ([#2039](https://github.com/ntucker/anansi/issues/2039)) ([f917614](https://github.com/ntucker/anansi/commit/f9176144f4a9fb05a114c9624a33940a27f1dc91))
 
 ### [0.16.34](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.33...@anansi/core@0.16.34) (2023-05-24)
 
 ### 📦 Package
 
-* Update webpack packages ([#2021](https://github.com/ntucker/anansi/issues/2021)) ([4d31089](https://github.com/ntucker/anansi/commit/4d3108915f91f9a89f5ab72ab64d3da09f3ce9cc))
+- Update webpack packages ([#2021](https://github.com/ntucker/anansi/issues/2021)) ([4d31089](https://github.com/ntucker/anansi/commit/4d3108915f91f9a89f5ab72ab64d3da09f3ce9cc))
 
 ### [0.16.33](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.32...@anansi/core@0.16.33) (2023-05-17)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#2009](https://github.com/ntucker/anansi/issues/2009)) ([6effe5d](https://github.com/ntucker/anansi/commit/6effe5d94018dd840ca4401ef83fdc48f92368f0))
+- Update all non-major dependencies ([#2009](https://github.com/ntucker/anansi/issues/2009)) ([6effe5d](https://github.com/ntucker/anansi/commit/6effe5d94018dd840ca4401ef83fdc48f92368f0))
 
 ### [0.16.32](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.31...@anansi/core@0.16.32) (2023-05-09)
 
 ### 📦 Package
 
-* Update `enhanced-resolve` to ^5.14.0 ([#2004](https://github.com/ntucker/anansi/issues/2004)) ([324b0a3](https://github.com/ntucker/anansi/commit/324b0a3e62b3b985b13bf055feac43e309e1bbae))
+- Update `enhanced-resolve` to ^5.14.0 ([#2004](https://github.com/ntucker/anansi/issues/2004)) ([324b0a3](https://github.com/ntucker/anansi/commit/324b0a3e62b3b985b13bf055feac43e309e1bbae))
 
 ### [0.16.31](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.30...@anansi/core@0.16.31) (2023-05-07)
 
 ### 📦 Package
 
-* Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
-* Update webpack packages ([#1993](https://github.com/ntucker/anansi/issues/1993)) ([bbb5a81](https://github.com/ntucker/anansi/commit/bbb5a81c5b100eefec8309334c3b2987fdf608db))
+- Update `@types/node` to v20 ([#1994](https://github.com/ntucker/anansi/issues/1994)) ([379a614](https://github.com/ntucker/anansi/commit/379a61487a585c9618c80a6d436e581931040c7f))
+- Update webpack packages ([#1993](https://github.com/ntucker/anansi/issues/1993)) ([bbb5a81](https://github.com/ntucker/anansi/commit/bbb5a81c5b100eefec8309334c3b2987fdf608db))
 
 ### [0.16.30](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.29...@anansi/core@0.16.30) (2023-04-25)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1972](https://github.com/ntucker/anansi/issues/1972)) ([32c6aed](https://github.com/ntucker/anansi/commit/32c6aede199a138ad8ffb6f8b58c08e71c6cdc63))
+- Update all non-major dependencies ([#1972](https://github.com/ntucker/anansi/issues/1972)) ([32c6aed](https://github.com/ntucker/anansi/commit/32c6aede199a138ad8ffb6f8b58c08e71c6cdc63))
 
 ### [0.16.29](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.28...@anansi/core@0.16.29) (2023-04-19)
 
 ### 📦 Package
 
-* Update webpack packages ([#1970](https://github.com/ntucker/anansi/issues/1970)) ([e72ce9e](https://github.com/ntucker/anansi/commit/e72ce9ec11d0345debfd021626e0b988570f308c))
+- Update webpack packages ([#1970](https://github.com/ntucker/anansi/issues/1970)) ([e72ce9e](https://github.com/ntucker/anansi/commit/e72ce9ec11d0345debfd021626e0b988570f308c))
 
 ### [0.16.28](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.27...@anansi/core@0.16.28) (2023-04-16)
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to v4.13.3 ([#1963](https://github.com/ntucker/anansi/issues/1963)) ([6ef290e](https://github.com/ntucker/anansi/commit/6ef290e5233436d40f4f1afd10a04784fd6b1882))
+- Update `webpack-dev-server` to v4.13.3 ([#1963](https://github.com/ntucker/anansi/issues/1963)) ([6ef290e](https://github.com/ntucker/anansi/commit/6ef290e5233436d40f4f1afd10a04784fd6b1882))
 
 ### [0.16.27](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.26...@anansi/core@0.16.27) (2023-04-11)
 
 ### 📦 Package
 
-* Update `memfs` to ^3.5.0 ([#1948](https://github.com/ntucker/anansi/issues/1948)) ([dbda24d](https://github.com/ntucker/anansi/commit/dbda24d623767fb8b5bcdbc67f12f44ad75121a8))
+- Update `memfs` to ^3.5.0 ([#1948](https://github.com/ntucker/anansi/issues/1948)) ([dbda24d](https://github.com/ntucker/anansi/commit/dbda24d623767fb8b5bcdbc67f12f44ad75121a8))
 
 ### [0.16.26](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.25...@anansi/core@0.16.26) (2023-04-04)
 
 ### 📦 Package
 
-* Update webpack packages ([#1941](https://github.com/ntucker/anansi/issues/1941)) ([41e2df6](https://github.com/ntucker/anansi/commit/41e2df6fc0f475da703aee0a1e0c717c85283927))
+- Update webpack packages ([#1941](https://github.com/ntucker/anansi/issues/1941)) ([41e2df6](https://github.com/ntucker/anansi/commit/41e2df6fc0f475da703aee0a1e0c717c85283927))
 
 ### [0.16.25](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.24...@anansi/core@0.16.25) (2023-03-28)
 
 ### 📦 Package
 
-* @ant-design/cssinjs ([230c1b1](https://github.com/ntucker/anansi/commit/230c1b1a1f47bd846023a64764ba479524211c5a))
+- @ant-design/cssinjs ([230c1b1](https://github.com/ntucker/anansi/commit/230c1b1a1f47bd846023a64764ba479524211c5a))
 
 ### [0.16.24](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.23...@anansi/core@0.16.24) (2023-03-27)
 
@@ -834,38 +844,38 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
-* Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
-* Add missing packages ([f0b7a3c](https://github.com/ntucker/anansi/commit/f0b7a3c1b75ecd9971c0b4f42124516dff321c5b))
-* Fix peerdeps ([9a136e3](https://github.com/ntucker/anansi/commit/9a136e3c3c99b146f826d06dc12b2e670e9339bf))
-* Fix peerdeps for rest hooks ([c7fa0c9](https://github.com/ntucker/anansi/commit/c7fa0c9fc19420867b3be0f28957d1cb20672213))
-* Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
+- Add missing packages ([1193aa4](https://github.com/ntucker/anansi/commit/1193aa4a64da33b9588606f194eb729b60d84747))
+- Add missing packages ([aee7ef8](https://github.com/ntucker/anansi/commit/aee7ef83a19e352ff7ee03cd89914810ebf1ed6f))
+- Add missing packages ([f0b7a3c](https://github.com/ntucker/anansi/commit/f0b7a3c1b75ecd9971c0b4f42124516dff321c5b))
+- Fix peerdeps ([9a136e3](https://github.com/ntucker/anansi/commit/9a136e3c3c99b146f826d06dc12b2e670e9339bf))
+- Fix peerdeps for rest hooks ([c7fa0c9](https://github.com/ntucker/anansi/commit/c7fa0c9fc19420867b3be0f28957d1cb20672213))
+- Remove prerelease ranges ([1699480](https://github.com/ntucker/anansi/commit/169948070ab28c4a1038398459cc7f61d6b28800))
 
 ### [0.16.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.21...@anansi/core@0.16.22) (2023-03-24)
 
 ### 🐛 Bug Fix
 
-* Export server types ([b5d8540](https://github.com/ntucker/anansi/commit/b5d8540448c53e74ea857bd207f91ec562a7715e))
+- Export server types ([b5d8540](https://github.com/ntucker/anansi/commit/b5d8540448c53e74ea857bd207f91ec562a7715e))
 
 ### [0.16.21](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.20...@anansi/core@0.16.21) (2023-03-24)
 
 ### 📦 Package
 
-* Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
-* Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
+- Update `webpack` to v5.76.3 ([#1908](https://github.com/ntucker/anansi/issues/1908)) ([0e3b5b3](https://github.com/ntucker/anansi/commit/0e3b5b3bc1a9d4cef04dcebbc8ebd317d4559ccd))
+- Update all non-major dependencies ([#1913](https://github.com/ntucker/anansi/issues/1913)) ([ac1bfc0](https://github.com/ntucker/anansi/commit/ac1bfc09c229e48fdacd17c69456ea542d9d123a))
 
 ### [0.16.20](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.19...@anansi/core@0.16.20) (2023-03-21)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1902](https://github.com/ntucker/anansi/issues/1902)) ([3bf4979](https://github.com/ntucker/anansi/commit/3bf4979cfdcdf49e29f9f0bacf394f16285ea212))
-* Update webpack packages ([#1901](https://github.com/ntucker/anansi/issues/1901)) ([234beef](https://github.com/ntucker/anansi/commit/234beeff5c7f2be6086ca39af5b95c3095b79a17))
+- Update all non-major dependencies ([#1902](https://github.com/ntucker/anansi/issues/1902)) ([3bf4979](https://github.com/ntucker/anansi/commit/3bf4979cfdcdf49e29f9f0bacf394f16285ea212))
+- Update webpack packages ([#1901](https://github.com/ntucker/anansi/issues/1901)) ([234beef](https://github.com/ntucker/anansi/commit/234beeff5c7f2be6086ca39af5b95c3095b79a17))
 
 ### [0.16.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.18...@anansi/core@0.16.19) (2023-03-18)
 
 ### 🐛 Bug Fix
 
-* Proper transitive peerDeps ([2f6e870](https://github.com/ntucker/anansi/commit/2f6e8709d8db5180c9249eb705810da5a313e8fc))
+- Proper transitive peerDeps ([2f6e870](https://github.com/ntucker/anansi/commit/2f6e8709d8db5180c9249eb705810da5a313e8fc))
 
 ### [0.16.18](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.17...@anansi/core@0.16.18) (2023-03-18)
 
@@ -875,53 +885,53 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 💅 Enhancement
 
-* Update worker types ([6997bb0](https://github.com/ntucker/anansi/commit/6997bb0b22c6fabd7cb9f433e1af872aba896da9))
+- Update worker types ([6997bb0](https://github.com/ntucker/anansi/commit/6997bb0b22c6fabd7cb9f433e1af872aba896da9))
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to v4.13.0 ([#1899](https://github.com/ntucker/anansi/issues/1899)) ([ca813ee](https://github.com/ntucker/anansi/commit/ca813ee84d2af8701db0c956a8639ab1b443c934))
-* Update all non-major dependencies ([#1885](https://github.com/ntucker/anansi/issues/1885)) ([bd9c667](https://github.com/ntucker/anansi/commit/bd9c667d7ebae08caf6de3e03ab2eaa5d906de50))
-* Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
+- Update `webpack-dev-server` to v4.13.0 ([#1899](https://github.com/ntucker/anansi/issues/1899)) ([ca813ee](https://github.com/ntucker/anansi/commit/ca813ee84d2af8701db0c956a8639ab1b443c934))
+- Update all non-major dependencies ([#1885](https://github.com/ntucker/anansi/issues/1885)) ([bd9c667](https://github.com/ntucker/anansi/commit/bd9c667d7ebae08caf6de3e03ab2eaa5d906de50))
+- Update webpack packages ([#1887](https://github.com/ntucker/anansi/issues/1887)) ([0ace32f](https://github.com/ntucker/anansi/commit/0ace32fb809a28619db47f45ff3de35797fca1db))
 
 ### [0.16.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.15...@anansi/core@0.16.16) (2023-03-15)
 
 ### 📦 Package
 
-* Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
-* Update webpack packages ([#1880](https://github.com/ntucker/anansi/issues/1880)) ([403fb51](https://github.com/ntucker/anansi/commit/403fb5187372225604e9d3130dfff8ef547d12bf))
+- Update babel packages ([#1879](https://github.com/ntucker/anansi/issues/1879)) ([6edf54a](https://github.com/ntucker/anansi/commit/6edf54a08da22a5b092e162b2d5c6a057f7153b8))
+- Update webpack packages ([#1880](https://github.com/ntucker/anansi/issues/1880)) ([403fb51](https://github.com/ntucker/anansi/commit/403fb5187372225604e9d3130dfff8ef547d12bf))
 
 ### [0.16.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.14...@anansi/core@0.16.15) (2023-03-13)
 
 ### 💅 Enhancement
 
-* Improve error messaging for devserver ([ba0a4f6](https://github.com/ntucker/anansi/commit/ba0a4f6249faaee02627f907380a47c1520ee9e9))
-* Move CSP to header; report-only in dev-mode ([#1878](https://github.com/ntucker/anansi/issues/1878)) ([f8544ec](https://github.com/ntucker/anansi/commit/f8544ec179e26d45453cb79e04c3300c750c2f7e))
+- Improve error messaging for devserver ([ba0a4f6](https://github.com/ntucker/anansi/commit/ba0a4f6249faaee02627f907380a47c1520ee9e9))
+- Move CSP to header; report-only in dev-mode ([#1878](https://github.com/ntucker/anansi/issues/1878)) ([f8544ec](https://github.com/ntucker/anansi/commit/f8544ec179e26d45453cb79e04c3300c750c2f7e))
 
 ### 📦 Package
 
-* Update `webpack` to v5.76.1 ([#1876](https://github.com/ntucker/anansi/issues/1876)) ([16341ef](https://github.com/ntucker/anansi/commit/16341efd8bc5e3a5811d88dbf575cca77ef03cc4))
+- Update `webpack` to v5.76.1 ([#1876](https://github.com/ntucker/anansi/issues/1876)) ([16341ef](https://github.com/ntucker/anansi/commit/16341efd8bc5e3a5811d88dbf575cca77ef03cc4))
 
 ### [0.16.14](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.13...@anansi/core@0.16.14) (2023-03-09)
 
 ### 📦 Package
 
-* Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
-* Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
-* Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
-* Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
+- Update `rimraf` to v4.3.1 ([#1870](https://github.com/ntucker/anansi/issues/1870)) ([5dbf9b6](https://github.com/ntucker/anansi/commit/5dbf9b660e42b8105789722ac16ae8fb2f9dc023))
+- Update all non-major dependencies ([#1874](https://github.com/ntucker/anansi/issues/1874)) ([42d2d5c](https://github.com/ntucker/anansi/commit/42d2d5c7ed2c73fe79ceabd9c140f25f56766c79))
+- Update JS test packages to ^29.5.0 ([#1868](https://github.com/ntucker/anansi/issues/1868)) ([2f7ba87](https://github.com/ntucker/anansi/commit/2f7ba87312ed49a817f607020f48058b69b0ca4f))
+- Update webpack packages ([#1872](https://github.com/ntucker/anansi/issues/1872)) ([d868841](https://github.com/ntucker/anansi/commit/d868841390c288e99dcd81a130e67dfaaa1df7d8))
 
 ### [0.16.13](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.12...@anansi/core@0.16.13) (2023-03-05)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
-* Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
+- Update all non-major dependencies ([#1863](https://github.com/ntucker/anansi/issues/1863)) ([20a34cc](https://github.com/ntucker/anansi/commit/20a34cce18310ac3164d5fdc709367d798df71ab))
+- Update all non-major dependencies ([#1865](https://github.com/ntucker/anansi/issues/1865)) ([6592098](https://github.com/ntucker/anansi/commit/6592098fce49bddd5585503a8e52b96cafd4d3cb))
 
 ### [0.16.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.11...@anansi/core@0.16.12) (2023-02-28)
 
 ### 💅 Enhancement
 
-* ESM compatible hot-reloading ([61c9b8a](https://github.com/ntucker/anansi/commit/61c9b8aea96aa35e3634b270b0bf516f5cabcadd))
+- ESM compatible hot-reloading ([61c9b8a](https://github.com/ntucker/anansi/commit/61c9b8aea96aa35e3634b270b0bf516f5cabcadd))
 
 ### [0.16.11](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.10...@anansi/core@0.16.11) (2023-02-28)
 
@@ -931,57 +941,57 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 💅 Enhancement
 
-* Default to ESM for server ([#1861](https://github.com/ntucker/anansi/issues/1861)) ([4a656e8](https://github.com/ntucker/anansi/commit/4a656e84d1756c407e418cc8e490a3a27ee87995))
-* Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
+- Default to ESM for server ([#1861](https://github.com/ntucker/anansi/issues/1861)) ([4a656e8](https://github.com/ntucker/anansi/commit/4a656e84d1756c407e418cc8e490a3a27ee87995))
+- Get rid of deprecated substr() ([79adb37](https://github.com/ntucker/anansi/commit/79adb37ff9852fc96c8fc2c7e6c4f202d3ed0c1b))
 
 ### 🐛 Bug Fix
 
-* Serve assets with correct type ([1507130](https://github.com/ntucker/anansi/commit/15071305a8d924737184ffa5dab1ef154dbdec8e))
+- Serve assets with correct type ([1507130](https://github.com/ntucker/anansi/commit/15071305a8d924737184ffa5dab1ef154dbdec8e))
 
 ### 📦 Package
 
-* Update `ora` to v6 ([#1859](https://github.com/ntucker/anansi/issues/1859)) ([cf1468d](https://github.com/ntucker/anansi/commit/cf1468d80482923d807b49917889a621afcf22da))
+- Update `ora` to v6 ([#1859](https://github.com/ntucker/anansi/issues/1859)) ([cf1468d](https://github.com/ntucker/anansi/commit/cf1468d80482923d807b49917889a621afcf22da))
 
 ### [0.16.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.8...@anansi/core@0.16.9) (2023-02-28)
 
 ### 💅 Enhancement
 
-* Give more context when server entrypoint throws ([cefcfbb](https://github.com/ntucker/anansi/commit/cefcfbba8acc4bacc851620a5a171314439a2ec2))
-* Improve logging on errors ([5c01408](https://github.com/ntucker/anansi/commit/5c014082e8b4476bd715cd96d3c4adb717b9f440))
-* Scripts are now ESM ([#1858](https://github.com/ntucker/anansi/issues/1858)) ([acdcb3b](https://github.com/ntucker/anansi/commit/acdcb3b09c36726e5f63e91f937bf19515c3cb25))
+- Give more context when server entrypoint throws ([cefcfbb](https://github.com/ntucker/anansi/commit/cefcfbba8acc4bacc851620a5a171314439a2ec2))
+- Improve logging on errors ([5c01408](https://github.com/ntucker/anansi/commit/5c014082e8b4476bd715cd96d3c4adb717b9f440))
+- Scripts are now ESM ([#1858](https://github.com/ntucker/anansi/issues/1858)) ([acdcb3b](https://github.com/ntucker/anansi/commit/acdcb3b09c36726e5f63e91f937bf19515c3cb25))
 
 ### 🐛 Bug Fix
 
-* @ant-design/cssinjs is dynamically imported so its not needed ([1def2db](https://github.com/ntucker/anansi/commit/1def2dbf849edbe92ce3986209296c1518db2330))
+- @ant-design/cssinjs is dynamically imported so its not needed ([1def2db](https://github.com/ntucker/anansi/commit/1def2dbf849edbe92ce3986209296c1518db2330))
 
 ### [0.16.8](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.7...@anansi/core@0.16.8) (2023-02-26)
 
 ### 💅 Enhancement
 
-* Always use nonce for https ([a7d29ee](https://github.com/ntucker/anansi/commit/a7d29ee5960b5a6a7a87483c41e2ba89df80a1b8))
+- Always use nonce for https ([a7d29ee](https://github.com/ntucker/anansi/commit/a7d29ee5960b5a6a7a87483c41e2ba89df80a1b8))
 
 ### 🐛 Bug Fix
 
-* Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
+- Don't remove process.env.NODE_ENV from node builds ([b4d4569](https://github.com/ntucker/anansi/commit/b4d4569bbd6c735e61dfb9d9b842f829a8fcf4cb))
 
 ### [0.16.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.6...@anansi/core@0.16.7) (2023-02-26)
 
 ### 💅 Enhancement
 
-* Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
-* Detect .cjs webpack configs ([111d6e4](https://github.com/ntucker/anansi/commit/111d6e4414d2f1fcfe8998b07918d328af059810))
-* Use fully qualified module names at import ([159a96e](https://github.com/ntucker/anansi/commit/159a96ea0bf57917325e842cd0584e3a8cfb83df))
+- Add ESM exports ([fd4d61f](https://github.com/ntucker/anansi/commit/fd4d61f035bd77f4ff2ae79f512e649af9e30356))
+- Detect .cjs webpack configs ([111d6e4](https://github.com/ntucker/anansi/commit/111d6e4414d2f1fcfe8998b07918d328af059810))
+- Use fully qualified module names at import ([159a96e](https://github.com/ntucker/anansi/commit/159a96ea0bf57917325e842cd0584e3a8cfb83df))
 
 ### 📦 Package
 
-* Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
-* Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
+- Update babel packages ([#1852](https://github.com/ntucker/anansi/issues/1852)) ([cc5d1e5](https://github.com/ntucker/anansi/commit/cc5d1e5b6cca483a1681b844892b5d850669490e))
+- Update JS test packages to ^29.4.3 ([#1854](https://github.com/ntucker/anansi/issues/1854)) ([088bc62](https://github.com/ntucker/anansi/commit/088bc6226301235fca3eed479569451feb8c70d1))
 
 ### [0.16.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.5...@anansi/core@0.16.6) (2023-02-14)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1847](https://github.com/ntucker/anansi/issues/1847)) ([d145056](https://github.com/ntucker/anansi/commit/d145056e7273afa84bddd94ac73aed7576b5490d))
+- Update all non-major dependencies ([#1847](https://github.com/ntucker/anansi/issues/1847)) ([d145056](https://github.com/ntucker/anansi/commit/d145056e7273afa84bddd94ac73aed7576b5490d))
 
 ### [0.16.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.4...@anansi/core@0.16.5) (2023-02-10)
 
@@ -991,29 +1001,29 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 💅 Enhancement
 
-* Use unsafe-inline for better legacy browser compat ([595cacb](https://github.com/ntucker/anansi/commit/595cacb9f157537bd0db7b71df8cc5e39dabfd85))
+- Use unsafe-inline for better legacy browser compat ([595cacb](https://github.com/ntucker/anansi/commit/595cacb9f157537bd0db7b71df8cc5e39dabfd85))
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1838](https://github.com/ntucker/anansi/issues/1838)) ([0bd6008](https://github.com/ntucker/anansi/commit/0bd60089c57d81801d24fa1927cb50a285dde121))
-* Update JS test packages to ^29.4.2 ([#1842](https://github.com/ntucker/anansi/issues/1842)) ([2a8c989](https://github.com/ntucker/anansi/commit/2a8c989127268c46524558f4c69714df20d6ca58))
+- Update all non-major dependencies ([#1838](https://github.com/ntucker/anansi/issues/1838)) ([0bd6008](https://github.com/ntucker/anansi/commit/0bd60089c57d81801d24fa1927cb50a285dde121))
+- Update JS test packages to ^29.4.2 ([#1842](https://github.com/ntucker/anansi/issues/1842)) ([2a8c989](https://github.com/ntucker/anansi/commit/2a8c989127268c46524558f4c69714df20d6ca58))
 
 ### [0.16.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.2...@anansi/core@0.16.3) (2023-01-30)
 
 ### 💅 Enhancement
 
-* Dynamic import for antd deps ([cc7838a](https://github.com/ntucker/anansi/commit/cc7838a830ae949fb85a6f7d46b4de17ad70b99e))
-* Dynamic import for rest-hooks deps ([a31f409](https://github.com/ntucker/anansi/commit/a31f4097ef068f5db79f7e3ea45a71e450321ac1))
-* lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
+- Dynamic import for antd deps ([cc7838a](https://github.com/ntucker/anansi/commit/cc7838a830ae949fb85a6f7d46b4de17ad70b99e))
+- Dynamic import for rest-hooks deps ([a31f409](https://github.com/ntucker/anansi/commit/a31f4097ef068f5db79f7e3ea45a71e450321ac1))
+- lib folder is es6 modules ([b2a4114](https://github.com/ntucker/anansi/commit/b2a411454a7606b378d94dea595d22bb4c7b51ba))
 
 ### [0.16.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.1...@anansi/core@0.16.2) (2023-01-29)
 
 ### 📦 Package
 
-* Update `webpack-dev-server` to ^4.11.1 ([#1835](https://github.com/ntucker/anansi/issues/1835)) ([2e1dd03](https://github.com/ntucker/anansi/commit/2e1dd03f76316b7c5640e4951e3c52db2cf7a721))
-* Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
-* Update all non-major dependencies ([#1833](https://github.com/ntucker/anansi/issues/1833)) ([4fb7484](https://github.com/ntucker/anansi/commit/4fb74845a9bc1179758413ca919806c45d1418c7))
-* Update JS test packages ([#1827](https://github.com/ntucker/anansi/issues/1827)) ([b0eb13e](https://github.com/ntucker/anansi/commit/b0eb13efce78005fe179169d5e9e21d0e9d5bd57))
+- Update `webpack-dev-server` to ^4.11.1 ([#1835](https://github.com/ntucker/anansi/issues/1835)) ([2e1dd03](https://github.com/ntucker/anansi/commit/2e1dd03f76316b7c5640e4951e3c52db2cf7a721))
+- Update all non-major dependencies ([#1831](https://github.com/ntucker/anansi/issues/1831)) ([0abe80e](https://github.com/ntucker/anansi/commit/0abe80ef359ee1ca4dd6760e9e39174541208c61))
+- Update all non-major dependencies ([#1833](https://github.com/ntucker/anansi/issues/1833)) ([4fb7484](https://github.com/ntucker/anansi/commit/4fb74845a9bc1179758413ca919806c45d1418c7))
+- Update JS test packages ([#1827](https://github.com/ntucker/anansi/issues/1827)) ([b0eb13e](https://github.com/ntucker/anansi/commit/b0eb13efce78005fe179169d5e9e21d0e9d5bd57))
 
 ### [0.16.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.16.0...@anansi/core@0.16.1) (2023-01-22)
 
@@ -1023,12 +1033,12 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 🚀 Features
 
-* Add antdSpout ([651586d](https://github.com/ntucker/anansi/commit/651586d46213a4d91aec055720a6dc11bee64a46))
+- Add antdSpout ([651586d](https://github.com/ntucker/anansi/commit/651586d46213a4d91aec055720a6dc11bee64a46))
 
 ### 📦 Package
 
-* Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
-* Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
+- Update `rimraf` to v4 ([#1817](https://github.com/ntucker/anansi/issues/1817)) ([1de7e67](https://github.com/ntucker/anansi/commit/1de7e67da2669bfe09f1c7ef5cd1f884dcf6ef60))
+- Update linting packages ([#1811](https://github.com/ntucker/anansi/issues/1811)) ([51b95e6](https://github.com/ntucker/anansi/commit/51b95e64a755d64c6bc546602603f5a3fb175b59))
 
 ### [0.15.9](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.8...@anansi/core@0.15.9) (2023-01-07)
 
@@ -1038,13 +1048,13 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update `@babel/core` to v7.20.12 ([#1802](https://github.com/ntucker/anansi/issues/1802)) ([9074ddf](https://github.com/ntucker/anansi/commit/9074ddfad34ef219db99a29ed4941d4da56238c2))
+- Update `@babel/core` to v7.20.12 ([#1802](https://github.com/ntucker/anansi/issues/1802)) ([9074ddf](https://github.com/ntucker/anansi/commit/9074ddfad34ef219db99a29ed4941d4da56238c2))
 
 ### [0.15.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.6...@anansi/core@0.15.7) (2022-12-22)
 
 ### 📦 Package
 
-* Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
+- Update babel packages to v7.20.7 ([#1797](https://github.com/ntucker/anansi/issues/1797)) ([fb4e177](https://github.com/ntucker/anansi/commit/fb4e17750bb5cde5b5fb1a7cd8e7b3c508e9bda9))
 
 ### [0.15.6](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.5...@anansi/core@0.15.6) (2022-12-17)
 
@@ -1054,79 +1064,79 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 🐛 Bug Fix
 
-* Polyfill Object.hasOwn for node 14 or lower ([268ba81](https://github.com/ntucker/anansi/commit/268ba81b5c4aa4811262aa59d346d69404adf298))
+- Polyfill Object.hasOwn for node 14 or lower ([268ba81](https://github.com/ntucker/anansi/commit/268ba81b5c4aa4811262aa59d346d69404adf298))
 
 ### 📦 Package
 
-* Update webpack packages ([#1787](https://github.com/ntucker/anansi/issues/1787)) ([d297255](https://github.com/ntucker/anansi/commit/d29725594e94e3f30b7648c62715eb863534261f))
+- Update webpack packages ([#1787](https://github.com/ntucker/anansi/issues/1787)) ([d297255](https://github.com/ntucker/anansi/commit/d29725594e94e3f30b7648c62715eb863534261f))
 
 ### [0.15.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.3...@anansi/core@0.15.4) (2022-12-02)
 
 ### 💅 Enhancement
 
-* Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
+- Switch back to @babel/runtime ([5bc1a67](https://github.com/ntucker/anansi/commit/5bc1a67d984d7987540c5b65bac9a6ab5f0e201f))
 
 ### [0.15.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.2...@anansi/core@0.15.3) (2022-12-02)
 
 ### 💅 Enhancement
 
-* Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
+- Use @babel/runtime-corejs3 ([00f0118](https://github.com/ntucker/anansi/commit/00f0118cc713e04465c6eb6f88ea10b14f5cf062))
 
 ### 📦 Package
 
-* Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
+- Update babel packages to v7.20.5 ([#1776](https://github.com/ntucker/anansi/issues/1776)) ([a231b89](https://github.com/ntucker/anansi/commit/a231b891a77501717db2e0a3ad351d1d9ed55784))
 
 ### [0.15.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.1...@anansi/core@0.15.2) (2022-11-23)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1769](https://github.com/ntucker/anansi/issues/1769)) ([150a3d7](https://github.com/ntucker/anansi/commit/150a3d7cc343c505d516c842247646ba53e440a3))
+- Update all non-major dependencies ([#1769](https://github.com/ntucker/anansi/issues/1769)) ([150a3d7](https://github.com/ntucker/anansi/commit/150a3d7cc343c505d516c842247646ba53e440a3))
 
 ### [0.15.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.15.0...@anansi/core@0.15.1) (2022-11-17)
 
 ### 📦 Package
 
-* Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
+- Update `webpack-cli` to v5 ([#1718](https://github.com/ntucker/anansi/issues/1718)) ([a1efb72](https://github.com/ntucker/anansi/commit/a1efb72683c3bc43da00502cca9f5a3591784065))
 
 ## [0.15.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.36...@anansi/core@0.15.0) (2022-11-16)
 
 ### 🚀 Features
 
-* Support latest @rest-hooks/react pkg ([7d48c2e](https://github.com/ntucker/anansi/commit/7d48c2eae1842c1f24335f27a1bb1da5582287e9))
+- Support latest @rest-hooks/react pkg ([7d48c2e](https://github.com/ntucker/anansi/commit/7d48c2eae1842c1f24335f27a1bb1da5582287e9))
 
 ### 📦 Package
 
-* Update `rest-hooks` to v7 ([#1762](https://github.com/ntucker/anansi/issues/1762)) ([49957e2](https://github.com/ntucker/anansi/commit/49957e2b9a2a9ca4232b88e7f32c41b041c5bcae))
-* Update all non-major dependencies ([#1760](https://github.com/ntucker/anansi/issues/1760)) ([0fd6bb9](https://github.com/ntucker/anansi/commit/0fd6bb98aa0eeaef4b84d92a92aa62b9a7d01485))
+- Update `rest-hooks` to v7 ([#1762](https://github.com/ntucker/anansi/issues/1762)) ([49957e2](https://github.com/ntucker/anansi/commit/49957e2b9a2a9ca4232b88e7f32c41b041c5bcae))
+- Update all non-major dependencies ([#1760](https://github.com/ntucker/anansi/issues/1760)) ([0fd6bb9](https://github.com/ntucker/anansi/commit/0fd6bb98aa0eeaef4b84d92a92aa62b9a7d01485))
 
 ### [0.14.36](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.35...@anansi/core@0.14.36) (2022-11-15)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1753](https://github.com/ntucker/anansi/issues/1753)) ([82e33a4](https://github.com/ntucker/anansi/commit/82e33a49c0bb63397f6e4ece0fca0b9207f560a6))
+- Update all non-major dependencies ([#1753](https://github.com/ntucker/anansi/issues/1753)) ([82e33a4](https://github.com/ntucker/anansi/commit/82e33a49c0bb63397f6e4ece0fca0b9207f560a6))
 
 ### [0.14.35](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.34...@anansi/core@0.14.35) (2022-11-10)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.3.1 ([#1748](https://github.com/ntucker/anansi/issues/1748)) ([e9ba003](https://github.com/ntucker/anansi/commit/e9ba0034b4aa8e52b02a7f4d7637b21b8755cb1a))
-* Update webpack packages ([#1747](https://github.com/ntucker/anansi/issues/1747)) ([666c74a](https://github.com/ntucker/anansi/commit/666c74a6b19920293e182526a42b7343dbf25c05))
+- Update JS test packages to ^29.3.1 ([#1748](https://github.com/ntucker/anansi/issues/1748)) ([e9ba003](https://github.com/ntucker/anansi/commit/e9ba0034b4aa8e52b02a7f4d7637b21b8755cb1a))
+- Update webpack packages ([#1747](https://github.com/ntucker/anansi/issues/1747)) ([666c74a](https://github.com/ntucker/anansi/commit/666c74a6b19920293e182526a42b7343dbf25c05))
 
 ### [0.14.34](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.33...@anansi/core@0.14.34) (2022-11-08)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
+- Update JS test packages to ^29.3.0 ([#1746](https://github.com/ntucker/anansi/issues/1746)) ([33a1331](https://github.com/ntucker/anansi/commit/33a1331bb1e595727fcaeaf7ac06b83122f34ca2))
 
 ### [0.14.33](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.32...@anansi/core@0.14.33) (2022-11-06)
 
 ### 💅 Enhancement
 
-* Better streaming SSR support ([9bc8c77](https://github.com/ntucker/anansi/commit/9bc8c77747b7e111038b75316b4d3216afb1289f))
+- Better streaming SSR support ([9bc8c77](https://github.com/ntucker/anansi/commit/9bc8c77747b7e111038b75316b4d3216afb1289f))
 
 ### 📦 Package
 
-* Update babel packages ([#1736](https://github.com/ntucker/anansi/issues/1736)) ([2ec01f5](https://github.com/ntucker/anansi/commit/2ec01f585dc90f5d366e7d1626a3f8b1cf7b752c))
+- Update babel packages ([#1736](https://github.com/ntucker/anansi/issues/1736)) ([2ec01f5](https://github.com/ntucker/anansi/commit/2ec01f585dc90f5d366e7d1626a3f8b1cf7b752c))
 
 ### [0.14.32](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.31...@anansi/core@0.14.32) (2022-11-03)
 
@@ -1140,25 +1150,25 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update JS test packages to ^29.2.2 ([#1721](https://github.com/ntucker/anansi/issues/1721)) ([9e90458](https://github.com/ntucker/anansi/commit/9e90458c041af252d170b77028628962fc7314a4))
+- Update JS test packages to ^29.2.2 ([#1721](https://github.com/ntucker/anansi/issues/1721)) ([9e90458](https://github.com/ntucker/anansi/commit/9e90458c041af252d170b77028628962fc7314a4))
 
 ### [0.14.29](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.28...@anansi/core@0.14.29) (2022-10-21)
 
 ### 📦 Package
 
-* Update babel packages to v7.19.6 ([#1715](https://github.com/ntucker/anansi/issues/1715)) ([6be2305](https://github.com/ntucker/anansi/commit/6be2305008f4fd7d16dddc2f6b90b88f88372394))
+- Update babel packages to v7.19.6 ([#1715](https://github.com/ntucker/anansi/issues/1715)) ([6be2305](https://github.com/ntucker/anansi/commit/6be2305008f4fd7d16dddc2f6b90b88f88372394))
 
 ### [0.14.28](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.27...@anansi/core@0.14.28) (2022-10-19)
 
 ### 📦 Package
 
-* Update JS test packages ([#1712](https://github.com/ntucker/anansi/issues/1712)) ([4713fca](https://github.com/ntucker/anansi/commit/4713fcad5477ca82daedce1b0f951b4df4e5ae0b))
+- Update JS test packages ([#1712](https://github.com/ntucker/anansi/issues/1712)) ([4713fca](https://github.com/ntucker/anansi/commit/4713fcad5477ca82daedce1b0f951b4df4e5ae0b))
 
 ### [0.14.27](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.26...@anansi/core@0.14.27) (2022-10-15)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.2.0 ([#1699](https://github.com/ntucker/anansi/issues/1699)) ([04b985a](https://github.com/ntucker/anansi/commit/04b985a6d58d808f942355e409c38cd63c381c4b))
+- Update JS test packages to ^29.2.0 ([#1699](https://github.com/ntucker/anansi/issues/1699)) ([04b985a](https://github.com/ntucker/anansi/commit/04b985a6d58d808f942355e409c38cd63c381c4b))
 
 ### [0.14.26](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.25...@anansi/core@0.14.26) (2022-10-10)
 
@@ -1172,14 +1182,14 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
+- Update JS test packages ([#1680](https://github.com/ntucker/anansi/issues/1680)) ([b4cf5e9](https://github.com/ntucker/anansi/commit/b4cf5e9ff6a5208ea7c841105a13317acaff2f82))
 
 ### [0.14.23](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.22...@anansi/core@0.14.23) (2022-09-29)
 
 ### 📦 Package
 
-* Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
-* Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
+- Update babel packages ([#1673](https://github.com/ntucker/anansi/issues/1673)) ([75fe563](https://github.com/ntucker/anansi/commit/75fe563f44777a379845c85201c7d0ef663e940b))
+- Update JS test packages ([#1677](https://github.com/ntucker/anansi/issues/1677)) ([f9cc893](https://github.com/ntucker/anansi/commit/f9cc893fb9a16f276f05967a6abaeebd9cdf3b8f))
 
 ### [0.14.22](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.21...@anansi/core@0.14.22) (2022-09-25)
 
@@ -1193,13 +1203,13 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update babel packages to v7.19.1 ([#1662](https://github.com/ntucker/anansi/issues/1662)) ([28c2a3f](https://github.com/ntucker/anansi/commit/28c2a3f10b72f3474092a8f2fa51318941336d5b))
+- Update babel packages to v7.19.1 ([#1662](https://github.com/ntucker/anansi/issues/1662)) ([28c2a3f](https://github.com/ntucker/anansi/commit/28c2a3f10b72f3474092a8f2fa51318941336d5b))
 
 ### [0.14.19](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.18...@anansi/core@0.14.19) (2022-09-14)
 
 ### 📦 Package
 
-* Update JS test packages ([#1652](https://github.com/ntucker/anansi/issues/1652)) ([14bffc4](https://github.com/ntucker/anansi/commit/14bffc43cc4dd455eead6b72853c4a9b56922e58))
+- Update JS test packages ([#1652](https://github.com/ntucker/anansi/issues/1652)) ([14bffc4](https://github.com/ntucker/anansi/commit/14bffc43cc4dd455eead6b72853c4a9b56922e58))
 
 ### [0.14.18](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.17...@anansi/core@0.14.18) (2022-09-08)
 
@@ -1209,22 +1219,22 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
-* Update JS test packages to ^29.0.2 ([#1640](https://github.com/ntucker/anansi/issues/1640)) ([102b01a](https://github.com/ntucker/anansi/commit/102b01a5c30b3df270e1b73062acaee2e9b1c774))
+- Update babel packages to v7.19.0 ([#1638](https://github.com/ntucker/anansi/issues/1638)) ([b7438d1](https://github.com/ntucker/anansi/commit/b7438d107b7785aad2f7a336a6121f7a78217b3b))
+- Update JS test packages to ^29.0.2 ([#1640](https://github.com/ntucker/anansi/issues/1640)) ([102b01a](https://github.com/ntucker/anansi/commit/102b01a5c30b3df270e1b73062acaee2e9b1c774))
 
 ### [0.14.16](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.15...@anansi/core@0.14.16) (2022-08-31)
 
 ### 📦 Package
 
-* Update JS test packages to ^29.0.1 ([#1634](https://github.com/ntucker/anansi/issues/1634)) ([8e91a00](https://github.com/ntucker/anansi/commit/8e91a00c968f677a6a1505ed4f7f7a15db288d81))
+- Update JS test packages to ^29.0.1 ([#1634](https://github.com/ntucker/anansi/issues/1634)) ([8e91a00](https://github.com/ntucker/anansi/commit/8e91a00c968f677a6a1505ed4f7f7a15db288d81))
 
 ### [0.14.15](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.14...@anansi/core@0.14.15) (2022-08-25)
 
 ### 📦 Package
 
-* Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
-* Update all non-major dependencies ([#1626](https://github.com/ntucker/anansi/issues/1626)) ([05b1837](https://github.com/ntucker/anansi/commit/05b1837691fd0796ce3141c8535013bdc3996bc3))
-* Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
+- Update `@babel/core` to v7.18.13 ([#1622](https://github.com/ntucker/anansi/issues/1622)) ([431a2b4](https://github.com/ntucker/anansi/commit/431a2b49453e8937c5f9e376a5f26395117a1d35))
+- Update all non-major dependencies ([#1626](https://github.com/ntucker/anansi/issues/1626)) ([05b1837](https://github.com/ntucker/anansi/commit/05b1837691fd0796ce3141c8535013bdc3996bc3))
+- Update JS test packages to v29 (major) ([#1629](https://github.com/ntucker/anansi/issues/1629)) ([d3598d6](https://github.com/ntucker/anansi/commit/d3598d652ab3070903cfbf6988b5dacf6a5943f6))
 
 ### [0.14.14](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.13...@anansi/core@0.14.14) (2022-08-21)
 
@@ -1234,7 +1244,7 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
+- Pin dependencies ([#1608](https://github.com/ntucker/anansi/issues/1608)) ([42cd020](https://github.com/ntucker/anansi/commit/42cd020d19ada65f62db0c0f95041acbe0212a50))
 
 ### [0.14.12](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.11...@anansi/core@0.14.12) (2022-08-04)
 
@@ -1244,7 +1254,7 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update babel packages to v7.18.10 ([#1603](https://github.com/ntucker/anansi/issues/1603)) ([bbaa15c](https://github.com/ntucker/anansi/commit/bbaa15c9e9c1e07479568acfb8e91a6ec4692833))
+- Update babel packages to v7.18.10 ([#1603](https://github.com/ntucker/anansi/issues/1603)) ([bbaa15c](https://github.com/ntucker/anansi/commit/bbaa15c9e9c1e07479568acfb8e91a6ec4692833))
 
 ### [0.14.10](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.9...@anansi/core@0.14.10) (2022-07-30)
 
@@ -1258,7 +1268,7 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 💅 Enhancement
 
-* Provide warnings when SSR init has issues ([27c1c8a](https://github.com/ntucker/anansi/commit/27c1c8a90e474c01ad7c5a48d05dedc36508ede0))
+- Provide warnings when SSR init has issues ([27c1c8a](https://github.com/ntucker/anansi/commit/27c1c8a90e474c01ad7c5a48d05dedc36508ede0))
 
 ### [0.14.7](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.6...@anansi/core@0.14.7) (2022-07-23)
 
@@ -1268,13 +1278,13 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
+- Update babel monorepo to v7.18.9 ([#1583](https://github.com/ntucker/anansi/issues/1583)) ([f49c211](https://github.com/ntucker/anansi/commit/f49c211c633b6bbabdf50e4c8dd62cfd13015e22))
 
 ### [0.14.5](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.4...@anansi/core@0.14.5) (2022-07-16)
 
 ### 📦 Package
 
-* Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
+- Update jest monorepo to ^28.1.3 ([#1579](https://github.com/ntucker/anansi/issues/1579)) ([67eb63f](https://github.com/ntucker/anansi/commit/67eb63f426580c74027114f33c5ebfa06c8a366b))
 
 ### [0.14.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.3...@anansi/core@0.14.4) (2022-07-08)
 
@@ -1284,182 +1294,182 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 🐛 Bug Fix
 
-* Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
+- Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
 
 ### [0.14.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.1...@anansi/core@0.14.2) (2022-07-01)
 
 ### 🐛 Bug Fix
 
-* Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
+- Spout type removes provided props from needed props ([#1572](https://github.com/ntucker/anansi/issues/1572)) ([caa25fd](https://github.com/ntucker/anansi/commit/caa25fd73b1b381fea84427a26b44199d4b12314))
 
 ### [0.14.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.14.0...@anansi/core@0.14.1) (2022-06-29)
 
 ### 🐛 Bug Fix
 
-* Provide rest-hooks package for rest-hooks/ssr ([#1569](https://github.com/ntucker/anansi/issues/1569)) ([1dbb8ae](https://github.com/ntucker/anansi/commit/1dbb8aec39ad3180a96e76827611b05b53d7e02f))
+- Provide rest-hooks package for rest-hooks/ssr ([#1569](https://github.com/ntucker/anansi/issues/1569)) ([1dbb8ae](https://github.com/ntucker/anansi/commit/1dbb8aec39ad3180a96e76827611b05b53d7e02f))
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
-* Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
+- Update babel monorepo to v7.18.6 ([#1566](https://github.com/ntucker/anansi/issues/1566)) ([1634f13](https://github.com/ntucker/anansi/commit/1634f1358de98ba724433ffb462094ad17f88b72))
+- Update jest monorepo to ^28.1.2 ([#1567](https://github.com/ntucker/anansi/issues/1567)) ([2e614b1](https://github.com/ntucker/anansi/commit/2e614b1bc54ade3cf78717e7d26d606f5e917888))
 
 ## [0.14.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.13.0...@anansi/core@0.14.0) (2022-06-24)
 
 ### 🚀 Features
 
-* Add Spout type for easy spout construction ([8f93eb3](https://github.com/ntucker/anansi/commit/8f93eb363f1bfe30d1ac30395df1a3d9fbd9cab3))
+- Add Spout type for easy spout construction ([8f93eb3](https://github.com/ntucker/anansi/commit/8f93eb363f1bfe30d1ac30395df1a3d9fbd9cab3))
 
 ## [0.13.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.12.0...@anansi/core@0.13.0) (2022-06-23)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* Must use appSpout; Spouts need two generics
+- Must use appSpout; Spouts need two generics
 
 ### 💅 Enhancement
 
-* Spouts produce props in both directions ([#1559](https://github.com/ntucker/anansi/issues/1559)) ([898cdde](https://github.com/ntucker/anansi/commit/898cdde500a204a7a4dc155ac7ee51930172380e))
+- Spouts produce props in both directions ([#1559](https://github.com/ntucker/anansi/issues/1559)) ([898cdde](https://github.com/ntucker/anansi/commit/898cdde500a204a7a4dc155ac7ee51930172380e))
 
 ## [0.12.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.2...@anansi/core@0.12.0) (2022-06-15)
 
 ### 🚀 Features
 
-* Add onError option to laySpouts ([a0ef72b](https://github.com/ntucker/anansi/commit/a0ef72bcaab1440a3d997d21636f81ca767a5a1c))
+- Add onError option to laySpouts ([a0ef72b](https://github.com/ntucker/anansi/commit/a0ef72bcaab1440a3d997d21636f81ca767a5a1c))
 
 ### 💅 Enhancement
 
-* Don't crash devserver on compiler errors ([3c764e4](https://github.com/ntucker/anansi/commit/3c764e4dd67a57409c64ff7dd144386623a1d93f))
+- Don't crash devserver on compiler errors ([3c764e4](https://github.com/ntucker/anansi/commit/3c764e4dd67a57409c64ff7dd144386623a1d93f))
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
+- Update babel monorepo to v7.18.5 ([#1545](https://github.com/ntucker/anansi/issues/1545)) ([aaaa8bc](https://github.com/ntucker/anansi/commit/aaaa8bcaa4d9188e9671ee31dc09b7aa9e3ce988))
 
 ### [0.11.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.1...@anansi/core@0.11.2) (2022-06-13)
 
 ### 💅 Enhancement
 
-* Do not override 'unsafe-inline' with nonce for CSP ([cfbd2bd](https://github.com/ntucker/anansi/commit/cfbd2bdfa69ae97ef2db6a824496888420251371))
-* Use 'text' to get inline JSON ([9ecdb07](https://github.com/ntucker/anansi/commit/9ecdb074d01e6f09c28a685433105cf0d6f711cc))
+- Do not override 'unsafe-inline' with nonce for CSP ([cfbd2bd](https://github.com/ntucker/anansi/commit/cfbd2bdfa69ae97ef2db6a824496888420251371))
+- Use 'text' to get inline JSON ([9ecdb07](https://github.com/ntucker/anansi/commit/9ecdb074d01e6f09c28a685433105cf0d6f711cc))
 
 ### 📦 Package
 
-* Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
+- Update `webpack-cli` to v4.10.0 ([#1543](https://github.com/ntucker/anansi/issues/1543)) ([298cb01](https://github.com/ntucker/anansi/commit/298cb018db2975fb5c926c48d2145d7c1f4515b9))
 
 ### [0.11.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.11.0...@anansi/core@0.11.1) (2022-06-13)
 
 ### 🐛 Bug Fix
 
-* Use call user-config devServer.setupMiddleware ([99acd8c](https://github.com/ntucker/anansi/commit/99acd8c9386bfc338ef8733d19a734b2a8be21dd))
+- Use call user-config devServer.setupMiddleware ([99acd8c](https://github.com/ntucker/anansi/commit/99acd8c9386bfc338ef8733d19a734b2a8be21dd))
 
 ## [0.11.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.10.0...@anansi/core@0.11.0) (2022-06-12)
 
 ### 🚀 Features
 
-* Add CSP support ([#1541](https://github.com/ntucker/anansi/issues/1541)) ([e8a7415](https://github.com/ntucker/anansi/commit/e8a7415db892d725b76a2d7d451670437d6fb8eb))
+- Add CSP support ([#1541](https://github.com/ntucker/anansi/issues/1541)) ([e8a7415](https://github.com/ntucker/anansi/commit/e8a7415db892d725b76a2d7d451670437d6fb8eb))
 
 ### 💅 Enhancement
 
-* Multi-module server side devserver ([b1b6f87](https://github.com/ntucker/anansi/commit/b1b6f873f2a50a9af05683a80d587ac87d90f8f9))
+- Multi-module server side devserver ([b1b6f87](https://github.com/ntucker/anansi/commit/b1b6f873f2a50a9af05683a80d587ac87d90f8f9))
 
 ## [0.10.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.9.0...@anansi/core@0.10.0) (2022-06-09)
 
 ### 🚀 Features
 
-* add router onChange() ([5c981ed](https://github.com/ntucker/anansi/commit/5c981ed587b55a80fd4f604fc24fb143d2355a06))
+- add router onChange() ([5c981ed](https://github.com/ntucker/anansi/commit/5c981ed587b55a80fd4f604fc24fb143d2355a06))
 
 ### 💅 Enhancement
 
-* Do require cache invalidation ourselves ([22b4e4c](https://github.com/ntucker/anansi/commit/22b4e4c2e4ce3d7de999813bd4e9397e770fe788))
-* Improve devserver node 'require' reliability ([#1538](https://github.com/ntucker/anansi/issues/1538)) ([96b6a54](https://github.com/ntucker/anansi/commit/96b6a54562b97f116fc987b41fbf7547770debc8))
+- Do require cache invalidation ourselves ([22b4e4c](https://github.com/ntucker/anansi/commit/22b4e4c2e4ce3d7de999813bd4e9397e770fe788))
+- Improve devserver node 'require' reliability ([#1538](https://github.com/ntucker/anansi/issues/1538)) ([96b6a54](https://github.com/ntucker/anansi/commit/96b6a54562b97f116fc987b41fbf7547770debc8))
 
 ### 🐛 Bug Fix
 
-* rootId is optional ([ff43166](https://github.com/ntucker/anansi/commit/ff43166d457ac93ffca2eae0738d81e734b6936e))
-* SSR hot-reloading ([9809ad5](https://github.com/ntucker/anansi/commit/9809ad5798e9082554f0358fcd9c301a87e4acbf))
+- rootId is optional ([ff43166](https://github.com/ntucker/anansi/commit/ff43166d457ac93ffca2eae0738d81e734b6936e))
+- SSR hot-reloading ([9809ad5](https://github.com/ntucker/anansi/commit/9809ad5798e9082554f0358fcd9c301a87e4acbf))
 
 ### 📦 Package
 
-* Move compression to correct package ([1ce18ba](https://github.com/ntucker/anansi/commit/1ce18ba9d7dc4d04682184bc1fa74354684294bb))
-* Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
-* Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
+- Move compression to correct package ([1ce18ba](https://github.com/ntucker/anansi/commit/1ce18ba9d7dc4d04682184bc1fa74354684294bb))
+- Update all non-major dependencies ([#1531](https://github.com/ntucker/anansi/issues/1531)) ([2677241](https://github.com/ntucker/anansi/commit/26772415c2763f35c1720a08bb4b5417214f20d3))
+- Update jest monorepo to ^28.1.1 ([#1534](https://github.com/ntucker/anansi/issues/1534)) ([b73dea2](https://github.com/ntucker/anansi/commit/b73dea2ee14f914bdbca189000265693d7fb112f))
 
 ## [0.9.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.8.0...@anansi/core@0.9.0) (2022-05-29)
 
 ### 🚀 Features
 
-* --serveProxy: [non-dev] uses webpack proxy config ([774f826](https://github.com/ntucker/anansi/commit/774f82646542d8acfcb0ddceb6fc75fcc2851a01))
-* Add option to serve assets with production server ([bfb20eb](https://github.com/ntucker/anansi/commit/bfb20eb1564fc2c6b72fea79d0722ac6186797fe))
+- --serveProxy: [non-dev] uses webpack proxy config ([774f826](https://github.com/ntucker/anansi/commit/774f82646542d8acfcb0ddceb6fc75fcc2851a01))
+- Add option to serve assets with production server ([bfb20eb](https://github.com/ntucker/anansi/commit/bfb20eb1564fc2c6b72fea79d0722ac6186797fe))
 
 ### 💅 Enhancement
 
-* Handle root asset path ([a770c77](https://github.com/ntucker/anansi/commit/a770c77c4775b09ff86f26cfd5983eab5d211f74))
+- Handle root asset path ([a770c77](https://github.com/ntucker/anansi/commit/a770c77c4775b09ff86f26cfd5983eab5d211f74))
 
 ### 🐛 Bug Fix
 
-* documentSpout options type ([6707d35](https://github.com/ntucker/anansi/commit/6707d3592f7f0ab772a10d623d1d765a9301c3ae))
+- documentSpout options type ([6707d35](https://github.com/ntucker/anansi/commit/6707d3592f7f0ab772a10d623d1d765a9301c3ae))
 
 ## [0.8.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.4...@anansi/core@0.8.0) (2022-05-29)
 
 ### 🚀 Features
 
-* Add anansi serve command ([#1525](https://github.com/ntucker/anansi/issues/1525)) ([ac5a396](https://github.com/ntucker/anansi/commit/ac5a396f9640ce18058813c1594d49367a8aa468))
-* Add charSet option to documentSpout ([51d3168](https://github.com/ntucker/anansi/commit/51d31681d27144d06b8ed4c7da9aae43fd10f12b))
-* Add production node service ([bceeb56](https://github.com/ntucker/anansi/commit/bceeb56c23c8f8c3dc4a15d35dc8877f277e3d2f))
-* Handle devserver proxy ([e7c5b38](https://github.com/ntucker/anansi/commit/e7c5b38cdb60b236db15ffb28622889b0b771515))
+- Add anansi serve command ([#1525](https://github.com/ntucker/anansi/issues/1525)) ([ac5a396](https://github.com/ntucker/anansi/commit/ac5a396f9640ce18058813c1594d49367a8aa468))
+- Add charSet option to documentSpout ([51d3168](https://github.com/ntucker/anansi/commit/51d31681d27144d06b8ed4c7da9aae43fd10f12b))
+- Add production node service ([bceeb56](https://github.com/ntucker/anansi/commit/bceeb56c23c8f8c3dc4a15d35dc8877f277e3d2f))
+- Handle devserver proxy ([e7c5b38](https://github.com/ntucker/anansi/commit/e7c5b38cdb60b236db15ffb28622889b0b771515))
 
 ### [0.7.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.3...@anansi/core@0.7.4) (2022-05-28)
 
 ### 💅 Enhancement
 
-* Stall SSR requests until build is ready ([fe2616a](https://github.com/ntucker/anansi/commit/fe2616ac2d957f7243310d896f4a2ad5cb7d910e))
+- Stall SSR requests until build is ready ([fe2616a](https://github.com/ntucker/anansi/commit/fe2616ac2d957f7243310d896f4a2ad5cb7d910e))
 
 ### [0.7.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.2...@anansi/core@0.7.3) (2022-05-28)
 
 ### 💅 Enhancement
 
-* Require, then import fresh ([7de7d8d](https://github.com/ntucker/anansi/commit/7de7d8d73e533b69bdf78698965121a35375692c))
+- Require, then import fresh ([7de7d8d](https://github.com/ntucker/anansi/commit/7de7d8d73e533b69bdf78698965121a35375692c))
 
 ### [0.7.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.1...@anansi/core@0.7.2) (2022-05-28)
 
 ### 💅 Enhancement
 
-* More error handling ([129d444](https://github.com/ntucker/anansi/commit/129d44407ac3ea9838e240d82f774c73100cc9da))
+- More error handling ([129d444](https://github.com/ntucker/anansi/commit/129d44407ac3ea9838e240d82f774c73100cc9da))
 
 ### [0.7.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.7.0...@anansi/core@0.7.1) (2022-05-28)
 
 ### 💅 Enhancement
 
-* Do not use additional express server for dev ([ce29cbb](https://github.com/ntucker/anansi/commit/ce29cbb0b8547b736a31f9bac6309338b6114bae))
-* Target current node for server devbuild ([262bd1e](https://github.com/ntucker/anansi/commit/262bd1e79d56dacdb4114d8ea959d819df16b687))
+- Do not use additional express server for dev ([ce29cbb](https://github.com/ntucker/anansi/commit/ce29cbb0b8547b736a31f9bac6309338b6114bae))
+- Target current node for server devbuild ([262bd1e](https://github.com/ntucker/anansi/commit/262bd1e79d56dacdb4114d8ea959d819df16b687))
 
 ### 🐛 Bug Fix
 
-* SSR hot reloading ([3b08106](https://github.com/ntucker/anansi/commit/3b081066463020fdbef2c01efd4922d09e02d8aa))
+- SSR hot reloading ([3b08106](https://github.com/ntucker/anansi/commit/3b081066463020fdbef2c01efd4922d09e02d8aa))
 
 ## [0.7.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.1...@anansi/core@0.7.0) (2022-05-28)
 
 ### 🚀 Features
 
-* env.entrypath override ([a918d32](https://github.com/ntucker/anansi/commit/a918d3247c22ea00d0e1d5395553752280d32d99))
+- env.entrypath override ([a918d32](https://github.com/ntucker/anansi/commit/a918d3247c22ea00d0e1d5395553752280d32d99))
 
 ### 💅 Enhancement
 
-* Improve route asset identification ([c07e9a2](https://github.com/ntucker/anansi/commit/c07e9a29935e0e24f815371ad6610bed77da967e))
+- Improve route asset identification ([c07e9a2](https://github.com/ntucker/anansi/commit/c07e9a29935e0e24f815371ad6610bed77da967e))
 
 ### 📦 Package
 
-* Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
+- Update babel monorepo to v7.18.2 ([#1520](https://github.com/ntucker/anansi/issues/1520)) ([e0fe514](https://github.com/ntucker/anansi/commit/e0fe5142b0c308aff24b86faef6d70084c80691f))
 
 ### [0.6.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.6.0...@anansi/core@0.6.1) (2022-05-24)
 
 ### 🐛 Bug Fix
 
-* Don't error with 'React currently only supports piping to one writable stream' ([cf55fdb](https://github.com/ntucker/anansi/commit/cf55fdb82ee158e26ee596f86db0231faa8e98f5))
+- Don't error with 'React currently only supports piping to one writable stream' ([cf55fdb](https://github.com/ntucker/anansi/commit/cf55fdb82ee158e26ee596f86db0231faa8e98f5))
 
 ## [0.6.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.5.2...@anansi/core@0.6.0) (2022-05-22)
 
 ### 🚀 Features
 
-* Return router in spout ([dfbb685](https://github.com/ntucker/anansi/commit/dfbb68577e05216178671262db488d8aab55021e))
+- Return router in spout ([dfbb685](https://github.com/ntucker/anansi/commit/dfbb68577e05216178671262db488d8aab55021e))
 
 ### [0.5.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.5.1...@anansi/core@0.5.2) (2022-05-21)
 
@@ -1469,30 +1479,30 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 📦 Package
 
-* Update babel monorepo ([#1515](https://github.com/ntucker/anansi/issues/1515)) ([9d51b13](https://github.com/ntucker/anansi/commit/9d51b13218a67c17cfef56a1be88ac4af7933d03))
+- Update babel monorepo ([#1515](https://github.com/ntucker/anansi/issues/1515)) ([9d51b13](https://github.com/ntucker/anansi/commit/9d51b13218a67c17cfef56a1be88ac4af7933d03))
 
 ## [0.5.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.4...@anansi/core@0.5.0) (2022-05-18)
 
 ### 🚀 Features
 
-* Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
+- Add commonjs bundles ([#1508](https://github.com/ntucker/anansi/issues/1508)) ([3f1f5a2](https://github.com/ntucker/anansi/commit/3f1f5a2f881d3e314d9fd08d63607e0c8dbd34d1))
 
 ### 💅 Enhancement
 
-* Ensure output works without WEBPACK_PUBLIC_HOST set ([1df3f57](https://github.com/ntucker/anansi/commit/1df3f57cf0d3966a371e89f8c2333f3f29e23b65))
-* Only hydrate body content ([1a6412c](https://github.com/ntucker/anansi/commit/1a6412c2e2b55b176fa0491228888490e45de98f))
+- Ensure output works without WEBPACK_PUBLIC_HOST set ([1df3f57](https://github.com/ntucker/anansi/commit/1df3f57cf0d3966a371e89f8c2333f3f29e23b65))
+- Only hydrate body content ([1a6412c](https://github.com/ntucker/anansi/commit/1a6412c2e2b55b176fa0491228888490e45de98f))
 
 ### [0.4.4](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.3...@anansi/core@0.4.4) (2022-05-18)
 
 ### 💅 Enhancement
 
-* Supress hydration warnings in head for stackblitz compat ([38ac992](https://github.com/ntucker/anansi/commit/38ac99237af30d97408fb23bfb95b3bbe5384a03))
+- Supress hydration warnings in head for stackblitz compat ([38ac992](https://github.com/ntucker/anansi/commit/38ac99237af30d97408fb23bfb95b3bbe5384a03))
 
 ### [0.4.3](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.2...@anansi/core@0.4.3) (2022-05-18)
 
 ### 💅 Enhancement
 
-* Use relative asset paths ([799b69e](https://github.com/ntucker/anansi/commit/799b69e52394edc26290b9f01ff60ad772f739da))
+- Use relative asset paths ([799b69e](https://github.com/ntucker/anansi/commit/799b69e52394edc26290b9f01ff60ad772f739da))
 
 ### [0.4.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.4.1...@anansi/core@0.4.2) (2022-05-18)
 
@@ -1502,59 +1512,59 @@ import {antdSpout} from '@anansi/core/antd/server';
 
 ### 🐛 Bug Fix
 
-* Server compilation ([d8a1c9a](https://github.com/ntucker/anansi/commit/d8a1c9a05718cde13c99d56dcc79a5cc823fa6bb))
+- Server compilation ([d8a1c9a](https://github.com/ntucker/anansi/commit/d8a1c9a05718cde13c99d56dcc79a5cc823fa6bb))
 
 ## [0.4.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.3.1...@anansi/core@0.4.0) (2022-05-17)
 
 ### 🚀 Features
 
-* SSR uses webpack devserver and responds to code changes ([#1504](https://github.com/ntucker/anansi/issues/1504)) ([25803a5](https://github.com/ntucker/anansi/commit/25803a5b49316c7e73846efbe774d5cbe3eb28a3))
+- SSR uses webpack devserver and responds to code changes ([#1504](https://github.com/ntucker/anansi/issues/1504)) ([25803a5](https://github.com/ntucker/anansi/commit/25803a5b49316c7e73846efbe774d5cbe3eb28a3))
 
 ### 📦 Package
 
-* Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
-* Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
+- Update babel monorepo to v7.17.12 ([#1505](https://github.com/ntucker/anansi/issues/1505)) ([cdf449c](https://github.com/ntucker/anansi/commit/cdf449c234da377c6968847a500ef77d7340c5bb))
+- Update jest monorepo to ^28.1.0 ([#1493](https://github.com/ntucker/anansi/issues/1493)) ([7cc9df4](https://github.com/ntucker/anansi/commit/7cc9df4a439a0743bf243a5ad8393c62c067aa44))
 
 ### [0.3.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.3.0...@anansi/core@0.3.1) (2022-05-04)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1490](https://github.com/ntucker/anansi/issues/1490)) ([c333a59](https://github.com/ntucker/anansi/commit/c333a595dd912e67f64e22b4c4af58e825e75cad))
+- Update all non-major dependencies ([#1490](https://github.com/ntucker/anansi/issues/1490)) ([c333a59](https://github.com/ntucker/anansi/commit/c333a595dd912e67f64e22b4c4af58e825e75cad))
 
 ## [0.3.0](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.2...@anansi/core@0.3.0) (2022-04-30)
 
 ### ⚠ 💥 BREAKING CHANGES
 
-* Requires TypeScript 4.3 and Jest 28
+- Requires TypeScript 4.3 and Jest 28
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com>
 Co-authored-by: Nathaniel Tucker <me@ntucker.me>
 
 ### 📦 Package
 
-* Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
-* Update jest monorepo to ^28.0.2 ([#1484](https://github.com/ntucker/anansi/issues/1484)) ([0792dbf](https://github.com/ntucker/anansi/commit/0792dbf9e9fe2c6b22eb5414ec2a7c7aaf1d9e48))
-* Update jest monorepo to ^28.0.3 ([#1486](https://github.com/ntucker/anansi/issues/1486)) ([a5b325a](https://github.com/ntucker/anansi/commit/a5b325af0166351f40c421d4a3a0bef59f6d1218))
-* Update jest monorepo to v28 (major) ([#1479](https://github.com/ntucker/anansi/issues/1479)) ([06338de](https://github.com/ntucker/anansi/commit/06338de8bf871945dac4b6b35155e49fd062bfdb))
+- Update babel monorepo to v7.17.10 ([#1487](https://github.com/ntucker/anansi/issues/1487)) ([4cae6b5](https://github.com/ntucker/anansi/commit/4cae6b50855c2307ba1cf4e7293579d51614f978))
+- Update jest monorepo to ^28.0.2 ([#1484](https://github.com/ntucker/anansi/issues/1484)) ([0792dbf](https://github.com/ntucker/anansi/commit/0792dbf9e9fe2c6b22eb5414ec2a7c7aaf1d9e48))
+- Update jest monorepo to ^28.0.3 ([#1486](https://github.com/ntucker/anansi/issues/1486)) ([a5b325a](https://github.com/ntucker/anansi/commit/a5b325af0166351f40c421d4a3a0bef59f6d1218))
+- Update jest monorepo to v28 (major) ([#1479](https://github.com/ntucker/anansi/issues/1479)) ([06338de](https://github.com/ntucker/anansi/commit/06338de8bf871945dac4b6b35155e49fd062bfdb))
 
 ### [0.2.2](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.1...@anansi/core@0.2.2) (2022-04-22)
 
 ### 💅 Enhancement
 
-* Indicate compilation errors ([82682b9](https://github.com/ntucker/anansi/commit/82682b9ed22686eb58f5421b6043852d2006842e))
+- Indicate compilation errors ([82682b9](https://github.com/ntucker/anansi/commit/82682b9ed22686eb58f5421b6043852d2006842e))
 
 ### [0.2.1](https://github.com/ntucker/anansi/compare/@anansi/core@0.2.0...@anansi/core@0.2.1) (2022-04-18)
 
 ### 🐛 Bug Fix
 
-* Make start-anansi command executable in bash ([4ae313c](https://github.com/ntucker/anansi/commit/4ae313c7d2137df63e74e5a8064237189c04adc8))
+- Make start-anansi command executable in bash ([4ae313c](https://github.com/ntucker/anansi/commit/4ae313c7d2137df63e74e5a8064237189c04adc8))
 
 ## [0.2.0] (2022-04-18)
 
 ### 🚀 Features
 
-* React 18 partial hydration SSR ([#1427](https://github.com/ntucker/anansi/issues/1427)) ([afe12fe](https://github.com/ntucker/anansi/commit/afe12fea2e0a0f9d9a759c2f533ab925ba0e8957)), closes [#1456](https://github.com/ntucker/anansi/issues/1456)
+- React 18 partial hydration SSR ([#1427](https://github.com/ntucker/anansi/issues/1427)) ([afe12fe](https://github.com/ntucker/anansi/commit/afe12fea2e0a0f9d9a759c2f533ab925ba0e8957)), closes [#1456](https://github.com/ntucker/anansi/issues/1456)
 
 ### 📦 Package
 
-* Update all non-major dependencies ([#1472](https://github.com/ntucker/anansi/issues/1472)) ([903e452](https://github.com/ntucker/anansi/commit/903e452e58dfacb14808d23e1aa883d6126dae1f))
+- Update all non-major dependencies ([#1472](https://github.com/ntucker/anansi/issues/1472)) ([903e452](https://github.com/ntucker/anansi/commit/903e452e58dfacb14808d23e1aa883d6126dae1f))
