@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.3.14
+
+### Patch Changes
+
+- [#3207](https://github.com/ntucker/anansi/pull/3207) [`24b4aef`](https://github.com/ntucker/anansi/commit/24b4aef9a753f0ebfba79e881fa73d4c8b77108e) - Fix the README install command to pin typescript to ^6, since TypeScript 7 has no JS API.
+
 ## 0.3.13
 
 ### Patch Changes
