@@ -87,7 +87,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/browserslist-config@npm:^1.7.6, @anansi/browserslist-config@workspace:*, @anansi/browserslist-config@workspace:packages/browserslist-config-anansi":
+"@anansi/browserslist-config@npm:^1.7.7, @anansi/browserslist-config@workspace:*, @anansi/browserslist-config@workspace:packages/browserslist-config-anansi":
   version: 0.0.0-use.local
   resolution: "@anansi/browserslist-config@workspace:packages/browserslist-config-anansi"
   dependencies:
@@ -14224,7 +14224,7 @@ __metadata:
   resolution: "example-linaria@workspace:examples/linaria"
   dependencies:
     "@anansi/babel-preset": "npm:^7.0.1"
-    "@anansi/browserslist-config": "npm:^1.7.6"
+    "@anansi/browserslist-config": "npm:^1.7.7"
     "@anansi/eslint-plugin": "npm:^2.0.1"
     "@anansi/webpack-config": "npm:^22.0.1"
     "@babel/core": "npm:^8.0.0"
@@ -14260,7 +14260,7 @@ __metadata:
   resolution: "example-react-18@workspace:examples/concurrent"
   dependencies:
     "@anansi/babel-preset": "npm:^7.0.1"
-    "@anansi/browserslist-config": "npm:^1.7.6"
+    "@anansi/browserslist-config": "npm:^1.7.7"
     "@anansi/cli": "npm:^4.0.1"
     "@anansi/core": "npm:^0.23.1"
     "@anansi/eslint-plugin": "npm:^2.0.1"
@@ -14307,7 +14307,7 @@ __metadata:
   resolution: "example-typescript@workspace:examples/typescript"
   dependencies:
     "@anansi/babel-preset": "npm:^7.0.1"
-    "@anansi/browserslist-config": "npm:^1.7.6"
+    "@anansi/browserslist-config": "npm:^1.7.7"
     "@anansi/eslint-plugin": "npm:^2.0.1"
     "@anansi/jest-preset": "npm:^0.12.1"
     "@anansi/storybook": "npm:^5.0.1"
