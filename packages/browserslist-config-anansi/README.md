@@ -1,6 +1,6 @@
-# Anansi browserlist-config
-Sensible [modern browser](https://browserl.ist/?q=%3E+1%25%2C+Firefox+ESR%2C+not+dead%2C+not+ie%3C12%2C+not+OperaMini+all) support for prod, [`latest firefox & chrome`](http://browserl.ist/?q=last+1+Chrome+versions%2C+last+1+Firefox+versions)
-for dev.
+# Anansi browserslist-config
+
+Sensible modern browser support for production, latest Chrome & Firefox for development.
 
 ## Installation
 ```
@@ -8,7 +8,7 @@ yarn add --dev @anansi/browserslist-config
 ```
 
 ## Usage
-Add this your `package.json` file:
+Add this to your `package.json` file:
 ```
 "browserslist": [
   "extends @anansi/browserslist-config"
@@ -17,9 +17,16 @@ Add this your `package.json` file:
 
 ## Environments
 
-Set via `BROWSERSLIST_ENV` or `env` or `NODE_ENV` environmental variables.
+Set via `BROWSERSLIST_ENV` or `env` or `NODE_ENV` environmental variables. Unmatched environments use `defaults`.
 
-- [default](https://browserl.ist/?q=%3E+1%25%2C+Firefox+ESR%2C+not+dead%2C+not+ie%3C12%2C+not+OperaMini+all)
-- [legacy](https://browserl.ist/?q=%3E+0.5%25%2CFirefox+ESR%2Cnot+dead%2Cnot+ie%3C11%2Cnot+safari%3C12.1%2Cnot+OperaMini+all)
-- [development](http://browserl.ist/?q=last+1+Chrome+versions%2C+last+1+Firefox+versions)
-- [test](https://browserl.ist/?q=current+node)
+- `defaults`: `> 1%, Firefox ESR, not dead, not ie<12, not OperaMini all, last 1 years`
+- `legacy`: `> 0.5%, Firefox ESR, since 2018 and supports es6-module, not dead, not ie<11, not safari<12.1, not OperaMini all`
+- `modern`: last 2 Firefox, Firefox ESR, last 3 Chrome and Android Chrome, last 1 Safari, last 2 iOS, last 1 Edge
+- `development`: `last 1 Chrome versions, last 1 Firefox versions`
+- `test`: `current node, last 1 Chrome versions, last 1 Firefox versions`
+- `server`: `current node`
+- `2017` … `2027`: `since <year> and supports es6-module` (`2017` also excludes Opera Mini; `2018` excludes Chrome < 67)
+- `node10` … `node26` (even versions): `node <version>`
+- `hermes11` … `hermes16`: the Safari version matching each React Native Hermes release
+
+See [`index.js`](./index.js) for the exact queries.
