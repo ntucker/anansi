@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.23.2
+
+### Patch Changes
+
+- [#3210](https://github.com/ntucker/anansi/pull/3210) [`5404369`](https://github.com/ntucker/anansi/commit/540436938a093da4817660bff47f88217a98a3ab) Thanks [@renovate](https://github.com/apps/renovate)! - Update `webpack-dev-server` to ^6.1.0 and `postcss` to ^8.5.31
+
 ## 0.23.1
 
 ### Patch Changes
