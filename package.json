@@ -68,7 +68,7 @@
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "webpack": "5.112.0",
     "webpack-cli": "7.2.3",
-    "webpack-dev-server": "6.0.0"
+    "webpack-dev-server": "6.1.0"
   },
   "resolutions": {
     "storybook": "10.6.2",
