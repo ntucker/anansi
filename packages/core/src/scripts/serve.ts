@@ -5,8 +5,8 @@ Object.hasOwn =
     return Object.prototype.hasOwnProperty.call(it, key);
   };
 import compress from 'compression';
-import express, { NextFunction } from 'express';
-import { Server, IncomingMessage, ServerResponse } from 'http';
+import express from 'express';
+import { Server } from 'http';
 import ora from 'ora';
 import path from 'path';
 import webpack from 'webpack';
@@ -15,7 +15,11 @@ import 'cross-fetch/dist/node-polyfill.js';
 import { assetMiddleware } from './assetMiddleware.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
-import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
+import {
+  getErrorStatus,
+  renderErrorPage,
+  serveErrorPageOptions,
+} from './ssrErrorHandler.js';
 import { Render } from './types.js';
 
 // run directly from node
@@ -47,37 +51,32 @@ export default async function serve(
 
   let server: Server | undefined;
 
-  function handleErrors<
-    F extends (
-      req: Request | IncomingMessage,
-      res: Response | ServerResponse,
-    ) => Promise<void>,
-  >(fn: F) {
-    return async function (
-      req: Request | IncomingMessage,
-      res: Response | ServerResponse,
-      _next: NextFunction,
-    ) {
-      try {
-        return await fn(req, res);
-      } catch (error: unknown) {
-        console.error('SSR rendering error:', error);
-
-        // Return error response with status from error if available
-        const expressRes = res as express.Response;
-        if (!expressRes.headersSent) {
-          const statusCode = getErrorStatus(error);
-          expressRes.status(statusCode);
-          expressRes.setHeader('Content-Type', 'text/html');
-          expressRes.send(
-            renderErrorPage(error, req.url ?? '/', statusCode, {
-              showStack: process.env.NODE_ENV !== 'production',
-            }),
-          );
-        }
-      }
-    };
-  }
+  // failures from SSR or any middleware get the same error page
+  const handleErrors: express.ErrorRequestHandler = (
+    error,
+    req,
+    res,
+    _next,
+  ) => {
+    console.error('Server error:', error);
+    if (res.headersSent) {
+      // too late for a page; drop a half-sent response rather than hang
+      if (!res.writableEnded) res.destroy();
+      return;
+    }
+    const statusCode = getErrorStatus(error);
+    res
+      .status(statusCode)
+      .type('html')
+      .send(
+        renderErrorPage(
+          error,
+          req.url,
+          statusCode,
+          serveErrorPageOptions(statusCode, process.env.NODE_ENV),
+        ),
+      );
+  };
 
   // Start the express server after the first compilation
   async function initializeApp(clientManifest: webpack.StatsCompilation) {
@@ -138,22 +137,20 @@ export default async function serve(
       );
     }
 
-    wrappingApp.get(
-      '/{*splat}',
-      handleErrors(async function (req: any, res: any) {
-        if (req.url.endsWith('favicon.ico')) {
-          res.statusCode = 404;
-          res.setHeader('Content-type', 'text/html');
-          res.send('not found');
-          return;
-        }
-        res.socket.on('error', (error: unknown) => {
-          console.error('Fatal', error);
-        });
+    wrappingApp.get('/{*splat}', async function (req: any, res: any) {
+      if (req.url.endsWith('favicon.ico')) {
+        res.statusCode = 404;
+        res.setHeader('Content-type', 'text/html');
+        res.send('not found');
+        return;
+      }
+      res.socket.on('error', (error: unknown) => {
+        console.error('Fatal', error);
+      });
 
-        await render(clientManifest, req, res);
-      }),
-    );
+      await render(clientManifest, req, res);
+    });
+    wrappingApp.use(handleErrors);
 
     server = wrappingApp
       .listen(PORT, () => {
