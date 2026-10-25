@@ -56,10 +56,11 @@ export default async function serve(
     error,
     req,
     res,
-    _next,
+    next,
   ) => {
     console.error('Server error:', error);
-    if (res.headersSent) return;
+    // too late for a page; Express's handler closes the connection
+    if (res.headersSent) return next(error);
     const statusCode = getErrorStatus(error);
     res
       .status(statusCode)
