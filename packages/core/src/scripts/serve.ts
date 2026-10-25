@@ -51,11 +51,19 @@ export default async function serve(
 
   let server: Server | undefined;
 
-  // every failure, from SSR or any middleware, gets the same error page
-  const handleErrors: express.ErrorRequestHandler = (error, req, res, next) => {
+  // failures from SSR or any middleware get the same error page
+  const handleErrors: express.ErrorRequestHandler = (
+    error,
+    req,
+    res,
+    _next,
+  ) => {
     console.error('Server error:', error);
-    // too late for a page; Express's handler closes the connection
-    if (res.headersSent) return next(error);
+    if (res.headersSent) {
+      // too late for a page; drop a half-sent response rather than hang
+      if (!res.writableEnded) res.destroy();
+      return;
+    }
     const statusCode = getErrorStatus(error);
     res
       .status(statusCode)
