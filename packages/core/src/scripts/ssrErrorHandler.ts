@@ -1,7 +1,7 @@
 /**
  * Utilities for handling SSR errors gracefully
  */
-import { STATUS_CODES } from 'http';
+import { STATUS_CODES } from 'node:http';
 
 /**
  * Extract HTTP status code from an error object.
@@ -53,7 +53,7 @@ export interface RenderErrorPageOptions {
  */
 export function serveErrorPageOptions(
   statusCode: number,
-  nodeEnv = process.env.NODE_ENV,
+  nodeEnv: string | undefined,
 ): RenderErrorPageOptions {
   const isDev = nodeEnv === 'development';
   return { showStack: isDev, showMessage: isDev || statusCode < 500 };
