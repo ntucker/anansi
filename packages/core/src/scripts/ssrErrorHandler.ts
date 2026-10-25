@@ -38,6 +38,8 @@ export function escapeHtml(str: string): string {
 export interface RenderErrorPageOptions {
   /** Show stack trace in output */
   showStack?: boolean;
+  /** Show the error's message; otherwise show a generic one (default: true) */
+  showMessage?: boolean;
   /** Additional hint message to display */
   hint?: string;
   /** Badge text to display (e.g., "DEV MODE") */
@@ -53,9 +55,12 @@ export function renderErrorPage(
   statusCode: number,
   options: RenderErrorPageOptions = {},
 ): string {
-  const errorMessage = error instanceof Error ? error.message : String(error);
+  const { showStack = false, showMessage = true, hint, badge } = options;
+  const errorMessage =
+    !showMessage ? 'Internal Server Error'
+    : error instanceof Error ? error.message
+    : String(error);
   const stack = error instanceof Error ? error.stack : undefined;
-  const { showStack = false, hint, badge } = options;
 
   return `<!DOCTYPE html>
 <html lang="en">

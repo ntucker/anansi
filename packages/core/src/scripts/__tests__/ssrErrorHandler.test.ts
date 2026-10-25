@@ -176,6 +176,14 @@ describe('ssrErrorHandler', () => {
       expect(html).not.toContain('<pre class="stack">');
     });
 
+    it('should replace the message when showMessage is false', () => {
+      const error = new Error('upstream failed; token=SECRET');
+      const html = renderErrorPage(error, '/test', 500, { showMessage: false });
+
+      expect(html).not.toContain('SECRET');
+      expect(html).toContain('Internal Server Error');
+    });
+
     it('should show badge when provided', () => {
       const html = renderErrorPage(new Error('error'), '/test', 500, {
         badge: 'DEV MODE',

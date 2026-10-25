@@ -66,12 +66,15 @@ export default async function serve(
         // Return error response with status from error if available
         const expressRes = res as express.Response;
         if (!expressRes.headersSent) {
+          const isDev = process.env.NODE_ENV === 'development';
           const statusCode = getErrorStatus(error);
           expressRes.status(statusCode);
           expressRes.setHeader('Content-Type', 'text/html');
           expressRes.send(
             renderErrorPage(error, req.url ?? '/', statusCode, {
-              showStack: process.env.NODE_ENV !== 'production',
+              showStack: isDev,
+              // 5xx messages can leak internals; client errors are meant to be seen
+              showMessage: isDev || statusCode < 500,
             }),
           );
         }
