@@ -2,6 +2,7 @@ import {
   escapeHtml,
   getErrorStatus,
   renderErrorPage,
+  serveErrorPageOptions,
 } from '../ssrErrorHandler';
 
 describe('ssrErrorHandler', () => {
@@ -182,6 +183,9 @@ describe('ssrErrorHandler', () => {
 
       expect(html).not.toContain('SECRET');
       expect(html).toContain('Internal Server Error');
+      expect(
+        renderErrorPage(error, '/test', 503, { showMessage: false }),
+      ).toContain('Service Unavailable');
     });
 
     it('should show badge when provided', () => {
@@ -252,6 +256,18 @@ describe('ssrErrorHandler', () => {
       const html = renderErrorPage(new Error('error'), '/page?a=1&b=2', 500);
 
       expect(html).toContain('href="/page?a=1&amp;b=2"');
+    });
+  });
+
+  describe('serveErrorPageOptions', () => {
+    it.each([
+      ['production', 500, { showStack: false, showMessage: false }],
+      ['production', 404, { showStack: false, showMessage: true }],
+      [undefined, 503, { showStack: false, showMessage: false }],
+      [undefined, 404, { showStack: false, showMessage: true }],
+      ['development', 500, { showStack: true, showMessage: true }],
+    ])('NODE_ENV=%s status %i', (nodeEnv, status, expected) => {
+      expect(serveErrorPageOptions(status, nodeEnv)).toEqual(expected);
     });
   });
 });

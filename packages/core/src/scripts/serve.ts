@@ -15,7 +15,11 @@ import 'cross-fetch/dist/node-polyfill.js';
 import { assetMiddleware } from './assetMiddleware.js';
 import getProxyMiddlewares from './getProxyMiddlewares.js';
 import { getWebpackConfig } from './getWebpackConfig.js';
-import { getErrorStatus, renderErrorPage } from './ssrErrorHandler.js';
+import {
+  getErrorStatus,
+  renderErrorPage,
+  serveErrorPageOptions,
+} from './ssrErrorHandler.js';
 import { Render } from './types.js';
 
 // run directly from node
@@ -66,16 +70,16 @@ export default async function serve(
         // Return error response with status from error if available
         const expressRes = res as express.Response;
         if (!expressRes.headersSent) {
-          const isDev = process.env.NODE_ENV === 'development';
           const statusCode = getErrorStatus(error);
           expressRes.status(statusCode);
           expressRes.setHeader('Content-Type', 'text/html');
           expressRes.send(
-            renderErrorPage(error, req.url ?? '/', statusCode, {
-              showStack: isDev,
-              // 5xx messages can leak internals; client errors are meant to be seen
-              showMessage: isDev || statusCode < 500,
-            }),
+            renderErrorPage(
+              error,
+              req.url ?? '/',
+              statusCode,
+              serveErrorPageOptions(statusCode),
+            ),
           );
         }
       }

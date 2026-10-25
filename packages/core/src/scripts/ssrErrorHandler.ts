@@ -1,6 +1,7 @@
 /**
  * Utilities for handling SSR errors gracefully
  */
+import { STATUS_CODES } from 'http';
 
 /**
  * Extract HTTP status code from an error object.
@@ -38,12 +39,24 @@ export function escapeHtml(str: string): string {
 export interface RenderErrorPageOptions {
   /** Show stack trace in output */
   showStack?: boolean;
-  /** Show the error's message; otherwise show a generic one (default: true) */
+  /** Show the error's message; otherwise show the status text (default: true) */
   showMessage?: boolean;
   /** Additional hint message to display */
   hint?: string;
   /** Badge text to display (e.g., "DEV MODE") */
   badge?: string;
+}
+
+/**
+ * What a production error page may reveal: everything in development,
+ * otherwise only client (4xx) messages, since 5xx messages can leak internals
+ */
+export function serveErrorPageOptions(
+  statusCode: number,
+  nodeEnv = process.env.NODE_ENV,
+): RenderErrorPageOptions {
+  const isDev = nodeEnv === 'development';
+  return { showStack: isDev, showMessage: isDev || statusCode < 500 };
 }
 
 /**
@@ -56,10 +69,10 @@ export function renderErrorPage(
   options: RenderErrorPageOptions = {},
 ): string {
   const { showStack = false, showMessage = true, hint, badge } = options;
-  const errorMessage =
-    !showMessage ? 'Internal Server Error'
-    : error instanceof Error ? error.message
-    : String(error);
+  let errorMessage = STATUS_CODES[statusCode] ?? 'Server Error';
+  if (showMessage) {
+    errorMessage = error instanceof Error ? error.message : String(error);
+  }
   const stack = error instanceof Error ? error.stack : undefined;
 
   return `<!DOCTYPE html>
