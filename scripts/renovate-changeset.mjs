@@ -5,7 +5,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
+const git = (...args) => execFileSync('/usr/bin/git', args, { encoding: 'utf8' }).trim();
 const BASE_SHA = git('merge-base', 'origin/master', 'HEAD');
 const HEAD_REF = git('rev-parse', '--abbrev-ref', 'HEAD');
 
