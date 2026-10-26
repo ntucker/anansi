@@ -36,9 +36,11 @@ if (!names.length) {
   process.exit(0);
 }
 
-const frontmatter = names.sort().map(name => `'${name}': patch`);
+const byName = (a, b) => a.localeCompare(b);
+const frontmatter = names.toSorted(byName).map(name => `'${name}': patch`);
+const summary = [...new Set(lines)].toSorted(byName);
 writeFileSync(
   `.changeset/renovate-${slug}.md`,
-  `---\n${frontmatter.join('\n')}\n---\n\n${[...new Set(lines)].sort().join('\n')}\n`,
+  `---\n${frontmatter.join('\n')}\n---\n\n${summary.join('\n')}\n`,
 );
 console.log(`Wrote .changeset/renovate-${slug}.md for ${names.join(', ')}`);
