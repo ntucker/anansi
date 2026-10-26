@@ -28,16 +28,16 @@ for (const file of files) {
 }
 
 const slug = HEAD_REF.replace(/^renovate\//, '').replace(/[^a-z0-9]+/gi, '-');
-const path = `.changeset/renovate-${slug}.md`;
+const changesetPath = `.changeset/renovate-${slug}.md`;
 const byName = (a, b) => a.localeCompare(b);
 
 if (names.length) {
   const frontmatter = names.toSorted(byName).map(name => `'${name}': patch`);
   const summary = [...lines].toSorted(byName);
-  writeFileSync(path, `---\n${frontmatter.join('\n')}\n---\n\n${summary.join('\n')}\n`);
-  console.log(`Wrote ${path} for ${names.join(', ')}`);
+  writeFileSync(changesetPath, `---\n${frontmatter.join('\n')}\n---\n\n${summary.join('\n')}\n`);
+  console.log(`Wrote ${changesetPath} for ${names.join(', ')}`);
 } else {
   // drop a changeset from an earlier push whose dependency change is gone
-  rmSync(path, { force: true });
+  rmSync(changesetPath, { force: true });
   console.log('No published dependencies changed; no changeset needed.');
 }

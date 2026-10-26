@@ -32,7 +32,6 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
-          filter: blob:none
           token: ${{ secrets.CHANGESET_PUSH_TOKEN || github.token }}
       - name: Write changeset
         run: node scripts/renovate-changeset.mjs
