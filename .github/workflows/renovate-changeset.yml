@@ -16,6 +16,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: renovate-changeset-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   changeset:
     name: Add changeset

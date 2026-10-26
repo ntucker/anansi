@@ -3,7 +3,7 @@
 // Diffs against the merge-base with origin/master, so a stale or moved base
 // never shows master's own changes as this PR's. Run from the PR branch checkout.
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, rmSync, writeFileSync } from 'node:fs';
 
 const git = (...args) => execFileSync('/usr/bin/git', args, { encoding: 'utf8' }).trim();
 const BASE_SHA = git('merge-base', 'origin/master', 'HEAD');
@@ -27,12 +27,15 @@ for (const file of files) {
   for (const [dep, range] of changed) lines.push(`Update \`${dep}\` to ${range}`);
 }
 
+const slug = HEAD_REF.replace(/^renovate\//, '').replace(/[^a-z0-9]+/gi, '-');
+
 if (!names.length) {
+  // drop a changeset from an earlier push whose dependency change is gone
+  rmSync(`.changeset/renovate-${slug}.md`, { force: true });
   console.log('No published dependencies changed; no changeset needed.');
   process.exit(0);
 }
 
-const slug = HEAD_REF.replace(/^renovate\//, '').replace(/[^a-z0-9]+/gi, '-');
 const frontmatter = names.sort().map(name => `'${name}': patch`);
 writeFileSync(
   `.changeset/renovate-${slug}.md`,
