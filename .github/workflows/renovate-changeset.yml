@@ -30,9 +30,6 @@ jobs:
           token: ${{ secrets.CHANGESET_PUSH_TOKEN || github.token }}
       - name: Write changeset
         run: node scripts/renovate-changeset.mjs
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_REF: ${{ github.head_ref }}
       - name: Commit changeset
         run: |
           git add .changeset

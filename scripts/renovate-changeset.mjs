@@ -1,11 +1,13 @@
 // Writes a patch changeset for Renovate PRs that change a published package's
 // runtime `dependencies`. Deterministic, so reruns on the same diff are no-ops.
-// Usage: BASE_SHA=<sha> HEAD_REF=<branch> node scripts/renovate-changeset.mjs
+// Diffs against the merge-base with origin/master, so a stale or moved base
+// never shows master's own changes as this PR's. Run from the PR branch checkout.
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const { BASE_SHA, HEAD_REF } = process.env;
-const git = (...args) => execFileSync('git', args, { encoding: 'utf8' });
+const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
+const BASE_SHA = git('merge-base', 'origin/master', 'HEAD');
+const HEAD_REF = git('rev-parse', '--abbrev-ref', 'HEAD');
 
 const files = git('diff', '--name-only', BASE_SHA, 'HEAD', '--', 'packages/*/package.json')
   .split('\n')
