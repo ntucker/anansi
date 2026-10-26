@@ -13,7 +13,7 @@ const files = git('diff', '--name-only', BASE_SHA, 'HEAD', '--', 'packages/*/pac
   .split('\n')
   .filter(Boolean);
 
-const lines = [];
+const lines = new Set();
 const names = [];
 for (const file of files) {
   const next = JSON.parse(readFileSync(file, 'utf8'));
@@ -24,23 +24,20 @@ for (const file of files) {
   );
   if (!changed.length) continue;
   names.push(next.name);
-  for (const [dep, range] of changed) lines.push(`Update \`${dep}\` to ${range}`);
+  for (const [dep, range] of changed) lines.add(`Update \`${dep}\` to ${range}`);
 }
 
 const slug = HEAD_REF.replace(/^renovate\//, '').replace(/[^a-z0-9]+/gi, '-');
-
-if (!names.length) {
-  // drop a changeset from an earlier push whose dependency change is gone
-  rmSync(`.changeset/renovate-${slug}.md`, { force: true });
-  console.log('No published dependencies changed; no changeset needed.');
-  process.exit(0);
-}
-
+const path = `.changeset/renovate-${slug}.md`;
 const byName = (a, b) => a.localeCompare(b);
-const frontmatter = names.toSorted(byName).map(name => `'${name}': patch`);
-const summary = [...new Set(lines)].toSorted(byName);
-writeFileSync(
-  `.changeset/renovate-${slug}.md`,
-  `---\n${frontmatter.join('\n')}\n---\n\n${summary.join('\n')}\n`,
-);
-console.log(`Wrote .changeset/renovate-${slug}.md for ${names.join(', ')}`);
+
+if (names.length) {
+  const frontmatter = names.toSorted(byName).map(name => `'${name}': patch`);
+  const summary = [...lines].toSorted(byName);
+  writeFileSync(path, `---\n${frontmatter.join('\n')}\n---\n\n${summary.join('\n')}\n`);
+  console.log(`Wrote ${path} for ${names.join(', ')}`);
+} else {
+  // drop a changeset from an earlier push whose dependency change is gone
+  rmSync(path, { force: true });
+  console.log('No published dependencies changed; no changeset needed.');
+}

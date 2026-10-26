@@ -1,15 +1,16 @@
 name: renovate-changeset
 
-# Adds a patch changeset to Renovate PRs that change a published package's
-# dependencies. The commit author is listed in renovate.json `gitIgnoredAuthors`
-# so Renovate keeps rebasing the branch. Set CHANGESET_PUSH_TOKEN (a PAT) if
-# GitHub Actions checks must also run on the changeset commit.
+# Runs scripts/renovate-changeset.mjs on Renovate PRs and pushes the result.
+# The commit author is listed in renovate.json `gitIgnoredAuthors` so Renovate
+# keeps rebasing the branch. Set CHANGESET_PUSH_TOKEN (a PAT) if GitHub Actions
+# checks must also run on the changeset commit; it is required once any of them
+# is a required check on master. If Mend-hosted Renovate ever allows
+# `postUpgradeTasks` here, run the script there and delete this workflow.
 
 on:
   pull_request:
     branches:
       - master
-    types: [opened, synchronize, reopened]
     paths:
       - 'packages/*/package.json'
 
@@ -23,7 +24,7 @@ concurrency:
 jobs:
   changeset:
     name: Add changeset
-    if: github.event.pull_request.user.login == 'renovate[bot]' && startsWith(github.head_ref, 'renovate/')
+    if: github.event.pull_request.user.login == 'renovate[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,6 +32,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
+          filter: blob:none
           token: ${{ secrets.CHANGESET_PUSH_TOKEN || github.token }}
       - name: Write changeset
         run: node scripts/renovate-changeset.mjs
