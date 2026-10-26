@@ -43,5 +43,6 @@ Pick the cheapest tier that covers the change. Path-scoped rules in `.cursor/rul
 ## Commits and releases
 
 - PRs are squash-merged; the title is the commit. commitlint allows only `feat`, `enhance`, `fix`, `pkg` (dependency updates), `internal` and `docs`.
+- Renovate PRs that change a published package's `dependencies` get a patch changeset from `.github/workflows/renovate-changeset.yml`; don't add one by hand.
 - User-facing changes to a published package need `yarn changeset`. For a 0.x package, a breaking change is a minor bump. A `pkg!` title or a `BREAKING CHANGE:` footer no longer drives the version.
 - Don't bump `version` fields or edit `CHANGELOG.md` in a PR. Merging the `internal: Version packages` pull request publishes to npm with trusted publishing.

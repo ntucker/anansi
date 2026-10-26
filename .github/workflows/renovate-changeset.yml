@@ -1,0 +1,45 @@
+name: renovate-changeset
+
+# Runs scripts/renovate-changeset.mjs on Renovate PRs and pushes the result.
+# The commit author is listed in renovate.json `gitIgnoredAuthors` so Renovate
+# keeps rebasing the branch. Set CHANGESET_PUSH_TOKEN (a PAT) if GitHub Actions
+# checks must also run on the changeset commit; it is required once any of them
+# is a required check on master. If Mend-hosted Renovate ever allows
+# `postUpgradeTasks` here, run the script there and delete this workflow.
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'packages/*/package.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: renovate-changeset-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  changeset:
+    name: Add changeset
+    if: github.event.pull_request.user.login == 'renovate[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+          token: ${{ secrets.CHANGESET_PUSH_TOKEN || github.token }}
+      - name: Write changeset
+        run: node scripts/renovate-changeset.mjs
+      - name: Commit changeset
+        run: |
+          git add .changeset
+          git diff --cached --quiet && exit 0
+          git config user.name 'anansi-changeset[bot]'
+          git config user.email 'anansi-changeset-bot@users.noreply.github.com'
+          git commit -m 'internal: Add changeset for Renovate update'
+          git push

@@ -1,6 +1,7 @@
 {
   "extends": ["group:allNonMajor", "group:monorepos"],
   "assigneesFromCodeOwners": true,
+  "gitIgnoredAuthors": ["anansi-changeset-bot@users.noreply.github.com"],
   "commitMessagePrefix": "pkg: ",
   "commitMessageTopic": "`{{depName}}`",
   "dependencyDashboardApproval": true,
