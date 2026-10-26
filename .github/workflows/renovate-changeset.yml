@@ -1,0 +1,43 @@
+name: renovate-changeset
+
+# Adds a patch changeset to Renovate PRs that change a published package's
+# dependencies. The commit author is listed in renovate.json `gitIgnoredAuthors`
+# so Renovate keeps rebasing the branch. Set CHANGESET_PUSH_TOKEN (a PAT) if
+# GitHub Actions checks must also run on the changeset commit.
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'packages/*/package.json'
+
+permissions:
+  contents: write
+
+jobs:
+  changeset:
+    name: Add changeset
+    if: github.event.pull_request.user.login == 'renovate[bot]' && startsWith(github.head_ref, 'renovate/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+          token: ${{ secrets.CHANGESET_PUSH_TOKEN || github.token }}
+      - name: Write changeset
+        run: node scripts/renovate-changeset.mjs
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_REF: ${{ github.head_ref }}
+      - name: Commit changeset
+        run: |
+          git add .changeset
+          git diff --cached --quiet && exit 0
+          git config user.name 'anansi-changeset[bot]'
+          git config user.email 'anansi-changeset-bot@users.noreply.github.com'
+          git commit -m 'internal: Add changeset for Renovate update'
+          git push
