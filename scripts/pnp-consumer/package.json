@@ -31,5 +31,8 @@
     "typescript": "^6.0.0",
     "webpack": "^5.61.0",
     "webpack-cli": "^7.0.0"
+  },
+  "resolutions": {
+    "@wyw-in-js/transform/happy-dom": "^21.0.4"
   }
 }
