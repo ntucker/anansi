@@ -61,7 +61,7 @@
     "@types/pacote": "11.1.8",
     "copyfiles": "2.4.1",
     "yeoman-assert": "3.1.1",
-    "yeoman-environment": "8.2.0",
+    "yeoman-environment": "8.5.0",
     "yeoman-test": "11.8.2"
   },
   "engines": {
@@ -82,7 +82,7 @@
     "pacote": "^22.0.1",
     "prettier": "^3.9.10",
     "shelobsay": "^2.0.0",
-    "yeoman-generator": "^10.0.1"
+    "yeoman-generator": "^10.2.1"
   },
   "scripts": {
     "pretest": "yarn g:lint .",
