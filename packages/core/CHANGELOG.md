@@ -1,5 +1,20 @@
 # Change Log
 
+## 0.23.2
+
+### Patch Changes
+
+- [#3213](https://github.com/ntucker/anansi/pull/3213) [`8df5d25`](https://github.com/ntucker/anansi/commit/8df5d256c5ef2e6e0bc078605b059d0fe26f5c7b) - `anansi serve` no longer shows 5xx error messages or stack traces unless `NODE_ENV=development`
+
+  The SSR error page now shows only the status text (like "Internal Server Error") for 5xx errors; errors with a 4xx `status` still show their message. Stack traces now need `NODE_ENV=development`, including when `NODE_ENV` is unset, which used to show them. Full errors are still logged on the server.
+
+- [#3223](https://github.com/ntucker/anansi/pull/3223) [`d645c27`](https://github.com/ntucker/anansi/commit/d645c27a641ec817c2561eb4507c685bd4723264) Thanks [@renovate](https://github.com/apps/renovate)! - Update `ejs` to ^7.0.2
+  Update `execa` to ^10.2.1
+  Update `http-proxy-middleware` to ^4.2.1
+  Update `pacote` to ^22.0.1
+
+- [#3210](https://github.com/ntucker/anansi/pull/3210) [`5404369`](https://github.com/ntucker/anansi/commit/540436938a093da4817660bff47f88217a98a3ab) Thanks [@renovate](https://github.com/apps/renovate)! - Update `webpack-dev-server` to ^6.1.0 and `postcss` to ^8.5.31
+
 ## 0.23.1
 
 ### Patch Changes
