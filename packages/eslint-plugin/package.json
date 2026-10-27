@@ -42,7 +42,7 @@
     "@babel/eslint-plugin": "^8.0.6",
     "@eslint/compat": "^2.1.1",
     "@eslint/js": "^10.0.1",
-    "@typescript-eslint/parser": "^8.71.2",
+    "@typescript-eslint/parser": "^8.72.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-import-resolver-webpack": "^0.13.11",
@@ -52,7 +52,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.13.0",
     "semver": "^7.8.5",
-    "typescript-eslint": "^8.71.2"
+    "typescript-eslint": "^8.72.0"
   },
   "devDependencies": {
     "@babel/core": "^8.0.0",
