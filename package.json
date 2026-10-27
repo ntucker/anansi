@@ -80,7 +80,6 @@
     "react-dom": "19.3.1",
     "@storybook/builder-webpack5/webpack-dev-middleware": "^8.0.0",
     "serve/compression": "^1.8.2",
-    "write-package/deepmerge-ts": "^8.0.2",
     "@ant-design/pro-layout/path-to-regexp": "^8.4.0",
     "@wyw-in-js/transform/happy-dom": "^21.0.4",
     "ajv/fast-uri": "^3.1.9",
