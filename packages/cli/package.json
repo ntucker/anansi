@@ -63,7 +63,7 @@
     "@anansi/generator-js": "workspace:^",
     "binary-version-check": "^6.1.0",
     "commander": "^15.0.0",
-    "execa": "^10.1.1",
+    "execa": "^10.2.1",
     "import-meta-resolve": "^4.2.0",
     "latest-version": "^9.0.0",
     "validate-npm-package-name": "^8.0.0"
