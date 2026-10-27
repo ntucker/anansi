@@ -59,7 +59,7 @@
     "@babel/runtime-corejs3": "^8.0.0",
     "core-js-pure": "^3.40.0",
     "history": "5.3.0",
-    "path-to-regexp": "^8.4.2"
+    "path-to-regexp": "^9.0.0"
   },
   "peerDependencies": {
     "@types/react": "*",
