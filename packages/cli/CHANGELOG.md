@@ -1,5 +1,16 @@
 # Change Log
 
+## 4.0.2
+
+### Patch Changes
+
+- [#3223](https://github.com/ntucker/anansi/pull/3223) [`d645c27`](https://github.com/ntucker/anansi/commit/d645c27a641ec817c2561eb4507c685bd4723264) Thanks [@renovate](https://github.com/apps/renovate)! - Update `ejs` to ^7.0.2
+  Update `execa` to ^10.2.1
+  Update `http-proxy-middleware` to ^4.2.1
+  Update `pacote` to ^22.0.1
+- Updated dependencies [[`d645c27`](https://github.com/ntucker/anansi/commit/d645c27a641ec817c2561eb4507c685bd4723264), [`c956c0f`](https://github.com/ntucker/anansi/commit/c956c0fd44513fb2770cea18b95e77c3da7e7134)]:
+  - @anansi/generator-js@13.0.2
+
 ## 4.0.1
 
 ### Patch Changes
