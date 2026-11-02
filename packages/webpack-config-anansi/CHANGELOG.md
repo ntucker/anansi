@@ -1,5 +1,13 @@
 # Change Log
 
+## 22.0.3
+
+### Patch Changes
+
+- [#3230](https://github.com/ntucker/anansi/pull/3230) [`b8a96a1`](https://github.com/ntucker/anansi/commit/b8a96a18547e7d4a0efb333c5ba568efebc07385) Thanks [@renovate](https://github.com/apps/renovate)! - Update `postcss-preset-env` to ^11.6.2
+  Update `postcss` to ^8.5.32
+  Update `sass-loader` to ^17.1.0
+
 ## 22.0.2
 
 ### Patch Changes

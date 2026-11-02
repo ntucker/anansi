@@ -1,5 +1,11 @@
 # Change Log
 
+## 13.0.3
+
+### Patch Changes
+
+- [#3231](https://github.com/ntucker/anansi/pull/3231) [`cbe8a62`](https://github.com/ntucker/anansi/commit/cbe8a62784d00c5a73c320c141c19d07f3374223) Thanks [@renovate](https://github.com/apps/renovate)! - Update `yeoman-generator` to ^10.3.0
+
 ## 13.0.2
 
 ### Patch Changes

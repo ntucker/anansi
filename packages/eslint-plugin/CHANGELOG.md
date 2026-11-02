@@ -1,5 +1,12 @@
 # Change Log
 
+## 2.0.3
+
+### Patch Changes
+
+- [#3235](https://github.com/ntucker/anansi/pull/3235) [`64cce14`](https://github.com/ntucker/anansi/commit/64cce14757dbfd2a089022669fe2d86ba57d6ab0) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@typescript-eslint/parser` to ^8.72.1
+  Update `typescript-eslint` to ^8.72.1
+
 ## 2.0.2
 
 ### Patch Changes
