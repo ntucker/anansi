@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 1
     - uses: actions/setup-node@v7
       with:
-        node-version: 24.x
+        node-version: 26.x
         cache: yarn
     - name: compressed-size-action
       uses: preactjs/compressed-size-action@v2
