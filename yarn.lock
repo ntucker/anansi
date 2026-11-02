@@ -240,8 +240,8 @@ __metadata:
     prettier: "npm:^3.9.10"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:8.5.0"
-    yeoman-generator: "npm:^10.2.1"
+    yeoman-environment: "npm:8.5.1"
+    yeoman-generator: "npm:^10.3.0"
     yeoman-test: "npm:11.8.2"
   languageName: unknown
   linkType: soft
@@ -24865,9 +24865,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:8.5.0":
-  version: 8.5.0
-  resolution: "yeoman-environment@npm:8.5.0"
+"yeoman-environment@npm:8.5.1":
+  version: 8.5.1
+  resolution: "yeoman-environment@npm:8.5.1"
   dependencies:
     "@yeoman/adapter": "npm:^5.0.0"
     "@yeoman/conflicter": "npm:^4.2.0"
@@ -24895,13 +24895,13 @@ __metadata:
     mem-fs: ^4.1.4 || ^6.0.0
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/59f654d851b7173216dddb6481f629a1ba44255a4960eea753413d0dc45e9f11d773ba4cb43c4b020eeb6633af3c52a6c0e913d726ab014ffc73375a33fb032a
+  checksum: 10c0/82ed15e19bf9ab497d931dde75082158a76269f6e7f772ef295b4cf8540b05e65bb19d7e9009c0bd396a492c19f91699af7139afd8589b8ef8a5516c604adfd0
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:^10.2.1":
-  version: 10.2.1
-  resolution: "yeoman-generator@npm:10.2.1"
+"yeoman-generator@npm:^10.3.0":
+  version: 10.3.0
+  resolution: "yeoman-generator@npm:10.3.0"
   dependencies:
     "@types/debug": "npm:^4.1.13"
     "@types/lodash-es": "npm:^4.17.12"
@@ -24926,7 +24926,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/7eca50f5b72a247a36056f9e2d7cfbb4e4b91f0ebecdefe7dc2b50ff8d156fed2c8761bfd399a5fd2ce349102e8910956b3fba5c6a992df71a14d8e42401ebb8
+  checksum: 10c0/57e322101353464815ceb882b3ea5d901f96031250d2cd4ccd8b6b2f8d10e614af899a6d7c0ab0399e42956f3f26fe3913fe4f3cc4ea83b0aa2cfccea77d2569
   languageName: node
   linkType: hard
 
