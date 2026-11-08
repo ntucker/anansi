@@ -17,12 +17,10 @@ export default function dataClientSpout(
   { initData?: Record<string, () => unknown>; scripts?: React.ReactNode[] }
 > {
   return next => async props => {
-    const managers = options?.getManagers?.() ?? [
-      new (await import('@data-client/react')).NetworkManager(),
-    ];
-    const { createPersistedStore } = await import('@data-client/react/ssr');
+    const { createPersistedStore, toManagers } =
+      await import('./dataClient.ssr.js');
     const [ServerDataProvider, useReadyCacheState, controller, store] =
-      createPersistedStore(managers);
+      createPersistedStore(toManagers(options.getManagers));
 
     const nextProps = await next({
       ...props,
