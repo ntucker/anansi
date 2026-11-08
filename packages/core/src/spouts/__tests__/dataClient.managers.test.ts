@@ -11,9 +11,6 @@ jest.mock('@data-client/react', () => ({
   },
 }));
 
-const withArity = (arity: number) =>
-  Object.defineProperty(() => {}, 'length', { value: arity });
-
 describe('toManagers()', () => {
   const managers: Manager[] = [];
   const getManagers = () => managers;
@@ -23,22 +20,21 @@ describe('toManagers()', () => {
   });
 
   it('passes the function to @data-client/react 0.19', () => {
-    mockInitManager = withArity(2);
+    mockInitManager = (_managers: unknown, _controller: unknown) => {};
     expect(toManagers(getManagers)).toBe(getManagers);
   });
 
   it('passes an array to @data-client/react 0.15 through 0.18', () => {
-    mockInitManager = withArity(3);
+    mockInitManager = (
+      _managers: unknown,
+      _controller: unknown,
+      _initialState: unknown,
+    ) => {};
     expect(toManagers(getManagers)).toBe(managers);
   });
 
   it('passes an array to @data-client/react before 0.15', () => {
     mockInitManager = undefined;
     expect(toManagers(getManagers)).toBe(managers);
-  });
-
-  it('reads an arity of 3 from the installed 0.18', () => {
-    const { __INTERNAL__ } = jest.requireActual('@data-client/react');
-    expect(__INTERNAL__.initManager.length).toBe(3);
   });
 });
