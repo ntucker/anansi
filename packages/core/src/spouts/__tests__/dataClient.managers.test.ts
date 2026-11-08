@@ -19,12 +19,12 @@ describe('toManagers()', () => {
     expect(toManagers()).toBeUndefined();
   });
 
-  it('passes the function to @data-client/react 0.19', () => {
+  it('passes the function when initManager takes two arguments (0.19)', () => {
     mockInitManager = (_managers: unknown, _controller: unknown) => {};
     expect(toManagers(getManagers)).toBe(getManagers);
   });
 
-  it('passes an array to @data-client/react 0.15 through 0.18', () => {
+  it('passes an array when initManager takes three arguments', () => {
     mockInitManager = (
       _managers: unknown,
       _controller: unknown,
@@ -33,7 +33,7 @@ describe('toManagers()', () => {
     expect(toManagers(getManagers)).toBe(managers);
   });
 
-  it('passes an array to @data-client/react before 0.15', () => {
+  it('passes an array when initManager is not exported', () => {
     mockInitManager = undefined;
     expect(toManagers(getManagers)).toBe(managers);
   });
