@@ -138,7 +138,7 @@ __metadata:
     compression: "npm:^1.8.2"
     core-js-pure: "npm:^3.40.0"
     cross-fetch: "npm:^4.1.0"
-    enhanced-resolve: "npm:^5.26.0"
+    enhanced-resolve: "npm:^5.26.1"
     express: "npm:^5.3.0"
     fs-require: "npm:^1.6.0"
     history: "npm:^5.3.0"
@@ -358,7 +358,7 @@ __metadata:
     "@types/node": "npm:^26.0.0"
     "@types/webpack-bundle-analyzer": "npm:^4.7.0"
     "@vue/preload-webpack-plugin": "npm:^2.0.0"
-    "@wyw-in-js/webpack-loader": "npm:^2.7.0"
+    "@wyw-in-js/webpack-loader": "npm:^2.7.1"
     assert: "npm:^2.1.0"
     babel-jest: "npm:^30.0.0"
     babel-loader: "npm:^10.1.1"
@@ -415,7 +415,7 @@ __metadata:
     util: "npm:^0.12.5"
     vm-browserify: "npm:^1.1.2"
     webpack: "npm:^5.103.0"
-    webpack-bundle-analyzer: "npm:^5.4.0"
+    webpack-bundle-analyzer: "npm:^5.4.2"
     webpack-node-externals: "npm:^3.0.0"
     webpack-remove-empty-scripts: "npm:^1.1.1"
     webpack-stats-plugin: "npm:^1.1.3"
@@ -5536,6 +5536,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@isaacs/nonrecursive-glob-match@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@isaacs/nonrecursive-glob-match@npm:1.1.0"
+  checksum: 10c0/89f8535f3d8147649360de992f58fba2b0e97b687e18cdc16c5b34a6c52afff4f474d05c5a0b6411708614f368cf19c41b037d3a1c6c6821e02aee967d888e98
+  languageName: node
+  linkType: hard
+
 "@isaacs/string-locale-compare@npm:^1.1.0":
   version: 1.1.0
   resolution: "@isaacs/string-locale-compare@npm:1.1.0"
@@ -6211,29 +6218,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:8.2.0, @linaria/core@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@linaria/core@npm:8.2.0"
+"@linaria/core@npm:8.3.0, @linaria/core@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "@linaria/core@npm:8.3.0"
   dependencies:
-    "@wyw-in-js/processor-utils": "npm:2.4.0"
-  checksum: 10c0/9c483c8bfedad2acc5ce6bc7a810b6ce89a73a3732dbf7c7a1dcb57b3c1beb306ddf1a304f947e327c30ef0b15098d4f9e2b252920c9926b85f0c897d4e49a08
+    "@wyw-in-js/processor-utils": "npm:2.7.1"
+  checksum: 10c0/b991bad0cceb0ba2bf6d80896acfeb137c1005d33894841de7b3dfd3294169858cf26ca6e866b1331807c7f9dc28baec1382bbb6174aa4197891225d1b4a10b6
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:8.2.0":
-  version: 8.2.0
-  resolution: "@linaria/react@npm:8.2.0"
+"@linaria/react@npm:8.3.0":
+  version: 8.3.0
+  resolution: "@linaria/react@npm:8.3.0"
   dependencies:
     "@emotion/is-prop-valid": "npm:^1.2.0"
-    "@linaria/core": "npm:^8.2.0"
-    "@wyw-in-js/processor-utils": "npm:2.4.0"
-    "@wyw-in-js/shared": "npm:2.4.0"
-    minimatch: "npm:^9.0.3"
+    "@linaria/core": "npm:^8.3.0"
+    "@wyw-in-js/processor-utils": "npm:2.7.1"
+    "@wyw-in-js/shared": "npm:2.7.1"
+    minimatch: "npm:^11.0.1"
     react-html-attributes: "npm:^1.4.6"
     resolve: "npm:^1.22.8"
   peerDependencies:
     react: ">=16"
-  checksum: 10c0/5f8c626dccb3bb25506fd500b0bd548ea347d74ba138c588ef9ebbac15e902c768fd29427023b327f33b8e63c32e79a6d3b6f86722b75d63c3440cf643177d01
+  checksum: 10c0/1bb5af6066096f369df0be6e4050a859799c1ed9f99b385ba28c557ce30771f12ff898520221332f8fee06aeadc4b369755416c787302e828e57b957231cf0cd
   languageName: node
   linkType: hard
 
@@ -10203,76 +10210,56 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wyw-in-js/processor-utils@npm:2.4.0":
-  version: 2.4.0
-  resolution: "@wyw-in-js/processor-utils@npm:2.4.0"
+"@wyw-in-js/processor-utils@npm:2.7.1":
+  version: 2.7.1
+  resolution: "@wyw-in-js/processor-utils@npm:2.7.1"
   dependencies:
-    "@wyw-in-js/shared": "npm:2.4.0"
-  checksum: 10c0/ec9b56636f346e20b84f1de1e15f47e7f4c72c98b495a71d53df56c06789b53939cae8cfa227cdb8a81ad6d8baa0533fcc495e838db659e4ef6f4c0ba6d80bf6
+    "@wyw-in-js/shared": "npm:2.7.1"
+  checksum: 10c0/f5f7075671ebbe6584d477d5d95568439dec084e2399ac0fb8aa9933a1b6d69847d2adccd7500e02ca3b26c50cc057ac24cc081461ea5b565aeb07013775a406
   languageName: node
   linkType: hard
 
-"@wyw-in-js/processor-utils@npm:2.7.0":
-  version: 2.7.0
-  resolution: "@wyw-in-js/processor-utils@npm:2.7.0"
-  dependencies:
-    "@wyw-in-js/shared": "npm:2.7.0"
-  checksum: 10c0/e22075a1f21ec805da8023f1b942282d574f1bf547437b78b7556e164ce75002fbbc493276412b5d563f68d01468645f5a79d3f3e1bd464835721568d335a0e2
-  languageName: node
-  linkType: hard
-
-"@wyw-in-js/shared@npm:2.4.0":
-  version: 2.4.0
-  resolution: "@wyw-in-js/shared@npm:2.4.0"
+"@wyw-in-js/shared@npm:2.7.1":
+  version: 2.7.1
+  resolution: "@wyw-in-js/shared@npm:2.7.1"
   dependencies:
     debug: "npm:^4.3.4"
     find-up: "npm:^5.0.0"
-    minimatch: "npm:^9.0.3"
-  checksum: 10c0/06d8051c5d6c717f1fdb5059db03bbb8c7ff59849bc2cbe57f0d62c976b570a3ae969911ead7abdbdd5bb04138b7020e1cc5fe4b5c4a16d311f18794854f4568
+    minimatch: "npm:^9.0.7"
+  checksum: 10c0/58f0371d6d3b22390eb43c43a583163f3ec66c3dec21b474db08e921f6b438faa32acef6a4755d8e18b2251d344d1b585c36f0c517d9ce8352a58855eb1cfc6a
   languageName: node
   linkType: hard
 
-"@wyw-in-js/shared@npm:2.7.0":
-  version: 2.7.0
-  resolution: "@wyw-in-js/shared@npm:2.7.0"
-  dependencies:
-    debug: "npm:^4.3.4"
-    find-up: "npm:^5.0.0"
-    minimatch: "npm:^9.0.3"
-  checksum: 10c0/e43ea746d3579e1914442081358f7d8fab0c4d2a86ed35974463f9d9331d30acbf318dea4f12194955bb95c23491a7eabbdfcf2a178dad396bffe8967831e983
-  languageName: node
-  linkType: hard
-
-"@wyw-in-js/transform@npm:2.7.0":
-  version: 2.7.0
-  resolution: "@wyw-in-js/transform@npm:2.7.0"
+"@wyw-in-js/transform@npm:2.7.1":
+  version: 2.7.1
+  resolution: "@wyw-in-js/transform@npm:2.7.1"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.5"
     "@jridgewell/trace-mapping": "npm:^0.3.31"
-    "@wyw-in-js/processor-utils": "npm:2.7.0"
-    "@wyw-in-js/shared": "npm:2.7.0"
+    "@wyw-in-js/processor-utils": "npm:2.7.1"
+    "@wyw-in-js/shared": "npm:2.7.1"
     cosmiconfig: "npm:^8.0.0"
-    happy-dom: "npm:^20.1.0"
-    minimatch: "npm:^9.0.5"
+    happy-dom: "npm:^20.8.9"
+    minimatch: "npm:^9.0.7"
     oxc-parser: "npm:^0.131.0"
     oxc-resolver: "npm:^11.19.1"
     oxc-transform: "npm:^0.131.0"
     source-map: "npm:^0.7.4"
     stylis: "npm:^4.3.0"
     ts-invariant: "npm:^0.10.3"
-  checksum: 10c0/d092f14675cb3558aa178f7ff3b5685b090d45b3aa739a0a6e0a58cf8e887b25f637828fe9eda6704fad765ad3e7305fe3abe84be7fec36da5e3239399780ac7
+  checksum: 10c0/1271edcc40a7de85ed5bcc1a151097282e809432c42234b1f998809e5dda52ed9bc908c991fe9b8d75026372e03f2900af9345eaa6f8f2ea951f275f976c4ab7
   languageName: node
   linkType: hard
 
-"@wyw-in-js/webpack-loader@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "@wyw-in-js/webpack-loader@npm:2.7.0"
+"@wyw-in-js/webpack-loader@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@wyw-in-js/webpack-loader@npm:2.7.1"
   dependencies:
-    "@wyw-in-js/shared": "npm:2.7.0"
-    "@wyw-in-js/transform": "npm:2.7.0"
+    "@wyw-in-js/shared": "npm:2.7.1"
+    "@wyw-in-js/transform": "npm:2.7.1"
   peerDependencies:
     webpack: ^5.76.0
-  checksum: 10c0/f99c3e64ea26440df0695fd264826c688572146a193c83465d59d651816ea8c4cdbe49dcb9d50ff03e7b45fadc33f5f1014ffb2d26fed45a49366e3100561a8e
+  checksum: 10c0/f53297536ff58485e7068f7c79e37d71517008866b8e3be64eb05dde4988d7dafe38600b3160db78ca26aa7d1f38a7a31143c6e89d0730a7ce81e5f1232bc514
   languageName: node
   linkType: hard
 
@@ -11401,7 +11388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"brace-expansion@npm:^5.0.8":
+"brace-expansion@npm:^5.0.12, brace-expansion@npm:^5.0.8":
   version: 5.0.12
   resolution: "brace-expansion@npm:5.0.12"
   dependencies:
@@ -13493,13 +13480,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.26.0, enhanced-resolve@npm:^5.7.0":
-  version: 5.26.0
-  resolution: "enhanced-resolve@npm:5.26.0"
+"enhanced-resolve@npm:^5.26.0, enhanced-resolve@npm:^5.26.1, enhanced-resolve@npm:^5.7.0":
+  version: 5.26.1
+  resolution: "enhanced-resolve@npm:5.26.1"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.3.3"
-  checksum: 10c0/fea1f02aa89793fecfd3ab0764be988fdf10dd5147ef65548726d918e68e3b9cf84224de37387356b54eee69363e4d59d9624dd7be9a23a0b1f568c46fa7a8a2
+  checksum: 10c0/5b5594412e2e0e67d70d28c908c3f84d7809fcf7dea8d0e3716d2c9ad2b83548fab149aae8f8c6295b46b92ea865fc8f85a7eb091df0368ce0ff18b6ca2f18ce
   languageName: node
   linkType: hard
 
@@ -14243,8 +14230,8 @@ __metadata:
     "@babel/core": "npm:^8.0.0"
     "@babel/plugin-transform-modules-commonjs": "npm:8.0.1"
     "@babel/runtime-corejs3": "npm:8.0.10"
-    "@linaria/core": "npm:8.2.0"
-    "@linaria/react": "npm:8.2.0"
+    "@linaria/core": "npm:8.3.0"
+    "@linaria/react": "npm:8.3.0"
     "@types/eslint": "npm:^9.0.0"
     "@types/node": "npm:^26.0.0"
     "@types/react": "npm:19.3.0"
@@ -14290,8 +14277,8 @@ __metadata:
     "@data-client/react": "npm:0.19.0-beta-20261108175612-3ae266bf35a5a44fec04d951fc8503e0cb578dda"
     "@data-client/rest": "npm:0.19.0-beta-20261108175612-3ae266bf35a5a44fec04d951fc8503e0cb578dda"
     "@data-client/test": "npm:0.19.0-beta-20261108175612-3ae266bf35a5a44fec04d951fc8503e0cb578dda"
-    "@linaria/core": "npm:8.2.0"
-    "@linaria/react": "npm:8.2.0"
+    "@linaria/core": "npm:8.3.0"
+    "@linaria/react": "npm:8.3.0"
     "@types/eslint": "npm:9.6.1"
     "@types/jest": "npm:30.0.0"
     "@types/node": "npm:26.6.5"
@@ -18149,6 +18136,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:^11.0.1":
+  version: 11.0.5
+  resolution: "minimatch@npm:11.0.5"
+  dependencies:
+    "@isaacs/nonrecursive-glob-match": "npm:^1.1.0"
+    brace-expansion: "npm:^5.0.12"
+  checksum: 10c0/398cbb80d0faf4d9714d62b9d8a55af4df27d885144317416a6efc1c673705210cbc9b17d263b368b19a91749df9b4769a18fafd5e88eb43326f502267145fc0
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^8.0.2":
   version: 8.0.7
   resolution: "minimatch@npm:8.0.7"
@@ -18158,7 +18155,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.3, minimatch@npm:^9.0.4, minimatch@npm:^9.0.5, minimatch@npm:^9.0.9":
+"minimatch@npm:^9.0.4, minimatch@npm:^9.0.7, minimatch@npm:^9.0.9":
   version: 9.0.9
   resolution: "minimatch@npm:9.0.9"
   dependencies:
@@ -21755,162 +21752,162 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-embedded-all-unknown@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-all-unknown@npm:1.107.1"
+"sass-embedded-all-unknown@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-all-unknown@npm:1.108.1"
   dependencies:
-    sass: "npm:1.107.1"
+    sass: "npm:1.108.1"
   conditions: (!cpu=arm | !cpu=arm64 | !cpu=riscv64 | !cpu=x64)
   languageName: node
   linkType: hard
 
-"sass-embedded-android-arm64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-android-arm64@npm:1.107.1"
+"sass-embedded-android-arm64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-android-arm64@npm:1.108.1"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"sass-embedded-android-arm@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-android-arm@npm:1.107.1"
+"sass-embedded-android-arm@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-android-arm@npm:1.108.1"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"sass-embedded-android-riscv64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-android-riscv64@npm:1.107.1"
+"sass-embedded-android-riscv64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-android-riscv64@npm:1.108.1"
   conditions: os=android & cpu=riscv64
   languageName: node
   linkType: hard
 
-"sass-embedded-android-x64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-android-x64@npm:1.107.1"
+"sass-embedded-android-x64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-android-x64@npm:1.108.1"
   conditions: os=android & cpu=x64
   languageName: node
   linkType: hard
 
-"sass-embedded-darwin-arm64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-darwin-arm64@npm:1.107.1"
+"sass-embedded-darwin-arm64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-darwin-arm64@npm:1.108.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"sass-embedded-darwin-x64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-darwin-x64@npm:1.107.1"
+"sass-embedded-darwin-x64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-darwin-x64@npm:1.108.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-arm64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-arm64@npm:1.107.1"
+"sass-embedded-linux-arm64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-arm64@npm:1.108.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-arm@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-arm@npm:1.107.1"
+"sass-embedded-linux-arm@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-arm@npm:1.108.1"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-musl-arm64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-musl-arm64@npm:1.107.1"
+"sass-embedded-linux-musl-arm64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-musl-arm64@npm:1.108.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-musl-arm@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-musl-arm@npm:1.107.1"
+"sass-embedded-linux-musl-arm@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-musl-arm@npm:1.108.1"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-musl-riscv64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-musl-riscv64@npm:1.107.1"
+"sass-embedded-linux-musl-riscv64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-musl-riscv64@npm:1.108.1"
   conditions: os=linux & cpu=riscv64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-musl-x64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-musl-x64@npm:1.107.1"
+"sass-embedded-linux-musl-x64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-musl-x64@npm:1.108.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-riscv64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-riscv64@npm:1.107.1"
+"sass-embedded-linux-riscv64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-riscv64@npm:1.108.1"
   conditions: os=linux & cpu=riscv64
   languageName: node
   linkType: hard
 
-"sass-embedded-linux-x64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-linux-x64@npm:1.107.1"
+"sass-embedded-linux-x64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-linux-x64@npm:1.108.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"sass-embedded-unknown-all@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-unknown-all@npm:1.107.1"
+"sass-embedded-unknown-all@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-unknown-all@npm:1.108.1"
   dependencies:
-    sass: "npm:1.107.1"
+    sass: "npm:1.108.1"
   conditions: (!os=android | !os=darwin | !os=linux | !os=win32)
   languageName: node
   linkType: hard
 
-"sass-embedded-win32-arm64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-win32-arm64@npm:1.107.1"
+"sass-embedded-win32-arm64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-win32-arm64@npm:1.108.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"sass-embedded-win32-x64@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass-embedded-win32-x64@npm:1.107.1"
+"sass-embedded-win32-x64@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass-embedded-win32-x64@npm:1.108.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "sass-embedded@npm:^1.77.8":
-  version: 1.107.1
-  resolution: "sass-embedded@npm:1.107.1"
+  version: 1.108.1
+  resolution: "sass-embedded@npm:1.108.1"
   dependencies:
     "@bufbuild/protobuf": "npm:^2.5.0"
     colorjs.io: "npm:^0.7.0"
     immutable: "npm:^5.1.5"
     rxjs: "npm:^7.4.0"
-    sass-embedded-all-unknown: "npm:1.107.1"
-    sass-embedded-android-arm: "npm:1.107.1"
-    sass-embedded-android-arm64: "npm:1.107.1"
-    sass-embedded-android-riscv64: "npm:1.107.1"
-    sass-embedded-android-x64: "npm:1.107.1"
-    sass-embedded-darwin-arm64: "npm:1.107.1"
-    sass-embedded-darwin-x64: "npm:1.107.1"
-    sass-embedded-linux-arm: "npm:1.107.1"
-    sass-embedded-linux-arm64: "npm:1.107.1"
-    sass-embedded-linux-musl-arm: "npm:1.107.1"
-    sass-embedded-linux-musl-arm64: "npm:1.107.1"
-    sass-embedded-linux-musl-riscv64: "npm:1.107.1"
-    sass-embedded-linux-musl-x64: "npm:1.107.1"
-    sass-embedded-linux-riscv64: "npm:1.107.1"
-    sass-embedded-linux-x64: "npm:1.107.1"
-    sass-embedded-unknown-all: "npm:1.107.1"
-    sass-embedded-win32-arm64: "npm:1.107.1"
-    sass-embedded-win32-x64: "npm:1.107.1"
+    sass-embedded-all-unknown: "npm:1.108.1"
+    sass-embedded-android-arm: "npm:1.108.1"
+    sass-embedded-android-arm64: "npm:1.108.1"
+    sass-embedded-android-riscv64: "npm:1.108.1"
+    sass-embedded-android-x64: "npm:1.108.1"
+    sass-embedded-darwin-arm64: "npm:1.108.1"
+    sass-embedded-darwin-x64: "npm:1.108.1"
+    sass-embedded-linux-arm: "npm:1.108.1"
+    sass-embedded-linux-arm64: "npm:1.108.1"
+    sass-embedded-linux-musl-arm: "npm:1.108.1"
+    sass-embedded-linux-musl-arm64: "npm:1.108.1"
+    sass-embedded-linux-musl-riscv64: "npm:1.108.1"
+    sass-embedded-linux-musl-x64: "npm:1.108.1"
+    sass-embedded-linux-riscv64: "npm:1.108.1"
+    sass-embedded-linux-x64: "npm:1.108.1"
+    sass-embedded-unknown-all: "npm:1.108.1"
+    sass-embedded-win32-arm64: "npm:1.108.1"
+    sass-embedded-win32-x64: "npm:1.108.1"
     supports-color: "npm:^8.1.1"
     sync-child-process: "npm:^1.0.2"
     varint: "npm:^6.0.0"
@@ -21953,7 +21950,7 @@ __metadata:
       optional: true
   bin:
     sass: dist/bin/sass.js
-  checksum: 10c0/8c640d57f9a0f201ff1f09621f971f170e594e3668237d7d1f4d4b0deaf52000f08f59a0a4215ca600c0bf75eff6d2540d77df86fbee2e542c70596171c98e63
+  checksum: 10c0/2e094ede6669e701294bd234978c108cb5471325189627e2dc8cc7819cbf45c7069923d0eeaed47db81ceeba315f1164e2227582f6858f83ccfbf4f60056149d
   languageName: node
   linkType: hard
 
@@ -21990,9 +21987,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.107.1":
-  version: 1.107.1
-  resolution: "sass@npm:1.107.1"
+"sass@npm:1.108.1":
+  version: 1.108.1
+  resolution: "sass@npm:1.108.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^5.0.0"
@@ -22003,7 +22000,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/35672944940bd78e89cf661c0c8f6e3ea434fa25a7c815466dfee0b37a6185306da9d8f47ef3b241bd672d5e0e25d368da0f23393e8434b923f927e5e1ed6665
+  checksum: 10c0/4a7bc41997b0a3b5ec14947571babb84a56587fab155f26af12a4dadf359139e642c1c368e9bbacc7ba874283e821bc600c5d85e1aeb103fb5462cce2491d0a5
   languageName: node
   linkType: hard
 
@@ -24269,9 +24266,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^5.4.0":
-  version: 5.4.0
-  resolution: "webpack-bundle-analyzer@npm:5.4.0"
+"webpack-bundle-analyzer@npm:^5.4.2":
+  version: 5.4.2
+  resolution: "webpack-bundle-analyzer@npm:5.4.2"
   dependencies:
     "@discoveryjs/json-ext": "npm:^0.6.3"
     acorn: "npm:^8.0.4"
@@ -24285,7 +24282,7 @@ __metadata:
     ws: "npm:^8.19.0"
   bin:
     webpack-bundle-analyzer: lib/bin/analyzer.js
-  checksum: 10c0/9378e00bc8be067f695d68bbb92ca9f40c890d3efeb790c2323c476492bf93d5ab3aa2ea8f17d4ae4cad3a7c773c300ae3d6b3ed9522a5a54724e297606f88da
+  checksum: 10c0/caa2a937952f702c9ebb821f8cb9bd7da05d87a2c8c50bc46a7b256aa16ddefe335c3f32888e0237352c35a2df87bfbda877f3a750632f635fba202d43e342ad
   languageName: node
   linkType: hard
 
