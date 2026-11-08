@@ -20,6 +20,8 @@ trap 'rm -rf "$WORK_DIR"' EXIT
 cp -R "$ANANSI_DIR/scripts/pnp-consumer/." "$WORK_DIR"
 cd "$WORK_DIR"
 echo "yarnPath: $(ls "$ANANSI_DIR"/.yarn/releases/yarn-*.cjs)" >> .yarnrc.yml
+# first-party packages skip the age gate, as in the root .yarnrc.yml
+sed -n '/^npmPreapprovedPackages:/,/^$/p' "$ANANSI_DIR/.yarnrc.yml" >> .yarnrc.yml
 # every packed package, so each one's own dependencies get checked
 node "$ANANSI_DIR/scripts/pack-resolutions.mjs" --add-dev
 YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install --mode=skip-build
