@@ -7,7 +7,7 @@
   ],
   "dependencies": {
     "@babel/runtime-corejs3": "^8.0.0",
-    "@data-client/react": "^0.18.0",
+    "@data-client/react": "0.19.0-beta-20261108175612-3ae266bf35a5a44fec04d951fc8503e0cb578dda",
     "core-js": "^3.40.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
