@@ -64,7 +64,7 @@
     "@storybook/builder-webpack5": "^10.6.5",
     "@storybook/preset-react-webpack": "^10.6.5",
     "@storybook/react": "^10.6.5",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "core-js-pure": "^3.40.0"
   },
   "peerDependencies": {
