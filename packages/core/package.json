@@ -147,8 +147,8 @@
     "test:ci": "yarn g:test",
     "test:type": "yarn g:tsc",
     "build": "run build:lib && run build:scripts && run build:bundle",
-    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' yarn g:babel --out-dir lib",
-    "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node22' yarn g:babel src/scripts --out-dir lib/scripts",
+    "build:lib": "NODE_ENV=production BROWSERSLIST_ENV='2020' yarn g:babel --out-dir lib --ignore '**/*.cts'",
+    "build:scripts": "NODE_ENV=production BROWSERSLIST_ENV='node22' yarn g:babel src/scripts --out-dir lib/scripts --ignore '**/*.cts' && cp src/scripts/fsRequireCaller.cjs lib/scripts/fsRequireCaller.cjs",
     "build:bundle": "BROWSERSLIST_ENV=node22 yarn g:webpack --mode=none --target=node && echo '{\"type\":\"commonjs\"}' > dist/package.json",
     "build:clean": "yarn g:clean",
     "prepack": "run build"
