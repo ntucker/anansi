@@ -94,7 +94,7 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.8",
     "https-browserify": "^1.0.0",
-    "is-wsl": "^2.2.0",
+    "is-wsl": "^3.1.1",
     "mini-css-extract-plugin": "^2.10.2",
     "mkdirp": "^3.0.1",
     "os-browserify": "^0.3.0",
