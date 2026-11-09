@@ -140,7 +140,7 @@ __metadata:
     cross-fetch: "npm:^4.1.0"
     enhanced-resolve: "npm:^5.26.1"
     express: "npm:^5.3.0"
-    fs-require: "npm:^1.6.0"
+    fs-require: "npm:^2.0.0"
     history: "npm:^5.3.0"
     http-proxy-middleware: "npm:^4.2.1"
     memfs: "npm:^3.5.3"
@@ -14986,10 +14986,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-require@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "fs-require@npm:1.6.0"
-  checksum: 10c0/66e94148e47f4a0c77f45995abb82e1d1f39b78a4e5baeb2a8e1e528e5d46699ecd1b2d79a64481037030f1b6756f84e0db51159890a3433305edb8b8b7005f5
+"fs-require@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "fs-require@npm:2.0.0"
+  checksum: 10c0/93034b71cca6054515caa09d07d25ef3dade4d6384c507a6b134c75ec9a0f00b6789ce92cda4256e0100c2dba0373ba123b22b9545ffcc78d605209eb0f7ed25
   languageName: node
   linkType: hard
 
