@@ -1,5 +1,20 @@
 # Change Log
 
+## 22.0.4
+
+### Patch Changes
+
+- [#3242](https://github.com/ntucker/anansi/pull/3242) [`d5aef19`](https://github.com/ntucker/anansi/commit/d5aef19b7cd415760469bf26fcb9bc8a0702f40b) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@types/node` to ^26.6.6
+  Update `commander` to ^15.1.0
+  Update `globals` to ^17.14.0
+  Update `semver` to ^7.8.6
+
+- [#3243](https://github.com/ntucker/anansi/pull/3243) [`3de3e30`](https://github.com/ntucker/anansi/commit/3de3e3039c6670254535878f16620c61b3a8e9a1) Thanks [@renovate](https://github.com/apps/renovate)! - Update `is-wsl` to ^3.1.1
+
+- [#3238](https://github.com/ntucker/anansi/pull/3238) [`9b69a1b`](https://github.com/ntucker/anansi/commit/9b69a1b117f8085023b910f293cbb816db731329) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@wyw-in-js/webpack-loader` to ^2.7.1
+  Update `enhanced-resolve` to ^5.26.1
+  Update `webpack-bundle-analyzer` to ^5.4.2
+
 ## 22.0.3
 
 ### Patch Changes

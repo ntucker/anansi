@@ -1,5 +1,14 @@
 # Change Log
 
+## 4.0.3
+
+### Patch Changes
+
+- [#3242](https://github.com/ntucker/anansi/pull/3242) [`d5aef19`](https://github.com/ntucker/anansi/commit/d5aef19b7cd415760469bf26fcb9bc8a0702f40b) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@types/node` to ^26.6.6
+  Update `commander` to ^15.1.0
+  Update `globals` to ^17.14.0
+  Update `semver` to ^7.8.6
+
 ## 4.0.2
 
 ### Patch Changes

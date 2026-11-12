@@ -1,5 +1,24 @@
 # Change Log
 
+## 5.0.4
+
+### Patch Changes
+
+- [#3237](https://github.com/ntucker/anansi/pull/3237) [`0574609`](https://github.com/ntucker/anansi/commit/0574609198805a812f386a25a70a8c6219791475) - Support @data-client/react 0.19
+
+  `dataClientSpout({ getManagers })` passes `getManagers` to 0.19 as the function it now takes, so each store gets its own Managers. Earlier versions still get the array. Your `getManagers` doesn't change.
+
+  ```tsx
+  dataClientSpout({
+    getManagers: () => [new MyManager(), ...getDefaultManagers()],
+  });
+  ```
+
+- [#3242](https://github.com/ntucker/anansi/pull/3242) [`d5aef19`](https://github.com/ntucker/anansi/commit/d5aef19b7cd415760469bf26fcb9bc8a0702f40b) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@types/node` to ^26.6.6
+  Update `commander` to ^15.1.0
+  Update `globals` to ^17.14.0
+  Update `semver` to ^7.8.6
+
 ## 5.0.3
 
 ### Patch Changes
