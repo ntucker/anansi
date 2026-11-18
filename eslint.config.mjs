@@ -23,6 +23,7 @@ export default [
       'packages/babel-preset-anansi/*',
       'packages/browserslist-config-anansi/*',
       '**/*.config.{js,cjs,mjs,ts}',
+      'packages/core/src/scripts/fsRequireCaller.cjs',
       'scripts/**',
     ],
     languageOptions: {
