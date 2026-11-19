@@ -1,5 +1,12 @@
 # Change Log
 
+## 7.0.2
+
+### Patch Changes
+
+- [#3246](https://github.com/ntucker/anansi/pull/3246) [`9c98a76`](https://github.com/ntucker/anansi/commit/9c98a76de6d869c6e3c51b4041e704dd2cc85264) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@babel/plugin-transform-class-static-block` to ^8.1.2
+  Update `@babel/plugin-transform-runtime` to ^8.1.2
+
 ## 7.0.1
 
 ### Patch Changes

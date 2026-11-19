@@ -1,5 +1,15 @@
 # Change Log
 
+## 22.0.5
+
+### Patch Changes
+
+- [#3250](https://github.com/ntucker/anansi/pull/3250) [`d3ddec9`](https://github.com/ntucker/anansi/commit/d3ddec9fd71e95e2d1544dadb4d5225338ca512a) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@wyw-in-js/webpack-loader` to ^2.7.2
+  Update `enhanced-resolve` to ^5.27.0
+  Update `postcss-preset-env` to ^11.6.3
+  Update `postcss` to ^8.5.33
+  Update `webpack-bundle-analyzer` to ^5.4.3
+
 ## 22.0.4
 
 ### Patch Changes
