@@ -1,5 +1,13 @@
 # Change Log
 
+## 5.0.5
+
+### Patch Changes
+
+- [#3252](https://github.com/ntucker/anansi/pull/3252) [`a20ec2f`](https://github.com/ntucker/anansi/commit/a20ec2f0edbdcfd090074256b0811b9894e940f7) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@storybook/builder-webpack5` to ^10.6.7
+  Update `@storybook/preset-react-webpack` to ^10.6.7
+  Update `@storybook/react` to ^10.6.7
+
 ## 5.0.4
 
 ### Patch Changes

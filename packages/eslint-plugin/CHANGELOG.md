@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.0.5
+
+### Patch Changes
+
+- [#3251](https://github.com/ntucker/anansi/pull/3251) [`5fc6c33`](https://github.com/ntucker/anansi/commit/5fc6c33f83e855f3e98ff15086ab2b965239bdb4) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@babel/eslint-parser` to ^8.1.2
+  Update `@typescript-eslint/parser` to ^8.73.0
+  Update `prettier` to ^3.10.1
+  Update `typescript-eslint` to ^8.73.0
+
 ## 2.0.4
 
 ### Patch Changes

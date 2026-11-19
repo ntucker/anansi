@@ -1,5 +1,16 @@
 # Change Log
 
+## 13.0.4
+
+### Patch Changes
+
+- [#3251](https://github.com/ntucker/anansi/pull/3251) [`5fc6c33`](https://github.com/ntucker/anansi/commit/5fc6c33f83e855f3e98ff15086ab2b965239bdb4) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@babel/eslint-parser` to ^8.1.2
+  Update `@typescript-eslint/parser` to ^8.73.0
+  Update `prettier` to ^3.10.1
+  Update `typescript-eslint` to ^8.73.0
+
+- [#3249](https://github.com/ntucker/anansi/pull/3249) [`5875643`](https://github.com/ntucker/anansi/commit/5875643ee31da5a4be3bd2068e1e5d7987610a5a) Thanks [@renovate](https://github.com/apps/renovate)! - Update `yeoman-generator` to ^10.3.1
+
 ## 13.0.3
 
 ### Patch Changes
