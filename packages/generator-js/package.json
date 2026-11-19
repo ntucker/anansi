@@ -80,7 +80,7 @@
     "mem-fs": "^6.0.0",
     "mem-fs-editor": "^12.1.0",
     "pacote": "^22.0.1",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.1",
     "shelobsay": "^2.0.0",
     "yeoman-generator": "^10.3.1"
   },
