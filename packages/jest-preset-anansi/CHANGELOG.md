@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.12.3
+
+### Patch Changes
+
+- [#3257](https://github.com/ntucker/anansi/pull/3257) [`e9f33e5`](https://github.com/ntucker/anansi/commit/e9f33e51f76e024e6c6c33607ad5af494bacc1d3) Thanks [@renovate](https://github.com/apps/renovate)! - Update `ts-jest` to ^29.4.15
+
 ## 0.12.2
 
 ### Patch Changes
