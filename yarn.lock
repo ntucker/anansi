@@ -240,7 +240,7 @@ __metadata:
     prettier: "npm:^3.10.1"
     shelobsay: "npm:^2.0.0"
     yeoman-assert: "npm:3.1.1"
-    yeoman-environment: "npm:8.6.0"
+    yeoman-environment: "npm:8.9.0"
     yeoman-generator: "npm:^10.3.1"
     yeoman-test: "npm:11.8.2"
   languageName: unknown
@@ -10366,18 +10366,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/conflicter@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@yeoman/conflicter@npm:4.2.0"
+"@yeoman/conflicter@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@yeoman/conflicter@npm:4.3.0"
   dependencies:
-    "@yeoman/transform": "npm:^2.1.1"
+    "@yeoman/transform": "npm:^3.0.0"
     binary-extensions: "npm:^3.1.0"
     cli-table: "npm:^0.3.11"
     dateformat: "npm:^5.0.3"
     diff: "npm:^9.0.0"
     isbinaryfile: "npm:^5.0.4"
     mem-fs-editor: "npm:^12.0.4"
-    minimatch: "npm:^10.2.5"
+    minimatch: "npm:^11.0.8"
     p-transform: "npm:^5.0.1"
     pretty-bytes: "npm:^7.1.0"
     slash: "npm:^5.1.0"
@@ -10386,7 +10386,7 @@ __metadata:
     "@types/node": ">=20.14.8"
     "@yeoman/types": ^1.0.0
     mem-fs: ^4.0.0 || ^6.0.0
-  checksum: 10c0/e20f3e0573f8ffd4879ae96263c7829fc09514b222869d3cb03d87dfc072009f6ee67e7a2262968d27bbca31ad5bd81737c267e9acde5023a3379a8fac7c3d91
+  checksum: 10c0/a5609972fdd4085444451838d0da01e4cb08c5f3c45ae2e06e4d7574d1152869e7c8c022f0b7cbff693fe7d3b629f5d393303c60359619fdbbc181f6dbf36dc4
   languageName: node
   linkType: hard
 
@@ -10397,7 +10397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yeoman/transform@npm:^2.1.1, @yeoman/transform@npm:^2.1.2":
+"@yeoman/transform@npm:^2.1.2":
   version: 2.1.2
   resolution: "@yeoman/transform@npm:2.1.2"
   dependencies:
@@ -10405,6 +10405,17 @@ __metadata:
   peerDependencies:
     "@types/node": ">=18.19.44"
   checksum: 10c0/4697d5677b9dcd6432adb6e5b2cf27a2e0cdb6d4d6956f4e564a7cef628dca8874a9be90002ea48d77023476f952592e23ab2ded3bd6203dafd9de3d9e212026
+  languageName: node
+  linkType: hard
+
+"@yeoman/transform@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@yeoman/transform@npm:3.0.0"
+  dependencies:
+    minimatch: "npm:^11.0.8"
+  peerDependencies:
+    "@types/node": ">=18.19.44"
+  checksum: 10c0/d3d37812d9885f87cfa73624051f7d5654e0c0c035b1c192a6df815a384cfa913c0fcb08aa357c0d45926e1180a7524e161053b321b9fdb0f419d6d5343cd848
   languageName: node
   linkType: hard
 
@@ -18203,13 +18214,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^11.0.1, minimatch@npm:^11.0.5":
-  version: 11.0.5
-  resolution: "minimatch@npm:11.0.5"
+"minimatch@npm:^11.0.1, minimatch@npm:^11.0.5, minimatch@npm:^11.0.8":
+  version: 11.0.9
+  resolution: "minimatch@npm:11.0.9"
   dependencies:
     "@isaacs/nonrecursive-glob-match": "npm:^1.1.0"
     brace-expansion: "npm:^5.0.12"
-  checksum: 10c0/398cbb80d0faf4d9714d62b9d8a55af4df27d885144317416a6efc1c673705210cbc9b17d263b368b19a91749df9b4769a18fafd5e88eb43326f502267145fc0
+  checksum: 10c0/17c8b5caebaa8c1ecc1c6d58028d192f0e94ebe03976bb9f348920c107cde3185614f74543fe40dfc79ecf0bd74158b816633fc9a8f66da32c0d5327ecbb91e9
   languageName: node
   linkType: hard
 
@@ -24954,14 +24965,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:8.6.0":
-  version: 8.6.0
-  resolution: "yeoman-environment@npm:8.6.0"
+"yeoman-environment@npm:8.9.0":
+  version: 8.9.0
+  resolution: "yeoman-environment@npm:8.9.0"
   dependencies:
     "@yeoman/adapter": "npm:^5.0.0"
-    "@yeoman/conflicter": "npm:^4.2.0"
+    "@yeoman/conflicter": "npm:^4.3.0"
     "@yeoman/namespace": "npm:^2.1.0"
-    "@yeoman/transform": "npm:^2.1.2"
+    "@yeoman/transform": "npm:^3.0.0"
     "@yeoman/types": "npm:^1.13.1"
     arrify: "npm:^3.0.0"
     chalk: "npm:^6.0.0"
@@ -24984,7 +24995,7 @@ __metadata:
     mem-fs: ^4.1.4 || ^6.0.0
   bin:
     yoe: bin/bin.cjs
-  checksum: 10c0/734600e2f7ef97434f89474bb9f67be5e37a1606562847adbeb2e8af01b70514b805313eb9adf39f23b768fcf182181cd59756e84dc8abcc4f7bb36af9dd69fa
+  checksum: 10c0/727eb2ee2f976e3cff8fa6846e4735a09968da2a4866176b55247bf083ab8e827bae56941e9628103e7d9452950058a6f5f4b382454cb58eb720d984e31a6ed6
   languageName: node
   linkType: hard
 
