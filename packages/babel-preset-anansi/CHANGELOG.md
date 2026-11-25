@@ -1,5 +1,12 @@
 # Change Log
 
+## 7.0.3
+
+### Patch Changes
+
+- [#3253](https://github.com/ntucker/anansi/pull/3253) [`ba89989`](https://github.com/ntucker/anansi/commit/ba89989616a2c9b1f0836a8c54d9786618b5263e) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@babel/plugin-proposal-export-default-from` to ^8.1.3
+  Update `@babel/plugin-transform-typescript` to ^8.1.3
+
 ## 7.0.2
 
 ### Patch Changes
