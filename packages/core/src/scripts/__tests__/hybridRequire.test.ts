@@ -240,4 +240,133 @@ describe('hybridRequire wrapper', () => {
       expect(result.default).toBe('test-export-value');
     });
   });
+
+  describe('app dependencies win over copies nested under @anansi/core', () => {
+    function writePackage(dir: string, version: string) {
+      diskFs.mkdirSync(dir, { recursive: true });
+      diskFs.writeFileSync(
+        path.join(dir, 'package.json'),
+        JSON.stringify({ name: 'express', version, main: 'index.js' }),
+      );
+      diskFs.writeFileSync(
+        path.join(dir, 'index.js'),
+        `module.exports = { version: ${JSON.stringify(version)} };`,
+      );
+    }
+
+    function installExpressFixtures(projectRoot: string) {
+      diskFs.writeFileSync(
+        path.join(projectRoot, 'package.json'),
+        JSON.stringify({ name: 'consumer-app' }),
+      );
+      writePackage(
+        path.join(projectRoot, 'node_modules', 'express'),
+        '4.21.2-app',
+      );
+      writePackage(
+        path.join(
+          projectRoot,
+          'node_modules',
+          '@anansi',
+          'core',
+          'node_modules',
+          'express',
+        ),
+        '5.3.0-nested',
+      );
+    }
+
+    const bundleSource = [
+      "const sibling = require('./sibling.js');",
+      'module.exports = {',
+      "  express: require('express/package.json').version,",
+      "  expressExport: require('express').version,",
+      '  sibling,',
+      '};',
+      '',
+    ].join('\n');
+
+    it('loads the app Express from an in-memory server bundle', () => {
+      const projectRoot = tempDir;
+      installExpressFixtures(projectRoot);
+
+      const volume = new Volume();
+      const memoryFs = createFsFromVolume(volume);
+      memoryFs.mkdirSync('/server', { recursive: true });
+      memoryFs.writeFileSync(
+        '/server/sibling.js',
+        "module.exports = 'memory-sibling';",
+      );
+      memoryFs.writeFileSync('/server/server.js', bundleSource);
+
+      const hybridRequire = createHybridRequire(memoryFs as any, projectRoot);
+      const loaded = hybridRequire('/server/server.js');
+
+      expect(loaded.express).toBe('4.21.2-app');
+      expect(loaded.expressExport).toBe('4.21.2-app');
+      expect(loaded.sibling).toBe('memory-sibling');
+    });
+
+    it('loads the app Express from a bundle on disk', () => {
+      const projectRoot = tempDir;
+      installExpressFixtures(projectRoot);
+      const bundleDir = path.join(projectRoot, 'dist-server');
+      diskFs.mkdirSync(bundleDir, { recursive: true });
+      diskFs.writeFileSync(
+        path.join(bundleDir, 'sibling.js'),
+        "module.exports = 'disk-sibling';",
+      );
+      const serverFile = path.join(bundleDir, 'server.js');
+      diskFs.writeFileSync(serverFile, bundleSource);
+
+      const hybridRequire = createHybridRequire(diskFs as any, projectRoot);
+      const loaded = hybridRequire(serverFile);
+
+      expect(loaded.express).toBe('4.21.2-app');
+      expect(loaded.expressExport).toBe('4.21.2-app');
+      expect(loaded.sibling).toBe('disk-sibling');
+    });
+
+    it('resolves circular imports and throws MODULE_NOT_FOUND when a module is missing', () => {
+      const projectRoot = tempDir;
+      diskFs.writeFileSync(
+        path.join(projectRoot, 'package.json'),
+        JSON.stringify({ name: 'consumer-app' }),
+      );
+      const volume = new Volume();
+      const memoryFs = createFsFromVolume(volume);
+      memoryFs.writeFileSync(
+        '/a.js',
+        "exports.name = 'a'; exports.other = require('./b.js');",
+      );
+      memoryFs.writeFileSync(
+        '/b.js',
+        "exports.name = 'b'; exports.other = require('./a.js');",
+      );
+
+      const hybridRequire = createHybridRequire(memoryFs as any, projectRoot);
+      const circular = hybridRequire('/a.js');
+      expect(circular.name).toBe('a');
+      expect(circular.other.name).toBe('b');
+      expect(circular.other.other.name).toBe('a');
+
+      let relativeError: any;
+      try {
+        hybridRequire('/missing.js');
+      } catch (error) {
+        relativeError = error;
+      }
+      expect(relativeError).toBeDefined();
+      expect(relativeError.code).toBe('MODULE_NOT_FOUND');
+
+      let bareError: any;
+      try {
+        hybridRequire('package-that-does-not-exist-anywhere');
+      } catch (error) {
+        bareError = error;
+      }
+      expect(bareError).toBeDefined();
+      expect(bareError.code).toBe('MODULE_NOT_FOUND');
+    });
+  });
 });
