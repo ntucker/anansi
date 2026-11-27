@@ -1,5 +1,12 @@
 # Change Log
 
+## 5.0.6
+
+### Patch Changes
+
+- [#3260](https://github.com/ntucker/anansi/pull/3260) [`cdc2e71`](https://github.com/ntucker/anansi/commit/cdc2e717a1a38041f5a7b4637ecdd8a666f81d73) Thanks [@renovate](https://github.com/apps/renovate)! - Update `@types/node` to ^26.6.11
+  Update `@yeoman/types` to ^1.14.0
+
 ## 5.0.5
 
 ### Patch Changes

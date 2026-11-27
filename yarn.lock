@@ -299,7 +299,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anansi/storybook@npm:^5.0.5, @anansi/storybook@workspace:packages/storybook":
+"@anansi/storybook@npm:^5.0.6, @anansi/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@anansi/storybook@workspace:packages/storybook"
   dependencies:
@@ -14377,7 +14377,7 @@ __metadata:
     "@anansi/browserslist-config": "npm:^1.7.7"
     "@anansi/eslint-plugin": "npm:^2.0.6"
     "@anansi/jest-preset": "npm:^0.12.3"
-    "@anansi/storybook": "npm:^5.0.5"
+    "@anansi/storybook": "npm:^5.0.6"
     "@anansi/webpack-config": "npm:^22.0.6"
     "@ant-design/cssinjs": "npm:^2.0.0"
     "@ant-design/icons": "npm:^6.0.0"
