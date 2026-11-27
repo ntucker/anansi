@@ -28,7 +28,7 @@
     "@babel/core": "^8.0.0",
     "@types/eslint": "^9.0.0",
     "@types/node": "^26.0.0",
-    "@types/react": "19.3.0",
+    "@types/react": "19.3.3",
     "@types/react-dom": "19.3.0",
     "@types/react-router-dom": "5.3.3",
     "babel-loader": "10.1.1",
