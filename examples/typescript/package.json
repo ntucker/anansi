@@ -25,7 +25,7 @@
     "@anansi/browserslist-config": "^1.7.7",
     "@anansi/eslint-plugin": "^2.0.6",
     "@anansi/jest-preset": "^0.12.3",
-    "@anansi/storybook": "^5.0.5",
+    "@anansi/storybook": "^5.0.6",
     "@anansi/webpack-config": "^22.0.6",
     "@babel/core": "^8.0.0",
     "@data-client/test": "0.19.0",
